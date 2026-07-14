@@ -50,7 +50,7 @@ test("V2 contains the required sections and selected work in the approved order"
 });
 
 test("all five workflow controls have unique accessible trigger and panel wiring", async () => {
-  const html = await readV2("index.html");
+  const [html, app] = await Promise.all([readV2("index.html"), readV2("app.js")]);
   const triggerPattern = /<button[^>]+data-workflow-trigger="([^"]+)"[^>]+aria-expanded="(true|false)"[^>]+aria-controls="([^"]+)"[^>]*>/g;
   const triggers = [...html.matchAll(triggerPattern)];
 
@@ -64,9 +64,19 @@ test("all five workflow controls have unique accessible trigger and panel wiring
   assert.equal(new Set(triggerIds).size, 5, "workflow trigger ids must be unique");
 
   for (const [index, [, key, , panelId]] of triggers.entries()) {
-    assert.match(html, new RegExp(`<[^>]+id="${panelId}"[^>]+data-workflow-panel="${key}"[^>]+aria-labelledby="${triggerIds[index]}"`));
+    const panelTag = html.match(new RegExp(`<[^>]+id="${panelId}"[^>]+data-workflow-panel="${key}"[^>]+aria-labelledby="${triggerIds[index]}"[^>]*>`))?.[0];
+    assert.ok(panelTag, `missing labelled panel for ${key}`);
+    if (key === "content") {
+      assert.match(panelTag, /aria-hidden="false"/);
+      assert.doesNotMatch(panelTag, /\sinert(?:\s|>|=)/);
+    } else {
+      assert.match(panelTag, /aria-hidden="true"/);
+      assert.match(panelTag, /\sinert(?:\s|>|=)/);
+    }
   }
 
+  assert.match(app, /toggleAttribute\(["']inert["']/);
+  assert.match(app, /setAttribute\(["']aria-hidden["']/);
   assert.match(html, /href="workflows\/presentation-publishing\.html"/);
 });
 
@@ -78,16 +88,40 @@ test("boutique accommodation exposes the real 69-frame sequence to wheel and key
   assert.match(html, /data-accommodation-status[^>]+aria-live="polite"/);
   assert.match(html, /aria-describedby="accommodation-instructions"/);
   assert.match(html, /id="accommodation-instructions"/);
+  assert.equal([...html.matchAll(/data-accommodation-(?:previous|next)/g)].length, 2);
 
   assert.match(app, /data-accommodation-viewer/);
   assert.match(app, /frameSequences/);
   assert.match(app, /addEventListener\(["']wheel["']/);
   assert.match(app, /passive:\s*false/);
+  assert.match(app, /deltaMode/);
   assert.match(app, /preventDefault\(\)/);
   assert.match(app, /prefers-reduced-motion:\s*reduce/);
+  assert.match(app, /new URL\(source,\s*document\.baseURI\)\.href/);
   for (const key of ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"]) {
     assert.ok(app.includes(key), `missing accommodation keyboard support for ${key}`);
   }
+});
+
+test("large showcase videos are lazy, pausable motion with a reduced-motion opt in", async () => {
+  const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
+  const videos = [...html.matchAll(/<video[^>]+data-motion-video[^>]*>[\s\S]*?<\/video>/g)].map((match) => match[0]);
+  const controls = [...html.matchAll(/<button[^>]+data-motion-toggle[^>]*>/g)].map((match) => match[0]);
+
+  assert.equal(videos.length, 2);
+  assert.equal(controls.length, 2);
+  for (const video of videos) {
+    assert.doesNotMatch(video, /\sautoplay(?:\s|>)/);
+    assert.match(video, /preload="none"/);
+    assert.doesNotMatch(video, /<source[^>]+\ssrc=/);
+    assert.match(video, /<source[^>]+data-src=/);
+  }
+  assert.match(css, /\.motion-toggle[\s\S]*?(?:min-height|height):\s*44px/);
+  assert.match(app, /data-motion-video/);
+  assert.match(app, /IntersectionObserver/);
+  assert.match(app, /\.play\(\)/);
+  assert.match(app, /\.pause\(\)/);
+  assert.match(app, /prefers-reduced-motion:\s*reduce/);
 });
 
 test("V2 CSS includes the approved tokens, responsive accordion, and overflow and motion safeguards", async () => {
@@ -111,11 +145,12 @@ test("V2 CSS includes the approved tokens, responsive accordion, and overflow an
   assert.match(css, /@media\s*\(prefers-reduced-motion:\s*reduce\)/);
   assert.match(css, /cubic-bezier\(\.22,\s*1,\s*\.36,\s*1\)/);
   assert.match(css, /max-width:\s*100%/);
+  assert.match(css, /@media\s*\(max-width:\s*479px\)[\s\S]*?\.laptop-object\s*\{[^}]*width:\s*100%[^}]*margin-left:\s*0/);
 });
 
 test("every referenced V2 asset resolves to tracked media on disk", async () => {
   const html = await readV2("index.html");
-  const assetReferences = [...html.matchAll(/(?:src|poster|href)="(\.\.\/assets\/[^"?#]+)(?:[?#][^"]*)?"/g)]
+  const assetReferences = [...html.matchAll(/(?:src|data-src|poster|href)="(\.\.\/assets\/[^"?#]+)(?:[?#][^"]*)?"/g)]
     .map((match) => match[1]);
 
   assert.ok(assetReferences.length >= 15, "expected V2 to reuse the existing media library");
@@ -132,4 +167,15 @@ test("V2 interactions use keyboard handling and one-time observation without scr
     assert.ok(app.includes(key), `missing keyboard support for ${JSON.stringify(key)}`);
   }
   assert.doesNotMatch(app, /addEventListener\(["']scroll["']/);
+});
+
+test("browser QA covers runtime focus, motion, inputs, dialog restoration, and target widths", async () => {
+  const qa = await readFile(new URL("../scripts/qa-v2.mjs", import.meta.url), "utf8");
+  for (const marker of [
+    "puppeteer-core", "inert", "aria-hidden", "ArrowDown", "data-accommodation-next",
+    "deltaMode", "prefers-reduced-motion", "data-motion-toggle", "data-dashboard-dialog",
+    "1440", "1024", "768", "390", "320", "scrollWidth",
+  ]) {
+    assert.ok(qa.includes(marker), `browser QA missing ${marker}`);
+  }
 });

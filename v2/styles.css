@@ -430,6 +430,7 @@ h3 {
 }
 
 .laptop-object {
+  position: relative;
   margin-inline: -7vw -2vw;
   transform: rotate(1.5deg);
 }
@@ -454,6 +455,7 @@ h3 {
 }
 
 .browser-object-video {
+  position: relative;
   transform: rotate(1.6deg);
 }
 
@@ -522,6 +524,56 @@ h3 {
   font-size: .68rem;
   font-variant-numeric: tabular-nums;
   letter-spacing: .02em;
+}
+
+.accommodation-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--hairline);
+  background: var(--surface);
+}
+
+.accommodation-controls button {
+  min-height: 48px;
+  padding: 8px 14px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.accommodation-controls button + button {
+  border-left: 1px solid var(--hairline);
+}
+
+.accommodation-controls button:hover:not(:disabled) {
+  background: var(--content-tint);
+}
+
+.accommodation-controls button:disabled {
+  color: var(--muted);
+  cursor: default;
+  opacity: .48;
+}
+
+.motion-toggle {
+  position: absolute;
+  z-index: 3;
+  right: 12px;
+  bottom: 12px;
+  min-width: 72px;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, .42);
+  background: rgba(31, 35, 34, .9);
+  color: var(--surface);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.motion-toggle:hover {
+  background: var(--ink);
 }
 
 .proposal-sheet {
@@ -1402,6 +1454,11 @@ h3 {
 
   .work-proof {
     font-size: .9rem;
+  }
+
+  .laptop-object {
+    width: 100%;
+    margin-left: 0;
   }
 
   .music-interlude .text-links {

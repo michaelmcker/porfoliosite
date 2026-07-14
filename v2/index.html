@@ -69,10 +69,11 @@
             </div>
           </div>
           <figure class="laptop-object">
-            <video autoplay muted loop playsinline preload="metadata" poster="../assets/device-mockups/laptop-three-quarter-rccv.png" aria-label="RCCV homepage and Stations of the Cross shown on an angled laptop">
-              <source src="../assets/videos/rccv-showcase-laptop.webm" type="video/webm">
-              <source src="../assets/videos/rccv-showcase-laptop.mp4" type="video/mp4">
+            <video id="motion-video-rccv" data-motion-video muted loop playsinline preload="none" poster="../assets/device-mockups/laptop-three-quarter-rccv.png" aria-label="RCCV homepage and Stations of the Cross shown on an angled laptop">
+              <source data-src="../assets/videos/rccv-showcase-laptop.webm" type="video/webm">
+              <source data-src="../assets/videos/rccv-showcase-laptop.mp4" type="video/mp4">
             </video>
+            <button class="motion-toggle" type="button" data-motion-toggle aria-controls="motion-video-rccv" aria-label="Play RCCV showcase video">Play</button>
           </figure>
         </article>
 
@@ -82,6 +83,10 @@
             <div class="browser-viewport accommodation-viewport">
               <img src="../assets/frames/accommodation/overview/001.jpg" data-accommodation-frame alt="Interactive preview of the boutique accommodation website">
               <span class="accommodation-status" data-accommodation-status aria-live="polite">Overview · frame 1 of 69</span>
+            </div>
+            <div class="accommodation-controls" aria-label="Boutique accommodation preview controls">
+              <button type="button" data-accommodation-previous aria-label="Previous accommodation frame">Previous</button>
+              <button type="button" data-accommodation-next aria-label="Next accommodation frame">Next</button>
             </div>
             <figcaption class="sr-only" id="accommodation-instructions">Use the mouse wheel or Arrow keys to move through the website. Home and End jump to the first and last frame.</figcaption>
           </figure>
@@ -111,11 +116,12 @@
           <figure class="browser-object browser-object-video">
             <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>coolrunningslandscaping.com</span></div>
             <div class="browser-viewport">
-              <video autoplay muted loop playsinline preload="metadata" poster="../assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website and local search work">
-                <source src="../assets/videos/cool-runnings-sizzle-25s.webm" type="video/webm">
-                <source src="../assets/videos/cool-runnings-sizzle-25s.mp4" type="video/mp4">
+              <video id="motion-video-cool-runnings" data-motion-video muted loop playsinline preload="none" poster="../assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website and local search work">
+                <source data-src="../assets/videos/cool-runnings-sizzle-25s.webm" type="video/webm">
+                <source data-src="../assets/videos/cool-runnings-sizzle-25s.mp4" type="video/mp4">
               </video>
             </div>
+            <button class="motion-toggle" type="button" data-motion-toggle aria-controls="motion-video-cool-runnings" aria-label="Play Cool Runnings showcase video">Play</button>
           </figure>
         </article>
 
@@ -187,7 +193,7 @@
           <button class="workflow-trigger" id="workflow-trigger-content" type="button" data-workflow-trigger="content" aria-expanded="true" aria-controls="workflow-panel-content">
             <span class="workflow-number">01</span><strong>Content</strong><span class="workflow-plus" aria-hidden="true">+</span>
           </button>
-          <div class="workflow-panel" id="workflow-panel-content" data-workflow-panel="content" role="region" aria-labelledby="workflow-trigger-content">
+          <div class="workflow-panel" id="workflow-panel-content" data-workflow-panel="content" role="region" aria-labelledby="workflow-trigger-content" aria-hidden="false">
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
                 <h3>Search-optimized content production</h3>
@@ -203,7 +209,7 @@
           <button class="workflow-trigger" id="workflow-trigger-dashboard" type="button" data-workflow-trigger="dashboard" aria-expanded="false" aria-controls="workflow-panel-dashboard">
             <span class="workflow-number">02</span><strong>Dashboard</strong><span class="workflow-plus" aria-hidden="true">+</span>
           </button>
-          <div class="workflow-panel" id="workflow-panel-dashboard" data-workflow-panel="dashboard" role="region" aria-labelledby="workflow-trigger-dashboard">
+          <div class="workflow-panel" id="workflow-panel-dashboard" data-workflow-panel="dashboard" role="region" aria-labelledby="workflow-trigger-dashboard" aria-hidden="true" inert>
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
                 <h3>Agency management dashboard</h3>
@@ -219,7 +225,7 @@
           <button class="workflow-trigger" id="workflow-trigger-presentation" type="button" data-workflow-trigger="presentation" aria-expanded="false" aria-controls="workflow-panel-presentation">
             <span class="workflow-number">03</span><strong>Presentation</strong><span class="workflow-plus" aria-hidden="true">+</span>
           </button>
-          <div class="workflow-panel" id="workflow-panel-presentation" data-workflow-panel="presentation" role="region" aria-labelledby="workflow-trigger-presentation">
+          <div class="workflow-panel" id="workflow-panel-presentation" data-workflow-panel="presentation" role="region" aria-labelledby="workflow-trigger-presentation" aria-hidden="true" inert>
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
                 <h3>Presentation publishing</h3>
@@ -235,7 +241,7 @@
           <button class="workflow-trigger" id="workflow-trigger-prospecting" type="button" data-workflow-trigger="prospecting" aria-expanded="false" aria-controls="workflow-panel-prospecting">
             <span class="workflow-number">04</span><strong>Prospecting</strong><span class="workflow-plus" aria-hidden="true">+</span>
           </button>
-          <div class="workflow-panel" id="workflow-panel-prospecting" data-workflow-panel="prospecting" role="region" aria-labelledby="workflow-trigger-prospecting">
+          <div class="workflow-panel" id="workflow-panel-prospecting" data-workflow-panel="prospecting" role="region" aria-labelledby="workflow-trigger-prospecting" aria-hidden="true" inert>
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
                 <h3>Local prospecting and enrichment</h3>
@@ -251,7 +257,7 @@
           <button class="workflow-trigger" id="workflow-trigger-website" type="button" data-workflow-trigger="website" aria-expanded="false" aria-controls="workflow-panel-website">
             <span class="workflow-number">05</span><strong>Website</strong><span class="workflow-plus" aria-hidden="true">+</span>
           </button>
-          <div class="workflow-panel" id="workflow-panel-website" data-workflow-panel="website" role="region" aria-labelledby="workflow-trigger-website">
+          <div class="workflow-panel" id="workflow-panel-website" data-workflow-panel="website" role="region" aria-labelledby="workflow-trigger-website" aria-hidden="true" inert>
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
                 <h3>Image-to-website production</h3>
