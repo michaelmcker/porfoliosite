@@ -1,6 +1,6 @@
 # Portfolio Working Notes
 
-Last updated: July 13, 2026
+Last updated: July 14, 2026
 
 This is the working source for portfolio ideas, evidence, workflow details, media requirements, and unresolved questions. It is intentionally more detailed than the public site.
 
@@ -15,6 +15,8 @@ This is the working source for portfolio ideas, evidence, workflow details, medi
 - AI supports execution. Human judgment supplies context, taste, review, and the decision to publish.
 
 ## Site Structure
+
+V1 remains the production homepage. V2 is an unlinked assessment at `/v2/`; its first approval gate contains the homepage and the Presentation Publishing detail page only.
 
 1. Approved animated hero.
 2. Bias to Build and the five-stage method.
@@ -116,8 +118,19 @@ This is the working source for portfolio ideas, evidence, workflow details, medi
 - Shared iframe code is stored in the presentation embed field.
 - The custom Webflow template renders the Vercel presentation full screen.
 - The skill deploys and publishes the Webflow changes and returns the final sales-facing URL.
-- Retain password checking as an optional access-control step when the presentation requires it.
+- Access control may exist outside the public story when a specific presentation requires it, but it is not a stage or visual emphasis in the V2 workflow.
 - Problem solved: HTML artifacts were difficult for salespeople to put into prospects' hands; this turns them into managed, branded, shareable pages.
+
+Public V2 sequence, in order:
+
+1. Branded self-contained HTML presentation.
+2. Vercel API deployment.
+3. Proposed name and destination validation before any CMS write.
+4. Webflow CMS iframe field update.
+5. Full-screen presentation template.
+6. Published URL verification in both publishing layers.
+
+The deterministic V2 visual uses this exact sequence. Do not add duplicate validation, fictional integrations, or unreadably small implementation detail.
 
 ### Image-to-Website Production
 
@@ -171,15 +184,28 @@ This is the working source for portfolio ideas, evidence, workflow details, medi
 
 ## Design and Media Rules
 
-- The approved hero remains the source of truth.
-- Paper field, restrained grid, thin routes, serif display type, and small technical labels form the visual system.
-- No eyebrows or numbered section labels.
+The following paper-grid rules describe V1 only. V2 is intentionally isolated and follows `DESIGN.md`.
+
+- The V1 approved hero remains the V1 source of truth.
+- V1 uses the paper field, restrained grid, thin routes, serif display type, and small technical labels.
+- V1 avoids eyebrows or numbered section labels.
 - Selected Work and Selected Workflows are different sections.
 - Selected Work uses taller alternating rows: laptop for RCCV, varied browser windows for the other web work, letter-size PDF for the proposal, and overlapping album art on black.
 - Media shells must accept either images or looping videos without changing the section layout.
 - Workflow images should occupy most of the available stage and never read as thumbnails.
 - Mobile selected work can become a carousel; desktop remains an alternating editorial layout.
 - Use icon controls for GitHub, LinkedIn, and email in utility navigation.
+
+### V2 Assessment Rules
+
+- Use local DM Sans for functional copy and local Fraunces only for active workflow titles and selective editorial or personal moments.
+- Use the neutral canvas for roughly 80% of the page. The subdued workflow tints carry most of the colour.
+- Treat laptops, browser windows, proposal sheets, album artwork, and the About portrait as authored objects on an open canvas.
+- Keep the Renaissance portrait in About only; never place it in the hero.
+- Selected Work keeps the real Z-pattern and existing media/interactions.
+- Desktop workflow states use an expanding-spine accordion at 1100px and wider; smaller layouts use vertical rows with mobile-readable artwork.
+- Outcomes are four centred metrics with unchanged claims. Experience is a centred ledger without route dots or timeline markers.
+- The V2 first gate stops after the homepage and Presentation Publishing page. The remaining four workflow pages wait for approval.
 
 ## Privacy and Open Questions
 
@@ -190,7 +216,7 @@ This is the working source for portfolio ideas, evidence, workflow details, medi
 - Complete direct Business Profile Performance API authentication before presenting exact profile calls, website clicks, directions, or total profile interactions.
 - Verify the presentation-publishing implementation against the current corporate Vercel and Webflow schemas before publishing code-level details.
 
-## Current Repair Backlog
+## V1 Production Repair Backlog
 
 This is the concrete correction list from the July 13 production audit. Items stay here until the live page is visually verified at desktop, tablet, and mobile widths.
 
@@ -215,7 +241,7 @@ This is the concrete correction list from the July 13 production audit. Items st
 
 ### Selected Workflows and Tools
 
-- Presentation Publishing still uses an obsolete generated visual. It incorrectly emphasizes password handling, places duplicate URL validation at the end, and does not accurately show the Vercel API to corporate account, Webflow API/CMS iframe field, template, deploy, and publish sequence. Replace it with the new generated six-stage visual.
+- V1 Presentation Publishing still uses the obsolete visual. V2 now contains the corrected deterministic six-stage artwork and detail page; do not port them into V1 until V2 is approved.
 - The workflow stage is still too compressed on desktop. The active workflow image should occupy the dominant right-hand area at the same visual scale as Selected Work, with the workflow list functioning as compact tabs rather than competing headlines.
 - The Agency Management Dashboard belongs in Selected Workflows and Tools, not Selected Work. Its modal/detail treatment still needs a public-safe explanation of sources, operation, and use.
 - Website Production and Image-to-Website Production still need approved workflow visuals.
