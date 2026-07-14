@@ -27,7 +27,7 @@
   </header>
 
   <main>
-    <section class="hero page-frame" id="hero" aria-labelledby="hero-title">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow">Michael McKerracher · Marketing Engineer</p>
         <h1 id="hero-title">I build the system <em>and</em> the thing it ships.</h1>
@@ -165,18 +165,20 @@
       </div>
     </section>
 
-    <section class="build-bias page-frame" id="method" aria-labelledby="method-title">
-      <div class="bias-intro">
-        <p>Bias to build</p>
-        <h2 id="method-title">I trust work you can use.</h2>
+    <section class="build-bias" id="method" aria-labelledby="method-title">
+      <div class="build-bias-inner page-frame">
+        <div class="bias-intro">
+          <p>Bias to build</p>
+          <h2 id="method-title">I trust work you can use.</h2>
+        </div>
+        <ol class="bias-sequence" data-bias-sequence aria-label="Open. Test. Send. Publish. Measure.">
+          <li class="bias-step"><span>01</span><strong>Open.</strong></li>
+          <li class="bias-step"><span>02</span><strong>Test.</strong></li>
+          <li class="bias-step"><span>03</span><strong>Send.</strong></li>
+          <li class="bias-step"><span>04</span><strong>Publish.</strong></li>
+          <li class="bias-step"><span>05</span><strong>Measure.</strong></li>
+        </ol>
       </div>
-      <ol class="bias-sequence" data-bias-sequence aria-label="Open. Test. Send. Publish. Measure.">
-        <li class="bias-step"><span>01</span><strong>Open.</strong></li>
-        <li class="bias-step"><span>02</span><strong>Test.</strong></li>
-        <li class="bias-step"><span>03</span><strong>Send.</strong></li>
-        <li class="bias-step"><span>04</span><strong>Publish.</strong></li>
-        <li class="bias-step"><span>05</span><strong>Measure.</strong></li>
-      </ol>
     </section>
 
     <section class="workflow-section" id="workflows" aria-labelledby="workflow-title">
@@ -286,24 +288,26 @@
       </div>
     </section>
 
-    <section class="about page-frame" id="about" aria-labelledby="about-title">
-      <div class="about-copy">
-        <p class="eyebrow">Off the clock, more or less</p>
-        <h2 id="about-title">A little about me.</h2>
-        <p>I was born and raised in Toronto. My first look at marketing came at six, helping my dad at his Chrysler dealership. I loved spending weekends there, looking through the brochures and the marketing around the showroom and thinking, “This made the cars look really cool.” That was probably the start of it. I’ve been doing marketing ever since.</p>
-        <p>Now I live in Coldstream, BC, raising four kids and sharing the house with a cat and a dog. When I should probably be resting, I spend an unreasonable amount of time tinkering with AI and building things simply to see if I can, even when the practical value is questionable.</p>
-        <button class="about-toggle" type="button" aria-expanded="false" aria-controls="about-build-note" data-about-toggle>How this unnecessary thing was made</button>
-        <div class="about-note" id="about-build-note" data-about-note hidden>
-          <p>The portrait starts with one approved painting. A masked typing loop supplies the hand movement, while 66 registered head poses map the cursor or touch position to changes in gaze.</p>
-          <p>The useful lesson was to constrain the AI, isolate only what needed to change, and composite it back into a stable source.</p>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-inner page-frame">
+        <div class="about-copy">
+          <p class="eyebrow">Off the clock, more or less</p>
+          <h2 id="about-title">A little about me.</h2>
+          <p>I was born and raised in Toronto. My first look at marketing came at six, helping my dad at his Chrysler dealership. I loved spending weekends there, looking through the brochures and the marketing around the showroom and thinking, “This made the cars look really cool.” That was probably the start of it. I’ve been doing marketing ever since.</p>
+          <p>Now I live in Coldstream, BC, raising four kids and sharing the house with a cat and a dog. When I should probably be resting, I spend an unreasonable amount of time tinkering with AI and building things simply to see if I can, even when the practical value is questionable.</p>
+          <button class="about-toggle" type="button" aria-expanded="false" aria-controls="about-build-note" data-about-toggle>How this unnecessary thing was made</button>
+          <div class="about-note" id="about-build-note" data-about-note hidden>
+            <p>The portrait starts with one approved painting. A masked typing loop supplies the hand movement, while 66 registered head poses map the cursor or touch position to changes in gaze.</p>
+            <p>The useful lesson was to constrain the AI, isolate only what needed to change, and composite it back into a stable source.</p>
+          </div>
         </div>
+        <figure class="portrait-object">
+          <div class="portrait-frame">
+            <iframe src="../assets/portrait-final/embed.html" title="Interactive Renaissance portrait of Michael McKerracher. Move the pointer across the portrait to change his gaze." loading="lazy"></iframe>
+          </div>
+          <figcaption>Renaissance portrait, needlessly interactive.</figcaption>
+        </figure>
       </div>
-      <figure class="portrait-object">
-        <div class="portrait-frame">
-          <iframe src="../assets/portrait-final/embed.html" title="Interactive Renaissance portrait of Michael McKerracher. Move the pointer across the portrait to change his gaze." loading="lazy"></iframe>
-        </div>
-        <figcaption>Renaissance portrait, needlessly interactive.</figcaption>
-      </figure>
     </section>
 
     <section class="experience page-frame" id="resume" aria-labelledby="resume-title">

@@ -58,8 +58,24 @@ test("V2 restores the existing hero film and authored portrait frame", async () 
   assert.doesNotMatch(html, /class="system-trace"/);
   assert.match(html, /<div class="portrait-frame">\s*<iframe[^>]+portrait-final\/embed\.html/s);
   assert.match(css, /\.portrait-frame\s*\{[^}]*aspect-ratio:\s*2\s*\/\s*3[^}]*border:\s*7px solid #725a3d[^}]*border-radius:[^}]*background(?:-image)?:[^}]*portrait\/poster\.png/s);
-  assert.match(css, /@media\s*\(max-width:\s*699px\)[\s\S]*?\.hero-system-media video\s*\{[^}]*aspect-ratio:\s*941\s*\/\s*1672/s);
+  assert.match(html, /<section class="hero" id="hero"/);
+  assert.doesNotMatch(html, /<section class="hero page-frame"/);
+  assert.match(css, /\.hero\s*\{[^}]*position:\s*relative[^}]*overflow:\s*hidden/s);
+  assert.match(css, /\.hero-system-media\s*\{[^}]*position:\s*absolute[^}]*inset:\s*0[^}]*width:\s*100%[^}]*height:\s*100%/s);
+  assert.match(css, /\.hero-system-media video\s*\{[^}]*width:\s*100%[^}]*height:\s*100%[^}]*object-fit:\s*cover/s);
+  assert.match(css, /\.hero-copy\s*\{[^}]*position:\s*relative[^}]*z-index:\s*2/s);
   assert.match(app, /portrait-frame[\s\S]*?classList\.add\(["']is-loaded["']\)/);
+});
+
+test("selected work gives properly scaled laptop and browser objects more room than the copy", async () => {
+  const css = await readV2("styles.css");
+
+  assert.match(css, /\.selected-work\s*\{[^}]*width:\s*min\([^}]*1360px\)/s);
+  assert.match(css, /\.work-object\s*\{[^}]*grid-template-columns:\s*minmax\(260px,\s*\.68fr\)\s*minmax\(0,\s*1\.32fr\)/s);
+  assert.match(css, /\.work-object-accommodation,[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1\.32fr\)\s*minmax\(260px,\s*\.68fr\)/s);
+  assert.match(css, /\.work-copy h3\s*\{[^}]*font-size:\s*clamp\(2\.2rem,\s*3\.4vw,\s*4rem\)/s);
+  assert.match(css, /\.laptop-object\s*\{[^}]*width:\s*min\(112%,\s*900px\)/s);
+  assert.match(css, /\.browser-object-tall\s*\{[^}]*width:\s*min\(108%,\s*820px\)/s);
 });
 
 test("all five workflow controls have unique accessible trigger and panel wiring", async () => {
@@ -147,8 +163,12 @@ test("workflow showcase is full bleed, more vivid, and orders copy above dominan
 
   assert.match(css, /\.workflow-accordion\s*\{[^}]*width:\s*100%/s);
   assert.match(css, /\.workflow-item\s*\{[^}]*color:\s*var\(--ink\)/s);
+  assert.match(css, /\.workflow-trigger\s*\{[^}]*color:\s*#111310/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)[^}]*grid-template-rows:\s*auto minmax\(0,\s*1fr\)/s);
   assert.match(css, /\.workflow-panel img\s*\{[^}]*max-height:\s*none/s);
+  assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*["']DM Sans["'][^}]*font-size:\s*clamp\(2\.4rem,\s*3\.8vw,\s*4\.4rem\)/s);
+  assert.match(css, /\.workflow-copy p\s*\{[^}]*font-size:\s*clamp\(1\.16rem,\s*1\.6vw,\s*1\.42rem\)/s);
+  assert.match(css, /\.workflow-panel figure\s*\{[^}]*height:\s*clamp\(500px,\s*48vw,\s*690px\)/s);
   assert.doesNotMatch(css, /\.workflow-panel figure\s*\{[^}]*order:\s*-1/s);
 
   const panels = [...html.matchAll(/<div class="workflow-panel-inner">([\s\S]*?)<\/div>\s*<\/div>\s*<\/article>/g)];
@@ -156,6 +176,17 @@ test("workflow showcase is full bleed, more vivid, and orders copy above dominan
   for (const [, panel] of panels) {
     assert.ok(panel.indexOf('class="workflow-copy"') < panel.indexOf("<figure"), "workflow copy must precede media");
   }
+});
+
+test("method and about spread the accordion palette through full-bleed colour bands", async () => {
+  const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
+
+  assert.match(html, /<section class="build-bias"[^>]*>\s*<div class="build-bias-inner page-frame">/s);
+  assert.match(html, /<section class="about"[^>]*>\s*<div class="about-inner page-frame">/s);
+  assert.match(css, /\.build-bias\s*\{[^}]*background:\s*var\(--prospecting-vivid\)/s);
+  assert.match(css, /\.about\s*\{[^}]*background:\s*var\(--dashboard-vivid\)/s);
+  assert.match(css, /\.build-bias-inner\s*\{[^}]*display:\s*grid/s);
+  assert.match(css, /\.about-inner\s*\{[^}]*display:\s*grid/s);
 });
 
 test("V2 CSS includes the approved tokens, responsive accordion, and overflow and motion safeguards", async () => {
@@ -171,7 +202,7 @@ test("V2 CSS includes the approved tokens, responsive accordion, and overflow an
 
   assert.match(css, /font-family:\s*["']DM Sans["']/);
   assert.match(css, /font-family:\s*["']Fraunces["']/);
-  assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*["']Fraunces["']/s);
+  assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*["']DM Sans["']/s);
   assert.match(css, /overflow-x:\s*(?:clip|hidden)/);
   assert.match(css, /@media\s*\(min-width:\s*1100px\)/);
   assert.match(css, /@media\s*\(max-width:\s*1099px\)/);
@@ -210,6 +241,7 @@ test("browser QA covers runtime focus, motion, inputs, dialog restoration, and t
     "puppeteer-core", "inert", "aria-hidden", "ArrowDown", "data-accommodation-next",
     "deltaMode", "prefers-reduced-motion", "data-motion-toggle", "data-dashboard-dialog",
     "1440", "1024", "768", "390", "320", "scrollWidth",
+    "workflow-desktop-", "workflow-mobile-", "hero-desktop.png", "hero-mobile.png",
   ]) {
     assert.ok(qa.includes(marker), `browser QA missing ${marker}`);
   }

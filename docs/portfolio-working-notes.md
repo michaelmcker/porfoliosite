@@ -198,13 +198,13 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 
 ### V2 Assessment Rules
 
-- Use local DM Sans for functional copy and local Fraunces only for active workflow titles and selective editorial or personal moments.
-- Keep the page neutral outside the workflow showcase. The workflow itself is a full-bleed colour event using the stronger blue, green, apricot, yellow, and violet assessment palette.
+- Use local DM Sans for functional copy and workflow titles. Keep workflow names compact, black, and subordinate to the artwork; make the description comfortably larger. Reserve local Fraunces for selective editorial or personal moments.
+- Keep Selected Work, Outcomes, Experience, and Contact neutral. The workflow remains a full-bleed colour event using the stronger blue, green, apricot, yellow, and violet assessment palette. Reuse the prospecting yellow for the full-bleed Bias to Build band and dashboard green for the full-bleed About band so the palette has a deliberate page-wide rhythm.
 - Treat laptops, browser windows, proposal sheets, album artwork, and the About portrait as authored objects on an open canvas.
 - Keep the Renaissance portrait in About only; never place it in the hero.
 - Keep the interactive portrait inside the existing brown arched frame and show the composed portrait fallback before the iframe is ready.
-- Reuse the responsive system-map film in the hero with Play/Pause and reduced-motion support.
-- Selected Work keeps the real Z-pattern and existing media/interactions.
+- Reuse the responsive system-map film as a full-bleed hero background with Play/Pause and reduced-motion support. Overlay the hero copy in the reserved left field with a directional fade for readability, following the V1 composition without importing V1 code.
+- Selected Work keeps the real Z-pattern and existing media/interactions. Desktop rows allocate more width to media than copy, project names are smaller, and laptop/browser objects lead the composition without clipping.
 - Desktop workflow states use a full-width expanding-spine accordion at 1100px and wider; smaller layouts use vertical rows with mobile-readable artwork. In every active state, title and description precede a substantially larger image.
 - Outcomes are four centred metrics with unchanged claims. Experience is a centred ledger without route dots or timeline markers.
 - The V2 first gate stops after the homepage and Presentation Publishing page. The remaining four workflow pages wait for approval.

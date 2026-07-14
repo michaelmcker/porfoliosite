@@ -122,7 +122,7 @@ try {
     inactiveInert: true,
     inactiveHidden: "true",
     headingVisible: true,
-    headingFont: "Fraunces, Georgia, serif",
+    headingFont: '"DM Sans", Arial, sans-serif',
   });
 
   await page.click("[data-workflow-trigger='content']");
@@ -188,6 +188,45 @@ try {
     if (screenshotDirectory) {
       await mkdir(screenshotDirectory, { recursive: true });
       await page.screenshot({ path: path.join(screenshotDirectory, `v2-${width}.png`), fullPage: true });
+    }
+  }
+
+  if (screenshotDirectory) {
+    const workflowKeys = ["content", "dashboard", "presentation", "prospecting", "website"];
+    for (const { label, width } of [{ label: "desktop", width: 1440 }, { label: "mobile", width: 390 }]) {
+      await page.setViewport({ width, height: 1000, deviceScaleFactor: 1 });
+      await page.goto(url, { waitUntil: "domcontentloaded" });
+      await page.evaluate(() => document.fonts.ready);
+
+      const hero = await page.$(".hero");
+      const heroFilename = label === "desktop" ? "hero-desktop.png" : "hero-mobile.png";
+      const workflowScreenshotPrefix = label === "desktop" ? "workflow-desktop-" : "workflow-mobile-";
+      await hero.screenshot({ path: path.join(screenshotDirectory, heroFilename) });
+
+      for (const key of workflowKeys) {
+        await page.click(`[data-workflow-trigger='${key}']`);
+        await page.waitForFunction((activeKey) => (
+          document.querySelector(`[data-workflow-trigger='${activeKey}']`)?.getAttribute("aria-expanded") === "true"
+        ), {}, key);
+        await page.waitForFunction((activeKey) => {
+          const panel = document.querySelector(`[data-workflow-panel='${activeKey}']`);
+          const heading = document.querySelector(`[data-workflow-panel='${activeKey}'] h3`);
+          const panelStyle = panel && getComputedStyle(panel);
+          return heading
+            && heading.getBoundingClientRect().height > 0
+            && panelStyle.opacity === "1"
+            && panelStyle.visibility === "visible";
+        }, {}, key);
+        await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+        const screenshotPath = path.join(screenshotDirectory, `${workflowScreenshotPrefix}${key}.png`);
+        const accordion = await page.$(".workflow-accordion");
+        await accordion.screenshot({ path: screenshotPath });
+      }
+
+      for (const sectionName of ["method", "about"]) {
+        const section = await page.$(`#${sectionName}`);
+        await section.screenshot({ path: path.join(screenshotDirectory, `${sectionName}-${label}.png`) });
+      }
     }
   }
 

@@ -31,23 +31,24 @@ Legacy subdued workflow tints remain available for detail-page surfaces:
 - Prospecting: `#F2EBCF`
 - Website production: `#EBE7F3`
 
-The homepage accordion uses a stronger assessment palette: `#B9C8FF`, `#B5DEBE`, `#FFC09C`, `#F3D76D`, and `#D2B6F0`. The surrounding page remains neutral, while the workflow section becomes an intentional full-bleed colour event.
+The homepage accordion uses a stronger assessment palette: `#B9C8FF`, `#B5DEBE`, `#FFC09C`, `#F3D76D`, and `#D2B6F0`. Selected Work, Outcomes, Experience, and Contact remain neutral. Prospecting yellow carries into the full-bleed Bias to Build band, and dashboard green carries into the full-bleed About band, distributing the playful colour rhythm beyond the accordion.
 
 ### V2 Typography
 
 - Functional and body type: local DM Sans variable font.
-- Editorial accents: local Fraunces variable font, used for active workflow titles, the hero emphasis, selected personal statements, and the music interlude.
+- Workflow titles: local DM Sans variable font in black, kept smaller than their supporting image; workflow descriptions run larger for easier reading.
+- Editorial accents: local Fraunces variable font, used selectively for the hero emphasis, metrics, personal statements, and the music interlude.
 - Technical type: monospace only inside real technical artifacts.
 - Body leading: approximately `1.55-1.7`; paragraph measure and spacing should remain stable at every breakpoint.
 
 ### V2 Composition and Motion
 
-- Use a Z-pattern for Selected Work and let each real artifact sit on an open canvas.
+- Use a Z-pattern for Selected Work and let each real artifact sit on an open canvas. At desktop widths, the media column is wider than the copy column and the project names remain compact enough for the laptop and browser objects to lead.
 - Give media objects consistent soft lighting, shadow, caption scale, and whitespace without forcing them into a universal card.
 - Centre sectional anchors where it improves rhythm: workflow introduction, outcomes, and experience.
 - The workflow accordion expands over approximately 480ms with `cubic-bezier(.22, 1, .36, 1)` and becomes vertical below 1100px. Each active state puts its title first, description and CTA second, and dominant media below.
 - Content must remain complete with reduced motion. Videos remain lazy and user-controllable.
-- The V2 hero reuses the existing responsive system-map film. The About portrait keeps the interactive embed inside the authored brown arch frame, with a composed static portrait visible while it loads.
+- The V2 hero reuses the existing responsive system-map film as a full-bleed background, with copy over the film's reserved left field and a directional readability fade. The About portrait keeps the interactive embed inside the authored brown arch frame, with a composed static portrait visible while it loads.
 
 ### V2 Publishing Artwork
 
