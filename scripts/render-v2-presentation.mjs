@@ -43,13 +43,22 @@ try {
     await page.setViewport(render.viewport);
     await page.goto(pathToFileURL(source).href, { waitUntil: "load" });
     await page.evaluate(async () => {
+      await Promise.all([
+        document.fonts.load('400 18px "DM Sans"'),
+        document.fonts.load('700 18px "DM Sans"'),
+        document.fonts.load('600 56px "Fraunces"'),
+      ]);
       await document.fonts.ready;
+      if (!document.fonts.check('400 18px "DM Sans"') || !document.fonts.check('600 56px "Fraunces"')) {
+        throw new Error("Local artwork fonts did not load");
+      }
       await Promise.all([...document.images].map((image) => image.complete
         ? Promise.resolve()
         : new Promise((resolve, reject) => {
             image.addEventListener("load", resolve, { once: true });
             image.addEventListener("error", reject, { once: true });
           })));
+      await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
     });
 
     const outputPath = path.join(outputDirectory, render.filename);

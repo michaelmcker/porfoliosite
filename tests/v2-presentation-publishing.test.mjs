@@ -12,6 +12,7 @@ const artifactPath = path.join(v2, "artifacts", "presentation-publishing.html");
 const artifactCssPath = path.join(v2, "artifacts", "presentation-publishing.css");
 const desktopPngPath = path.join(v2, "assets", "presentation-publishing-desktop.png");
 const mobilePngPath = path.join(v2, "assets", "presentation-publishing-mobile.png");
+const fontDirectory = path.join(v2, "assets", "fonts");
 
 const stages = [
   "Branded HTML presentation",
@@ -38,6 +39,20 @@ function pngDimensions(buffer) {
   assert.equal(buffer.subarray(1, 4).toString("ascii"), "PNG", "asset is not a PNG");
   assert.equal(buffer.subarray(12, 16).toString("ascii"), "IHDR", "PNG has no IHDR header");
   return { width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20) };
+}
+
+function relativeLuminance(hex) {
+  const channels = hex.match(/[\da-f]{2}/gi).map((channel) => Number.parseInt(channel, 16) / 255);
+  const [red, green, blue] = channels.map((channel) => channel <= .04045
+    ? channel / 12.92
+    : ((channel + .055) / 1.055) ** 2.4);
+  return .2126 * red + .7152 * green + .0722 * blue;
+}
+
+function contrastRatio(foreground, background) {
+  const lighter = Math.max(relativeLuminance(foreground), relativeLuminance(background));
+  const darker = Math.min(relativeLuminance(foreground), relativeLuminance(background));
+  return (lighter + .05) / (darker + .05);
 }
 
 function localReferences(html) {
@@ -136,6 +151,52 @@ test("detail styles preserve the V2 visual and accessibility contract", async ()
   assert.doesNotMatch(css, /repeating-(?:linear|radial)-gradient/);
 });
 
+test("normal-size publishing accent text meets WCAG AA contrast against the canvas", async () => {
+  const [baseCss, detailCss] = await Promise.all([
+    read(path.join(v2, "styles.css")),
+    read(detailCssPath),
+  ]);
+  const canvas = baseCss.match(/--canvas:\s*(#[\dA-F]{6})/i)?.[1];
+  const accentText = baseCss.match(/--accent-text:\s*(#[\dA-F]{6})/i)?.[1];
+
+  assert.ok(canvas, "V2 canvas token is missing");
+  assert.ok(accentText, "semantic accent text token is missing");
+  assert.ok(contrastRatio(accentText, canvas) >= 4.5,
+    `${accentText} has only ${contrastRatio(accentText, canvas).toFixed(2)}:1 contrast against ${canvas}`);
+  assert.match(detailCss, /\.process-list\s*>?\s*li\s*>\s*span\s*\{[^}]*color:\s*var\(--accent-text\)/s);
+  assert.ok(baseCss.includes("--apricot: #E98D63"), "pale apricot surface token should remain available");
+});
+
+test("V2 vendors approved variable fonts and has no remote font dependency", async () => {
+  const fontFiles = [
+    "dm-sans-latin-variable.woff2",
+    "fraunces-latin-variable.woff2",
+    "OFL-DM-Sans.txt",
+    "OFL-Fraunces.txt",
+  ];
+  await Promise.all(fontFiles.map((filename) => access(path.join(fontDirectory, filename))));
+
+  for (const filename of fontFiles.filter((filename) => filename.endsWith(".woff2"))) {
+    const font = await readFile(path.join(fontDirectory, filename));
+    assert.equal(font.subarray(0, 4).toString("ascii"), "wOF2", `${filename} is not a WOFF2 font`);
+    assert.ok(font.length > 20_000, `${filename} is unexpectedly small`);
+  }
+
+  const [baseCss, artifactCss] = await Promise.all([
+    read(path.join(v2, "styles.css")),
+    read(artifactCssPath),
+  ]);
+  for (const css of [baseCss, artifactCss]) {
+    assert.doesNotMatch(css, /@import|fonts\.googleapis|fonts\.gstatic|https?:\/\//i);
+    assert.match(css, /@font-face[\s\S]*?font-family:\s*"DM Sans"[\s\S]*?font-weight:\s*100 1000[\s\S]*?font-display:\s*(?:swap|block)/);
+    assert.match(css, /@font-face[\s\S]*?font-family:\s*"Fraunces"[\s\S]*?font-weight:\s*100 900[\s\S]*?font-display:\s*(?:swap|block)/);
+  }
+  assert.match(baseCss, /url\("assets\/fonts\/dm-sans-latin-variable\.woff2"\)/);
+  assert.match(baseCss, /url\("assets\/fonts\/fraunces-latin-variable\.woff2"\)/);
+  assert.match(artifactCss, /url\("\.\.\/assets\/fonts\/dm-sans-latin-variable\.woff2"\)/);
+  assert.match(artifactCss, /url\("\.\.\/assets\/fonts\/fraunces-latin-variable\.woff2"\)/);
+});
+
 test("editable artwork contains the six stages and a purpose-built mobile layout", async () => {
   const [artifact, css] = await Promise.all([read(artifactPath), read(artifactCssPath)]);
   assert.equal([...artifact.matchAll(/<li class="stage"/g)].length, 6);
@@ -166,10 +227,28 @@ test("render script uses installed Chrome with an override and waits for artwork
   assert.match(script, /puppeteer-core/);
   assert.match(script, /process\.env\.CHROME_PATH/);
   assert.match(script, /Google Chrome\.app\/Contents\/MacOS\/Google Chrome/);
+  assert.match(script, /document\.fonts\.load/);
   assert.match(script, /document\.fonts\.ready/);
+  assert.match(script, /requestAnimationFrame/);
   assert.match(script, /complete/);
   assert.ok(script.includes("1800") && script.includes("1100"));
   assert.ok(script.includes("900") && script.includes("1600"));
   assert.match(script, /presentation-publishing-desktop\.png/);
   assert.match(script, /presentation-publishing-mobile\.png/);
+});
+
+test("permanent V2 browser QA directly verifies the presentation detail page and responsive picture", async () => {
+  const qa = await read(path.join(root, "scripts", "qa-v2.mjs"));
+  for (const marker of [
+    "/v2/workflows/presentation-publishing.html",
+    "Presentation publishing",
+    "presentation-publishing-desktop.png",
+    "presentation-publishing-mobile.png",
+    "naturalWidth",
+    "naturalHeight",
+    "complete",
+  ]) {
+    assert.ok(qa.includes(marker), `detail-page browser QA is missing ${marker}`);
+  }
+  assert.match(qa, /for\s*\(const width of \[1440,\s*1024,\s*768,\s*390,\s*320\]\)[\s\S]+presentation-publishing/s);
 });

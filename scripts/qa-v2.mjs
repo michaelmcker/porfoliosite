@@ -20,6 +20,7 @@ const mimeTypes = {
   ".svg": "image/svg+xml",
   ".webm": "video/webm",
   ".webp": "image/webp",
+  ".woff2": "font/woff2",
 };
 
 const server = http.createServer(async (request, response) => {
@@ -58,6 +59,7 @@ const server = http.createServer(async (request, response) => {
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const { port } = server.address();
 const url = `http://127.0.0.1:${port}/v2/`;
+const detailUrl = `http://127.0.0.1:${port}/v2/workflows/presentation-publishing.html`;
 let browser;
 
 try {
@@ -164,7 +166,55 @@ try {
     }
   }
 
-  console.log("V2 browser QA passed: workflow focus/state, accommodation inputs, motion controls, dialog focus, and 5 viewport widths.");
+  const detailFailures = [];
+  const recordDetailFailure = (response) => {
+    if (response.url().startsWith(`http://127.0.0.1:${port}/`) && response.status() >= 400) {
+      detailFailures.push(`${response.status()} ${response.url()}`);
+    }
+  };
+  page.on("response", recordDetailFailure);
+  await page.setCacheEnabled(false);
+
+  for (const width of [1440, 1024, 768, 390, 320]) {
+    detailFailures.length = 0;
+    requestPaths.length = 0;
+    await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
+    await page.goto(detailUrl, { waitUntil: "domcontentloaded" });
+    const detail = await page.evaluate(async () => {
+      await document.fonts.ready;
+      const image = document.querySelector(".publishing-artwork img");
+      if (!image.complete) await image.decode();
+      return {
+        heading: document.querySelector("h1")?.textContent.trim(),
+        innerWidth: window.innerWidth,
+        scrollWidth: document.documentElement.scrollWidth,
+        imageComplete: image.complete,
+        currentSource: new URL(image.currentSrc).pathname,
+        naturalWidth: image.naturalWidth,
+        naturalHeight: image.naturalHeight,
+      };
+    });
+    const mobile = width < 700;
+    const expectedAsset = mobile ? "presentation-publishing-mobile.png" : "presentation-publishing-desktop.png";
+    const expectedDimensions = mobile ? [900, 1600] : [1800, 1100];
+
+    assert.equal(detail.heading, "Presentation publishing", `${width}px detail heading is missing`);
+    assert.ok(detail.scrollWidth <= detail.innerWidth, `${width}px presentation detail overflows by ${detail.scrollWidth - detail.innerWidth}px`);
+    assert.equal(detail.imageComplete, true, `${width}px presentation artwork did not load`);
+    assert.ok(detail.currentSource.endsWith(expectedAsset), `${width}px selected ${detail.currentSource} instead of ${expectedAsset}`);
+    assert.deepEqual([detail.naturalWidth, detail.naturalHeight], expectedDimensions, `${width}px presentation artwork dimensions are wrong`);
+    assert.deepEqual(detailFailures, [], `${width}px presentation detail has failed local assets`);
+    assert.ok(requestPaths.some((requestPath) => requestPath.endsWith(expectedAsset)), `${width}px did not request ${expectedAsset}`);
+    assert.ok(requestPaths.some((requestPath) => requestPath.endsWith("dm-sans-latin-variable.woff2")), `${width}px did not request local DM Sans`);
+
+    if (screenshotDirectory) {
+      await mkdir(screenshotDirectory, { recursive: true });
+      await page.screenshot({ path: path.join(screenshotDirectory, `v2-presentation-${width}.png`), fullPage: true });
+    }
+  }
+  page.off("response", recordDetailFailure);
+
+  console.log("V2 browser QA passed: homepage interactions plus presentation detail assets, responsive artwork, and overflow at 5 viewport widths.");
 } finally {
   await browser?.close();
   await new Promise((resolve) => server.close(resolve));

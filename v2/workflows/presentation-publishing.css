@@ -116,7 +116,7 @@
 }
 
 .process-list > li > span {
-  color: var(--apricot);
+  color: var(--accent-text);
   font-size: .78rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
