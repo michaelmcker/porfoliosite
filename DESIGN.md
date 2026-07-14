@@ -23,7 +23,7 @@ The accordion reference informs expressive type, restrained colour changes, expa
 - Charcoal: `#1F2322`
 - Accessible warm accent text: `#9D3F22`
 
-Workflow tints:
+Legacy subdued workflow tints remain available for detail-page surfaces:
 
 - Content: `#E7ECFA`
 - Dashboard: `#E5EEE7`
@@ -31,7 +31,7 @@ Workflow tints:
 - Prospecting: `#F2EBCF`
 - Website production: `#EBE7F3`
 
-At least four fifths of the page should read as neutral. Colour communicates workflow identity and interaction state rather than decorating every section.
+The homepage accordion uses a stronger assessment palette: `#B9C8FF`, `#B5DEBE`, `#FFC09C`, `#F3D76D`, and `#D2B6F0`. The surrounding page remains neutral, while the workflow section becomes an intentional full-bleed colour event.
 
 ### V2 Typography
 
@@ -45,8 +45,9 @@ At least four fifths of the page should read as neutral. Colour communicates wor
 - Use a Z-pattern for Selected Work and let each real artifact sit on an open canvas.
 - Give media objects consistent soft lighting, shadow, caption scale, and whitespace without forcing them into a universal card.
 - Centre sectional anchors where it improves rhythm: workflow introduction, outcomes, and experience.
-- The workflow accordion expands over approximately 480ms with `cubic-bezier(.22, 1, .36, 1)` and becomes vertical below 1100px.
+- The workflow accordion expands over approximately 480ms with `cubic-bezier(.22, 1, .36, 1)` and becomes vertical below 1100px. Each active state puts its title first, description and CTA second, and dominant media below.
 - Content must remain complete with reduced motion. Videos remain lazy and user-controllable.
+- The V2 hero reuses the existing responsive system-map film. The About portrait keeps the interactive embed inside the authored brown arch frame, with a composed static portrait visible while it loads.
 
 ### V2 Publishing Artwork
 

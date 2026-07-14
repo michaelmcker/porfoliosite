@@ -139,7 +139,7 @@ const syncMotionButton = (video) => {
   const button = motionButton(video);
   if (!button) return;
   const playing = !video.paused && !video.ended;
-  const label = video.id === "motion-video-rccv" ? "RCCV showcase video" : "Cool Runnings showcase video";
+  const label = video.dataset.motionLabel || "showcase video";
   button.textContent = playing ? "Pause" : "Play";
   button.setAttribute("aria-label", `${playing ? "Pause" : "Play"} ${label}`);
 };
@@ -209,6 +209,10 @@ if (biasSequence && !reducedMotion.matches && "IntersectionObserver" in window) 
 
 const aboutToggle = document.querySelector("[data-about-toggle]");
 const aboutNote = document.querySelector("[data-about-note]");
+const portraitFrame = document.querySelector(".portrait-frame");
+const portraitEmbed = portraitFrame?.querySelector("iframe");
+
+portraitEmbed?.addEventListener("load", () => portraitFrame.classList.add("is-loaded"));
 
 aboutToggle?.addEventListener("click", () => {
   const opening = aboutNote?.hidden ?? false;

@@ -49,6 +49,19 @@ test("V2 contains the required sections and selected work in the approved order"
   }
 });
 
+test("V2 restores the existing hero film and authored portrait frame", async () => {
+  const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
+
+  assert.match(html, /<video[^>]+id="motion-video-hero"[^>]+data-motion-video[^>]+data-motion-label="portfolio system map"/);
+  assert.match(html, /data-src="\.\.\/assets\/videos\/portfolio-hero-system-map-desktop-4k-sparse-loop\.mp4"/);
+  assert.match(html, /data-src="\.\.\/assets\/videos\/portfolio-hero-system-map-mobile-1080p\.mp4"/);
+  assert.doesNotMatch(html, /class="system-trace"/);
+  assert.match(html, /<div class="portrait-frame">\s*<iframe[^>]+portrait-final\/embed\.html/s);
+  assert.match(css, /\.portrait-frame\s*\{[^}]*aspect-ratio:\s*2\s*\/\s*3[^}]*border:\s*7px solid #725a3d[^}]*border-radius:[^}]*background(?:-image)?:[^}]*portrait\/poster\.png/s);
+  assert.match(css, /@media\s*\(max-width:\s*699px\)[\s\S]*?\.hero-system-media video\s*\{[^}]*aspect-ratio:\s*941\s*\/\s*1672/s);
+  assert.match(app, /portrait-frame[\s\S]*?classList\.add\(["']is-loaded["']\)/);
+});
+
 test("all five workflow controls have unique accessible trigger and panel wiring", async () => {
   const [html, app] = await Promise.all([readV2("index.html"), readV2("app.js")]);
   const triggerPattern = /<button[^>]+data-workflow-trigger="([^"]+)"[^>]+aria-expanded="(true|false)"[^>]+aria-controls="([^"]+)"[^>]*>/g;
@@ -108,9 +121,10 @@ test("large showcase videos are lazy, pausable motion with a reduced-motion opt 
   const videos = [...html.matchAll(/<video[^>]+data-motion-video[^>]*>[\s\S]*?<\/video>/g)].map((match) => match[0]);
   const controls = [...html.matchAll(/<button[^>]+data-motion-toggle[^>]*>/g)].map((match) => match[0]);
 
-  assert.equal(videos.length, 2);
-  assert.equal(controls.length, 2);
+  assert.equal(videos.length, 3);
+  assert.equal(controls.length, 3);
   for (const video of videos) {
+    assert.match(video, /data-motion-label="[^"]+"/);
     assert.doesNotMatch(video, /\sautoplay(?:\s|>)/);
     assert.match(video, /preload="none"/);
     assert.doesNotMatch(video, /<source[^>]+\ssrc=/);
@@ -122,6 +136,26 @@ test("large showcase videos are lazy, pausable motion with a reduced-motion opt 
   assert.match(app, /\.play\(\)/);
   assert.match(app, /\.pause\(\)/);
   assert.match(app, /prefers-reduced-motion:\s*reduce/);
+});
+
+test("workflow showcase is full bleed, more vivid, and orders copy above dominant media", async () => {
+  const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
+
+  for (const color of ["#B9C8FF", "#B5DEBE", "#FFC09C", "#F3D76D", "#D2B6F0"]) {
+    assert.ok(css.includes(color), `missing vivid workflow colour ${color}`);
+  }
+
+  assert.match(css, /\.workflow-accordion\s*\{[^}]*width:\s*100%/s);
+  assert.match(css, /\.workflow-item\s*\{[^}]*color:\s*var\(--ink\)/s);
+  assert.match(css, /\.workflow-panel-inner\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)[^}]*grid-template-rows:\s*auto minmax\(0,\s*1fr\)/s);
+  assert.match(css, /\.workflow-panel img\s*\{[^}]*max-height:\s*none/s);
+  assert.doesNotMatch(css, /\.workflow-panel figure\s*\{[^}]*order:\s*-1/s);
+
+  const panels = [...html.matchAll(/<div class="workflow-panel-inner">([\s\S]*?)<\/div>\s*<\/div>\s*<\/article>/g)];
+  assert.equal(panels.length, 5);
+  for (const [, panel] of panels) {
+    assert.ok(panel.indexOf('class="workflow-copy"') < panel.indexOf("<figure"), "workflow copy must precede media");
+  }
 });
 
 test("V2 CSS includes the approved tokens, responsive accordion, and overflow and motion safeguards", async () => {
@@ -179,4 +213,7 @@ test("browser QA covers runtime focus, motion, inputs, dialog restoration, and t
   ]) {
     assert.ok(qa.includes(marker), `browser QA missing ${marker}`);
   }
+  assert.match(qa, /portfolio-hero-system-map-(?:desktop|mobile)/);
+  assert.match(qa, /rccv-showcase-laptop/);
+  assert.match(qa, /cool-runnings-sizzle-25s/);
 });

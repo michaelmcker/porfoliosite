@@ -74,7 +74,18 @@ try {
   requestPaths.length = 0;
   await page.goto(url, { waitUntil: "domcontentloaded" });
   await new Promise((resolve) => setTimeout(resolve, 200));
-  assert.equal(requestPaths.some((requestPath) => /\.(?:mp4|webm)$/.test(requestPath)), false, "showcase video files loaded during initial navigation");
+  assert.equal(
+    requestPaths.some((requestPath) => requestPath.includes("portfolio-hero-system-map-desktop")),
+    true,
+    "visible hero system-map video did not load",
+  );
+  for (const deferredShowcase of ["rccv-showcase-laptop", "cool-runnings-sizzle-25s"]) {
+    assert.equal(
+      requestPaths.some((requestPath) => requestPath.includes(deferredShowcase)),
+      false,
+      `${deferredShowcase} loaded before its section entered the viewport`,
+    );
+  }
 
   const initialWorkflowState = await page.evaluate(() => {
     const panel = document.querySelector("[data-workflow-panel='dashboard']");

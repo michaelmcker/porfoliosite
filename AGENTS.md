@@ -30,7 +30,7 @@ Stop at this gate for visual approval. Do not extend the system to the other fou
 ## V2 Design Contract
 
 - Type: local DM Sans for functional text; local Fraunces for active accordion titles and selective editorial moments. Monospace is reserved for real technical artifacts.
-- Palette: neutral canvas and surfaces dominate. The five workflow tints are subdued content blue, dashboard green, publishing apricot, prospecting yellow, and website violet.
+- Palette: neutral canvas and surfaces dominate outside the workflow showcase. The full-bleed workflow section deliberately uses stronger content blue, dashboard green, publishing apricot, prospecting yellow, and website violet.
 - Composition: laptops, browser windows, documents, and the About portrait are authored objects on an open canvas, not repeated cards.
 - Avoid heavy black outlines, graph-paper textures, route dots, harsh rules, mono labels, and box-within-box framing.
 - Motion must remain optional, pausable, keyboard accessible, and complete under `prefers-reduced-motion`.
@@ -39,9 +39,12 @@ Stop at this gate for visual approval. Do not extend the system to the other fou
 
 - Desktop workflow accordion begins at 1100px and uses horizontal expanding spines.
 - Below 1100px it becomes a vertical accordion with a dedicated readable composition, not a panned desktop diagram.
+- Active workflow hierarchy is always title, description and CTA, then dominant media. Do not move the image above the copy.
 - Selection changes only on click, tap, Enter, or Space. Arrow keys, Home, and End move focus. Inactive regions are `inert` and `aria-hidden`.
 - Boutique Accommodation retains its 69-frame wheel, keyboard, and touch interaction with boundary release.
 - Showcase videos are lazy-loaded, have Play/Pause controls, and do not autoplay when reduced motion is requested.
+- The V2 hero reuses the existing responsive system-map film and its approved static poster.
+- About reuses the interactive portrait inside the brown arched frame. The composed static portrait is the loading fallback.
 
 ## Presentation-Publishing Source Truth
 

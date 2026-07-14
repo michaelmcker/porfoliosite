@@ -38,17 +38,14 @@
         </div>
       </div>
 
-      <div class="system-trace" aria-label="A simple trace from inputs through a working system to finished outputs">
-        <span class="trace-note trace-note-input">Audience signals</span>
-        <span class="trace-note trace-note-data">Data &amp; insights</span>
-        <div class="trace-core">
-          <span>Working system</span>
-          <strong>Connect inputs.<br>Design the path.<br>Ship the output.</strong>
-        </div>
-        <span class="trace-note trace-note-web">Websites</span>
-        <span class="trace-note trace-note-tools">Tools</span>
-        <span class="trace-note trace-note-stories">Product stories</span>
-      </div>
+      <figure class="hero-system-media">
+        <video id="motion-video-hero" data-motion-video data-motion-label="portfolio system map" muted loop playsinline preload="none" poster="../assets/videos/portfolio-hero-system-map-desktop-poster.png" aria-label="Animated system map connecting audience and data inputs to websites, proposals, dashboards, and workflows">
+          <source media="(max-width: 699px)" data-src="../assets/videos/portfolio-hero-system-map-mobile-1080p.mp4" type="video/mp4">
+          <source data-src="../assets/videos/portfolio-hero-system-map-desktop-4k-sparse-loop.mp4" type="video/mp4">
+        </video>
+        <button class="motion-toggle hero-motion-toggle" type="button" data-motion-toggle aria-controls="motion-video-hero" aria-label="Play portfolio system map">Play</button>
+        <figcaption>Inputs become systems. Systems become useful work.</figcaption>
+      </figure>
     </section>
 
     <section class="selected-work page-frame" id="work" aria-labelledby="work-title">
@@ -69,7 +66,7 @@
             </div>
           </div>
           <figure class="laptop-object">
-            <video id="motion-video-rccv" data-motion-video muted loop playsinline preload="none" poster="../assets/device-mockups/laptop-three-quarter-rccv.png" aria-label="RCCV homepage and Stations of the Cross shown on an angled laptop">
+            <video id="motion-video-rccv" data-motion-video data-motion-label="RCCV showcase video" muted loop playsinline preload="none" poster="../assets/device-mockups/laptop-three-quarter-rccv.png" aria-label="RCCV homepage and Stations of the Cross shown on an angled laptop">
               <source data-src="../assets/videos/rccv-showcase-laptop.webm" type="video/webm">
               <source data-src="../assets/videos/rccv-showcase-laptop.mp4" type="video/mp4">
             </video>
@@ -116,7 +113,7 @@
           <figure class="browser-object browser-object-video">
             <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>coolrunningslandscaping.com</span></div>
             <div class="browser-viewport">
-              <video id="motion-video-cool-runnings" data-motion-video muted loop playsinline preload="none" poster="../assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website and local search work">
+              <video id="motion-video-cool-runnings" data-motion-video data-motion-label="Cool Runnings showcase video" muted loop playsinline preload="none" poster="../assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website and local search work">
                 <source data-src="../assets/videos/cool-runnings-sizzle-25s.webm" type="video/webm">
                 <source data-src="../assets/videos/cool-runnings-sizzle-25s.mp4" type="video/mp4">
               </video>
@@ -302,7 +299,9 @@
         </div>
       </div>
       <figure class="portrait-object">
-        <iframe src="../assets/portrait-final/embed.html" title="Interactive Renaissance portrait of Michael McKerracher. Move the pointer across the portrait to change his gaze." loading="lazy"></iframe>
+        <div class="portrait-frame">
+          <iframe src="../assets/portrait-final/embed.html" title="Interactive Renaissance portrait of Michael McKerracher. Move the pointer across the portrait to change his gaze." loading="lazy"></iframe>
+        </div>
         <figcaption>Renaissance portrait, needlessly interactive.</figcaption>
       </figure>
     </section>
