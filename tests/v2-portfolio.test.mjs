@@ -137,6 +137,7 @@ test("V2 CSS includes the approved tokens, responsive accordion, and overflow an
 
   assert.match(css, /font-family:\s*["']DM Sans["']/);
   assert.match(css, /font-family:\s*["']Fraunces["']/);
+  assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*["']Fraunces["']/s);
   assert.match(css, /overflow-x:\s*(?:clip|hidden)/);
   assert.match(css, /@media\s*\(min-width:\s*1100px\)/);
   assert.match(css, /@media\s*\(max-width:\s*1099px\)/);

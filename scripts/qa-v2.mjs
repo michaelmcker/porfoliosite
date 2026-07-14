@@ -89,16 +89,30 @@ try {
   assert.deepEqual(initialWorkflowState, { focusBlocked: true, inert: true, ariaHidden: "true" });
 
   await page.click("[data-workflow-trigger='dashboard']");
+  await page.waitForFunction(() => {
+    const heading = document.querySelector("[data-workflow-panel='dashboard'] h3");
+    return heading && getComputedStyle(heading).opacity !== "0";
+  });
   assert.deepEqual(await page.evaluate(() => {
     const active = document.querySelector("[data-workflow-panel='dashboard']");
     const inactive = document.querySelector("[data-workflow-panel='content']");
+    const heading = active.querySelector("h3");
     return {
       activeInert: active.inert,
       activeHidden: active.getAttribute("aria-hidden"),
       inactiveInert: inactive.inert,
       inactiveHidden: inactive.getAttribute("aria-hidden"),
+      headingVisible: heading.getBoundingClientRect().height > 0,
+      headingFont: getComputedStyle(heading).fontFamily,
     };
-  }), { activeInert: false, activeHidden: "false", inactiveInert: true, inactiveHidden: "true" });
+  }), {
+    activeInert: false,
+    activeHidden: "false",
+    inactiveInert: true,
+    inactiveHidden: "true",
+    headingVisible: true,
+    headingFont: "Fraunces, Georgia, serif",
+  });
 
   await page.click("[data-workflow-trigger='content']");
   await page.keyboard.press("ArrowDown");
