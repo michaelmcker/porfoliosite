@@ -77,9 +77,13 @@
         </article>
 
         <article class="work-object work-object-accommodation" data-work="accommodation">
-          <figure class="browser-object browser-object-tall">
+          <figure class="browser-object browser-object-tall" data-accommodation-viewer data-frame-sequences="overview:17,treehouse:28,cabin:24" tabindex="0" role="group" aria-label="Explore the boutique accommodation website" aria-describedby="accommodation-instructions">
             <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>okanagan-treehouse-preview.michael-mckerracher.workers.dev</span></div>
-            <div class="browser-viewport"><img src="../assets/frames/accommodation/overview/001.jpg" alt="Preview of the boutique accommodation website"></div>
+            <div class="browser-viewport accommodation-viewport">
+              <img src="../assets/frames/accommodation/overview/001.jpg" data-accommodation-frame alt="Interactive preview of the boutique accommodation website">
+              <span class="accommodation-status" data-accommodation-status aria-live="polite">Overview · frame 1 of 69</span>
+            </div>
+            <figcaption class="sr-only" id="accommodation-instructions">Use the mouse wheel or Arrow keys to move through the website. Home and End jump to the first and last frame.</figcaption>
           </figure>
           <div class="work-copy">
             <p class="work-meta">Boutique accommodation · Web development</p>

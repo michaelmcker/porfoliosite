@@ -93,6 +93,18 @@ button {
   transform: translateY(0);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .page-frame {
   width: min(calc(100% - (2 * var(--page-gutter))), var(--page-width));
   margin-inline: auto;
@@ -476,6 +488,7 @@ h3 {
 }
 
 .browser-viewport {
+  position: relative;
   max-height: 580px;
   overflow: hidden;
 }
@@ -489,6 +502,26 @@ h3 {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: top;
+}
+
+[data-accommodation-viewer] {
+  cursor: ns-resize;
+  touch-action: pan-y;
+}
+
+.accommodation-status {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  background: rgba(31, 35, 34, .86);
+  color: var(--surface);
+  font-size: .68rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .02em;
 }
 
 .proposal-sheet {

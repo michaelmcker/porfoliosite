@@ -59,11 +59,35 @@ test("all five workflow controls have unique accessible trigger and panel wiring
   assert.equal(new Set(triggers.map((match) => match[3])).size, 5);
   assert.equal(triggers.filter((match) => match[2] === "true").length, 1);
 
-  for (const [, key, , panelId] of triggers) {
-    assert.match(html, new RegExp(`<[^>]+id="${panelId}"[^>]+data-workflow-panel="${key}"`));
+  const triggerIds = triggers.map((match) => match[0].match(/\bid="([^"]+)"/)?.[1]);
+  assert.ok(triggerIds.every(Boolean), "every workflow trigger needs an id");
+  assert.equal(new Set(triggerIds).size, 5, "workflow trigger ids must be unique");
+
+  for (const [index, [, key, , panelId]] of triggers.entries()) {
+    assert.match(html, new RegExp(`<[^>]+id="${panelId}"[^>]+data-workflow-panel="${key}"[^>]+aria-labelledby="${triggerIds[index]}"`));
   }
 
   assert.match(html, /href="workflows\/presentation-publishing\.html"/);
+});
+
+test("boutique accommodation exposes the real 69-frame sequence to wheel and keyboard input", async () => {
+  const [html, app] = await Promise.all([readV2("index.html"), readV2("app.js")]);
+
+  assert.match(html, /data-accommodation-viewer[^>]+data-frame-sequences="overview:17,treehouse:28,cabin:24"[^>]+tabindex="0"/);
+  assert.match(html, /data-accommodation-frame/);
+  assert.match(html, /data-accommodation-status[^>]+aria-live="polite"/);
+  assert.match(html, /aria-describedby="accommodation-instructions"/);
+  assert.match(html, /id="accommodation-instructions"/);
+
+  assert.match(app, /data-accommodation-viewer/);
+  assert.match(app, /frameSequences/);
+  assert.match(app, /addEventListener\(["']wheel["']/);
+  assert.match(app, /passive:\s*false/);
+  assert.match(app, /preventDefault\(\)/);
+  assert.match(app, /prefers-reduced-motion:\s*reduce/);
+  for (const key of ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"]) {
+    assert.ok(app.includes(key), `missing accommodation keyboard support for ${key}`);
+  }
 });
 
 test("V2 CSS includes the approved tokens, responsive accordion, and overflow and motion safeguards", async () => {
