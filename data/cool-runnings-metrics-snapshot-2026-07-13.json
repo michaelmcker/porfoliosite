@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-07-13",
+  "site": "sc-domain:coolrunningslandscaping.com",
+  "searchConsole": {
+    "period": "latest 28 days available",
+    "clicks": 184,
+    "impressions": 22199,
+    "averageCtrPercent": 0.83,
+    "averagePosition": 13.7
+  },
+  "ga4": {
+    "propertyId": "527841655",
+    "period": "latest 28 days through yesterday",
+    "sessions": 374,
+    "activeUsers": 306,
+    "googleOrganicSessions": 246,
+    "gbpCampaignTagDetected": false
+  },
+  "attributionNote": "The Google Business Profile website URL is not tagged with a dedicated campaign in GA4. Search Console and GA4 cannot distinguish Business Profile traffic from other Google organic traffic. Profile views, calls, and directions require the Business Profile Performance API."
+}

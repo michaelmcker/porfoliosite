@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Approved Portfolio Reference Review</title>
+  <style>
+    :root { --paper: #f3f0eb; --ink: #151612; --line: rgba(21,22,18,.18); --blue: #2464bb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, sans-serif; }
+    main { width: min(1500px, 100%); margin: 0 auto; }
+    header { padding: 28px 40px; border-bottom: 1px solid var(--line); }
+    h1, h2, p { margin: 0; }
+    h1 { font: 400 clamp(34px,5vw,64px)/1 Georgia, serif; }
+    header p { max-width: 72ch; margin-top: 12px; line-height: 1.5; }
+    section { padding: 40px; border-bottom: 1px solid var(--line); }
+    .label { margin-bottom: 18px; color: var(--blue); font: 700 11px/1.2 monospace; letter-spacing: .12em; text-transform: uppercase; }
+    h2 { margin-bottom: 12px; font: 400 clamp(28px,4vw,48px)/1 Georgia, serif; }
+    .status { margin-bottom: 24px; color: #555; line-height: 1.5; }
+    img { display: block; width: 100%; height: auto; }
+    .workflow-grid { display: grid; grid-template-columns: 1fr; gap: 36px; }
+    figure { margin: 0; }
+    figcaption { display: flex; justify-content: space-between; gap: 20px; padding: 12px 0 0; font-size: 14px; }
+    .visual { padding: 18px; background: var(--paper); isolation: isolate; }
+    .visual img { mix-blend-mode: darken; }
+    .pending { opacity: .72; }
+    .swatches { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .swatch { display: flex; align-items: center; gap: 8px; font: 12px monospace; }
+    .swatch i { width: 28px; height: 28px; border: 1px solid var(--line); background: var(--c); }
+    @media (max-width: 700px) { header, section { padding: 24px 16px; } .visual { padding: 0; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><h1>Approved reference audit</h1><p>This board shows the exact files currently treated as source truth. It does not alter or reinterpret them.</p></header>
+
+    <section>
+      <div class="label">Approved layout target</div>
+      <h2>Selected Work</h2>
+      <p class="status">This is the approved composition to translate into code. The previous coded Portfolio is not approved.</p>
+      <img src="assets/approved/02-selected-work-layout-desktop-mobile.png" alt="Approved Selected Work desktop and mobile layout">
+    </section>
+
+    <section>
+      <div class="label">Approved layout target</div>
+      <h2>Selected Workflows</h2>
+      <p class="status">This controls the selector rail, dominant visual stage, supporting description, and mobile expansion behavior.</p>
+      <img src="assets/approved/03-selected-workflows-layout-desktop-mobile.png" alt="Approved Selected Workflows desktop and mobile layout">
+    </section>
+
+    <section>
+      <div class="label">Approved exact workflow visuals</div>
+      <h2>Workflow images</h2>
+      <p class="status">These two images are approved and should not be regenerated or substituted. Both are rendered over the same #f3f0eb paper field below.</p>
+      <div class="workflow-grid">
+        <figure><div class="visual"><img src="assets/approved/04-content-production-approved.png" alt="Approved search-optimized content workflow"></div><figcaption><strong>Search-optimized content production</strong><span>Approved exact visual</span></figcaption></figure>
+        <figure><div class="visual"><img src="assets/approved/05-local-prospecting-approved.png" alt="Approved local prospecting workflow"></div><figcaption><strong>Local prospecting and enrichment</strong><span>Approved exact visual</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="pending">
+      <div class="label">Generated, not approved</div>
+      <h2>Presentation publishing</h2>
+      <p class="status">This is available for review but is not part of the approved source-lock bundle.</p>
+      <div class="visual"><img src="assets/workflows/presentation-publishing.png" alt="Unapproved presentation publishing visual"></div>
+    </section>
+
+    <section>
+      <div class="label">Shared background proposal</div>
+      <h2>Use #f3f0eb for the workflow section</h2>
+      <p class="status">This is the dominant background of the approved local-prospecting graphic and the midpoint of the approved paper tones. Edge fades prevent the slight baked-in image backgrounds from reading as separate rectangles.</p>
+      <div class="swatches">
+        <span class="swatch"><i style="--c:#f5f1eb"></i>Selected Work #f5f1eb</span>
+        <span class="swatch"><i style="--c:#ede9e2"></i>Workflow layout #ede9e2</span>
+        <span class="swatch"><i style="--c:#f7f4f0"></i>Content #f7f4f0</span>
+        <span class="swatch"><i style="--c:#f3f0eb"></i>Prospecting/shared #f3f0eb</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

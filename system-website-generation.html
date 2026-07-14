@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Build Process - Michael McKerracher</title>
+  <meta name="description" content="A portfolio system page showing how visual references become design rules, implementation, QA, and public web work.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="mark" href="index.html" aria-label="Home">MM</a>
+      <div class="identity">
+        <span>Michael McKerracher</span>
+        <span>Marketing Engineer</span>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="built-tools.html">Tools</a>
+        <a href="index.html#systems">Systems</a>
+        <a class="icon-link" href="mailto:michael.mckerracher@gmail.com" aria-label="Email Michael" title="Email Michael"><img src="assets/icons/mail.svg" alt=""></a>
+      </nav>
+    </header>
+
+    <section class="page-hero">
+      <div data-reveal>
+        <h1>Website Build Process</h1>
+        <p>How references, image direction, taste review, code, and QA become real sites that can be inspected, edited, and shipped.</p>
+        <div class="actions">
+          <a class="button" href="index.html#work">View public work</a>
+          <a class="button quiet" href="built-tools.html#webflow">Tool index</a>
+        </div>
+      </div>
+      <figure class="proof-shot wide-shot" data-reveal>
+        <img src="scroll-states/website_pipeline.png" alt="Generated storyboard plate showing the website pipeline as a warm grid and connected process field.">
+      </figure>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Image direction becomes a build.</h2>
+        <p>The visual reference is not the deliverable. It becomes a source for layout, type, spacing, interaction rules, and QA decisions.</p>
+      </div>
+      <div class="process-feature">
+        <figure class="process-image" data-reveal>
+          <img src="assets/design-refs/03-how-it-gets-made-workflow.png" alt="Generated design reference for the portfolio workflow section.">
+        </figure>
+        <div class="process-board" data-reveal>
+          <div class="signal-strip">
+            <span>Reference</span>
+            <span>Image round</span>
+            <span>Taste pass</span>
+            <span>Code</span>
+            <span>QA</span>
+          </div>
+          <div class="build-trace">
+            <div>
+              <b>01</b>
+              <strong>Research and reference</strong>
+              <p>Collect sites, screenshots, brand inputs, project constraints, and the job the page has to do.</p>
+            </div>
+            <div>
+              <b>02</b>
+              <strong>Generate visual directions</strong>
+              <p>Use full-page image prompts to explore layout and atmosphere before committing code.</p>
+            </div>
+            <div>
+              <b>03</b>
+              <strong>Decompose the winner</strong>
+              <p>Translate the chosen frame into typography, spacing, color, components, and responsive rules.</p>
+            </div>
+            <div>
+              <b>04</b>
+              <strong>Build and verify</strong>
+              <p>Implement the page, capture desktop and mobile screenshots, fix overflow, copy, assets, and links.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow-lanes">
+      <div class="lane" data-reveal>
+        <div class="lane-head">
+          <span>Website process</span>
+          <span>Reference to public route</span>
+        </div>
+        <div class="lane-steps">
+          <div class="step" data-step="01"><span class="step-mark">REF</span><strong>Reference set</strong><p>Approved hero, public examples, and project-specific constraints.</p></div>
+          <div class="step" data-step="02"><span class="step-mark">IMG</span><strong>Design image</strong><p>Generate and compare full-page visual options before coding.</p></div>
+          <div class="step" data-step="03"><span class="step-mark">SYS</span><strong>Design system</strong><p>Capture color, type, spacing, components, and visual rules.</p></div>
+          <div class="step" data-step="04"><span class="step-mark">HTML</span><strong>Build</strong><p>Convert the direction into responsive HTML, CSS, and real assets.</p></div>
+          <div class="step" data-step="05"><span class="step-mark">QA</span><strong>Review</strong><p>Screenshot desktop and mobile, fix layout drift, and keep the page source-safe.</p></div>
+        </div>
+        <div class="built-with">
+          <span>Current portfolio artifacts</span>
+          <code>scroll-states/website_pipeline.png</code>
+          <code>assets/design-refs/03-how-it-gets-made-workflow.png</code>
+          <code>DESIGN.md</code>
+          <code>styles.css</code>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="examples">
+      <div class="section-head">
+        <h2>Where the process shows up</h2>
+        <p>These are the public or portfolio-safe surfaces that benefit from the same reference, build, and verification loop.</p>
+      </div>
+      <div class="output-grid">
+        <article class="output-card wide-output" data-reveal>
+          <div class="output-thumb">
+            <img src="assets/screens/cool-runnings.png" alt="Local landscaping website screenshot.">
+          </div>
+          <h3>Local landscaping business</h3>
+          <p>Public local-service site tied to search-led page structure and proof snapshots.</p>
+          <div class="link-row"><a href="work-local-yard-care-seo-build.html">Open case</a></div>
+        </article>
+        <article class="output-card wide-output" data-reveal>
+          <div class="output-thumb">
+            <img src="assets/screens/rccv.png" alt="RCCV website screenshot.">
+          </div>
+          <h3>RCCV</h3>
+          <p>Community organization site with visitor paths, forms, bulletins, events, and editorial workflows.</p>
+          <div class="link-row"><a href="work-multi-parish-nonprofit-rebuild.html">Open case</a></div>
+        </article>
+        <article class="output-card wide-output" data-reveal>
+          <div class="output-thumb">
+            <img src="assets/screens/treehouse-live.png" alt="Boutique Airbnb website screenshot.">
+          </div>
+          <h3>Boutique Airbnb site</h3>
+          <p>Standalone short-term rental site route with booking-platform links removed from the portfolio context.</p>
+          <div class="link-row"><a href="work-treehouse-accommodation-site.html">Open case</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

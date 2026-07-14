@@ -1,0 +1,232 @@
+# Portfolio Working Notes
+
+Last updated: July 13, 2026
+
+This is the working source for portfolio ideas, evidence, workflow details, media requirements, and unresolved questions. It is intentionally more detailed than the public site.
+
+## Positioning
+
+- Primary frame: Marketing Engineer.
+- Supporting value: product marketing, positioning, websites, sales enablement, go-to-market systems, AI visibility, and AI-enabled operations.
+- Core public line: I build websites, product stories, sales material, and AI-enabled GTM systems that help teams explain, sell, and scale.
+- Philosophy: hard skills, AI, and taste let a small team move from problem to useful work faster.
+- Bias to build: trust work that can be opened, tested, sent, published, and measured.
+- Method: Understand, Shape, Build, Systematise, Measure.
+- AI supports execution. Human judgment supplies context, taste, review, and the decision to publish.
+
+## Site Structure
+
+1. Approved animated hero.
+2. Bias to Build and the five-stage method.
+3. Selected Work: public-facing outputs and case studies.
+4. Selected Workflows and Tools: repeatable systems behind the outputs.
+5. Outcomes: concise proof with clear provenance.
+6. About: personal story plus the interactive Renaissance portrait.
+7. Experience: company, title, and dates, with resume download.
+8. Contact: email, LinkedIn, and GitHub.
+
+## Selected Work
+
+### RCCV
+
+- Public title: Bringing a community site to life.
+- Story: clean up and modernize the site, make it more community-focused, make bulletins and events easier to use, and bring educational content to life with interaction.
+- Media: angled laptop frame; must accept looping video or a still.
+- Links: homepage and Interesting Interactions / Stations of the Cross.
+
+### Boutique Accommodation
+
+- Public title: Elevating a boutique accommodation site.
+- Story: take underused property assets and weak photography, improve the visual system with AI, and build scroll-led stories for the Overview, Treehouse, and Cabin.
+- Media: browser window with a real URL bar; replaceable with nested scroll video.
+- Links: Overview, Treehouse, Cabin.
+- Do not mention Airbnb links.
+
+### Cool Runnings / Local Landscaping Business
+
+- Public title: From no web presence to a lead magnet.
+- Case title: A local search magnet.
+- Story: website, Google Business Profile support, useful calculators and guides, and a programmatic local-search system.
+- Canonical inputs include cities, services, coordinates, weather, frost dates, planting zones, hardiness zones, growing seasons, neighbourhoods, FAQs, photography, and related services.
+- Enrichment crosses six cities with six services and writes structured JSON records.
+- Validation checks required fields, retries failed records, and merges successful output.
+- Rendering creates city/service pages, canonical URLs, schema, internal links, sitemap routes, guides, and tools.
+- Current verified 28-day proof: 189 organic clicks, 83 pages averaging positions 1-10, and 660 queries averaging positions 1-10.
+- Current verified website actions: 7 forms, 4 website phone clicks, and 2 WhatsApp clicks. Show as 13+ tracked actions until direct Business Profile performance data is available.
+- Client-reported proof: 30% revenue increase after launch and new bookings.
+- Refresh contract: show Latest 28 days and a visible Last refreshed date. Do not leave blank metrics.
+- Business Profile calls, website clicks, and directions require the Business Profile Performance API for exact attribution. GA4 currently groups Google traffic as organic and cannot isolate listing clicks without tagging.
+
+### Digital Out-of-Home Proposal Tool
+
+- Public demo inputs: business name, validated address, and industry/business type.
+- System handles local inventory, Mapbox location, screen and impression counts, tailored copy, generated creative, and the one-page PDF.
+- Public demo must not expose internal VI systems or API keys.
+- PDF and browser preview must match.
+- Use real inventory CSVs and real maps.
+- Sales footer: representative photo, name, title, phone, and email. Shared contact email is hello@verticalimpression.com.
+
+### Why Elevator Advertising
+
+- Public title: Explaining a misunderstood medium.
+- Story: product positioning that explains why elevator advertising works and makes an overlooked medium understandable.
+- Media: angled browser window with visible URL bar; replaceable still or video.
+
+### Making an Overlooked Category Interesting
+
+- Two Vertical Impression music albums created as marketing stunts around digital out-of-home advertising.
+- Use the approved overlapping album image on a matched black background.
+- Link directly to both Spotify albums rather than creating a campaign subpage.
+
+## Selected Workflows and Tools
+
+### Search-Optimized Content Production
+
+- Task or opportunity enters the queue.
+- SERP and keyword research establish demand, intent, competitors, and gaps.
+- Firecrawl gathers source and competitor material where appropriate.
+- Perplexity or search APIs enrich the research packet.
+- Brand rules and the existing blog catalogue are checked to avoid duplication and maintain voice.
+- The system creates an outline, drafts the article, runs AI-content and quality checks, and routes the work through human review.
+- Approved content is pushed to Google Drive or the publishing destination.
+- Search Console and rank data measure the output and create new tasks.
+- Visual should show the real tools, logos, research packet, outline, review gate, published page, and measurement loop without becoming a dashboard.
+
+### Agency Management Dashboard
+
+- Purpose: improve client delivery quality by making customer data accessible and queryable.
+- Sources: Search Console, Analytics, Reddit, SERP data, Keywords, Blog, CMS, Backlinks, conversion data, and client notes.
+- Functions: reporting, content queue, keyword discovery, Reddit feed and scoring, response creation, opportunity surfacing, missing-content detection, and delivery review.
+- Public name should be plain-language, not internal jargon. Current label: Agency management dashboard.
+
+### Local Prospecting and Enrichment
+
+- Google Maps discovery finds local businesses in the target geography and category.
+- Enrichment adds business details and fit signals.
+- Inventory matching connects businesses to nearby digital-out-of-home screens.
+- Qualified prospects move into sales handoff and tailored proposal creation.
+- Approved visual: browser map with discovery, enrichment, screen matching, and sales handoff.
+
+### Presentation Publishing
+
+- The sales team creates a self-contained HTML sales presentation using branded design skills.
+- The publish skill calls the Vercel API and publishes the presentation to the corporate Vercel account.
+- The proposed name and URL are checked against existing presentations to prevent duplicates or accidental replacement.
+- The skill calls the Webflow API to create or update the CMS record.
+- Shared iframe code is stored in the presentation embed field.
+- The custom Webflow template renders the Vercel presentation full screen.
+- The skill deploys and publishes the Webflow changes and returns the final sales-facing URL.
+- Retain password checking as an optional access-control step when the presentation requires it.
+- Problem solved: HTML artifacts were difficult for salespeople to put into prospects' hands; this turns them into managed, branded, shareable pages.
+
+### Image-to-Website Production
+
+- Understand the offer, audience, product, and visual problem.
+- Research references and establish a visual direction.
+- Create structured JSON prompts for image generation, including model, wardrobe, product, props, environment, lighting, camera logic, and protected details.
+- Generate options, assess realism and brand fit, iterate, and approve.
+- Translate approved imagery into a design system and website composition.
+- Build with AI assistance, review with human taste, test, and deploy.
+- Demonstration idea: show a JSON prompt overlay changing a model's shirt colour, product, headphones, and setting, followed by the generated output and website application.
+
+### Website System
+
+- Research the business, audience, competitors, and positioning.
+- Gather real content and reference sites.
+- Plan information architecture and page narratives.
+- Generate or improve photography and copy.
+- Establish the design system before coding.
+- Build responsive pages with AI assistance.
+- Review for taste, clarity, accessibility, and conversion.
+- Iterate from real user and performance signals.
+
+### AI Enablement
+
+- Custom MCP servers and API integrations.
+- Reusable skills and operating instructions.
+- Team training and adoption support.
+- Google APIs used across work include Maps, YouTube, Authentication, Gmail, Drive, Search Console, and Analytics.
+- Other integrations discussed include Shopify, Firecrawl, Perplexity, SEO/search APIs, Vercel, Webflow, Supabase, and DigitalOcean.
+- Only name tools publicly when the integration is verified and disclosure is appropriate.
+
+## Outcomes and Evidence
+
+- $200M+ ecommerce spend managed.
+- 600% inbound growth.
+- 1,900% agency/client growth should be used only with a clear source and definition.
+- 156 hours returned to sales each year is based on one hour per salesperson per week across three salespeople.
+- AI-assisted sales increases discussed: roughly $1,000 to $20,000 per month and $3,000 to $60,000 per month. Do not publish without approval and a privacy-safe description.
+- Keep proof points consolidated rather than split rigidly by employer.
+- Every public metric needs a timeframe, source, and scope note.
+
+## About and Experience
+
+- Born and raised in Toronto.
+- First exposure to marketing came at six while helping at the family Chrysler dealership and looking through car brochures and dealership materials.
+- Lives in Coldstream, BC.
+- Proud father of four, with a cat and a dog.
+- Spends an unreasonable amount of time experimenting with AI and building things to see whether they can be done, even when the practical value is questionable.
+- The Renaissance portrait is an Easter egg. The practical-value sentence can break out during scroll, followed by: But there is always value in learning from the process.
+- Experience section should stay simple: company, title, dates, resume download, and contact.
+
+## Design and Media Rules
+
+- The approved hero remains the source of truth.
+- Paper field, restrained grid, thin routes, serif display type, and small technical labels form the visual system.
+- No eyebrows or numbered section labels.
+- Selected Work and Selected Workflows are different sections.
+- Selected Work uses taller alternating rows: laptop for RCCV, varied browser windows for the other web work, letter-size PDF for the proposal, and overlapping album art on black.
+- Media shells must accept either images or looping videos without changing the section layout.
+- Workflow images should occupy most of the available stage and never read as thumbnails.
+- Mobile selected work can become a carousel; desktop remains an alternating editorial layout.
+- Use icon controls for GitHub, LinkedIn, and email in utility navigation.
+
+## Privacy and Open Questions
+
+- Company names can appear in the resume/experience area. Elsewhere, prefer category descriptions when public naming is unnecessary.
+- Do not expose private Vertical Impression automation, internal data, API keys, or client-identifying information.
+- Confirm which proof points can be public and which need anonymized category labels.
+- Record replacement videos for Boutique Accommodation and Why Elevator Advertising when ready.
+- Complete direct Business Profile Performance API authentication before presenting exact profile calls, website clicks, directions, or total profile interactions.
+- Verify the presentation-publishing implementation against the current corporate Vercel and Webflow schemas before publishing code-level details.
+
+## Current Repair Backlog
+
+This is the concrete correction list from the July 13 production audit. Items stay here until the live page is visually verified at desktop, tablet, and mobile widths.
+
+### Data and Automation
+
+- Cool Runnings must remain a rolling latest-28-day report, not a frozen claim.
+- A successful refresh must update both the metrics and the visible Last refreshed date. A failed pull must leave the previous date and values intact.
+- A daily Codex automation now refreshes Search Console and GA4, updates `data/cool-runnings-metrics-current.json`, runs QA, and deploys the portfolio.
+- The server-native Cool Runnings Vercel cron is coded but not operational. The `cool-runnings-deploy` project currently has no metrics environment variables and `/api/metrics` returns 404. It needs Blob storage, Google Workload Identity/Search Console access, GA4 access, `CRON_SECRET`, and optional Business Profile OAuth before it can replace the Codex automation.
+- Exact Business Profile calls, views, website clicks, directions, and total interactions remain unavailable until direct Business Profile Performance API access is configured. Do not imply GA4 can separate those values without a tagged listing URL.
+
+### Selected Work Device Frames
+
+- RCCV is the only selected-work item currently using a real generated device composite. Replace its short seven-second composite with the newly approved RCCV hero recording once the exact source asset is confirmed, then provide optimized WebM and MP4 versions.
+- Boutique Accommodation currently uses the generic CSS browser shell. It still needs its own larger perspective browser treatment with a real URL bar and a replaceable image/video viewport.
+- Cool Runnings currently uses the same generic CSS browser shell with a small rotation. It still needs a distinct device treatment that keeps the sizzle film large and readable rather than making it look like the Boutique frame.
+- Why Elevator Advertising also reuses the generic CSS browser shell. It needs a separate, more dimensional perspective browser with the complete page visible and a replaceable media viewport.
+- The proposal PDF should remain a letter-size paper artifact, not be forced into a browser or laptop frame.
+- The album section should remain an overlapping album-art composition on a colour-matched black field.
+- Generated assets `browser-silver-frame.png`, `browser-silver-green.png`, `laptop-graphite-frame.png`, `laptop-graphite-green.png`, and `laptop-three-quarter-green.png` currently exist but are not connected to any production section. Either convert them into reusable frame/mask pairs or remove them after replacements are approved.
+- Every device shell must support a still image or looping video without changing the surrounding layout.
+
+### Selected Workflows and Tools
+
+- Presentation Publishing still uses an obsolete generated visual. It incorrectly emphasizes password handling, places duplicate URL validation at the end, and does not accurately show the Vercel API to corporate account, Webflow API/CMS iframe field, template, deploy, and publish sequence. Replace it with the new generated six-stage visual.
+- The workflow stage is still too compressed on desktop. The active workflow image should occupy the dominant right-hand area at the same visual scale as Selected Work, with the workflow list functioning as compact tabs rather than competing headlines.
+- The Agency Management Dashboard belongs in Selected Workflows and Tools, not Selected Work. Its modal/detail treatment still needs a public-safe explanation of sources, operation, and use.
+- Website Production and Image-to-Website Production still need approved workflow visuals.
+
+### Existing Layout and Content Defects
+
+- The About portrait currently shows a loading/placeholder state in the live full-page capture instead of the Renaissance interaction.
+- The About section creates an excessive blank vertical field on desktop and mobile while the portrait/scroll interaction is unresolved.
+- The Outcomes diagram remains materially simpler than the approved reference and needs to be rebuilt from the approved composition, with labels positioned at route endpoints and no collisions.
+- Experience remains visually hollow compared with the rest of the page and needs a stronger approved composition tied to the four real roles and dates.
+- Desktop and tablet selected-work spacing remains inconsistent between copy and media. Each row needs a shared grid and intentional media scale rather than project-specific offsets that happen to fit one viewport.
+- Mobile Selected Work currently behaves as a one-card carousel, but only the first project is visible in a static full-page capture. Controls, position state, and keyboard/swipe behavior need a dedicated QA pass.
+- The hero's generated video contains fake or misspelled diagram labels. The HTML overlays need to remain anchored over those boxes at every breakpoint and completely cover the generated text.
+- Hero copy and controls need continued breakpoint QA so they stay in the reserved left-side field and never cross the diagram routes.

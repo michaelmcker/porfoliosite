@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Copy Script Review</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .script-review {
+      padding: var(--s7);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .script-review h1 {
+      max-width: 980px;
+      font-family: var(--display);
+      font-size: clamp(62px, 8vw, 124px);
+      font-weight: 300;
+      line-height: 0.92;
+    }
+
+    .script-review > p {
+      max-width: 720px;
+      margin-top: var(--s5);
+      color: var(--ink-soft);
+      font-size: 20px;
+      line-height: 1.55;
+    }
+
+    .storyboard-frame {
+      margin-top: var(--s7);
+      border: 1px solid var(--line);
+      background: rgba(251, 247, 237, 0.48);
+      overflow: hidden;
+    }
+
+    .storyboard-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .script-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.86fr) minmax(320px, 0.44fr);
+      gap: var(--s7);
+      padding: var(--s7);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .script-main {
+      display: grid;
+      gap: var(--s7);
+    }
+
+    .script-block {
+      display: grid;
+      gap: var(--s4);
+      padding-top: var(--s5);
+      border-top: 1px solid var(--line);
+    }
+
+    .script-block h2,
+    .script-note h2 {
+      font-family: var(--display);
+      font-size: clamp(42px, 5vw, 72px);
+      font-weight: 400;
+      line-height: 0.96;
+    }
+
+    .script-block p,
+    .script-note p,
+    .script-block li {
+      color: var(--ink-soft);
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .script-block ul {
+      margin: 0;
+      padding-left: 1.1em;
+    }
+
+    .script-note {
+      position: sticky;
+      top: var(--s5);
+      display: grid;
+      gap: var(--s4);
+      align-self: start;
+      padding: var(--s5);
+      border: 1px solid var(--line);
+      background: rgba(251, 247, 237, 0.58);
+    }
+
+    @media (max-width: 900px) {
+      .script-review,
+      .script-grid {
+        padding: var(--s5);
+      }
+
+      .script-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .script-note {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="mark" href="index.html" aria-label="Home">MM</a>
+      <div class="identity">
+        <span>Michael McKerracher</span>
+        <span>Marketing Engineer</span>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Current</a>
+        <a href="docs/2026-07-06-portfolio-copy-visual-reset.md">Doc</a>
+        <a href="assets/design-refs/copy-script/site-copy-script-storyboard-v1.png">Image</a>
+      </nav>
+    </header>
+
+    <section class="script-review">
+      <h1>Builds that operate.</h1>
+      <p>I’m a marketing engineer. I build websites, sales tools, content systems, and AI workflows that turn strategy into work people can open, use, and measure.</p>
+      <figure class="storyboard-frame">
+        <img src="assets/design-refs/copy-script/site-copy-script-storyboard-v1.png" alt="Generated visual storyboard for the portfolio copy and page structure.">
+      </figure>
+    </section>
+
+    <section class="script-grid">
+      <div class="script-main">
+        <article class="script-block">
+          <h2>What is missing.</h2>
+          <ul>
+            <li>Real case-study arcs for selected work.</li>
+            <li>Proof that sits next to the claims.</li>
+            <li>A graphic system designed as hero art first, then rebuilt for web.</li>
+            <li>Clearer public names for internal tools.</li>
+            <li>Copy that explains outcomes before process.</li>
+          </ul>
+        </article>
+
+        <article class="script-block">
+          <h2>Selected work.</h2>
+          <p>A short set of public or source-safe examples. Websites first, systems second.</p>
+          <p>RCCV. Boutique Airbnb site. Digital out-of-home proposal tool. Fountainhead growth dashboard.</p>
+        </article>
+
+        <article class="script-block">
+          <h2>How the work gets made.</h2>
+          <p>The portfolio pieces are the outputs. These are the systems behind them: research, planning, AI-assisted production, human review, publishing, and measurement.</p>
+        </article>
+
+        <article class="script-block">
+          <h2>Proof, kept honest.</h2>
+          <p>Some work is public. Some results need to stay source-safe. The point is to show what was built, what can be opened, and where the evidence lives.</p>
+        </article>
+      </div>
+
+      <aside class="script-note">
+        <h2>Graphic reset.</h2>
+        <p>The current graphics are too literal because they use the same input-hub-output component everywhere. The next graphics should be generated as animation/storyboard frames first, then converted into web layers.</p>
+        <p>The generated image on this page is direction only. It invents details, so it should not be used as factual copy.</p>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

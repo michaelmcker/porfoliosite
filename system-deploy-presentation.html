@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presentation Publishing - Michael McKerracher</title>
+  <meta name="description" content="A publishing skill that deploys branded HTML sales presentations through the Vercel API, writes the iframe embed to Webflow CMS, validates duplicate URLs, and publishes the final page.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="mark" href="index.html" aria-label="Home">MM</a>
+      <div class="identity">
+        <span>Michael McKerracher</span>
+        <span>Marketing Engineer</span>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="built-tools.html">Tools</a>
+        <a href="system-dooh-local-sales.html">Proposal</a>
+        <a class="icon-link" href="mailto:michael.mckerracher@gmail.com" aria-label="Email Michael" title="Email Michael"><img src="assets/icons/mail.svg" alt=""></a>
+      </nav>
+    </header>
+
+    <section class="page-hero case-hero">
+      <div data-reveal>
+        <h1>Presentation publishing</h1>
+        <p>A publishing skill sends a branded HTML sales artifact to the corporate Vercel account, writes its shared iframe embed into Webflow CMS, validates the URL, and publishes the final page.</p>
+        <div class="actions">
+          <a class="button" href="#workflow">View publishing path</a>
+          <a class="button quiet" href="built-tools.html#deploy-presentation">Tool index</a>
+        </div>
+        <div class="case-hero-meta" aria-label="Publishing summary">
+          <span>Vercel API deployment</span>
+          <span>Duplicate URL check</span>
+          <span>Webflow API publish</span>
+        </div>
+      </div>
+      <div class="workflow-canvas hero-workflow" data-reveal aria-label="Presentation publishing system">
+        <div class="workflow-column">
+          <h3>Inputs</h3>
+          <div class="workflow-node"><div><strong>Branded HTML</strong><span>A self-contained sales presentation built with the design skills.</span></div></div>
+          <div class="workflow-node"><div><strong>Name + destination</strong><span>The presentation name and its proposal or report destination.</span></div></div>
+        </div>
+        <div class="workflow-hub">
+          <div class="hub-rings" aria-hidden="true"></div>
+          <div class="hub-core">Publish<br>skill</div>
+        </div>
+        <div class="workflow-column">
+          <h3>Outputs</h3>
+          <div class="workflow-node"><div><strong>Vercel route</strong><span>A presentation published to the corporate Vercel account through its API.</span></div></div>
+          <div class="workflow-node"><div><strong>Webflow CMS page</strong><span>A CMS-managed page containing the shared iframe embed.</span></div></div>
+          <div class="workflow-node"><div><strong>Published URL</strong><span>The final route, checked against existing presentations before publication.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="section-head">
+        <h2>From artifact to prospect-ready page.</h2>
+        <p>The workflow removes the manual deployment and Webflow handoff that made custom HTML presentations difficult for the sales team to use.</p>
+      </div>
+      <div class="workflow-step-grid" data-reveal>
+        <article class="workflow-step"><b>01</b><strong>Create the artifact</strong><p>The sales team creates a self-contained HTML presentation using branded design skills.</p></article>
+        <article class="workflow-step"><b>02</b><strong>Publish through Vercel</strong><p>The skill calls the Vercel API and publishes the HTML presentation into the corporate Vercel account.</p></article>
+        <article class="workflow-step"><b>03</b><strong>Validate the destination</strong><p>The proposed name and URL are checked against existing presentations before any Webflow record is created or updated.</p></article>
+        <article class="workflow-step"><b>04</b><strong>Write the Webflow embed</strong><p>The Webflow API creates or updates the CMS record and stores the shared iframe code in its presentation embed field.</p></article>
+        <article class="workflow-step"><b>05</b><strong>Create the full-screen page</strong><p>The CMS entry supplies the iframe code to the custom Webflow template so the Vercel presentation fills the browser.</p></article>
+        <article class="workflow-step"><b>06</b><strong>Deploy and publish</strong><p>The skill deploys the Webflow changes, publishes the CMS page, and returns the final prospect-ready URL.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>One command, two publishing layers.</h2>
+        <p>Vercel runs the presentation. Webflow gives the sales team a managed, branded URL they can put in front of a prospect without handling either deployment layer manually.</p>
+      </div>
+      <div class="output-grid">
+        <article class="output-card wide-output" data-reveal>
+          <div class="publish-preview" aria-hidden="true">
+            <span>Vercel presentation</span>
+            <strong>Published by API</strong>
+          </div>
+          <h3>The presentation runtime</h3>
+          <p>The original HTML remains intact and runs from the corporate Vercel account.</p>
+        </article>
+        <article class="output-card wide-output" data-reveal>
+          <div class="publish-preview cms" aria-hidden="true">
+            <span>Webflow CMS page</span>
+            <strong>Full-screen iframe</strong>
+          </div>
+          <h3>The sales-facing URL</h3>
+          <p>Webflow supplies the branded page, CMS record, shared iframe field, and a repeatable path for future updates.</p>
+        </article>
+        <article class="output-card wide-output" data-reveal>
+          <div class="publish-preview tracking" aria-hidden="true">
+            <span>Conflict check</span>
+            <strong>Create or replace</strong>
+          </div>
+          <h3>No accidental duplicate</h3>
+          <p>An existing name or slug is detected before a presentation is overwritten or duplicated.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="app.js?v=20260712-29"></script>
+</body>
+</html>

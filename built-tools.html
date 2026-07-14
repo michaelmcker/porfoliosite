@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marketing Systems - Michael McKerracher</title>
+  <meta name="description" content="A source-safe index of marketing systems built by Michael McKerracher.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="mark" href="index.html" aria-label="Home">MM</a>
+      <div class="identity">
+        <span>Michael McKerracher</span>
+        <span>Marketing Engineer</span>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="built-tools.html">Tools</a>
+        <a href="index.html#systems">Process</a>
+        <a class="icon-link" href="mailto:michael.mckerracher@gmail.com" aria-label="Email Michael" title="Email Michael"><img src="assets/icons/mail.svg" alt=""></a>
+      </nav>
+    </header>
+
+    <section class="page-hero tools-hero">
+      <div data-reveal>
+        <h1>Marketing Systems</h1>
+        <p>A source-safe index of the dashboards, review surfaces, publishing paths, and sales tools behind the portfolio work.</p>
+      </div>
+      <div class="system-map mini" aria-label="Signals and APIs passing through tools into review and output." data-reveal>
+        <svg viewBox="0 0 620 320" aria-hidden="true">
+          <g class="map-guides">
+            <circle cx="310" cy="160" r="42"></circle>
+            <circle cx="310" cy="160" r="72"></circle>
+            <path d="M220 52 V268"></path>
+            <path d="M400 52 V268"></path>
+          </g>
+          <g class="map-lines">
+            <path class="line green" d="M100 108 C190 105 220 142 272 152"></path>
+            <path class="line blue" d="M100 212 C185 210 220 180 272 168"></path>
+            <path class="line ochre" d="M350 152 C430 130 470 103 540 100"></path>
+            <path class="line red" d="M350 168 C430 190 475 217 540 220"></path>
+          </g>
+          <g class="map-points">
+            <circle cx="100" cy="108" r="7"></circle>
+            <circle cx="100" cy="212" r="7"></circle>
+            <circle cx="540" cy="100" r="7"></circle>
+            <circle cx="540" cy="220" r="7"></circle>
+          </g>
+        </svg>
+        <div class="map-core">MM</div>
+        <span class="map-label in one">signals</span>
+        <span class="map-label in two">APIs</span>
+        <span class="map-label out one">review</span>
+        <span class="map-label out two">output</span>
+        <span class="map-label center">tools</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="artifact-grid">
+        <article class="artifact-card" id="gsc" data-reveal>
+          <span class="index-label">01</span>
+          <div class="artifact-icon terminal-icon" aria-hidden="true"></div>
+          <h2>Search Console reporting</h2>
+          <p>Pulls search performance into reporting and content decisions.</p>
+          <code>Tools/mcp-gsc/gsc_server.py</code>
+        </article>
+        <article class="artifact-card" data-reveal>
+          <span class="index-label">02</span>
+          <div class="artifact-icon search-icon" aria-hidden="true"></div>
+          <h2>Keyword discovery analytics</h2>
+          <p>Finds search opportunities from real query and ranking signals.</p>
+          <code>Tools/agency-os/scripts/gsc-keyword-discovery.mjs</code>
+        </article>
+        <article class="artifact-card" id="content" data-reveal>
+          <span class="index-label">03</span>
+          <div class="artifact-icon flow-icon" aria-hidden="true"></div>
+          <h2>Search-optimized content production system</h2>
+          <p>Moves content from research through draft, review, handoff, and measurement.</p>
+          <code>Tools/agency-os/agents/content-pipeline.mjs</code>
+        </article>
+        <article class="artifact-card" id="audit" data-reveal>
+          <span class="index-label">04</span>
+          <div class="artifact-icon shield-icon" aria-hidden="true"></div>
+          <h2>Content review checks</h2>
+          <p>Reviews claims, brand rules, quality, source use, and publishing readiness.</p>
+          <code>Tools/agency-os/shared/content-auditor.js</code>
+        </article>
+        <article class="artifact-card" id="visibility" data-reveal>
+          <span class="index-label">05</span>
+          <div class="artifact-icon bars-icon" aria-hidden="true"></div>
+          <h2>AI visibility reporting</h2>
+          <p>Tracks how brands appear across answer engines and AI-assisted search surfaces.</p>
+          <code>Tools/agency-os/scripts/ai-visibility-scorecard-run.mjs</code>
+        </article>
+        <article class="artifact-card" id="reddit" data-reveal>
+          <span class="index-label">06</span>
+          <div class="artifact-icon database-icon" aria-hidden="true"></div>
+          <h2>Reddit opportunity database</h2>
+          <p>Stores high-intent discussions, scoring, context, and follow-up state.</p>
+          <code>Tools/whatsapp-mcp/daemon/reddit-queue-db.mjs</code>
+        </article>
+        <article class="artifact-card" data-reveal>
+          <span class="index-label">07</span>
+          <div class="artifact-icon window-icon" aria-hidden="true"></div>
+          <h2>Reddit opportunity review</h2>
+          <p>Review surface for scored threads, suggested replies, and human approval.</p>
+          <code>Tools/whatsapp-mcp/daemon/reddit-approval-page.html</code>
+        </article>
+        <article class="artifact-card" id="vi-proposal" data-reveal>
+          <span class="index-label">08</span>
+          <div class="artifact-icon bars-icon" aria-hidden="true"></div>
+          <h2>Digital out-of-home proposal system</h2>
+          <p>Builds local advertising proposals with business context, screen matching, maps, custom creative, and PDFs.</p>
+          <code>Private proposal builder / proposal page</code>
+          <code>Private proposal builder / PDF renderer</code>
+        </article>
+        <article class="artifact-card" id="outreach-map" data-reveal>
+          <span class="index-label">09</span>
+          <div class="artifact-icon search-icon" aria-hidden="true"></div>
+          <h2>Local prospecting and map enrichment</h2>
+          <p>Finds local businesses, enriches context, matches nearby inventory, and feeds proposal building.</p>
+          <code>Private enrichment project</code>
+          <code>Maps and enrichment scripts</code>
+        </article>
+        <article class="artifact-card" id="webflow" data-reveal>
+          <span class="index-label">10</span>
+          <div class="artifact-icon code-icon" aria-hidden="true"></div>
+          <h2>Website publishing assistant</h2>
+          <p>Moves designed sections and brand rules toward editable web pages.</p>
+          <code>Tools/webflow-builder/</code>
+        </article>
+        <article class="artifact-card" id="deploy-presentation" data-reveal>
+          <span class="index-label">11</span>
+          <div class="artifact-icon window-icon" aria-hidden="true"></div>
+          <h2>HTML sales artifact to website</h2>
+          <p>Turns custom HTML presentations into protected links, CMS entries, embeds, and follow-up rows.</p>
+          <code>system-deploy-presentation.html</code>
+          <code>Tools/webflow-builder/relay/api/design.js</code>
+        </article>
+      </div>
+    </section>
+
+    <section class="section used-in">
+      <div class="section-head">
+        <h2>Where they show up</h2>
+      </div>
+      <div class="use-row">
+        <a href="work-local-yard-care-seo-build.html">Local landscaping SEO</a>
+        <a href="system-website-generation.html">Website build process</a>
+        <a href="system-content-engine.html">Content system</a>
+        <a href="system-dooh-local-sales.html">Proposal system</a>
+        <a href="system-outreach-map-enrichment.html">Outreach system</a>
+        <a href="system-deploy-presentation.html">HTML sales artifact to website</a>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

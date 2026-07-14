@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cool Runnings Local Search System - Michael McKerracher</title>
+  <meta name="description" content="How a local landscaping business became a local search magnet through a useful website, regional data, tools, and scalable city and service pages.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/cool-runnings-case.css?v=20260713-3">
+</head>
+<body>
+  <main class="site-shell cr-case">
+    <header class="topbar">
+      <a class="mark" href="index.html" aria-label="Home">MM</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="#results">Results</a>
+        <a href="#system">System</a>
+        <a class="icon-link" href="https://github.com/michaelmcker" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><img src="assets/icons/github.svg" alt=""></a>
+        <a class="icon-link" href="https://www.linkedin.com/in/michaelmcker/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+        <a class="icon-link" href="mailto:michael.mckerracher@gmail.com" aria-label="Email Michael" title="Email Michael"><img src="assets/icons/mail.svg" alt=""></a>
+      </nav>
+    </header>
+
+    <section class="cr-hero">
+      <div class="cr-hero__copy" data-reveal>
+        <a class="cr-back" href="index.html#work">Back to selected work</a>
+        <h1>A local search magnet.</h1>
+        <p>Cool Runnings had strong word of mouth, but no website or measurable search presence. I built the site and the system behind it: regional data, local pages, practical tools, useful content, and a feedback loop that keeps improving what ranks and generates leads.</p>
+        <div class="actions">
+          <a class="button" href="https://www.coolrunningslandscaping.com/">View live site</a>
+          <a class="button quiet" href="#system">See how it works</a>
+        </div>
+      </div>
+      <figure class="cr-browser cr-browser--hero" data-reveal>
+        <div class="cr-browser__bar"><span></span><span>coolrunningslandscaping.com</span></div>
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website and local search work">
+          <source src="assets/videos/cool-runnings-sizzle-25s.webm" type="video/webm">
+          <source src="assets/videos/cool-runnings-sizzle-25s.mp4" type="video/mp4">
+        </video>
+      </figure>
+    </section>
+
+    <section class="cr-results" id="results" aria-labelledby="results-title">
+      <header class="cr-section-head" data-reveal>
+        <h2 id="results-title">What changed.</h2>
+        <p data-cool-metrics-window>Google Search Console and GA4. Latest 28 days. Last refreshed July 13, 2026. The action total is a verified minimum until direct Business Profile reporting is connected.</p>
+      </header>
+      <div class="cr-results__grid">
+        <article class="cr-result" data-reveal><strong data-cool-metric="clicks">189</strong><span>organic clicks</span><p>in the latest 28 days</p></article>
+        <article class="cr-result" data-reveal><strong data-cool-metric="pageRowsPosition1To10">83</strong><span>ranking pages</span><p>average position 1-10</p></article>
+        <article class="cr-result" data-reveal><strong data-cool-metric="queryRowsPosition1To10">660</strong><span>ranking queries</span><p>average position 1-10</p></article>
+        <article class="cr-result" data-reveal><strong data-cool-metric="trackedActions" data-cool-source="ga4" data-cool-suffix="+">13+</strong><span>tracked actions</span><p>forms, website calls, and WhatsApp clicks</p></article>
+        <article class="cr-result cr-result--revenue" data-reveal><strong>30%</strong><span>revenue increase</span><p>client-reported since launch</p></article>
+      </div>
+    </section>
+
+    <section class="cr-system" id="system" aria-labelledby="system-title">
+      <header class="cr-section-head" data-reveal>
+        <h2 id="system-title">A local search system that compounds.</h2>
+        <p>The website was the foundation. The scalable layer combines canonical business inputs with regional weather, frost dates, planting zones, growing seasons, and local context. Structured JSON records then feed one renderer that produces connected search pages without flattening every place into the same copy.</p>
+      </header>
+
+      <div class="cr-system__flow" aria-label="Cool Runnings local search system">
+        <article class="cr-step" data-reveal>
+          <span>01</span><h3>Canonical inputs</h3>
+          <p><code>cities.json</code> stores six service areas with weather context, frost dates, planting and hardiness zones, growing seasons, coordinates, neighbourhoods, and regional detail. <code>services.json</code> stores six service definitions, including base copy, inclusions, process, FAQs, photos, and related services.</p>
+          <div class="cr-taxonomy" aria-label="Canonical programmatic SEO inputs"><b>cities.json</b><i>6 service areas</i><i>Local conditions</i><b>services.json</b><i>6 services</i><i>Base service data</i></div>
+        </article>
+        <article class="cr-step" data-reveal>
+          <span>02</span><h3>Gemini enrichment</h3>
+          <p>A generator crosses the six cities with the six services and sends each canonical pair to Gemini 2.5 Flash. The result is a 36-record enrichment matrix, with local detail kept in structured fields rather than generated page markup.</p>
+          <pre class="cr-json" aria-label="Gemini enrichment fields"><code>{
+  "localChallenges": "...",
+  "soilAndTerrain": "...",
+  "seasonalNotes": "...",
+  "neighborhoodTips": "...",
+  "projectExample": "...",
+  "localFaqs": [ ... ],
+  "keywordVariants": [ ... ]
+}</code></pre>
+        </article>
+        <article class="cr-step" data-reveal>
+          <span>03</span><h3>JSON output and retry</h3>
+          <p>Each response must parse as JSON and contain the required city, service, content, FAQ, and keyword fields before it is written to <code>city-service-content.json</code>. The main run retries a failed pair once; a separate recovery script finds missing city-service keys, retries each up to three times, and merges successful records back into the file.</p>
+          <pre class="cr-json" aria-label="City-service retry path"><code>6 cities x 6 services
+        ↓
+city-service-content.json
+        ↓ missing key
+retry-failed-content.js
+        ↓
+merge successful records</code></pre>
+        </article>
+        <article class="cr-step cr-step--render" data-reveal>
+          <span>04</span><h3>Renderer and discovery</h3>
+          <p><code>build.js</code> joins each enrichment record to its canonical city and service data, then renders <code>/services/[service]/[city]/</code>. The template adds canonical URLs; LocalBusiness, Service, FAQ, and breadcrumb structured data; links to city and service hubs, sibling pages, and related resources; then includes every generated route in <code>sitemap.xml</code>.</p>
+          <div class="cr-output-pair">
+            <figure class="cr-mini-browser"><img src="assets/screens/cool-runnings-city.png" alt="Cool Runnings West Kelowna service-area page"></figure>
+            <figure class="cr-mini-browser"><img src="assets/screens/cool-runnings-frost.png" alt="Okanagan frost dates tool"></figure>
+          </div>
+        </article>
+        <article class="cr-step cr-step--guide" data-reveal>
+          <span>05</span><h3>Separate guide system</h3>
+          <p>Guides do not come from the Gemini city-service matrix. A deterministic JavaScript generator builds cost-guide and seasonal-checklist records as JSON. The current <code>guides.json</code> library contains 66 records: 30 cost guides, 30 checklists, and six additional guides and comparisons. A dedicated guide renderer adds article, FAQ, breadcrumb, and HowTo data where available.</p>
+          <div class="cr-measure" aria-label="Search performance summary">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <strong>66 guide records</strong><small>separate deterministic JSON library</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cr-output" aria-labelledby="output-title">
+      <div class="cr-output__copy" data-reveal>
+        <h2 id="output-title">Useful work earns attention.</h2>
+        <p>The strongest pages are not generic location swaps. They solve actual local problems: when to water, what materials cost, how much sod to order, and when frost is likely.</p>
+        <a class="text-link" href="https://www.coolrunningslandscaping.com/tools/sod-calculator">Open the sod calculator</a>
+      </div>
+      <figure class="cr-browser cr-browser--output" data-reveal>
+        <div class="cr-browser__bar"><span></span><span>tools / sod-calculator</span></div>
+        <img src="assets/screens/cool-runnings-calculator.png" alt="Cool Runnings sod calculator">
+      </figure>
+    </section>
+
+    <footer class="cr-footer">
+      <h2>Build something useful.</h2>
+      <div class="actions">
+        <a class="button icon-button" href="mailto:michael.mckerracher@gmail.com" aria-label="Email Michael" title="Email Michael"><img src="assets/icons/mail.svg" alt=""></a>
+        <a class="button quiet" href="index.html#work">View other work</a>
+        <a class="button quiet icon-button" href="https://github.com/michaelmcker" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><img src="assets/icons/github.svg" alt=""></a>
+        <a class="button quiet icon-button" href="https://www.linkedin.com/in/michaelmcker/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+      </div>
+    </footer>
+  </main>
+  <script src="app.js?v=20260713-3"></script>
+</body>
+</html>

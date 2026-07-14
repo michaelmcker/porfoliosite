@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hero Workflow Map Motion Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .motion-demo {
+      min-height: 100dvh;
+      display: grid;
+      grid-template-columns: minmax(0, 0.58fr) minmax(520px, 0.62fr);
+      gap: var(--s7);
+      align-items: center;
+      padding: var(--s7);
+      border-bottom: var(--rule);
+    }
+
+    .motion-demo-copy h1 {
+      font-family: var(--font-display);
+      font-size: clamp(62px, 8vw, 132px);
+      font-weight: 400;
+      line-height: 0.9;
+      letter-spacing: 0;
+    }
+
+    .motion-demo-copy p {
+      margin-top: var(--s5);
+      max-width: 620px;
+      color: var(--soft-ink);
+      font-size: 18px;
+      line-height: 1.62;
+    }
+
+    .motion-demo-stage {
+      border-left: var(--rule);
+      background:
+        radial-gradient(circle at 54% 42%, rgba(111, 141, 70, 0.12), transparent 26%),
+        rgba(255, 249, 237, 0.46);
+      display: grid;
+      place-items: center;
+      min-height: clamp(420px, 58vh, 560px);
+      position: relative;
+    }
+
+    .motion-demo-stage::before {
+      content: "";
+      position: absolute;
+      inset: var(--s6);
+      border: 1px dashed rgba(17, 19, 15, 0.18);
+      pointer-events: none;
+    }
+
+    .motion-demo-object {
+      width: min(92%, 720px);
+      aspect-ratio: 760 / 420;
+      border: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .demo-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s3);
+      margin-top: var(--s5);
+    }
+
+    .demo-notes {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--s5);
+      padding: var(--s7);
+    }
+
+    .demo-note {
+      border-top: var(--rule);
+      padding-top: var(--s4);
+    }
+
+    .demo-note strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .demo-note p {
+      margin-top: var(--s3);
+      color: var(--soft-ink);
+      line-height: 1.58;
+    }
+
+    @media (max-width: 900px) {
+      .motion-demo,
+      .demo-notes {
+        grid-template-columns: 1fr;
+      }
+
+      .motion-demo {
+        min-height: auto;
+        gap: var(--s5);
+        padding: var(--s5);
+      }
+
+      .motion-demo-copy h1 {
+        font-size: clamp(46px, 14vw, 74px);
+      }
+
+      .motion-demo-copy p {
+        font-size: 16px;
+      }
+
+      .motion-demo-stage {
+        min-height: clamp(210px, 34vh, 300px);
+        border-left: 0;
+        border-top: var(--rule);
+        overflow: hidden;
+      }
+
+      .motion-demo-stage::before {
+        inset: var(--s4);
+      }
+
+      .motion-demo-object {
+        width: min(94%, 520px);
+        height: auto;
+        max-height: 220px;
+      }
+
+      .demo-notes {
+        padding: var(--s5);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="mark" href="index.html" aria-label="Home">MM</a>
+      <div class="nav-title">Motion Lab / Hero Map</div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="assets/hero-workflow-map.svg">SVG asset</a>
+      </nav>
+    </header>
+
+    <section class="motion-demo">
+      <div class="motion-demo-copy">
+        <p class="kicker">Animatable SVG</p>
+        <h1>Workflow map graphic.</h1>
+        <p>The SVG is built as named layers: grid, labels, base routes, animated route flows, nodes, outcome modules, and orbit details. CSS handles the default draw/flow motion. JavaScript can restart or freeze it through the embedded SVG document when viewed from the local server.</p>
+        <div class="demo-controls" aria-label="Motion controls">
+          <button class="button" type="button" data-motion="restart">Restart</button>
+          <button class="button" type="button" data-motion="static">Static</button>
+          <button class="button" type="button" data-motion="live">Live</button>
+        </div>
+      </div>
+
+      <div class="motion-demo-stage">
+        <object id="workflowMapObject" class="motion-demo-object" type="image/svg+xml" data="assets/hero-workflow-map.svg" aria-label="Animated workflow map"></object>
+      </div>
+    </section>
+
+    <section class="demo-notes">
+      <div class="demo-note">
+        <strong>CSS hooks</strong>
+        <p>Animate `.route`, `.flow`, `.node`, `.node-core`, `.core-ripple`, `.traveler`, `.traveler-dot`, `.traveler-halo`, and `.orbit-dot`. The asset includes reduced-motion handling.</p>
+      </div>
+      <div class="demo-note">
+        <strong>JS hooks</strong>
+        <p>Target `#route-serp`, `#route-keywords`, `#route-brand`, `#route-proof`, `#travelers`, `#nodes`, and `#output-modules` through the object document. Use `localhost`; raw `file://` blocks this access.</p>
+      </div>
+      <div class="demo-note">
+        <strong>Page use</strong>
+        <p>The homepage and style reference both consume the same `assets/hero-workflow-map.svg` file, so animation changes stay centralized.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const workflowObject = document.querySelector("#workflowMapObject");
+    const buttons = document.querySelectorAll("[data-motion]");
+    let staticStyle;
+
+    function getSvgDocument() {
+      return workflowObject && (workflowObject.contentDocument || workflowObject.getSVGDocument?.());
+    }
+
+    function restartMotion() {
+      const doc = getSvgDocument();
+      if (!doc) return;
+      doc.documentElement.unpauseAnimations?.();
+      doc.documentElement.setCurrentTime?.(0);
+      const animated = doc.querySelectorAll(".route, .flow, .node, .node-core, .node-ring, .core-ripple, .traveler-halo, .traveler-dot, .orbit-dot");
+      animated.forEach((element) => {
+        element.style.animation = "none";
+        element.getBoundingClientRect();
+        element.style.animation = "";
+      });
+    }
+
+    function freezeMotion() {
+      const doc = getSvgDocument();
+      if (!doc || staticStyle) return;
+      doc.documentElement.pauseAnimations?.();
+      staticStyle = doc.createElementNS("http://www.w3.org/2000/svg", "style");
+      staticStyle.textContent = ".route,.flow,.node,.node-core,.node-ring,.core-ripple,.traveler-halo,.traveler-dot,.orbit-dot{animation:none!important}.route{stroke-dashoffset:0!important}.node{opacity:1!important}.core-ripple{opacity:0!important}";
+      doc.documentElement.appendChild(staticStyle);
+    }
+
+    function liveMotion() {
+      const doc = getSvgDocument();
+      if (staticStyle) {
+        staticStyle.remove();
+        staticStyle = null;
+      }
+      doc?.documentElement.unpauseAnimations?.();
+      restartMotion();
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const mode = button.dataset.motion;
+        if (mode === "restart") restartMotion();
+        if (mode === "static") freezeMotion();
+        if (mode === "live") liveMotion();
+      });
+    });
+  </script>
+</body>
+</html>

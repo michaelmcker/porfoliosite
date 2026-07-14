@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local elevator advertising proposal | Michael McKerracher</title>
+  <meta name="description" content="Generate a local digital out-of-home proposal using a real business address and nearby elevator advertising inventory.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=20260713-1">
+  <link rel="stylesheet" href="proposal-generator.css?v=20260713-1">
+</head>
+<body class="proposal-demo-page">
+  <main class="site-shell proposal-demo-shell">
+    <header class="topbar">
+      <a class="mark" href="index.html" aria-label="Portfolio home">MM</a>
+      <nav class="nav-links" aria-label="Proposal navigation">
+        <a href="index.html#work">Selected work</a>
+        <a href="index.html#workflows">Workflows</a>
+        <a class="icon-link" href="mailto:michael.mckerracher@gmail.com" aria-label="Email Michael" title="Email Michael"><img src="assets/icons/mail.svg" alt=""></a>
+        <a class="icon-link" href="https://github.com/michaelmcker" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><img src="assets/icons/github.svg" alt=""></a>
+        <a class="icon-link" href="https://www.linkedin.com/in/michaelmcker/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+      </nav>
+    </header>
+
+    <section class="proposal-demo-intro">
+      <h2>Try out the proposal builder</h2>
+      <p>This was part of the local outreach system built for digital out-of-home advertising. Enter a business name, industry, and address to test it.</p>
+    </section>
+
+    <section class="proposal-demo-workspace" aria-label="Proposal generator">
+      <form class="proposal-form" data-proposal-form novalidate>
+        <div class="proposal-form__heading">
+          <span>Proposal details</span>
+          <strong>1 of 1</strong>
+        </div>
+
+        <label class="proposal-field">
+          <span>Business name</span>
+          <input name="businessName" type="text" autocomplete="organization" maxlength="80" placeholder="Midtown Family Dental" required>
+        </label>
+
+        <label class="proposal-field">
+          <span>Business type</span>
+          <select name="businessType" required>
+            <option value="">Choose an industry</option>
+            <option value="accountant">Accounting Firm</option>
+            <option value="auto_dealer">Auto Dealer</option>
+            <option value="chiropractor">Chiropractor</option>
+            <option value="dentist">Dental Practice</option>
+            <option value="gym">Gym / Fitness</option>
+            <option value="insurance">Insurance Agency</option>
+            <option value="lawyer">Law Firm</option>
+            <option value="medical">Medical Practice</option>
+            <option value="optometrist">Optometrist</option>
+            <option value="real_estate">Real Estate</option>
+            <option value="veterinarian">Veterinarian</option>
+            <option value="other">Other / General Business</option>
+          </select>
+        </label>
+
+        <div class="proposal-field proposal-address" data-address-field>
+          <label for="proposal-address">Business address</label>
+          <div class="proposal-address__control">
+            <input
+              id="proposal-address"
+              name="address"
+              type="text"
+              autocomplete="off"
+              maxlength="180"
+              placeholder="Start typing a street address"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-controls="proposal-address-results"
+              aria-expanded="false"
+              required
+            >
+            <span class="proposal-address__state" data-address-state aria-live="polite"></span>
+          </div>
+          <ul id="proposal-address-results" class="proposal-address__results" role="listbox" data-address-results hidden></ul>
+          <small>Select a complete address from the list.</small>
+        </div>
+
+        <p class="proposal-form__error" data-proposal-error role="alert" hidden></p>
+        <button class="proposal-submit" type="submit" disabled>
+          <span data-submit-label>Generate to complete</span>
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+        <p class="proposal-form__time">Image generation and PDF assembly can take up to three minutes.</p>
+      </form>
+
+      <div class="proposal-preview" data-proposal-preview>
+        <div class="proposal-preview__toolbar">
+          <div>
+            <span>PDF preview</span>
+            <strong data-preview-state>Approved sample</strong>
+          </div>
+          <div class="proposal-preview__actions" data-preview-actions hidden>
+            <a href="#" target="_blank" rel="noreferrer" data-open-pdf>Open PDF</a>
+            <a href="#" download data-download-pdf>Download</a>
+          </div>
+        </div>
+        <div class="proposal-preview__frame">
+          <iframe
+            title="Generated elevator advertising proposal"
+            src="output/pdf/vertical-impression-local-proposal-sample.pdf#view=FitH&toolbar=0"
+            data-proposal-frame
+          ></iframe>
+          <div class="proposal-preview__loading" data-proposal-loading hidden>
+            <span class="proposal-loading-mark" aria-hidden="true"></span>
+            <strong>Building your proposal</strong>
+            <p data-loading-message>Finding nearby elevator inventory.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proposal-demo-process" aria-label="How the proposal is assembled">
+      <div><span>01</span><strong>Address</strong><p>Validate a real business location.</p></div>
+      <div><span>02</span><strong>Inventory</strong><p>Find nearby buildings and screens.</p></div>
+      <div><span>03</span><strong>Creative</strong><p>Generate an industry-specific campaign concept.</p></div>
+      <div><span>04</span><strong>Proposal</strong><p>Assemble the map, reach, creative, and contact path.</p></div>
+    </section>
+    <footer class="site-footer">
+      <span class="site-footer__mark">MM</span>
+      <a href="index.html">Portfolio</a>
+      <a class="icon-link" href="mailto:michael.mckerracher@gmail.com" aria-label="Email Michael" title="Email Michael"><img src="assets/icons/mail.svg" alt=""></a>
+      <a class="icon-link" href="https://github.com/michaelmcker" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><img src="assets/icons/github.svg" alt=""></a>
+      <a class="icon-link" href="https://www.linkedin.com/in/michaelmcker/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+    </footer>
+  </main>
+  <script src="proposal-generator.js?v=20260713-1" type="module"></script>
+</body>
+</html>

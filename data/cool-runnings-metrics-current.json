@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-14T00:35:00.000Z",
+  "windows": {
+    "searchConsole": {
+      "startDate": "2026-06-15",
+      "endDate": "2026-07-12"
+    },
+    "ga4": {
+      "startDate": "2026-06-15",
+      "endDate": "2026-07-12"
+    },
+    "googleBusinessProfile": null
+  },
+  "metrics": {
+    "searchConsole": {
+      "clicks": 189,
+      "impressions": 23235,
+      "pageRowsPosition1To10": 83,
+      "queryRowsPosition1To10": 660
+    },
+    "ga4": {
+      "formSubmissions": 7,
+      "phoneClicks": 4,
+      "whatsappClicks": 2,
+      "websiteConversions": 13,
+      "trackedActions": 13
+    },
+    "googleBusinessProfile": null
+  },
+  "update": {
+    "state": "snapshot",
+    "generatedAt": "2026-07-14T00:35:00.000Z"
+  }
+}

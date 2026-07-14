@@ -1,0 +1,14 @@
+.env*
+!.env.example
+.vercel/
+node_modules/
+gha-creds-*.json
+.DS_Store
+
+# Local generation, render, and QA working files.
+/artifacts/
+/tmp/
+/portfolio-remote-preview/
+/scroll-states/
+/*.png
+/assets/design-refs/

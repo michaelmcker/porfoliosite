@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wireframes and SVG Studies - Michael McKerracher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="mark" href="index.html">MM</a>
+      <div class="nav-title">Design / Wireframes + SVG</div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="system-content-engine.html">Content engine</a>
+        <a href="system-dooh-local-sales.html">Proposal system</a>
+      </nav>
+    </header>
+
+    <section class="page-hero">
+      <div>
+        <p class="kicker">Low fidelity</p>
+        <h1>Wireframes and SVG studies.</h1>
+        <p>These are not final visual comps. They define the page skeletons, proof placement, and where hand-built SVG diagrams are useful.</p>
+      </div>
+      <aside class="note-block">
+        <p class="kicker">Rule</p>
+        <h3>Homepage stays portfolio-shaped.</h3>
+        <p class="privacy-note">Workflow diagrams live on project or system pages. The first viewport remains resume and showcase, not a process map.</p>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="wire-grid">
+        <article class="wire-card">
+          <p class="kicker">Home</p>
+          <h2>Resume plus showcase.</h2>
+          <div class="wireframe wf-home">
+            <div class="wf-cell" style="grid-row: 1 / 5;">rail</div>
+            <div class="wf-cell">identity / thesis / actions</div>
+            <div class="wf-cell wf-dark">resume note</div>
+            <div class="wf-cell" style="grid-column: 2 / 4;">showcase plates: 3-5 large work surfaces</div>
+            <div class="wf-cell" style="grid-column: 2 / 4;">resume / experience band</div>
+            <div class="wf-cell" style="grid-column: 2 / 4;">systems links + contact</div>
+          </div>
+        </article>
+
+        <article class="wire-card">
+          <p class="kicker">Case study</p>
+          <h2>One proof artifact.</h2>
+          <div class="wireframe wf-case">
+            <div class="wf-cell" style="grid-row: 1 / 4;">rail</div>
+            <div class="wf-cell">title / role / one-line result</div>
+            <div class="wf-cell wf-dark">proof links</div>
+            <div class="wf-cell">large screenshot or SVG proof artifact</div>
+            <div class="wf-cell">validation strip</div>
+            <div class="wf-cell" style="grid-column: 2 / 4;">problem / build / result / privacy boundary</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="kicker">SVG studies</p>
+          <h2>Hand-built diagrams for subpages.</h2>
+        </div>
+        <p class="section-copy">Based on the local Hallmark custom-craft workflow recipe: small labelled boxes, hairline paths, restrained dash motion, reduced-motion fallback.</p>
+      </div>
+
+      <div class="wire-grid">
+        <article class="svg-panel">
+          <p class="kicker">Content engine</p>
+          <svg class="flow-svg" viewBox="0 0 720 220" role="img" aria-label="Low fidelity SVG for content engine.">
+            <defs><marker id="wire-arrow-a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="currentColor"></path></marker></defs>
+            <g><rect class="box" x="20" y="70" width="120" height="70"></rect><text class="label" x="80" y="105" text-anchor="middle">SERP</text><text class="sub" x="80" y="123" text-anchor="middle">research</text></g>
+            <path class="line live" d="M140 105 C190 70 210 70 260 105" marker-end="url(#wire-arrow-a)"></path>
+            <g><rect class="box" x="260" y="70" width="150" height="70"></rect><text class="label" x="335" y="105" text-anchor="middle">Outline</text><text class="sub" x="335" y="123" text-anchor="middle">brand rules</text></g>
+            <path class="line" d="M410 105 C460 140 480 140 530 105" marker-end="url(#wire-arrow-a)"></path>
+            <g><rect class="box" x="530" y="70" width="150" height="70"></rect><text class="label" x="605" y="105" text-anchor="middle">Drive</text><text class="sub" x="605" y="123" text-anchor="middle">review</text></g>
+          </svg>
+        </article>
+
+        <article class="svg-panel">
+          <p class="kicker">Proposal system</p>
+          <svg class="flow-svg" viewBox="0 0 720 220" role="img" aria-label="Low fidelity SVG for proposal system.">
+            <defs><marker id="wire-arrow-b" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="currentColor"></path></marker></defs>
+            <g><rect class="box" x="20" y="70" width="120" height="70"></rect><text class="label" x="80" y="105" text-anchor="middle">Screens</text><text class="sub" x="80" y="123" text-anchor="middle">inventory</text></g>
+            <path class="line live" d="M140 105 C190 70 210 70 260 105" marker-end="url(#wire-arrow-b)"></path>
+            <g><rect class="box" x="260" y="70" width="150" height="70"></rect><text class="label" x="335" y="105" text-anchor="middle">Local Map</text><text class="sub" x="335" y="123" text-anchor="middle">prospects</text></g>
+            <path class="line" d="M410 105 C460 140 480 140 530 105" marker-end="url(#wire-arrow-b)"></path>
+            <g><rect class="box" x="530" y="70" width="150" height="70"></rect><text class="label" x="605" y="105" text-anchor="middle">Proposal</text><text class="sub" x="605" y="123" text-anchor="middle">review</text></g>
+          </svg>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

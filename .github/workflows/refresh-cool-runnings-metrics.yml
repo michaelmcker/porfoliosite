@@ -1,0 +1,57 @@
+name: Refresh Cool Runnings metrics
+
+on:
+  schedule:
+    - cron: "23 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: cool-runnings-metrics
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: google-github-actions/auth@v3
+        with:
+          project_id: ${{ vars.GCP_PROJECT_ID }}
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Refresh verified 28-day metrics
+        env:
+          GSC_SITE_URL: sc-domain:coolrunningslandscaping.com
+          GA4_PROPERTY_ID: properties/527841655
+          GSC_DATA_LAG_DAYS: "3"
+          DATAFORSEO_TARGET: coolrunningslandscaping.com
+          DATAFORSEO_LOCATION_NAME: Canada
+          DATAFORSEO_LANGUAGE_NAME: English
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+        run: node scripts/refresh-cool-runnings-metrics.mjs
+
+      - name: Commit changed snapshot
+        run: |
+          if git diff --quiet -- data/cool-runnings-metrics-current.json; then
+            echo "Metrics are unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cool-runnings-metrics-current.json
+          git commit -m "chore: refresh Cool Runnings metrics"
+          git push

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Hero Animation Review</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f5f1e9;
+        --ink: #11110f;
+        --muted: #777166;
+        --rule: rgba(17, 17, 15, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          linear-gradient(90deg, rgba(17, 17, 15, 0.045) 1px, transparent 1px),
+          linear-gradient(180deg, rgba(17, 17, 15, 0.035) 1px, transparent 1px),
+          radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.92), transparent 34%),
+          var(--paper);
+        background-size: 46px 46px, 46px 46px, 100% 100%, auto;
+        color: var(--ink);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+
+      main {
+        min-height: 100vh;
+        padding: 40px clamp(18px, 4vw, 64px) 56px;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid var(--rule);
+        padding-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(32px, 5vw, 76px);
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+
+      .meta {
+        align-self: end;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.6;
+        text-align: right;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .stage {
+        border: 1px solid var(--rule);
+        background: rgba(255, 255, 255, 0.24);
+        padding: clamp(10px, 1.2vw, 18px);
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #eee9df;
+      }
+
+      .controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 18px 0 28px;
+      }
+
+      a,
+      button {
+        border: 1px solid rgba(17, 17, 15, 0.28);
+        background: rgba(245, 241, 233, 0.74);
+        color: var(--ink);
+        cursor: pointer;
+        font: inherit;
+        padding: 10px 13px;
+        text-decoration: none;
+      }
+
+      button[aria-pressed="true"] {
+        background: var(--ink);
+        color: var(--paper);
+      }
+
+      .sheet {
+        display: grid;
+        gap: 12px;
+        margin-top: 26px;
+      }
+
+      .sheet img {
+        width: 100%;
+        border: 1px solid var(--rule);
+        background: rgba(255, 255, 255, 0.24);
+      }
+
+      .note {
+        max-width: 920px;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.65;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="topbar">
+        <h1>Hero Animation Review</h1>
+        <div class="meta">Current site assets<br />Desktop + mobile</div>
+      </div>
+
+      <section class="stage">
+        <video id="review-video" autoplay muted loop playsinline controls src="artifacts/veo/portfolio-hero-existing-markers-v1/02-simple-end-to-end-dots-veo-3.1-generate-preview-1080p-muted.mp4"></video>
+      </section>
+
+      <div class="controls">
+        <button type="button" data-src="artifacts/veo/portfolio-hero-existing-markers-v1/02-simple-end-to-end-dots-veo-3.1-generate-preview-1080p-muted.mp4" aria-pressed="true">Desktop MP4</button>
+        <button type="button" data-src="artifacts/veo/portfolio-hero-existing-markers-v1/02-simple-end-to-end-dots-veo-3.1-generate-preview-1080p-muted-loopcheck-2x.mp4">Desktop 2x loop check</button>
+        <button type="button" data-src="artifacts/veo/portfolio-hero-existing-markers-v1/04-desktop-loop-repaired-fade-to-start.mp4">Fade repair</button>
+        <button type="button" data-src="artifacts/veo/portfolio-hero-existing-markers-v1/04-desktop-loop-repaired-pingpong.mp4">Ping-pong repair</button>
+        <a href="#veo-mobile-title">Mobile version</a>
+        <a href="artifacts/veo/portfolio-hero-existing-markers-v1/review/02-simple-end-to-end-dots-contact-sheet.jpg">Desktop contact sheet</a>
+      </div>
+
+      <p class="note">
+        This is the desktop hero animation currently wired into the homepage. The mobile render is lower on this page and uses a separate vertical source frame.
+      </p>
+
+      <div class="sheet">
+        <img src="artifacts/veo/portfolio-hero-existing-markers-v1/review/02-simple-end-to-end-dots-contact-sheet.jpg" alt="Five-frame review sheet for the desktop hero animation" />
+      </div>
+
+      <section class="sheet" aria-labelledby="loop-repair-title">
+        <div class="topbar" style="margin-top: 44px;">
+          <h1 id="loop-repair-title">Loop Repair Candidates</h1>
+          <div class="meta">No new generation<br />FFmpeg repair pass</div>
+        </div>
+        <p class="note">
+          The raw Veo clip does not return exactly to its first frame. Fade repair resolves the final 0.75 seconds back into the first frame. Ping-pong repair is the cleanest seam, but it reverses the motion halfway through.
+        </p>
+        <section class="stage">
+          <video autoplay muted loop playsinline controls src="artifacts/veo/portfolio-hero-existing-markers-v1/04-desktop-loop-repaired-fade-to-start.mp4"></video>
+        </section>
+        <div class="controls">
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/04-desktop-loop-repaired-fade-to-start.mp4">Desktop fade repair</a>
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/04-desktop-loop-repaired-fade-to-start-loopcheck-2x.mp4">Fade 2x loop check</a>
+        </div>
+        <section class="stage">
+          <video autoplay muted loop playsinline controls src="artifacts/veo/portfolio-hero-existing-markers-v1/04-desktop-loop-repaired-pingpong.mp4"></video>
+        </section>
+        <div class="controls">
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/04-desktop-loop-repaired-pingpong.mp4">Desktop ping-pong repair</a>
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/04-desktop-loop-repaired-pingpong-loopcheck-2x.mp4">Ping-pong 2x loop check</a>
+        </div>
+      </section>
+
+      <section class="sheet" aria-labelledby="nano-title">
+        <div class="topbar" style="margin-top: 44px;">
+          <h1 id="nano-title">Nano Banana 1080 Storyboard</h1>
+          <div class="meta">$0.0396<br />Image-only direction</div>
+        </div>
+        <p class="note">
+          This is not a video output. Nano Banana is an image model here, so this is a cheap frame-by-frame motion board: endpoint pulses, same-colour translucent travelling dots, left-to-right and right-to-left traffic, and a loop reset frame.
+        </p>
+        <img src="artifacts/seedance/portfolio-hero-system-map-desktop-v1/nano-banana-1080/02-nano-banana-1080-storyboard-1920x1080.png" alt="Nano Banana generated six-frame storyboard for the portfolio hero motion" />
+      </section>
+
+      <section class="sheet" aria-labelledby="source-map-title">
+        <div class="topbar" style="margin-top: 44px;">
+          <h1 id="source-map-title">Correct Source Map Storyboard</h1>
+          <div class="meta">Image generation<br />Actual map input</div>
+        </div>
+        <p class="note">
+          This version uses the actual approved workflow-map image as the source. The map geometry and labels are preserved, with only pulse and travelling-dot states overlaid.
+        </p>
+        <img src="artifacts/seedance/portfolio-hero-system-map-desktop-v1/imagegen-storyboards/03-correct-source-map-motion-storyboard.png" alt="Six-frame storyboard using the actual portfolio workflow map source image" />
+      </section>
+
+      <section class="sheet" aria-labelledby="existing-marker-title">
+        <div class="topbar" style="margin-top: 44px;">
+          <h1 id="existing-marker-title">Existing Marker Storyboard</h1>
+          <div class="meta">Deterministic raster<br />Actual map input</div>
+        </div>
+        <p class="note">
+          Corrected object model: the moving objects are the existing filled dots, hollow circles, and double-ring markers already on the rails. This version duplicates the exact approved bitmap in every panel and overlays only those marker types.
+        </p>
+        <img src="artifacts/seedance/portfolio-hero-system-map-desktop-v1/imagegen-storyboards/04-deterministic-existing-marker-storyboard.png" alt="Six-frame storyboard showing the existing marker types moving along the actual portfolio workflow map" />
+      </section>
+
+      <section class="sheet" aria-labelledby="veo-title">
+        <div class="topbar" style="margin-top: 44px;">
+          <h1 id="veo-title">Veo Existing Markers</h1>
+          <div class="meta">Veo 3.1<br />1080p / 8s</div>
+        </div>
+        <section class="stage">
+          <video autoplay muted loop playsinline controls src="artifacts/veo/portfolio-hero-existing-markers-v1/01-existing-markers-veo-3.1-generate-preview-1080p-muted.mp4"></video>
+        </section>
+        <div class="controls">
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/01-existing-markers-veo-3.1-generate-preview-1080p-muted.mp4">Muted MP4</a>
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/01-existing-markers-veo-3.1-generate-preview-1080p-muted-loopcheck-2x.mp4">2x loop check</a>
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/review/01-existing-markers-contact-sheet.jpg">Contact sheet</a>
+        </div>
+        <p class="note">
+          Generated from the approved map as the start frame. Prompted to animate only existing filled dots, hollow circles, and double-ring rail markers. The contact sheet shows some center artifacting, so this is a candidate for review rather than a final hero asset.
+        </p>
+        <img src="artifacts/veo/portfolio-hero-existing-markers-v1/review/01-existing-markers-contact-sheet.jpg" alt="Veo 3.1 existing-marker animation contact sheet" />
+      </section>
+
+      <section class="sheet" aria-labelledby="veo-simple-title">
+        <div class="topbar" style="margin-top: 44px;">
+          <h1 id="veo-simple-title">Veo Simple Dot Movement</h1>
+          <div class="meta">Veo 3.1<br />1080p / 8s / v2</div>
+        </div>
+        <section class="stage">
+          <video autoplay muted loop playsinline controls src="artifacts/veo/portfolio-hero-existing-markers-v1/02-simple-end-to-end-dots-veo-3.1-generate-preview-1080p-muted.mp4"></video>
+        </section>
+        <div class="controls">
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/02-simple-end-to-end-dots-veo-3.1-generate-preview-1080p-muted.mp4">Muted MP4</a>
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/02-simple-end-to-end-dots-veo-3.1-generate-preview-1080p-muted-loopcheck-2x.mp4">2x loop check</a>
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/review/02-simple-end-to-end-dots-contact-sheet.jpg">Contact sheet</a>
+        </div>
+        <p class="note">
+          Simplified prompt: move the different dots along the lines they are already on, from one end to the other. This pass avoids most of the previous center clumping, though it still invents a few off-rail vertical marker movements.
+        </p>
+        <img src="artifacts/veo/portfolio-hero-existing-markers-v1/review/02-simple-end-to-end-dots-contact-sheet.jpg" alt="Veo 3.1 simple end-to-end dot movement contact sheet" />
+      </section>
+
+      <section class="sheet" aria-labelledby="veo-mobile-title">
+        <div class="topbar" style="margin-top: 44px;">
+          <h1 id="veo-mobile-title">Veo Mobile Dot Movement</h1>
+          <div class="meta">Veo 3.1<br />1080x1920 / 8s</div>
+        </div>
+        <section class="stage" style="max-width: 480px;">
+          <video autoplay muted loop playsinline controls src="artifacts/veo/portfolio-hero-existing-markers-v1/03-mobile-simple-end-to-end-dots-veo-3.1-generate-preview-1080p-muted.mp4" style="aspect-ratio: 9 / 16;"></video>
+        </section>
+        <div class="controls">
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/03-mobile-simple-end-to-end-dots-veo-3.1-generate-preview-1080p-muted.mp4">Muted MP4</a>
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/03-mobile-simple-end-to-end-dots-veo-3.1-generate-preview-1080p-muted-loopcheck-2x.mp4">2x loop check</a>
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/review/03-mobile-simple-end-to-end-dots-contact-sheet.jpg">Contact sheet</a>
+        </div>
+        <p class="note">
+          Mobile version generated from the vertical source frame so the diagram is not a cropped desktop plate. This is the version now wired into the homepage mobile breakpoint.
+        </p>
+        <img src="artifacts/veo/portfolio-hero-existing-markers-v1/review/03-mobile-simple-end-to-end-dots-contact-sheet.jpg" alt="Veo 3.1 mobile simple dot movement contact sheet" />
+        <section class="stage" style="max-width: 480px;">
+          <video autoplay muted loop playsinline controls src="artifacts/veo/portfolio-hero-existing-markers-v1/04-mobile-loop-repaired-fade-to-start.mp4" style="aspect-ratio: 9 / 16;"></video>
+        </section>
+        <div class="controls">
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/04-mobile-loop-repaired-fade-to-start.mp4">Mobile fade repair</a>
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/04-mobile-loop-repaired-fade-to-start-loopcheck-2x.mp4">Fade 2x loop check</a>
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/04-mobile-loop-repaired-pingpong.mp4">Mobile ping-pong repair</a>
+          <a href="artifacts/veo/portfolio-hero-existing-markers-v1/04-mobile-loop-repaired-pingpong-loopcheck-2x.mp4">Ping-pong 2x loop check</a>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const video = document.querySelector("#review-video");
+      const buttons = [...document.querySelectorAll("button[data-src]")];
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          buttons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+          video.src = button.dataset.src;
+          video.play();
+        });
+      });
+    </script>
+  </body>
+</html>

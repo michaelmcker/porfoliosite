@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "functions": {
+    "api/proposal/generate.js": {
+      "maxDuration": 300,
+      "includeFiles": "{api/_lib/proposal/**,assets/proposal/**}"
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/proposal/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "private, no-store" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+.site-shell {
+  width: min(1510px, 100%);
+  margin: 0 auto;
+}
+
+.approved-hero {
+  --hero-paper: #eee9e0;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 850px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: var(--hero-paper);
+}
+
+.approved-hero::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  left: 32px;
+  top: 0;
+  bottom: 0;
+  border-left: 1px dashed rgba(18, 19, 15, 0.14);
+  pointer-events: none;
+}
+
+.approved-hero__media {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  background: var(--hero-paper);
+}
+
+.approved-hero__video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.approved-hero__video--mobile { display: none; }
+
+.hero-diagram-copy {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  color: #171813;
+  pointer-events: none;
+}
+
+.hero-diagram-copy--mobile { display: none; }
+
+.hero-diagram-box,
+.hero-diagram-label,
+.hero-diagram-system {
+  position: absolute;
+  display: block;
+  background: var(--hero-paper);
+  box-shadow: 0 0 10px 5px var(--hero-paper);
+  font-family: var(--mono);
+  text-transform: uppercase;
+}
+
+.hero-diagram-box {
+  display: grid;
+  place-items: center;
+  border: 1px dashed rgba(18, 19, 15, 0.35);
+  font-size: clamp(7px, 0.63vw, 10px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+
+.hero-diagram-label {
+  min-height: 3.2%;
+  display: flex;
+  align-items: center;
+  padding: 2px 5px;
+  font-size: clamp(6px, 0.56vw, 9px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.hero-diagram-label--data,
+.hero-diagram-label--audience,
+.hero-diagram-label--competition,
+.hero-diagram-label--search,
+.hero-diagram-label--brand { width: 11%; }
+
+.hero-diagram-label--websites,
+.hero-diagram-label--proposals,
+.hero-diagram-label--dashboards,
+.hero-diagram-label--visibility,
+.hero-diagram-label--workflows { width: 11%; }
+
+.hero-diagram-system {
+  width: 20%;
+  height: 16.5%;
+  left: 71.5%;
+  top: 70.2%;
+  padding: 2.3% 2%;
+  border: 1px dashed rgba(18, 19, 15, 0.35);
+}
+
+.hero-diagram-system strong,
+.hero-diagram-system small { display: block; }
+
+.hero-diagram-system strong {
+  font-size: clamp(7px, 0.68vw, 11px);
+  letter-spacing: 0.06em;
+}
+
+.hero-diagram-system small {
+  margin-top: 7%;
+  font-size: clamp(5px, 0.52vw, 8px);
+  line-height: 1.45;
+  letter-spacing: 0.05em;
+}
+
+.hero-diagram-copy--desktop .hero-diagram-box--workflow { left: 57.5%; top: 14%; width: 11.4%; height: 7.6%; }
+.hero-diagram-copy--desktop .hero-diagram-box--outputs { left: 83.4%; top: 12%; width: 15.4%; height: 8.5%; }
+.hero-diagram-copy--desktop .hero-diagram-box--inputs { left: 23.8%; top: 62.8%; width: 10.6%; height: 5.2%; }
+.hero-diagram-copy--desktop .hero-diagram-label--data { left: 25.3%; top: 69.6%; }
+.hero-diagram-copy--desktop .hero-diagram-label--audience { left: 25.3%; top: 73.1%; }
+.hero-diagram-copy--desktop .hero-diagram-label--competition { left: 25.3%; top: 76.6%; }
+.hero-diagram-copy--desktop .hero-diagram-label--search { left: 25.3%; top: 80.1%; }
+.hero-diagram-copy--desktop .hero-diagram-label--brand { left: 25.3%; top: 83.6%; }
+.hero-diagram-copy--desktop .hero-diagram-label--websites { left: 84.5%; top: 21.8%; }
+.hero-diagram-copy--desktop .hero-diagram-label--proposals { left: 84.5%; top: 30.1%; }
+.hero-diagram-copy--desktop .hero-diagram-label--dashboards { left: 84.5%; top: 38.4%; }
+.hero-diagram-copy--desktop .hero-diagram-label--visibility { left: 84.5%; top: 46.7%; }
+.hero-diagram-copy--desktop .hero-diagram-label--workflows { left: 84.5%; top: 55%; }
+
+.approved-hero__copy {
+  position: absolute;
+  z-index: 4;
+  inset: 0 auto 0 0;
+  width: min(43%, 650px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: clamp(46px, 5vw, 78px) 0 42px clamp(48px, 5.5vw, 84px);
+}
+
+.approved-hero__identity h1 {
+  margin: 0;
+  font: 300 clamp(68px, 7.2vw, 112px)/0.79 var(--display);
+  letter-spacing: 0;
+}
+
+.approved-hero__identity > span {
+  display: block;
+  margin-top: clamp(20px, 2.2vw, 32px);
+  font: 500 clamp(10px, 0.9vw, 14px)/1 var(--mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.approved-hero__details {
+  margin-top: clamp(24px, 2.4vw, 36px);
+}
+
+.approved-hero__details p {
+  max-width: 39ch;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: clamp(15px, 1.18vw, 18px);
+  line-height: 1.5;
+}
+
+.approved-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.approved-hero__actions a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  background: rgba(238, 233, 224, 0.84);
+  color: var(--blue);
+  font-size: 13px;
+}
+
+@media (min-width: 901px) and (max-width: 1120px) {
+  .approved-hero__copy {
+    width: 47%;
+    padding-top: 42px;
+    padding-left: 48px;
+  }
+
+  .approved-hero__identity h1 { font-size: clamp(64px, 7.5vw, 80px); }
+  .approved-hero__identity > span { margin-top: 18px; }
+  .approved-hero__details { margin-top: 22px; }
+  .approved-hero__details p { max-width: 35ch; font-size: 15px; }
+  .approved-hero__actions { margin-top: 18px; }
+  .approved-hero__actions a { min-height: 40px; padding-inline: 14px; font-size: 12px; }
+}
+
+@media (max-width: 900px) and (orientation: portrait) {
+  .site-shell {
+    width: 100%;
+    margin: 0;
+  }
+
+  .approved-hero {
+    max-height: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    aspect-ratio: auto;
+    overflow: hidden;
+  }
+
+  .approved-hero::before { left: 20px; }
+
+  .approved-hero__copy { display: contents; }
+
+  .approved-hero__media {
+    position: relative;
+    grid-row: 1;
+    grid-column: 1;
+    height: min(100svh, 177.78vw);
+  }
+
+  .approved-hero__video--desktop { display: none; }
+  .approved-hero__video--mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 941 / 1672;
+    object-fit: fill;
+  }
+  .hero-diagram-copy--desktop { display: none; }
+  .hero-diagram-copy--mobile {
+    display: block;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 941 / 1672;
+  }
+
+  .hero-diagram-copy--mobile .hero-diagram-box { font-size: clamp(8px, 1.55vw, 13px); }
+  .hero-diagram-copy--mobile .hero-diagram-label { font-size: clamp(7px, 1.25vw, 10px); }
+  .hero-diagram-copy--mobile .hero-diagram-label--data,
+  .hero-diagram-copy--mobile .hero-diagram-label--audience,
+  .hero-diagram-copy--mobile .hero-diagram-label--search,
+  .hero-diagram-copy--mobile .hero-diagram-label--brand { width: 27%; }
+  .hero-diagram-copy--mobile .hero-diagram-label--websites,
+  .hero-diagram-copy--mobile .hero-diagram-label--proposals,
+  .hero-diagram-copy--mobile .hero-diagram-label--dashboards,
+  .hero-diagram-copy--mobile .hero-diagram-label--visibility,
+  .hero-diagram-copy--mobile .hero-diagram-label--workflows { width: 20%; }
+  .hero-diagram-copy--mobile .hero-diagram-label { min-height: 4%; }
+  .hero-diagram-copy--mobile .hero-diagram-box--workflow { left: 35.5%; top: 28.4%; width: 21.5%; height: 6.9%; }
+  .hero-diagram-copy--mobile .hero-diagram-box--outputs { left: 75.1%; top: 24.4%; width: 19.6%; height: 5.6%; }
+  .hero-diagram-copy--mobile .hero-diagram-box--inputs { left: 3.6%; top: 54.6%; width: 18.2%; height: 5.8%; }
+  .hero-diagram-copy--mobile .hero-diagram-label--data { left: 3.1%; top: 63.8%; }
+  .hero-diagram-copy--mobile .hero-diagram-label--audience { left: 3.1%; top: 69.0%; }
+  .hero-diagram-copy--mobile .hero-diagram-label--search { left: 3.1%; top: 74.2%; }
+  .hero-diagram-copy--mobile .hero-diagram-label--brand { left: 3.1%; top: 79.4%; }
+  .hero-diagram-copy--mobile .hero-diagram-label--websites { left: 78.2%; top: 31.2%; }
+  .hero-diagram-copy--mobile .hero-diagram-label--proposals { left: 78.2%; top: 38.4%; }
+  .hero-diagram-copy--mobile .hero-diagram-label--dashboards { left: 78.2%; top: 45.8%; }
+  .hero-diagram-copy--mobile .hero-diagram-label--visibility { left: 78.2%; top: 53.4%; }
+  .hero-diagram-copy--mobile .hero-diagram-label--workflows { left: 78.2%; top: 61.8%; }
+  .hero-diagram-copy--mobile .hero-diagram-system {
+    left: 52.4%;
+    top: 77.3%;
+    width: 42%;
+    height: 12.8%;
+    padding: 4.5% 5%;
+  }
+  .hero-diagram-copy--mobile .hero-diagram-system strong { font-size: clamp(8px, 1.55vw, 13px); }
+  .hero-diagram-copy--mobile .hero-diagram-system small { font-size: clamp(6px, 1.1vw, 9px); }
+
+  .approved-hero__identity {
+    position: relative;
+    z-index: 4;
+    grid-row: 1;
+    grid-column: 1;
+    align-self: start;
+    width: min(74%, 560px);
+    padding: clamp(34px, 6.5vw, 54px) 0 0 clamp(24px, 6vw, 48px);
+    pointer-events: none;
+  }
+
+  .approved-hero__identity h1 {
+    font-size: clamp(46px, 8.6vw, 70px);
+    line-height: 0.82;
+  }
+
+  .approved-hero__identity > span {
+    margin-top: clamp(16px, 2.4vw, 22px);
+    font-size: clamp(9px, 1.4vw, 12px);
+  }
+
+  .approved-hero__details {
+    position: relative;
+    z-index: 4;
+    grid-row: 2;
+    grid-column: 1;
+    margin: 0;
+    padding: 28px clamp(24px, 6vw, 48px) 34px;
+    background: var(--hero-paper);
+  }
+
+  .approved-hero__details p {
+    max-width: 52ch;
+    font-size: clamp(15px, 2.1vw, 17px);
+  }
+}
+
+@media (max-width: 560px) and (orientation: portrait) {
+  .approved-hero__identity {
+    width: 82%;
+    padding: 24px 0 0 20px;
+  }
+
+  .approved-hero__identity h1 {
+    font-size: clamp(40px, 11vw, 48px);
+    line-height: 0.82;
+  }
+
+  .approved-hero__identity > span {
+    margin-top: 15px;
+    font-size: 9px;
+  }
+
+  .approved-hero__details { padding: 24px 20px 28px; }
+  .approved-hero__details p { max-width: 34ch; font-size: 15px; line-height: 1.5; }
+  .approved-hero__actions { gap: 10px; margin-top: 18px; }
+  .approved-hero__actions a { min-height: 40px; padding: 0 14px; font-size: 12px; }
+}

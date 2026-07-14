@@ -1,0 +1,350 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="workflow-map-svg" viewBox="0 0 760 420" width="760" height="420" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="workflow-map-title workflow-map-desc">
+  <title id="workflow-map-title">Content workflow map</title>
+  <desc id="workflow-map-desc">SERP data, keyword signals, and brand rules moving through a content workflow into outline, draft, audit, and publishing outputs.</desc>
+  <defs>
+    <pattern id="workflow-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.16"/>
+    </pattern>
+    <filter id="soft-ink-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#11130f" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <style>
+    .workflow-map-svg {
+      display: block;
+      max-width: 100vw;
+      height: auto;
+      color: #11130f;
+      background: transparent;
+      --paper-warm: #fff9ed;
+      --ink: #11130f;
+      --muted: #777268;
+      --moss: #6f8d46;
+      --carmine: #9e3f32;
+      --blue: #315dff;
+      --cyan: #2f8da2;
+      --gold: #b7832f;
+      font-family: "IBM Plex Sans Condensed", "Avenir Next Condensed", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .map-grid { fill: url(#workflow-grid); opacity: 0.72; }
+
+    .map-frame,
+    .map-module {
+      fill: rgba(255, 249, 237, 0.56);
+      stroke: rgba(17, 19, 15, 0.18);
+    }
+
+    .map-frame { stroke-dasharray: 5 6; }
+    .map-module { stroke-dasharray: 4 4; }
+
+    .map-label {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      fill: var(--ink);
+    }
+
+    .map-small {
+      font-size: 10px;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      fill: var(--muted);
+    }
+
+    .map-micro {
+      font-size: 8px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      fill: rgba(17, 19, 15, 0.46);
+    }
+
+    .route {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2.2;
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      animation: draw-route 1150ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation-delay: var(--delay, 0ms);
+    }
+
+    .route-serp { stroke: var(--ink); --delay: 120ms; }
+    .route-keywords { stroke: var(--blue); --delay: 260ms; }
+    .route-brand { stroke: var(--moss); --delay: 400ms; }
+    .route-proof { stroke: var(--carmine); --delay: 540ms; }
+
+    .flow {
+      fill: none;
+      stroke-linecap: round;
+      stroke-width: 2.6;
+      stroke-dasharray: 9 14;
+      opacity: 0.76;
+      animation: route-flow 2800ms linear infinite;
+    }
+
+    .flow-serp { stroke: var(--ink); }
+    .flow-keywords { stroke: var(--blue); animation-duration: 3150ms; }
+    .flow-brand { stroke: var(--moss); animation-duration: 3450ms; }
+    .flow-proof { stroke: var(--carmine); animation-duration: 3900ms; }
+
+    .node {
+      fill: var(--ink);
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: node-rise 700ms cubic-bezier(0.16, 1, 0.3, 1) both, node-breathe 3200ms ease-in-out infinite;
+      animation-delay: var(--delay, 0ms), calc(var(--delay, 0ms) + 900ms);
+    }
+
+    .node-blue { fill: var(--blue); }
+    .node-moss { fill: var(--moss); }
+    .node-carmine { fill: var(--carmine); }
+    .node-cyan { fill: var(--cyan); }
+    .node-gold { fill: var(--gold); }
+
+    .node-core {
+      fill: var(--ink);
+      filter: url(#soft-ink-shadow);
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: core-pulse 3600ms ease-in-out infinite;
+    }
+
+    .node-ring,
+    .core-ripple {
+      fill: none;
+      stroke: var(--ink);
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .node-ring {
+      stroke-width: 1;
+      opacity: 0.22;
+      animation: ring-pulse 3600ms ease-in-out infinite;
+    }
+
+    .core-ripple {
+      stroke-width: 1.1;
+      animation: core-ripple 2600ms ease-out infinite;
+      animation-delay: var(--delay, 0ms);
+      opacity: 0;
+    }
+
+    .traveler { filter: url(#soft-ink-shadow); }
+
+    .traveler-halo {
+      fill: none;
+      stroke-width: 1.2;
+      opacity: 0.42;
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: traveler-halo 1400ms ease-in-out infinite;
+    }
+
+    .traveler-dot {
+      opacity: 0.96;
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: traveler-dot 1400ms ease-in-out infinite;
+    }
+
+    .traveler-serp .traveler-dot { fill: var(--ink); }
+    .traveler-serp .traveler-halo { stroke: var(--ink); }
+    .traveler-keywords .traveler-dot { fill: var(--blue); }
+    .traveler-keywords .traveler-halo { stroke: var(--blue); }
+    .traveler-brand .traveler-dot { fill: var(--moss); }
+    .traveler-brand .traveler-halo { stroke: var(--moss); }
+    .traveler-proof .traveler-dot { fill: var(--carmine); }
+    .traveler-proof .traveler-halo { stroke: var(--carmine); }
+
+    .output-line {
+      stroke: rgba(17, 19, 15, 0.24);
+      stroke-width: 1;
+      stroke-dasharray: 4 6;
+    }
+
+    .spark {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1;
+      opacity: 0.42;
+    }
+
+    .orbit {
+      fill: none;
+      stroke: rgba(17, 19, 15, 0.18);
+      stroke-width: 1;
+    }
+
+    .orbit-dot {
+      fill: var(--gold);
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: node-breathe 2400ms ease-in-out infinite;
+    }
+
+    @keyframes draw-route { to { stroke-dashoffset: 0; } }
+    @keyframes route-flow { to { stroke-dashoffset: -46; } }
+
+    @keyframes node-rise {
+      from { opacity: 0; transform: scale(0.3); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes node-breathe {
+      0%, 100% { opacity: 0.82; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.16); }
+    }
+
+    @keyframes core-pulse {
+      0%, 100% { transform: scale(1); opacity: 0.94; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+
+    @keyframes ring-pulse {
+      0%, 100% { transform: scale(1); opacity: 0.24; }
+      50% { transform: scale(1.36); opacity: 0.08; }
+    }
+
+    @keyframes core-ripple {
+      0% { transform: scale(0.68); opacity: 0.26; }
+      72% { opacity: 0.08; }
+      100% { transform: scale(2.8); opacity: 0; }
+    }
+
+    @keyframes traveler-halo {
+      0%, 100% { transform: scale(0.8); opacity: 0.28; }
+      50% { transform: scale(1.34); opacity: 0.58; }
+    }
+
+    @keyframes traveler-dot {
+      0%, 100% { transform: scale(0.9); }
+      50% { transform: scale(1.18); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .route,
+      .flow,
+      .node,
+      .node-core,
+      .node-ring,
+      .core-ripple,
+      .traveler-halo,
+      .traveler-dot,
+      .orbit-dot {
+        animation: none !important;
+      }
+
+      .route { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <g id="surface" class="map-surface">
+    <rect class="map-grid" x="0" y="0" width="760" height="420"/>
+    <rect class="map-frame" x="28" y="32" width="704" height="356"/>
+  </g>
+
+  <g id="labels" class="map-labels">
+    <text class="map-label" x="58" y="76">Inputs</text>
+    <text class="map-small" x="58" y="106">SERP data</text>
+    <text class="map-small" x="58" y="135">keywords</text>
+    <text class="map-small" x="58" y="164">brand rules</text>
+
+    <rect class="map-module" x="306" y="56" width="148" height="44"/>
+    <text class="map-small" x="380" y="83" text-anchor="middle">workflow engine</text>
+    <text class="map-label" x="320" y="134">Process</text>
+    <text class="map-small" x="320" y="164">research</text>
+    <text class="map-small" x="320" y="192">outline</text>
+    <text class="map-small" x="320" y="220">draft</text>
+    <text class="map-small" x="320" y="248">audit</text>
+
+    <text class="map-label" x="594" y="76">Outputs</text>
+    <text class="map-small" x="594" y="106">Drive handoff</text>
+    <text class="map-small" x="594" y="135">rank checks</text>
+    <text class="map-small" x="594" y="164">sales proof</text>
+  </g>
+
+  <g id="routes-base" class="routes-base">
+    <path id="route-serp" class="route route-serp" pathLength="1" d="M154 101 C236 92 246 190 355 202 C462 214 486 105 560 101"/>
+    <path id="route-keywords" class="route route-keywords" pathLength="1" d="M154 130 C236 128 268 220 380 216 C488 212 494 136 560 130"/>
+    <path id="route-brand" class="route route-brand" pathLength="1" d="M154 159 C232 166 260 256 379 250 C490 244 496 164 560 159"/>
+    <path id="route-proof" class="route route-proof" pathLength="1" d="M390 230 C446 230 492 264 552 280"/>
+  </g>
+
+  <g id="routes-flow" class="routes-flow">
+    <path class="flow flow-serp" d="M154 101 C236 92 246 190 355 202 C462 214 486 105 560 101"/>
+    <path class="flow flow-keywords" d="M154 130 C236 128 268 220 380 216 C488 212 494 136 560 130"/>
+    <path class="flow flow-brand" d="M154 159 C232 166 260 256 379 250 C490 244 496 164 560 159"/>
+    <path class="flow flow-proof" d="M390 230 C446 230 492 264 552 280"/>
+  </g>
+
+  <g id="nodes" class="map-nodes">
+    <circle class="node" cx="154" cy="101" r="4" style="--delay: 90ms"/>
+    <circle class="node node-blue" cx="154" cy="130" r="4" style="--delay: 160ms"/>
+    <circle class="node node-moss" cx="154" cy="159" r="4" style="--delay: 230ms"/>
+    <circle class="node node-blue" cx="356" cy="202" r="6" style="--delay: 460ms"/>
+    <circle class="node node-moss" cx="379" cy="250" r="7" style="--delay: 620ms"/>
+    <circle class="node" cx="380" cy="226" r="5" style="--delay: 700ms"/>
+    <circle class="node-ring" cx="380" cy="226" r="21"/>
+    <circle class="core-ripple" cx="380" cy="226" r="12" style="--delay: 0ms"/>
+    <circle class="core-ripple" cx="380" cy="226" r="12" style="--delay: 850ms"/>
+    <circle class="core-ripple" cx="380" cy="226" r="12" style="--delay: 1700ms"/>
+    <circle class="node-core" cx="380" cy="226" r="10"/>
+    <circle class="node" cx="560" cy="101" r="5" style="--delay: 880ms"/>
+    <circle class="node node-blue" cx="560" cy="130" r="5" style="--delay: 960ms"/>
+    <circle class="node node-moss" cx="560" cy="159" r="5" style="--delay: 1040ms"/>
+    <circle class="node node-carmine" cx="552" cy="280" r="5" style="--delay: 1120ms"/>
+  </g>
+
+  <g id="travelers" class="map-travelers">
+    <g class="traveler traveler-serp">
+      <circle class="traveler-halo" r="8"/>
+      <circle class="traveler-dot" r="3.2"/>
+      <animateMotion dur="5.8s" begin="0s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#route-serp" xlink:href="#route-serp"/>
+      </animateMotion>
+    </g>
+    <g class="traveler traveler-keywords">
+      <circle class="traveler-halo" r="8"/>
+      <circle class="traveler-dot" r="3.2"/>
+      <animateMotion dur="4.8s" begin="0s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#route-keywords" xlink:href="#route-keywords"/>
+      </animateMotion>
+    </g>
+    <g class="traveler traveler-brand">
+      <circle class="traveler-halo" r="8"/>
+      <circle class="traveler-dot" r="3.2"/>
+      <animateMotion dur="6.2s" begin="0s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#route-brand" xlink:href="#route-brand"/>
+      </animateMotion>
+    </g>
+    <g class="traveler traveler-proof">
+      <circle class="traveler-halo" r="8"/>
+      <circle class="traveler-dot" r="3.2"/>
+      <animateMotion dur="6.8s" begin="0s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#route-proof" xlink:href="#route-proof"/>
+      </animateMotion>
+    </g>
+  </g>
+
+  <g id="output-modules" class="output-modules">
+    <line class="output-line" x1="590" y1="116" x2="704" y2="116"/>
+    <line class="output-line" x1="590" y1="145" x2="692" y2="145"/>
+    <line class="output-line" x1="590" y1="174" x2="710" y2="174"/>
+    <rect class="map-module" x="584" y="248" width="102" height="58"/>
+    <text class="map-small" x="598" y="270">proof package</text>
+    <path class="spark" d="M598 286 H674 M636 258 V300"/>
+  </g>
+
+  <g id="orbit" class="map-orbit">
+    <circle class="orbit" cx="482" cy="232" r="42"/>
+    <circle class="orbit" cx="482" cy="232" r="23"/>
+    <circle class="orbit-dot" cx="524" cy="232" r="3"/>
+    <circle class="orbit-dot" cx="462" cy="212" r="2.5" style="animation-delay: 700ms"/>
+    <text class="map-micro" x="455" y="285">audit gate</text>
+  </g>
+</svg>

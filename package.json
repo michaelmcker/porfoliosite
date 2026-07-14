@@ -1,0 +1,17 @@
+{
+  "name": "michael-mckerracher-portfolio",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@sparticuz/chromium-min": "143.0.4",
+    "google-auth-library": "^10.9.0",
+    "puppeteer-core": "23.4.0"
+  }
+}
