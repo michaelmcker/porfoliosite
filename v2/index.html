@@ -229,10 +229,15 @@
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
                 <h3>Presentation publishing</h3>
-                <p>A publish skill deploys branded presentations, applies access control, embeds them, and verifies final URLs.</p>
+                <p>A publishing skill deploys branded HTML, validates its destination, connects both publishing layers, and verifies the final URL.</p>
                 <a href="workflows/presentation-publishing.html">View workflow</a>
               </div>
-              <figure><img src="../assets/workflows/presentation-publishing-six-step.png" alt="Six-stage presentation publishing workflow from branded artifact through deployment and URL validation"></figure>
+              <figure>
+                <picture>
+                  <source media="(max-width: 699px)" srcset="assets/presentation-publishing-mobile.png">
+                  <img src="assets/presentation-publishing-desktop.png" alt="Six-stage presentation publishing workflow from branded HTML through Vercel, Webflow, and final URL verification">
+                </picture>
+              </figure>
             </div>
           </div>
         </article>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presentation publishing workflow artwork</title>
+  <link rel="stylesheet" href="presentation-publishing.css">
+</head>
+<body>
+  <main class="artboard" aria-labelledby="artwork-title">
+    <header class="artwork-header">
+      <p>Presentation publishing</p>
+      <h1 id="artwork-title">One artifact. Two publishing layers. One ready-to-send URL.</h1>
+    </header>
+
+    <ol class="pipeline" aria-label="Six-stage presentation publishing workflow">
+      <li class="stage">
+        <span class="stage-number">01</span>
+        <h2>Branded HTML presentation</h2>
+        <p>A self-contained artifact with approved content, assets, name, and destination.</p>
+        <small>Self-contained HTML</small>
+      </li>
+      <li class="stage">
+        <span class="stage-number">02</span>
+        <h2>Vercel API deployment</h2>
+        <p>Publish the presentation into the corporate Vercel project.</p>
+        <small>Vercel API</small>
+      </li>
+      <li class="stage">
+        <span class="stage-number">03</span>
+        <h2>Name and destination validation</h2>
+        <p>Check the proposed name and URL against existing presentations before the CMS write.</p>
+        <small>Existing presentation lookup</small>
+      </li>
+      <li class="stage">
+        <span class="stage-number">04</span>
+        <h2>Webflow CMS iframe field</h2>
+        <p>Create or update the CMS record and write the shared iframe embed.</p>
+        <small>Webflow CMS API</small>
+      </li>
+      <li class="stage">
+        <span class="stage-number">05</span>
+        <h2>Full-screen presentation template</h2>
+        <p>Render the Vercel artifact edge to edge on the managed Webflow page.</p>
+        <small>Iframe embed field</small>
+      </li>
+      <li class="stage">
+        <span class="stage-number">06</span>
+        <h2>Published URL verification</h2>
+        <p>Open and verify both layers, then return the final prospect-ready URL.</p>
+        <small>Browser URL verification</small>
+      </li>
+    </ol>
+
+    <footer class="layer-key" aria-label="Publishing layers">
+      <span>Artifact layer</span>
+      <span>Managed publishing layer</span>
+      <strong>Prospect-ready output</strong>
+    </footer>
+  </main>
+</body>
+</html>
