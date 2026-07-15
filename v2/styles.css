@@ -384,7 +384,13 @@ h3 {
   min-width: 0;
   width: min(100%, 940px);
   justify-self: center;
-  transform: translate3d(calc(36px * (1 - var(--object-reveal, 0))), 0, 0);
+  transform: perspective(1500px)
+    translate3d(calc(32px * (1 - var(--object-reveal, 0))), 0, 0)
+    rotateY(calc(5deg - (8deg * var(--object-reveal, 0))))
+    rotateZ(calc(1deg - (1.7deg * var(--object-reveal, 0))));
+  transform-origin: center;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 .browser-object {
   width: 100%;
@@ -408,11 +414,7 @@ h3 {
 .browser-viewport { position: relative; overflow: hidden; background: #0a0c0b; }
 .browser-viewport img,
 .browser-viewport video { width: 100%; height: 100%; object-fit: cover; }
-.accommodation-viewport > video,
-.accommodation-fallback { position: absolute; inset: 0; }
-.accommodation-fallback { display: none; }
-.has-scrub-error [data-accommodation-scrub] { display: none; }
-.has-scrub-error .accommodation-fallback { display: block; }
+.accommodation-viewport iframe { width: 100%; height: 100%; border: 0; background: #f5f1e7; pointer-events: auto; }
 .browser-object-tall .browser-viewport { aspect-ratio: 16 / 10; }
 .browser-object-video .browser-viewport,
 .browser-object-elevator .browser-viewport { aspect-ratio: 16 / 10; }
@@ -446,9 +448,55 @@ h3 {
 .work-object-accommodation { min-height: clamp(820px, 100svh, 105svh); padding-block: clamp(64px, 7vw, 104px); }
 .work-object-cool,
 .work-object-elevators { min-height: 120svh; }
-.browser-object-video {
-  transform: translate3d(calc(36px * (1 - var(--object-reveal, 0))), 0, 0);
-  transform-origin: center;
+.cool-laptop {
+  --object-reveal: 0;
+  position: relative;
+  width: min(112%, 980px);
+  aspect-ratio: 1672 / 941;
+  justify-self: center;
+  margin: 0;
+  overflow: visible;
+  filter: drop-shadow(0 32px 38px rgba(19,22,19,.25));
+  perspective: 1500px;
+}
+.cool-laptop-lid {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  clip-path: inset(0 0 14% 0);
+  transform: rotateX(calc(72deg * (1 - var(--object-reveal, 0)))) rotateY(calc(-2.5deg * var(--object-reveal, 0))) rotateZ(calc(.55deg * var(--object-reveal, 0)));
+  transform-origin: 50% 84%;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.cool-laptop-screen {
+  position: absolute;
+  z-index: 1;
+  left: 18.15%;
+  top: 12.3%;
+  width: 63.95%;
+  height: 68.6%;
+  overflow: hidden;
+  background: #151713;
+}
+.cool-laptop-screen video { width: 100%; height: 100%; object-fit: cover; }
+.cool-laptop-frame {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/device-mockups/laptop-graphite-frame.png");
+  pointer-events: none;
+}
+.cool-laptop-base {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(82% 0 0 0);
+  pointer-events: none;
 }
 .browser-object-elevator {
   transform: perspective(1500px)
@@ -719,42 +767,55 @@ h3 {
 .about-copy > p { max-width: 650px; color: #d7ddd8; }
 .about h2,
 .about-copy > p:first-of-type,
-.about-context { opacity: calc(1 - var(--about-focus, 0)); transition: opacity 120ms linear; }
+.about-context,
+.about-value-inline { opacity: calc(1 - var(--about-focus, 0)); transition: opacity 120ms linear; }
 .about-questionable {
   position: relative;
-  z-index: 4;
-  width: auto;
-  max-width: 100%;
+  z-index: 1;
   color: inherit;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
+  opacity: calc(1 - var(--about-focus, 0));
 }
-.about.is-about-focused .about-questionable {
-  display: block;
-  margin-top: 10px;
+.about-questionable-focus {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: min(650px, calc(100% - var(--about-phrase-x, 0px)));
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  opacity: var(--about-focus, 0);
+  pointer-events: none;
+  transform: translate3d(var(--about-phrase-x, 0), var(--about-phrase-y, 0), 0);
+  transform-origin: left top;
+  will-change: transform, font-size;
+}
+.about.is-about-focused .about-questionable-focus {
   color: #fff5d8;
-  font-family: var(--font-editorial);
-  font-size: clamp(1.32rem, calc(1.32rem + (2.48rem * var(--about-growth, 0))), 3.8rem);
-  font-weight: 650;
+  font-size: clamp(var(--about-phrase-size, 1rem), calc(var(--about-phrase-size, 1rem) + (2.2rem * var(--about-growth, 0))), 3.2rem);
+  font-weight: calc(var(--about-phrase-weight, 400) + (250 * var(--about-growth, 0)));
   line-height: 1.08;
   overflow-wrap: normal;
-  transform: translate3d(0, calc(-6svh * var(--about-growth, 0)), 0);
-  transform-origin: left center;
-  will-change: transform;
+  transform: translate3d(var(--about-phrase-x, 0), calc(var(--about-phrase-y, 0) - (6svh * var(--about-growth, 0))), 0);
 }
+.about.is-about-growing .about-questionable-focus { font-family: var(--font-editorial); }
 .about-process-reveal {
   margin-top: clamp(20px, 3vw, 36px);
   opacity: var(--about-value, 0);
-  transform: translateY(calc((18px * (1 - var(--about-value, 0))) - (3svh * var(--about-value, 0))));
+  transform: translateY(calc((18px * (1 - var(--about-value, 0))) + (6svh * var(--about-value, 0))));
 }
 .about-process-value {
   max-width: 580px;
   margin: 0 0 16px;
   color: white;
   font-family: var(--font-editorial);
-  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
   font-weight: 580;
   line-height: 1.08;
 }
@@ -1050,8 +1111,10 @@ h3 {
   .about h2,
   .about-copy > p:first-of-type,
   .about-context { opacity: 1; }
-  .about-questionable,
-  .about.is-about-focused .about-questionable { display: inline; width: auto; max-width: 100%; margin: 0; color: inherit; font-family: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; transform: none; }
+  .about-questionable { opacity: 1; }
+  .about-questionable-focus { display: none; }
+  .about-value-inline { opacity: 1; }
+  .about-process-value { display: none; }
   .experience-ledger article { grid-template-columns: 1fr; gap: 8px; }
   .site-footer { grid-template-columns: 1fr 1fr; padding-block: 26px; }
   .footer-links { grid-column: 1 / -1; grid-row: 2; justify-self: start; }
@@ -1084,12 +1147,12 @@ h3 {
   .about h2,
   .about-copy > p:first-of-type,
   .about-context { opacity: 1; }
-  .about-questionable,
-  .about.is-about-focused .about-questionable { display: inline; width: auto; max-width: 100%; margin: 0; color: inherit; font-family: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; transform: none; }
+  .about-questionable { opacity: 1; }
+  .about-questionable-focus { display: none; }
+  .about-value-inline { opacity: 1; }
+  .about-process-value { display: none; }
   .about-process-line path { stroke-dashoffset: 0; }
   [data-scroll-reveal] { --object-reveal: 1; will-change: auto; }
-  [data-accommodation-scrub] { display: none; }
-  .accommodation-fallback { display: block; }
   .contact-story,
   .contact-story.has-finale-js { min-height: 100svh; }
   .contact-object { opacity: 1; transition: none; }

@@ -81,14 +81,10 @@
               <svg viewBox="0 0 58 54" focusable="false" aria-hidden="true"><path d="M52 6C43 8 39 16 37 24c-3 11-11 17-26 20M18 35l-8 9 12 5"/></svg>
               <span>Scroll the preview</span>
             </p>
-            <figure class="browser-object browser-object-tall screen-bezel" data-accommodation-viewer role="group" aria-label="Move the pointer over this browser and use the wheel to scrub the boutique accommodation preview">
+            <figure class="browser-object browser-object-tall screen-bezel" data-accommodation-viewer role="group" aria-label="Scrollable and selectable boutique accommodation website preview">
               <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>okanagan-treehouse-preview.michael-mckerracher.workers.dev</span></div>
               <div class="browser-viewport accommodation-viewport">
-                <video data-accommodation-scrub muted playsinline preload="metadata" poster="../assets/frames/accommodation/overview/001.jpg" aria-label="Website scroll through the property overview, treehouse, and cabin pages">
-                  <source data-src="../assets/videos/accommodation/showcase-scroll.webm" type="video/webm">
-                  <source data-src="../assets/videos/accommodation/showcase-scroll.mp4" type="video/mp4">
-                </video>
-                <img class="accommodation-fallback" data-accommodation-fallback src="../assets/frames/accommodation/overview/001.jpg" alt="Boutique accommodation website preview">
+                <iframe data-accommodation-page src="embeds/okanagan-treehouse.html" title="Selectable preview of the Okanagan Treehouse website" loading="lazy"></iframe>
               </div>
             </figure>
           </div>
@@ -115,14 +111,17 @@
               <a href="work/local-search-magnet.html">Read case study</a>
             </div>
           </div>
-          <figure class="browser-object browser-object-video screen-bezel" data-scroll-reveal="cool-runnings">
-            <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>coolrunningslandscaping.com</span></div>
-            <div class="browser-viewport">
-              <video id="motion-video-cool-runnings" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website and local search work.">
-                <source data-src="../assets/videos/cool-runnings-sizzle-25s.webm" type="video/webm">
-                <source data-src="../assets/videos/cool-runnings-sizzle-25s.mp4" type="video/mp4">
-              </video>
+          <figure class="cool-laptop" data-scroll-reveal="cool-runnings" aria-label="Cool Runnings website and local search work shown on an opening laptop">
+            <div class="cool-laptop-lid">
+              <div class="cool-laptop-screen">
+                <video id="motion-video-cool-runnings" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website and local search work.">
+                  <source data-src="../assets/videos/cool-runnings-sizzle-25s.webm" type="video/webm">
+                  <source data-src="../assets/videos/cool-runnings-sizzle-25s.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img class="cool-laptop-frame" src="../assets/device-mockups/laptop-graphite-frame.png" alt="">
             </div>
+            <img class="cool-laptop-base" src="../assets/device-mockups/laptop-graphite-frame.png" alt="">
           </figure>
         </article>
 
@@ -299,9 +298,10 @@
             <div class="about-copy">
               <h2 id="about-title">A little about me.</h2>
               <p>I was born and raised in Toronto. My first look at marketing came at six, helping my dad at his Chrysler dealership. I loved spending weekends there, looking through the brochures and the marketing around the showroom and thinking, “This made the cars look really cool.” That was probably the start of it. I’ve been doing marketing ever since.</p>
-              <p><span class="about-context">Now I live in Coldstream, BC, raising four kids and sharing the house with a cat and a dog. When I should probably be resting, I spend an unreasonable amount of time tinkering with AI and building things simply to see if I can.</span> <span class="about-questionable">Even when the practical value is questionable.</span></p>
+              <p><span class="about-context">Now I live in Coldstream, BC, raising four kids and sharing the house with a cat and a dog. When I should probably be resting, I spend an unreasonable amount of time tinkering with AI and building things simply to see if I can.</span> <span class="about-questionable" data-about-questionable-inline>Even when the practical value is questionable</span>, <span class="about-value-inline">there is value in the process.</span></p>
+              <span class="about-questionable-focus" data-about-questionable-focus aria-hidden="true">Even when the practical value is questionable</span>
               <div class="about-process-reveal">
-                <p class="about-process-value">There’s still value in the process.</p>
+                <p class="about-process-value">There is value in the process.</p>
                 <button class="about-toggle" type="button" aria-expanded="false" aria-controls="about-build-note" data-about-toggle>How this unnecessary thing was made</button>
                 <div class="about-note" id="about-build-note" data-about-note hidden>
                   <p>The portrait starts with one approved painting. A masked typing loop supplies the hand movement, while 66 registered head poses map the cursor or touch position to changes in gaze.</p>

@@ -130,83 +130,6 @@ if (!motionPreference.matches && "IntersectionObserver" in window) {
 
 const biasSequence = document.querySelector("[data-bias-sequence]");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-const accommodationVideo = document.querySelector("[data-accommodation-scrub]");
-const accommodationViewer = accommodationVideo?.closest("[data-accommodation-viewer]");
-const sourceFrameDuration = 1 / 25;
-const finePointer = window.matchMedia("(pointer: fine)");
-let accommodationDuration = 0;
-let accommodationPendingProgress = 0;
-let accommodationWheelProgress = 0;
-let accommodationWheelFrame;
-let accommodationManualUntil = 0;
-
-const loadAccommodationVideo = () => {
-  if (!accommodationVideo || accommodationVideo.dataset.scrubLoaded === "true" || reducedMotion.matches) return;
-  accommodationVideo.querySelectorAll("source[data-src]").forEach((source) => {
-    source.src = source.dataset.src;
-  });
-  accommodationVideo.dataset.scrubLoaded = "true";
-  accommodationVideo.load();
-};
-
-const seekAccommodation = (progress) => {
-  accommodationPendingProgress = Math.max(0, Math.min(1, progress));
-  if (!accommodationVideo || !accommodationDuration || reducedMotion.matches) return;
-  const rawTime = accommodationPendingProgress * Math.max(0, accommodationDuration - sourceFrameDuration);
-  const nextTime = Math.round(rawTime / sourceFrameDuration) * sourceFrameDuration;
-  if (Math.abs(accommodationVideo.currentTime - nextTime) < sourceFrameDuration * .5) return;
-  accommodationVideo.currentTime = nextTime;
-};
-
-const normalizeWheelDelta = (event) => {
-  if (event.deltaMode === WheelEvent.DOM_DELTA_LINE) return event.deltaY * 18;
-  if (event.deltaMode === WheelEvent.DOM_DELTA_PAGE) return event.deltaY * window.innerHeight;
-  return event.deltaY;
-};
-
-const applyAccommodationWheel = () => {
-  accommodationWheelFrame = undefined;
-  seekAccommodation(accommodationWheelProgress);
-};
-
-const canScrubAccommodationWithWheel = () => finePointer.matches
-  || (navigator.maxTouchPoints === 0 && window.innerWidth > 760);
-
-const scrubAccommodationWithWheel = (event) => {
-  if (reducedMotion.matches || !canScrubAccommodationWithWheel()) return;
-  event.preventDefault();
-  loadAccommodationVideo();
-  if (!accommodationDuration) return;
-  accommodationManualUntil = performance.now() + 900;
-  const pixelsForFullScrub = Math.max(900, window.innerHeight * 1.4);
-  accommodationWheelProgress = Math.max(0, Math.min(1,
-    accommodationWheelProgress + normalizeWheelDelta(event) / pixelsForFullScrub,
-  ));
-  if (!accommodationWheelFrame) accommodationWheelFrame = requestAnimationFrame(applyAccommodationWheel);
-};
-
-accommodationViewer?.addEventListener("wheel", scrubAccommodationWithWheel, { passive: false });
-
-accommodationVideo?.addEventListener("loadedmetadata", () => {
-  accommodationDuration = Number.isFinite(accommodationVideo.duration) ? accommodationVideo.duration : 0;
-  accommodationWheelProgress = accommodationPendingProgress;
-  seekAccommodation(accommodationPendingProgress);
-}, { once: true });
-
-accommodationVideo?.addEventListener("error", () => {
-  accommodationViewer?.classList.add("has-scrub-error");
-});
-
-if (accommodationViewer && !reducedMotion.matches && "IntersectionObserver" in window) {
-  const accommodationLoadObserver = new IntersectionObserver((entries, observer) => {
-    if (!entries[0]?.isIntersecting) return;
-    loadAccommodationVideo();
-    observer.disconnect();
-  }, { rootMargin: "120% 0px", threshold: 0 });
-  accommodationLoadObserver.observe(accommodationViewer);
-} else {
-  loadAccommodationVideo();
-}
 
 if (biasSequence && !reducedMotion.matches && "IntersectionObserver" in window) {
   biasSequence.classList.add("is-observable");
@@ -233,10 +156,6 @@ const updateObjectReveals = () => {
     const revealKey = object.dataset.scrollReveal;
     const progress = revealKey === "elevators" ? clampUnit(rawProgress / .72) : rawProgress;
     object.style.setProperty("--object-reveal", progress.toFixed(3));
-    if (revealKey === "accommodation" && performance.now() >= accommodationManualUntil) {
-      accommodationWheelProgress = progress;
-      seekAccommodation(progress);
-    }
   });
 };
 
@@ -253,6 +172,9 @@ const aboutNote = document.querySelector("[data-about-note]");
 const aboutStage = document.querySelector("[data-about-stage]");
 const aboutScrollStory = document.querySelector("[data-about-scroll-story]");
 const aboutPointerStage = document.querySelector("[data-about-pointer-stage]");
+const aboutCopy = document.querySelector(".about-copy");
+const aboutQuestionableInline = document.querySelector("[data-about-questionable-inline]");
+const aboutQuestionableFocus = document.querySelector("[data-about-questionable-focus]");
 const portraitFrame = document.querySelector(".portrait-frame");
 const portraitEmbed = portraitFrame?.querySelector("iframe");
 let portraitPointerFrame;
@@ -279,9 +201,21 @@ aboutPointerStage?.addEventListener("pointerdown", sendPortraitPointer);
 const clampUnit = (value) => Math.max(0, Math.min(1, value));
 const phase = (progress, start, end) => clampUnit((progress - start) / (end - start));
 
+const positionAboutFocusPhrase = () => {
+  if (!aboutScrollStory || !aboutCopy || !aboutQuestionableInline || !aboutQuestionableFocus) return;
+  const inlineBounds = aboutQuestionableInline.getBoundingClientRect();
+  const copyBounds = aboutCopy.getBoundingClientRect();
+  const inlineStyle = getComputedStyle(aboutQuestionableInline);
+  aboutScrollStory.style.setProperty("--about-phrase-x", `${inlineBounds.left - copyBounds.left}px`);
+  aboutScrollStory.style.setProperty("--about-phrase-y", `${inlineBounds.top - copyBounds.top}px`);
+  aboutScrollStory.style.setProperty("--about-phrase-size", inlineStyle.fontSize);
+  aboutScrollStory.style.setProperty("--about-phrase-weight", inlineStyle.fontWeight);
+};
+
 const updateAboutProgress = () => {
   aboutScrollFrame = undefined;
   if (!aboutScrollStory) return;
+  positionAboutFocusPhrase();
   const bounds = aboutScrollStory.getBoundingClientRect();
   const travel = Math.max(1, aboutScrollStory.offsetHeight - window.innerHeight);
   const progress = reducedMotion.matches ? 1 : clampUnit(-bounds.top / travel);
@@ -291,6 +225,7 @@ const updateAboutProgress = () => {
   aboutScrollStory.style.setProperty("--about-line", phase(progress, .52, .7).toFixed(3));
   aboutScrollStory.style.setProperty("--about-value", phase(progress, .7, .86).toFixed(3));
   aboutStage?.classList.toggle("is-about-focused", progress > .055);
+  aboutStage?.classList.toggle("is-about-growing", progress > .28);
 };
 
 window.addEventListener("scroll", () => {
@@ -300,6 +235,7 @@ window.addEventListener("scroll", () => {
 window.addEventListener("resize", updateAboutProgress, { passive: true });
 updateAboutProgress();
 updateObjectReveals();
+document.fonts?.ready.then(updateAboutProgress);
 
 aboutToggle?.addEventListener("click", () => {
   const opening = aboutNote?.hidden ?? false;

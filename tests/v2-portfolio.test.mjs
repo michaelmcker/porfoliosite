@@ -43,10 +43,11 @@ test("accordion stages selection and About bridges section-wide pointer input", 
   assert.match(app, /portfolio-portrait-pointer/);
   assert.match(app, /data-workflow-transitioning/);
   assert.match(app, /requestAnimationFrame/);
-  assert.match(html, /class="about-questionable">Even when the practical value is questionable\.<\/span>/);
+  assert.match(html, /data-about-questionable-inline>Even when the practical value is questionable<\/span>, <span class="about-value-inline">there is value in the process\.<\/span>/);
+  assert.match(html, /data-about-questionable-focus[^>]*aria-hidden="true"[^>]*>Even when the practical value is questionable<\/span>/);
   assert.match(html, /data-about-scroll-story/);
   assert.match(html, /class="about-process-line"/);
-  assert.match(html, /There’s still value in the process\./);
+  assert.match(html, /There is value in the process\./);
   assert.match(app, /--about-progress/);
 });
 
@@ -146,6 +147,10 @@ test("selected work gives properly scaled laptop and browser objects more room t
   assert.match(css, /\.laptop-object video\s*\{[^}]*mask-image:\s*url\("\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.png"\)/s);
   await access(new URL("../assets/device-mockups/laptop-three-quarter-rccv-cutout.png", v2Url));
   assert.match(css, /\.browser-object\s*\{[^}]*width:\s*100%/s);
+  assert.match(html, /class="cool-laptop"[^>]*data-scroll-reveal="cool-runnings"/);
+  assert.match(html, /class="cool-laptop-lid"/);
+  assert.match(html, /class="cool-laptop-base"/);
+  assert.equal((html.match(/laptop-graphite-frame\.png/g) || []).length, 2);
 });
 
 test("project labels and the accommodation cue are specific and keep a wide black scrollable browser", async () => {
@@ -187,8 +192,8 @@ test("About holds a sticky scroll story before releasing into the rest of the pa
   assert.match(css, /\.about-story-sticky\s*\{[^}]*position:\s*sticky[^}]*min-height:\s*100svh/s);
   assert.match(html, /class="about-context"/);
   assert.match(css, /\.about-context[\s\S]*?opacity:\s*calc\(1\s*-\s*var\(--about-focus,\s*0\)\)/s);
-  assert.match(css, /\.about-questionable\s*\{[^}]*font-size:\s*clamp\([^;]*var\(--about-growth/s);
-  assert.doesNotMatch(css, /\.about-questionable\s*\{[^}]*scale\(/s);
+  assert.match(css, /\.about\.is-about-focused \.about-questionable-focus\s*\{[^}]*font-size:\s*clamp\([^;]*var\(--about-growth/s);
+  assert.doesNotMatch(css, /\.about-questionable-focus\s*\{[^}]*scale\(/s);
   assert.match(css, /\.portrait-frame\s*\{[^}]*border-radius:\s*48%\s+48%\s+12px\s+12px\s*\/\s*13%\s+13%\s+12px\s+12px/s);
   assert.match(css, /\.about-process-line path\s*\{[^}]*stroke-dasharray:/s);
   assert.match(css, /\.contact-story\s*\{[^}]*background:\s*var\(--accent\)/s);
@@ -211,8 +216,15 @@ test("About uses one parent-owned pointer space and keeps its final composition 
   assert.doesNotMatch(portrait, /cursor:\s*crosshair/);
   assert.doesNotMatch(portrait, /stage\.addEventListener\(["']pointer(?:move|down)["']/);
   assert.match(portrait, /window\.addEventListener\(["']message["']/);
-  assert.match(css, /\.about\.is-about-focused \.about-questionable\s*\{[^}]*3\.8rem/s);
-  assert.match(css, /\.about-process-value\s*\{[^}]*2\.8rem/s);
+  assert.match(css, /\.about-questionable-focus\s*\{[^}]*position:\s*absolute/s);
+  assert.match(css, /\.about\.is-about-focused \.about-questionable-focus\s*\{[^}]*3\.2rem/s);
+  assert.match(app, /data-about-questionable-inline/);
+  assert.match(app, /data-about-questionable-focus/);
+  assert.match(app, /--about-phrase-x/);
+  assert.match(app, /--about-phrase-y/);
+  assert.match(app, /--about-phrase-size/);
+  assert.match(app, /--about-phrase-weight/);
+  assert.match(css, /\.about-process-value\s*\{[^}]*2\.2rem/s);
 });
 
 test("contact finale triggers once in view and preserves dynamic drag physics", async () => {
@@ -304,37 +316,35 @@ test("all five workflow controls have unique accessible trigger and panel wiring
   assert.match(html, /href="workflows\/presentation-publishing\.html"/);
 });
 
-test("boutique accommodation owns pointer-wheel scrubbing without trapping keyboard or reduced motion", async () => {
+test("boutique accommodation uses a same-origin selectable browser document", async () => {
   const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
 
   assert.match(html, /data-accommodation-viewer/);
-  assert.match(html, /data-accommodation-scrub/);
-  assert.match(html, /aria-label="[^"]*wheel[^"]*preview[^"]*"/i);
-  assert.match(app, /addEventListener\(["']wheel["']/);
-  assert.match(app, /passive:\s*false/);
-  assert.match(app, /preventDefault\(\)/);
-  assert.match(app, /accommodationWheelProgress/);
-  assert.match(app, /matchMedia\(["']\(pointer:\s*fine\)["']\)/);
-  assert.match(app, /navigator\.maxTouchPoints\s*===\s*0/);
-  assert.doesNotMatch(app, /addEventListener\(["']keydown["'][\s\S]{0,180}preventDefault/);
+  assert.match(html, /<iframe[^>]*data-accommodation-page[^>]*src="embeds\/okanagan-treehouse\.html"/);
+  assert.match(html, /title="Selectable preview of the Okanagan Treehouse website"/);
+  assert.doesNotMatch(html, /data-accommodation-scrub|showcase-scroll\.(?:mp4|webm)|data-accommodation-fallback/);
+  assert.doesNotMatch(app, /accommodationVideo|accommodationWheelProgress|seekAccommodation|scrubAccommodationWithWheel/);
+  assert.match(css, /\.accommodation-viewport iframe\s*\{[^}]*pointer-events:\s*auto/s);
+  assert.match(css, /\.accommodation-showcase\s*\{[^}]*rotateY\(calc\(/s);
   assert.match(css, /\.work-object-accommodation\s*\{[^}]*min-height:\s*clamp\([^}]*105svh/s);
-  assert.match(app, /prefers-reduced-motion:\s*reduce/);
 });
 
-test("V2 uses a real scroll-scrub accommodation video and keeps a frame fallback", async () => {
-  const [html, app] = await Promise.all([readV2("index.html"), readV2("app.js")]);
+test("the accommodation browser document contains real selectable copy and working destinations", async () => {
+  const embed = await readV2("embeds/okanagan-treehouse.html");
 
-  assert.match(html, /data-accommodation-scrub/);
-  assert.match(html, /showcase-scroll\.webm/);
-  assert.match(html, /showcase-scroll\.mp4/);
-  assert.match(html, /data-accommodation-fallback/);
-  assert.match(app, /loadedmetadata/);
-  assert.match(app, /currentTime/);
-  assert.match(app, /1\s*\/\s*25/);
-  assert.doesNotMatch(app, /setFrameFromScrollProgress/);
-
-  await access(new URL("../assets/videos/accommodation/showcase-scroll.mp4", v2Url));
-  await access(new URL("../assets/videos/accommodation/showcase-scroll.webm", v2Url));
+  assert.match(embed, /<main[^>]*id="overview"/);
+  assert.match(embed, /id="treehouse"/);
+  assert.match(embed, /id="cabin"/);
+  assert.match(embed, /Two boutique Okanagan stays/);
+  assert.match(embed, /href="#treehouse"/);
+  assert.match(embed, /href="#cabin"/);
+  assert.match(embed, /href="https:\/\/okanagan-treehouse-preview\.michael-mckerracher\.workers\.dev\/stays\/treehouse\/"/);
+  assert.match(embed, /href="https:\/\/okanagan-treehouse-preview\.michael-mckerracher\.workers\.dev\/stays\/cabin\/"/);
+  await Promise.all([
+    access(new URL("assets/accommodation/hero-poster.webp", v2Url)),
+    access(new URL("assets/accommodation/treehouse.webp", v2Url)),
+    access(new URL("assets/accommodation/cabin.webp", v2Url)),
+  ]);
 });
 
 test("V2 refinement keeps text and motion responsive", async () => {
@@ -344,8 +354,8 @@ test("V2 refinement keeps text and motion responsive", async () => {
   assert.match(html, /class="bias-route/);
   assert.equal((html.match(/class="bias-step-arrow/g) || []).length, 0);
   assert.match(css, /translate3d\(calc\(36px\s*\*\s*\(1\s*-\s*var\(--object-reveal/);
-  assert.match(css, /\.about-questionable\s*\{[^}]*width:\s*auto[^}]*max-width:\s*100%/s);
   assert.match(css, /\.about-questionable\s*\{[^}]*color:\s*inherit[^}]*font-family:\s*inherit/s);
+  assert.match(css, /\.about-questionable-focus\s*\{[^}]*width:\s*min\(650px,\s*calc\(100%\s*-\s*var\(--about-phrase-x/s);
   assert.doesNotMatch(css, /\.experience-ledger(?: article)?\s*\{[^}]*border-/s);
 });
 
@@ -388,7 +398,7 @@ test("large showcase videos stay lazy, autoplay once visible, and have no pause-
   assert.match(app, /prefers-reduced-motion:\s*reduce/);
 });
 
-test("selected work combines video scrubbing with restrained object choreography", async () => {
+test("selected work combines selectable browser content with restrained device choreography", async () => {
   const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
 
   for (const key of ["accommodation", "cool-runnings", "elevators"]) {
@@ -396,13 +406,13 @@ test("selected work combines video scrubbing with restrained object choreography
   }
   assert.doesNotMatch(html, /data-frame-scroll="accommodation"/);
   assert.match(css, /\[data-scroll-reveal\][\s\S]*?--object-reveal/s);
-  assert.match(css, /\.browser-object-video\s*\{[^}]*translate3d\(calc\(36px\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)/s);
-  assert.doesNotMatch(css, /\.browser-object-video\s*\{[^}]*rotateX/s);
+  assert.match(css, /\.accommodation-showcase\s*\{[^}]*rotateY\(calc\(/s);
+  assert.match(css, /\.cool-laptop-lid\s*\{[^}]*rotateX\(calc\(72deg\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)\)/s);
+  assert.match(css, /\.cool-laptop-frame\s*\{[^}]*laptop-graphite-frame\.png/s);
   assert.match(css, /\.browser-object-elevator\s*\{[^}]*rotateX\(calc\(68deg\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)\)/s);
   assert.match(css, /\.work-object-accommodation\s*\{[^}]*105svh/s);
   assert.match(css, /\.work-object-cool,[\s\S]*?\.work-object-elevators\s*\{[^}]*min-height:\s*120svh/s);
   assert.match(app, /querySelectorAll\("\[data-scroll-reveal\]"\)/);
-  assert.match(app, /seekAccommodation\(progress\)/);
   assert.match(app, /revealKey\s*===\s*"elevators"[\s\S]*?rawProgress\s*\/\s*\.72/s);
   assert.match(app, /--object-reveal/);
 });
@@ -539,13 +549,13 @@ test("V2 interactions use keyboard handling, observers, and rAF-throttled scroll
 test("browser QA covers runtime focus, motion, inputs, all workflow routes, and target widths", async () => {
   const qa = await readFile(new URL("../scripts/qa-v2.mjs", import.meta.url), "utf8");
   for (const marker of [
-    "puppeteer-core", "inert", "aria-hidden", "ArrowDown", "data-accommodation-scrub",
-    "scrubLoaded", "prefers-reduced-motion", "detailRoutes", "workflow-step",
+    "puppeteer-core", "inert", "aria-hidden", "ArrowDown", "data-accommodation-page",
+    "selectableText", "prefers-reduced-motion", "detailRoutes", "workflow-step",
     "1440", "1024", "768", "390", "320", "scrollWidth",
     "workflow-desktop-", "workflow-mobile-", "hero-desktop.png", "hero-mobile.png",
     "work-desktop-accommodation.png", "work-mobile-accommodation.png",
     "work-desktop.png", "motion-video-rccv", "currentTime", "transitionWidths", "--about-line",
-    "cueBottom", "phraseRight", "local-search-magnet",
+    "cueBottom", "phraseRight", "aboutAnchorDelta", "coolLidAngle", "local-search-magnet",
   ]) {
     assert.ok(qa.includes(marker), `browser QA missing ${marker}`);
   }

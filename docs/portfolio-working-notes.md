@@ -41,7 +41,7 @@ V1 remains the production homepage. V2 is an unlinked assessment at `/v2/`; it n
 - Public title: Elevating a boutique accommodation site.
 - Story: take underused property assets and weak photography, improve the visual system with AI, and build scroll-led stories for the Overview, Treehouse, and Cabin.
 - Media: browser window with a real URL bar; replaceable with nested scroll video.
-- V2 interaction: keep the browser flat, scrub the 32.88-second WebM/MP4 concatenated from the real Overview, Treehouse, and Cabin recordings, and keep the curly preview cue as one unit above the browser and inside the content width. Ordinary wheel input must continue scrolling the page; reduced-motion shows the approved first-frame fallback.
+- V2 interaction: use `v2/embeds/okanagan-treehouse.html`, a same-origin browser document made from the live Overview, Treehouse, and Cabin copy, links, and approved local photography. The live Worker sends `X-Frame-Options: SAMEORIGIN`, so it cannot be the iframe source. Keep the curly preview cue as one unit above the browser and inside the content width; text stays selectable, destinations clickable, iframe scroll stays local, and outer-page scroll gently rotates the browser shell. Reduced-motion keeps the complete interactive document visible.
 - Links: Overview, Treehouse, Cabin.
 - Do not mention Airbnb links.
 
@@ -207,18 +207,18 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 - Do not use pastel or unrelated flat fields as the homepage structure. Bias to Build uses hard gold and About uses deep forest. The approved accordion is neutral: charcoal inactive rails, a warm-paper active rail, and a shared charcoal content stage. Do not colour-code individual workflows.
 - Treat hero media, laptops, browsers, proposal sheets, album artwork, and the About portrait as authored physical objects. Hero and screen surfaces share a thick black bevel, rounded corners, restrained perspective, and a strong drop shadow.
 - Keep the Renaissance portrait in About only; never place it in the hero.
-- Keep the interactive portrait inside the existing brown frame and show it at a larger scale. A V2-only embed accepts section-wide pointer coordinates. The practical-value sentence breaks into its own expanding hard-gold scroll moment with an animated curly arrow.
+- Keep the interactive portrait inside the existing brown frame and show it at a larger scale. A V2-only embed accepts section-wide pointer coordinates. The full practical-value sentence begins inline; a measured duplicate then expands into the scroll moment with an animated gold line.
 - Reuse the responsive system-map film in the largest raised black-bevel hero card, beside the hero copy. The hero subhead ends after `scale.`; `And sometimes, stuff just for fun.` is a separate italic Fraunces beat.
 - Hero and every Selected Work stage use the same white canvas. Music is the only black interlude. No project row uses a photographic or grey background.
-- Selected Work keeps the Z-pattern and existing media/interactions. Boutique keeps the wide black browser, but the curly arrow appears before `Scroll the preview`, both form one unit above and outside it, and ordinary page scroll scrubs the stitched real source recording. On fine-pointer desktop devices, wheel gestures over the browser stay local and scrub the film without moving the page; moving outside the browser restores normal page scrolling. Status, Overview, Previous, and Next overlays do not sit on the work.
+- Selected Work keeps the Z-pattern and existing media/interactions. Boutique keeps the wide black browser, but the curly arrow appears before `Scroll the preview`, both form one unit above and outside it. The preview is selectable same-origin HTML, not a video or image swap: internal links and document scroll stay inside the frame while outer scroll controls only the browser’s subtle pose. Status, Previous, and Next overlays do not sit on the work.
 - RCCV is a large isolated laptop treatment, not a laptop inside another screen bezel. Its exact video is masked by `laptop-three-quarter-rccv-cutout.png` to remove the baked cream background. Its restored title is `Bringing a community site to life.` and its specific interaction link is `Explore the interactive Stations of the Cross`.
 - The proposal remains the real letter-shaped artifact but loses its surrounding faux frame; the PDF itself is larger and receives the rounded corners.
-- Accommodation, Cool Runnings, and Why Elevators begin 36px to the right and settle left with scroll. Accommodation stays flat, Cool Runnings remains restrained, and Why Elevators begins pitched back and resolves at a slight angle rather than straight-on.
+- Accommodation begins slightly right and rotates gently as it settles with outer scroll. Cool Runnings uses the transparent graphite laptop frame and opens its lid around the existing sizzle film. Why Elevators begins pitched back and resolves at a slight angle rather than straight-on.
 - Hero, RCCV, and Cool Runnings videos have no visible or invisible Pause control surface. They lazy-load and autoplay while visible; reduced-motion users see static posters.
 - Bias to Build uses a spacious, unnumbered two-row snake on desktop: Understand → Shape → Build, then Measure → Refine → Systematise from right to left. One thin continuous route connects the full sequence instead of heavy per-label arrows. Mobile keeps the same semantic order beside a quiet vertical route.
 - Desktop workflow states use a full-width expanding-spine accordion at 1100px and wider; smaller layouts use vertical rows with mobile-readable artwork. Desktop open and closed states use explicit numeric widths so the spine actually slides. The four inactive rails overlap; the active rail is visually hidden. Active panels are taller and give the workflow image more room. Rails are neutral rather than category-coloured.
 - V2 type and padding rhythm is governed by `--type-h1`, `--type-h2`, `--type-h3`, `--space-section`, `--space-heading`, and `--space-copy` in `v2/styles.css`. Avoid isolated heading clamps and section paddings that do not derive from those roles.
-- About uses the Renaissance arch. The practical-value phrase is indistinguishable from its paragraph at rest; scroll then fades the surrounding copy, interpolates real font size and colour for sharp text, draws a visible gold line toward the portrait without crossing the copy at 1024/900/768, reveals the process conclusion, and only then releases the page. A stable parent stage exclusively owns the pointer and sends normalized coordinates into the presentation-only portrait iframe. Experience is a tighter centred ledger without row rules, route dots, or timeline markers.
+- About uses the Renaissance arch. `Even when the practical value is questionable, there is value in the process.` is one normal sentence at rest. An aria-hidden duplicate is measured onto the exact start of the practical-value clause; scroll then fades the original, interpolates real font size, weight, family, and colour for sharp text, keeps the growing copy inside its column, resolves the process conclusion below it, draws a visible gold line toward the portrait, and only then releases the page. A stable parent stage exclusively owns the pointer and sends normalized coordinates into the presentation-only portrait iframe. Experience is a tighter centred ledger without row rules, route dots, or timeline markers.
 - Outcomes are four centred metrics with unchanged claims.
 - All five workflow detail pages use one shared structure and stylesheet. Each page states its purpose, rationale, accurate steps, tools and sources, what ships, human review, public-safe proof and constraints, and related work.
 
@@ -246,7 +246,7 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 - Company names can appear in the resume/experience area. Elsewhere, prefer category descriptions when public naming is unnecessary.
 - Do not expose private Vertical Impression automation, internal data, API keys, or client-identifying information.
 - Confirm which proof points can be public and which need anonymized category labels.
-- The Boutique replacement is complete from the three checked-in source recordings. Record a replacement film for Why Elevator Advertising when ready.
+- The retired Boutique recordings remain checked in as source history, but V2 now uses the selectable same-origin HTML preview. Record a replacement film for Why Elevator Advertising when ready.
 - Complete direct Business Profile Performance API authentication before presenting exact profile calls, website clicks, directions, or total profile interactions.
 - Verify the presentation-publishing implementation against the current corporate Vercel and Webflow schemas before publishing code-level details.
 
@@ -265,8 +265,8 @@ This is the concrete correction list from the July 13 production audit. Items st
 ### Selected Work Device Frames
 
 - RCCV is the only selected-work item currently using a real generated device composite. Replace its short seven-second composite with the newly approved RCCV hero recording once the exact source asset is confirmed, then provide optimized WebM and MP4 versions.
-- Boutique Accommodation currently uses the generic CSS browser shell. It still needs its own larger perspective browser treatment with a real URL bar and a replaceable image/video viewport.
-- Cool Runnings currently uses the same generic CSS browser shell with a small rotation. It still needs a distinct device treatment that keeps the sizzle film large and readable rather than making it look like the Boutique frame.
+- Boutique Accommodation now uses its own wide black browser treatment with a real URL bar and the selectable same-origin HTML document; do not replace it with a video viewport.
+- Cool Runnings now uses the distinct graphite laptop cutout, with the existing sizzle film in its transparent screen aperture and a scroll-driven opening lid.
 - Why Elevator Advertising also reuses the generic CSS browser shell. It needs a separate, more dimensional perspective browser with the complete page visible and a replaceable media viewport.
 - The proposal PDF should remain a letter-size paper artifact, not be forced into a browser or laptop frame.
 - The album section should remain an overlapping album-art composition on a colour-matched black field.
@@ -282,7 +282,7 @@ This is the concrete correction list from the July 13 production audit. Items st
 
 ### Completed V2 Layout Corrections
 
-- About uses a 280svh desktop sticky story. The practical-value phrase remains at the end of paragraph two; surrounding copy fully fades before its real font size grows, a gold line draws toward the portrait without crossing the copy, and `There’s still value in the process.` appears before the section releases. Mobile and reduced-motion layouts show the same content without trapping the viewport.
+- About uses a 280svh desktop sticky story. The complete sentence initially reads normally, then the measured practical-value clause takes over from its exact inline anchor. Surrounding copy fully fades before the clause grows, the clause and conclusion stay within the available copy area, a gold line draws toward the portrait, and the process statement appears before release. Mobile and reduced-motion layouts show the complete sentence without trapping the viewport.
 - `Let’s build something useful.` is a full-bleed hard-gold section.
 - Outcomes are four centred metrics with unchanged claims. Experience is a centred chronological ledger with no route image, dots, or markers.
 - Desktop and tablet Selected Work use one white canvas, shared responsive type/spacing tokens, intentional object scale, and consistent separators.

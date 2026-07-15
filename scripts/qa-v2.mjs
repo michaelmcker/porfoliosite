@@ -145,72 +145,44 @@ try {
     const sectionTop = section.getBoundingClientRect().top + window.scrollY;
     window.scrollTo(0, sectionTop - (window.innerHeight * .97));
   });
-  await page.waitForFunction(() => {
-    const video = document.querySelector("[data-accommodation-scrub]");
-    return video?.dataset.scrubLoaded === "true" && video.readyState >= 1 && Number.isFinite(video.duration);
+  await new Promise((resolve) => setTimeout(resolve, 120));
+  const accommodationFrame = await page.$("[data-accommodation-page]");
+  const accommodationContent = await accommodationFrame.contentFrame();
+  await accommodationContent.waitForSelector("#overview");
+  const selectableText = await accommodationContent.$eval(".hero-copy p:not(.hero-kicker)", (copy) => {
+    const selection = getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(copy);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    return selection.toString().trim();
   });
-  const accommodationStart = await page.$eval("[data-accommodation-scrub]", (video) => video.currentTime);
+  assert.match(selectableText, /Two boutique Okanagan stays/, "boutique browser copy is not selectable");
+  const accommodationStart = await page.$eval("[data-scroll-reveal='accommodation']", (object) => ({
+    progress: Number.parseFloat(getComputedStyle(object).getPropertyValue("--object-reveal")) || 0,
+    transform: getComputedStyle(object).transform,
+  }));
   await page.evaluate(() => {
     const section = document.querySelector("[data-work='accommodation']");
     const sectionTop = section.getBoundingClientRect().top + window.scrollY;
     window.scrollTo(0, sectionTop - (window.innerHeight * .45));
   });
-  await new Promise((resolve) => setTimeout(resolve, 500));
+  await new Promise((resolve) => setTimeout(resolve, 120));
   const accommodationMotion = await page.evaluate(() => {
-    const video = document.querySelector("[data-accommodation-scrub]");
     const object = document.querySelector("[data-scroll-reveal='accommodation']");
-    const section = document.querySelector("[data-work='accommodation']");
     return {
-      currentTime: video.currentTime,
-      duration: video.duration,
-      readyState: video.readyState,
-      progress: getComputedStyle(object).getPropertyValue("--object-reveal").trim(),
-      sectionTop: section.getBoundingClientRect().top,
-      scrollY: window.scrollY,
+      progress: Number.parseFloat(getComputedStyle(object).getPropertyValue("--object-reveal")) || 0,
+      transform: getComputedStyle(object).transform,
     };
   });
-  assert.ok(
-    accommodationMotion.currentTime > accommodationStart + 1,
-    `ordinary page scroll did not advance the boutique source recording from ${accommodationStart}: ${JSON.stringify(accommodationMotion)}`,
-  );
-  assert.equal(await page.$$eval("[data-accommodation-previous], [data-accommodation-next]", (nodes) => nodes.length), 0);
-  await page.$eval("[data-accommodation-viewer]", (viewer) => viewer.scrollIntoView({ block: "center" }));
-  await new Promise((resolve) => setTimeout(resolve, 120));
-  const accommodationBeforeWheel = await page.evaluate(() => ({
-    scrollY: window.scrollY,
-    time: document.querySelector("[data-accommodation-scrub]").currentTime,
-    bounds: document.querySelector("[data-accommodation-viewer]").getBoundingClientRect().toJSON(),
-  }));
-  const accommodationWheelTarget = await page.evaluate(({ x, y, width, height }) => {
-    const centreX = x + width / 2;
-    const centreY = y + height / 2;
-    return {
-      centreX,
-      centreY,
-      viewportHeight: window.innerHeight,
-      hitsViewer: Boolean(document.elementFromPoint(centreX, centreY)?.closest("[data-accommodation-viewer]")),
-    };
-  }, accommodationBeforeWheel.bounds);
-  assert.ok(
-    accommodationWheelTarget.hitsViewer,
-    `accommodation wheel target is outside the visible viewer: ${JSON.stringify({ bounds: accommodationBeforeWheel.bounds, target: accommodationWheelTarget })}`,
-  );
-  await page.mouse.move(
-    accommodationBeforeWheel.bounds.x + accommodationBeforeWheel.bounds.width / 2,
-    accommodationBeforeWheel.bounds.y + accommodationBeforeWheel.bounds.height / 2,
-  );
-  await page.mouse.wheel({ deltaY: 520 });
-  await new Promise((resolve) => setTimeout(resolve, 180));
-  const accommodationAfterWheel = await page.evaluate(() => ({
-    scrollY: window.scrollY,
-    time: document.querySelector("[data-accommodation-scrub]").currentTime,
-  }));
-  assert.equal(accommodationAfterWheel.scrollY, accommodationBeforeWheel.scrollY, "wheel over accommodation must not move the page");
-  assert.ok(accommodationAfterWheel.time > accommodationBeforeWheel.time, "wheel over accommodation must advance the preview");
-  await page.mouse.move(8, 450);
-  await page.mouse.wheel({ deltaY: 520 });
-  await new Promise((resolve) => setTimeout(resolve, 180));
-  assert.ok(await page.evaluate((before) => window.scrollY > before, accommodationAfterWheel.scrollY), "wheel outside accommodation must move the page");
+  assert.ok(accommodationMotion.progress > accommodationStart.progress, "outer scroll did not advance the boutique browser reveal");
+  assert.notEqual(accommodationMotion.transform, accommodationStart.transform, "boutique browser did not rotate with outer scroll");
+  await accommodationContent.click('a[href="#treehouse"]');
+  await accommodationContent.waitForFunction(() => location.hash === "#treehouse");
+  assert.ok(await accommodationContent.evaluate(() => window.scrollY > 0), "boutique browser navigation did not scroll its own document");
+  const parentScrollBeforeFrame = await page.evaluate(() => window.scrollY);
+  await accommodationContent.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+  assert.equal(await page.evaluate(() => window.scrollY), parentScrollBeforeFrame, "scrolling the boutique browser moved the portfolio page");
 
   const reducedPage = await browser.newPage();
   const reducedVideoRequests = [];
@@ -252,6 +224,10 @@ try {
     const video = document.querySelector("#motion-video-cool-runnings");
     return !video.paused && video.currentTime > start + .2;
   }, {}, coolMotionStart);
+  const coolLidAngle = await page.$eval(".cool-laptop-lid", (lid) => getComputedStyle(lid).transform);
+  await page.evaluate(() => window.scrollBy(0, 180));
+  await new Promise((resolve) => setTimeout(resolve, 100));
+  assert.notEqual(await page.$eval(".cool-laptop-lid", (lid) => getComputedStyle(lid).transform), coolLidAngle, "Cool Runnings laptop lid did not open with scroll");
 
   await page.$eval("[data-work='elevators']", (node) => node.scrollIntoView({ block: "center" }));
   await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-scroll-reveal='elevators']")).getPropertyValue("--object-reveal")) > .25);
@@ -270,20 +246,45 @@ try {
     top: story.getBoundingClientRect().top + window.scrollY,
     travel: story.offsetHeight - window.innerHeight,
   }));
+  await page.evaluate(({ top }) => window.scrollTo(0, top), aboutStoryPosition);
+  await page.evaluate(() => document.fonts.ready);
+  await new Promise((resolve) => setTimeout(resolve, 80));
+  const aboutAnchorDelta = await page.evaluate(() => {
+    const inline = document.querySelector("[data-about-questionable-inline]");
+    const focus = document.querySelector("[data-about-questionable-focus]");
+    const inlineBounds = inline.getBoundingClientRect();
+    const focusBounds = focus.getBoundingClientRect();
+    const inlineStyle = getComputedStyle(inline);
+    const focusStyle = getComputedStyle(focus);
+    return {
+      x: Math.abs(inlineBounds.left - focusBounds.left),
+      y: Math.abs(inlineBounds.top - focusBounds.top),
+      inlineSize: inlineStyle.fontSize,
+      focusSize: focusStyle.fontSize,
+      inlineWeight: inlineStyle.fontWeight,
+      focusWeight: focusStyle.fontWeight,
+      inlineFamily: inlineStyle.fontFamily,
+      focusFamily: focusStyle.fontFamily,
+    };
+  });
+  assert.ok(aboutAnchorDelta.x < 2 && aboutAnchorDelta.y < 2, `About focus phrase is not anchored to the sentence: ${JSON.stringify(aboutAnchorDelta)}`);
+  assert.equal(aboutAnchorDelta.focusSize, aboutAnchorDelta.inlineSize, "About focus phrase changes size before scrolling");
+  assert.equal(aboutAnchorDelta.focusWeight, aboutAnchorDelta.inlineWeight, "About focus phrase changes weight before scrolling");
+  assert.equal(aboutAnchorDelta.focusFamily, aboutAnchorDelta.inlineFamily, "About focus phrase changes family before scrolling");
   await page.evaluate(({ top, travel }) => window.scrollTo(0, top + travel * .72), aboutStoryPosition);
   await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-about-scroll-story]")).getPropertyValue("--about-line")) > .8);
   await page.waitForFunction(() => {
     const contextOpacity = Number.parseFloat(getComputedStyle(document.querySelector(".about-context")).opacity);
-    const phraseSize = Number.parseFloat(getComputedStyle(document.querySelector(".about-questionable")).fontSize);
+    const phraseSize = Number.parseFloat(getComputedStyle(document.querySelector(".about-questionable-focus")).fontSize);
     return contextOpacity < .08 && phraseSize >= 44 && phraseSize <= 62;
   });
   assert.ok(Math.abs(await page.$eval(".about-story-sticky", (node) => node.getBoundingClientRect().top)) < 2, "About story did not remain locked during its reveal");
   assert.ok(await page.$eval(".about-context", (node) => Number.parseFloat(getComputedStyle(node).opacity) < .08), "About context did not fade while the phrase expanded");
-  assert.ok(await page.$eval(".about-questionable", (node) => {
+  assert.ok(await page.$eval(".about-questionable-focus", (node) => {
     const size = Number.parseFloat(getComputedStyle(node).fontSize);
     return size >= 44 && size <= 62;
   }), "About phrase did not reach its capped standalone size");
-  assert.ok(await page.$eval(".about-questionable", (node) => Math.abs(new DOMMatrixReadOnly(getComputedStyle(node).transform).a - 1) < .02), "About phrase still uses a rasterizing scale transform");
+  assert.ok(await page.$eval(".about-questionable-focus", (node) => Math.abs(new DOMMatrixReadOnly(getComputedStyle(node).transform).a - 1) < .02), "About phrase still uses a rasterizing scale transform");
   await page.evaluate(({ top, travel }) => window.scrollTo(0, top + travel * .9), aboutStoryPosition);
   await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-about-scroll-story]")).getPropertyValue("--about-value")) > .95);
   assert.ok(await page.$eval(".about-process-reveal", (node) => Number.parseFloat(getComputedStyle(node).opacity) > .95), "About process conclusion did not resolve before the section released");
@@ -531,21 +532,22 @@ try {
     const accommodationGeometry = await page.evaluate(() => {
       const cue = document.querySelector(".accommodation-scroll-cue").getBoundingClientRect();
       const browser = document.querySelector("[data-accommodation-viewer]").getBoundingClientRect();
-      const scrub = document.querySelector("[data-accommodation-scrub]");
-      const fallback = document.querySelector("[data-accommodation-fallback]");
+      const frame = document.querySelector("[data-accommodation-page]");
       return {
         cueLeft: cue.left,
         cueRight: cue.right,
         cueBottom: cue.bottom,
         browserTop: browser.top,
-        scrubDisplay: getComputedStyle(scrub).display,
-        fallbackDisplay: getComputedStyle(fallback).display,
+        frameDisplay: getComputedStyle(frame).display,
+        framePointerEvents: getComputedStyle(frame).pointerEvents,
+        frameSource: frame.getAttribute("src"),
       };
     });
     assert.ok(accommodationGeometry.cueLeft >= -1 && accommodationGeometry.cueRight <= width + 1, `${width}px accommodation cue is clipped horizontally`);
     assert.ok(accommodationGeometry.cueBottom <= accommodationGeometry.browserTop + 24, `${width}px accommodation cue is detached from the browser top`);
-    assert.equal(accommodationGeometry.scrubDisplay, "none", `${width}px reduced-motion accommodation video should be hidden`);
-    assert.notEqual(accommodationGeometry.fallbackDisplay, "none", `${width}px reduced-motion accommodation fallback should be visible`);
+    assert.notEqual(accommodationGeometry.frameDisplay, "none", `${width}px reduced-motion accommodation browser should remain visible`);
+    assert.equal(accommodationGeometry.framePointerEvents, "auto", `${width}px accommodation browser should remain interactive`);
+    assert.equal(accommodationGeometry.frameSource, "embeds/okanagan-treehouse.html", `${width}px accommodation browser lost its local selectable source`);
     const finaleGeometry = await page.evaluate(() => {
       const stageBounds = document.querySelector("[data-contact-stage]").getBoundingClientRect();
       const headingBounds = document.querySelector("[data-contact-morph-after]").getBoundingClientRect();
@@ -596,7 +598,7 @@ try {
     await page.evaluate(({ top, travel }) => window.scrollTo(0, top + travel * .5), position);
     await page.waitForFunction(() => document.querySelector("[data-about-stage]")?.classList.contains("is-about-focused"));
     const aboutGeometry = await page.evaluate(() => {
-      const phrase = document.querySelector(".about-questionable").getBoundingClientRect();
+      const phrase = document.querySelector(".about-questionable-focus").getBoundingClientRect();
       const portrait = document.querySelector(".portrait-object").getBoundingClientRect();
       return { phraseRight: phrase.right, portraitLeft: portrait.left, phraseWidth: phrase.width };
     });
