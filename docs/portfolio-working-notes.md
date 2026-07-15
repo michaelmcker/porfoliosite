@@ -202,7 +202,7 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 
 ### V2 Assessment Rules
 
-- Use local DM Sans for functional copy. Use local Fraunces for project titles, workflow titles, metrics, and selective personal/editorial moments. Desktop inactive rail labels are 44px wide, overlap by 14px, use 900 weight, and disappear when active so workflow evidence owns most of the stage.
+- Use local DM Sans for functional copy. Use local Fraunces for project titles, workflow titles, metrics, and selective personal/editorial moments. Desktop inactive rail labels are 64px wide, overlap by 22px, use 900 weight, and disappear when active so workflow evidence owns most of the stage.
 - Do not use eyebrow labels anywhere in V2, including the workflow-detail pages. Bias to Build is a large editorial heading, not a small label.
 - Do not use pastel or unrelated flat fields as the homepage structure. Bias to Build uses hard gold and About uses deep forest. The approved accordion is neutral: charcoal inactive rails, a warm-paper active rail, and a shared charcoal content stage. Do not colour-code individual workflows.
 - Treat hero media, laptops, browsers, proposal sheets, album artwork, and the About portrait as authored physical objects. Hero and screen surfaces share a thick black bevel, rounded corners, restrained perspective, and a strong drop shadow.
@@ -210,7 +210,7 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 - Keep the interactive portrait inside the existing brown frame and show it at a larger scale. A V2-only embed accepts section-wide pointer coordinates. The practical-value sentence breaks into its own expanding hard-gold scroll moment with an animated curly arrow.
 - Reuse the responsive system-map film in the largest raised black-bevel hero card, beside the hero copy. The hero subhead ends after `scale.`; `And sometimes, stuff just for fun.` is a separate italic Fraunces beat.
 - Hero and every Selected Work stage use the same white canvas. Music is the only black interlude. No project row uses a photographic or grey background.
-- Selected Work keeps the Z-pattern and existing media/interactions. Boutique keeps the wide black browser, but the curly arrow appears before `Scroll the preview`, both form one unit above and outside it, and ordinary page scroll scrubs the stitched real source recording. Status, Overview, Previous, and Next overlays do not sit on the work.
+- Selected Work keeps the Z-pattern and existing media/interactions. Boutique keeps the wide black browser, but the curly arrow appears before `Scroll the preview`, both form one unit above and outside it, and ordinary page scroll scrubs the stitched real source recording. On fine-pointer desktop devices, wheel gestures over the browser stay local and scrub the film without moving the page; moving outside the browser restores normal page scrolling. Status, Overview, Previous, and Next overlays do not sit on the work.
 - RCCV is a large isolated laptop treatment, not a laptop inside another screen bezel. Its exact video is masked by `laptop-three-quarter-rccv-cutout.png` to remove the baked cream background. Its restored title is `Bringing a community site to life.` and its specific interaction link is `Explore the interactive Stations of the Cross`.
 - The proposal remains the real letter-shaped artifact but loses its surrounding faux frame; the PDF itself is larger and receives the rounded corners.
 - Accommodation, Cool Runnings, and Why Elevators begin 36px to the right and settle left with scroll. Accommodation stays flat, Cool Runnings remains restrained, and Why Elevators begins pitched back and resolves at a slight angle rather than straight-on.
@@ -218,9 +218,19 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 - Bias to Build uses a spacious, unnumbered two-row snake on desktop: Understand → Shape → Build, then Measure → Refine → Systematise from right to left. One thin continuous route connects the full sequence instead of heavy per-label arrows. Mobile keeps the same semantic order beside a quiet vertical route.
 - Desktop workflow states use a full-width expanding-spine accordion at 1100px and wider; smaller layouts use vertical rows with mobile-readable artwork. Desktop open and closed states use explicit numeric widths so the spine actually slides. The four inactive rails overlap; the active rail is visually hidden. Active panels are taller and give the workflow image more room. Rails are neutral rather than category-coloured.
 - V2 type and padding rhythm is governed by `--type-h1`, `--type-h2`, `--type-h3`, `--space-section`, `--space-heading`, and `--space-copy` in `v2/styles.css`. Avoid isolated heading clamps and section paddings that do not derive from those roles.
-- About uses the Renaissance arch. The practical-value phrase is indistinguishable from its paragraph at rest; scroll then fades the surrounding copy, interpolates real font size and colour for sharp text, draws a visible gold line toward the portrait without crossing the copy at 1024/900/768, reveals the process conclusion, and only then releases the page. Experience is a tighter centred ledger without row rules, route dots, or timeline markers.
+- About uses the Renaissance arch. The practical-value phrase is indistinguishable from its paragraph at rest; scroll then fades the surrounding copy, interpolates real font size and colour for sharp text, draws a visible gold line toward the portrait without crossing the copy at 1024/900/768, reveals the process conclusion, and only then releases the page. A stable parent stage exclusively owns the pointer and sends normalized coordinates into the presentation-only portrait iframe. Experience is a tighter centred ledger without row rules, route dots, or timeline markers.
 - Outcomes are four centred metrics with unchanged claims.
 - All five workflow detail pages use one shared structure and stylesheet. Each page states its purpose, rationale, accurate steps, tools and sources, what ships, human review, public-safe proof and constraints, and related work.
+
+### V2 Scroll and Physics Finale — July 15, 2026
+
+- The contact sequence is progressive enhancement over a complete static hard-gold composition.
+- Before release, scroll controls a deterministic and reversible spiral of actual portfolio artifacts.
+- At the fixed threshold, each DOM pose transfers directly into a locally vendored Matter.js body with no visible coordinate jump.
+- Gravity, boundaries, collisions, and sleeping produce the drop. Settled objects can be dragged and tossed without blocking contact links.
+- The final text morph runs only after the objects settle: `Systematise.` becomes `Let’s build something useful.`, then the contact actions resolve and continued scroll releases the footer.
+- Reduced-motion and runtime failure skip spiral and physics while preserving the full contact message, actions, and object field.
+- V2 remains local-file compatible; do not replace the vendored runtime with a CDN dependency.
 
 ### V2 Superseded Background Explorations
 

@@ -229,6 +229,7 @@ try {
   await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "no-preference" }]);
   await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1 });
   await page.goto(url, { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => { document.documentElement.style.scrollBehavior = "auto"; });
   await page.$eval("[data-work='rccv']", (node) => node.scrollIntoView({ block: "center" }));
   await page.waitForFunction(() => {
     const video = document.querySelector("#motion-video-rccv");
@@ -330,10 +331,24 @@ try {
   assert.equal(await page.$eval("[data-contact-morph-after]", (node) => node.textContent.trim()), "Let’s build something useful.");
   assert.ok(await page.$eval("[data-contact-morph-after]", (node) => Number(getComputedStyle(node).opacity)) > .8, "final text must resolve after settle");
   assert.ok(await page.$eval(".contact-actions", (node) => Number(getComputedStyle(node).opacity)) > .8, "contact actions must resolve after the text morph");
-  const draggable = await page.$eval("[data-contact-object]", (item) => ({
-    rect: item.getBoundingClientRect().toJSON(),
-    transform: item.style.transform,
-  }));
+  if (screenshotDirectory) {
+    await mkdir(screenshotDirectory, { recursive: true });
+    await page.screenshot({ path: path.join(screenshotDirectory, "finale-settled-desktop.png") });
+  }
+  const draggable = await page.$$eval("[data-contact-object]", (items) => {
+    const topmost = [...items].reverse().find((item) => {
+      const rect = item.getBoundingClientRect();
+      const hit = document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2);
+      return hit?.closest("[data-contact-object]") === item;
+    });
+    if (!topmost) return null;
+    return {
+      key: topmost.dataset.contactObject,
+      rect: topmost.getBoundingClientRect().toJSON(),
+      transform: topmost.style.transform,
+    };
+  });
+  assert.ok(draggable, "settled finale must expose at least one draggable object");
   await page.mouse.move(draggable.rect.x + draggable.rect.width / 2, draggable.rect.y + draggable.rect.height / 2);
   await page.mouse.down();
   await page.mouse.move(
@@ -343,7 +358,11 @@ try {
   );
   await page.mouse.up();
   await new Promise((resolve) => setTimeout(resolve, 120));
-  assert.notEqual(await page.$eval("[data-contact-object]", (item) => item.style.transform), draggable.transform, "settled objects must be draggable");
+  assert.notEqual(
+    await page.$eval(`[data-contact-object="${draggable.key}"]`, (item) => item.style.transform),
+    draggable.transform,
+    "settled objects must be draggable",
+  );
   await scrollFinale(1);
   await new Promise((resolve) => setTimeout(resolve, 120));
   assert.ok(await page.$eval(".site-footer", (footer) => footer.getBoundingClientRect().top <= window.innerHeight + 2), "continued scroll must release the sticky finale into the footer");
