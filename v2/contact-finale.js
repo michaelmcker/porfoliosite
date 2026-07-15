@@ -27,6 +27,18 @@
   let dragPoint;
   let matterPromise;
   let finaleVisible = true;
+  let copyTimer;
+
+  const releaseThreshold = .68;
+  const orbitPoints = [
+    [-.14, .12],
+    [.08, .08],
+    [.04, .62],
+    [.5, .72],
+    [.92, .58],
+    [.9, .1],
+    [.45, .06],
+  ];
 
   function setState(next) {
     state = next;
@@ -48,36 +60,48 @@
     return matterPromise;
   }
 
-  function releaseSlot(index, count, width, height) {
-    const columns = Math.min(5, count);
-    const row = Math.floor(index / columns);
-    const column = index % columns;
-    const span = width * .64;
+  function evaluateOrbitSegment(previous, start, end, next, amount, width, height) {
+    const progress = clamp(amount);
+    const squared = progress * progress;
+    const cubed = squared * progress;
+    const interpolate = (axis) => .5 * (
+      (2 * start[axis])
+      + (-previous[axis] + end[axis]) * progress
+      + (2 * previous[axis] - 5 * start[axis] + 4 * end[axis] - next[axis]) * squared
+      + (-previous[axis] + 3 * start[axis] - 3 * end[axis] + next[axis]) * cubed
+    );
     return {
-      x: width * .18 + (columns === 1 ? span / 2 : (column / (columns - 1)) * span),
-      y: height * .13 + row * Math.min(92, height * .1),
-      angle: ((index % 2 ? 1 : -1) * (2 + (index % 3) * 2)) * Math.PI / 180,
+      x: interpolate(0) * width,
+      y: interpolate(1) * height,
     };
   }
 
-  function spiralPose(index, count, progress, width, height) {
-    const itemProgress = smooth(clamp((progress * 1.22) - index * .025));
-    const centreX = width * .5;
-    const centreY = height * .44;
-    const maxRadius = Math.hypot(width, height) * .62;
-    const spiralProgress = clamp(itemProgress / .82);
-    const theta = index * .78 + (1 - spiralProgress) * Math.PI * 3.6;
-    const radius = maxRadius * (1 - spiralProgress * .78);
-    const spiralX = centreX + Math.cos(theta) * radius;
-    const spiralY = centreY + Math.sin(theta) * radius * .7;
-    const slot = releaseSlot(index, count, width, height);
-    const slotBlend = smooth((itemProgress - .76) / .24);
+  function roundedOrbitPose(index, count, progress, width, height) {
+    const itemProgress = clamp(progress * 1.08 - index * .018);
+    const segmentProgress = itemProgress * (orbitPoints.length - 1);
+    const segment = Math.min(orbitPoints.length - 2, Math.floor(segmentProgress));
+    const amount = segmentProgress - segment;
+    const previous = orbitPoints[Math.max(0, segment - 1)];
+    const start = orbitPoints[segment];
+    const end = orbitPoints[segment + 1];
+    const next = orbitPoints[Math.min(orbitPoints.length - 1, segment + 2)];
+    const point = evaluateOrbitSegment(previous, start, end, next, amount, width, height);
+    const tangentPoint = evaluateOrbitSegment(
+      previous,
+      start,
+      end,
+      next,
+      Math.min(1, amount + .018),
+      width,
+      height,
+    );
+    const tangent = Math.atan2(tangentPoint.y - point.y, tangentPoint.x - point.x);
     return {
-      x: lerp(spiralX, slot.x, slotBlend),
-      y: lerp(spiralY, slot.y, slotBlend),
-      angle: lerp(theta + Math.PI / 2, slot.angle, slotBlend),
-      scale: lerp(.58, 1, itemProgress),
-      opacity: clamp(itemProgress * 1.8),
+      x: point.x,
+      y: point.y,
+      angle: tangent * .16 + (index % 2 ? .035 : -.035),
+      scale: lerp(.68, 1, smooth(clamp(itemProgress * 1.9))),
+      opacity: clamp(itemProgress * 2.4),
     };
   }
 
@@ -86,12 +110,12 @@
     return Number(item.dataset.bodyWidth || 210) * scale;
   }
 
-  function applySpiral(progress) {
+  function applyOrbit(progress) {
     const width = stage.clientWidth;
     const height = stage.clientHeight;
     const items = visibleItems();
     items.forEach((item, index) => {
-      const pose = spiralPose(index, items.length, progress, width, height);
+      const pose = roundedOrbitPose(index, items.length, progress, width, height);
       item.style.setProperty("--body-width", `${itemWidth(item, width)}px`);
       item.style.opacity = pose.opacity.toFixed(3);
       item.style.transform = `translate3d(${pose.x - item.offsetWidth / 2}px, ${pose.y - item.offsetHeight / 2}px, 0) rotate(${pose.angle}rad) scale(${pose.scale})`;
@@ -107,10 +131,11 @@
     const bounds = story.getBoundingClientRect();
     const travel = Math.max(1, story.offsetHeight - window.innerHeight);
     const progress = clamp(-bounds.top / travel);
-    const spiralProgress = clamp(progress / .58);
-    story.style.setProperty("--finale-progress", spiralProgress.toFixed(4));
-    applySpiral(spiralProgress);
-    if (progress >= .58) releaseToPhysics();
+    const orbitProgress = clamp(progress / releaseThreshold);
+    story.dataset.orbitProgress = orbitProgress.toFixed(4);
+    story.style.setProperty("--finale-progress", orbitProgress.toFixed(4));
+    applyOrbit(orbitProgress);
+    if (progress >= releaseThreshold) releaseToPhysics();
   }
 
   function requestScrollUpdate() {
@@ -142,9 +167,33 @@
     if (engine) stage.classList.add("is-draggable");
   }
 
+  function revealCopy() {
+    story.dataset.copyState = "visible";
+  }
+
+  function scheduleCopyReveal() {
+    window.clearTimeout(copyTimer);
+    copyTimer = window.setTimeout(revealCopy, 420);
+  }
+
+  function updateCopyContrast() {
+    const resolution = stage.querySelector("[data-contact-resolution]");
+    const headingNode = stage.querySelector("[data-contact-morph-after]");
+    if (!resolution || !headingNode) return;
+    const heading = headingNode.getBoundingClientRect();
+    const headingArea = Math.max(1, heading.width * heading.height);
+    const overlap = visibleItems().reduce((total, item) => {
+      const rect = item.getBoundingClientRect();
+      const overlapWidth = Math.max(0, Math.min(rect.right, heading.right) - Math.max(rect.left, heading.left));
+      const overlapHeight = Math.max(0, Math.min(rect.bottom, heading.bottom) - Math.max(rect.top, heading.top));
+      return total + overlapWidth * overlapHeight;
+    }, 0);
+    resolution.classList.toggle("is-contrast-light", overlap / headingArea >= .08);
+  }
+
   function showStaticFallback() {
     released = true;
-    applySpiral(1);
+    applyOrbit(1);
     const items = visibleItems();
     items.forEach((item, index) => {
       const width = stage.clientWidth;
@@ -158,14 +207,17 @@
       item.style.opacity = "1";
       item.style.transform = `translate3d(${x - item.offsetWidth / 2}px, ${y - item.offsetHeight / 2}px, 0) rotate(${angle}rad)`;
     });
+    revealCopy();
+    updateCopyContrast();
     markSettled();
   }
 
   async function releaseToPhysics() {
     if (released) return;
     released = true;
-    applySpiral(1);
+    applyOrbit(1);
     setState("physics");
+    scheduleCopyReveal();
     try {
       await loadMatterRuntime();
     } catch {
@@ -222,6 +274,7 @@
       item.style.opacity = "1";
       item.style.transform = `translate3d(${body.position.x - item.offsetWidth / 2}px, ${body.position.y - item.offsetHeight / 2}px, 0) rotate(${body.angle}rad)`;
     });
+    updateCopyContrast();
     if (state !== "settled") {
       const quiet = bodies.every((body) => body.isSleeping
         || (body.speed < .35 && body.angularSpeed < .018));
@@ -260,14 +313,18 @@
     dragPoint.y = point.y;
     dragPoint.time = now;
     Matter.Body.setPosition(dragged, point);
+    updateCopyContrast();
   });
 
   function releaseDrag() {
     if (!dragged) return;
-    Matter.Body.setStatic(dragged, false);
-    Matter.Body.setVelocity(dragged, { x: dragPoint.vx, y: dragPoint.vy });
+    Matter.Body.setVelocity(dragged, { x: 0, y: 0 });
+    Matter.Body.setAngularVelocity(dragged, 0);
+    Matter.Body.setStatic(dragged, true);
+    dragged.plugin.pinned = true;
     dragged = undefined;
     stage.classList.remove("is-dragging");
+    updateCopyContrast();
   }
 
   stage.addEventListener("pointerup", releaseDrag);
@@ -290,10 +347,12 @@
   visibilityObserver?.observe(story);
 
   if (reducedMotion.matches) {
+    revealCopy();
     setState("static");
   } else {
     story.classList.add("has-finale-js");
-    setState("spiral");
+    story.dataset.copyState = "hidden";
+    setState("orbit");
     if ("IntersectionObserver" in window) {
       const runtimeObserver = new IntersectionObserver((entries, observer) => {
         if (!entries[0]?.isIntersecting) return;
@@ -302,7 +361,7 @@
       }, { rootMargin: "100% 0px", threshold: 0 });
       runtimeObserver.observe(story);
     }
-    applySpiral(0);
+    applyOrbit(0);
     updateFromScroll();
   }
 })();
