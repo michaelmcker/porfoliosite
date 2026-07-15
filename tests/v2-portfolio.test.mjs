@@ -191,8 +191,56 @@ test("About holds a sticky scroll story before releasing into the rest of the pa
   assert.doesNotMatch(css, /\.about-questionable\s*\{[^}]*scale\(/s);
   assert.match(css, /\.portrait-frame\s*\{[^}]*border-radius:\s*48%\s+48%\s+12px\s+12px\s*\/\s*13%\s+13%\s+12px\s+12px/s);
   assert.match(css, /\.about-process-line path\s*\{[^}]*stroke-dasharray:/s);
-  assert.match(css, /\.contact\s*\{[^}]*background:\s*var\(--accent\)/s);
-  assert.match(css, /\.contact h2\s*\{[^}]*color:\s*#1f1909/s);
+  assert.match(css, /\.contact-story\s*\{[^}]*background:\s*var\(--accent\)/s);
+  assert.match(css, /\.contact-morph\s*\{[^}]*color:\s*#1f1909/s);
+});
+
+test("About uses one parent-owned pointer space and keeps its final composition capped", async () => {
+  const [html, css, app, portrait] = await Promise.all([
+    readV2("index.html"),
+    readV2("styles.css"),
+    readV2("app.js"),
+    readV2("portrait/embed.html"),
+  ]);
+
+  assert.match(html, /class="about-story-sticky"[^>]*data-about-pointer-stage/);
+  assert.match(app, /data-about-pointer-stage/);
+  assert.match(app, /getBoundingClientRect\(\)/);
+  assert.match(app, /portfolio-portrait-pointer/);
+  assert.match(css, /\.portrait-frame iframe\s*\{[^}]*pointer-events:\s*none/s);
+  assert.doesNotMatch(portrait, /cursor:\s*crosshair/);
+  assert.doesNotMatch(portrait, /stage\.addEventListener\(["']pointer(?:move|down)["']/);
+  assert.match(portrait, /window\.addEventListener\(["']message["']/);
+  assert.match(css, /\.about\.is-about-focused \.about-questionable\s*\{[^}]*3\.8rem/s);
+  assert.match(css, /\.about-process-value\s*\{[^}]*2\.8rem/s);
+});
+
+test("contact finale exposes a local scroll-to-physics sequence with a static fallback", async () => {
+  const [html, css, finale] = await Promise.all([
+    readV2("index.html"),
+    readV2("styles.css"),
+    readV2("contact-finale.js"),
+  ]);
+
+  assert.match(html, /class="contact-story"[^>]*data-contact-story/);
+  assert.match(html, /data-finale-state="static"/);
+  assert.match(html, /class="contact-stage"[^>]*data-contact-stage/);
+  assert.equal((html.match(/data-contact-object=/g) || []).length, 11);
+  assert.match(html, /data-contact-morph-before[^>]*>Systematise\.<\/span>/);
+  assert.match(html, /data-contact-morph-after[^>]*>Let’s build something useful\.<\/span>/);
+  assert.match(html, /<script src="contact-finale\.js" defer><\/script>/);
+  assert.doesNotMatch(html, /https?:\/\/[^"']*matter/i);
+  assert.match(finale, /vendor\/matter\.min\.js/);
+  assert.match(finale, /function loadMatterRuntime/);
+  assert.match(finale, /IntersectionObserver/);
+  assert.match(finale, /function spiralPose/);
+  assert.match(finale, /function releaseToPhysics/);
+  assert.match(finale, /function markSettled/);
+  assert.match(finale, /Body\.setPosition/);
+  assert.match(finale, /data-finale-state/);
+  assert.match(css, /\.contact-story\.has-finale-js\s*\{[^}]*min-height:\s*340svh/s);
+  assert.match(css, /prefers-reduced-motion:\s*reduce[\s\S]*?\.contact-object/s);
+  await access(fileUrl("vendor/matter.min.js"));
 });
 
 test("all five workflow controls have unique accessible trigger and panel wiring", async () => {
@@ -226,20 +274,20 @@ test("all five workflow controls have unique accessible trigger and panel wiring
   assert.match(html, /href="workflows\/presentation-publishing\.html"/);
 });
 
-test("boutique accommodation uses its three real source recordings without overlay controls", async () => {
-  const [html, app] = await Promise.all([readV2("index.html"), readV2("app.js")]);
+test("boutique accommodation owns pointer-wheel scrubbing without trapping keyboard or reduced motion", async () => {
+  const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
 
   assert.match(html, /data-accommodation-viewer/);
   assert.match(html, /data-accommodation-scrub/);
-  assert.doesNotMatch(html, /data-frame-sequences|data-accommodation-frame|accommodation-instructions/);
-  assert.equal([...html.matchAll(/data-accommodation-(?:previous|next)/g)].length, 0);
-
-  assert.match(app, /data-accommodation-scrub/);
-  assert.match(app, /loadedmetadata/);
-  assert.match(app, /currentTime/);
-  assert.doesNotMatch(app, /addEventListener\(["']wheel["']|wheelAccumulator|pixelsPerFrame/);
+  assert.match(html, /aria-label="[^"]*wheel[^"]*preview[^"]*"/i);
+  assert.match(app, /addEventListener\(["']wheel["']/);
+  assert.match(app, /passive:\s*false/);
+  assert.match(app, /preventDefault\(\)/);
+  assert.match(app, /accommodationWheelProgress/);
+  assert.match(app, /matchMedia\(["']\(pointer:\s*fine\)["']\)/);
+  assert.doesNotMatch(app, /addEventListener\(["']keydown["'][\s\S]{0,180}preventDefault/);
+  assert.match(css, /\.work-object-accommodation\s*\{[^}]*min-height:\s*clamp\([^}]*105svh/s);
   assert.match(app, /prefers-reduced-motion:\s*reduce/);
-  assert.doesNotMatch(app, /setFrameFromScrollProgress/);
 });
 
 test("V2 uses a real scroll-scrub accommodation video and keeps a frame fallback", async () => {
