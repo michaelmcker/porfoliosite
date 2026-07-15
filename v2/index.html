@@ -29,9 +29,8 @@
   <main>
     <section class="hero page-frame" id="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Michael McKerracher · Marketing Engineer</p>
         <h1 id="hero-title">I build the system <em>and</em> the thing it ships.</h1>
-        <p class="hero-intro">I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale. And sometimes stuff just for fun.</p>
+        <p class="hero-intro">I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale.<span class="hero-fun"><em>And sometimes, stuff just for fun.</em></span></p>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">View selected work</a>
           <a class="button button-quiet" href="mailto:michael.mckerracher@gmail.com">Start a conversation</a>
@@ -39,60 +38,63 @@
       </div>
 
       <figure class="hero-system-media screen-bezel">
-        <video id="motion-video-hero" data-motion-video muted loop playsinline preload="none" poster="../assets/videos/portfolio-hero-system-map-desktop-poster.png" aria-label="Animated system map connecting audience and data inputs to websites, proposals, dashboards, and workflows.">
+        <video id="motion-video-hero" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/videos/portfolio-hero-system-map-desktop-poster.png" aria-label="Animated system map connecting audience and data inputs to websites, proposals, dashboards, and workflows.">
           <source media="(max-width: 699px)" data-src="../assets/videos/portfolio-hero-system-map-mobile-1080p.mp4" type="video/mp4">
           <source data-src="../assets/videos/portfolio-hero-system-map-desktop-4k-sparse-loop.mp4" type="video/mp4">
         </video>
-        <figcaption>Inputs become systems. Systems become useful work.</figcaption>
+        <div class="hero-video-copy" aria-hidden="true">
+          <span class="hero-video-label hero-video-label-inputs">Inputs</span>
+          <span class="hero-video-label hero-video-label-system">Workflow<br>system</span>
+          <span class="hero-video-label hero-video-label-outputs">Outputs</span>
+          <span class="hero-video-statement"><strong>Systems thinking</strong><small>Understand. Shape. Build.<br>Measure. Refine. Systematise.</small></span>
+        </div>
       </figure>
     </section>
 
     <section class="selected-work page-frame" id="work" aria-labelledby="work-title">
       <header class="section-heading work-heading">
-        <p>Things I have made</p>
         <h2 id="work-title">Selected Work</h2>
       </header>
 
       <div class="work-sequence">
-        <article class="work-object work-object-rccv" data-work="rccv" data-project-environment="rccv">
+        <article class="work-object work-object-rccv" data-work="rccv">
           <div class="work-copy">
-            <p class="work-meta">RCCV · Community website</p>
             <h3>Bringing a community site to life.</h3>
+            <p class="work-meta">RCCV · Community website</p>
             <p>Reworked around community life: clearer parish information, living bulletins and events, and educational stories brought to life through interaction.</p>
             <div class="text-links">
               <a href="https://rccv-st-james-limestone-ssr.michael-mckerracher.workers.dev/">Home</a>
-              <a href="https://rccv-st-james-limestone-ssr.michael-mckerracher.workers.dev/faith/stations-of-the-cross/">Interesting interactions</a>
+              <a href="https://rccv-st-james-limestone-ssr.michael-mckerracher.workers.dev/faith/stations-of-the-cross/">Explore the interactive Stations of the Cross</a>
             </div>
           </div>
-          <figure class="laptop-object screen-bezel">
-            <video id="motion-video-rccv" data-motion-video muted loop playsinline preload="none" poster="../assets/device-mockups/laptop-three-quarter-rccv.png" aria-label="RCCV homepage and Stations of the Cross shown on an angled laptop.">
+          <figure class="laptop-object">
+            <video id="motion-video-rccv" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/device-mockups/laptop-three-quarter-rccv-cutout.png" aria-label="RCCV homepage and Stations of the Cross shown on an angled laptop.">
               <source data-src="../assets/videos/rccv-showcase-laptop.webm" type="video/webm">
               <source data-src="../assets/videos/rccv-showcase-laptop.mp4" type="video/mp4">
             </video>
           </figure>
         </article>
 
-        <article class="work-object work-object-accommodation" data-work="accommodation" data-project-environment="accommodation">
-          <div class="accommodation-showcase">
-            <figure class="browser-object browser-object-tall screen-bezel" data-accommodation-viewer data-frame-sequences="overview:17,treehouse:28,cabin:24" tabindex="0" role="group" aria-label="Explore the boutique accommodation website" aria-describedby="accommodation-instructions">
+        <article class="work-object work-object-accommodation" data-work="accommodation">
+          <div class="accommodation-showcase" data-scroll-reveal="accommodation">
+            <p class="accommodation-scroll-cue" aria-hidden="true">
+              <svg viewBox="0 0 58 54" focusable="false" aria-hidden="true"><path d="M52 6C43 8 39 16 37 24c-3 11-11 17-26 20M18 35l-8 9 12 5"/></svg>
+              <span>Scroll the preview</span>
+            </p>
+            <figure class="browser-object browser-object-tall screen-bezel" data-accommodation-viewer role="group" aria-label="Scroll-controlled preview of the boutique accommodation website">
               <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>okanagan-treehouse-preview.michael-mckerracher.workers.dev</span></div>
               <div class="browser-viewport accommodation-viewport">
-                <img src="../assets/frames/accommodation/overview/001.jpg" data-accommodation-frame alt="Interactive preview of the boutique accommodation website">
-                <span class="accommodation-status" data-accommodation-status aria-live="polite">Overview · frame 1 of 69</span>
+                <video data-accommodation-scrub muted playsinline preload="metadata" poster="../assets/frames/accommodation/overview/001.jpg" aria-label="Website scroll through the property overview, treehouse, and cabin pages">
+                  <source src="../assets/videos/accommodation/showcase-scroll.webm" type="video/webm">
+                  <source src="../assets/videos/accommodation/showcase-scroll.mp4" type="video/mp4">
+                </video>
+                <img class="accommodation-fallback" data-accommodation-fallback src="../assets/frames/accommodation/overview/001.jpg" alt="Boutique accommodation website preview">
               </div>
-              <div class="accommodation-controls" aria-label="Boutique accommodation preview controls">
-                <button type="button" data-accommodation-previous aria-label="Previous accommodation frame">Previous</button>
-                <button type="button" data-accommodation-next aria-label="Next accommodation frame">Next</button>
-              </div>
-              <figcaption class="sr-only" id="accommodation-instructions">Use the mouse wheel or Arrow keys to move through the website. Home and End jump to the first and last frame.</figcaption>
             </figure>
-            <p class="accommodation-scroll-cue" aria-hidden="true">Try to scroll
-              <svg viewBox="0 0 34 44" focusable="false" aria-hidden="true"><path d="M4 3v13c0 8 5 12 13 12h10M21 21l7 7-7 7"/></svg>
-            </p>
           </div>
           <div class="work-copy">
-            <p class="work-meta">Boutique accommodation · Web development</p>
             <h3>Elevating a boutique accommodation site.</h3>
+            <p class="work-meta">Boutique accommodation · Web development</p>
             <p>Underused property photography became an AI-enhanced visual system and a series of scroll-led stories that elevated the stay online.</p>
             <div class="text-links">
               <a href="https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/">Overview</a>
@@ -102,21 +104,21 @@
           </div>
         </article>
 
-        <article class="work-object work-object-cool" data-work="cool-runnings" data-project-environment="cool-runnings">
+        <article class="work-object work-object-cool" data-work="cool-runnings">
           <div class="work-copy">
-            <p class="work-meta">Cool Runnings · Website + local search</p>
             <h3>From no web presence to a lead magnet.</h3>
+            <p class="work-meta">Website + SEO</p>
             <p>From no web presence to a lead magnet: a useful website, local tools, and a programmatic search system built to turn nearby demand into bookings.</p>
             <p class="work-proof">189 organic clicks in the latest 28 days · 83 pages averaging page one</p>
             <div class="text-links">
               <a href="https://www.coolrunningslandscaping.com/">View live site</a>
-              <a href="../work-local-yard-care-seo-build.html">Read case study</a>
+              <a href="work/local-search-magnet.html">Read case study</a>
             </div>
           </div>
-          <figure class="browser-object browser-object-video screen-bezel">
+          <figure class="browser-object browser-object-video screen-bezel" data-scroll-reveal="cool-runnings">
             <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>coolrunningslandscaping.com</span></div>
             <div class="browser-viewport">
-              <video id="motion-video-cool-runnings" data-motion-video muted loop playsinline preload="none" poster="../assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website and local search work.">
+              <video id="motion-video-cool-runnings" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website and local search work.">
                 <source data-src="../assets/videos/cool-runnings-sizzle-25s.webm" type="video/webm">
                 <source data-src="../assets/videos/cool-runnings-sizzle-25s.mp4" type="video/mp4">
               </video>
@@ -124,13 +126,13 @@
           </figure>
         </article>
 
-        <article class="work-object work-object-proposal" data-work="proposal" data-project-environment="proposal">
+        <article class="work-object work-object-proposal" data-work="proposal">
           <a class="proposal-sheet" href="../output/pdf/vertical-impression-local-proposal-sample.pdf" aria-label="Open the Midtown Family Dental proposal PDF">
             <img src="../assets/samples/vertical-impression-local-proposal-current.png" alt="Midtown Family Dental letter-size digital out-of-home proposal with campaign creative, inventory map, and Vertical Impression branding">
           </a>
           <div class="work-copy">
-            <p class="work-meta">Marketing engineer · Sales enablement</p>
             <h3>Digital out-of-home proposal tool</h3>
+            <p class="work-meta">Sales enablement · GTM engineering</p>
             <p>A proposal system that turns local business data into tailored media plans, maps, and campaign creative.</p>
             <div class="text-links">
               <a href="../proposal-generator.html">Try the generator</a>
@@ -139,14 +141,14 @@
           </div>
         </article>
 
-        <article class="work-object work-object-elevators" data-work="elevators" data-project-environment="elevators">
+        <article class="work-object work-object-elevators" data-work="elevators">
           <div class="work-copy">
-            <p class="work-meta">Vertical Impression · Product marketing</p>
             <h3>Explaining a misunderstood medium.</h3>
+            <p class="work-meta">Vertical Impression · Product marketing</p>
             <p>A product story that educates buyers about a misunderstood advertising medium: where it reaches people, why attention is different, and when it works.</p>
             <div class="text-links"><a href="https://www.verticalimpression.com/why-elevators">View website</a></div>
           </div>
-          <figure class="browser-object browser-object-elevator screen-bezel">
+          <figure class="browser-object browser-object-elevator screen-bezel" data-scroll-reveal="elevators">
             <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>verticalimpression.com/why-elevators</span></div>
             <div class="browser-viewport"><img src="../assets/screens/vertical-impression-why-elevators.png" alt="Why Elevator Advertising positioning page from Vertical Impression"></div>
           </figure>
@@ -154,8 +156,8 @@
 
         <article class="music-interlude" data-work="music">
           <div class="work-copy">
-            <p class="work-meta">A strange but useful experiment</p>
             <h3>Making an overlooked category interesting.</h3>
+            <p class="work-meta">A strange but useful experiment</p>
             <p>Two AI-assisted music releases built around the language, places, and culture of digital out-of-home advertising.</p>
             <div class="text-links">
               <a href="https://open.spotify.com/album/3BDYQIv1FFdBnAyNBulnlL">Listen to OOH-la-la</a>
@@ -170,36 +172,41 @@
     <section class="build-bias" id="method" aria-labelledby="method-title">
       <div class="build-bias-inner page-frame">
         <div class="bias-intro">
-          <p>Bias to build</p>
-          <h2 id="method-title">I trust work you can use.</h2>
+          <h2 id="method-title">Bias to build.</h2>
+          <p>I trust work you can use, learn from, and improve.</p>
         </div>
-        <ol class="bias-sequence" data-bias-sequence aria-label="Open. Test. Send. Publish. Measure.">
-          <li class="bias-step"><span>01</span><strong>Open.</strong></li>
-          <li class="bias-step"><span>02</span><strong>Test.</strong></li>
-          <li class="bias-step"><span>03</span><strong>Send.</strong></li>
-          <li class="bias-step"><span>04</span><strong>Publish.</strong></li>
-          <li class="bias-step"><span>05</span><strong>Measure.</strong></li>
-        </ol>
+        <div class="bias-process">
+          <svg class="bias-route" viewBox="0 0 1200 430" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <defs><marker id="bias-route-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1l10 5-10 5"/></marker></defs>
+            <path pathLength="1" d="M118 92C260 30 370 30 500 92S745 154 864 92s225-58 244 12c20 77-42 177-168 202s-251-60-380-9-254 93-398 36" marker-end="url(#bias-route-arrow)"/>
+          </svg>
+          <ol class="bias-sequence" data-bias-sequence aria-label="Understand. Shape. Build. Measure. Refine. Systematise.">
+            <li class="bias-step"><strong>Understand.</strong></li>
+            <li class="bias-step"><strong>Shape.</strong></li>
+            <li class="bias-step bias-step-build"><strong>Build.</strong></li>
+            <li class="bias-step"><strong>Measure.</strong></li>
+            <li class="bias-step"><strong>Refine.</strong></li>
+            <li class="bias-step"><strong>Systematise.</strong></li>
+          </ol>
+        </div>
       </div>
     </section>
 
     <section class="workflow-section" id="workflows" aria-labelledby="workflow-title">
       <header class="section-heading workflow-heading page-frame">
-        <p>Selected workflows &amp; tools</p>
         <h2 id="workflow-title">The repeatable systems behind the work.</h2>
       </header>
 
       <div class="workflow-accordion" data-workflow-accordion>
         <article class="workflow-item workflow-content is-active">
           <button class="workflow-trigger" id="workflow-trigger-content" type="button" data-workflow-trigger="content" aria-expanded="true" aria-controls="workflow-panel-content">
-            <span class="workflow-number">01</span><strong>Content</strong><span class="workflow-plus" aria-hidden="true">+</span>
+            <strong>Content</strong><span class="workflow-plus" aria-hidden="true">+</span>
           </button>
           <div class="workflow-panel" id="workflow-panel-content" data-workflow-panel="content" role="region" aria-labelledby="workflow-trigger-content" aria-hidden="false">
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
-                <h3>Search-optimized content production</h3>
+                <div class="workflow-copy-head"><h3>Search-optimized content production</h3><a href="workflows/content-production.html">View workflow</a></div>
                 <p>Search data and human review move useful writing from research to measurable published performance.</p>
-                <a href="workflows/content-production.html">View workflow</a>
               </div>
               <figure><img src="../assets/approved/04-content-production-transparent.png" alt="Search data, human-guided writing and review, and published content workflow"></figure>
             </div>
@@ -208,14 +215,13 @@
 
         <article class="workflow-item workflow-dashboard">
           <button class="workflow-trigger" id="workflow-trigger-dashboard" type="button" data-workflow-trigger="dashboard" aria-expanded="false" aria-controls="workflow-panel-dashboard">
-            <span class="workflow-number">02</span><strong>Dashboard</strong><span class="workflow-plus" aria-hidden="true">+</span>
+            <strong>Dashboard</strong><span class="workflow-plus" aria-hidden="true">+</span>
           </button>
           <div class="workflow-panel" id="workflow-panel-dashboard" data-workflow-panel="dashboard" role="region" aria-labelledby="workflow-trigger-dashboard" aria-hidden="true" inert>
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
-                <h3>Agency management dashboard</h3>
+                <div class="workflow-copy-head"><h3>Agency management dashboard</h3><a href="workflows/agency-management-dashboard.html">View workflow</a></div>
                 <p>A queryable delivery workspace connects performance data, content operations, reporting, and emerging opportunities.</p>
-                <a href="workflows/agency-management-dashboard.html">View workflow</a>
               </div>
               <figure><img src="../assets/screens/fountainhead-ai-visibility-dashboard-v4-16x9.png" alt="Agency management dashboard connecting performance, content, reporting, and delivery work"></figure>
             </div>
@@ -224,14 +230,13 @@
 
         <article class="workflow-item workflow-presentation">
           <button class="workflow-trigger" id="workflow-trigger-presentation" type="button" data-workflow-trigger="presentation" aria-expanded="false" aria-controls="workflow-panel-presentation">
-            <span class="workflow-number">03</span><strong>Presentation</strong><span class="workflow-plus" aria-hidden="true">+</span>
+            <strong>Presentation</strong><span class="workflow-plus" aria-hidden="true">+</span>
           </button>
           <div class="workflow-panel" id="workflow-panel-presentation" data-workflow-panel="presentation" role="region" aria-labelledby="workflow-trigger-presentation" aria-hidden="true" inert>
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
-                <h3>Presentation publishing</h3>
+                <div class="workflow-copy-head"><h3>Presentation publishing</h3><a href="workflows/presentation-publishing.html">View workflow</a></div>
                 <p>A publishing skill deploys branded HTML, validates its destination, connects both publishing layers, and verifies the final URL.</p>
-                <a href="workflows/presentation-publishing.html">View workflow</a>
               </div>
               <figure>
                 <picture>
@@ -245,14 +250,13 @@
 
         <article class="workflow-item workflow-prospecting">
           <button class="workflow-trigger" id="workflow-trigger-prospecting" type="button" data-workflow-trigger="prospecting" aria-expanded="false" aria-controls="workflow-panel-prospecting">
-            <span class="workflow-number">04</span><strong>Prospecting</strong><span class="workflow-plus" aria-hidden="true">+</span>
+            <strong>Prospecting</strong><span class="workflow-plus" aria-hidden="true">+</span>
           </button>
           <div class="workflow-panel" id="workflow-panel-prospecting" data-workflow-panel="prospecting" role="region" aria-labelledby="workflow-trigger-prospecting" aria-hidden="true" inert>
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
-                <h3>Local prospecting and enrichment</h3>
+                <div class="workflow-copy-head"><h3>Local prospecting and enrichment</h3><a href="workflows/local-prospecting-enrichment.html">View workflow</a></div>
                 <p>Google Maps discovery, enrichment, screen matching, and sales handoff become one working system.</p>
-                <a href="workflows/local-prospecting-enrichment.html">View workflow</a>
               </div>
               <figure><img src="../assets/approved/05-local-prospecting-transparent.png" alt="Local prospecting and enrichment workflow"></figure>
             </div>
@@ -261,14 +265,13 @@
 
         <article class="workflow-item workflow-website">
           <button class="workflow-trigger" id="workflow-trigger-website" type="button" data-workflow-trigger="website" aria-expanded="false" aria-controls="workflow-panel-website">
-            <span class="workflow-number">05</span><strong>Website</strong><span class="workflow-plus" aria-hidden="true">+</span>
+            <strong>Website</strong><span class="workflow-plus" aria-hidden="true">+</span>
           </button>
           <div class="workflow-panel" id="workflow-panel-website" data-workflow-panel="website" role="region" aria-labelledby="workflow-trigger-website" aria-hidden="true" inert>
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
-                <h3>Image-to-website production</h3>
+                <div class="workflow-copy-head"><h3>Image-to-website production</h3><a href="workflows/image-to-website-production.html">View workflow</a></div>
                 <p>Research, visual direction, generated assets, review, and implementation move through one repeatable build path.</p>
-                <a href="workflows/image-to-website-production.html">View workflow</a>
               </div>
               <figure><img src="../assets/generated/json-prompt-image-output.png" alt="Image-to-website production workflow"></figure>
             </div>
@@ -279,7 +282,6 @@
 
     <section class="outcomes page-frame" id="proof" aria-labelledby="proof-title">
       <header class="section-heading outcomes-heading">
-        <p>Useful work should change something</p>
         <h2 id="proof-title">Outcomes.</h2>
       </header>
       <div class="metric-grid">
@@ -291,34 +293,39 @@
     </section>
 
     <section class="about" id="about" aria-labelledby="about-title" data-about-stage>
-      <div class="about-inner page-frame">
-        <div class="about-copy">
-          <p class="eyebrow">Off the clock, more or less</p>
-          <h2 id="about-title">A little about me.</h2>
-          <p>I was born and raised in Toronto. My first look at marketing came at six, helping my dad at his Chrysler dealership. I loved spending weekends there, looking through the brochures and the marketing around the showroom and thinking, “This made the cars look really cool.” That was probably the start of it. I’ve been doing marketing ever since.</p>
-          <p>Now I live in Coldstream, BC, raising four kids and sharing the house with a cat and a dog. When I should probably be resting, I spend an unreasonable amount of time tinkering with AI and building things simply to see if I can.</p>
-          <button class="about-toggle" type="button" aria-expanded="false" aria-controls="about-build-note" data-about-toggle>How this unnecessary thing was made</button>
-          <div class="about-note" id="about-build-note" data-about-note hidden>
-            <p>The portrait starts with one approved painting. A masked typing loop supplies the hand movement, while 66 registered head poses map the cursor or touch position to changes in gaze.</p>
-            <p>The useful lesson was to constrain the AI, isolate only what needed to change, and composite it back into a stable source.</p>
+      <div class="about-scroll-story" data-about-scroll-story>
+        <div class="about-story-sticky">
+          <div class="about-inner page-frame">
+            <div class="about-copy">
+              <h2 id="about-title">A little about me.</h2>
+              <p>I was born and raised in Toronto. My first look at marketing came at six, helping my dad at his Chrysler dealership. I loved spending weekends there, looking through the brochures and the marketing around the showroom and thinking, “This made the cars look really cool.” That was probably the start of it. I’ve been doing marketing ever since.</p>
+              <p><span class="about-context">Now I live in Coldstream, BC, raising four kids and sharing the house with a cat and a dog. When I should probably be resting, I spend an unreasonable amount of time tinkering with AI and building things simply to see if I can.</span> <span class="about-questionable">Even when the practical value is questionable.</span></p>
+              <div class="about-process-reveal">
+                <p class="about-process-value">There’s still value in the process.</p>
+                <button class="about-toggle" type="button" aria-expanded="false" aria-controls="about-build-note" data-about-toggle>How this unnecessary thing was made</button>
+                <div class="about-note" id="about-build-note" data-about-note hidden>
+                  <p>The portrait starts with one approved painting. A masked typing loop supplies the hand movement, while 66 registered head poses map the cursor or touch position to changes in gaze.</p>
+                  <p>The useful lesson was to constrain the AI, isolate only what needed to change, and composite it back into a stable source.</p>
+                </div>
+              </div>
+            </div>
+            <figure class="portrait-object">
+              <div class="portrait-frame">
+                <iframe src="portrait/embed.html" title="Interactive Renaissance portrait of Michael McKerracher. Move the pointer anywhere across this section to change his gaze." loading="lazy"></iframe>
+              </div>
+              <figcaption>Renaissance portrait, needlessly interactive.</figcaption>
+            </figure>
           </div>
+          <svg class="about-process-line" viewBox="0 0 1000 650" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path pathLength="1" d="M380 525C470 520 540 390 670 340"/>
+            <path pathLength="1" d="m645 328 25 12-17 22"/>
+          </svg>
         </div>
-        <figure class="portrait-object">
-          <div class="portrait-frame">
-            <iframe src="portrait/embed.html" title="Interactive Renaissance portrait of Michael McKerracher. Move the pointer anywhere across this section to change his gaze." loading="lazy"></iframe>
-          </div>
-          <figcaption>Renaissance portrait, needlessly interactive.</figcaption>
-        </figure>
-      </div>
-      <div class="about-breakout" data-about-breakout>
-        <p>Even when the practical value is <em>questionable.</em></p>
-        <svg class="about-curly-arrow" viewBox="0 0 120 168" aria-hidden="true" focusable="false"><path d="M30 4c55 18 75 58 47 92-16 20-44 18-48-5-3-18 19-29 38-13 22 19 3 58-28 73"/><path d="m26 131 13 20 21-12"/></svg>
       </div>
     </section>
 
     <section class="experience page-frame" id="resume" aria-labelledby="resume-title">
       <header class="section-heading experience-heading">
-        <p>The chronological version</p>
         <h2 id="resume-title">Experience</h2>
       </header>
       <div class="experience-ledger">
@@ -335,7 +342,6 @@
     </section>
 
     <section class="contact page-frame" id="contact" aria-labelledby="contact-title">
-      <p>Have a useful problem?</p>
       <h2 id="contact-title">Let’s build something useful.</h2>
       <div class="hero-actions">
         <a class="button button-primary" href="mailto:michael.mckerracher@gmail.com">Email Michael</a>
@@ -359,7 +365,6 @@
     <button class="dialog-close" type="button" data-dashboard-close aria-label="Close dashboard details">×</button>
     <img src="../assets/screens/fountainhead-ai-visibility-dashboard-v4.png" alt="AI visibility and agency delivery dashboard overview">
     <div>
-      <p class="eyebrow">Agency delivery system</p>
       <h2 id="dashboard-dialog-title">One place to query performance, content, and delivery work.</h2>
       <p>The dashboard brings client data and operating queues into a shared view for source health, visibility gaps, content priorities, and delivery reviews.</p>
     </div>

@@ -5,10 +5,19 @@ const workflowMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 let activeWorkflowIndex = Math.max(0, workflowItems.findIndex((item) => item.classList.contains("is-active")));
 let workflowTransitionTimer;
 
+function focusActiveWorkflow(index) {
+  const desktop = window.matchMedia("(min-width: 1100px)").matches;
+  if (desktop) {
+    workflowItems[index].querySelector("[data-workflow-panel] a")?.focus();
+  } else {
+    workflowTriggers[index].focus();
+  }
+}
+
 function activateWorkflow(index, { focus = false } = {}) {
   const safeIndex = Math.max(0, Math.min(index, workflowItems.length - 1));
   if (safeIndex === activeWorkflowIndex) {
-    if (focus) workflowTriggers[safeIndex].focus();
+    if (focus) focusActiveWorkflow(safeIndex);
     return;
   }
 
@@ -19,6 +28,7 @@ function activateWorkflow(index, { focus = false } = {}) {
     const active = itemIndex === safeIndex;
     const panel = item.querySelector("[data-workflow-panel]");
     workflowTriggers[itemIndex].setAttribute("aria-expanded", String(active));
+    workflowTriggers[itemIndex].toggleAttribute("aria-current", active);
     panel.setAttribute("aria-hidden", String(!active));
     panel.toggleAttribute("inert", !active);
   });
@@ -27,7 +37,7 @@ function activateWorkflow(index, { focus = false } = {}) {
     requestAnimationFrame(() => {
       workflowItems.forEach((item, itemIndex) => item.classList.toggle("is-active", itemIndex === safeIndex));
       activeWorkflowIndex = safeIndex;
-      if (focus) workflowTriggers[safeIndex].focus();
+      if (focus) focusActiveWorkflow(safeIndex);
 
       if (workflowMotion.matches) {
         workflowAccordion?.removeAttribute("data-workflow-transitioning");
@@ -66,97 +76,9 @@ workflowTriggers.forEach((trigger, index) => {
   });
 });
 
-document.querySelectorAll("[data-accommodation-viewer]").forEach((viewer) => {
-  const frame = viewer.querySelector("[data-accommodation-frame]");
-  const status = viewer.querySelector("[data-accommodation-status]");
-  const previousButton = viewer.querySelector("[data-accommodation-previous]");
-  const nextButton = viewer.querySelector("[data-accommodation-next]");
-  const frameSequences = viewer.dataset.frameSequences.split(",").map((entry) => {
-    const [name, count] = entry.split(":");
-    return { name, count: Number(count) };
-  });
-  const totalFrames = frameSequences.reduce((total, sequence) => total + sequence.count, 0);
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  let currentIndex = 0;
-
-  if (!frame || !status || !previousButton || !nextButton || !totalFrames) return;
-
-  const resolveFrame = (globalIndex) => {
-    let localIndex = Math.max(0, Math.min(globalIndex, totalFrames - 1));
-    for (const sequence of frameSequences) {
-      if (localIndex < sequence.count) return { sequence, localIndex };
-      localIndex -= sequence.count;
-    }
-    return { sequence: frameSequences.at(-1), localIndex: frameSequences.at(-1).count - 1 };
-  };
-
-  const framePath = ({ sequence, localIndex }) =>
-    `../assets/frames/accommodation/${sequence.name}/${String(localIndex + 1).padStart(3, "0")}.jpg`;
-
-  const preloadNearby = (index) => {
-    if (reducedMotion.matches) return;
-    [-2, -1, 1, 2].forEach((offset) => {
-      const image = new Image();
-      image.src = framePath(resolveFrame(index + offset));
-    });
-  };
-
-  const showFrame = (nextIndex) => {
-    currentIndex = Math.max(0, Math.min(Math.round(nextIndex), totalFrames - 1));
-    const target = resolveFrame(currentIndex);
-    const source = framePath(target);
-    const absoluteSource = new URL(source, document.baseURI).href;
-    if (frame.src !== absoluteSource) frame.src = absoluteSource;
-    viewer.dataset.sequence = target.sequence.name;
-    viewer.dataset.frameIndex = String(currentIndex);
-    status.textContent = `${target.sequence.name[0].toUpperCase()}${target.sequence.name.slice(1)} · frame ${currentIndex + 1} of ${totalFrames}`;
-    previousButton.disabled = currentIndex === 0;
-    nextButton.disabled = currentIndex === totalFrames - 1;
-    preloadNearby(currentIndex);
-  };
-
-  viewer.addEventListener("wheel", (event) => {
-    if (reducedMotion.matches) return;
-    const primaryDelta = Math.abs(event.deltaY) >= Math.abs(event.deltaX) ? event.deltaY : event.deltaX;
-    const deltaUnit = event.deltaMode === WheelEvent.DOM_DELTA_LINE
-      ? 16
-      : event.deltaMode === WheelEvent.DOM_DELTA_PAGE
-        ? window.innerHeight
-        : 1;
-    const normalizedDelta = primaryDelta * deltaUnit;
-    const direction = Math.sign(normalizedDelta);
-    const atBoundary = (direction < 0 && currentIndex === 0) || (direction > 0 && currentIndex === totalFrames - 1);
-    if (!direction || atBoundary) return;
-
-    event.preventDefault();
-    showFrame(currentIndex + direction);
-  }, { passive: false });
-
-  viewer.addEventListener("keydown", (event) => {
-    const backward = ["ArrowLeft", "ArrowUp"].includes(event.key);
-    const forward = ["ArrowRight", "ArrowDown"].includes(event.key);
-    let nextIndex = currentIndex;
-
-    if (backward) nextIndex -= 1;
-    if (forward) nextIndex += 1;
-    if (event.key === "Home") nextIndex = 0;
-    if (event.key === "End") nextIndex = totalFrames - 1;
-    nextIndex = Math.max(0, Math.min(nextIndex, totalFrames - 1));
-
-    if ((backward || forward || event.key === "Home" || event.key === "End") && nextIndex !== currentIndex) {
-      event.preventDefault();
-      showFrame(nextIndex);
-    }
-  });
-
-  previousButton.addEventListener("click", () => showFrame(currentIndex - 1));
-  nextButton.addEventListener("click", () => showFrame(currentIndex + 1));
-
-  showFrame(0);
-});
-
 const motionVideos = [...document.querySelectorAll("[data-motion-video]")];
 const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+const visibleMotionVideos = new Set();
 
 const loadMotionVideo = (video) => {
   if (video.dataset.motionLoaded === "true") return;
@@ -171,28 +93,66 @@ const playMotionVideo = async (video) => {
   loadMotionVideo(video);
   try {
     await video.play();
+    delete video.dataset.motionBlocked;
   } catch {
-    // Autoplay can be withheld by the browser; the poster remains the fallback.
+    video.dataset.motionBlocked = "true";
   }
 };
 
 if (!motionPreference.matches && "IntersectionObserver" in window) {
+  motionVideos.forEach((video) => {
+    video.addEventListener("canplay", () => {
+      if (visibleMotionVideos.has(video)) playMotionVideo(video);
+    });
+  });
+
   const motionObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       const video = entry.target;
       if (entry.isIntersecting) {
+        visibleMotionVideos.add(video);
         loadMotionVideo(video);
         playMotionVideo(video);
       } else if (!video.paused) {
+        visibleMotionVideos.delete(video);
         video.pause();
+      } else {
+        visibleMotionVideos.delete(video);
       }
     });
-  }, { rootMargin: "120px 0px", threshold: 0.08 });
+  }, { rootMargin: "75% 0px", threshold: 0.04 });
   motionVideos.forEach((video) => motionObserver.observe(video));
+
+  const retryVisibleMotion = () => visibleMotionVideos.forEach((video) => playMotionVideo(video));
+  window.addEventListener("pointerdown", retryVisibleMotion, { passive: true });
+  window.addEventListener("keydown", retryVisibleMotion);
 }
 
 const biasSequence = document.querySelector("[data-bias-sequence]");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const accommodationVideo = document.querySelector("[data-accommodation-scrub]");
+const accommodationViewer = accommodationVideo?.closest("[data-accommodation-viewer]");
+const sourceFrameDuration = 1 / 25;
+let accommodationDuration = 0;
+let accommodationPendingProgress = 0;
+
+const seekAccommodation = (progress) => {
+  accommodationPendingProgress = Math.max(0, Math.min(1, progress));
+  if (!accommodationVideo || !accommodationDuration || reducedMotion.matches) return;
+  const rawTime = accommodationPendingProgress * Math.max(0, accommodationDuration - sourceFrameDuration);
+  const nextTime = Math.round(rawTime / sourceFrameDuration) * sourceFrameDuration;
+  if (Math.abs(accommodationVideo.currentTime - nextTime) < sourceFrameDuration * .5) return;
+  accommodationVideo.currentTime = nextTime;
+};
+
+accommodationVideo?.addEventListener("loadedmetadata", () => {
+  accommodationDuration = Number.isFinite(accommodationVideo.duration) ? accommodationVideo.duration : 0;
+  seekAccommodation(accommodationPendingProgress);
+}, { once: true });
+
+accommodationVideo?.addEventListener("error", () => {
+  accommodationViewer?.classList.add("has-scrub-error");
+});
 
 if (biasSequence && !reducedMotion.matches && "IntersectionObserver" in window) {
   biasSequence.classList.add("is-observable");
@@ -205,14 +165,40 @@ if (biasSequence && !reducedMotion.matches && "IntersectionObserver" in window) 
   biasObserver.observe(biasSequence);
 }
 
+const scrollRevealObjects = [...document.querySelectorAll("[data-scroll-reveal]")];
+let objectRevealFrame;
+
+const updateObjectReveals = () => {
+  objectRevealFrame = undefined;
+  scrollRevealObjects.forEach((object) => {
+    const section = object.closest(".work-object");
+    if (!section) return;
+    const bounds = section.getBoundingClientRect();
+    const travel = window.innerHeight * .88 + section.offsetHeight * .58;
+    const rawProgress = reducedMotion.matches ? 1 : clampUnit((window.innerHeight * .98 - bounds.top) / travel);
+    const revealKey = object.dataset.scrollReveal;
+    const progress = revealKey === "elevators" ? clampUnit(rawProgress / .72) : rawProgress;
+    object.style.setProperty("--object-reveal", progress.toFixed(3));
+    if (revealKey === "accommodation") seekAccommodation(progress);
+  });
+};
+
+const requestObjectRevealUpdate = () => {
+  if (objectRevealFrame) return;
+  objectRevealFrame = requestAnimationFrame(updateObjectReveals);
+};
+
+window.addEventListener("scroll", requestObjectRevealUpdate, { passive: true });
+window.addEventListener("resize", requestObjectRevealUpdate, { passive: true });
+
 const aboutToggle = document.querySelector("[data-about-toggle]");
 const aboutNote = document.querySelector("[data-about-note]");
 const aboutStage = document.querySelector("[data-about-stage]");
-const aboutBreakout = document.querySelector("[data-about-breakout]");
+const aboutScrollStory = document.querySelector("[data-about-scroll-story]");
 const portraitFrame = document.querySelector(".portrait-frame");
 const portraitEmbed = portraitFrame?.querySelector("iframe");
 let portraitPointerFrame;
-let breakoutScrollFrame;
+let aboutScrollFrame;
 
 portraitEmbed?.addEventListener("load", () => portraitFrame.classList.add("is-loaded"));
 
@@ -232,26 +218,30 @@ aboutStage?.addEventListener("pointermove", (event) => {
 });
 aboutStage?.addEventListener("pointerdown", sendPortraitPointer);
 
-if (aboutBreakout && "IntersectionObserver" in window) {
-  const breakoutObserver = new IntersectionObserver((entries) => {
-    aboutBreakout.classList.toggle("is-visible", entries[0]?.isIntersecting ?? false);
-  }, { threshold: 0.28 });
-  breakoutObserver.observe(aboutBreakout);
-}
+const clampUnit = (value) => Math.max(0, Math.min(1, value));
+const phase = (progress, start, end) => clampUnit((progress - start) / (end - start));
 
-const updateBreakoutProgress = () => {
-  breakoutScrollFrame = undefined;
-  if (!aboutBreakout) return;
-  const bounds = aboutBreakout.getBoundingClientRect();
-  const progress = Math.max(0, Math.min(1, (window.innerHeight - bounds.top) / (window.innerHeight + bounds.height * .45)));
-  aboutBreakout.style.setProperty("--breakout-progress", progress.toFixed(3));
+const updateAboutProgress = () => {
+  aboutScrollFrame = undefined;
+  if (!aboutScrollStory) return;
+  const bounds = aboutScrollStory.getBoundingClientRect();
+  const travel = Math.max(1, aboutScrollStory.offsetHeight - window.innerHeight);
+  const progress = reducedMotion.matches ? 1 : clampUnit(-bounds.top / travel);
+  aboutScrollStory.style.setProperty("--about-progress", progress.toFixed(3));
+  aboutScrollStory.style.setProperty("--about-focus", phase(progress, .05, .25).toFixed(3));
+  aboutScrollStory.style.setProperty("--about-growth", phase(progress, .28, .52).toFixed(3));
+  aboutScrollStory.style.setProperty("--about-line", phase(progress, .52, .7).toFixed(3));
+  aboutScrollStory.style.setProperty("--about-value", phase(progress, .7, .86).toFixed(3));
+  aboutStage?.classList.toggle("is-about-focused", progress > .055);
 };
 
 window.addEventListener("scroll", () => {
-  if (breakoutScrollFrame) return;
-  breakoutScrollFrame = requestAnimationFrame(updateBreakoutProgress);
+  if (aboutScrollFrame) return;
+  aboutScrollFrame = requestAnimationFrame(updateAboutProgress);
 }, { passive: true });
-updateBreakoutProgress();
+window.addEventListener("resize", updateAboutProgress, { passive: true });
+updateAboutProgress();
+updateObjectReveals();
 
 aboutToggle?.addEventListener("click", () => {
   const opening = aboutNote?.hidden ?? false;

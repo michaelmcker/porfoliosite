@@ -92,7 +92,7 @@ test("V2 contains the required sections and selected work in the approved order"
   assert.match(html, /<h2 id="method-title">Bias to build\.<\/h2>/);
   assert.doesNotMatch(html, /class="bias-step"><span>/);
   assert.doesNotMatch(html, /class="bias-flow"/);
-  assert.match(html, /class="bias-step bias-step-build"[\s\S]*?class="bias-step-turn"/);
+  assert.match(html, /class="bias-route"/);
   assert.doesNotMatch(html, /class="eyebrow"/);
   assert.match(html, /A little about me\./);
 
@@ -123,7 +123,7 @@ test("V2 restores the existing hero film as a raised card and keeps the authored
   assert.match(html, /<div class="portrait-frame">\s*<iframe[^>]+src="portrait\/embed\.html"/s);
   assert.match(css, /\.portrait-frame\s*\{[^}]*aspect-ratio:\s*1023\s*\/\s*1537[^}]*border:\s*7px solid #725a3d/s);
   assert.match(html, /<section class="hero page-frame" id="hero"/);
-  assert.match(html, /I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale\. And sometimes stuff just for fun\./);
+  assert.match(html, /I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale\.<span class="hero-fun"><em>And sometimes, stuff just for fun\.<\/em><\/span>/);
   assert.doesNotMatch(html, /hero-motion-toggle/);
   assert.match(css, /\.hero\s*\{[^}]*grid-template-columns:\s*minmax\(360px,\s*\.78fr\)\s*minmax\(560px,\s*1\.22fr\)/s);
   assert.match(css, /\.hero-system-media\s*\{[^}]*width:\s*min\(100%,\s*840px\)[^}]*border-width:/s);
@@ -226,29 +226,20 @@ test("all five workflow controls have unique accessible trigger and panel wiring
   assert.match(html, /href="workflows\/presentation-publishing\.html"/);
 });
 
-test("boutique accommodation exposes the real 69-frame sequence without overlay controls", async () => {
+test("boutique accommodation uses its three real source recordings without overlay controls", async () => {
   const [html, app] = await Promise.all([readV2("index.html"), readV2("app.js")]);
 
-  assert.match(html, /data-accommodation-viewer[^>]+data-frame-sequences="overview:17,treehouse:28,cabin:24"[^>]+tabindex="0"/);
-  assert.match(html, /data-accommodation-frame/);
-  assert.match(html, /aria-describedby="accommodation-instructions"/);
-  assert.match(html, /id="accommodation-instructions"/);
+  assert.match(html, /data-accommodation-viewer/);
+  assert.match(html, /data-accommodation-scrub/);
+  assert.doesNotMatch(html, /data-frame-sequences|data-accommodation-frame|accommodation-instructions/);
   assert.equal([...html.matchAll(/data-accommodation-(?:previous|next)/g)].length, 0);
 
-  assert.match(app, /data-accommodation-viewer/);
-  assert.match(app, /frameSequences/);
-  assert.match(app, /addEventListener\(["']wheel["']/);
-  assert.match(app, /passive:\s*false/);
-  assert.match(app, /deltaMode/);
-  assert.match(app, /wheelAccumulator/);
-  assert.match(app, /pixelsPerFrame\s*=\s*28/);
-  assert.match(app, /preventDefault\(\)/);
+  assert.match(app, /data-accommodation-scrub/);
+  assert.match(app, /loadedmetadata/);
+  assert.match(app, /currentTime/);
+  assert.doesNotMatch(app, /addEventListener\(["']wheel["']|wheelAccumulator|pixelsPerFrame/);
   assert.match(app, /prefers-reduced-motion:\s*reduce/);
-  assert.match(app, /new URL\(source,\s*document\.baseURI\)\.href/);
-  assert.match(app, /setFrameFromScrollProgress/);
-  for (const key of ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"]) {
-    assert.ok(app.includes(key), `missing accommodation keyboard support for ${key}`);
-  }
+  assert.doesNotMatch(app, /setFrameFromScrollProgress/);
 });
 
 test("V2 uses a real scroll-scrub accommodation video and keeps a frame fallback", async () => {
@@ -318,35 +309,34 @@ test("large showcase videos stay lazy, autoplay once visible, and have no pause-
   assert.match(app, /prefers-reduced-motion:\s*reduce/);
 });
 
-test("selected work separates frame scrubbing from restrained object choreography", async () => {
+test("selected work combines video scrubbing with restrained object choreography", async () => {
   const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
 
-  for (const key of ["cool-runnings", "elevators"]) {
+  for (const key of ["accommodation", "cool-runnings", "elevators"]) {
     assert.match(html, new RegExp(`data-scroll-reveal="${key}"`));
   }
-  assert.match(html, /data-frame-scroll="accommodation"/);
-  assert.doesNotMatch(html, /data-scroll-reveal="accommodation"/);
+  assert.doesNotMatch(html, /data-frame-scroll="accommodation"/);
   assert.match(css, /\[data-scroll-reveal\][\s\S]*?--object-reveal/s);
-  assert.match(css, /\.browser-object-video\s*\{[^}]*translate3d\(calc\(28px\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)/s);
+  assert.match(css, /\.browser-object-video\s*\{[^}]*translate3d\(calc\(36px\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)/s);
   assert.doesNotMatch(css, /\.browser-object-video\s*\{[^}]*rotateX/s);
   assert.match(css, /\.browser-object-elevator\s*\{[^}]*rotateX\(calc\(68deg\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)\)/s);
   assert.match(css, /\.work-object-accommodation,[\s\S]*?min-height:\s*120svh/s);
   assert.match(app, /querySelectorAll\("\[data-scroll-reveal\]"\)/);
-  assert.match(app, /querySelectorAll\("\[data-frame-scroll\]"\)/);
+  assert.match(app, /seekAccommodation\(progress\)/);
   assert.match(app, /revealKey\s*===\s*"elevators"[\s\S]*?rawProgress\s*\/\s*\.72/s);
   assert.match(app, /--object-reveal/);
 });
 
-test("Bias uses curved arrows attached to its labels and butts against Selected Work", async () => {
+test("Bias uses one light continuous route and butts against Selected Work", async () => {
   const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
 
-  assert.equal([...html.matchAll(/class="bias-step-arrow(?:\s|\")/g)].length, 4);
-  assert.equal([...html.matchAll(/class="bias-step-turn"/g)].length, 1);
+  assert.equal([...html.matchAll(/class="bias-step-arrow(?:\s|\")/g)].length, 0);
+  assert.equal([...html.matchAll(/class="bias-route"/g)].length, 1);
   assert.match(css, /\.bias-step:nth-child\(4\)\s*\{[^}]*grid-column:\s*3/s);
   assert.match(css, /\.bias-step:nth-child\(5\)\s*\{[^}]*grid-column:\s*2/s);
   assert.match(css, /\.bias-step:nth-child\(6\)\s*\{[^}]*grid-column:\s*1/s);
-  assert.match(css, /\.bias-step-turn\s*\{[^}]*position:\s*absolute/s);
-  assert.match(html, /class="bias-step-arrow"[^>]*>[\s\S]*?<path d="M2 14C/s);
+  assert.match(css, /\.bias-route\s*\{[^}]*position:\s*absolute/s);
+  assert.match(css, /\.bias-route > path\s*\{[^}]*stroke-width:\s*1\.5/s);
   assert.match(css, /\.build-bias\s*\{[^}]*margin-top:\s*0/s);
   assert.match(css, /\.selected-work\s*\{[^}]*padding-block:\s*var\(--space-section\)\s+0/s);
 });
