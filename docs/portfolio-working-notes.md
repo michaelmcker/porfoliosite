@@ -225,10 +225,10 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 ### V2 Scroll and Physics Finale — July 15, 2026
 
 - The contact sequence is progressive enhancement over a complete static hard-gold composition.
-- The sequence is not controlled by scroll. When 40% of the stage enters view, it starts once per page load and runs autonomously for 4,800ms.
+- The sequence is not controlled by scroll. When 40% of the stage enters view, it starts once per page load, aligns the stage to the viewport, locks page movement for its 4,800ms entrance, and restores scrolling before gravity begins.
 - Actual portfolio artifacts enter beyond the upper-left edge and follow exactly two inward Archimedean turns. Equal arc-length mapping keeps the pace even, tangent rotation follows the path, and per-object phase offsets keep the cards readable as a stream.
-- Each object scales continuously from 100% at the outer edge to 55% at the centre.
-- At the end of the second turn, the objects converge inside a tight central release band. Each DOM pose and its 55% rendered dimensions transfer directly into a locally vendored Matter.js body with no visible position or size jump.
+- Each object scales continuously from 100% at the outer edge to 70% near the middle.
+- During the final six percent of the second turn, the objects converge into a responsive horizontal release band rather than one centre point. Each distributed DOM pose and its 70% rendered dimensions transfer directly into a locally vendored Matter.js body with no visible position or size jump.
 - Gravity, all four boundaries, collisions, friction, sleeping, and angular movement produce the drop and settlement.
 - Dragging uses a high-stiffness dynamic point constraint with no angular stiffness. Releasing removes the constraint without resetting velocity or angular velocity, allowing a restrained toss and natural collisions instead of pinning the body.
 - The finale portrait uses the clean body plate plus a registered head-visible pose. Do not substitute the headless plate by itself.
