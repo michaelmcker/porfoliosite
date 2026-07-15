@@ -136,6 +136,15 @@ const sourceFrameDuration = 1 / 25;
 let accommodationDuration = 0;
 let accommodationPendingProgress = 0;
 
+const loadAccommodationVideo = () => {
+  if (!accommodationVideo || accommodationVideo.dataset.scrubLoaded === "true" || reducedMotion.matches) return;
+  accommodationVideo.querySelectorAll("source[data-src]").forEach((source) => {
+    source.src = source.dataset.src;
+  });
+  accommodationVideo.dataset.scrubLoaded = "true";
+  accommodationVideo.load();
+};
+
 const seekAccommodation = (progress) => {
   accommodationPendingProgress = Math.max(0, Math.min(1, progress));
   if (!accommodationVideo || !accommodationDuration || reducedMotion.matches) return;
@@ -153,6 +162,17 @@ accommodationVideo?.addEventListener("loadedmetadata", () => {
 accommodationVideo?.addEventListener("error", () => {
   accommodationViewer?.classList.add("has-scrub-error");
 });
+
+if (accommodationViewer && !reducedMotion.matches && "IntersectionObserver" in window) {
+  const accommodationLoadObserver = new IntersectionObserver((entries, observer) => {
+    if (!entries[0]?.isIntersecting) return;
+    loadAccommodationVideo();
+    observer.disconnect();
+  }, { rootMargin: "120% 0px", threshold: 0 });
+  accommodationLoadObserver.observe(accommodationViewer);
+} else {
+  loadAccommodationVideo();
+}
 
 if (biasSequence && !reducedMotion.matches && "IntersectionObserver" in window) {
   biasSequence.classList.add("is-observable");

@@ -3,7 +3,7 @@ import { createReadStream } from "node:fs";
 import { mkdir, stat } from "node:fs/promises";
 import http from "node:http";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import puppeteer from "puppeteer-core";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -139,44 +139,131 @@ try {
   await page.keyboard.press("ArrowDown");
   assert.equal(await page.evaluate(() => document.activeElement?.dataset.workflowTrigger), "dashboard");
 
-  await page.waitForFunction(() => document.querySelector("[data-accommodation-viewer]")?.dataset.frameIndex === "0");
-  await page.click("[data-accommodation-next]");
-  assert.equal(await page.$eval("[data-accommodation-viewer]", (node) => node.dataset.frameIndex), "1");
-  await page.click("[data-accommodation-previous]");
-  assert.equal(await page.$eval("[data-accommodation-viewer]", (node) => node.dataset.frameIndex), "0");
-  await page.focus("[data-accommodation-viewer]");
-  await page.keyboard.press("End");
-  assert.equal(await page.$eval("[data-accommodation-viewer]", (node) => node.dataset.frameIndex), "68");
-  await page.keyboard.press("Home");
-  await page.keyboard.press("ArrowRight");
-  assert.equal(await page.$eval("[data-accommodation-viewer]", (node) => node.dataset.frameIndex), "1");
-
-  const wheelResults = await page.evaluate(() => {
-    const viewer = document.querySelector("[data-accommodation-viewer]");
-    viewer.dispatchEvent(new KeyboardEvent("keydown", { key: "Home", bubbles: true, cancelable: true }));
-    const releasedAtStart = viewer.dispatchEvent(new WheelEvent("wheel", { deltaY: -1, deltaMode: 1, bubbles: true, cancelable: true }));
-    const capturedInside = viewer.dispatchEvent(new WheelEvent("wheel", { deltaY: 1, deltaMode: 1, bubbles: true, cancelable: true }));
-    const indexAfterLineWheel = viewer.dataset.frameIndex;
-    viewer.dispatchEvent(new KeyboardEvent("keydown", { key: "End", bubbles: true, cancelable: true }));
-    const releasedAtEnd = viewer.dispatchEvent(new WheelEvent("wheel", { deltaY: 1, deltaMode: 2, bubbles: true, cancelable: true }));
-    return { releasedAtStart, capturedInside, indexAfterLineWheel, releasedAtEnd };
+  await page.evaluate(() => {
+    document.documentElement.style.scrollBehavior = "auto";
+    const section = document.querySelector("[data-work='accommodation']");
+    const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo(0, sectionTop - (window.innerHeight * .97));
   });
-  assert.deepEqual(wheelResults, {
-    releasedAtStart: true,
-    capturedInside: false,
-    indexAfterLineWheel: "1",
-    releasedAtEnd: true,
+  await page.waitForFunction(() => {
+    const video = document.querySelector("[data-accommodation-scrub]");
+    return video?.dataset.scrubLoaded === "true" && video.readyState >= 1 && Number.isFinite(video.duration);
   });
+  const accommodationStart = await page.$eval("[data-accommodation-scrub]", (video) => video.currentTime);
+  await page.evaluate(() => {
+    const section = document.querySelector("[data-work='accommodation']");
+    const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo(0, sectionTop - (window.innerHeight * .45));
+  });
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  const accommodationMotion = await page.evaluate(() => {
+    const video = document.querySelector("[data-accommodation-scrub]");
+    const object = document.querySelector("[data-scroll-reveal='accommodation']");
+    const section = document.querySelector("[data-work='accommodation']");
+    return {
+      currentTime: video.currentTime,
+      duration: video.duration,
+      readyState: video.readyState,
+      progress: getComputedStyle(object).getPropertyValue("--object-reveal").trim(),
+      sectionTop: section.getBoundingClientRect().top,
+      scrollY: window.scrollY,
+    };
+  });
+  assert.ok(
+    accommodationMotion.currentTime > accommodationStart + 1,
+    `ordinary page scroll did not advance the boutique source recording from ${accommodationStart}: ${JSON.stringify(accommodationMotion)}`,
+  );
+  assert.equal(await page.$$eval("[data-accommodation-previous], [data-accommodation-next]", (nodes) => nodes.length), 0);
+  assert.equal(await page.$eval("[data-accommodation-viewer]", (viewer) => (
+    viewer.dispatchEvent(new WheelEvent("wheel", { deltaY: 24, bubbles: true, cancelable: true }))
+  )), true, "boutique preview still traps wheel scrolling");
 
   const reducedPage = await browser.newPage();
+  const reducedVideoRequests = [];
+  reducedPage.on("request", (request) => {
+    if (/\.(?:mp4|webm)(?:$|\?)/.test(request.url())) reducedVideoRequests.push(request.url());
+  });
   await reducedPage.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }]);
   await reducedPage.setViewport({ width: 1024, height: 900, deviceScaleFactor: 1 });
   requestPaths.length = 0;
   await reducedPage.goto(url, { waitUntil: "domcontentloaded" });
-  assert.equal(await reducedPage.$$eval("[data-motion-video]", (videos) => videos.every((video) => video.paused && !video.autoplay)), true);
-  assert.equal(requestPaths.some((requestPath) => /\.(?:mp4|webm)$/.test(requestPath)), false);
+  assert.equal(await reducedPage.$$eval("[data-motion-video]", (videos) => videos.every((video) => video.paused && video.dataset.motionLoaded !== "true")), true);
+  assert.deepEqual(reducedVideoRequests, []);
   assert.equal(await reducedPage.$$eval("[data-motion-video]", (videos) => videos.every((video) => !video.matches("[role='button'], [tabindex]"))), true);
   await reducedPage.close();
+
+  await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "no-preference" }]);
+  await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1 });
+  await page.goto(url, { waitUntil: "domcontentloaded" });
+  await page.$eval("[data-work='rccv']", (node) => node.scrollIntoView({ block: "center" }));
+  await page.waitForFunction(() => {
+    const video = document.querySelector("#motion-video-rccv");
+    return video?.dataset.motionLoaded === "true" && video.readyState >= 2;
+  });
+  await page.evaluate(() => document.body.dispatchEvent(new PointerEvent("pointerdown", { bubbles: true })));
+  const motionStart = await page.$eval("#motion-video-rccv", (video) => video.currentTime);
+  await page.waitForFunction((start) => {
+    const video = document.querySelector("#motion-video-rccv");
+    return !video.paused && video.currentTime > start + .2;
+  }, {}, motionStart);
+
+  await page.$eval("[data-work='cool-runnings']", (node) => node.scrollIntoView({ block: "center" }));
+  await page.waitForFunction(() => {
+    const video = document.querySelector("#motion-video-cool-runnings");
+    return video?.dataset.motionLoaded === "true" && video.readyState >= 2;
+  });
+  const coolMotionStart = await page.$eval("#motion-video-cool-runnings", (video) => video.currentTime);
+  await page.waitForFunction((start) => {
+    const video = document.querySelector("#motion-video-cool-runnings");
+    return !video.paused && video.currentTime > start + .2;
+  }, {}, coolMotionStart);
+
+  await page.$eval("[data-work='elevators']", (node) => node.scrollIntoView({ block: "center" }));
+  await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-scroll-reveal='elevators']")).getPropertyValue("--object-reveal")) > .25);
+  assert.ok(await page.$eval("[data-scroll-reveal='elevators']", (node) => Number.parseFloat(getComputedStyle(node).getPropertyValue("--object-reveal")) > .25), "elevator browser did not rotate up with scroll progress");
+
+  await page.$eval(".workflow-accordion", (node) => node.scrollIntoView({ block: "center" }));
+  const accordionStartWidths = await page.$$eval(".workflow-item", (items) => items.map((item) => item.getBoundingClientRect().width));
+  await page.click("[data-workflow-trigger='dashboard']");
+  await page.waitForFunction(() => document.querySelector("[data-workflow-trigger='dashboard']")?.getAttribute("aria-expanded") === "true");
+  await new Promise((resolve) => setTimeout(resolve, 90));
+  const transitionWidths = await page.$$eval(".workflow-item", (items) => items.map((item) => item.getBoundingClientRect().width));
+  assert.ok(transitionWidths[0] > 64 && transitionWidths[0] < accordionStartWidths[0], "closing workflow panel did not interpolate its width");
+  assert.ok(transitionWidths[1] > 64 && transitionWidths[1] < accordionStartWidths[0], "opening workflow panel did not interpolate its width");
+
+  const aboutStoryPosition = await page.$eval("[data-about-scroll-story]", (story) => ({
+    top: story.getBoundingClientRect().top + window.scrollY,
+    travel: story.offsetHeight - window.innerHeight,
+  }));
+  await page.evaluate(({ top, travel }) => window.scrollTo(0, top + travel * .72), aboutStoryPosition);
+  await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-about-scroll-story]")).getPropertyValue("--about-line")) > .8);
+  assert.ok(Math.abs(await page.$eval(".about-story-sticky", (node) => node.getBoundingClientRect().top)) < 2, "About story did not remain locked during its reveal");
+  assert.ok(await page.$eval(".about-context", (node) => Number.parseFloat(getComputedStyle(node).opacity) < .08), "About context did not fade while the phrase expanded");
+  assert.ok(await page.$eval(".about-questionable", (node) => Number.parseFloat(getComputedStyle(node).fontSize) > 72), "About phrase did not become a large standalone statement");
+  assert.ok(await page.$eval(".about-questionable", (node) => Math.abs(new DOMMatrixReadOnly(getComputedStyle(node).transform).a - 1) < .02), "About phrase still uses a rasterizing scale transform");
+  await page.evaluate(({ top, travel }) => window.scrollTo(0, top + travel * .9), aboutStoryPosition);
+  await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-about-scroll-story]")).getPropertyValue("--about-value")) > .95);
+  assert.ok(await page.$eval(".about-process-reveal", (node) => Number.parseFloat(getComputedStyle(node).opacity) > .95), "About process conclusion did not resolve before the section released");
+
+  await page.$eval("#resume", (node) => node.scrollIntoView({ block: "center" }));
+  const experienceCenters = await page.$$eval(".experience-ledger article", (items) => items.map((item) => {
+    const bounds = item.getBoundingClientRect();
+    const heading = item.querySelector("h3").getBoundingClientRect();
+    return { itemCenter: bounds.left + bounds.width / 2, headingCenter: heading.left + heading.width / 2 };
+  }));
+  assert.ok(experienceCenters.every(({ itemCenter, headingCenter }) => Math.abs(itemCenter - headingCenter) < 2), "Experience company names are not centred on their rows");
+
+  const filePage = await browser.newPage();
+  await filePage.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1 });
+  await filePage.goto(pathToFileURL(path.join(root, "v2/index.html")).href, { waitUntil: "domcontentloaded" });
+  await filePage.$eval("[data-work='rccv']", (node) => node.scrollIntoView({ block: "center" }));
+  await filePage.waitForFunction(() => document.querySelector("#motion-video-rccv")?.dataset.motionLoaded === "true");
+  const fileMotionStart = await filePage.$eval("#motion-video-rccv", (video) => video.currentTime);
+  await filePage.waitForFunction((start) => {
+    const video = document.querySelector("#motion-video-rccv");
+    return !video.paused && video.currentTime > start + .2;
+  }, {}, fileMotionStart);
+  await filePage.close();
 
   for (const width of [1440, 1024, 768, 390, 320]) {
     await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }]);
@@ -187,13 +274,76 @@ try {
       scrollWidth: document.documentElement.scrollWidth,
     }));
     assert.ok(geometry.scrollWidth <= geometry.innerWidth, `${width}px viewport overflows by ${geometry.scrollWidth - geometry.innerWidth}px`);
+    const accommodationGeometry = await page.evaluate(() => {
+      const cue = document.querySelector(".accommodation-scroll-cue").getBoundingClientRect();
+      const browser = document.querySelector("[data-accommodation-viewer]").getBoundingClientRect();
+      const scrub = document.querySelector("[data-accommodation-scrub]");
+      const fallback = document.querySelector("[data-accommodation-fallback]");
+      return {
+        cueLeft: cue.left,
+        cueRight: cue.right,
+        cueBottom: cue.bottom,
+        browserTop: browser.top,
+        scrubDisplay: getComputedStyle(scrub).display,
+        fallbackDisplay: getComputedStyle(fallback).display,
+      };
+    });
+    assert.ok(accommodationGeometry.cueLeft >= -1 && accommodationGeometry.cueRight <= width + 1, `${width}px accommodation cue is clipped horizontally`);
+    assert.ok(accommodationGeometry.cueBottom <= accommodationGeometry.browserTop + 24, `${width}px accommodation cue is detached from the browser top`);
+    assert.equal(accommodationGeometry.scrubDisplay, "none", `${width}px reduced-motion accommodation video should be hidden`);
+    assert.notEqual(accommodationGeometry.fallbackDisplay, "none", `${width}px reduced-motion accommodation fallback should be visible`);
     if (screenshotDirectory) {
       await mkdir(screenshotDirectory, { recursive: true });
       await page.screenshot({ path: path.join(screenshotDirectory, `v2-${width}.png`), fullPage: true });
     }
   }
 
+  for (const width of [1024, 900, 768]) {
+    await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "no-preference" }]);
+    await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
+    await page.goto(url, { waitUntil: "domcontentloaded" });
+    const restingType = await page.$eval(".about-questionable", (phrase) => {
+      const phraseStyle = getComputedStyle(phrase);
+      const paragraphStyle = getComputedStyle(phrase.closest("p"));
+      return {
+        phraseFamily: phraseStyle.fontFamily,
+        paragraphFamily: paragraphStyle.fontFamily,
+        phraseSize: phraseStyle.fontSize,
+        paragraphSize: paragraphStyle.fontSize,
+        phraseColor: phraseStyle.color,
+        paragraphColor: paragraphStyle.color,
+      };
+    });
+    assert.deepEqual(restingType, {
+      ...restingType,
+      phraseFamily: restingType.paragraphFamily,
+      phraseSize: restingType.paragraphSize,
+      phraseColor: restingType.paragraphColor,
+    }, `${width}px About phrase is styled before its scroll beat`);
+
+    const position = await page.$eval("[data-about-scroll-story]", (story) => ({
+      top: story.getBoundingClientRect().top + window.scrollY,
+      travel: story.offsetHeight - window.innerHeight,
+    }));
+    await page.evaluate(({ top, travel }) => window.scrollTo(0, top + travel * .5), position);
+    await page.waitForFunction(() => document.querySelector("[data-about-stage]")?.classList.contains("is-about-focused"));
+    const aboutGeometry = await page.evaluate(() => {
+      const phrase = document.querySelector(".about-questionable").getBoundingClientRect();
+      const portrait = document.querySelector(".portrait-object").getBoundingClientRect();
+      return { phraseRight: phrase.right, portraitLeft: portrait.left, phraseWidth: phrase.width };
+    });
+    assert.ok(aboutGeometry.phraseWidth > 0, `${width}px About phrase collapsed during its scroll beat`);
+    assert.ok(aboutGeometry.phraseRight <= aboutGeometry.portraitLeft + 1, `${width}px About phrase overlaps the portrait`);
+  }
+
   if (screenshotDirectory) {
+    await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }]);
+    await page.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 1 });
+    await page.goto(url, { waitUntil: "domcontentloaded" });
+    await page.evaluate(() => document.fonts.ready);
+    const work = await page.$("#work");
+    await work.screenshot({ path: path.join(screenshotDirectory, "work-desktop.png") });
+
     const workflowKeys = ["content", "dashboard", "presentation", "prospecting", "website"];
     for (const { label, width } of [{ label: "desktop", width: 1440 }, { label: "mobile", width: 390 }]) {
       await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "no-preference" }]);
@@ -213,7 +363,7 @@ try {
       await accommodationWork.screenshot({ path: path.join(screenshotDirectory, accommodationFilename) });
 
       for (const key of workflowKeys) {
-        await page.click(`[data-workflow-trigger='${key}']`);
+        await page.$eval(`[data-workflow-trigger='${key}']`, (trigger) => trigger.click());
         await page.waitForFunction((activeKey) => (
           document.querySelector(`[data-workflow-trigger='${activeKey}']`)?.getAttribute("aria-expanded") === "true"
         ), {}, key);
@@ -233,10 +383,26 @@ try {
         await accordion.screenshot({ path: screenshotPath });
       }
 
-      for (const sectionName of ["method", "about"]) {
+      for (const sectionName of ["method", "about", "resume"]) {
         await page.evaluate(() => document.activeElement?.blur());
         const section = await page.$(`#${sectionName}`);
-        await section.screenshot({ path: path.join(screenshotDirectory, `${sectionName}-${label}.png`) });
+        await section.evaluate((node) => node.scrollIntoView({ block: "center" }));
+        if (sectionName === "method") {
+          await page.waitForFunction(() => document.querySelector(".bias-sequence")?.classList.contains("is-revealed"));
+          await new Promise((resolve) => setTimeout(resolve, 1150));
+        }
+        if (sectionName === "about" && width >= 1100) {
+          const position = await page.$eval("[data-about-scroll-story]", (story) => ({
+            top: story.getBoundingClientRect().top + window.scrollY,
+            travel: story.offsetHeight - window.innerHeight,
+          }));
+          await page.evaluate(({ top, travel }) => window.scrollTo(0, top + travel * .9), position);
+          await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-about-scroll-story]")).getPropertyValue("--about-value")) > .95);
+          const sticky = await page.$(".about-story-sticky");
+          await sticky.screenshot({ path: path.join(screenshotDirectory, `${sectionName}-${label}.png`) });
+        } else {
+          await section.screenshot({ path: path.join(screenshotDirectory, `${sectionName}-${label}.png`) });
+        }
       }
     }
   }
@@ -298,7 +464,41 @@ try {
   }
   page.off("response", recordDetailFailure);
 
-  console.log("V2 browser QA passed: homepage interactions plus five detailed workflow routes and overflow at 5 viewport widths.");
+  const caseFailures = [];
+  const recordCaseFailure = (response) => {
+    if (response.url().startsWith(`http://127.0.0.1:${port}/`) && response.status() >= 400) {
+      caseFailures.push(`${response.status()} ${response.url()}`);
+    }
+  };
+  page.on("response", recordCaseFailure);
+  for (const width of [1440, 1024, 768, 390]) {
+    caseFailures.length = 0;
+    await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
+    await page.goto(`http://127.0.0.1:${port}/v2/work/local-search-magnet.html`, { waitUntil: "networkidle0" });
+    const caseStudy = await page.evaluate(() => ({
+      innerWidth: window.innerWidth,
+      scrollWidth: document.documentElement.scrollWidth,
+      heading: document.querySelector("h1")?.textContent.trim(),
+      clicks: document.querySelector("[data-cool-metric='clicks']")?.textContent.trim(),
+      metricWindow: document.querySelector("[data-cool-metrics-window]")?.textContent.trim(),
+      review: document.querySelector("#review-title")?.textContent.trim(),
+    }));
+    assert.ok(caseStudy.heading, `${width}px local-search case study is missing its heading`);
+    assert.ok(caseStudy.scrollWidth <= caseStudy.innerWidth, `${width}px local-search case study overflows by ${caseStudy.scrollWidth - caseStudy.innerWidth}px`);
+    assert.equal(caseStudy.clicks, "189", `${width}px local-search case study did not load current metrics`);
+    assert.match(caseStudy.metricWindow, /June 15, 2026 to July 12, 2026/, `${width}px local-search metric window is stale`);
+    assert.match(caseStudy.review, /Human review/, `${width}px local-search case study omits its review boundary`);
+    assert.deepEqual(caseFailures, [], `${width}px local-search case study has failed local assets`);
+    if (screenshotDirectory && [1440, 390].includes(width)) {
+      await page.screenshot({ path: path.join(screenshotDirectory, `v2-local-search-magnet-${width}.png`), fullPage: true });
+      const label = width === 1440 ? "desktop" : "mobile";
+      await (await page.$(".case-hero")).screenshot({ path: path.join(screenshotDirectory, `local-search-hero-${label}.png`) });
+      await (await page.$(".results")).screenshot({ path: path.join(screenshotDirectory, `local-search-results-${label}.png`) });
+    }
+  }
+  page.off("response", recordCaseFailure);
+
+  console.log("V2 browser QA passed: homepage interactions, five workflow routes, local-search case study, and responsive overflow checks.");
 } finally {
   await browser?.close();
   await new Promise((resolve) => server.close(resolve));

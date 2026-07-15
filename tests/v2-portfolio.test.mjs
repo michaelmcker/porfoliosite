@@ -459,12 +459,13 @@ test("V2 interactions use keyboard handling, observers, and rAF-throttled scroll
 test("browser QA covers runtime focus, motion, inputs, all workflow routes, and target widths", async () => {
   const qa = await readFile(new URL("../scripts/qa-v2.mjs", import.meta.url), "utf8");
   for (const marker of [
-    "puppeteer-core", "inert", "aria-hidden", "ArrowDown", "data-accommodation-next",
-    "deltaMode", "prefers-reduced-motion", "detailRoutes", "workflow-step",
+    "puppeteer-core", "inert", "aria-hidden", "ArrowDown", "data-accommodation-scrub",
+    "scrubLoaded", "prefers-reduced-motion", "detailRoutes", "workflow-step",
     "1440", "1024", "768", "390", "320", "scrollWidth",
     "workflow-desktop-", "workflow-mobile-", "hero-desktop.png", "hero-mobile.png",
     "work-desktop-accommodation.png", "work-mobile-accommodation.png",
     "work-desktop.png", "motion-video-rccv", "currentTime", "transitionWidths", "--about-line",
+    "cueBottom", "phraseRight", "local-search-magnet",
   ]) {
     assert.ok(qa.includes(marker), `browser QA missing ${marker}`);
   }

@@ -40,7 +40,7 @@ h1, h2, h3 { letter-spacing: -.04em; line-height: 1.01; }
 :focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
 .page-frame { width: min(calc(100% - 2 * var(--gutter)),var(--page)); margin-inline: auto; }
 
-.skip-link { position: fixed; z-index: 20; top: 10px; left: 10px; padding: 10px 14px; background: var(--ink); color: white; transform: translateY(-150%); }
+.skip-link { position: fixed; z-index: 20; top: 0; left: 10px; padding: 10px 14px; background: var(--ink); color: white; transform: translateY(-120%); }
 .skip-link:focus { transform: none; }
 .case-header { width: min(calc(100% - 2 * var(--gutter)),var(--page)); min-height: 84px; margin-inline: auto; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; border-bottom: 1px solid var(--line); font-size: .88rem; font-weight: 750; }
 .case-header > :last-child { justify-self: end; }
