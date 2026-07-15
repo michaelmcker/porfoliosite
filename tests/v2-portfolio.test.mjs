@@ -215,7 +215,7 @@ test("About uses one parent-owned pointer space and keeps its final composition 
   assert.match(css, /\.about-process-value\s*\{[^}]*2\.8rem/s);
 });
 
-test("contact finale exposes a local scroll-to-physics sequence with a static fallback", async () => {
+test("contact finale triggers once in view and preserves dynamic drag physics", async () => {
   const [html, css, finale] = await Promise.all([
     readV2("index.html"),
     readV2("styles.css"),
@@ -241,16 +241,22 @@ test("contact finale exposes a local scroll-to-physics sequence with a static fa
   assert.match(finale, /function releaseToPhysics/);
   assert.match(finale, /function markSettled/);
   assert.match(finale, /function updateCopyContrast/);
-  assert.match(finale, /Body\.setPosition/);
-  assert.match(finale, /Body\.setStatic\(dragged, true\)/);
-  assert.match(finale, /Body\.setAngularVelocity\(dragged, 0\)/);
-  assert.doesNotMatch(finale, /Body\.setVelocity\(dragged,\s*\{\s*x:\s*dragPoint\.vx,\s*y:\s*dragPoint\.vy\s*\}\)/s);
+  assert.match(finale, /const entranceDuration = 1800/);
+  assert.match(finale, /threshold:\s*\.4/);
+  assert.match(finale, /function startEntrance/);
+  assert.match(finale, /requestAnimationFrame\(stepEntrance\)/);
+  assert.match(finale, /Constraint\.create/);
+  assert.match(finale, /pointB:/);
+  assert.match(finale, /Composite\.remove\(engine\.world, dragConstraint\)/);
+  assert.doesNotMatch(finale, /updateFromScroll|requestScrollUpdate/);
+  assert.doesNotMatch(finale, /Body\.setStatic\(dragged, true\)/);
+  assert.doesNotMatch(finale, /plugin\.pinned/);
   assert.match(finale, /dataset\.finaleState/);
   assert.match(finale, /dataset\.copyState/);
-  assert.match(finale, /dataset\.orbitProgress/);
+  assert.match(finale, /dataset\.entranceProgress/);
   assert.match(css, /data-copy-state="visible"/);
   assert.match(css, /is-contrast-light/);
-  assert.match(css, /\.contact-story\.has-finale-js\s*\{[^}]*min-height:\s*340svh/s);
+  assert.doesNotMatch(css, /\.contact-story\.has-finale-js\s*\{[^}]*min-height:\s*340svh/s);
   assert.match(css, /prefers-reduced-motion:\s*reduce[\s\S]*?\.contact-object/s);
   await access(fileUrl("vendor/matter.min.js"));
 });
