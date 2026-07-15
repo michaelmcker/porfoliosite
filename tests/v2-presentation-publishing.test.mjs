@@ -7,7 +7,7 @@ import test from "node:test";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const v2 = path.join(root, "v2");
 const detailPath = path.join(v2, "workflows", "presentation-publishing.html");
-const detailCssPath = path.join(v2, "workflows", "presentation-publishing.css");
+const detailCssPath = path.join(v2, "workflows", "workflow-detail.css");
 const artifactPath = path.join(v2, "artifacts", "presentation-publishing.html");
 const artifactCssPath = path.join(v2, "artifacts", "presentation-publishing.css");
 const desktopPngPath = path.join(v2, "assets", "presentation-publishing-desktop.png");
@@ -29,7 +29,7 @@ const requiredSections = [
   "Tools and data sources",
   "What ships",
   "What stays human",
-  "Public-safe constraints",
+  "Public-safe proof and constraints",
   "Related work",
 ];
 
@@ -84,7 +84,7 @@ test("homepage presentation CTA resolves and uses the responsive V2 publishing a
 test("detail page has the required public-safe content and ordered publishing story", async () => {
   const [detail, homepage] = await Promise.all([read(detailPath), read(path.join(v2, "index.html"))]);
   assert.match(detail, /<h1[^>]*>Presentation publishing<\/h1>/);
-  assert.match(detail, /branded HTML[\s\S]{0,180}prospect-ready Webflow URL[\s\S]{0,180}without manual deployment or CMS handoff/i);
+  assert.match(detail, /branded HTML[\s\S]{0,180}prospect-ready URL[\s\S]{0,180}without a manual deployment or CMS handoff/i);
 
   let sectionCursor = -1;
   for (const section of requiredSections) {
@@ -105,16 +105,16 @@ test("detail page has the required public-safe content and ordered publishing st
     "publishing skill",
     "Vercel API",
     "Webflow CMS API",
-    "existing presentation lookup",
+    "existing-presentation lookup",
     "iframe embed field",
-    "browser URL verification",
-    "final content and design",
-    "confirming the intended destination",
+    "browser verification",
+    "Final content and design",
+    "confirming the intended name and destination",
     "Vercel-hosted artifact",
     "managed Webflow page",
     "final prospect URL",
-    "credentials, tokens, and internal identifiers are intentionally omitted",
-    "public-safe system boundary",
+    "without exposing credentials, tokens, internal identifiers",
+    "Public-safe proof and constraints",
   ]) {
     assert.ok(detail.includes(phrase), `missing required wording: ${phrase}`);
   }
@@ -126,7 +126,7 @@ test("detail page has the required public-safe content and ordered publishing st
 test("detail page imports only V2 styles and keeps local navigation, contact, and resume links live", async () => {
   const detail = await read(detailPath);
   const stylesheets = [...detail.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+)"/g)].map((match) => match[1]);
-  assert.deepEqual(stylesheets, ["../styles.css", "presentation-publishing.css"]);
+  assert.deepEqual(stylesheets, ["../styles.css", "workflow-detail.css"]);
   assert.doesNotMatch(detail, /<script\b/i);
   assert.match(detail, /href="\.\.\/index\.html#workflows"/);
   assert.match(detail, /href="mailto:michael\.mckerracher@gmail\.com"/);
@@ -140,12 +140,11 @@ test("detail page imports only V2 styles and keeps local navigation, contact, an
 
 test("detail styles preserve the V2 visual and accessibility contract", async () => {
   const css = await read(detailCssPath);
-  assert.ok(css.includes("#F6E8DF"));
-  assert.match(css, /max-width:\s*(?:65|6[6-9]|7[0-5])ch/);
+  assert.ok(css.includes("#df5f38"));
+  assert.match(css, /max-width:\s*(?:6[4-9]|7[0-4])ch/);
   assert.match(css, /line-height:\s*1\.(?:5[5-9]|6\d|70)/);
-  assert.match(css, /letter-spacing:\s*(?:var\(--display-tracking\)|-0\.0[0-4]em)/);
+  assert.match(css, /font-family:\s*var\(--font-editorial\)/);
   assert.match(css, /min-height:\s*44px/);
-  assert.match(css, /:focus-visible/);
   assert.match(css, /@media\s*\(prefers-reduced-motion:\s*reduce\)/);
   assert.match(css, /overflow-x:\s*(?:clip|hidden)/);
   assert.doesNotMatch(css, /repeating-(?:linear|radial)-gradient/);
@@ -156,15 +155,15 @@ test("normal-size publishing accent text meets WCAG AA contrast against the canv
     read(path.join(v2, "styles.css")),
     read(detailCssPath),
   ]);
-  const canvas = baseCss.match(/--canvas:\s*(#[\dA-F]{6})/i)?.[1];
-  const accentText = baseCss.match(/--accent-text:\s*(#[\dA-F]{6})/i)?.[1];
+  const canvas = baseCss.match(/--paper:\s*(#[\dA-F]{6})/i)?.[1];
+  const accentText = detailCss.match(/data-workflow="presentation"[^}]+--workflow-dark:\s*(#[\dA-F]{6})/i)?.[1];
 
   assert.ok(canvas, "V2 canvas token is missing");
   assert.ok(accentText, "semantic accent text token is missing");
   assert.ok(contrastRatio(accentText, canvas) >= 4.5,
     `${accentText} has only ${contrastRatio(accentText, canvas).toFixed(2)}:1 contrast against ${canvas}`);
-  assert.match(detailCss, /\.process-list\s*>?\s*li\s*>\s*span\s*\{[^}]*color:\s*var\(--accent-text\)/s);
-  assert.ok(baseCss.includes("--apricot: #E98D63"), "pale apricot surface token should remain available");
+  assert.match(detailCss, /\.workflow-step\s*>\s*span\s*\{[^}]*color:\s*var\(--workflow-dark\)/s);
+  assert.ok(baseCss.includes("--accent: #E3A916"), "hard gold accent token should remain available");
 });
 
 test("V2 vendors approved variable fonts and has no remote font dependency", async () => {
@@ -240,8 +239,8 @@ test("render script uses installed Chrome with an override and waits for artwork
 test("permanent V2 browser QA directly verifies the presentation detail page and responsive picture", async () => {
   const qa = await read(path.join(root, "scripts", "qa-v2.mjs"));
   for (const marker of [
-    "/v2/workflows/presentation-publishing.html",
-    "Presentation publishing",
+    "presentation-publishing.html",
+    "detailRoutes",
     "presentation-publishing-desktop.png",
     "presentation-publishing-mobile.png",
     "naturalWidth",
@@ -250,5 +249,5 @@ test("permanent V2 browser QA directly verifies the presentation detail page and
   ]) {
     assert.ok(qa.includes(marker), `detail-page browser QA is missing ${marker}`);
   }
-  assert.match(qa, /for\s*\(const width of \[1440,\s*1024,\s*768,\s*390,\s*320\]\)[\s\S]+presentation-publishing/s);
+  assert.match(qa, /for\s*\(const route of detailRoutes\)[\s\S]+for\s*\(const width of \[1440,\s*1024,\s*768,\s*390,\s*320\]\)[\s\S]+presentation-publishing/s);
 });

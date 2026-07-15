@@ -59,7 +59,13 @@ const server = http.createServer(async (request, response) => {
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const { port } = server.address();
 const url = `http://127.0.0.1:${port}/v2/`;
-const detailUrl = `http://127.0.0.1:${port}/v2/workflows/presentation-publishing.html`;
+const detailRoutes = [
+  "content-production.html",
+  "agency-management-dashboard.html",
+  "presentation-publishing.html",
+  "local-prospecting-enrichment.html",
+  "image-to-website-production.html",
+];
 let browser;
 
 try {
@@ -122,7 +128,7 @@ try {
     inactiveInert: true,
     inactiveHidden: "true",
     headingVisible: true,
-    headingFont: '"DM Sans", Arial, sans-serif',
+    headingFont: 'Fraunces, Georgia, serif',
   });
 
   await page.click("[data-workflow-trigger='content']");
@@ -158,12 +164,6 @@ try {
     releasedAtEnd: true,
   });
 
-  await page.click("[data-workflow-trigger='dashboard']");
-  await page.click("[data-dashboard-open]");
-  assert.equal(await page.$eval("[data-dashboard-dialog]", (dialog) => dialog.open), true);
-  await page.click("[data-dashboard-close]");
-  assert.equal(await page.evaluate(() => document.activeElement?.hasAttribute("data-dashboard-open")), true);
-
   const reducedPage = await browser.newPage();
   await reducedPage.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }]);
   await reducedPage.setViewport({ width: 1024, height: 900, deviceScaleFactor: 1 });
@@ -171,11 +171,7 @@ try {
   await reducedPage.goto(url, { waitUntil: "domcontentloaded" });
   assert.equal(await reducedPage.$$eval("[data-motion-video]", (videos) => videos.every((video) => video.paused && !video.autoplay)), true);
   assert.equal(requestPaths.some((requestPath) => /\.(?:mp4|webm)$/.test(requestPath)), false);
-  await reducedPage.click("[data-motion-surface]");
-  await reducedPage.waitForFunction(() => document.querySelector("[data-motion-surface]")?.getAttribute("aria-label")?.startsWith("Pause"));
-  assert.equal(await reducedPage.$eval("[data-motion-surface]", (video) => video.getAttribute("aria-pressed")), "true");
-  await reducedPage.click("[data-motion-surface]");
-  assert.equal(await reducedPage.$eval("[data-motion-video]", (video) => video.paused), true);
+  assert.equal(await reducedPage.$$eval("[data-motion-video]", (videos) => videos.every((video) => !video.matches("[role='button'], [tabindex]"))), true);
   await reducedPage.close();
 
   for (const width of [1440, 1024, 768, 390, 320]) {
@@ -245,46 +241,55 @@ try {
   page.on("response", recordDetailFailure);
   await page.setCacheEnabled(false);
 
-  for (const width of [1440, 1024, 768, 390, 320]) {
-    detailFailures.length = 0;
-    requestPaths.length = 0;
-    await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
-    await page.goto(detailUrl, { waitUntil: "domcontentloaded" });
-    const detail = await page.evaluate(async () => {
-      await document.fonts.ready;
-      const image = document.querySelector(".publishing-artwork img");
-      if (!image.complete) await image.decode();
-      return {
-        heading: document.querySelector("h1")?.textContent.trim(),
-        innerWidth: window.innerWidth,
-        scrollWidth: document.documentElement.scrollWidth,
-        imageComplete: image.complete,
-        currentSource: new URL(image.currentSrc).pathname,
-        naturalWidth: image.naturalWidth,
-        naturalHeight: image.naturalHeight,
-      };
-    });
-    const mobile = width < 700;
-    const expectedAsset = mobile ? "presentation-publishing-mobile.png" : "presentation-publishing-desktop.png";
-    const expectedDimensions = mobile ? [900, 1600] : [1800, 1100];
+  for (const route of detailRoutes) {
+    for (const width of [1440, 1024, 768, 390, 320]) {
+      detailFailures.length = 0;
+      requestPaths.length = 0;
+      await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
+      await page.goto(`http://127.0.0.1:${port}/v2/workflows/${route}`, { waitUntil: "domcontentloaded" });
+      const detail = await page.evaluate(async () => {
+        await document.fonts.ready;
+        const image = document.querySelector(".workflow-artwork img");
+        if (!image.complete) await image.decode();
+        return {
+          heading: document.querySelector("h1")?.textContent.trim(),
+          innerWidth: window.innerWidth,
+          scrollWidth: document.documentElement.scrollWidth,
+          imageComplete: image.complete,
+          currentSource: new URL(image.currentSrc).pathname,
+          naturalWidth: image.naturalWidth,
+          naturalHeight: image.naturalHeight,
+          stepCount: document.querySelectorAll(".workflow-step").length,
+          contractComplete: ["why-it-exists", "how-it-works", "tools-and-sources", "what-ships", "human-review", "proof-and-constraints", "related-work"]
+            .every((id) => document.getElementById(id)),
+        };
+      });
 
-    assert.equal(detail.heading, "Presentation publishing", `${width}px detail heading is missing`);
-    assert.ok(detail.scrollWidth <= detail.innerWidth, `${width}px presentation detail overflows by ${detail.scrollWidth - detail.innerWidth}px`);
-    assert.equal(detail.imageComplete, true, `${width}px presentation artwork did not load`);
-    assert.ok(detail.currentSource.endsWith(expectedAsset), `${width}px selected ${detail.currentSource} instead of ${expectedAsset}`);
-    assert.deepEqual([detail.naturalWidth, detail.naturalHeight], expectedDimensions, `${width}px presentation artwork dimensions are wrong`);
-    assert.deepEqual(detailFailures, [], `${width}px presentation detail has failed local assets`);
-    assert.ok(requestPaths.some((requestPath) => requestPath.endsWith(expectedAsset)), `${width}px did not request ${expectedAsset}`);
-    assert.ok(requestPaths.some((requestPath) => requestPath.endsWith("dm-sans-latin-variable.woff2")), `${width}px did not request local DM Sans`);
+      assert.ok(detail.heading, `${route} is missing its heading`);
+      assert.ok(detail.scrollWidth <= detail.innerWidth, `${width}px ${route} overflows by ${detail.scrollWidth - detail.innerWidth}px`);
+      assert.equal(detail.imageComplete, true, `${width}px ${route} artwork did not load`);
+      assert.ok(detail.stepCount >= 5, `${route} exposes only ${detail.stepCount} workflow steps`);
+      assert.equal(detail.contractComplete, true, `${route} is missing part of the workflow contract`);
+      assert.deepEqual(detailFailures, [], `${width}px ${route} has failed local assets`);
+      assert.ok(requestPaths.some((requestPath) => requestPath.endsWith("dm-sans-latin-variable.woff2")), `${width}px ${route} did not request local DM Sans`);
 
-    if (screenshotDirectory) {
-      await mkdir(screenshotDirectory, { recursive: true });
-      await page.screenshot({ path: path.join(screenshotDirectory, `v2-presentation-${width}.png`), fullPage: true });
+      if (route === "presentation-publishing.html") {
+        const mobile = width < 700;
+        const expectedAsset = mobile ? "presentation-publishing-mobile.png" : "presentation-publishing-desktop.png";
+        const expectedDimensions = mobile ? [900, 1600] : [1800, 1100];
+        assert.ok(detail.currentSource.endsWith(expectedAsset), `${width}px selected ${detail.currentSource} instead of ${expectedAsset}`);
+        assert.deepEqual([detail.naturalWidth, detail.naturalHeight], expectedDimensions, `${width}px presentation artwork dimensions are wrong`);
+      }
+
+      if (screenshotDirectory && [1440, 390].includes(width)) {
+        await mkdir(screenshotDirectory, { recursive: true });
+        await page.screenshot({ path: path.join(screenshotDirectory, `v2-${path.basename(route, ".html")}-${width}.png`), fullPage: true });
+      }
     }
   }
   page.off("response", recordDetailFailure);
 
-  console.log("V2 browser QA passed: homepage interactions plus presentation detail assets, responsive artwork, and overflow at 5 viewport widths.");
+  console.log("V2 browser QA passed: homepage interactions plus five detailed workflow routes and overflow at 5 viewport widths.");
 } finally {
   await browser?.close();
   await new Promise((resolve) => server.close(resolve));

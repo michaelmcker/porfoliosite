@@ -16,7 +16,7 @@ This is the working source for portfolio ideas, evidence, workflow details, medi
 
 ## Site Structure
 
-V1 remains the production homepage. V2 is an unlinked assessment at `/v2/`; its first approval gate contains the homepage and the Presentation Publishing detail page only.
+V1 remains the production homepage. V2 is an unlinked assessment at `/v2/`; it now contains the complete homepage plus detailed public-safe pages for all five selected workflows.
 
 1. Approved animated hero.
 2. Bias to Build and the five-stage method.
@@ -198,17 +198,26 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 
 ### V2 Assessment Rules
 
-- Use local DM Sans for functional copy and workflow titles. Keep active workflow names compact and white; make the supporting description comfortably larger. Desktop rail labels are larger, bold, and high contrast. Reserve local Fraunces for selective editorial or personal moments.
-- Do not use the pastel assessment colours as large homepage fields. Use dark forest, petrol, rust, ochre, and aubergine for the workflow; acid green for Boutique Accommodation; signal orange for the proposal; hard gold for Bias to Build; and deep teal for About. Keep the remaining work, Outcomes, Experience, and Contact neutral.
-- Treat laptops, browser windows, proposal sheets, album artwork, and the About portrait as authored objects on an open canvas.
+- Use local DM Sans for functional copy. Use local Fraunces for project titles, workflow titles, metrics, and selective personal/editorial moments. Desktop rail labels are 72px wide, 900 weight, and high contrast.
+- Do not use pastel or unrelated flat fields as the homepage structure. The hard accordion rails are gold, green, orange, blue, and plum on one charcoal content stage. Bias to Build uses hard gold; About uses deep forest. Workflow introduction, Outcomes, Experience, and Contact remain neutral.
+- Treat hero media, laptops, browsers, proposal sheets, album artwork, and the About portrait as authored physical objects. Hero and screen surfaces share a thick black bevel, rounded corners, restrained perspective, and a strong drop shadow.
 - Keep the Renaissance portrait in About only; never place it in the hero.
-- Keep the interactive portrait inside the existing brown arched frame and show the composed portrait fallback before the iframe is ready.
-- Reuse the responsive system-map film in a raised white hero card with a soft drop shadow, beside the hero copy. The hero subhead is: `I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale. And sometimes stuff just for fun.`
-- Selected Work keeps the real Z-pattern and existing media/interactions. Desktop rows allocate more width to media than copy, project names are smaller, and laptop/browser objects lead without clipping. RCCV sits on a dark stage. Boutique uses a wide black browser and curved-arrow `Try to scroll` cue. Boutique and the proposal use full-bleed hard-colour bands.
-- Hero, RCCV, and Cool Runnings videos have no visible Pause overlays. The focusable media surface itself toggles motion by click, Enter, or Space; reduced-motion users see static posters until they explicitly start playback.
+- Keep the interactive portrait inside the existing brown frame and show it at a larger scale. A V2-only embed accepts section-wide pointer coordinates. The practical-value sentence breaks into its own expanding hard-gold scroll moment with an animated curly arrow.
+- Reuse the responsive system-map film in the largest raised black-bevel hero card, beside the hero copy. The hero subhead is: `I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale. And sometimes stuff just for fun.`
+- Selected Work keeps the Z-pattern and existing media/interactions. Each row uses a real project environment behind the authored object: RCCV parish exterior, Boutique treehouse forest, Cool Runnings lawn, proposal city/product context, and Why Elevators lobby. Boutique keeps the wide black 69-frame browser and curved-arrow `Try to scroll` cue.
+- Hero, RCCV, and Cool Runnings videos have no visible or invisible Pause control surface. They lazy-load and autoplay while visible; reduced-motion users see static posters.
 - Desktop workflow states use a full-width expanding-spine accordion at 1100px and wider; smaller layouts use vertical rows with mobile-readable artwork. In every active state, title and description precede a substantially larger image.
 - Outcomes are four centred metrics with unchanged claims. Experience is a centred ledger without route dots or timeline markers.
-- The V2 first gate stops after the homepage and Presentation Publishing page. The remaining four workflow pages wait for approval.
+- All five workflow detail pages use one shared structure and stylesheet. Each page states its purpose, rationale, accurate steps, tools and sources, what ships, human review, public-safe proof and constraints, and related work.
+
+### V2 Environmental Source Truth
+
+- RCCV: local St James Golden Distance parish exterior.
+- Boutique Accommodation: existing treehouse frame `010.jpg`, cropped as the forest environment.
+- Cool Runnings: local before-and-after lawn photography.
+- Proposal: the existing public Why Elevators city/product image under a dark environmental crop; replace only when an approved clean cityscape is available.
+- Why Elevators: local Vertical Impression lobby-panel source.
+- Provenance is recorded in `v2/assets/backgrounds/README.md`. Do not silently replace these with stock or unrelated generated imagery.
 
 ## Privacy and Open Questions
 

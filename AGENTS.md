@@ -7,17 +7,17 @@
 3. Check `git status --short` before editing. Preserve unrelated work.
 4. Run `npm test` before and after implementation changes.
 
-## Current Assessment Gate
+## Current V2 Scope
 
 The production homepage remains V1. The self-contained assessment is in `v2/` and is intentionally not linked from V1.
 
-The approved first gate contains:
+The V2 assessment currently contains:
 
 - the complete V2 homepage at `/v2/`;
-- the presentation-publishing workflow page at `/v2/workflows/presentation-publishing.html`;
+- five public-safe workflow pages under `/v2/workflows/`;
 - deterministic presentation-publishing artwork in desktop and mobile forms.
 
-Stop at this gate for visual approval. Do not extend the system to the other four V2 workflow pages or redirect V1 without explicit approval.
+Do not redirect or replace V1 without explicit approval.
 
 ## V1 Isolation
 
@@ -29,23 +29,39 @@ Stop at this gate for visual approval. Do not extend the system to the other fou
 
 ## V2 Design Contract
 
-- Type: local DM Sans for functional text and workflow titles; local Fraunces is limited to selective editorial moments such as the hero emphasis, metrics, and music interlude. Monospace is reserved for real technical artifacts.
-- Palette: avoid pastel homepage fields. The workflow uses dark forest, petrol, rust, ochre, and aubergine; Bias to Build uses hard gold; About uses deep teal; Boutique Accommodation and the proposal use acid green and signal orange bands. Neutral canvas still carries the remaining work, Outcomes, Experience, and Contact.
-- Composition: laptops, browser windows, documents, and the About portrait are authored objects on an open canvas, not repeated cards.
-- Avoid heavy black outlines, graph-paper textures, route dots, harsh rules, mono labels, and box-within-box framing.
-- Motion must remain optional, pausable, keyboard accessible, and complete under `prefers-reduced-motion`.
+- Type: local DM Sans for functional text; local Fraunces carries project titles, workflow titles, metrics, and selected personal/editorial moments. Monospace is reserved for real technical artifacts.
+- Palette: the base is warm studio paper (`#F1EEE7`, `#FBFAF6`, `#171813`). Bias to Build uses hard gold `#E3A916`. The accordion uses harder gold, green, orange, blue, and plum rails against one charcoal content stage. About uses deep forest `#243C31`.
+- Composition: Selected Work uses real project environments behind raised copy and dimensional laptop, browser, or document objects. Do not reintroduce unrelated flat colour bands.
+- Material: hero and device surfaces share a thick black bevel, rounded corners, strong physical shadow, and restrained perspective. The portrait keeps its authored brown frame.
+- Avoid graph-paper textures, route dots, harsh rules, mono labels, arbitrary cards, and colour used only to fill space.
+- Motion must remain complete under `prefers-reduced-motion`. Showcase films autoplay only while in view and expose no pause-button chrome or fake control surface.
 
 ## Interaction Contracts
 
 - Desktop workflow accordion begins at 1100px and uses horizontal expanding spines.
 - Below 1100px it becomes a vertical accordion with a dedicated readable composition, not a panned desktop diagram.
-- Active workflow hierarchy is always compact high-contrast DM Sans title, larger description and CTA, then dominant media on a light artifact surface. Desktop rail labels are 68px wide, visibly larger, and bold. Do not move the image above the copy or let the title overpower the artwork.
+- Active workflow hierarchy is an editorial Fraunces title, readable description and CTA, then dominant media on a light artifact surface. Desktop rails are 72px wide with 900-weight labels.
 - Selection changes only on click, tap, Enter, or Space. Arrow keys, Home, and End move focus. Inactive regions are `inert` and `aria-hidden`.
 - Boutique Accommodation retains its 69-frame wheel, keyboard, and touch interaction with boundary release.
-- Showcase videos are lazy-loaded and directly clickable/focusable to pause or play; do not place visible Pause buttons over the media. Reduced motion must remain static until the user explicitly starts a video.
-- The V2 hero reuses the responsive system-map film and approved poster inside a raised white card with a soft drop shadow. Do not return it to a full-bleed background treatment.
-- Selected Work gives its media column more space than its copy column. RCCV sits on a dark device stage. Boutique Accommodation uses a wide black browser with the real 69-frame interaction and a curved-arrow `Try to scroll` cue. Boutique and the proposal are full-bleed hard-colour bands.
-- About reuses the interactive portrait inside the brown arched frame. The composed static portrait is the loading fallback.
+- Showcase videos are lazy-loaded, autoplay while visible, and have no visible or invisible pause-button UI.
+- The V2 hero reuses the responsive system-map film and approved poster inside the largest raised black-bevel card. Do not return it to a full-bleed background treatment.
+- Selected Work places RCCV over the parish exterior, Boutique over the treehouse forest, Cool Runnings over lawn photography, the proposal over a city/product context, and Why Elevators over a lobby context. Boutique retains the wide black 69-frame browser and curly-arrow `Try to scroll` cue.
+- About tracks pointer input across the whole section through a V2-only portrait embed. The practical-value line expands into its own hard-gold scroll moment with an animated curly arrow.
+
+## Workflow Detail Contract
+
+All five pages use `v2/workflows/workflow-detail.css` and include:
+
+- one-sentence purpose;
+- why the workflow exists;
+- five to seven accurate steps;
+- tools and data sources;
+- what ships;
+- what remains human-reviewed;
+- public-safe proof and constraints;
+- related work.
+
+Keep automation support and human judgment explicit. Do not expose credentials, private client data, internal identifiers, unpublished artifacts, or fictional integrations.
 
 ## Presentation-Publishing Source Truth
 
@@ -70,7 +86,7 @@ node scripts/render-v2-presentation.mjs
 node scripts/qa-v2.mjs
 ```
 
-`scripts/qa-v2.mjs` verifies the homepage and presentation page at 1440, 1024, 768, 390, and 320 pixels. Set `QA_V2_SCREENSHOT_DIR=/absolute/path` to save full-page captures.
+`scripts/qa-v2.mjs` verifies the homepage and all five workflow pages at 1440, 1024, 768, 390, and 320 pixels. Set `QA_V2_SCREENSHOT_DIR=/absolute/path` to save full-page captures plus all five accordion states on desktop and mobile.
 
 The presentation renderer must produce:
 

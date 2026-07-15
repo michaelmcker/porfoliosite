@@ -296,12 +296,11 @@ test("V2 interactions use keyboard handling, observers, and rAF-throttled scroll
   assert.match(app, /passive:\s*true/);
 });
 
-test("browser QA covers runtime focus, motion, inputs, dialog restoration, and target widths", async () => {
+test("browser QA covers runtime focus, motion, inputs, all workflow routes, and target widths", async () => {
   const qa = await readFile(new URL("../scripts/qa-v2.mjs", import.meta.url), "utf8");
   for (const marker of [
     "puppeteer-core", "inert", "aria-hidden", "ArrowDown", "data-accommodation-next",
-    "deltaMode", "prefers-reduced-motion", "data-dashboard-dialog",
-    "data-motion-surface",
+    "deltaMode", "prefers-reduced-motion", "detailRoutes", "workflow-step",
     "1440", "1024", "768", "390", "320", "scrollWidth",
     "workflow-desktop-", "workflow-mobile-", "hero-desktop.png", "hero-mobile.png",
     "work-desktop-accommodation.png", "work-mobile-accommodation.png",
