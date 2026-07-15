@@ -196,6 +196,7 @@ try {
       await page.goto(url, { waitUntil: "domcontentloaded" });
       await page.evaluate(() => document.fonts.ready);
       await page.evaluate(() => document.activeElement?.blur());
+      await page.addStyleTag({ content: ".skip-link { display: none !important; }" });
 
       const hero = await page.$(".hero");
       const heroFilename = label === "desktop" ? "hero-desktop.png" : "hero-mobile.png";
