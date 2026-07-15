@@ -225,12 +225,14 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 ### V2 Scroll and Physics Finale — July 15, 2026
 
 - The contact sequence is progressive enhancement over a complete static hard-gold composition.
-- Before release, scroll controls a deterministic and reversible full-frame curved orbit of actual portfolio artifacts: upper left, down the left, across the bottom, up the right, then arched into the upper middle.
-- At `0.68` progress, each DOM pose transfers directly into a locally vendored Matter.js body with no visible coordinate jump.
-- Gravity, boundaries, collisions, and sleeping produce one short initial drop with restrained bounce and rotation. After that settle, manually dragged objects become static at their release coordinates; they do not inherit throw velocity, fall again, bounce, or continue spinning.
+- The sequence is not controlled by scroll. When 40% of the stage enters view, it starts once per page load and runs autonomously for 1,800ms.
+- Actual portfolio artifacts follow the broad full-frame curved route with wider per-object phase offsets so the entrance reads as a spaced composition rather than one dense train.
+- At the end of the timed entrance, each DOM pose transfers directly into a locally vendored Matter.js body with no visible coordinate jump.
+- Gravity, all four boundaries, collisions, friction, sleeping, and angular movement produce the drop and settlement.
+- Dragging uses a high-stiffness dynamic point constraint with no angular stiffness. Releasing removes the constraint without resetting velocity or angular velocity, allowing a restrained toss and natural collisions instead of pinning the body.
 - The finale portrait uses the clean body plate plus a registered head-visible pose. Do not substitute the headless plate by itself.
 - The contact copy resolves roughly 420ms after the physics drop starts, rather than waiting for every body to sleep. It switches between dark and light treatments according to actual overlap so the message remains legible as objects cross it.
-- Continued scroll releases the footer after the finale resolves. Reduced-motion and runtime failure skip orbit and physics while preserving the full contact message, actions, and object field.
+- Normal page scrolling continues through the 100svh finale to the footer. Reduced-motion and runtime failure skip the entrance and physics while preserving the full contact message, actions, and object field.
 - V2 remains local-file compatible; do not replace the vendored runtime with a CDN dependency.
 
 ### V2 Superseded Background Explorations
