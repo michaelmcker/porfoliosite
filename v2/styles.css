@@ -814,10 +814,9 @@ h3 {
   background: var(--accent);
   color: #1f1909;
 }
-.contact-story.has-finale-js { min-height: 340svh; }
+.contact-story.has-finale-js { min-height: 100svh; }
 .contact-stage {
-  position: sticky;
-  top: 0;
+  position: relative;
   min-height: 100svh;
   overflow: hidden;
   isolation: isolate;

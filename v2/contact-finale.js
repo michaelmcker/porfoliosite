@@ -16,7 +16,9 @@
 
   let state = "static";
   let released = false;
-  let scrollFrame;
+  let entranceFrame;
+  let entranceStart = 0;
+  let entranceStarted = false;
   let engine;
   let bodies = [];
   let animationFrame;
@@ -24,12 +26,12 @@
   let releaseTimestamp = 0;
   let quietFrames = 0;
   let dragged;
-  let dragPoint;
+  let dragConstraint;
   let matterPromise;
   let finaleVisible = true;
   let copyTimer;
 
-  const releaseThreshold = .68;
+  const entranceDuration = 1800;
   const orbitPoints = [
     [-.14, .12],
     [.08, .08],
@@ -77,7 +79,8 @@
   }
 
   function roundedOrbitPose(index, count, progress, width, height) {
-    const itemProgress = clamp(progress * 1.08 - index * .018);
+    const phaseGap = width < 640 ? .042 : width < 1100 ? .048 : .055;
+    const itemProgress = clamp(progress * 1.12 - index * phaseGap);
     const segmentProgress = itemProgress * (orbitPoints.length - 1);
     const segment = Math.min(orbitPoints.length - 2, Math.floor(segmentProgress));
     const amount = segmentProgress - segment;
@@ -125,21 +128,25 @@
     });
   }
 
-  function updateFromScroll() {
-    scrollFrame = undefined;
-    if (released || reducedMotion.matches) return;
-    const bounds = story.getBoundingClientRect();
-    const travel = Math.max(1, story.offsetHeight - window.innerHeight);
-    const progress = clamp(-bounds.top / travel);
-    const orbitProgress = clamp(progress / releaseThreshold);
-    story.dataset.orbitProgress = orbitProgress.toFixed(4);
-    story.style.setProperty("--finale-progress", orbitProgress.toFixed(4));
-    applyOrbit(orbitProgress);
-    if (progress >= releaseThreshold) releaseToPhysics();
+  function startEntrance() {
+    if (entranceStarted || reducedMotion.matches) return;
+    entranceStarted = true;
+    story.dataset.entranceStarts = String(Number(story.dataset.entranceStarts || 0) + 1);
+    setState("entrance");
+    entranceStart = performance.now();
+    entranceFrame = requestAnimationFrame(stepEntrance);
   }
 
-  function requestScrollUpdate() {
-    if (!scrollFrame) scrollFrame = requestAnimationFrame(updateFromScroll);
+  function stepEntrance(timestamp) {
+    const progress = clamp((timestamp - entranceStart) / entranceDuration);
+    story.dataset.entranceProgress = progress.toFixed(4);
+    applyOrbit(progress);
+    if (progress < 1) {
+      entranceFrame = requestAnimationFrame(stepEntrance);
+      return;
+    }
+    entranceFrame = undefined;
+    releaseToPhysics();
   }
 
   function createBoundaries(width, height) {
@@ -147,6 +154,7 @@
     const thickness = 160;
     return [
       Bodies.rectangle(width / 2, height + thickness / 2 - 10, width + thickness * 2, thickness, { isStatic: true, label: "floor" }),
+      Bodies.rectangle(width / 2, -thickness / 2 + 10, width + thickness * 2, thickness, { isStatic: true, label: "ceiling" }),
       Bodies.rectangle(-thickness / 2 + 10, height / 2, thickness, height * 2, { isStatic: true, label: "wall-left" }),
       Bodies.rectangle(width + thickness / 2 - 10, height / 2, thickness, height * 2, { isStatic: true, label: "wall-right" }),
     ];
@@ -154,7 +162,7 @@
 
   function rebuildBoundaries() {
     if (!engine) return;
-    const boundaryLabels = new Set(["floor", "wall-left", "wall-right"]);
+    const boundaryLabels = new Set(["floor", "ceiling", "wall-left", "wall-right"]);
     const boundaries = Matter.Composite.allBodies(engine.world)
       .filter((body) => boundaryLabels.has(body.label));
     Matter.Composite.remove(engine.world, boundaries);
@@ -260,6 +268,7 @@
       ...createBoundaries(stage.clientWidth, stage.clientHeight),
       ...bodies,
     ]);
+    stage.classList.add("is-draggable");
     releaseTimestamp = performance.now();
     animationFrame = requestAnimationFrame(stepPhysics);
   }
@@ -290,38 +299,44 @@
   }
 
   stage.addEventListener("pointerdown", (event) => {
-    if (state !== "settled" || !engine || event.target.closest("a, button")) return;
+    if (!engine || event.target.closest("a, button")) return;
     const point = stagePoint(event);
     const body = Matter.Query.point(bodies, point).at(-1);
     if (!body) return;
     dragged = body;
-    dragPoint = { ...point, time: performance.now(), vx: 0, vy: 0 };
-    Matter.Body.setStatic(body, true);
+    const pointA = Matter.Vector.rotate(
+      Matter.Vector.sub(point, body.position),
+      -body.angle,
+    );
+    dragConstraint = Matter.Constraint.create({
+      bodyA: body,
+      pointA,
+      pointB: point,
+      stiffness: .92,
+      damping: .12,
+      angularStiffness: 0,
+      render: { visible: false },
+    });
+    Matter.Composite.add(engine.world, dragConstraint);
+    Matter.Sleeping.set(body, false);
     stage.classList.add("is-dragging");
     stage.setPointerCapture(event.pointerId);
     event.preventDefault();
   });
 
   stage.addEventListener("pointermove", (event) => {
-    if (!dragged) return;
+    if (!dragged || !dragConstraint) return;
     const point = stagePoint(event);
-    const now = performance.now();
-    const elapsed = Math.max(16, now - dragPoint.time);
-    dragPoint.vx = (point.x - dragPoint.x) / elapsed * 16.667;
-    dragPoint.vy = (point.y - dragPoint.y) / elapsed * 16.667;
-    dragPoint.x = point.x;
-    dragPoint.y = point.y;
-    dragPoint.time = now;
-    Matter.Body.setPosition(dragged, point);
+    dragConstraint.pointB.x = point.x;
+    dragConstraint.pointB.y = point.y;
+    Matter.Sleeping.set(dragged, false);
     updateCopyContrast();
   });
 
   function releaseDrag() {
-    if (!dragged) return;
-    Matter.Body.setVelocity(dragged, { x: 0, y: 0 });
-    Matter.Body.setAngularVelocity(dragged, 0);
-    Matter.Body.setStatic(dragged, true);
-    dragged.plugin.pinned = true;
+    if (!dragConstraint) return;
+    Matter.Composite.remove(engine.world, dragConstraint);
+    dragConstraint = undefined;
     dragged = undefined;
     stage.classList.remove("is-dragging");
     updateCopyContrast();
@@ -329,10 +344,8 @@
 
   stage.addEventListener("pointerup", releaseDrag);
   stage.addEventListener("pointercancel", releaseDrag);
-  window.addEventListener("scroll", requestScrollUpdate, { passive: true });
   window.addEventListener("resize", () => {
-    if (!released) requestScrollUpdate();
-    else rebuildBoundaries();
+    if (released) rebuildBoundaries();
   }, { passive: true });
 
   const visibilityObserver = "IntersectionObserver" in window
@@ -352,7 +365,9 @@
   } else {
     story.classList.add("has-finale-js");
     story.dataset.copyState = "hidden";
-    setState("orbit");
+    story.dataset.entranceProgress = "0.0000";
+    story.dataset.entranceStarts = "0";
+    setState("idle");
     if ("IntersectionObserver" in window) {
       const runtimeObserver = new IntersectionObserver((entries, observer) => {
         if (!entries[0]?.isIntersecting) return;
@@ -362,6 +377,15 @@
       runtimeObserver.observe(story);
     }
     applyOrbit(0);
-    updateFromScroll();
+    if ("IntersectionObserver" in window) {
+      const entranceObserver = new IntersectionObserver((entries, observer) => {
+        if (!entries[0]?.isIntersecting) return;
+        observer.disconnect();
+        startEntrance();
+      }, { threshold: .4 });
+      entranceObserver.observe(stage);
+    } else {
+      startEntrance();
+    }
   }
 })();
