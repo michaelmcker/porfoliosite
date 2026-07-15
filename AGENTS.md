@@ -15,6 +15,7 @@ The V2 assessment currently contains:
 
 - the complete V2 homepage at `/v2/`;
 - five public-safe workflow pages under `/v2/workflows/`;
+- the V2-only local-search case study at `/v2/work/local-search-magnet.html`;
 - deterministic presentation-publishing artwork in desktop and mobile forms.
 
 Do not redirect or replace V1 without explicit approval.
@@ -30,23 +31,29 @@ Do not redirect or replace V1 without explicit approval.
 ## V2 Design Contract
 
 - Type: local DM Sans for functional text; local Fraunces carries project titles, workflow titles, metrics, and selected personal/editorial moments. Monospace is reserved for real technical artifacts.
-- Palette: the base is warm studio paper (`#F1EEE7`, `#FBFAF6`, `#171813`). Bias to Build uses hard gold `#E3A916`. The accordion uses harder gold, green, orange, blue, and plum rails against one charcoal content stage. About uses deep forest `#243C31`.
-- Composition: Selected Work uses real project environments behind raised copy and dimensional laptop, browser, or document objects. Do not reintroduce unrelated flat colour bands.
+- Palette: the homepage base canvas is white (`#FFFFFF`) with ink `#171813`. Bias to Build uses hard gold `#E3A916` and About uses deep forest `#243C31`. The approved accordion is neutral: overlapping charcoal inactive rails and one charcoal content stage. Do not reintroduce per-workflow rail colours.
+- Composition: Hero and every Selected Work stage are white behind dimensional laptop, browser, or document objects. Music is the one black interlude. Do not add a copy card or photographic project background.
 - Material: hero and device surfaces share a thick black bevel, rounded corners, strong physical shadow, and restrained perspective. The portrait keeps its authored brown frame.
-- Avoid graph-paper textures, route dots, harsh rules, mono labels, arbitrary cards, and colour used only to fill space.
+- Avoid graph-paper textures, route dots, harsh rules, mono labels, eyebrow labels anywhere in V2, arbitrary cards, and colour used only to fill space.
+- Bias to Build is a full editorial section heading and begins immediately after the black music interlude. Its sequence is fixed: Understand, Shape, Build, Measure, Refine, Systematise. Desktop presents the six unnumbered stages as a two-row snake behind one thin continuous route; mobile stacks the same sequence beside a quiet vertical route.
+- Spacing and type use the V2 tokens in `v2/styles.css`: `--space-section`, `--space-heading`, `--space-copy`, `--type-h1`, `--type-h2`, and `--type-h3`. Do not add one-off heading scales or arbitrary section padding without updating the token contract and viewport proof.
 - Motion must remain complete under `prefers-reduced-motion`. Showcase films autoplay only while in view and expose no pause-button chrome or fake control surface.
 
 ## Interaction Contracts
 
 - Desktop workflow accordion begins at 1100px and uses horizontal expanding spines.
 - Below 1100px it becomes a vertical accordion with a dedicated readable composition, not a panned desktop diagram.
-- Active workflow hierarchy is an editorial Fraunces title, readable description and CTA, then dominant media on a light artifact surface. Desktop rails are 72px wide with 900-weight labels.
+- The workflow heading and accordion form one full-bleed black chapter. Active hierarchy is a compact editorial Fraunces title with the CTA in the same top row, a short description, then dominant media on a light artifact surface. Desktop inactive spines are unnumbered, 64px wide, overlap by 22px, use 900-weight labels, adjacent charcoal values, and inset edge depth. The active rail is visually hidden so the workflow evidence receives most of the canvas. Keep explicit numeric flex bases on desktop; transitioning through `auto` makes the slide snap.
 - Selection changes only on click, tap, Enter, or Space. Arrow keys, Home, and End move focus. Inactive regions are `inert` and `aria-hidden`.
-- Boutique Accommodation retains its 69-frame wheel, keyboard, and touch interaction with boundary release.
-- Showcase videos are lazy-loaded, autoplay while visible, and have no visible or invisible pause-button UI.
-- The V2 hero reuses the responsive system-map film and approved poster inside the largest raised black-bevel card. Do not return it to a full-bleed background treatment.
-- Selected Work places RCCV over the parish exterior, Boutique over the treehouse forest, Cool Runnings over lawn photography, the proposal over a city/product context, and Why Elevators over a lobby context. Boutique retains the wide black 69-frame browser and curly-arrow `Try to scroll` cue.
-- About tracks pointer input across the whole section through a V2-only portrait embed. The practical-value line expands into its own hard-gold scroll moment with an animated curly arrow.
+- Boutique Accommodation uses `assets/videos/accommodation/showcase-scroll.webm` and `.mp4`, deterministically concatenated from the real Overview, Treehouse, and Cabin recordings by `scripts/build-v2-accommodation-video.mjs`. Ordinary page scroll scrubs the video timeline. Never trap wheel input or restore the retired 69-image swap loop. Reduced-motion uses the first approved frame as a fallback.
+- Showcase videos begin loading before they enter view, autoplay while visible, and have no visible or invisible pause-button UI.
+- The V2 hero reuses the responsive system-map film and approved poster inside the largest raised black-bevel card. Approved HTML overlay labels cover the film's unfinished regions and no caption appears below it. Do not return it to a full-bleed background treatment.
+- Selected Work uses clean white stages for RCCV, Boutique Accommodation, Cool Runnings, the proposal, and Why Elevators. Project labels sit below their titles, and the first stage has no rule below the section heading. Boutique keeps the wide black 69-frame browser; the curly arrow appears before `Scroll the preview`, both sit above and outside the frame, and no Overview/status/Previous/Next UI overlays the work.
+- RCCV uses the isolated laptop treatment without the shared black screen bezel. Its video is masked with the checked-in alpha cutout so the baked cream background cannot show. The project heading is `Bringing a community site to life.` and the specific interaction link is `Explore the interactive Stations of the Cross`.
+- The proposal is a larger rounded PDF artifact with no surrounding paper frame. Boutique stays flat while its real video scrubs. Boutique, Cool Runnings, and Why Elevators begin 36px to the right and settle left with scroll; Why Elevators also begins pitched back, finishes at a slight angle by 72% of its scroll progress, and holds that pose before it leaves the viewport.
+- About tracks pointer input across the whole section through a V2-only portrait embed inside the approved Renaissance arch. Its 280svh sticky story keeps `Even when the practical value is questionable.` at the end of paragraph two and styles it exactly like the surrounding sentence at rest. Scroll fully fades the surrounding copy before increasing the phrase's actual font size and changing its colour, draws a visible gold line toward the portrait, then reveals `There’s still value in the process.` and the build-note link before releasing the page. Never enlarge the phrase with a CSS scale transform or allow it to cross into the portrait column.
+- Experience is a centred chronological ledger with company, role, and date on one axis. It has no route image, duplicate dots, or timeline markers.
+- The `Let’s build something useful.` contact chapter is a full-bleed hard-gold section, not yellow text on a neutral field.
 
 ## Workflow Detail Contract
 
@@ -86,7 +93,7 @@ node scripts/render-v2-presentation.mjs
 node scripts/qa-v2.mjs
 ```
 
-`scripts/qa-v2.mjs` verifies the homepage and all five workflow pages at 1440, 1024, 768, 390, and 320 pixels. Set `QA_V2_SCREENSHOT_DIR=/absolute/path` to save full-page captures plus all five accordion states on desktop and mobile.
+`scripts/qa-v2.mjs` verifies the homepage, all five workflow pages, and the V2 local-search case study at 1440, 1024, 768, 390, and 320 pixels where applicable. It proves the accommodation source video advances under ordinary page scroll without trapping wheel input, showcase films advance on HTTP and the local `file://` preview, accordion widths interpolate, the About phrase matches its paragraph at rest and avoids the portrait at 1024/900/768, and reduced-motion exposes the static fallback. Set `QA_V2_SCREENSHOT_DIR=/absolute/path` to save full-page captures plus all five accordion states on desktop and mobile.
 
 The presentation renderer must produce:
 

@@ -1,6 +1,6 @@
 # Portfolio Working Notes
 
-Last updated: July 14, 2026
+Last updated: July 15, 2026
 
 This is the working source for portfolio ideas, evidence, workflow details, media requirements, and unresolved questions. It is intentionally more detailed than the public site.
 
@@ -10,8 +10,8 @@ This is the working source for portfolio ideas, evidence, workflow details, medi
 - Supporting value: product marketing, positioning, websites, sales enablement, go-to-market systems, AI visibility, and AI-enabled operations.
 - Core public line: I build websites, product stories, sales material, and AI-enabled GTM systems that help teams explain, sell, and scale.
 - Philosophy: hard skills, AI, and taste let a small team move from problem to useful work faster.
-- Bias to build: trust work that can be opened, tested, sent, published, and measured.
-- Method: Understand, Shape, Build, Systematise, Measure.
+- Bias to build: trust work that can be used, learned from, measured, and improved.
+- Method: Understand, Shape, Build, Measure, Refine, Systematise.
 - AI supports execution. Human judgment supplies context, taste, review, and the decision to publish.
 
 ## Site Structure
@@ -19,8 +19,8 @@ This is the working source for portfolio ideas, evidence, workflow details, medi
 V1 remains the production homepage. V2 is an unlinked assessment at `/v2/`; it now contains the complete homepage plus detailed public-safe pages for all five selected workflows.
 
 1. Approved animated hero.
-2. Bias to Build and the five-stage method.
-3. Selected Work: public-facing outputs and case studies.
+2. Selected Work: public-facing outputs and case studies.
+3. Bias to Build and the six-stage method.
 4. Selected Workflows and Tools: repeatable systems behind the outputs.
 5. Outcomes: concise proof with clear provenance.
 6. About: personal story plus the interactive Renaissance portrait.
@@ -41,6 +41,7 @@ V1 remains the production homepage. V2 is an unlinked assessment at `/v2/`; it n
 - Public title: Elevating a boutique accommodation site.
 - Story: take underused property assets and weak photography, improve the visual system with AI, and build scroll-led stories for the Overview, Treehouse, and Cabin.
 - Media: browser window with a real URL bar; replaceable with nested scroll video.
+- V2 interaction: keep the browser flat, scrub the 32.88-second WebM/MP4 concatenated from the real Overview, Treehouse, and Cabin recordings, and keep the curly preview cue as one unit above the browser and inside the content width. Ordinary wheel input must continue scrolling the page; reduced-motion shows the approved first-frame fallback.
 - Links: Overview, Treehouse, Cabin.
 - Do not mention Airbnb links.
 
@@ -55,6 +56,7 @@ V1 remains the production homepage. V2 is an unlinked assessment at `/v2/`; it n
 - Rendering creates city/service pages, canonical URLs, schema, internal links, sitemap routes, guides, and tools.
 - Current verified 28-day proof: 189 organic clicks, 83 pages averaging positions 1-10, and 660 queries averaging positions 1-10.
 - Current verified website actions: 7 forms, 4 website phone clicks, and 2 WhatsApp clicks. Show as 13+ tracked actions until direct Business Profile performance data is available.
+- V2 route: `/v2/work/local-search-magnet.html`, isolated from the existing V1 case study and dynamically reading `data/cool-runnings-metrics-current.json` when served.
 - Client-reported proof: 30% revenue increase after launch and new bookings.
 - Refresh contract: show Latest 28 days and a visible Last refreshed date. Do not leave blank metrics.
 - Business Profile calls, website clicks, and directions require the Business Profile Performance API for exact attribution. GA4 currently groups Google traffic as organic and cannot isolate listing clicks without tagging.
@@ -81,6 +83,8 @@ V1 remains the production homepage. V2 is an unlinked assessment at `/v2/`; it n
 - Link directly to both Spotify albums rather than creating a campaign subpage.
 
 ## Selected Workflows and Tools
+
+V2 presents this as one black chapter: the centred section heading leads directly into a neutral accordion. Desktop uses overlapping 64px charcoal spines with 22px overlap and a hidden active rail; mobile uses explicit stacked rows. Do not restore per-workflow colours. Numeric flex bases are required for the desktop slide.
 
 ### Search-Optimized Content Production
 
@@ -198,33 +202,37 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 
 ### V2 Assessment Rules
 
-- Use local DM Sans for functional copy. Use local Fraunces for project titles, workflow titles, metrics, and selective personal/editorial moments. Desktop rail labels are 72px wide, 900 weight, and high contrast.
-- Do not use pastel or unrelated flat fields as the homepage structure. The hard accordion rails are gold, green, orange, blue, and plum on one charcoal content stage. Bias to Build uses hard gold; About uses deep forest. Workflow introduction, Outcomes, Experience, and Contact remain neutral.
+- Use local DM Sans for functional copy. Use local Fraunces for project titles, workflow titles, metrics, and selective personal/editorial moments. Desktop inactive rail labels are 44px wide, overlap by 14px, use 900 weight, and disappear when active so workflow evidence owns most of the stage.
+- Do not use eyebrow labels anywhere in V2, including the workflow-detail pages. Bias to Build is a large editorial heading, not a small label.
+- Do not use pastel or unrelated flat fields as the homepage structure. Bias to Build uses hard gold and About uses deep forest. The approved accordion is neutral: charcoal inactive rails, a warm-paper active rail, and a shared charcoal content stage. Do not colour-code individual workflows.
 - Treat hero media, laptops, browsers, proposal sheets, album artwork, and the About portrait as authored physical objects. Hero and screen surfaces share a thick black bevel, rounded corners, restrained perspective, and a strong drop shadow.
 - Keep the Renaissance portrait in About only; never place it in the hero.
 - Keep the interactive portrait inside the existing brown frame and show it at a larger scale. A V2-only embed accepts section-wide pointer coordinates. The practical-value sentence breaks into its own expanding hard-gold scroll moment with an animated curly arrow.
-- Reuse the responsive system-map film in the largest raised black-bevel hero card, beside the hero copy. The hero subhead is: `I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale. And sometimes stuff just for fun.`
-- Selected Work keeps the Z-pattern and existing media/interactions. Each row uses a real project environment behind the authored object: RCCV parish exterior, Boutique treehouse forest, Cool Runnings lawn, proposal city/product context, and Why Elevators lobby. Boutique keeps the wide black 69-frame browser and curved-arrow `Try to scroll` cue.
+- Reuse the responsive system-map film in the largest raised black-bevel hero card, beside the hero copy. The hero subhead ends after `scale.`; `And sometimes, stuff just for fun.` is a separate italic Fraunces beat.
+- Hero and every Selected Work stage use the same white canvas. Music is the only black interlude. No project row uses a photographic or grey background.
+- Selected Work keeps the Z-pattern and existing media/interactions. Boutique keeps the wide black browser, but the curly arrow appears before `Scroll the preview`, both form one unit above and outside it, and ordinary page scroll scrubs the stitched real source recording. Status, Overview, Previous, and Next overlays do not sit on the work.
+- RCCV is a large isolated laptop treatment, not a laptop inside another screen bezel. Its exact video is masked by `laptop-three-quarter-rccv-cutout.png` to remove the baked cream background. Its restored title is `Bringing a community site to life.` and its specific interaction link is `Explore the interactive Stations of the Cross`.
+- The proposal remains the real letter-shaped artifact but loses its surrounding faux frame; the PDF itself is larger and receives the rounded corners.
+- Accommodation, Cool Runnings, and Why Elevators begin 36px to the right and settle left with scroll. Accommodation stays flat, Cool Runnings remains restrained, and Why Elevators begins pitched back and resolves at a slight angle rather than straight-on.
 - Hero, RCCV, and Cool Runnings videos have no visible or invisible Pause control surface. They lazy-load and autoplay while visible; reduced-motion users see static posters.
-- Desktop workflow states use a full-width expanding-spine accordion at 1100px and wider; smaller layouts use vertical rows with mobile-readable artwork. In every active state, title and description precede a substantially larger image.
-- Outcomes are four centred metrics with unchanged claims. Experience is a centred ledger without route dots or timeline markers.
+- Bias to Build uses a spacious, unnumbered two-row snake on desktop: Understand → Shape → Build, then Measure → Refine → Systematise from right to left. One thin continuous route connects the full sequence instead of heavy per-label arrows. Mobile keeps the same semantic order beside a quiet vertical route.
+- Desktop workflow states use a full-width expanding-spine accordion at 1100px and wider; smaller layouts use vertical rows with mobile-readable artwork. Desktop open and closed states use explicit numeric widths so the spine actually slides. The four inactive rails overlap; the active rail is visually hidden. Active panels are taller and give the workflow image more room. Rails are neutral rather than category-coloured.
+- V2 type and padding rhythm is governed by `--type-h1`, `--type-h2`, `--type-h3`, `--space-section`, `--space-heading`, and `--space-copy` in `v2/styles.css`. Avoid isolated heading clamps and section paddings that do not derive from those roles.
+- About uses the Renaissance arch. The practical-value phrase is indistinguishable from its paragraph at rest; scroll then fades the surrounding copy, interpolates real font size and colour for sharp text, draws a visible gold line toward the portrait without crossing the copy at 1024/900/768, reveals the process conclusion, and only then releases the page. Experience is a tighter centred ledger without row rules, route dots, or timeline markers.
+- Outcomes are four centred metrics with unchanged claims.
 - All five workflow detail pages use one shared structure and stylesheet. Each page states its purpose, rationale, accurate steps, tools and sources, what ships, human review, public-safe proof and constraints, and related work.
 
-### V2 Environmental Source Truth
+### V2 Superseded Background Explorations
 
-- RCCV: local St James Golden Distance parish exterior.
-- Boutique Accommodation: existing treehouse frame `010.jpg`, cropped as the forest environment.
-- Cool Runnings: local before-and-after lawn photography.
-- Proposal: the existing public Why Elevators city/product image under a dark environmental crop; replace only when an approved clean cityscape is available.
-- Why Elevators: local Vertical Impression lobby-panel source.
-- Provenance is recorded in `v2/assets/backgrounds/README.md`. Do not silently replace these with stock or unrelated generated imagery.
+- No environmental background is active in V2 Selected Work. RCCV, Boutique Accommodation, Cool Runnings, Proposal, and Why Elevators all use the white canvas.
+- Earlier forest, lawn, city, lobby, and pew explorations remain source-recorded in `v2/assets/backgrounds/README.md` but are not approved for implementation.
 
 ## Privacy and Open Questions
 
 - Company names can appear in the resume/experience area. Elsewhere, prefer category descriptions when public naming is unnecessary.
 - Do not expose private Vertical Impression automation, internal data, API keys, or client-identifying information.
 - Confirm which proof points can be public and which need anonymized category labels.
-- Record replacement videos for Boutique Accommodation and Why Elevator Advertising when ready.
+- The Boutique replacement is complete from the three checked-in source recordings. Record a replacement film for Why Elevator Advertising when ready.
 - Complete direct Business Profile Performance API authentication before presenting exact profile calls, website clicks, directions, or total profile interactions.
 - Verify the presentation-publishing implementation against the current corporate Vercel and Webflow schemas before publishing code-level details.
 
@@ -258,13 +266,10 @@ This is the concrete correction list from the July 13 production audit. Items st
 - The Agency Management Dashboard belongs in Selected Workflows and Tools, not Selected Work. Its modal/detail treatment still needs a public-safe explanation of sources, operation, and use.
 - Website Production and Image-to-Website Production still need approved workflow visuals.
 
-### Existing Layout and Content Defects
+### Completed V2 Layout Corrections
 
-- The About portrait currently shows a loading/placeholder state in the live full-page capture instead of the Renaissance interaction.
-- The About section creates an excessive blank vertical field on desktop and mobile while the portrait/scroll interaction is unresolved.
-- The Outcomes diagram remains materially simpler than the approved reference and needs to be rebuilt from the approved composition, with labels positioned at route endpoints and no collisions.
-- Experience remains visually hollow compared with the rest of the page and needs a stronger approved composition tied to the four real roles and dates.
-- Desktop and tablet selected-work spacing remains inconsistent between copy and media. Each row needs a shared grid and intentional media scale rather than project-specific offsets that happen to fit one viewport.
-- Mobile Selected Work currently behaves as a one-card carousel, but only the first project is visible in a static full-page capture. Controls, position state, and keyboard/swipe behavior need a dedicated QA pass.
-- The hero's generated video contains fake or misspelled diagram labels. The HTML overlays need to remain anchored over those boxes at every breakpoint and completely cover the generated text.
-- Hero copy and controls need continued breakpoint QA so they stay in the reserved left-side field and never cross the diagram routes.
+- About uses a 280svh desktop sticky story. The practical-value phrase remains at the end of paragraph two; surrounding copy fully fades before its real font size grows, a gold line draws toward the portrait without crossing the copy, and `There’s still value in the process.` appears before the section releases. Mobile and reduced-motion layouts show the same content without trapping the viewport.
+- `Let’s build something useful.` is a full-bleed hard-gold section.
+- Outcomes are four centred metrics with unchanged claims. Experience is a centred chronological ledger with no route image, dots, or markers.
+- Desktop and tablet Selected Work use one white canvas, shared responsive type/spacing tokens, intentional object scale, and consistent separators.
+- The hero's approved HTML overlay labels remain anchored over unfinished diagram regions at every breakpoint.
