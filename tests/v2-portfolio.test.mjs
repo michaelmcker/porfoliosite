@@ -163,7 +163,7 @@ test("project labels and the accommodation cue are specific and keep a wide blac
   assert.match(css, /\.screen-bezel\s*\{[^}]*border:[^}]*solid #101312[^}]*box-shadow:/s);
   assert.match(css, /\.browser-object-tall \.browser-viewport\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*10/s);
   assert.match(css, /\.accommodation-showcase\s*\{[^}]*min-width:\s*0/s);
-  assert.match(css, /\.accommodation-scroll-cue\s*\{[^}]*top:\s*clamp\(-52px,\s*-3\.5vw,\s*-42px\)/s);
+  assert.match(css, /\.accommodation-scroll-cue\s*\{[^}]*top:\s*clamp\(-48px,\s*-3vw,\s*-40px\)[^}]*right:\s*clamp\(14px,\s*2vw,\s*28px\)/s);
 });
 
 test("accordion uses wider layered spines, overlaps them tightly, and hides the active desktop tab", async () => {

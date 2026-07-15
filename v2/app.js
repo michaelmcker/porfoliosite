@@ -133,8 +133,12 @@ const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const accommodationVideo = document.querySelector("[data-accommodation-scrub]");
 const accommodationViewer = accommodationVideo?.closest("[data-accommodation-viewer]");
 const sourceFrameDuration = 1 / 25;
+const finePointer = window.matchMedia("(pointer: fine)");
 let accommodationDuration = 0;
 let accommodationPendingProgress = 0;
+let accommodationWheelProgress = 0;
+let accommodationWheelFrame;
+let accommodationManualUntil = 0;
 
 const loadAccommodationVideo = () => {
   if (!accommodationVideo || accommodationVideo.dataset.scrubLoaded === "true" || reducedMotion.matches) return;
@@ -154,8 +158,35 @@ const seekAccommodation = (progress) => {
   accommodationVideo.currentTime = nextTime;
 };
 
+const normalizeWheelDelta = (event) => {
+  if (event.deltaMode === WheelEvent.DOM_DELTA_LINE) return event.deltaY * 18;
+  if (event.deltaMode === WheelEvent.DOM_DELTA_PAGE) return event.deltaY * window.innerHeight;
+  return event.deltaY;
+};
+
+const applyAccommodationWheel = () => {
+  accommodationWheelFrame = undefined;
+  seekAccommodation(accommodationWheelProgress);
+};
+
+const scrubAccommodationWithWheel = (event) => {
+  if (reducedMotion.matches || !finePointer.matches) return;
+  event.preventDefault();
+  loadAccommodationVideo();
+  if (!accommodationDuration) return;
+  accommodationManualUntil = performance.now() + 900;
+  const pixelsForFullScrub = Math.max(900, window.innerHeight * 1.4);
+  accommodationWheelProgress = Math.max(0, Math.min(1,
+    accommodationWheelProgress + normalizeWheelDelta(event) / pixelsForFullScrub,
+  ));
+  if (!accommodationWheelFrame) accommodationWheelFrame = requestAnimationFrame(applyAccommodationWheel);
+};
+
+accommodationViewer?.addEventListener("wheel", scrubAccommodationWithWheel, { passive: false });
+
 accommodationVideo?.addEventListener("loadedmetadata", () => {
   accommodationDuration = Number.isFinite(accommodationVideo.duration) ? accommodationVideo.duration : 0;
+  accommodationWheelProgress = accommodationPendingProgress;
   seekAccommodation(accommodationPendingProgress);
 }, { once: true });
 
@@ -199,7 +230,10 @@ const updateObjectReveals = () => {
     const revealKey = object.dataset.scrollReveal;
     const progress = revealKey === "elevators" ? clampUnit(rawProgress / .72) : rawProgress;
     object.style.setProperty("--object-reveal", progress.toFixed(3));
-    if (revealKey === "accommodation") seekAccommodation(progress);
+    if (revealKey === "accommodation" && performance.now() >= accommodationManualUntil) {
+      accommodationWheelProgress = progress;
+      seekAccommodation(progress);
+    }
   });
 };
 
@@ -215,6 +249,7 @@ const aboutToggle = document.querySelector("[data-about-toggle]");
 const aboutNote = document.querySelector("[data-about-note]");
 const aboutStage = document.querySelector("[data-about-stage]");
 const aboutScrollStory = document.querySelector("[data-about-scroll-story]");
+const aboutPointerStage = document.querySelector("[data-about-pointer-stage]");
 const portraitFrame = document.querySelector(".portrait-frame");
 const portraitEmbed = portraitFrame?.querySelector("iframe");
 let portraitPointerFrame;
@@ -223,20 +258,20 @@ let aboutScrollFrame;
 portraitEmbed?.addEventListener("load", () => portraitFrame.classList.add("is-loaded"));
 
 const sendPortraitPointer = (event) => {
-  if (!aboutStage || !portraitEmbed?.contentWindow) return;
-  const bounds = aboutStage.getBoundingClientRect();
+  if (!aboutPointerStage || !portraitEmbed?.contentWindow) return;
+  const bounds = aboutPointerStage.getBoundingClientRect();
   const x = Math.max(0, Math.min(1, (event.clientX - bounds.left) / bounds.width));
-  const y = Math.max(0, Math.min(1, (event.clientY - bounds.top) / Math.min(bounds.height, window.innerHeight * 1.4)));
+  const y = Math.max(0, Math.min(1, (event.clientY - bounds.top) / bounds.height));
   window.cancelAnimationFrame(portraitPointerFrame);
   portraitPointerFrame = requestAnimationFrame(() => {
     portraitEmbed.contentWindow.postMessage({ type: "portfolio-portrait-pointer", x, y }, "*");
   });
 };
 
-aboutStage?.addEventListener("pointermove", (event) => {
+aboutPointerStage?.addEventListener("pointermove", (event) => {
   if (event.pointerType !== "touch") sendPortraitPointer(event);
 });
-aboutStage?.addEventListener("pointerdown", sendPortraitPointer);
+aboutPointerStage?.addEventListener("pointerdown", sendPortraitPointer);
 
 const clampUnit = (value) => Math.max(0, Math.min(1, value));
 const phase = (progress, start, end) => clampUnit((progress - start) / (end - start));

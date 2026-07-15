@@ -7,7 +7,7 @@
   <style>
     * { box-sizing: border-box; }
     html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #17130f; }
-    .stage { position: relative; width: 100%; height: 100%; overflow: hidden; background: #17130f; cursor: crosshair; user-select: none; }
+    .stage { position: relative; width: 100%; height: 100%; overflow: hidden; background: #17130f; cursor: default; user-select: none; }
     .layer { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; pointer-events: none; }
     .base { z-index: 0; }
     .typing { z-index: 1; }
@@ -72,13 +72,6 @@
         headOnly.style.display = 'none';
         headOnly.removeAttribute('src');
       }
-    }
-
-    function selectPose(clientX, clientY) {
-      const bounds = stage.getBoundingClientRect();
-      const x = Math.max(0, Math.min(.999, (clientX - bounds.left) / bounds.width));
-      const y = Math.max(0, Math.min(.999, (clientY - bounds.top) / bounds.height));
-      renderPose(1 + Math.floor(y * 11), 1 + Math.floor(x * 6));
     }
 
     function paintStroke(context, stroke, color = 'white') {
@@ -152,11 +145,6 @@
     applyVideoMask();
     renderPose(6, 3);
     head.addEventListener('load', () => stage.classList.add('ready'), { once: true });
-
-    stage.addEventListener('pointermove', (event) => {
-      if (event.pointerType !== 'touch') selectPose(event.clientX, event.clientY);
-    });
-    stage.addEventListener('pointerdown', (event) => selectPose(event.clientX, event.clientY));
 
     window.addEventListener('message', (event) => {
       if (event.source !== window.parent || event.data?.type !== 'portfolio-portrait-pointer') return;
