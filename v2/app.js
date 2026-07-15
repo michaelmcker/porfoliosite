@@ -1,19 +1,44 @@
 const workflowItems = [...document.querySelectorAll(".workflow-item")];
 const workflowTriggers = workflowItems.map((item) => item.querySelector("[data-workflow-trigger]"));
+const workflowAccordion = document.querySelector("[data-workflow-accordion]");
+const workflowMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+let activeWorkflowIndex = Math.max(0, workflowItems.findIndex((item) => item.classList.contains("is-active")));
+let workflowTransitionTimer;
 
 function activateWorkflow(index, { focus = false } = {}) {
   const safeIndex = Math.max(0, Math.min(index, workflowItems.length - 1));
+  if (safeIndex === activeWorkflowIndex) {
+    if (focus) workflowTriggers[safeIndex].focus();
+    return;
+  }
+
+  window.clearTimeout(workflowTransitionTimer);
+  workflowAccordion?.setAttribute("data-workflow-transitioning", "true");
 
   workflowItems.forEach((item, itemIndex) => {
     const active = itemIndex === safeIndex;
     const panel = item.querySelector("[data-workflow-panel]");
-    item.classList.toggle("is-active", active);
     workflowTriggers[itemIndex].setAttribute("aria-expanded", String(active));
     panel.setAttribute("aria-hidden", String(!active));
     panel.toggleAttribute("inert", !active);
   });
 
-  if (focus) workflowTriggers[safeIndex].focus();
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      workflowItems.forEach((item, itemIndex) => item.classList.toggle("is-active", itemIndex === safeIndex));
+      activeWorkflowIndex = safeIndex;
+      if (focus) workflowTriggers[safeIndex].focus();
+
+      if (workflowMotion.matches) {
+        workflowAccordion?.removeAttribute("data-workflow-transitioning");
+        return;
+      }
+
+      workflowTransitionTimer = window.setTimeout(() => {
+        workflowAccordion?.removeAttribute("data-workflow-transitioning");
+      }, 620);
+    });
+  });
 }
 
 workflowTriggers.forEach((trigger, index) => {
@@ -133,14 +158,6 @@ document.querySelectorAll("[data-accommodation-viewer]").forEach((viewer) => {
 const motionVideos = [...document.querySelectorAll("[data-motion-video]")];
 const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-const syncMotionSurface = (video) => {
-  if (!video.hasAttribute("data-motion-surface")) return;
-  const playing = !video.paused && !video.ended;
-  const label = video.dataset.motionLabel || "showcase video";
-  video.setAttribute("aria-pressed", String(playing));
-  video.setAttribute("aria-label", `${playing ? "Pause" : "Play"} ${label}`);
-};
-
 const loadMotionVideo = (video) => {
   if (video.dataset.motionLoaded === "true") return;
   video.querySelectorAll("source[data-src]").forEach((source) => {
@@ -155,33 +172,9 @@ const playMotionVideo = async (video) => {
   try {
     await video.play();
   } catch {
-    syncMotionSurface(video);
+    // Autoplay can be withheld by the browser; the poster remains the fallback.
   }
 };
-
-const toggleMotionVideo = async (video) => {
-  if (!video.paused) {
-    video.dataset.motionPausedByUser = "true";
-    video.pause();
-    return;
-  }
-  delete video.dataset.motionPausedByUser;
-  await playMotionVideo(video);
-};
-
-motionVideos.forEach((video) => {
-  video.addEventListener("play", () => syncMotionSurface(video));
-  video.addEventListener("pause", () => syncMotionSurface(video));
-  if (video.hasAttribute("data-motion-surface")) {
-    video.addEventListener("click", () => toggleMotionVideo(video));
-    video.addEventListener("keydown", (event) => {
-      if (event.key !== "Enter" && event.key !== " ") return;
-      event.preventDefault();
-      toggleMotionVideo(video);
-    });
-  }
-  syncMotionSurface(video);
-});
 
 if (!motionPreference.matches && "IntersectionObserver" in window) {
   const motionObserver = new IntersectionObserver((entries) => {
@@ -189,7 +182,7 @@ if (!motionPreference.matches && "IntersectionObserver" in window) {
       const video = entry.target;
       if (entry.isIntersecting) {
         loadMotionVideo(video);
-        if (video.dataset.motionPausedByUser !== "true") playMotionVideo(video);
+        playMotionVideo(video);
       } else if (!video.paused) {
         video.pause();
       }
@@ -214,10 +207,51 @@ if (biasSequence && !reducedMotion.matches && "IntersectionObserver" in window) 
 
 const aboutToggle = document.querySelector("[data-about-toggle]");
 const aboutNote = document.querySelector("[data-about-note]");
+const aboutStage = document.querySelector("[data-about-stage]");
+const aboutBreakout = document.querySelector("[data-about-breakout]");
 const portraitFrame = document.querySelector(".portrait-frame");
 const portraitEmbed = portraitFrame?.querySelector("iframe");
+let portraitPointerFrame;
+let breakoutScrollFrame;
 
 portraitEmbed?.addEventListener("load", () => portraitFrame.classList.add("is-loaded"));
+
+const sendPortraitPointer = (event) => {
+  if (!aboutStage || !portraitEmbed?.contentWindow) return;
+  const bounds = aboutStage.getBoundingClientRect();
+  const x = Math.max(0, Math.min(1, (event.clientX - bounds.left) / bounds.width));
+  const y = Math.max(0, Math.min(1, (event.clientY - bounds.top) / Math.min(bounds.height, window.innerHeight * 1.4)));
+  window.cancelAnimationFrame(portraitPointerFrame);
+  portraitPointerFrame = requestAnimationFrame(() => {
+    portraitEmbed.contentWindow.postMessage({ type: "portfolio-portrait-pointer", x, y }, "*");
+  });
+};
+
+aboutStage?.addEventListener("pointermove", (event) => {
+  if (event.pointerType !== "touch") sendPortraitPointer(event);
+});
+aboutStage?.addEventListener("pointerdown", sendPortraitPointer);
+
+if (aboutBreakout && "IntersectionObserver" in window) {
+  const breakoutObserver = new IntersectionObserver((entries) => {
+    aboutBreakout.classList.toggle("is-visible", entries[0]?.isIntersecting ?? false);
+  }, { threshold: 0.28 });
+  breakoutObserver.observe(aboutBreakout);
+}
+
+const updateBreakoutProgress = () => {
+  breakoutScrollFrame = undefined;
+  if (!aboutBreakout) return;
+  const bounds = aboutBreakout.getBoundingClientRect();
+  const progress = Math.max(0, Math.min(1, (window.innerHeight - bounds.top) / (window.innerHeight + bounds.height * .45)));
+  aboutBreakout.style.setProperty("--breakout-progress", progress.toFixed(3));
+};
+
+window.addEventListener("scroll", () => {
+  if (breakoutScrollFrame) return;
+  breakoutScrollFrame = requestAnimationFrame(updateBreakoutProgress);
+}, { passive: true });
+updateBreakoutProgress();
 
 aboutToggle?.addEventListener("click", () => {
   const opening = aboutNote?.hidden ?? false;

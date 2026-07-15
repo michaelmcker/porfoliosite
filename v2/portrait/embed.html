@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Renaissance portrait</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #17130f; }
+    .stage { position: relative; width: 100%; height: 100%; overflow: hidden; background: #17130f; cursor: crosshair; user-select: none; }
+    .layer { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; pointer-events: none; }
+    .base { z-index: 0; }
+    .typing { z-index: 1; }
+    .erase { z-index: 2; }
+    .head { z-index: 3; transform-origin: 64% 44%; }
+    .white { z-index: 4; transform: translate(.0453%, -1.166%) scale(.95); transform-origin: 64% 44%; }
+    .black { position: absolute; z-index: 5; left: 41.4998%; top: 35.1885%; width: 53.5%; aspect-ratio: 500 / 530; pointer-events: none; }
+    .black img { width: 100%; height: 100%; display: block; filter: drop-shadow(2px 1px 1.25px rgba(18, 11, 7, .72)); }
+    .head-only { z-index: 6; transform-origin: 64% 44%; }
+    .loading { position: absolute; z-index: 8; inset: 0; display: grid; place-items: center; background: #17130f; color: #d8cbb8; font: 12px/1.3 system-ui, sans-serif; transition: opacity 240ms ease; }
+    .ready .loading { opacity: 0; pointer-events: none; }
+    @media (prefers-reduced-motion: reduce) { .typing { display: none; } }
+  </style>
+</head>
+<body>
+  <section class="stage" id="portrait-stage" aria-label="Interactive Renaissance portrait. Move the pointer to change the subject's gaze.">
+    <img class="layer base" src="../../assets/portrait-final/assets/production/static-clean-plate-collarless.png" alt="">
+    <video class="layer typing" id="portrait-typing" src="../../assets/portrait-final/assets/video/openrouter-direct-fast-typing-15s/typing-active-loop-5.9s.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    <img class="layer erase" src="../../assets/portrait-final/assets/production/video-head-erase-overlay.png" alt="">
+    <img class="layer head" id="portrait-head" alt="">
+    <img class="layer white" id="portrait-white-collar" src="../../assets/portrait-final/assets/production/collar-rim-foreground.png" alt="">
+    <div class="black" id="portrait-black-collar"><img src="../../assets/portrait-final/assets/production/generated-front-collar-draggable.png" alt=""></div>
+    <img class="layer head-only" id="portrait-head-only" alt="">
+    <div class="loading">Preparing portrait...</div>
+  </section>
+  <script src="../../assets/portrait-final/placement.js"></script>
+  <script>
+    const stage = document.querySelector('#portrait-stage');
+    const head = document.querySelector('#portrait-head');
+    const headOnly = document.querySelector('#portrait-head-only');
+    const whiteCollar = document.querySelector('#portrait-white-collar');
+    const blackCollar = document.querySelector('#portrait-black-collar');
+    const typing = document.querySelector('#portrait-typing');
+    const placement = window.RIVERFLOW_PLACEMENT_DEFAULTS;
+    const pad = (number) => String(number).padStart(2, '0');
+    let activeRow = 6;
+    let activeColumn = 3;
+
+    const poseSource = (row, column) => `../../assets/portrait-final/assets/poses-webp/riverflow-registered/pose-r${pad(row)}-c${pad(column)}.webp`;
+    const headOnlySource = (row, column) => `../../assets/portrait-final/assets/poses-webp/riverflow-head-only-manual/pose-r${pad(row)}-c${pad(column)}.webp`;
+
+    function effectivePlacement(row, column) {
+      const id = `R${pad(row)}C${pad(column)}`;
+      return { ...placement.global, ...(placement.poses[id] || {}) };
+    }
+
+    function renderPose(row, column) {
+      if (row === activeRow && column === activeColumn && head.src) return;
+      activeRow = row;
+      activeColumn = column;
+      const values = effectivePlacement(row, column);
+      const transform = `translate(${values.x}%, ${values.y}%) scale(${values.size / 100}) rotate(${values.rotation}deg)`;
+      head.src = poseSource(row, column);
+      head.style.transform = transform;
+
+      if (row >= 10 && placement.headOnly.visible) {
+        const detail = placement.headOnly;
+        headOnly.src = headOnlySource(row, column);
+        headOnly.style.display = 'block';
+        headOnly.style.transform = `translate(${values.x + detail.x}%, ${values.y + detail.y}%) scale(${values.size / 100 * detail.size / 100}) rotate(${values.rotation + detail.rotation}deg)`;
+      } else {
+        headOnly.style.display = 'none';
+        headOnly.removeAttribute('src');
+      }
+    }
+
+    function selectPose(clientX, clientY) {
+      const bounds = stage.getBoundingClientRect();
+      const x = Math.max(0, Math.min(.999, (clientX - bounds.left) / bounds.width));
+      const y = Math.max(0, Math.min(.999, (clientY - bounds.top) / bounds.height));
+      renderPose(1 + Math.floor(y * 11), 1 + Math.floor(x * 6));
+    }
+
+    function paintStroke(context, stroke, color = 'white') {
+      context.save();
+      context.strokeStyle = color;
+      context.fillStyle = color;
+      context.lineWidth = stroke.size;
+      context.lineCap = 'round';
+      context.lineJoin = 'round';
+      context.beginPath();
+      stroke.points.forEach((point, index) => index ? context.lineTo(point.x, point.y) : context.moveTo(point.x, point.y));
+      if (stroke.points.length === 1) context.arc(stroke.points[0].x, stroke.points[0].y, stroke.size / 2, 0, Math.PI * 2);
+      stroke.points.length === 1 ? context.fill() : context.stroke();
+      context.restore();
+    }
+
+    function applyVideoMask() {
+      const width = 1023;
+      const height = 1537;
+      const mask = document.createElement('canvas');
+      const base = document.createElement('canvas');
+      mask.width = base.width = width;
+      mask.height = base.height = height;
+      const context = mask.getContext('2d');
+      const baseContext = base.getContext('2d');
+      const top = placement.videoTop;
+      const rightEdge = Math.max(60, 100 - placement.videoRight);
+      const topA = Math.max(0, top - 1.3) / 100 * height;
+      const topB = Math.min(100, top + 1.3) / 100 * height;
+      const rightA = Math.max(0, rightEdge - 1.3) / 100 * width;
+      const rightB = Math.min(100, rightEdge + 1.3) / 100 * width;
+
+      let gradient = baseContext.createLinearGradient(0, 0, 0, height);
+      gradient.addColorStop(0, 'transparent');
+      gradient.addColorStop(topA / height, 'transparent');
+      gradient.addColorStop(topB / height, 'white');
+      gradient.addColorStop(1, 'white');
+      baseContext.fillStyle = gradient;
+      baseContext.fillRect(0, 0, width, height);
+      baseContext.globalCompositeOperation = 'destination-in';
+      gradient = baseContext.createLinearGradient(0, 0, width, 0);
+      gradient.addColorStop(0, 'white');
+      gradient.addColorStop(rightA / width, 'white');
+      gradient.addColorStop(rightB / width, 'transparent');
+      gradient.addColorStop(1, 'transparent');
+      baseContext.fillStyle = gradient;
+      baseContext.fillRect(0, 0, width, height);
+      baseContext.globalCompositeOperation = 'source-over';
+
+      context.drawImage(base, 0, 0);
+      for (const stroke of placement.videoMaskStrokes || []) {
+        context.globalCompositeOperation = stroke.mode === 'erase' ? 'destination-out' : 'source-over';
+        paintStroke(context, stroke);
+      }
+      context.globalCompositeOperation = 'destination-in';
+      context.drawImage(base, 0, 0);
+      const maskUrl = `url(${mask.toDataURL('image/png')})`;
+      typing.style.webkitMaskImage = maskUrl;
+      typing.style.maskImage = maskUrl;
+      typing.style.webkitMaskRepeat = typing.style.maskRepeat = 'no-repeat';
+      typing.style.webkitMaskSize = typing.style.maskSize = '100% 100%';
+      const video = placement.videoTransform || { x: 0, y: 0, size: 100 };
+      typing.style.transform = `translate(${video.x}%, ${video.y}%) scale(${video.size / 100})`;
+    }
+
+    whiteCollar.style.display = placement.whiteCollarVisible ? 'block' : 'none';
+    whiteCollar.style.clipPath = `inset(${placement.whiteCollarCropTop}% 0 0 0)`;
+    blackCollar.style.display = placement.blackCollarVisible ? 'block' : 'none';
+    blackCollar.querySelector('img').style.clipPath = `inset(${placement.blackCollarCropTop}% 0 0 0)`;
+    head.style.display = placement.fullHeadVisible ? 'block' : 'none';
+    applyVideoMask();
+    renderPose(6, 3);
+    head.addEventListener('load', () => stage.classList.add('ready'), { once: true });
+
+    stage.addEventListener('pointermove', (event) => {
+      if (event.pointerType !== 'touch') selectPose(event.clientX, event.clientY);
+    });
+    stage.addEventListener('pointerdown', (event) => selectPose(event.clientX, event.clientY));
+
+    window.addEventListener('message', (event) => {
+      if (event.source !== window.parent || event.data?.type !== 'portfolio-portrait-pointer') return;
+      const rawX = Number(event.data.x);
+      const rawY = Number(event.data.y);
+      if (!Number.isFinite(rawX) || !Number.isFinite(rawY)) return;
+      const x = Math.max(0, Math.min(.999, rawX));
+      const y = Math.max(0, Math.min(.999, rawY));
+      renderPose(1 + Math.floor(y * 11), 1 + Math.floor(x * 6));
+      window.__v2PortraitMessageCount = (window.__v2PortraitMessageCount || 0) + 1;
+    });
+
+    const preload = () => {
+      for (let row = 1; row <= 11; row += 1) {
+        for (let column = 1; column <= 6; column += 1) {
+          const image = new Image();
+          image.src = poseSource(row, column);
+        }
+      }
+    };
+    'requestIdleCallback' in window ? requestIdleCallback(preload) : setTimeout(preload, 250);
+  </script>
+</body>
+</html>
