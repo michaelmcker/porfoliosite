@@ -4,10 +4,61 @@ import test from "node:test";
 
 const v2Url = new URL("../v2/", import.meta.url);
 const fileUrl = (name) => new URL(name, v2Url);
+const workflowRoutes = [
+  "content-production.html",
+  "agency-management-dashboard.html",
+  "presentation-publishing.html",
+  "local-prospecting-enrichment.html",
+  "image-to-website-production.html",
+];
 
 async function readV2(name) {
   return readFile(fileUrl(name), "utf8");
 }
+
+async function readWorkflow(name) {
+  return readV2(`workflows/${name}`);
+}
+
+test("V2 uses one photographic studio system instead of unrelated colour bands", async () => {
+  const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
+
+  for (const project of ["rccv", "accommodation", "cool-runnings", "proposal", "elevators"]) {
+    assert.match(html, new RegExp(`data-project-environment="${project}"`));
+  }
+  assert.match(css, /--accent:\s*#E3A916/i);
+  assert.doesNotMatch(css, /--work-accommodation|--work-proposal|--content-vivid|--about-hard/);
+  assert.match(css, /\.screen-bezel/);
+  assert.match(css, /font-family:\s*var\(--font-editorial\)/);
+});
+
+test("accordion stages selection and About bridges section-wide pointer input", async () => {
+  const [html, app] = await Promise.all([readV2("index.html"), readV2("app.js")]);
+
+  assert.match(html, /data-about-stage/);
+  assert.match(html, /data-about-breakout/);
+  assert.match(html, /class="about-curly-arrow"/);
+  assert.match(html, /src="portrait\/embed\.html"/);
+  assert.match(app, /portfolio-portrait-pointer/);
+  assert.match(app, /data-workflow-transitioning/);
+  assert.match(app, /requestAnimationFrame/);
+});
+
+test("all five V2 workflow routes share the detailed public-safe contract", async () => {
+  for (const route of workflowRoutes) {
+    const html = await readWorkflow(route);
+    assert.match(html, /workflow-detail\.css/);
+    assert.match(html, /data-workflow-purpose/);
+    assert.match(html, /id="why-it-exists"/);
+    assert.match(html, /id="how-it-works"/);
+    assert.match(html, /id="tools-and-sources"/);
+    assert.match(html, /id="what-ships"/);
+    assert.match(html, /id="human-review"/);
+    assert.match(html, /id="proof-and-constraints"/);
+    assert.match(html, /id="related-work"/);
+    assert.ok((html.match(/class="workflow-step"/g) || []).length >= 5, `${route} needs at least five steps`);
+  }
+});
 
 test("V2 is isolated in its own three production files", async () => {
   const [html, css, app] = await Promise.all([
