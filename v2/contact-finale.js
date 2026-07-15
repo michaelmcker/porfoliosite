@@ -30,15 +30,69 @@
   let matterPromise;
   let finaleVisible = true;
   let copyTimer;
+  let viewportLock;
 
   const entranceDuration = 4800;
   const spiralTurns = 2;
-  const centreScale = .55;
+  const centreScale = .7;
   const spiralStartAngle = -Math.PI * .75;
 
   function setState(next) {
     state = next;
     story.dataset.finaleState = next;
+  }
+
+  function lockViewport() {
+    if (viewportLock) return;
+    const root = document.documentElement;
+    const body = document.body;
+    const rootScrollBehavior = root.style.scrollBehavior;
+    const stageTop = stage.getBoundingClientRect().top + window.scrollY;
+    root.style.scrollBehavior = "auto";
+    window.scrollTo(0, stageTop);
+    const scrollY = window.scrollY;
+    const scrollbarGap = Math.max(0, window.innerWidth - root.clientWidth);
+    viewportLock = {
+      scrollY,
+      rootOverflow: root.style.overflow,
+      rootScrollBehavior,
+      bodyPosition: body.style.position,
+      bodyTop: body.style.top,
+      bodyLeft: body.style.left,
+      bodyRight: body.style.right,
+      bodyWidth: body.style.width,
+      bodyPaddingRight: body.style.paddingRight,
+    };
+    root.style.overflow = "hidden";
+    body.style.position = "fixed";
+    body.style.top = `${-scrollY}px`;
+    body.style.left = "0";
+    body.style.right = "0";
+    body.style.width = "100%";
+    if (scrollbarGap) {
+      body.style.paddingRight = `${parseFloat(getComputedStyle(body).paddingRight) + scrollbarGap}px`;
+    }
+    root.style.scrollBehavior = rootScrollBehavior;
+    story.dataset.viewportLocked = "true";
+  }
+
+  function unlockViewport() {
+    if (!viewportLock) return;
+    const root = document.documentElement;
+    const body = document.body;
+    const saved = viewportLock;
+    viewportLock = undefined;
+    root.style.scrollBehavior = "auto";
+    root.style.overflow = saved.rootOverflow;
+    body.style.position = saved.bodyPosition;
+    body.style.top = saved.bodyTop;
+    body.style.left = saved.bodyLeft;
+    body.style.right = saved.bodyRight;
+    body.style.width = saved.bodyWidth;
+    body.style.paddingRight = saved.bodyPaddingRight;
+    window.scrollTo(0, saved.scrollY);
+    root.style.scrollBehavior = saved.rootScrollBehavior;
+    story.dataset.viewportLocked = "false";
   }
 
   function loadMatterRuntime() {
@@ -104,8 +158,10 @@
     const angle = spiralStartAngle + n * spiralTurns * Math.PI * 2;
     const radius = maxRadius * (1 - n);
     const convergence = smooth((stream - .94) / .06);
-    const releaseX = (index - (count - 1) / 2) * 5 * convergence;
-    const releaseY = ((index % 3) - 1) * 4 * convergence;
+    const releaseSpan = Math.min(width * (width < 640 ? .56 : .36), width < 640 ? 220 : 520);
+    const releaseOrder = count > 1 ? ((index * 5) % count) / (count - 1) - .5 : 0;
+    const releaseX = releaseOrder * releaseSpan * convergence;
+    const releaseY = (-height * .045 + ((index * 2) % 3 - 1) * Math.min(18, height * .02)) * convergence;
     const x = centreX + Math.cos(angle) * radius + releaseX;
     const y = centreY + Math.sin(angle) * radius + releaseY;
     const nextN = Math.min(1, n + .001);
@@ -148,6 +204,7 @@
   function startEntrance() {
     if (entranceStarted || reducedMotion.matches) return;
     entranceStarted = true;
+    lockViewport();
     story.dataset.entranceStarts = String(Number(story.dataset.entranceStarts || 0) + 1);
     setState("entrance");
     entranceStart = performance.now();
@@ -240,6 +297,7 @@
   async function releaseToPhysics() {
     if (released) return;
     released = true;
+    unlockViewport();
     applySpiral(1);
     setState("physics");
     scheduleCopyReveal();
@@ -366,6 +424,7 @@
   window.addEventListener("resize", () => {
     if (released) rebuildBoundaries();
   }, { passive: true });
+  window.addEventListener("pagehide", unlockViewport, { once: true });
 
   const visibilityObserver = "IntersectionObserver" in window
     ? new IntersectionObserver((entries) => {
@@ -386,6 +445,7 @@
     story.dataset.copyState = "hidden";
     story.dataset.entranceProgress = "0.0000";
     story.dataset.entranceStarts = "0";
+    story.dataset.viewportLocked = "false";
     setState("idle");
     if ("IntersectionObserver" in window) {
       const runtimeObserver = new IntersectionObserver((entries, observer) => {
