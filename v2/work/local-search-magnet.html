@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>A local search magnet — Michael McKerracher</title>
+  <meta name="description" content="How a local landscaping business went from no website to a useful local search system built around regional data, practical tools, and measurable demand.">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="local-search-magnet.css">
+</head>
+<body>
+  <a class="skip-link" href="#case-study">Skip to the case study</a>
+
+  <header class="case-header">
+    <a class="monogram" href="../#hero" aria-label="Michael McKerracher, V2 home">MM</a>
+    <a class="back-link" href="../#work">Back to selected work</a>
+    <a href="https://www.coolrunningslandscaping.com/" target="_blank" rel="noreferrer">View live site</a>
+  </header>
+
+  <main id="case-study">
+    <section class="case-hero page-frame" aria-labelledby="case-title">
+      <div class="hero-copy">
+        <h1 id="case-title">From no web presence to a local search magnet.</h1>
+        <p>Cool Runnings already had strong word of mouth. I built the useful website and the system behind it: regional source data, local service pages, practical tools, and a feedback loop that measures what earns attention.</p>
+        <div class="actions">
+          <a class="button button-primary" href="#system">See the system</a>
+          <a class="button" href="https://www.coolrunningslandscaping.com/" target="_blank" rel="noreferrer">Visit Cool Runnings</a>
+        </div>
+      </div>
+
+      <figure class="browser-object" data-reveal>
+        <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>coolrunningslandscaping.com</span></div>
+        <video autoplay muted loop playsinline preload="metadata" poster="../../assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website, local pages, guides, and tools">
+          <source src="../../assets/videos/cool-runnings-sizzle-25s.webm" type="video/webm">
+          <source src="../../assets/videos/cool-runnings-sizzle-25s.mp4" type="video/mp4">
+        </video>
+      </figure>
+    </section>
+
+    <section class="results" aria-labelledby="results-title">
+      <div class="page-frame">
+        <header class="section-heading">
+          <h2 id="results-title">A useful foundation began producing measurable demand.</h2>
+          <p data-cool-metrics-window>Google Search Console and GA4, latest verified 28-day snapshot.</p>
+        </header>
+        <div class="metric-grid">
+          <article><strong data-cool-metric="clicks">189</strong><span>organic clicks</span><small>latest 28 days</small></article>
+          <article><strong data-cool-metric="pageRowsPosition1To10">83</strong><span>ranking pages</span><small>average position 1–10</small></article>
+          <article><strong data-cool-metric="queryRowsPosition1To10">660</strong><span>ranking queries</span><small>average position 1–10</small></article>
+          <article><strong data-cool-metric="trackedActions" data-cool-suffix="+">13+</strong><span>tracked actions</span><small>forms, calls, and WhatsApp</small></article>
+        </div>
+        <p class="metric-note">The action total is a verified minimum until direct Google Business Profile reporting is connected.</p>
+      </div>
+    </section>
+
+    <section class="system page-frame" id="system" aria-labelledby="system-title">
+      <header class="section-heading system-heading">
+        <h2 id="system-title">The site is the surface. The repeatable system is underneath.</h2>
+        <p>Canonical business inputs stay separate from generated local enrichment. A deterministic renderer joins them, publishes connected pages, and makes performance measurable.</p>
+      </header>
+
+      <ol class="system-steps">
+        <li data-reveal>
+          <span>Start with source truth</span>
+          <h3>Canonical cities and services</h3>
+          <p>Six service areas carry weather, frost, planting-zone, neighbourhood, and regional context. Six services carry approved descriptions, inclusions, processes, FAQs, photos, and relationships.</p>
+          <code>cities.json + services.json</code>
+        </li>
+        <li data-reveal>
+          <span>Add local specificity</span>
+          <h3>A structured enrichment matrix</h3>
+          <p>Each city-service pair receives local challenges, soil and terrain notes, seasonal guidance, neighbourhood tips, FAQs, and keyword variants as structured JSON—not loose page markup.</p>
+          <code>6 cities × 6 services = 36 records</code>
+        </li>
+        <li data-reveal>
+          <span>Protect the pipeline</span>
+          <h3>Validation, retry, and recovery</h3>
+          <p>Responses must parse and contain the required fields before they are written. Failed pairs retry; a recovery pass finds missing keys and merges only successful records.</p>
+          <code>validate → retry → recover → merge</code>
+        </li>
+        <li data-reveal>
+          <span>Ship connected pages</span>
+          <h3>One renderer, useful discovery paths</h3>
+          <p>The build joins canonical and enriched records, then adds canonical URLs, structured data, related hubs, sibling pages, useful resources, and sitemap discovery.</p>
+          <code>/services/[service]/[city]/</code>
+        </li>
+        <li data-reveal>
+          <span>Build useful reasons to visit</span>
+          <h3>Tools and a separate guide library</h3>
+          <p>Cost guides, seasonal checklists, comparisons, frost information, and calculators answer practical local questions. The deterministic guide library remains separate from the AI-enriched service matrix.</p>
+          <code>66 structured guide records</code>
+        </li>
+      </ol>
+    </section>
+
+    <section class="proof-pair" aria-labelledby="useful-title">
+      <div class="proof-copy">
+        <h2 id="useful-title">Useful work earns attention.</h2>
+        <p>The strongest pages are not generic location swaps. They help someone decide when to water, what materials may cost, how much sod to order, or when frost is likely.</p>
+        <a href="https://www.coolrunningslandscaping.com/tools/sod-calculator" target="_blank" rel="noreferrer">Open the sod calculator</a>
+      </div>
+      <div class="proof-media">
+        <figure><img src="../../assets/screens/cool-runnings-city.png" alt="Cool Runnings West Kelowna service-area page"></figure>
+        <figure><img src="../../assets/screens/cool-runnings-calculator.png" alt="Cool Runnings sod calculator"></figure>
+      </div>
+    </section>
+
+    <section class="review page-frame" aria-labelledby="review-title">
+      <div>
+        <h2 id="review-title">Human review stays in the loop.</h2>
+        <p>Automation handles structure, repetition, validation, and publishing. A person still reviews business claims, local usefulness, factual sense, tone, internal links, and whether a page deserves to exist.</p>
+      </div>
+      <ul>
+        <li>Canonical business facts remain the source of truth.</li>
+        <li>Generated enrichment is constrained to structured fields.</li>
+        <li>Pages must add meaningful local or practical value.</li>
+        <li>Search and conversion data guide the next refinement.</li>
+      </ul>
+    </section>
+
+    <section class="case-close">
+      <h2>Build something useful. Then measure what happens.</h2>
+      <div class="actions">
+        <a class="button button-dark" href="mailto:michael.mckerracher@gmail.com">Start a conversation</a>
+        <a class="button" href="../#work">View other work</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="local-search-magnet.js"></script>
+</body>
+</html>
