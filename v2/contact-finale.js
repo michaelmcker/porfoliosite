@@ -31,16 +31,10 @@
   let finaleVisible = true;
   let copyTimer;
 
-  const entranceDuration = 1800;
-  const orbitPoints = [
-    [-.14, .12],
-    [.08, .08],
-    [.04, .62],
-    [.5, .72],
-    [.92, .58],
-    [.9, .1],
-    [.45, .06],
-  ];
+  const entranceDuration = 4800;
+  const spiralTurns = 2;
+  const centreScale = .55;
+  const spiralStartAngle = -Math.PI * .75;
 
   function setState(next) {
     state = next;
@@ -62,49 +56,69 @@
     return matterPromise;
   }
 
-  function evaluateOrbitSegment(previous, start, end, next, amount, width, height) {
-    const progress = clamp(amount);
-    const squared = progress * progress;
-    const cubed = squared * progress;
-    const interpolate = (axis) => .5 * (
-      (2 * start[axis])
-      + (-previous[axis] + end[axis]) * progress
-      + (2 * previous[axis] - 5 * start[axis] + 4 * end[axis] - next[axis]) * squared
-      + (-previous[axis] + 3 * start[axis] - 3 * end[axis] + next[axis]) * cubed
-    );
-    return {
-      x: interpolate(0) * width,
-      y: interpolate(1) * height,
-    };
+  function buildArcLengthLookup() {
+    const samples = 240;
+    const lookup = [{ n: 0, length: 0 }];
+    let total = 0;
+    let previous = { x: 1, y: 0 };
+    for (let index = 1; index <= samples; index += 1) {
+      const n = index / samples;
+      const angle = n * spiralTurns * Math.PI * 2;
+      const radius = 1 - n;
+      const point = {
+        x: radius * Math.cos(angle),
+        y: radius * Math.sin(angle),
+      };
+      total += Math.hypot(point.x - previous.x, point.y - previous.y);
+      lookup.push({ n, length: total });
+      previous = point;
+    }
+    lookup.forEach((entry) => { entry.length /= total; });
+    return lookup;
   }
 
-  function roundedOrbitPose(index, count, progress, width, height) {
-    const phaseGap = width < 640 ? .042 : width < 1100 ? .048 : .055;
-    const itemProgress = clamp(progress * 1.12 - index * phaseGap);
-    const segmentProgress = itemProgress * (orbitPoints.length - 1);
-    const segment = Math.min(orbitPoints.length - 2, Math.floor(segmentProgress));
-    const amount = segmentProgress - segment;
-    const previous = orbitPoints[Math.max(0, segment - 1)];
-    const start = orbitPoints[segment];
-    const end = orbitPoints[segment + 1];
-    const next = orbitPoints[Math.min(orbitPoints.length - 1, segment + 2)];
-    const point = evaluateOrbitSegment(previous, start, end, next, amount, width, height);
-    const tangentPoint = evaluateOrbitSegment(
-      previous,
-      start,
-      end,
-      next,
-      Math.min(1, amount + .018),
-      width,
-      height,
-    );
-    const tangent = Math.atan2(tangentPoint.y - point.y, tangentPoint.x - point.x);
+  const spiralArcLengths = buildArcLengthLookup();
+
+  function arcLengthToParameter(progress) {
+    const target = clamp(progress);
+    let low = 0;
+    let high = spiralArcLengths.length - 1;
+    while (low < high - 1) {
+      const middle = Math.floor((low + high) / 2);
+      if (spiralArcLengths[middle].length < target) low = middle;
+      else high = middle;
+    }
+    const start = spiralArcLengths[low];
+    const end = spiralArcLengths[high];
+    const span = Math.max(.000001, end.length - start.length);
+    return lerp(start.n, end.n, (target - start.length) / span);
+  }
+
+  function spiralPose(index, count, progress, width, height) {
+    const phaseGap = width < 640 ? .035 : .045;
+    const stream = clamp(progress * (1 + phaseGap * (count - 1)) - index * phaseGap);
+    const n = arcLengthToParameter(stream);
+    const centreX = width * .5;
+    const centreY = height * .46;
+    const maxRadius = Math.hypot(width, height) * .58;
+    const angle = spiralStartAngle + n * spiralTurns * Math.PI * 2;
+    const radius = maxRadius * (1 - n);
+    const convergence = smooth((stream - .94) / .06);
+    const releaseX = (index - (count - 1) / 2) * 5 * convergence;
+    const releaseY = ((index % 3) - 1) * 4 * convergence;
+    const x = centreX + Math.cos(angle) * radius + releaseX;
+    const y = centreY + Math.sin(angle) * radius + releaseY;
+    const nextN = Math.min(1, n + .001);
+    const nextAngle = spiralStartAngle + nextN * spiralTurns * Math.PI * 2;
+    const nextRadius = maxRadius * (1 - nextN);
+    const nextX = centreX + Math.cos(nextAngle) * nextRadius;
+    const nextY = centreY + Math.sin(nextAngle) * nextRadius;
     return {
-      x: point.x,
-      y: point.y,
-      angle: tangent * .16 + (index % 2 ? .035 : -.035),
-      scale: lerp(.68, 1, smooth(clamp(itemProgress * 1.9))),
-      opacity: clamp(itemProgress * 2.4),
+      x,
+      y,
+      angle: Math.atan2(nextY - y, nextX - x),
+      scale: lerp(1, centreScale, n),
+      opacity: clamp(stream * 8),
     };
   }
 
@@ -113,18 +127,19 @@
     return Number(item.dataset.bodyWidth || 210) * scale;
   }
 
-  function applyOrbit(progress) {
+  function applySpiral(progress) {
     const width = stage.clientWidth;
     const height = stage.clientHeight;
     const items = visibleItems();
     items.forEach((item, index) => {
-      const pose = roundedOrbitPose(index, items.length, progress, width, height);
+      const pose = spiralPose(index, items.length, progress, width, height);
       item.style.setProperty("--body-width", `${itemWidth(item, width)}px`);
       item.style.opacity = pose.opacity.toFixed(3);
       item.style.transform = `translate3d(${pose.x - item.offsetWidth / 2}px, ${pose.y - item.offsetHeight / 2}px, 0) rotate(${pose.angle}rad) scale(${pose.scale})`;
       item.dataset.poseX = String(pose.x);
       item.dataset.poseY = String(pose.y);
       item.dataset.poseAngle = String(pose.angle);
+      item.dataset.poseScale = String(pose.scale);
     });
   }
 
@@ -140,7 +155,7 @@
   function stepEntrance(timestamp) {
     const progress = clamp((timestamp - entranceStart) / entranceDuration);
     story.dataset.entranceProgress = progress.toFixed(4);
-    applyOrbit(progress);
+    applySpiral(progress);
     if (progress < 1) {
       entranceFrame = requestAnimationFrame(stepEntrance);
       return;
@@ -201,7 +216,7 @@
 
   function showStaticFallback() {
     released = true;
-    applyOrbit(1);
+    applySpiral(1);
     const items = visibleItems();
     items.forEach((item, index) => {
       const width = stage.clientWidth;
@@ -223,7 +238,7 @@
   async function releaseToPhysics() {
     if (released) return;
     released = true;
-    applyOrbit(1);
+    applySpiral(1);
     setState("physics");
     scheduleCopyReveal();
     try {
@@ -237,8 +252,9 @@
     engine.gravity.y = 1;
     engine.gravity.scale = .00115;
     bodies = visibleItems().map((item) => {
-      const width = item.offsetWidth;
-      const height = item.offsetHeight;
+      const renderScale = Number(item.dataset.poseScale || 1);
+      const width = item.offsetWidth * renderScale;
+      const height = item.offsetHeight * renderScale;
       const body = Matter.Bodies.rectangle(
         Number(item.dataset.poseX),
         Number(item.dataset.poseY),
@@ -255,6 +271,7 @@
       );
       Matter.Body.setAngle(body, Number(item.dataset.poseAngle));
       body.plugin.domElement = item;
+      body.plugin.renderScale = renderScale;
       return body;
     });
     story.dataset.releaseDelta = Math.max(...bodies.map((body) => {
@@ -281,7 +298,7 @@
     bodies.forEach((body) => {
       const item = body.plugin.domElement;
       item.style.opacity = "1";
-      item.style.transform = `translate3d(${body.position.x - item.offsetWidth / 2}px, ${body.position.y - item.offsetHeight / 2}px, 0) rotate(${body.angle}rad)`;
+      item.style.transform = `translate3d(${body.position.x - item.offsetWidth / 2}px, ${body.position.y - item.offsetHeight / 2}px, 0) rotate(${body.angle}rad) scale(${body.plugin.renderScale})`;
     });
     updateCopyContrast();
     if (state !== "settled") {
@@ -376,7 +393,7 @@
       }, { rootMargin: "100% 0px", threshold: 0 });
       runtimeObserver.observe(story);
     }
-    applyOrbit(0);
+    applySpiral(0);
     if ("IntersectionObserver" in window) {
       const entranceObserver = new IntersectionObserver((entries, observer) => {
         if (!entries[0]?.isIntersecting) return;
