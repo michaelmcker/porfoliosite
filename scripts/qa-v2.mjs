@@ -195,6 +195,7 @@ try {
       await page.setViewport({ width, height: 1000, deviceScaleFactor: 1 });
       await page.goto(url, { waitUntil: "domcontentloaded" });
       await page.evaluate(() => document.fonts.ready);
+      await page.evaluate(() => document.activeElement?.blur());
 
       const hero = await page.$(".hero");
       const heroFilename = label === "desktop" ? "hero-desktop.png" : "hero-mobile.png";
@@ -226,6 +227,7 @@ try {
       }
 
       for (const sectionName of ["method", "about"]) {
+        await page.evaluate(() => document.activeElement?.blur());
         const section = await page.$(`#${sectionName}`);
         await section.screenshot({ path: path.join(screenshotDirectory, `${sectionName}-${label}.png`) });
       }
