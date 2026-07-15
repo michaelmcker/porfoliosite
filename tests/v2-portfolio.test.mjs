@@ -243,7 +243,11 @@ test("contact finale triggers once in view and preserves dynamic drag physics", 
   assert.match(finale, /function updateCopyContrast/);
   assert.match(finale, /const entranceDuration = 4800/);
   assert.match(finale, /const spiralTurns = 2/);
-  assert.match(finale, /const centreScale = \.55/);
+  assert.match(finale, /const centreScale = \.7/);
+  assert.match(finale, /function lockViewport/);
+  assert.match(finale, /function unlockViewport/);
+  assert.match(finale, /dataset\.viewportLocked/);
+  assert.match(finale, /const releaseSpan = Math\.min\(width \* \(width < 640 \? \.56 : \.36\), width < 640 \? 220 : 520\)/);
   assert.match(finale, /dataset\.poseScale/);
   assert.match(finale, /dataset\.poseProgress/);
   assert.match(finale, /plugin\.renderScale/);

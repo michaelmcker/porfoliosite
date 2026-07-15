@@ -323,9 +323,22 @@ try {
   assert.equal(await page.$eval("[data-contact-story]", (story) => story.dataset.finaleState), "idle", "finale must remain idle below the 40% visibility threshold");
   assert.equal(await page.$eval("[data-contact-story]", (story) => Number(story.dataset.entranceStarts)), 0, "finale must not start before entering view");
   await page.evaluate(({ top }) => window.scrollTo(0, top - window.innerHeight * .55), finalePosition);
-  const scrollAtTrigger = await page.evaluate(() => window.scrollY);
+  await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.viewportLocked === "true");
+  const lockedFinale = await page.evaluate(() => ({
+    scrollY: window.scrollY,
+    stageTop: document.querySelector("[data-contact-stage]").getBoundingClientRect().top,
+    rootOverflow: document.documentElement.style.overflow,
+    bodyPosition: document.body.style.position,
+  }));
+  assert.ok(Math.abs(lockedFinale.stageTop) < 2, `finale stage did not lock to the viewport top: ${JSON.stringify(lockedFinale)}`);
+  assert.equal(lockedFinale.rootOverflow, "hidden", "finale lock must suppress document scrolling during the entrance");
+  assert.equal(lockedFinale.bodyPosition, "fixed", "finale lock must hold the document body during the entrance");
+  await page.mouse.move(720, 450);
+  await page.mouse.wheel({ deltaY: 420 });
+  await new Promise((resolve) => setTimeout(resolve, 180));
+  assert.equal(await page.evaluate(() => window.scrollY), lockedFinale.scrollY, "wheel input must not move the page during the locked finale entrance");
   await page.waitForFunction(() => Number(document.querySelector("[data-contact-story]")?.dataset.entranceProgress) > .34);
-  assert.equal(await page.evaluate(() => window.scrollY), scrollAtTrigger, "finale entrance must advance without page scrolling");
+  assert.equal(await page.evaluate(() => window.scrollY), lockedFinale.scrollY, "finale entrance must advance without page scrolling");
   assert.equal(await page.$eval("[data-contact-story]", (story) => Number(story.dataset.entranceStarts)), 1, "finale must start exactly once when 40% is visible");
   const entranceSpacing = await page.$$eval("[data-contact-object]", (items) => {
     const visible = items.map((item) => {
@@ -349,8 +362,6 @@ try {
   });
   assert.ok(entranceSpacing.count >= 3, "automatic finale entrance must reveal multiple objects before release");
   assert.ok(entranceSpacing.minimum >= 52, `automatic finale objects are too tightly stacked: ${entranceSpacing.minimum}px`);
-  await page.$eval("[data-contact-stage]", (stage) => stage.scrollIntoView({ block: "center" }));
-  await page.waitForFunction(() => Math.abs(document.querySelector("[data-contact-stage]").getBoundingClientRect().top) < 2);
   const sampleSpiral = async (target) => {
     await page.waitForFunction((minimum) => Number(document.querySelector("[data-contact-object]")?.dataset.poseProgress) >= minimum, {}, target);
     return page.$eval("[data-contact-object]", (item) => {
@@ -377,27 +388,35 @@ try {
   await page.waitForFunction(() => [...document.querySelectorAll("[data-contact-object='portrait'] img")]
     .every((image) => image.complete && image.naturalWidth > 0));
   assert.equal(await page.$$eval("[data-contact-object='portrait'] img", (images) => images.length), 2, "finale portrait must include body and head layers");
-  await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "physics", { timeout: 5000 });
+  await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "physics", { timeout: 6500 });
+  const releasedViewport = await page.$eval("[data-contact-story]", (story) => ({
+    viewportLocked: story.dataset.viewportLocked,
+    rootOverflow: document.documentElement.style.overflow,
+    bodyPosition: document.body.style.position,
+  }));
+  assert.deepEqual(releasedViewport, { viewportLocked: "false", rootOverflow: "", bodyPosition: "" }, "finale must restore document scrolling before gravity begins");
   const centreRelease = await page.$$eval("[data-contact-object]", (items) => {
     const stage = document.querySelector("[data-contact-stage]");
     const centre = { x: stage.clientWidth * .5, y: stage.clientHeight * .46 };
     const visible = items.filter((item) => getComputedStyle(item).display !== "none");
     const scales = visible.map((item) => Number(item.dataset.poseScale));
-    const distances = visible.map((item) => Math.hypot(
-      Number(item.dataset.poseX) - centre.x,
-      Number(item.dataset.poseY) - centre.y,
-    ));
+    const xPositions = visible.map((item) => Number(item.dataset.poseX));
+    const yPositions = visible.map((item) => Number(item.dataset.poseY));
     const matrix = new DOMMatrix(getComputedStyle(visible[0]).transform);
     return {
       minimumScale: Math.min(...scales),
       maximumScale: Math.max(...scales),
-      maximumDistance: Math.max(...distances),
+      horizontalSpan: Math.max(...xPositions) - Math.min(...xPositions),
+      verticalSpan: Math.max(...yPositions) - Math.min(...yPositions),
+      maximumHorizontalOffset: Math.max(...xPositions.map((x) => Math.abs(x - centre.x))),
       renderedScale: Math.hypot(matrix.a, matrix.b),
     };
   });
-  assert.ok(centreRelease.minimumScale >= .54 && centreRelease.maximumScale <= .56, `finale cards did not converge at 55% scale: ${JSON.stringify(centreRelease)}`);
-  assert.ok(centreRelease.maximumDistance <= 28, `finale cards did not reach the centre release band: ${JSON.stringify(centreRelease)}`);
-  assert.ok(Math.abs(centreRelease.renderedScale - .55) <= .015, `scaled physics handoff jumped at release: ${JSON.stringify(centreRelease)}`);
+  assert.ok(centreRelease.minimumScale >= .69 && centreRelease.maximumScale <= .71, `finale cards did not retain 70% scale: ${JSON.stringify(centreRelease)}`);
+  assert.ok(centreRelease.horizontalSpan >= 420 && centreRelease.horizontalSpan <= 530, `finale cards did not occupy the distributed central release band: ${JSON.stringify(centreRelease)}`);
+  assert.ok(centreRelease.maximumHorizontalOffset <= 270, `finale release spread too far from centre: ${JSON.stringify(centreRelease)}`);
+  assert.ok(centreRelease.verticalSpan <= 40, `finale release stagger is too tall: ${JSON.stringify(centreRelease)}`);
+  assert.ok(Math.abs(centreRelease.renderedScale - .7) <= .015, `scaled physics handoff jumped at release: ${JSON.stringify(centreRelease)}`);
   await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.copyState === "visible");
   assert.equal(await page.$eval("[data-contact-story]", (story) => story.dataset.finaleState), "physics", "contact copy must resolve while objects are still dropping");
   await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "settled", { timeout: 8000 });
