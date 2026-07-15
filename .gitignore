@@ -12,3 +12,4 @@ gha-creds-*.json
 /scroll-states/
 /*.png
 /assets/design-refs/
+/.superpowers/
