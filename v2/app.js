@@ -133,15 +133,12 @@ document.querySelectorAll("[data-accommodation-viewer]").forEach((viewer) => {
 const motionVideos = [...document.querySelectorAll("[data-motion-video]")];
 const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-const motionButton = (video) => document.querySelector(`[data-motion-toggle][aria-controls="${video.id}"]`);
-
-const syncMotionButton = (video) => {
-  const button = motionButton(video);
-  if (!button) return;
+const syncMotionSurface = (video) => {
+  if (!video.hasAttribute("data-motion-surface")) return;
   const playing = !video.paused && !video.ended;
   const label = video.dataset.motionLabel || "showcase video";
-  button.textContent = playing ? "Pause" : "Play";
-  button.setAttribute("aria-label", `${playing ? "Pause" : "Play"} ${label}`);
+  video.setAttribute("aria-pressed", String(playing));
+  video.setAttribute("aria-label", `${playing ? "Pause" : "Play"} ${label}`);
 };
 
 const loadMotionVideo = (video) => {
@@ -158,24 +155,32 @@ const playMotionVideo = async (video) => {
   try {
     await video.play();
   } catch {
-    syncMotionButton(video);
+    syncMotionSurface(video);
   }
 };
 
+const toggleMotionVideo = async (video) => {
+  if (!video.paused) {
+    video.dataset.motionPausedByUser = "true";
+    video.pause();
+    return;
+  }
+  delete video.dataset.motionPausedByUser;
+  await playMotionVideo(video);
+};
+
 motionVideos.forEach((video) => {
-  const button = motionButton(video);
-  video.addEventListener("play", () => syncMotionButton(video));
-  video.addEventListener("pause", () => syncMotionButton(video));
-  button?.addEventListener("click", async () => {
-    if (!video.paused) {
-      video.dataset.motionPausedByUser = "true";
-      video.pause();
-      return;
-    }
-    delete video.dataset.motionPausedByUser;
-    await playMotionVideo(video);
-  });
-  syncMotionButton(video);
+  video.addEventListener("play", () => syncMotionSurface(video));
+  video.addEventListener("pause", () => syncMotionSurface(video));
+  if (video.hasAttribute("data-motion-surface")) {
+    video.addEventListener("click", () => toggleMotionVideo(video));
+    video.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      toggleMotionVideo(video);
+    });
+  }
+  syncMotionSurface(video);
 });
 
 if (!motionPreference.matches && "IntersectionObserver" in window) {

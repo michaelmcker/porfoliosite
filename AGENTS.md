@@ -30,7 +30,7 @@ Stop at this gate for visual approval. Do not extend the system to the other fou
 ## V2 Design Contract
 
 - Type: local DM Sans for functional text and workflow titles; local Fraunces is limited to selective editorial moments such as the hero emphasis, metrics, and music interlude. Monospace is reserved for real technical artifacts.
-- Palette: neutral canvas and surfaces still carry Selected Work, Outcomes, Experience, and Contact. The full-bleed workflow uses stronger content blue, dashboard green, publishing apricot, prospecting yellow, and website violet; the same yellow and green reappear as full-bleed Method and About bands so colour is not isolated to one section.
+- Palette: avoid pastel homepage fields. The workflow uses dark forest, petrol, rust, ochre, and aubergine; Bias to Build uses hard gold; About uses deep teal; Boutique Accommodation and the proposal use acid green and signal orange bands. Neutral canvas still carries the remaining work, Outcomes, Experience, and Contact.
 - Composition: laptops, browser windows, documents, and the About portrait are authored objects on an open canvas, not repeated cards.
 - Avoid heavy black outlines, graph-paper textures, route dots, harsh rules, mono labels, and box-within-box framing.
 - Motion must remain optional, pausable, keyboard accessible, and complete under `prefers-reduced-motion`.
@@ -39,12 +39,12 @@ Stop at this gate for visual approval. Do not extend the system to the other fou
 
 - Desktop workflow accordion begins at 1100px and uses horizontal expanding spines.
 - Below 1100px it becomes a vertical accordion with a dedicated readable composition, not a panned desktop diagram.
-- Active workflow hierarchy is always compact black DM Sans title, larger description and CTA, then dominant media. Do not move the image above the copy or let the title overpower the artwork.
+- Active workflow hierarchy is always compact high-contrast DM Sans title, larger description and CTA, then dominant media on a light artifact surface. Desktop rail labels are 68px wide, visibly larger, and bold. Do not move the image above the copy or let the title overpower the artwork.
 - Selection changes only on click, tap, Enter, or Space. Arrow keys, Home, and End move focus. Inactive regions are `inert` and `aria-hidden`.
 - Boutique Accommodation retains its 69-frame wheel, keyboard, and touch interaction with boundary release.
-- Showcase videos are lazy-loaded, have Play/Pause controls, and do not autoplay when reduced motion is requested.
-- The V2 hero reuses the existing responsive system-map film and approved static poster as a full-bleed background. Hero copy overlays the reserved left field with a readability fade, matching the V1 composition without importing V1 code.
-- Selected Work gives its media column more space than its copy column. Laptop and browser objects should remain the dominant element at desktop widths and collapse to a no-overflow single column below 900px.
+- Showcase videos are lazy-loaded and directly clickable/focusable to pause or play; do not place visible Pause buttons over the media. Reduced motion must remain static until the user explicitly starts a video.
+- The V2 hero reuses the responsive system-map film and approved poster inside a raised white card with a soft drop shadow. Do not return it to a full-bleed background treatment.
+- Selected Work gives its media column more space than its copy column. RCCV sits on a dark device stage. Boutique Accommodation uses a wide black browser with the real 69-frame interaction and a curved-arrow `Try to scroll` cue. Boutique and the proposal are full-bleed hard-colour bands.
 - About reuses the interactive portrait inside the brown arched frame. The composed static portrait is the loading fallback.
 
 ## Presentation-Publishing Source Truth

@@ -129,6 +129,7 @@ try {
   await page.keyboard.press("ArrowDown");
   assert.equal(await page.evaluate(() => document.activeElement?.dataset.workflowTrigger), "dashboard");
 
+  await page.waitForFunction(() => document.querySelector("[data-accommodation-viewer]")?.dataset.frameIndex === "0");
   await page.click("[data-accommodation-next]");
   assert.equal(await page.$eval("[data-accommodation-viewer]", (node) => node.dataset.frameIndex), "1");
   await page.click("[data-accommodation-previous]");
@@ -170,9 +171,10 @@ try {
   await reducedPage.goto(url, { waitUntil: "domcontentloaded" });
   assert.equal(await reducedPage.$$eval("[data-motion-video]", (videos) => videos.every((video) => video.paused && !video.autoplay)), true);
   assert.equal(requestPaths.some((requestPath) => /\.(?:mp4|webm)$/.test(requestPath)), false);
-  await reducedPage.click("[data-motion-toggle]");
-  await reducedPage.waitForFunction(() => document.querySelector("[data-motion-toggle]")?.getAttribute("aria-label")?.startsWith("Pause"));
-  await reducedPage.click("[data-motion-toggle]");
+  await reducedPage.click("[data-motion-surface]");
+  await reducedPage.waitForFunction(() => document.querySelector("[data-motion-surface]")?.getAttribute("aria-label")?.startsWith("Pause"));
+  assert.equal(await reducedPage.$eval("[data-motion-surface]", (video) => video.getAttribute("aria-pressed")), "true");
+  await reducedPage.click("[data-motion-surface]");
   assert.equal(await reducedPage.$eval("[data-motion-video]", (video) => video.paused), true);
   await reducedPage.close();
 
@@ -202,6 +204,10 @@ try {
       const heroFilename = label === "desktop" ? "hero-desktop.png" : "hero-mobile.png";
       const workflowScreenshotPrefix = label === "desktop" ? "workflow-desktop-" : "workflow-mobile-";
       await hero.screenshot({ path: path.join(screenshotDirectory, heroFilename) });
+
+      const accommodationFilename = label === "desktop" ? "work-desktop-accommodation.png" : "work-mobile-accommodation.png";
+      const accommodationWork = await page.$("[data-work='accommodation']");
+      await accommodationWork.screenshot({ path: path.join(screenshotDirectory, accommodationFilename) });
 
       for (const key of workflowKeys) {
         await page.click(`[data-workflow-trigger='${key}']`);

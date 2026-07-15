@@ -31,24 +31,24 @@ Legacy subdued workflow tints remain available for detail-page surfaces:
 - Prospecting: `#F2EBCF`
 - Website production: `#EBE7F3`
 
-The homepage accordion uses a stronger assessment palette: `#B9C8FF`, `#B5DEBE`, `#FFC09C`, `#F3D76D`, and `#D2B6F0`. Selected Work, Outcomes, Experience, and Contact remain neutral. Prospecting yellow carries into the full-bleed Bias to Build band, and dashboard green carries into the full-bleed About band, distributing the playful colour rhythm beyond the accordion.
+The homepage does not use the pastel workflow tints as large fields. Its accordion uses dark forest `#234A36`, petrol `#164A5A`, rust `#A8432D`, ochre `#755711`, and aubergine `#49345F`, with white type and a light artifact surface. The first workflow is green, not blue. Outside the accordion, Boutique Accommodation uses acid green `#C7DB35`, the proposal uses signal orange `#F06B3D`, Bias to Build uses hard gold `#E3A916`, and About uses deep teal `#0F675F`.
 
 ### V2 Typography
 
 - Functional and body type: local DM Sans variable font.
-- Workflow titles: local DM Sans variable font in black, kept smaller than their supporting image; workflow descriptions run larger for easier reading.
+- Workflow titles: local DM Sans variable font in high-contrast white, kept smaller than their supporting image; workflow descriptions run larger for easier reading. Inactive desktop rail names are larger and 800 weight.
 - Editorial accents: local Fraunces variable font, used selectively for the hero emphasis, metrics, personal statements, and the music interlude.
 - Technical type: monospace only inside real technical artifacts.
 - Body leading: approximately `1.55-1.7`; paragraph measure and spacing should remain stable at every breakpoint.
 
 ### V2 Composition and Motion
 
-- Use a Z-pattern for Selected Work and let each real artifact sit on an open canvas. At desktop widths, the media column is wider than the copy column and the project names remain compact enough for the laptop and browser objects to lead.
+- Use a Z-pattern for Selected Work and let each real artifact lead. At desktop widths, the media column is wider than the copy column and project names remain compact. RCCV is grounded on a dark stage; Boutique uses a wide black browser with a curved scroll cue; Boutique and the proposal break the neutral sequence with hard full-bleed colour bands.
 - Give media objects consistent soft lighting, shadow, caption scale, and whitespace without forcing them into a universal card.
 - Centre sectional anchors where it improves rhythm: workflow introduction, outcomes, and experience.
 - The workflow accordion expands over approximately 480ms with `cubic-bezier(.22, 1, .36, 1)` and becomes vertical below 1100px. Each active state puts its title first, description and CTA second, and dominant media below.
-- Content must remain complete with reduced motion. Videos remain lazy and user-controllable.
-- The V2 hero reuses the existing responsive system-map film as a full-bleed background, with copy over the film's reserved left field and a directional readability fade. The About portrait keeps the interactive embed inside the authored brown arch frame, with a composed static portrait visible while it loads.
+- Content must remain complete with reduced motion. Videos remain lazy and user-controllable directly from the focusable media surface, without visible Pause buttons.
+- The V2 hero uses the responsive system-map film inside a raised white card with a soft shadow, beside the copy rather than behind it. The About portrait keeps the interactive embed inside the authored brown arch frame on the deep-teal section, with a composed static portrait visible while it loads.
 
 ### V2 Publishing Artwork
 

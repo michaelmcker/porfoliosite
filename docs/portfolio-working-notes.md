@@ -198,13 +198,14 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 
 ### V2 Assessment Rules
 
-- Use local DM Sans for functional copy and workflow titles. Keep workflow names compact, black, and subordinate to the artwork; make the description comfortably larger. Reserve local Fraunces for selective editorial or personal moments.
-- Keep Selected Work, Outcomes, Experience, and Contact neutral. The workflow remains a full-bleed colour event using the stronger blue, green, apricot, yellow, and violet assessment palette. Reuse the prospecting yellow for the full-bleed Bias to Build band and dashboard green for the full-bleed About band so the palette has a deliberate page-wide rhythm.
+- Use local DM Sans for functional copy and workflow titles. Keep active workflow names compact and white; make the supporting description comfortably larger. Desktop rail labels are larger, bold, and high contrast. Reserve local Fraunces for selective editorial or personal moments.
+- Do not use the pastel assessment colours as large homepage fields. Use dark forest, petrol, rust, ochre, and aubergine for the workflow; acid green for Boutique Accommodation; signal orange for the proposal; hard gold for Bias to Build; and deep teal for About. Keep the remaining work, Outcomes, Experience, and Contact neutral.
 - Treat laptops, browser windows, proposal sheets, album artwork, and the About portrait as authored objects on an open canvas.
 - Keep the Renaissance portrait in About only; never place it in the hero.
 - Keep the interactive portrait inside the existing brown arched frame and show the composed portrait fallback before the iframe is ready.
-- Reuse the responsive system-map film as a full-bleed hero background with Play/Pause and reduced-motion support. Overlay the hero copy in the reserved left field with a directional fade for readability, following the V1 composition without importing V1 code.
-- Selected Work keeps the real Z-pattern and existing media/interactions. Desktop rows allocate more width to media than copy, project names are smaller, and laptop/browser objects lead the composition without clipping.
+- Reuse the responsive system-map film in a raised white hero card with a soft drop shadow, beside the hero copy. The hero subhead is: `I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale. And sometimes stuff just for fun.`
+- Selected Work keeps the real Z-pattern and existing media/interactions. Desktop rows allocate more width to media than copy, project names are smaller, and laptop/browser objects lead without clipping. RCCV sits on a dark stage. Boutique uses a wide black browser and curved-arrow `Try to scroll` cue. Boutique and the proposal use full-bleed hard-colour bands.
+- Hero, RCCV, and Cool Runnings videos have no visible Pause overlays. The focusable media surface itself toggles motion by click, Enter, or Space; reduced-motion users see static posters until they explicitly start playback.
 - Desktop workflow states use a full-width expanding-spine accordion at 1100px and wider; smaller layouts use vertical rows with mobile-readable artwork. In every active state, title and description precede a substantially larger image.
 - Outcomes are four centred metrics with unchanged claims. Experience is a centred ledger without route dots or timeline markers.
 - The V2 first gate stops after the homepage and Presentation Publishing page. The remaining four workflow pages wait for approval.

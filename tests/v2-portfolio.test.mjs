@@ -49,7 +49,7 @@ test("V2 contains the required sections and selected work in the approved order"
   }
 });
 
-test("V2 restores the existing hero film and authored portrait frame", async () => {
+test("V2 restores the existing hero film as a raised card and keeps the authored portrait frame", async () => {
   const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
 
   assert.match(html, /<video[^>]+id="motion-video-hero"[^>]+data-motion-video[^>]+data-motion-label="portfolio system map"/);
@@ -58,12 +58,12 @@ test("V2 restores the existing hero film and authored portrait frame", async () 
   assert.doesNotMatch(html, /class="system-trace"/);
   assert.match(html, /<div class="portrait-frame">\s*<iframe[^>]+portrait-final\/embed\.html/s);
   assert.match(css, /\.portrait-frame\s*\{[^}]*aspect-ratio:\s*2\s*\/\s*3[^}]*border:\s*7px solid #725a3d[^}]*border-radius:[^}]*background(?:-image)?:[^}]*portrait\/poster\.png/s);
-  assert.match(html, /<section class="hero" id="hero"/);
-  assert.doesNotMatch(html, /<section class="hero page-frame"/);
-  assert.match(css, /\.hero\s*\{[^}]*position:\s*relative[^}]*overflow:\s*hidden/s);
-  assert.match(css, /\.hero-system-media\s*\{[^}]*position:\s*absolute[^}]*inset:\s*0[^}]*width:\s*100%[^}]*height:\s*100%/s);
-  assert.match(css, /\.hero-system-media video\s*\{[^}]*width:\s*100%[^}]*height:\s*100%[^}]*object-fit:\s*cover/s);
-  assert.match(css, /\.hero-copy\s*\{[^}]*position:\s*relative[^}]*z-index:\s*2/s);
+  assert.match(html, /<section class="hero page-frame" id="hero"/);
+  assert.match(html, /I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale\. And sometimes stuff just for fun\./);
+  assert.doesNotMatch(html, /hero-motion-toggle/);
+  assert.match(css, /\.hero\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1\.05fr\)\s*minmax\(420px,\s*\.95fr\)/s);
+  assert.match(css, /\.hero-system-media\s*\{[^}]*position:\s*relative[^}]*background:\s*var\(--surface\)[^}]*box-shadow:/s);
+  assert.match(css, /\.hero-system-media video\s*\{[^}]*width:\s*100%[^}]*aspect-ratio:\s*4\s*\/\s*3[^}]*object-fit:\s*cover/s);
   assert.match(app, /portrait-frame[\s\S]*?classList\.add\(["']is-loaded["']\)/);
 });
 
@@ -75,7 +75,21 @@ test("selected work gives properly scaled laptop and browser objects more room t
   assert.match(css, /\.work-object-accommodation,[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1\.32fr\)\s*minmax\(260px,\s*\.68fr\)/s);
   assert.match(css, /\.work-copy h3\s*\{[^}]*font-size:\s*clamp\(2\.2rem,\s*3\.4vw,\s*4rem\)/s);
   assert.match(css, /\.laptop-object\s*\{[^}]*width:\s*min\(112%,\s*900px\)/s);
-  assert.match(css, /\.browser-object-tall\s*\{[^}]*width:\s*min\(108%,\s*820px\)/s);
+  assert.match(css, /\.browser-object-tall\s*\{[^}]*width:\s*min\(116%,\s*960px\)/s);
+});
+
+test("boutique and proposal become hard-colour bands with a wide black scrollable browser", async () => {
+  const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
+
+  assert.match(html, /class="accommodation-showcase"[\s\S]*?data-accommodation-viewer/s);
+  assert.match(html, /class="accommodation-scroll-cue"[\s\S]*?Try to scroll[\s\S]*?<svg/s);
+  assert.match(css, /--work-accommodation:\s*#C7DB35/);
+  assert.match(css, /--work-proposal:\s*#F06B3D/);
+  assert.match(css, /\.work-object-accommodation::before\s*\{[^}]*background:\s*var\(--work-accommodation\)/s);
+  assert.match(css, /\.work-object-proposal::before\s*\{[^}]*background:\s*var\(--work-proposal\)/s);
+  assert.match(css, /\.laptop-object\s*\{[^}]*background:\s*var\(--laptop-stage\)[^}]*padding:/s);
+  assert.match(css, /\.browser-object-tall\s*\{[^}]*width:\s*min\(116%,\s*960px\)[^}]*border:\s*10px solid var\(--ink\)/s);
+  assert.match(css, /\.work-object-accommodation \.browser-viewport img\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*10/s);
 });
 
 test("all five workflow controls have unique accessible trigger and panel wiring", async () => {
@@ -138,16 +152,22 @@ test("large showcase videos are lazy, pausable motion with a reduced-motion opt 
   const controls = [...html.matchAll(/<button[^>]+data-motion-toggle[^>]*>/g)].map((match) => match[0]);
 
   assert.equal(videos.length, 3);
-  assert.equal(controls.length, 3);
+  assert.equal(controls.length, 0);
   for (const video of videos) {
     assert.match(video, /data-motion-label="[^"]+"/);
+    assert.match(video, /data-motion-surface/);
+    assert.match(video, /tabindex="0"/);
+    assert.match(video, /role="button"/);
     assert.doesNotMatch(video, /\sautoplay(?:\s|>)/);
     assert.match(video, /preload="none"/);
     assert.doesNotMatch(video, /<source[^>]+\ssrc=/);
     assert.match(video, /<source[^>]+data-src=/);
   }
-  assert.match(css, /\.motion-toggle[\s\S]*?(?:min-height|height):\s*44px/);
+  assert.doesNotMatch(css, /\.motion-toggle\s*\{/);
   assert.match(app, /data-motion-video/);
+  assert.match(app, /data-motion-surface/);
+  assert.match(app, /addEventListener\(["']keydown["']/);
+  assert.match(app, /aria-pressed/);
   assert.match(app, /IntersectionObserver/);
   assert.match(app, /\.play\(\)/);
   assert.match(app, /\.pause\(\)/);
@@ -157,14 +177,16 @@ test("large showcase videos are lazy, pausable motion with a reduced-motion opt 
 test("workflow showcase is full bleed, more vivid, and orders copy above dominant media", async () => {
   const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
 
-  for (const color of ["#B9C8FF", "#B5DEBE", "#FFC09C", "#F3D76D", "#D2B6F0"]) {
-    assert.ok(css.includes(color), `missing vivid workflow colour ${color}`);
+  for (const color of ["#234A36", "#164A5A", "#A8432D", "#755711", "#49345F"]) {
+    assert.ok(css.includes(color), `missing hard workflow colour ${color}`);
   }
 
   assert.match(css, /\.workflow-accordion\s*\{[^}]*width:\s*100%/s);
-  assert.match(css, /\.workflow-item\s*\{[^}]*color:\s*var\(--ink\)/s);
-  assert.match(css, /\.workflow-trigger\s*\{[^}]*color:\s*#111310/s);
+  assert.match(css, /\.workflow-item\s*\{[^}]*color:\s*var\(--canvas\)/s);
+  assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*68px[^}]*color:\s*var\(--surface\)/s);
+  assert.match(css, /\.workflow-trigger strong\s*\{[^}]*font-size:\s*\.98rem[^}]*font-weight:\s*800/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)[^}]*grid-template-rows:\s*auto minmax\(0,\s*1fr\)/s);
+  assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*var\(--canvas\)/s);
   assert.match(css, /\.workflow-panel img\s*\{[^}]*max-height:\s*none/s);
   assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*["']DM Sans["'][^}]*font-size:\s*clamp\(2\.4rem,\s*3\.8vw,\s*4\.4rem\)/s);
   assert.match(css, /\.workflow-copy p\s*\{[^}]*font-size:\s*clamp\(1\.16rem,\s*1\.6vw,\s*1\.42rem\)/s);
@@ -183,8 +205,8 @@ test("method and about spread the accordion palette through full-bleed colour ba
 
   assert.match(html, /<section class="build-bias"[^>]*>\s*<div class="build-bias-inner page-frame">/s);
   assert.match(html, /<section class="about"[^>]*>\s*<div class="about-inner page-frame">/s);
-  assert.match(css, /\.build-bias\s*\{[^}]*background:\s*var\(--prospecting-vivid\)/s);
-  assert.match(css, /\.about\s*\{[^}]*background:\s*var\(--dashboard-vivid\)/s);
+  assert.match(css, /\.build-bias\s*\{[^}]*background:\s*var\(--method-hard\)/s);
+  assert.match(css, /\.about\s*\{[^}]*background:\s*var\(--about-hard\)[^}]*color:\s*var\(--surface\)/s);
   assert.match(css, /\.build-bias-inner\s*\{[^}]*display:\s*grid/s);
   assert.match(css, /\.about-inner\s*\{[^}]*display:\s*grid/s);
 });
@@ -239,9 +261,11 @@ test("browser QA covers runtime focus, motion, inputs, dialog restoration, and t
   const qa = await readFile(new URL("../scripts/qa-v2.mjs", import.meta.url), "utf8");
   for (const marker of [
     "puppeteer-core", "inert", "aria-hidden", "ArrowDown", "data-accommodation-next",
-    "deltaMode", "prefers-reduced-motion", "data-motion-toggle", "data-dashboard-dialog",
+    "deltaMode", "prefers-reduced-motion", "data-dashboard-dialog",
+    "data-motion-surface",
     "1440", "1024", "768", "390", "320", "scrollWidth",
     "workflow-desktop-", "workflow-mobile-", "hero-desktop.png", "hero-mobile.png",
+    "work-desktop-accommodation.png", "work-mobile-accommodation.png",
   ]) {
     assert.ok(qa.includes(marker), `browser QA missing ${marker}`);
   }
