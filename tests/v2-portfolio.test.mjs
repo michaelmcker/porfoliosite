@@ -20,11 +20,12 @@ async function readWorkflow(name) {
   return readV2(`workflows/${name}`);
 }
 
-test("V2 uses one photographic studio system instead of unrelated colour bands", async () => {
+test("V2 keeps every Selected Work project stage white except the black music interlude", async () => {
   const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
 
-  for (const project of ["rccv", "accommodation", "cool-runnings", "proposal", "elevators"]) {
-    assert.match(html, new RegExp(`data-project-environment="${project}"`));
+  assert.doesNotMatch(html, /data-project-environment=/);
+  for (const removedBackground of ["cool-runnings-garden-v3.png", "rccv-pews-real.webp", "boutique-okanagan-v3.png", "proposal-new-york-v3.png", "elevator-lobby-v2.png"]) {
+    assert.ok(!css.includes(removedBackground), `${removedBackground} should not remain on a project stage`);
   }
   assert.match(css, /--accent:\s*#E3A916/i);
   assert.doesNotMatch(css, /--work-accommodation|--work-proposal|--content-vivid|--about-hard/);
@@ -36,12 +37,17 @@ test("accordion stages selection and About bridges section-wide pointer input", 
   const [html, app] = await Promise.all([readV2("index.html"), readV2("app.js")]);
 
   assert.match(html, /data-about-stage/);
-  assert.match(html, /data-about-breakout/);
-  assert.match(html, /class="about-curly-arrow"/);
+  assert.doesNotMatch(html, /data-about-breakout/);
+  assert.doesNotMatch(html, /class="about-curly-arrow"/);
   assert.match(html, /src="portrait\/embed\.html"/);
   assert.match(app, /portfolio-portrait-pointer/);
   assert.match(app, /data-workflow-transitioning/);
   assert.match(app, /requestAnimationFrame/);
+  assert.match(html, /class="about-questionable">Even when the practical value is questionable\.<\/span>/);
+  assert.match(html, /data-about-scroll-story/);
+  assert.match(html, /class="about-process-line"/);
+  assert.match(html, /There’s still value in the process\./);
+  assert.match(app, /--about-progress/);
 });
 
 test("all five V2 workflow routes share the detailed public-safe contract", async () => {
@@ -56,6 +62,7 @@ test("all five V2 workflow routes share the detailed public-safe contract", asyn
     assert.match(html, /id="human-review"/);
     assert.match(html, /id="proof-and-constraints"/);
     assert.match(html, /id="related-work"/);
+    assert.doesNotMatch(html, /class="eyebrow"/);
     assert.ok((html.match(/class="workflow-step"/g) || []).length >= 5, `${route} needs at least five steps`);
   }
 });
@@ -81,7 +88,12 @@ test("V2 contains the required sections and selected work in the approved order"
     assert.match(html, new RegExp(`id="${id}"`), `missing #${id}`);
   }
 
-  assert.match(html, /Open\.\s*Test\.\s*Send\.\s*Publish\.\s*Measure\./s);
+  assert.match(html, /Understand\.\s*Shape\.\s*Build\.\s*Measure\.\s*Refine\.\s*Systematise\./s);
+  assert.match(html, /<h2 id="method-title">Bias to build\.<\/h2>/);
+  assert.doesNotMatch(html, /class="bias-step"><span>/);
+  assert.doesNotMatch(html, /class="bias-flow"/);
+  assert.match(html, /class="bias-step bias-step-build"[\s\S]*?class="bias-step-turn"/);
+  assert.doesNotMatch(html, /class="eyebrow"/);
   assert.match(html, /A little about me\./);
 
   const workOrder = [
@@ -109,7 +121,7 @@ test("V2 restores the existing hero film as a raised card and keeps the authored
   assert.match(html, /data-src="\.\.\/assets\/videos\/portfolio-hero-system-map-mobile-1080p\.mp4"/);
   assert.doesNotMatch(html, /class="system-trace"/);
   assert.match(html, /<div class="portrait-frame">\s*<iframe[^>]+src="portrait\/embed\.html"/s);
-  assert.match(css, /\.portrait-frame\s*\{[^}]*aspect-ratio:\s*1023\s*\/\s*1537[^}]*border:\s*16px ridge/s);
+  assert.match(css, /\.portrait-frame\s*\{[^}]*aspect-ratio:\s*1023\s*\/\s*1537[^}]*border:\s*7px solid #725a3d/s);
   assert.match(html, /<section class="hero page-frame" id="hero"/);
   assert.match(html, /I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale\. And sometimes stuff just for fun\./);
   assert.doesNotMatch(html, /hero-motion-toggle/);
@@ -120,25 +132,67 @@ test("V2 restores the existing hero film as a raised card and keeps the authored
 });
 
 test("selected work gives properly scaled laptop and browser objects more room than the copy", async () => {
-  const css = await readV2("styles.css");
+  const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
 
   assert.match(css, /--page-width:\s*1380px/);
   assert.match(css, /\.work-object\s*\{[^}]*grid-template-columns:\s*minmax\(300px,\s*\.78fr\)\s*minmax\(520px,\s*1\.22fr\)/s);
   assert.match(css, /\.work-object-accommodation,[\s\S]*?grid-template-columns:\s*minmax\(520px,\s*1\.25fr\)\s*minmax\(300px,\s*\.75fr\)/s);
-  assert.match(css, /\.work-copy h3\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*clamp\(2\.35rem,\s*4vw,\s*4\.6rem\)/s);
-  assert.match(css, /\.laptop-object\s*\{[^}]*width:\s*min\(100%,\s*880px\)/s);
+  assert.match(css, /\.work-copy h3\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*var\(--type-h3\)/s);
+  assert.match(css, /\.laptop-object\s*\{[^}]*width:\s*min\(112%,\s*980px\)/s);
+  assert.match(html, /<h3>Bringing a community site to life\.<\/h3>/);
+  assert.match(html, /Explore the interactive Stations of the Cross/);
+  assert.match(html, /<figure class="laptop-object">/);
+  assert.match(css, /\.laptop-object\s*\{[^}]*background:\s*transparent/s);
+  assert.match(css, /\.laptop-object video\s*\{[^}]*mask-image:\s*url\("\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.png"\)/s);
+  await access(new URL("../assets/device-mockups/laptop-three-quarter-rccv-cutout.png", v2Url));
   assert.match(css, /\.browser-object\s*\{[^}]*width:\s*100%/s);
 });
 
-test("project environments replace unrelated colour bands and keep a wide black scrollable browser", async () => {
-  const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
+test("project labels and the accommodation cue are specific and keep a wide black scrollable browser", async () => {
+  const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
 
   assert.match(html, /class="accommodation-showcase"[\s\S]*?data-accommodation-viewer/s);
-  assert.match(html, /class="accommodation-scroll-cue"[\s\S]*?Try to scroll[\s\S]*?<svg/s);
-  assert.match(css, /data-project-environment="accommodation"[^}]*boutique-forest\.jpg/);
-  assert.match(css, /data-project-environment="proposal"[^}]*proposal-city\.jpg/);
+  assert.match(html, /class="accommodation-scroll-cue"[\s\S]*?<svg[\s\S]*?Scroll the preview/s);
+  assert.doesNotMatch(html, /accommodation-status|accommodation-controls|data-accommodation-(?:previous|next)/);
+  assert.match(html, /<p class="work-meta">Website \+ SEO<\/p>/);
+  assert.match(html, /<p class="work-meta">Sales enablement · GTM engineering<\/p>/);
+  assert.match(html, /<h3>Elevating a boutique accommodation site\.<\/h3>\s*<p class="work-meta">Boutique accommodation · Web development<\/p>/);
+  assert.match(html, /<h3>From no web presence to a lead magnet\.<\/h3>\s*<p class="work-meta">Website \+ SEO<\/p>/);
+  assert.match(css, /\.work-copy\s*\{[^}]*background:\s*transparent[^}]*box-shadow:\s*none/s);
+  assert.doesNotMatch(app, /requestedProjectStage/);
   assert.match(css, /\.screen-bezel\s*\{[^}]*border:[^}]*solid #101312[^}]*box-shadow:/s);
   assert.match(css, /\.browser-object-tall \.browser-viewport\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*10/s);
+  assert.match(css, /\.accommodation-showcase\s*\{[^}]*min-width:\s*0/s);
+  assert.match(css, /\.accommodation-scroll-cue\s*\{[^}]*top:\s*clamp\(-52px,\s*-3\.5vw,\s*-42px\)/s);
+});
+
+test("accordion uses wider layered spines, overlaps them tightly, and hides the active desktop tab", async () => {
+  const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
+
+  assert.doesNotMatch(html, /workflow-number/);
+  assert.match(css, /\.workflow-item\s*\{[^}]*flex:\s*0\s+0\s+64px[^}]*margin-left:\s*-22px/s);
+  assert.match(css, /\.workflow-item\.is-active\s*\{[^}]*flex-basis:\s*calc\(100%\s*-\s*168px\)[^}]*flex-grow:\s*0/s);
+  assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*width:\s*0[^}]*opacity:\s*0[^}]*pointer-events:\s*none/s);
+  assert.match(css, /\.workflow-trigger\s*\{[^}]*box-shadow:\s*inset/s);
+  assert.match(css, /\.workflow-accordion\s*\{[^}]*min-height:\s*880px/s);
+  assert.match(css, /\.workflow-panel-inner\s*\{[^}]*min-height:\s*880px/s);
+  assert.match(css, /\.workflow-panel figure img\s*\{[^}]*max-height:\s*680px/s);
+});
+
+test("About holds a sticky scroll story before releasing into the rest of the page", async () => {
+  const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
+
+  assert.match(html, /data-about-scroll-story[\s\S]*?class="about-story-sticky"/s);
+  assert.match(css, /\.about-scroll-story\s*\{[^}]*min-height:\s*280svh/s);
+  assert.match(css, /\.about-story-sticky\s*\{[^}]*position:\s*sticky[^}]*min-height:\s*100svh/s);
+  assert.match(html, /class="about-context"/);
+  assert.match(css, /\.about-context[\s\S]*?opacity:\s*calc\(1\s*-\s*var\(--about-focus,\s*0\)\)/s);
+  assert.match(css, /\.about-questionable\s*\{[^}]*font-size:\s*clamp\([^;]*var\(--about-growth/s);
+  assert.doesNotMatch(css, /\.about-questionable\s*\{[^}]*scale\(/s);
+  assert.match(css, /\.portrait-frame\s*\{[^}]*border-radius:\s*48%\s+48%\s+12px\s+12px\s*\/\s*13%\s+13%\s+12px\s+12px/s);
+  assert.match(css, /\.about-process-line path\s*\{[^}]*stroke-dasharray:/s);
+  assert.match(css, /\.contact\s*\{[^}]*background:\s*var\(--accent\)/s);
+  assert.match(css, /\.contact h2\s*\{[^}]*color:\s*#1f1909/s);
 });
 
 test("all five workflow controls have unique accessible trigger and panel wiring", async () => {
@@ -172,30 +226,74 @@ test("all five workflow controls have unique accessible trigger and panel wiring
   assert.match(html, /href="workflows\/presentation-publishing\.html"/);
 });
 
-test("boutique accommodation exposes the real 69-frame sequence to wheel and keyboard input", async () => {
+test("boutique accommodation exposes the real 69-frame sequence without overlay controls", async () => {
   const [html, app] = await Promise.all([readV2("index.html"), readV2("app.js")]);
 
   assert.match(html, /data-accommodation-viewer[^>]+data-frame-sequences="overview:17,treehouse:28,cabin:24"[^>]+tabindex="0"/);
   assert.match(html, /data-accommodation-frame/);
-  assert.match(html, /data-accommodation-status[^>]+aria-live="polite"/);
   assert.match(html, /aria-describedby="accommodation-instructions"/);
   assert.match(html, /id="accommodation-instructions"/);
-  assert.equal([...html.matchAll(/data-accommodation-(?:previous|next)/g)].length, 2);
+  assert.equal([...html.matchAll(/data-accommodation-(?:previous|next)/g)].length, 0);
 
   assert.match(app, /data-accommodation-viewer/);
   assert.match(app, /frameSequences/);
   assert.match(app, /addEventListener\(["']wheel["']/);
   assert.match(app, /passive:\s*false/);
   assert.match(app, /deltaMode/);
+  assert.match(app, /wheelAccumulator/);
+  assert.match(app, /pixelsPerFrame\s*=\s*28/);
   assert.match(app, /preventDefault\(\)/);
   assert.match(app, /prefers-reduced-motion:\s*reduce/);
   assert.match(app, /new URL\(source,\s*document\.baseURI\)\.href/);
+  assert.match(app, /setFrameFromScrollProgress/);
   for (const key of ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"]) {
     assert.ok(app.includes(key), `missing accommodation keyboard support for ${key}`);
   }
 });
 
-test("large showcase videos stay lazy and autonomous without pause-button chrome", async () => {
+test("V2 uses a real scroll-scrub accommodation video and keeps a frame fallback", async () => {
+  const [html, app] = await Promise.all([readV2("index.html"), readV2("app.js")]);
+
+  assert.match(html, /data-accommodation-scrub/);
+  assert.match(html, /showcase-scroll\.webm/);
+  assert.match(html, /showcase-scroll\.mp4/);
+  assert.match(html, /data-accommodation-fallback/);
+  assert.match(app, /loadedmetadata/);
+  assert.match(app, /currentTime/);
+  assert.match(app, /1\s*\/\s*25/);
+  assert.doesNotMatch(app, /setFrameFromScrollProgress/);
+
+  await access(new URL("../assets/videos/accommodation/showcase-scroll.mp4", v2Url));
+  await access(new URL("../assets/videos/accommodation/showcase-scroll.webm", v2Url));
+});
+
+test("V2 refinement keeps text and motion responsive", async () => {
+  const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
+
+  assert.match(html, /class="hero-fun"><em>And sometimes, stuff just for fun\.<\/em><\/span>/);
+  assert.match(html, /class="bias-route/);
+  assert.equal((html.match(/class="bias-step-arrow/g) || []).length, 0);
+  assert.match(css, /translate3d\(calc\(36px\s*\*\s*\(1\s*-\s*var\(--object-reveal/);
+  assert.match(css, /\.about-questionable\s*\{[^}]*width:\s*auto[^}]*max-width:\s*100%/s);
+  assert.match(css, /\.about-questionable\s*\{[^}]*color:\s*inherit[^}]*font-family:\s*inherit/s);
+  assert.doesNotMatch(css, /\.experience-ledger(?: article)?\s*\{[^}]*border-/s);
+});
+
+test("V2 includes an isolated local-search case study", async () => {
+  const [html, script] = await Promise.all([
+    readV2("work/local-search-magnet.html"),
+    readV2("work/local-search-magnet.js"),
+  ]);
+
+  assert.match(html, /local-search-magnet\.css/);
+  assert.match(html, /local-search-magnet\.js/);
+  assert.match(script, /\.\.\/\.\.\/data\/cool-runnings-metrics-current\.json/);
+  assert.match(html, /data-cool-metric="clicks"/);
+  assert.match(html, /Human review/);
+  assert.match(html, /href="\.\.\/#work"/);
+});
+
+test("large showcase videos stay lazy, autoplay once visible, and have no pause-button chrome", async () => {
   const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
   const videos = [...html.matchAll(/<video[^>]+data-motion-video[^>]*>[\s\S]*?<\/video>/g)].map((match) => match[0]);
   const controls = [...html.matchAll(/<button[^>]+data-motion-toggle[^>]*>/g)].map((match) => match[0]);
@@ -204,7 +302,7 @@ test("large showcase videos stay lazy and autonomous without pause-button chrome
   assert.equal(controls.length, 0);
   for (const video of videos) {
     assert.doesNotMatch(video, /data-motion-surface|tabindex="0"|role="button"/);
-    assert.doesNotMatch(video, /\sautoplay(?:\s|>)/);
+    assert.match(video, /\sautoplay(?:\s|>)/);
     assert.match(video, /preload="none"/);
     assert.doesNotMatch(video, /<source[^>]+\ssrc=/);
     assert.match(video, /<source[^>]+data-src=/);
@@ -215,24 +313,67 @@ test("large showcase videos stay lazy and autonomous without pause-button chrome
   assert.match(app, /IntersectionObserver/);
   assert.match(app, /\.play\(\)/);
   assert.match(app, /\.pause\(\)/);
+  assert.match(app, /canplay/);
+  assert.match(app, /pointerdown/);
   assert.match(app, /prefers-reduced-motion:\s*reduce/);
 });
 
-test("workflow showcase is full bleed, more vivid, and orders copy above dominant media", async () => {
+test("selected work separates frame scrubbing from restrained object choreography", async () => {
+  const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
+
+  for (const key of ["cool-runnings", "elevators"]) {
+    assert.match(html, new RegExp(`data-scroll-reveal="${key}"`));
+  }
+  assert.match(html, /data-frame-scroll="accommodation"/);
+  assert.doesNotMatch(html, /data-scroll-reveal="accommodation"/);
+  assert.match(css, /\[data-scroll-reveal\][\s\S]*?--object-reveal/s);
+  assert.match(css, /\.browser-object-video\s*\{[^}]*translate3d\(calc\(28px\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)/s);
+  assert.doesNotMatch(css, /\.browser-object-video\s*\{[^}]*rotateX/s);
+  assert.match(css, /\.browser-object-elevator\s*\{[^}]*rotateX\(calc\(68deg\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)\)/s);
+  assert.match(css, /\.work-object-accommodation,[\s\S]*?min-height:\s*120svh/s);
+  assert.match(app, /querySelectorAll\("\[data-scroll-reveal\]"\)/);
+  assert.match(app, /querySelectorAll\("\[data-frame-scroll\]"\)/);
+  assert.match(app, /revealKey\s*===\s*"elevators"[\s\S]*?rawProgress\s*\/\s*\.72/s);
+  assert.match(app, /--object-reveal/);
+});
+
+test("Bias uses curved arrows attached to its labels and butts against Selected Work", async () => {
   const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
 
-  for (const color of ["#e0a91c", "#3e8164", "#df5f38", "#4d678c", "#8f5c93"]) {
-    assert.ok(css.includes(color), `missing hard workflow colour ${color}`);
+  assert.equal([...html.matchAll(/class="bias-step-arrow(?:\s|\")/g)].length, 4);
+  assert.equal([...html.matchAll(/class="bias-step-turn"/g)].length, 1);
+  assert.match(css, /\.bias-step:nth-child\(4\)\s*\{[^}]*grid-column:\s*3/s);
+  assert.match(css, /\.bias-step:nth-child\(5\)\s*\{[^}]*grid-column:\s*2/s);
+  assert.match(css, /\.bias-step:nth-child\(6\)\s*\{[^}]*grid-column:\s*1/s);
+  assert.match(css, /\.bias-step-turn\s*\{[^}]*position:\s*absolute/s);
+  assert.match(html, /class="bias-step-arrow"[^>]*>[\s\S]*?<path d="M2 14C/s);
+  assert.match(css, /\.build-bias\s*\{[^}]*margin-top:\s*0/s);
+  assert.match(css, /\.selected-work\s*\{[^}]*padding-block:\s*var\(--space-section\)\s+0/s);
+});
+
+test("the proposal is an enlarged rounded PDF artifact without a surrounding frame", async () => {
+  const css = await readV2("styles.css");
+
+  assert.match(css, /\.proposal-sheet\s*\{[^}]*width:\s*min\(78%,\s*600px\)[^}]*border:\s*0/s);
+  assert.match(css, /\.proposal-sheet img\s*\{[^}]*border-radius:\s*18px/s);
+});
+
+test("workflow showcase uses a neutral accordion and orders copy above dominant media", async () => {
+  const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
+
+  for (const removedColor of ["#e0a91c", "#3e8164", "#df5f38", "#4d678c", "#8f5c93"]) {
+    assert.ok(!css.includes(removedColor), `workflow accordion still uses ${removedColor}`);
   }
 
   assert.match(css, /\.workflow-accordion\s*\{[^}]*width:\s*100%/s);
-  assert.match(css, /\.workflow-item\s*\{[^}]*min-width:\s*72px[^}]*color:\s*white/s);
-  assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*72px[^}]*background:\s*var\(--rail\)/s);
-  assert.match(css, /\.workflow-trigger strong\s*\{[^}]*font-size:\s*1\.16rem[^}]*font-weight:\s*900/s);
+  assert.match(css, /\.workflow-item\s*\{[^}]*min-width:\s*64px[^}]*color:\s*white/s);
+  assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*64px[^}]*background:\s*var\(--rail\)/s);
+  assert.match(css, /\.workflow-trigger strong\s*\{[^}]*font-size:\s*1\.2rem[^}]*font-weight:\s*900/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*grid-template-rows:\s*auto minmax\(0,\s*1fr\)/s);
   assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*#f4f1e9/s);
-  assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*clamp\(2\.5rem,\s*4vw,\s*4\.8rem\)/s);
-  assert.match(css, /\.workflow-copy p\s*\{[^}]*font-size:\s*clamp\(1\.05rem,\s*1\.45vw,\s*1\.3rem\)/s);
+  assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*clamp\(2\.15rem,\s*3\.15vw,\s*3\.65rem\)/s);
+  assert.match(css, /\.workflow-copy p\s*\{[^}]*font-size:\s*clamp\(\.98rem,\s*1\.15vw,\s*1\.12rem\)/s);
+  assert.match(css, /\.workflow-copy-head\s*\{[^}]*justify-content:\s*space-between/s);
   assert.doesNotMatch(css, /\.workflow-panel figure\s*\{[^}]*order:\s*-1/s);
 
   const panels = [...html.matchAll(/<div class="workflow-panel-inner">([\s\S]*?)<\/div>\s*<\/div>\s*<\/article>/g)];
@@ -246,9 +387,11 @@ test("method, workflows, outcomes, and About form deliberate full-bleed chapters
   const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
 
   assert.match(html, /<section class="build-bias"[^>]*>\s*<div class="build-bias-inner page-frame">/s);
-  assert.match(html, /<section class="about"[^>]*>\s*<div class="about-inner page-frame">/s);
+  assert.match(html, /<section class="about"[^>]*>[\s\S]*?<div class="about-inner page-frame">/s);
   assert.match(css, /\.build-bias\s*\{[^}]*background:\s*var\(--accent\)/s);
-  assert.match(css, /\.workflow-section\s*\{[^}]*background:\s*var\(--surface\)/s);
+  assert.match(css, /\.bias-sequence\s*\{[^}]*grid-template-columns:\s*repeat\(3,\s*1fr\)[^}]*row-gap:\s*clamp\(96px,\s*10vw,\s*148px\)/s);
+  assert.match(css, /\.bias-step\s*\{[^}]*padding:\s*0/s);
+  assert.match(css, /\.workflow-section\s*\{[^}]*background:\s*var\(--charcoal\)[^}]*color:\s*white/s);
   assert.match(css, /\.outcomes\s*\{[^}]*background:\s*var\(--surface\)/s);
   assert.match(css, /\.about\s*\{[^}]*background:\s*var\(--forest\)/s);
   assert.match(css, /\.about-inner\s*\{[^}]*display:\s*grid/s);
@@ -257,7 +400,7 @@ test("method, workflows, outcomes, and About form deliberate full-bleed chapters
 test("V2 CSS includes the revised studio tokens, responsive accordion, and motion safeguards", async () => {
   const css = await readV2("styles.css");
 
-  for (const token of ["#f1eee7", "#fbfaf6", "#ffffff", "#171813", "#E3A916", "#171a19", "#243c31"]) {
+  for (const token of ["#ffffff", "#171813", "#E3A916", "#171a19", "#243c31"]) {
     assert.ok(css.includes(token), `missing approved colour ${token}`);
   }
 
@@ -272,6 +415,33 @@ test("V2 CSS includes the revised studio tokens, responsive accordion, and motio
   assert.match(css, /cubic-bezier\(\.22,\s*1,\s*\.36,\s*1\)/);
   assert.match(css, /max-width:\s*100%/);
   assert.match(css, /@media\s*\(max-width:\s*1099px\)[\s\S]*?\.laptop-object\s*\{[^}]*width:\s*min\(100%,\s*900px\)/);
+});
+
+test("Hero and Selected Work share a white canvas with a deliberate type and spacing rhythm", async () => {
+  const css = await readV2("styles.css");
+
+  assert.match(css, /--canvas:\s*#ffffff/);
+  assert.match(css, /--space-section:\s*clamp\(/);
+  assert.match(css, /--space-heading:\s*clamp\(/);
+  assert.match(css, /--type-h1:\s*clamp\(/);
+  assert.match(css, /--type-h2:\s*clamp\(/);
+  assert.match(css, /--type-h3:\s*clamp\(/);
+  assert.match(css, /body\s*\{[^}]*background:\s*var\(--canvas\)/s);
+  assert.match(css, /\.hero\s*\{[^}]*background:\s*var\(--canvas\)/s);
+  assert.match(css, /\.selected-work\s*\{[^}]*background:\s*var\(--canvas\)/s);
+  assert.doesNotMatch(css, /\.work-object:first-child\s*\{[^}]*border-top:/s);
+  assert.doesNotMatch(css, /\.work-object-cool\s*\{[^}]*background-image:/s);
+  assert.match(css, /\.section-heading h2,[\s\S]*?font-size:\s*var\(--type-h2\)/s);
+  assert.match(css, /\.work-copy h3\s*\{[^}]*font-size:\s*var\(--type-h3\)/s);
+});
+
+test("Experience is a centred chronological ledger without route markers", async () => {
+  const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
+
+  assert.doesNotMatch(html, /experience-ledger__route|route-dot|timeline-marker/);
+  assert.match(css, /\.experience-heading\s*\{[^}]*text-align:\s*center/s);
+  assert.match(css, /\.experience-ledger article\s*\{[^}]*grid-template-columns:\s*1fr[^}]*justify-items:\s*center[^}]*text-align:\s*center/s);
+  assert.match(css, /\.experience-actions\s*\{[^}]*justify-content:\s*center/s);
 });
 
 test("every referenced V2 asset resolves to tracked media on disk", async () => {
@@ -304,9 +474,11 @@ test("browser QA covers runtime focus, motion, inputs, all workflow routes, and 
     "1440", "1024", "768", "390", "320", "scrollWidth",
     "workflow-desktop-", "workflow-mobile-", "hero-desktop.png", "hero-mobile.png",
     "work-desktop-accommodation.png", "work-mobile-accommodation.png",
+    "work-desktop.png", "motion-video-rccv", "currentTime", "transitionWidths", "--about-line",
   ]) {
     assert.ok(qa.includes(marker), `browser QA missing ${marker}`);
   }
+  assert.ok(!qa.includes("?stage=white"), "browser QA should not retain the removed background comparator");
   assert.match(qa, /portfolio-hero-system-map-(?:desktop|mobile)/);
   assert.match(qa, /rccv-showcase-laptop/);
   assert.match(qa, /cool-runnings-sizzle-25s/);
