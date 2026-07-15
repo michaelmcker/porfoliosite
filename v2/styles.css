@@ -873,7 +873,7 @@ h3 {
 .contact-morph {
   position: relative;
   width: min(920px, calc(100vw - (2 * var(--gutter))));
-  min-height: 1.2em;
+  min-height: 2em;
   margin: 0;
   color: #1f1909;
   font-family: var(--font-editorial);
@@ -896,7 +896,8 @@ h3 {
 .contact-story.has-finale-js .contact-morph [data-contact-morph-before] { display: grid; }
 .contact-story.has-finale-js .contact-actions,
 .contact-story.has-finale-js .contact-continue { opacity: 0; transform: translateY(16px); }
-.contact-story[data-finale-state="physics"] .contact-instruction { opacity: 0; }
+.contact-story[data-finale-state="physics"] .contact-instruction,
+.contact-story[data-finale-state="settled"] .contact-instruction { opacity: 0; }
 .contact-story[data-finale-state="settled"] .contact-morph { opacity: 1; }
 .contact-story[data-finale-state="settled"] [data-contact-morph-before] { animation: contact-morph-out 650ms both; }
 .contact-story[data-finale-state="settled"] [data-contact-morph-after] { animation: contact-morph-in 800ms 280ms both; }
@@ -1047,7 +1048,7 @@ h3 {
   .contact-story.has-finale-js { min-height: 290svh; }
   .contact-object { --body-width: 132px; border-width: 3px; border-radius: 11px; }
   .contact-object:nth-child(n + 8) { display: none; }
-  .contact-morph { font-size: clamp(2.55rem, 13vw, 4.5rem); }
+  .contact-morph { min-height: 3em; font-size: clamp(2.55rem, 13vw, 4.5rem); }
   .contact-actions { width: min(100%, 340px); flex-direction: column; }
   .contact-actions .button { width: 100%; min-height: 48px; }
 }

@@ -272,6 +272,11 @@ try {
   }));
   await page.evaluate(({ top, travel }) => window.scrollTo(0, top + travel * .72), aboutStoryPosition);
   await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-about-scroll-story]")).getPropertyValue("--about-line")) > .8);
+  await page.waitForFunction(() => {
+    const contextOpacity = Number.parseFloat(getComputedStyle(document.querySelector(".about-context")).opacity);
+    const phraseSize = Number.parseFloat(getComputedStyle(document.querySelector(".about-questionable")).fontSize);
+    return contextOpacity < .08 && phraseSize >= 44 && phraseSize <= 62;
+  });
   assert.ok(Math.abs(await page.$eval(".about-story-sticky", (node) => node.getBoundingClientRect().top)) < 2, "About story did not remain locked during its reveal");
   assert.ok(await page.$eval(".about-context", (node) => Number.parseFloat(getComputedStyle(node).opacity) < .08), "About context did not fade while the phrase expanded");
   assert.ok(await page.$eval(".about-questionable", (node) => {
@@ -325,12 +330,20 @@ try {
   await new Promise((resolve) => setTimeout(resolve, 100));
   assert.equal(await page.$eval("[data-contact-object]", (item) => item.style.transform), transformA, "pre-release spiral must be reversible and deterministic");
   await scrollFinale(.6);
+  await page.waitForFunction(() => Math.abs(document.querySelector("[data-contact-stage]").getBoundingClientRect().top) < 2);
+  assert.ok(Math.abs(await page.$eval("[data-contact-stage]", (stage) => stage.getBoundingClientRect().top)) < 2, "contact stage must pin to the viewport before physics releases");
   await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "settled", { timeout: 8000 });
   assert.ok(await page.$eval("[data-contact-story]", (story) => Number(story.dataset.releaseDelta)) <= .5, "physics bodies must inherit the final spiral positions without a jump");
   await new Promise((resolve) => setTimeout(resolve, 1200));
   assert.equal(await page.$eval("[data-contact-morph-after]", (node) => node.textContent.trim()), "Let’s build something useful.");
   assert.ok(await page.$eval("[data-contact-morph-after]", (node) => Number(getComputedStyle(node).opacity)) > .8, "final text must resolve after settle");
   assert.ok(await page.$eval(".contact-actions", (node) => Number(getComputedStyle(node).opacity)) > .8, "contact actions must resolve after the text morph");
+  assert.ok(await page.$eval(".contact-instruction", (node) => Number(getComputedStyle(node).opacity)) < .05, "scroll instruction must stay hidden after the finale settles");
+  assert.ok(await page.evaluate(() => {
+    const heading = document.querySelector("[data-contact-morph-after]").getBoundingClientRect();
+    const actions = document.querySelector(".contact-actions").getBoundingClientRect();
+    return actions.top >= heading.bottom + 16;
+  }), "contact actions must not overlap the resolved multiline heading");
   if (screenshotDirectory) {
     await mkdir(screenshotDirectory, { recursive: true });
     await page.screenshot({ path: path.join(screenshotDirectory, "finale-settled-desktop.png") });
@@ -417,6 +430,11 @@ try {
     assert.ok(finaleGeometry.actions.bottom <= finaleGeometry.stage.bottom + 1, `${width}px finale actions fall below the stage`);
     if (screenshotDirectory) {
       await mkdir(screenshotDirectory, { recursive: true });
+      await page.$eval("[data-contact-stage]", (stage) => stage.scrollIntoView({ block: "center" }));
+      await page.waitForFunction(() => [...document.querySelectorAll("[data-contact-object] img")]
+        .filter((image) => getComputedStyle(image.closest("[data-contact-object]")).display !== "none")
+        .every((image) => image.complete));
+      await page.evaluate(() => document.activeElement?.blur());
       await page.screenshot({ path: path.join(screenshotDirectory, `v2-${width}.png`), fullPage: true });
     }
   }
