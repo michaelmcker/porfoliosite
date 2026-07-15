@@ -341,11 +341,34 @@
       </div>
     </section>
 
-    <section class="contact page-frame" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Let’s build something useful.</h2>
-      <div class="hero-actions">
-        <a class="button button-primary" href="mailto:michael.mckerracher@gmail.com">Email Michael</a>
-        <a class="button button-quiet" href="../assets/Michael-McKerracher-Resume.pdf">View resume</a>
+    <section class="contact-story" id="contact" data-contact-story aria-labelledby="contact-title" data-finale-state="static">
+      <div class="contact-stage" data-contact-stage>
+        <div class="contact-object-field" data-contact-field aria-hidden="true">
+          <figure class="contact-object contact-object-portrait" data-contact-object="portrait" data-body-width="174"><img src="../assets/portrait/poster.png" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-laptop" data-contact-object="rccv" data-body-width="250"><img src="../assets/device-mockups/laptop-three-quarter-rccv-cutout.png" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-browser" data-contact-object="accommodation" data-body-width="230"><img src="../assets/frames/accommodation/treehouse/010.jpg" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-browser" data-contact-object="cool-runnings" data-body-width="220"><img src="../assets/screens/cool-runnings.png" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-paper" data-contact-object="proposal" data-body-width="152"><img src="../assets/samples/vertical-impression-public-proposal-sample-page-1.png" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-browser" data-contact-object="elevators" data-body-width="220"><img src="../assets/screens/why-elevators.png" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-workflow" data-contact-object="content" data-body-width="210"><img src="../assets/workflows/content-workflow-approved-stage.png" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-workflow" data-contact-object="dashboard" data-body-width="210"><img src="../assets/screens/fountainhead-ai-visibility-dashboard-v4-16x9.png" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-workflow" data-contact-object="publishing" data-body-width="210"><img src="assets/presentation-publishing-desktop.png" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-workflow" data-contact-object="prospecting" data-body-width="210"><img src="../assets/workflows/local-prospecting.png" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-workflow" data-contact-object="website" data-body-width="210"><img src="../assets/generated/json-prompt-image-output.png" alt="" loading="lazy" decoding="async"></figure>
+        </div>
+        <div class="contact-resolution" data-contact-resolution>
+          <h2 id="contact-title" class="contact-morph" aria-label="Let’s build something useful.">
+            <span data-contact-morph-before aria-hidden="true">Systematise.</span>
+            <span data-contact-morph-after aria-hidden="true">Let’s build something useful.</span>
+          </h2>
+          <div class="hero-actions contact-actions">
+            <a class="button button-primary" href="mailto:michael.mckerracher@gmail.com">Email Michael</a>
+            <a class="button button-quiet" href="https://www.linkedin.com/in/michaelmcker/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button button-quiet" href="https://github.com/michaelmcker" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <p class="contact-continue" aria-hidden="true">Continue ↓</p>
+        </div>
+        <p class="contact-instruction" data-contact-instruction>Scroll to gather the work.</p>
       </div>
     </section>
   </main>
@@ -371,5 +394,6 @@
   </dialog>
 
   <script src="app.js"></script>
+  <script src="contact-finale.js" defer></script>
 </body>
 </html>

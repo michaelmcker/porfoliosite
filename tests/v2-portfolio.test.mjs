@@ -237,7 +237,7 @@ test("contact finale exposes a local scroll-to-physics sequence with a static fa
   assert.match(finale, /function releaseToPhysics/);
   assert.match(finale, /function markSettled/);
   assert.match(finale, /Body\.setPosition/);
-  assert.match(finale, /data-finale-state/);
+  assert.match(finale, /dataset\.finaleState/);
   assert.match(css, /\.contact-story\.has-finale-js\s*\{[^}]*min-height:\s*340svh/s);
   assert.match(css, /prefers-reduced-motion:\s*reduce[\s\S]*?\.contact-object/s);
   await access(fileUrl("vendor/matter.min.js"));
@@ -368,7 +368,8 @@ test("selected work combines video scrubbing with restrained object choreography
   assert.match(css, /\.browser-object-video\s*\{[^}]*translate3d\(calc\(36px\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)/s);
   assert.doesNotMatch(css, /\.browser-object-video\s*\{[^}]*rotateX/s);
   assert.match(css, /\.browser-object-elevator\s*\{[^}]*rotateX\(calc\(68deg\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)\)/s);
-  assert.match(css, /\.work-object-accommodation,[\s\S]*?min-height:\s*120svh/s);
+  assert.match(css, /\.work-object-accommodation\s*\{[^}]*105svh/s);
+  assert.match(css, /\.work-object-cool,[\s\S]*?\.work-object-elevators\s*\{[^}]*min-height:\s*120svh/s);
   assert.match(app, /querySelectorAll\("\[data-scroll-reveal\]"\)/);
   assert.match(app, /seekAccommodation\(progress\)/);
   assert.match(app, /revealKey\s*===\s*"elevators"[\s\S]*?rawProgress\s*\/\s*\.72/s);

@@ -13,5 +13,8 @@
     "@sparticuz/chromium-min": "143.0.4",
     "google-auth-library": "^10.9.0",
     "puppeteer-core": "23.4.0"
+  },
+  "devDependencies": {
+    "matter-js": "^0.20.0"
   }
 }
