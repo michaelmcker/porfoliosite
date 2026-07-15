@@ -285,6 +285,7 @@ test("boutique accommodation owns pointer-wheel scrubbing without trapping keybo
   assert.match(app, /preventDefault\(\)/);
   assert.match(app, /accommodationWheelProgress/);
   assert.match(app, /matchMedia\(["']\(pointer:\s*fine\)["']\)/);
+  assert.match(app, /navigator\.maxTouchPoints\s*===\s*0/);
   assert.doesNotMatch(app, /addEventListener\(["']keydown["'][\s\S]{0,180}preventDefault/);
   assert.match(css, /\.work-object-accommodation\s*\{[^}]*min-height:\s*clamp\([^}]*105svh/s);
   assert.match(app, /prefers-reduced-motion:\s*reduce/);

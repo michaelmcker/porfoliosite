@@ -169,8 +169,11 @@ const applyAccommodationWheel = () => {
   seekAccommodation(accommodationWheelProgress);
 };
 
+const canScrubAccommodationWithWheel = () => finePointer.matches
+  || (navigator.maxTouchPoints === 0 && window.innerWidth > 760);
+
 const scrubAccommodationWithWheel = (event) => {
-  if (reducedMotion.matches || !finePointer.matches) return;
+  if (reducedMotion.matches || !canScrubAccommodationWithWheel()) return;
   event.preventDefault();
   loadAccommodationVideo();
   if (!accommodationDuration) return;

@@ -174,9 +174,43 @@ try {
     `ordinary page scroll did not advance the boutique source recording from ${accommodationStart}: ${JSON.stringify(accommodationMotion)}`,
   );
   assert.equal(await page.$$eval("[data-accommodation-previous], [data-accommodation-next]", (nodes) => nodes.length), 0);
-  assert.equal(await page.$eval("[data-accommodation-viewer]", (viewer) => (
-    viewer.dispatchEvent(new WheelEvent("wheel", { deltaY: 24, bubbles: true, cancelable: true }))
-  )), true, "boutique preview still traps wheel scrolling");
+  await page.$eval("[data-accommodation-viewer]", (viewer) => viewer.scrollIntoView({ block: "center" }));
+  await new Promise((resolve) => setTimeout(resolve, 120));
+  const accommodationBeforeWheel = await page.evaluate(() => ({
+    scrollY: window.scrollY,
+    time: document.querySelector("[data-accommodation-scrub]").currentTime,
+    bounds: document.querySelector("[data-accommodation-viewer]").getBoundingClientRect().toJSON(),
+  }));
+  const accommodationWheelTarget = await page.evaluate(({ x, y, width, height }) => {
+    const centreX = x + width / 2;
+    const centreY = y + height / 2;
+    return {
+      centreX,
+      centreY,
+      viewportHeight: window.innerHeight,
+      hitsViewer: Boolean(document.elementFromPoint(centreX, centreY)?.closest("[data-accommodation-viewer]")),
+    };
+  }, accommodationBeforeWheel.bounds);
+  assert.ok(
+    accommodationWheelTarget.hitsViewer,
+    `accommodation wheel target is outside the visible viewer: ${JSON.stringify({ bounds: accommodationBeforeWheel.bounds, target: accommodationWheelTarget })}`,
+  );
+  await page.mouse.move(
+    accommodationBeforeWheel.bounds.x + accommodationBeforeWheel.bounds.width / 2,
+    accommodationBeforeWheel.bounds.y + accommodationBeforeWheel.bounds.height / 2,
+  );
+  await page.mouse.wheel({ deltaY: 520 });
+  await new Promise((resolve) => setTimeout(resolve, 180));
+  const accommodationAfterWheel = await page.evaluate(() => ({
+    scrollY: window.scrollY,
+    time: document.querySelector("[data-accommodation-scrub]").currentTime,
+  }));
+  assert.equal(accommodationAfterWheel.scrollY, accommodationBeforeWheel.scrollY, "wheel over accommodation must not move the page");
+  assert.ok(accommodationAfterWheel.time > accommodationBeforeWheel.time, "wheel over accommodation must advance the preview");
+  await page.mouse.move(8, 450);
+  await page.mouse.wheel({ deltaY: 520 });
+  await new Promise((resolve) => setTimeout(resolve, 180));
+  assert.ok(await page.evaluate((before) => window.scrollY > before, accommodationAfterWheel.scrollY), "wheel outside accommodation must move the page");
 
   const reducedPage = await browser.newPage();
   const reducedVideoRequests = [];
@@ -239,11 +273,32 @@ try {
   await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-about-scroll-story]")).getPropertyValue("--about-line")) > .8);
   assert.ok(Math.abs(await page.$eval(".about-story-sticky", (node) => node.getBoundingClientRect().top)) < 2, "About story did not remain locked during its reveal");
   assert.ok(await page.$eval(".about-context", (node) => Number.parseFloat(getComputedStyle(node).opacity) < .08), "About context did not fade while the phrase expanded");
-  assert.ok(await page.$eval(".about-questionable", (node) => Number.parseFloat(getComputedStyle(node).fontSize) > 72), "About phrase did not become a large standalone statement");
+  assert.ok(await page.$eval(".about-questionable", (node) => {
+    const size = Number.parseFloat(getComputedStyle(node).fontSize);
+    return size >= 44 && size <= 62;
+  }), "About phrase did not reach its capped standalone size");
   assert.ok(await page.$eval(".about-questionable", (node) => Math.abs(new DOMMatrixReadOnly(getComputedStyle(node).transform).a - 1) < .02), "About phrase still uses a rasterizing scale transform");
   await page.evaluate(({ top, travel }) => window.scrollTo(0, top + travel * .9), aboutStoryPosition);
   await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-about-scroll-story]")).getPropertyValue("--about-value")) > .95);
   assert.ok(await page.$eval(".about-process-reveal", (node) => Number.parseFloat(getComputedStyle(node).opacity) > .95), "About process conclusion did not resolve before the section released");
+  await page.waitForSelector(".portrait-frame.is-loaded");
+  const portraitGeometry = await page.$eval(".portrait-frame", (frame) => frame.getBoundingClientRect().toJSON());
+  const portraitFrameHandle = await page.$(".portrait-frame iframe");
+  const portraitContentFrame = await portraitFrameHandle.contentFrame();
+  const portraitCountBefore = await portraitContentFrame.evaluate(() => window.__v2PortraitMessageCount || 0);
+  await page.mouse.move(40, 300);
+  await page.mouse.move(
+    portraitGeometry.x + portraitGeometry.width / 2,
+    portraitGeometry.y + portraitGeometry.height / 2,
+    { steps: 8 },
+  );
+  await new Promise((resolve) => setTimeout(resolve, 120));
+  const portraitCountAfter = await portraitContentFrame.evaluate(() => window.__v2PortraitMessageCount || 0);
+  assert.ok(portraitCountAfter > portraitCountBefore, "portrait must keep receiving parent coordinates over its iframe");
+  assert.equal(await page.$eval(".portrait-frame iframe", (iframe) => getComputedStyle(iframe).pointerEvents), "none", "portrait iframe must not create a second pointer surface");
+  await page.evaluate(() => window.scrollBy(0, 120));
+  await new Promise((resolve) => setTimeout(resolve, 100));
+  assert.equal(await portraitContentFrame.evaluate(() => window.__v2PortraitMessageCount || 0), portraitCountAfter, "scroll alone must not change the portrait pose");
 
   await page.$eval("#resume", (node) => node.scrollIntoView({ block: "center" }));
   const experienceCenters = await page.$$eval(".experience-ledger article", (items) => items.map((item) => {
@@ -252,6 +307,46 @@ try {
     return { itemCenter: bounds.left + bounds.width / 2, headingCenter: heading.left + heading.width / 2 };
   }));
   assert.ok(experienceCenters.every(({ itemCenter, headingCenter }) => Math.abs(itemCenter - headingCenter) < 2), "Experience company names are not centred on their rows");
+
+  const finalePosition = await page.$eval("[data-contact-story]", (story) => ({
+    top: story.getBoundingClientRect().top + window.scrollY,
+    travel: story.offsetHeight - window.innerHeight,
+  }));
+  const scrollFinale = (progress) => page.evaluate(
+    ({ top, travel, progress: nextProgress }) => window.scrollTo(0, top + travel * nextProgress),
+    { ...finalePosition, progress },
+  );
+  await scrollFinale(.3);
+  await new Promise((resolve) => setTimeout(resolve, 100));
+  const transformA = await page.$eval("[data-contact-object]", (item) => item.style.transform);
+  await scrollFinale(.42);
+  await scrollFinale(.3);
+  await new Promise((resolve) => setTimeout(resolve, 100));
+  assert.equal(await page.$eval("[data-contact-object]", (item) => item.style.transform), transformA, "pre-release spiral must be reversible and deterministic");
+  await scrollFinale(.6);
+  await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "settled", { timeout: 8000 });
+  assert.ok(await page.$eval("[data-contact-story]", (story) => Number(story.dataset.releaseDelta)) <= .5, "physics bodies must inherit the final spiral positions without a jump");
+  await new Promise((resolve) => setTimeout(resolve, 1200));
+  assert.equal(await page.$eval("[data-contact-morph-after]", (node) => node.textContent.trim()), "Let’s build something useful.");
+  assert.ok(await page.$eval("[data-contact-morph-after]", (node) => Number(getComputedStyle(node).opacity)) > .8, "final text must resolve after settle");
+  assert.ok(await page.$eval(".contact-actions", (node) => Number(getComputedStyle(node).opacity)) > .8, "contact actions must resolve after the text morph");
+  const draggable = await page.$eval("[data-contact-object]", (item) => ({
+    rect: item.getBoundingClientRect().toJSON(),
+    transform: item.style.transform,
+  }));
+  await page.mouse.move(draggable.rect.x + draggable.rect.width / 2, draggable.rect.y + draggable.rect.height / 2);
+  await page.mouse.down();
+  await page.mouse.move(
+    draggable.rect.x + draggable.rect.width / 2 + 80,
+    draggable.rect.y + draggable.rect.height / 2 - 40,
+    { steps: 6 },
+  );
+  await page.mouse.up();
+  await new Promise((resolve) => setTimeout(resolve, 120));
+  assert.notEqual(await page.$eval("[data-contact-object]", (item) => item.style.transform), draggable.transform, "settled objects must be draggable");
+  await scrollFinale(1);
+  await new Promise((resolve) => setTimeout(resolve, 120));
+  assert.ok(await page.$eval(".site-footer", (footer) => footer.getBoundingClientRect().top <= window.innerHeight + 2), "continued scroll must release the sticky finale into the footer");
 
   const filePage = await browser.newPage();
   await filePage.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1 });
@@ -292,6 +387,15 @@ try {
     assert.ok(accommodationGeometry.cueBottom <= accommodationGeometry.browserTop + 24, `${width}px accommodation cue is detached from the browser top`);
     assert.equal(accommodationGeometry.scrubDisplay, "none", `${width}px reduced-motion accommodation video should be hidden`);
     assert.notEqual(accommodationGeometry.fallbackDisplay, "none", `${width}px reduced-motion accommodation fallback should be visible`);
+    const finaleGeometry = await page.evaluate(() => {
+      const stageBounds = document.querySelector("[data-contact-stage]").getBoundingClientRect();
+      const headingBounds = document.querySelector("[data-contact-morph-after]").getBoundingClientRect();
+      const actionBounds = document.querySelector(".contact-actions").getBoundingClientRect();
+      return { stage: stageBounds.toJSON(), heading: headingBounds.toJSON(), actions: actionBounds.toJSON() };
+    });
+    assert.ok(finaleGeometry.heading.left >= -1 && finaleGeometry.heading.right <= width + 1, `${width}px finale heading overflows`);
+    assert.ok(finaleGeometry.actions.left >= -1 && finaleGeometry.actions.right <= width + 1, `${width}px finale actions overflow`);
+    assert.ok(finaleGeometry.actions.bottom <= finaleGeometry.stage.bottom + 1, `${width}px finale actions fall below the stage`);
     if (screenshotDirectory) {
       await mkdir(screenshotDirectory, { recursive: true });
       await page.screenshot({ path: path.join(screenshotDirectory, `v2-${width}.png`), fullPage: true });
