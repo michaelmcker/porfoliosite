@@ -316,48 +316,45 @@ try {
 
   const finalePosition = await page.$eval("[data-contact-story]", (story) => ({
     top: story.getBoundingClientRect().top + window.scrollY,
-    travel: story.offsetHeight - window.innerHeight,
+    height: story.offsetHeight,
   }));
-  const scrollFinale = (progress) => page.evaluate(
-    ({ top, travel, progress: nextProgress }) => window.scrollTo(0, top + travel * nextProgress),
-    { ...finalePosition, progress },
-  );
-  const sampleOrbit = async (progress) => {
-    await scrollFinale(progress);
-    await page.waitForFunction((expected) => {
-      const actual = Number(document.querySelector("[data-contact-story]")?.dataset.orbitProgress);
-      return Number.isFinite(actual) && Math.abs(actual - expected / .68) < .035;
-    }, {}, progress);
-    return page.evaluate(() => {
-      const stage = document.querySelector("[data-contact-stage]").getBoundingClientRect();
-      const item = document.querySelector("[data-contact-object]").getBoundingClientRect();
+  await page.evaluate(({ top }) => window.scrollTo(0, top - window.innerHeight * .61), finalePosition);
+  await new Promise((resolve) => setTimeout(resolve, 120));
+  assert.equal(await page.$eval("[data-contact-story]", (story) => story.dataset.finaleState), "idle", "finale must remain idle below the 40% visibility threshold");
+  assert.equal(await page.$eval("[data-contact-story]", (story) => Number(story.dataset.entranceStarts)), 0, "finale must not start before entering view");
+  await page.evaluate(({ top }) => window.scrollTo(0, top - window.innerHeight * .55), finalePosition);
+  const scrollAtTrigger = await page.evaluate(() => window.scrollY);
+  await page.waitForFunction(() => Number(document.querySelector("[data-contact-story]")?.dataset.entranceProgress) > .34);
+  assert.equal(await page.evaluate(() => window.scrollY), scrollAtTrigger, "finale entrance must advance without page scrolling");
+  assert.equal(await page.$eval("[data-contact-story]", (story) => Number(story.dataset.entranceStarts)), 1, "finale must start exactly once when 40% is visible");
+  const entranceSpacing = await page.$$eval("[data-contact-object]", (items) => {
+    const visible = items.map((item) => {
+      const rect = item.getBoundingClientRect();
       return {
-        x: (item.left + item.width / 2 - stage.left) / stage.width,
-        y: (item.top + item.height / 2 - stage.top) / stage.height,
+        x: rect.left + rect.width / 2,
+        y: rect.top + rect.height / 2,
+        opacity: Number(getComputedStyle(item).opacity),
       };
-    });
-  };
-  const orbitLowerLeft = await sampleOrbit(.2);
-  const orbitLowerMiddle = await sampleOrbit(.34);
-  const orbitRightRise = await sampleOrbit(.48);
-  const orbitUpperMiddle = await sampleOrbit(.61);
-  assert.ok(orbitLowerLeft.x < .25 && orbitLowerLeft.y > .45, "finale orbit must sweep through the lower left");
-  assert.ok(orbitLowerMiddle.x > .35 && orbitLowerMiddle.x < .65 && orbitLowerMiddle.y > .55, "finale orbit must use the lower middle of the full frame");
-  assert.ok(orbitRightRise.x > .72 && orbitRightRise.y < .5, "finale orbit must rise along the right side");
-  assert.ok(orbitUpperMiddle.x > .35 && orbitUpperMiddle.x < .72 && orbitUpperMiddle.y < .25, "finale orbit must arch into the upper middle before release");
-  await scrollFinale(.3);
-  await new Promise((resolve) => setTimeout(resolve, 100));
-  const transformA = await page.$eval("[data-contact-object]", (item) => item.style.transform);
-  await scrollFinale(.42);
-  await scrollFinale(.3);
-  await new Promise((resolve) => setTimeout(resolve, 100));
-  assert.equal(await page.$eval("[data-contact-object]", (item) => item.style.transform), transformA, "pre-release spiral must be reversible and deterministic");
+    }).filter((item) => item.opacity > .25);
+    let minimum = Infinity;
+    for (let left = 0; left < visible.length; left += 1) {
+      for (let right = left + 1; right < visible.length; right += 1) {
+        minimum = Math.min(minimum, Math.hypot(
+          visible[left].x - visible[right].x,
+          visible[left].y - visible[right].y,
+        ));
+      }
+    }
+    return { count: visible.length, minimum };
+  });
+  assert.ok(entranceSpacing.count >= 3, "automatic finale entrance must reveal multiple objects before release");
+  assert.ok(entranceSpacing.minimum >= 52, `automatic finale objects are too tightly stacked: ${entranceSpacing.minimum}px`);
+  await page.$eval("[data-contact-stage]", (stage) => stage.scrollIntoView({ block: "center" }));
+  await page.waitForFunction(() => Math.abs(document.querySelector("[data-contact-stage]").getBoundingClientRect().top) < 2);
   await page.waitForFunction(() => [...document.querySelectorAll("[data-contact-object='portrait'] img")]
     .every((image) => image.complete && image.naturalWidth > 0));
   assert.equal(await page.$$eval("[data-contact-object='portrait'] img", (images) => images.length), 2, "finale portrait must include body and head layers");
-  await scrollFinale(.7);
-  await page.waitForFunction(() => Math.abs(document.querySelector("[data-contact-stage]").getBoundingClientRect().top) < 2);
-  assert.ok(Math.abs(await page.$eval("[data-contact-stage]", (stage) => stage.getBoundingClientRect().top)) < 2, "contact stage must pin to the viewport before physics releases");
+  await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "physics", { timeout: 4000 });
   await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.copyState === "visible");
   assert.equal(await page.$eval("[data-contact-story]", (story) => story.dataset.finaleState), "physics", "contact copy must resolve while objects are still dropping");
   await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "settled", { timeout: 8000 });
@@ -398,20 +395,50 @@ try {
   await page.mouse.down();
   await page.mouse.move(headingTarget.x, headingTarget.y, { steps: 8 });
   await page.mouse.up();
-  const pinnedCentre = await page.$eval(`[data-contact-object="${draggable.key}"]`, (item) => {
+  const releasedPose = await page.$eval(`[data-contact-object="${draggable.key}"]`, (item) => {
     const rect = item.getBoundingClientRect();
-    return { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
+    const matrix = new DOMMatrix(getComputedStyle(item).transform);
+    return {
+      x: rect.left + rect.width / 2,
+      y: rect.top + rect.height / 2,
+      angle: Math.atan2(matrix.b, matrix.a),
+    };
   });
-  await page.waitForFunction(() => document.querySelector("[data-contact-resolution]")?.classList.contains("is-contrast-light"));
-  await new Promise((resolve) => setTimeout(resolve, 700));
-  const pinnedAfterWait = await page.$eval(`[data-contact-object="${draggable.key}"]`, (item) => {
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  const dynamicPose = await page.$eval(`[data-contact-object="${draggable.key}"]`, (item) => {
     const rect = item.getBoundingClientRect();
-    return { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
+    const matrix = new DOMMatrix(getComputedStyle(item).transform);
+    return {
+      x: rect.left + rect.width / 2,
+      y: rect.top + rect.height / 2,
+      angle: Math.atan2(matrix.b, matrix.a),
+    };
   });
-  assert.ok(Math.hypot(pinnedAfterWait.x - pinnedCentre.x, pinnedAfterWait.y - pinnedCentre.y) <= 1, "manually placed finale objects must remain pinned where released");
-  await scrollFinale(1);
+  assert.ok(
+    Math.hypot(dynamicPose.x - releasedPose.x, dynamicPose.y - releasedPose.y) > 3
+      || Math.abs(dynamicPose.angle - releasedPose.angle) > .015,
+    "released finale objects must retain dynamic movement or rotation",
+  );
+  const dynamicBounds = await page.$eval(`[data-contact-object="${draggable.key}"]`, (item) => {
+    const itemRect = item.getBoundingClientRect();
+    const stageRect = document.querySelector("[data-contact-stage]").getBoundingClientRect();
+    return {
+      left: itemRect.left - stageRect.left,
+      right: stageRect.right - itemRect.right,
+      top: itemRect.top - stageRect.top,
+      bottom: stageRect.bottom - itemRect.bottom,
+    };
+  });
+  assert.ok(Object.values(dynamicBounds).every((distance) => distance >= -18), `dynamic object escaped the stage: ${JSON.stringify(dynamicBounds)}`);
+  await page.evaluate(({ top, height }) => window.scrollTo(0, top + height + 40), finalePosition);
   await new Promise((resolve) => setTimeout(resolve, 120));
-  assert.ok(await page.$eval(".site-footer", (footer) => footer.getBoundingClientRect().top <= window.innerHeight + 2), "continued scroll must release the sticky finale into the footer");
+  await page.evaluate(({ top }) => window.scrollTo(0, top), finalePosition);
+  await new Promise((resolve) => setTimeout(resolve, 120));
+  assert.equal(await page.$eval("[data-contact-story]", (story) => Number(story.dataset.entranceStarts)), 1, "finale must not replay after leaving and re-entering view");
+  assert.notEqual(await page.$eval("[data-contact-story]", (story) => story.dataset.finaleState), "entrance", "finale must stay in its physics state after re-entry");
+  await page.$eval(".site-footer", (footer) => footer.scrollIntoView({ block: "end" }));
+  await new Promise((resolve) => setTimeout(resolve, 120));
+  assert.ok(await page.$eval(".site-footer", (footer) => footer.getBoundingClientRect().top <= window.innerHeight + 2), "normal scrolling must reach the footer after the finale");
 
   const filePage = await browser.newPage();
   await filePage.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1 });
