@@ -351,14 +351,62 @@ try {
   assert.ok(entranceSpacing.minimum >= 52, `automatic finale objects are too tightly stacked: ${entranceSpacing.minimum}px`);
   await page.$eval("[data-contact-stage]", (stage) => stage.scrollIntoView({ block: "center" }));
   await page.waitForFunction(() => Math.abs(document.querySelector("[data-contact-stage]").getBoundingClientRect().top) < 2);
+  const sampleSpiral = async (target) => {
+    await page.waitForFunction((minimum) => Number(document.querySelector("[data-contact-object]")?.dataset.poseProgress) >= minimum, {}, target);
+    return page.$eval("[data-contact-object]", (item) => {
+      const stage = document.querySelector("[data-contact-stage]");
+      return {
+        progress: Number(item.dataset.poseProgress),
+        x: Number(item.dataset.poseX) - stage.clientWidth * .5,
+        y: Number(item.dataset.poseY) - stage.clientHeight * .46,
+        scale: Number(item.dataset.poseScale),
+      };
+    });
+  };
+  const spiralQuarter = await sampleSpiral(.24);
+  const spiralHalf = await sampleSpiral(.49);
+  assert.ok(spiralQuarter.x > 0 && spiralQuarter.y > 0, `spiral did not cross the lower-right half turn: ${JSON.stringify(spiralQuarter)}`);
+  assert.ok(spiralHalf.x < 0 && spiralHalf.y < 0, `spiral did not return to the upper-left after one turn: ${JSON.stringify(spiralHalf)}`);
+  assert.ok(spiralHalf.scale < spiralQuarter.scale, "spiral cards must shrink continuously toward the centre");
+  if (screenshotDirectory) {
+    await mkdir(screenshotDirectory, { recursive: true });
+    await page.screenshot({ path: path.join(screenshotDirectory, "finale-spiral-mid-desktop.png") });
+  }
+  const spiralThreeQuarter = await sampleSpiral(.74);
+  assert.ok(spiralThreeQuarter.x > 0 && spiralThreeQuarter.y > 0, `spiral did not cross the lower-right during its second turn: ${JSON.stringify(spiralThreeQuarter)}`);
   await page.waitForFunction(() => [...document.querySelectorAll("[data-contact-object='portrait'] img")]
     .every((image) => image.complete && image.naturalWidth > 0));
   assert.equal(await page.$$eval("[data-contact-object='portrait'] img", (images) => images.length), 2, "finale portrait must include body and head layers");
-  await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "physics", { timeout: 4000 });
+  await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "physics", { timeout: 5000 });
+  const centreRelease = await page.$$eval("[data-contact-object]", (items) => {
+    const stage = document.querySelector("[data-contact-stage]");
+    const centre = { x: stage.clientWidth * .5, y: stage.clientHeight * .46 };
+    const visible = items.filter((item) => getComputedStyle(item).display !== "none");
+    const scales = visible.map((item) => Number(item.dataset.poseScale));
+    const distances = visible.map((item) => Math.hypot(
+      Number(item.dataset.poseX) - centre.x,
+      Number(item.dataset.poseY) - centre.y,
+    ));
+    const matrix = new DOMMatrix(getComputedStyle(visible[0]).transform);
+    return {
+      minimumScale: Math.min(...scales),
+      maximumScale: Math.max(...scales),
+      maximumDistance: Math.max(...distances),
+      renderedScale: Math.hypot(matrix.a, matrix.b),
+    };
+  });
+  assert.ok(centreRelease.minimumScale >= .54 && centreRelease.maximumScale <= .56, `finale cards did not converge at 55% scale: ${JSON.stringify(centreRelease)}`);
+  assert.ok(centreRelease.maximumDistance <= 28, `finale cards did not reach the centre release band: ${JSON.stringify(centreRelease)}`);
+  assert.ok(Math.abs(centreRelease.renderedScale - .55) <= .015, `scaled physics handoff jumped at release: ${JSON.stringify(centreRelease)}`);
   await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.copyState === "visible");
   assert.equal(await page.$eval("[data-contact-story]", (story) => story.dataset.finaleState), "physics", "contact copy must resolve while objects are still dropping");
   await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "settled", { timeout: 8000 });
   assert.ok(await page.$eval("[data-contact-story]", (story) => Number(story.dataset.releaseDelta)) <= .5, "physics bodies must inherit the final spiral positions without a jump");
+  const settledRenderScale = await page.$eval("[data-contact-object]", (item) => {
+    const matrix = new DOMMatrix(getComputedStyle(item).transform);
+    return Math.hypot(matrix.a, matrix.b);
+  });
+  assert.ok(Math.abs(settledRenderScale - centreRelease.renderedScale) <= .015, "finale cards must retain their centre scale through the gravity drop");
   await new Promise((resolve) => setTimeout(resolve, 1200));
   assert.equal(await page.$eval("[data-contact-morph-after]", (node) => node.textContent.trim()), "Let’s build something useful.");
   assert.ok(await page.$eval("[data-contact-morph-after]", (node) => Number(getComputedStyle(node).opacity)) > .8, "final text must resolve after settle");

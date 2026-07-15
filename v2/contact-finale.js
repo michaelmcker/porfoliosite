@@ -119,6 +119,7 @@
       angle: Math.atan2(nextY - y, nextX - x),
       scale: lerp(1, centreScale, n),
       opacity: clamp(stream * 8),
+      progress: n,
     };
   }
 
@@ -140,6 +141,7 @@
       item.dataset.poseY = String(pose.y);
       item.dataset.poseAngle = String(pose.angle);
       item.dataset.poseScale = String(pose.scale);
+      item.dataset.poseProgress = String(pose.progress);
     });
   }
 

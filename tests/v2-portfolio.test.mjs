@@ -245,6 +245,7 @@ test("contact finale triggers once in view and preserves dynamic drag physics", 
   assert.match(finale, /const spiralTurns = 2/);
   assert.match(finale, /const centreScale = \.55/);
   assert.match(finale, /dataset\.poseScale/);
+  assert.match(finale, /dataset\.poseProgress/);
   assert.match(finale, /plugin\.renderScale/);
   assert.match(finale, /scale\(\$\{body\.plugin\.renderScale\}\)/);
   assert.doesNotMatch(finale, /function roundedOrbitPose/);
