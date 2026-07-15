@@ -735,10 +735,28 @@ h3 {
   .workflow-trigger { width: 100%; min-width: 0; min-height: 72px; grid-template-columns: auto 1fr auto; grid-template-rows: 1fr; justify-items: start; align-items: center; padding: 14px var(--gutter); border-right: 0; border-bottom: 1px solid rgba(0,0,0,.3); }
   .workflow-trigger strong { writing-mode: horizontal-tb; transform: none; font-size: clamp(1.12rem, 2.5vw, 1.45rem); }
   .workflow-plus { justify-self: end; }
-  .workflow-panel { display: grid; grid-template-rows: 0fr; opacity: 1; transform: none; transition: grid-template-rows 520ms var(--ease-out); }
-  .workflow-panel > * { min-height: 0; overflow: hidden; }
-  .workflow-item.is-active .workflow-panel { grid-template-rows: 1fr; }
-  .workflow-panel-inner { min-width: 0; min-height: 0; padding: clamp(32px, 7vw, 64px) var(--gutter); }
+  .workflow-panel {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 1;
+    transform: none;
+    transition: max-height 520ms var(--ease-out);
+  }
+  .workflow-panel > * { min-height: 0; }
+  .workflow-item.is-active .workflow-panel { max-height: 1400px; }
+  .workflow-panel-inner {
+    min-width: 0;
+    min-height: 0;
+    padding: 0 var(--gutter);
+    opacity: 0;
+    transition: padding 520ms var(--ease-out), opacity 220ms ease;
+  }
+  .workflow-item.is-active .workflow-panel-inner {
+    padding: clamp(32px, 7vw, 64px) var(--gutter);
+    opacity: 1;
+    transition-delay: 0ms, 180ms;
+  }
   .workflow-panel figure { min-height: 300px; }
   .about-inner { grid-template-columns: 1fr 1.05fr; }
 }

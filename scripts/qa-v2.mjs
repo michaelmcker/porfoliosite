@@ -130,6 +130,10 @@ try {
     headingVisible: true,
     headingFont: 'Fraunces, Georgia, serif',
   });
+  await page.waitForFunction(() => !document.querySelector("[data-workflow-accordion]")?.hasAttribute("data-workflow-transitioning"));
+  assert.equal(await page.$$eval(".workflow-item:not(.is-active) .workflow-panel", (panels) => (
+    panels.every((panel) => panel.getBoundingClientRect().height === 0)
+  )), true, "closed vertical workflow panels leak content height");
 
   await page.click("[data-workflow-trigger='content']");
   await page.keyboard.press("ArrowDown");
@@ -192,6 +196,7 @@ try {
   if (screenshotDirectory) {
     const workflowKeys = ["content", "dashboard", "presentation", "prospecting", "website"];
     for (const { label, width } of [{ label: "desktop", width: 1440 }, { label: "mobile", width: 390 }]) {
+      await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "no-preference" }]);
       await page.setViewport({ width, height: 1000, deviceScaleFactor: 1 });
       await page.goto(url, { waitUntil: "domcontentloaded" });
       await page.evaluate(() => document.fonts.ready);
@@ -221,6 +226,7 @@ try {
             && panelStyle.opacity === "1"
             && panelStyle.visibility === "visible";
         }, {}, key);
+        await page.waitForFunction(() => !document.querySelector("[data-workflow-accordion]")?.hasAttribute("data-workflow-transitioning"));
         await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))));
         const screenshotPath = path.join(screenshotDirectory, `${workflowScreenshotPrefix}${key}.png`);
         const accordion = await page.$(".workflow-accordion");
