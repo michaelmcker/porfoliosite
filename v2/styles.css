@@ -857,6 +857,16 @@ h3 {
 .contact-object-paper { aspect-ratio: 8.5 / 11; }
 .contact-object-portrait img,
 .contact-object-paper img { aspect-ratio: auto; }
+.contact-object-portrait .contact-portrait-body,
+.contact-object-portrait .contact-portrait-head {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.contact-object-portrait .contact-portrait-body { z-index: 1; }
+.contact-object-portrait .contact-portrait-head { z-index: 2; }
 .contact-object-laptop { aspect-ratio: 1170 / 814; border: 0; background: transparent; box-shadow: none; filter: drop-shadow(0 18px 24px rgba(31,25,9,.28)); }
 .contact-object-laptop img { aspect-ratio: auto; object-fit: contain; }
 .contact-resolution {
@@ -898,11 +908,12 @@ h3 {
 .contact-story.has-finale-js .contact-continue { opacity: 0; transform: translateY(16px); }
 .contact-story[data-finale-state="physics"] .contact-instruction,
 .contact-story[data-finale-state="settled"] .contact-instruction { opacity: 0; }
-.contact-story[data-finale-state="settled"] .contact-morph { opacity: 1; }
-.contact-story[data-finale-state="settled"] [data-contact-morph-before] { animation: contact-morph-out 650ms both; }
-.contact-story[data-finale-state="settled"] [data-contact-morph-after] { animation: contact-morph-in 800ms 280ms both; }
-.contact-story[data-finale-state="settled"] .contact-actions,
-.contact-story[data-finale-state="settled"] .contact-continue { opacity: 1; transform: none; transition: opacity 420ms 900ms ease, transform 420ms 900ms ease; }
+.contact-story[data-copy-state="visible"] .contact-morph { opacity: 1; }
+.contact-story[data-copy-state="visible"] [data-contact-morph-before] { animation: contact-morph-out 480ms both; }
+.contact-story[data-copy-state="visible"] [data-contact-morph-after] { animation: contact-morph-in 620ms 120ms both; }
+.contact-story[data-copy-state="visible"] .contact-actions,
+.contact-story[data-copy-state="visible"] .contact-continue { opacity: 1; transform: none; transition: opacity 360ms 520ms ease, transform 360ms 520ms ease; }
+.contact-resolution.is-contrast-light .contact-morph { color: #fff; text-shadow: 0 3px 18px rgba(23,24,19,.82); }
 .contact-story .button-primary { background: #1f1909; border-color: #1f1909; color: white; }
 .contact-story .button-quiet { border-color: rgba(31,25,9,.4); background: rgba(255,255,255,.2); }
 .contact-stage.is-draggable .contact-object { cursor: grab; touch-action: none; }
