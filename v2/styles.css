@@ -1055,7 +1055,7 @@ h3 {
   .experience-ledger article { grid-template-columns: 1fr; gap: 8px; }
   .site-footer { grid-template-columns: 1fr 1fr; padding-block: 26px; }
   .footer-links { grid-column: 1 / -1; grid-row: 2; justify-self: start; }
-  .contact-story.has-finale-js { min-height: 290svh; }
+  .contact-story.has-finale-js { min-height: 100svh; }
   .contact-object { --body-width: 132px; border-width: 3px; border-radius: 11px; }
   .contact-object:nth-child(n + 8) { display: none; }
   .contact-morph { min-height: 3em; font-size: clamp(2.55rem, 13vw, 4.5rem); }

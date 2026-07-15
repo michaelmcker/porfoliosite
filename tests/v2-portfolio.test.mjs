@@ -257,6 +257,7 @@ test("contact finale triggers once in view and preserves dynamic drag physics", 
   assert.match(css, /data-copy-state="visible"/);
   assert.match(css, /is-contrast-light/);
   assert.doesNotMatch(css, /\.contact-story\.has-finale-js\s*\{[^}]*min-height:\s*340svh/s);
+  assert.doesNotMatch(css, /\.contact-story\.has-finale-js\s*\{[^}]*min-height:\s*(?:[2-9]\d{2}|[1-9]\d{3,})svh/s);
   assert.match(css, /prefers-reduced-motion:\s*reduce[\s\S]*?\.contact-object/s);
   await access(fileUrl("vendor/matter.min.js"));
 });
