@@ -117,3 +117,43 @@ git diff --name-only -- proposal-generator.html proposal-generator.css proposal-
 ```
 
 Expected: all tests and browser QA pass; the final V1 presentation diff is empty.
+
+### Task 5: Replace the Generic Email with the Real Numbers-Led Outreach
+
+**Files:**
+- Modify: `tests/v2-proposal-builder.test.mjs`
+- Modify: `v2/proposal-generator.html`
+- Modify: `docs/portfolio-working-notes.md`
+
+- [ ] **Step 1: Write the failing copy assertions**
+
+Require the email object to contain the subject `92 buildings near Midtown Family Dental` and the supported sample facts `92 buildings`, `327 screens`, `223.5 million impressions a month`, and `$70 per screen per month`. Require the attached proposal to be the concrete next step.
+
+- [ ] **Step 2: Run the focused test and confirm RED**
+
+Run:
+
+```bash
+node --test tests/v2-proposal-builder.test.mjs
+```
+
+Expected: failure because the current email contains generic local-inventory language instead of the sample facts.
+
+- [ ] **Step 3: Replace only the email copy**
+
+Use the real first-email structure from `VI Automation/src/integrations/claude/email-writer.ts`, adapted to the approved Midtown Family Dental proposal sample. Keep the existing email layout, attachment object, workflow link, and human-review note unchanged.
+
+- [ ] **Step 4: Record the source truth**
+
+Document that the portfolio email example uses the approved proposal sample metrics and mirrors the actual numbers-led outreach pattern. Do not imply that every prospect receives the same counts.
+
+- [ ] **Step 5: Verify focused and browser behavior**
+
+Run:
+
+```bash
+node --test tests/v2-proposal-builder.test.mjs
+QA_V2_PROPOSAL_SCREENSHOT_DIR=/tmp/v2-proposal-builder-proof node tests/qa-v2-proposal-builder.mjs
+```
+
+Expected: focused tests pass, the email remains readable on desktop and mobile, generation still completes, and no horizontal overflow appears.
