@@ -53,11 +53,19 @@ Introduction:
 
 Email example:
 
-> Hi {{business name}},
+> Subject: 92 buildings near Midtown Family Dental
 >
-> We found a group of elevator screens within walking distance of your business and put together a local campaign idea using your name, category, and nearby inventory.
+> Hi [First name],
 >
-> I’ve included a tailored proposal with the creative concept, local screen count, and map.
+> I was pulling elevator inventory around Midtown and noticed something kind of interesting.
+>
+> 92 buildings near Midtown Family Dental have elevator screens running ads right now. 327 screens total. That is 223.5 million impressions a month from people who live and work nearby.
+>
+> I do not know if elevator advertising is something Midtown Family Dental has considered, but at $70 per screen per month, it seemed worth putting together something concrete.
+>
+> I attached a local proposal with a campaign concept, the nearby building count, the screen inventory, and the map.
+>
+> Worth a look?
 
 Human-review note:
 
