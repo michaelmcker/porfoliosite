@@ -30,3 +30,19 @@ The Google secrets are identifiers, not a private service-account key. `google-g
 - The Action commits a changed snapshot; Vercel deploys that commit through its Git integration.
 
 Exact Google Business Profile calls, directions, and profile views require a separate Business Profile OAuth refresh token. They are intentionally not inferred from GA4.
+
+## Current scheduled-run diagnosis — July 19, 2026
+
+The refresh code has not reached Google Analytics, Search Console, or DataForSEO in the five scheduled failures from July 14 through July 18. GitHub Actions stops at `google-github-actions/auth@v3` with:
+
+> the GitHub Action workflow must specify exactly one of "workload_identity_provider" or "credentials_json"
+
+Repository inspection confirms `DATAFORSEO_LOGIN` and `DATAFORSEO_PASSWORD` exist, while the Google configuration is absent:
+
+- repository variable `GCP_PROJECT_ID`;
+- secret `GCP_WORKLOAD_IDENTITY_PROVIDER`;
+- secret `GCP_SERVICE_ACCOUNT`.
+
+This is an external authentication-configuration blocker, not a metrics-query or JSON-rendering failure. Create the Workload Identity provider and service account described above, add the three repository values, then run `Refresh Cool Runnings metrics` manually. A passing run must complete auth, `npm ci`, the refresh script, and either commit a changed snapshot or print `Metrics are unchanged.`
+
+The separate Cool Runnings Vercel cron is a second, not-yet-live path. Its local implementation passes 31 focused tests and already distinguishes GA4 conversions, explicitly campaign-tagged Business Profile sessions, and direct Business Profile Performance API metrics. The linked Vercel project currently has GA4, Search Console, and Blob values but is missing `CRON_SECRET`, Google Workload Identity configuration, and optional Business Profile OAuth/location configuration. The route code is also uncommitted in that separate worktree. Do not confuse the passing local implementation with an operational production refresh.

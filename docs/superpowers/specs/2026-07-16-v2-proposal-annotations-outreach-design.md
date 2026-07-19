@@ -37,7 +37,7 @@ The section explains that the proposal is not an isolated artifact:
 3. the proposal is attached or linked inside a reviewed, personalized outreach email;
 4. a salesperson reviews the recipient, copy, commercial terms, and send decision.
 
-The visual should resemble an authored email object, not another dashboard. It includes a restrained email header, two short personalized paragraphs, a proposal attachment row, and a clear human-review note. It links to `/v2/workflows/local-prospecting-enrichment.html`.
+The visual should resemble an authored email object, not another dashboard. It includes a restrained email header, three short personalised paragraphs, a proposal attachment row, and a clear human-review note. It links to `/v2/workflows/local-prospecting-enrichment.html`.
 
 Do not invent recipient names, claim automatic sending, expose private contact data, or change the proposal API.
 
@@ -53,19 +53,17 @@ Introduction:
 
 Email example:
 
-> Subject: 92 buildings near Midtown Family Dental
+> Subject: an idea for Midtown
 >
 > Hi [First name],
 >
-> I was pulling elevator inventory around Midtown and noticed something kind of interesting.
+> I took a look at how people find a dentist around Midtown. You are competing on the first page of Google with hundreds of other dental practices, all fighting for the same clicks.
 >
-> 92 buildings near Midtown Family Dental have elevator screens running ads right now. 327 screens total. That is 223.5 million impressions a month from people who live and work nearby.
+> There are 30 elevator screens within five miles of your practice, inside apartment and office buildings where potential patients live and work. Instead of putting you beside every other dentist in the search results, those screens put your name in front of the same local audience every day.
 >
-> I do not know if elevator advertising is something Midtown Family Dental has considered, but at $70 per screen per month, it seemed worth putting together something concrete.
+> So we put together a campaign idea specifically for Midtown Family Dental: a more personal, conversational ad. We mocked it up on an elevator screen and mapped the nearby buildings so you can see what the campaign could look like.
 >
-> I attached a local proposal with a campaign concept, the nearby building count, the screen inventory, and the map.
->
-> Worth a look?
+> I attached the idea. Worth a look?
 
 Human-review note:
 

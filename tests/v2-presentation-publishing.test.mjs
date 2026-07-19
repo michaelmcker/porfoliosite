@@ -8,19 +8,18 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const v2 = path.join(root, "v2");
 const detailPath = path.join(v2, "workflows", "presentation-publishing.html");
 const detailCssPath = path.join(v2, "workflows", "workflow-detail.css");
-const artifactPath = path.join(v2, "artifacts", "presentation-publishing.html");
-const artifactCssPath = path.join(v2, "artifacts", "presentation-publishing.css");
-const desktopPngPath = path.join(v2, "assets", "presentation-publishing-desktop.png");
-const mobilePngPath = path.join(v2, "assets", "presentation-publishing-mobile.png");
+const artworkManifestPath = path.join(v2, "assets", "workflows", "README.md");
+const desktopPngPath = path.join(v2, "assets", "workflows", "presentation-publishing-desktop.png");
+const mobilePngPath = path.join(v2, "assets", "workflows", "presentation-publishing-mobile.png");
 const fontDirectory = path.join(v2, "assets", "fonts");
 
 const stages = [
-  "Branded HTML presentation",
-  "Vercel API deployment",
-  "Name and destination validation",
-  "Webflow CMS iframe field",
-  "Full-screen presentation template",
-  "Published URL verification",
+  "Create the branded HTML artifact",
+  "Call Cloud Scale Deploy",
+  "Deploy the existing presentation",
+  "Pass the deployed URL to Webflow",
+  "Validate and write the CMS record",
+  "Publish and return the link",
 ];
 
 const requiredSections = [
@@ -76,15 +75,15 @@ test("homepage presentation CTA resolves and uses the responsive V2 publishing a
   assert.equal(cta, "workflows/presentation-publishing.html");
   await access(fileURLToPath(new URL(cta, pathToFileURL(path.join(v2, "index.html")))));
   assert.match(presentation, /<picture>/);
-  assert.match(presentation, /<source media="\(max-width: 699px\)" srcset="assets\/presentation-publishing-mobile\.png">/);
-  assert.match(presentation, /<img src="assets\/presentation-publishing-desktop\.png"/);
+  assert.match(presentation, /<source media="\(max-width: 699px\)" srcset="assets\/workflows\/presentation-publishing-mobile\.png">/);
+  assert.match(presentation, /<img src="assets\/workflows\/presentation-publishing-desktop\.png"/);
   assert.doesNotMatch(presentation, /presentation-publishing-six-step\.png/);
 });
 
 test("detail page has the required public-safe content and ordered publishing story", async () => {
   const [detail, homepage] = await Promise.all([read(detailPath), read(path.join(v2, "index.html"))]);
   assert.match(detail, /<h1[^>]*>Presentation publishing<\/h1>/);
-  assert.match(detail, /branded HTML[\s\S]{0,180}prospect-ready URL[\s\S]{0,180}without a manual deployment or CMS handoff/i);
+  assert.match(detail, /existing HTML presentation[\s\S]{0,260}published Webflow link[\s\S]{0,120}without a manual deployment or CMS handoff/i);
 
   let sectionCursor = -1;
   for (const section of requiredSections) {
@@ -101,18 +100,26 @@ test("detail page has the required public-safe content and ordered publishing st
   }
 
   for (const phrase of [
-    "self-contained HTML",
-    "publishing skill",
+    "sales team",
+    "HTML presentation",
+    "design system",
+    "customer branding",
+    "maps",
+    "custom graphics",
+    "Cloud Scale Deploy",
+    "/deploy/presentation",
+    "existing presentation",
     "Vercel API",
     "Webflow CMS API",
-    "existing-presentation lookup",
+    "duplicate name",
     "iframe embed field",
-    "browser verification",
-    "Final content and design",
-    "confirming the intended name and destination",
+    "Publish the Webflow site",
+    "return the final link",
+    "final presentation approval",
+    "intended page name",
     "Vercel-hosted artifact",
     "managed Webflow page",
-    "final prospect URL",
+    "published Webflow link",
     "without exposing credentials, tokens, internal identifiers",
     "Public-safe proof and constraints",
   ]) {
@@ -181,59 +188,45 @@ test("V2 vendors approved variable fonts and has no remote font dependency", asy
     assert.ok(font.length > 20_000, `${filename} is unexpectedly small`);
   }
 
-  const [baseCss, artifactCss] = await Promise.all([
-    read(path.join(v2, "styles.css")),
-    read(artifactCssPath),
-  ]);
-  for (const css of [baseCss, artifactCss]) {
-    assert.doesNotMatch(css, /@import|fonts\.googleapis|fonts\.gstatic|https?:\/\//i);
-    assert.match(css, /@font-face[\s\S]*?font-family:\s*"DM Sans"[\s\S]*?font-weight:\s*100 1000[\s\S]*?font-display:\s*(?:swap|block)/);
-    assert.match(css, /@font-face[\s\S]*?font-family:\s*"Fraunces"[\s\S]*?font-weight:\s*100 900[\s\S]*?font-display:\s*(?:swap|block)/);
-  }
+  const baseCss = await read(path.join(v2, "styles.css"));
+  assert.doesNotMatch(baseCss, /@import|fonts\.googleapis|fonts\.gstatic|https?:\/\//i);
+  assert.match(baseCss, /@font-face[\s\S]*?font-family:\s*"DM Sans"[\s\S]*?font-weight:\s*100 1000[\s\S]*?font-display:\s*(?:swap|block)/);
+  assert.match(baseCss, /@font-face[\s\S]*?font-family:\s*"Fraunces"[\s\S]*?font-weight:\s*100 900[\s\S]*?font-display:\s*(?:swap|block)/);
   assert.match(baseCss, /url\("assets\/fonts\/dm-sans-latin-variable\.woff2"\)/);
   assert.match(baseCss, /url\("assets\/fonts\/fraunces-latin-variable\.woff2"\)/);
-  assert.match(artifactCss, /url\("\.\.\/assets\/fonts\/dm-sans-latin-variable\.woff2"\)/);
-  assert.match(artifactCss, /url\("\.\.\/assets\/fonts\/fraunces-latin-variable\.woff2"\)/);
 });
 
-test("editable artwork contains the six stages and a purpose-built mobile layout", async () => {
-  const [artifact, css] = await Promise.all([read(artifactPath), read(artifactCssPath)]);
-  assert.equal([...artifact.matchAll(/<li class="stage"/g)].length, 6);
-
-  let cursor = -1;
-  for (const stage of stages) {
-    const next = artifact.indexOf(stage);
-    assert.ok(next > cursor, `artifact stage missing or out of order: ${stage}`);
-    cursor = next;
-  }
-
-  assert.match(artifact, /href="presentation-publishing\.css"/);
-  assert.match(css, /@media\s*\(max-width:\s*700px\)/);
-  assert.match(css, /@media\s*\(min-width:\s*701px\)/);
-  assert.match(css, /grid-template-columns:\s*repeat\(6,/);
-  assert.match(css, /grid-template-columns:\s*1fr/);
-  assert.doesNotMatch(css, /repeating-(?:linear|radial)-gradient/);
+test("image-generation source truth contains the five-stage Cloud Scale pipeline", async () => {
+  const manifest = await read(artworkManifestPath);
+  assert.match(manifest, /image-generated portfolio artwork/i);
+  assert.match(manifest, /strict style reference/i);
+  assert.match(manifest, /SALES AUTHORING/);
+  assert.match(manifest, /CUSTOMER BRAND/);
+  assert.match(manifest, /DESIGN SYSTEM/);
+  assert.match(manifest, /MAPS \+ CUSTOM GRAPHICS/);
+  assert.match(manifest, /BRANDED HTML PRESENTATION/);
+  assert.match(manifest, /Cloud Scale Deploy/);
+  assert.match(manifest, /\/deploy\/presentation/);
+  assert.match(manifest, /Vercel API/);
+  assert.match(manifest, /Webflow API/);
+  assert.match(manifest, /VALIDATE PAGE NAME[\s\S]*WRITE URL TO IFRAME CMS FIELD/);
+  assert.match(manifest, /PUBLISH WEBFLOW SITE[\s\S]*RETURN PUBLISHED LINK/);
+  assert.match(manifest, /Desktop and mobile are separate image-generation compositions/i);
+  assert.match(manifest, /Do not add password or duplicate verification stages/i);
 });
 
-test("rendered artwork PNGs have the exact desktop and mobile dimensions", async () => {
+test("image-generated artwork PNGs are high-resolution, responsive compositions", async () => {
   const [desktop, mobile] = await Promise.all([readFile(desktopPngPath), readFile(mobilePngPath)]);
-  assert.deepEqual(pngDimensions(desktop), { width: 1800, height: 1100 });
-  assert.deepEqual(pngDimensions(mobile), { width: 900, height: 1600 });
+  const desktopDimensions = pngDimensions(desktop);
+  const mobileDimensions = pngDimensions(mobile);
+  assert.ok(desktopDimensions.width >= 1600 && desktopDimensions.width > desktopDimensions.height);
+  assert.ok(mobileDimensions.height >= 1800 && mobileDimensions.height > mobileDimensions.width * 2);
 });
 
-test("render script uses installed Chrome with an override and waits for artwork readiness", async () => {
-  const script = await read(path.join(root, "scripts", "render-v2-presentation.mjs"));
-  assert.match(script, /puppeteer-core/);
-  assert.match(script, /process\.env\.CHROME_PATH/);
-  assert.match(script, /Google Chrome\.app\/Contents\/MacOS\/Google Chrome/);
-  assert.match(script, /document\.fonts\.load/);
-  assert.match(script, /document\.fonts\.ready/);
-  assert.match(script, /requestAnimationFrame/);
-  assert.match(script, /complete/);
-  assert.ok(script.includes("1800") && script.includes("1100"));
-  assert.ok(script.includes("900") && script.includes("1600"));
-  assert.match(script, /presentation-publishing-desktop\.png/);
-  assert.match(script, /presentation-publishing-mobile\.png/);
+test("rejected deterministic workflow renderers cannot overwrite generated artwork", async () => {
+  await assert.rejects(access(path.join(root, "scripts", "render-v2-workflows.mjs")));
+  await assert.rejects(access(path.join(root, "scripts", "render-v2-content-mobile.mjs")));
+  await assert.rejects(access(path.join(v2, "artifacts", "workflow-system.html")));
 });
 
 test("permanent V2 browser QA directly verifies the presentation detail page and responsive picture", async () => {

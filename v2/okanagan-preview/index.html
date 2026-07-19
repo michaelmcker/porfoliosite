@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Okanagan Treehouse hero sequence</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-site-header>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="site-logo" href="#" data-preview-link aria-label="Okanagan Treehouse Adventures home">
+        <picture class="site-logo__mark">
+          <img class="site-logo__mark-img site-logo__mark-img--light" src="assets/logo-white.webp" alt="" width="64" height="64">
+          <img class="site-logo__mark-img site-logo__mark-img--dark" src="assets/logo-green.webp" alt="" width="64" height="64">
+        </picture>
+        <span class="site-logo__text"><span>Okanagan</span><span>Treehouse</span><span>Adventures</span></span>
+      </a>
+      <div class="site-nav__links">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown__trigger" aria-haspopup="true" aria-expanded="false" data-stays-trigger>Stays</button>
+          <div class="nav-mega" role="menu" aria-label="Stays">
+            <a class="nav-mega__card" href="#treehouse" role="menuitem" data-preview-link>
+              <div class="nav-mega__media"><img src="assets/treehouse-nav.webp" alt="The Treehouse"></div>
+              <div class="nav-mega__body">
+                <div class="nav-mega__heading"><p class="nav-mega__name">The Treehouse</p><p class="nav-mega__price">From $300</p></div>
+                <p class="nav-mega__summary">Built 16 feet above the ground between Douglas fir trees, this elevated forest stay has a hanging bridge, roof deck, outdoor kitchen, climbing wall, safety nets, and quiet views across the property.</p>
+                <p class="nav-mega__meta"><span>Up to 6 guests</span><span class="nav-mega__rating"><span class="rating-stars" role="img" aria-label="4.96 out of 5">★★★★★</span><span>4.96</span></span></p>
+              </div>
+            </a>
+            <a class="nav-mega__card" href="#cabin" role="menuitem" data-preview-link>
+              <div class="nav-mega__media"><img src="assets/cabin-nav.webp" alt="The Cabin"></div>
+              <div class="nav-mega__body">
+                <div class="nav-mega__heading"><p class="nav-mega__name">The Cabin</p><p class="nav-mega__price">From $275</p></div>
+                <p class="nav-mega__summary">A warm handcrafted cabin on five private acres with a king loft, bunk room, hide-a-bed, full kitchen, bathtub, Wi-Fi, Netflix TV, and shared hot tub and sauna access by appointment.</p>
+                <p class="nav-mega__meta"><span>Up to 4 guests</span><span class="nav-mega__rating"><span class="rating-stars" role="img" aria-label="4.68 out of 5">★★★★★</span><span>4.68</span></span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="#" data-preview-link>Things to Do</a>
+        <a href="#" data-preview-link>Gallery</a>
+        <a href="#" data-preview-link>Reviews</a>
+        <a href="#" data-preview-link>About</a>
+        <a href="#" data-preview-link>FAQ</a>
+        <a href="#" data-preview-link>Blog</a>
+      </div>
+      <a class="site-nav__cta" href="#" data-preview-link>Book your stay</a>
+      <details class="mobile-nav">
+        <summary aria-label="Open navigation"><span></span><span></span><span></span></summary>
+        <div class="mobile-nav__panel">
+          <a href="#treehouse" data-preview-link>The Treehouse</a>
+          <a href="#cabin" data-preview-link>The Cabin</a>
+          <a href="#" data-preview-link>Things to Do</a>
+          <a href="#" data-preview-link>Gallery</a>
+          <a href="#" data-preview-link>Reviews</a>
+          <a href="#" data-preview-link>About</a>
+          <a href="#" data-preview-link>FAQ</a>
+          <a href="#" data-preview-link>Blog</a>
+          <a href="#" data-preview-link>Book your stay</a>
+        </div>
+      </details>
+    </nav>
+  </header>
+
+  <main>
+    <section class="okanagan-scene okanagan-scene--overview" data-okanagan-scene="overview" aria-label="Okanagan Treehouse overview cinematic hero">
+      <div class="okanagan-hero" data-okanagan-hero>
+        <img class="hero-media hero-poster" src="assets/overview-poster.webp" alt="" fetchpriority="high">
+        <video class="hero-media hero-video hero-video--loop" data-hero-loop autoplay muted loop playsinline preload="auto" poster="assets/overview-poster.webp">
+          <source src="assets/overview-loop.mp4" type="video/mp4">
+        </video>
+        <video class="hero-media hero-video hero-video--scrub" data-hero-video muted playsinline preload="auto" poster="assets/overview-poster.webp">
+          <source src="assets/overview-transition.mp4" type="video/mp4">
+        </video>
+        <img class="hero-media hero-final" src="assets/overview-final.webp" alt="">
+        <img class="hero-layer hero-layer--left" src="assets/left-tree.webp" alt="">
+        <img class="hero-layer hero-layer--right" src="assets/right-tree.webp" alt="">
+        <img class="hero-layer hero-layer--canopy" src="assets/canopy.webp" alt="">
+        <img class="hero-bush hero-bush--left" src="assets/left-bush.webp" alt="">
+        <img class="hero-bush hero-bush--right" src="assets/right-bush.webp" alt="">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <h1><span>Nature.</span><span>Adventure.</span><span>Stillness.</span></h1>
+          <p>Two boutique Okanagan stays: a treetop escape and a cozy handcrafted cabin close to farms, lakes, trails, theatre, cider, and quiet country views.</p>
+          <div class="hero-actions">
+            <a class="button" href="#treehouse" data-preview-link>Book the Treehouse</a>
+            <a class="button button-secondary" href="#cabin" data-preview-link>Book the Cabin</a>
+          </div>
+        </div>
+        <ul class="trust-strip" aria-label="Guest proof"><li>4.96 stars on Airbnb</li><li>80 reviews</li><li>Guest Favourite</li><li>Superhost</li></ul>
+      </div>
+    </section>
+
+    <section class="okanagan-scene" id="treehouse" data-okanagan-scene="treehouse" aria-label="The Treehouse cinematic hero">
+      <div class="okanagan-hero" data-okanagan-hero>
+        <img class="hero-media hero-poster" src="assets/treehouse-poster.jpg" alt="The Treehouse on the Okanagan Treehouse property">
+        <video class="hero-media hero-video hero-video--scrub" data-hero-video muted playsinline preload="auto" poster="assets/treehouse-poster.jpg">
+          <source src="assets/treehouse-hero.mp4" type="video/mp4">
+        </video>
+        <img class="hero-media hero-final" src="assets/treehouse-final.jpg" alt="The Treehouse at golden hour">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <h1><span>The Treehouse</span></h1>
+          <p>Built 16 feet above the ground between Douglas fir trees, this elevated forest stay has a hanging bridge, roof deck, outdoor kitchen, climbing wall, safety nets, and quiet views across the property.</p>
+          <ul class="stay-meta"><li>Sleeps 6</li><li>Family-friendly</li><li>Waiver required</li></ul>
+          <div class="hero-actions"><a class="button" href="#" data-preview-link>Book now</a></div>
+        </div>
+        <ul class="trust-strip" aria-label="Guest proof"><li>4.96 stars on Airbnb</li><li>80 reviews</li><li>Guest Favourite</li><li>Superhost</li></ul>
+      </div>
+    </section>
+
+    <section class="okanagan-scene" id="cabin" data-okanagan-scene="cabin" aria-label="The Cabin cinematic hero">
+      <div class="okanagan-hero" data-okanagan-hero>
+        <img class="hero-media hero-poster" src="assets/cabin-poster.jpg" alt="The Cabin on the Okanagan Treehouse property">
+        <video class="hero-media hero-video hero-video--scrub" data-hero-video muted playsinline preload="auto" poster="assets/cabin-poster.jpg">
+          <source src="assets/cabin-hero.mp4" type="video/mp4">
+        </video>
+        <img class="hero-media hero-final" src="assets/cabin-final.jpg" alt="The Cabin at golden hour">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <h1><span>The Cabin</span></h1>
+          <p>A warm handcrafted cabin on five private acres with a king loft, bunk room, hide-a-bed, full kitchen, bathtub, Wi-Fi, Netflix TV, and shared hot tub and sauna access by appointment.</p>
+          <ul class="stay-meta"><li>Sleeps 4</li><li>Family-friendly</li><li>No pets</li></ul>
+          <div class="hero-actions"><a class="button" href="#" data-preview-link>Book now</a></div>
+        </div>
+        <ul class="trust-strip" aria-label="Guest proof"><li>4.96 stars on Airbnb</li><li>80 reviews</li><li>Guest Favourite</li><li>Superhost</li></ul>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

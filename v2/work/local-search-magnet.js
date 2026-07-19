@@ -22,7 +22,13 @@ const applyMetrics = (payload) => {
   const end = payload.windows?.searchConsole?.endDate;
   const windowCopy = document.querySelector("[data-cool-metrics-window]");
   if (start && end && windowCopy) {
-    windowCopy.textContent = `Google Search Console and GA4 · ${formatDate(start)} to ${formatDate(end)}.`;
+    const refreshed = payload.generatedAt
+      ? new Intl.DateTimeFormat("en-CA", { month: "long", day: "numeric", year: "numeric" }).format(new Date(payload.generatedAt))
+      : null;
+    const rankingSource = payload.metrics?.dataForSeo
+      ? " DataForSEO ranking checks are included."
+      : " DataForSEO ranking checks join the next successful refresh.";
+    windowCopy.textContent = `Google Search Console and Google Analytics 4 · ${formatDate(start)} to ${formatDate(end)}.${rankingSource}${refreshed ? ` Last refreshed ${refreshed}.` : ""}`;
   }
 };
 

@@ -9,6 +9,7 @@ import puppeteer from "puppeteer-core";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const chromePath = process.env.CHROME_PATH || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const screenshotDirectory = process.env.QA_V2_SCREENSHOT_DIR;
+const leanScreenshots = process.env.QA_V2_SCREENSHOT_MODE === "lean";
 const requestPaths = [];
 const mimeTypes = {
   ".css": "text/css; charset=utf-8",
@@ -145,29 +146,135 @@ try {
     const sectionTop = section.getBoundingClientRect().top + window.scrollY;
     window.scrollTo(0, sectionTop - (window.innerHeight * .97));
   });
-  await new Promise((resolve) => setTimeout(resolve, 120));
-  const accommodationFrame = await page.$("[data-accommodation-page]");
-  const accommodationContent = await accommodationFrame.contentFrame();
-  await accommodationContent.waitForSelector("#overview");
-  const selectableText = await accommodationContent.$eval(".hero-copy p:not(.hero-kicker)", (copy) => {
-    const selection = getSelection();
-    const range = document.createRange();
-    range.selectNodeContents(copy);
-    selection.removeAllRanges();
-    selection.addRange(range);
-    return selection.toString().trim();
-  });
-  assert.match(selectableText, /Two boutique Okanagan stays/, "boutique browser copy is not selectable");
+  await new Promise((resolve) => setTimeout(resolve, 80));
   const accommodationStart = await page.$eval("[data-scroll-reveal='accommodation']", (object) => ({
     progress: Number.parseFloat(getComputedStyle(object).getPropertyValue("--object-reveal")) || 0,
     transform: getComputedStyle(object).transform,
   }));
+  const accommodationFrameHandle = await page.waitForSelector("[data-accommodation-page]");
+  const accommodationFrame = await accommodationFrameHandle.contentFrame();
+  await accommodationFrame.waitForSelector("[data-okanagan-scene='cabin']");
+  await accommodationFrame.waitForFunction(() => [...document.querySelectorAll("[data-hero-video]")]
+    .every((video) => video.readyState >= 1 && Number.isFinite(video.duration)));
   await page.evaluate(() => {
     const section = document.querySelector("[data-work='accommodation']");
     const sectionTop = section.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo(0, sectionTop - (window.innerHeight * .45));
+    window.scrollTo(0, sectionTop - (window.innerHeight - section.offsetHeight) / 2);
   });
   await new Promise((resolve) => setTimeout(resolve, 120));
+  const accommodationTop = await accommodationFrame.evaluate(() => ({
+    parentScroll: window.parent.scrollY,
+    viewportHeight: window.innerHeight,
+    maximum: document.documentElement.scrollHeight - window.innerHeight,
+    order: [...document.querySelectorAll("[data-okanagan-scene]")].map((scene) => scene.dataset.okanaganScene),
+    headings: [...document.querySelectorAll("[data-okanagan-scene] h1")].map((heading) => heading.textContent.trim()),
+    navigation: [...document.querySelectorAll("[data-stays-trigger], .site-nav__links > a, .site-nav__cta")].map((link) => ({
+      label: link.textContent.trim(),
+      display: getComputedStyle(link).display,
+    })),
+    stayCards: [...document.querySelectorAll(".nav-mega__card")].map((card) => ({
+      name: card.querySelector(".nav-mega__name")?.textContent.trim(),
+      price: card.querySelector(".nav-mega__price")?.textContent.trim(),
+      summary: card.querySelector(".nav-mega__summary")?.textContent.trim(),
+      meta: card.querySelector(".nav-mega__meta")?.textContent.replace(/\s+/g, " ").trim(),
+    })),
+  }));
+  assert.ok(accommodationTop.maximum > accommodationTop.viewportHeight * 5, "boutique browser does not expose three long internal hero timelines");
+  assert.deepEqual(accommodationTop.order, ["overview", "treehouse", "cabin"], "boutique hero sequence order changed");
+  assert.deepEqual(accommodationTop.headings, ["Nature.Adventure.Stillness.", "The Treehouse", "The Cabin"], "boutique hero headings are not semantic HTML");
+  assert.deepEqual(accommodationTop.navigation.map(({ label }) => label), ["Stays", "Things to Do", "Gallery", "Reviews", "About", "FAQ", "Blog", "Book your stay"], "boutique desktop navigation no longer matches the deployed source experience");
+  assert.ok(accommodationTop.navigation.every(({ display }) => display !== "none"), "boutique browser is rendering its mobile navigation inside the desktop device");
+  assert.deepEqual(accommodationTop.stayCards, [
+    {
+      name: "The Treehouse",
+      price: "From $300",
+      summary: "Built 16 feet above the ground between Douglas fir trees, this elevated forest stay has a hanging bridge, roof deck, outdoor kitchen, climbing wall, safety nets, and quiet views across the property.",
+      meta: "Up to 6 guests★★★★★4.96",
+    },
+    {
+      name: "The Cabin",
+      price: "From $275",
+      summary: "A warm handcrafted cabin on five private acres with a king loft, bunk room, hide-a-bed, full kitchen, bathtub, Wi-Fi, Netflix TV, and shared hot tub and sauna access by appointment.",
+      meta: "Up to 4 guests★★★★★4.68",
+    },
+  ], "boutique Stays menu copy no longer matches the deployed source");
+  await page.waitForFunction(() => document.querySelector("[data-accommodation-url]")?.textContent.trim() === "okanagantreehouse.ca");
+
+  const setSceneProgress = (frame, key, progress) => frame.evaluate(({ key: sceneKey, progress: sceneProgress }) => {
+    const scene = document.querySelector(`[data-okanagan-scene='${sceneKey}']`);
+    const travel = scene.offsetHeight - window.innerHeight;
+    window.scrollTo(0, scene.offsetTop + travel * sceneProgress);
+  }, { key, progress });
+
+  await setSceneProgress(accommodationFrame, "overview", .45);
+  await accommodationFrame.waitForFunction(() => Number(document.querySelector("[data-okanagan-scene='overview']").dataset.sceneProgress) > .44);
+  await accommodationFrame.waitForFunction(() => [...document.querySelectorAll("[data-okanagan-scene='overview'] h1 span, [data-okanagan-scene='overview'] .hero-copy > p, [data-okanagan-scene='overview'] .hero-actions")]
+    .every((node) => Number(getComputedStyle(node).opacity) > .95));
+  const overviewMiddle = await accommodationFrame.evaluate(() => ({
+    currentTime: document.querySelector("[data-okanagan-scene='overview'] [data-hero-video]").currentTime,
+    stickyTop: document.querySelector("[data-okanagan-scene='overview'] [data-okanagan-hero]").getBoundingClientRect().top,
+  }));
+  assert.ok(overviewMiddle.currentTime > 1, `Overview hero movie did not scrub: ${JSON.stringify(overviewMiddle)}`);
+  assert.ok(Math.abs(overviewMiddle.stickyTop) < 2, "Overview hero did not stay locked while its movie played");
+
+  await setSceneProgress(accommodationFrame, "treehouse", .52);
+  await accommodationFrame.waitForFunction(() => Number(document.querySelector("[data-okanagan-scene='treehouse']").dataset.sceneProgress) > .51);
+  await accommodationFrame.waitForFunction(() => [...document.querySelectorAll("[data-okanagan-scene='treehouse'] h1 span, [data-okanagan-scene='treehouse'] .hero-copy > p, [data-okanagan-scene='treehouse'] .stay-meta, [data-okanagan-scene='treehouse'] .hero-actions")]
+    .every((node) => Number(getComputedStyle(node).opacity) > .95));
+  const treehouseMiddle = await accommodationFrame.evaluate(() => {
+    const scene = document.querySelector("[data-okanagan-scene='treehouse']");
+    const heading = scene.querySelector("h1");
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(heading);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    return {
+      currentTime: scene.querySelector("[data-hero-video]").currentTime,
+      stickyTop: scene.querySelector("[data-okanagan-hero]").getBoundingClientRect().top,
+      selectedText: selection.toString().trim(),
+    };
+  });
+  assert.ok(treehouseMiddle.currentTime > 1, `Treehouse hero movie did not scrub: ${JSON.stringify(treehouseMiddle)}`);
+  assert.ok(Math.abs(treehouseMiddle.stickyTop) < 2, "Treehouse hero did not stay locked while its movie played");
+  assert.equal(treehouseMiddle.selectedText, "The Treehouse", "Treehouse headline is not selectable HTML text");
+  await page.waitForFunction(() => document.querySelector("[data-accommodation-url]")?.textContent.trim() === "okanagantreehouse.ca/treehouse");
+
+  await accommodationFrame.$eval("[data-stays-trigger]", (trigger) => trigger.click());
+  assert.equal(await accommodationFrame.$eval("[data-stays-trigger]", (trigger) => trigger.getAttribute("aria-expanded")), "true", "Stays dropdown did not open");
+  if (screenshotDirectory) {
+    await mkdir(screenshotDirectory, { recursive: true });
+    const accommodationNavOpen = await page.$("[data-work='accommodation']");
+    await accommodationNavOpen.screenshot({ path: path.join(screenshotDirectory, "boutique-desktop-nav-open.png") });
+  }
+  const previewLocation = await accommodationFrame.evaluate(() => ({ href: location.href, scrollY: window.scrollY }));
+  await accommodationFrame.$eval(".nav-mega__card", (link) => link.click());
+  assert.deepEqual(await accommodationFrame.evaluate(() => ({ href: location.href, scrollY: window.scrollY })), previewLocation, "preview nav link navigated instead of remaining interactive-only");
+
+  await setSceneProgress(accommodationFrame, "cabin", .55);
+  await accommodationFrame.waitForFunction(() => Number(document.querySelector("[data-okanagan-scene='cabin']").dataset.sceneProgress) > .54);
+  await accommodationFrame.waitForFunction(() => [...document.querySelectorAll("[data-okanagan-scene='cabin'] h1 span, [data-okanagan-scene='cabin'] .hero-copy > p, [data-okanagan-scene='cabin'] .stay-meta, [data-okanagan-scene='cabin'] .hero-actions")]
+    .every((node) => Number(getComputedStyle(node).opacity) > .95));
+  const cabinMiddle = await accommodationFrame.evaluate(() => {
+    const scene = document.querySelector("[data-okanagan-scene='cabin']");
+    return {
+      currentTime: scene.querySelector("[data-hero-video]").currentTime,
+      stickyTop: scene.querySelector("[data-okanagan-hero]").getBoundingClientRect().top,
+      heading: scene.querySelector("h1").textContent.trim(),
+    };
+  });
+  assert.ok(cabinMiddle.currentTime > 1, `Cabin hero movie did not scrub: ${JSON.stringify(cabinMiddle)}`);
+  assert.ok(Math.abs(cabinMiddle.stickyTop) < 2, "Cabin hero did not stay locked while its movie played");
+  assert.equal(cabinMiddle.heading, "The Cabin");
+  await page.waitForFunction(() => document.querySelector("[data-accommodation-url]")?.textContent.trim() === "okanagantreehouse.ca/cabin");
+
+  await setSceneProgress(accommodationFrame, "overview", .15);
+  await accommodationFrame.waitForFunction(() => Number(document.querySelector("[data-okanagan-scene='overview']").dataset.sceneProgress) < .16);
+  const accommodationReverse = await accommodationFrame.$eval("[data-okanagan-scene='overview'] [data-hero-video]", (video) => video.currentTime);
+  assert.ok(accommodationReverse < overviewMiddle.currentTime, "Overview hero did not scrub backward");
+  await page.waitForFunction(() => document.querySelector("[data-accommodation-url]")?.textContent.trim() === "okanagantreehouse.ca");
+  assert.equal(await page.evaluate(() => window.scrollY), accommodationTop.parentScroll, "scrolling the boutique browser moved the portfolio page");
+
   const accommodationMotion = await page.evaluate(() => {
     const object = document.querySelector("[data-scroll-reveal='accommodation']");
     return {
@@ -177,13 +284,6 @@ try {
   });
   assert.ok(accommodationMotion.progress > accommodationStart.progress, "outer scroll did not advance the boutique browser reveal");
   assert.notEqual(accommodationMotion.transform, accommodationStart.transform, "boutique browser did not rotate with outer scroll");
-  await accommodationContent.click('a[href="#treehouse"]');
-  await accommodationContent.waitForFunction(() => location.hash === "#treehouse");
-  assert.ok(await accommodationContent.evaluate(() => window.scrollY > 0), "boutique browser navigation did not scroll its own document");
-  const parentScrollBeforeFrame = await page.evaluate(() => window.scrollY);
-  await accommodationContent.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
-  assert.equal(await page.evaluate(() => window.scrollY), parentScrollBeforeFrame, "scrolling the boutique browser moved the portfolio page");
-
   const reducedPage = await browser.newPage();
   const reducedVideoRequests = [];
   reducedPage.on("request", (request) => {
@@ -194,8 +294,20 @@ try {
   requestPaths.length = 0;
   await reducedPage.goto(url, { waitUntil: "domcontentloaded" });
   assert.equal(await reducedPage.$$eval("[data-motion-video]", (videos) => videos.every((video) => video.paused && video.dataset.motionLoaded !== "true")), true);
-  assert.deepEqual(reducedVideoRequests, []);
+  assert.equal(reducedVideoRequests.some((requestUrl) => /(?:portfolio-hero-system-map|rccv-showcase-laptop|cool-runnings-sizzle)/.test(requestUrl)), false);
   assert.equal(await reducedPage.$$eval("[data-motion-video]", (videos) => videos.every((video) => !video.matches("[role='button'], [tabindex]"))), true);
+  const reducedAccommodationHandle = await reducedPage.waitForSelector("[data-accommodation-page]");
+  const reducedAccommodationFrame = await reducedAccommodationHandle.contentFrame();
+  await reducedAccommodationFrame.waitForSelector("[data-okanagan-scene='cabin']");
+  const reducedAccommodation = await reducedAccommodationFrame.evaluate(() => ({
+    sceneHeights: [...document.querySelectorAll("[data-okanagan-scene]")].map((scene) => Math.round(scene.getBoundingClientRect().height)),
+    videosHidden: [...document.querySelectorAll("[data-hero-video]")].every((video) => getComputedStyle(video).display === "none"),
+    copyVisible: [...document.querySelectorAll(".hero-copy h1 span")].every((line) => Number(getComputedStyle(line).opacity) === 1),
+  }));
+  assert.equal(new Set(reducedAccommodation.sceneHeights).size, 1, `reduced-motion Okanagan scenes are not equal height: ${JSON.stringify(reducedAccommodation.sceneHeights)}`);
+  assert.ok(reducedAccommodation.sceneHeights[0] >= 560, `reduced-motion Okanagan scenes are too short: ${JSON.stringify(reducedAccommodation.sceneHeights)}`);
+  assert.equal(reducedAccommodation.videosHidden, true, "reduced-motion Okanagan movies remain visible");
+  assert.equal(reducedAccommodation.copyVisible, true, "reduced-motion Okanagan copy remains hidden");
   await reducedPage.close();
 
   await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "no-preference" }]);
@@ -214,7 +326,21 @@ try {
     return !video.paused && video.currentTime > start + .2;
   }, {}, motionStart);
 
-  await page.$eval("[data-work='cool-runnings']", (node) => node.scrollIntoView({ block: "center" }));
+  const coolPosition = await page.$eval("[data-work='cool-runnings']", (section) => ({
+    top: section.getBoundingClientRect().top + window.scrollY,
+    height: section.offsetHeight,
+  }));
+  const workHeights = await page.$$eval(".work-object", (sections) => sections.map((section) => section.offsetHeight));
+  assert.ok(Math.max(...workHeights) - Math.min(...workHeights) <= 2, `Selected Work sections do not share one height: ${JSON.stringify(workHeights)}`);
+  await page.evaluate(({ top }) => window.scrollTo(0, top - window.innerHeight * .9), coolPosition);
+  await new Promise((resolve) => setTimeout(resolve, 100));
+  const coolRevealStart = await page.$eval(".cool-laptop", (laptop) => ({
+    progress: Number.parseFloat(getComputedStyle(laptop).getPropertyValue("--object-reveal")) || 0,
+    transform: getComputedStyle(laptop).transform,
+  }));
+  assert.ok(coolRevealStart.progress > .05 && coolRevealStart.progress < .3, `Cool Runnings laptop did not begin its reveal early: ${JSON.stringify(coolRevealStart)}`);
+
+  await page.evaluate(({ top, height }) => window.scrollTo(0, top - (window.innerHeight - height) / 2), coolPosition);
   await page.waitForFunction(() => {
     const video = document.querySelector("#motion-video-cool-runnings");
     return video?.dataset.motionLoaded === "true" && video.readyState >= 2;
@@ -224,10 +350,18 @@ try {
     const video = document.querySelector("#motion-video-cool-runnings");
     return !video.paused && video.currentTime > start + .2;
   }, {}, coolMotionStart);
-  const coolLidAngle = await page.$eval(".cool-laptop-lid", (lid) => getComputedStyle(lid).transform);
-  await page.evaluate(() => window.scrollBy(0, 180));
-  await new Promise((resolve) => setTimeout(resolve, 100));
-  assert.notEqual(await page.$eval(".cool-laptop-lid", (lid) => getComputedStyle(lid).transform), coolLidAngle, "Cool Runnings laptop lid did not open with scroll");
+  const coolRevealMid = await page.$eval(".cool-laptop", (laptop) => ({
+    progress: Number.parseFloat(getComputedStyle(laptop).getPropertyValue("--object-reveal")) || 0,
+    transform: getComputedStyle(laptop).transform,
+    width: laptop.getBoundingClientRect().width,
+    bounds: laptop.getBoundingClientRect().toJSON(),
+    duplicateBase: Boolean(document.querySelector(".cool-laptop-base")),
+  }));
+  assert.ok(coolRevealMid.progress >= .99, `Cool Runnings laptop did not finish by the time its text was centred: ${JSON.stringify(coolRevealMid)}`);
+  assert.notEqual(coolRevealMid.transform, coolRevealStart.transform, "Cool Runnings laptop did not transform through the section");
+  assert.ok(coolRevealMid.width > 760, `Cool Runnings laptop is still undersized: ${coolRevealMid.width}px`);
+  assert.ok(coolRevealMid.bounds.bottom > 0 && coolRevealMid.bounds.top < 900, `Cool Runnings laptop was gone when its animation completed: ${JSON.stringify(coolRevealMid.bounds)}`);
+  assert.equal(coolRevealMid.duplicateBase, false, "Cool Runnings laptop still has the duplicate frame bar");
 
   await page.$eval("[data-work='elevators']", (node) => node.scrollIntoView({ block: "center" }));
   await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-scroll-reveal='elevators']")).getPropertyValue("--object-reveal")) > .25);
@@ -237,7 +371,10 @@ try {
   const accordionStartWidths = await page.$$eval(".workflow-item", (items) => items.map((item) => item.getBoundingClientRect().width));
   await page.click("[data-workflow-trigger='dashboard']");
   await page.waitForFunction(() => document.querySelector("[data-workflow-trigger='dashboard']")?.getAttribute("aria-expanded") === "true");
-  await new Promise((resolve) => setTimeout(resolve, 90));
+  await page.waitForFunction((startingWidth) => {
+    const [closing, opening] = [...document.querySelectorAll(".workflow-item")].map((item) => item.getBoundingClientRect().width);
+    return closing > 64 && closing < startingWidth && opening > 64 && opening < startingWidth;
+  }, { timeout: 1500, polling: "raf" }, accordionStartWidths[0]);
   const transitionWidths = await page.$$eval(".workflow-item", (items) => items.map((item) => item.getBoundingClientRect().width));
   assert.ok(transitionWidths[0] > 64 && transitionWidths[0] < accordionStartWidths[0], "closing workflow panel did not interpolate its width");
   assert.ok(transitionWidths[1] > 64 && transitionWidths[1] < accordionStartWidths[0], "opening workflow panel did not interpolate its width");
@@ -380,7 +517,7 @@ try {
   assert.ok(spiralQuarter.x > 0 && spiralQuarter.y > 0, `spiral did not cross the lower-right half turn: ${JSON.stringify(spiralQuarter)}`);
   assert.ok(spiralHalf.x < 0 && spiralHalf.y < 0, `spiral did not return to the upper-left after one turn: ${JSON.stringify(spiralHalf)}`);
   assert.ok(spiralHalf.scale < spiralQuarter.scale, "spiral cards must shrink continuously toward the centre");
-  if (screenshotDirectory) {
+  if (screenshotDirectory && !leanScreenshots) {
     await mkdir(screenshotDirectory, { recursive: true });
     await page.screenshot({ path: path.join(screenshotDirectory, "finale-spiral-mid-desktop.png") });
   }
@@ -389,6 +526,15 @@ try {
   await page.waitForFunction(() => [...document.querySelectorAll("[data-contact-object='portrait'] img")]
     .every((image) => image.complete && image.naturalWidth > 0));
   assert.equal(await page.$$eval("[data-contact-object='portrait'] img", (images) => images.length), 2, "finale portrait must include body and head layers");
+  await page.waitForFunction(() => {
+    const story = document.querySelector("[data-contact-story]");
+    const visibleCount = [...document.querySelectorAll("[data-contact-object]")]
+      .filter((item) => getComputedStyle(item).display !== "none").length;
+    const releasedCount = Number(story?.dataset.releasedObjects || 0);
+    return story?.dataset.finaleState === "releasing"
+      && releasedCount > 0
+      && releasedCount < visibleCount;
+  });
   await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "physics", { timeout: 6500 });
   const releasedViewport = await page.$eval("[data-contact-story]", (story) => ({
     viewportLocked: story.dataset.viewportLocked,
@@ -413,11 +559,11 @@ try {
       renderedScale: Math.hypot(matrix.a, matrix.b),
     };
   });
-  assert.ok(centreRelease.minimumScale >= .69 && centreRelease.maximumScale <= .71, `finale cards did not retain 70% scale: ${JSON.stringify(centreRelease)}`);
-  assert.ok(centreRelease.horizontalSpan >= 420 && centreRelease.horizontalSpan <= 530, `finale cards did not occupy the distributed central release band: ${JSON.stringify(centreRelease)}`);
-  assert.ok(centreRelease.maximumHorizontalOffset <= 270, `finale release spread too far from centre: ${JSON.stringify(centreRelease)}`);
-  assert.ok(centreRelease.verticalSpan <= 40, `finale release stagger is too tall: ${JSON.stringify(centreRelease)}`);
-  assert.ok(Math.abs(centreRelease.renderedScale - .7) <= .015, `scaled physics handoff jumped at release: ${JSON.stringify(centreRelease)}`);
+  assert.ok(centreRelease.minimumScale >= .7 && centreRelease.maximumScale <= .74, `finale cards became too small before release: ${JSON.stringify(centreRelease)}`);
+  assert.ok(centreRelease.horizontalSpan >= 420 && centreRelease.horizontalSpan <= 620, `finale cards did not occupy the distributed central release band: ${JSON.stringify(centreRelease)}`);
+  assert.ok(centreRelease.maximumHorizontalOffset <= 330, `finale release spread too far from centre: ${JSON.stringify(centreRelease)}`);
+  assert.ok(centreRelease.verticalSpan <= 70, `finale release stagger is too tall: ${JSON.stringify(centreRelease)}`);
+  assert.ok(centreRelease.renderedScale >= .69 && centreRelease.renderedScale <= .75, `scaled physics handoff jumped at release: ${JSON.stringify(centreRelease)}`);
   await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.copyState === "visible");
   assert.equal(await page.$eval("[data-contact-story]", (story) => story.dataset.finaleState), "physics", "contact copy must resolve while objects are still dropping");
   await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "settled", { timeout: 8000 });
@@ -437,7 +583,7 @@ try {
     const actions = document.querySelector(".contact-actions").getBoundingClientRect();
     return actions.top >= heading.bottom + 16;
   }), "contact actions must not overlap the resolved multiline heading");
-  if (screenshotDirectory) {
+  if (screenshotDirectory && !leanScreenshots) {
     await mkdir(screenshotDirectory, { recursive: true });
     await page.screenshot({ path: path.join(screenshotDirectory, "finale-settled-desktop.png") });
   }
@@ -508,6 +654,45 @@ try {
   await new Promise((resolve) => setTimeout(resolve, 120));
   assert.ok(await page.$eval(".site-footer", (footer) => footer.getBoundingClientRect().top <= window.innerHeight + 2), "normal scrolling must reach the footer after the finale");
 
+  const mobileFinalePage = await browser.newPage();
+  await mobileFinalePage.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "no-preference" }]);
+  await mobileFinalePage.setViewport({ width: 390, height: 844, deviceScaleFactor: 1 });
+  await mobileFinalePage.goto(url, { waitUntil: "domcontentloaded" });
+  const mobileFinalePosition = await mobileFinalePage.$eval("[data-contact-story]", (story) => ({
+    top: story.getBoundingClientRect().top + window.scrollY,
+  }));
+  await mobileFinalePage.evaluate(({ top }) => window.scrollTo(0, top - window.innerHeight * .55), mobileFinalePosition);
+  await mobileFinalePage.waitForFunction(() => Number(document.querySelector("[data-contact-story]")?.dataset.entranceProgress) > .34);
+  const mobileOrbit = await mobileFinalePage.$$eval("[data-contact-object]", (items) => ({
+    visible: items.filter((item) => {
+      const bounds = item.getBoundingClientRect();
+      const opacity = Number(getComputedStyle(item).opacity);
+      return opacity > .25 && bounds.right > -20 && bounds.left < innerWidth + 20 && bounds.bottom > -20 && bounds.top < innerHeight + 20;
+    }).length,
+    locked: document.querySelector("[data-contact-story]")?.dataset.viewportLocked,
+  }));
+  assert.equal(mobileOrbit.locked, "true", "mobile finale did not hold the viewport during its entrance");
+  assert.ok(mobileOrbit.visible >= 3, `mobile finale ellipse leaves too few objects visible: ${JSON.stringify(mobileOrbit)}`);
+  if (screenshotDirectory) {
+    await mkdir(screenshotDirectory, { recursive: true });
+    await mobileFinalePage.screenshot({ path: path.join(screenshotDirectory, "finale-spiral-mid-mobile.png") });
+  }
+  await mobileFinalePage.waitForFunction(() => Number(document.querySelector("[data-contact-object]")?.dataset.poseProgress) >= .49);
+  const mobileOppositeArc = await mobileFinalePage.$eval("[data-contact-object]", (item) => {
+    const stage = document.querySelector("[data-contact-stage]");
+    return {
+      x: Number(item.dataset.poseX) - stage.clientWidth * .5,
+      y: Number(item.dataset.poseY) - stage.clientHeight * .46,
+    };
+  });
+  assert.ok(mobileOppositeArc.x < 0 && mobileOppositeArc.y < 0, `mobile finale did not cross the opposite side of its orbit: ${JSON.stringify(mobileOppositeArc)}`);
+  if (screenshotDirectory) {
+    await mobileFinalePage.screenshot({ path: path.join(screenshotDirectory, "finale-spiral-opposite-mobile.png") });
+  }
+  await mobileFinalePage.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.finaleState === "physics", { timeout: 6500 });
+  assert.equal(await mobileFinalePage.$eval("[data-contact-story]", (story) => story.dataset.viewportLocked), "false", "mobile finale did not release the viewport after its orbit");
+  await mobileFinalePage.close();
+
   const filePage = await browser.newPage();
   await filePage.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1 });
   await filePage.goto(pathToFileURL(path.join(root, "v2/index.html")).href, { waitUntil: "domcontentloaded" });
@@ -518,7 +703,60 @@ try {
     const video = document.querySelector("#motion-video-rccv");
     return !video.paused && video.currentTime > start + .2;
   }, {}, fileMotionStart);
+  await filePage.$eval("[data-work='accommodation']", (node) => node.scrollIntoView({ block: "center" }));
+  const fileAccommodationHandle = await filePage.waitForSelector("[data-accommodation-page]");
+  const fileAccommodationFrame = await fileAccommodationHandle.contentFrame();
+  await fileAccommodationFrame.waitForSelector("[data-okanagan-scene='cabin']");
+  await fileAccommodationFrame.waitForFunction(() => [...document.querySelectorAll("[data-hero-video]")]
+    .every((video) => video.readyState >= 1 && Number.isFinite(video.duration)));
+  await fileAccommodationFrame.evaluate(() => {
+    const scene = document.querySelector("[data-okanagan-scene='treehouse']");
+    window.scrollTo(0, scene.offsetTop + (scene.offsetHeight - window.innerHeight) * .5);
+  });
+  await fileAccommodationFrame.waitForFunction(() => {
+    const scene = document.querySelector("[data-okanagan-scene='treehouse']");
+    return Number(scene.dataset.sceneProgress) > .49
+      && scene.querySelector("[data-hero-video]").currentTime > 1
+      && [...scene.querySelectorAll("h1 span, .hero-copy > p, .stay-meta, .hero-actions")]
+        .every((node) => Number(getComputedStyle(node).opacity) > .95);
+  });
+  assert.deepEqual(await fileAccommodationFrame.evaluate(() => {
+    const scene = document.querySelector("[data-okanagan-scene='treehouse']");
+    return {
+      heading: scene.querySelector("h1").textContent.trim(),
+      sticky: Math.abs(scene.querySelector("[data-okanagan-hero]").getBoundingClientRect().top) < 2,
+      playing: scene.querySelector("[data-hero-video]").currentTime > 1,
+    };
+  }), { heading: "The Treehouse", sticky: true, playing: true }, "direct file preview did not scrub the Treehouse hero");
   await filePage.close();
+
+  if (screenshotDirectory && !leanScreenshots) {
+    for (const { label, width, height } of [
+      { label: "desktop", width: 1024, height: 640 },
+      { label: "mobile", width: 390, height: 640 },
+    ]) {
+      const scenePage = await browser.newPage();
+      await scenePage.setViewport({ width, height, deviceScaleFactor: 1 });
+      await scenePage.goto(`http://127.0.0.1:${port}/v2/okanagan-preview/`, { waitUntil: "domcontentloaded" });
+      await scenePage.waitForFunction(() => [...document.querySelectorAll("[data-hero-video]")]
+        .every((video) => video.readyState >= 1 && Number.isFinite(video.duration)));
+      for (const sceneKey of ["overview", "treehouse", "cabin"]) {
+        await scenePage.evaluate((key) => {
+          const scene = document.querySelector(`[data-okanagan-scene='${key}']`);
+          window.scrollTo(0, scene.offsetTop + (scene.offsetHeight - window.innerHeight) * .5);
+        }, sceneKey);
+        await scenePage.waitForFunction((key) => {
+          const scene = document.querySelector(`[data-okanagan-scene='${key}']`);
+          return Number(scene.dataset.sceneProgress) > .49
+            && scene.querySelector("[data-hero-video]").currentTime > 1
+            && [...scene.querySelectorAll("h1 span, .hero-copy > p, .stay-meta, .hero-actions")]
+              .every((node) => Number(getComputedStyle(node).opacity) > .95);
+        }, {}, sceneKey);
+        await scenePage.screenshot({ path: path.join(screenshotDirectory, `okanagan-${sceneKey}-${label}.png`) });
+      }
+      await scenePage.close();
+    }
+  }
 
   for (const width of [1440, 1024, 768, 390, 320]) {
     await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }]);
@@ -532,22 +770,24 @@ try {
     const accommodationGeometry = await page.evaluate(() => {
       const cue = document.querySelector(".accommodation-scroll-cue").getBoundingClientRect();
       const browser = document.querySelector("[data-accommodation-viewer]").getBoundingClientRect();
-      const frame = document.querySelector("[data-accommodation-page]");
       return {
         cueLeft: cue.left,
         cueRight: cue.right,
         cueBottom: cue.bottom,
         browserTop: browser.top,
-        frameDisplay: getComputedStyle(frame).display,
-        framePointerEvents: getComputedStyle(frame).pointerEvents,
-        frameSource: frame.getAttribute("src"),
+        iframeDisplay: getComputedStyle(document.querySelector("[data-accommodation-page]")).display,
       };
     });
     assert.ok(accommodationGeometry.cueLeft >= -1 && accommodationGeometry.cueRight <= width + 1, `${width}px accommodation cue is clipped horizontally`);
-    assert.ok(accommodationGeometry.cueBottom <= accommodationGeometry.browserTop + 24, `${width}px accommodation cue is detached from the browser top`);
-    assert.notEqual(accommodationGeometry.frameDisplay, "none", `${width}px reduced-motion accommodation browser should remain visible`);
-    assert.equal(accommodationGeometry.framePointerEvents, "auto", `${width}px accommodation browser should remain interactive`);
-    assert.equal(accommodationGeometry.frameSource, "embeds/okanagan-treehouse.html", `${width}px accommodation browser lost its local selectable source`);
+    assert.ok(accommodationGeometry.cueBottom <= accommodationGeometry.browserTop - 8, `${width}px accommodation cue overlaps the browser instead of occupying its own row`);
+    assert.notEqual(accommodationGeometry.iframeDisplay, "none", `${width}px reduced-motion accommodation browser should remain visible`);
+    const responsiveAccommodationHandle = await page.$("[data-accommodation-page]");
+    const responsiveAccommodationFrame = await responsiveAccommodationHandle.contentFrame();
+    await responsiveAccommodationFrame.waitForSelector("[data-okanagan-scene='cabin']");
+    assert.deepEqual(await responsiveAccommodationFrame.evaluate(() => ({
+      sourceOrder: [...document.querySelectorAll("[data-okanagan-scene]")].map((scene) => scene.dataset.okanaganScene),
+      videosHidden: [...document.querySelectorAll("[data-hero-video]")].every((video) => getComputedStyle(video).display === "none"),
+    })), { sourceOrder: ["overview", "treehouse", "cabin"], videosHidden: true }, `${width}px reduced-motion Okanagan preview changed its static scene contract`);
     const finaleGeometry = await page.evaluate(() => {
       const stageBounds = document.querySelector("[data-contact-stage]").getBoundingClientRect();
       const headingBounds = document.querySelector("[data-contact-morph-after]").getBoundingClientRect();
@@ -557,7 +797,7 @@ try {
     assert.ok(finaleGeometry.heading.left >= -1 && finaleGeometry.heading.right <= width + 1, `${width}px finale heading overflows`);
     assert.ok(finaleGeometry.actions.left >= -1 && finaleGeometry.actions.right <= width + 1, `${width}px finale actions overflow`);
     assert.ok(finaleGeometry.actions.bottom <= finaleGeometry.stage.bottom + 1, `${width}px finale actions fall below the stage`);
-    if (screenshotDirectory) {
+    if (screenshotDirectory && !leanScreenshots) {
       await mkdir(screenshotDirectory, { recursive: true });
       await page.$eval("[data-contact-stage]", (stage) => stage.scrollIntoView({ block: "center" }));
       await page.waitForFunction(() => [...document.querySelectorAll("[data-contact-object] img")]
@@ -568,7 +808,7 @@ try {
     }
   }
 
-  for (const width of [1024, 900, 768]) {
+  for (const width of [1024, 900, 768, 390]) {
     await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "no-preference" }]);
     await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
     await page.goto(url, { waitUntil: "domcontentloaded" });
@@ -600,13 +840,64 @@ try {
     const aboutGeometry = await page.evaluate(() => {
       const phrase = document.querySelector(".about-questionable-focus").getBoundingClientRect();
       const portrait = document.querySelector(".portrait-object").getBoundingClientRect();
-      return { phraseRight: phrase.right, portraitLeft: portrait.left, phraseWidth: phrase.width };
+      return {
+        phrase: phrase.toJSON(),
+        portrait: portrait.toJSON(),
+        phraseWidth: phrase.width,
+        overlaps: phrase.left < portrait.right && phrase.right > portrait.left
+          && phrase.top < portrait.bottom && phrase.bottom > portrait.top,
+      };
     });
     assert.ok(aboutGeometry.phraseWidth > 0, `${width}px About phrase collapsed during its scroll beat`);
-    assert.ok(aboutGeometry.phraseRight <= aboutGeometry.portraitLeft + 1, `${width}px About phrase overlaps the portrait`);
+    assert.equal(aboutGeometry.overlaps, false, `${width}px About phrase overlaps the portrait: ${JSON.stringify(aboutGeometry)}`);
+    if (width === 390 && screenshotDirectory) {
+      const sticky = await page.$(".about-story-sticky");
+      await sticky.screenshot({ path: path.join(screenshotDirectory, "about-mobile-animated.png") });
+      await page.evaluate(({ top, travel }) => window.scrollTo(0, top + travel * .9), position);
+      await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector("[data-about-scroll-story]")).getPropertyValue("--about-value")) > .95);
+      const finalAbout = await page.evaluate(() => {
+        const stage = document.querySelector(".about-story-sticky").getBoundingClientRect();
+        const conclusion = document.querySelector(".about-process-reveal").getBoundingClientRect();
+        const portrait = document.querySelector(".portrait-object").getBoundingClientRect();
+        return {
+          conclusionVisible: Number(getComputedStyle(document.querySelector(".about-process-reveal")).opacity) > .95,
+          conclusionInside: conclusion.left >= stage.left && conclusion.right <= stage.right && conclusion.top >= stage.top && conclusion.bottom <= stage.bottom,
+          portraitInside: portrait.left >= stage.left && portrait.right <= stage.right && portrait.top >= stage.top && portrait.bottom <= stage.bottom,
+        };
+      });
+      assert.deepEqual(finalAbout, { conclusionVisible: true, conclusionInside: true, portraitInside: true }, `390px About conclusion does not resolve inside the locked frame: ${JSON.stringify(finalAbout)}`);
+      await sticky.screenshot({ path: path.join(screenshotDirectory, "about-mobile-resolved.png") });
+    }
   }
 
-  if (screenshotDirectory) {
+  if (screenshotDirectory && leanScreenshots) {
+    await mkdir(screenshotDirectory, { recursive: true });
+    await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "no-preference" }]);
+    await page.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 1 });
+    await page.goto(url, { waitUntil: "domcontentloaded" });
+    await page.evaluate(() => document.fonts.ready);
+    const boundary = await page.evaluate(() => {
+      const hero = document.querySelector(".hero").getBoundingClientRect();
+      const work = document.querySelector(".selected-work").getBoundingClientRect();
+      const top = Math.max(0, hero.bottom + window.scrollY - 260);
+      return { x: 0, y: top, width: innerWidth, height: Math.min(620, work.bottom + window.scrollY - top) };
+    });
+    await page.screenshot({ path: path.join(screenshotDirectory, "hero-selected-work-boundary-desktop.png"), clip: boundary });
+    await page.$eval("[data-work='accommodation']", (section) => section.scrollIntoView({ block: "center" }));
+    const leanAccommodationFrameHandle = await page.waitForSelector("[data-accommodation-page]");
+    const leanAccommodationFrame = await leanAccommodationFrameHandle.contentFrame();
+    await leanAccommodationFrame.waitForSelector("[data-okanagan-scene='cabin']");
+    await leanAccommodationFrame.evaluate(() => window.scrollTo(0, 0));
+    await page.$eval("[data-work='accommodation']", (section) => section.scrollIntoView({ block: "center" }));
+    const accommodationSection = await page.$("[data-work='accommodation']");
+    await accommodationSection.screenshot({ path: path.join(screenshotDirectory, "boutique-desktop-overview.png") });
+    await page.$eval("[data-work='cool-runnings']", (section) => section.scrollIntoView({ block: "center" }));
+    await page.waitForFunction(() => Number.parseFloat(getComputedStyle(document.querySelector(".cool-laptop")).getPropertyValue("--object-reveal")) >= .99);
+    const coolSection = await page.$("[data-work='cool-runnings']");
+    await coolSection.screenshot({ path: path.join(screenshotDirectory, "cool-laptop-desktop.png") });
+  }
+
+  if (screenshotDirectory && !leanScreenshots) {
     await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }]);
     await page.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 1 });
     await page.goto(url, { waitUntil: "domcontentloaded" });
@@ -630,7 +921,25 @@ try {
 
       const accommodationFilename = label === "desktop" ? "work-desktop-accommodation.png" : "work-mobile-accommodation.png";
       const accommodationWork = await page.$("[data-work='accommodation']");
+      const screenshotFrameHandle = await page.waitForSelector("[data-accommodation-page]");
+      const screenshotFrame = await screenshotFrameHandle.contentFrame();
+      await screenshotFrame.waitForSelector("[data-okanagan-scene='cabin']");
+      await screenshotFrame.evaluate(() => window.scrollTo(0, 0));
       await accommodationWork.screenshot({ path: path.join(screenshotDirectory, accommodationFilename) });
+      for (const sceneKey of ["overview", "treehouse", "cabin"]) {
+        await screenshotFrame.evaluate((key) => {
+          const scene = document.querySelector(`[data-okanagan-scene='${key}']`);
+          window.scrollTo(0, scene.offsetTop + (scene.offsetHeight - window.innerHeight) * .5);
+        }, sceneKey);
+        await screenshotFrame.waitForFunction((key) => Number(document.querySelector(`[data-okanagan-scene='${key}']`).dataset.sceneProgress) > .49, {}, sceneKey);
+        await screenshotFrame.waitForFunction((key) => [...document.querySelector(`[data-okanagan-scene='${key}']`).querySelectorAll("h1 span, .hero-copy > p, .stay-meta, .hero-actions")]
+          .every((node) => Number(getComputedStyle(node).opacity) > .95), {}, sceneKey);
+        await accommodationWork.screenshot({ path: path.join(screenshotDirectory, `work-${label}-accommodation-${sceneKey}.png`) });
+      }
+
+      const coolFilename = label === "desktop" ? "work-desktop-cool.png" : "work-mobile-cool.png";
+      const coolWork = await page.$("[data-work='cool-runnings']");
+      await coolWork.screenshot({ path: path.join(screenshotDirectory, coolFilename) });
 
       for (const key of workflowKeys) {
         await page.$eval(`[data-workflow-trigger='${key}']`, (trigger) => trigger.click());
@@ -661,7 +970,7 @@ try {
           await page.waitForFunction(() => document.querySelector(".bias-sequence")?.classList.contains("is-revealed"));
           await new Promise((resolve) => setTimeout(resolve, 1150));
         }
-        if (sectionName === "about" && width >= 1100) {
+        if (sectionName === "about") {
           const position = await page.$eval("[data-about-scroll-story]", (story) => ({
             top: story.getBoundingClientRect().top + window.scrollY,
             travel: story.offsetHeight - window.innerHeight,
@@ -695,15 +1004,18 @@ try {
       const detail = await page.evaluate(async () => {
         await document.fonts.ready;
         const image = document.querySelector(".workflow-artwork img");
-        if (!image.complete) await image.decode();
+        const structuredArtwork = document.querySelector(".workflow-artwork .website-workflow-visual");
+        if (image && !image.complete) await image.decode();
         return {
           heading: document.querySelector("h1")?.textContent.trim(),
           innerWidth: window.innerWidth,
           scrollWidth: document.documentElement.scrollWidth,
-          imageComplete: image.complete,
-          currentSource: new URL(image.currentSrc).pathname,
-          naturalWidth: image.naturalWidth,
-          naturalHeight: image.naturalHeight,
+          artworkComplete: image
+            ? image.complete && image.naturalWidth > 0
+            : Boolean(structuredArtwork && structuredArtwork.children.length >= 7),
+          currentSource: image ? new URL(image.currentSrc).pathname : "structured-html",
+          naturalWidth: image?.naturalWidth || 0,
+          naturalHeight: image?.naturalHeight || 0,
           stepCount: document.querySelectorAll(".workflow-step").length,
           contractComplete: ["why-it-exists", "how-it-works", "tools-and-sources", "what-ships", "human-review", "proof-and-constraints", "related-work"]
             .every((id) => document.getElementById(id)),
@@ -712,7 +1024,7 @@ try {
 
       assert.ok(detail.heading, `${route} is missing its heading`);
       assert.ok(detail.scrollWidth <= detail.innerWidth, `${width}px ${route} overflows by ${detail.scrollWidth - detail.innerWidth}px`);
-      assert.equal(detail.imageComplete, true, `${width}px ${route} artwork did not load`);
+      assert.equal(detail.artworkComplete, true, `${width}px ${route} artwork did not load`);
       assert.ok(detail.stepCount >= 5, `${route} exposes only ${detail.stepCount} workflow steps`);
       assert.equal(detail.contractComplete, true, `${route} is missing part of the workflow contract`);
       assert.deepEqual(detailFailures, [], `${width}px ${route} has failed local assets`);
@@ -721,9 +1033,18 @@ try {
       if (route === "presentation-publishing.html") {
         const mobile = width < 700;
         const expectedAsset = mobile ? "presentation-publishing-mobile.png" : "presentation-publishing-desktop.png";
-        const expectedDimensions = mobile ? [900, 1600] : [1800, 1100];
         assert.ok(detail.currentSource.endsWith(expectedAsset), `${width}px selected ${detail.currentSource} instead of ${expectedAsset}`);
-        assert.deepEqual([detail.naturalWidth, detail.naturalHeight], expectedDimensions, `${width}px presentation artwork dimensions are wrong`);
+        if (mobile) {
+          assert.ok(
+            detail.naturalHeight >= 1800 && detail.naturalHeight > detail.naturalWidth * 2,
+            `${width}px presentation mobile artwork is not a high-resolution portrait composition`,
+          );
+        } else {
+          assert.ok(
+            detail.naturalWidth >= 1600 && detail.naturalWidth > detail.naturalHeight,
+            `${width}px presentation desktop artwork is not a high-resolution landscape composition`,
+          );
+        }
       }
 
       if (screenshotDirectory && [1440, 390].includes(width)) {

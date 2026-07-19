@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Michael McKerracher — Marketing Engineer</title>
+  <title>Michael McKerracher | Marketing Engineer</title>
   <meta name="description" content="Portfolio and resume for Michael McKerracher, a marketing engineer who builds websites, product stories, AI-enabled workflows, and useful systems.">
+  <link rel="canonical" href="https://michaelmck.site/v2/">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -69,8 +70,8 @@
           </div>
           <figure class="laptop-object">
             <video id="motion-video-rccv" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/device-mockups/laptop-three-quarter-rccv-cutout.png" aria-label="RCCV homepage and Stations of the Cross shown on an angled laptop.">
-              <source data-src="../assets/videos/rccv-showcase-laptop.webm" type="video/webm">
-              <source data-src="../assets/videos/rccv-showcase-laptop.mp4" type="video/mp4">
+              <source data-src="assets/videos/rccv-showcase-laptop.webm" type="video/webm">
+              <source data-src="assets/videos/rccv-showcase-laptop.mp4" type="video/mp4">
             </video>
           </figure>
         </article>
@@ -81,10 +82,10 @@
               <svg viewBox="0 0 58 54" focusable="false" aria-hidden="true"><path d="M52 6C43 8 39 16 37 24c-3 11-11 17-26 20M18 35l-8 9 12 5"/></svg>
               <span>Scroll the preview</span>
             </p>
-            <figure class="browser-object browser-object-tall screen-bezel" data-accommodation-viewer role="group" aria-label="Scrollable and selectable boutique accommodation website preview">
-              <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>okanagan-treehouse-preview.michael-mckerracher.workers.dev</span></div>
+            <figure class="browser-object browser-object-tall screen-bezel" data-accommodation-viewer role="group" aria-label="Scroll through the original Overview, Treehouse, and Cabin hero experiences">
+              <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span data-accommodation-url>okanagantreehouse.ca</span></div>
               <div class="browser-viewport accommodation-viewport">
-                <iframe data-accommodation-page src="embeds/okanagan-treehouse.html" title="Selectable preview of the Okanagan Treehouse website" loading="lazy"></iframe>
+                <iframe data-accommodation-page src="okanagan-preview/index.html" title="Interactive Okanagan Treehouse Overview, Treehouse, and Cabin hero sequence" loading="eager"></iframe>
               </div>
             </figure>
           </div>
@@ -105,23 +106,23 @@
             <h3>From no web presence to a lead magnet.</h3>
             <p class="work-meta">Website + SEO</p>
             <p>From no web presence to a lead magnet: a useful website, local tools, and a programmatic search system built to turn nearby demand into bookings.</p>
-            <p class="work-proof">189 organic clicks in the latest 28 days · 83 pages averaging page one</p>
+            <div class="work-proof work-proof-result">
+              <p><strong>30% increase in sales</strong><span>Client-reported after launch</span></p>
+              <p>189 organic clicks in the latest 28 days · 83 pages averaging page one</p>
+            </div>
             <div class="text-links">
               <a href="https://www.coolrunningslandscaping.com/">View live site</a>
               <a href="work/local-search-magnet.html">Read case study</a>
             </div>
           </div>
           <figure class="cool-laptop" data-scroll-reveal="cool-runnings" aria-label="Cool Runnings website and local search work shown on an opening laptop">
-            <div class="cool-laptop-lid">
-              <div class="cool-laptop-screen">
-                <video id="motion-video-cool-runnings" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website and local search work.">
-                  <source data-src="../assets/videos/cool-runnings-sizzle-25s.webm" type="video/webm">
-                  <source data-src="../assets/videos/cool-runnings-sizzle-25s.mp4" type="video/mp4">
-                </video>
-              </div>
-              <img class="cool-laptop-frame" src="../assets/device-mockups/laptop-graphite-frame.png" alt="">
+            <div class="cool-laptop-screen">
+              <video id="motion-video-cool-runnings" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/screens/cool-runnings-home.png" aria-label="Cool Runnings website and local search work.">
+                <source data-src="../assets/videos/cool-runnings-sizzle-25s.webm" type="video/webm">
+                <source data-src="../assets/videos/cool-runnings-sizzle-25s.mp4" type="video/mp4">
+              </video>
             </div>
-            <img class="cool-laptop-base" src="../assets/device-mockups/laptop-graphite-frame.png" alt="">
+            <img class="cool-laptop-frame" src="../assets/device-mockups/laptop-graphite-frame.png" alt="">
           </figure>
         </article>
 
@@ -134,7 +135,7 @@
             <p class="work-meta">Sales enablement · GTM engineering</p>
             <p>A proposal system that turns local business data into tailored media plans, maps, and campaign creative.</p>
             <div class="text-links">
-              <a href="../proposal-generator.html">Try the generator</a>
+              <a href="proposal-generator.html">Try the generator</a>
               <a href="../output/pdf/vertical-impression-local-proposal-sample.pdf">View PDF</a>
             </div>
           </div>
@@ -207,7 +208,12 @@
                 <div class="workflow-copy-head"><h3>Search-optimized content production</h3><a href="workflows/content-production.html">View workflow</a></div>
                 <p>Search data and human review move useful writing from research to measurable published performance.</p>
               </div>
-              <figure><img src="../assets/approved/04-content-production-transparent.png" alt="Search data, human-guided writing and review, and published content workflow"></figure>
+              <figure>
+                <picture>
+                  <source media="(max-width: 699px)" srcset="assets/workflows/content-production-approved-mobile.png">
+                  <img src="assets/workflows/content-production-approved-desktop.png" alt="Approved layered content-production workflow showing research tools, human-guided briefing, drafting and review, then Drive, article, and Shopify outputs">
+                </picture>
+              </figure>
             </div>
           </div>
         </article>
@@ -222,7 +228,12 @@
                 <div class="workflow-copy-head"><h3>Agency management dashboard</h3><a href="workflows/agency-management-dashboard.html">View workflow</a></div>
                 <p>A queryable delivery workspace connects performance data, content operations, reporting, and emerging opportunities.</p>
               </div>
-              <figure><img src="../assets/screens/fountainhead-ai-visibility-dashboard-v4-16x9.png" alt="Agency management dashboard connecting performance, content, reporting, and delivery work"></figure>
+              <figure class="workflow-media workflow-media-dashboard">
+                <picture>
+                  <source media="(max-width: 699px)" srcset="assets/workflows/agency-dashboard-mobile.png">
+                  <img src="assets/workflows/agency-dashboard-desktop.png" alt="The AI Visibility Dashboard with Search Console, Analytics, Reddit, SERP, Keyword Content, and Client Notes sources beside visibility trends, content queues, source health, delivery review, and opportunities">
+                </picture>
+              </figure>
             </div>
           </div>
         </article>
@@ -235,12 +246,12 @@
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
                 <div class="workflow-copy-head"><h3>Presentation publishing</h3><a href="workflows/presentation-publishing.html">View workflow</a></div>
-                <p>A publishing skill deploys branded HTML, validates its destination, connects both publishing layers, and verifies the final URL.</p>
+                <p>Sales creates a customer-branded HTML presentation with the design system, maps, and custom graphics; Cloud Scale Deploy publishes it through Vercel and Webflow.</p>
               </div>
               <figure>
                 <picture>
-                  <source media="(max-width: 699px)" srcset="assets/presentation-publishing-mobile.png">
-                  <img src="assets/presentation-publishing-desktop.png" alt="Six-stage presentation publishing workflow from branded HTML through Vercel, Webflow, and final URL verification">
+                  <source media="(max-width: 699px)" srcset="assets/workflows/presentation-publishing-mobile.png">
+                  <img src="assets/workflows/presentation-publishing-desktop.png" alt="Sales-authored customer-branded HTML presentation moving through Cloud Scale Deploy, Vercel, Webflow CMS, and publication">
                 </picture>
               </figure>
             </div>
@@ -255,9 +266,14 @@
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
                 <div class="workflow-copy-head"><h3>Local prospecting and enrichment</h3><a href="workflows/local-prospecting-enrichment.html">View workflow</a></div>
-                <p>Google Maps discovery, enrichment, screen matching, and sales handoff become one working system.</p>
+                <p>Maps discovery and Apollo enrichment become a screen-matched proposal PDF, personalized outreach, sales review, and approved send.</p>
               </div>
-              <figure><img src="../assets/approved/05-local-prospecting-transparent.png" alt="Local prospecting and enrichment workflow"></figure>
+              <figure>
+                <picture>
+                  <source media="(max-width: 699px)" srcset="assets/workflows/local-prospecting-mobile.png">
+                  <img src="assets/workflows/local-prospecting-desktop.png" alt="Maps and Apollo prospecting workflow through nearby inventory, a custom proposal PDF, reviewed outreach, and approved send">
+                </picture>
+              </figure>
             </div>
           </div>
         </article>
@@ -270,9 +286,14 @@
             <div class="workflow-panel-inner">
               <div class="workflow-copy">
                 <div class="workflow-copy-head"><h3>Image-to-website production</h3><a href="workflows/image-to-website-production.html">View workflow</a></div>
-                <p>Research, visual direction, generated assets, review, and implementation move through one repeatable build path.</p>
+                <p>Competitor research expands into many hero explorations and mood boards, then a selected HTML proof and documented design system move through linting and human approval.</p>
               </div>
-              <figure><img src="../assets/generated/json-prompt-image-output.png" alt="Image-to-website production workflow"></figure>
+              <figure class="workflow-media workflow-media-website">
+                <picture>
+                  <source media="(max-width: 699px)" srcset="assets/workflows/image-to-website-mobile.png">
+                  <img src="assets/workflows/image-to-website-desktop.png" alt="Image-to-website workflow from competitor evidence through hero explorations, mood boards, direction review, and a documented human-approved site">
+                </picture>
+              </figure>
             </div>
           </div>
         </article>
@@ -317,8 +338,10 @@
             </figure>
           </div>
           <svg class="about-process-line" viewBox="0 0 1000 650" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-            <path pathLength="1" d="M380 525C470 520 540 390 670 340"/>
-            <path pathLength="1" d="m645 328 25 12-17 22"/>
+            <path class="about-line-desktop" pathLength="1" d="M380 525C470 520 540 390 670 340"/>
+            <path class="about-line-desktop" pathLength="1" d="m645 328 25 12-17 22"/>
+            <path class="about-line-mobile" pathLength="1" d="M430 430C470 442 505 448 540 455"/>
+            <path class="about-line-mobile" pathLength="1" d="m516 438 24 17-28 11"/>
           </svg>
         </div>
       </div>
@@ -355,8 +378,8 @@
           <figure class="contact-object contact-object-browser" data-contact-object="elevators" data-body-width="220"><img src="../assets/screens/why-elevators.png" alt="" loading="lazy" decoding="async"></figure>
           <figure class="contact-object contact-object-workflow" data-contact-object="content" data-body-width="210"><img src="../assets/workflows/content-workflow-approved-stage.png" alt="" loading="lazy" decoding="async"></figure>
           <figure class="contact-object contact-object-workflow" data-contact-object="dashboard" data-body-width="210"><img src="../assets/screens/fountainhead-ai-visibility-dashboard-v4-16x9.png" alt="" loading="lazy" decoding="async"></figure>
-          <figure class="contact-object contact-object-workflow" data-contact-object="publishing" data-body-width="210"><img src="assets/presentation-publishing-desktop.png" alt="" loading="lazy" decoding="async"></figure>
-          <figure class="contact-object contact-object-workflow" data-contact-object="prospecting" data-body-width="210"><img src="../assets/workflows/local-prospecting.png" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-workflow" data-contact-object="publishing" data-body-width="210"><img src="assets/workflows/presentation-publishing-desktop.png" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="contact-object contact-object-workflow" data-contact-object="prospecting" data-body-width="210"><img src="assets/workflows/local-prospecting-desktop.png" alt="" loading="lazy" decoding="async"></figure>
           <figure class="contact-object contact-object-workflow" data-contact-object="website" data-body-width="210"><img src="../assets/generated/json-prompt-image-output.png" alt="" loading="lazy" decoding="async"></figure>
         </div>
         <div class="contact-resolution" data-contact-resolution>

@@ -10,6 +10,14 @@ import { generateImage, waitForImage } from '../_lib/proposal/letzai.js';
 import { generateMapUrl } from '../_lib/proposal/map.js';
 import { renderProposalHtml } from '../_lib/proposal/pdf-template.js';
 import {
+  RequestSecurityError,
+  assertJsonRequest,
+  assertRateLimit,
+  assertSameOrigin,
+  parseJsonBody,
+} from '../_lib/proposal/request-security.js';
+import { fetchImageAsDataUrl } from '../_lib/proposal/remote-image.js';
+import {
   DEFAULT_BG_HEIGHT,
   DEFAULT_BG_WIDTH,
   DEFAULT_SCREEN_CORNERS,
@@ -18,7 +26,7 @@ import {
 
 export const config = { maxDuration: 300 };
 
-const CHROMIUM_VERSION = '143.0.4';
+const CHROMIUM_VERSION = '149.0.0';
 const INVENTORY = JSON.parse(readFileSync(new URL('../_lib/proposal/inventory.json', import.meta.url), 'utf8'));
 const IMAGE_CACHE_PATH = '/tmp/portfolio-proposal-image-cache.json';
 const IMAGE_CACHE_TTL = 60 * 60 * 1000;
@@ -28,14 +36,6 @@ function sendJson(response, status, payload) {
   response.setHeader('Content-Type', 'application/json; charset=utf-8');
   response.setHeader('Cache-Control', 'private, no-store');
   response.end(JSON.stringify(payload));
-}
-
-async function parseBody(request) {
-  if (request.body && typeof request.body === 'object') return request.body;
-  if (typeof request.body === 'string') return JSON.parse(request.body);
-  const chunks = [];
-  for await (const chunk of request) chunks.push(chunk);
-  return JSON.parse(Buffer.concat(chunks).toString('utf8') || '{}');
 }
 
 async function geocodeAddress(address) {
@@ -59,13 +59,6 @@ async function geocodeAddress(address) {
     lng: Number(coordinates[0]),
     lat: Number(coordinates[1]),
   };
-}
-
-async function fetchAsDataUrl(url) {
-  const assetResponse = await fetch(url, { cache: 'no-store' });
-  if (!assetResponse.ok) throw new Error(`Asset request failed with ${assetResponse.status}.`);
-  const contentType = assetResponse.headers.get('content-type') || 'image/png';
-  return `data:${contentType};base64,${Buffer.from(await assetResponse.arrayBuffer()).toString('base64')}`;
 }
 
 async function chromiumPath() {
@@ -113,7 +106,14 @@ export default async function handler(request, response) {
   }
 
   try {
-    const input = validateProposalInput(await parseBody(request));
+    assertSameOrigin(request, { requireOrigin: true });
+    assertJsonRequest(request);
+    assertRateLimit(request, {
+      bucket: 'proposal-generate',
+      limit: 3,
+      windowMs: 60 * 60 * 1000,
+    });
+    const input = validateProposalInput(await parseJsonBody(request));
     const location = await geocodeAddress(input.address);
     const withDistance = INVENTORY.map((row) => ({
       ...row,
@@ -142,7 +142,7 @@ export default async function handler(request, response) {
 
     const root = process.cwd();
     const [adDataUrl, background, logo, regular, semibold, bold] = await Promise.all([
-      fetchAsDataUrl(generatedImageUrl),
+      fetchImageAsDataUrl(generatedImageUrl),
       readFilePromise(join(root, 'assets', 'proposal', 'elevator-screen-cropped.png')),
       readFilePromise(join(root, 'assets', 'proposal', 'vertical-impression-logo-inverse.png')),
       readFilePromise(join(root, 'assets', 'proposal', 'fonts', 'gilroy-regular.otf')),
@@ -169,7 +169,7 @@ export default async function handler(request, response) {
         screenMarkerColor: '#071b43',
       },
     );
-    const mapDataUrl = await fetchAsDataUrl(mapUrl);
+    const mapDataUrl = await fetchImageAsDataUrl(mapUrl, { maxBytes: 8 * 1024 * 1024 });
     const html = renderProposalHtml({
       businessName: input.businessName,
       fullAddress: location.fullAddress,
@@ -192,15 +192,25 @@ export default async function handler(request, response) {
     });
 
     const isServerless = process.platform === 'linux' && Boolean(process.env.VERCEL);
+    const chromiumArguments = (isServerless
+      ? chromium.args
+      : ['--no-sandbox', '--disable-setuid-sandbox'])
+      .filter((argument) => argument !== '--disable-web-security');
     const browser = await puppeteer.launch({
-      args: isServerless ? chromium.args : ['--no-sandbox', '--disable-setuid-sandbox'],
+      args: chromiumArguments,
       executablePath: await chromiumPath(),
       headless: true,
     });
 
     try {
       const page = await browser.newPage();
-      await page.setContent(html, { waitUntil: 'networkidle0' });
+      await page.setRequestInterception(true);
+      page.on('request', (request) => {
+        const requestUrl = request.url();
+        if (/^(?:about:|blob:|data:)/.test(requestUrl)) request.continue();
+        else request.abort();
+      });
+      await page.setContent(html, { waitUntil: 'domcontentloaded' });
       const pdf = await page.pdf({
         width: '8.5in',
         height: '11in',
@@ -218,7 +228,13 @@ export default async function handler(request, response) {
       await browser.close();
     }
   } catch (error) {
-    console.error('Standalone proposal generation failed:', error);
+    if (!(error instanceof RequestSecurityError)) {
+      console.error('Standalone proposal generation failed:', error);
+    }
+    if (error instanceof RequestSecurityError) {
+      if (error.retryAfter) response.setHeader('Retry-After', String(error.retryAfter));
+      return sendJson(response, error.statusCode, { error: error.message });
+    }
     const message = error instanceof Error ? error.message : 'Proposal generation failed.';
     const clientError = /business name|address|business type|supported|inventory/i.test(message);
     return sendJson(response, clientError ? 400 : 500, {

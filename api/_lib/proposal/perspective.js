@@ -168,18 +168,28 @@ function generateOverlayHtml(backgroundImageUrl, overlayImageUrl, corners = DEFA
 async function generateCompositeImage(backgroundImagePath, overlayImagePath, corners = DEFAULT_SCREEN_CORNERS, bgWidth = DEFAULT_BG_WIDTH, bgHeight = DEFAULT_BG_HEIGHT) {
   const chromium = await import("@sparticuz/chromium-min");
   const puppeteer = await import("puppeteer-core");
-  const CHROMIUM_VERSION = "143.0.4";
+  const CHROMIUM_VERSION = "149.0.0";
   const RENDER_SCALE = 0.6;
   const scaledWidth = Math.round(bgWidth * RENDER_SCALE);
   const scaledHeight = Math.round(bgHeight * RENDER_SCALE);
   const isServerless = process.platform === "linux" && Boolean(process.env.VERCEL);
+  const chromiumArguments = (isServerless
+    ? chromium.default.args
+    : ["--no-sandbox", "--disable-setuid-sandbox"])
+    .filter((argument) => argument !== "--disable-web-security");
   const browser = await puppeteer.default.launch({
-    args: isServerless ? chromium.default.args : ["--no-sandbox", "--disable-setuid-sandbox"],
+    args: chromiumArguments,
     executablePath: isServerless ? await chromium.default.executablePath(`https://github.com/Sparticuz/chromium/releases/download/v${CHROMIUM_VERSION}/chromium-v${CHROMIUM_VERSION}-pack.${process.arch === "arm64" ? "arm64" : "x64"}.tar`) : process.env.CHROME_EXECUTABLE_PATH || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
     headless: true
   });
   try {
     const page = await browser.newPage();
+    await page.setRequestInterception(true);
+    page.on("request", (request) => {
+      const requestUrl = request.url();
+      if (/^(?:about:|blob:|data:)/.test(requestUrl)) request.continue();
+      else request.abort();
+    });
     await page.setViewport({
       width: scaledWidth,
       height: scaledHeight,

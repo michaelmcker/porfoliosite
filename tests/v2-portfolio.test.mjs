@@ -20,7 +20,7 @@ async function readWorkflow(name) {
   return readV2(`workflows/${name}`);
 }
 
-test("V2 keeps every Selected Work project stage white except the black music interlude", async () => {
+test("V2 keeps Selected Work white with a contained divider except the black music interlude", async () => {
   const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
 
   assert.doesNotMatch(html, /data-project-environment=/);
@@ -28,6 +28,10 @@ test("V2 keeps every Selected Work project stage white except the black music in
     assert.ok(!css.includes(removedBackground), `${removedBackground} should not remain on a project stage`);
   }
   assert.match(css, /--accent:\s*#E3A916/i);
+  assert.doesNotMatch(css, /--selected-work-canvas:/i);
+  assert.match(css, /\.selected-work\s*\{[^}]*background:\s*var\(--canvas\)/s);
+  assert.match(css, /\.selected-work::before\s*\{[^}]*border-top:\s*1px\s+solid\s+var\(--line\)/s);
+  assert.match(css, /\.work-object\s*\{[^}]*background:\s*transparent/s);
   assert.doesNotMatch(css, /--work-accommodation|--work-proposal|--content-vivid|--about-hard/);
   assert.match(css, /\.screen-bezel/);
   assert.match(css, /font-family:\s*var\(--font-editorial\)/);
@@ -148,9 +152,10 @@ test("selected work gives properly scaled laptop and browser objects more room t
   await access(new URL("../assets/device-mockups/laptop-three-quarter-rccv-cutout.png", v2Url));
   assert.match(css, /\.browser-object\s*\{[^}]*width:\s*100%/s);
   assert.match(html, /class="cool-laptop"[^>]*data-scroll-reveal="cool-runnings"/);
-  assert.match(html, /class="cool-laptop-lid"/);
-  assert.match(html, /class="cool-laptop-base"/);
-  assert.equal((html.match(/laptop-graphite-frame\.png/g) || []).length, 2);
+  assert.match(html, /class="cool-laptop-screen"/);
+  assert.doesNotMatch(html, /class="cool-laptop-(?:lid|base)"/);
+  assert.equal((html.match(/laptop-graphite-frame\.png/g) || []).length, 1);
+  assert.match(css, /\.cool-laptop\s*\{[^}]*width:\s*min\(132%,\s*1180px\)/s);
 });
 
 test("project labels and the accommodation cue are specific and keep a wide black scrollable browser", async () => {
@@ -168,20 +173,21 @@ test("project labels and the accommodation cue are specific and keep a wide blac
   assert.match(css, /\.screen-bezel\s*\{[^}]*border:[^}]*solid #101312[^}]*box-shadow:/s);
   assert.match(css, /\.browser-object-tall \.browser-viewport\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*10/s);
   assert.match(css, /\.accommodation-showcase\s*\{[^}]*min-width:\s*0/s);
-  assert.match(css, /\.accommodation-scroll-cue\s*\{[^}]*top:\s*clamp\(-48px,\s*-3vw,\s*-40px\)[^}]*right:\s*clamp\(14px,\s*2vw,\s*28px\)/s);
+  assert.match(css, /\.accommodation-showcase\s*\{[^}]*display:\s*grid[^}]*grid-template-rows:\s*auto\s+minmax\(0,\s*1fr\)/s);
+  assert.match(css, /\.accommodation-scroll-cue\s*\{[^}]*position:\s*relative[^}]*justify-self:\s*end/s);
 });
 
 test("accordion uses wider layered spines, overlaps them tightly, and hides the active desktop tab", async () => {
   const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
 
   assert.doesNotMatch(html, /workflow-number/);
-  assert.match(css, /\.workflow-item\s*\{[^}]*flex:\s*0\s+0\s+64px[^}]*margin-left:\s*-22px/s);
-  assert.match(css, /\.workflow-item\.is-active\s*\{[^}]*flex-basis:\s*calc\(100%\s*-\s*168px\)[^}]*flex-grow:\s*0/s);
+  assert.match(css, /\.workflow-item\s*\{[^}]*flex:\s*0\s+0\s+64px[^}]*margin-left:\s*-24px/s);
+  assert.match(css, /\.workflow-item\.is-active\s*\{[^}]*flex-basis:\s*calc\(100%\s*-\s*160px\)[^}]*flex-grow:\s*0/s);
   assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*width:\s*0[^}]*opacity:\s*0[^}]*pointer-events:\s*none/s);
   assert.match(css, /\.workflow-trigger\s*\{[^}]*box-shadow:\s*inset/s);
   assert.match(css, /\.workflow-accordion\s*\{[^}]*min-height:\s*880px/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*min-height:\s*880px/s);
-  assert.match(css, /\.workflow-panel figure img\s*\{[^}]*max-height:\s*680px/s);
+  assert.match(css, /\.workflow-panel figure img\s*\{[^}]*max-height:\s*650px/s);
 });
 
 test("About holds a sticky scroll story before releasing into the rest of the page", async () => {
@@ -316,35 +322,38 @@ test("all five workflow controls have unique accessible trigger and panel wiring
   assert.match(html, /href="workflows\/presentation-publishing\.html"/);
 });
 
-test("boutique accommodation uses a same-origin selectable browser document", async () => {
-  const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
-
-  assert.match(html, /data-accommodation-viewer/);
-  assert.match(html, /<iframe[^>]*data-accommodation-page[^>]*src="embeds\/okanagan-treehouse\.html"/);
-  assert.match(html, /title="Selectable preview of the Okanagan Treehouse website"/);
-  assert.doesNotMatch(html, /data-accommodation-scrub|showcase-scroll\.(?:mp4|webm)|data-accommodation-fallback/);
-  assert.doesNotMatch(app, /accommodationVideo|accommodationWheelProgress|seekAccommodation|scrubAccommodationWithWheel/);
-  assert.match(css, /\.accommodation-viewport iframe\s*\{[^}]*pointer-events:\s*auto/s);
-  assert.match(css, /\.accommodation-showcase\s*\{[^}]*rotateY\(calc\(/s);
-  assert.match(css, /\.work-object-accommodation\s*\{[^}]*min-height:\s*clamp\([^}]*105svh/s);
-});
-
-test("the accommodation browser document contains real selectable copy and working destinations", async () => {
-  const embed = await readV2("embeds/okanagan-treehouse.html");
-
-  assert.match(embed, /<main[^>]*id="overview"/);
-  assert.match(embed, /id="treehouse"/);
-  assert.match(embed, /id="cabin"/);
-  assert.match(embed, /Two boutique Okanagan stays/);
-  assert.match(embed, /href="#treehouse"/);
-  assert.match(embed, /href="#cabin"/);
-  assert.match(embed, /href="https:\/\/okanagan-treehouse-preview\.michael-mckerracher\.workers\.dev\/stays\/treehouse\/"/);
-  assert.match(embed, /href="https:\/\/okanagan-treehouse-preview\.michael-mckerracher\.workers\.dev\/stays\/cabin\/"/);
-  await Promise.all([
-    access(new URL("assets/accommodation/hero-poster.webp", v2Url)),
-    access(new URL("assets/accommodation/treehouse.webp", v2Url)),
-    access(new URL("assets/accommodation/cabin.webp", v2Url)),
+test("boutique accommodation embeds the copied semantic three-scene Okanagan story", async () => {
+  const [html, css, preview, previewCss, previewApp] = await Promise.all([
+    readV2("index.html"),
+    readV2("styles.css"),
+    readV2("okanagan-preview/index.html"),
+    readV2("okanagan-preview/styles.css"),
+    readV2("okanagan-preview/app.js"),
   ]);
+
+  assert.match(html, /<iframe[^>]+data-accommodation-page[^>]+src="okanagan-preview\/index\.html"/);
+  assert.doesNotMatch(html, /data-accommodation-clip|overview-scroll\.(?:mp4|webm)|treehouse-scroll\.(?:mp4|webm)|cabin-scroll\.(?:mp4|webm)/);
+  assert.equal((preview.match(/data-okanagan-scene=/g) || []).length, 3);
+  const sceneOrder = ["overview", "treehouse", "cabin"].map((scene) => preview.indexOf(`data-okanagan-scene="${scene}"`));
+  assert.ok(sceneOrder.every((position) => position >= 0));
+  assert.deepEqual([...sceneOrder].sort((left, right) => left - right), sceneOrder);
+
+  for (const movie of ["overview-loop.mp4", "overview-transition.mp4", "treehouse-hero.mp4", "cabin-hero.mp4"]) {
+    assert.match(preview, new RegExp(`assets/${movie.replace(".", "\\.")}`));
+    await access(new URL(`okanagan-preview/assets/${movie}`, v2Url));
+  }
+  for (const copy of ["Nature.", "Adventure.", "Stillness.", "The Treehouse", "The Cabin"]) {
+    assert.ok(preview.includes(copy), `missing semantic Okanagan copy: ${copy}`);
+  }
+  assert.match(preview, /<button[^>]+aria-expanded="false"[^>]+data-stays-trigger/);
+  assert.match(preview, /class="nav-mega"/);
+  assert.match(previewCss, /\.okanagan-scene\s*\{[^}]*height:\s*300svh/s);
+  assert.match(previewCss, /\.okanagan-hero\s*\{[^}]*position:\s*sticky[^}]*height:\s*100svh/s);
+  assert.match(previewApp, /preventDefault\(\)/);
+  assert.match(previewApp, /currentTime/);
+  assert.match(css, /\.accommodation-viewport iframe\s*\{[^}]*width:\s*100%[^}]*height:\s*100%/s);
+  assert.match(css, /\.accommodation-showcase\s*\{[^}]*translate3d\(calc\(72px/s);
+  assert.match(css, /rotateY\(calc\(12deg/s);
 });
 
 test("V2 refinement keeps text and motion responsive", async () => {
@@ -398,7 +407,7 @@ test("large showcase videos stay lazy, autoplay once visible, and have no pause-
   assert.match(app, /prefers-reduced-motion:\s*reduce/);
 });
 
-test("selected work combines selectable browser content with restrained device choreography", async () => {
+test("selected work uses equal-height stages and centre-timed device choreography", async () => {
   const [html, css, app] = await Promise.all([readV2("index.html"), readV2("styles.css"), readV2("app.js")]);
 
   for (const key of ["accommodation", "cool-runnings", "elevators"]) {
@@ -407,12 +416,16 @@ test("selected work combines selectable browser content with restrained device c
   assert.doesNotMatch(html, /data-frame-scroll="accommodation"/);
   assert.match(css, /\[data-scroll-reveal\][\s\S]*?--object-reveal/s);
   assert.match(css, /\.accommodation-showcase\s*\{[^}]*rotateY\(calc\(/s);
-  assert.match(css, /\.cool-laptop-lid\s*\{[^}]*rotateX\(calc\(72deg\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)\)/s);
-  assert.match(css, /\.cool-laptop-frame\s*\{[^}]*laptop-graphite-frame\.png/s);
+  assert.doesNotMatch(css, /\.cool-laptop-(?:lid|base)\s*\{/s);
+  assert.match(css, /\.cool-laptop\s*\{[^}]*rotateX\(calc\(/s);
+  assert.match(html, /class="cool-laptop-frame"[^>]*laptop-graphite-frame\.png/s);
   assert.match(css, /\.browser-object-elevator\s*\{[^}]*rotateX\(calc\(68deg\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)\)/s);
-  assert.match(css, /\.work-object-accommodation\s*\{[^}]*105svh/s);
-  assert.match(css, /\.work-object-cool,[\s\S]*?\.work-object-elevators\s*\{[^}]*min-height:\s*120svh/s);
+  assert.match(css, /--work-section-height:\s*clamp\(/);
+  assert.match(css, /\.work-object\s*\{[^}]*height:\s*var\(--work-section-height\)[^}]*min-height:\s*var\(--work-section-height\)/s);
+  assert.doesNotMatch(css, /\.work-object-(?:accommodation|cool|elevators)\s*\{[^}]*min-height:/s);
   assert.match(app, /querySelectorAll\("\[data-scroll-reveal\]"\)/);
+  assert.match(app, /const centredTop\s*=\s*\(window\.innerHeight\s*-\s*section\.offsetHeight\)\s*\/\s*2/);
+  assert.match(app, /revealKey\s*===\s*"cool-runnings"\s*\|\|\s*revealKey\s*===\s*"accommodation"\s*\?\s*centredProgress/s);
   assert.match(app, /revealKey\s*===\s*"elevators"[\s\S]*?rawProgress\s*\/\s*\.72/s);
   assert.match(app, /--object-reveal/);
 });
@@ -450,7 +463,7 @@ test("workflow showcase uses a neutral accordion and orders copy above dominant 
   assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*64px[^}]*background:\s*var\(--rail\)/s);
   assert.match(css, /\.workflow-trigger strong\s*\{[^}]*font-size:\s*1\.2rem[^}]*font-weight:\s*900/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*grid-template-rows:\s*auto minmax\(0,\s*1fr\)/s);
-  assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*#f4f1e9/s);
+  assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*#111412/s);
   assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*clamp\(2\.15rem,\s*3\.15vw,\s*3\.65rem\)/s);
   assert.match(css, /\.workflow-copy p\s*\{[^}]*font-size:\s*clamp\(\.98rem,\s*1\.15vw,\s*1\.12rem\)/s);
   assert.match(css, /\.workflow-copy-head\s*\{[^}]*justify-content:\s*space-between/s);
@@ -497,7 +510,7 @@ test("V2 CSS includes the revised studio tokens, responsive accordion, and motio
   assert.match(css, /@media\s*\(max-width:\s*1099px\)[\s\S]*?\.laptop-object\s*\{[^}]*width:\s*min\(100%,\s*900px\)/);
 });
 
-test("Hero and Selected Work share a white canvas with a deliberate type and spacing rhythm", async () => {
+test("Hero and Selected Work share white while a contained hairline preserves the chapter break", async () => {
   const css = await readV2("styles.css");
 
   assert.match(css, /--canvas:\s*#ffffff/);
@@ -509,6 +522,7 @@ test("Hero and Selected Work share a white canvas with a deliberate type and spa
   assert.match(css, /body\s*\{[^}]*background:\s*var\(--canvas\)/s);
   assert.match(css, /\.hero\s*\{[^}]*background:\s*var\(--canvas\)/s);
   assert.match(css, /\.selected-work\s*\{[^}]*background:\s*var\(--canvas\)/s);
+  assert.match(css, /\.selected-work::before\s*\{[^}]*border-top:\s*1px\s+solid\s+var\(--line\)/s);
   assert.doesNotMatch(css, /\.work-object:first-child\s*\{[^}]*border-top:/s);
   assert.doesNotMatch(css, /\.work-object-cool\s*\{[^}]*background-image:/s);
   assert.match(css, /\.section-heading h2,[\s\S]*?font-size:\s*var\(--type-h2\)/s);
@@ -549,13 +563,13 @@ test("V2 interactions use keyboard handling, observers, and rAF-throttled scroll
 test("browser QA covers runtime focus, motion, inputs, all workflow routes, and target widths", async () => {
   const qa = await readFile(new URL("../scripts/qa-v2.mjs", import.meta.url), "utf8");
   for (const marker of [
-    "puppeteer-core", "inert", "aria-hidden", "ArrowDown", "data-accommodation-page",
-    "selectableText", "prefers-reduced-motion", "detailRoutes", "workflow-step",
+    "puppeteer-core", "inert", "aria-hidden", "ArrowDown", "data-accommodation-page", "data-okanagan-scene",
+    "overviewMiddle", "treehouseMiddle", "cabinMiddle", "accommodationReverse", "prefers-reduced-motion", "detailRoutes", "workflow-step",
     "1440", "1024", "768", "390", "320", "scrollWidth",
     "workflow-desktop-", "workflow-mobile-", "hero-desktop.png", "hero-mobile.png",
     "work-desktop-accommodation.png", "work-mobile-accommodation.png",
-    "work-desktop.png", "motion-video-rccv", "currentTime", "transitionWidths", "--about-line",
-    "cueBottom", "phraseRight", "aboutAnchorDelta", "coolLidAngle", "local-search-magnet",
+    "work-desktop-cool.png", "work-mobile-cool.png", "work-desktop.png", "motion-video-rccv", "currentTime", "transitionWidths", "--about-line",
+    "cueBottom", "overlaps", "aboutAnchorDelta", "coolRevealStart", "coolRevealMid", "workHeights", "local-search-magnet",
   ]) {
     assert.ok(qa.includes(marker), `browser QA missing ${marker}`);
   }

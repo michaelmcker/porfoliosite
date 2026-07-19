@@ -3,10 +3,18 @@
 .impeccable/
 .superpowers/
 .vercel/
+AGENTS.md
+DESIGN.md
+PRODUCT.md
+.github/
+v2/assets/backgrounds/
+v2/assets/workflows/README.md
+v2/assets/workflows/candidates/
 artifacts/
 docs/
 node_modules/
 portfolio-remote-preview/
+portfolio-style-round-scorecard.html
 scroll-states/
 scripts/
 tests/
@@ -30,6 +38,7 @@ assets/design-refs/*
 
 assets/device-mockups/*
 !assets/device-mockups/laptop-three-quarter-rccv.png
+!assets/device-mockups/laptop-three-quarter-rccv-cutout.png
 
 assets/experience/*
 !assets/experience/experience-route-tight.png

@@ -87,6 +87,22 @@ test('keeps secrets and VI application dependencies out of browser code', async 
   assert.doesNotMatch(source, /MAPBOX_ACCESS_TOKEN|LETZAI_API_KEY|api\.letz\.ai|vi-automation\.vercel\.app/i);
 });
 
+test('applies request guards before expensive proposal generation', async () => {
+  const [generate, suggest] = await Promise.all([
+    readFile(new URL('../api/proposal/generate.js', import.meta.url), 'utf8'),
+    readFile(new URL('../api/proposal/suggest.js', import.meta.url), 'utf8'),
+  ]);
+
+  assert.match(generate, /assertSameOrigin\(request, \{ requireOrigin: true \}\)/);
+  assert.match(generate, /assertJsonRequest\(request\)/);
+  assert.match(generate, /assertRateLimit\(request/);
+  assert.match(generate, /parseJsonBody\(request/);
+  assert.match(suggest, /assertRateLimit\(request/);
+  assert.match(suggest, /query\.length > 180/);
+  assert.doesNotMatch(generate, /Access-Control-Allow-Origin/i);
+  assert.doesNotMatch(suggest, /Access-Control-Allow-Origin/i);
+});
+
 test('presents the proposal builder as a compact portfolio tool', async () => {
   const [html, client] = await Promise.all([
     readFile(new URL('../proposal-generator.html', import.meta.url), 'utf8'),

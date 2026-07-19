@@ -16,6 +16,7 @@
 
   let state = "static";
   let released = false;
+  const releasedItems = new Set();
   let entranceFrame;
   let entranceStart = 0;
   let entranceStarted = false;
@@ -36,6 +37,7 @@
   const spiralTurns = 2;
   const centreScale = .7;
   const spiralStartAngle = -Math.PI * .75;
+  const releaseThreshold = .985;
 
   function setState(next) {
     state = next;
@@ -156,19 +158,21 @@
     const centreY = height * .46;
     const maxRadius = Math.hypot(width, height) * .58;
     const angle = spiralStartAngle + n * spiralTurns * Math.PI * 2;
-    const radius = maxRadius * (1 - n);
+    const radiusX = width < 640 ? width * .46 * (1 - n) : maxRadius * (1 - n);
+    const radiusY = width < 640 ? height * .42 * (1 - n) : maxRadius * (1 - n);
     const convergence = smooth((stream - .94) / .06);
     const releaseSpan = Math.min(width * (width < 640 ? .56 : .36), width < 640 ? 220 : 520);
     const releaseOrder = count > 1 ? ((index * 5) % count) / (count - 1) - .5 : 0;
     const releaseX = releaseOrder * releaseSpan * convergence;
     const releaseY = (-height * .045 + ((index * 2) % 3 - 1) * Math.min(18, height * .02)) * convergence;
-    const x = centreX + Math.cos(angle) * radius + releaseX;
-    const y = centreY + Math.sin(angle) * radius + releaseY;
+    const x = centreX + Math.cos(angle) * radiusX + releaseX;
+    const y = centreY + Math.sin(angle) * radiusY + releaseY;
     const nextN = Math.min(1, n + .001);
     const nextAngle = spiralStartAngle + nextN * spiralTurns * Math.PI * 2;
-    const nextRadius = maxRadius * (1 - nextN);
-    const nextX = centreX + Math.cos(nextAngle) * nextRadius;
-    const nextY = centreY + Math.sin(nextAngle) * nextRadius;
+    const nextRadiusX = width < 640 ? width * .46 * (1 - nextN) : maxRadius * (1 - nextN);
+    const nextRadiusY = width < 640 ? height * .42 * (1 - nextN) : maxRadius * (1 - nextN);
+    const nextX = centreX + Math.cos(nextAngle) * nextRadiusX;
+    const nextY = centreY + Math.sin(nextAngle) * nextRadiusY;
     return {
       x,
       y,
@@ -176,6 +180,7 @@
       scale: lerp(1, centreScale, n),
       opacity: clamp(stream * 8),
       progress: n,
+      stream,
     };
   }
 
@@ -188,8 +193,11 @@
     const width = stage.clientWidth;
     const height = stage.clientHeight;
     const items = visibleItems();
+    const poses = [];
     items.forEach((item, index) => {
       const pose = spiralPose(index, items.length, progress, width, height);
+      poses.push({ item, index, pose });
+      if (releasedItems.has(item)) return;
       item.style.setProperty("--body-width", `${itemWidth(item, width)}px`);
       item.style.opacity = pose.opacity.toFixed(3);
       item.style.transform = `translate3d(${pose.x - item.offsetWidth / 2}px, ${pose.y - item.offsetHeight / 2}px, 0) rotate(${pose.angle}rad) scale(${pose.scale})`;
@@ -199,14 +207,22 @@
       item.dataset.poseScale = String(pose.scale);
       item.dataset.poseProgress = String(pose.progress);
     });
+    return poses;
   }
 
-  function startEntrance() {
+  async function startEntrance() {
     if (entranceStarted || reducedMotion.matches) return;
     entranceStarted = true;
     lockViewport();
     story.dataset.entranceStarts = String(Number(story.dataset.entranceStarts || 0) + 1);
     setState("entrance");
+    try {
+      await preparePhysics();
+    } catch {
+      unlockViewport();
+      showStaticFallback();
+      return;
+    }
     entranceStart = performance.now();
     entranceFrame = requestAnimationFrame(stepEntrance);
   }
@@ -214,7 +230,12 @@
   function stepEntrance(timestamp) {
     const progress = clamp((timestamp - entranceStart) / entranceDuration);
     story.dataset.entranceProgress = progress.toFixed(4);
-    applySpiral(progress);
+    const poses = applySpiral(progress);
+    poses.forEach(({ item, index, pose }) => {
+      if (!releasedItems.has(item) && pose.stream >= releaseThreshold) {
+        releaseItemToPhysics(item, index);
+      }
+    });
     if (progress < 1) {
       entranceFrame = requestAnimationFrame(stepEntrance);
       return;
@@ -294,60 +315,67 @@
     markSettled();
   }
 
-  async function releaseToPhysics() {
-    if (released) return;
-    released = true;
-    unlockViewport();
-    applySpiral(1);
-    setState("physics");
-    scheduleCopyReveal();
-    try {
-      await loadMatterRuntime();
-    } catch {
-      showStaticFallback();
-      return;
-    }
-
+  async function preparePhysics() {
+    if (engine) return;
+    await loadMatterRuntime();
     engine = Matter.Engine.create({ enableSleeping: true });
     engine.gravity.y = 1;
-    engine.gravity.scale = .00115;
-    bodies = visibleItems().map((item) => {
-      const renderScale = Number(item.dataset.poseScale || 1);
-      const width = item.offsetWidth * renderScale;
-      const height = item.offsetHeight * renderScale;
-      const body = Matter.Bodies.rectangle(
-        Number(item.dataset.poseX),
-        Number(item.dataset.poseY),
-        width,
-        height,
-        {
-          label: item.dataset.contactObject,
-          restitution: .24,
-          friction: .62,
-          frictionAir: .018,
-          sleepThreshold: 45,
-          chamfer: { radius: Math.min(14, width * .06) },
-        },
-      );
-      Matter.Body.setAngle(body, Number(item.dataset.poseAngle));
-      body.plugin.domElement = item;
-      body.plugin.renderScale = renderScale;
-      return body;
-    });
-    story.dataset.releaseDelta = Math.max(...bodies.map((body) => {
-      const item = body.plugin.domElement;
-      return Math.hypot(
-        body.position.x - Number(item.dataset.poseX),
-        body.position.y - Number(item.dataset.poseY),
-      );
-    })).toFixed(3);
-    Matter.Composite.add(engine.world, [
-      ...createBoundaries(stage.clientWidth, stage.clientHeight),
-      ...bodies,
-    ]);
+    engine.gravity.scale = .0017;
+    Matter.Composite.add(engine.world, createBoundaries(stage.clientWidth, stage.clientHeight));
     stage.classList.add("is-draggable");
     releaseTimestamp = performance.now();
-    animationFrame = requestAnimationFrame(stepPhysics);
+    if (!animationFrame) animationFrame = requestAnimationFrame(stepPhysics);
+  }
+
+  function releaseItemToPhysics(item, index) {
+    if (!engine || releasedItems.has(item)) return;
+    const renderScale = Number(item.dataset.poseScale || 1);
+    const width = item.offsetWidth * renderScale;
+    const height = item.offsetHeight * renderScale;
+    const body = Matter.Bodies.rectangle(
+      Number(item.dataset.poseX),
+      Number(item.dataset.poseY),
+      width,
+      height,
+      {
+        label: item.dataset.contactObject,
+        restitution: .2,
+        friction: .66,
+        frictionAir: .014,
+        sleepThreshold: 42,
+        chamfer: { radius: Math.min(14, width * .06) },
+      },
+    );
+    Matter.Body.setAngle(body, Number(item.dataset.poseAngle));
+    Matter.Body.setVelocity(body, {
+      x: ((index % 5) - 2) * .55,
+      y: 1.7 + (index % 3) * .38,
+    });
+    Matter.Body.setAngularVelocity(body, ((index % 3) - 1) * .012);
+    body.plugin.domElement = item;
+    body.plugin.renderScale = renderScale;
+    releasedItems.add(item);
+    bodies.push(body);
+    Matter.Composite.add(engine.world, body);
+    story.dataset.releasedObjects = String(releasedItems.size);
+    if (releasedItems.size === 1) {
+      setState("releasing");
+      window.clearTimeout(copyTimer);
+      copyTimer = window.setTimeout(revealCopy, 240);
+    }
+  }
+
+  function releaseToPhysics() {
+    if (released) return;
+    const items = visibleItems();
+    applySpiral(1);
+    items.forEach((item, index) => releaseItemToPhysics(item, index));
+    released = true;
+    story.dataset.releaseDelta = "0.000";
+    releaseTimestamp = performance.now();
+    unlockViewport();
+    setState("physics");
+    if (story.dataset.copyState !== "visible") scheduleCopyReveal();
   }
 
   function stepPhysics(timestamp) {
@@ -361,8 +389,8 @@
       item.style.transform = `translate3d(${body.position.x - item.offsetWidth / 2}px, ${body.position.y - item.offsetHeight / 2}px, 0) rotate(${body.angle}rad) scale(${body.plugin.renderScale})`;
     });
     updateCopyContrast();
-    if (state !== "settled") {
-      const quiet = bodies.every((body) => body.isSleeping
+    if (released && state !== "settled") {
+      const quiet = bodies.length > 0 && bodies.every((body) => body.isSleeping
         || (body.speed < .35 && body.angularSpeed < .018));
       quietFrames = quiet ? quietFrames + 1 : 0;
       if (quietFrames >= 45 || timestamp - releaseTimestamp > 6500) markSettled();
@@ -422,7 +450,7 @@
   stage.addEventListener("pointerup", releaseDrag);
   stage.addEventListener("pointercancel", releaseDrag);
   window.addEventListener("resize", () => {
-    if (released) rebuildBoundaries();
+    if (engine) rebuildBoundaries();
   }, { passive: true });
   window.addEventListener("pagehide", unlockViewport, { once: true });
 

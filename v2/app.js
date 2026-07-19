@@ -79,6 +79,20 @@ workflowTriggers.forEach((trigger, index) => {
 const motionVideos = [...document.querySelectorAll("[data-motion-video]")];
 const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
 const visibleMotionVideos = new Set();
+const accommodationPage = document.querySelector("[data-accommodation-page]");
+const accommodationUrl = document.querySelector("[data-accommodation-url]");
+const accommodationUrls = {
+  overview: "okanagantreehouse.ca",
+  treehouse: "okanagantreehouse.ca/treehouse",
+  cabin: "okanagantreehouse.ca/cabin",
+};
+
+window.addEventListener("message", (event) => {
+  if (!accommodationPage || event.source !== accommodationPage.contentWindow) return;
+  if (event.data?.type !== "okanagan-scene-change") return;
+  if (!Object.hasOwn(accommodationUrls, event.data.scene)) return;
+  if (accommodationUrl) accommodationUrl.textContent = accommodationUrls[event.data.scene];
+});
 
 const loadMotionVideo = (video) => {
   if (video.dataset.motionLoaded === "true") return;
@@ -130,6 +144,8 @@ if (!motionPreference.matches && "IntersectionObserver" in window) {
 
 const biasSequence = document.querySelector("[data-bias-sequence]");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const clampUnit = (value) => Math.max(0, Math.min(1, value));
+const phase = (progress, start, end) => clampUnit((progress - start) / (end - start));
 
 if (biasSequence && !reducedMotion.matches && "IntersectionObserver" in window) {
   biasSequence.classList.add("is-observable");
@@ -151,10 +167,17 @@ const updateObjectReveals = () => {
     const section = object.closest(".work-object");
     if (!section) return;
     const bounds = section.getBoundingClientRect();
+    const revealKey = object.dataset.scrollReveal;
     const travel = window.innerHeight * .88 + section.offsetHeight * .58;
     const rawProgress = reducedMotion.matches ? 1 : clampUnit((window.innerHeight * .98 - bounds.top) / travel);
-    const revealKey = object.dataset.scrollReveal;
-    const progress = revealKey === "elevators" ? clampUnit(rawProgress / .72) : rawProgress;
+    const centredTop = (window.innerHeight - section.offsetHeight) / 2;
+    const entranceTop = window.innerHeight * .96;
+    const centredProgress = reducedMotion.matches ? 1 : clampUnit(
+      (entranceTop - bounds.top) / Math.max(1, entranceTop - centredTop),
+    );
+    const progress = revealKey === "elevators"
+      ? clampUnit(rawProgress / .72)
+      : revealKey === "cool-runnings" || revealKey === "accommodation" ? centredProgress : rawProgress;
     object.style.setProperty("--object-reveal", progress.toFixed(3));
   });
 };
@@ -197,9 +220,6 @@ aboutPointerStage?.addEventListener("pointermove", (event) => {
   if (event.pointerType !== "touch") sendPortraitPointer(event);
 });
 aboutPointerStage?.addEventListener("pointerdown", sendPortraitPointer);
-
-const clampUnit = (value) => Math.max(0, Math.min(1, value));
-const phase = (progress, start, end) => clampUnit((progress - start) / (end - start));
 
 const positionAboutFocusPhrase = () => {
   if (!aboutScrollStory || !aboutCopy || !aboutQuestionableInline || !aboutQuestionableFocus) return;

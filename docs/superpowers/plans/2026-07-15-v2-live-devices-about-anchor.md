@@ -1,5 +1,7 @@
 # V2 Live Devices and Anchored About Phrase Implementation Plan
 
+> Superseded for Boutique Accommodation and Cool Runnings timing on July 15, 2026. Do not execute these historical tasks. Current source truth lives in `AGENTS.md`, `DESIGN.md`, and `docs/portfolio-working-notes.md`: a same-origin semantic three-hero Okanagan preview with compressed local movies, plus a centre-timed single laptop reveal.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Make Boutique Accommodation a selectable HTML browser, anchor the About phrase before growth, and present Cool Runnings in a scroll-opening transparent laptop.

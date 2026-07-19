@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Presentation publishing — Michael McKerracher</title>
-  <meta name="description" content="A public-safe view of the six-stage system that publishes branded HTML presentations to a managed prospect URL.">
+  <title>Presentation publishing | Michael McKerracher</title>
+  <meta name="description" content="A public-safe view of the sales-authored HTML presentation workflow, from branded maps and custom graphics through Vercel and Webflow publication.">
+  <link rel="canonical" href="https://michaelmck.site/v2/workflows/presentation-publishing.html">
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="workflow-detail.css">
@@ -19,41 +20,40 @@
   <main>
     <section class="workflow-hero page-frame" aria-labelledby="page-title">
       <div class="workflow-hero-copy">
-        <p class="eyebrow">Selected workflow · Publishing system</p>
         <h1 id="page-title">Presentation publishing</h1>
-        <p class="workflow-purpose" data-workflow-purpose>Moves approved branded HTML to a managed, prospect-ready URL without a manual deployment or CMS handoff.</p>
+        <p class="workflow-purpose" data-workflow-purpose>Moves an existing HTML presentation, created by the sales team with the design system, customer branding, maps, and custom graphics, to a published Webflow link without a manual deployment or CMS handoff.</p>
       </div>
-      <picture class="workflow-artwork"><source media="(max-width: 699px)" srcset="../assets/presentation-publishing-mobile.png"><img src="../assets/presentation-publishing-desktop.png" alt="Six-stage presentation publishing path from branded HTML through deployment, validation, Webflow, and final URL verification."></picture>
+      <picture class="workflow-artwork"><source media="(max-width: 699px)" srcset="../assets/workflows/presentation-publishing-mobile.png"><img src="../assets/workflows/presentation-publishing-desktop.png" alt="Sales team workflow from a customer-branded HTML presentation with maps and custom graphics through Cloud Scale Deploy, Vercel, Webflow CMS, and the returned published link."></picture>
     </section>
 
     <section class="workflow-section-block page-frame" id="why-it-exists" aria-labelledby="why-title">
-      <div class="workflow-kicker">01 · Purpose</div><div class="workflow-section-content"><h2 id="why-title">Why it exists</h2><p>Custom HTML presentations can be more expressive than a standard slide deck, but deployment and CMS setup create a gap between the approved artifact and the link a sales team can actually share. This workflow connects those layers while keeping the approved presentation intact.</p></div>
+      <div class="workflow-kicker">01 · Purpose</div><div class="workflow-section-content"><h2 id="why-title">Why it exists</h2><p>Sales needs more than a generic deck. The team assembles a customer-specific HTML presentation from approved design-system components, customer branding, maps, and custom graphics. Cloud Scale Deploy then removes the repetitive hosting and CMS work without flattening or rebuilding the approved artifact.</p></div>
     </section>
 
     <section class="workflow-section-block page-frame" id="how-it-works" aria-labelledby="process-title">
       <div class="workflow-kicker">02 · Sequence</div>
-      <div class="workflow-section-content"><h2 id="process-title">How it works</h2><p class="workflow-section-intro">The same six stages appear in the visual and in this public-safe operating sequence.</p>
+      <div class="workflow-section-content"><h2 id="process-title">How it works</h2><p class="workflow-section-intro">Sales authors the branded HTML artifact; one deployment command then coordinates the existing presentation, Vercel API, Webflow CMS API, duplicate check, iframe write, site publication, and returned link.</p>
         <ol class="workflow-steps">
-          <li class="workflow-step"><span>01</span><div><h3>Branded HTML presentation</h3><p>Start with a self-contained, approved HTML artifact plus its intended name and destination.</p></div></li>
-          <li class="workflow-step"><span>02</span><div><h3>Vercel API deployment</h3><p>Publish the presentation into the corporate Vercel project as its own hosted artifact.</p></div></li>
-          <li class="workflow-step"><span>03</span><div><h3>Name and destination validation</h3><p>Check the proposed name and URL against existing presentations before making a CMS change.</p></div></li>
-          <li class="workflow-step"><span>04</span><div><h3>Webflow CMS iframe field</h3><p>Create or update the CMS record and write the shared iframe embed field through the Webflow CMS API.</p></div></li>
-          <li class="workflow-step"><span>05</span><div><h3>Full-screen presentation template</h3><p>The managed CMS page renders the Vercel-hosted artifact edge to edge.</p></div></li>
-          <li class="workflow-step"><span>06</span><div><h3>Published URL verification</h3><p>Open and verify both publishing layers, then return the final prospect-ready URL.</p></div></li>
+          <li class="workflow-step"><span>01</span><div><h3>Create the branded HTML artifact</h3><p>The sales team combines the approved design system, customer branding, maps, custom graphics, and account-specific narrative into a reviewed HTML presentation.</p></div></li>
+          <li class="workflow-step"><span>02</span><div><h3>Call Cloud Scale Deploy</h3><p>Run <code>/deploy/presentation</code> with the existing approved presentation and intended Webflow page name.</p></div></li>
+          <li class="workflow-step"><span>03</span><div><h3>Deploy the existing presentation</h3><p>Send the presentation to Vercel through the API and capture the resulting hosted URL.</p></div></li>
+          <li class="workflow-step"><span>04</span><div><h3>Pass the deployed URL to Webflow</h3><p>Use the Vercel URL as the iframe source and call the Webflow API for the managed presentation collection.</p></div></li>
+          <li class="workflow-step"><span>05</span><div><h3>Validate and write the CMS record</h3><p>Check the proposed page name against the existing CMS to prevent a duplicate name, then paste the Vercel URL into the iframe embed field.</p></div></li>
+          <li class="workflow-step"><span>06</span><div><h3>Publish and return the link</h3><p>Publish the Webflow site, verify the managed page, and return the final link to the caller.</p></div></li>
         </ol>
       </div>
     </section>
 
-    <section class="workflow-section-block page-frame" id="tools-and-sources" aria-labelledby="tools-title"><div class="workflow-kicker">03 · Sources</div><div class="workflow-section-content"><h2 id="tools-title">Tools and data sources</h2><p>The workflow is deliberately narrow: it handles publishing infrastructure, not presentation authorship.</p><ul class="workflow-tools"><li>self-contained HTML</li><li>publishing skill</li><li>Vercel API</li><li>Webflow CMS API</li><li>existing-presentation lookup</li><li>iframe embed field</li><li>browser verification</li></ul></div></section>
+    <section class="workflow-section-block page-frame" id="tools-and-sources" aria-labelledby="tools-title"><div class="workflow-kicker">03 · Sources</div><div class="workflow-section-content"><h2 id="tools-title">Tools and data sources</h2><p>Authoring uses approved brand and design-system inputs; publishing is a narrow, repeatable deployment path.</p><ul class="workflow-tools"><li>sales brief</li><li>customer branding</li><li>design system</li><li>maps and custom graphics</li><li>HTML presentation</li><li>Cloud Scale Deploy</li><li><code>/deploy/presentation</code></li><li>Vercel API</li><li>Webflow CMS API</li><li>existing CMS page-name lookup</li><li>iframe embed field</li><li>Webflow site publish</li></ul></div></section>
 
     <div class="workflow-pair page-frame">
-      <section class="workflow-note" id="what-ships" aria-labelledby="ships-title"><p>Output</p><h2 id="ships-title">What ships</h2><p>A Vercel-hosted artifact, a managed Webflow page, and a final prospect URL ready to share.</p></section>
-      <section class="workflow-note" id="human-review" aria-labelledby="human-title"><p>Review</p><h2 id="human-title">What stays human</h2><p>Final content and design approval, plus confirming the intended name and destination before publication.</p></section>
+      <section class="workflow-note" id="what-ships" aria-labelledby="ships-title"><p>Output</p><h2 id="ships-title">What ships</h2><p>A customer-branded HTML presentation with maps and custom graphics, its Vercel-hosted artifact, a managed Webflow page with the iframe field populated, and the published Webflow link returned to the caller.</p></section>
+      <section class="workflow-note" id="human-review" aria-labelledby="human-title"><p>Review</p><h2 id="human-title">What stays human</h2><p>The sales narrative, customer-brand fit, map and graphic choices, final presentation approval, intended page name, and decision that the existing presentation is ready to publish.</p></section>
     </div>
 
-    <section class="workflow-section-block workflow-constraints page-frame" id="proof-and-constraints" aria-labelledby="constraints-title"><div class="workflow-kicker">04 · Boundary</div><div class="workflow-section-content"><h2 id="constraints-title">Public-safe proof and constraints</h2><p>The deterministic diagram and published-page structure show the two-layer system without exposing credentials, tokens, internal identifiers, or private client content. The workflow does not invent presentation content, silently change an approved artifact, or claim a publish succeeded before both URLs are checked.</p></div></section>
+    <section class="workflow-section-block workflow-constraints page-frame" id="proof-and-constraints" aria-labelledby="constraints-title"><div class="workflow-kicker">04 · Boundary</div><div class="workflow-section-content"><h2 id="constraints-title">Public-safe proof and constraints</h2><p>The generated diagram shows representative authoring inputs, the command, two API boundaries, duplicate-name check, iframe CMS write, site publish, and returned link without exposing credentials, tokens, internal identifiers, or private client content. Sales authors and approves the artifact; the deployment path does not invent customer claims, overwrite a duplicate CMS page, or report success before the managed Webflow page is published.</p></div></section>
 
-    <section class="workflow-related page-frame" id="related-work" aria-labelledby="related-title"><p class="eyebrow">More repeatable systems</p><h2 id="related-title">Related work</h2><div class="workflow-related-grid"><a href="content-production.html"><span>Content system</span><strong>Search-optimized production</strong></a><a href="local-prospecting-enrichment.html"><span>Prospecting system</span><strong>Local discovery and enrichment</strong></a><a href="image-to-website-production.html"><span>Website system</span><strong>Image-to-website production</strong></a></div></section>
+    <section class="workflow-related page-frame" id="related-work" aria-labelledby="related-title"><h2 id="related-title">Related work</h2><div class="workflow-related-grid"><a href="content-production.html"><span>Content system</span><strong>Search-optimized production</strong></a><a href="local-prospecting-enrichment.html"><span>Prospecting system</span><strong>Local discovery and enrichment</strong></a><a href="image-to-website-production.html"><span>Website system</span><strong>Image-to-website production</strong></a></div></section>
   </main>
   <footer class="site-footer page-frame"><span class="monogram" aria-hidden="true">MM</span><span>Coldstream, BC</span><div class="footer-links"><a href="mailto:michael.mckerracher@gmail.com">Email</a><a href="../../assets/Michael-McKerracher-Resume.pdf">Resume</a><a href="https://github.com/michaelmcker" target="_blank" rel="noreferrer">GitHub</a></div><span>© 2026 Michael McKerracher</span></footer>
 </body>

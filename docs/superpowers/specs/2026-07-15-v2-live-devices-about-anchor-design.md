@@ -1,5 +1,7 @@
 # V2 Live Devices and Anchored About Phrase Design
 
+> Superseded for Boutique Accommodation and the Cool Runnings timing on July 15, 2026. The current source-of-truth contract is in `AGENTS.md`, `DESIGN.md`, and `docs/portfolio-working-notes.md`: Boutique uses a same-origin semantic copy of the actual three Okanagan heroes with compressed local source movies, and Cool Runnings completes at text centre. The About portion of this document remains historical context.
+
 ## Goal
 
 Replace the remaining recorded-media shorthand with authored, interactive device treatments and make the About phrase begin as an ordinary part of its sentence before it becomes a scroll-led statement.
