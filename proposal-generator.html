@@ -128,27 +128,43 @@
                   <strong>Building your proposal</strong>
                   <p data-loading-message>Finding nearby elevator inventory.</p>
                 </div>
+                <span class="proposal-target proposal-target--ad" data-proposal-target="ad" aria-hidden="true">01</span>
+                <span class="proposal-target proposal-target--copy" data-proposal-target="copy" aria-hidden="true">02</span>
+                <span class="proposal-target proposal-target--count" data-proposal-target="count" aria-hidden="true">03</span>
+                <span class="proposal-target proposal-target--map" data-proposal-target="map" aria-hidden="true">04</span>
               </div>
             </div>
           </div>
 
+          <svg class="proposal-annotation-paths" data-proposal-connectors aria-hidden="true">
+            <defs>
+              <marker id="proposal-arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z"></path>
+              </marker>
+            </defs>
+            <path data-proposal-path="ad"></path>
+            <path data-proposal-path="copy"></path>
+            <path data-proposal-path="count"></path>
+            <path data-proposal-path="map"></path>
+          </svg>
+
           <div class="proposal-annotations" aria-label="What changes in the proposal">
-            <article class="proposal-callout proposal-callout--ad" data-annotation="01">
+            <article class="proposal-callout proposal-callout--ad" data-proposal-callout="ad">
               <span>01</span>
               <h2>Custom ad</h2>
               <p>The system generates an ad from the business name and business type, then perspective-skews it onto the elevator screen.</p>
             </article>
-            <article class="proposal-callout proposal-callout--copy" data-annotation="02">
+            <article class="proposal-callout proposal-callout--copy" data-proposal-callout="copy">
               <span>02</span>
               <h2>Custom copy</h2>
               <p>Industry-specific messaging changes the pitch, supporting language, and value proposition.</p>
             </article>
-            <article class="proposal-callout proposal-callout--count" data-annotation="03">
+            <article class="proposal-callout proposal-callout--count" data-proposal-callout="count">
               <span>03</span>
               <h2>Live screen count</h2>
               <p>Nearby inventory updates the number of screens used in the proposal headline.</p>
             </article>
-            <article class="proposal-callout proposal-callout--map" data-annotation="04">
+            <article class="proposal-callout proposal-callout--map" data-proposal-callout="map">
               <span>04</span>
               <h2>Local map</h2>
               <p>Mapbox plots nearby properties within a reasonable walking distance of the business.</p>
@@ -179,7 +195,7 @@
           <div class="outreach-email__body">
             <p>Hi [First name],</p>
             <p>I took a look at how people find a <span data-email-industry-title>[Industry]</span> around <span data-email-location>[Neighbourhood]</span>. You are competing on the first page of Google with hundreds of other <span data-email-industry-plural>businesses</span>, all fighting for the same clicks.</p>
-            <p>There are <span data-email-screen-count>[30]</span> elevator screens within five miles of your <span data-email-industry>business</span>, inside apartment and office buildings where <span data-email-audience>potential customers</span> live and work. Instead of putting you beside every other <span data-email-industry-title>[Industry]</span> in the search results, those screens put your name in front of the same local audience every day.</p>
+            <p>There are <span data-email-screen-count>[number of screens]</span> elevator screens within five miles of your <span data-email-industry>business</span>, inside apartment and office buildings where <span data-email-audience>potential customers</span> live and work. Instead of putting you beside every other <span data-email-industry-title>[Industry]</span> in the search results, those screens put your name in front of the same local audience every day.</p>
             <p>So we put together a campaign idea specifically for <span data-email-business>[Business name]</span>: a more personal, conversational ad. We mocked it up on an elevator screen and mapped the nearby buildings so you can see what the campaign could look like.</p>
             <p>I attached the idea. Worth a look?</p>
             <div class="outreach-email__attachment">
@@ -213,6 +229,6 @@
     </div>
   </footer>
 
-    <script src="proposal-generator.js?v=20260720-1" type="module"></script>
+    <script src="proposal-generator.js?v=20260720-2" type="module"></script>
 </body>
 </html>

@@ -84,6 +84,10 @@ async function inspectLayout(page) {
       const style = getComputedStyle(element);
       return style.display !== 'none' && style.visibility !== 'hidden' && Number(style.opacity) > 0;
     };
+    const explainerRect = document.querySelector('.proposal-explainer').getBoundingClientRect();
+    const frameRect = document.querySelector('.proposal-preview__frame').getBoundingClientRect();
+    const connectorPaths = [...document.querySelectorAll('[data-proposal-path]')];
+    const targets = [...document.querySelectorAll('[data-proposal-target]')];
     return {
       overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
       workspaceColumns: getComputedStyle(document.querySelector('.proposal-workspace__inner')).gridTemplateColumns,
@@ -91,14 +95,25 @@ async function inspectLayout(page) {
       workspaceInnerBackground: getComputedStyle(document.querySelector('.proposal-workspace__inner')).backgroundColor,
       workspaceInnerBorderWidth: Number.parseFloat(getComputedStyle(document.querySelector('.proposal-workspace__inner')).borderTopWidth),
       callouts: [...document.querySelectorAll('.proposal-callout')].filter(visible).length,
-      connectorCount: [...document.querySelectorAll('.proposal-callout')]
-        .filter((callout) => getComputedStyle(callout, '::before').display !== 'none').length,
-      connectorNumberCount: [...document.querySelectorAll('.proposal-callout')]
-        .filter((callout) => getComputedStyle(callout, '::after').display !== 'none'
-          && getComputedStyle(callout, '::after').content !== 'none').length,
-      connectorAlignment: [...document.querySelectorAll('.proposal-callout')].every((callout) => (
-        getComputedStyle(callout, '::before').top === getComputedStyle(callout, '::after').top
-      )),
+      connectorCount: visible(document.querySelector('[data-proposal-connectors]'))
+        ? connectorPaths.filter((path) => path.getAttribute('d')).length
+        : 0,
+      connectorNumberCount: targets.filter(visible).length,
+      connectorAlignment: connectorPaths.every((path) => {
+        if (!path.getAttribute('d')) return false;
+        const target = document.querySelector(`[data-proposal-target="${path.dataset.proposalPath}"]`);
+        const targetRect = target.getBoundingClientRect();
+        const pathEnd = path.getPointAtLength(path.getTotalLength());
+        const targetX = targetRect.left + (targetRect.width / 2) - explainerRect.left;
+        const targetY = targetRect.top + (targetRect.height / 2) - explainerRect.top;
+        return Math.abs(pathEnd.x - targetX) <= 2 && Math.abs(pathEnd.y - targetY) <= 2;
+      }),
+      connectorTargetsInFrame: targets.every((target) => {
+        const rectangle = target.getBoundingClientRect();
+        const x = rectangle.left + (rectangle.width / 2);
+        const y = rectangle.top + (rectangle.height / 2);
+        return x >= frameRect.left && x <= frameRect.right && y >= frameRect.top && y <= frameRect.bottom;
+      }),
       annotationPointerEvents: getComputedStyle(document.querySelector('.proposal-annotations')).pointerEvents,
       visibleListNumbers: [...document.querySelectorAll('.proposal-callout > span')].filter(visible).length,
       frameSource: document.querySelector('[data-proposal-frame]').getAttribute('src'),
@@ -147,13 +162,14 @@ try {
 
   assert.equal(desktopLayout.overflow, 0, 'desktop proposal page overflows horizontally');
   assert.ok(desktopLayout.workspaceColumns.split(' ').length >= 2, 'desktop form and proposal are not side-by-side');
-  assert.equal(desktopLayout.workspaceBackground, 'rgb(23, 26, 25)', 'proposal workspace is not charcoal');
+  assert.equal(desktopLayout.workspaceBackground, 'rgb(255, 255, 255)', 'proposal workspace is not white');
   assert.equal(desktopLayout.workspaceInnerBackground, 'rgba(0, 0, 0, 0)', 'proposal system is still wrapped in a card');
   assert.equal(desktopLayout.workspaceInnerBorderWidth, 0, 'proposal system wrapper still has a border');
   assert.equal(desktopLayout.callouts, 4, 'desktop annotations are missing');
   assert.equal(desktopLayout.connectorCount, 4, 'desktop anchored connectors are missing');
   assert.equal(desktopLayout.connectorNumberCount, 4, 'desktop connector numbers are missing');
-  assert.equal(desktopLayout.connectorAlignment, true, 'desktop connector numbers do not share the arrow axis');
+  assert.equal(desktopLayout.connectorAlignment, true, 'desktop connector paths do not end on their named PDF targets');
+  assert.equal(desktopLayout.connectorTargetsInFrame, true, 'desktop annotation targets are not anchored inside the PDF');
   assert.equal(desktopLayout.annotationPointerEvents, 'none', 'annotations can block the live builder');
   assert.equal(desktopLayout.visibleListNumbers, 0, 'desktop callouts duplicate their connector numbers');
   assert.equal(desktopLayout.frameSource, 'about:blank', 'initial preview downloads a hidden PDF before generation');
@@ -184,7 +200,7 @@ try {
   assert.match(generated.frame, /^blob:/);
   assert.match(generated.open, /^blob:/);
   assert.match(generated.download, /^blob:/);
-  assert.equal(await desktop.$eval('[data-email-screen-count]', (element) => element.textContent), '[42]');
+  assert.equal(await desktop.$eval('[data-email-screen-count]', (element) => element.textContent), '42');
   assert.deepEqual(requests, ['/api/proposal/suggest', '/api/proposal/generate']);
   assert.ok(browserRequests.every((url) => !/api\.mapbox\.com|api\.letz\.ai/i.test(url)), 'browser contacted a server-only integration');
 
@@ -195,7 +211,8 @@ try {
   assert.equal(mobileLayout.overflow, 0, 'mobile proposal page overflows horizontally');
   assert.equal(mobileLayout.callouts, 4, 'mobile explanation list is incomplete');
   assert.equal(mobileLayout.connectorCount, 0, 'desktop connectors remain visible on mobile');
-  assert.equal(mobileLayout.connectorNumberCount, 0, 'desktop connector numbers remain visible on mobile');
+  assert.equal(mobileLayout.connectorNumberCount, 4, 'mobile PDF target markers are incomplete');
+  assert.equal(mobileLayout.connectorTargetsInFrame, true, 'mobile annotation targets are not anchored inside the PDF');
   assert.equal(mobileLayout.visibleListNumbers, 4, 'mobile explanation numbers are incomplete');
   assert.ok(mobileLayout.minimumControlHeight >= 44, `mobile control is below 44px: ${mobileLayout.minimumControlHeight}`);
   assert.equal(mobileLayout.calloutBackgroundsOpaque, true, 'mobile callouts are not on opaque surfaces');

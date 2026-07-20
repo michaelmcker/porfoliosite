@@ -113,11 +113,23 @@ const playMotionVideo = async (video) => {
   }
 };
 
+const setMotionPlaybackState = (video, isPlaying) => {
+  const host = video.closest(".hero-system-media");
+  if (!host) return;
+  host.classList.toggle("is-video-playing", isPlaying);
+};
+
 if (!motionPreference.matches && "IntersectionObserver" in window) {
   motionVideos.forEach((video) => {
     video.addEventListener("canplay", () => {
       if (visibleMotionVideos.has(video)) playMotionVideo(video);
     });
+    video.addEventListener("playing", () => {
+      window.requestAnimationFrame(() => setMotionPlaybackState(video, true));
+    });
+    video.addEventListener("waiting", () => setMotionPlaybackState(video, false));
+    video.addEventListener("stalled", () => setMotionPlaybackState(video, false));
+    video.addEventListener("pause", () => setMotionPlaybackState(video, false));
   });
 
   const motionObserver = new IntersectionObserver((entries) => {

@@ -19,6 +19,10 @@ const emailIndustryPlurals = [...document.querySelectorAll('[data-email-industry
 const emailAudiences = [...document.querySelectorAll('[data-email-audience]')];
 const emailLocations = [...document.querySelectorAll('[data-email-location]')];
 const emailScreenCounts = [...document.querySelectorAll('[data-email-screen-count]')];
+const proposalExplainer = document.querySelector('.proposal-explainer');
+const proposalConnectors = document.querySelector('[data-proposal-connectors]');
+const proposalTargets = [...document.querySelectorAll('[data-proposal-target]')];
+const proposalCallouts = [...document.querySelectorAll('[data-proposal-callout]')];
 
 let selectedAddress = null;
 let suggestions = [];
@@ -60,6 +64,34 @@ function deriveLocalArea(fullAddress = '') {
   return fullAddress.trim() || '[Neighbourhood]';
 }
 
+function syncProposalConnectors() {
+  if (!proposalExplainer || !proposalConnectors || matchMedia('(max-width: 700px)').matches) return;
+  const explainerRect = proposalExplainer.getBoundingClientRect();
+  if (!explainerRect.width || !explainerRect.height) return;
+
+  proposalConnectors.setAttribute('viewBox', `0 0 ${explainerRect.width} ${explainerRect.height}`);
+  proposalConnectors.setAttribute('width', String(explainerRect.width));
+  proposalConnectors.setAttribute('height', String(explainerRect.height));
+
+  proposalTargets.forEach((target) => {
+    const key = target.dataset.proposalTarget;
+    const callout = proposalCallouts.find((candidate) => candidate.dataset.proposalCallout === key);
+    const path = proposalConnectors.querySelector(`[data-proposal-path="${key}"]`);
+    if (!callout || !path) return;
+
+    const targetRect = target.getBoundingClientRect();
+    const calloutRect = callout.getBoundingClientRect();
+    const startX = calloutRect.left - explainerRect.left;
+    const startY = calloutRect.top + (calloutRect.height / 2) - explainerRect.top;
+    const endX = targetRect.left + (targetRect.width / 2) - explainerRect.left;
+    const endY = targetRect.top + (targetRect.height / 2) - explainerRect.top;
+    const horizontalGap = Math.max(48, startX - endX);
+    const firstControlX = startX - Math.min(110, horizontalGap * .42);
+    const secondControlX = endX + Math.min(150, horizontalGap * .5);
+    path.setAttribute('d', `M ${startX} ${startY} C ${firstControlX} ${startY}, ${secondControlX} ${endY}, ${endX} ${endY}`);
+  });
+}
+
 function updateEmailPreview() {
   if (!form) return;
   const businessName = form.elements.businessName.value.trim() || '[Business name]';
@@ -78,7 +110,7 @@ function updateEmailPreview() {
   setText(emailIndustryPlurals, language.plural);
   setText(emailAudiences, language.audience);
   setText(emailLocations, location);
-  setText(emailScreenCounts, `[${generatedScreenCount ?? 30}]`);
+  setText(emailScreenCounts, generatedScreenCount == null ? '[number of screens]' : String(generatedScreenCount));
 }
 
 function setError(message = '') {
@@ -279,5 +311,17 @@ form?.addEventListener('submit', async (event) => {
 window.addEventListener('beforeunload', () => {
   if (proposalUrl) URL.revokeObjectURL(proposalUrl);
 });
+
+if (proposalExplainer && proposalConnectors) {
+  const scheduleConnectorSync = () => window.requestAnimationFrame(syncProposalConnectors);
+  const connectorResizeObserver = 'ResizeObserver' in window
+    ? new ResizeObserver(scheduleConnectorSync)
+    : null;
+  connectorResizeObserver?.observe(proposalExplainer);
+  proposalTargets.forEach((target) => connectorResizeObserver?.observe(target));
+  document.querySelector('.proposal-preview__sample')?.addEventListener('load', scheduleConnectorSync);
+  window.addEventListener('resize', scheduleConnectorSync, { passive: true });
+  scheduleConnectorSync();
+}
 
 updateEmailPreview();

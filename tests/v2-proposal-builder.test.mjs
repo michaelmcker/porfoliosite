@@ -33,7 +33,7 @@ test("V2 proposal builder reuses the working generator contract", async () => {
 
   assert.match(html, /<link rel="stylesheet" href="styles\.css">/);
   assert.match(html, /<link rel="stylesheet" href="proposal-generator\.css">/);
-  assert.match(html, /src="\.\.\/proposal-generator\.js\?v=20260720-1"/);
+  assert.match(html, /src="\.\.\/proposal-generator\.js\?v=20260720-2"/);
   assert.match(homepage, /href="proposal-generator\.html">Try the generator<\/a>/);
   assert.match(client, /\/api\/proposal\/suggest/);
   assert.match(client, /\/api\/proposal\/generate/);
@@ -59,17 +59,18 @@ test("V2 proposal builder explains the four generated elements", async () => {
     assert.ok(html.includes(copy), `missing approved annotation copy: ${copy}`);
   }
 
-  assert.equal((html.match(/class="proposal-pin/g) || []).length, 0);
-  assert.equal((html.match(/data-annotation="\d{2}"/g) || []).length, 4);
-  assert.doesNotMatch(html, /class="proposal-annotation-path/);
+  assert.equal((html.match(/data-proposal-target="(ad|copy|count|map)"/g) || []).length, 4);
+  assert.equal((html.match(/data-proposal-callout="(ad|copy|count|map)"/g) || []).length, 4);
+  assert.equal((html.match(/data-proposal-path="(ad|copy|count|map)"/g) || []).length, 4);
+  assert.match(html, /class="proposal-annotation-paths"[^>]+data-proposal-connectors/);
   assert.match(html, /class="proposal-preview__sample"[^>]+vertical-impression-local-proposal-current\.png/);
   assert.match(css, /\.proposal-annotations\s*\{[^}]*pointer-events:\s*none/s);
   assert.match(css, /\.proposal-explainer\s*\{[^}]*display:\s*grid[^}]*grid-template-columns:/s);
-  assert.match(css, /\.proposal-callout::before\s*\{[^}]*position:\s*absolute/s);
-  assert.match(css, /\.proposal-callout::after\s*\{[^}]*content:\s*attr\(data-annotation\)[^}]*top:\s*50%/s);
+  assert.match(css, /\.proposal-annotation-paths\s*\{[^}]*position:\s*absolute[^}]*pointer-events:\s*none/s);
+  assert.match(css, /\.proposal-target\s*\{[^}]*position:\s*absolute[^}]*border-radius:\s*50%/s);
   assert.doesNotMatch(css, /\.proposal-annotations\s*\{[^}]*position:\s*absolute/s);
   assert.match(css, /:has\(iframe\[src\^="blob:"\]\)/);
-  assert.match(css, /@media \(max-width: 700px\)[\s\S]*?\.proposal-callout::before,\s*\.proposal-callout::after\s*\{[^}]*display:\s*none/s);
+  assert.match(css, /@media \(max-width: 700px\)[\s\S]*?\.proposal-annotation-paths\s*\{[^}]*display:\s*none/s);
 });
 
 test("V2 proposal callouts are boxed off the proposal and connect it to reviewed outreach", async () => {
@@ -92,7 +93,7 @@ test("V2 proposal callouts are boxed off the proposal and connect it to reviewed
   assert.match(email, /an idea for <span data-email-location>\[Neighbourhood\]<\/span>/);
   assert.match(email, /data-email-industry-title>\[Industry\]<\/span> around <span data-email-location>\[Neighbourhood\]<\/span>/);
   assert.match(email, /competing on the first page of Google with hundreds of other <span data-email-industry-plural>businesses<\/span>/);
-  assert.match(email, /<span data-email-screen-count>\[30\]<\/span> elevator screens within five miles/);
+  assert.match(email, /<span data-email-screen-count>\[number of screens\]<\/span> elevator screens within five miles/);
   assert.match(email, /apartment and office buildings where <span data-email-audience>potential customers<\/span> live and work/);
   assert.match(email, /a more personal, conversational ad/);
   assert.match(email, /mocked it up on an elevator screen/);
@@ -128,15 +129,18 @@ test("V2 proposal form personalizes the outreach email and explains generation p
   assert.match(client, /function updateEmailPreview/);
   assert.match(client, /function deriveLocalArea/);
   assert.match(client, /x-proposal-screen-count/);
+  assert.match(client, /generatedScreenCount == null\s*\?\s*'\[number of screens\]'\s*:\s*String\(generatedScreenCount\)/);
   assert.match(generateApi, /X-Proposal-Screen-Count/);
   assert.match(client, /Generating — should be ready in a few minutes\./);
   assert.match(client, /classList\.add\(['"]is-generating['"]\)/);
   assert.match(client, /classList\.remove\(['"]is-generating['"]\)/);
   assert.match(css, /\.proposal-submit\.is-generating::after\s*\{/);
   assert.match(css, /@keyframes proposal-button-progress/);
-  assert.match(css, /\.proposal-workspace\s*\{[^}]*background:\s*var\(--proposal-charcoal\)[^}]*color:\s*#fff/s);
+  assert.match(css, /\.proposal-workspace\s*\{[^}]*background:\s*#fff[^}]*color:\s*var\(--ink\)/s);
   const workspaceInnerRule = css.match(/\.proposal-workspace__inner\s*\{([^}]*)\}/s)?.[1] || "";
   assert.doesNotMatch(workspaceInnerRule, /background|border-radius|box-shadow/);
+  assert.match(client, /function syncProposalConnectors\(\)/);
+  assert.match(client, /ResizeObserver/);
 });
 
 test("V2 proposal builder keeps secrets and internal inventory out of browser source", async () => {

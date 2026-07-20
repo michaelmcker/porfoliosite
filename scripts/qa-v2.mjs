@@ -100,6 +100,61 @@ try {
     true,
     "visible hero system-map video did not load",
   );
+  await page.waitForFunction(() => {
+    const video = document.querySelector("#motion-video-hero");
+    return video?.currentTime > .1 && video.closest(".hero-system-media")?.classList.contains("is-video-playing");
+  });
+  const desktopHeroGeometry = await page.$eval(".hero-system-media", (media) => {
+    const video = media.querySelector("video");
+    const overlay = media.querySelector(".hero-video-copy");
+    const videoRect = video.getBoundingClientRect();
+    const overlayRect = overlay.getBoundingClientRect();
+    return {
+      source: video.currentSrc,
+      ratio: video.offsetWidth / video.offsetHeight,
+      overlayDelta: {
+        left: Math.abs(videoRect.left - overlayRect.left),
+        top: Math.abs(videoRect.top - overlayRect.top),
+        width: Math.abs(videoRect.width - overlayRect.width),
+        height: Math.abs(videoRect.height - overlayRect.height),
+      },
+    };
+  });
+  assert.match(desktopHeroGeometry.source, /portfolio-hero-system-map-desktop-1080p\.mp4/);
+  assert.ok(Math.abs(desktopHeroGeometry.ratio - (16 / 9)) < .02, `desktop hero video is still cropped: ${JSON.stringify(desktopHeroGeometry)}`);
+  assert.ok(Object.values(desktopHeroGeometry.overlayDelta).every((delta) => delta <= 1), `desktop hero labels do not share the video box: ${JSON.stringify(desktopHeroGeometry)}`);
+  await page.$eval("#motion-video-hero", (video) => video.dispatchEvent(new Event("waiting")));
+  assert.equal(await page.$eval(".hero-video-copy", (copy) => Number(getComputedStyle(copy).opacity)), 0, "hero labels remain visible while the video is waiting");
+  await page.$eval("#motion-video-hero", (video) => video.dispatchEvent(new Event("playing")));
+  await page.waitForFunction(() => Number(getComputedStyle(document.querySelector(".hero-video-copy")).opacity) === 1);
+
+  const mobileHeroPage = await browser.newPage();
+  await mobileHeroPage.setViewport({ width: 390, height: 844, deviceScaleFactor: 1 });
+  await mobileHeroPage.goto(url, { waitUntil: "domcontentloaded" });
+  await mobileHeroPage.waitForFunction(() => {
+    const video = document.querySelector("#motion-video-hero");
+    return video?.currentTime > .1 && video.closest(".hero-system-media")?.classList.contains("is-video-playing");
+  });
+  const mobileHeroGeometry = await mobileHeroPage.$eval(".hero-system-media", (media) => {
+    const video = media.querySelector("video");
+    const overlay = media.querySelector(".hero-video-copy");
+    const videoRect = video.getBoundingClientRect();
+    const overlayRect = overlay.getBoundingClientRect();
+    return {
+      source: video.currentSrc,
+      ratio: video.offsetWidth / video.offsetHeight,
+      overlayDelta: {
+        left: Math.abs(videoRect.left - overlayRect.left),
+        top: Math.abs(videoRect.top - overlayRect.top),
+        width: Math.abs(videoRect.width - overlayRect.width),
+        height: Math.abs(videoRect.height - overlayRect.height),
+      },
+    };
+  });
+  assert.match(mobileHeroGeometry.source, /portfolio-hero-system-map-mobile-1080p\.mp4/);
+  assert.ok(Math.abs(mobileHeroGeometry.ratio - (9 / 16)) < .02, `mobile hero video is still cropped: ${JSON.stringify(mobileHeroGeometry)}`);
+  assert.ok(Object.values(mobileHeroGeometry.overlayDelta).every((delta) => delta <= 1), `mobile hero labels do not share the video box: ${JSON.stringify(mobileHeroGeometry)}`);
+  await mobileHeroPage.close();
   for (const deferredShowcase of ["rccv-showcase-laptop", "cool-runnings-sizzle-25s"]) {
     assert.equal(
       requestPaths.some((requestPath) => requestPath.includes(deferredShowcase)),
