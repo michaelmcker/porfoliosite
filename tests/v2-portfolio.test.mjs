@@ -122,10 +122,10 @@ test("V2 restores the existing hero film as a raised card and keeps the authored
 
   assert.match(html, /class="hero-system-media screen-bezel"/);
   assert.match(html, /<video[^>]+id="motion-video-hero"[^>]+data-motion-video/);
-  assert.match(html, /data-src="\.\.\/assets\/videos\/portfolio-hero-system-map-desktop-4k-sparse-loop\.mp4"/);
+  assert.match(html, /data-src="\.\.\/assets\/videos\/portfolio-hero-system-map-desktop-1080p\.mp4"/);
   assert.match(html, /data-src="\.\.\/assets\/videos\/portfolio-hero-system-map-mobile-1080p\.mp4"/);
   assert.doesNotMatch(html, /class="system-trace"/);
-  assert.match(html, /<div class="portrait-frame">\s*<iframe[^>]+src="portrait\/embed\.html"/s);
+  assert.match(html, /<div class="portrait-frame">[\s\S]*?<iframe[^>]+src="portrait\/embed\.html"/s);
   assert.match(css, /\.portrait-frame\s*\{[^}]*aspect-ratio:\s*1023\s*\/\s*1537[^}]*border:\s*7px solid #725a3d/s);
   assert.match(html, /<section class="hero page-frame" id="hero"/);
   assert.match(html, /I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale\.<span class="hero-fun"><em>And sometimes, stuff just for fun\.<\/em><\/span>/);
@@ -463,7 +463,7 @@ test("workflow showcase uses a neutral accordion and orders copy above dominant 
   assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*64px[^}]*background:\s*var\(--rail\)/s);
   assert.match(css, /\.workflow-trigger strong\s*\{[^}]*font-size:\s*1\.2rem[^}]*font-weight:\s*900/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*grid-template-rows:\s*auto minmax\(0,\s*1fr\)/s);
-  assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*#111412/s);
+  assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*#e7e8e3/s);
   assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*clamp\(2\.15rem,\s*3\.15vw,\s*3\.65rem\)/s);
   assert.match(css, /\.workflow-copy p\s*\{[^}]*font-size:\s*clamp\(\.98rem,\s*1\.15vw,\s*1\.12rem\)/s);
   assert.match(css, /\.workflow-copy-head\s*\{[^}]*justify-content:\s*space-between/s);
@@ -484,7 +484,7 @@ test("method, workflows, outcomes, and About form deliberate full-bleed chapters
   assert.match(css, /\.build-bias\s*\{[^}]*background:\s*var\(--accent\)/s);
   assert.match(css, /\.bias-sequence\s*\{[^}]*grid-template-columns:\s*repeat\(3,\s*1fr\)[^}]*row-gap:\s*clamp\(96px,\s*10vw,\s*148px\)/s);
   assert.match(css, /\.bias-step\s*\{[^}]*padding:\s*0/s);
-  assert.match(css, /\.workflow-section\s*\{[^}]*background:\s*var\(--charcoal\)[^}]*color:\s*white/s);
+  assert.match(css, /\.workflow-section\s*\{[^}]*background:\s*var\(--canvas\)[^}]*color:\s*var\(--ink\)/s);
   assert.match(css, /\.outcomes\s*\{[^}]*background:\s*var\(--surface\)/s);
   assert.match(css, /\.about\s*\{[^}]*background:\s*var\(--forest\)/s);
   assert.match(css, /\.about-inner\s*\{[^}]*display:\s*grid/s);

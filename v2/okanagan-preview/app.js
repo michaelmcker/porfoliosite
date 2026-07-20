@@ -65,6 +65,18 @@ const requestRender = () => {
 };
 
 if ("IntersectionObserver" in window) {
+  const mediaObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.querySelectorAll("video").forEach((video) => {
+        if (video.preload === "none") {
+          video.preload = "metadata";
+          video.load();
+        }
+      });
+      mediaObserver.unobserve(entry.target);
+    });
+  }, { rootMargin: "65% 0px", threshold: 0 });
   const copyObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
@@ -72,9 +84,18 @@ if ("IntersectionObserver" in window) {
       copyObserver.unobserve(entry.target);
     });
   }, { threshold: .18 });
-  scenes.forEach((scene) => copyObserver.observe(scene));
+  scenes.forEach((scene) => {
+    copyObserver.observe(scene);
+    mediaObserver.observe(scene);
+  });
 } else {
-  scenes.forEach((scene) => scene.classList.add("is-copy-visible"));
+  scenes.forEach((scene) => {
+    scene.classList.add("is-copy-visible");
+    scene.querySelectorAll("video").forEach((video) => {
+      video.preload = "metadata";
+      video.load();
+    });
+  });
 }
 
 window.addEventListener("scroll", requestRender, { passive: true });

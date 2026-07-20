@@ -91,6 +91,7 @@ async function inspectLayout(page) {
       annotationPointerEvents: getComputedStyle(document.querySelector('.proposal-annotations')).pointerEvents,
       visiblePins: [...document.querySelectorAll('.proposal-pin')].filter(visible).length,
       frameSource: document.querySelector('[data-proposal-frame]').getAttribute('src'),
+      sampleVisible: visible(document.querySelector('.proposal-preview__sample')),
       minimumControlHeight: Math.min(...[...document.querySelectorAll('.proposal-form input, .proposal-form select, .proposal-form button, .proposal-preview__actions a')]
         .filter((element) => !element.closest('[hidden]'))
         .map((element) => element.getBoundingClientRect().height)),
@@ -137,7 +138,8 @@ try {
   assert.notEqual(desktopLayout.pathDisplay, 'none', 'desktop curved annotation paths are hidden');
   assert.equal(desktopLayout.annotationPointerEvents, 'none', 'annotations can block the live builder');
   assert.equal(desktopLayout.visiblePins, 0, 'mobile pins appear on desktop');
-  assert.match(desktopLayout.frameSource, /vertical-impression-local-proposal-sample\.pdf/);
+  assert.equal(desktopLayout.frameSource, 'about:blank', 'initial preview downloads a hidden PDF before generation');
+  assert.equal(desktopLayout.sampleVisible, true, 'approved sample image is not visible before generation');
   assert.ok(desktopLayout.minimumControlHeight >= 44, `desktop control is below 44px: ${desktopLayout.minimumControlHeight}`);
   assert.equal(desktopLayout.calloutOverlap, false, 'desktop callout copy overlaps the proposal sheet');
   assert.equal(desktopLayout.calloutViewportOverflow, false, 'desktop callout copy leaves the viewport');

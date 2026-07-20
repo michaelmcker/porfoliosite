@@ -168,8 +168,10 @@ try {
   const accommodationFrameHandle = await page.waitForSelector("[data-accommodation-page]");
   const accommodationFrame = await accommodationFrameHandle.contentFrame();
   await accommodationFrame.waitForSelector("[data-okanagan-scene='cabin']");
-  await accommodationFrame.waitForFunction(() => [...document.querySelectorAll("[data-hero-video]")]
-    .every((video) => video.readyState >= 1 && Number.isFinite(video.duration)));
+  await accommodationFrame.waitForFunction(() => {
+    const video = document.querySelector("[data-okanagan-scene='overview'] [data-hero-video]");
+    return video?.readyState >= 1 && Number.isFinite(video.duration);
+  });
   await page.evaluate(() => {
     const section = document.querySelector("[data-work='accommodation']");
     const sectionTop = section.getBoundingClientRect().top + window.scrollY;
@@ -232,6 +234,10 @@ try {
   assert.ok(Math.abs(overviewMiddle.stickyTop) < 2, "Overview hero did not stay locked while its movie played");
 
   await setSceneProgress(accommodationFrame, "treehouse", .52);
+  await accommodationFrame.waitForFunction(() => {
+    const video = document.querySelector("[data-okanagan-scene='treehouse'] [data-hero-video]");
+    return video?.readyState >= 1 && Number.isFinite(video.duration);
+  });
   await accommodationFrame.waitForFunction(() => Number(document.querySelector("[data-okanagan-scene='treehouse']").dataset.sceneProgress) > .51);
   await accommodationFrame.waitForFunction(() => [...document.querySelectorAll("[data-okanagan-scene='treehouse'] h1 span, [data-okanagan-scene='treehouse'] .hero-copy > p, [data-okanagan-scene='treehouse'] .stay-meta, [data-okanagan-scene='treehouse'] .hero-actions")]
     .every((node) => Number(getComputedStyle(node).opacity) > .95));
@@ -266,6 +272,10 @@ try {
   assert.deepEqual(await accommodationFrame.evaluate(() => ({ href: location.href, scrollY: window.scrollY })), previewLocation, "preview nav link navigated instead of remaining interactive-only");
 
   await setSceneProgress(accommodationFrame, "cabin", .55);
+  await accommodationFrame.waitForFunction(() => {
+    const video = document.querySelector("[data-okanagan-scene='cabin'] [data-hero-video]");
+    return video?.readyState >= 1 && Number.isFinite(video.duration);
+  });
   await accommodationFrame.waitForFunction(() => Number(document.querySelector("[data-okanagan-scene='cabin']").dataset.sceneProgress) > .54);
   await accommodationFrame.waitForFunction(() => [...document.querySelectorAll("[data-okanagan-scene='cabin'] h1 span, [data-okanagan-scene='cabin'] .hero-copy > p, [data-okanagan-scene='cabin'] .stay-meta, [data-okanagan-scene='cabin'] .hero-actions")]
     .every((node) => Number(getComputedStyle(node).opacity) > .95));
@@ -676,7 +686,32 @@ try {
     top: story.getBoundingClientRect().top + window.scrollY,
   }));
   await mobileFinalePage.evaluate(({ top }) => window.scrollTo(0, top - window.innerHeight * .55), mobileFinalePosition);
-  await mobileFinalePage.waitForFunction(() => Number(document.querySelector("[data-contact-story]")?.dataset.entranceProgress) > .34);
+  try {
+    await mobileFinalePage.waitForFunction(
+      () => Number(document.querySelector("[data-contact-story]")?.dataset.entranceProgress) > .34,
+      { timeout: 30000 },
+    );
+  } catch (error) {
+    const state = await mobileFinalePage.evaluate(() => {
+      const story = document.querySelector("[data-contact-story]");
+      const stage = document.querySelector("[data-contact-stage]");
+      const bounds = stage?.getBoundingClientRect();
+      return {
+        finaleState: story?.dataset.finaleState,
+        progress: story?.dataset.entranceProgress,
+        starts: story?.dataset.entranceStarts,
+        locked: story?.dataset.viewportLocked,
+        scrollY: window.scrollY,
+        viewportHeight: window.innerHeight,
+        stageTop: bounds?.top,
+        stageBottom: bounds?.bottom,
+        visibleRatio: bounds
+          ? Math.max(0, Math.min(window.innerHeight, bounds.bottom) - Math.max(0, bounds.top)) / bounds.height
+          : 0,
+      };
+    });
+    throw new Error(`mobile finale did not start: ${JSON.stringify(state)}`, { cause: error });
+  }
   const mobileOrbit = await mobileFinalePage.$$eval("[data-contact-object]", (items) => ({
     visible: items.filter((item) => {
       const bounds = item.getBoundingClientRect();
@@ -721,11 +756,17 @@ try {
   const fileAccommodationHandle = await filePage.waitForSelector("[data-accommodation-page]");
   const fileAccommodationFrame = await fileAccommodationHandle.contentFrame();
   await fileAccommodationFrame.waitForSelector("[data-okanagan-scene='cabin']");
-  await fileAccommodationFrame.waitForFunction(() => [...document.querySelectorAll("[data-hero-video]")]
-    .every((video) => video.readyState >= 1 && Number.isFinite(video.duration)));
+  await fileAccommodationFrame.waitForFunction(() => {
+    const video = document.querySelector("[data-okanagan-scene='overview'] [data-hero-video]");
+    return video?.readyState >= 1 && Number.isFinite(video.duration);
+  });
   await fileAccommodationFrame.evaluate(() => {
     const scene = document.querySelector("[data-okanagan-scene='treehouse']");
     window.scrollTo(0, scene.offsetTop + (scene.offsetHeight - window.innerHeight) * .5);
+  });
+  await fileAccommodationFrame.waitForFunction(() => {
+    const video = document.querySelector("[data-okanagan-scene='treehouse'] [data-hero-video]");
+    return video?.readyState >= 1 && Number.isFinite(video.duration);
   });
   await fileAccommodationFrame.waitForFunction(() => {
     const scene = document.querySelector("[data-okanagan-scene='treehouse']");

@@ -26,7 +26,7 @@ test("desktop workflow panels do not keep a hidden oversized canvas during trans
   assert.match(css, /\.workflow-panel\s*\{[^}]*flex:\s*0\s+0\s+0[^}]*width:\s*0[^}]*visibility:\s*hidden/s);
   assert.match(css, /\.workflow-item\.is-active \.workflow-panel\s*\{[^}]*flex:\s*1\s+1\s+auto[^}]*width:\s*auto[^}]*visibility:\s*visible/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*min-width:\s*0[^}]*width:\s*100%/s);
-  assert.match(css, /\.workflow-dashboard \.workflow-panel figure\s*\{[^}]*background:\s*#111412/s);
+  assert.match(css, /\.workflow-dashboard \.workflow-panel figure\s*\{[^}]*background:\s*#e7e8e3/s);
   assert.match(css, /\.workflow-dashboard \.workflow-panel figure img\s*\{[^}]*width:\s*100%[^}]*max-height:\s*650px/s);
 });
 

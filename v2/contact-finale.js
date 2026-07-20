@@ -210,9 +210,34 @@
     return poses;
   }
 
+  async function waitForContactImages() {
+    const images = visibleItems().flatMap((item) => [...item.querySelectorAll("img")]);
+    const decodeImage = (image) => {
+      image.loading = "eager";
+      if (image.complete && image.naturalWidth > 0) {
+        return typeof image.decode === "function" ? image.decode().catch(() => undefined) : Promise.resolve();
+      }
+      return new Promise((resolve) => {
+        const finish = () => {
+          image.removeEventListener("load", finish);
+          image.removeEventListener("error", finish);
+          resolve();
+        };
+        image.addEventListener("load", finish, { once: true });
+        image.addEventListener("error", finish, { once: true });
+      }).then(() => (typeof image.decode === "function" ? image.decode().catch(() => undefined) : undefined));
+    };
+    await Promise.race([
+      Promise.allSettled(images.map(decodeImage)),
+      new Promise((resolve) => setTimeout(resolve, 3000)),
+    ]);
+  }
+
   async function startEntrance() {
     if (entranceStarted || reducedMotion.matches) return;
     entranceStarted = true;
+    setState("preparing");
+    await waitForContactImages();
     lockViewport();
     story.dataset.entranceStarts = String(Number(story.dataset.entranceStarts || 0) + 1);
     setState("entrance");

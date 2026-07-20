@@ -393,8 +393,8 @@ h3 {
   object-fit: contain;
   border-radius: 0;
   background: transparent;
-  -webkit-mask-image: url("../assets/device-mockups/laptop-three-quarter-rccv-cutout.png");
-  mask-image: url("../assets/device-mockups/laptop-three-quarter-rccv-cutout.png");
+  -webkit-mask-image: url("../assets/device-mockups/laptop-three-quarter-rccv-cutout.webp");
+  mask-image: url("../assets/device-mockups/laptop-three-quarter-rccv-cutout.webp");
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
@@ -625,19 +625,19 @@ h3 {
 
 .workflow-section {
   padding-top: clamp(98px, 12vw, 178px);
-  background: var(--charcoal);
-  color: white;
+  background: var(--canvas);
+  color: var(--ink);
 }
 .workflow-heading { max-width: 940px; margin-bottom: clamp(56px, 7vw, 94px); text-align: center; }
-.workflow-heading > p { color: #c9ccc6; }
+.workflow-heading > p { color: var(--muted); }
 .workflow-heading h2 { font-family: var(--font-editorial); font-weight: 560; }
 .workflow-accordion {
   width: 100%;
   min-height: 880px;
   display: flex;
   overflow: hidden;
-  background: var(--charcoal);
-  border-block: 1px solid rgba(0,0,0,.28);
+  background: #f1f1ed;
+  border-block: 1px solid var(--line);
   perspective: 1600px;
   perspective-origin: center;
   isolation: isolate;
@@ -667,6 +667,7 @@ h3 {
 .workflow-item:nth-child(4) { z-index: 4; --rail: #2d312f; --stack-y: -2px; --stack-z: 9px; }
 .workflow-item:nth-child(5) { z-index: 5; --rail: #272b29; --stack-y: 2px; --stack-z: 12px; }
 .workflow-item.is-active { z-index: 0; min-width: 0; flex-basis: calc(100% - 160px); flex-grow: 0; flex-shrink: 1; overflow: hidden; }
+.workflow-item.is-active { background: #f1f1ed; color: var(--ink); }
 .workflow-trigger {
   position: relative;
   z-index: 3;
@@ -756,7 +757,7 @@ h3 {
   grid-template-rows: auto minmax(0, 1fr);
   gap: 24px;
   padding: clamp(32px, 4vw, 56px);
-  background: #202422;
+  background: #f1f1ed;
 }
 .workflow-copy { max-width: none; }
 .workflow-copy-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 28px; }
@@ -767,8 +768,8 @@ h3 {
   font-size: clamp(2.15rem, 3.15vw, 3.65rem);
   font-weight: 560;
 }
-.workflow-copy p { max-width: 680px; margin: 12px 0 0; color: #cfd2cc; font-size: clamp(.98rem, 1.15vw, 1.12rem); }
-.workflow-copy a { color: white; }
+.workflow-copy p { max-width: 680px; margin: 12px 0 0; color: var(--muted); font-size: clamp(.98rem, 1.15vw, 1.12rem); }
+.workflow-copy a { color: var(--ink); }
 .workflow-panel figure {
   min-height: 0;
   margin: 0;
@@ -777,10 +778,10 @@ h3 {
   overflow: hidden;
   border-radius: 20px;
   padding: clamp(12px, 1.5vw, 22px);
-  background: #111412;
+  background: #e7e8e3;
 }
 .workflow-panel figure img { width: 100%; height: 100%; max-height: 650px; object-fit: contain; border-radius: 10px; }
-.workflow-dashboard .workflow-panel figure { background: #111412; }
+.workflow-dashboard .workflow-panel figure { background: #e7e8e3; }
 .workflow-dashboard .workflow-panel figure img {
   width: 100%;
   height: 100%;
@@ -788,7 +789,7 @@ h3 {
   border-radius: 10px;
   box-shadow: none;
 }
-.workflow-media-website { padding: 0; }
+.workflow-media-website { padding: clamp(12px, 1.5vw, 22px); }
 .website-workflow-visual {
   width: min(100%, 1180px);
   margin: 0;
@@ -929,7 +930,7 @@ h3 {
 .about-process-reveal {
   margin-top: clamp(20px, 3vw, 36px);
   opacity: var(--about-value, 0);
-  transform: translateY(calc((18px * (1 - var(--about-value, 0))) + (6svh * var(--about-value, 0))));
+  transform: translateY(calc(18px * (1 - var(--about-value, 0))));
 }
 .about-process-value {
   max-width: 580px;
@@ -956,7 +957,15 @@ h3 {
   transform: perspective(1500px) rotateY(-3deg) rotateZ(1deg);
 }
 .portrait-frame::before { content: ""; position: absolute; z-index: 2; inset: 7px; pointer-events: none; border: 1px solid rgba(230,191,123,.52); border-radius: inherit; box-shadow: inset 0 0 12px rgba(0,0,0,.85); }
-.portrait-frame iframe { width: 100%; height: 100%; border: 0; border-radius: inherit; opacity: 0; pointer-events: none; transition: opacity 300ms ease; }
+.portrait-placeholder,
+.portrait-placeholder img,
+.portrait-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: inherit; }
+.portrait-placeholder { z-index: 0; overflow: hidden; background: #5b4028; opacity: 1; transition: opacity 300ms ease; }
+.portrait-placeholder img { display: block; object-fit: contain; }
+.portrait-placeholder-body { z-index: 0; }
+.portrait-placeholder-head { z-index: 1; }
+.portrait-frame iframe { z-index: 1; border: 0; opacity: 0; pointer-events: none; transition: opacity 300ms ease; }
+.portrait-frame.is-loaded .portrait-placeholder { opacity: 0; }
 .portrait-frame.is-loaded iframe { opacity: 1; }
 .portrait-object figcaption { margin-top: 18px; color: #bdc8c0; font-size: .78rem; text-align: center; }
 .about-process-line {
@@ -1271,7 +1280,7 @@ h3 {
     line-height: 1.03;
     transform: translate3d(var(--about-phrase-x, 0), calc(var(--about-phrase-y, 0) - (4svh * var(--about-growth, 0))), 0);
   }
-  .about-process-reveal { position: absolute; z-index: 5; left: 0; top: 70svh; width: min(48%, 184px); margin: 0; transform: translateY(calc(16px * (1 - var(--about-value, 0)))); }
+  .about-process-reveal { position: absolute; z-index: 5; left: 0; top: 58svh; width: min(48%, 184px); margin: 0; transform: translateY(calc(16px * (1 - var(--about-value, 0)))); }
   .about-process-value { margin-bottom: 10px; font-size: clamp(1.15rem, 5.5vw, 1.45rem); }
   .about-toggle { min-height: 44px; font-size: .78rem; line-height: 1.3; }
   .about-process-line { display: block; }
@@ -1288,6 +1297,12 @@ h3 {
   .contact-morph { min-height: 3em; font-size: clamp(2.55rem, 13vw, 4.5rem); }
   .contact-actions { width: min(100%, 340px); flex-direction: column; }
   .contact-actions .button { width: 100%; min-height: 48px; }
+}
+
+@media (max-width: 699px) {
+  .workflow-panel figure { min-height: 0; aspect-ratio: 864 / 1821; }
+  .workflow-dashboard .workflow-panel figure { aspect-ratio: 1569 / 1002; }
+  .workflow-presentation .workflow-panel figure { aspect-ratio: 836 / 1881; }
 }
 
 @media (max-width: 470px) {
