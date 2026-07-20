@@ -245,10 +245,10 @@
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
-.proposal-target--ad { left: 48%; top: 29%; }
-.proposal-target--copy { left: 27%; top: 9%; }
-.proposal-target--count { left: 48%; top: 13%; }
-.proposal-target--map { left: 67%; top: 73%; }
+.proposal-target--proposal { left: 48%; top: 29%; }
+.proposal-target--pricing { left: 14%; top: 79.5%; }
+.proposal-target--screens { left: 14%; top: 64.5%; }
+.proposal-target--impressions { left: 14%; top: 71.5%; }
 
 .proposal-annotations {
   position: relative;

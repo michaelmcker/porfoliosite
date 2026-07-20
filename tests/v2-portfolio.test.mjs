@@ -130,9 +130,10 @@ test("V2 restores the existing hero film as a raised card and keeps the authored
   assert.match(html, /<section class="hero page-frame" id="hero"/);
   assert.match(html, /I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale\.<span class="hero-fun"><em>And sometimes, stuff just for fun\.<\/em><\/span>/);
   assert.doesNotMatch(html, /hero-motion-toggle/);
-  assert.match(css, /\.hero\s*\{[^}]*grid-template-columns:\s*minmax\(360px,\s*\.78fr\)\s*minmax\(560px,\s*1\.22fr\)/s);
-  assert.match(css, /\.hero-system-media\s*\{[^}]*width:\s*min\(100%,\s*840px\)[^}]*border-width:/s);
+  assert.match(css, /\.hero\s*\{[^}]*grid-template-columns:\s*minmax\(350px,\s*\.68fr\)\s*minmax\(620px,\s*1\.32fr\)/s);
+  assert.match(css, /\.hero-system-media\s*\{[^}]*width:\s*min\(107%,\s*920px\)[^}]*padding:\s*clamp\(6px,\s*\.5vw,\s*9px\)[^}]*border-width:\s*clamp\(6px,\s*\.7vw,\s*10px\)/s);
   assert.match(css, /\.hero-system-media video\s*\{[^}]*width:\s*100%[^}]*aspect-ratio:\s*16\s*\/\s*9[^}]*object-fit:\s*cover/s);
+  assert.match(css, /\.hero-video-copy\s*\{[^}]*inset:\s*clamp\(6px,\s*\.5vw,\s*9px\)/s);
   assert.match(css, /\.hero-video-copy\s*\{[^}]*opacity:\s*0[^}]*visibility:\s*hidden/s);
   assert.match(css, /\.hero-system-media\.is-video-playing \.hero-video-copy\s*\{[^}]*opacity:\s*1[^}]*visibility:\s*visible/s);
   assert.match(css, /@media \(max-width:\s*699px\)[\s\S]*?\.hero-system-media video\s*\{[^}]*aspect-ratio:\s*9\s*\/\s*16/s);

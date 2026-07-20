@@ -47,27 +47,30 @@ test("V2 proposal builder explains the four generated elements", async () => {
 
   assert.equal((html.match(/class="proposal-callout/g) || []).length, 4);
   for (const copy of [
-    "Custom ad",
-    "The system generates an ad from the business name and business type, then perspective-skews it onto the elevator screen.",
-    "Custom copy",
-    "Industry-specific messaging changes the pitch, supporting language, and value proposition.",
-    "Live screen count",
-    "Nearby inventory updates the number of screens used in the proposal headline.",
-    "Local map",
-    "Mapbox plots nearby properties within a reasonable walking distance of the business.",
+    "Custom proposal",
+    "Business and industry context shape the copy, elevator creative, and mapped opportunity.",
+    "Pricing",
+    "Current per-screen pricing is carried into the proposal package.",
+    "Screens",
+    "Nearby inventory supplies the live number of available screens.",
+    "Impressions",
+    "The proposal carries the monthly impression estimate for that inventory.",
   ]) {
     assert.ok(html.includes(copy), `missing approved annotation copy: ${copy}`);
   }
 
-  assert.equal((html.match(/data-proposal-target="(ad|copy|count|map)"/g) || []).length, 4);
-  assert.equal((html.match(/data-proposal-callout="(ad|copy|count|map)"/g) || []).length, 4);
-  assert.equal((html.match(/data-proposal-path="(ad|copy|count|map)"/g) || []).length, 4);
+  assert.equal((html.match(/data-proposal-target="(proposal|pricing|screens|impressions)"/g) || []).length, 4);
+  assert.equal((html.match(/data-proposal-callout="(proposal|pricing|screens|impressions)"/g) || []).length, 4);
+  assert.equal((html.match(/data-proposal-path="(proposal|pricing|screens|impressions)"/g) || []).length, 4);
   assert.match(html, /class="proposal-annotation-paths"[^>]+data-proposal-connectors/);
   assert.match(html, /class="proposal-preview__sample"[^>]+vertical-impression-local-proposal-current\.png/);
   assert.match(css, /\.proposal-annotations\s*\{[^}]*pointer-events:\s*none/s);
   assert.match(css, /\.proposal-explainer\s*\{[^}]*display:\s*grid[^}]*grid-template-columns:/s);
   assert.match(css, /\.proposal-annotation-paths\s*\{[^}]*position:\s*absolute[^}]*pointer-events:\s*none/s);
   assert.match(css, /\.proposal-target\s*\{[^}]*position:\s*absolute[^}]*border-radius:\s*50%/s);
+  assert.match(css, /\.proposal-target--pricing\s*\{[^}]*left:\s*14%[^}]*top:\s*79\.5%/s);
+  assert.match(css, /\.proposal-target--screens\s*\{[^}]*left:\s*14%[^}]*top:\s*64\.5%/s);
+  assert.match(css, /\.proposal-target--impressions\s*\{[^}]*left:\s*14%[^}]*top:\s*71\.5%/s);
   assert.doesNotMatch(css, /\.proposal-annotations\s*\{[^}]*position:\s*absolute/s);
   assert.match(css, /:has\(iframe\[src\^="blob:"\]\)/);
   assert.match(css, /@media \(max-width: 700px\)[\s\S]*?\.proposal-annotation-paths\s*\{[^}]*display:\s*none/s);
