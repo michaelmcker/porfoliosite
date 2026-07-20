@@ -46,7 +46,7 @@ function activateWorkflow(index, { focus = false } = {}) {
 
       workflowTransitionTimer = window.setTimeout(() => {
         workflowAccordion?.removeAttribute("data-workflow-transitioning");
-      }, 620);
+      }, 840);
     });
   });
 }

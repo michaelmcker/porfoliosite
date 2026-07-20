@@ -46,6 +46,7 @@ const server = createServer(async (request, response) => {
     response.writeHead(200, {
       'Content-Type': 'application/pdf',
       'Content-Disposition': 'inline; filename="midtown-family-dental-elevator-advertising-proposal.pdf"',
+      'X-Proposal-Screen-Count': '42',
       'Cache-Control': 'private, no-store',
     });
     return response.end(pdf);
@@ -86,11 +87,20 @@ async function inspectLayout(page) {
     return {
       overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
       workspaceColumns: getComputedStyle(document.querySelector('.proposal-workspace__inner')).gridTemplateColumns,
+      workspaceBackground: getComputedStyle(document.querySelector('.proposal-workspace')).backgroundColor,
+      workspaceInnerBackground: getComputedStyle(document.querySelector('.proposal-workspace__inner')).backgroundColor,
+      workspaceInnerBorderWidth: Number.parseFloat(getComputedStyle(document.querySelector('.proposal-workspace__inner')).borderTopWidth),
       callouts: [...document.querySelectorAll('.proposal-callout')].filter(visible).length,
       connectorCount: [...document.querySelectorAll('.proposal-callout')]
         .filter((callout) => getComputedStyle(callout, '::before').display !== 'none').length,
+      connectorNumberCount: [...document.querySelectorAll('.proposal-callout')]
+        .filter((callout) => getComputedStyle(callout, '::after').display !== 'none'
+          && getComputedStyle(callout, '::after').content !== 'none').length,
+      connectorAlignment: [...document.querySelectorAll('.proposal-callout')].every((callout) => (
+        getComputedStyle(callout, '::before').top === getComputedStyle(callout, '::after').top
+      )),
       annotationPointerEvents: getComputedStyle(document.querySelector('.proposal-annotations')).pointerEvents,
-      visiblePins: [...document.querySelectorAll('.proposal-pin')].filter(visible).length,
+      visibleListNumbers: [...document.querySelectorAll('.proposal-callout > span')].filter(visible).length,
       frameSource: document.querySelector('[data-proposal-frame]').getAttribute('src'),
       sampleVisible: visible(document.querySelector('.proposal-preview__sample')),
       minimumControlHeight: Math.min(...[...document.querySelectorAll('.proposal-form input, .proposal-form select, .proposal-form button, .proposal-preview__actions a')]
@@ -122,6 +132,7 @@ async function inspectLayout(page) {
         return rectangle.left < 0 || rectangle.right > document.documentElement.clientWidth;
       })(),
       emailLocation: document.querySelector('[data-email-location]')?.textContent,
+      emailScreenCount: document.querySelector('[data-email-screen-count]')?.textContent,
     };
   });
 }
@@ -136,10 +147,15 @@ try {
 
   assert.equal(desktopLayout.overflow, 0, 'desktop proposal page overflows horizontally');
   assert.ok(desktopLayout.workspaceColumns.split(' ').length >= 2, 'desktop form and proposal are not side-by-side');
+  assert.equal(desktopLayout.workspaceBackground, 'rgb(23, 26, 25)', 'proposal workspace is not charcoal');
+  assert.equal(desktopLayout.workspaceInnerBackground, 'rgba(0, 0, 0, 0)', 'proposal system is still wrapped in a card');
+  assert.equal(desktopLayout.workspaceInnerBorderWidth, 0, 'proposal system wrapper still has a border');
   assert.equal(desktopLayout.callouts, 4, 'desktop annotations are missing');
   assert.equal(desktopLayout.connectorCount, 4, 'desktop anchored connectors are missing');
+  assert.equal(desktopLayout.connectorNumberCount, 4, 'desktop connector numbers are missing');
+  assert.equal(desktopLayout.connectorAlignment, true, 'desktop connector numbers do not share the arrow axis');
   assert.equal(desktopLayout.annotationPointerEvents, 'none', 'annotations can block the live builder');
-  assert.equal(desktopLayout.visiblePins, 4, 'desktop proposal anchors are missing');
+  assert.equal(desktopLayout.visibleListNumbers, 0, 'desktop callouts duplicate their connector numbers');
   assert.equal(desktopLayout.frameSource, 'about:blank', 'initial preview downloads a hidden PDF before generation');
   assert.equal(desktopLayout.sampleVisible, true, 'approved sample image is not visible before generation');
   assert.ok(desktopLayout.minimumControlHeight >= 44, `desktop control is below 44px: ${desktopLayout.minimumControlHeight}`);
@@ -168,6 +184,7 @@ try {
   assert.match(generated.frame, /^blob:/);
   assert.match(generated.open, /^blob:/);
   assert.match(generated.download, /^blob:/);
+  assert.equal(await desktop.$eval('[data-email-screen-count]', (element) => element.textContent), '[42]');
   assert.deepEqual(requests, ['/api/proposal/suggest', '/api/proposal/generate']);
   assert.ok(browserRequests.every((url) => !/api\.mapbox\.com|api\.letz\.ai/i.test(url)), 'browser contacted a server-only integration');
 
@@ -178,7 +195,8 @@ try {
   assert.equal(mobileLayout.overflow, 0, 'mobile proposal page overflows horizontally');
   assert.equal(mobileLayout.callouts, 4, 'mobile explanation list is incomplete');
   assert.equal(mobileLayout.connectorCount, 0, 'desktop connectors remain visible on mobile');
-  assert.equal(mobileLayout.visiblePins, 4, 'mobile numbered pins are incomplete');
+  assert.equal(mobileLayout.connectorNumberCount, 0, 'desktop connector numbers remain visible on mobile');
+  assert.equal(mobileLayout.visibleListNumbers, 4, 'mobile explanation numbers are incomplete');
   assert.ok(mobileLayout.minimumControlHeight >= 44, `mobile control is below 44px: ${mobileLayout.minimumControlHeight}`);
   assert.equal(mobileLayout.calloutBackgroundsOpaque, true, 'mobile callouts are not on opaque surfaces');
   assert.ok(mobileLayout.minimumCalloutPadding >= 18, `mobile callout padding is below 18px: ${mobileLayout.minimumCalloutPadding}`);

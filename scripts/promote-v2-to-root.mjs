@@ -19,6 +19,7 @@ function promoteHomepage(source) {
     ['href="../output/', 'href="output/'],
     ['href="styles.css"', 'href="v2/styles.css"'],
     ['src="assets/videos/rccv-showcase-laptop.', 'src="v2/assets/videos/rccv-showcase-laptop.'],
+    ['src="assets/finale/', 'src="v2/assets/finale/'],
     ['src="assets/workflows/', 'src="v2/assets/workflows/'],
     ['srcset="assets/workflows/', 'srcset="v2/assets/workflows/'],
     ['src="okanagan-preview/', 'src="v2/okanagan-preview/'],

@@ -32,6 +32,7 @@
   let finaleVisible = true;
   let copyTimer;
   let viewportLock;
+  let contactImagesReady;
 
   const entranceDuration = 4800;
   const spiralTurns = 2;
@@ -233,13 +234,18 @@
     ]);
   }
 
+  function prepareContactImages() {
+    if (!contactImagesReady) contactImagesReady = waitForContactImages();
+    return contactImagesReady;
+  }
+
   async function startEntrance() {
     if (entranceStarted || reducedMotion.matches) return;
     entranceStarted = true;
     setState("preparing");
-    await waitForContactImages();
     lockViewport();
     story.dataset.entranceStarts = String(Number(story.dataset.entranceStarts || 0) + 1);
+    await prepareContactImages();
     setState("entrance");
     try {
       await preparePhysics();
@@ -504,8 +510,9 @@
       const runtimeObserver = new IntersectionObserver((entries, observer) => {
         if (!entries[0]?.isIntersecting) return;
         loadMatterRuntime().catch(() => {});
+        prepareContactImages();
         observer.disconnect();
-      }, { rootMargin: "100% 0px", threshold: 0 });
+      }, { rootMargin: "120% 0px", threshold: 0 });
       runtimeObserver.observe(story);
     }
     applySpiral(0);
@@ -514,7 +521,7 @@
         if (!entries[0]?.isIntersecting) return;
         observer.disconnect();
         startEntrance();
-      }, { threshold: .4 });
+      }, { threshold: .12 });
       entranceObserver.observe(stage);
     } else {
       startEntrance();

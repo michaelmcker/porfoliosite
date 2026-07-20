@@ -493,11 +493,11 @@ try {
     top: story.getBoundingClientRect().top + window.scrollY,
     height: story.offsetHeight,
   }));
-  await page.evaluate(({ top }) => window.scrollTo(0, top - window.innerHeight * .61), finalePosition);
+  await page.evaluate(({ top }) => window.scrollTo(0, top - window.innerHeight * .89), finalePosition);
   await new Promise((resolve) => setTimeout(resolve, 120));
-  assert.equal(await page.$eval("[data-contact-story]", (story) => story.dataset.finaleState), "idle", "finale must remain idle below the 40% visibility threshold");
+  assert.equal(await page.$eval("[data-contact-story]", (story) => story.dataset.finaleState), "idle", "finale must remain idle below the 12% visibility threshold");
   assert.equal(await page.$eval("[data-contact-story]", (story) => Number(story.dataset.entranceStarts)), 0, "finale must not start before entering view");
-  await page.evaluate(({ top }) => window.scrollTo(0, top - window.innerHeight * .55), finalePosition);
+  await page.evaluate(({ top }) => window.scrollTo(0, top - window.innerHeight * .86), finalePosition);
   await page.waitForFunction(() => document.querySelector("[data-contact-story]")?.dataset.viewportLocked === "true");
   const lockedFinale = await page.evaluate(() => ({
     scrollY: window.scrollY,
@@ -514,7 +514,7 @@ try {
   assert.equal(await page.evaluate(() => window.scrollY), lockedFinale.scrollY, "wheel input must not move the page during the locked finale entrance");
   await page.waitForFunction(() => Number(document.querySelector("[data-contact-story]")?.dataset.entranceProgress) > .34);
   assert.equal(await page.evaluate(() => window.scrollY), lockedFinale.scrollY, "finale entrance must advance without page scrolling");
-  assert.equal(await page.$eval("[data-contact-story]", (story) => Number(story.dataset.entranceStarts)), 1, "finale must start exactly once when 40% is visible");
+  assert.equal(await page.$eval("[data-contact-story]", (story) => Number(story.dataset.entranceStarts)), 1, "finale must start exactly once when 12% is visible");
   const entranceSpacing = await page.$$eval("[data-contact-object]", (items) => {
     const visible = items.map((item) => {
       const rect = item.getBoundingClientRect();
@@ -806,6 +806,13 @@ try {
       const scenePage = await browser.newPage();
       await scenePage.setViewport({ width, height, deviceScaleFactor: 1 });
       await scenePage.goto(`http://127.0.0.1:${port}/v2/okanagan-preview/`, { waitUntil: "domcontentloaded" });
+      await scenePage.$$eval("[data-hero-video]", (videos) => videos.forEach((video) => {
+        video.querySelectorAll("source[data-src]").forEach((source) => {
+          source.src = source.dataset.src;
+          source.removeAttribute("data-src");
+        });
+        video.load();
+      }));
       await scenePage.waitForFunction(() => [...document.querySelectorAll("[data-hero-video]")]
         .every((video) => video.readyState >= 1 && Number.isFinite(video.duration)));
       for (const sceneKey of ["overview", "treehouse", "cabin"]) {

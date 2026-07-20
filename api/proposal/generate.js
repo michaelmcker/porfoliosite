@@ -222,6 +222,7 @@ export default async function handler(request, response) {
       response.statusCode = 200;
       response.setHeader('Content-Type', 'application/pdf');
       response.setHeader('Content-Disposition', `inline; filename="${filename}"`);
+      response.setHeader('X-Proposal-Screen-Count', String(inventory.screens));
       response.setHeader('Cache-Control', 'private, no-store');
       return response.end(Buffer.from(pdf));
     } finally {

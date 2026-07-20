@@ -271,7 +271,7 @@ test("contact finale triggers once in view and preserves dynamic drag physics", 
   assert.match(finale, /plugin\.renderScale/);
   assert.match(finale, /scale\(\$\{body\.plugin\.renderScale\}\)/);
   assert.doesNotMatch(finale, /function roundedOrbitPose/);
-  assert.match(finale, /threshold:\s*\.4/);
+  assert.match(finale, /threshold:\s*\.12/);
   assert.match(finale, /function startEntrance/);
   assert.match(finale, /requestAnimationFrame\(stepEntrance\)/);
   assert.match(finale, /Constraint\.create/);
@@ -484,7 +484,7 @@ test("method, workflows, outcomes, and About form deliberate full-bleed chapters
   assert.match(css, /\.build-bias\s*\{[^}]*background:\s*var\(--accent\)/s);
   assert.match(css, /\.bias-sequence\s*\{[^}]*grid-template-columns:\s*repeat\(3,\s*1fr\)[^}]*row-gap:\s*clamp\(96px,\s*10vw,\s*148px\)/s);
   assert.match(css, /\.bias-step\s*\{[^}]*padding:\s*0/s);
-  assert.match(css, /\.workflow-section\s*\{[^}]*background:\s*var\(--canvas\)[^}]*color:\s*var\(--ink\)/s);
+  assert.match(css, /\.workflow-section\s*\{[^}]*background:\s*var\(--charcoal\)[^}]*color:\s*white/s);
   assert.match(css, /\.outcomes\s*\{[^}]*background:\s*var\(--surface\)/s);
   assert.match(css, /\.about\s*\{[^}]*background:\s*var\(--forest\)/s);
   assert.match(css, /\.about-inner\s*\{[^}]*display:\s*grid/s);

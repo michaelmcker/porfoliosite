@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { readFile } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
@@ -56,11 +56,12 @@ test("Vercel publishes every optimized asset introduced by the performance pass"
   assert.doesNotMatch(ignore, /^assets\/portrait-final\/assets\/production(?:\/|\*)/m);
 });
 
-test("workflow evidence uses a light neutral chapter and artifact stage", async () => {
+test("workflow evidence uses a black chapter with a paper artifact stage", async () => {
   const css = await read("v2/styles.css");
 
-  assert.match(css, /\.workflow-section\s*\{[^}]*background:\s*var\(--canvas\)[^}]*color:\s*var\(--ink\)/s);
-  assert.match(css, /\.workflow-panel-inner\s*\{[^}]*background:\s*#f1f1ed/s);
+  assert.match(css, /\.workflow-section\s*\{[^}]*background:\s*var\(--charcoal\)[^}]*color:\s*white/s);
+  assert.match(css, /\.workflow-accordion\s*\{[^}]*background:\s*var\(--charcoal\)/s);
+  assert.match(css, /\.workflow-panel-inner\s*\{[^}]*background:\s*var\(--charcoal\)/s);
   assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*#e7e8e3/s);
 });
 
@@ -71,12 +72,38 @@ test("About conclusion resolves beside the portrait rather than at the frame bot
   assert.match(css, /@media\s*\(max-width:\s*760px\)[\s\S]*?\.about-process-reveal\s*\{[^}]*top:\s*58svh/s);
 });
 
-test("finale waits for its lazy images before starting the entrance", async () => {
-  const finale = await read("v2/contact-finale.js");
+test("finale locks immediately, preloads early, and uses lightweight contact art", async () => {
+  const [html, finale] = await Promise.all([
+    read("v2/index.html"),
+    read("v2/contact-finale.js"),
+  ]);
 
   assert.match(finale, /waitForContactImages/);
-  assert.match(finale, /await\s+waitForContactImages\(\)/);
+  assert.match(finale, /prepareContactImages/);
   assert.match(finale, /image\.decode\(\)/);
+  assert.match(finale, /rootMargin:\s*"120% 0px"/);
+  assert.match(finale, /threshold:\s*\.12/);
+  const entrance = finale.match(/async function startEntrance\(\)\s*\{([\s\S]*?)\n  \}/)?.[1] || "";
+  assert.ok(
+    entrance.indexOf("lockViewport()") >= 0
+      && entrance.indexOf("lockViewport()") < entrance.indexOf("await prepareContactImages()"),
+    "the finale must lock before it waits for image decoding",
+  );
+
+  for (const asset of [
+    "cool-runnings.webp",
+    "proposal.webp",
+    "elevators.webp",
+    "content.webp",
+    "dashboard.webp",
+    "publishing.webp",
+    "prospecting.webp",
+    "website.webp",
+  ]) {
+    assert.match(html, new RegExp(`assets/finale/${asset}`));
+    const details = await stat(new URL(`../v2/assets/finale/${asset}`, import.meta.url));
+    assert.ok(details.size < 400_000, `${asset} is too heavy for the finale: ${details.size} bytes`);
+  }
 });
 
 test("Fountainhead role uses the approved marketing engineer title", async () => {

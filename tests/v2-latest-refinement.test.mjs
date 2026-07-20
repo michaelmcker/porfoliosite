@@ -75,6 +75,8 @@ test("Okanagan preview uses the deployed serif navigation and display typography
 test("workflow tabs visibly lift from the stack on hover and keyboard focus", async () => {
   const css = await read("v2/styles.css");
 
-  assert.match(css, /\.workflow-trigger:hover,\s*\.workflow-trigger:focus-visible\s*\{[^}]*translate3d\(-12px,/s);
+  assert.match(css, /\.workflow-trigger:hover,\s*\.workflow-trigger:focus-visible\s*\{[^}]*translate3d\(-18px,/s);
+  assert.match(css, /\.workflow-item:has\(\.workflow-trigger:hover\),\s*\.workflow-item:focus-within\s*\{[^}]*z-index:\s*20/s);
+  assert.match(css, /flex-basis\s+780ms/);
   assert.match(css, /\.workflow-trigger strong\s*\{[^}]*font-size:\s*1\.3rem/s);
 });

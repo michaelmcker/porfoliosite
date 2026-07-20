@@ -18,6 +18,7 @@ const emailIndustries = [...document.querySelectorAll('[data-email-industry]')];
 const emailIndustryPlurals = [...document.querySelectorAll('[data-email-industry-plural]')];
 const emailAudiences = [...document.querySelectorAll('[data-email-audience]')];
 const emailLocations = [...document.querySelectorAll('[data-email-location]')];
+const emailScreenCounts = [...document.querySelectorAll('[data-email-screen-count]')];
 
 let selectedAddress = null;
 let suggestions = [];
@@ -25,6 +26,7 @@ let activeSuggestion = -1;
 let suggestionTimer = 0;
 let suggestionRequest = null;
 let proposalUrl = '';
+let generatedScreenCount = null;
 
 const loadingSteps = [
   'Finding nearby elevator inventory.',
@@ -76,6 +78,7 @@ function updateEmailPreview() {
   setText(emailIndustryPlurals, language.plural);
   setText(emailAudiences, language.audience);
   setText(emailLocations, location);
+  setText(emailScreenCounts, `[${generatedScreenCount ?? 30}]`);
 }
 
 function setError(message = '') {
@@ -193,6 +196,7 @@ document.addEventListener('click', (event) => {
 });
 
 form?.addEventListener('input', () => {
+  generatedScreenCount = null;
   updateSubmitState();
   updateEmailPreview();
 });
@@ -251,6 +255,11 @@ form?.addEventListener('submit', async (event) => {
     proposalUrl = URL.createObjectURL(pdf);
     const disposition = response.headers.get('content-disposition') || '';
     const filename = disposition.match(/filename="?([^";]+)"?/i)?.[1] || 'elevator-advertising-proposal.pdf';
+    const screenCount = Number.parseInt(response.headers.get('x-proposal-screen-count') || '', 10);
+    if (Number.isFinite(screenCount) && screenCount > 0) {
+      generatedScreenCount = screenCount;
+      updateEmailPreview();
+    }
 
     frame.src = `${proposalUrl}#view=FitH&toolbar=0`;
     openPdf.href = proposalUrl;

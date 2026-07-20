@@ -29,6 +29,8 @@ test("the approved V2 homepage is the production root", async () => {
   assert.match(root, /data-workflow-accordion/);
   assert.match(root, /src="v2\/app\.js"/);
   assert.match(root, /src="v2\/contact-finale\.js"/);
+  assert.equal((root.match(/src="v2\/assets\/finale\//g) || []).length, 8);
+  assert.doesNotMatch(root, /src="assets\/finale\//);
   assert.match(root, /href="v2\/workflows\/presentation-publishing\.html"/);
   assert.match(root, /src="v2\/okanagan-preview\/index\.html"/);
   assert.match(root, /src="v2\/portrait\/embed\.html"/);
@@ -48,7 +50,7 @@ test("the approved V2 proposal builder is the production proposal route", async 
   assert.match(root, /<link rel="stylesheet" href="v2\/proposal-generator\.css">/);
   assert.match(root, /class="proposal-callout/);
   assert.match(root, /href="v2\/workflows\/local-prospecting-enrichment\.html"/);
-  assert.match(root, /src="proposal-generator\.js\?v=20260716-1"/);
+  assert.match(root, /src="proposal-generator\.js\?v=20260720-1"/);
   assert.match(v2, /<link rel="canonical" href="https:\/\/michaelmck\.site\/proposal-generator\.html">/);
 });
 
