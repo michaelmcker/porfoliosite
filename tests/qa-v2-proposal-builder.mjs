@@ -87,7 +87,8 @@ async function inspectLayout(page) {
       overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
       workspaceColumns: getComputedStyle(document.querySelector('.proposal-workspace__inner')).gridTemplateColumns,
       callouts: [...document.querySelectorAll('.proposal-callout')].filter(visible).length,
-      pathDisplay: getComputedStyle(document.querySelector('.proposal-annotation-path')).display,
+      connectorCount: [...document.querySelectorAll('.proposal-callout')]
+        .filter((callout) => getComputedStyle(callout, '::before').display !== 'none').length,
       annotationPointerEvents: getComputedStyle(document.querySelector('.proposal-annotations')).pointerEvents,
       visiblePins: [...document.querySelectorAll('.proposal-pin')].filter(visible).length,
       frameSource: document.querySelector('[data-proposal-frame]').getAttribute('src'),
@@ -120,6 +121,7 @@ async function inspectLayout(page) {
         const rectangle = outreach.getBoundingClientRect();
         return rectangle.left < 0 || rectangle.right > document.documentElement.clientWidth;
       })(),
+      emailLocation: document.querySelector('[data-email-location]')?.textContent,
     };
   });
 }
@@ -135,9 +137,9 @@ try {
   assert.equal(desktopLayout.overflow, 0, 'desktop proposal page overflows horizontally');
   assert.ok(desktopLayout.workspaceColumns.split(' ').length >= 2, 'desktop form and proposal are not side-by-side');
   assert.equal(desktopLayout.callouts, 4, 'desktop annotations are missing');
-  assert.notEqual(desktopLayout.pathDisplay, 'none', 'desktop curved annotation paths are hidden');
+  assert.equal(desktopLayout.connectorCount, 4, 'desktop anchored connectors are missing');
   assert.equal(desktopLayout.annotationPointerEvents, 'none', 'annotations can block the live builder');
-  assert.equal(desktopLayout.visiblePins, 0, 'mobile pins appear on desktop');
+  assert.equal(desktopLayout.visiblePins, 4, 'desktop proposal anchors are missing');
   assert.equal(desktopLayout.frameSource, 'about:blank', 'initial preview downloads a hidden PDF before generation');
   assert.equal(desktopLayout.sampleVisible, true, 'approved sample image is not visible before generation');
   assert.ok(desktopLayout.minimumControlHeight >= 44, `desktop control is below 44px: ${desktopLayout.minimumControlHeight}`);
@@ -152,6 +154,9 @@ try {
   await desktop.type('#proposal-address', '600 West Peachtree');
   await desktop.waitForSelector('[data-address-results] button', { visible: true });
   await desktop.click('[data-address-results] button');
+  assert.equal(await desktop.$eval('[data-email-location]', (element) => element.textContent), 'Atlanta');
+  assert.equal(await desktop.$eval('[data-email-industry-title]', (element) => element.textContent), 'dental practice');
+  assert.equal(await desktop.$eval('[data-email-business]', (element) => element.textContent), 'Midtown Family Dental');
   assert.equal(await desktop.$eval('.proposal-submit', (button) => button.disabled), false);
   await desktop.click('.proposal-submit');
   await desktop.waitForFunction(() => document.querySelector('[data-preview-state]')?.textContent === 'Generated proposal');
@@ -172,7 +177,7 @@ try {
   const mobileLayout = await inspectLayout(mobile);
   assert.equal(mobileLayout.overflow, 0, 'mobile proposal page overflows horizontally');
   assert.equal(mobileLayout.callouts, 4, 'mobile explanation list is incomplete');
-  assert.equal(mobileLayout.pathDisplay, 'none', 'desktop arrows remain visible on mobile');
+  assert.equal(mobileLayout.connectorCount, 0, 'desktop connectors remain visible on mobile');
   assert.equal(mobileLayout.visiblePins, 4, 'mobile numbered pins are incomplete');
   assert.ok(mobileLayout.minimumControlHeight >= 44, `mobile control is below 44px: ${mobileLayout.minimumControlHeight}`);
   assert.equal(mobileLayout.calloutBackgroundsOpaque, true, 'mobile callouts are not on opaque surfaces');

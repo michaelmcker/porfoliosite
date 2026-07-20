@@ -47,6 +47,9 @@ test("Vercel publishes every optimized asset introduced by the performance pass"
     "assets/videos/portfolio-hero-system-map-desktop-poster.webp",
     "assets/device-mockups/laptop-three-quarter-rccv-cutout.webp",
     "assets/screens/cool-runnings-home.webp",
+    "assets/device-mockups/laptop-graphite-frame.png",
+    "assets/samples/vertical-impression-public-proposal-sample-page-1.png",
+    "assets/workflows/content-workflow-approved-stage.png",
   ]) {
     assert.match(ignore, new RegExp(`!${asset.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`));
   }
@@ -86,4 +89,17 @@ test("proposal preview does not download an unused PDF before generation", async
   const html = await read("v2/proposal-generator.html");
   assert.match(html, /<iframe[\s\S]*?title="Generated elevator advertising proposal"[\s\S]*?src="about:blank"/);
   assert.doesNotMatch(html, /src="\.\.\/output\/pdf\/vertical-impression-local-proposal-sample\.pdf/);
+});
+
+test("Cool Runnings metrics refresh is a remote scheduled GitHub Action", async () => {
+  const workflow = await read(".github/workflows/refresh-cool-runnings-metrics.yml");
+
+  assert.match(workflow, /schedule:\s*\n\s*-\s*cron:/);
+  assert.match(workflow, /id-token:\s*write/);
+  assert.match(workflow, /google-github-actions\/auth@v3/);
+  assert.match(workflow, /workload_identity_provider:\s*\$\{\{\s*vars\.GCP_WORKLOAD_IDENTITY_PROVIDER\s*\}\}/);
+  assert.match(workflow, /service_account:\s*\$\{\{\s*vars\.GCP_SERVICE_ACCOUNT\s*\}\}/);
+  assert.match(workflow, /node scripts\/refresh-cool-runnings-metrics\.mjs/);
+  assert.match(workflow, /git push/);
+  assert.doesNotMatch(workflow, /launchctl|\/Users\/michaelmckerracher|refresh_token|GSC_CREDENTIALS_JSON|GA4_CREDENTIALS_JSON/);
 });

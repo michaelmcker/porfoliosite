@@ -37,6 +37,7 @@ assets/design-refs/*
 !assets/design-refs/03-how-it-gets-made-workflow.png
 
 assets/device-mockups/*
+!assets/device-mockups/laptop-graphite-frame.png
 !assets/device-mockups/laptop-three-quarter-rccv.png
 !assets/device-mockups/laptop-three-quarter-rccv-cutout.png
 !assets/device-mockups/laptop-three-quarter-rccv-cutout.webp
@@ -54,6 +55,7 @@ assets/portrait-final/assets/poses/
 
 assets/samples/*
 !assets/samples/vertical-impression-local-proposal-current.png
+!assets/samples/vertical-impression-public-proposal-sample-page-1.png
 
 assets/screens/*
 !assets/screens/cool-runnings.png
@@ -82,6 +84,7 @@ assets/videos/*
 !assets/videos/cool-runnings-sizzle-25s.webm
 
 assets/workflows/*
+!assets/workflows/content-workflow-approved-stage.png
 !assets/workflows/presentation-publishing-six-step.png
 
 output/pdf/*

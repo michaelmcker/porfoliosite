@@ -188,6 +188,16 @@ try {
       label: link.textContent.trim(),
       display: getComputedStyle(link).display,
     })),
+    navGeometry: (() => {
+      const rectangle = document.querySelector(".site-nav").getBoundingClientRect();
+      const cta = document.querySelector(".site-nav__cta").getBoundingClientRect();
+      return {
+        viewportWidth: window.innerWidth,
+        left: rectangle.left,
+        right: rectangle.right,
+        ctaRight: cta.right,
+      };
+    })(),
     stayCards: [...document.querySelectorAll(".nav-mega__card")].map((card) => ({
       name: card.querySelector(".nav-mega__name")?.textContent.trim(),
       price: card.querySelector(".nav-mega__price")?.textContent.trim(),
@@ -200,6 +210,9 @@ try {
   assert.deepEqual(accommodationTop.headings, ["Nature.Adventure.Stillness.", "The Treehouse", "The Cabin"], "boutique hero headings are not semantic HTML");
   assert.deepEqual(accommodationTop.navigation.map(({ label }) => label), ["Stays", "Things to Do", "Gallery", "Reviews", "About", "FAQ", "Blog", "Book your stay"], "boutique desktop navigation no longer matches the deployed source experience");
   assert.ok(accommodationTop.navigation.every(({ display }) => display !== "none"), "boutique browser is rendering its mobile navigation inside the desktop device");
+  assert.ok(accommodationTop.navGeometry.left >= -1, `boutique desktop navigation is clipped on the left: ${JSON.stringify(accommodationTop.navGeometry)}`);
+  assert.ok(accommodationTop.navGeometry.right <= accommodationTop.navGeometry.viewportWidth + 1, `boutique desktop navigation is clipped on the right: ${JSON.stringify(accommodationTop.navGeometry)}`);
+  assert.ok(accommodationTop.navGeometry.ctaRight <= accommodationTop.navGeometry.viewportWidth + 1, `boutique booking button is clipped: ${JSON.stringify(accommodationTop.navGeometry)}`);
   assert.deepEqual(accommodationTop.stayCards, [
     {
       name: "The Treehouse",

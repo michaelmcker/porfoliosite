@@ -68,4 +68,13 @@ test("Okanagan preview uses the deployed serif navigation and display typography
   assert.match(css, /font-family:\s*"Cormorant Garamond",\s*Georgia,\s*serif/);
   assert.match(css, /\.site-nav__links > a,\s*\.nav-dropdown__trigger\s*\{[^}]*font-size:\s*clamp\(14px,/s);
   assert.match(css, /\.hero-copy h1\s*\{[^}]*font-family:\s*"Inter",\s*"DM Sans"/s);
+  assert.match(css, /@media \(min-width: 561px\) and \(max-width: 900px\)[\s\S]*?\.site-nav\s*\{[^}]*min-width:\s*960px/s);
+  assert.match(css, /@media \(min-width: 561px\) and \(max-width: 900px\)[\s\S]*?\.site-nav\s*\{[^}]*transform:\s*scale\(var\(--nav-scale\)\)/s);
+});
+
+test("workflow tabs visibly lift from the stack on hover and keyboard focus", async () => {
+  const css = await read("v2/styles.css");
+
+  assert.match(css, /\.workflow-trigger:hover,\s*\.workflow-trigger:focus-visible\s*\{[^}]*translate3d\(-12px,/s);
+  assert.match(css, /\.workflow-trigger strong\s*\{[^}]*font-size:\s*1\.3rem/s);
 });

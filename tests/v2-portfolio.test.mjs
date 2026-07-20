@@ -461,7 +461,7 @@ test("workflow showcase uses a neutral accordion and orders copy above dominant 
   assert.match(css, /\.workflow-accordion\s*\{[^}]*width:\s*100%/s);
   assert.match(css, /\.workflow-item\s*\{[^}]*min-width:\s*64px[^}]*color:\s*white/s);
   assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*64px[^}]*background:\s*var\(--rail\)/s);
-  assert.match(css, /\.workflow-trigger strong\s*\{[^}]*font-size:\s*1\.2rem[^}]*font-weight:\s*900/s);
+  assert.match(css, /\.workflow-trigger strong\s*\{[^}]*font-size:\s*1\.3rem[^}]*font-weight:\s*900/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*grid-template-rows:\s*auto minmax\(0,\s*1fr\)/s);
   assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*#e7e8e3/s);
   assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*clamp\(2\.15rem,\s*3\.15vw,\s*3\.65rem\)/s);

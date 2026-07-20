@@ -710,15 +710,16 @@ h3 {
   background: rgba(255,255,255,.14);
   pointer-events: none;
 }
-.workflow-trigger:hover {
-  filter: brightness(1.12);
-  transform: translate3d(-4px, var(--stack-y), 18px) rotateY(-1deg);
-  box-shadow: inset 1px 0 rgba(255,255,255,.13), inset -1px 0 rgba(0,0,0,.7), -8px 0 0 var(--rail-edge), -20px 0 32px rgba(0,0,0,.42);
+.workflow-trigger:hover,
+.workflow-trigger:focus-visible {
+  filter: brightness(1.22);
+  transform: translate3d(-12px, var(--stack-y), 26px) rotateY(0deg);
+  box-shadow: inset 1px 0 rgba(255,255,255,.16), inset -1px 0 rgba(0,0,0,.68), -10px 0 0 var(--rail-edge), -26px 0 40px rgba(0,0,0,.5);
 }
 .workflow-item.is-active .workflow-trigger { width: 0; min-width: 0; padding-inline: 0; border: 0; opacity: 0; overflow: hidden; pointer-events: none; transform: none; }
 .workflow-trigger strong {
   align-self: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 900;
   line-height: 1;
   letter-spacing: -.02em;

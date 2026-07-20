@@ -60,12 +60,14 @@ test("V2 proposal builder explains the four generated elements", async () => {
   }
 
   assert.equal((html.match(/class="proposal-pin/g) || []).length, 4);
-  assert.match(html, /class="proposal-annotation-path/);
+  assert.doesNotMatch(html, /class="proposal-annotation-path/);
   assert.match(html, /class="proposal-preview__sample"[^>]+vertical-impression-local-proposal-current\.png/);
   assert.match(css, /\.proposal-annotations\s*\{[^}]*pointer-events:\s*none/s);
+  assert.match(css, /\.proposal-explainer\s*\{[^}]*display:\s*grid[^}]*grid-template-columns:/s);
+  assert.match(css, /\.proposal-callout::before\s*\{[^}]*position:\s*absolute/s);
+  assert.doesNotMatch(css, /\.proposal-annotations\s*\{[^}]*position:\s*absolute/s);
   assert.match(css, /:has\(iframe\[src\^="blob:"\]\)/);
-  assert.match(css, /@media \(max-width: 700px\)[\s\S]*?\.proposal-annotation-path\s*\{[^}]*display:\s*none/s);
-  assert.match(css, /@media \(max-width: 700px\)[\s\S]*?\.proposal-pin\s*\{[^}]*display:\s*grid/s);
+  assert.match(css, /@media \(max-width: 700px\)[\s\S]*?\.proposal-callout::before,\s*\.proposal-callout::after\s*\{[^}]*display:\s*none/s);
 });
 
 test("V2 proposal callouts are boxed off the proposal and connect it to reviewed outreach", async () => {
@@ -85,10 +87,11 @@ test("V2 proposal callouts are boxed off the proposal and connect it to reviewed
   assert.match(html, /href="workflows\/local-prospecting-enrichment\.html"/);
   assert.doesNotMatch(html, /automatically sends|automatic outreach/i);
   const email = html.match(/<article class="outreach-email"[\s\S]*?<\/article>/)?.[0] || "";
-  assert.match(email, /an idea for Midtown/);
-  assert.match(email, /competing on the first page of Google with hundreds of other dental practices/);
+  assert.match(email, /an idea for <span data-email-location>\[Neighbourhood\]<\/span>/);
+  assert.match(email, /data-email-industry-title>\[Industry\]<\/span> around <span data-email-location>\[Neighbourhood\]<\/span>/);
+  assert.match(email, /competing on the first page of Google with hundreds of other <span data-email-industry-plural>businesses<\/span>/);
   assert.match(email, /30 elevator screens within five miles/);
-  assert.match(email, /apartment and office buildings where potential patients live and work/);
+  assert.match(email, /apartment and office buildings where <span data-email-audience>potential customers<\/span> live and work/);
   assert.match(email, /a more personal, conversational ad/);
   assert.match(email, /mocked it up on an elevator screen/);
   assert.match(email, /mapped the nearby buildings/);
@@ -99,6 +102,33 @@ test("V2 proposal callouts are boxed off the proposal and connect it to reviewed
   assert.match(workflow, /Apollo/);
   assert.match(workflow, /approved send/);
   assert.match(workflow, /href="\.\.\/proposal-generator\.html"/);
+});
+
+test("V2 proposal form personalizes the outreach email and explains generation progress", async () => {
+  const [html, css, client] = await Promise.all([
+    read("v2/proposal-generator.html"),
+    read("v2/proposal-generator.css"),
+    read("proposal-generator.js"),
+  ]);
+
+  for (const hook of [
+    "data-email-business",
+    "data-email-industry-title",
+    "data-email-industry",
+    "data-email-industry-plural",
+    "data-email-audience",
+    "data-email-location",
+  ]) {
+    assert.ok(html.includes(hook), `missing dynamic email hook: ${hook}`);
+  }
+  assert.match(client, /function updateEmailPreview/);
+  assert.match(client, /function deriveLocalArea/);
+  assert.match(client, /Generating — should be ready in a few minutes\./);
+  assert.match(client, /classList\.add\(['"]is-generating['"]\)/);
+  assert.match(client, /classList\.remove\(['"]is-generating['"]\)/);
+  assert.match(css, /\.proposal-submit\.is-generating::after\s*\{/);
+  assert.match(css, /@keyframes proposal-button-progress/);
+  assert.match(css, /\.proposal-workspace__inner\s*\{[^}]*background:\s*var\(--proposal-paper\)/s);
 });
 
 test("V2 proposal builder keeps secrets and internal inventory out of browser source", async () => {
@@ -172,8 +202,8 @@ test("permanent browser QA covers the V2 proposal layout and API boundary", asyn
 
   assert.match(qa, /width:\s*1440/);
   assert.match(qa, /width:\s*390/);
-  assert.match(qa, /proposal-annotation-path/);
-  assert.match(qa, /proposal-pin/);
+  assert.match(qa, /connectorCount/);
+  assert.match(qa, /emailLocation/);
   assert.match(qa, /\/api\/proposal\/suggest/);
   assert.match(qa, /\/api\/proposal\/generate/);
   assert.match(qa, /scrollWidth/);

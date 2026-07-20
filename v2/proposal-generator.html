@@ -93,7 +93,7 @@
 
           <p class="proposal-form__error" data-proposal-error role="alert" hidden></p>
           <button class="proposal-submit" type="submit" disabled>
-            <span data-submit-label>Generate to complete</span>
+            <span data-submit-label aria-live="polite">Generate to complete</span>
             <span aria-hidden="true">&#8594;</span>
           </button>
           <p class="proposal-form__time">Image generation and PDF assembly can take up to three minutes.</p>
@@ -137,14 +137,6 @@
           </div>
 
           <div class="proposal-annotations" aria-label="What changes in the proposal">
-            <svg class="proposal-annotation-path" viewBox="0 0 860 970" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-              <defs><marker id="proposal-arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10Z"></path></marker></defs>
-              <path d="M178 206C193 210 199 232 207 270" marker-end="url(#proposal-arrowhead)"></path>
-              <path d="M682 254C668 260 661 292 653 334" marker-end="url(#proposal-arrowhead)"></path>
-              <path d="M178 684C193 670 199 624 207 580" marker-end="url(#proposal-arrowhead)"></path>
-              <path d="M682 724C668 712 661 680 653 646" marker-end="url(#proposal-arrowhead)"></path>
-            </svg>
-
             <article class="proposal-callout proposal-callout--ad">
               <span>01</span>
               <h2>Custom ad</h2>
@@ -185,14 +177,14 @@
             <div>
               <p><strong>From</strong> Sales representative</p>
               <p><strong>To</strong> Local business owner</p>
-              <p><strong>Subject</strong> an idea for Midtown</p>
+              <p><strong>Subject</strong> an idea for <span data-email-location>[Neighbourhood]</span></p>
             </div>
           </header>
           <div class="outreach-email__body">
             <p>Hi [First name],</p>
-            <p>I took a look at how people find a dentist around Midtown. You are competing on the first page of Google with hundreds of other dental practices, all fighting for the same clicks.</p>
-            <p>There are 30 elevator screens within five miles of your practice, inside apartment and office buildings where potential patients live and work. Instead of putting you beside every other dentist in the search results, those screens put your name in front of the same local audience every day.</p>
-            <p>So we put together a campaign idea specifically for Midtown Family Dental: a more personal, conversational ad. We mocked it up on an elevator screen and mapped the nearby buildings so you can see what the campaign could look like.</p>
+            <p>I took a look at how people find a <span data-email-industry-title>[Industry]</span> around <span data-email-location>[Neighbourhood]</span>. You are competing on the first page of Google with hundreds of other <span data-email-industry-plural>businesses</span>, all fighting for the same clicks.</p>
+            <p>There are 30 elevator screens within five miles of your <span data-email-industry>business</span>, inside apartment and office buildings where <span data-email-audience>potential customers</span> live and work. Instead of putting you beside every other <span data-email-industry-title>[Industry]</span> in the search results, those screens put your name in front of the same local audience every day.</p>
+            <p>So we put together a campaign idea specifically for <span data-email-business>[Business name]</span>: a more personal, conversational ad. We mocked it up on an elevator screen and mapped the nearby buildings so you can see what the campaign could look like.</p>
             <p>I attached the idea. Worth a look?</p>
             <div class="outreach-email__attachment">
               <span aria-hidden="true">PDF</span>

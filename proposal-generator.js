@@ -12,6 +12,12 @@ const previewState = document.querySelector('[data-preview-state]');
 const previewActions = document.querySelector('[data-preview-actions]');
 const openPdf = document.querySelector('[data-open-pdf]');
 const downloadPdf = document.querySelector('[data-download-pdf]');
+const emailBusiness = [...document.querySelectorAll('[data-email-business]')];
+const emailIndustryTitles = [...document.querySelectorAll('[data-email-industry-title]')];
+const emailIndustries = [...document.querySelectorAll('[data-email-industry]')];
+const emailIndustryPlurals = [...document.querySelectorAll('[data-email-industry-plural]')];
+const emailAudiences = [...document.querySelectorAll('[data-email-audience]')];
+const emailLocations = [...document.querySelectorAll('[data-email-location]')];
 
 let selectedAddress = null;
 let suggestions = [];
@@ -26,6 +32,51 @@ const loadingSteps = [
   'Building the local market map.',
   'Assembling the presentation-ready PDF.',
 ];
+
+const industryLanguage = {
+  accountant: { title: 'accounting firm', place: 'firm', plural: 'accounting firms', audience: 'potential clients' },
+  auto_dealer: { title: 'auto dealer', place: 'dealership', plural: 'auto dealers', audience: 'potential customers' },
+  chiropractor: { title: 'chiropractor', place: 'practice', plural: 'chiropractors', audience: 'potential patients' },
+  dentist: { title: 'dental practice', place: 'practice', plural: 'dental practices', audience: 'potential patients' },
+  gym: { title: 'gym or fitness studio', place: 'business', plural: 'gyms and fitness studios', audience: 'potential members' },
+  insurance: { title: 'insurance agency', place: 'agency', plural: 'insurance agencies', audience: 'potential clients' },
+  lawyer: { title: 'law firm', place: 'firm', plural: 'law firms', audience: 'potential clients' },
+  medical: { title: 'medical practice', place: 'practice', plural: 'medical practices', audience: 'potential patients' },
+  optometrist: { title: 'optometrist', place: 'practice', plural: 'optometrists', audience: 'potential patients' },
+  real_estate: { title: 'real estate business', place: 'business', plural: 'real estate businesses', audience: 'potential clients' },
+  veterinarian: { title: 'veterinary practice', place: 'practice', plural: 'veterinary practices', audience: 'local pet owners' },
+  other: { title: 'local business', place: 'business', plural: 'businesses', audience: 'potential customers' },
+};
+
+function setText(elements, text) {
+  elements.forEach((element) => { element.textContent = text; });
+}
+
+function deriveLocalArea(fullAddress = '') {
+  const parts = fullAddress.split(',').map((part) => part.trim()).filter(Boolean);
+  if (parts.length >= 2) return parts[1];
+  return fullAddress.trim() || '[Neighbourhood]';
+}
+
+function updateEmailPreview() {
+  if (!form) return;
+  const businessName = form.elements.businessName.value.trim() || '[Business name]';
+  const type = form.elements.businessType.value;
+  const language = industryLanguage[type] || {
+    title: type ? form.elements.businessType.selectedOptions[0]?.textContent.toLowerCase() : '[Industry]',
+    place: 'business',
+    plural: 'businesses',
+    audience: 'potential customers',
+  };
+  const location = deriveLocalArea(selectedAddress?.fullAddress || '');
+
+  setText(emailBusiness, businessName);
+  setText(emailIndustryTitles, language.title);
+  setText(emailIndustries, language.place);
+  setText(emailIndustryPlurals, language.plural);
+  setText(emailAudiences, language.audience);
+  setText(emailLocations, location);
+}
 
 function setError(message = '') {
   if (!errorBox) return;
@@ -56,6 +107,7 @@ function chooseAddress(suggestion) {
   closeSuggestions();
   setError();
   updateSubmitState();
+  updateEmailPreview();
 }
 
 function renderSuggestions(nextSuggestions) {
@@ -113,6 +165,7 @@ addressInput?.addEventListener('input', () => {
   selectedAddress = null;
   addressField.classList.remove('is-selected');
   updateSubmitState();
+  updateEmailPreview();
   clearTimeout(suggestionTimer);
   const query = addressInput.value.trim();
   if (query.length < 3) return closeSuggestions();
@@ -139,14 +192,18 @@ document.addEventListener('click', (event) => {
   if (!addressField?.contains(event.target)) closeSuggestions();
 });
 
-form?.addEventListener('input', updateSubmitState);
+form?.addEventListener('input', () => {
+  updateSubmitState();
+  updateEmailPreview();
+});
 
 function startLoading() {
   loading.hidden = false;
   previewActions.hidden = true;
   previewState.textContent = 'Generating';
   submitButton.disabled = true;
-  submitLabel.textContent = 'Generating proposal';
+  submitButton.classList.add('is-generating');
+  submitLabel.textContent = 'Generating — should be ready in a few minutes.';
   let step = 0;
   loadingMessage.textContent = loadingSteps[step];
   return window.setInterval(() => {
@@ -158,6 +215,7 @@ function startLoading() {
 function finishLoading(timer) {
   window.clearInterval(timer);
   loading.hidden = true;
+  submitButton.classList.remove('is-generating');
   submitLabel.textContent = 'Generate to complete';
   updateSubmitState();
 }
@@ -212,3 +270,5 @@ form?.addEventListener('submit', async (event) => {
 window.addEventListener('beforeunload', () => {
   if (proposalUrl) URL.revokeObjectURL(proposalUrl);
 });
+
+updateEmailPreview();
