@@ -27,9 +27,9 @@ function generateMapUrl(business, screens, options = {}) {
   const baseUrl = `https://api.mapbox.com/styles/v1/mapbox/${opts.mapStyle}/static`;
   const overlay = pins.join(",");
   const size = `${opts.width}x${opts.height}`;
-  const viewport = validScreens.length === 0 ? `${business.lng},${business.lat},${opts.zoom}` : "auto";
-  const paddingQuery = validScreens.length === 0 ? "" : "&padding=40";
-  return `${baseUrl}/${overlay}/${viewport}/${size}@2x?access_token=${accessToken}&logo=false&attribution=false${paddingQuery}`;
+  const zoom = options.zoom ?? (validScreens.length > 0 ? calculateOptimalZoom(business, validScreens) : opts.zoom);
+  const viewport = `${business.lng},${business.lat},${zoom}`;
+  return `${baseUrl}/${overlay}/${viewport}/${size}@2x?access_token=${accessToken}&logo=false&attribution=false`;
 }
 function generateStyledMapUrl(business, screens, options = {}) {
   const accessToken = process.env.MAPBOX_ACCESS_TOKEN;
