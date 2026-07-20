@@ -103,14 +103,17 @@ test('applies request guards before expensive proposal generation', async () => 
   assert.doesNotMatch(suggest, /Access-Control-Allow-Origin/i);
 });
 
-test('presents the proposal builder as a compact portfolio tool', async () => {
+test('presents the V2 proposal builder as a compact portfolio tool', async () => {
   const [html, client] = await Promise.all([
     readFile(new URL('../proposal-generator.html', import.meta.url), 'utf8'),
     readFile(new URL('../proposal-generator.js', import.meta.url), 'utf8'),
   ]);
 
-  assert.match(html, /<h2>Try out the proposal builder<\/h2>/);
-  assert.match(html, /part of the local outreach system built for digital out-of-home advertising/i);
+  assert.match(html, /<h1 id="proposal-title">A local proposal, assembled around the business\.<\/h1>/);
+  assert.match(html, /This proposal was one output of the local prospecting workflow/i);
+  assert.match(html, /Custom ad/);
+  assert.match(html, /Live screen count/);
+  assert.match(html, /Local map/);
   assert.doesNotMatch(html, /simplified public demonstration|API credentials remain server-side/i);
   assert.match(html, /https:\/\/www\.linkedin\.com\//);
   assert.match(html, /https:\/\/github\.com\//);

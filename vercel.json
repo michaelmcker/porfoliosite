@@ -7,6 +7,23 @@
       "includeFiles": "{api/_lib/proposal/**,assets/proposal/**}"
     }
   },
+  "redirects": [
+    {
+      "source": "/v2",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/v2/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/v2/proposal-generator.html",
+      "destination": "/proposal-generator.html",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/proposal-generator.html",

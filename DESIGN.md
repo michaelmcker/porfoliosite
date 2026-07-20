@@ -1,8 +1,8 @@
 # Design Systems
 
-This repository currently contains two intentionally separate systems. The production homepage uses the V1 system below. The unlinked `/v2/` route is an assessment and does not inherit V1 CSS or JavaScript.
+The approved V2 system is the production site. Its canonical source lives under `v2/` and is promoted to the root homepage and proposal route with `npm run promote:v2`. The former V1 system remains below only as a legacy design reference and must not be restored to production.
 
-## V2 Assessment System
+## Production Design System
 
 ### Direction
 
@@ -81,7 +81,7 @@ The visual layer reuses the shared proposal client and API contract rather than 
 
 A warm-paper outreach handoff follows the builder. It pairs editorial context with one authored email object, a visible proposal attachment, and a human-review note. It explains the real relationship to Local Prospecting and Enrichment: reviewed public business context and nearby inventory feed a personalized email draft and custom proposal, but a salesperson still owns recipient choice, language, commercial offer, and final send.
 
-## V1 Production System
+## Legacy V1 Design Reference
 
 ### Theme
 

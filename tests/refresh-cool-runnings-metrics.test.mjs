@@ -4,6 +4,7 @@ import {
   buildDateWindow,
   buildSnapshot,
   collectDataForSeo,
+  collectGa4,
 } from "../scripts/refresh-cool-runnings-metrics.mjs";
 
 test("buildDateWindow returns an inclusive 28-day window with lag", () => {
@@ -26,6 +27,26 @@ test("collectDataForSeo reports ranking keyword and page totals", async () => {
     fetchImpl,
   });
   assert.deepEqual(result, { rankedKeywords: 42, rankingPages: 13, sourceUpdatedAt: null });
+});
+
+test("collectGa4 preserves the GA4 properties path segment", async () => {
+  let requestedUrl = "";
+  const fetchImpl = async (url) => {
+    requestedUrl = url;
+    return { ok: true, json: async () => ({ rows: [] }) };
+  };
+
+  await collectGa4({
+    accessToken: "analytics-token",
+    propertyId: "properties/527841655",
+    window: { startDate: "2026-06-22", endDate: "2026-07-19" },
+    fetchImpl,
+  });
+
+  assert.equal(
+    requestedUrl,
+    "https://analyticsdata.googleapis.com/v1beta/properties/527841655:runReport",
+  );
 });
 
 test("buildSnapshot does not return a partial snapshot", async () => {
@@ -71,4 +92,66 @@ test("buildSnapshot does not return a partial snapshot", async () => {
   assert.equal(snapshot.metrics.searchConsole.pageRowsPosition1To10, 1);
   assert.equal(snapshot.metrics.ga4.websiteConversions, 5);
   assert.equal(snapshot.metrics.dataForSeo.rankingPages, 5);
+});
+
+test("buildSnapshot sends distinct scoped tokens to Search Console and GA4", async () => {
+  const googleAuthorizations = [];
+  const fetchImpl = async (url, options) => {
+    if (url.includes("searchAnalytics")) {
+      googleAuthorizations.push({ source: "gsc", authorization: options.headers.authorization });
+      const body = JSON.parse(options.body);
+      if (!body.dimensions) {
+        return { ok: true, json: async () => ({ rows: [{ clicks: 10, impressions: 100 }] }) };
+      }
+      return { ok: true, json: async () => ({ rows: [] }) };
+    }
+    if (url.includes("analyticsdata")) {
+      googleAuthorizations.push({ source: "ga4", authorization: options.headers.authorization });
+      return { ok: true, json: async () => ({ rows: [] }) };
+    }
+    if (url.includes("ranked_keywords") || url.includes("relevant_pages")) {
+      return {
+        ok: true,
+        json: async () => ({
+          status_code: 20000,
+          tasks_error: 0,
+          tasks: [{ status_code: 20000, result: [{ total_count: 0 }] }],
+        }),
+      };
+    }
+    throw new Error(`Unexpected URL ${url}`);
+  };
+
+  await buildSnapshot({
+    env: {
+      GSC_SITE_URL: "sc-domain:example.com",
+      GA4_PROPERTY_ID: "properties/123",
+      DATAFORSEO_LOGIN: "login",
+      DATAFORSEO_PASSWORD: "password",
+      DATAFORSEO_TARGET: "example.com",
+    },
+    now: new Date("2026-07-20T18:00:00Z"),
+    fetchImpl,
+    accessTokens: {
+      searchConsole: "search-console-token",
+      ga4: "analytics-token",
+    },
+  });
+
+  assert.deepEqual(
+    new Set(
+      googleAuthorizations
+        .filter(({ source }) => source === "gsc")
+        .map(({ authorization }) => authorization),
+    ),
+    new Set(["Bearer search-console-token"]),
+  );
+  assert.deepEqual(
+    new Set(
+      googleAuthorizations
+        .filter(({ source }) => source === "ga4")
+        .map(({ authorization }) => authorization),
+    ),
+    new Set(["Bearer analytics-token"]),
+  );
 });

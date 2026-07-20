@@ -1,12 +1,26 @@
 import assert from "node:assert/strict";
 import { createReadStream } from "node:fs";
-import { mkdir, stat } from "node:fs/promises";
+import { mkdir, readFile, stat } from "node:fs/promises";
 import http from "node:http";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import puppeteer from "puppeteer-core";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const currentCoolMetrics = JSON.parse(
+  await readFile(path.join(root, "data/cool-runnings-metrics-current.json"), "utf8"),
+);
+const expectedCaseClicks = String(currentCoolMetrics.metrics.searchConsole.clicks);
+const formatMetricDate = (value) => new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(new Date(`${value}T12:00:00Z`));
+const expectedMetricWindow = [
+  formatMetricDate(currentCoolMetrics.windows.searchConsole.startDate),
+  formatMetricDate(currentCoolMetrics.windows.searchConsole.endDate),
+].join(" to ");
 const chromePath = process.env.CHROME_PATH || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const screenshotDirectory = process.env.QA_V2_SCREENSHOT_DIR;
 const leanScreenshots = process.env.QA_V2_SCREENSHOT_MODE === "lean";
@@ -1076,8 +1090,11 @@ try {
     }));
     assert.ok(caseStudy.heading, `${width}px local-search case study is missing its heading`);
     assert.ok(caseStudy.scrollWidth <= caseStudy.innerWidth, `${width}px local-search case study overflows by ${caseStudy.scrollWidth - caseStudy.innerWidth}px`);
-    assert.equal(caseStudy.clicks, "189", `${width}px local-search case study did not load current metrics`);
-    assert.match(caseStudy.metricWindow, /June 15, 2026 to July 12, 2026/, `${width}px local-search metric window is stale`);
+    assert.equal(caseStudy.clicks, expectedCaseClicks, `${width}px local-search case study did not load current metrics`);
+    assert.ok(
+      caseStudy.metricWindow.includes(expectedMetricWindow),
+      `${width}px local-search metric window is stale`,
+    );
     assert.match(caseStudy.review, /Human review/, `${width}px local-search case study omits its review boundary`);
     assert.deepEqual(caseFailures, [], `${width}px local-search case study has failed local assets`);
     if (screenshotDirectory && [1440, 390].includes(width)) {

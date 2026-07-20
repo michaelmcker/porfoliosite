@@ -3,31 +3,34 @@
 ## Start Here
 
 1. Read `docs/portfolio-working-notes.md` for source truth, proof constraints, and workflow details.
-2. Read `DESIGN.md` for the separate V1 and V2 visual systems.
+2. Read `DESIGN.md` for the production design system and legacy V1 reference.
 3. Check `git status --short` before editing. Preserve unrelated work.
 4. Run `npm test` before and after implementation changes.
 
-## Current V2 Scope
+## Current Production Scope
 
-The production homepage remains V1. The self-contained assessment is in `v2/` and is intentionally not linked from V1.
+The approved V2 system is the production site at `/`. The canonical editable source remains under `v2/`; `npm run promote:v2` produces the root homepage and proposal page. Do not hand-edit a promoted root copy without making the corresponding V2 source change first.
 
-The V2 assessment currently contains:
+The production system currently contains:
 
-- the complete V2 homepage at `/v2/`;
-- the V2 proposal builder at `/v2/proposal-generator.html`;
+- the complete homepage at `/`, sourced from `v2/index.html`;
+- the proposal builder at `/proposal-generator.html`, sourced from `v2/proposal-generator.html`;
 - five public-safe workflow pages under `/v2/workflows/`;
-- the V2-only local-search case study at `/v2/work/local-search-magnet.html`;
+- the local-search case study at `/v2/work/local-search-magnet.html`;
 - one workflow-artwork visual language derived from the approved Search-Optimized Content plate, with workflow-specific topology and separate desktop/mobile exports. The Agency Dashboard is the explicit exception: preserve its approved dashboard view.
 
-Do not redirect or replace V1 without explicit approval.
+Legacy `/v2/` homepage and proposal URLs redirect to their production root equivalents. Keep workflow and case-study routes stable until a separate route-flattening migration is approved.
 
-## V1 Isolation
+Production telemetry is an explicit release gate. Use a dedicated personal portfolio GA4 property; never send portfolio traffic into a client or employer property. The Search Console domain property must be verified before its sitemap submission is described as complete. Until those external account steps are done, the conditional GA4 regression test remains skipped rather than accepting a placeholder measurement ID.
 
-- V2 may reuse existing media through relative references into the root `assets/` directory.
-- V2 must not import V1 CSS or JavaScript.
-- Do not change V1 presentation routes or V1 proposal-builder markup, styles, or client logic while assessing V2. The shared proposal API may be hardened when the request contract remains backward-compatible and both V1 and V2 tests pass.
-- New V2 code belongs under `v2/`; V2 tests and renderers belong under `tests/` and `scripts/`.
-- Use `git diff <v1-baseline> --name-only` before handoff to prove isolation.
+## Source and Legacy Isolation
+
+- Production source under `v2/` may reuse existing media through relative references into the root `assets/` directory.
+- Production pages must not import the legacy V1 CSS or JavaScript.
+- Use `scripts/promote-v2-to-root.mjs`; its deterministic path rewriting and root-route tests are the promotion contract.
+- The shared proposal API remains one backward-compatible implementation for the root and redirected V2 presentation routes.
+- New production source belongs under `v2/`; tests and renderers belong under `tests/` and `scripts/`.
+- The former V1 visual system is documentation and git-history reference only. Do not restore it to `/`.
 
 ## V2 Design Contract
 

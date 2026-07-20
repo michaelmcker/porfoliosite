@@ -1,6 +1,6 @@
 # Portfolio Working Notes
 
-Last updated: July 15, 2026
+Last updated: July 20, 2026
 
 This is the working source for portfolio ideas, evidence, workflow details, media requirements, and unresolved questions. It is intentionally more detailed than the public site.
 
@@ -16,7 +16,7 @@ This is the working source for portfolio ideas, evidence, workflow details, medi
 
 ## Site Structure
 
-V1 remains the production homepage. V2 is an unlinked assessment at `/v2/`; it now contains the complete homepage plus detailed public-safe pages for all five selected workflows.
+The approved V2 system is live at the production root. `v2/index.html` and `v2/proposal-generator.html` are the canonical sources; `npm run promote:v2` produces `/index.html` and `/proposal-generator.html`. The five workflow pages and local-search case study keep their existing `/v2/` routes for now. The former V1 design remains a historical reference only.
 
 1. Approved animated hero.
 2. Selected Work: public-facing outputs and case studies.
@@ -26,6 +26,12 @@ V1 remains the production homepage. V2 is an unlinked assessment at `/v2/`; it n
 6. About: personal story plus the interactive Renaissance portrait.
 7. Experience: company, title, and dates, with resume download.
 8. Contact: email, LinkedIn, and GitHub.
+
+### Production Telemetry Status
+
+- A Search Console domain property for `michaelmck.site` exists but remains unverified. DNS verification and sitemap submission are not complete until Google supplies and accepts the domain token.
+- The portfolio does not yet have its own GA4 property or measurement ID. Do not reuse Cool Runnings, Vertical Impression, Fountainhead, or any other client/company property.
+- Once the dedicated property exists, add one privacy-reduced tag to each public portfolio page, permit only the required Google endpoints in the proposal CSP, remove the conditional test skip, deploy, and verify a real-time visit.
 
 ## Selected Work
 
@@ -273,7 +279,7 @@ The following paper-grid rules describe V1 only. V2 is intentionally isolated an
 - Complete direct Business Profile Performance API authentication before presenting exact profile calls, website clicks, directions, or total profile interactions.
 - Verify the presentation-publishing implementation against the current corporate Vercel and Webflow schemas before publishing code-level details.
 
-## V1 Production Repair Backlog
+## Production Repair Backlog
 
 This is the concrete correction list from the July 13 production audit. Items stay here until the live page is visually verified at desktop, tablet, and mobile widths.
 
@@ -281,8 +287,9 @@ This is the concrete correction list from the July 13 production audit. Items st
 
 - Cool Runnings must remain a rolling latest-28-day report, not a frozen claim.
 - A successful refresh must update both the metrics and the visible Last refreshed date. A failed pull must leave the previous date and values intact.
-- A daily Codex automation now refreshes Search Console and GA4, updates `data/cool-runnings-metrics-current.json`, runs QA, and deploys the portfolio.
-- The repository GitHub Action is currently blocked before any analytics query. Five scheduled runs from July 14 through July 18, 2026 fail at `google-github-actions/auth@v3` because repository variable `GCP_PROJECT_ID` and secrets `GCP_WORKLOAD_IDENTITY_PROVIDER` and `GCP_SERVICE_ACCOUNT` are not configured. The existing DataForSEO credentials are present. Do not describe the checked-in snapshot as live-current until the Google Workload Identity values are added and a manual workflow run passes.
+- The active daily Codex automation runs at 7:23 AM America/Vancouver. It uses separate local, scoped Search Console and GA4 credentials plus the existing DataForSEO environment, updates `data/cool-runnings-metrics-current.json` only after every source succeeds, runs tests, commits only the snapshot, pushes `main`, and verifies the production timestamp.
+- A complete refresh passed on July 20, 2026. The verified snapshot covers Search Console June 20–July 17 and GA4 June 22–July 19, with current DataForSEO counts.
+- The GitHub workflow no longer has a schedule, so it cannot generate another daily false failure. Its manual trigger is retained for a future portable Workload Identity path. That path still requires repository variable `GCP_PROJECT_ID` and secrets `GCP_WORKLOAD_IDENTITY_PROVIDER` and `GCP_SERVICE_ACCOUNT`.
 - The actual Cool Runnings site emits `phone_call` for every `tel:` click, `whatsapp_click` for `wa.me` clicks, and `generate_lead` only after the contact endpoint returns success. The site-side GA4 measurement ID is present on every generated page. Its server metrics implementation has passing coverage for Search Console aggregates, GA4 users/conversions, explicitly tagged Business Profile sessions, and direct Business Profile Performance API totals.
 - The separate `cool-runnings-deploy` Vercel project is not operational as a metrics source yet. As of July 17, its environment has GA4 property, GA4 Business Profile campaign, GSC site URL, and Blob credentials, but lacks `CRON_SECRET`, all five Google Workload Identity values needed by the route, and the optional four Business Profile OAuth/location values. The metrics API and cron code are currently uncommitted in the Cool Runnings worktree, so they are not live just because the local 31-test metrics suite passes.
 - The server-native Cool Runnings Vercel cron is coded but not operational. The `cool-runnings-deploy` project currently has no metrics environment variables and `/api/metrics` returns 404. It needs Blob storage, Google Workload Identity/Search Console access, GA4 access, `CRON_SECRET`, and optional Business Profile OAuth before it can replace the Codex automation.

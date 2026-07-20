@@ -1,7 +1,7 @@
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { GoogleAuth } from "google-auth-library";
+import { GoogleAuth, OAuth2Client } from "google-auth-library";
 
 const SEARCH_CONSOLE_API = "https://www.googleapis.com/webmasters/v3/sites";
 const GA4_API = "https://analyticsdata.googleapis.com/v1beta/properties";
@@ -76,8 +76,9 @@ export async function collectSearchConsole({ accessToken, siteUrl, window, fetch
 }
 
 export async function collectGa4({ accessToken, propertyId, window, fetchImpl = fetch }) {
+  const numericPropertyId = String(propertyId).replace(/^properties\//, "");
   const response = await requestJson(
-    `${GA4_API}/${encodeURIComponent(propertyId)}:runReport`,
+    `${GA4_API}/${encodeURIComponent(numericPropertyId)}:runReport`,
     googlePost(accessToken, {
       dateRanges: [window],
       dimensions: [{ name: "eventName" }],
@@ -178,7 +179,66 @@ async function getGoogleAccessToken() {
   return token.token;
 }
 
-export async function buildSnapshot({ env = process.env, now = new Date(), fetchImpl = fetch, accessToken }) {
+async function getGoogleAccessTokenFromFile({ credentialPath, scopes, sourceName }) {
+  const credentials = JSON.parse(await readFile(credentialPath, "utf8"));
+  let client;
+
+  if (credentials.client_id && credentials.client_secret && credentials.refresh_token) {
+    client = new OAuth2Client(credentials.client_id, credentials.client_secret);
+    client.setCredentials({
+      access_token: credentials.access_token || credentials.token,
+      refresh_token: credentials.refresh_token,
+      expiry_date: credentials.expiry_date || (credentials.expiry ? Date.parse(credentials.expiry) : undefined),
+      scope: Array.isArray(credentials.scopes) ? credentials.scopes.join(" ") : credentials.scope,
+    });
+  } else {
+    const auth = new GoogleAuth({ keyFile: credentialPath, scopes });
+    client = await auth.getClient();
+  }
+
+  const token = await client.getAccessToken();
+  if (!token.token) throw new Error(`${sourceName} credential did not produce an access token`);
+  return token.token;
+}
+
+async function resolveGoogleAccessTokens({ env, accessToken, accessTokens }) {
+  if (accessTokens?.searchConsole && accessTokens?.ga4) return accessTokens;
+  if (accessToken) return { searchConsole: accessToken, ga4: accessToken };
+
+  const gscCredentialPath = env.GSC_GOOGLE_APPLICATION_CREDENTIALS;
+  const ga4CredentialPath = env.GA4_GOOGLE_APPLICATION_CREDENTIALS;
+  if (!gscCredentialPath && !ga4CredentialPath) {
+    const sharedToken = await getGoogleAccessToken();
+    return { searchConsole: sharedToken, ga4: sharedToken };
+  }
+  if (!gscCredentialPath || !ga4CredentialPath) {
+    throw new Error(
+      "GSC_GOOGLE_APPLICATION_CREDENTIALS and GA4_GOOGLE_APPLICATION_CREDENTIALS must both be set",
+    );
+  }
+
+  const [searchConsole, ga4] = await Promise.all([
+    getGoogleAccessTokenFromFile({
+      credentialPath: gscCredentialPath,
+      scopes: ["https://www.googleapis.com/auth/webmasters.readonly"],
+      sourceName: "Search Console",
+    }),
+    getGoogleAccessTokenFromFile({
+      credentialPath: ga4CredentialPath,
+      scopes: ["https://www.googleapis.com/auth/analytics.readonly"],
+      sourceName: "GA4",
+    }),
+  ]);
+  return { searchConsole, ga4 };
+}
+
+export async function buildSnapshot({
+  env = process.env,
+  now = new Date(),
+  fetchImpl = fetch,
+  accessToken,
+  accessTokens,
+}) {
   requireEnv(env, [
     "GSC_SITE_URL",
     "GA4_PROPERTY_ID",
@@ -188,10 +248,20 @@ export async function buildSnapshot({ env = process.env, now = new Date(), fetch
   ]);
   const searchConsoleWindow = buildDateWindow(now, 28, Number(env.GSC_DATA_LAG_DAYS || 3));
   const ga4Window = buildDateWindow(now, 28, 1);
-  const googleToken = accessToken || await getGoogleAccessToken();
+  const googleTokens = await resolveGoogleAccessTokens({ env, accessToken, accessTokens });
   const [searchConsole, ga4, dataForSeo] = await Promise.all([
-    collectSearchConsole({ accessToken: googleToken, siteUrl: env.GSC_SITE_URL, window: searchConsoleWindow, fetchImpl }),
-    collectGa4({ accessToken: googleToken, propertyId: env.GA4_PROPERTY_ID, window: ga4Window, fetchImpl }),
+    collectSearchConsole({
+      accessToken: googleTokens.searchConsole,
+      siteUrl: env.GSC_SITE_URL,
+      window: searchConsoleWindow,
+      fetchImpl,
+    }),
+    collectGa4({
+      accessToken: googleTokens.ga4,
+      propertyId: env.GA4_PROPERTY_ID,
+      window: ga4Window,
+      fetchImpl,
+    }),
     collectDataForSeo({
       login: env.DATAFORSEO_LOGIN,
       password: env.DATAFORSEO_PASSWORD,
