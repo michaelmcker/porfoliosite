@@ -75,7 +75,7 @@ test("homepage presentation CTA resolves and uses the responsive V2 publishing a
   assert.equal(cta, "workflows/presentation-publishing.html");
   await access(fileURLToPath(new URL(cta, pathToFileURL(path.join(v2, "index.html")))));
   assert.match(presentation, /<picture>/);
-  assert.match(presentation, /<source media="\(max-width: 699px\)" srcset="assets\/workflows\/presentation-publishing-mobile\.png">/);
+  assert.match(presentation, /<source media="\(max-width: 699px\)" srcset="assets\/workflows\/presentation-publishing-mobile\.png"[^>]*>/);
   assert.match(presentation, /<img src="assets\/workflows\/presentation-publishing-desktop\.png"/);
   assert.doesNotMatch(presentation, /presentation-publishing-six-step\.png/);
 });

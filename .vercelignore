@@ -39,6 +39,7 @@ assets/design-refs/*
 assets/device-mockups/*
 !assets/device-mockups/laptop-three-quarter-rccv.png
 !assets/device-mockups/laptop-three-quarter-rccv-cutout.png
+!assets/device-mockups/laptop-three-quarter-rccv-cutout.webp
 
 assets/experience/*
 !assets/experience/experience-route-tight.png
@@ -47,7 +48,10 @@ assets/generated/*
 !assets/generated/json-prompt-image-output.png
 !assets/generated/json-prompt-person-coffee-headphones.png
 
-assets/portrait/
+assets/portrait/*
+!assets/portrait/production/
+assets/portrait/production/*
+!assets/portrait/production/static-clean-plate-collarless.webp
 assets/portrait-final/assets/poses/
 !assets/portrait-final/assets/poses-webp/
 
@@ -60,6 +64,7 @@ assets/screens/*
 !assets/screens/cool-runnings-city.png
 !assets/screens/cool-runnings-frost.png
 !assets/screens/cool-runnings-home.png
+!assets/screens/cool-runnings-home.webp
 !assets/screens/fountainhead-ai-visibility-dashboard-v2.png
 !assets/screens/fountainhead-ai-visibility-dashboard-v4-16x9.png
 !assets/screens/fountainhead-ai-visibility-dashboard-v4.png
@@ -69,7 +74,9 @@ assets/screens/*
 
 assets/videos/*
 !assets/videos/portfolio-hero-system-map-desktop-4k-sparse-loop.mp4
+!assets/videos/portfolio-hero-system-map-desktop-1080p.mp4
 !assets/videos/portfolio-hero-system-map-desktop-sparse-loop-poster.png
+!assets/videos/portfolio-hero-system-map-desktop-poster.webp
 !assets/videos/portfolio-hero-system-map-mobile-1080p.mp4
 !assets/videos/portfolio-hero-system-map-mobile-poster.png
 !assets/videos/rccv-showcase-laptop.mp4

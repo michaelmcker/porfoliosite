@@ -148,8 +148,8 @@ test("selected work gives properly scaled laptop and browser objects more room t
   assert.match(html, /Explore the interactive Stations of the Cross/);
   assert.match(html, /<figure class="laptop-object">/);
   assert.match(css, /\.laptop-object\s*\{[^}]*background:\s*transparent/s);
-  assert.match(css, /\.laptop-object video\s*\{[^}]*mask-image:\s*url\("\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.png"\)/s);
-  await access(new URL("../assets/device-mockups/laptop-three-quarter-rccv-cutout.png", v2Url));
+  assert.match(css, /\.laptop-object video\s*\{[^}]*mask-image:\s*url\("\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.webp"\)/s);
+  await access(new URL("../assets/device-mockups/laptop-three-quarter-rccv-cutout.webp", v2Url));
   assert.match(css, /\.browser-object\s*\{[^}]*width:\s*100%/s);
   assert.match(html, /class="cool-laptop"[^>]*data-scroll-reveal="cool-runnings"/);
   assert.match(html, /class="cool-laptop-screen"/);
