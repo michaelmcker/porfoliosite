@@ -48,10 +48,7 @@ assets/generated/*
 !assets/generated/json-prompt-image-output.png
 !assets/generated/json-prompt-person-coffee-headphones.png
 
-assets/portrait/*
-!assets/portrait/production/
-assets/portrait/production/*
-!assets/portrait/production/static-clean-plate-collarless.webp
+assets/portrait/
 assets/portrait-final/assets/poses/
 !assets/portrait-final/assets/poses-webp/
 

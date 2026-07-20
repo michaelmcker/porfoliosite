@@ -47,10 +47,10 @@ test("Vercel publishes every optimized asset introduced by the performance pass"
     "assets/videos/portfolio-hero-system-map-desktop-poster.webp",
     "assets/device-mockups/laptop-three-quarter-rccv-cutout.webp",
     "assets/screens/cool-runnings-home.webp",
-    "assets/portrait/production/static-clean-plate-collarless.webp",
   ]) {
     assert.match(ignore, new RegExp(`!${asset.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`));
   }
+  assert.doesNotMatch(ignore, /^assets\/portrait-final\/assets\/production(?:\/|\*)/m);
 });
 
 test("workflow evidence uses a light neutral chapter and artifact stage", async () => {
