@@ -122,11 +122,11 @@ test("Cool Runnings metrics refresh is a remote scheduled GitHub Action", async 
   const workflow = await read(".github/workflows/refresh-cool-runnings-metrics.yml");
 
   assert.match(workflow, /schedule:\s*\n\s*-\s*cron:/);
-  assert.match(workflow, /id-token:\s*write/);
-  assert.match(workflow, /google-github-actions\/auth@v3/);
-  assert.match(workflow, /workload_identity_provider:\s*\$\{\{\s*vars\.GCP_WORKLOAD_IDENTITY_PROVIDER\s*\}\}/);
-  assert.match(workflow, /service_account:\s*\$\{\{\s*vars\.GCP_SERVICE_ACCOUNT\s*\}\}/);
+  assert.match(workflow, /GSC_GOOGLE_OAUTH_CREDENTIALS:\s*\$\{\{\s*secrets\.GSC_GOOGLE_OAUTH_CREDENTIALS\s*\}\}/);
+  assert.match(workflow, /GA4_GOOGLE_OAUTH_CREDENTIALS:\s*\$\{\{\s*secrets\.GA4_GOOGLE_OAUTH_CREDENTIALS\s*\}\}/);
+  assert.match(workflow, /GSC_GOOGLE_APPLICATION_CREDENTIALS:\s*\$\{\{\s*runner\.temp\s*\}\}\/gsc-google-oauth\.json/);
+  assert.match(workflow, /GA4_GOOGLE_APPLICATION_CREDENTIALS:\s*\$\{\{\s*runner\.temp\s*\}\}\/ga4-google-oauth\.json/);
   assert.match(workflow, /node scripts\/refresh-cool-runnings-metrics\.mjs/);
   assert.match(workflow, /git push/);
-  assert.doesNotMatch(workflow, /launchctl|\/Users\/michaelmckerracher|refresh_token|GSC_CREDENTIALS_JSON|GA4_CREDENTIALS_JSON/);
+  assert.doesNotMatch(workflow, /google-github-actions\/auth|workload_identity_provider|launchctl|\/Users\/michaelmckerracher|refresh_token/);
 });

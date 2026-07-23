@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  id-token: write
 
 concurrency:
   group: cool-runnings-metrics
@@ -20,12 +19,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Authenticate to Google with short-lived credentials
-        uses: google-github-actions/auth@v3
-        with:
-          project_id: ${{ vars.GCP_PROJECT_ID }}
-          workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
-          service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
+      - name: Materialize scoped Google OAuth credentials
+        env:
+          GSC_GOOGLE_OAUTH_CREDENTIALS: ${{ secrets.GSC_GOOGLE_OAUTH_CREDENTIALS }}
+          GA4_GOOGLE_OAUTH_CREDENTIALS: ${{ secrets.GA4_GOOGLE_OAUTH_CREDENTIALS }}
+        run: |
+          test -n "$GSC_GOOGLE_OAUTH_CREDENTIALS"
+          test -n "$GA4_GOOGLE_OAUTH_CREDENTIALS"
+          printf '%s' "$GSC_GOOGLE_OAUTH_CREDENTIALS" > "$RUNNER_TEMP/gsc-google-oauth.json"
+          printf '%s' "$GA4_GOOGLE_OAUTH_CREDENTIALS" > "$RUNNER_TEMP/ga4-google-oauth.json"
+          chmod 600 "$RUNNER_TEMP/gsc-google-oauth.json" "$RUNNER_TEMP/ga4-google-oauth.json"
 
       - uses: actions/setup-node@v4
         with:
@@ -38,6 +41,8 @@ jobs:
         env:
           GSC_SITE_URL: sc-domain:coolrunningslandscaping.com
           GA4_PROPERTY_ID: properties/527841655
+          GSC_GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/gsc-google-oauth.json
+          GA4_GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/ga4-google-oauth.json
           GSC_DATA_LAG_DAYS: "3"
           DATAFORSEO_TARGET: coolrunningslandscaping.com
           DATAFORSEO_LOCATION_NAME: Canada
