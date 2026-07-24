@@ -113,7 +113,7 @@ try {
     });
 
     assert.ok(hero.overflow <= 0, `${viewport.width}px homepage overflows horizontally by ${hero.overflow}px`);
-    assert.equal(hero.overlayCount, 1, `${viewport.width}px hero has duplicated HTML label overlays`);
+    assert.equal(hero.overlayCount, 4, `${viewport.width}px hero is missing an anchored HTML label overlay`);
     assert.match(
       hero.poster,
       viewport.width <= 699 ? /mobile-poster\.webp$/ : /desktop-poster\.webp$/,

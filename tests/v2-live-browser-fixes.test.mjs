@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
-test("hero uses one baked label system and a breakpoint-matched poster", async () => {
+test("hero uses real HTML labels anchored to a breakpoint-matched poster", async () => {
   const [html, css, app] = await Promise.all([
     read("v2/index.html"),
     read("v2/styles.css"),
@@ -12,7 +12,10 @@ test("hero uses one baked label system and a breakpoint-matched poster", async (
   ]);
 
   assert.match(html, /class="hero-video-crop"[\s\S]*class="hero-video-source"/);
-  assert.doesNotMatch(html, /hero-video-inputs|hero-video-label-system|hero-video-label-outputs/);
+  assert.match(html, /class="hero-video-inputs"[\s\S]*Data &amp; insights[\s\S]*Audience signals[\s\S]*Competition[\s\S]*Search trends[\s\S]*Brand rules/);
+  assert.match(html, /hero-video-label-system"><span>Workflow<br>system<\/span>/);
+  assert.match(html, /hero-video-label-outputs"><span>Outputs<\/span>/);
+  assert.match(html, /hero-video-statement"><strong>Systems thinking<\/strong>/);
   assert.match(html, /data-poster-desktop="\.\.\/assets\/videos\/portfolio-hero-system-map-desktop-poster\.webp"/);
   assert.match(html, /data-poster-mobile="\.\.\/assets\/videos\/portfolio-hero-system-map-mobile-poster\.webp"/);
   assert.match(app, /syncMotionPoster/);
@@ -21,7 +24,10 @@ test("hero uses one baked label system and a breakpoint-matched poster", async (
   assert.match(css, /\.hero-system-media\s*\{[^}]*aspect-ratio:\s*4\s*\/\s*3/s);
   assert.match(css, /\.hero-video-source\s*\{[^}]*width:\s*133\.333%[^}]*transform:\s*translateX\(-18%\)/s);
   assert.match(css, /@media \(max-width:\s*699px\)[\s\S]*?\.hero-video-source\s*\{[^}]*width:\s*100%[^}]*transform:\s*none/s);
-  assert.doesNotMatch(css, /\.hero-video-inputs|\.hero-video-label-system|\.hero-video-label-outputs/);
+  assert.match(css, /\.hero-video-inputs\s*\{[^}]*background:\s*transparent[^}]*box-shadow:\s*none/s);
+  assert.match(css, /\.hero-video-label-system\s*\{[^}]*left:\s*57\.4%/s);
+  assert.match(css, /\.hero-video-label-outputs\s*\{[^}]*right:\s*\.7%/s);
+  assert.match(css, /@media \(max-width:\s*699px\)[\s\S]*?\.hero-video-inputs\s*\{[^}]*height:\s*28%/s);
 });
 
 test("hero corrections stay visible after the first decoded frame without appearing before media is ready", async () => {
