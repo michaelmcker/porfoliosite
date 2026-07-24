@@ -74,7 +74,8 @@ test('uses inline address suggestions instead of a confirmation modal', async ()
   assert.match(client, /\/api\/proposal\/suggest/);
   assert.match(client, /\/api\/proposal\/generate/);
   assert.match(client, /URL\.createObjectURL/);
-  assert.match(html, /<iframe/);
+  assert.match(html, /data-proposal-preview-image/);
+  assert.doesNotMatch(html, /<iframe/);
 });
 
 test('keeps secrets and VI application dependencies out of browser code', async () => {
@@ -111,10 +112,10 @@ test('presents the V2 proposal builder as a compact portfolio tool', async () =>
 
   assert.match(html, /<h1 id="proposal-title">A local proposal, assembled around the business\.<\/h1>/);
   assert.match(html, /This proposal was one output of the local prospecting workflow/i);
-  assert.match(html, /Custom proposal/);
-  assert.match(html, /Pricing/);
-  assert.match(html, />Screens</);
-  assert.match(html, /Impressions/);
+  assert.match(html, /Custom map/);
+  assert.match(html, /Generated sample ad/);
+  assert.match(html, /Unique industry copy/);
+  assert.match(html, /Offer/);
   assert.doesNotMatch(html, /simplified public demonstration|API credentials remain server-side/i);
   assert.match(html, /https:\/\/www\.linkedin\.com\//);
   assert.match(html, /https:\/\/github\.com\//);

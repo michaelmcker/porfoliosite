@@ -80,7 +80,9 @@ const motionVideos = [...document.querySelectorAll("[data-motion-video]")];
 const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
 const visibleMotionVideos = new Set();
 const accommodationPage = document.querySelector("[data-accommodation-page]");
+const accommodationViewport = accommodationPage?.closest(".accommodation-viewport");
 const accommodationUrl = document.querySelector("[data-accommodation-url]");
+const ACCOMMODATION_DESKTOP_WIDTH = 1100;
 const accommodationUrls = {
   overview: "okanagantreehouse.ca",
   treehouse: "okanagantreehouse.ca/treehouse",
@@ -93,6 +95,31 @@ const loadAccommodationPreview = () => {
 };
 
 if (accommodationPage) {
+  const syncAccommodationViewport = () => {
+    if (!accommodationViewport) return;
+    const bounds = accommodationViewport.getBoundingClientRect();
+    if (!bounds.width || !bounds.height) return;
+    const scale = Math.min(1, bounds.width / ACCOMMODATION_DESKTOP_WIDTH);
+    const scaled = scale < .999;
+    accommodationViewport.classList.toggle("is-desktop-scaled", scaled);
+    if (!scaled) {
+      accommodationPage.style.removeProperty("width");
+      accommodationPage.style.removeProperty("height");
+      accommodationPage.style.removeProperty("transform");
+      return;
+    }
+    accommodationPage.style.width = `${ACCOMMODATION_DESKTOP_WIDTH}px`;
+    accommodationPage.style.height = `${bounds.height / scale}px`;
+    accommodationPage.style.transform = `scale(${scale})`;
+  };
+
+  syncAccommodationViewport();
+  if ("ResizeObserver" in window) {
+    new ResizeObserver(syncAccommodationViewport).observe(accommodationViewport);
+  } else {
+    window.addEventListener("resize", syncAccommodationViewport, { passive: true });
+  }
+
   if ("IntersectionObserver" in window) {
     const accommodationObserver = new IntersectionObserver((entries, observer) => {
       if (!entries.some((entry) => entry.isIntersecting)) return;
@@ -112,8 +139,22 @@ window.addEventListener("message", (event) => {
   if (accommodationUrl) accommodationUrl.textContent = accommodationUrls[event.data.scene];
 });
 
+const heroPosterMedia = window.matchMedia("(max-width: 699px)");
+const syncMotionPoster = (video) => {
+  const responsivePoster = heroPosterMedia.matches
+    ? video.dataset.posterMobile
+    : video.dataset.posterDesktop;
+  if (responsivePoster && video.getAttribute("poster") !== responsivePoster) {
+    video.setAttribute("poster", responsivePoster);
+  }
+};
+
+motionVideos.forEach(syncMotionPoster);
+heroPosterMedia.addEventListener?.("change", () => motionVideos.forEach(syncMotionPoster));
+
 const loadMotionVideo = (video) => {
   if (video.dataset.motionLoaded === "true") return;
+  syncMotionPoster(video);
   if (video.dataset.poster && !video.poster) video.poster = video.dataset.poster;
   video.querySelectorAll("source[data-src]").forEach((source) => {
     source.src = source.dataset.src;

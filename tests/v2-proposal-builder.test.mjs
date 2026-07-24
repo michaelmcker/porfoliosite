@@ -19,7 +19,7 @@ test("V2 proposal builder reuses the working generator contract", async () => {
     "data-address-field",
     "data-address-results",
     "data-proposal-error",
-    "data-proposal-frame",
+    "data-proposal-preview-image",
     "data-proposal-loading",
     "data-loading-message",
     "data-preview-state",
@@ -33,47 +33,50 @@ test("V2 proposal builder reuses the working generator contract", async () => {
 
   assert.match(html, /<link rel="stylesheet" href="styles\.css">/);
   assert.match(html, /<link rel="stylesheet" href="proposal-generator\.css">/);
-  assert.match(html, /src="\.\.\/proposal-generator\.js\?v=20260720-2"/);
+  assert.match(html, /src="\.\.\/proposal-generator\.js\?v=20260724-2"/);
   assert.match(homepage, /href="proposal-generator\.html">Try the generator<\/a>/);
   assert.match(client, /\/api\/proposal\/suggest/);
   assert.match(client, /\/api\/proposal\/generate/);
 });
 
 test("V2 proposal builder explains the four generated elements", async () => {
-  const [html, css] = await Promise.all([
+  const [html, css, client] = await Promise.all([
     read("v2/proposal-generator.html"),
     read("v2/proposal-generator.css"),
+    read("proposal-generator.js"),
   ]);
 
   assert.equal((html.match(/class="proposal-callout/g) || []).length, 4);
   for (const copy of [
-    "Custom proposal",
-    "Business and industry context shape the copy, elevator creative, and mapped opportunity.",
-    "Pricing",
-    "Current per-screen pricing is carried into the proposal package.",
-    "Screens",
-    "Nearby inventory supplies the live number of available screens.",
-    "Impressions",
-    "The proposal carries the monthly impression estimate for that inventory.",
+    "Custom map",
+    "Generated sample ad",
+    "Unique industry copy",
+    "Offer",
   ]) {
     assert.ok(html.includes(copy), `missing approved annotation copy: ${copy}`);
   }
 
-  assert.equal((html.match(/data-proposal-target="(proposal|pricing|screens|impressions)"/g) || []).length, 4);
-  assert.equal((html.match(/data-proposal-callout="(proposal|pricing|screens|impressions)"/g) || []).length, 4);
-  assert.equal((html.match(/data-proposal-path="(proposal|pricing|screens|impressions)"/g) || []).length, 4);
+  assert.equal((html.match(/data-proposal-target="(map|ad|copy|offer)"/g) || []).length, 4);
+  assert.equal((html.match(/data-proposal-callout="(map|ad|copy|offer)"/g) || []).length, 4);
+  assert.equal((html.match(/data-proposal-path="(map|ad|copy|offer)"/g) || []).length, 4);
   assert.match(html, /class="proposal-annotation-paths"[^>]+data-proposal-connectors/);
   assert.match(html, /class="proposal-preview__sample"[^>]+vertical-impression-local-proposal-current\.png/);
   assert.match(css, /\.proposal-annotations\s*\{[^}]*pointer-events:\s*none/s);
   assert.match(css, /\.proposal-explainer\s*\{[^}]*display:\s*grid[^}]*grid-template-columns:/s);
   assert.match(css, /\.proposal-annotation-paths\s*\{[^}]*position:\s*absolute[^}]*pointer-events:\s*none/s);
   assert.match(css, /\.proposal-target\s*\{[^}]*position:\s*absolute[^}]*border-radius:\s*50%/s);
-  assert.match(css, /\.proposal-target--pricing\s*\{[^}]*left:\s*14%[^}]*top:\s*79\.5%/s);
-  assert.match(css, /\.proposal-target--screens\s*\{[^}]*left:\s*14%[^}]*top:\s*64\.5%/s);
-  assert.match(css, /\.proposal-target--impressions\s*\{[^}]*left:\s*14%[^}]*top:\s*71\.5%/s);
+  assert.match(css, /\.proposal-target--map\s*\{[^}]*left:\s*64%[^}]*top:\s*70%/s);
+  assert.match(css, /\.proposal-target--ad\s*\{[^}]*left:\s*48%[^}]*top:\s*29%/s);
+  assert.match(css, /\.proposal-target--copy\s*\{[^}]*left:\s*34%[^}]*top:\s*10%/s);
+  assert.match(css, /\.proposal-target--offer\s*\{[^}]*left:\s*14%[^}]*top:\s*79\.5%/s);
   assert.doesNotMatch(css, /\.proposal-annotations\s*\{[^}]*position:\s*absolute/s);
-  assert.match(css, /:has\(iframe\[src\^="blob:"\]\)/);
   assert.match(css, /@media \(max-width: 700px\)[\s\S]*?\.proposal-annotation-paths\s*\{[^}]*display:\s*none/s);
+  assert.match(client, /application\/vnd\.michael\.proposal-bundle/);
+  assert.match(client, /function unpackProposalBundle/);
+  assert.match(client, /generatedPreviewUrl\s*=\s*URL\.createObjectURL\(generated\.preview\)/);
+  assert.match(css, /\.proposal-preview__sample\s*\{[^}]*object-fit:\s*cover/s);
+  assert.doesNotMatch(html, /data-proposal-frame|<iframe/);
+  assert.doesNotMatch(css, /iframe\[src\^="blob:"\]|has-generated-pdf/);
 });
 
 test("V2 proposal callouts are boxed off the proposal and connect it to reviewed outreach", async () => {
@@ -134,6 +137,9 @@ test("V2 proposal form personalizes the outreach email and explains generation p
   assert.match(client, /x-proposal-screen-count/);
   assert.match(client, /generatedScreenCount == null\s*\?\s*'\[number of screens\]'\s*:\s*String\(generatedScreenCount\)/);
   assert.match(generateApi, /X-Proposal-Screen-Count/);
+  assert.match(generateApi, /application\/vnd\.michael\.proposal-bundle/);
+  assert.match(generateApi, /page\.screenshot/);
+  assert.match(generateApi, /writeUInt32BE/);
   assert.match(client, /Generating — should be ready in a few minutes\./);
   assert.match(client, /classList\.add\(['"]is-generating['"]\)/);
   assert.match(client, /classList\.remove\(['"]is-generating['"]\)/);
@@ -194,7 +200,7 @@ test("Vercel scopes strict browser headers to the new proposal route", async () 
 
   assert.match(headers["content-security-policy"], /default-src 'self'/);
   assert.match(headers["content-security-policy"], /connect-src 'self'/);
-  assert.match(headers["content-security-policy"], /frame-src 'self' blob:/);
+  assert.match(headers["content-security-policy"], /frame-src 'none'/);
   assert.equal(headers["x-content-type-options"], "nosniff");
   assert.equal(headers["x-frame-options"], "SAMEORIGIN");
   assert.equal(headers["referrer-policy"], "strict-origin-when-cross-origin");

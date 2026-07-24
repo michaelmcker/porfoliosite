@@ -20,6 +20,7 @@
   let entranceFrame;
   let entranceStart = 0;
   let entranceStarted = false;
+  let entranceCancelled = false;
   let engine;
   let bodies = [];
   let animationFrame;
@@ -246,6 +247,7 @@
     lockViewport();
     story.dataset.entranceStarts = String(Number(story.dataset.entranceStarts || 0) + 1);
     await prepareContactImages();
+    if (entranceCancelled) return;
     setState("entrance");
     try {
       await preparePhysics();
@@ -254,6 +256,7 @@
       showStaticFallback();
       return;
     }
+    if (entranceCancelled) return;
     entranceStart = performance.now();
     entranceFrame = requestAnimationFrame(stepEntrance);
   }
@@ -483,6 +486,14 @@
   window.addEventListener("resize", () => {
     if (engine) rebuildBoundaries();
   }, { passive: true });
+  window.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !viewportLock) return;
+    entranceCancelled = true;
+    if (entranceFrame) cancelAnimationFrame(entranceFrame);
+    entranceFrame = undefined;
+    unlockViewport();
+    showStaticFallback();
+  });
   window.addEventListener("pagehide", unlockViewport, { once: true });
 
   const visibilityObserver = "IntersectionObserver" in window

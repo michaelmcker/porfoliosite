@@ -26,6 +26,7 @@ function promoteHomepage(source) {
     ['src="portrait/', 'src="v2/portrait/'],
     ['href="work/', 'href="v2/work/'],
     ['href="workflows/', 'href="v2/workflows/'],
+    ['src="app.js?v=', 'src="v2/app.js?v='],
     ['src="app.js"', 'src="v2/app.js"'],
     ['src="contact-finale.js"', 'src="v2/contact-finale.js"'],
   ]);

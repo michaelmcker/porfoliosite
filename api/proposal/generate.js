@@ -30,6 +30,7 @@ const CHROMIUM_VERSION = '149.0.0';
 const INVENTORY = JSON.parse(readFileSync(new URL('../_lib/proposal/inventory.json', import.meta.url), 'utf8'));
 const IMAGE_CACHE_PATH = '/tmp/portfolio-proposal-image-cache.json';
 const IMAGE_CACHE_TTL = 60 * 60 * 1000;
+const PROPOSAL_BUNDLE_TYPE = 'application/vnd.michael.proposal-bundle';
 
 function sendJson(response, status, payload) {
   response.statusCode = status;
@@ -72,6 +73,14 @@ async function chromiumPath() {
 
 function assetDataUrl(buffer, type) {
   return `data:${type};base64,${buffer.toString('base64')}`;
+}
+
+function packProposalBundle(preview, pdf) {
+  const previewBuffer = Buffer.from(preview);
+  const pdfBuffer = Buffer.from(pdf);
+  const header = Buffer.allocUnsafe(4);
+  header.writeUInt32BE(previewBuffer.length, 0);
+  return Buffer.concat([header, previewBuffer, pdfBuffer]);
 }
 
 function imageCacheKey(input) {
@@ -204,6 +213,7 @@ export default async function handler(request, response) {
 
     try {
       const page = await browser.newPage();
+      await page.setViewport({ width: 816, height: 1056, deviceScaleFactor: 1 });
       await page.setRequestInterception(true);
       page.on('request', (request) => {
         const requestUrl = request.url();
@@ -211,6 +221,16 @@ export default async function handler(request, response) {
         else request.abort();
       });
       await page.setContent(html, { waitUntil: 'domcontentloaded' });
+      await page.evaluate(() => document.fonts?.ready);
+      const wantsBundle = String(request.headers.accept || '').includes(PROPOSAL_BUNDLE_TYPE);
+      const preview = wantsBundle
+        ? await page.screenshot({
+          type: 'jpeg',
+          quality: 84,
+          clip: { x: 0, y: 0, width: 816, height: 1056 },
+          captureBeyondViewport: false,
+        })
+        : null;
       const pdf = await page.pdf({
         width: '8.5in',
         height: '11in',
@@ -219,12 +239,14 @@ export default async function handler(request, response) {
         margin: { top: 0, right: 0, bottom: 0, left: 0 },
       });
       const filename = `${input.businessName.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '').toLowerCase()}-elevator-advertising-proposal.pdf`;
+      const payload = wantsBundle ? packProposalBundle(preview, pdf) : Buffer.from(pdf);
       response.statusCode = 200;
-      response.setHeader('Content-Type', 'application/pdf');
+      response.setHeader('Content-Type', wantsBundle ? PROPOSAL_BUNDLE_TYPE : 'application/pdf');
       response.setHeader('Content-Disposition', `inline; filename="${filename}"`);
       response.setHeader('X-Proposal-Screen-Count', String(inventory.screens));
       response.setHeader('Cache-Control', 'private, no-store');
-      return response.end(Buffer.from(pdf));
+      response.setHeader('Content-Length', String(payload.length));
+      return response.end(payload);
     } finally {
       await browser.close();
     }

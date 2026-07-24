@@ -115,7 +115,8 @@ test("Fountainhead role uses the approved marketing engineer title", async () =>
 
 test("proposal preview does not download an unused PDF before generation", async () => {
   const html = await read("v2/proposal-generator.html");
-  assert.match(html, /<iframe[\s\S]*?title="Generated elevator advertising proposal"[\s\S]*?src="about:blank"/);
+  assert.match(html, /<img[^>]+vertical-impression-local-proposal-current\.png[^>]+data-proposal-preview-image/);
+  assert.doesNotMatch(html, /<iframe|data-proposal-frame/);
   assert.doesNotMatch(html, /src="\.\.\/output\/pdf\/vertical-impression-local-proposal-sample\.pdf/);
 });
 

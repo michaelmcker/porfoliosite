@@ -80,7 +80,7 @@ test("V2 is isolated in its own three production files", async () => {
   ]);
 
   assert.match(html, /<link[^>]+href="styles\.css"/);
-  assert.match(html, /<script[^>]+src="app\.js"/);
+  assert.match(html, /<script[^>]+src="app\.js(?:\?v=[^"]+)?"/);
   assert.doesNotMatch(html, /(?:href|src)="\.\.\/(?:styles\.css|app\.js|workflow-reset\.css|styles\/)/);
   assert.doesNotMatch(css, /@import\s+["']?\.\.\/(?:styles|workflow-reset)/);
   assert.ok(app.length > 0);

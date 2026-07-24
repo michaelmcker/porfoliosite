@@ -121,7 +121,7 @@ test("proposal routes share strict browser headers and API no-store headers", as
     assert.ok(route, `missing security headers for ${source}`);
     const headers = Object.fromEntries(route.headers.map(({ key, value }) => [key.toLowerCase(), value]));
     assert.match(headers["content-security-policy"], /default-src 'self'/);
-    assert.match(headers["content-security-policy"], /frame-src 'self' blob:/);
+    assert.match(headers["content-security-policy"], /frame-src 'none'/);
     assert.equal(headers["x-frame-options"], "SAMEORIGIN");
   }
 });

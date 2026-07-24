@@ -79,8 +79,17 @@ The generated image URL comes from the authenticated LetzAI response and is not 
 ```bash
 npm test
 npm audit --omit=dev
+node tests/qa-v2-home-breakpoints.mjs
 node tests/qa-v2-proposal-builder.mjs
 vercel build --yes
 git diff --check
 git diff --name-only -- proposal-generator.html proposal-generator.css proposal-generator.js index.html styles.css app.js
 ```
+
+## July 24, 2026 Follow-up
+
+- The native PDF iframe was removed from the generated in-page state. Chrome's PDF plugin is a fixed desktop surface that forced pan and zoom on narrow viewports.
+- Generation now negotiates a private binary proposal bundle: a four-byte preview-length header, a fitted first-page JPEG, then the original PDF. The responsive image becomes the preview; Open PDF and Download continue to use the PDF blob.
+- The proposal CSP is tightened to `frame-src 'none'`. The browser still has no Mapbox, LetzAI, or inventory access.
+- Permanent browser QA now covers 1440, 1024, 768, 390, and 320 pixels. All four approved points—Custom map, Generated sample ad, Unique industry copy, and Offer—remain present; desktop curves end on their targets; mobile uses the same numbered targets and a fitted generated page without horizontal panning.
+- `npm audit --omit=dev` again reports zero known production vulnerabilities. A filename-only tracked-source scan found no credential values; `.env.example` contains empty names only, the provider code reads `process.env`, and the Mapbox test uses a fake token.

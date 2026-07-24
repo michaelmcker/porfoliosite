@@ -5,7 +5,7 @@ const results = document.querySelector('[data-address-results]');
 const submitButton = form?.querySelector('button[type="submit"]');
 const submitLabel = document.querySelector('[data-submit-label]');
 const errorBox = document.querySelector('[data-proposal-error]');
-const frame = document.querySelector('[data-proposal-frame]');
+const previewImage = document.querySelector('[data-proposal-preview-image]');
 const loading = document.querySelector('[data-proposal-loading]');
 const loadingMessage = document.querySelector('[data-loading-message]');
 const previewState = document.querySelector('[data-preview-state]');
@@ -30,7 +30,9 @@ let activeSuggestion = -1;
 let suggestionTimer = 0;
 let suggestionRequest = null;
 let proposalUrl = '';
+let generatedPreviewUrl = '';
 let generatedScreenCount = null;
+const PROPOSAL_BUNDLE_TYPE = 'application/vnd.michael.proposal-bundle';
 
 const loadingSteps = [
   'Finding nearby elevator inventory.',
@@ -90,6 +92,19 @@ function syncProposalConnectors() {
     const secondControlX = endX + Math.min(150, horizontalGap * .5);
     path.setAttribute('d', `M ${startX} ${startY} C ${firstControlX} ${startY}, ${secondControlX} ${endY}, ${endX} ${endY}`);
   });
+}
+
+function unpackProposalBundle(buffer) {
+  if (buffer.byteLength < 5) throw new Error('The generated proposal response was incomplete.');
+  const view = new DataView(buffer);
+  const previewLength = view.getUint32(0);
+  if (previewLength < 1 || previewLength > buffer.byteLength - 5) {
+    throw new Error('The generated proposal preview was invalid.');
+  }
+  return {
+    preview: new Blob([buffer.slice(4, 4 + previewLength)], { type: 'image/jpeg' }),
+    pdf: new Blob([buffer.slice(4 + previewLength)], { type: 'application/pdf' }),
+  };
 }
 
 function updateEmailPreview() {
@@ -269,7 +284,7 @@ form?.addEventListener('submit', async (event) => {
   try {
     const response = await fetch('/api/proposal/generate', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/pdf' },
+      headers: { 'Content-Type': 'application/json', Accept: PROPOSAL_BUNDLE_TYPE },
       body: JSON.stringify({
         businessName: form.elements.businessName.value.trim(),
         businessType: form.elements.businessType.value,
@@ -282,9 +297,18 @@ form?.addEventListener('submit', async (event) => {
       throw new Error(payload.error || 'Proposal generation failed.');
     }
 
-    const pdf = await response.blob();
+    const responseType = response.headers.get('content-type') || '';
+    const generated = responseType.includes(PROPOSAL_BUNDLE_TYPE)
+      ? unpackProposalBundle(await response.arrayBuffer())
+      : { pdf: await response.blob(), preview: null };
     if (proposalUrl) URL.revokeObjectURL(proposalUrl);
-    proposalUrl = URL.createObjectURL(pdf);
+    if (generatedPreviewUrl) URL.revokeObjectURL(generatedPreviewUrl);
+    proposalUrl = URL.createObjectURL(generated.pdf);
+    if (generated.preview && previewImage) {
+      generatedPreviewUrl = URL.createObjectURL(generated.preview);
+      previewImage.src = generatedPreviewUrl;
+      previewImage.alt = `${form.elements.businessName.value.trim()} generated elevator advertising proposal preview`;
+    }
     const disposition = response.headers.get('content-disposition') || '';
     const filename = disposition.match(/filename="?([^";]+)"?/i)?.[1] || 'elevator-advertising-proposal.pdf';
     const screenCount = Number.parseInt(response.headers.get('x-proposal-screen-count') || '', 10);
@@ -293,13 +317,11 @@ form?.addEventListener('submit', async (event) => {
       updateEmailPreview();
     }
 
-    frame.src = `${proposalUrl}#view=FitH&toolbar=0`;
     openPdf.href = proposalUrl;
     downloadPdf.href = proposalUrl;
     downloadPdf.download = filename;
     previewActions.hidden = false;
     previewState.textContent = 'Generated proposal';
-    frame.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
   } catch (error) {
     previewState.textContent = 'Approved sample';
     setError(error.message || 'Proposal generation failed.');
@@ -310,6 +332,7 @@ form?.addEventListener('submit', async (event) => {
 
 window.addEventListener('beforeunload', () => {
   if (proposalUrl) URL.revokeObjectURL(proposalUrl);
+  if (generatedPreviewUrl) URL.revokeObjectURL(generatedPreviewUrl);
 });
 
 if (proposalExplainer && proposalConnectors) {

@@ -10,6 +10,7 @@ const repoRoot = fileURLToPath(new URL('../', import.meta.url));
 const chromePath = process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const screenshotDirectory = process.env.QA_V2_PROPOSAL_SCREENSHOT_DIR;
 const requests = [];
+const pageErrors = [];
 
 const types = {
   '.css': 'text/css; charset=utf-8',
@@ -42,14 +43,20 @@ const server = createServer(async (request, response) => {
 
   if (url.pathname === '/api/proposal/generate') {
     requests.push(url.pathname);
-    const pdf = await readFile(path.join(repoRoot, 'output/pdf/vertical-impression-local-proposal-sample.pdf'));
+    const [pdf, preview] = await Promise.all([
+      readFile(path.join(repoRoot, 'output/pdf/vertical-impression-local-proposal-sample.pdf')),
+      readFile(path.join(repoRoot, 'assets/samples/vertical-impression-local-proposal-current.png')),
+    ]);
+    const header = Buffer.allocUnsafe(4);
+    header.writeUInt32BE(preview.length, 0);
+    const bundle = Buffer.concat([header, preview, pdf]);
     response.writeHead(200, {
-      'Content-Type': 'application/pdf',
+      'Content-Type': 'application/vnd.michael.proposal-bundle',
       'Content-Disposition': 'inline; filename="midtown-family-dental-elevator-advertising-proposal.pdf"',
       'X-Proposal-Screen-Count': '42',
       'Cache-Control': 'private, no-store',
     });
-    return response.end(pdf);
+    return response.end(bundle);
   }
 
   const pathname = url.pathname === '/' ? '/v2/proposal-generator.html' : decodeURIComponent(url.pathname);
@@ -116,7 +123,7 @@ async function inspectLayout(page) {
       }),
       annotationPointerEvents: getComputedStyle(document.querySelector('.proposal-annotations')).pointerEvents,
       visibleListNumbers: [...document.querySelectorAll('.proposal-callout > span')].filter(visible).length,
-      frameSource: document.querySelector('[data-proposal-frame]').getAttribute('src'),
+      previewSource: document.querySelector('[data-proposal-preview-image]').getAttribute('src'),
       sampleVisible: visible(document.querySelector('.proposal-preview__sample')),
       minimumControlHeight: Math.min(...[...document.querySelectorAll('.proposal-form input, .proposal-form select, .proposal-form button, .proposal-preview__actions a')]
         .filter((element) => !element.closest('[hidden]'))
@@ -148,6 +155,7 @@ async function inspectLayout(page) {
       })(),
       emailLocation: document.querySelector('[data-email-location]')?.textContent,
       emailScreenCount: document.querySelector('[data-email-screen-count]')?.textContent,
+      calloutLabels: [...document.querySelectorAll('.proposal-callout h2')].map((heading) => heading.textContent.trim()),
     };
   });
 }
@@ -172,7 +180,7 @@ try {
   assert.equal(desktopLayout.connectorTargetsInFrame, true, 'desktop annotation targets are not anchored inside the PDF');
   assert.equal(desktopLayout.annotationPointerEvents, 'none', 'annotations can block the live builder');
   assert.equal(desktopLayout.visibleListNumbers, 0, 'desktop callouts duplicate their connector numbers');
-  assert.equal(desktopLayout.frameSource, 'about:blank', 'initial preview downloads a hidden PDF before generation');
+  assert.match(desktopLayout.previewSource, /vertical-impression-local-proposal-current\.png$/, 'initial approved proposal preview is missing');
   assert.equal(desktopLayout.sampleVisible, true, 'approved sample image is not visible before generation');
   assert.ok(desktopLayout.minimumControlHeight >= 44, `desktop control is below 44px: ${desktopLayout.minimumControlHeight}`);
   assert.equal(desktopLayout.calloutOverlap, false, 'desktop callout copy overlaps the proposal sheet');
@@ -180,6 +188,11 @@ try {
   assert.equal(desktopLayout.calloutBackgroundsOpaque, true, 'desktop callouts are not on opaque surfaces');
   assert.ok(desktopLayout.minimumCalloutPadding >= 18, `desktop callout padding is below 18px: ${desktopLayout.minimumCalloutPadding}`);
   assert.equal(desktopLayout.outreachOverflow, false, 'desktop outreach handoff leaves the viewport');
+  assert.deepEqual(
+    desktopLayout.calloutLabels,
+    ['Unique industry copy', 'Generated sample ad', 'Custom map', 'Offer'],
+    'desktop proposal points do not match the approved generated elements',
+  );
 
   await desktop.type('input[name="businessName"]', 'Midtown Family Dental');
   await desktop.select('select[name="businessType"]', 'dentist');
@@ -193,39 +206,110 @@ try {
   await desktop.click('.proposal-submit');
   await desktop.waitForFunction(() => document.querySelector('[data-preview-state]')?.textContent === 'Generated proposal');
   const generated = await desktop.evaluate(() => ({
-    frame: document.querySelector('[data-proposal-frame]').src,
+    preview: document.querySelector('[data-proposal-preview-image]').src,
     open: document.querySelector('[data-open-pdf]').href,
     download: document.querySelector('[data-download-pdf]').href,
   }));
-  assert.match(generated.frame, /^blob:/);
+  assert.match(generated.preview, /^blob:/);
   assert.match(generated.open, /^blob:/);
   assert.match(generated.download, /^blob:/);
   assert.equal(await desktop.$eval('[data-email-screen-count]', (element) => element.textContent), '42');
-  assert.deepEqual(requests, ['/api/proposal/suggest', '/api/proposal/generate']);
   assert.ok(browserRequests.every((url) => !/api\.mapbox\.com|api\.letz\.ai/i.test(url)), 'browser contacted a server-only integration');
 
-  const mobile = await browser.newPage();
-  await mobile.setViewport({ width: 390, height: 844, deviceScaleFactor: 1 });
-  await mobile.goto(`${origin}/v2/proposal-generator.html`, { waitUntil: 'networkidle0' });
-  const mobileLayout = await inspectLayout(mobile);
+  const breakpointPages = [];
+  const breakpointLayouts = {};
+  for (const viewport of [
+    { width: 1024, height: 900 },
+    { width: 768, height: 900 },
+    { width: 390, height: 844 },
+    { width: 320, height: 720 },
+  ]) {
+    const page = await browser.newPage();
+    page.on('pageerror', (error) => pageErrors.push(`${viewport.width}: ${error.message}`));
+    breakpointPages.push(page);
+    await page.setViewport({ ...viewport, deviceScaleFactor: 1 });
+    await page.goto(`${origin}/v2/proposal-generator.html`, { waitUntil: 'networkidle0' });
+    const layout = await inspectLayout(page);
+    breakpointLayouts[viewport.width] = layout;
+    assert.equal(layout.overflow, 0, `${viewport.width}px proposal page overflows horizontally`);
+    assert.equal(layout.callouts, 4, `${viewport.width}px explanation list is incomplete`);
+    assert.equal(layout.connectorNumberCount, 4, `${viewport.width}px PDF target markers are incomplete`);
+    assert.equal(layout.connectorTargetsInFrame, true, `${viewport.width}px annotation targets leave the PDF`);
+    assert.equal(layout.calloutViewportOverflow, false, `${viewport.width}px callout leaves the viewport`);
+    assert.equal(layout.outreachOverflow, false, `${viewport.width}px outreach handoff leaves the viewport`);
+    assert.deepEqual(
+      layout.calloutLabels,
+      ['Unique industry copy', 'Generated sample ad', 'Custom map', 'Offer'],
+      `${viewport.width}px proposal points changed`,
+    );
+  }
+
+  const mobile = breakpointPages[2];
+  const mobileLayout = breakpointLayouts[390];
   assert.equal(mobileLayout.overflow, 0, 'mobile proposal page overflows horizontally');
-  assert.equal(mobileLayout.callouts, 4, 'mobile explanation list is incomplete');
   assert.equal(mobileLayout.connectorCount, 0, 'desktop connectors remain visible on mobile');
-  assert.equal(mobileLayout.connectorNumberCount, 4, 'mobile PDF target markers are incomplete');
-  assert.equal(mobileLayout.connectorTargetsInFrame, true, 'mobile annotation targets are not anchored inside the PDF');
   assert.equal(mobileLayout.visibleListNumbers, 4, 'mobile explanation numbers are incomplete');
   assert.ok(mobileLayout.minimumControlHeight >= 44, `mobile control is below 44px: ${mobileLayout.minimumControlHeight}`);
   assert.equal(mobileLayout.calloutBackgroundsOpaque, true, 'mobile callouts are not on opaque surfaces');
   assert.ok(mobileLayout.minimumCalloutPadding >= 18, `mobile callout padding is below 18px: ${mobileLayout.minimumCalloutPadding}`);
-  assert.equal(mobileLayout.outreachOverflow, false, 'mobile outreach handoff leaves the viewport');
+
+  await mobile.type('input[name="businessName"]', 'Midtown Family Dental');
+  await mobile.select('select[name="businessType"]', 'dentist');
+  await mobile.$eval('#proposal-address', (input) => {
+    input.value = '600 West Peachtree';
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  assert.deepEqual(pageErrors, [], `proposal page errors: ${pageErrors.join('; ')}`);
+  assert.equal(
+    requests.at(-1),
+    '/api/proposal/suggest',
+    `mobile address lookup did not run; value=${await mobile.$eval('#proposal-address', (input) => input.value)}`,
+  );
+  await mobile.waitForSelector('[data-address-results] button', { visible: true });
+  await mobile.$eval('[data-address-results] button', (button) => button.click());
+  await mobile.$eval('.proposal-submit', (button) => button.click());
+  await mobile.waitForFunction(() => document.querySelector('[data-preview-state]')?.textContent === 'Generated proposal');
+  const generatedMobile = await mobile.evaluate(() => {
+    const preview = document.querySelector('[data-proposal-preview-image]');
+    const host = preview.closest('.proposal-preview__frame');
+    return {
+      source: preview.src,
+      alt: preview.alt,
+      width: preview.getBoundingClientRect().width,
+      height: preview.getBoundingClientRect().height,
+      hostOverflow: getComputedStyle(host).overflow,
+      frameRight: preview.getBoundingClientRect().right,
+      hostRight: host.getBoundingClientRect().right,
+    };
+  });
+  assert.match(generatedMobile.source, /^blob:/);
+  assert.match(generatedMobile.alt, /Midtown Family Dental generated elevator advertising proposal preview/);
+  assert.equal(generatedMobile.hostOverflow, 'hidden', 'mobile proposal preview can pan outside its card');
+  assert.ok(generatedMobile.frameRight <= generatedMobile.hostRight + 1, 'generated proposal preview exceeds its mobile card');
+  assert.ok(generatedMobile.width > 300 && generatedMobile.height > generatedMobile.width, 'generated mobile proposal is not a readable fitted page');
+  assert.deepEqual(requests, [
+    '/api/proposal/suggest',
+    '/api/proposal/generate',
+    '/api/proposal/suggest',
+    '/api/proposal/generate',
+  ]);
 
   if (screenshotDirectory) {
     await mkdir(screenshotDirectory, { recursive: true });
     await desktop.screenshot({ path: path.join(screenshotDirectory, 'v2-proposal-builder-desktop.png'), fullPage: true });
-    await mobile.screenshot({ path: path.join(screenshotDirectory, 'v2-proposal-builder-mobile.png'), fullPage: true });
+    for (const [index, page] of breakpointPages.entries()) {
+      const width = [1024, 768, 390, 320][index];
+      await page.screenshot({ path: path.join(screenshotDirectory, `v2-proposal-builder-${width}.png`), fullPage: true });
+    }
   }
 
-  console.log(JSON.stringify({ desktop: desktopLayout, mobile: mobileLayout, generated: true }, null, 2));
+  console.log(JSON.stringify({
+    desktop: desktopLayout,
+    breakpoints: breakpointLayouts,
+    generatedDesktop: generated,
+    generatedMobile,
+  }, null, 2));
 } finally {
   await browser.close();
   await new Promise((resolve) => server.close(resolve));
