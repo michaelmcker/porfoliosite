@@ -13,13 +13,12 @@ test("homepage avoids loading oversized and below-fold media during first paint"
 
   assert.match(html, /portfolio-hero-system-map-desktop-1080p\.mp4/);
   assert.doesNotMatch(html, /portfolio-hero-system-map-desktop-4k-sparse-loop\.mp4/);
-  assert.match(html, /<iframe[^>]+data-accommodation-page[^>]+loading="lazy"/);
+  assert.match(html, /<iframe[^>]+data-accommodation-page[^>]+data-src="okanagan-preview\/index\.html"/);
+  assert.doesNotMatch(html, /<iframe[^>]+data-accommodation-page[^>]+\ssrc=/);
   assert.equal((preview.match(/preload="auto"/g) || []).length, 0);
   assert.ok((preview.match(/preload="none"/g) || []).length >= 3);
 
   for (const src of [
-    "../assets/device-mockups/laptop-graphite-frame.png",
-    "../assets/samples/vertical-impression-local-proposal-current.png",
     "../assets/screens/vertical-impression-why-elevators.png",
     "../assets/campaigns/vertical-impression-albums-composite.png",
     "assets/workflows/content-production-approved-desktop.png",
@@ -32,9 +31,11 @@ test("homepage avoids loading oversized and below-fold media during first paint"
     const escaped = src.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     assert.match(html, new RegExp(`<img[^>]+src="${escaped}"[^>]+loading="lazy"[^>]+decoding="async"`));
   }
+  assert.match(html, /<img[^>]+data-src="\.\.\/assets\/device-mockups\/laptop-graphite-frame\.png"/);
+  assert.match(html, /<img[^>]+data-src="\.\.\/assets\/samples\/vertical-impression-local-proposal-current\.png"/);
   assert.match(html, /poster="\.\.\/assets\/videos\/portfolio-hero-system-map-desktop-poster\.webp"/);
-  assert.match(html, /poster="\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.webp"/);
-  assert.match(html, /poster="\.\.\/assets\/screens\/cool-runnings-home\.webp"/);
+  assert.match(html, /data-poster="\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.webp"/);
+  assert.match(html, /data-poster="\.\.\/assets\/screens\/cool-runnings-home\.webp"/);
   assert.match(css, /mask-image:\s*url\("\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.webp"\)/);
   assert.doesNotMatch(css, /mask-image:\s*url\("\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.png"\)/);
 });

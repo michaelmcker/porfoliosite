@@ -18,17 +18,19 @@ const applyMetrics = (payload) => {
     element.textContent = `${new Intl.NumberFormat("en-CA").format(value)}${element.dataset.coolSuffix || ""}`;
   });
 
-  const start = payload.windows?.searchConsole?.startDate;
-  const end = payload.windows?.searchConsole?.endDate;
+  const searchStart = payload.windows?.searchConsole?.startDate;
+  const searchEnd = payload.windows?.searchConsole?.endDate;
+  const ga4Start = payload.windows?.ga4?.startDate;
+  const ga4End = payload.windows?.ga4?.endDate;
   const windowCopy = document.querySelector("[data-cool-metrics-window]");
-  if (start && end && windowCopy) {
+  if (searchStart && searchEnd && ga4Start && ga4End && windowCopy) {
     const refreshed = payload.generatedAt
       ? new Intl.DateTimeFormat("en-CA", { month: "long", day: "numeric", year: "numeric" }).format(new Date(payload.generatedAt))
       : null;
     const rankingSource = payload.metrics?.dataForSeo
       ? " DataForSEO ranking checks are included."
       : " DataForSEO ranking checks join the next successful refresh.";
-    windowCopy.textContent = `Google Search Console and Google Analytics 4 · ${formatDate(start)} to ${formatDate(end)}.${rankingSource}${refreshed ? ` Last refreshed ${refreshed}.` : ""}`;
+    windowCopy.textContent = `Search Console · ${formatDate(searchStart)} to ${formatDate(searchEnd)} (three-day reporting lag). Google Analytics 4 · ${formatDate(ga4Start)} to ${formatDate(ga4End)}.${rankingSource}${refreshed ? ` Last refreshed ${refreshed}.` : ""}`;
   }
 };
 

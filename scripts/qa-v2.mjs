@@ -220,6 +220,8 @@ try {
     progress: Number.parseFloat(getComputedStyle(object).getPropertyValue("--object-reveal")) || 0,
     transform: getComputedStyle(object).transform,
   }));
+  await page.$eval("[data-work='accommodation']", (section) => section.scrollIntoView({ block: "center" }));
+  await page.waitForFunction(() => document.querySelector("[data-accommodation-page]")?.src);
   const accommodationFrameHandle = await page.waitForSelector("[data-accommodation-page]");
   const accommodationFrame = await accommodationFrameHandle.contentFrame();
   await accommodationFrame.waitForSelector("[data-okanagan-scene='cabin']");
@@ -388,6 +390,8 @@ try {
   assert.equal(await reducedPage.$$eval("[data-motion-video]", (videos) => videos.every((video) => video.paused && video.dataset.motionLoaded !== "true")), true);
   assert.equal(reducedVideoRequests.some((requestUrl) => /(?:portfolio-hero-system-map|rccv-showcase-laptop|cool-runnings-sizzle)/.test(requestUrl)), false);
   assert.equal(await reducedPage.$$eval("[data-motion-video]", (videos) => videos.every((video) => !video.matches("[role='button'], [tabindex]"))), true);
+  await reducedPage.$eval("[data-work='accommodation']", (section) => section.scrollIntoView({ block: "center" }));
+  await reducedPage.waitForFunction(() => document.querySelector("[data-accommodation-page]")?.src);
   const reducedAccommodationHandle = await reducedPage.waitForSelector("[data-accommodation-page]");
   const reducedAccommodationFrame = await reducedAccommodationHandle.contentFrame();
   await reducedAccommodationFrame.waitForSelector("[data-okanagan-scene='cabin']");
@@ -897,6 +901,8 @@ try {
       scrollWidth: document.documentElement.scrollWidth,
     }));
     assert.ok(geometry.scrollWidth <= geometry.innerWidth, `${width}px viewport overflows by ${geometry.scrollWidth - geometry.innerWidth}px`);
+    await page.$eval("[data-work='accommodation']", (section) => section.scrollIntoView({ block: "center" }));
+    await page.waitForFunction(() => document.querySelector("[data-accommodation-page]")?.src);
     const accommodationGeometry = await page.evaluate(() => {
       const cue = document.querySelector(".accommodation-scroll-cue").getBoundingClientRect();
       const browser = document.querySelector("[data-accommodation-viewer]").getBoundingClientRect();
@@ -909,7 +915,7 @@ try {
       };
     });
     assert.ok(accommodationGeometry.cueLeft >= -1 && accommodationGeometry.cueRight <= width + 1, `${width}px accommodation cue is clipped horizontally`);
-    assert.ok(accommodationGeometry.cueBottom <= accommodationGeometry.browserTop - 8, `${width}px accommodation cue overlaps the browser instead of occupying its own row`);
+    assert.ok(Math.abs(accommodationGeometry.browserTop - accommodationGeometry.cueBottom) <= 12, `${width}px accommodation arrow does not terminate at the browser edge`);
     assert.notEqual(accommodationGeometry.iframeDisplay, "none", `${width}px reduced-motion accommodation browser should remain visible`);
     const responsiveAccommodationHandle = await page.$("[data-accommodation-page]");
     const responsiveAccommodationFrame = await responsiveAccommodationHandle.contentFrame();

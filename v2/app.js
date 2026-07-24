@@ -87,6 +87,24 @@ const accommodationUrls = {
   cabin: "okanagantreehouse.ca/cabin",
 };
 
+const loadAccommodationPreview = () => {
+  if (!accommodationPage || accommodationPage.src || !accommodationPage.dataset.src) return;
+  accommodationPage.src = accommodationPage.dataset.src;
+};
+
+if (accommodationPage) {
+  if ("IntersectionObserver" in window) {
+    const accommodationObserver = new IntersectionObserver((entries, observer) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return;
+      loadAccommodationPreview();
+      observer.disconnect();
+    }, { rootMargin: "25% 0px", threshold: 0 });
+    accommodationObserver.observe(accommodationPage);
+  } else {
+    loadAccommodationPreview();
+  }
+}
+
 window.addEventListener("message", (event) => {
   if (!accommodationPage || event.source !== accommodationPage.contentWindow) return;
   if (event.data?.type !== "okanagan-scene-change") return;
@@ -96,12 +114,34 @@ window.addEventListener("message", (event) => {
 
 const loadMotionVideo = (video) => {
   if (video.dataset.motionLoaded === "true") return;
+  if (video.dataset.poster && !video.poster) video.poster = video.dataset.poster;
   video.querySelectorAll("source[data-src]").forEach((source) => {
     source.src = source.dataset.src;
   });
   video.dataset.motionLoaded = "true";
   video.load();
 };
+
+const deferredImages = [...document.querySelectorAll("img[data-src]")];
+const loadDeferredImage = (image) => {
+  if (image.src || !image.dataset.src) return;
+  image.src = image.dataset.src;
+};
+
+if (deferredImages.length) {
+  if ("IntersectionObserver" in window) {
+    const deferredImageObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        loadDeferredImage(entry.target);
+        deferredImageObserver.unobserve(entry.target);
+      });
+    }, { rootMargin: "25% 0px", threshold: 0 });
+    deferredImages.forEach((image) => deferredImageObserver.observe(image));
+  } else {
+    deferredImages.forEach(loadDeferredImage);
+  }
+}
 
 const playMotionVideo = async (video) => {
   loadMotionVideo(video);

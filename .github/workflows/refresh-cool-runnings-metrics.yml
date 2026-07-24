@@ -51,6 +51,11 @@ jobs:
           DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
         run: node scripts/refresh-cool-runnings-metrics.mjs
 
+      - name: Publish metrics freshness summary
+        run: |
+          test -n "$GITHUB_STEP_SUMMARY"
+          node scripts/write-cool-runnings-summary.mjs
+
       - name: Commit changed snapshot
         id: commit
         run: |

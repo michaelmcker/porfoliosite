@@ -39,15 +39,19 @@
       </div>
 
       <figure class="hero-system-media screen-bezel">
-        <video id="motion-video-hero" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/videos/portfolio-hero-system-map-desktop-poster.webp" aria-label="Animated system map connecting audience and data inputs to websites, proposals, dashboards, and workflows.">
-          <source media="(max-width: 699px)" data-src="assets/videos/portfolio-hero-system-map-mobile-1080p.mp4" type="video/mp4">
-          <source data-src="assets/videos/portfolio-hero-system-map-desktop-1080p.mp4" type="video/mp4">
-        </video>
-        <div class="hero-video-copy" aria-hidden="true">
-          <span class="hero-video-label hero-video-label-inputs">Inputs</span>
-          <span class="hero-video-label hero-video-label-system">Workflow<br>system</span>
-          <span class="hero-video-label hero-video-label-outputs">Outputs</span>
-          <span class="hero-video-statement"><strong>Systems thinking</strong><small>Understand. Shape. Build.<br>Measure. Refine. Systematise.</small></span>
+        <div class="hero-video-crop">
+          <div class="hero-video-source">
+            <video id="motion-video-hero" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/videos/portfolio-hero-system-map-desktop-poster.webp" aria-label="Animated system map connecting audience and data inputs to websites, proposals, dashboards, and workflows.">
+              <source media="(max-width: 699px)" data-src="assets/videos/portfolio-hero-system-map-mobile-1080p.mp4" type="video/mp4">
+              <source data-src="assets/videos/portfolio-hero-system-map-desktop-1080p.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-copy" aria-hidden="true">
+              <span class="hero-video-label hero-video-label-inputs">Inputs</span>
+              <span class="hero-video-label hero-video-label-system">Workflow<br>system</span>
+              <span class="hero-video-label hero-video-label-outputs">Outputs</span>
+              <span class="hero-video-statement"><strong>Systems thinking</strong><small>Understand. Shape. Build.<br>Measure. Refine. Systematise.</small></span>
+            </div>
+          </div>
         </div>
       </figure>
     </section>
@@ -69,7 +73,7 @@
             </div>
           </div>
           <figure class="laptop-object">
-            <video id="motion-video-rccv" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/device-mockups/laptop-three-quarter-rccv-cutout.webp" aria-label="RCCV homepage and Stations of the Cross shown on an angled laptop.">
+            <video id="motion-video-rccv" data-motion-video autoplay muted loop playsinline preload="none" data-poster="../assets/device-mockups/laptop-three-quarter-rccv-cutout.webp" aria-label="RCCV homepage and Stations of the Cross shown on an angled laptop.">
               <source data-src="v2/assets/videos/rccv-showcase-laptop.webm" type="video/webm">
               <source data-src="v2/assets/videos/rccv-showcase-laptop.mp4" type="video/mp4">
             </video>
@@ -79,13 +83,13 @@
         <article class="work-object work-object-accommodation" data-work="accommodation">
           <div class="accommodation-showcase" data-scroll-reveal="accommodation">
             <p class="accommodation-scroll-cue" aria-hidden="true">
-              <svg viewBox="0 0 58 54" focusable="false" aria-hidden="true"><path d="M52 6C43 8 39 16 37 24c-3 11-11 17-26 20M18 35l-8 9 12 5"/></svg>
+              <svg viewBox="0 0 72 84" focusable="false" aria-hidden="true"><path d="M66 7C52 10 49 22 46 35c-4 20-14 34-35 42M20 68l-10 9 13 4"/></svg>
               <span>Scroll the preview</span>
             </p>
             <figure class="browser-object browser-object-tall screen-bezel" data-accommodation-viewer role="group" aria-label="Scroll through the original Overview, Treehouse, and Cabin hero experiences">
               <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span data-accommodation-url>okanagantreehouse.ca</span></div>
               <div class="browser-viewport accommodation-viewport">
-                <iframe data-accommodation-page src="v2/okanagan-preview/index.html" title="Interactive Okanagan Treehouse Overview, Treehouse, and Cabin hero sequence" loading="lazy"></iframe>
+                <iframe data-accommodation-page data-src="v2/okanagan-preview/index.html" title="Interactive Okanagan Treehouse Overview, Treehouse, and Cabin hero sequence"></iframe>
               </div>
             </figure>
           </div>
@@ -117,18 +121,18 @@
           </div>
           <figure class="cool-laptop" data-scroll-reveal="cool-runnings" aria-label="Cool Runnings website and local search work shown on an opening laptop">
             <div class="cool-laptop-screen">
-              <video id="motion-video-cool-runnings" data-motion-video autoplay muted loop playsinline preload="none" poster="../assets/screens/cool-runnings-home.webp" aria-label="Cool Runnings website and local search work.">
+              <video id="motion-video-cool-runnings" data-motion-video autoplay muted loop playsinline preload="none" data-poster="../assets/screens/cool-runnings-home.webp" aria-label="Cool Runnings website and local search work.">
                 <source data-src="assets/videos/cool-runnings-sizzle-25s.webm" type="video/webm">
                 <source data-src="assets/videos/cool-runnings-sizzle-25s.mp4" type="video/mp4">
               </video>
             </div>
-            <img class="cool-laptop-frame" src="assets/device-mockups/laptop-graphite-frame.png" width="1672" height="941" alt="" loading="lazy" decoding="async">
+            <img class="cool-laptop-frame" data-src="assets/device-mockups/laptop-graphite-frame.png" width="1672" height="941" alt="" decoding="async">
           </figure>
         </article>
 
         <article class="work-object work-object-proposal" data-work="proposal">
           <a class="proposal-sheet" href="output/pdf/vertical-impression-local-proposal-sample.pdf" aria-label="Open the Midtown Family Dental proposal PDF">
-            <img src="assets/samples/vertical-impression-local-proposal-current.png" width="1632" height="2112" alt="Midtown Family Dental letter-size digital out-of-home proposal with campaign creative, inventory map, and Vertical Impression branding" loading="lazy" decoding="async">
+            <img data-src="assets/samples/vertical-impression-local-proposal-current.png" width="1632" height="2112" alt="Midtown Family Dental letter-size digital out-of-home proposal with campaign creative, inventory map, and Vertical Impression branding" decoding="async">
           </a>
           <div class="work-copy">
             <h3>Digital out-of-home proposal tool</h3>
