@@ -132,14 +132,15 @@ test("V2 restores the existing hero film as a raised card and keeps the authored
   assert.doesNotMatch(html, /hero-motion-toggle/);
   assert.match(css, /\.hero\s*\{[^}]*grid-template-columns:\s*minmax\(420px,\s*\.72fr\)\s*minmax\(0,\s*1\.28fr\)/s);
   assert.match(css, /\.hero-system-media\s*\{[^}]*width:\s*min\(100%,\s*980px\)[^}]*aspect-ratio:\s*4\s*\/\s*3[^}]*border-width:\s*clamp\(6px,\s*\.7vw,\s*10px\)/s);
-  assert.match(css, /\.hero-video-source\s*\{[^}]*width:\s*133\.333%[^}]*transform:\s*translateX\(-25%\)/s);
+  assert.match(css, /\.hero-video-source\s*\{[^}]*width:\s*133\.333%[^}]*transform:\s*translateX\(-18%\)/s);
   assert.match(css, /\.hero-system-media video\s*\{[^}]*width:\s*100%[^}]*height:\s*100%[^}]*object-fit:\s*cover/s);
   assert.match(css, /\.hero-video-copy\s*\{[^}]*inset:\s*0/s);
   assert.match(css, /\.hero-video-copy\s*\{[^}]*opacity:\s*0[^}]*visibility:\s*hidden/s);
-  assert.match(css, /\.hero-system-media\.is-video-playing \.hero-video-copy\s*\{[^}]*opacity:\s*1[^}]*visibility:\s*visible/s);
+  assert.match(css, /\.hero-system-media\.is-video-playing \.hero-video-copy,\s*\.hero-system-media\.has-video-frame \.hero-video-copy\s*\{[^}]*opacity:\s*1[^}]*visibility:\s*visible/s);
   assert.match(css, /@media \(max-width:\s*699px\)[\s\S]*?\.hero-system-media\s*\{[^}]*aspect-ratio:\s*9\s*\/\s*16/s);
   assert.match(app, /addEventListener\(["']playing["']/);
   assert.match(app, /addEventListener\(["']waiting["']/);
+  assert.match(app, /addEventListener\(["']loadeddata["'][\s\S]*?has-video-frame/s);
   assert.match(app, /classList\.toggle\(["']is-video-playing["']/);
   assert.match(app, /portrait-frame[\s\S]*?classList\.add\(["']is-loaded["']\)/);
 });

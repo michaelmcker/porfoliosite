@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
-test("hero crops the empty left quarter while keeping overlays tied to the source frame", async () => {
+test("hero crops unused left space without cutting off the input labels", async () => {
   const [html, css] = await Promise.all([
     read("v2/index.html"),
     read("v2/styles.css"),
@@ -12,11 +12,33 @@ test("hero crops the empty left quarter while keeping overlays tied to the sourc
 
   assert.match(html, /class="hero-video-crop"[\s\S]*class="hero-video-source"[\s\S]*hero-video-inputs/);
   assert.match(html, /class="hero-video-inputs"[\s\S]*Data &amp; insights[\s\S]*Audience signals[\s\S]*Competition[\s\S]*Search trends[\s\S]*Brand rules/);
+  assert.match(html, /hero-video-label-system"><span>Workflow<br>system<\/span>/);
+  assert.match(html, /hero-video-label-outputs"><span>Outputs<\/span>/);
   assert.match(css, /\.hero\s*\{[^}]*grid-template-columns:\s*minmax\(420px,\s*\.72fr\)\s*minmax\(0,\s*1\.28fr\)/s);
   assert.match(css, /\.hero-system-media\s*\{[^}]*aspect-ratio:\s*4\s*\/\s*3/s);
-  assert.match(css, /\.hero-video-source\s*\{[^}]*width:\s*133\.333%[^}]*transform:\s*translateX\(-25%\)/s);
+  assert.match(css, /\.hero-video-source\s*\{[^}]*width:\s*133\.333%[^}]*transform:\s*translateX\(-18%\)/s);
   assert.match(css, /@media \(max-width:\s*699px\)[\s\S]*?\.hero-video-source\s*\{[^}]*width:\s*100%[^}]*transform:\s*none/s);
   assert.match(css, /@media \(max-width:\s*699px\)[\s\S]*?\.hero-video-inputs\s*\{[^}]*height:\s*28%/s);
+  assert.match(css, /\.hero-video-inputs\s*\{[^}]*background:\s*transparent[^}]*box-shadow:\s*none/s);
+  assert.match(css, /\.hero-video-label\s*\{[^}]*background:\s*transparent[^}]*box-shadow:\s*none/s);
+  assert.match(css, /\.hero-video-label > span,[\s\S]*?\.hero-video-inputs small span\s*\{[^}]*background:\s*#f7f5ed[^}]*box-shadow:/s);
+});
+
+test("hero corrections stay visible after the first decoded frame without appearing before media is ready", async () => {
+  const [css, app] = await Promise.all([
+    read("v2/styles.css"),
+    read("v2/app.js"),
+  ]);
+
+  assert.match(app, /addEventListener\("loadeddata",[\s\S]*?has-video-frame/s);
+  assert.match(css, /\.hero-system-media\.has-video-frame \.hero-video-copy/);
+});
+
+test("primary chapter headings share one smaller sans-serif treatment", async () => {
+  const css = await read("v2/styles.css");
+
+  assert.match(css, /\.work-heading h2,\s*\.workflow-heading h2,\s*\.outcomes-heading h2\s*\{[^}]*font-family:\s*var\(--font-sans\)[^}]*font-size:\s*clamp\(2\.35rem,\s*4\.2vw,\s*4\.6rem\)[^}]*font-weight:\s*650/s);
+  assert.doesNotMatch(css, /\.workflow-heading h2\s*\{[^}]*font-family:\s*var\(--font-editorial\)/s);
 });
 
 test("boutique preview is deferred by the app and its cue ends at the browser edge", async () => {

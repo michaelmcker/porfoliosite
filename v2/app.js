@@ -161,6 +161,9 @@ const setMotionPlaybackState = (video, isPlaying) => {
 
 if (!motionPreference.matches && "IntersectionObserver" in window) {
   motionVideos.forEach((video) => {
+    video.addEventListener("loadeddata", () => {
+      video.closest(".hero-system-media")?.classList.add("has-video-frame");
+    });
     video.addEventListener("canplay", () => {
       if (visibleMotionVideos.has(video)) playMotionVideo(video);
     });

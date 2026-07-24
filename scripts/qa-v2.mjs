@@ -124,7 +124,7 @@ try {
   assert.ok(Math.abs(desktopHeroGeometry.ratio - (16 / 9)) < .02, `desktop hero video is still cropped: ${JSON.stringify(desktopHeroGeometry)}`);
   assert.ok(Object.values(desktopHeroGeometry.overlayDelta).every((delta) => delta <= 1), `desktop hero labels do not share the video box: ${JSON.stringify(desktopHeroGeometry)}`);
   await page.$eval("#motion-video-hero", (video) => video.dispatchEvent(new Event("waiting")));
-  assert.equal(await page.$eval(".hero-video-copy", (copy) => Number(getComputedStyle(copy).opacity)), 0, "hero labels remain visible while the video is waiting");
+  assert.equal(await page.$eval(".hero-video-copy", (copy) => Number(getComputedStyle(copy).opacity)), 1, "hero labels disappeared after the decoded frame entered a temporary waiting state");
   await page.$eval("#motion-video-hero", (video) => video.dispatchEvent(new Event("playing")));
   await page.waitForFunction(() => Number(getComputedStyle(document.querySelector(".hero-video-copy")).opacity) === 1);
 
