@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-24T15:50:50.325Z",
+  "generatedAt": "2026-07-24T16:46:56.138Z",
   "windows": {
     "searchConsole": {
       "startDate": "2026-06-24",
@@ -40,6 +40,6 @@
   },
   "update": {
     "state": "verified",
-    "generatedAt": "2026-07-24T15:50:50.325Z"
+    "generatedAt": "2026-07-24T16:46:56.138Z"
   }
 }
