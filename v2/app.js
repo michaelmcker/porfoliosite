@@ -98,7 +98,7 @@ if (accommodationPage) {
       if (!entries.some((entry) => entry.isIntersecting)) return;
       loadAccommodationPreview();
       observer.disconnect();
-    }, { rootMargin: "25% 0px", threshold: 0 });
+    }, { rootMargin: "110% 0px", threshold: 0 });
     accommodationObserver.observe(accommodationPage);
   } else {
     loadAccommodationPreview();
@@ -136,7 +136,7 @@ if (deferredImages.length) {
         loadDeferredImage(entry.target);
         deferredImageObserver.unobserve(entry.target);
       });
-    }, { rootMargin: "25% 0px", threshold: 0 });
+    }, { rootMargin: "110% 0px", threshold: 0 });
     deferredImages.forEach((image) => deferredImageObserver.observe(image));
   } else {
     deferredImages.forEach(loadDeferredImage);
@@ -313,6 +313,7 @@ aboutToggle?.addEventListener("click", () => {
   const opening = aboutNote?.hidden ?? false;
   if (!aboutNote) return;
   aboutNote.hidden = !opening;
+  aboutStage?.classList.toggle("has-about-note", opening);
   aboutToggle.setAttribute("aria-expanded", String(opening));
   aboutToggle.textContent = opening ? "Hide the build note" : "How this unnecessary thing was made";
 });

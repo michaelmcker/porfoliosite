@@ -130,7 +130,7 @@ test("V2 restores the existing hero film as a raised card and keeps the authored
   assert.match(html, /<section class="hero page-frame" id="hero"/);
   assert.match(html, /I build websites, product stories, sales material, and AI-enabled marketing systems that help teams explain, sell, and scale\.<span class="hero-fun"><em>And sometimes, stuff just for fun\.<\/em><\/span>/);
   assert.doesNotMatch(html, /hero-motion-toggle/);
-  assert.match(css, /\.hero\s*\{[^}]*grid-template-columns:\s*minmax\(350px,\s*\.62fr\)\s*minmax\(0,\s*1\.38fr\)/s);
+  assert.match(css, /\.hero\s*\{[^}]*grid-template-columns:\s*minmax\(420px,\s*\.72fr\)\s*minmax\(0,\s*1\.28fr\)/s);
   assert.match(css, /\.hero-system-media\s*\{[^}]*width:\s*min\(100%,\s*980px\)[^}]*aspect-ratio:\s*4\s*\/\s*3[^}]*border-width:\s*clamp\(6px,\s*\.7vw,\s*10px\)/s);
   assert.match(css, /\.hero-video-source\s*\{[^}]*width:\s*133\.333%[^}]*transform:\s*translateX\(-25%\)/s);
   assert.match(css, /\.hero-system-media video\s*\{[^}]*width:\s*100%[^}]*height:\s*100%[^}]*object-fit:\s*cover/s);
@@ -452,10 +452,10 @@ test("Bias uses one light continuous route and butts against Selected Work", asy
   assert.match(css, /\.selected-work\s*\{[^}]*padding-block:\s*var\(--space-section\)\s+0/s);
 });
 
-test("the proposal is an enlarged rounded PDF artifact without a surrounding frame", async () => {
+test("the proposal is a contained rounded PDF artifact without a surrounding frame", async () => {
   const css = await readV2("styles.css");
 
-  assert.match(css, /\.proposal-sheet\s*\{[^}]*width:\s*min\(78%,\s*600px\)[^}]*border:\s*0/s);
+  assert.match(css, /\.proposal-sheet\s*\{[^}]*width:\s*min\(68%,\s*530px\)[^}]*border:\s*0/s);
   assert.match(css, /\.proposal-sheet img\s*\{[^}]*border-radius:\s*18px/s);
 });
 
