@@ -40,6 +40,14 @@ test("hero corrections stay visible after the first decoded frame without appear
   assert.match(css, /\.hero-system-media\.has-video-frame \.hero-video-copy/);
 });
 
+test("hero reloads its responsive film when the viewport crosses the mobile breakpoint", async () => {
+  const app = await read("v2/app.js");
+
+  assert.match(app, /const syncMotionSource\s*=\s*\(video\)\s*=>/);
+  assert.match(app, /heroPosterMedia\.addEventListener\?\.\("change",[\s\S]*?syncMotionSource/s);
+  assert.match(app, /syncMotionSource[\s\S]*?video\.load\(\)/s);
+});
+
 test("primary chapter headings share one smaller sans-serif treatment", async () => {
   const css = await read("v2/styles.css");
 

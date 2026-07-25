@@ -150,7 +150,6 @@ const syncMotionPoster = (video) => {
 };
 
 motionVideos.forEach(syncMotionPoster);
-heroPosterMedia.addEventListener?.("change", () => motionVideos.forEach(syncMotionPoster));
 
 const loadMotionVideo = (video) => {
   if (video.dataset.motionLoaded === "true") return;
@@ -193,6 +192,18 @@ const playMotionVideo = async (video) => {
     video.dataset.motionBlocked = "true";
   }
 };
+
+const syncMotionSource = (video) => {
+  if (!video.dataset.posterMobile || !video.dataset.posterDesktop) return;
+  syncMotionPoster(video);
+  if (video.dataset.motionLoaded !== "true") return;
+  const shouldResume = visibleMotionVideos.has(video) || !video.paused;
+  video.closest(".hero-system-media")?.classList.remove("has-video-frame", "is-video-playing");
+  video.load();
+  if (shouldResume && !motionPreference.matches) playMotionVideo(video);
+};
+
+heroPosterMedia.addEventListener?.("change", () => motionVideos.forEach(syncMotionSource));
 
 const setMotionPlaybackState = (video, isPlaying) => {
   const host = video.closest(".hero-system-media");
