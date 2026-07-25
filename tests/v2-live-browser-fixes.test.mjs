@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
-test("hero uses real HTML labels anchored to a breakpoint-matched poster", async () => {
+test("hero keeps HTML corrections on larger screens and uses the authored mobile film labels", async () => {
   const [html, css, app] = await Promise.all([
     read("v2/index.html"),
     read("v2/styles.css"),
@@ -27,7 +27,7 @@ test("hero uses real HTML labels anchored to a breakpoint-matched poster", async
   assert.match(css, /\.hero-video-inputs\s*\{[^}]*background:\s*transparent[^}]*box-shadow:\s*none/s);
   assert.match(css, /\.hero-video-label-system\s*\{[^}]*left:\s*57\.4%/s);
   assert.match(css, /\.hero-video-label-outputs\s*\{[^}]*right:\s*\.7%/s);
-  assert.match(css, /@media \(max-width:\s*699px\)[\s\S]*?\.hero-video-inputs\s*\{[^}]*height:\s*28%/s);
+  assert.match(css, /@media \(max-width:\s*699px\)[\s\S]*?\.hero-video-copy\s*\{[^}]*display:\s*none/s);
 });
 
 test("hero corrections stay visible after the first decoded frame without appearing before media is ready", async () => {

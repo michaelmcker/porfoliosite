@@ -1445,18 +1445,7 @@ h3 {
 @media (max-width: 699px) {
   .hero-system-media { width: min(88vw, 380px); }
   .hero-system-media video { aspect-ratio: 9 / 16; }
-  .hero-video-label { font-size: clamp(.54rem, 2.5vw, .7rem); }
-  .hero-video-inputs { left: 3.1%; top: 54.4%; width: 22.5%; height: 28%; padding: 5px 0; }
-  .hero-video-inputs strong { margin: 10% 0 0 15%; font-size: clamp(.5rem, 2.3vw, .65rem); }
-  .hero-video-inputs small { font-size: clamp(.3rem, 1.45vw, .4rem); }
-  .hero-video-inputs small span { left: 0; width: 100%; }
-  .hero-video-inputs small span:nth-child(2) { top: 51%; }
-  .hero-video-inputs small span:nth-child(4) { top: 78%; }
-  .hero-video-label-system { left: 35.7%; top: 28.8%; width: 21.8%; height: 6.7%; }
-  .hero-video-label-outputs { right: 5.4%; top: 24.6%; width: 19.3%; height: 5.6%; padding-left: 4%; }
-  .hero-video-statement { left: 51%; top: 75.8%; width: 45%; height: 16.5%; padding: 8px 10px; }
-  .hero-video-statement strong { font-size: clamp(.72rem, 3.25vw, .92rem); }
-  .hero-video-statement small { font-size: clamp(.52rem, 2.35vw, .66rem); }
+  .hero-video-copy { display: none; }
   .workflow-panel figure { min-height: 0; aspect-ratio: 864 / 1821; }
   .workflow-dashboard .workflow-panel figure { aspect-ratio: 1569 / 1002; }
   .workflow-presentation .workflow-panel figure { aspect-ratio: 836 / 1881; }
