@@ -47,12 +47,14 @@ test("private weekly state and source Markdown stay outside the deployed site", 
 });
 
 test("V2 promotion copies the field notes route to production without changing its canonical URL", async () => {
-  const [sourceIndex, productionIndex, sourceFeed, productionFeed] = await Promise.all([
+  const [sourceIndex, productionIndex, sourceFeed, productionFeed, styles] = await Promise.all([
     read("v2/field-notes/index.html"),
     read("field-notes/index.html"),
     read("v2/field-notes/feed.xml"),
     read("field-notes/feed.xml"),
+    read("v2/field-notes/field-notes.css"),
   ]);
   assert.equal(productionIndex, sourceIndex);
   assert.equal(productionFeed, sourceFeed);
+  assert.doesNotMatch(styles, /\.notes-header nav a:first-child\{display:none\}/, "mobile readers must retain the Portfolio escape link");
 });
