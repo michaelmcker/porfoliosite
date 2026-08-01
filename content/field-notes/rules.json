@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "series": "Marketing Engineering Field Notes",
+  "timezone": "America/Vancouver",
+  "approvalPhrase": "Approve this week's brief.",
+  "allowedDomains": [
+    "michaelmck.site",
+    "github.com",
+    "openai.com"
+  ],
+  "localOverlap": {
+    "shingleWords": 8,
+    "maxSharedRatio": 0.08
+  },
+  "webCheck": {
+    "minimumQueries": 3,
+    "maximumAllowedMatches": 0
+  },
+  "requiredReceipts": [
+    "web",
+    "facts",
+    "editorial",
+    "branch"
+  ],
+  "prohibitedPublicMaterial": [
+    "specific companies or private people",
+    "client work or client-adjacent figures",
+    "credentials, contact details, or private domains",
+    "raw source excerpts",
+    "unverified claims",
+    "unattributed quotations"
+  ],
+  "editorialRules": [
+    "Lead with a concrete observation and one arguable idea.",
+    "Use active verbs, ordinary nouns, and varied sentence length.",
+    "Describe tools through decisions, including tools deliberately not used.",
+    "Name a strength, a weakness, an adjustment, and the next test without turning the article into a template.",
+    "Do not imitate a living writer or reuse source wording."
+  ],
+  "immutableGates": [
+    "confidentiality",
+    "originality",
+    "approval integrity",
+    "branch safety",
+    "deployment verification"
+  ]
+}
