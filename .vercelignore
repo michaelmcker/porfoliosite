@@ -12,6 +12,7 @@ v2/assets/workflows/README.md
 v2/assets/workflows/candidates/
 artifacts/
 docs/
+content/
 node_modules/
 portfolio-remote-preview/
 portfolio-style-round-scorecard.html

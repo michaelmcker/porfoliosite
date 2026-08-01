@@ -1,0 +1,50 @@
+@font-face{font-family:"DM Sans";src:url("/v2/assets/fonts/dm-sans-latin-variable.woff2") format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Fraunces";src:url("/v2/assets/fonts/fraunces-latin-variable.woff2") format("woff2");font-weight:100 900;font-display:swap}
+:root{--ink:#151515;--paper:#f4f0e7;--white:#fff;--line:#c9c2b5;--signal:#ef5a37;--muted:#665f55;--measure:43rem;--frame:min(92vw,78rem)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.62}
+a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:.08em}
+a:hover{text-decoration-color:var(--signal)}
+a:focus-visible{outline:3px solid var(--signal);outline-offset:4px;border-radius:2px}
+.skip-link{position:fixed;left:1rem;top:1rem;z-index:10;padding:.7rem 1rem;background:var(--ink);color:var(--white);transform:translateY(-180%)}
+.skip-link:focus{transform:none}
+.notes-header{width:var(--frame);margin:auto;min-height:5.5rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.notes-brand{display:grid;width:2.75rem;height:2.75rem;place-items:center;border:1px solid var(--ink);border-radius:50%;font-weight:800;text-decoration:none}
+.notes-header nav{display:flex;gap:clamp(1rem,3vw,2.5rem);font-size:.9rem;font-weight:650}
+main{width:var(--frame);margin:auto}
+.notes-intro,.article-header{padding:clamp(4rem,10vw,9rem) 0 clamp(3rem,7vw,6rem);max-width:60rem}
+.eyebrow,.note-week,.byline{margin:0 0 1rem;color:var(--muted);font-size:.75rem;font-weight:750;letter-spacing:.11em;text-transform:uppercase}
+h1,h2{font-family:"Fraunces",serif;font-weight:560;line-height:.98;letter-spacing:-.035em}
+h1{margin:0;font-size:clamp(3.2rem,9.5vw,8rem)}
+h1 em{color:var(--signal);font-weight:440}
+.dek,.article-dek{max-width:var(--measure);margin:2rem 0 0;font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.45}
+.authorship{max-width:58rem;margin:0 0 clamp(4rem,9vw,8rem);padding:1.3rem 1.5rem;border-left:5px solid var(--signal);background:rgba(255,255,255,.55)}
+.authorship p{margin:0}
+.how-it-works{display:grid;grid-template-columns:minmax(10rem,1fr) minmax(18rem,2fr);gap:1rem 3rem;padding:clamp(3rem,8vw,7rem) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.how-it-works .eyebrow{grid-row:1/4}
+.how-it-works h2,.entries h2{margin:0;font-size:clamp(2.2rem,5vw,4.5rem)}
+.how-it-works p:not(.eyebrow){max-width:var(--measure);margin:0 0 1rem;font-size:1.08rem}
+.entries{padding:clamp(4rem,9vw,8rem) 0}
+.entries-heading{margin-bottom:3rem}
+.note-card{display:grid;grid-template-columns:11rem 1fr auto;gap:1rem 2rem;align-items:baseline;padding:2rem 0;border-top:1px solid var(--line)}
+.note-card h2{font-size:clamp(1.7rem,3vw,2.8rem)}
+.note-card h2,.note-card p{margin:0}
+.read-note{font-weight:700;white-space:nowrap}
+.empty-log{max-width:var(--measure);padding:2rem 0;border-top:1px solid var(--line);font-size:1.15rem}
+.field-note{max-width:58rem;margin:auto}
+.article-header h1{font-size:clamp(3rem,8vw,6.7rem)}
+.byline{margin-top:2rem}
+.article-body{max-width:var(--measure);margin:0 auto clamp(5rem,10vw,9rem);font-family:"Fraunces",serif;font-size:clamp(1.12rem,2vw,1.32rem)}
+.article-body p{margin:0 0 1.5em}
+.article-body h2,.article-body h3{margin:2.1em 0 .7em;line-height:1.1}
+.article-body h2{font-size:clamp(2rem,4vw,3.3rem)}
+.article-body h3{font-size:1.6rem}
+.article-body li{margin:.45em 0}
+.article-body hr{margin:3rem 0;border:0;border-top:1px solid var(--line)}
+.article-nav{max-width:58rem;margin:auto;padding:2rem 0 5rem;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.article-nav a{font-weight:700}.article-nav span{display:block;color:var(--muted);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}.article-nav .all-notes{grid-column:1/-1}
+footer{width:var(--frame);margin:auto;padding:2.5rem 0 4rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem;color:var(--muted);font-size:.9rem}
+footer p{margin:0}
+@media(max-width:700px){.notes-header{min-height:4.5rem}.notes-header nav a:first-child{display:none}.notes-intro,.article-header{padding-top:4rem}.how-it-works{grid-template-columns:1fr}.how-it-works .eyebrow{grid-row:auto}.note-card{grid-template-columns:1fr}.article-nav{grid-template-columns:1fr}footer{display:block}footer p{margin-bottom:.75rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
