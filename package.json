@@ -7,6 +7,9 @@
   },
   "scripts": {
     "test": "node --test tests/*.test.mjs",
+    "field-notes": "node scripts/weekly-field-notes/cli.mjs",
+    "field-notes:test": "node --test tests/weekly-field-notes-*.test.mjs",
+    "field-notes:build": "node scripts/weekly-field-notes/render.mjs",
     "promote:v2": "node scripts/promote-v2-to-root.mjs",
     "deploy": "vercel --prod"
   },
