@@ -138,6 +138,7 @@ test("canonical sitemap and robots files expose only intended public routes", as
   const expected = [
     "https://michaelmck.site/",
     "https://michaelmck.site/proposal-generator.html",
+    "https://michaelmck.site/field-notes/",
     "https://michaelmck.site/v2/work/local-search-magnet.html",
     "https://michaelmck.site/v2/workflows/agency-management-dashboard.html",
     "https://michaelmck.site/v2/workflows/content-production.html",
