@@ -13,6 +13,7 @@ async function buildFixture() {
   const root = await mkdtemp(join(tmpdir(), "field-notes-render-"));
   await mkdir(join(root, "content/field-notes"), { recursive: true });
   await cp(fixturePath, join(root, "content/field-notes/2026-W31.md"));
+  await writeFile(join(root, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://michaelmck.site/</loc></url>\n  <url><loc>https://michaelmck.site/field-notes/</loc></url>\n</urlset>\n`);
   return { root, result: await buildFieldNotes({ repoRoot: root }) };
 }
 
@@ -29,10 +30,11 @@ test("renderer creates an accessible disclosed article, index, schema, and feed"
   const { root, result } = await buildFixture();
   assert.deepEqual(result, { published: 1, slugs: ["useful-system-began-with-a-refusal"] });
 
-  const [index, article, feed] = await Promise.all([
+  const [index, article, feed, sitemap] = await Promise.all([
     readFile(join(root, "v2/field-notes/index.html"), "utf8"),
     readFile(join(root, "v2/field-notes/useful-system-began-with-a-refusal/index.html"), "utf8"),
     readFile(join(root, "v2/field-notes/feed.xml"), "utf8"),
+    readFile(join(root, "sitemap.xml"), "utf8"),
   ]);
 
   assert.match(index, /<main id="main-content">/);
@@ -53,6 +55,7 @@ test("renderer creates an accessible disclosed article, index, schema, and feed"
   assert.match(feed, /<rss version="2\.0">/);
   assert.match(feed, /The useful system began with a refusal/);
   assert.match(feed, /https:\/\/michaelmck\.site\/field-notes\/useful-system-began-with-a-refusal\//);
+  assert.match(sitemap, /<loc>https:\/\/michaelmck\.site\/field-notes\/useful-system-began-with-a-refusal\/<\/loc>/);
 });
 
 test("draft entries are ignored and repeat builds are byte-identical", async () => {

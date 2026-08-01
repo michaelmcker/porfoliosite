@@ -227,6 +227,24 @@ ${items}
 `;
 }
 
+async function updateSitemap(repoRoot, entries) {
+  const sitemapPath = join(repoRoot, "sitemap.xml");
+  let sitemap;
+  try {
+    sitemap = await readFile(sitemapPath, "utf8");
+  } catch (error) {
+    if (error.code === "ENOENT") return;
+    throw error;
+  }
+  sitemap = sitemap.replace(/^\s*<url><loc>https:\/\/michaelmck\.site\/field-notes\/(?!<\/loc>)[^<]+<\/loc><\/url>\s*\n?/gm, "");
+  const articleUrls = entries
+    .map(({ slug }) => `  <url><loc>${SITE}/field-notes/${slug}/</loc></url>`)
+    .join("\n");
+  const addition = articleUrls ? `${articleUrls}\n` : "";
+  sitemap = sitemap.replace("</urlset>", `${addition}</urlset>`);
+  await writeFile(sitemapPath, sitemap);
+}
+
 export async function buildFieldNotes({ repoRoot }) {
   const contentPath = join(repoRoot, "content/field-notes");
   const outputPath = join(repoRoot, "v2/field-notes");
@@ -250,6 +268,7 @@ export async function buildFieldNotes({ repoRoot }) {
     await mkdir(dirname(articlePath), { recursive: true });
     await writeFile(articlePath, articleHtml(entry, entries));
   }
+  await updateSitemap(repoRoot, entries);
   return { published: entries.length, slugs: entries.map(({ slug }) => slug) };
 }
 
