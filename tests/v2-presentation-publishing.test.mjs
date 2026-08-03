@@ -133,8 +133,12 @@ test("detail page has the required public-safe content and ordered publishing st
 test("detail page imports only V2 styles and keeps local navigation, contact, and resume links live", async () => {
   const detail = await read(detailPath);
   const stylesheets = [...detail.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+)"/g)].map((match) => match[1]);
+  const scripts = [...detail.matchAll(/<script[^>]+src="([^"]+)"[^>]*><\/script>/g)].map((match) => match[1]);
   assert.deepEqual(stylesheets, ["../styles.css", "workflow-detail.css"]);
-  assert.doesNotMatch(detail, /<script\b/i);
+  assert.deepEqual(scripts, [
+    "https://www.googletagmanager.com/gtag/js?id=G-5KBRW0Q2J9",
+    "../../assets/analytics.js",
+  ]);
   assert.match(detail, /href="\.\.\/index\.html#workflows"/);
   assert.match(detail, /href="mailto:michael\.mckerracher@gmail\.com"/);
   assert.match(detail, /href="\.\.\/\.\.\/assets\/Michael-McKerracher-Resume\.pdf"/);

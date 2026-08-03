@@ -29,9 +29,10 @@ The approved V2 system is live at the production root. `v2/index.html` and `v2/p
 
 ### Production Telemetry Status
 
-- A Search Console domain property for `michaelmck.site` exists but remains unverified. DNS verification and sitemap submission are not complete until Google supplies and accepts the domain token.
-- The portfolio does not yet have its own GA4 property or measurement ID. Do not reuse Cool Runnings, Vertical Impression, Fountainhead, or any other client/company property.
-- Once the dedicated property exists, add one privacy-reduced tag to each public portfolio page, permit only the required Google endpoints in the proposal CSP, remove the conditional test skip, deploy, and verify a real-time visit.
+- Search Console domain property `sc-domain:michaelmck.site` is ownership-verified through a Vercel DNS TXT record. Keep that record in place. The canonical sitemap is submitted at `https://michaelmck.site/sitemap.xml`; Search Console may show a temporary fetch state while Google processes a new submission.
+- Dedicated GA4 property: `Michael McKerracher Portfolio` (`548399747`). Web stream: `michaelmck.site` (`15375336867`). Measurement ID: `G-5KBRW0Q2J9`. Do not reuse Cool Runnings, Vertical Impression, Fountainhead, or any other client/company property.
+- `assets/analytics.js` owns the shared configuration. Each public production and canonical V2 page loads exactly one matching Google tag. Google Signals and ad-personalization signals remain disabled.
+- The proposal-page CSP permits only the required Google Tag Manager script endpoint and Google Analytics collection endpoints in addition to the existing same-origin policy. Keep `frame-src 'none'`, `object-src 'none'`, and the rest of the proposal security boundary intact.
 
 ## Selected Work
 

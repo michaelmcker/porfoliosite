@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
@@ -9,7 +8,9 @@ const read = (path) => readFile(new URL(path, repoUrl), "utf8");
 const trackedPages = [
   "index.html",
   "proposal-generator.html",
+  "field-notes/index.html",
   "v2/index.html",
+  "v2/field-notes/index.html",
   "v2/proposal-generator.html",
   "v2/work/local-search-magnet.html",
   "v2/workflows/agency-management-dashboard.html",
@@ -54,24 +55,31 @@ test("the approved V2 proposal builder is the production proposal route", async 
   assert.match(v2, /<link rel="canonical" href="https:\/\/michaelmck\.site\/proposal-generator\.html">/);
 });
 
-test("every public portfolio page loads one privacy-reduced GA4 tag", {
-  skip: !existsSync(new URL("../assets/analytics.js", import.meta.url))
-    ? "A dedicated portfolio GA4 property and measurement ID have not been created yet"
-    : false,
-}, async () => {
+test("every public portfolio page loads one privacy-reduced GA4 tag", async () => {
   const pages = await Promise.all(trackedPages.map(async (path) => [path, await read(path)]));
 
   for (const [path, html] of pages) {
     const ids = [...html.matchAll(/googletagmanager\.com\/gtag\/js\?id=(G-[A-Z0-9]+)/g)]
       .map((match) => match[1]);
     assert.equal(ids.length, 1, `${path} must load one GA4 tag`);
+    assert.equal(ids[0], "G-5KBRW0Q2J9", `${path} must use the dedicated portfolio property`);
     assert.match(html, /assets\/analytics\.js/);
   }
 
   const analytics = await read("assets/analytics.js");
   assert.match(analytics, /window\.gtag/);
+  assert.match(analytics, /G-5KBRW0Q2J9/);
   assert.match(analytics, /allow_google_signals:\s*false/);
   assert.match(analytics, /allow_ad_personalization_signals:\s*false/);
+});
+
+test("proposal pages allow the privacy-reduced GA4 endpoints without weakening the rest of CSP", async () => {
+  const config = await read("vercel.json");
+
+  assert.match(config, /script-src 'self' https:\/\/www\.googletagmanager\.com/);
+  assert.match(config, /connect-src 'self' https:\/\/www\.google-analytics\.com https:\/\/\*\.google-analytics\.com/);
+  assert.match(config, /frame-src 'none'/);
+  assert.match(config, /object-src 'none'/);
 });
 
 test("the sitemap promotes root V2 routes without duplicate assessment URLs", async () => {

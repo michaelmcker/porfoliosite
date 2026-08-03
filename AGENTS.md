@@ -21,7 +21,7 @@ The production system currently contains:
 
 Legacy `/v2/` homepage and proposal URLs redirect to their production root equivalents. Keep workflow and case-study routes stable until a separate route-flattening migration is approved.
 
-Production telemetry is an explicit release gate. Use a dedicated personal portfolio GA4 property; never send portfolio traffic into a client or employer property. The Search Console domain property must be verified before its sitemap submission is described as complete. Until those external account steps are done, the conditional GA4 regression test remains skipped rather than accepting a placeholder measurement ID.
+Production telemetry is an explicit release gate. The dedicated `Michael McKerracher Portfolio` GA4 property is property `548399747`, web stream `15375336867`, measurement ID `G-5KBRW0Q2J9`. Every public portfolio page loads that one property through `assets/analytics.js`, with Google Signals and ad-personalization signals disabled. Never send portfolio traffic into a client or employer property. The `sc-domain:michaelmck.site` Search Console property is DNS-verified through Vercel DNS; retain its Google verification TXT record. The canonical sitemap is `https://michaelmck.site/sitemap.xml`. Tests must fail if a tracked page drops the dedicated tag, changes the ID, or weakens the proposal-page CSP beyond the required Google Tag and Analytics endpoints.
 
 ## Source and Legacy Isolation
 
