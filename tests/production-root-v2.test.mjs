@@ -62,13 +62,13 @@ test("every public portfolio page loads one privacy-reduced GA4 tag", async () =
     const ids = [...html.matchAll(/googletagmanager\.com\/gtag\/js\?id=(G-[A-Z0-9]+)/g)]
       .map((match) => match[1]);
     assert.equal(ids.length, 1, `${path} must load one GA4 tag`);
-    assert.equal(ids[0], "G-5KBRW0Q2J9", `${path} must use the dedicated portfolio property`);
+    assert.equal(ids[0], "G-EJ6ZTQDK09", `${path} must use the standalone portfolio account`);
     assert.match(html, /assets\/analytics\.js/);
   }
 
   const analytics = await read("assets/analytics.js");
   assert.match(analytics, /window\.gtag/);
-  assert.match(analytics, /G-5KBRW0Q2J9/);
+  assert.match(analytics, /G-EJ6ZTQDK09/);
   assert.match(analytics, /allow_google_signals:\s*false/);
   assert.match(analytics, /allow_ad_personalization_signals:\s*false/);
 });

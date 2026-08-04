@@ -30,7 +30,7 @@ The approved V2 system is live at the production root. `v2/index.html` and `v2/p
 ### Production Telemetry Status
 
 - Search Console domain property `sc-domain:michaelmck.site` is ownership-verified through a Vercel DNS TXT record. Keep that record in place. The canonical sitemap is submitted at `https://michaelmck.site/sitemap.xml`; Search Console may show a temporary fetch state while Google processes a new submission.
-- Dedicated GA4 property: `Michael McKerracher Portfolio` (`548399747`). Web stream: `michaelmck.site` (`15375336867`). Measurement ID: `G-5KBRW0Q2J9`. Do not reuse Cool Runnings, Vertical Impression, Fountainhead, or any other client/company property.
+- Standalone Google Analytics account: `Michael McKerracher Portfolio` (`403345825`). GA4 property: `michaelmck.site` (`548357242`). Web stream: `michaelmck.site` (`15380359385`). Measurement ID: `G-EJ6ZTQDK09`. Do not place portfolio telemetry inside Aethereal, Cool Runnings, Vertical Impression, Fountainhead, or any other client/company account or property.
 - `assets/analytics.js` owns the shared configuration. Each public production and canonical V2 page loads exactly one matching Google tag. Google Signals and ad-personalization signals remain disabled.
 - The proposal-page CSP permits only the required Google Tag Manager script endpoint and Google Analytics collection endpoints in addition to the existing same-origin policy. Keep `frame-src 'none'`, `object-src 'none'`, and the rest of the proposal security boundary intact.
 

@@ -136,7 +136,7 @@ test("detail page imports only V2 styles and keeps local navigation, contact, an
   const scripts = [...detail.matchAll(/<script[^>]+src="([^"]+)"[^>]*><\/script>/g)].map((match) => match[1]);
   assert.deepEqual(stylesheets, ["../styles.css", "workflow-detail.css"]);
   assert.deepEqual(scripts, [
-    "https://www.googletagmanager.com/gtag/js?id=G-5KBRW0Q2J9",
+    "https://www.googletagmanager.com/gtag/js?id=G-EJ6ZTQDK09",
     "../../assets/analytics.js",
   ]);
   assert.match(detail, /href="\.\.\/index\.html#workflows"/);
