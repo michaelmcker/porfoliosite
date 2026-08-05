@@ -17,6 +17,7 @@ function promoteHomepage(source) {
     ['srcset="../assets/', 'srcset="assets/'],
     ['data-src="../assets/', 'data-src="assets/'],
     ['href="../output/', 'href="output/'],
+    ['href="styles.css?v=', 'href="v2/styles.css?v='],
     ['href="styles.css"', 'href="v2/styles.css"'],
     ['src="assets/videos/rccv-showcase-laptop.', 'src="v2/assets/videos/rccv-showcase-laptop.'],
     ['src="assets/finale/', 'src="v2/assets/finale/'],

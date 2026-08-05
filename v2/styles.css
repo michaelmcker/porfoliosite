@@ -1407,18 +1407,60 @@ h3 {
   .about-copy { width: 100%; transform: none; }
   .about h2 { margin-bottom: 18px; font-size: clamp(2.8rem, 12vw, 3.7rem); }
   .about-copy > p { max-width: none; margin-bottom: 18px; font-size: clamp(.86rem, 3.65vw, .98rem); line-height: 1.48; }
-  .portrait-object { position: absolute; z-index: 4; right: 20px; bottom: 18px; width: min(42vw, 172px); }
+  .portrait-object {
+    position: absolute;
+    z-index: 4;
+    right: 16px;
+    bottom: 16px;
+    width: min(50vw, 210px);
+    transition: opacity 180ms ease, transform 240ms var(--ease-out);
+  }
   .portrait-frame { border-width: 5px; padding: 5px; border-radius: 48% 48% 9px 9px / 13% 13% 9px 9px; transform: rotate(1deg); }
   .portrait-object figcaption { display: none; }
   .about.is-about-focused .about-questionable-focus {
     width: min(100%, calc(100% - var(--about-phrase-x, 0px)));
     font-size: clamp(var(--about-phrase-size, .9rem), calc(var(--about-phrase-size, .9rem) + (1.25rem * var(--about-growth, 0))), 2.35rem);
     line-height: 1.03;
-    transform: translate3d(var(--about-phrase-x, 0), calc(var(--about-phrase-y, 0) - (4svh * var(--about-growth, 0))), 0);
+    transform: translate3d(var(--about-phrase-x, 0), calc(var(--about-phrase-y, 0) - (var(--about-phrase-lift, 0px) * var(--about-growth, 0))), 0);
   }
-  .about-process-reveal { position: absolute; z-index: 5; left: 0; top: 58svh; width: min(48%, 184px); margin: 0; transform: translateY(calc(16px * (1 - var(--about-value, 0)))); }
-  .about.has-about-note .about-process-reveal { top: 31svh; width: calc(100% - 40px); }
-  .about.has-about-note .about-note { max-height: 48svh; overflow: auto; }
+  .about-questionable-focus { transition: opacity 160ms ease; }
+  .about-process-reveal {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 47svh;
+    width: calc(100% - 20px);
+    margin: 0;
+    transform: translateY(calc(16px * (1 - var(--about-value, 0))));
+  }
+  .about.has-about-note { z-index: 20; overflow: visible; }
+  .about.has-about-note .about-questionable-focus,
+  .about.has-about-note .portrait-object { opacity: 0; transition: none; }
+  .about.has-about-note .portrait-object { transform: translate3d(16px, 10px, 0); }
+  .about.has-about-note .about-process-line { opacity: 0; }
+  .about.has-about-note .about-process-reveal {
+    position: fixed;
+    inset: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+    z-index: 12;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 22px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 18px;
+    background: #1a2720;
+    box-shadow: 0 26px 60px rgba(5,12,8,.34);
+    opacity: 1;
+    transform: none;
+  }
+  .about.has-about-note .about-note {
+    min-height: 0;
+    max-height: none;
+    flex: 1;
+    overflow: auto;
+  }
   .about-process-value { margin-bottom: 10px; font-size: clamp(1.15rem, 5.5vw, 1.45rem); }
   .about-toggle { min-height: 44px; font-size: .78rem; line-height: 1.3; }
   .about-process-line { display: block; }

@@ -70,7 +70,7 @@ test("About conclusion resolves beside the portrait rather than at the frame bot
   const css = await read("v2/styles.css");
 
   assert.doesNotMatch(css, /\.about-process-reveal\s*\{[^}]*6svh\s*\*\s*var\(--about-value/s);
-  assert.match(css, /@media\s*\(max-width:\s*760px\)[\s\S]*?\.about-process-reveal\s*\{[^}]*top:\s*58svh/s);
+  assert.match(css, /@media\s*\(max-width:\s*760px\)[\s\S]*?\.about-process-reveal\s*\{[^}]*top:\s*47svh/s);
 });
 
 test("finale locks immediately, preloads early, and uses lightweight contact art", async () => {

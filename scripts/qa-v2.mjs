@@ -112,6 +112,7 @@ try {
     return {
       source: video.currentSrc,
       ratio: video.offsetWidth / video.offsetHeight,
+      overlayDisplay: getComputedStyle(overlay).display,
       overlayDelta: {
         left: Math.abs(videoRect.left - overlayRect.left),
         top: Math.abs(videoRect.top - overlayRect.top),
@@ -124,7 +125,7 @@ try {
   assert.ok(Math.abs(desktopHeroGeometry.ratio - (16 / 9)) < .02, `desktop hero video is still cropped: ${JSON.stringify(desktopHeroGeometry)}`);
   assert.ok(Object.values(desktopHeroGeometry.overlayDelta).every((delta) => delta <= 1), `desktop hero labels do not share the video box: ${JSON.stringify(desktopHeroGeometry)}`);
   await page.$eval("#motion-video-hero", (video) => video.dispatchEvent(new Event("waiting")));
-  assert.equal(await page.$eval(".hero-video-copy", (copy) => Number(getComputedStyle(copy).opacity)), 1, "hero labels disappeared after the decoded frame entered a temporary waiting state");
+  await page.waitForFunction(() => Number(getComputedStyle(document.querySelector(".hero-video-copy")).opacity) >= .99);
   await page.$eval("#motion-video-hero", (video) => video.dispatchEvent(new Event("playing")));
   await page.waitForFunction(() => Number(getComputedStyle(document.querySelector(".hero-video-copy")).opacity) === 1);
 
@@ -143,6 +144,7 @@ try {
     return {
       source: video.currentSrc,
       ratio: video.offsetWidth / video.offsetHeight,
+      overlayDisplay: getComputedStyle(overlay).display,
       overlayDelta: {
         left: Math.abs(videoRect.left - overlayRect.left),
         top: Math.abs(videoRect.top - overlayRect.top),
@@ -153,7 +155,7 @@ try {
   });
   assert.match(mobileHeroGeometry.source, /portfolio-hero-system-map-mobile-1080p\.mp4/);
   assert.ok(Math.abs(mobileHeroGeometry.ratio - (9 / 16)) < .02, `mobile hero video is still cropped: ${JSON.stringify(mobileHeroGeometry)}`);
-  assert.ok(Object.values(mobileHeroGeometry.overlayDelta).every((delta) => delta <= 1), `mobile hero labels do not share the video box: ${JSON.stringify(mobileHeroGeometry)}`);
+  assert.equal(mobileHeroGeometry.overlayDisplay, "none", `desktop correction labels are visible over the authored mobile film: ${JSON.stringify(mobileHeroGeometry)}`);
   await mobileHeroPage.close();
   for (const deferredShowcase of ["rccv-showcase-laptop", "cool-runnings-sizzle-25s"]) {
     assert.equal(

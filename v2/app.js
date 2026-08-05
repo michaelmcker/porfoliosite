@@ -337,6 +337,13 @@ const positionAboutFocusPhrase = () => {
   aboutScrollStory.style.setProperty("--about-phrase-y", `${inlineBounds.top - copyBounds.top}px`);
   aboutScrollStory.style.setProperty("--about-phrase-size", inlineStyle.fontSize);
   aboutScrollStory.style.setProperty("--about-phrase-weight", inlineStyle.fontWeight);
+  if (window.matchMedia("(max-width: 760px)").matches) {
+    const inlineY = inlineBounds.top - copyBounds.top;
+    const safeFocusY = Math.max(0, (window.innerHeight * .32) - copyBounds.top);
+    aboutScrollStory.style.setProperty("--about-phrase-lift", `${Math.max(0, inlineY - safeFocusY)}px`);
+  } else {
+    aboutScrollStory.style.removeProperty("--about-phrase-lift");
+  }
 };
 
 const updateAboutProgress = () => {
