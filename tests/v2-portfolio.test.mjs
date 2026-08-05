@@ -47,7 +47,7 @@ test("accordion stages selection and About bridges section-wide pointer input", 
   assert.match(app, /portfolio-portrait-pointer/);
   assert.match(app, /data-workflow-transitioning/);
   assert.match(app, /requestAnimationFrame/);
-  assert.match(html, /data-about-questionable-inline>Even when the practical value is questionable<\/span>, <span class="about-value-inline">there is value in the process\.<\/span>/);
+  assert.match(html, /data-about-questionable-inline>Even when the practical value is questionable<\/span><span class="about-value-inline">, there is value in the process\.<\/span>/);
   assert.match(html, /data-about-questionable-focus[^>]*aria-hidden="true"[^>]*>Even when the practical value is questionable<\/span>/);
   assert.match(html, /data-about-scroll-story/);
   assert.match(html, /class="about-process-line"/);
@@ -79,7 +79,7 @@ test("V2 is isolated in its own three production files", async () => {
     readV2("app.js"),
   ]);
 
-  assert.match(html, /<link[^>]+href="styles\.css"/);
+  assert.match(html, /<link[^>]+href="styles\.css(?:\?v=[^"]+)?"/);
   assert.match(html, /<script[^>]+src="app\.js(?:\?v=[^"]+)?"/);
   assert.doesNotMatch(html, /(?:href|src)="\.\.\/(?:styles\.css|app\.js|workflow-reset\.css|styles\/)/);
   assert.doesNotMatch(css, /@import\s+["']?\.\.\/(?:styles|workflow-reset)/);

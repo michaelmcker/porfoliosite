@@ -110,8 +110,9 @@ test("the expanded About build note stays readable and explains the construction
   assert.match(app, /classList\.toggle\("has-about-note",\s*opening\)/);
   assert.match(css, /\.about\.has-about-note \.about-process-line\s*\{[^}]*opacity:\s*\.12/s);
   assert.match(css, /\.about-note\s*\{[^}]*background:\s*rgba\(26,39,32,\.94\)/s);
-  assert.match(css, /@media \(max-width:\s*760px\)[\s\S]*?\.about\.has-about-note \.about-process-reveal\s*\{[^}]*top:\s*31svh[^}]*width:\s*calc\(100%\s*-\s*40px\)/s);
-  assert.match(css, /@media \(max-width:\s*760px\)[\s\S]*?\.about\.has-about-note \.about-note\s*\{[^}]*max-height:\s*48svh[^}]*overflow:\s*auto/s);
+  assert.match(css, /@media \(max-width:\s*760px\)[\s\S]*?\.about\.has-about-note \.about-questionable-focus,[\s\S]*?\.about\.has-about-note \.portrait-object\s*\{[^}]*opacity:\s*0/s);
+  assert.match(css, /@media \(max-width:\s*760px\)[\s\S]*?\.about\.has-about-note \.about-process-reveal\s*\{[^}]*position:\s*fixed[^}]*inset:\s*max\(16px,[^}]*background:\s*#1a2720/s);
+  assert.match(css, /@media \(max-width:\s*760px\)[\s\S]*?\.about\.has-about-note \.about-note\s*\{[^}]*flex:\s*1[^}]*overflow:\s*auto/s);
 });
 
 test("scheduled metrics runs publish their source windows on the GitHub Actions summary", async () => {
