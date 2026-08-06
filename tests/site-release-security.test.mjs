@@ -138,7 +138,6 @@ test("canonical sitemap and robots files expose only intended public routes", as
   const expected = [
     "https://michaelmck.site/",
     "https://michaelmck.site/proposal-generator.html",
-    "https://michaelmck.site/field-notes/",
     "https://michaelmck.site/v2/work/local-search-magnet.html",
     "https://michaelmck.site/v2/workflows/agency-management-dashboard.html",
     "https://michaelmck.site/v2/workflows/content-production.html",
@@ -157,5 +156,7 @@ test("internal review scorecard is excluded from Vercel deployment", async () =>
   assert.match(ignore, /^portfolio-style-round-scorecard\.html$/m);
   assert.match(ignore, /^v2\/assets\/backgrounds\/$/m);
   assert.match(ignore, /^v2\/assets\/workflows\/candidates\/$/m);
+  assert.match(ignore, /^field-notes\/$/m);
+  assert.match(ignore, /^v2\/field-notes\/$/m);
   assert.match(ignore, /^!assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.png$/m);
 });

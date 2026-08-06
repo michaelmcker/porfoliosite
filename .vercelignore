@@ -13,6 +13,8 @@ v2/assets/workflows/candidates/
 artifacts/
 docs/
 content/
+field-notes/
+v2/field-notes/
 node_modules/
 portfolio-remote-preview/
 portfolio-style-round-scorecard.html

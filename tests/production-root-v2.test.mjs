@@ -8,9 +8,7 @@ const read = (path) => readFile(new URL(path, repoUrl), "utf8");
 const trackedPages = [
   "index.html",
   "proposal-generator.html",
-  "field-notes/index.html",
   "v2/index.html",
-  "v2/field-notes/index.html",
   "v2/proposal-generator.html",
   "v2/work/local-search-magnet.html",
   "v2/workflows/agency-management-dashboard.html",

@@ -1,26 +1,27 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
 const root = new URL("../", import.meta.url);
 const read = (path) => readFile(new URL(path, root), "utf8");
 
-test("the portfolio and search surfaces discover the public field notes index", async () => {
-  const [sourceHome, productionHome, index, sitemap, robots] = await Promise.all([
+test("Field Notes remains private and has no deployed discovery surface", async () => {
+  const [sourceHome, productionHome, sitemap, ignore, promoter] = await Promise.all([
     read("v2/index.html"),
     read("index.html"),
-    read("v2/field-notes/index.html"),
     read("sitemap.xml"),
-    read("robots.txt"),
+    read(".vercelignore"),
+    read("scripts/promote-v2-to-root.mjs"),
   ]);
 
-  assert.match(sourceHome, /<nav aria-label="Primary navigation">[\s\S]*href="\/field-notes\/"[^>]*>Field Notes<\/a>/);
-  assert.match(productionHome, /href="\/field-notes\/"[^>]*>Field Notes<\/a>/);
-  assert.match(index, /<link rel="canonical" href="https:\/\/michaelmck\.site\/field-notes\/">/);
-  assert.match(index, /rel="alternate" type="application\/rss\+xml"/);
-  assert.match(index, /"@type":"Blog"/);
-  assert.match(sitemap, /<loc>https:\/\/michaelmck\.site\/field-notes\/<\/loc>/);
-  assert.doesNotMatch(robots, /Disallow:\s*\/field-notes/i);
+  for (const html of [sourceHome, productionHome]) {
+    assert.doesNotMatch(html, /href="\/field-notes\//);
+    assert.doesNotMatch(html, /application\/rss\+xml/);
+  }
+  assert.doesNotMatch(sitemap, /field-notes/);
+  assert.match(ignore, /^field-notes\/$/m);
+  assert.match(ignore, /^v2\/field-notes\/$/m);
+  assert.doesNotMatch(promoter, /cp\(new URL\("v2\/field-notes\//);
 });
 
 test("private weekly state and source Markdown stay outside the deployed site", async () => {
@@ -46,15 +47,11 @@ test("private weekly state and source Markdown stay outside the deployed site", 
   }
 });
 
-test("V2 promotion copies the field notes route to production without changing its canonical URL", async () => {
-  const [sourceIndex, productionIndex, sourceFeed, productionFeed, styles] = await Promise.all([
-    read("v2/field-notes/index.html"),
-    read("field-notes/index.html"),
-    read("v2/field-notes/feed.xml"),
-    read("field-notes/feed.xml"),
-    read("v2/field-notes/field-notes.css"),
+test("private Field Notes source, renderer, and local output remain available", async () => {
+  await Promise.all([
+    access(new URL("content/field-notes/", root)),
+    access(new URL("scripts/weekly-field-notes/render.mjs", root)),
+    access(new URL("v2/field-notes/index.html", root)),
+    access(new URL("v2/field-notes/feed.xml", root)),
   ]);
-  assert.equal(productionIndex, sourceIndex);
-  assert.equal(productionFeed, sourceFeed);
-  assert.doesNotMatch(styles, /\.notes-header nav a:first-child\{display:none\}/, "mobile readers must retain the Portfolio escape link");
 });

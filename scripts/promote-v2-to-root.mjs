@@ -1,4 +1,4 @@
-import { copyFile, cp, mkdir, readFile, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 
 const root = new URL("../", import.meta.url);
 
@@ -60,8 +60,4 @@ await Promise.all([
     new URL("v2/vendor/matter.min.js", root),
     new URL("vendor/matter.min.js", root),
   ),
-  cp(new URL("v2/field-notes/", root), new URL("field-notes/", root), {
-    recursive: true,
-    force: true,
-  }),
 ]);
