@@ -26,7 +26,7 @@ test("desktop workflow panels do not keep a hidden oversized canvas during trans
   assert.match(css, /\.workflow-panel\s*\{[^}]*flex:\s*0\s+0\s+0[^}]*width:\s*0[^}]*visibility:\s*hidden/s);
   assert.match(css, /\.workflow-item\.is-active \.workflow-panel\s*\{[^}]*flex:\s*1\s+1\s+auto[^}]*width:\s*auto[^}]*visibility:\s*visible/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*min-width:\s*0[^}]*width:\s*100%/s);
-  assert.match(css, /\.workflow-dashboard \.workflow-panel figure\s*\{[^}]*background:\s*#e7e8e3/s);
+  assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*var\(--workflow-art-surface\)/s);
   assert.match(css, /\.workflow-dashboard \.workflow-panel figure img\s*\{[^}]*width:\s*100%[^}]*max-height:\s*650px/s);
 });
 
@@ -72,11 +72,11 @@ test("Okanagan preview uses the deployed serif navigation and display typography
   assert.match(css, /@media \(min-width: 561px\) and \(max-width: 900px\)[\s\S]*?\.site-nav\s*\{[^}]*transform:\s*scale\(var\(--nav-scale\)\)/s);
 });
 
-test("workflow tabs visibly lift from the stack on hover and keyboard focus", async () => {
+test("workflow folder tabs visibly lift from the stack on hover and keyboard focus", async () => {
   const css = await read("v2/styles.css");
 
-  assert.match(css, /\.workflow-trigger:hover,\s*\.workflow-trigger:focus-visible\s*\{[^}]*translate3d\(-18px,/s);
+  assert.match(css, /\.workflow-trigger:hover,\s*\.workflow-trigger:focus-visible\s*\{[^}]*translate3d\([^,]+,\s*-18px,/s);
   assert.match(css, /\.workflow-item:has\(\.workflow-trigger:hover\),\s*\.workflow-item:focus-within\s*\{[^}]*z-index:\s*20/s);
   assert.match(css, /flex-basis\s+780ms/);
-  assert.match(css, /\.workflow-trigger strong\s*\{[^}]*font-size:\s*1\.3rem/s);
+  assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-size:\s*clamp\(/s);
 });

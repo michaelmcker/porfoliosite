@@ -39,7 +39,7 @@
   padding: clamp(24px, 4vw, 58px);
   overflow: hidden;
   border-radius: var(--radius);
-  background: #111412;
+  background: var(--workflow-art-surface);
   box-shadow: 0 38px 90px rgba(20,21,18,.18);
 }
 .workflow-artwork img { width: 100%; max-height: 680px; object-fit: contain; border-radius: 10px; }

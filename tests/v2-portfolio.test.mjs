@@ -186,13 +186,14 @@ test("project labels and the accommodation cue are specific and keep a wide blac
   assert.match(css, /\.accommodation-scroll-cue\s*\{[^}]*position:\s*relative[^}]*justify-self:\s*end/s);
 });
 
-test("accordion uses wider layered spines, overlaps them tightly, and hides the active desktop tab", async () => {
+test("accordion uses layered folder sheets and keeps the selected tab visible", async () => {
   const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
 
   assert.doesNotMatch(html, /workflow-number/);
-  assert.match(css, /\.workflow-item\s*\{[^}]*flex:\s*0\s+0\s+64px[^}]*margin-left:\s*-24px/s);
-  assert.match(css, /\.workflow-item\.is-active\s*\{[^}]*flex-basis:\s*calc\(100%\s*-\s*160px\)[^}]*flex-grow:\s*0/s);
-  assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*width:\s*0[^}]*opacity:\s*0[^}]*pointer-events:\s*none/s);
+  assert.equal((html.match(/class="workflow-trigger-label"/g) || []).length, 5);
+  assert.match(css, /\.workflow-item\s*\{[^}]*flex:\s*0\s+0\s+112px[^}]*margin-left:\s*-36px/s);
+  assert.match(css, /\.workflow-item\.is-active\s*\{[^}]*flex-basis:\s*calc\(100%\s*-\s*304px\)[^}]*flex-grow:\s*0/s);
+  assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*visibility:\s*visible[^}]*pointer-events:\s*auto/s);
   assert.match(css, /\.workflow-trigger\s*\{[^}]*box-shadow:\s*inset/s);
   assert.match(css, /\.workflow-accordion\s*\{[^}]*min-height:\s*880px/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*min-height:\s*880px/s);
@@ -468,11 +469,11 @@ test("workflow showcase uses a neutral accordion and orders copy above dominant 
   }
 
   assert.match(css, /\.workflow-accordion\s*\{[^}]*width:\s*100%/s);
-  assert.match(css, /\.workflow-item\s*\{[^}]*min-width:\s*64px[^}]*color:\s*white/s);
-  assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*64px[^}]*background:\s*var\(--rail\)/s);
-  assert.match(css, /\.workflow-trigger strong\s*\{[^}]*font-size:\s*1\.3rem[^}]*font-weight:\s*900/s);
+  assert.match(css, /\.workflow-item\s*\{[^}]*min-width:\s*112px[^}]*color:\s*white/s);
+  assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*112px[^}]*background:\s*var\(--rail\)/s);
+  assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-size:\s*clamp\([^}]*font-weight:\s*900/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*grid-template-rows:\s*auto minmax\(0,\s*1fr\)/s);
-  assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*#e7e8e3/s);
+  assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*var\(--workflow-art-surface\)/s);
   assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*clamp\(2\.15rem,\s*3\.15vw,\s*3\.65rem\)/s);
   assert.match(css, /\.workflow-copy p\s*\{[^}]*font-size:\s*clamp\(\.98rem,\s*1\.15vw,\s*1\.12rem\)/s);
   assert.match(css, /\.workflow-copy-head\s*\{[^}]*justify-content:\s*space-between/s);

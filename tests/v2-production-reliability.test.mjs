@@ -57,13 +57,17 @@ test("Vercel publishes every optimized asset introduced by the performance pass"
   assert.doesNotMatch(ignore, /^assets\/portrait-final\/assets\/production(?:\/|\*)/m);
 });
 
-test("workflow evidence uses a black chapter with a paper artifact stage", async () => {
-  const css = await read("v2/styles.css");
+test("workflow evidence uses a black folder chapter with shared warm-grey artwork cards", async () => {
+  const [css, detailCss] = await Promise.all([
+    read("v2/styles.css"),
+    read("v2/workflows/workflow-detail.css"),
+  ]);
 
   assert.match(css, /\.workflow-section\s*\{[^}]*background:\s*var\(--charcoal\)[^}]*color:\s*white/s);
   assert.match(css, /\.workflow-accordion\s*\{[^}]*background:\s*var\(--charcoal\)/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*background:\s*var\(--charcoal\)/s);
-  assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*#e7e8e3/s);
+  assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*var\(--workflow-art-surface\)/s);
+  assert.match(detailCss, /\.workflow-artwork\s*\{[^}]*background:\s*var\(--workflow-art-surface\)/s);
 });
 
 test("About conclusion resolves beside the portrait rather than at the frame bottom", async () => {

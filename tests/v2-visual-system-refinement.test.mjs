@@ -109,16 +109,31 @@ test("approved Content style drives image generation while Content and the recov
   }
 });
 
-test("workflow rails use ordered physical depth and reset to flat rows below desktop", async () => {
-  const css = await read("v2/styles.css");
+test("workflow controls read as stacked folders with visible horizontal labels", async () => {
+  const [html, css] = await Promise.all([read("v2/index.html"), read("v2/styles.css")]);
 
+  assert.equal((html.match(/class="workflow-trigger-label"/g) || []).length, 5);
   assert.match(css, /\.workflow-accordion\s*\{[^}]*perspective:\s*1600px/s);
   assert.match(css, /\.workflow-trigger::before\s*\{/);
   assert.match(css, /--stack-y:/);
   assert.match(css, /\.workflow-item:nth-child\(5\)\s*\{[^}]*z-index:/s);
-  assert.match(css, /transform:\s*translate3d\(/);
+  assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-family:\s*var\(--font-sans\)[^}]*font-weight:\s*900/s);
+  assert.doesNotMatch(css, /writing-mode:\s*vertical/);
+  assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*visibility:\s*visible[^}]*pointer-events:\s*auto/s);
   assert.match(css, /@media \(max-width: 1099px\)[\s\S]*?\.workflow-trigger\s*\{[^}]*transform:\s*none/s);
-  assert.match(css, /@media \(max-width: 1099px\)[\s\S]*?\.workflow-trigger::before\s*\{[^}]*display:\s*none/s);
+});
+
+test("homepage and workflow pages share one warm-grey artwork card", async () => {
+  const [homeCss, detailCss] = await Promise.all([
+    read("v2/styles.css"),
+    read("v2/workflows/workflow-detail.css"),
+  ]);
+
+  assert.match(homeCss, /--workflow-art-surface:\s*#e7e8e3/);
+  assert.match(homeCss, /\.workflow-panel figure\s*\{[^}]*background:\s*var\(--workflow-art-surface\)/s);
+  assert.match(detailCss, /\.workflow-artwork\s*\{[^}]*background:\s*var\(--workflow-art-surface\)/s);
+  assert.doesNotMatch(detailCss, /\.workflow-artwork\s*\{[^}]*background:\s*#111412/s);
+  assert.match(detailCss, /\.workflow-artwork img\s*\{[^}]*object-fit:\s*contain/s);
 });
 
 test("Content mobile prompt preserves logos, cards, and coloured routing from the approved desktop image", async () => {
