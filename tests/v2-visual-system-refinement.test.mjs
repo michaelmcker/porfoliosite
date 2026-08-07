@@ -61,24 +61,24 @@ test("workflow routes use responsive artwork from the approved Content visual fa
   ];
 
   for (const slug of ["content-production-approved", "agency-dashboard", "local-prospecting", "image-to-website"]) {
-    assert.match(homepage, new RegExp(`assets/workflows/${slug}-mobile\\.png`));
-    assert.match(homepage, new RegExp(`assets/workflows/${slug}-desktop\\.png`));
+    assert.match(homepage, new RegExp(`assets/workflows/${slug}-mobile\\.webp`));
+    assert.match(homepage, new RegExp(`assets/workflows/${slug}-desktop\\.webp`));
     for (const layout of ["desktop", "mobile"]) {
-      await access(new URL(`v2/assets/workflows/${slug}-${layout}.png`, repo));
+      await access(new URL(`v2/assets/workflows/${slug}-${layout}.webp`, repo));
     }
   }
 
   for (const [route, slug] of routes) {
     const detail = await read(`v2/workflows/${route}`);
-    assert.match(detail, new RegExp(`../assets/workflows/${slug}-mobile\\.png`));
-    assert.match(detail, new RegExp(`../assets/workflows/${slug}-desktop\\.png`));
+    assert.match(detail, new RegExp(`../assets/workflows/${slug}-mobile\\.webp`));
+    assert.match(detail, new RegExp(`../assets/workflows/${slug}-desktop\\.webp`));
   }
 
   const presentation = await read("v2/workflows/presentation-publishing.html");
-  assert.match(homepage, /assets\/workflows\/presentation-publishing-mobile\.png/);
-  assert.match(homepage, /assets\/workflows\/presentation-publishing-desktop\.png/);
-  assert.match(presentation, /\.\.\/assets\/workflows\/presentation-publishing-mobile\.png/);
-  assert.match(presentation, /\.\.\/assets\/workflows\/presentation-publishing-desktop\.png/);
+  assert.match(homepage, /assets\/workflows\/presentation-publishing-mobile\.webp/);
+  assert.match(homepage, /assets\/workflows\/presentation-publishing-desktop\.webp/);
+  assert.match(presentation, /\.\.\/assets\/workflows\/presentation-publishing-mobile\.webp/);
+  assert.match(presentation, /\.\.\/assets\/workflows\/presentation-publishing-desktop\.webp/);
 
   await access(new URL("v2/assets/workflows/README.md", repo));
 });
@@ -175,12 +175,12 @@ test("approved Content mobile and corrected prospecting artwork are wired into c
     read("v2/workflows/local-prospecting-enrichment.html"),
   ]);
 
-  assert.match(homepage, /assets\/workflows\/content-production-approved-mobile\.png/);
-  assert.match(contentDetail, /\.\.\/assets\/workflows\/content-production-approved-mobile\.png/);
-  assert.match(homepage, /assets\/workflows\/local-prospecting-mobile\.png/);
-  assert.match(homepage, /assets\/workflows\/local-prospecting-desktop\.png/);
-  assert.match(prospectingDetail, /\.\.\/assets\/workflows\/local-prospecting-mobile\.png/);
-  assert.match(prospectingDetail, /\.\.\/assets\/workflows\/local-prospecting-desktop\.png/);
+  assert.match(homepage, /assets\/workflows\/content-production-approved-mobile\.webp/);
+  assert.match(contentDetail, /\.\.\/assets\/workflows\/content-production-approved-mobile\.webp/);
+  assert.match(homepage, /assets\/workflows\/local-prospecting-mobile\.webp/);
+  assert.match(homepage, /assets\/workflows\/local-prospecting-desktop\.webp/);
+  assert.match(prospectingDetail, /\.\.\/assets\/workflows\/local-prospecting-mobile\.webp/);
+  assert.match(prospectingDetail, /\.\.\/assets\/workflows\/local-prospecting-desktop\.webp/);
   assert.doesNotMatch(homepage, /\.\.\/assets\/workflows\/local-prospecting\.png/);
 });
 

@@ -19,20 +19,20 @@ test("homepage avoids loading oversized and below-fold media during first paint"
   assert.ok((preview.match(/preload="none"/g) || []).length >= 3);
 
   for (const src of [
-    "../assets/screens/vertical-impression-why-elevators.png",
-    "../assets/campaigns/vertical-impression-albums-composite.png",
-    "assets/workflows/content-production-approved-desktop.png",
-    "assets/workflows/agency-dashboard-desktop.png",
-    "assets/workflows/presentation-publishing-desktop.png",
-    "assets/workflows/local-prospecting-desktop.png",
-    "assets/workflows/image-to-website-desktop.png",
-    "../assets/screens/fountainhead-ai-visibility-dashboard-v4.png",
+    "../assets/screens/vertical-impression-why-elevators.webp",
+    "../assets/campaigns/vertical-impression-albums-composite.webp",
+    "assets/workflows/content-production-approved-desktop.webp",
+    "assets/workflows/agency-dashboard-desktop.webp",
+    "assets/workflows/presentation-publishing-desktop.webp",
+    "assets/workflows/local-prospecting-desktop.webp",
+    "assets/workflows/image-to-website-desktop.webp",
+    "../assets/screens/fountainhead-ai-visibility-dashboard-v4.webp",
   ]) {
     const escaped = src.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     assert.match(html, new RegExp(`<img[^>]+src="${escaped}"[^>]+loading="lazy"[^>]+decoding="async"`));
   }
-  assert.match(html, /<img[^>]+data-src="\.\.\/assets\/device-mockups\/laptop-graphite-frame\.png"/);
-  assert.match(html, /<img[^>]+data-src="\.\.\/assets\/samples\/vertical-impression-local-proposal-current\.png"/);
+  assert.match(html, /<img[^>]+data-src="\.\.\/assets\/device-mockups\/laptop-graphite-frame\.webp"/);
+  assert.match(html, /<img[^>]+data-src="\.\.\/assets\/samples\/vertical-impression-local-proposal-current\.webp"/);
   assert.match(html, /poster="\.\.\/assets\/videos\/portfolio-hero-system-map-desktop-poster\.webp"/);
   assert.match(html, /data-poster="\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.webp"/);
   assert.match(html, /data-poster="\.\.\/assets\/screens\/cool-runnings-home\.webp"/);
@@ -48,13 +48,28 @@ test("Vercel publishes every optimized asset introduced by the performance pass"
     "assets/videos/portfolio-hero-system-map-desktop-poster.webp",
     "assets/device-mockups/laptop-three-quarter-rccv-cutout.webp",
     "assets/screens/cool-runnings-home.webp",
-    "assets/device-mockups/laptop-graphite-frame.png",
+    "assets/device-mockups/laptop-graphite-frame.webp",
     "assets/samples/vertical-impression-public-proposal-sample-page-1.png",
     "assets/workflows/content-workflow-approved-stage.png",
   ]) {
     assert.match(ignore, new RegExp(`!${asset.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`));
   }
   assert.doesNotMatch(ignore, /^assets\/portrait-final\/assets\/production(?:\/|\*)/m);
+});
+
+test("homepage still-image variants stay inside the fast-loading budget", async () => {
+  const html = await read("v2/index.html");
+  const references = [...html.matchAll(/(?:src|data-src|poster|srcset)="([^"\s]+\.(?:png|jpe?g|webp))/gi)]
+    .map((match) => match[1]);
+  const uniqueReferences = [...new Set(references)];
+  const byteSizes = await Promise.all(uniqueReferences.map(async (reference) => {
+    const file = new URL(reference, new URL("../v2/index.html", import.meta.url));
+    return (await stat(file)).size;
+  }));
+  const totalBytes = byteSizes.reduce((sum, bytes) => sum + bytes, 0);
+
+  assert.ok(totalBytes < 4_500_000, `homepage references ${(totalBytes / 1_000_000).toFixed(2)} MB of still images`);
+  assert.ok(Math.max(...byteSizes) < 350_000, "an individual homepage still exceeds 350 KB");
 });
 
 test("workflow evidence uses a black folder chapter with shared warm-grey artwork cards", async () => {
@@ -119,7 +134,7 @@ test("Fountainhead role uses the approved marketing engineer title", async () =>
 
 test("proposal preview does not download an unused PDF before generation", async () => {
   const html = await read("v2/proposal-generator.html");
-  assert.match(html, /<img[^>]+vertical-impression-local-proposal-current\.png[^>]+data-proposal-preview-image/);
+  assert.match(html, /<img[^>]+vertical-impression-local-proposal-current\.webp[^>]+data-proposal-preview-image/);
   assert.doesNotMatch(html, /<iframe|data-proposal-frame/);
   assert.doesNotMatch(html, /src="\.\.\/output\/pdf\/vertical-impression-local-proposal-sample\.pdf/);
 });

@@ -776,7 +776,7 @@ h3 {
   min-width: 112px;
   display: flex;
   flex: 0 0 112px;
-  margin-left: -36px;
+  margin-left: -18px;
   overflow: visible;
   background: var(--charcoal);
   color: white;
@@ -789,7 +789,7 @@ h3 {
 .workflow-item:nth-child(3) { z-index: 3; --rail: #242826; --stack-y: 3px; --stack-z: 6px; }
 .workflow-item:nth-child(4) { z-index: 4; --rail: #2d312f; --stack-y: -2px; --stack-z: 9px; }
 .workflow-item:nth-child(5) { z-index: 5; --rail: #272b29; --stack-y: 2px; --stack-z: 12px; }
-.workflow-item.is-active { z-index: 10; min-width: 0; flex-basis: calc(100% - 304px); flex-grow: 0; flex-shrink: 1; overflow: visible; }
+.workflow-item.is-active { z-index: 10; min-width: 0; flex-basis: calc(100% - 376px); flex-grow: 0; flex-shrink: 1; overflow: visible; }
 .workflow-item.is-active { background: var(--charcoal); color: white; }
 .workflow-trigger {
   position: relative;
@@ -852,16 +852,16 @@ h3 {
   position: absolute;
   z-index: 2;
   top: 20px;
-  left: 10px;
-  width: calc(100% - 20px);
+  left: 6px;
+  width: calc(100% - 12px);
   overflow: hidden;
   color: var(--rail-ink);
   font-family: var(--font-sans);
-  font-size: clamp(.78rem, .86vw, .92rem);
+  font-size: clamp(.78rem, .78vw, .84rem);
   font-weight: 900;
   line-height: 1.05;
   letter-spacing: -.035em;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
 }
 .workflow-plus { font-size: 1.6rem; font-weight: 500; transition: transform 450ms var(--ease-out); }

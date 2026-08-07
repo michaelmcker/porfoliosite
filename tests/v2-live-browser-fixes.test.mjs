@@ -84,8 +84,8 @@ test("below-fold selected-work media does not compete with the hero on first pai
 
   assert.match(html, /data-poster="\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.webp"/);
   assert.match(html, /data-poster="\.\.\/assets\/screens\/cool-runnings-home\.webp"/);
-  assert.match(html, /class="cool-laptop-frame"[^>]+data-src="\.\.\/assets\/device-mockups\/laptop-graphite-frame\.png"/);
-  assert.match(html, /class="proposal-sheet"[\s\S]*?<img[^>]+data-src="\.\.\/assets\/samples\/vertical-impression-local-proposal-current\.png"/);
+  assert.match(html, /class="cool-laptop-frame"[^>]+data-src="\.\.\/assets\/device-mockups\/laptop-graphite-frame\.webp"/);
+  assert.match(html, /class="proposal-sheet"[\s\S]*?<img[^>]+data-src="\.\.\/assets\/samples\/vertical-impression-local-proposal-current\.webp"/);
   assert.match(app, /loadDeferredImage/);
   assert.match(app, /rootMargin:\s*"110%\s+0px"/);
 });

@@ -60,7 +60,7 @@ test("V2 proposal builder explains the four generated elements", async () => {
   assert.equal((html.match(/data-proposal-callout="(map|ad|copy|offer)"/g) || []).length, 4);
   assert.equal((html.match(/data-proposal-path="(map|ad|copy|offer)"/g) || []).length, 4);
   assert.match(html, /class="proposal-annotation-paths"[^>]+data-proposal-connectors/);
-  assert.match(html, /class="proposal-preview__sample"[^>]+vertical-impression-local-proposal-current\.png/);
+  assert.match(html, /class="proposal-preview__sample"[^>]+vertical-impression-local-proposal-current\.webp/);
   assert.match(css, /\.proposal-annotations\s*\{[^}]*pointer-events:\s*none/s);
   assert.match(css, /\.proposal-explainer\s*\{[^}]*display:\s*grid[^}]*grid-template-columns:/s);
   assert.match(css, /\.proposal-annotation-paths\s*\{[^}]*position:\s*absolute[^}]*pointer-events:\s*none/s);

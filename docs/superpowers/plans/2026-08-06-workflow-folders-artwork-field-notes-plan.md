@@ -1,6 +1,6 @@
 # Workflow Folders, Artwork Surfaces, and Field Notes Retirement Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Turn the homepage workflow accordion into readable stacked folders, give workflow artwork one consistent warm-grey card on homepage and detail pages, and remove Field Notes from every deployed surface while retaining the private renderer and source.
 
@@ -18,7 +18,7 @@
 - Modify: `tests/v2-production-reliability.test.mjs`
 - Test: `tests/v2-visual-system-refinement.test.mjs`
 
-- [ ] **Step 1: Replace the old vertical-spine assertions with the approved folder-tab contract**
+- [x] **Step 1: Replace the old vertical-spine assertions with the approved folder-tab contract**
 
 Assert that desktop controls use horizontal text, a raised top tab, overlapping sheet depth, a visible selected tab, and a mobile reset. The test must require `.workflow-trigger-label`, reject `writing-mode`, require the active trigger to remain visible, and preserve the 780ms flex transition.
 
@@ -35,7 +35,7 @@ test("workflow controls read as stacked folders with visible horizontal labels",
 });
 ```
 
-- [ ] **Step 2: Add a shared warm-grey artwork-surface test**
+- [x] **Step 2: Add a shared warm-grey artwork-surface test**
 
 Assert that homepage figures and workflow detail artwork use the same CSS variable, detail pages no longer use `#111412`, and responsive images remain `object-fit: contain`.
 
@@ -53,7 +53,7 @@ test("homepage and workflow pages share one warm-grey artwork card", async () =>
 });
 ```
 
-- [ ] **Step 3: Run the focused tests and verify RED**
+- [x] **Step 3: Run the focused tests and verify RED**
 
 Run:
 
@@ -72,7 +72,7 @@ Expected: FAIL because `.workflow-trigger-label`, visible active folder tabs, an
 - Generated: `index.html`
 - Test: `tests/v2-visual-system-refinement.test.mjs`
 
-- [ ] **Step 1: Give each workflow control a dedicated horizontal label element**
+- [x] **Step 1: Give each workflow control a dedicated horizontal label element**
 
 Wrap each existing control label without changing button IDs, regions, ARIA wiring, or item order:
 
@@ -80,7 +80,7 @@ Wrap each existing control label without changing button IDs, regions, ARIA wiri
 <strong class="workflow-trigger-label">Content</strong>
 ```
 
-- [ ] **Step 2: Replace vertical rails with overlapping folder sheets**
+- [x] **Step 2: Replace vertical rails with overlapping folder sheets**
 
 Use the existing `.workflow-item`, `.workflow-trigger`, and `.workflow-panel` structure. Keep numeric desktop flex bases and the 780ms transition. Render the raised label lip with `::before`, horizontal label text, adjacent charcoal values, and a visible active control joined to the open body. Hover/focus lifts the closed sheet; it never selects it.
 
@@ -123,7 +123,7 @@ Use the existing `.workflow-item`, `.workflow-trigger`, and `.workflow-panel` st
 
 At widths below 1100px, reset perspective and transforms, stack rows vertically, keep the label lip at upper left, and preserve 44px minimum targets and the existing vertical reveal.
 
-- [ ] **Step 3: Replace the workflow detail black wrapper with the shared warm-grey surface**
+- [x] **Step 3: Replace the workflow detail black wrapper with the shared warm-grey surface**
 
 ```css
 .workflow-artwork {
@@ -138,7 +138,7 @@ At widths below 1100px, reset perspective and transforms, stack rows vertically,
 
 Do not crop, regenerate, recolour, or replace the approved desktop/mobile exports.
 
-- [ ] **Step 4: Promote the canonical V2 homepage**
+- [x] **Step 4: Promote the canonical V2 homepage**
 
 Run:
 
@@ -148,7 +148,7 @@ npm run promote:v2
 
 Expected: root `index.html` matches the canonical V2 structure with rewritten asset paths.
 
-- [ ] **Step 5: Run the focused tests and verify GREEN**
+- [x] **Step 5: Run the focused tests and verify GREEN**
 
 Run:
 
@@ -158,7 +158,7 @@ node --test tests/v2-visual-system-refinement.test.mjs tests/v2-latest-refinemen
 
 Expected: PASS.
 
-- [ ] **Step 6: Commit the workflow presentation change**
+- [x] **Step 6: Commit the workflow presentation change**
 
 ```bash
 git add v2/index.html v2/styles.css v2/workflows/workflow-detail.css index.html tests/v2-visual-system-refinement.test.mjs tests/v2-latest-refinement.test.mjs tests/v2-production-reliability.test.mjs
@@ -179,7 +179,7 @@ git commit -m "Refine workflow folders and artwork surfaces"
 - Modify: `.vercelignore`
 - Generated: `index.html`
 
-- [ ] **Step 1: Rewrite public-surface tests to require Field Notes retirement**
+- [x] **Step 1: Rewrite public-surface tests to require Field Notes retirement**
 
 The site test must prove there is no homepage nav link, RSS discovery, sitemap URL, promotion copy, or deploy surface, while the private renderer/source remain.
 
@@ -200,7 +200,7 @@ test("Field Notes remains private and has no deployed discovery surface", async 
 });
 ```
 
-- [ ] **Step 2: Change renderer tests so local output remains deterministic but sitemap stays untouched**
+- [x] **Step 2: Change renderer tests so local output remains deterministic but sitemap stays untouched**
 
 Keep index, article, schema, feed, privacy, and byte-identical rendering assertions. Replace the sitemap article assertion with:
 
@@ -208,7 +208,7 @@ Keep index, article, schema, feed, privacy, and byte-identical rendering asserti
 assert.doesNotMatch(sitemap, /field-notes/);
 ```
 
-- [ ] **Step 3: Run the Field Notes and release tests and verify RED**
+- [x] **Step 3: Run the Field Notes and release tests and verify RED**
 
 Run:
 
@@ -218,7 +218,7 @@ node --test tests/weekly-field-notes-site.test.mjs tests/weekly-field-notes-rend
 
 Expected: FAIL because Field Notes is still linked, indexed, promoted, and deployed.
 
-- [ ] **Step 4: Remove public discovery and deployment**
+- [x] **Step 4: Remove public discovery and deployment**
 
 - Remove the RSS alternate and Field Notes nav link from `v2/index.html`.
 - Remove every Field Notes URL from `sitemap.xml`.
@@ -228,7 +228,7 @@ Expected: FAIL because Field Notes is still linked, indexed, promoted, and deplo
 - Remove Field Notes pages from GA4's deployed-page test list because they are no longer public.
 - Keep `content/field-notes`, `scripts/weekly-field-notes`, private tests, and locally generated files unchanged.
 
-- [ ] **Step 5: Promote and run the focused tests GREEN**
+- [x] **Step 5: Promote and run the focused tests GREEN**
 
 Run:
 
@@ -239,7 +239,7 @@ node --test tests/weekly-field-notes-site.test.mjs tests/weekly-field-notes-rend
 
 Expected: PASS.
 
-- [ ] **Step 6: Commit the publication boundary**
+- [x] **Step 6: Commit the publication boundary**
 
 ```bash
 git add .vercelignore sitemap.xml scripts/promote-v2-to-root.mjs scripts/weekly-field-notes/render.mjs v2/index.html index.html tests/weekly-field-notes-site.test.mjs tests/weekly-field-notes-render.test.mjs tests/production-root-v2.test.mjs tests/site-release-security.test.mjs
@@ -254,7 +254,7 @@ git commit -m "Retire Field Notes from production"
 - Modify: `docs/portfolio-working-notes.md`
 - Modify: `docs/superpowers/plans/2026-08-06-workflow-folders-artwork-field-notes-plan.md`
 
-- [ ] **Step 1: Update the design and publication contracts**
+- [x] **Step 1: Update the design and publication contracts**
 
 Document:
 
@@ -263,7 +263,7 @@ Document:
 - full-background exports remain intact and transparent assets never resolve onto black;
 - Field Notes source and tooling are private and excluded from nav, RSS, sitemap, promotion, and Vercel.
 
-- [ ] **Step 2: Run the complete automated test suite**
+- [x] **Step 2: Run the complete automated test suite**
 
 Run:
 
@@ -273,7 +273,7 @@ npm test
 
 Expected: all tests pass with zero failures.
 
-- [ ] **Step 3: Run permanent responsive browser QA**
+- [x] **Step 3: Run permanent responsive browser QA**
 
 Run:
 
@@ -284,7 +284,7 @@ node tests/qa-v2-home-breakpoints.mjs
 
 Expected: 1440, 1024, 768, 390, and 320 pixel checks pass with no horizontal overflow, tab clipping, hidden focus, image cropping, or workflow-detail regression.
 
-- [ ] **Step 4: Inspect the change boundary**
+- [x] **Step 4: Inspect the change boundary**
 
 Run:
 
@@ -296,9 +296,19 @@ git diff HEAD~2 --stat
 
 Expected: only workflow presentation, Field Notes publication boundary, tests, generated homepage, and documentation changed.
 
-- [ ] **Step 5: Commit documentation and plan completion**
+- [x] **Step 5: Commit documentation and plan completion**
 
 ```bash
 git add AGENTS.md DESIGN.md docs/portfolio-working-notes.md docs/superpowers/plans/2026-08-06-workflow-folders-artwork-field-notes-plan.md
 git commit -m "Document workflow folders and private Field Notes boundary"
 ```
+
+### Task 5: Remove the still-image loading bottleneck
+
+- [x] Measure every homepage `src`, `data-src`, `poster`, and `srcset` still rather than guessing from the asset folder.
+- [x] Preserve the approved PNG masters and generate quality-90 WebP display derivatives for the workflow plates, proposal sample, laptop shell, Why Elevators browser, albums, and dashboard.
+- [x] Wire the derivatives into the homepage, proposal builder, and all five workflow detail pages while retaining responsive mobile/desktop sources, intrinsic dimensions, lazy loading, and async decoding.
+- [x] Add a regression budget of 4.5 MB for the complete referenced still set and 350 KB for any individual public still.
+- [x] Replace the local-search browser check's open-ended network-idle wait with a deterministic metrics-ready assertion.
+
+Measured result: referenced homepage stills fell from 20.72 MB to 2.89 MB; the largest remaining still is 267 KB.

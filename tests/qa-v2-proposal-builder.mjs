@@ -180,7 +180,7 @@ try {
   assert.equal(desktopLayout.connectorTargetsInFrame, true, 'desktop annotation targets are not anchored inside the PDF');
   assert.equal(desktopLayout.annotationPointerEvents, 'none', 'annotations can block the live builder');
   assert.equal(desktopLayout.visibleListNumbers, 0, 'desktop callouts duplicate their connector numbers');
-  assert.match(desktopLayout.previewSource, /vertical-impression-local-proposal-current\.png$/, 'initial approved proposal preview is missing');
+  assert.match(desktopLayout.previewSource, /vertical-impression-local-proposal-current\.webp$/, 'initial approved proposal preview is missing');
   assert.equal(desktopLayout.sampleVisible, true, 'approved sample image is not visible before generation');
   assert.ok(desktopLayout.minimumControlHeight >= 44, `desktop control is below 44px: ${desktopLayout.minimumControlHeight}`);
   assert.equal(desktopLayout.calloutOverlap, false, 'desktop callout copy overlaps the proposal sheet');

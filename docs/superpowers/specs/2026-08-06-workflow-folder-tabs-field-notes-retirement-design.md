@@ -2,7 +2,7 @@
 
 Date: 2026-08-06
 
-Status: Approved direction, awaiting implementation-plan review
+Status: Implemented and verified on 2026-08-06
 
 ## Goal
 

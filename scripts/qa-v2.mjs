@@ -1170,7 +1170,7 @@ try {
 
       if (route === "presentation-publishing.html") {
         const mobile = width < 700;
-        const expectedAsset = mobile ? "presentation-publishing-mobile.png" : "presentation-publishing-desktop.png";
+        const expectedAsset = mobile ? "presentation-publishing-mobile.webp" : "presentation-publishing-desktop.webp";
         assert.ok(detail.currentSource.endsWith(expectedAsset), `${width}px selected ${detail.currentSource} instead of ${expectedAsset}`);
         if (mobile) {
           assert.ok(
@@ -1203,7 +1203,12 @@ try {
   for (const width of [1440, 1024, 768, 390]) {
     caseFailures.length = 0;
     await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
-    await page.goto(`http://127.0.0.1:${port}/v2/work/local-search-magnet.html`, { waitUntil: "networkidle0" });
+    await page.goto(`http://127.0.0.1:${port}/v2/work/local-search-magnet.html`, { waitUntil: "domcontentloaded" });
+    await page.waitForFunction(
+      (expectedClicks) => document.querySelector("[data-cool-metric='clicks']")?.textContent.trim() === expectedClicks,
+      {},
+      expectedCaseClicks,
+    );
     const caseStudy = await page.evaluate(() => ({
       innerWidth: window.innerWidth,
       scrollWidth: document.documentElement.scrollWidth,

@@ -48,8 +48,8 @@ test("image-to-website workflow follows the approved research, proof, system, li
   ]) {
     assert.match(`${homepage}\n${detail}`, phrase);
   }
-  assert.match(homepage, /assets\/workflows\/image-to-website-desktop\.png/);
-  assert.match(homepage, /assets\/workflows\/image-to-website-mobile\.png/);
+  assert.match(homepage, /assets\/workflows\/image-to-website-desktop\.webp/);
+  assert.match(homepage, /assets\/workflows\/image-to-website-mobile\.webp/);
 });
 
 test("finale releases objects individually as they reach the centre", async () => {

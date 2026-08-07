@@ -163,7 +163,7 @@ test("selected work gives properly scaled laptop and browser objects more room t
   assert.match(html, /class="cool-laptop"[^>]*data-scroll-reveal="cool-runnings"/);
   assert.match(html, /class="cool-laptop-screen"/);
   assert.doesNotMatch(html, /class="cool-laptop-(?:lid|base)"/);
-  assert.equal((html.match(/laptop-graphite-frame\.png/g) || []).length, 1);
+  assert.equal((html.match(/laptop-graphite-frame\.webp/g) || []).length, 1);
   assert.match(css, /\.cool-laptop\s*\{[^}]*width:\s*min\(132%,\s*1180px\)/s);
 });
 
@@ -191,8 +191,9 @@ test("accordion uses layered folder sheets and keeps the selected tab visible", 
 
   assert.doesNotMatch(html, /workflow-number/);
   assert.equal((html.match(/class="workflow-trigger-label"/g) || []).length, 5);
-  assert.match(css, /\.workflow-item\s*\{[^}]*flex:\s*0\s+0\s+112px[^}]*margin-left:\s*-36px/s);
-  assert.match(css, /\.workflow-item\.is-active\s*\{[^}]*flex-basis:\s*calc\(100%\s*-\s*304px\)[^}]*flex-grow:\s*0/s);
+  assert.match(css, /\.workflow-item\s*\{[^}]*flex:\s*0\s+0\s+112px[^}]*margin-left:\s*-18px/s);
+  assert.match(css, /\.workflow-item\.is-active\s*\{[^}]*flex-basis:\s*calc\(100%\s*-\s*376px\)[^}]*flex-grow:\s*0/s);
+  assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-family:\s*var\(--font-sans\)[^}]*text-align:\s*left/s);
   assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*visibility:\s*visible[^}]*pointer-events:\s*auto/s);
   assert.match(css, /\.workflow-trigger\s*\{[^}]*box-shadow:\s*inset/s);
   assert.match(css, /\.workflow-accordion\s*\{[^}]*min-height:\s*880px/s);
@@ -428,7 +429,7 @@ test("selected work uses equal-height stages and centre-timed device choreograph
   assert.match(css, /\.accommodation-showcase\s*\{[^}]*rotateY\(calc\(/s);
   assert.doesNotMatch(css, /\.cool-laptop-(?:lid|base)\s*\{/s);
   assert.match(css, /\.cool-laptop\s*\{[^}]*rotateX\(calc\(/s);
-  assert.match(html, /class="cool-laptop-frame"[^>]*laptop-graphite-frame\.png/s);
+  assert.match(html, /class="cool-laptop-frame"[^>]*laptop-graphite-frame\.webp/s);
   assert.match(css, /\.browser-object-elevator\s*\{[^}]*rotateX\(calc\(68deg\s*\*\s*\(1\s*-\s*var\(--object-reveal,\s*0\)\)\)\)/s);
   assert.match(css, /--work-section-height:\s*clamp\(/);
   assert.match(css, /\.work-object\s*\{[^}]*height:\s*var\(--work-section-height\)[^}]*min-height:\s*var\(--work-section-height\)/s);
@@ -587,4 +588,10 @@ test("browser QA covers runtime focus, motion, inputs, all workflow routes, and 
   assert.match(qa, /portfolio-hero-system-map-(?:desktop|mobile)/);
   assert.match(qa, /rccv-showcase-laptop/);
   assert.match(qa, /cool-runnings-sizzle-25s/);
+  assert.doesNotMatch(
+    qa,
+    /local-search-magnet\.html[^\n]+networkidle0/,
+    "local-search QA must not wait forever on background media requests",
+  );
+  assert.match(qa, /waitForFunction[\s\S]+data-cool-metric='clicks'/);
 });

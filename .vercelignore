@@ -33,14 +33,14 @@ assets/approved/*
 
 assets/brand/
 assets/campaigns/*
-!assets/campaigns/vertical-impression-albums-composite.png
+!assets/campaigns/vertical-impression-albums-composite.webp
 
 assets/data/
 assets/design-refs/*
 !assets/design-refs/03-how-it-gets-made-workflow.png
 
 assets/device-mockups/*
-!assets/device-mockups/laptop-graphite-frame.png
+!assets/device-mockups/laptop-graphite-frame.webp
 !assets/device-mockups/laptop-three-quarter-rccv.png
 !assets/device-mockups/laptop-three-quarter-rccv-cutout.png
 !assets/device-mockups/laptop-three-quarter-rccv-cutout.webp
@@ -57,7 +57,7 @@ assets/portrait-final/assets/poses/
 !assets/portrait-final/assets/poses-webp/
 
 assets/samples/*
-!assets/samples/vertical-impression-local-proposal-current.png
+!assets/samples/vertical-impression-local-proposal-current.webp
 !assets/samples/vertical-impression-public-proposal-sample-page-1.png
 
 assets/screens/*
@@ -69,10 +69,10 @@ assets/screens/*
 !assets/screens/cool-runnings-home.webp
 !assets/screens/fountainhead-ai-visibility-dashboard-v2.png
 !assets/screens/fountainhead-ai-visibility-dashboard-v4-16x9.png
-!assets/screens/fountainhead-ai-visibility-dashboard-v4.png
+!assets/screens/fountainhead-ai-visibility-dashboard-v4.webp
 !assets/screens/rccv.png
 !assets/screens/treehouse-live.png
-!assets/screens/vertical-impression-why-elevators.png
+!assets/screens/vertical-impression-why-elevators.webp
 
 assets/videos/*
 !assets/videos/portfolio-hero-system-map-desktop-4k-sparse-loop.mp4
