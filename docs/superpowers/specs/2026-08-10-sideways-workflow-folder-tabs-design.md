@@ -1,78 +1,68 @@
-# Sideways Workflow Folder Tabs
+# Desktop Workflow Folder Tabs and Sliding Cards
 
 Status: Approved design
 Date: 2026-08-10
 
 ## Goal
 
-Replace the bulky charcoal workflow sheets with a sideways filing system based on the supplied folder reference. The full folder-tab silhouette rotates 90 degrees: overlapping tongues run down the left edge, their labels read vertically, and the selected workflow opens into one clean paper-grey folder body.
+Refine the existing desktop horizontal accordion rather than replacing its mechanism. Five narrow vertical folder tabs remain arranged in one horizontal line. Selecting a tab retracts the current workflow card, then slides the selected workflow's loose paper card left into view.
 
-The workflow content, artwork, routes, keyboard behavior, and active-panel selection remain unchanged.
+There is no literal folder pocket, paper holder, top-row tab strip, or new mobile interaction.
 
-## Visual Model
+## Desktop Structure
 
 - Repeatable Systems remains a full-bleed charcoal chapter.
-- One large warm paper-grey folder body occupies the content area.
-- Five folder tongues overlap vertically down the left edge.
-- Each tongue has a broad rounded outer corner and a curved inward shoulder where it joins the folder body, matching the supplied reference's folder silhouette after a 90-degree rotation.
-- Labels rotate 90 degrees with the tongues and read vertically: Content, Dashboard, Presentation, Prospecting, Website.
-- The system stays monochrome: adjacent charcoal and graphite tongues, warm-white labels, paper-grey folder body, and controlled dark shadows. It does not adopt the reference image's rainbow palette.
-- Remove plus symbols, card-like raised lips, heavy individual borders, and the current rectangular-sheet appearance.
+- At 1100px and wider, the accordion remains a horizontal sequence of five narrow vertical tabs plus one expanding active panel.
+- Each tab is a slim graphite folder spine with a restrained folder-tab shoulder, not a full-height charcoal card.
+- Tab labels read vertically using the existing DM Sans family and remain fully visible: Content, Dashboard, Presentation, Prospecting, Website.
+- The five tabs always remain visible in a single horizontal sequence.
+- The active workflow is a separate warm paper-grey card with controlled radius, subtle texture, and a soft shadow. It is not framed by another folder body.
+- Copy sits above the approved workflow visual on that card. The visual retains its own authored black field and coloured routes.
+- The styling uses the portfolio's charcoal, graphite, warm paper, DM Sans, and Fraunces system. It avoids rainbow folder colours, heavy outlines, glossy effects, and literal office-supply illustration.
 
-## Desktop and Tablet Geometry
+## Desktop Selection Motion
 
-At 760px and wider:
+1. The current paper card moves toward its tab, loses depth, and fades over roughly 180–220ms.
+2. The accordion reallocates width to the newly selected item using the existing eased flex transition.
+3. The new paper card begins slightly to the right and slides left into its resting position over roughly 480–560ms using `cubic-bezier(.22, 1, .36, 1)`.
+4. Its shadow deepens during travel and softens when settled, making the card feel pulled from behind the selected tab.
+5. Tabs remain anchored; only their depth and active treatment change.
 
-- The accordion is a two-part composition: a left tab rail and one flexible folder body.
-- Each tongue is approximately 58–66px wide and overlaps the next by 8–12px.
-- Tongues are tall enough to hold the complete vertical label without clipping.
-- The active tongue moves forward in depth and joins the paper-grey folder body without showing a seam.
-- Inactive tongues retain visible edges and enough contrast to remain distinct.
-- Hover and keyboard focus move a tongue slightly outward from the stack without changing the selected workflow.
-- Selecting a tongue changes the active body with the existing eased transition. The folder body itself does not resize or slide across the entire viewport.
-- Workflow copy remains above the dominant visual inside the folder body.
+The outgoing and incoming cards overlap briefly enough to feel continuous, but never display two readable workflow bodies at once.
 
-## Mobile Geometry
+## Mobile Boundary
 
-Below 760px:
-
-- Preserve the sideways filing idea instead of reverting to horizontal cards.
-- The five tongues use a narrower 34–42px visual width and overlap more tightly.
-- Labels remain vertical and use responsive sizing so every name stays readable.
-- The rail consumes no more than roughly 30% of a 390px viewport, leaving about 70% for the open folder body.
-- The active panel uses the existing portrait workflow artwork and remains vertically scrollable as part of the page.
-- At 320px, tongue overlap increases before label size becomes unreadable.
+- Do not redesign the mobile accordion.
+- Preserve the existing stacked mobile rows, portrait artwork, touch targets, and expansion behavior below 1100px.
+- Desktop-only folder-spine geometry and card motion must be scoped inside the desktop media query.
 
 ## Interaction and Accessibility
 
-- Keep the existing semantic buttons, regions, `aria-expanded`, `aria-controls`, focus management, and Arrow/Home/End/Enter/Space keyboard controls.
-- Hover previews depth only; it never changes selection.
-- The complete tongue remains at least a 44px touch target even when the visible overlap is narrower.
-- Focus is visible against every graphite value.
-- Reduced motion switches selection immediately while preserving the active-folder state.
+- Keep semantic buttons, regions, `aria-expanded`, `aria-controls`, focus states, and Arrow/Home/End/Enter/Space keyboard controls.
+- Hover and focus may lift a tab slightly without changing selection.
+- The complete desktop tab remains at least 44px wide.
+- Reduced motion removes the retract-and-slide travel while preserving immediate selection.
 
-## Content and Artwork
+## Content and Assets
 
-- Do not rewrite workflow copy or replace approved visuals.
-- Keep the quality-90 WebP display derivatives and full-resolution PNG source masters.
-- The active folder body uses the existing `#E7E8E3` artwork surface without an additional nested grey card.
-- Workflow images retain intrinsic dimensions, responsive `<picture>` sources, lazy loading, and async decoding.
+- Do not rewrite workflow copy or replace artwork.
+- Retain the quality-90 WebP display derivatives and PNG source masters.
+- Retain responsive `<picture>` sources, intrinsic dimensions, lazy loading, and async decoding.
 
 ## Verification
 
-- Capture all five selected states at 1440px and 390px.
-- Confirm the five labels are fully visible at 1440, 1024, 768, 390, and 320px.
-- Confirm no horizontal overflow and no clipped folder shoulders.
-- Confirm the body retains at least 70% of the mobile viewport width at 390px.
-- Confirm pointer, touch, and keyboard selection update the same active workflow.
-- Confirm hover and focus lift the tongue without selecting it.
-- Confirm reduced motion disables decorative travel.
-- Run the complete portfolio test suite and permanent responsive browser QA.
+- Capture all five selected desktop states at 1440px.
+- Confirm all five vertical labels remain readable at 1440px, 1280px, and 1100px.
+- Confirm the outgoing card retracts before the incoming card slides left.
+- Confirm there is no holder or nested folder pocket around the paper card.
+- Confirm mobile screenshots at 390px and 320px are visually unchanged.
+- Confirm no horizontal overflow, clipped labels, hidden focus, or overlapping readable panels.
+- Run the complete test suite and permanent responsive browser QA.
 
 ## Out of Scope
 
-- Workflow copy changes.
-- New workflow artwork.
-- Colour-coded workflow categories.
+- Mobile accordion redesign.
+- Workflow copy or artwork changes.
+- Colour-coded workflow tabs.
 - Reordering workflows.
-- Deployment or merging to production.
+- Deployment or production merge.
