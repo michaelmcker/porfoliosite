@@ -192,7 +192,7 @@ test("accordion keeps five discrete desktop folder tabs fixed at the right of th
   assert.doesNotMatch(html, /workflow-number/);
   assert.equal((html.match(/class="workflow-trigger-label"/g) || []).length, 5);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-item\s*\{[^}]*position:\s*absolute[^}]*pointer-events:\s*none/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*\{[^}]*top:\s*var\(--workflow-tab-top\)[^}]*right:\s*0[^}]*clip-path:\s*polygon\([^}]*pointer-events:\s*auto/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*\{[^}]*top:\s*var\(--workflow-tab-top\)[^}]*right:\s*14px[^}]*border-radius:\s*0 26px 26px 0[^}]*pointer-events:\s*auto/s);
   assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-family:\s*var\(--font-sans\)[^}]*text-align:\s*left/s);
   assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*visibility:\s*visible[^}]*pointer-events:\s*auto/s);
   assert.match(css, /\.workflow-trigger\s*\{[^}]*box-shadow:\s*inset/s);

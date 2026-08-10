@@ -5,7 +5,7 @@ Date: 2026-08-10
 
 ## Goal
 
-Desktop uses five discrete shaped folder tabs in permanent top-to-bottom slots down the right edge. Each tab has its own raised lobe and shoulder cutout, with a tight 6px gap to the next tab. Labels read vertically from top to bottom. Selecting a tab retracts the current workflow card rightward behind that column, then slides the selected workflow's loose paper card left into view.
+Desktop uses five discrete smoothly rounded folder tabs in permanent top-to-bottom slots down the right edge. The tabs overlap slightly, remain separate through shadow and tonal depth, and sit behind the paper at rest. Labels read vertically from top to bottom. Hover or focus lifts one tab 10px outward. Selecting a tab retracts the current workflow card rightward behind that column, then slides the selected workflow's loose paper card left into view.
 
 There is no literal folder pocket, paper holder, or new mobile interaction.
 
