@@ -5,17 +5,17 @@ Date: 2026-08-10
 
 ## Goal
 
-Refine the existing desktop horizontal accordion rather than replacing its mechanism. Five narrow vertical folder tabs remain arranged in one horizontal line. Selecting a tab retracts the current workflow card, then slides the selected workflow's loose paper card left into view.
+Desktop uses five narrow vertical folder tabs in permanent right-hand slots. Selecting a tab retracts the current workflow card rightward behind that stack, then slides the selected workflow's loose paper card left into view.
 
 There is no literal folder pocket, paper holder, top-row tab strip, or new mobile interaction.
 
 ## Desktop Structure
 
 - Repeatable Systems remains a full-bleed charcoal chapter.
-- At 1100px and wider, the accordion remains a horizontal sequence of five narrow vertical tabs plus one expanding active panel.
+- At 1100px and wider, five narrow vertical tabs remain fixed on the right while one paper panel occupies the open area on the left.
 - Each tab is a slim graphite folder spine with a restrained folder-tab shoulder, not a full-height charcoal card.
 - Tab labels read vertically using the existing DM Sans family and remain fully visible: Content, Dashboard, Presentation, Prospecting, Website.
-- The five tabs always remain visible in a single horizontal sequence.
+- The five tabs always remain visible in a single right-hand sequence and keep identical x-coordinates across selection changes.
 - The active workflow is a separate warm paper-grey card with controlled radius, subtle texture, and a soft shadow. It is not framed by another folder body.
 - Copy sits above the approved workflow visual on that card. The visual retains its own authored black field and coloured routes.
 - The styling uses the portfolio's charcoal, graphite, warm paper, DM Sans, and Fraunces system. It avoids rainbow folder colours, heavy outlines, glossy effects, and literal office-supply illustration.
@@ -26,7 +26,7 @@ There is no literal folder pocket, paper holder, top-row tab strip, or new mobil
 2. The accordion reallocates width to the newly selected item using the existing eased flex transition.
 3. The new paper card begins slightly to the right and slides left into its resting position over roughly 480–560ms using `cubic-bezier(.22, 1, .36, 1)`.
 4. Its shadow deepens during travel and softens when settled, making the card feel pulled from behind the selected tab.
-5. Tabs remain anchored; only their depth and active treatment change.
+5. Tabs and their labels remain anchored; only hover/focus depth and active treatment may change.
 
 The outgoing and incoming cards overlap briefly enough to feel continuous, but never display two readable workflow bodies at once.
 

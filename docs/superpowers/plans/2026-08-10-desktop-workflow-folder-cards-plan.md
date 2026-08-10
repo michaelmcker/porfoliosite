@@ -4,7 +4,7 @@
 
 **Goal:** Restyle the existing desktop workflow accordion as five vertical folder spines whose loose paper cards retract and slide left into view, without changing mobile.
 
-**Architecture:** Preserve the existing HTML, ARIA wiring, flex accordion, workflow assets, and mobile media-query implementation. Add a desktop-only visual layer in `v2/styles.css` and a two-phase retract/enter state machine in the existing `activateWorkflow()` function. Promote canonical V2 files to root only after focused tests pass.
+**Architecture:** Preserve the existing HTML, ARIA wiring, workflow assets, and mobile media-query implementation. On desktop, replace the moving flex geometry with full-size overlaid items, five permanent right-hand trigger slots, and an independently positioned paper panel. Use the existing two-phase retract/enter state machine in `activateWorkflow()`. Promote canonical V2 files to root only after focused tests pass.
 
 **Tech Stack:** Static HTML, CSS custom properties and media queries, vanilla JavaScript, Node test runner, Puppeteer browser QA.
 

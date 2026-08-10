@@ -116,9 +116,15 @@ test("desktop workflow controls use vertical folder spines and one loose paper c
   assert.match(css, /\.workflow-accordion\s*\{[^}]*perspective:\s*1600px/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger-label\s*\{[^}]*writing-mode:\s*vertical-rl[^}]*transform:[^;}]*rotate\(180deg\)/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-plus\s*\{[^}]*display:\s*none/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-item\s*\{[^}]*position:\s*absolute[^}]*inset:\s*24px 0/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*\{[^}]*position:\s*absolute[^}]*right:\s*calc\(var\(--workflow-slot\)\s*\*\s*var\(--workflow-tab-step\)\)/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger,[\s\S]*?\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*transform:\s*translateY\(var\(--stack-y\)\)/s);
+  assert.match(css, /\.workflow-item:nth-child\(1\)\s*\{[^}]*--workflow-slot:\s*4/s);
+  assert.match(css, /\.workflow-item:nth-child\(5\)\s*\{[^}]*--workflow-slot:\s*0/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-panel\s*\{[^}]*background:\s*transparent/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-panel[^}]*\{[^}]*position:\s*absolute[^}]*inset:\s*0\s+var\(--workflow-tabs-width\)\s+0\s+0/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-panel-inner\s*\{[^}]*background:\s*var\(--workflow-art-surface\)[^}]*box-shadow:/s);
-  assert.match(css, /\.workflow-item\.is-retracting \.workflow-panel-inner\s*\{[^}]*translateX\(-/s);
+  assert.match(css, /\.workflow-item\.is-retracting \.workflow-panel-inner\s*\{[^}]*translateX\((?:1[0-9]{2}|[2-9][0-9]{2})px\)/s);
   assert.match(css, /\.workflow-item\.is-entering \.workflow-panel-inner\s*\{[^}]*translateX\(/s);
   assert.match(css, /@media \(max-width: 1099px\)[\s\S]*?\.workflow-trigger-label\s*\{[^}]*top:\s*8px[^}]*left:/s);
 });

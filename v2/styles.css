@@ -967,28 +967,53 @@ h3 {
 @media (min-width: 1100px) {
   .workflow-accordion {
     --workflow-tab-width: 88px;
-    --workflow-tab-overlap: 10px;
-    padding: 24px 0;
-    align-items: stretch;
+    --workflow-tab-step: 78px;
+    --workflow-tabs-width: 400px;
+    position: relative;
+    display: block;
+    padding: 0;
   }
   .workflow-item {
-    min-width: var(--workflow-tab-width);
-    flex-basis: var(--workflow-tab-width);
-    margin-left: calc(var(--workflow-tab-overlap) * -1);
+    position: absolute;
+    inset: 24px 0;
+    z-index: auto;
+    min-width: 0;
+    display: block;
+    margin: 0;
+    overflow: visible;
     background: transparent;
-    transition-duration: 560ms;
+    pointer-events: none;
+    transform: none;
+    transition: none;
   }
-  .workflow-item:first-child { margin-left: 0; }
+  .workflow-item:nth-child(1) { --workflow-slot: 4; z-index: auto; }
+  .workflow-item:nth-child(2) { --workflow-slot: 3; z-index: auto; }
+  .workflow-item:nth-child(3) { --workflow-slot: 2; z-index: auto; }
+  .workflow-item:nth-child(4) { --workflow-slot: 1; z-index: auto; }
+  .workflow-item:nth-child(5) { --workflow-slot: 0; z-index: auto; }
   .workflow-item.is-active {
-    flex-basis: calc(100% - 312px);
+    z-index: auto;
+    min-width: 0;
+    overflow: visible;
     background: transparent;
   }
   .workflow-trigger,
   .workflow-item.is-active .workflow-trigger {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: calc(var(--workflow-slot) * var(--workflow-tab-step));
+    bottom: 0;
     width: var(--workflow-tab-width);
     min-width: var(--workflow-tab-width);
+    min-height: 0;
     padding: 30px 12px 24px;
     border-radius: 18px 18px 8px 8px;
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+    pointer-events: auto;
+    transform: translateY(var(--stack-y));
   }
   .workflow-trigger::before {
     height: 48px;
@@ -1011,14 +1036,41 @@ h3 {
     white-space: normal;
   }
   .workflow-plus { display: none; }
+  .workflow-trigger:hover,
+  .workflow-trigger:focus-visible {
+    z-index: 30;
+  }
+  .workflow-item:has(.workflow-trigger:hover),
+  .workflow-item:focus-within { z-index: auto; }
   .workflow-panel,
   .workflow-item.is-active .workflow-panel {
-    padding: 16px 22px 16px 18px;
+    position: absolute;
+    z-index: 1;
+    inset: 0 var(--workflow-tabs-width) 0 0;
+    width: auto;
+    height: auto;
+    flex: none;
+    padding: 16px 0 16px 22px;
+    overflow: visible;
     background: transparent;
     box-shadow: none;
+    transform: none;
+  }
+  .workflow-panel {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 180ms ease, visibility 0s 560ms;
+  }
+  .workflow-item.is-active .workflow-panel {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 180ms ease, visibility 0s;
   }
   .workflow-panel-inner {
-    min-height: 800px;
+    min-height: 832px;
+    height: 100%;
     border: 1px solid rgba(27,29,26,.1);
     border-radius: 22px;
     background: var(--workflow-art-surface);
@@ -1037,12 +1089,12 @@ h3 {
   }
   .workflow-item.is-retracting .workflow-panel-inner {
     opacity: 0;
-    transform: translateX(-54px) scale(.985);
+    transform: translateX(140px) scale(.985);
     box-shadow: 0 12px 30px rgba(0,0,0,.16);
   }
   .workflow-item.is-entering .workflow-panel-inner {
     opacity: 0;
-    transform: translateX(74px) scale(.985);
+    transform: translateX(140px) scale(.985);
     box-shadow: 0 16px 38px rgba(0,0,0,.18);
   }
 }
