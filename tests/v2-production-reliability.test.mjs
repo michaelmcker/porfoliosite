@@ -21,7 +21,7 @@ test("homepage avoids loading oversized and below-fold media during first paint"
   for (const src of [
     "../assets/screens/vertical-impression-why-elevators.webp",
     "../assets/campaigns/vertical-impression-albums-composite.webp",
-    "assets/workflows/content-production-approved-desktop.webp",
+    "assets/workflows/content-production-folder-card.webp",
     "assets/workflows/agency-dashboard-desktop.webp",
     "assets/workflows/presentation-publishing-desktop.webp",
     "assets/workflows/local-prospecting-desktop.webp",
