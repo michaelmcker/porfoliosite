@@ -2,9 +2,9 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Restyle the existing desktop workflow accordion as five vertical folder spines whose loose paper cards retract and slide left into view, without changing mobile.
+**Goal:** Restyle the existing desktop workflow accordion as five shaped folder tabs in one fixed horizontal top row whose loose paper cards retract and slide left into view, without changing mobile.
 
-**Architecture:** Preserve the existing HTML, ARIA wiring, workflow assets, and mobile media-query implementation. On desktop, replace the moving flex geometry with full-size overlaid items, five permanent right-hand trigger slots, and an independently positioned paper panel. Use the existing two-phase retract/enter state machine in `activateWorkflow()`. Promote canonical V2 files to root only after focused tests pass.
+**Architecture:** Preserve the existing HTML, ARIA wiring, workflow assets, and mobile media-query implementation. On desktop, replace the moving flex geometry with full-size overlaid items, five permanent shaped trigger slots across one top row, and an independently positioned paper panel below. Use the existing two-phase retract/enter state machine in `activateWorkflow()`. Promote canonical V2 files to root only after focused tests pass.
 
 **Tech Stack:** Static HTML, CSS custom properties and media queries, vanilla JavaScript, Node test runner, Puppeteer browser QA.
 
@@ -34,7 +34,7 @@ node --test tests/v2-visual-system-refinement.test.mjs tests/v2-portfolio.test.m
 
 Expected: failures for the missing vertical-spine styling and two-phase card states.
 
-### Task 2: Implement desktop-only folder spines and sliding paper cards
+### Task 2: Implement desktop-only top folder tabs and sliding paper cards
 
 **Files:**
 - Modify: `v2/styles.css`

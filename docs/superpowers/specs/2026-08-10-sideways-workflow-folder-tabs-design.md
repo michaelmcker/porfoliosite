@@ -5,17 +5,17 @@ Date: 2026-08-10
 
 ## Goal
 
-Desktop uses five narrow vertical folder tabs in permanent right-hand slots. Selecting a tab retracts the current workflow card rightward behind that stack, then slides the selected workflow's loose paper card left into view.
+Desktop uses five shaped folder tabs in permanent left-to-right slots across one top edge. The tabs have raised label lobes and curved shoulder cutouts, while their labels read vertically. Selecting a tab retracts the current workflow card rightward behind that row, then slides the selected workflow's loose paper card left into view below it.
 
-There is no literal folder pocket, paper holder, top-row tab strip, or new mobile interaction.
+There is no literal folder pocket, paper holder, or new mobile interaction.
 
 ## Desktop Structure
 
 - Repeatable Systems remains a full-bleed charcoal chapter.
-- At 1100px and wider, five narrow vertical tabs remain fixed on the right while one paper panel occupies the open area on the left.
-- Each tab is a slim graphite folder spine with a restrained folder-tab shoulder, not a full-height charcoal card.
+- At 1100px and wider, five wide folder-tab silhouettes remain fixed in one horizontal row while one paper panel occupies the area below.
+- Each tab is a graphite folder shape with a raised rounded label lobe and a curved inward shoulder leading to its lower edge.
 - Tab labels read vertically using the existing DM Sans family and remain fully visible: Content, Dashboard, Presentation, Prospecting, Website.
-- The five tabs always remain visible in a single right-hand sequence and keep identical x-coordinates across selection changes.
+- The five tabs always remain visible in one top sequence and keep identical coordinates across selection changes.
 - The active workflow is a separate warm paper-grey card with controlled radius, subtle texture, and a soft shadow. It is not framed by another folder body.
 - Copy sits above the approved workflow visual on that card. The visual retains its own authored black field and coloured routes.
 - The styling uses the portfolio's charcoal, graphite, warm paper, DM Sans, and Fraunces system. It avoids rainbow folder colours, heavy outlines, glossy effects, and literal office-supply illustration.
@@ -23,10 +23,10 @@ There is no literal folder pocket, paper holder, top-row tab strip, or new mobil
 ## Desktop Selection Motion
 
 1. The current paper card moves toward its tab, loses depth, and fades over roughly 180–220ms.
-2. The accordion reallocates width to the newly selected item using the existing eased flex transition.
+2. The fixed tab row does not reallocate width or move any label.
 3. The new paper card begins slightly to the right and slides left into its resting position over roughly 480–560ms using `cubic-bezier(.22, 1, .36, 1)`.
 4. Its shadow deepens during travel and softens when settled, making the card feel pulled from behind the selected tab.
-5. Tabs and their labels remain anchored; only hover/focus depth and active treatment may change.
+5. Tabs and their labels remain anchored; hover/focus changes only their surface treatment.
 
 The outgoing and incoming cards overlap briefly enough to feel continuous, but never display two readable workflow bodies at once.
 
@@ -34,12 +34,12 @@ The outgoing and incoming cards overlap briefly enough to feel continuous, but n
 
 - Do not redesign the mobile accordion.
 - Preserve the existing stacked mobile rows, portrait artwork, touch targets, and expansion behavior below 1100px.
-- Desktop-only folder-spine geometry and card motion must be scoped inside the desktop media query.
+- Desktop-only top-tab geometry and card motion must be scoped inside the desktop media query.
 
 ## Interaction and Accessibility
 
 - Keep semantic buttons, regions, `aria-expanded`, `aria-controls`, focus states, and Arrow/Home/End/Enter/Space keyboard controls.
-- Hover and focus may lift a tab slightly without changing selection.
+- Hover and focus may brighten a tab without changing its position or selection.
 - The complete desktop tab remains at least 44px wide.
 - Reduced motion removes the retract-and-slide travel while preserving immediate selection.
 
@@ -52,7 +52,7 @@ The outgoing and incoming cards overlap briefly enough to feel continuous, but n
 ## Verification
 
 - Capture all five selected desktop states at 1440px.
-- Confirm all five vertical labels remain readable at 1440px, 1280px, and 1100px.
+- Confirm the five shaped tabs form one horizontal top row and all vertical labels remain readable at 1440px, 1280px, and 1100px.
 - Confirm the outgoing card retracts before the incoming card slides left.
 - Confirm there is no holder or nested folder pocket around the paper card.
 - Confirm mobile screenshots at 390px and 320px are visually unchanged.

@@ -72,11 +72,10 @@ test("Okanagan preview uses the deployed serif navigation and display typography
   assert.match(css, /@media \(min-width: 561px\) and \(max-width: 900px\)[\s\S]*?\.site-nav\s*\{[^}]*transform:\s*scale\(var\(--nav-scale\)\)/s);
 });
 
-test("workflow folder spines stay right-anchored and visibly lift on hover or keyboard focus", async () => {
+test("desktop workflow folder tabs stay fixed while hover and focus change only their surface", async () => {
   const css = await read("v2/styles.css");
 
-  assert.match(css, /\.workflow-trigger:hover,\s*\.workflow-trigger:focus-visible\s*\{[^}]*translate3d\([^,]+,\s*-18px,/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger:hover,[\s\S]*?z-index:\s*30/s);
-  assert.match(css, /--workflow-tabs-width:/);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger:hover,[\s\S]*?transform:\s*none/s);
+  assert.match(css, /--workflow-tab-left:/);
   assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-size:\s*clamp\(/s);
 });

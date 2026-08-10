@@ -963,19 +963,18 @@ h3 {
   font-size: 1rem;
 }
 
-/* Desktop folders: the tabs stay in one horizontal row while one loose paper card moves. */
+/* Desktop folders: five shaped tabs stay fixed across the top; only the paper moves. */
 @media (min-width: 1100px) {
   .workflow-accordion {
-    --workflow-tab-width: 88px;
-    --workflow-tab-step: 78px;
-    --workflow-tabs-width: 400px;
     position: relative;
     display: block;
+    min-height: 980px;
     padding: 0;
+    overflow: hidden;
   }
   .workflow-item {
     position: absolute;
-    inset: 24px 0;
+    inset: 0;
     z-index: auto;
     min-width: 0;
     display: block;
@@ -986,11 +985,11 @@ h3 {
     transform: none;
     transition: none;
   }
-  .workflow-item:nth-child(1) { --workflow-slot: 4; z-index: auto; }
-  .workflow-item:nth-child(2) { --workflow-slot: 3; z-index: auto; }
-  .workflow-item:nth-child(3) { --workflow-slot: 2; z-index: auto; }
-  .workflow-item:nth-child(4) { --workflow-slot: 1; z-index: auto; }
-  .workflow-item:nth-child(5) { --workflow-slot: 0; z-index: auto; }
+  .workflow-item:nth-child(1) { --workflow-tab-left: 0%; --workflow-tab-z: 5; z-index: auto; }
+  .workflow-item:nth-child(2) { --workflow-tab-left: 19%; --workflow-tab-z: 4; z-index: auto; }
+  .workflow-item:nth-child(3) { --workflow-tab-left: 38%; --workflow-tab-z: 3; z-index: auto; }
+  .workflow-item:nth-child(4) { --workflow-tab-left: 57%; --workflow-tab-z: 2; z-index: auto; }
+  .workflow-item:nth-child(5) { --workflow-tab-left: 76%; --workflow-tab-z: 1; z-index: auto; }
   .workflow-item.is-active {
     z-index: auto;
     min-width: 0;
@@ -1000,36 +999,44 @@ h3 {
   .workflow-trigger,
   .workflow-item.is-active .workflow-trigger {
     position: absolute;
-    z-index: 10;
+    z-index: calc(20 + var(--workflow-tab-z));
     top: 0;
-    right: calc(var(--workflow-slot) * var(--workflow-tab-step));
-    bottom: 0;
-    width: var(--workflow-tab-width);
-    min-width: var(--workflow-tab-width);
-    min-height: 0;
-    padding: 30px 12px 24px;
-    border-radius: 18px 18px 8px 8px;
+    left: var(--workflow-tab-left);
+    bottom: auto;
+    width: 24%;
+    min-width: 0;
+    min-height: 116px;
+    height: 116px;
+    display: block;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: var(--rail);
+    box-shadow: inset 0 1px rgba(255,255,255,.16), -12px 8px 24px rgba(0,0,0,.28);
+    clip-path: polygon(0 100%, 0 38%, 5% 38%, 8% 10%, 12% 2%, 58% 2%, 63% 10%, 68% 38%, 100% 38%, 100% 100%);
     visibility: visible;
     opacity: 1;
     overflow: visible;
     pointer-events: auto;
-    transform: translateY(var(--stack-y));
+    transform: none;
+    transition: filter 220ms ease, background-color 220ms ease, color 220ms ease;
   }
-  .workflow-trigger::before {
-    height: 48px;
-    border-radius: 18px 18px 0 0;
+  .workflow-item.is-active .workflow-trigger {
+    background: #d7d5ce;
+    color: var(--ink);
   }
-  .workflow-trigger::after { inset: 48px 12px auto; }
+  .workflow-trigger::before,
+  .workflow-trigger::after { content: none; }
   .workflow-trigger-label {
-    top: 72px;
-    left: 50%;
+    top: 16px;
+    left: 31%;
     width: auto;
-    max-height: calc(100% - 112px);
+    max-height: 86px;
     overflow: visible;
     writing-mode: vertical-rl;
-    transform: translateX(-50%) rotate(180deg);
-    color: var(--rail-ink);
-    font-size: clamp(.9rem, .92vw, 1.02rem);
+    transform: rotate(180deg);
+    color: currentColor;
+    font-size: clamp(.8rem, .86vw, .96rem);
     font-weight: 820;
     line-height: 1;
     letter-spacing: .015em;
@@ -1038,19 +1045,21 @@ h3 {
   .workflow-plus { display: none; }
   .workflow-trigger:hover,
   .workflow-trigger:focus-visible {
-    z-index: 30;
+    filter: brightness(1.18);
+    transform: none;
+    box-shadow: inset 0 1px rgba(255,255,255,.2), -12px 8px 24px rgba(0,0,0,.28);
   }
   .workflow-item:has(.workflow-trigger:hover),
   .workflow-item:focus-within { z-index: auto; }
   .workflow-panel,
   .workflow-item.is-active .workflow-panel {
     position: absolute;
-    z-index: 1;
-    inset: 0 var(--workflow-tabs-width) 0 0;
+    z-index: 10;
+    inset: 96px 0 0;
     width: auto;
     height: auto;
     flex: none;
-    padding: 16px 0 16px 22px;
+    padding: 0 22px 24px;
     overflow: visible;
     background: transparent;
     box-shadow: none;
@@ -1069,14 +1078,14 @@ h3 {
     transition: opacity 180ms ease, visibility 0s;
   }
   .workflow-panel-inner {
-    min-height: 832px;
+    min-height: 860px;
     height: 100%;
     border: 1px solid rgba(27,29,26,.1);
     border-radius: 22px;
     background: var(--workflow-art-surface);
     color: var(--ink);
     box-shadow: 0 30px 68px rgba(0,0,0,.28), 0 3px 10px rgba(0,0,0,.16);
-    transform-origin: left center;
+    transform-origin: right center;
     transition: opacity 200ms ease, transform 520ms var(--ease-out), box-shadow 520ms var(--ease-out);
   }
   .workflow-copy h3,

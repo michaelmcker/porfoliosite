@@ -186,13 +186,13 @@ test("project labels and the accommodation cue are specific and keep a wide blac
   assert.match(css, /\.accommodation-scroll-cue\s*\{[^}]*position:\s*relative[^}]*justify-self:\s*end/s);
 });
 
-test("accordion keeps desktop folder spines fixed at the right of the moving paper", async () => {
+test("accordion keeps five shaped desktop folder tabs fixed above the moving paper", async () => {
   const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
 
   assert.doesNotMatch(html, /workflow-number/);
   assert.equal((html.match(/class="workflow-trigger-label"/g) || []).length, 5);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-item\s*\{[^}]*position:\s*absolute[^}]*pointer-events:\s*none/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*\{[^}]*right:\s*calc\(var\(--workflow-slot\)\s*\*\s*var\(--workflow-tab-step\)\)[^}]*pointer-events:\s*auto/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*\{[^}]*left:\s*var\(--workflow-tab-left\)[^}]*clip-path:\s*polygon\([^}]*pointer-events:\s*auto/s);
   assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-family:\s*var\(--font-sans\)[^}]*text-align:\s*left/s);
   assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*visibility:\s*visible[^}]*pointer-events:\s*auto/s);
   assert.match(css, /\.workflow-trigger\s*\{[^}]*box-shadow:\s*inset/s);
