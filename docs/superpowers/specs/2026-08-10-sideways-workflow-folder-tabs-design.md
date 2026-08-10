@@ -5,17 +5,17 @@ Date: 2026-08-10
 
 ## Goal
 
-Desktop uses five shaped folder tabs in permanent left-to-right slots across one top edge. The tabs have raised label lobes and curved shoulder cutouts, while their labels read vertically. Selecting a tab retracts the current workflow card rightward behind that row, then slides the selected workflow's loose paper card left into view below it.
+Desktop uses five discrete shaped folder tabs in permanent top-to-bottom slots down the right edge. Each tab has its own raised lobe and shoulder cutout, with a tight 6px gap to the next tab. Labels read vertically from top to bottom. Selecting a tab retracts the current workflow card rightward behind that column, then slides the selected workflow's loose paper card left into view.
 
 There is no literal folder pocket, paper holder, or new mobile interaction.
 
 ## Desktop Structure
 
 - Repeatable Systems remains a full-bleed charcoal chapter.
-- At 1100px and wider, five wide folder-tab silhouettes remain fixed in one horizontal row while one paper panel occupies the area below.
-- Each tab is a graphite folder shape with a raised rounded label lobe and a curved inward shoulder leading to its lower edge.
+- At 1100px and wider, five discrete folder-tab silhouettes remain fixed in one vertical column while one paper panel occupies the area to the left.
+- Each tab is a separate graphite folder shape with a raised rounded lobe and an inward shoulder, rather than part of one continuous scalloped edge.
 - Tab labels read vertically using the existing DM Sans family and remain fully visible: Content, Dashboard, Presentation, Prospecting, Website.
-- The five tabs always remain visible in one top sequence and keep identical coordinates across selection changes.
+- The five tabs always remain visible in one right-hand sequence and keep identical coordinates across selection changes.
 - The active workflow is a separate warm paper-grey card with controlled radius, subtle texture, and a soft shadow. It is not framed by another folder body.
 - Copy sits above the approved workflow visual on that card. The visual retains its own authored black field and coloured routes.
 - The styling uses the portfolio's charcoal, graphite, warm paper, DM Sans, and Fraunces system. It avoids rainbow folder colours, heavy outlines, glossy effects, and literal office-supply illustration.
@@ -52,7 +52,7 @@ The outgoing and incoming cards overlap briefly enough to feel continuous, but n
 ## Verification
 
 - Capture all five selected desktop states at 1440px.
-- Confirm the five shaped tabs form one horizontal top row and all vertical labels remain readable at 1440px, 1280px, and 1100px.
+- Confirm the five discrete shaped tabs form one tight vertical right-hand column and all vertical labels remain readable at 1440px, 1280px, and 1100px.
 - Confirm the outgoing card retracts before the incoming card slides left.
 - Confirm there is no holder or nested folder pocket around the paper card.
 - Confirm mobile screenshots at 390px and 320px are visually unchanged.

@@ -2,9 +2,9 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Restyle the existing desktop workflow accordion as five shaped folder tabs in one fixed horizontal top row whose loose paper cards retract and slide left into view, without changing mobile.
+**Goal:** Restyle the existing desktop workflow accordion as five discrete shaped folder tabs in one fixed right-hand column whose loose paper cards retract and slide left into view, without changing mobile.
 
-**Architecture:** Preserve the existing HTML, ARIA wiring, workflow assets, and mobile media-query implementation. On desktop, replace the moving flex geometry with full-size overlaid items, five permanent shaped trigger slots across one top row, and an independently positioned paper panel below. Use the existing two-phase retract/enter state machine in `activateWorkflow()`. Promote canonical V2 files to root only after focused tests pass.
+**Architecture:** Preserve the existing HTML, ARIA wiring, workflow assets, and mobile media-query implementation. On desktop, replace the moving flex geometry with full-size overlaid items, five permanent discrete trigger slots down the right, and an independently positioned paper panel to the left. Use the existing two-phase retract/enter state machine in `activateWorkflow()`. Promote canonical V2 files to root only after focused tests pass.
 
 **Tech Stack:** Static HTML, CSS custom properties and media queries, vanilla JavaScript, Node test runner, Puppeteer browser QA.
 
