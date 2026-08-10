@@ -962,6 +962,90 @@ h3 {
   color: #6c6f69;
   font-size: 1rem;
 }
+
+/* Desktop folders: the tabs stay in one horizontal row while one loose paper card moves. */
+@media (min-width: 1100px) {
+  .workflow-accordion {
+    --workflow-tab-width: 88px;
+    --workflow-tab-overlap: 10px;
+    padding: 24px 0;
+    align-items: stretch;
+  }
+  .workflow-item {
+    min-width: var(--workflow-tab-width);
+    flex-basis: var(--workflow-tab-width);
+    margin-left: calc(var(--workflow-tab-overlap) * -1);
+    background: transparent;
+    transition-duration: 560ms;
+  }
+  .workflow-item:first-child { margin-left: 0; }
+  .workflow-item.is-active {
+    flex-basis: calc(100% - 312px);
+    background: transparent;
+  }
+  .workflow-trigger,
+  .workflow-item.is-active .workflow-trigger {
+    width: var(--workflow-tab-width);
+    min-width: var(--workflow-tab-width);
+    padding: 30px 12px 24px;
+    border-radius: 18px 18px 8px 8px;
+  }
+  .workflow-trigger::before {
+    height: 48px;
+    border-radius: 18px 18px 0 0;
+  }
+  .workflow-trigger::after { inset: 48px 12px auto; }
+  .workflow-trigger-label {
+    top: 72px;
+    left: 50%;
+    width: auto;
+    max-height: calc(100% - 112px);
+    overflow: visible;
+    writing-mode: vertical-rl;
+    transform: translateX(-50%) rotate(180deg);
+    color: var(--rail-ink);
+    font-size: clamp(.9rem, .92vw, 1.02rem);
+    font-weight: 820;
+    line-height: 1;
+    letter-spacing: .015em;
+    white-space: normal;
+  }
+  .workflow-plus { display: none; }
+  .workflow-panel,
+  .workflow-item.is-active .workflow-panel {
+    padding: 16px 22px 16px 18px;
+    background: transparent;
+    box-shadow: none;
+  }
+  .workflow-panel-inner {
+    min-height: 800px;
+    border: 1px solid rgba(27,29,26,.1);
+    border-radius: 22px;
+    background: var(--workflow-art-surface);
+    color: var(--ink);
+    box-shadow: 0 30px 68px rgba(0,0,0,.28), 0 3px 10px rgba(0,0,0,.16);
+    transform-origin: left center;
+    transition: opacity 200ms ease, transform 520ms var(--ease-out), box-shadow 520ms var(--ease-out);
+  }
+  .workflow-copy h3,
+  .workflow-copy a { color: var(--ink); }
+  .workflow-copy p { color: var(--muted); }
+  .workflow-panel figure {
+    padding: 0;
+    background: transparent;
+    border-radius: 14px;
+  }
+  .workflow-item.is-retracting .workflow-panel-inner {
+    opacity: 0;
+    transform: translateX(-54px) scale(.985);
+    box-shadow: 0 12px 30px rgba(0,0,0,.16);
+  }
+  .workflow-item.is-entering .workflow-panel-inner {
+    opacity: 0;
+    transform: translateX(74px) scale(.985);
+    box-shadow: 0 16px 38px rgba(0,0,0,.18);
+  }
+}
 .website-workflow-visual span {
   color: var(--muted);
   font-size: .68rem;

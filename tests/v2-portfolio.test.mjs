@@ -330,6 +330,12 @@ test("all five workflow controls have unique accessible trigger and panel wiring
 
   assert.match(app, /toggleAttribute\(["']inert["']/);
   assert.match(app, /setAttribute\(["']aria-hidden["']/);
+  assert.match(app, /is-retracting/);
+  assert.match(app, /is-entering/);
+  assert.match(app, /data-workflow-phase/);
+  assert.match(app, /min-width:\s*1100px/);
+  assert.match(app, /WORKFLOW_RETRACT_MS\s*=\s*200/);
+  assert.match(app, /workflowMotion\.matches/);
   assert.match(html, /href="workflows\/presentation-publishing\.html"/);
 });
 
