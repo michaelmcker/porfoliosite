@@ -115,18 +115,20 @@ test("desktop workflow controls use five discrete fixed folder tabs down the rig
   assert.equal((html.match(/class="workflow-trigger-label"/g) || []).length, 5);
   assert.match(css, /\.workflow-accordion\s*\{[^}]*perspective:\s*1600px/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger-label\s*\{[^}]*writing-mode:\s*vertical-rl[^}]*transform:\s*translate\(-50%,\s*-50%\)/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger-label\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*clamp\(1\.05rem,/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-plus\s*\{[^}]*display:\s*none/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-item\s*\{[^}]*position:\s*absolute[^}]*inset:\s*0/s);
   assert.match(css, /\.workflow-item:nth-child\(1\)\s*\{[^}]*--workflow-tab-top:\s*0%/s);
-  assert.match(css, /\.workflow-item:nth-child\(5\)\s*\{[^}]*--workflow-tab-top:\s*79\.2%/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*\{[^}]*position:\s*absolute[^}]*top:\s*var\(--workflow-tab-top\)[^}]*right:\s*14px[^}]*width:\s*116px[^}]*height:\s*20\.8%/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*border-radius:\s*0 26px 26px 0/s);
+  assert.match(css, /\.workflow-item:nth-child\(5\)\s*\{[^}]*--workflow-tab-top:\s*80%/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-accordion\s*\{[^}]*width:\s*min\(calc\(100% - \(2 \* var\(--gutter\)\)\),\s*1380px\)[^}]*margin:\s*0 auto/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*\{[^}]*position:\s*absolute[^}]*top:\s*var\(--workflow-tab-top\)[^}]*right:\s*0[^}]*width:\s*118px[^}]*height:\s*calc\(20% - 4px\)/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*border-radius:\s*0 22px 22px 0/s);
   assert.doesNotMatch(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*clip-path:/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger,[\s\S]*?\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*transform:\s*none/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-panel\s*\{[^}]*background:\s*transparent/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-panel[^}]*\{[^}]*position:\s*absolute[^}]*inset:\s*0\s+96px\s+0\s+0/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-panel[^}]*\{[^}]*position:\s*absolute[^}]*inset:\s*0\s+92px\s+0\s+0/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-panel-inner\s*\{[^}]*background:\s*var\(--workflow-art-surface\)[^}]*box-shadow:/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger:hover,[^}]*\{[^}]*transform:\s*translateX\(10px\)/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger:hover,[^}]*\{[^}]*transform:\s*translateX\(12px\)/s);
   assert.match(css, /\.workflow-item\.is-retracting \.workflow-panel-inner\s*\{[^}]*translateX\((?:1[0-9]{2}|[2-9][0-9]{2})px\)/s);
   assert.match(css, /\.workflow-item\.is-entering \.workflow-panel-inner\s*\{[^}]*translateX\(/s);
   assert.match(css, /@media \(max-width: 1099px\)[\s\S]*?\.workflow-trigger-label\s*\{[^}]*top:\s*8px[^}]*left:/s);
@@ -138,7 +140,7 @@ test("homepage and workflow pages share one warm-grey artwork card", async () =>
     read("v2/workflows/workflow-detail.css"),
   ]);
 
-  assert.match(homeCss, /--workflow-art-surface:\s*#e7e8e3/);
+  assert.match(homeCss, /--workflow-art-surface:\s*#f7f6f2/);
   assert.match(homeCss, /\.workflow-panel figure\s*\{[^}]*background:\s*var\(--workflow-art-surface\)/s);
   assert.match(detailCss, /\.workflow-artwork\s*\{[^}]*background:\s*var\(--workflow-art-surface\)/s);
   assert.doesNotMatch(detailCss, /\.workflow-artwork\s*\{[^}]*background:\s*#111412/s);

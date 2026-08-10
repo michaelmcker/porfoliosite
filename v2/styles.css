@@ -24,7 +24,7 @@
   --accent: #E3A916;
   --accent-deep: #8d5d08;
   --charcoal: #171a19;
-  --workflow-art-surface: #e7e8e3;
+  --workflow-art-surface: #f7f6f2;
   --forest: #243c31;
   --clay: #a84d32;
   --font-sans: "DM Sans", Arial, sans-serif;
@@ -968,9 +968,12 @@ h3 {
   .workflow-accordion {
     position: relative;
     display: block;
+    width: min(calc(100% - (2 * var(--gutter))), 1380px);
     min-height: 980px;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
+    border: 0;
   }
   .workflow-item {
     position: absolute;
@@ -986,10 +989,10 @@ h3 {
     transition: none;
   }
   .workflow-item:nth-child(1) { --workflow-tab-top: 0%; z-index: auto; }
-  .workflow-item:nth-child(2) { --workflow-tab-top: 19.8%; z-index: auto; }
-  .workflow-item:nth-child(3) { --workflow-tab-top: 39.6%; z-index: auto; }
-  .workflow-item:nth-child(4) { --workflow-tab-top: 59.4%; z-index: auto; }
-  .workflow-item:nth-child(5) { --workflow-tab-top: 79.2%; z-index: auto; }
+  .workflow-item:nth-child(2) { --workflow-tab-top: 20%; z-index: auto; }
+  .workflow-item:nth-child(3) { --workflow-tab-top: 40%; z-index: auto; }
+  .workflow-item:nth-child(4) { --workflow-tab-top: 60%; z-index: auto; }
+  .workflow-item:nth-child(5) { --workflow-tab-top: 80%; z-index: auto; }
   .workflow-item.is-active {
     z-index: auto;
     min-width: 0;
@@ -1001,21 +1004,21 @@ h3 {
     position: absolute;
     z-index: 5;
     top: var(--workflow-tab-top);
-    right: 14px;
+    right: 0;
     left: auto;
     bottom: auto;
-    width: 116px;
+    width: 118px;
     min-width: 0;
     min-height: 0;
-    height: 20.8%;
+    height: calc(20% - 4px);
     display: block;
     padding: 0;
     border: 0;
     border: 1px solid rgba(255,255,255,.09);
     border-left: 0;
-    border-radius: 0 26px 26px 0;
+    border-radius: 0 22px 22px 0;
     background: var(--rail);
-    box-shadow: inset 0 1px rgba(255,255,255,.16), 8px 8px 18px rgba(0,0,0,.22);
+    box-shadow: inset 0 1px rgba(255,255,255,.14), 10px 10px 22px rgba(0,0,0,.25);
     visibility: visible;
     opacity: 1;
     overflow: visible;
@@ -1024,7 +1027,7 @@ h3 {
     transition: filter 220ms ease, background-color 220ms ease, color 220ms ease;
   }
   .workflow-item.is-active .workflow-trigger {
-    background: #d7d5ce;
+    background: #eee6d7;
     color: var(--ink);
   }
   .workflow-trigger::before,
@@ -1038,18 +1041,19 @@ h3 {
     writing-mode: vertical-rl;
     transform: translate(-50%, -50%);
     color: currentColor;
-    font-size: clamp(.8rem, .86vw, .96rem);
-    font-weight: 820;
+    font-family: var(--font-editorial);
+    font-size: clamp(1.05rem, 1.22vw, 1.32rem);
+    font-weight: 520;
     line-height: 1;
-    letter-spacing: .015em;
+    letter-spacing: 0;
     white-space: normal;
   }
   .workflow-plus { display: none; }
   .workflow-trigger:hover,
   .workflow-trigger:focus-visible {
     filter: brightness(1.18);
-    transform: translateX(10px);
-    box-shadow: inset 0 1px rgba(255,255,255,.22), 14px 12px 28px rgba(0,0,0,.38);
+    transform: translateX(12px);
+    box-shadow: inset 0 1px rgba(255,255,255,.22), 18px 14px 34px rgba(0,0,0,.4);
   }
   .workflow-item:has(.workflow-trigger:hover),
   .workflow-item:focus-within { z-index: auto; }
@@ -1057,7 +1061,7 @@ h3 {
   .workflow-item.is-active .workflow-panel {
     position: absolute;
     z-index: 10;
-    inset: 0 96px 0 0;
+    inset: 0 92px 0 0;
     width: auto;
     height: auto;
     flex: none;
@@ -1083,7 +1087,7 @@ h3 {
     min-height: 860px;
     height: 100%;
     border: 1px solid rgba(27,29,26,.1);
-    border-radius: 22px;
+    border-radius: 28px;
     background: var(--workflow-art-surface);
     color: var(--ink);
     box-shadow: 0 30px 68px rgba(0,0,0,.28), 0 3px 10px rgba(0,0,0,.16);

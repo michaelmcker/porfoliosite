@@ -22,7 +22,7 @@ test("the approved V2 homepage is the production root", async () => {
   const [root, v2] = await Promise.all([read("index.html"), read("v2/index.html")]);
 
   assert.match(root, /<link rel="canonical" href="https:\/\/michaelmck\.site\/">/);
-  assert.match(root, /<link rel="stylesheet" href="v2\/styles\.css\?v=20260810-6">/);
+  assert.match(root, /<link rel="stylesheet" href="v2\/styles\.css\?v=20260810-7">/);
   assert.match(root, /<section class="hero page-frame" id="hero"/);
   assert.match(root, /data-work="accommodation"/);
   assert.match(root, /data-workflow-accordion/);
@@ -36,7 +36,7 @@ test("the approved V2 homepage is the production root", async () => {
   assert.doesNotMatch(root, /class="site-shell"/);
 
   assert.match(v2, /<link rel="canonical" href="https:\/\/michaelmck\.site\/">/);
-  assert.match(v2, /<link rel="stylesheet" href="styles\.css\?v=20260810-6">/);
+  assert.match(v2, /<link rel="stylesheet" href="styles\.css\?v=20260810-7">/);
 });
 
 test("the approved V2 proposal builder is the production proposal route", async () => {
