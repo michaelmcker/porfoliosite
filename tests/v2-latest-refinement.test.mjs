@@ -72,10 +72,10 @@ test("Okanagan preview uses the deployed serif navigation and display typography
   assert.match(css, /@media \(min-width: 561px\) and \(max-width: 900px\)[\s\S]*?\.site-nav\s*\{[^}]*transform:\s*scale\(var\(--nav-scale\)\)/s);
 });
 
-test("desktop workflow folder tabs stay anchored down the right and lift outward on hover or focus", async () => {
+test("desktop workflow folder tabs stay anchored across the top and lift on hover or focus", async () => {
   const css = await read("v2/styles.css");
 
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger:hover,[\s\S]*?transform:\s*translateX\(12px\)/s);
-  assert.match(css, /--workflow-tab-top:/);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger:hover,[\s\S]*?transform:\s*translateY\(-10px\)/s);
+  assert.match(css, /--workflow-tab-left:/);
   assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-size:\s*clamp\(/s);
 });

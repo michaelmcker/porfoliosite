@@ -3,30 +3,22 @@ const workflowTriggers = workflowItems.map((item) => item.querySelector("[data-w
 const workflowAccordion = document.querySelector("[data-workflow-accordion]");
 const workflowMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const workflowDesktop = window.matchMedia("(min-width: 1100px)");
-const WORKFLOW_RETRACT_MS = 200;
-const WORKFLOW_TRANSITION_MS = 760;
+const WORKFLOW_PAGE_TURN_MS = 620;
 let activeWorkflowIndex = Math.max(0, workflowItems.findIndex((item) => item.classList.contains("is-active")));
-let workflowRetractTimer;
 let workflowTransitionTimer;
 
 function focusActiveWorkflow(index) {
-  const desktop = workflowDesktop.matches;
-  if (desktop) {
-    workflowItems[index].querySelector("[data-workflow-panel] a")?.focus();
-  } else {
-    workflowTriggers[index].focus();
-  }
+  workflowTriggers[index].focus();
 }
 
 function clearWorkflowTransition() {
-  window.clearTimeout(workflowRetractTimer);
   window.clearTimeout(workflowTransitionTimer);
-  workflowItems.forEach((item) => item.classList.remove("is-retracting", "is-entering"));
+  workflowItems.forEach((item) => item.classList.remove("is-page-leaving", "is-page-entering"));
   workflowAccordion?.removeAttribute("data-workflow-transitioning");
   workflowAccordion?.removeAttribute("data-workflow-phase");
 }
 
-function commitWorkflowSelection(index, { focus = false, entering = false } = {}) {
+function commitWorkflowSelection(index, { focus = false } = {}) {
   workflowItems.forEach((item, itemIndex) => {
     const active = itemIndex === index;
     const panel = item.querySelector("[data-workflow-panel]");
@@ -35,20 +27,10 @@ function commitWorkflowSelection(index, { focus = false, entering = false } = {}
     panel.setAttribute("aria-hidden", String(!active));
     panel.toggleAttribute("inert", !active);
     item.classList.toggle("is-active", active);
-    item.classList.remove("is-retracting", "is-entering");
+    item.classList.remove("is-page-leaving", "is-page-entering");
   });
 
   activeWorkflowIndex = index;
-  const activeItem = workflowItems[index];
-
-  if (entering) {
-    activeItem.classList.add("is-entering");
-    workflowAccordion?.setAttribute("data-workflow-phase", "entering");
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => activeItem.classList.remove("is-entering"));
-    });
-  }
-
   if (focus) focusActiveWorkflow(index);
 }
 
@@ -67,14 +49,18 @@ function activateWorkflow(index, { focus = false } = {}) {
     return;
   }
 
+  const leavingItem = workflowItems[activeWorkflowIndex];
+  const enteringItem = workflowItems[safeIndex];
+  commitWorkflowSelection(safeIndex);
   workflowAccordion?.setAttribute("data-workflow-transitioning", "true");
-  workflowAccordion?.setAttribute("data-workflow-phase", "retracting");
-  workflowItems[activeWorkflowIndex].classList.add("is-retracting");
+  workflowAccordion?.setAttribute("data-workflow-phase", "page-turn");
+  leavingItem.classList.add("is-page-leaving");
+  enteringItem.classList.add("is-page-entering");
 
-  workflowRetractTimer = window.setTimeout(() => {
-    commitWorkflowSelection(safeIndex, { focus, entering: true });
-    workflowTransitionTimer = window.setTimeout(clearWorkflowTransition, WORKFLOW_TRANSITION_MS);
-  }, WORKFLOW_RETRACT_MS);
+  workflowTransitionTimer = window.setTimeout(() => {
+    if (focus) focusActiveWorkflow(safeIndex);
+    clearWorkflowTransition();
+  }, WORKFLOW_PAGE_TURN_MS);
 }
 
 workflowTriggers.forEach((trigger, index) => {
