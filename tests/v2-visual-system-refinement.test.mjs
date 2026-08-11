@@ -120,34 +120,22 @@ test("approved Content style drives image generation while Content and the recov
   }
 });
 
-test("desktop workflow controls use five discrete fixed folder tabs down the right of a loose paper card", async () => {
+test("desktop workflow controls restore the live sliding rails without covered labels", async () => {
   const [html, css] = await Promise.all([read("v2/index.html"), read("v2/styles.css")]);
 
   assert.equal((html.match(/class="workflow-trigger-label"/g) || []).length, 5);
   assert.match(css, /\.workflow-accordion\s*\{[^}]*perspective:\s*1600px/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger-label\s*\{[^}]*writing-mode:\s*vertical-rl[^}]*transform:\s*translate\(-50%,\s*-50%\)/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger-label\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*clamp\(1\.12rem,/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-plus\s*\{[^}]*display:\s*none/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-item\s*\{[^}]*position:\s*absolute[^}]*inset:\s*0/s);
-  assert.match(css, /\.workflow-item:nth-child\(1\)\s*\{[^}]*--workflow-tab-top:\s*0%/s);
-  assert.match(css, /\.workflow-item:nth-child\(5\)\s*\{[^}]*--workflow-tab-top:\s*80%/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-accordion\s*\{[^}]*width:\s*min\(calc\(100% - \(2 \* var\(--gutter\)\)\),\s*1380px\)[^}]*margin:\s*0 auto/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-accordion\s*\{[^}]*overflow:\s*visible/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*\{[^}]*position:\s*absolute[^}]*top:\s*var\(--workflow-tab-top\)[^}]*right:\s*0[^}]*width:\s*118px[^}]*height:\s*calc\(20% - 4px\)/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger,[\s\S]*?\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*z-index:\s*30/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*border-radius:\s*0 22px 22px 0/s);
-  assert.doesNotMatch(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*clip-path:/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger,[\s\S]*?\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*transform:\s*none/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-panel\s*\{[^}]*background:\s*transparent/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-panel[^}]*\{[^}]*position:\s*absolute[^}]*inset:\s*0\s+92px\s+0\s+0/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-panel-inner\s*\{[^}]*background:\s*var\(--workflow-art-surface\)[^}]*box-shadow:/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger:hover,[^}]*\{[^}]*transform:\s*translateX\(12px\)/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-copy h3\s*\{[^}]*max-width:\s*15ch[^}]*font-size:\s*clamp\(2\.85rem,/s);
+  assert.match(css, /\.workflow-accordion\s*\{[^}]*display:\s*flex[^}]*overflow:\s*hidden/s);
+  assert.match(css, /\.workflow-item\s*\{[^}]*min-width:\s*76px[^}]*flex:\s*0 0 76px[^}]*margin-left:\s*-12px/s);
+  assert.match(css, /\.workflow-item\.is-active\s*\{[^}]*flex-basis:\s*calc\(100% - 256px\)[^}]*overflow:\s*hidden/s);
+  assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*76px[^}]*min-width:\s*76px/s);
+  assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-size:\s*1\.2rem[^}]*writing-mode:\s*vertical-rl[^}]*transform:\s*rotate\(180deg\)/s);
+  assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*width:\s*0[^}]*opacity:\s*0/s);
+  assert.match(css, /\.workflow-trigger:hover,[^}]*\{[^}]*translate3d\(-18px,\s*var\(--stack-y\),\s*40px\)/s);
+  assert.doesNotMatch(css, /--workflow-tab-top:/);
   assert.match(css, /\.workflow-panel figure picture\s*\{[^}]*position:\s*relative[^}]*height:\s*100%[^}]*overflow:\s*hidden/s);
   assert.match(css, /\.workflow-panel figure picture > img\s*\{[^}]*position:\s*absolute[^}]*inset:\s*0[^}]*object-fit:\s*contain/s);
-  assert.match(css, /\.workflow-item\.is-retracting \.workflow-panel-inner\s*\{[^}]*translateX\((?:1[0-9]{2}|[2-9][0-9]{2})px\)/s);
-  assert.match(css, /\.workflow-item\.is-entering \.workflow-panel-inner\s*\{[^}]*translateX\(/s);
-  assert.match(css, /@media \(max-width: 1099px\)[\s\S]*?\.workflow-trigger-label\s*\{[^}]*top:\s*8px[^}]*left:/s);
+  assert.match(css, /@media \(max-width: 1099px\)[\s\S]*?\.workflow-trigger-label\s*\{[^}]*writing-mode:\s*horizontal-tb[^}]*transform:\s*none/s);
 });
 
 test("homepage and workflow pages share one warm-grey artwork card", async () => {

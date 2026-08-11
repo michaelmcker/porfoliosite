@@ -2,54 +2,16 @@ const workflowItems = [...document.querySelectorAll(".workflow-item")];
 const workflowTriggers = workflowItems.map((item) => item.querySelector("[data-workflow-trigger]"));
 const workflowAccordion = document.querySelector("[data-workflow-accordion]");
 const workflowMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-const workflowDesktop = window.matchMedia("(min-width: 1100px)");
-const WORKFLOW_RETRACT_MS = 200;
-const WORKFLOW_TRANSITION_MS = 760;
 let activeWorkflowIndex = Math.max(0, workflowItems.findIndex((item) => item.classList.contains("is-active")));
-let workflowRetractTimer;
 let workflowTransitionTimer;
 
 function focusActiveWorkflow(index) {
-  const desktop = workflowDesktop.matches;
+  const desktop = window.matchMedia("(min-width: 1100px)").matches;
   if (desktop) {
     workflowItems[index].querySelector("[data-workflow-panel] a")?.focus();
   } else {
     workflowTriggers[index].focus();
   }
-}
-
-function clearWorkflowTransition() {
-  window.clearTimeout(workflowRetractTimer);
-  window.clearTimeout(workflowTransitionTimer);
-  workflowItems.forEach((item) => item.classList.remove("is-retracting", "is-entering"));
-  workflowAccordion?.removeAttribute("data-workflow-transitioning");
-  workflowAccordion?.removeAttribute("data-workflow-phase");
-}
-
-function commitWorkflowSelection(index, { focus = false, entering = false } = {}) {
-  workflowItems.forEach((item, itemIndex) => {
-    const active = itemIndex === index;
-    const panel = item.querySelector("[data-workflow-panel]");
-    workflowTriggers[itemIndex].setAttribute("aria-expanded", String(active));
-    workflowTriggers[itemIndex].toggleAttribute("aria-current", active);
-    panel.setAttribute("aria-hidden", String(!active));
-    panel.toggleAttribute("inert", !active);
-    item.classList.toggle("is-active", active);
-    item.classList.remove("is-retracting", "is-entering");
-  });
-
-  activeWorkflowIndex = index;
-  const activeItem = workflowItems[index];
-
-  if (entering) {
-    activeItem.classList.add("is-entering");
-    workflowAccordion?.setAttribute("data-workflow-phase", "entering");
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => activeItem.classList.remove("is-entering"));
-    });
-  }
-
-  if (focus) focusActiveWorkflow(index);
 }
 
 function activateWorkflow(index, { focus = false } = {}) {
@@ -59,22 +21,34 @@ function activateWorkflow(index, { focus = false } = {}) {
     return;
   }
 
-  clearWorkflowTransition();
-
-  const animatePaper = workflowDesktop.matches && !workflowMotion.matches;
-  if (!animatePaper) {
-    commitWorkflowSelection(safeIndex, { focus });
-    return;
-  }
-
+  window.clearTimeout(workflowTransitionTimer);
   workflowAccordion?.setAttribute("data-workflow-transitioning", "true");
-  workflowAccordion?.setAttribute("data-workflow-phase", "retracting");
-  workflowItems[activeWorkflowIndex].classList.add("is-retracting");
 
-  workflowRetractTimer = window.setTimeout(() => {
-    commitWorkflowSelection(safeIndex, { focus, entering: true });
-    workflowTransitionTimer = window.setTimeout(clearWorkflowTransition, WORKFLOW_TRANSITION_MS);
-  }, WORKFLOW_RETRACT_MS);
+  workflowItems.forEach((item, itemIndex) => {
+    const active = itemIndex === safeIndex;
+    const panel = item.querySelector("[data-workflow-panel]");
+    workflowTriggers[itemIndex].setAttribute("aria-expanded", String(active));
+    workflowTriggers[itemIndex].toggleAttribute("aria-current", active);
+    panel.setAttribute("aria-hidden", String(!active));
+    panel.toggleAttribute("inert", !active);
+  });
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      workflowItems.forEach((item, itemIndex) => item.classList.toggle("is-active", itemIndex === safeIndex));
+      activeWorkflowIndex = safeIndex;
+      if (focus) focusActiveWorkflow(safeIndex);
+
+      if (workflowMotion.matches) {
+        workflowAccordion?.removeAttribute("data-workflow-transitioning");
+        return;
+      }
+
+      workflowTransitionTimer = window.setTimeout(() => {
+        workflowAccordion?.removeAttribute("data-workflow-transitioning");
+      }, 840);
+    });
+  });
 }
 
 workflowTriggers.forEach((trigger, index) => {

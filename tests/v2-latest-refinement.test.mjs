@@ -72,10 +72,15 @@ test("Okanagan preview uses the deployed serif navigation and display typography
   assert.match(css, /@media \(min-width: 561px\) and \(max-width: 900px\)[\s\S]*?\.site-nav\s*\{[^}]*transform:\s*scale\(var\(--nav-scale\)\)/s);
 });
 
-test("desktop workflow folder tabs stay anchored down the right and lift outward on hover or focus", async () => {
+test("desktop workflow tabs use the live sliding rails with readable resting labels", async () => {
   const css = await read("v2/styles.css");
 
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger:hover,[\s\S]*?transform:\s*translateX\(12px\)/s);
-  assert.match(css, /--workflow-tab-top:/);
-  assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-size:\s*clamp\(/s);
+  assert.match(css, /\.workflow-accordion\s*\{[^}]*display:\s*flex[^}]*overflow:\s*hidden/s);
+  assert.match(css, /\.workflow-item\s*\{[^}]*min-width:\s*76px[^}]*flex:\s*0 0 76px[^}]*margin-left:\s*-12px/s);
+  assert.match(css, /\.workflow-item\.is-active\s*\{[^}]*flex-basis:\s*calc\(100% - 256px\)/s);
+  assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*76px[^}]*min-width:\s*76px/s);
+  assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*width:\s*0[^}]*opacity:\s*0/s);
+  assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-size:\s*1\.2rem[^}]*writing-mode:\s*vertical-rl/s);
+  assert.match(css, /\.workflow-trigger:hover,[\s\S]*?translate3d\(-18px,\s*var\(--stack-y\),\s*40px\)/s);
+  assert.doesNotMatch(css, /--workflow-tab-top:/);
 });

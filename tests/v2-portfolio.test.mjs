@@ -186,19 +186,21 @@ test("project labels and the accommodation cue are specific and keep a wide blac
   assert.match(css, /\.accommodation-scroll-cue\s*\{[^}]*position:\s*relative[^}]*justify-self:\s*end/s);
 });
 
-test("accordion keeps five discrete desktop folder tabs fixed at the right of the moving paper", async () => {
+test("accordion restores the live sliding rails with readable inactive labels", async () => {
   const [html, css] = await Promise.all([readV2("index.html"), readV2("styles.css")]);
 
   assert.doesNotMatch(html, /workflow-number/);
   assert.equal((html.match(/class="workflow-trigger-label"/g) || []).length, 5);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-item\s*\{[^}]*position:\s*absolute[^}]*pointer-events:\s*none/s);
-  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*\{[^}]*top:\s*var\(--workflow-tab-top\)[^}]*right:\s*0[^}]*border-radius:\s*0 22px 22px 0[^}]*pointer-events:\s*auto/s);
-  assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-family:\s*var\(--font-sans\)[^}]*text-align:\s*left/s);
-  assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*visibility:\s*visible[^}]*pointer-events:\s*auto/s);
+  assert.match(css, /\.workflow-accordion\s*\{[^}]*display:\s*flex[^}]*overflow:\s*hidden/s);
+  assert.match(css, /\.workflow-item\s*\{[^}]*min-width:\s*76px[^}]*flex:\s*0 0 76px[^}]*margin-left:\s*-12px/s);
+  assert.match(css, /\.workflow-item\.is-active\s*\{[^}]*flex-basis:\s*calc\(100% - 256px\)[^}]*overflow:\s*hidden/s);
+  assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*76px[^}]*min-width:\s*76px/s);
+  assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-size:\s*1\.2rem[^}]*writing-mode:\s*vertical-rl/s);
+  assert.match(css, /\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*width:\s*0[^}]*opacity:\s*0[^}]*pointer-events:\s*none/s);
   assert.match(css, /\.workflow-trigger\s*\{[^}]*box-shadow:\s*inset/s);
   assert.match(css, /\.workflow-accordion\s*\{[^}]*min-height:\s*880px/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*min-height:\s*880px/s);
-  assert.match(css, /\.workflow-panel figure img\s*\{[^}]*max-height:\s*650px/s);
+  assert.doesNotMatch(css, /--workflow-tab-top:/);
 });
 
 test("About holds a sticky scroll story before releasing into the rest of the page", async () => {
@@ -330,12 +332,12 @@ test("all five workflow controls have unique accessible trigger and panel wiring
 
   assert.match(app, /toggleAttribute\(["']inert["']/);
   assert.match(app, /setAttribute\(["']aria-hidden["']/);
-  assert.match(app, /is-retracting/);
-  assert.match(app, /is-entering/);
-  assert.match(app, /data-workflow-phase/);
+  assert.match(app, /workflowItems\.forEach\(\(item, itemIndex\) => item\.classList\.toggle\("is-active"/);
+  assert.match(app, /setAttribute\("data-workflow-transitioning", "true"\)/);
+  assert.match(app, /removeAttribute\("data-workflow-transitioning"\)/);
   assert.match(app, /min-width:\s*1100px/);
-  assert.match(app, /WORKFLOW_RETRACT_MS\s*=\s*200/);
   assert.match(app, /workflowMotion\.matches/);
+  assert.doesNotMatch(app, /is-retracting|is-entering|data-workflow-phase/);
   assert.match(html, /href="workflows\/presentation-publishing\.html"/);
 });
 
@@ -476,9 +478,9 @@ test("workflow showcase uses a neutral accordion and orders copy above dominant 
   }
 
   assert.match(css, /\.workflow-accordion\s*\{[^}]*width:\s*100%/s);
-  assert.match(css, /\.workflow-item\s*\{[^}]*min-width:\s*112px[^}]*color:\s*white/s);
-  assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*112px[^}]*background:\s*var\(--rail\)/s);
-  assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-size:\s*clamp\([^}]*font-weight:\s*900/s);
+  assert.match(css, /\.workflow-item\s*\{[^}]*min-width:\s*76px[^}]*color:\s*white/s);
+  assert.match(css, /\.workflow-trigger\s*\{[^}]*width:\s*76px[^}]*background:\s*var\(--rail\)/s);
+  assert.match(css, /\.workflow-trigger-label\s*\{[^}]*font-size:\s*1\.2rem[^}]*font-weight:\s*850/s);
   assert.match(css, /\.workflow-panel-inner\s*\{[^}]*grid-template-rows:\s*auto minmax\(0,\s*1fr\)/s);
   assert.match(css, /\.workflow-panel figure\s*\{[^}]*background:\s*var\(--workflow-art-surface\)/s);
   assert.match(css, /\.workflow-copy h3\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*clamp\(2\.15rem,\s*3\.15vw,\s*3\.65rem\)/s);
