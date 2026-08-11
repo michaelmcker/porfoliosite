@@ -134,6 +134,7 @@ test("desktop workflow controls use five discrete fixed folder tabs down the rig
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-accordion\s*\{[^}]*width:\s*min\(calc\(100% - \(2 \* var\(--gutter\)\)\),\s*1380px\)[^}]*margin:\s*0 auto/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-accordion\s*\{[^}]*overflow:\s*visible/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*\{[^}]*position:\s*absolute[^}]*top:\s*var\(--workflow-tab-top\)[^}]*right:\s*0[^}]*width:\s*118px[^}]*height:\s*calc\(20% - 4px\)/s);
+  assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger,[\s\S]*?\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*z-index:\s*30/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*border-radius:\s*0 22px 22px 0/s);
   assert.doesNotMatch(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger[^}]*clip-path:/s);
   assert.match(css, /@media \(min-width:\s*1100px\)[\s\S]*?\.workflow-trigger,[\s\S]*?\.workflow-item\.is-active \.workflow-trigger\s*\{[^}]*transform:\s*none/s);

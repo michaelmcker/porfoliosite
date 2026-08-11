@@ -1003,7 +1003,7 @@ h3 {
   .workflow-trigger,
   .workflow-item.is-active .workflow-trigger {
     position: absolute;
-    z-index: 5;
+    z-index: 30;
     top: var(--workflow-tab-top);
     right: 0;
     left: auto;

@@ -27,7 +27,7 @@ The workflow accordion is deliberately neutral and dark: Repeatable Systems is a
 
 - Functional and body type: local DM Sans variable font.
 - Workflow and project titles: local Fraunces variable font at an editorial, readable scale. The image remains the dominant evidence.
-- Folder labels: local Fraunces at approximately 520 weight. Desktop uses five separate, smoothly rounded folder-tab silhouettes in permanent top-to-bottom slots on the right with a narrow gap. Labels read vertically from top to bottom. Selection never moves their resting slots; hover and focus lift one tab 12px outward. Tabs layer behind the paper so its right edge remains uninterrupted. The contained active paper card sits to the left as an independent object. Below 1100px preserve the existing horizontal labels on overlapping vertical folder rows.
+- Folder labels: local Fraunces at approximately 520 weight. Desktop uses five separate, smoothly rounded folder-tab silhouettes in permanent top-to-bottom slots on the right with a narrow gap. Labels read vertically from top to bottom and remain fully readable without hover. Selection never moves their resting slots; hover and focus lift one tab 12px outward. The tab layer remains above the paper, while the contained active paper card sits to the left as an independent object. Below 1100px preserve the existing horizontal labels on overlapping vertical folder rows.
 - Editorial accents: local Fraunces variable font, also used for metrics, personal statements, and the music interlude.
 - Technical type: monospace only inside real technical artifacts.
 - Body leading: approximately `1.55-1.7`; paragraph measure and spacing should remain stable at every breakpoint.
