@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { existsSync, readdirSync } from "node:fs";
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
@@ -9,17 +8,7 @@ import { fileURLToPath } from "node:url";
 import puppeteer from "puppeteer-core";
 
 const repoRoot = fileURLToPath(new URL("../", import.meta.url));
-const installedChrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
-const playwrightCache = path.join(process.env.HOME || "", "Library/Caches/ms-playwright");
-const headlessShell = existsSync(playwrightCache)
-  ? readdirSync(playwrightCache)
-      .filter((entry) => entry.startsWith("chromium_headless_shell-"))
-      .sort()
-      .reverse()
-      .map((entry) => path.join(playwrightCache, entry, "chrome-headless-shell-mac-arm64", "chrome-headless-shell"))
-      .find(existsSync)
-  : undefined;
-const chromePath = process.env.CHROME_PATH || (existsSync(installedChrome) ? installedChrome : headlessShell);
+const chromePath = process.env.CHROME_PATH || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const types = {
   ".css": "text/css; charset=utf-8",
   ".html": "text/html; charset=utf-8",

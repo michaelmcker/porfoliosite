@@ -11,7 +11,10 @@ These workflow diagrams are image-generated portfolio artwork. Do not recreate t
 - Visual grammar: pure black canvas; warm off-white, realistic interface cards; recognizable tool marks; thin blue, green, red-orange, white, and amber routes; small junction dots; subtle depth; dense but legible workflow-specific composition.
 - Shared style does not mean shared topology. Each workflow must express its real stages and branching structure.
 
-`content-production-approved-desktop.webp` is the unchanged optimized production derivative used on the homepage and Content workflow page. Its SHA-256 is `7cd3ae11631bb49ceea9e40e7dafd658a770cc918c2b21754f8d8dfd26d1fb11`. Do not create a separate crop for the folder UI; the shared warm artwork surface belongs to the HTML composition, while the artwork itself stays unchanged.
+`content-production-folder-card.png` is the approved warm-paper rendering used in the desktop folder card and Content workflow page. It is a deterministic crop of the approved generated folder reference, not a redraw. The original black plate stays immutable; this rendering exists because its black interface surfaces are transparent knockouts in the original and otherwise disappear on cream.
+
+- SHA-256: `5b06be1b1728b663409ebbbd5b12845bb4e6b0ba5839dca81d5a1327a94b1bca`
+- Production WebP SHA-256: `8615154130715bd4841d23657e57ac5e668c6b7a2c09b11b2c5ecd9a65f3ef35`
 
 `agency-dashboard-desktop.png` and `agency-dashboard-mobile.png` are byte-for-byte copies of the prior real dashboard at `assets/screens/fountainhead-ai-visibility-dashboard-v3.png` (SHA-256 `83d00ae1a5ff5746925a3e350de7b8de98c39404a4b5b68e514394631fe1f7ae`). It preserves `Keyword Content`, `Client Notes`, the visibility trend, content queue, source health, delivery-review queue, and opportunity panels. Do not regenerate it or replace it with a conceptual flowchart. The dashboard is the exception to the separate-composition rule: both production sizes intentionally use the same real source screenshot.
 
@@ -21,7 +24,7 @@ These workflow diagrams are image-generated portfolio artwork. Do not recreate t
 
 | Workflow | Desktop | Mobile |
 | --- | --- | --- |
-| Search-optimized content | `content-production-approved-desktop.png` | `content-production-approved-mobile.png` |
+| Search-optimized content | `content-production-folder-card.png` | `content-production-approved-mobile.png` |
 | Agency dashboard | `agency-dashboard-desktop.png` | `agency-dashboard-mobile.png` |
 | Presentation publishing | `presentation-publishing-desktop.png` | `presentation-publishing-mobile.png` |
 | Local prospecting | `local-prospecting-desktop.png` | `local-prospecting-mobile.png` |

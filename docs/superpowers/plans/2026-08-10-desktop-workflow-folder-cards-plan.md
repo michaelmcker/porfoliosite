@@ -1,7 +1,5 @@
 # Desktop Workflow Folder Cards Implementation Plan
 
-> **Superseded on 2026-08-10.** The right-hand vertical spine and retract/slide interaction were rejected in browser review. Current source truth is one horizontal top tab row with a 620ms page-turn sheet transition, documented in `AGENTS.md`, `DESIGN.md`, `docs/portfolio-working-notes.md`, and the two generated references under `docs/references/`.
-
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Restyle the existing desktop workflow accordion as five discrete shaped folder tabs in one fixed right-hand column whose loose paper cards retract and slide left into view, without changing mobile.
