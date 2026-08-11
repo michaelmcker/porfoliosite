@@ -1,14 +1,14 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-09T14:57:49.042Z",
+  "generatedAt": "2026-08-10T15:27:31.934Z",
   "windows": {
     "searchConsole": {
-      "startDate": "2026-07-10",
-      "endDate": "2026-08-06"
+      "startDate": "2026-07-11",
+      "endDate": "2026-08-07"
     },
     "ga4": {
-      "startDate": "2026-07-12",
-      "endDate": "2026-08-08"
+      "startDate": "2026-07-13",
+      "endDate": "2026-08-09"
     },
     "dataForSeo": {
       "cadence": "weekly database, checked daily"
@@ -18,11 +18,11 @@
   "metrics": {
     "searchConsole": {
       "clicks": 178,
-      "impressions": 23872,
-      "pageRows": 111,
-      "pageRowsPosition1To10": 66,
-      "queryRows": 1577,
-      "queryRowsPosition1To10": 776
+      "impressions": 23860,
+      "pageRows": 109,
+      "pageRowsPosition1To10": 60,
+      "queryRows": 1572,
+      "queryRowsPosition1To10": 779
     },
     "ga4": {
       "formSubmissions": 11,
@@ -32,14 +32,14 @@
       "trackedActions": 17
     },
     "dataForSeo": {
-      "rankedKeywords": 126,
-      "rankingPages": 19,
-      "sourceUpdatedAt": "2026-07-15 15:21:45 +00:00"
+      "rankedKeywords": 133,
+      "rankingPages": 20,
+      "sourceUpdatedAt": "2026-07-14 16:37:11 +00:00"
     },
     "googleBusinessProfile": null
   },
   "update": {
     "state": "verified",
-    "generatedAt": "2026-08-09T14:57:49.042Z"
+    "generatedAt": "2026-08-10T15:27:31.934Z"
   }
 }
