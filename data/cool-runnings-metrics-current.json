@@ -1,14 +1,14 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-09T17:52:44.961Z",
+  "generatedAt": "2026-09-10T17:44:59.105Z",
   "windows": {
     "searchConsole": {
-      "startDate": "2026-08-10",
-      "endDate": "2026-09-06"
+      "startDate": "2026-08-11",
+      "endDate": "2026-09-07"
     },
     "ga4": {
-      "startDate": "2026-08-12",
-      "endDate": "2026-09-08"
+      "startDate": "2026-08-13",
+      "endDate": "2026-09-09"
     },
     "dataForSeo": {
       "cadence": "weekly database, checked daily"
@@ -17,19 +17,19 @@
   },
   "metrics": {
     "searchConsole": {
-      "clicks": 180,
-      "impressions": 27570,
-      "pageRows": 101,
-      "pageRowsPosition1To10": 60,
-      "queryRows": 1977,
-      "queryRowsPosition1To10": 1119
+      "clicks": 179,
+      "impressions": 27504,
+      "pageRows": 100,
+      "pageRowsPosition1To10": 62,
+      "queryRows": 1959,
+      "queryRowsPosition1To10": 1089
     },
     "ga4": {
-      "formSubmissions": 8,
+      "formSubmissions": 7,
       "phoneClicks": 3,
       "whatsappClicks": 0,
-      "websiteConversions": 11,
-      "trackedActions": 11
+      "websiteConversions": 10,
+      "trackedActions": 10
     },
     "dataForSeo": {
       "rankedKeywords": 161,
@@ -40,6 +40,6 @@
   },
   "update": {
     "state": "verified",
-    "generatedAt": "2026-09-09T17:52:44.961Z"
+    "generatedAt": "2026-09-10T17:44:59.105Z"
   }
 }
