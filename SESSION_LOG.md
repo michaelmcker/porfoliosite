@@ -2,7 +2,7 @@
 
 ## In progress
 
-No active implementation. Services expansion is ready for local review; publication and account-level SEO setup remain separate steps.
+Three-page rebuild ready for local review. Not published.
 
 ## Recent sessions
 
@@ -18,3 +18,12 @@ No active implementation. Services expansion is ready for local review; publicat
 - Broader legacy qa-v2.mjs fails its mobile hero overlay geometry assertion. Reproduced identically with pre-change homepage/styles, confirming this is not introduced by services.
 - Not published. Search Console and dedicated GA4 setup remain unverified. Initial consult links open an email request, not a calendar booking.
 - Existing unrelated user edits remain preserved separately.
+
+### 2026-09-25: Rejected direction replaced
+
+- User rejected the services hub, generic tool-led copy, lack of visual heroes, arrows and unnecessary guide expansion.
+- Replaced it with exactly three top-level commercial pages: AI implementation, web design, marketing and branding. Direct homepage navigation; portfolio presentation preserved.
+- Large real proposal and website artifacts anchor heroes. Phone layout leads with headline and work. Copy explains enquiries, follow-up, bookings and preparation time, backed by existing cases with attribution.
+- AI page explains assessment, configuration, integration, custom building, testing, training, measurement and maintenance. Audit and monthly pricing stay on-page. Web/marketing quoted by project.
+- Rejected pages archived under docs and removed from public routes and sitemap. No new guides or services hub.
+- Checks: 118 unit tests pass, one existing telemetry skip; focused homepage check passes. Three pages checked at five widths, links/assets/anchors validated. Browser-reviewed desktop and mobile heroes.

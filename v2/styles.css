@@ -1490,12 +1490,14 @@ h3 {
   .contact-instruction { display: none; }
 }
 
-/* Services remain a separate path through the portfolio. */
-.mobile-services-link { display: none; }
-.portfolio-services-invitation { padding-block: 40px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; align-items: center; }
-.portfolio-services-invitation p { margin: 0; font-family: var(--font-editorial); font-size: 1.35rem; }
-.portfolio-services-invitation a { padding-block: 12px; }
-@media (max-width: 760px) {
-  .site-header:has(.mobile-services-link) { gap: 12px; }
-  .mobile-services-link { display: inline-flex; min-height: 44px; align-items: center; margin-right: 4px; text-decoration: none; font-size: .95rem; }
+/* Direct commercial paths preserve the portfolio presentation. */
+.portfolio-services-invitation { padding-block:40px; border-bottom:1px solid var(--line); display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px; }
+.portfolio-services-invitation p { margin:0; font:450 1.6rem var(--font-editorial); }
+.portfolio-services-invitation div { display:flex; flex-wrap:wrap; gap:12px 26px; }
+.portfolio-services-invitation a { display:inline-flex; min-height:44px; align-items:center; }
+@media(max-width:1099px) { .site-header .portfolio-service-nav { gap:0 18px; flex-wrap:wrap; } }
+@media(max-width:760px) {
+ .site-header:has(.portfolio-service-nav) { gap:0 12px; padding-block:10px; }
+ .site-header .portfolio-service-nav { display:flex; grid-column:1/-1; grid-row:2; justify-content:flex-start; font-size:.86rem; }
+ .site-header .header-socials { grid-column:2; grid-row:1; }
 }

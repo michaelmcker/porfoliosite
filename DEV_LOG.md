@@ -14,3 +14,13 @@
 - npm test: 118 passed, 1 skipped. Fixed the sitemap test's pre-existing tools-route mismatch while extending its intended route allowlist.
 - Existing browser checks used installed Playwright headless Chromium because Google Chrome is not installed. Homepage and proposal focused checks passed. Broader QA reproduces an identical legacy mobile-overlay failure against pre-change files.
 - No production deployment or account changes. Source pages excluded from deployment to avoid duplicate public copies; production styles remain available under v2/services/services.css.
+
+## Rebuild after user rejection
+
+- Replaced the generic services hub and guide expansion with three top-level pages: /ai-implementation/, /web-design/, /marketing-branding/.
+- Archived the rejected generated pages under docs/rejected-services-2026-09-25, excluded from deployment. Removed them from sitemap and navigation.
+- Added substantial image-led heroes using original proposal, Cool Runnings and Vertical Impression assets. Removed diagonal arrows entirely.
+- Copy now leads with enquiries, customer conversations and sales preparation, then explains actual implementation, team adoption and measurement.
+- AI audit and monthly offer remain together on the AI page. Website and marketing work have custom quotes.
+
+- Rebuild validation: 118 unit tests pass; one pre-existing telemetry skip. Focused homepage browser test passed. New-page links/anchors passed; 15 page/viewport combinations had no overflow. No publication.

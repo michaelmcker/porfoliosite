@@ -61,7 +61,7 @@ await Promise.all([
   ),
 ]);
 
-// Canonical source stays under v2; public service/guide routes live at root.
+// Three commercial pages have canonical source under v2 and public top-level routes.
 const serviceRoutes = JSON.parse(await readFile(new URL("v2/services/routes.json", root), "utf8"));
 for (const route of serviceRoutes) {
   await mkdir(new URL(route.slice(1), root), { recursive: true });

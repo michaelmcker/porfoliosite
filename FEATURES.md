@@ -2,8 +2,8 @@
 
 See PRODUCT.md and docs/portfolio-working-notes.md for the existing portfolio.
 
-## Services and guides, September 25, 2026
+## Three commercial pages, September 25, 2026
 
-The portfolio remains the home page. Services has its own overview and pages for AI implementation, web design and development, branding and marketing, AI training, a $900 audit and a clearly labelled fictional report excerpt. Guides contains three practical articles. Consultations are requested by email.
+The homepage remains the portfolio. Navigation links directly to /ai-implementation/, /web-design/ and /marketing-branding/. Each page has a substantial hero showing actual work, outcome-led copy, implementation detail, existing proof and email consultation links. AI includes the $900 audit and custom implementation from $2,500/month. Website and marketing engagements are custom-quoted.
 
-Source content and template: scripts/build-services.mjs. Canonical generated pages: v2/services/ and v2/guides/. Shared presentation: v2/services/services.css, extending v2/styles.css. Public route promotion: scripts/promote-v2-to-root.mjs. Discovery: sitemap.xml and homepage navigation. No CMS or new runtime dependency added.
+The rejected services hub, guides and sample report are archived in docs/rejected-services-2026-09-25 and removed from public routes and sitemap. Source content/template: scripts/build-services.mjs. Canonical generated pages: v2/ai-implementation/, v2/web-design/, v2/marketing-branding/. Shared page styles: v2/services/services.css. Rebuild with npm run build:services then npm run promote:v2.
