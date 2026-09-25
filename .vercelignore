@@ -89,3 +89,11 @@ assets/workflows/*
 
 output/pdf/*
 !output/pdf/vertical-impression-local-proposal-sample.pdf
+
+# Internal session records and canonical service source copies.
+SESSION_LOG.md
+DEV_LOG.md
+FEATURES.md
+v2/services/**/index.html
+v2/services/routes.json
+v2/guides/
