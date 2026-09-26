@@ -113,3 +113,31 @@
  .offer-compact .offer-hero h1{font-size:clamp(2.6rem,10.8vw,4.5rem)}
  .offer-workflow {max-width:250px;margin-inline:auto}
 }
+/* Service introductions lead into the same Selected Work system as the homepage. */
+.service-portfolio .offer-hero{display:block;min-height:0;padding-block:var(--space-heading)}
+.service-portfolio .offer-hero-copy{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--space-copy) var(--space-heading);align-items:center}
+.service-portfolio .offer-hero h1{grid-row:1/4;font-size:var(--type-h1);max-width:13ch;margin:0}
+.service-portfolio .offer-hero-copy>p{margin:0}
+.service-portfolio .hero-actions{margin:0}
+.service-portfolio .offer-location{margin:0}
+.service-portfolio .work-object{height:auto;min-height:var(--work-section-height)}
+.service-portfolio .accommodation-showcase{--object-reveal:1}
+.service-portfolio .browser-object-elevator{--object-reveal:1}
+.service-portfolio .cool-laptop{--object-reveal:1}
+.service-portfolio .school-film{margin:0;overflow:hidden;transform:perspective(1600px) rotateY(-5deg)}
+.school-film video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#171813}
+.service-workflows{padding-bottom:var(--space-heading)}
+.service-workflow{border-top:1px solid #55564f;padding-block:18px}
+.service-workflow>summary{cursor:pointer;font:560 1.5rem var(--font-editorial);padding-block:12px}
+.service-workflow .workflow-copy{padding-block:20px}
+.service-workflow figure{margin:0;background:#e7e8e3;padding:24px;border-radius:20px}
+.service-workflow img{display:block;width:100%;height:auto;max-height:620px;object-fit:contain}
+@media(max-width:760px){
+.service-portfolio .offer-hero-copy{display:block}
+.service-portfolio .offer-hero h1{margin-bottom:var(--space-copy)}
+.service-portfolio .offer-hero-copy>p{margin-bottom:24px}
+.service-portfolio .offer-location{margin-top:24px!important}
+.service-portfolio .work-object{min-height:0;height:auto}
+.service-workflow figure{padding:12px}
+.service-workflow img{max-height:none}
+}

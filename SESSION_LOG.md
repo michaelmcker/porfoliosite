@@ -37,3 +37,8 @@ Expanded pages complete for local review. Not published; production content nego
 ### 2026-09-25: Simplified commercial pages
 - Applied requested lighter structure and actual homepage work imagery. Details remain in blog; prices preserved.
 - Local only. Tests and responsive checks pass.
+
+### 2026-09-25: Shared homepage design and selected projects
+- Replaced generic service layouts with source homepage Selected Work components and a compact typographic introduction.
+- Added St James original film and revised service taxonomy. Awaiting social-proof project name/link to complete project selection.
+- Local changes verified; not deployed.

@@ -1,52 +1,65 @@
 Source: https://michaelmck.site/marketing-branding/
 
-# Give people a reason to choose you.
+# Work that gets people interested.
 
-Get found by the right people. Make your offer clear. Give them a reason to call, book or buy.
+Branding, websites, ads and video design. A clear idea, carried through the things your customers actually see.
 
-[Discuss your marketing](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[View the product story](https://www.verticalimpression.com/proposal-story)
+[Discuss your marketing](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[Selected work](#selected-work)
 
 Marketing & branding in the Okanagan Michael McKerracher · Coldstream, BC
 
-Vertical Impression product story from the portfolio
+## Selected Work
 
-Actual work: the Vertical Impression product story, featured in the portfolio.
+### A school’s next chapter.
 
-## From being found to being chosen.
+St. James School · Campaign, website & film
 
-Marketing and branding support built around your next business priority.
+A connected story for the school’s future, carried through the donor website, visual direction and patronage film.
 
-### Positioning & brand
+[Explore the website](https://st-james-school-prototype.vercel.app/website-v2)[Watch the film](https://st-james-school-prototype.vercel.app/videos)
 
-Clarify your audience, offer and reasons to choose you. Turn that into messaging and a visual direction for your website and materials.
+### Explaining a misunderstood medium.
 
-### Local search & content
+            Vertical Impression · Product marketing
 
-Improve service pages, local SEO and Google Business Profile information. Create case studies and useful content around real customer questions.
+            A product story that educates buyers about a misunderstood advertising medium: where it reaches people, why attention is different, and when it works.
 
-### Campaigns & sales support
+            [View website](https://www.verticalimpression.com/proposal-story)
 
-Connect campaign creative, landing pages, email and sales materials to a clear action. Agree what to measure and use it to guide the next improvement.
+            verticalimpression.com/proposal-story
 
-Cool Runnings landscaping website, showing its services, local area and enquiry options
+### From no web presence to a lead magnet.
 
-## From word of mouth to being found online.
+            Website + SEO
 
-Cool Runnings had the experience and the work to show. I built a website, local service pages, guides and tools that gave people more ways to find the business and get in touch.
+            From no web presence to a lead magnet: a useful website, local tools, and a programmatic search system built to turn nearby demand into bookings.
 
-30%increase in sales reported by the client after launch
+              30% increase in salesClient-reported after launch
 
-[Read the Cool Runnings case study](https://michaelmck.site/v2/work/local-search-magnet.html)[See the performance report](https://michaelmck.site/v2/work/local-search-magnet.html#results-title)
+              See the case study for the reporting period and search results.
 
-## Scoped to the work. Priced for the project.
+              [View live site](https://www.coolrunningslandscaping.com/)
+              [Read case study](https://michaelmck.site/v2/work/local-search-magnet.html)
 
-Branding and marketing are custom services. We agree the outcome, deliverables, schedule and cost before work begins. You can start with a specific offer or campaign without committing to a full rebrand.
+## One idea. Carried through the work.
 
-[Request a marketing consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+Marketing and branding projects are custom-scoped around your audience, offer and next business priority.
 
-## What do you want to be known for?
+### Branding & websites
 
-Let’s work out what your customers need to see next. [Read the local marketing plan](https://michaelmck.site/blog/local-marketing-plan/).
+Positioning, messaging and visual direction, brought into a website that helps people understand and choose you.
+
+### Ads & campaigns
+
+Campaign concepts, creative and landing pages built around a specific offer and customer action.
+
+### Video design
+
+Story, visual direction and edited video that make an idea or project easier to see.
+
+## What should people know you for?
+
+Let’s talk about your next project. We agree the deliverables, timing and cost before work begins.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 

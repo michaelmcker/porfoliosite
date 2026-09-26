@@ -105,3 +105,6 @@ v2/marketing-branding/
 v2/blog/
 # Marketing page uses this existing product-story image.
 !assets/screens/vertical-impression-why-elevators.png
+
+!assets/selected-work/
+!assets/selected-work/**

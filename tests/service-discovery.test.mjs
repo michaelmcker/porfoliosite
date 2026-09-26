@@ -13,12 +13,12 @@ test('public HTML, Markdown, schema and sitemap stay in sync',async()=>{
  assert(schema['@graph'].some(x=>x.url==='https://michaelmck.site'+route));
  assert(sitemap.includes(`<loc>https://michaelmck.site${route}</loc>`));
  assert.equal((html.match(/<h1>/g)||[]).length,1);
- for(const [,url] of html.matchAll(/(?:href|src|poster)="(\/[^"#]*)"/g))await access('.'+url+(url.endsWith('/')?'index.html':''));
+ for(const [,url] of html.matchAll(/(?:href|src|poster)="(\/[^"#]*)"/g))await access('.'+url.split('?')[0]+(url.endsWith('/')?'index.html':''));
  }
 });
 test('design proof uses approved previews, before local service proof',async()=>{
  const web=await readFile('web-design/index.html','utf8');
- assert(!web.includes('treehouse-live'));assert(web.indexOf('data-service-preview')<web.indexOf('rccv-showcase'));assert(web.indexOf('rccv-showcase')<web.indexOf('cool-runnings-home'));
+ assert(!web.includes('treehouse-live'));assert(web.includes('data-accommodation-page'));assert(web.includes('rccv-showcase'));assert(web.includes('st-james-film'));assert(!web.includes('cool-runnings-home'));
 });
 test('Markdown requests have explicit routes and response type',async()=>{
  const config=JSON.parse(await readFile('vercel.json','utf8'));

@@ -2,45 +2,59 @@ Source: https://michaelmck.site/ai-implementation/
 
 # More bookings. Less busywork.
 
-Custom workflows that help your team reply sooner, follow up consistently and spend less time preparing the same work.
+Custom workflows, custom AI skills, and hands-on tool implementation and training. Built around the work your team needs to get done.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[Selected work](#selected-work)
 
 AI implementation in the Okanagan Michael McKerracher · Coldstream, BC
 
-[](https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html)
+## Selected workflows
 
-From the portfolio: local prospecting, tailored proposals and reviewed outreach. Explore the workflow.
+Content
 
-## Make the next step happen.
+### Search-optimized content production
 
-I design, build and maintain workflows around the way your business works.
+[Explore workflow](https://michaelmck.site/v2/workflows/content-production.html)
 
-### Reply sooner.
+Research, briefing, drafting and human review, connected to publishing and measurement.
 
-Collect the details from an enquiry and prepare a useful response for your team to review.
+Search-optimized content production: actual workflow artwork from the portfolio
 
-### Keep following up.
+Prospecting
 
-Make the next action visible, with a clear owner and fewer enquiries left waiting.
+### Local prospecting & tailored proposals
 
-### Cut the preparation.
+[Explore workflow](https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html)
 
-Bring customer information and approved material together for proposals, content and reporting.
+Business research and nearby inventory become a relevant proposal, with review before outreach.
 
-Setup and practical training with ChatGPT, Claude Cowork and Gemini, plus custom connections where needed. We test the workflow with your team and maintain the agreed system.
+Local prospecting & tailored proposals: actual workflow artwork from the portfolio
 
-The existing proposal builder for preparing tailored local advertising proposals
+Reporting
 
-## Less preparation. More time with customers.
+### Agency management dashboard
 
-The proposal system in my portfolio combines a business location, nearby advertising inventory, relevant copy and campaign creative into a tailored sales document.
+[Explore workflow](https://michaelmck.site/v2/workflows/agency-management-dashboard.html)
 
-Sales reviews the result before sending it. The repetitive preparation is handled by the system.
+Performance data, content operations and reporting brought into a working view.
 
-156hours returned to sales each year based on one hour a week across three people
+Agency management dashboard: actual workflow artwork from the portfolio
 
-[Try the proposal builder](https://michaelmck.site/proposal-generator.html)[Explore the workflow](https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html)
+## How I can help.
+
+Practical AI implementation for Okanagan businesses.
+
+### Custom workflows
+
+Connect research, enquiries, content, proposals and reporting to the next step in your process.
+
+### Custom AI skills
+
+Reusable instructions, reference material and checks that help AI do a specific job your way.
+
+### Tools & training
+
+Set up ChatGPT, Claude Cowork or Gemini around real team tasks. Training, testing and ongoing maintenance are part of the work.
 
 ## Start with a plan. Then put it to work.
 
@@ -74,9 +88,9 @@ I design, build and maintain the systems around your priorities, with an agreed 
 
 Prices in CAD. Software subscriptions, delivery scope and support arrangements are agreed before work begins.
 
-## Where is the work getting stuck?
+## What would you like to take off your plate?
 
-Start with a free conversation, or [read how to choose your first workflow](https://michaelmck.site/blog/what-to-automate-first/).
+Let’s look at the work together and choose a useful place to start.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 

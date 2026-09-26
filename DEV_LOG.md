@@ -38,3 +38,10 @@
 - AI hero now reads More bookings. Less busywork. and reuses the homepage's original responsive prospecting artwork. No generated concepts or RCCV on AI.
 - Marketing hero uses actual homepage product-story poster; removed proposal-dashboard positioning. RCCV stays on web with a continuous warm background.
 - HTML, Markdown and structured data regenerated together. 121 tests pass, one existing skip. Browser checked all three at 1440/390 without horizontal overflow.
+
+## 2026-09-25: Homepage Selected Work design applied to services
+- Reuse actual homepage project markup, shared work stages, Fraunces project titles, device treatments and deferred films. RCCV uses the original alpha mask, eliminating baked background edges.
+- Compact typographic introductions lead to selected work. AI has charcoal workflow chapter (content, prospecting, reporting), custom workflows, custom skills, tools and training. Marketing scope is branding, websites, ads and video.
+- Added St James patronage film from verified public source (HTTP 200), with original local poster and website/film links, to marketing and web design. No film recreation or generation.
+- Awaiting user identification of social-proof site/videos; not substituted with another project or declared complete.
+- All 121 active tests pass, one existing analytics skip. Three routes checked at 1440/768/390/320 without overflow; RCCV and AI chapter visually reviewed. Local only.

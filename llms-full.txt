@@ -2,45 +2,59 @@ Source: https://michaelmck.site/ai-implementation/
 
 # More bookings. Less busywork.
 
-Custom workflows that help your team reply sooner, follow up consistently and spend less time preparing the same work.
+Custom workflows, custom AI skills, and hands-on tool implementation and training. Built around the work your team needs to get done.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[Selected work](#selected-work)
 
 AI implementation in the Okanagan Michael McKerracher · Coldstream, BC
 
-[](https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html)
+## Selected workflows
 
-From the portfolio: local prospecting, tailored proposals and reviewed outreach. Explore the workflow.
+Content
 
-## Make the next step happen.
+### Search-optimized content production
 
-I design, build and maintain workflows around the way your business works.
+[Explore workflow](https://michaelmck.site/v2/workflows/content-production.html)
 
-### Reply sooner.
+Research, briefing, drafting and human review, connected to publishing and measurement.
 
-Collect the details from an enquiry and prepare a useful response for your team to review.
+Search-optimized content production: actual workflow artwork from the portfolio
 
-### Keep following up.
+Prospecting
 
-Make the next action visible, with a clear owner and fewer enquiries left waiting.
+### Local prospecting & tailored proposals
 
-### Cut the preparation.
+[Explore workflow](https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html)
 
-Bring customer information and approved material together for proposals, content and reporting.
+Business research and nearby inventory become a relevant proposal, with review before outreach.
 
-Setup and practical training with ChatGPT, Claude Cowork and Gemini, plus custom connections where needed. We test the workflow with your team and maintain the agreed system.
+Local prospecting & tailored proposals: actual workflow artwork from the portfolio
 
-The existing proposal builder for preparing tailored local advertising proposals
+Reporting
 
-## Less preparation. More time with customers.
+### Agency management dashboard
 
-The proposal system in my portfolio combines a business location, nearby advertising inventory, relevant copy and campaign creative into a tailored sales document.
+[Explore workflow](https://michaelmck.site/v2/workflows/agency-management-dashboard.html)
 
-Sales reviews the result before sending it. The repetitive preparation is handled by the system.
+Performance data, content operations and reporting brought into a working view.
 
-156hours returned to sales each year based on one hour a week across three people
+Agency management dashboard: actual workflow artwork from the portfolio
 
-[Try the proposal builder](https://michaelmck.site/proposal-generator.html)[Explore the workflow](https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html)
+## How I can help.
+
+Practical AI implementation for Okanagan businesses.
+
+### Custom workflows
+
+Connect research, enquiries, content, proposals and reporting to the next step in your process.
+
+### Custom AI skills
+
+Reusable instructions, reference material and checks that help AI do a specific job your way.
+
+### Tools & training
+
+Set up ChatGPT, Claude Cowork or Gemini around real team tasks. Training, testing and ongoing maintenance are part of the work.
 
 ## Start with a plan. Then put it to work.
 
@@ -74,9 +88,9 @@ I design, build and maintain the systems around your priorities, with an agreed 
 
 Prices in CAD. Software subscriptions, delivery scope and support arrangements are agreed before work begins.
 
-## Where is the work getting stuck?
+## What would you like to take off your plate?
 
-Start with a free conversation, or [read how to choose your first workflow](https://michaelmck.site/blog/what-to-automate-first/).
+Let’s look at the work together and choose a useful place to start.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
@@ -88,67 +102,64 @@ Source: https://michaelmck.site/web-design/
 
 # Beautiful websites. Built for business.
 
-A website should help people find you, understand why you’re a good fit and take the next step. I design and build websites around the calls, enquiries and bookings your business needs.
+Websites with a point of view and a clear job to do. Design, content and development for businesses and communities in the Okanagan.
 
-[Discuss your website](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[Explore the design](#design-work)
+[Discuss your website](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[Selected work](#selected-work)
 
 Web design & development in the Okanagan Michael McKerracher · Coldstream, BC
 
-Okanagan Treehouse · interactive preview
+## Selected Work
 
-Okanagan Treehouse: the portfolio’s interactive design preview. Scroll inside to explore the stays.
+### Bringing a community site to life.
 
-## A place you want to spend time in.
+            RCCV · Community website
 
-Okanagan Treehouse brings the setting into the website. Moving property imagery, considered type and distinct pages for the treehouse and cabin help a guest picture the stay before making an enquiry.
+            Reworked around community life: clearer parish information, living bulletins and events, and educational stories brought to life through interaction.
 
-The portfolio preview is the design shown here. Explore the full version to see the imagery, transitions and individual accommodation pages.
+              [Home](https://rccv-st-james-limestone-ssr.michael-mckerracher.workers.dev/)
+              [Explore the interactive Stations of the Cross](https://rccv-st-james-limestone-ssr.michael-mckerracher.workers.dev/faith/stations-of-the-cross/)
 
-[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)[View the treehouse stay](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/stays/treehouse/)
+              Scroll the preview
 
-## Design with a sense of belonging.
+              okanagantreehouse.ca
 
-The RCCV and St. James work brings a school and parish community into a coherent digital experience. Editorial layouts, warm materials and photography give the site a distinct character.
+### Elevating a boutique accommodation site.
 
-That visual care sits alongside the everyday task: helping families and parishioners find the information they came for. The design needs to support both the story and the practical visit.
+            Boutique accommodation · Web development
 
-[Explore the RCCV project](https://rccv-st-james-limestone-ssr.michael-mckerracher.workers.dev/)[View Stations of the Cross](https://rccv-st-james-limestone-ssr.michael-mckerracher.workers.dev/faith/stations-of-the-cross/)
+            Underused property photography became an AI-enhanced visual system and a series of scroll-led stories that elevated the stay online.
 
-## Beautiful to look at. Easy to act on.
+              [Overview](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
+              [Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/stays/treehouse/)
+              [Cabin](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/stays/cabin/)
 
-Custom web design and development for Okanagan businesses, from the first page plan to launch.
+### A school’s next chapter.
 
-### Design & content
+St. James School · Campaign, website & film
 
-A visual direction built from your business, real imagery and clear writing. Responsive layouts that give every page a purpose.
+A connected story for the school’s future, carried through the donor website, visual direction and patronage film.
 
-### Search & enquiries
+[Explore the website](https://st-james-school-prototype.vercel.app/website-v2)[Watch the film](https://st-james-school-prototype.vercel.app/videos)
 
-Useful service pages, search metadata, schema and a sitemap. Clear routes to call, enquire or book, checked on mobile.
+## From first impression to the next step.
 
-### Build & handover
+Custom website projects include the agreed content, design, development, search foundations and launch support. We scope the pages and functionality together, then set a clear cost.
 
-The functionality you need, tested customer journeys and agreed editing and maintenance arrangements.
+### Design
 
-Cool Runnings landscaping website, showing its services, local area and enquiry options
+Distinctive layouts, considered typography and real imagery. Mobile gets its own composition.
 
-## From word of mouth to being found online.
+### Build
 
-Cool Runnings had the experience and the work to show. I built a website, local service pages, guides and tools that gave people more ways to find the business and get in touch.
+Responsive development, meaningful interactions and clear routes to call, book or enquire.
 
-30%increase in sales reported by the client after launch
+### Launch
 
-[Read the Cool Runnings case study](https://michaelmck.site/v2/work/local-search-magnet.html)[See the performance report](https://michaelmck.site/v2/work/local-search-magnet.html#results-title)
+Content review, accessibility checks, SEO metadata, schema, sitemap and an agreed handover.
 
-## Custom work. A clear quote.
+## A website that feels like your business.
 
-The price depends on the pages, content, design and functionality your business needs. After the initial consultation, you receive a proposal with scope, deliverables, timing and cost.
-
-[Request a website consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
-
-## Let’s build a site worth choosing.
-
-Tell me what it needs to achieve. [Read what makes a website earn an enquiry](https://michaelmck.site/blog/website-that-turns-visits-into-enquiries/).
+Start with a free consultation. Website work is custom-scoped and quoted.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
@@ -158,53 +169,66 @@ Email me to arrange a time. Based in Coldstream, working with businesses across 
 
 Source: https://michaelmck.site/marketing-branding/
 
-# Give people a reason to choose you.
+# Work that gets people interested.
 
-Get found by the right people. Make your offer clear. Give them a reason to call, book or buy.
+Branding, websites, ads and video design. A clear idea, carried through the things your customers actually see.
 
-[Discuss your marketing](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[View the product story](https://www.verticalimpression.com/proposal-story)
+[Discuss your marketing](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[Selected work](#selected-work)
 
 Marketing & branding in the Okanagan Michael McKerracher · Coldstream, BC
 
-Vertical Impression product story from the portfolio
+## Selected Work
 
-Actual work: the Vertical Impression product story, featured in the portfolio.
+### A school’s next chapter.
 
-## From being found to being chosen.
+St. James School · Campaign, website & film
 
-Marketing and branding support built around your next business priority.
+A connected story for the school’s future, carried through the donor website, visual direction and patronage film.
 
-### Positioning & brand
+[Explore the website](https://st-james-school-prototype.vercel.app/website-v2)[Watch the film](https://st-james-school-prototype.vercel.app/videos)
 
-Clarify your audience, offer and reasons to choose you. Turn that into messaging and a visual direction for your website and materials.
+### Explaining a misunderstood medium.
 
-### Local search & content
+            Vertical Impression · Product marketing
 
-Improve service pages, local SEO and Google Business Profile information. Create case studies and useful content around real customer questions.
+            A product story that educates buyers about a misunderstood advertising medium: where it reaches people, why attention is different, and when it works.
 
-### Campaigns & sales support
+            [View website](https://www.verticalimpression.com/proposal-story)
 
-Connect campaign creative, landing pages, email and sales materials to a clear action. Agree what to measure and use it to guide the next improvement.
+            verticalimpression.com/proposal-story
 
-Cool Runnings landscaping website, showing its services, local area and enquiry options
+### From no web presence to a lead magnet.
 
-## From word of mouth to being found online.
+            Website + SEO
 
-Cool Runnings had the experience and the work to show. I built a website, local service pages, guides and tools that gave people more ways to find the business and get in touch.
+            From no web presence to a lead magnet: a useful website, local tools, and a programmatic search system built to turn nearby demand into bookings.
 
-30%increase in sales reported by the client after launch
+              30% increase in salesClient-reported after launch
 
-[Read the Cool Runnings case study](https://michaelmck.site/v2/work/local-search-magnet.html)[See the performance report](https://michaelmck.site/v2/work/local-search-magnet.html#results-title)
+              See the case study for the reporting period and search results.
 
-## Scoped to the work. Priced for the project.
+              [View live site](https://www.coolrunningslandscaping.com/)
+              [Read case study](https://michaelmck.site/v2/work/local-search-magnet.html)
 
-Branding and marketing are custom services. We agree the outcome, deliverables, schedule and cost before work begins. You can start with a specific offer or campaign without committing to a full rebrand.
+## One idea. Carried through the work.
 
-[Request a marketing consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+Marketing and branding projects are custom-scoped around your audience, offer and next business priority.
 
-## What do you want to be known for?
+### Branding & websites
 
-Let’s work out what your customers need to see next. [Read the local marketing plan](https://michaelmck.site/blog/local-marketing-plan/).
+Positioning, messaging and visual direction, brought into a website that helps people understand and choose you.
+
+### Ads & campaigns
+
+Campaign concepts, creative and landing pages built around a specific offer and customer action.
+
+### Video design
+
+Story, visual direction and edited video that make an idea or project easier to see.
+
+## What should people know you for?
+
+Let’s talk about your next project. We agree the deliverables, timing and cost before work begins.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
