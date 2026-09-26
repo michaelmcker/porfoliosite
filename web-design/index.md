@@ -1,7 +1,5 @@
 Source: https://michaelmck.site/web-design/
 
-[AI implementation](https://michaelmck.site/ai-implementation/)[Web design](https://michaelmck.site/web-design/)[Marketing & branding](https://michaelmck.site/marketing-branding/)
-
 # Beautiful websites. Built for business.
 
 Websites with a point of view and a clear job to do. Design, content and development for businesses and communities in the Okanagan.

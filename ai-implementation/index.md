@@ -1,7 +1,5 @@
 Source: https://michaelmck.site/ai-implementation/
 
-[AI implementation](https://michaelmck.site/ai-implementation/)[Web design](https://michaelmck.site/web-design/)[Marketing & branding](https://michaelmck.site/marketing-branding/)
-
 # More bookings. Less busywork.
 
 Turn repetitive work into reliable workflows. Custom AI skills, connected tools and practical training for the team behind your business.

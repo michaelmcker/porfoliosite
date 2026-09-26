@@ -50,3 +50,6 @@ Expanded pages complete for local review. Not published; production content nego
 ### SaaS-style three-offering design
 - Shared SaaS visual system applied to AI, Web Design and Marketing & Branding with original project assets and existing pricing.
 - Verified responsive layout, current-offering navigation, generated metadata/Markdown and unit suite. No deployment.
+
+### Homepage style correction
+- Three offerings retain SaaS layout while sharing homepage fonts, palette and buttons; duplicate tabs removed. Verified locally; not published.

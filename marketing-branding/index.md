@@ -1,7 +1,5 @@
 Source: https://michaelmck.site/marketing-branding/
 
-[AI implementation](https://michaelmck.site/ai-implementation/)[Web design](https://michaelmck.site/web-design/)[Marketing & branding](https://michaelmck.site/marketing-branding/)
-
 # Work that gets people interested.
 
 Branding, websites, ads and video design. A clear idea, carried through the things your customers actually see.

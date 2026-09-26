@@ -17,6 +17,5 @@ export function saasServices(pages){
   p.cta=['Book a free consultation',p.cta[1],'See the work','#selected-work'];
   const content=sections(p),features=content.find(x=>x.includes('class="offer-columns"'));
   if(features)p.body=features+content.filter(x=>x!==features).join('');
-  p.switcher=`<nav class="offering-switcher" aria-label="Explore the three offerings">${pages.map(q=>`<a href="${q.path}"${q===p?' aria-current="page"':''}>${q===ai?'AI implementation':q===web?'Web design':'Marketing & branding'}</a>`).join('')}</nav>`;
  }
 }
