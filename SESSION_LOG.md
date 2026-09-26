@@ -2,11 +2,19 @@
 
 ## In progress
 
+2026-09-26: three service-page design revision implemented locally. Generated pages and discovery files updated; visual review remains blocked by browser policy for loopback URLs.
+
 September 26 implementation complete locally. Visual review pending: browser URL policy blocked access to the preview.
 
 Expanded pages complete for local review. Not published; production content negotiation and search indexing remain post-deployment checks.
 
 ## Recent sessions
+
+### 2026-09-26: Reference-led service-page redesign
+- Requested cleaner service pages, fewer interactive previews, frames sized to the content, and a booking-calendar visual.
+- Reviewed The Matter of Design, Marimba, the supplied Awwwards portfolio and Mulberry. Applied their clarity and spacing using the existing portfolio type, colours and shapes.
+- Built the static AI booking-calendar hero; replaced service-page showcase interactions with approved still artwork and direct links; kept AI Catalyst as a static website specimen and St. James as the one purposeful film.
+- Rebuilt and promoted the three routes. Repository tests pass (121 pass, one existing GA4 skip). Local browser visual review was blocked by URL policy. No deployment.
 
 ### 2026-09-25: Portfolio services extension
 

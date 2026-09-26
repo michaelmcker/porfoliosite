@@ -74,3 +74,10 @@
 - Restored the original AI Catalyst dither shader in static mode, copied its styles and logo/art assets locally, and disabled interaction in the hero specimen. The external project link remains usable.
 - Browser inspection blocked by browser URL policy; do not claim visual acceptance.
 - Final verification: 121 tests passed, existing GA4 skip; original shader syntax and local asset references valid. Rendered QA remains unverified due to browser policy rejection.
+
+## 2026-09-26: Source-led service-page design pass
+- Reviewed the four supplied references. Adopted their typographic hierarchy, generous spacing, content-sized proof and clear process while keeping the portfolio palette, fonts and surfaces.
+- Replaced the AI workflow hero with a static calendar illustration for the bookings outcome. The workflow examples below now use still approved artwork and direct links.
+- Replaced reused homepage work objects on the service pages with fitted, static project imagery. Kept the AI Catalyst specimen non-interactive and the St. James film intentionally playable.
+- Consolidated the service-specific CSS into one coherent stylesheet and updated the existing discovery test to validate the new proof selection.
+- The homepage's existing interactive showcases and unrelated dirty files were preserved. Local render access remains blocked by browser URL policy.

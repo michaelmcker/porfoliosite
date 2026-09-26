@@ -2,11 +2,21 @@ Source: https://michaelmck.site/ai-implementation/
 
 # More bookings. Less busywork.
 
-Turn repetitive work into reliable workflows. Custom AI skills, connected tools and practical training for the team behind your business.
+AI implementation that helps you respond faster, win more bookings and spend less time on repeat work. I build custom workflows and skills, set up the right tools and train your team to use them.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[See the work](#selected-work)
 
-Actual content-production workflow: research, briefing, review and publishing
+## Bookings
+
+This week
+
+MonTueWedThuFri
+
+9:0010:0011:0012:00New enquiry Ready for follow-up
+
+Discovery call On the calendar
+
+Booking confirmed Details sent
 
 ## Start with the work. Make it work better.
 
@@ -36,37 +46,33 @@ Practical training, clear instructions and a supported handover make the system 
 
 Tools your team can use, with support to keep them useful.
 
-## Selected workflows
+## Selected work
 
-Content
+Real systems for research, sales preparation and reporting.
 
-### Search-optimized content production
+### Content that brings the right people in
 
-[Explore workflow](https://michaelmck.site/v2/workflows/content-production.html)
+Research, briefing, drafting and human review connected to publishing and measurement.
 
-Research, briefing, drafting and human review, connected to publishing and measurement.
+[See how it works](https://michaelmck.site/v2/workflows/content-production.html)
 
-Search-optimized content production: actual workflow artwork from the portfolio
+Artwork from the content that brings the right people in workflow
 
-Prospecting
+### From a prospect to a tailored proposal
 
-### Local prospecting & tailored proposals
+Local business research and nearby inventory become a proposal that a salesperson reviews before outreach.
 
-[Explore workflow](https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html)
+[See how it works](https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html)
 
-Business research and nearby inventory become a relevant proposal, with review before outreach.
+Artwork from the from a prospect to a tailored proposal workflow
 
-Local prospecting & tailored proposals: actual workflow artwork from the portfolio
+### The numbers in one working view
 
-Reporting
+A dashboard that puts performance, content operations and client notes where a team can act on them.
 
-### Agency management dashboard
+[See how it works](https://michaelmck.site/v2/workflows/agency-management-dashboard.html)
 
-[Explore workflow](https://michaelmck.site/v2/workflows/agency-management-dashboard.html)
-
-Performance data, content operations and reporting brought into a working view.
-
-Agency management dashboard: actual workflow artwork from the portfolio
+Artwork from the the numbers in one working view workflow
 
 ## Start with a plan. Then put it to work.
 

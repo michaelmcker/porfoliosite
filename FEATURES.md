@@ -17,3 +17,9 @@ The rejected services hub, guides and sample report are archived in docs/rejecte
 ## Service engagement process, September 26, 2026
 - Three always-visible process narratives cover discovery, solution development and delivery/support.
 - AI Catalyst hero preserves its original dither renderer in static mode and local source logos/styles. Project exploration uses an explicit external link.
+
+## Service-page visual revision, September 26, 2026
+- The AI implementation hero shows a static booking-calendar illustration and leads to source-grounded workflow examples.
+- Web design keeps the original AI Catalyst website specimen, followed by the RCCV laptop artwork and Okanagan Treehouse project imagery.
+- Marketing and branding keeps the St. James film and uses fitted Vertical Impression and Cool Runnings website stills.
+- Selected work uses simple, proportionate image stages and direct project links. The homepage retains its immersive project interactions.

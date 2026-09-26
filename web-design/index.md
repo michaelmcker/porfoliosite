@@ -2,7 +2,7 @@ Source: https://michaelmck.site/web-design/
 
 # Beautiful websites. Built for business.
 
-Websites with a point of view and a clear job to do. Design, content and development for businesses and communities in the Okanagan.
+A website should look like your business and make the next step easy. I bring the story, imagery, design and development together around the calls, enquiries or bookings you need.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[Explore AI Catalyst](https://ai-catalyst-wheat.vercel.app/)
 
@@ -34,34 +34,33 @@ I build the responsive site, connect the agreed features and check the content, 
 
 A finished website, ready to use and easy to move forward.
 
-## Selected Work
+## Selected work
 
-### Bringing a community site to life.
+Different businesses. Different sites. Each one built around the decision a visitor needs to make.
 
-            RCCV · Community website
+### A community site, made easier to use.
 
-            Reworked around community life: clearer parish information, living bulletins and events, and educational stories brought to life through interaction.
+RCCV · Website design and development
 
-              [Home](https://rccv-st-james-limestone-ssr.michael-mckerracher.workers.dev/)
-              [Explore the interactive Stations of the Cross](https://rccv-st-james-limestone-ssr.michael-mckerracher.workers.dev/faith/stations-of-the-cross/)
+A new parish website with clear paths to Mass times, sacraments, community information and the interactive Stations of the Cross.
 
-              Scroll the preview
+[Explore the project](https://michaelmck.site/#work)
 
-              okanagantreehouse.ca
+RCCV website displayed in its original laptop composition
 
-### Elevating a boutique accommodation site.
+### A place worth staying for.
 
-            Boutique accommodation · Web development
+Okanagan Treehouse · Website design and development
 
-            Underused property photography became an AI-enhanced visual system and a series of scroll-led stories that elevated the stay online.
+The property’s own imagery anchors distinct stories for the Treehouse and Cabin, with a clear path from discovery to booking.
 
-              [Overview](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
-              [Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/stays/treehouse/)
-              [Cabin](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/stays/cabin/)
+[See selected work](https://michaelmck.site/#work)
+
+Original Okanagan Treehouse website hero image showing the illuminated property among trees
 
 ## A website that feels like your business.
 
-Start with a free consultation. Website work is custom-scoped and quoted.
+Start with a free consultation. Website work is custom scoped and quoted.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 

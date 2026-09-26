@@ -16,9 +16,18 @@ test('public HTML, Markdown, schema and sitemap stay in sync',async()=>{
  for(const [,url] of html.matchAll(/(?:href|src|poster)="(\/[^"#]*)"/g))await access('.'+url.split('?')[0]+(url.endsWith('/')?'index.html':''));
  }
 });
-test('design proof uses approved previews, before local service proof',async()=>{
+test('service proof uses original project media without nested interactive viewers',async()=>{
  const web=await readFile('web-design/index.html','utf8');
- assert(!web.includes('treehouse-live'));assert(web.includes('data-accommodation-page'));assert(web.includes('rccv-showcase'));assert(!web.includes('st-james-film'));assert(web.includes('ai-catalyst-wheat.vercel.app')); assert(!web.includes('cool-runnings-home'));
+ const ai=await readFile('ai-implementation/index.html','utf8');
+ assert(web.includes('laptop-three-quarter-rccv-cutout.webp'));
+ assert(web.includes('okanagan-preview/assets/overview-final.webp'));
+ assert(!web.includes('treehouse-live'));
+ assert(!web.includes('data-accommodation-page'));
+ assert(!web.includes('rccv-showcase'));
+ assert(!web.includes('st-james-film'));
+ assert(web.includes('ai-catalyst-wheat.vercel.app'));
+ assert(ai.includes('booking-calendar'));
+ assert(!ai.includes('<details class="service-workflow"'));
 });
 test('Markdown requests have explicit routes and response type',async()=>{
  const config=JSON.parse(await readFile('vercel.json','utf8'));

@@ -1,24 +1,27 @@
 import {serviceProcess} from './service-process.mjs';
-export function saasServices(pages){
- const [ai,web,marketing]=pages;
- const sections=p=>p.body.match(/<section\b[\s\S]*?<\/section>/g)||[];
- ai.hero=`<figure class="hero-system-media screen-bezel service-hero-media service-hero-workflow"><picture><source media="(max-width:699px)" srcset="/v2/assets/workflows/content-production-approved-mobile.png"><img src="/v2/assets/workflows/content-production-approved-desktop.png" width="1672" height="941" alt="Actual content-production workflow: research, briefing, review and publishing" fetchpriority="high"></picture></figure>`;
- ai.caption='A working example: research to reviewed, published content.';
- ai.image='/v2/assets/workflows/content-production-approved-desktop.png';
- ai.intro='Turn repetitive work into reliable workflows. Custom AI skills, connected tools and practical training for the team behind your business.';
- web.hero=web.hero.replace('browser-object screen-bezel catalyst-preview','hero-system-media screen-bezel service-hero-media service-hero-website').replace(/<div class="browser-bar"[\s\S]*?<\/div>/,'');
- const film=marketing.body.match(/<figure class="school-film[\s\S]*?<\/figure>/)?.[0];
- marketing.hero=(film||'').replace('school-film screen-bezel','hero-system-media screen-bezel service-hero-media service-hero-film');
- marketing.caption='St. James School · Campaign film';
- marketing.image='/assets/selected-work/st-james-film.jpg';
- marketing.body=marketing.body.replace(/<article class="work-object work-object-school">[\s\S]*?<\/article>/,'');
- for(const p of pages){
-  p.saas=true;
-  p.caption='';
-  p.body=p.body.replaceAll('<br>',' ');
-  p.cta=['Book a free consultation',p.cta[1],p===web?'Explore AI Catalyst':'See the work',p===web?'https://ai-catalyst-wheat.vercel.app/':'#selected-work'];
-  const content=sections(p),features=content.find(x=>x.includes('class="offer-columns"'));
-  if(features)p.body=features+content.filter(x=>x!==features).join('');
+
+const bookingCalendar = `<figure class="booking-calendar" role="img" aria-label="Illustrative calendar with enquiries, follow-ups and confirmed bookings"><div class="booking-calendar-head"><h2>Bookings</h2><span>This week</span></div><div class="booking-calendar-week"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span></div><div class="booking-calendar-grid"><span class="calendar-time">9:00</span><span class="calendar-time">10:00</span><span class="calendar-time">11:00</span><span class="calendar-time">12:00</span><div class="booking-event booking-event-enquiry">New enquiry<br><small>Ready for follow-up</small></div><div class="booking-event booking-event-call">Discovery call<br><small>On the calendar</small></div><div class="booking-event booking-event-confirmed">Booking confirmed<br><small>Details sent</small></div></div></figure>`;
+
+const schoolFilm = `<figure class="service-hero-film"><video controls playsinline preload="none" poster="/assets/selected-work/st-james-film.jpg" aria-label="St. James School patronage film"><source src="https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4" type="video/mp4"></video></figure>`;
+
+export function saasServices(pages) {
+ const [ai, web, marketing] = pages;
+ ai.heading = 'More bookings.<br><em>Less busywork.</em>';
+ ai.hero = bookingCalendar;
+ ai.image = '/v2/assets/workflows/content-production-approved-desktop.png';
+ web.heading = 'Beautiful websites.<br><em>Built for business.</em>';
+ web.heroProject = true;
+ marketing.hero = schoolFilm;
+ marketing.image = '/assets/selected-work/st-james-film.jpg';
+
+ for (const page of pages) {
+  page.saas = true;
+  page.caption = '';
+  page.body = page.body.replaceAll('<br>', ' ');
+  page.cta = ['Book a free consultation', page.cta[1], page === web ? 'Explore AI Catalyst' : 'See the work', page === web ? 'https://ai-catalyst-wheat.vercel.app/' : '#selected-work'];
+  const sections = page.body.match(/<section\b[\s\S]*?<\/section>/g) || [];
+  const capabilities = sections.find(s => s.includes('class="offer-columns"'));
+  if (capabilities) page.body = capabilities + sections.filter(s => s !== capabilities).join('');
  }
  serviceProcess(pages);
 }

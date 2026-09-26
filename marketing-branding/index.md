@@ -34,34 +34,33 @@ I produce the agreed branding, website, ads or video and prepare it for the plac
 
 A connected set of materials your business can put to use.
 
-## Selected Work
+## Selected work
 
-### Explaining a misunderstood medium.
+A film, a product story and a local business presence: three different jobs for design and marketing.
 
-            Vertical Impression · Product marketing
+### Make the opportunity clear.
 
-            A product story that educates buyers about a misunderstood advertising medium: where it reaches people, why attention is different, and when it works.
+Vertical Impression · Product marketing
 
-            [View website](https://www.verticalimpression.com/proposal-story)
+A page that explains where elevator advertising reaches people and gives the sales team a concrete story to use in conversation.
 
-            verticalimpression.com/proposal-story
+[Explore the product story](https://www.verticalimpression.com/why-elevators)
 
-### From no web presence to a lead magnet.
+Vertical Impression product website explaining elevator advertising
 
-            Website + SEO
+### Be found when local customers are looking.
 
-            From no web presence to a lead magnet: a useful website, local tools, and a programmatic search system built to turn nearby demand into bookings.
+Cool Runnings · Local marketing and website
 
-              30% increase in salesClient-reported after launch
+Service pages, useful guides and clear contact routes give customers more ways to discover the business and ask for an estimate.
 
-              See the case study for the reporting period and search results.
+[Read the case study](https://michaelmck.site/v2/work/local-search-magnet.html)
 
-              [View live site](https://www.coolrunningslandscaping.com/)
-              [Read case study](https://michaelmck.site/v2/work/local-search-magnet.html)
+Cool Runnings website showing its local landscaping offer and enquiry options
 
 ## What should people know you for?
 
-Let’s talk about your next project. We agree the deliverables, timing and cost before work begins.
+We agree the deliverables, timing and cost before work begins.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 

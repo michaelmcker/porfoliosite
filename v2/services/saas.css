@@ -1,118 +1,129 @@
-/* Shared product-marketing treatment for the three offerings only. */
-.saas-page{--saas-tint:var(--paper);--saas-border:var(--line);background:#fff}
-.saas-page .site-header{border-bottom:0;padding-block:20px}
-.saas-page .offer-header-contact{background:var(--ink);color:white;padding:11px 20px;border-radius:999px;font-size:.9rem}
-.saas-page .offer-hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,76px);padding-block:68px 74px;align-items:center;min-height:0}
-.saas-page .offer-hero-copy{display:block}
-.saas-page .offer-hero h1{font-family:var(--font-sans);font-size:clamp(2.8rem,4.6vw,4.9rem);font-weight:610;line-height:1.03;letter-spacing:-.055em;max-width:14ch;margin:0 0 24px}
-.saas-page .offer-hero h1 em{font-family:var(--font-editorial);font-weight:610;font-style:italic;color:var(--ink)}
-.saas-page .offer-hero-copy>p{font-size:1.08rem;line-height:1.65;max-width:510px;margin:0 0 24px;color:var(--muted)}
-.saas-page .hero-actions{gap:10px;margin:0;display:flex;flex-wrap:wrap}
-.saas-page .button{border-radius:999px;font-size:.92rem;min-height:46px;padding:13px 19px;transition:background-color .15s,color .15s}
-.saas-page .button-primary{background:var(--ink);border-color:var(--ink);color:white}
-.saas-page .button-primary:hover{background:var(--charcoal)}
-.saas-page .offer-hero-copy .offer-location{font-size:.79rem;margin-top:22px;line-height:1.6}
-.saas-page .offer-hero-art{background:var(--saas-tint);border:1px solid var(--saas-border);padding:20px;border-radius:24px;min-width:0}
-.saas-page .offer-caption{font-size:.78rem;line-height:1.5;margin:16px 0 0;color:var(--muted)}
-.saas-workflow-preview{margin:0;overflow:hidden;border-radius:10px;background:#e7e8e3}
-.saas-workflow-preview img{width:100%;height:auto;display:block}
-.saas-page .catalyst-preview{transform:none;border-radius:12px;box-shadow:0 12px 25px #13251b18}
-.saas-page .catalyst-window{height:390px}
-.saas-page .school-film{transform:none;border-radius:12px;box-shadow:0 12px 25px #13251b18}
-.saas-page .offer-section{border-top:0;padding-block:56px}
-.saas-page .offer-section-heading{display:block;margin:0 0 30px;max-width:740px}
-.saas-page .offer-section h2,.saas-page .offer-contact h2{font-family:var(--font-sans);font-size:clamp(2rem,3vw,3rem);font-weight:600;line-height:1.1;letter-spacing:-.04em}
-.saas-page .offer-section h2 br{display:none}
-.saas-page .offer-section h2 br::after{content:' '}
-.saas-page .offer-section-heading>p{font-size:1rem;line-height:1.6}
-.saas-page .offer-columns{gap:16px}
-.saas-page .offer-columns article{padding:26px;background:var(--paper);border:1px solid var(--line);border-radius:14px}
-.saas-page .offer-columns h3{font-size:1.18rem;margin-bottom:12px}
-.saas-page .offer-columns p{font-size:.96rem;line-height:1.65}
-.saas-page .selected-work{padding-block:52px;background:var(--paper)}
-.saas-page .selected-work::before{display:none}
-.saas-page .work-heading{max-width:var(--page-width);text-align:left;margin:0 auto 28px}
-.saas-page .work-heading h2{font-size:2rem}
-.saas-page .work-sequence{max-width:var(--page-width);margin:auto;padding-inline:var(--gutter);grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
-.saas-page .work-object{display:flex;flex-direction:column;align-items:stretch;gap:20px;height:auto;min-height:0;padding:28px;border:1px solid var(--line);border-radius:18px;background:white;overflow:hidden}
-.saas-page .work-copy{max-width:none;order:2}
-.saas-page .work-copy h3{font:560 clamp(1.7rem,2.5vw,2.4rem)/1.08 var(--font-editorial);letter-spacing:-.035em;max-width:none}
-.saas-page .work-copy p{font-size:.93rem;line-height:1.6}
-.saas-page .work-copy .work-meta{font-size:.72rem;margin-bottom:12px}
-.saas-page .text-links{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.84rem}
-.saas-page .laptop-object,.saas-page .browser-object,.saas-page .accommodation-showcase,.saas-page .cool-laptop{width:100%;max-width:none;margin:0;transform:none;align-self:center}
-.saas-page .laptop-object{filter:drop-shadow(0 12px 14px #17231b1a)}
-.saas-page .accommodation-showcase{gap:0}
-.saas-page .accommodation-scroll-cue{display:none}
-.saas-page .accommodation-viewport{height:270px}
-.saas-page .browser-object-elevator .browser-viewport{height:270px}
-.saas-page .browser-object-elevator video{width:100%;height:100%;object-fit:cover}
-.saas-page .cool-laptop{max-height:320px}
-.saas-page .service-workflows{border-radius:0;padding-block:48px}
-.saas-page .workflow-heading{margin-bottom:20px}
-.saas-page .service-workflow figure{padding:16px}
-.saas-page .service-workflow img{max-height:470px}
-.saas-page .workflow-copy h3{font:560 1.9rem/1.15 var(--font-editorial);letter-spacing:-.03em}
-.saas-page .offer-pricing{gap:24px}
-.saas-page .offer-pricing article{border:1px solid var(--saas-border);border-radius:18px;padding:30px;background:white}
-.saas-page .offer-pricing article:last-child{background:var(--saas-tint);border-color:var(--line)}
-.saas-page .offer-price{font-family:var(--font-editorial);font-size:3.2rem;font-weight:600}
-.saas-page .offer-pricing p,.saas-page .offer-pricing li{font-size:.95rem}
-.saas-page .offer-contact{background:var(--accent);color:var(--ink);padding-block:56px}
-.saas-page .offer-contact h2{color:var(--ink)}
-.saas-page .offer-contact .button-primary{background:var(--ink);color:white}
-.saas-page .offer-contact-note{color:var(--ink)}
-.saas-page a:focus-visible,.saas-page summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
-@media(max-width:1099px){.saas-page .offer-hero{grid-template-columns:1fr 1fr;gap:28px}.saas-page .catalyst-window{height:340px}.saas-page .work-sequence{gap:16px}.saas-page .work-object{padding:20px}}
-@media(max-width:760px){
-.saas-page .offer-hero{grid-template-columns:1fr;padding-block:36px 42px;gap:30px}
-.saas-page .offer-hero-copy{display:block}
-.saas-page .offer-hero h1{font-size:clamp(2.6rem,10vw,3.6rem);max-width:15ch}
-.saas-page .offer-hero-art{grid-row:auto;padding:12px;border-radius:18px}
-.saas-page .offer-hero-copy>p{font-size:1rem}
-.saas-workflow-preview{max-height:420px;overflow:auto}
-.saas-page .catalyst-window{height:330px}
-.saas-page .offer-columns,.saas-page .work-sequence{grid-template-columns:1fr}
-.saas-page .offer-section{padding-block:38px}
-.saas-page .offer-pricing article{padding:24px}
-.saas-page .work-object{padding:22px}
-.saas-page .service-workflow img{max-height:none}
-.saas-page .workflow-copy-head{flex-wrap:wrap;gap:12px}
-}
-/* The hero now uses the homepage component directly. Only media-specific sizing differs. */
-.saas-page .hero .button{font-size:inherit;min-height:50px;padding:11px 19px}
-.saas-page .service-hero-media{margin:0;padding:0;align-self:center}
-.saas-page .service-hero-workflow{aspect-ratio:auto;background:#e7e8e3}
-.service-hero-workflow img{display:block;width:100%;height:auto}
-.saas-page .service-hero-website{aspect-ratio:4/3}
-.service-hero-website .catalyst-window{height:100%;position:absolute;inset:0}
-.saas-page .service-hero-film{aspect-ratio:16/9}
-.saas-page .service-hero-film video{width:100%;height:100%;object-fit:contain;background:var(--ink)}
-.saas-page .offer-columns article{background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:24px 0}
-.saas-page .offer-columns{gap:36px}
-.saas-page .selected-work{background:var(--canvas)}
-.saas-page .work-object{background:transparent;border:0;border-radius:0}
-.saas-page .hero+section{border-top:1px solid var(--line)}
-@media(max-width:760px){
-.saas-page .service-hero-workflow{width:min(100%,380px);aspect-ratio:auto}
-.saas-page .service-hero-website{width:100%;aspect-ratio:4/3}
-.saas-page .service-hero-film{width:100%;aspect-ratio:16/9}
-}
+/* Service pages extend the portfolio's white canvas, DM Sans, Fraunces and artifact shapes. */
+.saas-page { background: var(--canvas); }
+.saas-page .site-header { border-bottom: 0; padding-block: 20px; }
+.saas-page .offer-header-contact { border-radius: 999px; padding: 11px 20px; background: var(--ink); color: white; font-size: .9rem; }
+.saas-page .hero { min-height: min(800px, calc(100dvh - 86px)); gap: clamp(34px, 5vw, 72px); }
+.saas-page .hero h1 { font-size: clamp(3.7rem, 5.6vw, 6.6rem); }
+.saas-page .hero-intro { max-width: 36ch; }
+.saas-page .hero .button { font-size: .94rem; }
+.saas-page .hero + section { border-top: 1px solid var(--line); }
 
-/* Generous, static service narratives, using the homepage type and palette. */
-.saas-page .service-process{padding-block:var(--space-section)}
-.saas-page .service-process-panel{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(40px,6vw,88px);background:var(--paper);border-radius:24px;padding:clamp(32px,5vw,72px)}
-.service-process header h2{font:600 var(--type-h2)/1.08 var(--font-sans);letter-spacing:-.045em;margin:0 0 26px}
-.service-process header p{color:var(--muted);font-size:1.08rem;line-height:1.65;max-width:38ch;margin:0}
-.service-process ol{list-style:none;margin:0;padding:0;display:grid;gap:36px}
-.service-process li{padding:0 0 36px;border-bottom:1px solid var(--line)}
-.service-process li:last-child{padding-bottom:0;border:0}
-.service-process h3{font:560 clamp(1.5rem,2vw,2rem)/1.15 var(--font-editorial);letter-spacing:-.025em;margin:0 0 16px}
-.service-process li p{font-size:1rem;line-height:1.7;margin:0;color:var(--muted)}
-.service-process li .process-output{color:var(--ink);font-size:.92rem;font-weight:550;margin-top:18px}
-.saas-page .service-hero-website iframe{pointer-events:none}
-.saas-page .selected-work{padding-block:var(--space-section)}
-.saas-page .work-sequence{gap:clamp(36px,5vw,72px)}
-.saas-page .offer-contact{padding-block:var(--space-section)}
-@media(max-width:1099px){.saas-page .service-process-panel{grid-template-columns:1fr;gap:40px}.service-process header{max-width:640px}.service-process header p{max-width:52ch}}
-@media(max-width:760px){.saas-page .service-process-panel{padding:30px 24px;border-radius:20px}.service-process header h2{font-size:var(--type-h2)}.service-process ol{gap:28px}.service-process li{padding-bottom:28px}.service-process header p{font-size:1rem}}
+/* The only invented artifact is an explicitly illustrative booking calendar. */
+.booking-calendar { width: min(100%, 720px); justify-self: end; margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 28px; background: var(--paper); box-shadow: 0 34px 70px rgba(19, 22, 19, .13), 0 7px 20px rgba(19, 22, 19, .07); }
+.booking-calendar-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 30px 34px 22px; }
+.booking-calendar-head h2 { margin: 0; font: 600 clamp(1.6rem, 2vw, 2.25rem)/1.1 var(--font-editorial); letter-spacing: -.03em; }
+.booking-calendar-head span { color: var(--muted); font-size: .88rem; }
+.booking-calendar-week { display: grid; grid-template-columns: 55px repeat(5, minmax(0, 1fr)); gap: 8px; padding: 0 26px 12px; color: var(--muted); font-size: .8rem; }
+.booking-calendar-week::before { content: ""; }
+.booking-calendar-week span { text-align: center; }
+.booking-calendar-grid { display: grid; grid-template-columns: 55px repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(4, 76px); gap: 0 8px; padding: 0 26px 20px; background-image: repeating-linear-gradient(to bottom, transparent 0 75px, var(--line) 75px 76px); background-position: 26px 0; }
+.calendar-time { grid-column: 1; align-self: start; padding-top: 7px; color: var(--muted); font-size: .75rem; }
+.calendar-time:nth-child(1) { grid-row: 1; }
+.calendar-time:nth-child(2) { grid-row: 2; }
+.calendar-time:nth-child(3) { grid-row: 3; }
+.calendar-time:nth-child(4) { grid-row: 4; }
+.booking-event { z-index: 1; align-self: start; margin-top: 7px; min-height: 64px; padding: 12px 10px; border-radius: 9px; background: #e4e9e0; color: var(--forest); font-size: .79rem; font-weight: 750; line-height: 1.25; }
+.booking-event small { display: block; margin-top: 5px; font-size: .65rem; font-weight: 500; }
+.booking-event-enquiry { grid-column: 2; grid-row: 1; }
+.booking-event-call { grid-column: 4; grid-row: 2; }
+.booking-event-confirmed { grid-column: 5; grid-row: 3; background: var(--accent); color: var(--ink); }
+
+/* Website and film retain their source artwork with a frame sized to the content. */
+.saas-page .service-hero-website { width: min(100%, 760px); justify-self: end; margin: 0; aspect-ratio: 16 / 10; position: relative; overflow: hidden; border: 7px solid #101312; border-radius: 26px; background: #edf7ff; box-shadow: var(--shadow-screen); transform: perspective(1400px) rotateY(-3deg) rotateZ(1deg); }
+.saas-page .catalyst-window { position: absolute; inset: 0; height: 100%; overflow: hidden; }
+.saas-page .catalyst-window iframe { display: block; max-width: none; border: 0; transform-origin: top left; pointer-events: none; }
+.saas-page .service-hero-film { width: min(100%, 760px); justify-self: end; margin: 0; aspect-ratio: 16 / 9; overflow: hidden; border: 7px solid #101312; border-radius: 26px; background: #101312; box-shadow: var(--shadow-screen); }
+.saas-page .service-hero-film video { width: 100%; height: 100%; object-fit: contain; }
+
+/* Wide breathing room, with each source image presented at its own aspect ratio. */
+.service-cases { padding-block: var(--space-section); background: var(--canvas); }
+.service-cases-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; padding-bottom: clamp(28px, 4vw, 56px); border-bottom: 1px solid var(--line); }
+.service-cases-heading h2 { margin: 0; font-size: clamp(2rem, 2.8vw, 3rem); font-weight: 610; line-height: 1.08; }
+.service-cases-heading p { max-width: 43ch; margin: 0; color: var(--muted); font-size: 1rem; }
+.service-case { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: center; gap: clamp(40px, 6vw, 96px); padding-block: clamp(60px, 7vw, 108px); border-bottom: 1px solid var(--line); }
+.service-case:last-child { border-bottom: 0; padding-bottom: 0; }
+.service-case:nth-child(even) { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); }
+.service-case:nth-child(even) .service-case-copy { grid-column: 2; grid-row: 1; }
+.service-case:nth-child(even) .service-case-media { grid-column: 1; grid-row: 1; justify-self: start; }
+.service-case-copy { max-width: 480px; }
+.service-case-copy h3 { max-width: 14ch; margin: 0 0 14px; font: 560 clamp(2rem, 3.5vw, 3.7rem)/1.04 var(--font-editorial); letter-spacing: -.035em; }
+.service-case-copy .service-case-meta { margin: 0 0 25px; color: var(--ink); font-size: .82rem; font-weight: 660; }
+.service-case-copy p { max-width: 46ch; margin: 0 0 24px; color: var(--muted); line-height: 1.7; }
+.service-case-link { min-height: 44px; display: inline-flex; align-items: center; font-weight: 700; text-underline-offset: .28em; }
+.service-case-media { width: min(100%, 720px); margin: 0; justify-self: end; overflow: hidden; }
+.service-case-media img { display: block; width: 100%; height: auto; }
+.service-case-media-screen { border: 1px solid var(--line); border-radius: 20px; background: var(--paper); }
+.service-case-media-laptop { padding: 20px; border-radius: 22px; background: var(--paper); }
+.service-case-media-photo { aspect-ratio: 16 / 9; border-radius: 22px; }
+.service-case-media-photo img { height: 100%; object-fit: cover; }
+.service-case-media-workflow { padding: 18px; border-radius: 22px; background: #e7e8e3; }
+.service-case-media-workflow picture { display: block; }
+
+/* Plain-language delivery instead of another gallery of interactive boxes. */
+.saas-page .service-process { padding-block: var(--space-section); }
+.saas-page .service-process-panel { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(40px, 6vw, 88px); padding: clamp(38px, 5.3vw, 76px); border-radius: 26px; background: var(--paper); }
+.service-process header h2 { margin: 0 0 26px; font: 600 clamp(2.35rem, 3.4vw, 4rem)/1.08 var(--font-sans); letter-spacing: -.045em; }
+.service-process header p { max-width: 39ch; margin: 0; color: var(--muted); font-size: 1.08rem; line-height: 1.65; }
+.service-process ol { display: grid; gap: 36px; list-style: none; margin: 0; padding: 0; }
+.service-process li { padding-bottom: 36px; border-bottom: 1px solid var(--line); }
+.service-process li:last-child { padding-bottom: 0; border: 0; }
+.service-process h3 { margin: 0 0 16px; font: 560 clamp(1.5rem, 2vw, 2rem)/1.15 var(--font-editorial); letter-spacing: -.025em; }
+.service-process li p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.7; }
+.service-process li .process-output { margin-top: 18px; color: var(--ink); font-size: .92rem; font-weight: 650; }
+
+.saas-page .offer-section { padding-block: var(--space-section); border-top: 1px solid var(--line); }
+.saas-page .offer-section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 96px); margin-bottom: 50px; }
+.saas-page .offer-section h2 { margin: 0; font: 600 clamp(2.3rem, 3.4vw, 4rem)/1.1 var(--font-sans); letter-spacing: -.04em; }
+.saas-page .offer-section-heading > p { max-width: 48ch; color: var(--muted); font-size: 1.05rem; }
+.saas-page .offer-columns { gap: 36px; }
+.saas-page .offer-columns article { padding: 24px 0 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; background: transparent; }
+.saas-page .offer-columns h3 { margin-bottom: 12px; font-size: 1.2rem; }
+.saas-page .offer-columns p { font-size: .98rem; line-height: 1.7; }
+.saas-page .offer-pricing { gap: 24px; }
+.saas-page .offer-pricing article { padding: clamp(28px, 3vw, 42px); border: 1px solid var(--line); border-radius: 22px; background: var(--paper); }
+.saas-page .offer-price { font-size: clamp(2.8rem, 4vw, 4.6rem); }
+.saas-page .offer-contact { padding-block: var(--space-section); color: var(--ink); }
+.saas-page .offer-contact h2 { color: var(--ink); font-family: var(--font-sans); font-weight: 610; }
+.saas-page .offer-contact-note { color: var(--ink); }
+.saas-page a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+
+@media (max-width: 1099px) {
+ .saas-page .hero { grid-template-columns: 1fr; min-height: 0; padding-block: 80px; }
+ .saas-page .hero h1 { max-width: 13ch; }
+ .booking-calendar, .saas-page .service-hero-website, .saas-page .service-hero-film { width: min(100%, 760px); justify-self: start; }
+ .saas-page .service-process-panel { grid-template-columns: 1fr; }
+ .service-process header { max-width: 670px; }
+ .service-case { gap: 36px; }
+}
+@media (max-width: 760px) {
+ .saas-page .hero { gap: 30px; padding-block: 52px 70px; }
+ .saas-page .hero h1 { font-size: clamp(2.85rem, 10vw, 4.7rem); }
+ .saas-page .hero-intro { font-size: 1rem; }
+ .saas-page .service-hero-website { aspect-ratio: 16 / 11; transform: none; border-width: 5px; border-radius: 18px; }
+ .saas-page .service-hero-film { border-width: 5px; border-radius: 18px; }
+ .booking-calendar { border-radius: 18px; }
+ .booking-calendar-head { padding: 22px 24px 18px; }
+ .booking-calendar-week, .calendar-time { display: none; }
+ .booking-calendar-grid { display: flex; flex-direction: column; gap: 10px; padding: 0 24px 24px; background: none; }
+ .booking-event { min-height: 0; margin: 0; padding: 13px 15px; font-size: .88rem; }
+ .booking-event small { font-size: .75rem; }
+ .service-cases { padding-block: 82px; }
+ .service-cases-heading { display: block; }
+ .service-cases-heading p { margin-top: 18px; }
+ .service-case, .service-case:nth-child(even) { grid-template-columns: 1fr; gap: 25px; padding-block: 54px; }
+ .service-case:nth-child(even) .service-case-copy, .service-case:nth-child(even) .service-case-media { grid-column: auto; grid-row: auto; }
+ .service-case-copy h3 { font-size: clamp(2rem, 8vw, 3rem); }
+ .service-case-media-laptop, .service-case-media-workflow { padding: 12px; }
+ .saas-page .service-process, .saas-page .offer-section { padding-block: 80px; }
+ .saas-page .service-process-panel { padding: 32px 24px; border-radius: 20px; gap: 38px; }
+ .service-process header h2 { font-size: clamp(2.1rem, 8vw, 3rem); }
+ .service-process header p { font-size: 1rem; }
+ .service-process ol { gap: 28px; }
+ .service-process li { padding-bottom: 28px; }
+ .saas-page .offer-section-heading, .saas-page .offer-columns, .saas-page .offer-pricing { grid-template-columns: 1fr; }
+ .saas-page .offer-section h2 { font-size: clamp(2.1rem, 8vw, 3rem); }
+ .saas-page .offer-pricing article + article { border: 1px solid var(--line); padding: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .saas-page .button:hover { transform: none; }
+}
