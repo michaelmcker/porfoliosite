@@ -3,7 +3,7 @@ const process = (title, intro, steps) => `<section class="service-process page-f
 
 export function serviceProcess(pages) {
  const content = [
-  ['Start with the work.<br>Make it work better.', 'AI implementation starts with a business problem: slow follow-up, repetitive preparation or a team spending too much time moving information around.', [
+  ['I build the system.<br>You build the business.', 'More bookings and less busywork starts with a specific problem: missed follow-up, repetitive preparation or a team spending too much time moving information around.', [
    ['Understand the bottleneck', 'We look at the way your team works, the tools you already use and where time or enquiries get lost. We choose a useful first project and agree what improvement would look like.', 'A clear priority and an actionable plan.'],
    ['Build the right solution', 'That might mean setting up ChatGPT, Claude Cowork or Gemini, creating a custom AI skill, or connecting your tools into a workflow. We test it against real tasks, with review where it matters.', 'A working system built around your business.'],
    ['Help your team use it', 'Practical training, clear instructions and a supported handover make the system part of the working day. Ongoing engagements include maintenance and improvements as your needs change.', 'Tools your team can use, with support to keep them useful.']

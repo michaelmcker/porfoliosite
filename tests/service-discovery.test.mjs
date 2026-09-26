@@ -19,6 +19,7 @@ test('public HTML, Markdown, schema and sitemap stay in sync',async()=>{
 test('service proof uses original project media without nested interactive viewers',async()=>{
  const web=await readFile('web-design/index.html','utf8');
  const ai=await readFile('ai-implementation/index.html','utf8');
+ const marketing=await readFile('marketing-branding/index.html','utf8');
  assert(web.includes('laptop-three-quarter-rccv-cutout.webp'));
  assert(web.includes('okanagan-preview/assets/overview-final.webp'));
  assert(!web.includes('treehouse-live'));
@@ -27,7 +28,17 @@ test('service proof uses original project media without nested interactive viewe
  assert(!web.includes('st-james-film'));
  assert(web.includes('ai-catalyst-wheat.vercel.app'));
  assert(ai.includes('booking-calendar'));
+ assert.equal((ai.match(/class="calendar-day(?: |")/g)||[]).length,35);
+ assert(ai.includes('I build the system.'));
  assert(!ai.includes('<details class="service-workflow"'));
+ assert(marketing.includes('Explaining a misunderstood medium.'));
+ assert(!marketing.includes('Make the opportunity clear.'));
+ assert(!marketing.includes('vertical-impression-why-elevators.png'));
+ assert(marketing.includes('/assets/videos/vertical-impression-proposal-story-boomerang.mp4'));
+ assert(marketing.includes('/assets/selected-work/ai-catalyst-film.mp4'));
+ assert(marketing.includes('/assets/selected-work/upon-this-rock-episode-01.webp'));
+ await access('assets/videos/vertical-impression-proposal-story-boomerang.mp4');
+ await access('assets/selected-work/ai-catalyst-film.mp4');
 });
 test('Markdown requests have explicit routes and response type',async()=>{
  const config=JSON.parse(await readFile('vercel.json','utf8'));

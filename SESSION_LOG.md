@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-09-26: latest service-page revision complete locally. Marketing proof and AI booking story are updated. Rendered visual review remains blocked by the browser's loopback URL policy; no deployment.
+
 2026-09-26: three service-page design revision implemented locally. Generated pages and discovery files updated; visual review remains blocked by browser policy for loopback URLs.
 
 September 26 implementation complete locally. Visual review pending: browser URL policy blocked access to the preview.
@@ -9,6 +11,12 @@ September 26 implementation complete locally. Visual review pending: browser URL
 Expanded pages complete for local review. Not published; production content negotiation and search indexing remain post-deployment checks.
 
 ## Recent sessions
+
+### 2026-09-26: Marketing proof and AI booking clarity
+- Replaced “Make the opportunity clear” with the homepage’s exact Vertical Impression Proposal Story recording and destination.
+- Added the source AI Catalyst brand film with a poster frame from the film, plus Upon This Rock identity and episode artwork; retained Cool Runnings local proof and the St. James hero film.
+- Replaced the AI hero's partial week diagram with a static full-month calendar and shorter mobile event labels. Rewrote the AI opening and process around bookings, follow-up and time back; kept two practical workflow examples.
+- Rebuilt the seven generated pages and discovery text. Tests: 121 pass, one existing GA4 skip; source syntax, asset presence and local HTTP responses verified. Browser visual review blocked by loopback URL policy. No deployment.
 
 ### 2026-09-26: Reference-led service-page redesign
 - Requested cleaner service pages, fewer interactive previews, frames sized to the content, and a booking-calendar visual.

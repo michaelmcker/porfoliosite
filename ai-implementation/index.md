@@ -2,25 +2,23 @@ Source: https://michaelmck.site/ai-implementation/
 
 # More bookings. Less busywork.
 
-AI implementation that helps you respond faster, win more bookings and spend less time on repeat work. I build custom workflows and skills, set up the right tools and train your team to use them.
+More bookings, faster follow-up and fewer hours lost to repeat work. I build the AI tools and working systems behind that, then help your team use them.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[See the work](#selected-work)
 
 ## Bookings
 
-This week
+Month view
 
-MonTueWedThuFri
+MonTueWedThuFriSatSun
 
-9:0010:0011:0012:00New enquiry Ready for follow-up
+12345New enquiry6789Call booked10111213Follow-up sent141516Site visit171819202122Call booked232425262728Booking confirmed293031
 
-Discovery call On the calendar
+More time for the work that moves your business forward.
 
-Booking confirmed Details sent
+## I build the system. You build the business.
 
-## Start with the work. Make it work better.
-
-AI implementation starts with a business problem: slow follow-up, repetitive preparation or a team spending too much time moving information around.
+More bookings and less busywork starts with a specific problem: missed follow-up, repetitive preparation or a team spending too much time moving information around.
 
 -
 
@@ -48,31 +46,23 @@ Tools your team can use, with support to keep them useful.
 
 ## Selected work
 
-Real systems for research, sales preparation and reporting.
+Real examples of the repeat work a useful system can take on.
 
-### Content that brings the right people in
+### Spend less time preparing each proposal.
 
-Research, briefing, drafting and human review connected to publishing and measurement.
-
-[See how it works](https://michaelmck.site/v2/workflows/content-production.html)
-
-Artwork from the content that brings the right people in workflow
-
-### From a prospect to a tailored proposal
-
-Local business research and nearby inventory become a proposal that a salesperson reviews before outreach.
+Business research and local details come together in a tailored proposal for a person to review before outreach.
 
 [See how it works](https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html)
 
-Artwork from the from a prospect to a tailored proposal workflow
+Local prospecting and proposal preparation workflow artwork
 
-### The numbers in one working view
+### See what needs attention.
 
-A dashboard that puts performance, content operations and client notes where a team can act on them.
+One working view brings performance, content and client notes together, so the team can spend less time hunting for answers.
 
 [See how it works](https://michaelmck.site/v2/workflows/agency-management-dashboard.html)
 
-Artwork from the the numbers in one working view workflow
+Agency dashboard showing performance and client work in one view
 
 ## Start with a plan. Then put it to work.
 

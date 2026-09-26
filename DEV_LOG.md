@@ -81,3 +81,11 @@
 - Replaced reused homepage work objects on the service pages with fitted, static project imagery. Kept the AI Catalyst specimen non-interactive and the St. James film intentionally playable.
 - Consolidated the service-specific CSS into one coherent stylesheet and updated the existing discovery test to validate the new proof selection.
 - The homepage's existing interactive showcases and unrelated dirty files were preserved. Local render access remains blocked by browser URL policy.
+# 2026-09-26 — Service proof and AI booking clarity
+
+- Started a focused revision of the marketing selected work and AI hero. The user requested the exact homepage medium story, AI Catalyst video, Upon This Rock podcast identity, and a legible full calendar tied to bookings and less busywork.
+- Baseline `npm test`: 121 pass, one existing GA4 skip. Preserving unrelated working-tree changes.
+- Reused the homepage's exact Proposal Story video/poster and destination. Source video is lazy-loaded and only plays in view; reduced-motion visitors see its poster.
+- Copied the original 60-second AI Catalyst film and extracted a poster frame from that film. Copied original Upon This Rock hero and first episode artwork. Marketing proof now covers product story, film, podcast identity and local search without invented outcomes.
+- Rebuilt the AI hero as a five-row, seven-column month calendar with readable short labels on narrow screens. Shifted opening/process copy to bookings, follow-up and time back. Reduced AI selected work to two concrete systems.
+- Regenerated HTML, Markdown and LLM discovery content; bumped the service stylesheet version for preview refresh. `npm test`: 121 pass, one existing GA4 skip. Source syntax, diff whitespace and local HTTP page/media response checks passed. Browser visual review remains blocked by loopback URL policy. No deployment.

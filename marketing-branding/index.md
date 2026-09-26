@@ -2,7 +2,7 @@ Source: https://michaelmck.site/marketing-branding/
 
 # Work that gets people interested.
 
-Branding, websites, ads and video design. A clear idea, carried through the things your customers actually see.
+Branding, websites, ads and film built around what people need to understand before they choose you. One clear story, carried through the places they meet your business.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[See the work](#selected-work)
 
@@ -36,17 +36,35 @@ A connected set of materials your business can put to use.
 
 ## Selected work
 
-A film, a product story and a local business presence: three different jobs for design and marketing.
+Product stories, film, podcast identity and local search. The format changes with the job.
 
-### Make the opportunity clear.
+### Explaining a misunderstood medium.
 
-Vertical Impression · Product marketing
+Vertical Impression · Product story and website
 
-A page that explains where elevator advertising reaches people and gives the sales team a concrete story to use in conversation.
+Elevator advertising is unfamiliar to many buyers. The story shows where it reaches people, why the setting matters and how to picture a campaign.
 
-[Explore the product story](https://www.verticalimpression.com/why-elevators)
+[Explore the product story](https://www.verticalimpression.com/proposal-story)
 
-Vertical Impression product website explaining elevator advertising
+verticalimpression.com/proposal-story
+
+### A story people can see and feel.
+
+AI Catalyst · Brand film and website
+
+The AI Catalyst film puts its commercial message into motion; the website carries that same visual language into a clear place to learn more.
+
+[Explore the website](https://ai-catalyst-wheat.vercel.app/)
+
+### An identity with a world of its own.
+
+Upon This Rock · Podcast visual direction
+
+A visual direction for a Catholic podcast, carried from the main identity into episode artwork. The work gives the series a recognizable look before anyone presses play.
+
+Upon This Rock podcast identity with classical artwork inside the UTR letterforms
+
+Upon This Rock episode artwork using the same identity
 
 ### Be found when local customers are looking.
 
