@@ -24,3 +24,11 @@
 - AI audit and monthly offer remain together on the AI page. Website and marketing work have custom quotes.
 
 - Rebuild validation: 118 unit tests pass; one pre-existing telemetry skip. Focused homepage browser test passed. New-page links/anchors passed; 15 page/viewport combinations had no overflow. No publication.
+
+## 2026-09-25: Detailed services, design proof and discovery
+- Web design now leads with the exact portfolio Treehouse interactive preview and RCCV laptop film. Cool Runnings follows as local service/search proof. Corrected iframe max-width so the fixed internal canvas fills the device on mobile and desktop.
+- Expanded AI scope with enquiry, proposal, content and reporting workflows; ChatGPT, Claude Cowork and Gemini setup; training, ownership and maintenance. Preserved $900 audit and from $2,500/month implementation.
+- Expanded marketing with positioning, identity, local SEO, service content, campaigns, sales materials and measurement. All marketing/web work remains custom-quoted.
+- Restored /blog/ with three substantive articles and cross-links. Added Person/WebSite/WebPage/Service/Breadcrumb and BlogPosting schema, canonical metadata, Markdown alternates, llms.txt and llms-full.txt. Sitemap covers seven new HTML routes. Robots permits public content and excludes API.
+- Vercel configuration serves the seven routes as Markdown for explicit Accept: text/markdown requests; direct index.md links work on the local static preview. Production negotiation requires post-deployment verification.
+- Verified 121 tests pass, one pre-existing GA4 skip. Six expanded routes checked at 1440/768/390/320 with no overflow or broken loaded images; Treehouse separately visually checked desktop/390 with matching frame width, RCCV render reviewed. No publishing or indexing submission performed.
