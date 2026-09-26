@@ -2,6 +2,8 @@
 
 ## In progress
 
+September 26 implementation complete locally. Visual review pending: browser URL policy blocked access to the preview.
+
 Expanded pages complete for local review. Not published; production content negotiation and search indexing remain post-deployment checks.
 
 ## Recent sessions
@@ -56,3 +58,9 @@ Expanded pages complete for local review. Not published; production content nego
 
 ### Hero correction
 - Three offering heroes now directly reuse homepage components; no extra labels or outer cards. Existing work imagery retained. Verified locally.
+
+### 2026-09-26: Static artwork and clearer service process
+- Replaced design/build and other capability boxes with larger, static engagement sections: objectives/problem, solution, delivery/support.
+- Restored original Catalyst dither shader in static mode; copied source styles and artwork/logos locally; hero specimen does not capture pointer or keyboard interaction.
+- Validation: 121 tests pass, one existing GA4 skip. JavaScript syntax, local preview asset references and all three generated process sections checked. HTML/Markdown parity passes.
+- Rendered visual verification was blocked by the browser URL policy. No deployment; review at http://127.0.0.1:8846/web-design/.

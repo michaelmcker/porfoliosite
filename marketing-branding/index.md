@@ -6,21 +6,33 @@ Branding, websites, ads and video design. A clear idea, carried through the thin
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[See the work](#selected-work)
 
-## One idea. Carried through the work.
+## Start with the problem. Give people a reason to choose you.
 
-Marketing and branding projects are custom-scoped around your audience, offer and next business priority.
+An unclear offer, a launch that needs attention or marketing that no longer fits the business. We find what needs to change, then make the work to change it.
 
-### Branding & websites
+-
 
-Positioning, messaging and visual direction, brought into a website that helps people understand and choose you.
+### Find what is getting in the way
 
-### Ads & campaigns
+We look at your audience, your offer and the material people see today. The first conversation is about the business problem and what you want customers to understand or do.
 
-Campaign concepts, creative and landing pages built around a specific offer and customer action.
+A focused brief with an agreed scope, timing and cost.
 
-### Video design
+-
 
-Story, visual direction and edited video that make an idea or project easier to see.
+### Develop the idea
+
+We shape the positioning, message and visual direction around that problem. You review a clear creative direction before we carry it into the finished materials.
+
+One clear story for the audience you want to reach.
+
+-
+
+### Make it work in the real world
+
+I produce the agreed branding, website, ads or video and prepare it for the places it will appear. We review the finished work together and agree how to judge the response.
+
+A connected set of materials your business can put to use.
 
 ## Selected Work
 

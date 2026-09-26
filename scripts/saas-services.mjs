@@ -1,3 +1,4 @@
+import {serviceProcess} from './service-process.mjs';
 export function saasServices(pages){
  const [ai,web,marketing]=pages;
  const sections=p=>p.body.match(/<section\b[\s\S]*?<\/section>/g)||[];
@@ -19,4 +20,5 @@ export function saasServices(pages){
   const content=sections(p),features=content.find(x=>x.includes('class="offer-columns"'));
   if(features)p.body=features+content.filter(x=>x!==features).join('');
  }
+ serviceProcess(pages);
 }

@@ -8,21 +8,33 @@ Turn repetitive work into reliable workflows. Custom AI skills, connected tools 
 
 Actual content-production workflow: research, briefing, review and publishing
 
-## How I can help.
+## Start with the work. Make it work better.
 
-Practical AI implementation for Okanagan businesses.
+AI implementation starts with a business problem: slow follow-up, repetitive preparation or a team spending too much time moving information around.
 
-### Custom workflows
+-
 
-Connect research, enquiries, content, proposals and reporting to the next step in your process.
+### Understand the bottleneck
 
-### Custom AI skills
+We look at the way your team works, the tools you already use and where time or enquiries get lost. We choose a useful first project and agree what improvement would look like.
 
-Reusable instructions, reference material and checks that help AI do a specific job your way.
+A clear priority and an actionable plan.
 
-### Tools & training
+-
 
-Set up ChatGPT, Claude Cowork or Gemini around real team tasks. Training, testing and ongoing maintenance are part of the work.
+### Build the right solution
+
+That might mean setting up ChatGPT, Claude Cowork or Gemini, creating a custom AI skill, or connecting your tools into a workflow. We test it against real tasks, with review where it matters.
+
+A working system built around your business.
+
+-
+
+### Help your team use it
+
+Practical training, clear instructions and a supported handover make the system part of the working day. Ongoing engagements include maintenance and improvements as your needs change.
+
+Tools your team can use, with support to keep them useful.
 
 ## Selected workflows
 

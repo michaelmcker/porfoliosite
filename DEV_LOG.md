@@ -67,3 +67,10 @@
 - Restored homepage type scale, layout breakpoints, pill controls and physical screen treatment. Removed redundant feature/project card backgrounds while retaining concise service structure.
 - Corrected AI Catalyst preview base-URL resolution so local source logo and hero image load locally.
 - 121 active tests pass; one existing skip. Browser confirmed shared hero markup, zero captions and no overflow at 1440 and 390 on all three offerings. Local only.
+
+## 2026-09-26: Service process and reliable project artwork
+- Replaced capability boxes with spacious, static problem-to-solution engagement sections on all three offerings.
+- Kept homepage fonts, colours and hero components; added a quiet paper process panel with concrete deliverables.
+- Restored the original AI Catalyst dither shader in static mode, copied its styles and logo/art assets locally, and disabled interaction in the hero specimen. The external project link remains usable.
+- Browser inspection blocked by browser URL policy; do not claim visual acceptance.
+- Final verification: 121 tests passed, existing GA4 skip; original shader syntax and local asset references valid. Rendered QA remains unverified due to browser policy rejection.

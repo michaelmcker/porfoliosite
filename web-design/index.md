@@ -6,21 +6,33 @@ Websites with a point of view and a clear job to do. Design, content and develop
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[Explore AI Catalyst](https://ai-catalyst-wheat.vercel.app/)
 
-## From first impression to the next step.
+## A better website starts with your objectives.
 
-Custom website projects include the agreed content, design, development, search foundations and launch support. We scope the pages and functionality together, then set a clear cost.
+More bookings, better enquiries or a clearer story. We agree what the website needs to achieve before deciding what it needs to look like.
 
-### Design
+-
 
-Distinctive layouts, considered typography and real imagery. Mobile gets its own composition.
+### Understand your business
 
-### Build
+We talk about your customers, your offer and the action you want visitors to take. We review your current site and material, then agree the pages, priorities, scope and cost.
 
-Responsive development, meaningful interactions and clear routes to call, book or enquire.
+A shared brief, a page plan and a clear quote.
 
-### Launch
+-
 
-Content review, accessibility checks, SEO metadata, schema, sitemap and an agreed handover.
+### Shape the story. Design the site.
+
+Your positioning, copy and real work guide the visual direction. You review the key pages before the full build, so the typography, imagery and customer journey feel right together.
+
+A considered design with a clear path to call, book or enquire.
+
+-
+
+### Build, launch and hand over
+
+I build the responsive site, connect the agreed features and check the content, forms and mobile experience. Search foundations, measurement and editing or maintenance arrangements are part of the launch plan.
+
+A finished website, ready to use and easy to move forward.
 
 ## Selected Work
 

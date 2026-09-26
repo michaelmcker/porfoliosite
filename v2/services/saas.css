@@ -98,3 +98,21 @@
 .saas-page .service-hero-website{width:100%;aspect-ratio:4/3}
 .saas-page .service-hero-film{width:100%;aspect-ratio:16/9}
 }
+
+/* Generous, static service narratives, using the homepage type and palette. */
+.saas-page .service-process{padding-block:var(--space-section)}
+.saas-page .service-process-panel{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(40px,6vw,88px);background:var(--paper);border-radius:24px;padding:clamp(32px,5vw,72px)}
+.service-process header h2{font:600 var(--type-h2)/1.08 var(--font-sans);letter-spacing:-.045em;margin:0 0 26px}
+.service-process header p{color:var(--muted);font-size:1.08rem;line-height:1.65;max-width:38ch;margin:0}
+.service-process ol{list-style:none;margin:0;padding:0;display:grid;gap:36px}
+.service-process li{padding:0 0 36px;border-bottom:1px solid var(--line)}
+.service-process li:last-child{padding-bottom:0;border:0}
+.service-process h3{font:560 clamp(1.5rem,2vw,2rem)/1.15 var(--font-editorial);letter-spacing:-.025em;margin:0 0 16px}
+.service-process li p{font-size:1rem;line-height:1.7;margin:0;color:var(--muted)}
+.service-process li .process-output{color:var(--ink);font-size:.92rem;font-weight:550;margin-top:18px}
+.saas-page .service-hero-website iframe{pointer-events:none}
+.saas-page .selected-work{padding-block:var(--space-section)}
+.saas-page .work-sequence{gap:clamp(36px,5vw,72px)}
+.saas-page .offer-contact{padding-block:var(--space-section)}
+@media(max-width:1099px){.saas-page .service-process-panel{grid-template-columns:1fr;gap:40px}.service-process header{max-width:640px}.service-process header p{max-width:52ch}}
+@media(max-width:760px){.saas-page .service-process-panel{padding:30px 24px;border-radius:20px}.service-process header h2{font-size:var(--type-h2)}.service-process ol{gap:28px}.service-process li{padding-bottom:28px}.service-process header p{font-size:1rem}}
