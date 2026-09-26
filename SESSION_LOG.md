@@ -53,3 +53,6 @@ Expanded pages complete for local review. Not published; production content nego
 
 ### Homepage style correction
 - Three offerings retain SaaS layout while sharing homepage fonts, palette and buttons; duplicate tabs removed. Verified locally; not published.
+
+### Hero correction
+- Three offering heroes now directly reuse homepage components; no extra labels or outer cards. Existing work imagery retained. Verified locally.

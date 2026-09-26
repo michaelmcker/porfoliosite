@@ -6,11 +6,7 @@ Turn repetitive work into reliable workflows. Custom AI skills, connected tools 
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[See the work](#selected-work)
 
-AI implementation in the Okanagan Michael McKerracher · Coldstream, BC
-
 Actual content-production workflow: research, briefing, review and publishing
-
-A working example: research to reviewed, published content.
 
 ## How I can help.
 

@@ -61,3 +61,9 @@
 - Removed duplicate offering switcher; primary navigation is the only top navigation.
 - Replaced green SaaS accents with shared homepage ink/paper/gold tokens, DM Sans and Fraunces hierarchy, and pill buttons. Preserved concise SaaS structure and original media.
 - 121 tests pass, one existing skip. Browser confirmed no extra tabs, Fraunces accents, ink buttons and no mobile overflow on all three routes; marketing desktop/mobile visually reviewed.
+
+## 2026-09-25: Use the actual homepage hero component
+- Replaced service-specific hero markup with homepage hero / hero-copy / hero-intro / hero-system-media classes. Removed hero captions, browser title bar, outer tinted cards and location sublabels.
+- Restored homepage type scale, layout breakpoints, pill controls and physical screen treatment. Removed redundant feature/project card backgrounds while retaining concise service structure.
+- Corrected AI Catalyst preview base-URL resolution so local source logo and hero image load locally.
+- 121 active tests pass; one existing skip. Browser confirmed shared hero markup, zero captions and no overflow at 1440 and 390 on all three offerings. Local only.

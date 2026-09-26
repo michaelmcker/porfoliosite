@@ -6,10 +6,6 @@ Branding, websites, ads and video design. A clear idea, carried through the thin
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[See the work](#selected-work)
 
-Marketing & branding in the Okanagan Michael McKerracher · Coldstream, BC
-
-St. James School · Campaign film
-
 ## One idea. Carried through the work.
 
 Marketing and branding projects are custom-scoped around your audience, offer and next business priority.

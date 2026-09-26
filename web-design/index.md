@@ -4,13 +4,7 @@ Source: https://michaelmck.site/web-design/
 
 Websites with a point of view and a clear job to do. Design, content and development for businesses and communities in the Okanagan.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[See the work](#selected-work)
-
-Web design & development in the Okanagan Michael McKerracher · Coldstream, BC
-
-AI Catalyst
-
-[AI Catalyst · Explore the website](https://ai-catalyst-wheat.vercel.app/)
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[Explore AI Catalyst](https://ai-catalyst-wheat.vercel.app/)
 
 ## From first impression to the next step.
 

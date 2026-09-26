@@ -79,3 +79,22 @@
 .saas-page .service-workflow img{max-height:none}
 .saas-page .workflow-copy-head{flex-wrap:wrap;gap:12px}
 }
+/* The hero now uses the homepage component directly. Only media-specific sizing differs. */
+.saas-page .hero .button{font-size:inherit;min-height:50px;padding:11px 19px}
+.saas-page .service-hero-media{margin:0;padding:0;align-self:center}
+.saas-page .service-hero-workflow{aspect-ratio:auto;background:#e7e8e3}
+.service-hero-workflow img{display:block;width:100%;height:auto}
+.saas-page .service-hero-website{aspect-ratio:4/3}
+.service-hero-website .catalyst-window{height:100%;position:absolute;inset:0}
+.saas-page .service-hero-film{aspect-ratio:16/9}
+.saas-page .service-hero-film video{width:100%;height:100%;object-fit:contain;background:var(--ink)}
+.saas-page .offer-columns article{background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:24px 0}
+.saas-page .offer-columns{gap:36px}
+.saas-page .selected-work{background:var(--canvas)}
+.saas-page .work-object{background:transparent;border:0;border-radius:0}
+.saas-page .hero+section{border-top:1px solid var(--line)}
+@media(max-width:760px){
+.saas-page .service-hero-workflow{width:min(100%,380px);aspect-ratio:auto}
+.saas-page .service-hero-website{width:100%;aspect-ratio:4/3}
+.saas-page .service-hero-film{width:100%;aspect-ratio:16/9}
+}
