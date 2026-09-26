@@ -101,3 +101,15 @@
 .blog-body p { line-height:1.8; }
 @media(max-width:760px){.treehouse-window{height:330px}.offer-hero h1{overflow-wrap:break-word}}
 .treehouse-window iframe { max-width:none; }
+/* Short service pages: actual portfolio artifacts, quieter pacing. */
+.offer-compact .offer-hero { min-height:0; padding-block:64px; }
+.offer-compact .offer-section,.offer-compact .offer-proof { padding-block:64px; }
+.offer-compact .offer-section-heading { margin-bottom:32px; }
+.offer-workflow { margin:0; }
+.offer-workflow img { display:block; width:100%; height:auto; }
+.offer-compact .rccv-proof-band { background:#f7f6f1; box-shadow:0 0 0 100vmax #f7f6f1; clip-path:inset(0 -100vmax); }
+@media(max-width:760px){
+ .offer-compact .offer-hero,.offer-compact .offer-section,.offer-compact .offer-proof{padding-block:40px}
+ .offer-compact .offer-hero h1{font-size:clamp(2.6rem,10.8vw,4.5rem)}
+ .offer-workflow {max-width:250px;margin-inline:auto}
+}

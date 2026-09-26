@@ -32,3 +32,9 @@
 - Restored /blog/ with three substantive articles and cross-links. Added Person/WebSite/WebPage/Service/Breadcrumb and BlogPosting schema, canonical metadata, Markdown alternates, llms.txt and llms-full.txt. Sitemap covers seven new HTML routes. Robots permits public content and excludes API.
 - Vercel configuration serves the seven routes as Markdown for explicit Accept: text/markdown requests; direct index.md links work on the local static preview. Production negotiation requires post-deployment verification.
 - Verified 121 tests pass, one pre-existing GA4 skip. Six expanded routes checked at 1440/768/390/320 with no overflow or broken loaded images; Treehouse separately visually checked desktop/390 with matching frame width, RCCV render reviewed. No publishing or indexing submission performed.
+
+## 2026-09-25: Lighter pages with actual portfolio work
+- Reduced AI and marketing to five sections including hero; web to seven, preserving both design projects and local proof.
+- AI hero now reads More bookings. Less busywork. and reuses the homepage's original responsive prospecting artwork. No generated concepts or RCCV on AI.
+- Marketing hero uses actual homepage product-story poster; removed proposal-dashboard positioning. RCCV stays on web with a continuous warm background.
+- HTML, Markdown and structured data regenerated together. 121 tests pass, one existing skip. Browser checked all three at 1440/390 without horizontal overflow.

@@ -33,3 +33,7 @@ Expanded pages complete for local review. Not published; production content nego
 - Added schema, Markdown, LLM discovery files and sitemap coverage; retained public crawler access.
 - 121 active tests pass; one existing GA4 test skips. Responsive checks and visual review completed.
 - Preview restored at http://127.0.0.1:8846/. No deployment.
+
+### 2026-09-25: Simplified commercial pages
+- Applied requested lighter structure and actual homepage work imagery. Details remain in blog; prices preserved.
+- Local only. Tests and responsive checks pass.

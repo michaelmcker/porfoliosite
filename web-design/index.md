@@ -28,57 +28,21 @@ That visual care sits alongside the everyday task: helping families and parishio
 
 [Explore the RCCV project](https://rccv-st-james-limestone-ssr.michael-mckerracher.workers.dev/)[View Stations of the Cross](https://rccv-st-james-limestone-ssr.michael-mckerracher.workers.dev/faith/stations-of-the-cross/)
 
-## A website with a job to do.
+## Beautiful to look at. Easy to act on.
 
-The design, content and development work together. Every page should help the right person understand your offer and move closer to getting in touch.
+Custom web design and development for Okanagan businesses, from the first page plan to launch.
 
-### Bring the right people in.
+### Design & content
 
-Create service pages around what customers need and where you work. Build useful answers to their questions, with a connected structure that search engines and visitors can follow.
+A visual direction built from your business, real imagery and clear writing. Responsive layouts that give every page a purpose.
 
-### Give them a reason to choose you.
+### Search & enquiries
 
-Show your work, explain what makes the service valuable and answer the questions that stand between a visitor and an enquiry. Use real photography and relevant proof.
+Useful service pages, search metadata, schema and a sitemap. Clear routes to call, enquire or book, checked on mobile.
 
-### Make the next step easy.
+### Build & handover
 
-Give mobile and desktop visitors a clear way to call, request an estimate or book. Check that forms and contact links work, and define the actions worth measuring.
-
-## From the first conversation to the finished website.
-
-New websites and redesigns are custom-scoped. We establish the business objective and preserve the content, assets and search value that already work.
-
-### Strategy & content
-
-Plan the pages, service information, calls to action and evidence. Write clear copy around the questions your customers actually ask.
-
-### Design & development
-
-Establish the visual direction, build a responsive page system and develop the functionality you need, from service pages to forms and useful interactive tools.
-
-### Search & measurement
-
-Build crawlable pages with accurate titles, internal links and sitemap discovery. Agree what an enquiry means and how to measure it. Search performance guides future improvements.
-
-### Launch & handover
-
-Review the site on real screen sizes, check the customer journey and put the agreed editing and maintenance arrangements in place.
-
-## Local web design that helps the phone ring.
-
-For a service business, the work starts with what someone is searching for: the service, the area and the problem they need solved. The page needs to answer those questions and make the next step obvious.
-
-### Service pages with substance
-
-Explain the job, who it is for, where you work and what affects an estimate. Include real project photographs, relevant proof and the questions customers ask before calling.
-
-### Search foundations at launch
-
-Plan page titles, descriptions, internal links, structured data, redirects and a sitemap. Make important content available in HTML and give search engines a clear route through the site.
-
-### A complete enquiry journey
-
-Connect calls, forms and booking links to the way you handle new business. Check confirmation messages and mobile interactions, then agree how useful enquiries will be measured.
+The functionality you need, tested customer journeys and agreed editing and maintenance arrangements.
 
 Cool Runnings landscaping website, showing its services, local area and enquiry options
 
@@ -96,33 +60,9 @@ The price depends on the pages, content, design and functionality your business 
 
 [Request a website consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
-## Before we get started.
+## Let’s build a site worth choosing.
 
-Can you improve my existing website?
-
-Yes. We first look at what is worth preserving and which changes would make the greatest difference. A focused improvement may be more appropriate than a complete rebuild.
-
-Do you write the content as well?
-
-Copywriting and content structure can be included in the project. We use your business information, approved claims and real examples as the source.
-
-Will the site work on phones?
-
-Yes. Mobile is part of the design and review process, including readable content, navigation, forms and contact actions.
-
-Can you guarantee more bookings or a search ranking?
-
-No. The work is designed around those business goals, but outcomes depend on your market, offer and customer response. We set up the foundations and measure the result rather than promising a ranking.
-
-## A closer look at the work.
-
-Practical notes on choosing what to build and making it useful.
-
-[What makes a local business website worth enquiring through?](https://michaelmck.site/blog/website-that-turns-visits-into-enquiries/)
-
-## Make your website work harder for your business.
-
-Bring the current site or the idea for a new one. We’ll talk about what it needs to achieve and what it will take to build.
+Tell me what it needs to achieve. [Read what makes a website earn an enquiry](https://michaelmck.site/blog/website-that-turns-visits-into-enquiries/).
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
