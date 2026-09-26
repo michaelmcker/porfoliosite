@@ -46,3 +46,7 @@ Expanded pages complete for local review. Not published; production content nego
 ### AI Catalyst placement correction
 - AI Catalyst now leads Web Design. RCCV and Treehouse remain selected work; school film remains Marketing & Branding only.
 - Local preview verified; remote AI Catalyst media remains a display dependency.
+
+### SaaS-style three-offering design
+- Shared SaaS visual system applied to AI, Web Design and Marketing & Branding with original project assets and existing pricing.
+- Verified responsive layout, current-offering navigation, generated metadata/Markdown and unit suite. No deployment.

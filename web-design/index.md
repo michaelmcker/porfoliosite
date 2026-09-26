@@ -1,16 +1,34 @@
 Source: https://michaelmck.site/web-design/
 
+[AI implementation](https://michaelmck.site/ai-implementation/)[Web design](https://michaelmck.site/web-design/)[Marketing & branding](https://michaelmck.site/marketing-branding/)
+
 # Beautiful websites. Built for business.
 
 Websites with a point of view and a clear job to do. Design, content and development for businesses and communities in the Okanagan.
 
-[Discuss your website](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[Explore AI Catalyst](https://ai-catalyst-wheat.vercel.app/)
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[See the work](#selected-work)
 
 Web design & development in the Okanagan Michael McKerracher · Coldstream, BC
 
 AI Catalyst
 
-AI Catalyst · Website design and development
+[AI Catalyst · Explore the website](https://ai-catalyst-wheat.vercel.app/)
+
+## From first impression to the next step.
+
+Custom website projects include the agreed content, design, development, search foundations and launch support. We scope the pages and functionality together, then set a clear cost.
+
+### Design
+
+Distinctive layouts, considered typography and real imagery. Mobile gets its own composition.
+
+### Build
+
+Responsive development, meaningful interactions and clear routes to call, book or enquire.
+
+### Launch
+
+Content review, accessibility checks, SEO metadata, schema, sitemap and an agreed handover.
 
 ## Selected Work
 
@@ -36,22 +54,6 @@ AI Catalyst · Website design and development
               [Overview](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
               [Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/stays/treehouse/)
               [Cabin](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/stays/cabin/)
-
-## From first impression to the next step.
-
-Custom website projects include the agreed content, design, development, search foundations and launch support. We scope the pages and functionality together, then set a clear cost.
-
-### Design
-
-Distinctive layouts, considered typography and real imagery. Mobile gets its own composition.
-
-### Build
-
-Responsive development, meaningful interactions and clear routes to call, book or enquire.
-
-### Launch
-
-Content review, accessibility checks, SEO metadata, schema, sitemap and an agreed handover.
 
 ## A website that feels like your business.
 

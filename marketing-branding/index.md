@@ -1,22 +1,34 @@
 Source: https://michaelmck.site/marketing-branding/
 
+[AI implementation](https://michaelmck.site/ai-implementation/)[Web design](https://michaelmck.site/web-design/)[Marketing & branding](https://michaelmck.site/marketing-branding/)
+
 # Work that gets people interested.
 
 Branding, websites, ads and video design. A clear idea, carried through the things your customers actually see.
 
-[Discuss your marketing](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[Selected work](#selected-work)
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[See the work](#selected-work)
 
 Marketing & branding in the Okanagan Michael McKerracher · Coldstream, BC
 
+St. James School · Campaign film
+
+## One idea. Carried through the work.
+
+Marketing and branding projects are custom-scoped around your audience, offer and next business priority.
+
+### Branding & websites
+
+Positioning, messaging and visual direction, brought into a website that helps people understand and choose you.
+
+### Ads & campaigns
+
+Campaign concepts, creative and landing pages built around a specific offer and customer action.
+
+### Video design
+
+Story, visual direction and edited video that make an idea or project easier to see.
+
 ## Selected Work
-
-### A school’s next chapter.
-
-St. James School · Campaign, website & film
-
-A connected story for the school’s future, carried through the donor website, visual direction and patronage film.
-
-[Explore the website](https://st-james-school-prototype.vercel.app/website-v2)[Watch the film](https://st-james-school-prototype.vercel.app/videos)
 
 ### Explaining a misunderstood medium.
 
@@ -40,22 +52,6 @@ A connected story for the school’s future, carried through the donor website, 
 
               [View live site](https://www.coolrunningslandscaping.com/)
               [Read case study](https://michaelmck.site/v2/work/local-search-magnet.html)
-
-## One idea. Carried through the work.
-
-Marketing and branding projects are custom-scoped around your audience, offer and next business priority.
-
-### Branding & websites
-
-Positioning, messaging and visual direction, brought into a website that helps people understand and choose you.
-
-### Ads & campaigns
-
-Campaign concepts, creative and landing pages built around a specific offer and customer action.
-
-### Video design
-
-Story, visual direction and edited video that make an idea or project easier to see.
 
 ## What should people know you for?
 

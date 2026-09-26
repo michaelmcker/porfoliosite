@@ -1,12 +1,34 @@
 Source: https://michaelmck.site/ai-implementation/
 
+[AI implementation](https://michaelmck.site/ai-implementation/)[Web design](https://michaelmck.site/web-design/)[Marketing & branding](https://michaelmck.site/marketing-branding/)
+
 # More bookings. Less busywork.
 
-Custom workflows, custom AI skills, and hands-on tool implementation and training. Built around the work your team needs to get done.
+Turn repetitive work into reliable workflows. Custom AI skills, connected tools and practical training for the team behind your business.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[Selected work](#selected-work)
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[See the work](#selected-work)
 
 AI implementation in the Okanagan Michael McKerracher · Coldstream, BC
+
+Actual content-production workflow: research, briefing, review and publishing
+
+A working example: research to reviewed, published content.
+
+## How I can help.
+
+Practical AI implementation for Okanagan businesses.
+
+### Custom workflows
+
+Connect research, enquiries, content, proposals and reporting to the next step in your process.
+
+### Custom AI skills
+
+Reusable instructions, reference material and checks that help AI do a specific job your way.
+
+### Tools & training
+
+Set up ChatGPT, Claude Cowork or Gemini around real team tasks. Training, testing and ongoing maintenance are part of the work.
 
 ## Selected workflows
 
@@ -39,22 +61,6 @@ Reporting
 Performance data, content operations and reporting brought into a working view.
 
 Agency management dashboard: actual workflow artwork from the portfolio
-
-## How I can help.
-
-Practical AI implementation for Okanagan businesses.
-
-### Custom workflows
-
-Connect research, enquiries, content, proposals and reporting to the next step in your process.
-
-### Custom AI skills
-
-Reusable instructions, reference material and checks that help AI do a specific job your way.
-
-### Tools & training
-
-Set up ChatGPT, Claude Cowork or Gemini around real team tasks. Training, testing and ongoing maintenance are part of the work.
 
 ## Start with a plan. Then put it to work.
 

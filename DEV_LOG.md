@@ -50,3 +50,9 @@
 - Removed the St James film/project from Web Design; retained it on Marketing & Branding.
 - Added the actual AI Catalyst homepage as the Web Design hero, with a live-site link. A noindex local display copy preserves the published HTML and references its original remote assets. Navigation/submission within the display is disabled.
 - Verified the rendered hero in-browser after assets loaded. Unit suite passes (121 active, one existing skip). No deployment.
+
+## 2026-09-25: SaaS-style offering pages
+- Applied a shared product-marketing design to the three service pages only: offering switcher, split heroes, green primary action, restrained surfaces, service cards, compact project proof and pricing cards.
+- Actual work remains the hero material: content workflow, AI Catalyst website and St James campaign film. Homepage and blog design unchanged.
+- AI Catalyst display now uses local original logo/hero media and static source HTML to avoid a blank first-paint dependency on external animation scripts. Published site remains linked.
+- All 121 active tests pass, one existing analytics skip. Three pages checked at 1440/768/390/320 without overflow, active offering verified. Hero and mobile layout visually reviewed. Local only.

@@ -1,0 +1,85 @@
+/* Shared product-marketing treatment for the three offerings only. */
+.saas-page{--saas-green:#235a42;--saas-tint:#f1f5f1;--saas-border:#e0e6df;background:#fff}
+.saas-page .site-header{border-bottom:0;padding-block:20px}
+.saas-page .offer-header-contact{background:var(--ink);color:white;padding:11px 20px;border-radius:9px;font-size:.9rem}
+.offering-switcher{display:flex;justify-content:center;gap:5px;width:fit-content;max-width:calc(100% - 32px);margin:20px auto 0;padding:5px;background:#f0f2ee;border:1px solid #e6e9e3;border-radius:12px}
+.offering-switcher a{padding:11px 18px;text-decoration:none;font-size:.9rem;line-height:1.35;border-radius:8px;color:#526054}
+.offering-switcher a[aria-current]{background:white;color:#193927;box-shadow:0 1px 4px #15221716;font-weight:700}
+.saas-page .offer-hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,76px);padding-block:68px 74px;align-items:center;min-height:0}
+.saas-page .offer-hero-copy{display:block}
+.saas-page .offer-hero h1{font-family:var(--font-sans);font-size:clamp(2.8rem,4.6vw,4.9rem);font-weight:650;line-height:1.03;letter-spacing:-.055em;max-width:14ch;margin:0 0 24px}
+.saas-page .offer-hero h1 em{font-family:inherit;font-weight:inherit;font-style:normal;color:var(--saas-green)}
+.saas-page .offer-hero-copy>p{font-size:1.08rem;line-height:1.65;max-width:510px;margin:0 0 24px;color:#596158}
+.saas-page .hero-actions{gap:10px;margin:0;display:flex;flex-wrap:wrap}
+.saas-page .button{border-radius:9px;font-size:.92rem;min-height:46px;padding:13px 19px;transition:background-color .15s,color .15s}
+.saas-page .button-primary{background:var(--saas-green);border-color:var(--saas-green);color:white}
+.saas-page .button-primary:hover{background:#173e2d}
+.saas-page .offer-hero-copy .offer-location{font-size:.79rem;margin-top:22px;line-height:1.6}
+.saas-page .offer-hero-art{background:var(--saas-tint);border:1px solid var(--saas-border);padding:20px;border-radius:24px;min-width:0}
+.saas-page .offer-caption{font-size:.78rem;line-height:1.5;margin:16px 0 0;color:#586457}
+.saas-workflow-preview{margin:0;overflow:hidden;border-radius:10px;background:#e7e8e3}
+.saas-workflow-preview img{width:100%;height:auto;display:block}
+.saas-page .catalyst-preview{transform:none;border-radius:12px;box-shadow:0 12px 25px #13251b18}
+.saas-page .catalyst-window{height:390px}
+.saas-page .school-film{transform:none;border-radius:12px;box-shadow:0 12px 25px #13251b18}
+.saas-page .offer-section{border-top:0;padding-block:56px}
+.saas-page .offer-section-heading{display:block;margin:0 0 30px;max-width:740px}
+.saas-page .offer-section h2,.saas-page .offer-contact h2{font-family:var(--font-sans);font-size:clamp(2rem,3vw,3rem);font-weight:600;line-height:1.1;letter-spacing:-.04em}
+.saas-page .offer-section h2 br{display:none}
+.saas-page .offer-section h2 br::after{content:' '}
+.saas-page .offer-section-heading>p{font-size:1rem;line-height:1.6}
+.saas-page .offer-columns{gap:16px}
+.saas-page .offer-columns article{padding:26px;background:#f7f8f5;border:1px solid #e6e9e1;border-radius:14px}
+.saas-page .offer-columns h3{font-size:1.18rem;margin-bottom:12px}
+.saas-page .offer-columns p{font-size:.96rem;line-height:1.65}
+.saas-page .selected-work{padding-block:52px;background:#f7f8f5}
+.saas-page .selected-work::before{display:none}
+.saas-page .work-heading{max-width:var(--page-width);text-align:left;margin:0 auto 28px}
+.saas-page .work-heading h2{font-size:2rem}
+.saas-page .work-sequence{max-width:var(--page-width);margin:auto;padding-inline:var(--gutter);grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.saas-page .work-object{display:flex;flex-direction:column;align-items:stretch;gap:20px;height:auto;min-height:0;padding:28px;border:1px solid #e1e5dd;border-radius:18px;background:white;overflow:hidden}
+.saas-page .work-copy{max-width:none;order:2}
+.saas-page .work-copy h3{font:600 clamp(1.45rem,2vw,1.9rem)/1.13 var(--font-sans);letter-spacing:-.035em;max-width:none}
+.saas-page .work-copy p{font-size:.93rem;line-height:1.6}
+.saas-page .work-copy .work-meta{font-size:.72rem;margin-bottom:12px}
+.saas-page .text-links{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.84rem}
+.saas-page .laptop-object,.saas-page .browser-object,.saas-page .accommodation-showcase,.saas-page .cool-laptop{width:100%;max-width:none;margin:0;transform:none;align-self:center}
+.saas-page .laptop-object{filter:drop-shadow(0 12px 14px #17231b1a)}
+.saas-page .accommodation-showcase{gap:0}
+.saas-page .accommodation-scroll-cue{display:none}
+.saas-page .accommodation-viewport{height:270px}
+.saas-page .browser-object-elevator .browser-viewport{height:270px}
+.saas-page .browser-object-elevator video{width:100%;height:100%;object-fit:cover}
+.saas-page .cool-laptop{max-height:320px}
+.saas-page .service-workflows{border-radius:0;padding-block:48px}
+.saas-page .workflow-heading{margin-bottom:20px}
+.saas-page .service-workflow figure{padding:16px}
+.saas-page .service-workflow img{max-height:470px}
+.saas-page .workflow-copy h3{font:600 1.6rem/1.2 var(--font-sans);letter-spacing:-.03em}
+.saas-page .offer-pricing{gap:24px}
+.saas-page .offer-pricing article{border:1px solid var(--saas-border);border-radius:18px;padding:30px;background:white}
+.saas-page .offer-pricing article:last-child{background:var(--saas-tint);border-color:#b7cabb}
+.saas-page .offer-price{font-family:var(--font-sans);font-size:3.2rem;font-weight:600}
+.saas-page .offer-pricing p,.saas-page .offer-pricing li{font-size:.95rem}
+.saas-page .offer-contact{background:#173e2d;color:#fff;padding-block:56px}
+.saas-page .offer-contact h2{color:white}
+.saas-page .offer-contact .button-primary{background:white;color:#173e2d}
+.saas-page .offer-contact-note{color:#c7d6cb}
+.saas-page a:focus-visible,.saas-page summary:focus-visible{outline:3px solid #74a483;outline-offset:4px}
+@media(max-width:1099px){.saas-page .offer-hero{grid-template-columns:1fr 1fr;gap:28px}.saas-page .catalyst-window{height:340px}.saas-page .work-sequence{gap:16px}.saas-page .work-object{padding:20px}}
+@media(max-width:760px){
+.offering-switcher{margin-top:12px;gap:0;padding:4px}.offering-switcher a{font-size:.74rem;padding:10px;text-align:center;display:flex;align-items:center}
+.saas-page .offer-hero{grid-template-columns:1fr;padding-block:36px 42px;gap:30px}
+.saas-page .offer-hero-copy{display:block}
+.saas-page .offer-hero h1{font-size:clamp(2.6rem,10vw,3.6rem);max-width:15ch}
+.saas-page .offer-hero-art{grid-row:auto;padding:12px;border-radius:18px}
+.saas-page .offer-hero-copy>p{font-size:1rem}
+.saas-workflow-preview{max-height:420px;overflow:auto}
+.saas-page .catalyst-window{height:330px}
+.saas-page .offer-columns,.saas-page .work-sequence{grid-template-columns:1fr}
+.saas-page .offer-section{padding-block:38px}
+.saas-page .offer-pricing article{padding:24px}
+.saas-page .work-object{padding:22px}
+.saas-page .service-workflow img{max-height:none}
+.saas-page .workflow-copy-head{flex-wrap:wrap;gap:12px}
+}
