@@ -141,3 +141,13 @@
 .service-workflow figure{padding:12px}
 .service-workflow img{max-height:none}
 }
+.service-hero-project .offer-hero{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);align-items:center;gap:var(--space-heading)}
+.service-hero-project .offer-hero-copy{display:block}
+.service-hero-project .offer-hero h1{margin-bottom:var(--space-copy)}
+.service-hero-project .offer-hero-copy>p{margin-bottom:24px}
+.service-hero-project .offer-hero-copy .offer-location{margin-top:24px}
+.catalyst-preview{width:100%;margin:0;transform:perspective(1600px) rotateY(-5deg)}
+.catalyst-window{height:clamp(390px,37vw,580px);overflow:hidden;background:#edf7ff}
+.catalyst-window iframe{display:block;border:0;max-width:none;transform-origin:top left}
+@media(max-width:1099px){.service-hero-project .offer-hero{grid-template-columns:1fr}.service-hero-project .offer-hero h1{max-width:none}.service-hero-project .offer-hero-art{padding-inline:0}}
+@media(max-width:760px){.service-hero-project .offer-hero-copy{display:contents}.service-hero-project .offer-hero-art{grid-row:2}.catalyst-window{height:330px}}

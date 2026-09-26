@@ -45,3 +45,8 @@
 - Added St James patronage film from verified public source (HTTP 200), with original local poster and website/film links, to marketing and web design. No film recreation or generation.
 - Awaiting user identification of social-proof site/videos; not substituted with another project or declared complete.
 - All 121 active tests pass, one existing analytics skip. Three routes checked at 1440/768/390/320 without overflow; RCCV and AI chapter visually reviewed. Local only.
+
+## 2026-09-25: AI Catalyst web-design hero
+- Removed the St James film/project from Web Design; retained it on Marketing & Branding.
+- Added the actual AI Catalyst homepage as the Web Design hero, with a live-site link. A noindex local display copy preserves the published HTML and references its original remote assets. Navigation/submission within the display is disabled.
+- Verified the rendered hero in-browser after assets loaded. Unit suite passes (121 active, one existing skip). No deployment.

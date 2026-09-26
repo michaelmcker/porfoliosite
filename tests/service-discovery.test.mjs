@@ -18,7 +18,7 @@ test('public HTML, Markdown, schema and sitemap stay in sync',async()=>{
 });
 test('design proof uses approved previews, before local service proof',async()=>{
  const web=await readFile('web-design/index.html','utf8');
- assert(!web.includes('treehouse-live'));assert(web.includes('data-accommodation-page'));assert(web.includes('rccv-showcase'));assert(web.includes('st-james-film'));assert(!web.includes('cool-runnings-home'));
+ assert(!web.includes('treehouse-live'));assert(web.includes('data-accommodation-page'));assert(web.includes('rccv-showcase'));assert(!web.includes('st-james-film'));assert(web.includes('ai-catalyst-wheat.vercel.app')); assert(!web.includes('cool-runnings-home'));
 });
 test('Markdown requests have explicit routes and response type',async()=>{
  const config=JSON.parse(await readFile('vercel.json','utf8'));

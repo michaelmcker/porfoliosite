@@ -42,3 +42,7 @@ Expanded pages complete for local review. Not published; production content nego
 - Replaced generic service layouts with source homepage Selected Work components and a compact typographic introduction.
 - Added St James original film and revised service taxonomy. Awaiting social-proof project name/link to complete project selection.
 - Local changes verified; not deployed.
+
+### AI Catalyst placement correction
+- AI Catalyst now leads Web Design. RCCV and Treehouse remain selected work; school film remains Marketing & Branding only.
+- Local preview verified; remote AI Catalyst media remains a display dependency.

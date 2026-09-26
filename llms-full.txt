@@ -104,9 +104,13 @@ Source: https://michaelmck.site/web-design/
 
 Websites with a point of view and a clear job to do. Design, content and development for businesses and communities in the Okanagan.
 
-[Discuss your website](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[Selected work](#selected-work)
+[Discuss your website](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[Explore AI Catalyst](https://ai-catalyst-wheat.vercel.app/)
 
 Web design & development in the Okanagan Michael McKerracher · Coldstream, BC
+
+AI Catalyst
+
+AI Catalyst · Website design and development
 
 ## Selected Work
 
@@ -132,14 +136,6 @@ Web design & development in the Okanagan Michael McKerracher · Coldstream, BC
               [Overview](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
               [Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/stays/treehouse/)
               [Cabin](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/stays/cabin/)
-
-### A school’s next chapter.
-
-St. James School · Campaign, website & film
-
-A connected story for the school’s future, carried through the donor website, visual direction and patronage film.
-
-[Explore the website](https://st-james-school-prototype.vercel.app/website-v2)[Watch the film](https://st-james-school-prototype.vercel.app/videos)
 
 ## From first impression to the next step.
 
