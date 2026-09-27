@@ -126,3 +126,9 @@
 - Applied primary service/city page titles, descriptions, visible local scope, semantic Service types and areaServed, and contextual links. No fake office or thin city clones.
 - Repaired Treehouse CTA to the working project preview from the homepage after its custom-domain TLS failed.
 - Content editor: no em dashes or banned phrases in the three service Markdown bodies; retained attributed client result and no fabricated outcome claims. New links verified; Commons and license verified via web after automated HEAD blocks.
+
+## 2026-09-27: Approved AI messaging and narrative
+- Applied “Less busywork. More business.” and approved hero explanation of skills, workflows and agents working with existing tools.
+- Paired free consultation with a direct “See what I can help with” anchor. Replaced repeated benefit labels with three recognizable problems: enquiries, follow-ups and admin.
+- Flow is now introduction, business problems, what gets built, working project proof, process and pricing. Preserved original imagery, type, palette and local SEO metadata.
+- Regenerated service HTML and Markdown/LLM discovery. 122 tests pass; one existing analytics skip.

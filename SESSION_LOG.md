@@ -2,11 +2,20 @@
 
 ## In progress
 
+2026-09-27: Approved AI messaging and flow deployed and verified. No remaining implementation work for this revision.
+
 2026-09-26: Refinement and local SEO research complete and deployed. Business Profile/Search Console verification remains an external follow-up, not claimed complete.
 
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-09-27: Clear AI service narrative
+- Applied approved “Less busywork. More business.” headline, existing-tools explanation and two actions.
+- Added concise enquiries/follow-ups/admin problems before capabilities, proof, process and pricing. Preserved local SEO, visual identity, source imagery and pricing.
+- Production deployment: portfolio-remote-preview-e9t9oypnr-michael-mcks-projects.vercel.app. Verified live HTML and Markdown, rendered headline and 390px action wrapping with no horizontal overflow.
+- 122 tests pass, one existing analytics skip.
+
 
 ### 2026-09-26: Lighter service pages and local search targeting
 - Deployed AI copy/spacing and mobile order refinements, St James website/film links and a short product-story GIF with reduced-motion fallback.

@@ -38,7 +38,8 @@ test('service proof uses original project media without nested interactive viewe
  assert(!ai.includes('/proposal-generator.html'));
  assert(ai.includes('Illustrative service example:'));
  assert(ai.includes('service-booking-scene'));
- assert(ai.includes('href="#how-it-works"'));
+ assert(ai.includes('href="#what-i-build"'));
+ assert(ai.includes('id="what-i-build"'));
  assert(!ai.includes('local-prospecting-desktop.png'));
  assert(ai.includes('I build the system.'));
  assert(!ai.includes('<details class="service-workflow"'));

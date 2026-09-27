@@ -161,3 +161,6 @@ AI 01, Web 03 and Marketing 03 are the approved page directions. Preserve DM San
 
 ### Service refinement: September 26
 Remove visible illustration labels, keep source-photo credits. AI hero media reaches the content edge; on mobile the More time for what matters copy must appear between the calendar and landscape photos. Use concise 2x2 capability definitions, not long paragraphs. Product-story motion is a short single-play GIF with a reduced-motion still; St James has an image and explicit website/film links. Preserve outcome headlines while using local service language in metadata and concise supporting sections.
+
+### AI narrative approved September 27
+Hero: Less busywork. More business. Explain the skills, workflows and agents working inside existing tools. Two actions: free consultation and an in-page link to what gets built. Follow with recognizable enquiry/follow-up/admin problems, capabilities, real work, process and pricing. Retain the portfolio visual language and Okanagan photography; do not import the reference's architecture collage or dither treatment.

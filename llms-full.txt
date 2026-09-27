@@ -1,16 +1,11 @@
 Source: https://michaelmck.site/ai-implementation/
 
-# More bookings.  Less busywork.
+# Less busywork.  More business.
 
-Custom AI skills, workflows and agents that save you time, follow up faster and help you win more work.
+I build AI skills, workflows and custom agents that work with the tools you already use. Handle enquiries, keep follow-ups moving and give your team more time to serve customers.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
-
-- Improve efficiency
-- Get your time back
-- Grow your bookings
-
-[How it works](#how-it-works)
+[See what I can help with](#what-i-build)
 
 Illustrative weekly appointment calendar on a laptop
 
@@ -21,9 +16,11 @@ Vineyards overlooking Okanagan Lake at Winfield, Lake Country
 
 ## More time for  what matters.
 
-Less chasing, copying and catching up. More time for your customers, your next booking and the work that grows your business.
+- Enquiries waiting for a reply? Help customers take the next step while they’re still interested.
+- Follow-ups slipping through? Keep quotes, appointments and opportunities moving.
+- Admin eating up the day? Give your team more time for customers and work that earns revenue.
 
-## Put AI to work.  On your terms.
+## Built around  the way you work.
 
 Skills that know your businessReusable AI skills built around your knowledge, voice and standards. Less explaining. More useful work.
 
