@@ -1,5 +1,5 @@
 // The process follows the proof and answers a business owner's practical questions.
-const process = (title, intro, steps) => `<section class="service-process page-frame"><div class="service-process-panel"><header><h2>${title}</h2><p>${intro}</p></header><ol>${steps.map(([title, copy]) => `<li><h3>${title}</h3><p>${copy}</p></li>`).join('')}</ol></div></section>`;
+const process = (title, intro, steps) => `<section class="service-process page-frame" id="how-it-works"><div class="service-process-panel"><header><h2>${title}</h2><p>${intro}</p></header><ol>${steps.map(([title, copy]) => `<li><h3>${title}</h3><p>${copy}</p></li>`).join('')}</ol></div></section>`;
 
 export function serviceProcess(pages) {
  const content = [

@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-09-26: rejected dental proposal removed from AI implementation. Local replacement is an illustrative enquiry-and-booking scene; 122 tests pass, one existing skip. Visual review remains blocked by browser access; no deployment.
+
 2026-09-26: all three service pages revised locally for business-owner outcomes, finished-work proof and local service intent. Technical checks pass (122 active tests); rendered visual review remains blocked by the existing browser URL restriction. Not deployed.
 
 2026-09-26: latest service-page revision complete locally. Marketing proof and AI booking story are updated. Rendered visual review remains blocked by the browser's loopback URL policy; no deployment.
@@ -13,6 +15,12 @@ September 26 implementation complete locally. Visual review pending: browser URL
 Expanded pages complete for local review. Not published; production content negotiation and search indexing remain post-deployment checks.
 
 ## Recent sessions
+
+### 2026-09-26: Replace unrelated AI proposal with a service situation
+- User explicitly rejected the dental proposal as unrelated to how owners understand AI implementation. Removed the PDF visual, proposal demo CTA and client-specific hero explanation.
+- Asked an optional visual-direction question; proceeded with the enquiry/calendar direction from the earlier brief after no response. Show a hypothetical quote enquiry followed up and booked, with accessible illustrative labeling and no client-results claim.
+- Primary copy now speaks to appointments, follow-up and everyday admin; secondary CTA leads to the service process. Updated the design contract so future passes do not reintroduce the rejected PDF.
+- Rebuilt HTML and discovery outputs. 122 tests pass, one existing GA4 skip; rendered visual verification remains unavailable. Local only.
 
 ### 2026-09-26: Business-owner outcomes and work-led design
 - Kept the homepage's type, colours and original artwork; replaced the AI calendar with the exact homepage proposal output. AI keeps the actual agency dashboard below, with workflow diagrams on deeper routes.

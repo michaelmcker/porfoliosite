@@ -9,8 +9,8 @@ export function selectedServices(pages, {section, columns, closing}) {
  const [ai, web, marketing] = pages;
  const pricing = (ai.body.match(/<section\b[\s\S]*?<\/section>/g) || []).find(s => s.includes('id="pricing"')) || '';
 
- ai.intro = 'Respond to enquiries, get proposals out and keep follow-up moving. I build the systems that help you keep up, so you can spend more of your day with customers.';
- ai.body = chapter('A finished sales proposal above. A working reporting system below. Useful things your team can put to work.', [
+ ai.intro = 'Turn more enquiries into appointments and spend less time keeping up with admin. I build the follow-up and everyday systems around your business, so you can focus on your customers.';
+ ai.body = chapter('A working example of bringing scattered information together, so a team can act on it.', [
   workflow({title:'Spend less time chasing answers.', copy:'This agency dashboard brings performance, content and client notes into one place. The same principle applies to your business: make the information useful, so people can get on with the work.', image:'agency-dashboard-desktop.png', mobile:'agency-dashboard-mobile.png', href:'/v2/workflows/agency-management-dashboard.html', alt:'Agency dashboard showing performance and client work in one view'})
  ].join('')) + section('How I can help.', 'Custom AI skills, connected workflows and practical tool implementation. Training and ongoing support are part of the work.', columns([
   ['Custom workflows', 'Connect research, enquiries, content, proposals and reporting to the next step in your process.'],

@@ -1,5 +1,10 @@
 # Development log
 
+## 2026-09-26: Correct rejected AI hero direction
+- The user rejected the client-specific dental proposal as irrelevant to a local owner's understanding of AI implementation. Removing it and its surrounding references. Replacement direction must show a recognizable service situation, rather than require explanation of a client artifact.
+- Implemented the illustrative enquiry/calendar direction from the earlier brief: one quote request, follow-up handled and a confirmed appointment. The figure's accessible description identifies it as an example; no client results are claimed. Removed the proposal demo link, related hero copy and metadata image.
+- Service CTA now leads to the always-visible process. Regenerated HTML and Markdown; 122 tests pass with the existing GA4 skip. Browser visual verification remains blocked. No publication.
+
 ## 2026-09-26: Business-owner positioning and proof-first composition
 - User clarified the audience: Okanagan owners buying results and design quality, with no need to understand AI or delivery tools. Applying Impeccable and Marketing Copywriting with existing portfolio identity.
 - Design direction: original work as the dominant visual, outcome headlines, local service descriptions, proof before process. Remove the illustrative AI calendar and dense workflow diagram from the sales page; retain deeper implementation routes.

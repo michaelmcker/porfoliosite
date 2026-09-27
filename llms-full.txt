@@ -2,20 +2,34 @@ Source: https://michaelmck.site/ai-implementation/
 
 # More bookings. Less busywork.
 
-Respond to enquiries, get proposals out and keep follow-up moving. I build the systems that help you keep up, so you can spend more of your day with customers.
+Turn more enquiries into appointments and spend less time keeping up with admin. I build the follow-up and everyday systems around your business, so you can focus on your customers.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
-[Try a working example](https://michaelmck.site/proposal-generator.html)
+[How it works](#how-it-works)
 
-[A finished customer-specific sales proposal produced by the Vertical Impression system, with campaign creative and a local advertising map](https://michaelmck.site/proposal-generator.html)
+  Appointments This week
+
+     Mon  Tue  Wed  Thu  Fri
+
+   9 am  10 am  11 am  12 pm Site visit9:00–10:00
+
+Consultation11:00–12:00
+
+Quote visit10:00–11:00Confirmed
+
+ A new enquiry
+
+“Could you come by for a quote this week?”
+
+ Follow-up handled Thursday, 10 am. Booked.
 
 ## AI implementation & business automation in the Okanagan.
 
-An enquiry waiting for an answer. A proposal that takes an afternoon. A report rebuilt every week. We start with the work that gets in your way, then build a practical way to get it done. The proposal above is an output from the sales system I built for Vertical Impression.
+An enquiry waiting for an answer. An appointment that needs confirming. Admin that follows you home. We start with the work that gets in your way, then build a practical way to get it done.
 
 ## Selected work
 
-A finished sales proposal above. A working reporting system below. Useful things your team can put to work.
+A working example of bringing scattered information together, so a team can act on it.
 
 ### Spend less time chasing answers.
 

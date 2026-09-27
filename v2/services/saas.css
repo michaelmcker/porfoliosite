@@ -10,10 +10,33 @@
 .saas-page .hero .button { font-size: .94rem; }
 .saas-page .hero + section { border-top: 1px solid var(--line); }
 
-/* The finished proposal is the proof: the exact artifact used on the homepage. */
-.service-hero-proposal { width: min(78%, 430px); margin: 0; justify-self: center; transform: perspective(1400px) rotateY(5deg) rotateZ(-2deg); filter: drop-shadow(0 26px 30px rgba(18,20,17,.2)); }
-.service-hero-proposal a { display: block; border-radius: 14px; }
-.service-hero-proposal img { display: block; width: 100%; height: auto; border-radius: 14px; }
+/* A familiar service situation: the enquiry and the appointment it becomes. */
+.service-booking-scene { position: relative; width: 100%; margin: 0; padding: 12px 0 92px 28px; }
+.service-booking-window { overflow: hidden; border: 6px solid #171a19; border-radius: 20px; background: #fff; box-shadow: var(--shadow-screen); }
+.service-booking-heading { display: flex; justify-content: space-between; align-items: baseline; padding: 28px 26px; gap: 16px; }
+.service-booking-heading strong { font: 560 clamp(1.4rem, 2.2vw, 2rem)/1.1 var(--font-editorial); }
+.service-booking-heading > span { font-size: .8rem; color: var(--muted); }
+.service-booking-days { display: grid; grid-template-columns: 44px repeat(5, minmax(0, 1fr)); padding: 0 16px 14px; color: var(--muted); text-align: center; font-size: .75rem; }
+.service-booking-week { position: relative; display: grid; grid-template-columns: 44px repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(4, 72px); margin-inline: 16px; padding-bottom: 24px; }
+.booking-hour { grid-column: 1; padding-top: 7px; font-size: .68rem; color: var(--muted); }
+.booking-hour:nth-child(1) { grid-row: 1; }
+.booking-hour:nth-child(2) { grid-row: 2; }
+.booking-hour:nth-child(3) { grid-row: 3; }
+.booking-hour:nth-child(4) { grid-row: 4; }
+.booking-hour::after { content: ''; position: absolute; left: 44px; right: 0; margin-top: -7px; border-top: 1px solid var(--line); }
+.booking-slot { z-index: 1; margin: 5px 3px; padding: 10px 7px; border-radius: 7px; background: #e9ede7; color: var(--forest); font-size: .69rem; font-weight: 650; line-height: 1.25; }
+.booking-slot small { display: block; margin-top: 6px; font-size: .61rem; font-weight: 450; }
+.booking-slot-monday { grid-column: 2; grid-row: 1; }
+.booking-slot-wednesday { grid-column: 4; grid-row: 3; }
+.booking-slot-new { grid-column: 5; grid-row: 2 / 4; background: var(--accent); color: var(--ink); }
+.booking-slot-new b { display: block; margin-top: 18px; font-size: .63rem; }
+.service-booking-message { position: absolute; left: 0; bottom: 0; width: min(76%, 340px); padding: 25px 28px; border-radius: 14px; background: var(--forest); color: #fff; box-shadow: 0 18px 32px rgba(18,20,17,.18); }
+.service-booking-message p { margin: 0; font: 500 clamp(1.15rem, 1.7vw, 1.55rem)/1.3 var(--font-editorial); }
+.service-booking-message .booking-message-title { margin-bottom: 14px; font: 500 .8rem/1.4 var(--font-sans); color: #e1e8df; }
+.booking-message-result { margin-top: 20px; padding-top: 15px; border-top: 1px solid #6a8171; }
+.booking-message-result span, .booking-message-result strong { display: block; font-size: .79rem; line-height: 1.6; }
+.booking-message-result span { color: #e1e8df; }
+
 .service-introduction { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(40px, 7vw, 100px); padding-block: 64px; }
 .service-introduction h2 { margin: 0; max-width: 25ch; font: 600 clamp(1.6rem, 2.5vw, 2.5rem)/1.2 var(--font-sans); letter-spacing: -.025em; }
 .service-introduction p { margin: 0; max-width: 53ch; color: var(--muted); font-size: 1.08rem; line-height: 1.7; }
@@ -112,7 +135,17 @@
  .saas-page .hero-intro { font-size: 1rem; }
  .saas-page .service-hero-website { aspect-ratio: 16 / 11; transform: none; border-width: 5px; border-radius: 18px; }
  .saas-page .service-hero-film { border-width: 5px; border-radius: 18px; }
- .service-hero-proposal { width: min(82%, 350px); justify-self: center; transform: rotateZ(-1.5deg); }
+ .service-booking-scene { max-width: 640px; padding: 0 0 0 12px; }
+ .service-booking-heading { padding: 20px 14px; }
+ .service-booking-days { grid-template-columns: 30px repeat(5, minmax(0, 1fr)); padding-inline: 6px; font-size: .64rem; }
+ .service-booking-week { grid-template-columns: 30px repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(4, 64px); margin-inline: 6px; padding-bottom: 8px; }
+ .booking-hour { font-size: .57rem; }
+ .booking-hour::after { left: 30px; }
+ .booking-slot { margin-inline: 2px; padding: 8px 4px; font-size: .59rem; overflow-wrap: anywhere; }
+ .booking-slot small { font-size: .51rem; }
+ .booking-slot-new b { font-size: .52rem; }
+ .service-booking-message { position: relative; width: min(87%, 340px); margin: -22px 0 0 -12px; z-index: 2; padding: 22px; }
+ .service-booking-message p { font-size: 1.35rem; }
  .service-introduction, .service-local-proof { grid-template-columns: 1fr; gap: 22px; padding-block: 44px; }
  .service-introduction p { font-size: 1rem; }
  .service-case-media-identity img + img { width: 60%; margin-top: -28px; }

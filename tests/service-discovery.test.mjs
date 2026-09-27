@@ -34,8 +34,11 @@ test('service proof uses original project media without nested interactive viewe
  assert(!web.includes('rccv-showcase'));
  assert(!web.includes('st-james-film'));
  assert(web.includes('ai-catalyst-wheat.vercel.app'));
- assert(ai.includes('/assets/samples/vertical-impression-local-proposal-current.png'));
- assert(!ai.includes('booking-calendar'));
+ assert(!ai.includes('/assets/samples/vertical-impression-local-proposal-current.png'));
+ assert(!ai.includes('/proposal-generator.html'));
+ assert(ai.includes('Illustrative service example:'));
+ assert(ai.includes('service-booking-scene'));
+ assert(ai.includes('href="#how-it-works"'));
  assert(!ai.includes('local-prospecting-desktop.png'));
  assert(ai.includes('I build the system.'));
  assert(!ai.includes('<details class="service-workflow"'));
