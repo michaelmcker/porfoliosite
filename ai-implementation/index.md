@@ -1,96 +1,94 @@
 Source: https://michaelmck.site/ai-implementation/
 
-# More bookings. Less busywork.
+# More bookings.  Less busywork.
 
-Turn more enquiries into appointments and spend less time keeping up with admin. I build the follow-up and everyday systems around your business, so you can focus on your customers.
+I build the skills, workflows and AI agents that help you save time, follow up faster and turn more opportunities into business.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+
+- Improve efficiency
+- Get your time back
+- Grow your bookings
+
 [How it works](#how-it-works)
 
-  Appointments This week
+Illustrative weekly appointment calendar on a laptop
+Illustrative example
 
-     Mon  Tue  Wed  Thu  Fri
+Vineyards overlooking Okanagan Lake at Winfield, Lake Country
+[Okanagan Lake · Adam Jones](https://commons.wikimedia.org/wiki/File:Okanagan_Lake_at_Winfield_-_Lake_Country_-_BC_-_Canada_-_01_(37465275260)_(2).jpg)
+ · [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+ · resized
 
-   9 am  10 am  11 am  12 pm Site visit9:00–10:00
+## More time for  what matters.
 
-Consultation11:00–12:00
+You started a business to do good work. Answering the same questions, chasing follow-ups and moving information between tools shouldn’t take over your day.
 
-Quote visit10:00–11:00Confirmed
+I help you put practical AI to work so your team can do more with its time—and spend more of it serving customers, winning work and growing revenue.
 
- A new enquiry
+## AI implementation  for Okanagan  businesses.
 
-“Could you come by for a quote this week?”
+Built around the work that gets in your way.
 
- Follow-up handled Thursday, 10 am. Booked.
+Custom AI skillsTurn your knowledge, examples and standards into reusable skills for writing, research and everyday decisions. Get consistent work with less repeated explaining.
 
-## AI implementation & business automation in the Okanagan.
+Connected workflowsConnect enquiries, scheduling, customer information and follow-up. Reduce handoffs and repetitive admin so fewer opportunities are left waiting.
 
-An enquiry waiting for an answer. An appointment that needs confirming. Admin that follows you home. We start with the work that gets in your way, then build a practical way to get it done.
+Custom agents, built and deployedGive a specific job to an agent: monitor incoming requests, prepare research or draft the next action. I build, deploy and maintain it with clear permissions and review points.
 
-## Selected work
+Tools, training and adoptionSet up ChatGPT, Claude Cowork or Gemini around real tasks. Help your team use them confidently, improve efficiency and keep customer-facing decisions under your control.
 
-A working example of bringing scattered information together, so a team can act on it.
+## Less searching.  More doing.
 
-### Spend less time chasing answers.
+This agency dashboard brings performance, content and client notes into one place. It’s one example of making scattered information useful to the people doing the work.
 
-This agency dashboard brings performance, content and client notes into one place. The same principle applies to your business: make the information useful, so people can get on with the work.
+[Explore the working system](https://michaelmck.site/v2/workflows/agency-management-dashboard.html)
 
-[See how it works](https://michaelmck.site/v2/workflows/agency-management-dashboard.html)
+[Agency dashboard showing performance, content and client work together](https://michaelmck.site/v2/workflows/agency-management-dashboard.html)
 
-Agency dashboard showing performance and client work in one view
+## A straightforward process.
 
-## I build the system. You build the business.
+### Understand your business
 
-We choose an improvement you can measure: quicker replies, proposals prepared faster or less time spent on recurring work.
+We look at how you work, where time is being lost and what would make the biggest difference: faster replies, more bookings, less admin or better sales follow-up.
 
-### Find the thing worth fixing
+### Build and test
 
-Show me where the work piles up. We look at enquiries, follow-up, preparation and reporting, then choose a useful first project. You get a clear plan before committing to a build.
+I design the skills, workflows or agents around your existing tools. We test them on real tasks and agree what needs a person’s approval.
 
-### Build it around your working day
+### Deploy, train and improve
 
-I build and test the custom workflows, AI skills or connections you need. That may include ChatGPT, Claude Cowork or Gemini. The choice follows the job, and you keep control over what goes to a customer.
+I put the system into use, train your team and maintain the agreed scope. We track the result against the starting point and refine what needs work.
 
-### Make it easy to use
+## Start with a clear plan.
 
-Your team gets practical training and clear instructions. Ongoing implementation includes maintenance and agreed improvements, so you have someone to call when the business changes.
-
-## Start with a plan. Then put it to work.
-
-A free initial consultation helps us establish what you need. The audit gives you a detailed plan; ongoing implementation turns the agreed priorities into working systems.
+A free initial consultation to understand the problem. Then choose the right next step.
 
 ### AI audit & recommendations
 
-$900 one-time engagement
+CAD $900 One-time engagement
 
-Five hours on site across two to three weeks, with time between visits to investigate and develop the recommendations.
+Up to five hours on site, spread over two to three weeks. A detailed assessment of your current processes, prioritized opportunities and an actionable report.
 
-- An assessment of your current processes and tools.
-- Prioritized opportunities to improve enquiries, follow-up or repetitive work.
-- Off-the-shelf tools you can choose to implement yourself.
-- A detailed report with practical next steps and custom-build recommendations.
+Includes off-the-shelf tools you can implement yourself and recommendations for custom work. The report is yours to use independently.
 
-[Discuss an AI audit](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+### Custom systems
 
-### Custom implementation & maintenance
+From CAD $2,500 / month
 
-From $2,500 per month
+I design, build, deploy and maintain your custom skills, workflows and agents. Includes agreed integrations, testing, training, documentation and ongoing improvements.
 
-I design, build and maintain the systems around your priorities, with an agreed scope and a clear first deliverable.
+Scope, software subscriptions and support arrangements are agreed before work begins.
 
-- Workflow design, tool configuration and custom development.
-- Connections to the information and software your team uses.
-- Testing, training and documentation.
-- Ongoing maintenance and agreed improvements.
+[Let’s talk about your business](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
-[Discuss implementation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+## AI implementation & business automation in the Okanagan.
 
-Prices in CAD. Software subscriptions, delivery scope and support arrangements are agreed before work begins.
+Based in Coldstream, I work with business owners in Vernon, Kelowna and across the Okanagan. We choose a measurable goal—time saved, response time, completed follow-ups or bookings—and assess what actually changes.
 
-## What would you like to take off your plate?
+## I build the system.  You build the business.
 
-Let’s look at the work together and choose a useful place to start.
+Tell me where the work piles up and what you want more time for. We’ll find a practical place to start.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
-
-Email me to arrange a time. Based in Coldstream, working with businesses in Vernon, Kelowna and across the Okanagan.
+Based in Coldstream. Serving Vernon, Kelowna and across the Okanagan.

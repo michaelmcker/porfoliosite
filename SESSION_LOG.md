@@ -2,21 +2,17 @@
 
 ## In progress
 
-2026-09-26: Nine service-page visual concepts saved with comparison gallery, prompts and review notes. No production changes; image-generated text and exact artwork require implementation review.
-
-2026-09-26: rejected dental proposal removed from AI implementation. Local replacement is an illustrative enquiry-and-booking scene; 122 tests pass, one existing skip. Visual review remains blocked by browser access; no deployment.
-
-2026-09-26: all three service pages revised locally for business-owner outcomes, finished-work proof and local service intent. Technical checks pass (122 active tests); rendered visual review remains blocked by the existing browser URL restriction. Not deployed.
-
-2026-09-26: latest service-page revision complete locally. Marketing proof and AI booking story are updated. Rendered visual review remains blocked by the browser's loopback URL policy; no deployment.
-
-2026-09-26: three service-page design revision implemented locally. Generated pages and discovery files updated; visual review remains blocked by browser policy for loopback URLs.
-
-September 26 implementation complete locally. Visual review pending: browser URL policy blocked access to the preview.
-
-Expanded pages complete for local review. Not published; production content negotiation and search indexing remain post-deployment checks.
+No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-09-26: Selected concepts built and deployed
+- Translated AI 01, Web 03 and Marketing 03 using image-to-code. AI covers custom skills, workflows, deployed agents and training, tied to time, efficiency, revenue and bookings. Marketing explicitly covers websites, social media, video and brand development.
+- Retained calendar hero direction; replaced handshake with Adam Jones's CC BY-SA Okanagan Lake photograph and visible attribution. Real project artwork and films retained.
+- Published all three pages to michaelmck.site. Final deployment: portfolio-remote-preview-c4iqeyjps-michael-mcks-projects.vercel.app.
+- 122 tests pass, one existing GA4 skip. Live HTML, Markdown parity, blog, robots, sitemap and LLM discovery return successfully. Fixed Markdown negotiation using conditional redirects to actual Markdown files.
+- Live desktop and mobile renders reviewed; narrow-phone and tablet overflow checked. Preserved unrelated homepage work.
+
 
 ### 2026-09-26: Nine service-page visual directions
 - Created three image concepts per offering: work-led agency, outcome-led SaaS and editorial studio.

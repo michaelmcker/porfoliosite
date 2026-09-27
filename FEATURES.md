@@ -24,3 +24,10 @@ The rejected services hub, guides and sample report are archived in docs/rejecte
 - Marketing and branding keeps the St. James film, reuses the homepage Vertical Impression Proposal Story recording, and shows the AI Catalyst brand film, Upon This Rock podcast identity and episode art, and Cool Runnings local-search case.
 - Selected work uses simple, proportionate image stages and direct project links. The homepage retains its immersive project interactions.
 - The three service pages lead with outcome headlines and visible Okanagan service descriptions, then proof before process. Marketing pairs film and podcast identity between the larger website stories. Web includes the attributed Cool Runnings sales result. Titles, descriptions, schema, Markdown and LLM discovery text are generated together.
+
+## Selected commercial designs, September 26, 2026
+- Production pages translate selected AI 01, Web 03 and Marketing 03 concepts. Source: scripts/concept-services.mjs; styling: v2/services/concepts.css.
+- AI: skills, workflows, deployed agents, tool training, $900 one-time audit and custom systems from $2,500/month.
+- Marketing: websites, social media, video and brand development. Web and marketing remain custom quoted.
+- Real Okanagan photography carries visible CC BY-SA attribution. Calendar hero is identified as illustrative.
+- Markdown Accept requests redirect to actual index.md files, avoiding static HTML route precedence on Vercel.

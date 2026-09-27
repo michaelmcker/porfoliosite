@@ -1,0 +1,128 @@
+/* AI 01 / Web 03 / Marketing 03: source-image translation using portfolio fonts. */
+.concept-page{background:#fff;color:#171813;--concept-gutter:clamp(22px,4vw,64px);--concept-space:clamp(64px,7.5vw,112px)}
+.concept-page *{box-sizing:border-box}
+.concept-page .concept-frame,.concept-page .page-frame{width:min(100%,1440px);max-width:1440px;margin-inline:auto;padding-inline:var(--concept-gutter)}
+.concept-page .site-header{position:relative;max-width:1440px;min-height:90px;margin:auto;padding:20px var(--concept-gutter);border:0;display:flex;align-items:center;gap:28px;background:#fff}
+.concept-page .monogram{font:500 21px/1.15 var(--font-editorial);letter-spacing:-.045em;white-space:nowrap}
+.concept-page .portfolio-service-nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:22px;font:500 13px/1.4 var(--font-sans)}
+.concept-page .portfolio-service-nav a{text-decoration:none}
+.concept-page .offer-header-contact{background:#e3a916;color:#171813;border:0;border-radius:40px;padding:12px 22px;white-space:nowrap;font-size:14px}
+.concept-page h1,.concept-page h2,.concept-page h3,.concept-page p,.concept-page figure{margin:0}
+.concept-page h1{font:650 clamp(50px,6.6vw,100px)/1.04 var(--font-sans);letter-spacing:-.058em}
+.concept-page h2{font:450 clamp(34px,4vw,58px)/1.08 var(--font-editorial);letter-spacing:-.045em}
+.concept-page h3{font:500 clamp(22px,2.1vw,30px)/1.2 var(--font-editorial);letter-spacing:-.025em}
+.concept-page p{font:400 clamp(16px,1.4vw,20px)/1.6 var(--font-sans);max-width:55ch}
+.concept-page p+p{margin-top:18px}
+.concept-page h2+p,.concept-page h3+p{margin-top:24px}
+.concept-page em{font-family:var(--font-editorial);font-weight:450}
+.concept-page img{max-width:100%;height:auto;display:block}
+.concept-page video{display:block;width:100%;aspect-ratio:16/9;background:#171813;object-fit:contain}
+.concept-page a{color:inherit;text-underline-offset:6px}
+.concept-page a:focus-visible,.concept-page video:focus-visible{outline:3px solid #926900;outline-offset:6px}
+.concept-page .concept-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:14px 26px;background:#e3a916;color:#171813;border-radius:999px;text-decoration:none;font:600 15px/1.4 var(--font-sans);margin-top:26px;transition:background .18s,transform .18s}
+.concept-page .concept-button:hover{background:#f0bb34;transform:translateY(-2px)}
+.concept-page .concept-ai-hero{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:32px;padding-block:40px 72px}
+.concept-page .concept-ai-hero h1{font:480 clamp(48px,5.5vw,82px)/1.04 var(--font-editorial);letter-spacing:-.05em}
+.concept-page .concept-ai-hero h1 em{font-style:normal;color:#a77300}
+.concept-page .concept-ai-hero>div>p{margin-top:28px;font-size:clamp(18px,1.6vw,23px);max-width:37ch}
+.concept-page .service-booking-scene{position:relative;padding:0;margin:0;width:100%}
+.concept-page .service-booking-scene img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.concept-page .service-booking-scene figcaption{font-size:11px;color:#555;text-align:right;padding-top:8px}
+.concept-page .concept-benefits{list-style:none;display:flex;gap:18px;padding:0;margin:32px 0 18px;font-size:13px;line-height:1.5}
+.concept-page .concept-benefits li{padding-right:18px;border-right:1px solid #d5ba74;max-width:135px}
+.concept-page .concept-benefits li:last-child{border:0;padding:0}
+.concept-page .concept-text-link{font-size:14px}
+.concept-page .concept-row{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(36px,6vw,88px);padding-block:var(--concept-space)}
+.concept-page .concept-row>div{max-width:520px}
+.concept-page .concept-row a:not(.concept-button){display:inline-block;margin-top:22px}
+.concept-page .concept-life{max-width:1440px;margin:auto;padding-block:0;gap:0}
+.concept-page .concept-life>div{padding:48px var(--concept-gutter);max-width:none}
+.concept-page .concept-life figure{align-self:stretch;display:flex;flex-direction:column}
+.concept-page .concept-life img{width:100%;height:100%;min-height:380px;object-fit:cover}
+.concept-page .concept-life figcaption{font:11px/1.6 var(--font-sans);padding:8px 16px;color:#666;background:#f7f7f3}
+.concept-page .concept-life figcaption a{display:inline;margin:0}
+.concept-page .concept-band{background:#243c31;color:#fff}
+.concept-page .concept-band>.concept-frame{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,7vw,110px);padding-block:var(--concept-space);align-items:center}
+.concept-page .concept-band p{color:#edf0eb}
+.concept-page .concept-band em{color:#e3a916}
+.concept-page .concept-band-lead{margin-bottom:26px}
+.concept-page .concept-capabilities{margin:0}
+.concept-page .concept-capabilities>div{padding:24px 0;border-top:1px solid #d9ddd5}
+.concept-page .concept-capabilities>div:first-child{padding-top:0;border-top:0}
+.concept-page .concept-capabilities dt{font:500 25px/1.2 var(--font-editorial);margin-bottom:10px}
+.concept-page .concept-capabilities dd{margin:0;font:400 16px/1.6 var(--font-sans)}
+.concept-page .concept-band .concept-capabilities>div{border-color:#627469}
+.concept-page .concept-band .concept-capabilities dd{color:#e5eae6}
+.concept-page .concept-proof{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:60px;padding-block:var(--concept-space)}
+.concept-page .concept-proof a{display:inline-block;margin-top:22px}
+.concept-page .concept-proof>a{margin:0;overflow:hidden;border-radius:12px;box-shadow:0 20px 50px #17181313}
+.concept-page .service-process{padding-block:var(--concept-space)}
+.concept-page .concept-process-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(40px,8vw,120px);margin-top:45px}
+.concept-page .concept-process-layout:not(:has(aside)){grid-template-columns:1fr}
+.concept-page .concept-process-layout ol{list-style:none;counter-reset:steps;margin:0;padding:0;max-width:860px}
+.concept-page .concept-process-layout li{counter-increment:steps;position:relative;padding:25px 0 25px 68px;border-bottom:1px solid #e1e1dc}
+.concept-page .concept-process-layout li:first-child{padding-top:0}
+.concept-page .concept-process-layout li::before{content:counter(steps,decimal-leading-zero);position:absolute;left:0;font:450 42px/1.1 var(--font-editorial);color:#a8780a}
+.concept-page .concept-process-layout li p{margin-top:10px;font-size:17px;max-width:64ch}
+.concept-page .concept-process-layout aside{border-left:1px solid #ddd;padding-left:40px;align-self:center}
+.concept-page .concept-pricing{background:#f7f7f3;padding-block:var(--concept-space)}
+.concept-page .concept-pricing h2+p{margin-bottom:36px}
+.concept-page .concept-price-row{display:grid;grid-template-columns:1fr 1.5fr;gap:80px;padding-block:32px;border-top:1px solid #d9d9d1}
+.concept-page .concept-price-row strong{display:block;margin-top:15px;font-size:23px;font-weight:500;color:#865d00}
+.concept-page .concept-price-row span{display:block;margin-top:8px;color:#666;font-size:14px}
+.concept-page .service-introduction{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding-block:72px}
+.concept-page .service-introduction h2{font:550 clamp(25px,3vw,40px)/1.2 var(--font-sans);letter-spacing:-.04em}
+.concept-page .concept-close{background:#e3a916;padding-block:72px}
+.concept-page .concept-close>.concept-frame{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.concept-page .concept-close .concept-button{background:#243c31;color:#fff}
+.concept-page .concept-close .concept-location{margin-top:20px;font-size:13px}
+.concept-page .concept-editorial-hero{padding-top:40px}
+.concept-page .concept-editorial-hero h1{padding-bottom:44px}
+.concept-page .concept-web-stage{background:#f4f5f1;padding:36px var(--concept-gutter) 22px}
+.concept-page .concept-laptop{width:min(1020px,100%);margin:auto}
+.concept-page .concept-catalyst{position:relative;aspect-ratio:16/8.5;border:9px solid #151b1c;border-bottom-width:18px;border-radius:18px 18px 3px 3px;background:#eaf6fb;overflow:hidden;margin-inline:5%;box-shadow:0 25px 36px #0002}
+.concept-page .concept-catalyst>img{width:100%;height:100%;object-fit:cover}
+.concept-page .concept-catalyst-nav{position:absolute;inset:6% 6% auto;display:flex;justify-content:space-between;gap:10px;color:#18344e;font:450 clamp(9px,1.2vw,18px)/1.3 var(--font-editorial)}
+.concept-page .concept-catalyst-nav span:last-child{font:500 clamp(7px,.75vw,11px)/1.5 var(--font-sans)}
+.concept-page .concept-catalyst-copy{position:absolute;left:6%;top:34%;color:#18344e;max-width:50%}
+.concept-page .concept-catalyst-copy p{font:420 clamp(19px,3vw,44px)/1.05 var(--font-editorial);letter-spacing:-.035em}
+.concept-page .concept-catalyst-copy span{display:block;font-size:clamp(9px,1vw,15px);margin-top:18px;max-width:22ch}
+.concept-page .concept-laptop-base{height:17px;background:linear-gradient(#b7bdbe,#e8e8e6 28%,#949898 75%,#555);border-radius:0 0 50% 50%/0 0 100% 100%;position:relative;box-shadow:0 20px 25px #0002}
+.concept-page .concept-laptop-base::after{content:'';position:absolute;top:0;left:43%;width:14%;height:5px;background:#8b9090;border-radius:0 0 10px 10px}
+.concept-page .concept-offset{padding-block:40px 60px;display:grid;grid-template-columns:1fr 1fr}
+.concept-page .concept-offset>p,.concept-page .concept-offset>.concept-button{grid-column:2;justify-self:start}
+.concept-page .concept-offset p{font-size:clamp(20px,2vw,27px);line-height:1.4;max-width:36ch}
+.concept-page .concept-treehouse{display:block;position:relative;min-height:540px;text-decoration:none;overflow:hidden;color:#fff;background:#18281e}
+.concept-page .concept-treehouse>img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0}
+.concept-page .concept-treehouse::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#05100bd9,transparent 80%)}
+.concept-page .concept-treehouse>div{position:relative;z-index:1;max-width:1440px;margin:auto;padding:90px var(--concept-gutter)}
+.concept-page .concept-treehouse p{max-width:34ch}
+.concept-page .concept-treehouse span{display:block;font-size:13px;margin-top:28px}
+.concept-page .concept-underlined{text-decoration:underline;text-underline-offset:6px}
+.concept-page .concept-rccv{grid-template-columns:1.2fr .8fr}
+.concept-page .concept-rccv img{width:100%}
+.concept-page .concept-local-proof{padding-block:50px 75px;border-top:1px solid #e5e5df}
+.concept-page .concept-local-proof p{max-width:80ch}
+.concept-page .concept-local-proof a{display:inline-block;margin:24px 30px 0 0}
+.concept-page .concept-marketing-hero h1{font-weight:760;letter-spacing:-.065em}
+.concept-page .concept-hero-film{max-width:1440px;margin:auto;background:#e7f2f4}
+.concept-page .concept-hero-film video{max-height:620px;object-fit:contain}
+.concept-page .concept-identity{grid-template-columns:1.35fr .85fr;padding-block:60px}
+.concept-page .concept-project-name{font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:18px;font-weight:600}
+.concept-page .concept-film-row{grid-template-columns:.8fr 1.2fr;padding-top:35px}
+.concept-page .concept-offering{display:grid;grid-template-columns:1fr 1fr;gap:90px;padding-block:var(--concept-space)}
+.concept-page .concept-extra-work{padding-top:0}
+.concept-page .offer-footer{border:0;padding-block:40px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+.concept-page .offer-footer nav{display:flex;gap:20px;flex-wrap:wrap;font-size:13px}
+.concept-page .offer-footer p{font-size:12px;color:#666}
+@media(min-width:851px){.concept-page .concept-ai-hero{min-height:620px}.concept-page .concept-ai-hero>figure{width:calc(100% + var(--concept-gutter));max-width:none}.concept-page .concept-ai-hero+section{margin-top:0}}
+@media(max-width:1100px){.concept-page .portfolio-service-nav{gap:14px;font-size:12px}.concept-page .site-header{gap:18px}.concept-page .monogram{font-size:18px}.concept-page .concept-ai-hero h1{font-size:clamp(45px,5.6vw,66px)}.concept-page .concept-process-layout{gap:40px}.concept-page .concept-process-layout aside{padding-left:28px}}
+@media(max-width:850px){.concept-page .site-header{flex-wrap:wrap;padding-block:18px}.concept-page .portfolio-service-nav{order:3;width:100%;margin:0;gap:12px 20px}.concept-page .offer-header-contact{margin-left:auto}.concept-page .concept-ai-hero{grid-template-columns:1fr;padding-top:38px;gap:35px}.concept-page .concept-ai-hero h1{font-size:clamp(46px,8vw,72px)}.concept-page .concept-ai-hero>div>p{max-width:45ch}.concept-page .concept-row,.concept-page .concept-band>.concept-frame,.concept-page .concept-proof,.concept-page .service-introduction,.concept-page .concept-close>.concept-frame,.concept-page .concept-offering,.concept-page .concept-process-layout{grid-template-columns:1fr;gap:36px}.concept-page .concept-life{gap:0}.concept-page .concept-life>div{padding-block:50px}.concept-page .concept-life img{min-height:0;aspect-ratio:4/3}.concept-page .concept-process-layout aside{border:0;padding:20px 0 0}.concept-page .concept-price-row{gap:30px;grid-template-columns:1fr 1.3fr}.concept-page .concept-offset{grid-template-columns:1fr}.concept-page .concept-offset>p,.concept-page .concept-offset>.concept-button{grid-column:1}.concept-page .concept-editorial-hero h1{font-size:clamp(40px,7.4vw,66px)}.concept-page .concept-editorial-hero h1 br{display:none}.concept-page .concept-treehouse{min-height:480px}.concept-page .concept-treehouse>div{padding-block:65px}.concept-page .concept-hero-film video{max-height:none}.concept-page .concept-extra-work{padding-top:10px}}
+@media(max-width:500px){.concept-page .monogram{font-size:18px}.concept-page .site-header{gap:14px}.concept-page .portfolio-service-nav{font-size:12px;gap:12px 16px}.concept-page .concept-ai-hero h1{font-size:47px}.concept-page h2{font-size:38px}.concept-page .concept-benefits{gap:12px;font-size:12px}.concept-page .concept-benefits li{padding-right:12px}.concept-page .concept-ai-hero{padding-bottom:42px}.concept-page .concept-web-stage{padding:24px 12px}.concept-page .concept-catalyst{border-width:5px;border-bottom-width:10px;border-radius:9px 9px 2px 2px;margin-inline:3%}.concept-page .concept-laptop-base{height:10px}.concept-page .concept-catalyst-copy span{margin-top:8px}.concept-page .concept-price-row{grid-template-columns:1fr;gap:22px}.concept-page .concept-process-layout li{padding-left:55px}.concept-page .concept-process-layout li::before{font-size:34px}.concept-page .concept-treehouse>div{padding-block:48px}.concept-page .concept-treehouse::after{background:#07140a99}.concept-page .concept-treehouse p{max-width:28ch}.concept-page .concept-editorial-hero{padding-top:25px}.concept-page .concept-editorial-hero h1{padding-bottom:30px;font-size:43px}.concept-page .concept-offset{padding-block:30px 45px}.concept-page .concept-film-row{gap:26px}.concept-page .offer-footer nav{gap:15px}}
+@media(prefers-reduced-motion:reduce){.concept-page .concept-button{transition:none}.concept-page .concept-button:hover{transform:none}}
+
+/* Verified small-screen refinements. */
+.concept-page .site-header{width:min(100%,1440px)}
+.concept-page .skip-link{top:-100px;transform:none;color:#fff}
+.concept-page .skip-link:focus{top:12px}
+@media(max-width:850px){.concept-page .site-header{row-gap:0}.concept-page .portfolio-service-nav{justify-content:flex-start;gap:0 18px}.concept-page .concept-editorial-hero h1{letter-spacing:-.045em}}

@@ -108,3 +108,7 @@ v2/blog/
 
 !assets/selected-work/
 !assets/selected-work/**
+
+# Keep source-resolution service artwork out of deployment.
+assets/selected-work/booking-calendar-source.png
+assets/selected-work/okanagan-lake-adam-jones.jpg

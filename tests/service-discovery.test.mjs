@@ -19,7 +19,7 @@ test('public HTML, Markdown, schema and sitemap stay in sync',async()=>{
  const schema=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
  assert(schema['@graph'].some(x=>x.url==='https://michaelmck.site'+route));
  assert(sitemap.includes(`<loc>https://michaelmck.site${route}</loc>`));
- assert.equal((html.match(/<h1>/g)||[]).length,1);
+ assert.equal((html.match(/<h1\b[^>]*>/g)||[]).length,1);
  for(const [,url] of html.matchAll(/(?:href|src|poster)="(\/[^"#]*)"/g))await access('.'+url.split('?')[0]+(url.endsWith('/')?'index.html':''));
  }
 });
@@ -60,4 +60,6 @@ test('Markdown requests have explicit routes and response type',async()=>{
  const config=JSON.parse(await readFile('vercel.json','utf8'));
  for(const r of routes)assert(config.rewrites.some(x=>x.source===r&&x.destination===r+'index.md'&&x.has[0].value==='text/markdown'));
  assert(config.headers.some(x=>x.headers.some(h=>h.value==='text/markdown; charset=utf-8')));
+ for(const r of routes)assert(config.redirects.some(x=>x.source===r&&x.destination===r+'index.md'&&x.has?.[0].key==='accept'));
+ assert(!config.headers.some(x=>routes.includes(x.source)&&x.has&&x.headers.some(h=>h.key==='Content-Type')));
 });

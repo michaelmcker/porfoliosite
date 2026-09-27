@@ -1,5 +1,9 @@
 # Development log
 
+## 2026-09-26: Build approved service concepts
+- Applying image-to-code to previously generated and user-selected designs. AI retains calendar hero, replaces handshake with real CC-licensed Okanagan photograph. Marketing explicitly covers websites, social media, video and brand development.
+- Baseline tests: 122 pass, one existing GA4 skip. Deployment authorized.
+
 ## 2026-09-26: Nine service-page concepts
 - Completed nine independent image designs and a noindex gallery with scoring and note export. Saved generation prompts, source paths, dimensions and unique hashes. Documented generated-copy and artwork fidelity limitations. No production code edited.
 - Creating independent full-page visual directions using the homepage DM Sans/Fraunces, white/ink/forest/gold system and correctly placed work. AI imagery must communicate owner outcomes; the rejected dental proposal is excluded.
@@ -107,3 +111,9 @@
 - Copied the original 60-second AI Catalyst film and extracted a poster frame from that film. Copied original Upon This Rock hero and first episode artwork. Marketing proof now covers product story, film, podcast identity and local search without invented outcomes.
 - Rebuilt the AI hero as a five-row, seven-column month calendar with readable short labels on narrow screens. Shifted opening/process copy to bookings, follow-up and time back. Reduced AI selected work to two concrete systems.
 - Regenerated HTML, Markdown and LLM discovery content; bumped the service stylesheet version for preview refresh. `npm test`: 121 pass, one existing GA4 skip. Source syntax, diff whitespace and local HTTP page/media response checks passed. Browser visual review remains blocked by loopback URL policy. No deployment.
+
+## 2026-09-26: Selected service concepts shipped
+- Added scripts/concept-services.mjs and v2/services/concepts.css; generated all three selected layouts with homepage typography and palette.
+- Added licensed regional photography with credit, optimized calendar imagery, real work proof, pricing and clear outcome-led service definitions.
+- Corrected mobile line-break spacing and header alignment. Repaired production Markdown negotiation with 307 redirects; all three returned bodies match local Markdown exactly.
+- Production deployed and live rendering reviewed. 122 tests pass, one existing skip. Source artwork excluded from deployment; optimized JPEGs served.

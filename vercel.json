@@ -22,6 +22,90 @@
       "source": "/v2/proposal-generator.html",
       "destination": "/proposal-generator.html",
       "permanent": true
+    },
+    {
+      "source": "/ai-implementation/",
+      "destination": "/ai-implementation/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
+      "source": "/web-design/",
+      "destination": "/web-design/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
+      "source": "/marketing-branding/",
+      "destination": "/marketing-branding/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blog/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
+      "source": "/blog/what-to-automate-first/",
+      "destination": "/blog/what-to-automate-first/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
+      "source": "/blog/website-that-turns-visits-into-enquiries/",
+      "destination": "/blog/website-that-turns-visits-into-enquiries/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
+      "source": "/blog/local-marketing-plan/",
+      "destination": "/blog/local-marketing-plan/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
     }
   ],
   "headers": [
@@ -189,118 +273,6 @@
     },
     {
       "source": "/:path*.md",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/markdown; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/ai-implementation/",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": "text/markdown"
-        }
-      ],
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/markdown; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/web-design/",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": "text/markdown"
-        }
-      ],
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/markdown; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/marketing-branding/",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": "text/markdown"
-        }
-      ],
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/markdown; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/blog/",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": "text/markdown"
-        }
-      ],
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/markdown; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/blog/what-to-automate-first/",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": "text/markdown"
-        }
-      ],
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/markdown; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/blog/website-that-turns-visits-into-enquiries/",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": "text/markdown"
-        }
-      ],
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/markdown; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/blog/local-marketing-plan/",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": "text/markdown"
-        }
-      ],
       "headers": [
         {
           "key": "Content-Type",

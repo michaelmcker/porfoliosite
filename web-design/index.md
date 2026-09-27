@@ -1,68 +1,72 @@
 Source: https://michaelmck.site/web-design/
 
-# Beautiful websites. Built to win business.
+# A beautiful website.  A better reason to choose you.
 
-Make your business look as good online as it is in person. Thoughtful design, clear content and an easy path to call, enquire or book.
+Original blue dithered marble artwork from the AI Catalyst website
+ AI CATALYST  Strategy. Systems. Story.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
-[Explore AI Catalyst](https://ai-catalyst-wheat.vercel.app/)
+YOUR STORY.  MADE VISIBLE.
 
-## Web design & development in the Okanagan.
+ Practical AI for a more human tomorrow.
 
-Give people a feel for the stay, confidence in the service or a reason to visit. Your website should make the quality of your business visible, then make calling, enquiring or booking feel like the obvious next step.
-
-## Selected work
-
-Different businesses. Different sites. Each one built around the decision a visitor needs to make.
-
-### A community site, made easier to use.
-
-RCCV · Website design and development
-
-A new parish website with clear paths to Mass times, sacraments, community information and the interactive Stations of the Cross.
-
-[Explore the project](https://michaelmck.site/#work)
-
-RCCV website displayed in its original laptop composition
-
-### A place worth staying for.
-
-Okanagan Treehouse · Website design and development
-
-The property’s own imagery anchors distinct stories for the Treehouse and Cabin, with a clear path from discovery to booking.
-
-[See selected work](https://michaelmck.site/#work)
-
-Original Okanagan Treehouse website hero image showing the illuminated property among trees
-
-## A local website with a business result.
-
-Cool Runnings reported a 30% increase in sales after launch. The work brought its services, local search pages and contact routes into one website.
-
-Sales increase reported by the client. Website enquiries and search performance are shown separately in the case study.
-
-[See the Cool Runnings case study](https://michaelmck.site/v2/work/local-search-magnet.html)
-
-## A better website starts with your objectives.
-
-A beautiful site should also make it easier to win business. We agree what that means for you before drawing the first page.
-
-### Understand the customer
-
-What are they looking for? Why should they choose you? We turn those answers into a brief covering the pages, content and customer actions that matter.
-
-### Make the quality visible
-
-I bring copy, imagery and design together into a direction you can review. The website should feel like your business, with the same care on a phone as on a large screen.
-
-### Build it and put it to work
-
-I develop the site, connect the agreed booking or enquiry tools and check the customer journey. Search foundations, measurement and handover are part of the plan. The scope, timing and project price are agreed before work begins.
-
-## A website that feels like your business.
-
-Start with a free consultation. Website work is custom scoped and quoted.
+Turn a good first impression into your next enquiry, booking or sale.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
-Email me to arrange a time. Based in Coldstream, working with businesses in Vernon, Kelowna and across the Okanagan.
+[Original Okanagan Treehouse property imagery at dusk Okanagan Treehouse A place worth staying for. Website design & development A distinctive property, brought to life online with an immersive story and a clear path to explore the stay. Explore the website](https://okanagantreehouse.ca/)
+
+RCCV website displayed in its original laptop composition
+
+## Community information,  clearly online.
+
+A welcoming website that helps people find Mass times, sacraments, parish news and resources.
+
+[Explore the RCCV project](https://michaelmck.site/#work)
+
+## A stronger online  presence opens doors.
+
+Local businesses do great work. A clear, professional website helps people see that quality, trust what you offer and take the next step.
+
+The design and the customer journey need to work together.
+
+## Web design & development in the Okanagan.
+
+Custom websites built around your customers and business objectives. Design, copy, development and search foundations brought together, with a clear path to call, enquire or book.
+
+## A clear process.  Built around your goals.
+
+### Understand your objectives
+
+We start with your business, audience and what success looks like. Then we agree the pages, content and customer actions that matter.
+
+### Design and build
+
+A visual direction you can review, followed by responsive development. Original imagery, readable content and accessible interactions are part of the build.
+
+### Launch
+
+Check the customer journey, set up search foundations and connect the agreed enquiry or booking tools. You get a clear handover.
+
+### Improve
+
+Use feedback and measurement to decide what comes next. Ongoing support is available within an agreed scope.
+
+## Let’s build something great together.
+
+Custom scope. Custom pricing. A clear proposal based on the website your business needs.
+
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+
+## Built for local business, too.
+
+For Cool Runnings, the work connects a landscaping website with useful service content and clear ways to enquire. The client reported a 30% increase in sales after launch.
+
+[Read the Cool Runnings case study](https://michaelmck.site/v2/work/local-search-magnet.html)
+[Explore the AI Catalyst website](https://ai-catalyst-wheat.vercel.app/)
+
+## Better websites.  For your next chapter.
+
+A free conversation about your business, your goals and what your website could do better.
+
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+Based in Coldstream. Serving Vernon, Kelowna and across the Okanagan.
