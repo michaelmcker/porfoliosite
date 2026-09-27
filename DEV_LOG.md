@@ -1,5 +1,11 @@
 # Development log
 
+## 2026-09-27: Consistent service styling
+- Added scripts/site-header.mjs and v2/site-header.css; service build synchronizes the homepage header and shares navigation with service/blog pages. Added regression coverage for identical published navigation.
+- AI hero uses editorial DM Sans with Fraunces emphasis, shared with web design. CSS halftone backgrounds add texture to forest/gold sections and the laptop stage without editing project assets.
+- Fixed inherited centered monogram alignment. Rebuilt and promoted; 123 tests pass, one pre-existing analytics skip.
+- Added DataForSEO organic keyword-difficulty evidence and explicit limits on ranking forecasts.
+
 ## 2026-09-26: Build approved service concepts
 - Applying image-to-code to previously generated and user-selected designs. AI retains calendar hero, replaces handshake with real CC-licensed Okanagan photograph. Marketing explicitly covers websites, social media, video and brand development.
 - Baseline tests: 122 pass, one existing GA4 skip. Deployment authorized.

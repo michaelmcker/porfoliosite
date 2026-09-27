@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-09-27: Shared navigation, AI typography and restrained print textures implemented. 123 tests pass; deployed and verified live.
+
 2026-09-27: Approved AI messaging and flow deployed and verified. No remaining implementation work for this revision.
 
 2026-09-26: Refinement and local SEO research complete and deployed. Business Profile/Search Console verification remains an external follow-up, not claimed complete.
@@ -9,6 +11,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-09-27: Shared navigation, print styling and ranking research
+- One shared header for homepage, three services and blog. AI heading now uses the same DM Sans/Fraunces hierarchy as web design. Added restrained CSS printed-dot backgrounds without changing approved imagery.
+- DataForSEO organic difficulty checked separately from Ads competition; full raw response and targeting recommendations in docs/seo/2026-09-27-ranking-*. No ranking or indexing claim.
+- 123 tests pass, one existing analytics skip. Production: portfolio-remote-preview-duvpjqamb-michael-mcks-projects.vercel.app. Live shared-header HTML verified on all five page types. AI visual screenshot and phone/desktop DOM checks passed; service pages show no horizontal overflow. Browser stalled during the final additional review, so full visual coverage at every breakpoint is not claimed.
 
 ### 2026-09-27: Clear AI service narrative
 - Applied approved “Less busywork. More business.” headline, existing-tools explanation and two actions.

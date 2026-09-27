@@ -159,3 +159,20 @@
 .concept-page .concept-problems strong{display:block;font-weight:600;margin-bottom:3px}
 .concept-page #what-i-build{scroll-margin-top:24px}
 @media(max-width:500px){.concept-page .concept-ai-actions{gap:6px 20px}.concept-page .concept-problems{font-size:16px;gap:18px}}
+
+/* Editorial service family with a quiet printed-dot finish. */
+.concept-page .concept-ai-editorial h1{font:650 clamp(50px,6.6vw,100px)/1.04 var(--font-sans);letter-spacing:-.058em}
+.concept-page .concept-ai-editorial h1 em{font-family:var(--font-editorial);font-weight:450;color:#243c31}
+.concept-page .concept-ai-editorial .concept-ai-hero{padding-top:0;background:#f7f7f3;gap:32px}
+.concept-page .concept-ai-editorial .concept-ai-hero>div{padding-block:36px}
+.concept-page .concept-ai-editorial .concept-ai-hero>div>p{margin-top:0}
+.concept-page .concept-band,.concept-page .concept-ai-services,.concept-page .concept-close{position:relative;isolation:isolate;overflow:hidden}
+.concept-page .concept-band::before,.concept-page .concept-ai-services::before,.concept-page .concept-close::before{content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;background-image:radial-gradient(circle,#fff8 .7px,transparent .9px);background-size:4px 4px;mask-image:linear-gradient(120deg,transparent 40%,#0008);opacity:.18}
+.concept-page .concept-close::before{background-image:radial-gradient(circle,#243c31 .75px,transparent 1px);opacity:.22}
+.concept-page .concept-web-stage{background-color:#edf1ea;background-image:radial-gradient(circle,#243c3138 .65px,transparent .85px);background-size:4px 4px}
+.concept-page .concept-capabilities dt{letter-spacing:-.025em}
+.concept-page .concept-ai-services .concept-capabilities>div{border-top:1px solid #ffffff38;padding-top:18px}
+.concept-page .concept-button:active{transform:scale(.96)}
+@media(max-width:850px){.concept-page .concept-ai-editorial h1{font-size:clamp(40px,7.4vw,66px);letter-spacing:-.045em}.concept-page .concept-ai-editorial .concept-ai-hero{gap:0}.concept-page .concept-ai-editorial .concept-ai-hero>div{padding-block:28px 34px}}
+@media(max-width:500px){.concept-page .concept-ai-editorial h1{font-size:43px}}
+@media(prefers-reduced-motion:reduce){.concept-page .concept-button:active{transform:none}}

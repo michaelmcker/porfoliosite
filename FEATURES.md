@@ -1,5 +1,9 @@
 # Feature additions
 
+## Shared navigation and service styling, September 27, 2026
+- Homepage, services and blog use scripts/site-header.mjs and v2/site-header.css. Rebuilding services synchronizes the authored homepage header; promote:v2 publishes it.
+- Shared two-row mobile navigation retains all service links and consultation CTA. Service print textures use CSS and respect reduced-motion preferences.
+
 See PRODUCT.md and docs/portfolio-working-notes.md for the existing portfolio.
 
 ## Three commercial pages, September 25, 2026
