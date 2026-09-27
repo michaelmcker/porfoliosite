@@ -1,5 +1,9 @@
 # Development log
 
+## 2026-09-26: Nine service-page concepts
+- Completed nine independent image designs and a noindex gallery with scoring and note export. Saved generation prompts, source paths, dimensions and unique hashes. Documented generated-copy and artwork fidelity limitations. No production code edited.
+- Creating independent full-page visual directions using the homepage DM Sans/Fraunces, white/ink/forest/gold system and correctly placed work. AI imagery must communicate owner outcomes; the rejected dental proposal is excluded.
+
 ## 2026-09-26: Correct rejected AI hero direction
 - The user rejected the client-specific dental proposal as irrelevant to a local owner's understanding of AI implementation. Removing it and its surrounding references. Replacement direction must show a recognizable service situation, rather than require explanation of a client artifact.
 - Implemented the illustrative enquiry/calendar direction from the earlier brief: one quote request, follow-up handled and a confirmed appointment. The figure's accessible description identifies it as an example; no client results are claimed. Removed the proposal demo link, related hero copy and metadata image.

@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-09-26: Nine service-page visual concepts saved with comparison gallery, prompts and review notes. No production changes; image-generated text and exact artwork require implementation review.
+
 2026-09-26: rejected dental proposal removed from AI implementation. Local replacement is an illustrative enquiry-and-booking scene; 122 tests pass, one existing skip. Visual review remains blocked by browser access; no deployment.
 
 2026-09-26: all three service pages revised locally for business-owner outcomes, finished-work proof and local service intent. Technical checks pass (122 active tests); rendered visual review remains blocked by the existing browser URL restriction. Not deployed.
@@ -15,6 +17,12 @@ September 26 implementation complete locally. Visual review pending: browser URL
 Expanded pages complete for local review. Not published; production content negotiation and search indexing remain post-deployment checks.
 
 ## Recent sessions
+
+### 2026-09-26: Nine service-page visual directions
+- Created three image concepts per offering: work-led agency, outcome-led SaaS and editorial studio.
+- Saved nine unique PNGs, prompts, dimensions/hashes, review caveats and a gallery with full-page modal, scoring, notes and export in docs/design-exploration/service-concepts-2026-09-26/.
+- Corrected generated web concepts that invented unrelated Cool Runnings work. Source artwork references used for AI Catalyst, RCCV, Treehouse, Upon This Rock and films.
+- Gallery links, nine-image inventory and JavaScript syntax checked. No live pages replaced or published; browser visual review blocked as before.
 
 ### 2026-09-26: Replace unrelated AI proposal with a service situation
 - User explicitly rejected the dental proposal as unrelated to how owners understand AI implementation. Removed the PDF visual, proposal demo CTA and client-specific hero explanation.
