@@ -82,6 +82,14 @@ The visual layer reuses the shared proposal client and API contract rather than 
 
 A warm-paper outreach handoff follows the builder. It pairs editorial context with one authored email object, a visible proposal attachment, and a human-review note. It explains the real relationship to Local Prospecting and Enrichment: reviewed public business context and nearby inventory feed a personalized email draft and custom proposal, but a salesperson still owns recipient choice, language, commercial offer, and final send.
 
+### Commercial service-page direction (September 26, 2026)
+
+The three service pages keep the production DM Sans/Fraunces pairing, white canvas, ink, paper and original work objects. Their audience is a business owner. The order is an outcome-led hero, a short local service description, finished work, then the engagement and commercial details. Show proof before explaining process.
+
+The AI hero uses the exact finished proposal shown on the homepage. Workflow topology stays on deeper pages; the service page shows the actual dashboard as its second example. Web keeps the original AI Catalyst specimen, RCCV laptop and Treehouse imagery. Marketing presents the two website stories as full rows, with the AI Catalyst film and Upon This Rock identity as a paired gallery between them. No invented dashboards or decorative calendars.
+
+Service display scale is `--service-type-h1: clamp(3.3rem, 4.6vw, 5.5rem)` in `v2/services/saas.css`, with a separate phone scale. Desktop copy/media are approximately 46/54; the portrait proposal is content-sized within its half. Process copy is short and unboxed. Phones retain complete original artwork and a single-column reading order. Rendered visual review is still required; loopback browser access was blocked during implementation.
+
 ## Legacy V1 Design Reference
 
 ### Theme

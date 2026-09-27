@@ -1,38 +1,17 @@
 Source: https://michaelmck.site/marketing-branding/
 
-# Work that gets people interested.
+# Give people a reason to choose you.
 
-Branding, websites, ads and film built around what people need to understand before they choose you. One clear story, carried through the places they meet your business.
+Make the value of your business easier to see. I create the identity, websites, ads and film that help you earn attention and turn interest into a conversation.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[See the work](#selected-work)
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[See the work](#selected-work)
 
-## Start with the problem. Give people a reason to choose you.
+[St. James School patronage film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
 
-An unclear offer, a launch that needs attention or marketing that no longer fits the business. We find what needs to change, then make the work to change it.
+## Branding & marketing for Okanagan businesses.
 
--
-
-### Find what is getting in the way
-
-We look at your audience, your offer and the material people see today. The first conversation is about the business problem and what you want customers to understand or do.
-
-A focused brief with an agreed scope, timing and cost.
-
--
-
-### Develop the idea
-
-We shape the positioning, message and visual direction around that problem. You review a clear creative direction before we carry it into the finished materials.
-
-One clear story for the audience you want to reach.
-
--
-
-### Make it work in the real world
-
-I produce the agreed branding, website, ads or video and prepare it for the places it will appear. We review the finished work together and agree how to judge the response.
-
-A connected set of materials your business can put to use.
+People need to understand what makes you worth choosing. I bring the message and visual direction together across branding, websites, ads and video, so every piece helps tell the same story.
 
 ## Selected work
 
@@ -46,7 +25,9 @@ Elevator advertising is unfamiliar to many buyers. The story shows where it reac
 
 [Explore the product story](https://www.verticalimpression.com/proposal-story)
 
-verticalimpression.com/proposal-story
+ verticalimpression.com/proposal-story
+
+[Vertical Impression product-story website scrolling through its elevator advertising narrative](https://michaelmck.site/assets/videos/vertical-impression-proposal-story-boomerang.mp4)
 
 ### A story people can see and feel.
 
@@ -55,6 +36,8 @@ AI Catalyst · Brand film and website
 The AI Catalyst film puts its commercial message into motion; the website carries that same visual language into a clear place to learn more.
 
 [Explore the website](https://ai-catalyst-wheat.vercel.app/)
+
+[AI Catalyst brand film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
 
 ### An identity with a world of its own.
 
@@ -70,11 +53,27 @@ Upon This Rock episode artwork using the same identity
 
 Cool Runnings · Local marketing and website
 
-Service pages, useful guides and clear contact routes give customers more ways to discover the business and ask for an estimate.
+Service pages, useful guides and clear contact routes help customers find the business and request an estimate. The client reported a 30% increase in sales after launch.
 
 [Read the case study](https://michaelmck.site/v2/work/local-search-magnet.html)
 
 Cool Runnings website showing its local landscaping offer and enquiry options
+
+## Good work starts with a clear brief.
+
+A new offer, an identity that no longer fits or marketing that leaves people unsure. We find the problem and make the work to solve it.
+
+### Find the reason to choose you
+
+We look at your customers, your offer and what makes the business valuable. Together, we agree the message and the response you want from your audience.
+
+### Give the idea a distinctive form
+
+I develop the visual direction and language, then carry it into the agreed branding, website, ads or video. You see the direction before the full production.
+
+### Deliver work you can use
+
+You receive the finished materials for the places they need to appear. Projects are custom quoted, with deliverables, timing and cost agreed up front. You can start with one campaign or a focused piece of work.
 
 ## What should people know you for?
 
@@ -82,4 +81,4 @@ We agree the deliverables, timing and cost before work begins.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
-Email me to arrange a time. Based in Coldstream, working with businesses across the Okanagan.
+Email me to arrange a time. Based in Coldstream, working with businesses in Vernon, Kelowna and across the Okanagan.

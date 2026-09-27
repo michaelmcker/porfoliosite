@@ -3,6 +3,13 @@ import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
 import {markdown} from '../scripts/service-discovery.mjs';
 const routes=JSON.parse(await readFile('v2/services/routes.json','utf8'));
+test('agent Markdown preserves visual proof labels and readable pricing',()=>{
+ const md=markdown('<main><a href="/proposal-generator.html"><img src="/example.png" alt="Finished customer proposal"></a><p>$900<span>one-time engagement</span></p><video aria-label="Brand film"><source src="/film.mp4"></video></main>');
+ assert(md.includes('[Finished customer proposal](https://michaelmck.site/proposal-generator.html)'));
+ assert(md.includes('$900 one-time engagement'));
+ assert(md.includes('[Brand film](https://michaelmck.site/film.mp4)'));
+ assert(!md.includes('[]('));
+});
 test('public HTML, Markdown, schema and sitemap stay in sync',async()=>{
  const sitemap=await readFile('sitemap.xml','utf8');
  for(const route of routes){
@@ -27,8 +34,9 @@ test('service proof uses original project media without nested interactive viewe
  assert(!web.includes('rccv-showcase'));
  assert(!web.includes('st-james-film'));
  assert(web.includes('ai-catalyst-wheat.vercel.app'));
- assert(ai.includes('booking-calendar'));
- assert.equal((ai.match(/class="calendar-day(?: |")/g)||[]).length,35);
+ assert(ai.includes('/assets/samples/vertical-impression-local-proposal-current.png'));
+ assert(!ai.includes('booking-calendar'));
+ assert(!ai.includes('local-prospecting-desktop.png'));
  assert(ai.includes('I build the system.'));
  assert(!ai.includes('<details class="service-workflow"'));
  assert(marketing.includes('Explaining a misunderstood medium.'));
@@ -39,6 +47,11 @@ test('service proof uses original project media without nested interactive viewe
  assert(marketing.includes('/assets/selected-work/upon-this-rock-episode-01.webp'));
  await access('assets/videos/vertical-impression-proposal-story-boomerang.mp4');
  await access('assets/selected-work/ai-catalyst-film.mp4');
+ for (const page of [ai, web, marketing]) {
+  assert(page.indexOf('id="selected-work"') < page.indexOf('class="service-process'));
+  assert(page.includes('class="service-introduction page-frame"'));
+  assert(page.includes('Vernon, Kelowna and across the Okanagan'));
+ }
 });
 test('Markdown requests have explicit routes and response type',async()=>{
  const config=JSON.parse(await readFile('vercel.json','utf8'));

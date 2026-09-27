@@ -1,22 +1,22 @@
-// A service engagement explained in plain sight, without tabs or reveal controls.
-const process = (title, intro, steps) => `<section class="service-process page-frame"><div class="service-process-panel"><header><h2>${title}</h2><p>${intro}</p></header><ol>${steps.map(([title, copy, output]) => `<li><h3>${title}</h3><p>${copy}</p><p class="process-output">${output}</p></li>`).join('')}</ol></div></section>`;
+// The process follows the proof and answers a business owner's practical questions.
+const process = (title, intro, steps) => `<section class="service-process page-frame"><div class="service-process-panel"><header><h2>${title}</h2><p>${intro}</p></header><ol>${steps.map(([title, copy]) => `<li><h3>${title}</h3><p>${copy}</p></li>`).join('')}</ol></div></section>`;
 
 export function serviceProcess(pages) {
  const content = [
-  ['I build the system.<br>You build the business.', 'More bookings and less busywork starts with a specific problem: missed follow-up, repetitive preparation or a team spending too much time moving information around.', [
-   ['Understand the bottleneck', 'We look at the way your team works, the tools you already use and where time or enquiries get lost. We choose a useful first project and agree what improvement would look like.', 'A clear priority and an actionable plan.'],
-   ['Build the right solution', 'That might mean setting up ChatGPT, Claude Cowork or Gemini, creating a custom AI skill, or connecting your tools into a workflow. We test it against real tasks, with review where it matters.', 'A working system built around your business.'],
-   ['Help your team use it', 'Practical training, clear instructions and a supported handover make the system part of the working day. Ongoing engagements include maintenance and improvements as your needs change.', 'Tools your team can use, with support to keep them useful.']
+  ['I build the system.<br>You build the business.', 'We choose an improvement you can measure: quicker replies, proposals prepared faster or less time spent on recurring work.', [
+   ['Find the thing worth fixing', 'Show me where the work piles up. We look at enquiries, follow-up, preparation and reporting, then choose a useful first project. You get a clear plan before committing to a build.'],
+   ['Build it around your working day', 'I build and test the custom workflows, AI skills or connections you need. That may include ChatGPT, Claude Cowork or Gemini. The choice follows the job, and you keep control over what goes to a customer.'],
+   ['Make it easy to use', 'Your team gets practical training and clear instructions. Ongoing implementation includes maintenance and agreed improvements, so you have someone to call when the business changes.']
   ]],
-  ['A better website starts<br>with your objectives.', 'More bookings, better enquiries or a clearer story. We agree what the website needs to achieve before deciding what it needs to look like.', [
-   ['Understand your business', 'We talk about your customers, your offer and the action you want visitors to take. We review your current site and material, then agree the pages, priorities, scope and cost.', 'A shared brief, a page plan and a clear quote.'],
-   ['Shape the story. Design the site.', 'Your positioning, copy and real work guide the visual direction. You review the key pages before the full build, so the typography, imagery and customer journey feel right together.', 'A considered design with a clear path to call, book or enquire.'],
-   ['Build, launch and hand over', 'I build the responsive site, connect the agreed features and check the content, forms and mobile experience. Search foundations, measurement and editing or maintenance arrangements are part of the launch plan.', 'A finished website, ready to use and easy to move forward.']
+  ['A better website starts<br>with your objectives.', 'A beautiful site should also make it easier to win business. We agree what that means for you before drawing the first page.', [
+   ['Understand the customer', 'What are they looking for? Why should they choose you? We turn those answers into a brief covering the pages, content and customer actions that matter.'],
+   ['Make the quality visible', 'I bring copy, imagery and design together into a direction you can review. The website should feel like your business, with the same care on a phone as on a large screen.'],
+   ['Build it and put it to work', 'I develop the site, connect the agreed booking or enquiry tools and check the customer journey. Search foundations, measurement and handover are part of the plan. The scope, timing and project price are agreed before work begins.']
   ]],
-  ['Start with the problem.<br>Give people a reason to choose you.', 'An unclear offer, a launch that needs attention or marketing that no longer fits the business. We find what needs to change, then make the work to change it.', [
-   ['Find what is getting in the way', 'We look at your audience, your offer and the material people see today. The first conversation is about the business problem and what you want customers to understand or do.', 'A focused brief with an agreed scope, timing and cost.'],
-   ['Develop the idea', 'We shape the positioning, message and visual direction around that problem. You review a clear creative direction before we carry it into the finished materials.', 'One clear story for the audience you want to reach.'],
-   ['Make it work in the real world', 'I produce the agreed branding, website, ads or video and prepare it for the places it will appear. We review the finished work together and agree how to judge the response.', 'A connected set of materials your business can put to use.']
+  ['Good work starts<br>with a clear brief.', 'A new offer, an identity that no longer fits or marketing that leaves people unsure. We find the problem and make the work to solve it.', [
+   ['Find the reason to choose you', 'We look at your customers, your offer and what makes the business valuable. Together, we agree the message and the response you want from your audience.'],
+   ['Give the idea a distinctive form', 'I develop the visual direction and language, then carry it into the agreed branding, website, ads or video. You see the direction before the full production.'],
+   ['Deliver work you can use', 'You receive the finished materials for the places they need to appear. Projects are custom quoted, with deliverables, timing and cost agreed up front. You can start with one campaign or a focused piece of work.']
   ]]
  ];
  pages.forEach((page, index) => {

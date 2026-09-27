@@ -41,7 +41,10 @@ My audit includes five on-site hours spread over two to three weeks and a detail
 ## Product references
 
 - [ChatGPT Projects](https://help.openai.com/en/articles/10169521-projects-in-chatgpt)
+
 - [Claude Cowork](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork)
+
 - [Gemini Gems](https://support.google.com/gemini/answer/15146780)
 
-[Explore the service](https://michaelmck.site/ai-implementation/) · [More from the blog](https://michaelmck.site/blog/)
+[Explore the service](https://michaelmck.site/ai-implementation/)
+ · [More from the blog](https://michaelmck.site/blog/)

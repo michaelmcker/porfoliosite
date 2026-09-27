@@ -2,67 +2,44 @@ Source: https://michaelmck.site/ai-implementation/
 
 # More bookings. Less busywork.
 
-More bookings, faster follow-up and fewer hours lost to repeat work. I build the AI tools and working systems behind that, then help your team use them.
+Respond to enquiries, get proposals out and keep follow-up moving. I build the systems that help you keep up, so you can spend more of your day with customers.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[See the work](#selected-work)
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Try a working example](https://michaelmck.site/proposal-generator.html)
 
-## Bookings
+[A finished customer-specific sales proposal produced by the Vertical Impression system, with campaign creative and a local advertising map](https://michaelmck.site/proposal-generator.html)
 
-Month view
+## AI implementation & business automation in the Okanagan.
 
-MonTueWedThuFriSatSun
-
-12345New enquiry6789Call booked10111213Follow-up sent141516Site visit171819202122Call booked232425262728Booking confirmed293031
-
-More time for the work that moves your business forward.
-
-## I build the system. You build the business.
-
-More bookings and less busywork starts with a specific problem: missed follow-up, repetitive preparation or a team spending too much time moving information around.
-
--
-
-### Understand the bottleneck
-
-We look at the way your team works, the tools you already use and where time or enquiries get lost. We choose a useful first project and agree what improvement would look like.
-
-A clear priority and an actionable plan.
-
--
-
-### Build the right solution
-
-That might mean setting up ChatGPT, Claude Cowork or Gemini, creating a custom AI skill, or connecting your tools into a workflow. We test it against real tasks, with review where it matters.
-
-A working system built around your business.
-
--
-
-### Help your team use it
-
-Practical training, clear instructions and a supported handover make the system part of the working day. Ongoing engagements include maintenance and improvements as your needs change.
-
-Tools your team can use, with support to keep them useful.
+An enquiry waiting for an answer. A proposal that takes an afternoon. A report rebuilt every week. We start with the work that gets in your way, then build a practical way to get it done. The proposal above is an output from the sales system I built for Vertical Impression.
 
 ## Selected work
 
-Real examples of the repeat work a useful system can take on.
+A finished sales proposal above. A working reporting system below. Useful things your team can put to work.
 
-### Spend less time preparing each proposal.
+### Spend less time chasing answers.
 
-Business research and local details come together in a tailored proposal for a person to review before outreach.
-
-[See how it works](https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html)
-
-Local prospecting and proposal preparation workflow artwork
-
-### See what needs attention.
-
-One working view brings performance, content and client notes together, so the team can spend less time hunting for answers.
+This agency dashboard brings performance, content and client notes into one place. The same principle applies to your business: make the information useful, so people can get on with the work.
 
 [See how it works](https://michaelmck.site/v2/workflows/agency-management-dashboard.html)
 
 Agency dashboard showing performance and client work in one view
+
+## I build the system. You build the business.
+
+We choose an improvement you can measure: quicker replies, proposals prepared faster or less time spent on recurring work.
+
+### Find the thing worth fixing
+
+Show me where the work piles up. We look at enquiries, follow-up, preparation and reporting, then choose a useful first project. You get a clear plan before committing to a build.
+
+### Build it around your working day
+
+I build and test the custom workflows, AI skills or connections you need. That may include ChatGPT, Claude Cowork or Gemini. The choice follows the job, and you keep control over what goes to a customer.
+
+### Make it easy to use
+
+Your team gets practical training and clear instructions. Ongoing implementation includes maintenance and agreed improvements, so you have someone to call when the business changes.
 
 ## Start with a plan. Then put it to work.
 
@@ -70,7 +47,7 @@ A free initial consultation helps us establish what you need. The audit gives yo
 
 ### AI audit & recommendations
 
-$900one-time engagement
+$900 one-time engagement
 
 Five hours on site across two to three weeks, with time between visits to investigate and develop the recommendations.
 
@@ -83,7 +60,7 @@ Five hours on site across two to three weeks, with time between visits to invest
 
 ### Custom implementation & maintenance
 
-From $2,500per month
+From $2,500 per month
 
 I design, build and maintain the systems around your priorities, with an agreed scope and a clear first deliverable.
 
@@ -102,45 +79,22 @@ Let’s look at the work together and choose a useful place to start.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
-Email me to arrange a time. Based in Coldstream, working with businesses across the Okanagan.
+Email me to arrange a time. Based in Coldstream, working with businesses in Vernon, Kelowna and across the Okanagan.
 
 ---
 
 Source: https://michaelmck.site/web-design/
 
-# Beautiful websites. Built for business.
+# Beautiful websites. Built to win business.
 
-A website should look like your business and make the next step easy. I bring the story, imagery, design and development together around the calls, enquiries or bookings you need.
+Make your business look as good online as it is in person. Thoughtful design, clear content and an easy path to call, enquire or book.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[Explore AI Catalyst](https://ai-catalyst-wheat.vercel.app/)
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Explore AI Catalyst](https://ai-catalyst-wheat.vercel.app/)
 
-## A better website starts with your objectives.
+## Web design & development in the Okanagan.
 
-More bookings, better enquiries or a clearer story. We agree what the website needs to achieve before deciding what it needs to look like.
-
--
-
-### Understand your business
-
-We talk about your customers, your offer and the action you want visitors to take. We review your current site and material, then agree the pages, priorities, scope and cost.
-
-A shared brief, a page plan and a clear quote.
-
--
-
-### Shape the story. Design the site.
-
-Your positioning, copy and real work guide the visual direction. You review the key pages before the full build, so the typography, imagery and customer journey feel right together.
-
-A considered design with a clear path to call, book or enquire.
-
--
-
-### Build, launch and hand over
-
-I build the responsive site, connect the agreed features and check the content, forms and mobile experience. Search foundations, measurement and editing or maintenance arrangements are part of the launch plan.
-
-A finished website, ready to use and easy to move forward.
+Give people a feel for the stay, confidence in the service or a reason to visit. Your website should make the quality of your business visible, then make calling, enquiring or booking feel like the obvious next step.
 
 ## Selected work
 
@@ -166,51 +120,54 @@ The property’s own imagery anchors distinct stories for the Treehouse and Cabi
 
 Original Okanagan Treehouse website hero image showing the illuminated property among trees
 
+## A local website with a business result.
+
+Cool Runnings reported a 30% increase in sales after launch. The work brought its services, local search pages and contact routes into one website.
+
+Sales increase reported by the client. Website enquiries and search performance are shown separately in the case study.
+
+[See the Cool Runnings case study](https://michaelmck.site/v2/work/local-search-magnet.html)
+
+## A better website starts with your objectives.
+
+A beautiful site should also make it easier to win business. We agree what that means for you before drawing the first page.
+
+### Understand the customer
+
+What are they looking for? Why should they choose you? We turn those answers into a brief covering the pages, content and customer actions that matter.
+
+### Make the quality visible
+
+I bring copy, imagery and design together into a direction you can review. The website should feel like your business, with the same care on a phone as on a large screen.
+
+### Build it and put it to work
+
+I develop the site, connect the agreed booking or enquiry tools and check the customer journey. Search foundations, measurement and handover are part of the plan. The scope, timing and project price are agreed before work begins.
+
 ## A website that feels like your business.
 
 Start with a free consultation. Website work is custom scoped and quoted.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
-Email me to arrange a time. Based in Coldstream, working with businesses across the Okanagan.
+Email me to arrange a time. Based in Coldstream, working with businesses in Vernon, Kelowna and across the Okanagan.
 
 ---
 
 Source: https://michaelmck.site/marketing-branding/
 
-# Work that gets people interested.
+# Give people a reason to choose you.
 
-Branding, websites, ads and film built around what people need to understand before they choose you. One clear story, carried through the places they meet your business.
+Make the value of your business easier to see. I create the identity, websites, ads and film that help you earn attention and turn interest into a conversation.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)[See the work](#selected-work)
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[See the work](#selected-work)
 
-## Start with the problem. Give people a reason to choose you.
+[St. James School patronage film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
 
-An unclear offer, a launch that needs attention or marketing that no longer fits the business. We find what needs to change, then make the work to change it.
+## Branding & marketing for Okanagan businesses.
 
--
-
-### Find what is getting in the way
-
-We look at your audience, your offer and the material people see today. The first conversation is about the business problem and what you want customers to understand or do.
-
-A focused brief with an agreed scope, timing and cost.
-
--
-
-### Develop the idea
-
-We shape the positioning, message and visual direction around that problem. You review a clear creative direction before we carry it into the finished materials.
-
-One clear story for the audience you want to reach.
-
--
-
-### Make it work in the real world
-
-I produce the agreed branding, website, ads or video and prepare it for the places it will appear. We review the finished work together and agree how to judge the response.
-
-A connected set of materials your business can put to use.
+People need to understand what makes you worth choosing. I bring the message and visual direction together across branding, websites, ads and video, so every piece helps tell the same story.
 
 ## Selected work
 
@@ -224,7 +181,9 @@ Elevator advertising is unfamiliar to many buyers. The story shows where it reac
 
 [Explore the product story](https://www.verticalimpression.com/proposal-story)
 
-verticalimpression.com/proposal-story
+ verticalimpression.com/proposal-story
+
+[Vertical Impression product-story website scrolling through its elevator advertising narrative](https://michaelmck.site/assets/videos/vertical-impression-proposal-story-boomerang.mp4)
 
 ### A story people can see and feel.
 
@@ -233,6 +192,8 @@ AI Catalyst · Brand film and website
 The AI Catalyst film puts its commercial message into motion; the website carries that same visual language into a clear place to learn more.
 
 [Explore the website](https://ai-catalyst-wheat.vercel.app/)
+
+[AI Catalyst brand film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
 
 ### An identity with a world of its own.
 
@@ -248,11 +209,27 @@ Upon This Rock episode artwork using the same identity
 
 Cool Runnings · Local marketing and website
 
-Service pages, useful guides and clear contact routes give customers more ways to discover the business and ask for an estimate.
+Service pages, useful guides and clear contact routes help customers find the business and request an estimate. The client reported a 30% increase in sales after launch.
 
 [Read the case study](https://michaelmck.site/v2/work/local-search-magnet.html)
 
 Cool Runnings website showing its local landscaping offer and enquiry options
+
+## Good work starts with a clear brief.
+
+A new offer, an identity that no longer fits or marketing that leaves people unsure. We find the problem and make the work to solve it.
+
+### Find the reason to choose you
+
+We look at your customers, your offer and what makes the business valuable. Together, we agree the message and the response you want from your audience.
+
+### Give the idea a distinctive form
+
+I develop the visual direction and language, then carry it into the agreed branding, website, ads or video. You see the direction before the full production.
+
+### Deliver work you can use
+
+You receive the finished materials for the places they need to appear. Projects are custom quoted, with deliverables, timing and cost agreed up front. You can start with one campaign or a focused piece of work.
 
 ## What should people know you for?
 
@@ -260,7 +237,7 @@ We agree the deliverables, timing and cost before work begins.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
-Email me to arrange a time. Based in Coldstream, working with businesses across the Okanagan.
+Email me to arrange a time. Based in Coldstream, working with businesses in Vernon, Kelowna and across the Okanagan.
 
 ---
 
@@ -339,10 +316,13 @@ My audit includes five on-site hours spread over two to three weeks and a detail
 ## Product references
 
 - [ChatGPT Projects](https://help.openai.com/en/articles/10169521-projects-in-chatgpt)
+
 - [Claude Cowork](https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork)
+
 - [Gemini Gems](https://support.google.com/gemini/answer/15146780)
 
-[Explore the service](https://michaelmck.site/ai-implementation/) · [More from the blog](https://michaelmck.site/blog/)
+[Explore the service](https://michaelmck.site/ai-implementation/)
+ · [More from the blog](https://michaelmck.site/blog/)
 
 ---
 
@@ -386,7 +366,8 @@ Agree the pages and their purpose before writing titles or metadata. Keep import
 
 Tell me who you need to reach, what you want them to do and what is failing on the current site. Bring your existing brand material, photographs and examples of customer questions. I scope the content, design, development and launch work together, with custom pricing based on the actual requirements.
 
-[Explore the service](https://michaelmck.site/web-design/) · [More from the blog](https://michaelmck.site/blog/)
+[Explore the service](https://michaelmck.site/web-design/)
+ · [More from the blog](https://michaelmck.site/blog/)
 
 ---
 
@@ -430,4 +411,5 @@ Visits and impressions tell you that something was seen. Calls, qualified enquir
 
 You may need clearer positioning before a campaign, better service pages before more traffic, or stronger proposals once leads arrive. My marketing and branding work is custom-scoped around that priority. We agree the deliverables, review points, timing and cost, then decide what ongoing support is useful.
 
-[Explore the service](https://michaelmck.site/marketing-branding/) · [More from the blog](https://michaelmck.site/blog/)
+[Explore the service](https://michaelmck.site/marketing-branding/)
+ · [More from the blog](https://michaelmck.site/blog/)

@@ -1,29 +1,22 @@
 /* Service pages extend the portfolio's white canvas, DM Sans, Fraunces and artifact shapes. */
-.saas-page { background: var(--canvas); }
+.saas-page { --service-type-h1: clamp(3.3rem, 4.6vw, 5.5rem); background: var(--canvas); }
 .saas-page .site-header { border-bottom: 0; padding-block: 20px; }
 .saas-page .offer-header-contact { border-radius: 999px; padding: 11px 20px; background: var(--ink); color: white; font-size: .9rem; }
-.saas-page .hero { min-height: min(800px, calc(100dvh - 86px)); gap: clamp(34px, 5vw, 72px); }
-.saas-page .hero h1 { font-size: clamp(3.7rem, 5.6vw, 6.6rem); }
+.saas-page .hero { min-height: min(780px, calc(100dvh - 86px)); grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: clamp(40px, 5vw, 80px); padding-block: clamp(70px, 7vw, 104px); }
+.saas-page .hero h1 { font-size: var(--service-type-h1); letter-spacing: -.04em; text-wrap: balance; }
+.saas-page h2, .saas-page h3 { text-wrap: balance; }
+.saas-page p { text-wrap: pretty; }
 .saas-page .hero-intro { max-width: 36ch; }
 .saas-page .hero .button { font-size: .94rem; }
 .saas-page .hero + section { border-top: 1px solid var(--line); }
 
-/* A recognizable full month, explicitly illustrative, instead of an abstract flow. */
-.booking-calendar { width: min(100%, 720px); justify-self: end; margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 26px; background: #fff; box-shadow: 0 34px 70px rgba(19, 22, 19, .13), 0 7px 20px rgba(19, 22, 19, .07); }
-.booking-calendar-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 30px 34px 24px; }
-.booking-calendar-head h2 { margin: 0; font: 600 clamp(1.6rem, 2vw, 2.25rem)/1.1 var(--font-editorial); letter-spacing: -.03em; }
-.booking-calendar-head span { color: var(--muted); font-size: .88rem; }
-.booking-calendar-week, .booking-calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
-.booking-calendar-week { padding-inline: 26px; padding-bottom: 10px; color: var(--muted); font-size: .77rem; }
-.booking-calendar-week span { padding-left: 8px; }
-.booking-calendar-grid { margin-inline: 26px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
-.calendar-day { min-width: 0; min-height: 83px; padding: 8px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.calendar-day-empty { background: var(--paper); }
-.calendar-date { display: block; color: var(--muted); font-size: .77rem; }
-.calendar-note { display: block; margin-top: 7px; padding: 5px 6px; border-radius: 5px; background: #e4e9e0; color: var(--forest); font-size: .67rem; font-weight: 720; line-height: 1.25; }
-.calendar-day-confirmed .calendar-note { background: var(--accent); color: var(--ink); }
-.calendar-day-followup .calendar-note { background: var(--paper); color: var(--ink); }
-.booking-calendar-foot { padding: 20px 34px 24px; color: var(--muted); font-size: .82rem; }
+/* The finished proposal is the proof: the exact artifact used on the homepage. */
+.service-hero-proposal { width: min(78%, 430px); margin: 0; justify-self: center; transform: perspective(1400px) rotateY(5deg) rotateZ(-2deg); filter: drop-shadow(0 26px 30px rgba(18,20,17,.2)); }
+.service-hero-proposal a { display: block; border-radius: 14px; }
+.service-hero-proposal img { display: block; width: 100%; height: auto; border-radius: 14px; }
+.service-introduction { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(40px, 7vw, 100px); padding-block: 64px; }
+.service-introduction h2 { margin: 0; max-width: 25ch; font: 600 clamp(1.6rem, 2.5vw, 2.5rem)/1.2 var(--font-sans); letter-spacing: -.025em; }
+.service-introduction p { margin: 0; max-width: 53ch; color: var(--muted); font-size: 1.08rem; line-height: 1.7; }
 
 /* Website and film retain their source artwork with a frame sized to the content. */
 .saas-page .service-hero-website { width: min(100%, 760px); justify-self: end; margin: 0; aspect-ratio: 16 / 10; position: relative; overflow: hidden; border: 7px solid #101312; border-radius: 26px; background: #edf7ff; box-shadow: var(--shadow-screen); transform: perspective(1400px) rotateY(-3deg) rotateZ(1deg); }
@@ -50,10 +43,10 @@
 .service-case-media { width: min(100%, 720px); margin: 0; justify-self: end; overflow: hidden; }
 .service-case-media img { display: block; width: 100%; height: auto; }
 .service-case-media-screen { border: 1px solid var(--line); border-radius: 20px; background: var(--paper); }
-.service-case-media-laptop { padding: 20px; border-radius: 22px; background: var(--paper); }
+.service-case-media-laptop { padding: 0; overflow: visible; }
 .service-case-media-photo { aspect-ratio: 16 / 9; border-radius: 22px; }
 .service-case-media-photo img { height: 100%; object-fit: cover; }
-.service-case-media-workflow { padding: 18px; border-radius: 22px; background: #e7e8e3; }
+.service-case-media-workflow { padding: 0; border-radius: 16px; }
 .service-case-media-workflow picture { display: block; }
 .service-case-media-browser { border: 6px solid #101312; border-radius: 19px; background: #101312; box-shadow: var(--shadow-screen); }
 .service-browser-bar { display: flex; align-items: center; gap: 5px; height: 27px; padding: 0 12px; background: #edf0ed; color: #53605d; font-size: .62rem; }
@@ -65,17 +58,29 @@
 .service-case-media-identity img { border-radius: 14px; background: #f7f5ef; }
 .service-case-media-identity img + img { width: 54%; justify-self: end; margin-top: -56px; border: 5px solid var(--canvas); box-shadow: 0 16px 28px rgba(19, 22, 19, .12); }
 
+/* Film and identity share a lighter gallery rhythm between the two website stories. */
+.service-cases-gallery .service-case-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(40px, 6vw, 80px); }
+.service-cases-gallery .service-case:first-child, .service-cases-gallery .service-case:last-child { grid-column: 1 / -1; }
+.service-cases-gallery .service-case:first-child { border-bottom: 0; }
+.service-cases-gallery .service-case:nth-child(2), .service-cases-gallery .service-case:nth-child(3) { display: flex; flex-direction: column; align-items: start; justify-content: flex-start; gap: 32px; padding: 0 0 64px; border-bottom: 0; }
+.service-cases-gallery .service-case:nth-child(2) h3, .service-cases-gallery .service-case:nth-child(3) h3 { max-width: 20ch; font-size: clamp(2rem, 2.6vw, 2.8rem); }
+.service-cases-gallery .service-case:nth-child(2) .service-case-media, .service-cases-gallery .service-case:nth-child(3) .service-case-media { order: -1; }
+.service-cases-gallery .service-case:last-child { border-top: 1px solid var(--line); }
+.service-local-proof { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(40px, 7vw, 100px); padding-block: 64px; border-top: 1px solid var(--line); }
+.service-local-proof h2 { margin: 0; max-width: 20ch; font: 560 clamp(2rem, 3vw, 3.2rem)/1.1 var(--font-editorial); }
+.service-local-proof p { margin: 0 0 16px; max-width: 52ch; line-height: 1.7; }
+.service-local-proof .service-evidence-note { color: var(--muted); font-size: .86rem; }
+
 /* Plain-language delivery instead of another gallery of interactive boxes. */
 .saas-page .service-process { padding-block: var(--space-section); }
-.saas-page .service-process-panel { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(40px, 6vw, 88px); padding: clamp(38px, 5.3vw, 76px); border-radius: 26px; background: var(--paper); }
-.service-process header h2 { margin: 0 0 26px; font: 600 clamp(2.35rem, 3.4vw, 4rem)/1.08 var(--font-sans); letter-spacing: -.045em; }
+.saas-page .service-process-panel { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(40px, 6vw, 88px); padding: 0; border-top: 1px solid var(--line); padding-top: 64px; }
+.service-process header h2 { margin: 0 0 26px; font: 600 clamp(2.35rem, 3.4vw, 4rem)/1.08 var(--font-sans); letter-spacing: -.04em; }
 .service-process header p { max-width: 39ch; margin: 0; color: var(--muted); font-size: 1.08rem; line-height: 1.65; }
 .service-process ol { display: grid; gap: 36px; list-style: none; margin: 0; padding: 0; }
 .service-process li { padding-bottom: 36px; border-bottom: 1px solid var(--line); }
 .service-process li:last-child { padding-bottom: 0; border: 0; }
 .service-process h3 { margin: 0 0 16px; font: 560 clamp(1.5rem, 2vw, 2rem)/1.15 var(--font-editorial); letter-spacing: -.025em; }
 .service-process li p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.7; }
-.service-process li .process-output { margin-top: 18px; color: var(--ink); font-size: .92rem; font-weight: 650; }
 
 .saas-page .offer-section { padding-block: var(--space-section); border-top: 1px solid var(--line); }
 .saas-page .offer-section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 96px); margin-bottom: 50px; }
@@ -96,7 +101,7 @@
 @media (max-width: 1099px) {
  .saas-page .hero { grid-template-columns: 1fr; min-height: 0; padding-block: 80px; }
  .saas-page .hero h1 { max-width: 13ch; }
- .booking-calendar, .saas-page .service-hero-website, .saas-page .service-hero-film { width: min(100%, 760px); justify-self: start; }
+ .saas-page .service-hero-website, .saas-page .service-hero-film { width: min(100%, 760px); justify-self: start; }
  .saas-page .service-process-panel { grid-template-columns: 1fr; }
  .service-process header { max-width: 670px; }
  .service-case { gap: 36px; }
@@ -107,26 +112,21 @@
  .saas-page .hero-intro { font-size: 1rem; }
  .saas-page .service-hero-website { aspect-ratio: 16 / 11; transform: none; border-width: 5px; border-radius: 18px; }
  .saas-page .service-hero-film { border-width: 5px; border-radius: 18px; }
- .booking-calendar { border-radius: 18px; }
- .booking-calendar-head { padding: 20px 18px 17px; }
- .booking-calendar-week { padding-inline: 12px; font-size: .64rem; }
- .booking-calendar-week span { padding-left: 3px; }
- .booking-calendar-grid { margin-inline: 12px; }
- .calendar-day { min-height: 52px; padding: 4px; }
- .calendar-date { font-size: .62rem; }
- .calendar-note { margin-top: 4px; padding: 3px; font-size: 0; }
- .calendar-note::after { content: attr(data-short); font-size: .61rem; }
- .booking-calendar-foot { padding: 16px 18px 20px; font-size: .75rem; }
+ .service-hero-proposal { width: min(82%, 350px); justify-self: center; transform: rotateZ(-1.5deg); }
+ .service-introduction, .service-local-proof { grid-template-columns: 1fr; gap: 22px; padding-block: 44px; }
+ .service-introduction p { font-size: 1rem; }
  .service-case-media-identity img + img { width: 60%; margin-top: -28px; }
- .service-cases { padding-block: 82px; }
+ .service-cases { padding-block: 64px; }
+ .service-cases-gallery .service-case-list { display: block; }
+ .service-cases-gallery .service-case:nth-child(2), .service-cases-gallery .service-case:nth-child(3) { padding-bottom: 54px; }
  .service-cases-heading { display: block; }
  .service-cases-heading p { margin-top: 18px; }
  .service-case, .service-case:nth-child(even) { grid-template-columns: 1fr; gap: 25px; padding-block: 54px; }
  .service-case:nth-child(even) .service-case-copy, .service-case:nth-child(even) .service-case-media { grid-column: auto; grid-row: auto; }
  .service-case-copy h3 { font-size: clamp(2rem, 8vw, 3rem); }
- .service-case-media-laptop, .service-case-media-workflow { padding: 12px; }
+ .service-case-media-laptop, .service-case-media-workflow { padding: 0; }
  .saas-page .service-process, .saas-page .offer-section { padding-block: 80px; }
- .saas-page .service-process-panel { padding: 32px 24px; border-radius: 20px; gap: 38px; }
+ .saas-page .service-process-panel { padding: 44px 0 0; gap: 32px; }
  .service-process header h2 { font-size: clamp(2.1rem, 8vw, 3rem); }
  .service-process header p { font-size: 1rem; }
  .service-process ol { gap: 28px; }

@@ -38,4 +38,5 @@ Agree the pages and their purpose before writing titles or metadata. Keep import
 
 Tell me who you need to reach, what you want them to do and what is failing on the current site. Bring your existing brand material, photographs and examples of customer questions. I scope the content, design, development and launch work together, with custom pricing based on the actual requirements.
 
-[Explore the service](https://michaelmck.site/web-design/) · [More from the blog](https://michaelmck.site/blog/)
+[Explore the service](https://michaelmck.site/web-design/)
+ · [More from the blog](https://michaelmck.site/blog/)

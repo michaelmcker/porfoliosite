@@ -19,7 +19,8 @@ The rejected services hub, guides and sample report are archived in docs/rejecte
 - AI Catalyst hero preserves its original dither renderer in static mode and local source logos/styles. Project exploration uses an explicit external link.
 
 ## Service-page visual revision, September 26, 2026
-- The AI implementation hero shows an illustrative full-month booking calendar. Its copy leads with bookings and time saved; two source-grounded examples show proposal preparation and a working dashboard.
+- The AI implementation hero shows the exact finished proposal from the homepage. Copy leads with bookings, follow-up and time saved; the working dashboard is the second proof example, with workflow diagrams on deeper routes.
 - Web design keeps the original AI Catalyst website specimen, followed by the RCCV laptop artwork and Okanagan Treehouse project imagery.
 - Marketing and branding keeps the St. James film, reuses the homepage Vertical Impression Proposal Story recording, and shows the AI Catalyst brand film, Upon This Rock podcast identity and episode art, and Cool Runnings local-search case.
 - Selected work uses simple, proportionate image stages and direct project links. The homepage retains its immersive project interactions.
+- The three service pages lead with outcome headlines and visible Okanagan service descriptions, then proof before process. Marketing pairs film and podcast identity between the larger website stories. Web includes the attributed Cool Runnings sales result. Titles, descriptions, schema, Markdown and LLM discovery text are generated together.

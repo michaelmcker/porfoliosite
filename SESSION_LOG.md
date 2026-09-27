@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-09-26: all three service pages revised locally for business-owner outcomes, finished-work proof and local service intent. Technical checks pass (122 active tests); rendered visual review remains blocked by the existing browser URL restriction. Not deployed.
+
 2026-09-26: latest service-page revision complete locally. Marketing proof and AI booking story are updated. Rendered visual review remains blocked by the browser's loopback URL policy; no deployment.
 
 2026-09-26: three service-page design revision implemented locally. Generated pages and discovery files updated; visual review remains blocked by browser policy for loopback URLs.
@@ -11,6 +13,12 @@ September 26 implementation complete locally. Visual review pending: browser URL
 Expanded pages complete for local review. Not published; production content negotiation and search indexing remain post-deployment checks.
 
 ## Recent sessions
+
+### 2026-09-26: Business-owner outcomes and work-led design
+- Kept the homepage's type, colours and original artwork; replaced the AI calendar with the exact homepage proposal output. AI keeps the actual agency dashboard below, with workflow diagrams on deeper routes.
+- Moved selected work ahead of a shorter, unboxed process; paired the AI Catalyst film and Upon This Rock identity in the marketing gallery. Added attributed Cool Runnings sales proof to Web Design.
+- Outcome-led hero copy, visible local service headings, refreshed metadata and Vernon/Kelowna service coverage. No unsupported award claims or ranking guarantees.
+- Fixed generated Markdown's image-link labels, film links and pricing spacing. Rebuilt all discovery outputs. 122 tests pass, one existing GA4 skip. HTTP preview available; browser visual acceptance remains unverified. No deployment.
 
 ### 2026-09-26: Marketing proof and AI booking clarity
 - Replaced “Make the opportunity clear” with the homepage’s exact Vertical Impression Proposal Story recording and destination.

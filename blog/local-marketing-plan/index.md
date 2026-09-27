@@ -38,4 +38,5 @@ Visits and impressions tell you that something was seen. Calls, qualified enquir
 
 You may need clearer positioning before a campaign, better service pages before more traffic, or stronger proposals once leads arrive. My marketing and branding work is custom-scoped around that priority. We agree the deliverables, review points, timing and cost, then decide what ongoing support is useful.
 
-[Explore the service](https://michaelmck.site/marketing-branding/) · [More from the blog](https://michaelmck.site/blog/)
+[Explore the service](https://michaelmck.site/marketing-branding/)
+ · [More from the blog](https://michaelmck.site/blog/)

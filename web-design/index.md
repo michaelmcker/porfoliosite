@@ -1,38 +1,15 @@
 Source: https://michaelmck.site/web-design/
 
-# Beautiful websites. Built for business.
+# Beautiful websites. Built to win business.
 
-A website should look like your business and make the next step easy. I bring the story, imagery, design and development together around the calls, enquiries or bookings you need.
+Make your business look as good online as it is in person. Thoughtful design, clear content and an easy path to call, enquire or book.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)[Explore AI Catalyst](https://ai-catalyst-wheat.vercel.app/)
+[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Explore AI Catalyst](https://ai-catalyst-wheat.vercel.app/)
 
-## A better website starts with your objectives.
+## Web design & development in the Okanagan.
 
-More bookings, better enquiries or a clearer story. We agree what the website needs to achieve before deciding what it needs to look like.
-
--
-
-### Understand your business
-
-We talk about your customers, your offer and the action you want visitors to take. We review your current site and material, then agree the pages, priorities, scope and cost.
-
-A shared brief, a page plan and a clear quote.
-
--
-
-### Shape the story. Design the site.
-
-Your positioning, copy and real work guide the visual direction. You review the key pages before the full build, so the typography, imagery and customer journey feel right together.
-
-A considered design with a clear path to call, book or enquire.
-
--
-
-### Build, launch and hand over
-
-I build the responsive site, connect the agreed features and check the content, forms and mobile experience. Search foundations, measurement and editing or maintenance arrangements are part of the launch plan.
-
-A finished website, ready to use and easy to move forward.
+Give people a feel for the stay, confidence in the service or a reason to visit. Your website should make the quality of your business visible, then make calling, enquiring or booking feel like the obvious next step.
 
 ## Selected work
 
@@ -58,10 +35,34 @@ The property’s own imagery anchors distinct stories for the Treehouse and Cabi
 
 Original Okanagan Treehouse website hero image showing the illuminated property among trees
 
+## A local website with a business result.
+
+Cool Runnings reported a 30% increase in sales after launch. The work brought its services, local search pages and contact routes into one website.
+
+Sales increase reported by the client. Website enquiries and search performance are shown separately in the case study.
+
+[See the Cool Runnings case study](https://michaelmck.site/v2/work/local-search-magnet.html)
+
+## A better website starts with your objectives.
+
+A beautiful site should also make it easier to win business. We agree what that means for you before drawing the first page.
+
+### Understand the customer
+
+What are they looking for? Why should they choose you? We turn those answers into a brief covering the pages, content and customer actions that matter.
+
+### Make the quality visible
+
+I bring copy, imagery and design together into a direction you can review. The website should feel like your business, with the same care on a phone as on a large screen.
+
+### Build it and put it to work
+
+I develop the site, connect the agreed booking or enquiry tools and check the customer journey. Search foundations, measurement and handover are part of the plan. The scope, timing and project price are agreed before work begins.
+
 ## A website that feels like your business.
 
 Start with a free consultation. Website work is custom scoped and quoted.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
-Email me to arrange a time. Based in Coldstream, working with businesses across the Okanagan.
+Email me to arrange a time. Based in Coldstream, working with businesses in Vernon, Kelowna and across the Okanagan.

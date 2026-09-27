@@ -1,5 +1,14 @@
 # Development log
 
+## 2026-09-26: Business-owner positioning and proof-first composition
+- User clarified the audience: Okanagan owners buying results and design quality, with no need to understand AI or delivery tools. Applying Impeccable and Marketing Copywriting with existing portfolio identity.
+- Design direction: original work as the dominant visual, outcome headlines, local service descriptions, proof before process. Remove the illustrative AI calendar and dense workflow diagram from the sales page; retain deeper implementation routes.
+- Checked current local search vocabulary. AI automation/implementation, web design/development, branding and marketing are relevant service terms; no search-volume or ranking claims inferred.
+- Implemented the work-first order, exact homepage proposal hero, shorter customer-facing copy and unboxed process. Marketing uses a mixed gallery rhythm for website stories, film and identity; Web includes client-attributed Cool Runnings sales proof.
+- Visible local service headings, refreshed descriptions and Coldstream/Vernon/Kelowna coverage feed the existing structured-data and discovery pipeline. Kept free consultation, CAD 900 audit and custom implementation from CAD 2,500/month; other services remain custom quoted.
+- Reading the generated Markdown exposed missing image-link labels and joined pricing text. Fixed those and included labeled film links; added one focused regression.
+- Built and promoted generated pages, verified syntax and local HTTP response, and passed 122 tests with one existing GA4 skip. Browser visual review still blocked by loopback policy. No publication.
+
 ## 2026-09-25 Services expansion
 
 - Read project instructions, source notes and production design contract. Canonical source is v2; root pages are promoted output.

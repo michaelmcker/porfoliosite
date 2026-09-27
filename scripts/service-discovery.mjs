@@ -11,7 +11,21 @@ export function schemaFor(p){
 }
 export function markdown(html){
  let s=html.match(/<main[^>]*>([\s\S]*?)<\/main>/)?.[1]||html;
- s=s.replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/g,'').replace(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g,(_,href,label)=>`[${plain(label)}](${href.startsWith('/')?origin+href:href})`).replace(/<img[^>]*alt="([^"]*)"[^>]*>/g,(_,alt)=>`\n${alt}\n`).replace(/<h([1-6])[^>]*>/g,(_,n)=>'\n\n'+'#'.repeat(Number(n))+' ').replace(/<br\s*\/?\s*>/g,' ').replace(/<li[^>]*>/g,'\n- ').replace(/<\/(p|h[1-6]|section|article|ul|figure|details|summary|div)>/g,'\n\n').replace(/<[^>]+>/g,'').replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&#39;',"'").replaceAll('&nbsp;',' ').replace(/[ \t]+\n/g,'\n').replace(/\n{3,}/g,'\n\n');
+ s=s.replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/g,'')
+  .replace(/<img[^>]*alt="([^"]*)"[^>]*>/g,(_,alt)=>`\n${alt}\n`)
+  .replace(/<video\b([^>]*)>([\s\S]*?)<\/video>/g,(_,attrs,body)=>{
+   const label=attrs.match(/aria-label="([^"]+)"/)?.[1]||'Project video';
+   const src=body.match(/(?:data-)?src="([^"]+)"/)?.[1];
+   return src ? `\n[${label}](${src.startsWith('/')?origin+src:src})\n` : label;
+  })
+  .replace(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g,(_,href,label)=>`[${plain(label)}](${href.startsWith('/')?origin+href:href})\n`)
+  .replace(/<li[^>]*>\s*(?=<h[1-6])/g,'')
+  .replace(/<h([1-6])[^>]*>/g,(_,n)=>'\n\n'+'#'.repeat(Number(n))+' ')
+  .replace(/<br\s*\/?\s*>|<\/?span\b[^>]*>/g,' ')
+  .replace(/<li[^>]*>/g,'\n- ')
+  .replace(/<\/(p|h[1-6]|section|article|ul|figure|details|summary|div)>/g,'\n\n')
+  .replace(/<[^>]+>/g,'').replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&#39;',"'").replaceAll('&nbsp;',' ')
+  .replace(/[ \t]+\n/g,'\n').replace(/\n{3,}/g,'\n\n');
  return s.trim()+'\n';
 }
 export async function writeDiscovery(pages,root){
