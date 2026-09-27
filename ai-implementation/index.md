@@ -2,7 +2,7 @@ Source: https://michaelmck.site/ai-implementation/
 
 # More bookings.  Less busywork.
 
-I build the skills, workflows and AI agents that help you save time, follow up faster and turn more opportunities into business.
+Custom AI skills, workflows and agents that save you time, follow up faster and help you win more work.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
@@ -13,7 +13,6 @@ I build the skills, workflows and AI agents that help you save time, follow up f
 [How it works](#how-it-works)
 
 Illustrative weekly appointment calendar on a laptop
-Illustrative example
 
 Vineyards overlooking Okanagan Lake at Winfield, Lake Country
 [Okanagan Lake · Adam Jones](https://commons.wikimedia.org/wiki/File:Okanagan_Lake_at_Winfield_-_Lake_Country_-_BC_-_Canada_-_01_(37465275260)_(2).jpg)
@@ -22,25 +21,21 @@ Vineyards overlooking Okanagan Lake at Winfield, Lake Country
 
 ## More time for  what matters.
 
-You started a business to do good work. Answering the same questions, chasing follow-ups and moving information between tools shouldn’t take over your day.
+Less chasing, copying and catching up. More time for your customers, your next booking and the work that grows your business.
 
-I help you put practical AI to work so your team can do more with its time—and spend more of it serving customers, winning work and growing revenue.
+## Put AI to work.  On your terms.
 
-## AI implementation  for Okanagan  businesses.
+Skills that know your businessReusable AI skills built around your knowledge, voice and standards. Less explaining. More useful work.
 
-Built around the work that gets in your way.
+Workflows that save timeConnect enquiries, bookings and follow-ups, so your team spends less time moving information.
 
-Custom AI skillsTurn your knowledge, examples and standards into reusable skills for writing, research and everyday decisions. Get consistent work with less repeated explaining.
+Agents that do a jobCustom agents built, deployed and maintained to handle defined tasks, with you in control.
 
-Connected workflowsConnect enquiries, scheduling, customer information and follow-up. Reduce handoffs and repetitive admin so fewer opportunities are left waiting.
-
-Custom agents, built and deployedGive a specific job to an agent: monitor incoming requests, prepare research or draft the next action. I build, deploy and maintain it with clear permissions and review points.
-
-Tools, training and adoptionSet up ChatGPT, Claude Cowork or Gemini around real tasks. Help your team use them confidently, improve efficiency and keep customer-facing decisions under your control.
+A team that can use itPractical setup and training for ChatGPT, Claude Cowork and Gemini, using your everyday work.
 
 ## Less searching.  More doing.
 
-This agency dashboard brings performance, content and client notes into one place. It’s one example of making scattered information useful to the people doing the work.
+Performance, content and client notes in one working dashboard. Less time finding information; more time acting on it.
 
 [Explore the working system](https://michaelmck.site/v2/workflows/agency-management-dashboard.html)
 
@@ -50,15 +45,15 @@ This agency dashboard brings performance, content and client notes into one plac
 
 ### Understand your business
 
-We look at how you work, where time is being lost and what would make the biggest difference: faster replies, more bookings, less admin or better sales follow-up.
+Find the work slowing you down. Choose a useful goal: hours saved, faster replies or more bookings.
 
 ### Build and test
 
-I design the skills, workflows or agents around your existing tools. We test them on real tasks and agree what needs a person’s approval.
+Build around your existing tools. Test on real tasks and agree where you stay in control.
 
 ### Deploy, train and improve
 
-I put the system into use, train your team and maintain the agreed scope. We track the result against the starting point and refine what needs work.
+Put it to work, train your team and keep improving it against the goal we set.
 
 ## Start with a clear plan.
 
@@ -68,23 +63,19 @@ A free initial consultation to understand the problem. Then choose the right nex
 
 CAD $900 One-time engagement
 
-Up to five hours on site, spread over two to three weeks. A detailed assessment of your current processes, prioritized opportunities and an actionable report.
-
-Includes off-the-shelf tools you can implement yourself and recommendations for custom work. The report is yours to use independently.
+Up to five hours on site over two to three weeks. A detailed, actionable report with priorities, off-the-shelf tools and recommendations for custom work. Yours to implement independently.
 
 ### Custom systems
 
 From CAD $2,500 / month
 
-I design, build, deploy and maintain your custom skills, workflows and agents. Includes agreed integrations, testing, training, documentation and ongoing improvements.
-
-Scope, software subscriptions and support arrangements are agreed before work begins.
+Design, build, deployment and ongoing maintenance of your skills, workflows and agents. Training and documentation included. Scope, support and software costs agreed up front.
 
 [Let’s talk about your business](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
-## AI implementation & business automation in the Okanagan.
+## AI consulting in Kelowna & the Okanagan.
 
-Based in Coldstream, I work with business owners in Vernon, Kelowna and across the Okanagan. We choose a measurable goal—time saved, response time, completed follow-ups or bookings—and assess what actually changes.
+Work directly with Michael McKerracher, based in Coldstream and serving Vernon, Lake Country, Kelowna and West Kelowna. Start with a $900 audit or bring a workflow you’re ready to build. [What should you automate first?](https://michaelmck.site/blog/what-to-automate-first/)
 
 ## I build the system.  You build the business.
 

@@ -10,27 +10,26 @@ Websites, social media, video and brand development that make your business easi
 
 Upon This Rock podcast identity with classical artwork in the UTR letterforms
 
-Brand development & podcast artwork
-
 ## Upon This Rock
 
 A distinct visual direction, carried from the main identity into episode artwork. A recognizable world for the series before anyone presses play.
 
 [View the episode artwork](https://michaelmck.site/assets/selected-work/upon-this-rock-episode-01.webp)
 
-Video
-
 ## Stories that  move people.
 
-The St. James School donor film brings a larger story of education, community and giving to life.
+The St. James School website and donor film bring a story of education, community and giving to life.
 
-[St. James School donor film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
+[St. James School website](https://st-james-school-prototype.vercel.app/)
+[Watch the film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
+
+[St. James School donor film still](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
 
 ## Good businesses  deserve to be  better known.
 
 You do important work. In a noisy market, it’s easy to be overlooked.
 
-I help you clarify the message, create a distinctive presence and show up consistently—so the right people have a reason to take notice.
+I help you clarify the message, create a distinctive presence and show up consistently, so the right people have a reason to take notice.
 
 ## From the message  to the finished work.
 
@@ -42,7 +41,7 @@ VideoBrand films, campaign creative, social video and podcast edits. Story and v
 
 Brand developmentPositioning, messaging, visual identity and brand guidelines. A consistent foundation for the way your business looks and speaks.
 
-[Vertical Impression product-story website](https://michaelmck.site/assets/videos/vertical-impression-proposal-story-boomerang.mp4)
+Vertical Impression website showing the elevator advertising story
 
 ## Explaining a misunderstood medium.
 
@@ -68,9 +67,18 @@ Create the agreed website, social media assets, video or brand materials. You re
 
 Agree what to track, learn from the response and use that evidence to shape the next round.
 
-## Marketing & branding for Okanagan businesses.
+## Marketing & branding for Kelowna and the Okanagan.
 
-Websites, social media, video and brand development, custom scoped around your goals. We agree the deliverables, timing and cost before work begins.
+Work directly with Michael McKerracher on your website, social media, video and brand development. Based in Coldstream, serving Vernon, Lake Country, Kelowna and West Kelowna. Each project has an agreed scope, timeline and custom quote.
+
+## Local SEO. A clearer path to your business.
+
+Help customers in Kelowna and the Okanagan find the services you actually offer. Useful service pages, technical SEO, internal links and Google Business Profile support connect the search to a call, enquiry or booking.
+
+For Cool Runnings, I brought the website, local service content and search strategy together. The case study shows the work and its measured search performance.
+
+[See the local SEO case study](https://michaelmck.site/v2/work/local-search-magnet.html)
+[Web design and development](https://michaelmck.site/web-design/)
 
 ## What should people  know you for?
 

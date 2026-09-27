@@ -2,9 +2,19 @@
 
 ## In progress
 
+2026-09-26: Refinement and local SEO research complete and deployed. Business Profile/Search Console verification remains an external follow-up, not claimed complete.
+
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-09-26: Lighter service pages and local search targeting
+- Deployed AI copy/spacing and mobile order refinements, St James website/film links and a short product-story GIF with reduced-motion fallback.
+- Researched real DataForSEO volume and four Kelowna-located SERPs. Findings and raw responses in docs/seo/; applied local page metadata, visible geographic copy, Service area/type schema and case-study links.
+- Final production: portfolio-remote-preview-flsfquv1j-michael-mcks-projects.vercel.app, aliased to michaelmck.site.
+- 122 tests pass, one existing GA4 skip. Live HTML/Markdown exact parity verified. Mobile/desktop layout and media markup inspected. Repaired Treehouse link using the working homepage project preview.
+- Organic geo-fencing is unavailable; Business Profile verification and Search Console indexing checks remain follow-up work. No ranking improvement claimed.
+
 
 ### 2026-09-26: Selected concepts built and deployed
 - Translated AI 01, Web 03 and Marketing 03 using image-to-code. AI covers custom skills, workflows, deployed agents and training, tied to time, efficiency, revenue and bookings. Marketing explicitly covers websites, social media, video and brand development.

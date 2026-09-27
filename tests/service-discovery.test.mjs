@@ -45,7 +45,16 @@ test('service proof uses original project media without nested interactive viewe
  assert(marketing.includes('Explaining a misunderstood medium.'));
  assert(!marketing.includes('Make the opportunity clear.'));
  assert(!marketing.includes('vertical-impression-why-elevators.png'));
- assert(marketing.includes('/assets/videos/vertical-impression-proposal-story-boomerang.mp4'));
+ assert(marketing.includes('/assets/selected-work/vertical-impression-story.gif'));
+ assert(marketing.includes('prefers-reduced-motion: reduce'));
+ assert(!ai.includes('<figcaption>Illustrative example</figcaption>'));
+ assert(marketing.includes('St. James School website'));
+ assert(marketing.includes('Watch the film'));
+ assert(ai.includes('Custom agents built, deployed and maintained'));
+ for(const page of [ai,web,marketing]){
+  const graph=JSON.parse(page.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+  assert(graph.find(x=>x['@type']==='Service').areaServed.some(x=>x.name==='Kelowna, British Columbia, Canada'));
+ }
  assert(marketing.includes('/assets/selected-work/ai-catalyst-film.mp4'));
  assert(marketing.includes('/assets/selected-work/upon-this-rock-episode-01.webp'));
  await access('assets/videos/vertical-impression-proposal-story-boomerang.mp4');

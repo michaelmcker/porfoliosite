@@ -31,3 +31,9 @@ The rejected services hub, guides and sample report are archived in docs/rejecte
 - Marketing: websites, social media, video and brand development. Web and marketing remain custom quoted.
 - Real Okanagan photography carries visible CC BY-SA attribution. Calendar hero is identified as illustrative.
 - Markdown Accept requests redirect to actual index.md files, avoiding static HTML route precedence on Vercel.
+
+## Local service targeting and lighter previews
+- Service titles and descriptions target Kelowna, with truthful Coldstream base and Okanagan area coverage in visible content and Service schema.
+- Reduced AI copy and responsive image spacing; mobile lifestyle copy separates hero and regional photograph.
+- St James project/film links and short non-player product-story GIF with reduced-motion still.
+- Query evidence, geographic limits and next measurement steps: docs/seo/2026-09-26-local-search-findings.md.

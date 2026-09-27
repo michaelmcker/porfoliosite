@@ -117,3 +117,12 @@
 - Added licensed regional photography with credit, optimized calendar imagery, real work proof, pricing and clear outcome-led service definitions.
 - Corrected mobile line-break spacing and header alignment. Repaired production Markdown negotiation with 307 redirects; all three returned bodies match local Markdown exactly.
 - Production deployed and live rendering reviewed. 122 tests pass, one existing skip. Source artwork excluded from deployment; optimized JPEGs served.
+
+## 2026-09-26: Concise services and local search research
+- Removed visible illustrative/project labels; kept photo licensing attribution and accurate accessible image descriptions.
+- AI hero is edge-aligned without right padding; mobile puts lifestyle text before the regional photo. Reduced AI Markdown word count from 595 to 461 (about 23%). Compact 2x2 capability layout on desktop, stacked short definitions on phones.
+- St James now has website and film links plus linked original poster. Product-story video replaced with a 4.8-second, single-play 1.5 MB GIF, and static reduced-motion fallback.
+- Queried DataForSEO Google Ads volumes nationally and in Kelowna, plus four Kelowna-located Google SERPs. Saved raw evidence and findings under docs/seo/.
+- Applied primary service/city page titles, descriptions, visible local scope, semantic Service types and areaServed, and contextual links. No fake office or thin city clones.
+- Repaired Treehouse CTA to the working project preview from the homepage after its custom-domain TLS failed.
+- Content editor: no em dashes or banned phrases in the three service Markdown bodies; retained attributed client result and no fabricated outcome claims. New links verified; Commons and license verified via web after automated HEAD blocks.

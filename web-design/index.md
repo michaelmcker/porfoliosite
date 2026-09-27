@@ -13,7 +13,7 @@ Turn a good first impression into your next enquiry, booking or sale.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 
-[Original Okanagan Treehouse property imagery at dusk Okanagan Treehouse A place worth staying for. Website design & development A distinctive property, brought to life online with an immersive story and a clear path to explore the stay. Explore the website](https://okanagantreehouse.ca/)
+[Original Okanagan Treehouse property imagery at dusk Okanagan Treehouse A place worth staying for. Website design & development A distinctive property, brought to life online with an immersive story and a clear path to explore the stay. Explore the website](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 RCCV website displayed in its original laptop composition
 
@@ -29,9 +29,9 @@ Local businesses do great work. A clear, professional website helps people see t
 
 The design and the customer journey need to work together.
 
-## Web design & development in the Okanagan.
+## Web design for Kelowna, Vernon & the Okanagan.
 
-Custom websites built around your customers and business objectives. Design, copy, development and search foundations brought together, with a clear path to call, enquire or book.
+Michael McKerracher designs and builds custom websites from Coldstream, serving Vernon, Lake Country, Kelowna and West Kelowna. New websites and redesigns bring together copy, responsive development, local SEO foundations and booking integrations. [Need help getting found?](https://michaelmck.site/marketing-branding/#local-seo)
 
 ## A clear process.  Built around your goals.
 

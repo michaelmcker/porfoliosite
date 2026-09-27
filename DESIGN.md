@@ -158,3 +158,6 @@ Use subtle reveal motion, image scale on hover, and restrained line/particle ani
 
 ## Selected service-page translation — September 26, 2026
 AI 01, Web 03 and Marketing 03 are the approved page directions. Preserve DM Sans/Fraunces, white, forest and gold; broad original-work imagery; open process sections; custom scope for web and marketing. AI uses the calendar hero and real Okanagan Lake photograph, never a fake handshake or unrelated proposal. Services must connect skills, workflows and agents to time saved, efficiency, bookings and revenue. Marketing must explicitly name websites, social media, video and brand development. The implementation contract is docs/design-exploration/service-concepts-2026-09-26/implementation.md.
+
+### Service refinement: September 26
+Remove visible illustration labels, keep source-photo credits. AI hero media reaches the content edge; on mobile the More time for what matters copy must appear between the calendar and landscape photos. Use concise 2x2 capability definitions, not long paragraphs. Product-story motion is a short single-play GIF with a reduced-motion still; St James has an image and explicit website/film links. Preserve outcome headlines while using local service language in metadata and concise supporting sections.
