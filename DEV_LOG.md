@@ -153,3 +153,7 @@
 
 ## 2026-10-07: Mobile workflow image corners
 Source PNGs retained. Four mobile diagrams are opaque black artwork, not transparent cutouts; dashboard is a screenshot. Updated mobile media to natural image proportions with 20px image clipping and 28px outer corners, retaining light surrounding paper. No artwork pixels changed.
+
+## 2026-10-07: Additional website and film proof
+- Added original ABC Appliance project screenshot and verified canonical .ca link to Web Design.
+- Marketing now embeds St James donor film and approved VI scrolling film alongside AI Catalyst. Added full AI Catalyst film link. Removed autoplay attribute so reduced-motion preference is respected by the existing observer.

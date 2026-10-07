@@ -23,6 +23,14 @@ A welcoming website that helps people find Mass times, sacraments, parish news a
 
 [Explore the RCCV project](https://michaelmck.site/#work)
 
+[ABC Appliance website with repair services and a clear request-a-repair action](https://www.abcappliance.ca/)
+
+## ABC Appliance
+
+A local service website built around the next step: getting a repair booked. Clear service information, Okanagan and Shuswap coverage, and a straightforward repair request bring the business closer to its customers.
+
+[Explore the website](https://www.abcappliance.ca/)
+
 ## A stronger online  presence opens doors.
 
 Local businesses do great work. A clear, professional website helps people see that quality, trust what you offer and take the next step.

@@ -105,6 +105,14 @@ A welcoming website that helps people find Mass times, sacraments, parish news a
 
 [Explore the RCCV project](https://michaelmck.site/#work)
 
+[ABC Appliance website with repair services and a clear request-a-repair action](https://www.abcappliance.ca/)
+
+## ABC Appliance
+
+A local service website built around the next step: getting a repair booked. Clear service information, Okanagan and Shuswap coverage, and a straightforward repair request bring the business closer to its customers.
+
+[Explore the website](https://www.abcappliance.ca/)
+
 ## A stronger online  presence opens doors.
 
 Local businesses do great work. A clear, professional website helps people see that quality, trust what you offer and take the next step.
@@ -164,6 +172,7 @@ Source: https://michaelmck.site/marketing-branding/
 Websites, social media, video and brand development that make your business easier to understand, remember and choose.
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Watch the AI Catalyst film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
 
 Upon This Rock podcast identity with classical artwork in the UTR letterforms
 
@@ -180,7 +189,7 @@ The St. James School website and donor film bring a story of education, communit
 [St. James School website](https://st-james-school-prototype.vercel.app/)
 [Watch the film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
 
-[St. James School donor film still](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
+[St. James School donor film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
 
 ## Good businesses  deserve to be  better known.
 
@@ -198,7 +207,7 @@ VideoBrand films, campaign creative, social video and podcast edits. Story and v
 
 Brand developmentPositioning, messaging, visual identity and brand guidelines. A consistent foundation for the way your business looks and speaks.
 
-Vertical Impression website showing the elevator advertising story
+[Vertical Impression scrolling product-story film](https://michaelmck.site/assets/videos/vertical-impression-proposal-story-boomerang.mp4)
 
 ## Explaining a misunderstood medium.
 

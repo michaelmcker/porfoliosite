@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-07: ABC website proof and three marketing films built and checked; publishing release.
+
 2026-09-27: Shared navigation, AI typography and restrained print textures implemented. 123 tests pass; deployed and verified live.
 
 2026-09-27: Approved AI messaging and flow deployed and verified. No remaining implementation work for this revision.
@@ -11,6 +13,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-07: Website and video project additions
+- Added ABC Appliance to Web Design with original screenshot and canonical .ca link.
+- Marketing embeds AI Catalyst, St James donor film and the recent VI scroll film.
+- 143 non-browser tests passed; desktop layout and donor playback verified locally.
 
 ### 2026-09-27: Shared navigation, print styling and ranking research
 - One shared header for homepage, three services and blog. AI heading now uses the same DM Sans/Fraunces hierarchy as web design. Added restrained CSS printed-dot backgrounds without changing approved imagery.
@@ -133,7 +140,9 @@ No remaining work for the selected service-page release. Deployed and verified S
 - 142 non-browser tests pass. The standalone About mobile browser test cannot run because its hard-coded Google Chrome executable is absent.
 - Production push and public verification underway.
 
-## In progress — October 7 cleanup
+## In progress
+
+2026-10-07: ABC website proof and three marketing films built and checked; publishing release. — October 7 cleanup
 Remove public blog and image labels, restore approved Vertical Impression scrolling film, publish through main.
 
 ## 2026-10-07: Remove blog and media clutter
