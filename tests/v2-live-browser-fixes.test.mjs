@@ -13,8 +13,7 @@ test("hero keeps HTML corrections on larger screens and uses the authored mobile
 
   assert.match(html, /class="hero-video-crop"[\s\S]*class="hero-video-source"/);
   assert.match(html, /class="hero-video-inputs"[\s\S]*Data &amp; insights[\s\S]*Audience signals[\s\S]*Competition[\s\S]*Search trends[\s\S]*Brand rules/);
-  assert.match(html, /hero-video-label-system"><span>Workflow<br>system<\/span>/);
-  assert.match(html, /hero-video-label-outputs"><span>Outputs<\/span>/);
+  assert.doesNotMatch(html, /class="hero-video-label/);
   assert.match(html, /hero-video-statement"><strong>Systems thinking<\/strong>/);
   assert.match(html, /data-poster-desktop="\.\.\/assets\/videos\/portfolio-hero-system-map-desktop-poster\.webp"/);
   assert.match(html, /data-poster-mobile="\.\.\/assets\/videos\/portfolio-hero-system-map-mobile-poster\.webp"/);

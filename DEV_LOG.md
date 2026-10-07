@@ -144,3 +144,9 @@
 - Merged service history with current origin/main in isolated /tmp/portfolio-restore-services, preserving current analytics, optimized assets, metrics and security settings. Retained approved October 4 Stations removal.
 - 142 non-browser tests pass. The standalone About mobile browser test cannot run because its hard-coded Google Chrome executable is absent.
 - Production push and public verification underway.
+
+## 2026-10-07: Remove blog and media clutter
+- Removed public blog routes, header/footer links, Markdown discovery and sitemap references. Build now emits only three services.
+- Removed image captions and added labels; Okanagan CC attribution moved to a footer-linked image-credits page. Marketing hero film plays without native controls.
+- Restored the approved Vertical Impression proposal-story scrolling loop from the earlier source; explicitly allowed video and poster in deployment.
+- Updated regression checks for retired blog, clean media and restored film. Publishing through GitHub main.

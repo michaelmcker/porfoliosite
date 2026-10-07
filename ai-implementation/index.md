@@ -10,9 +10,6 @@ I build AI skills, workflows and custom agents that work with the tools you alre
 Illustrative weekly appointment calendar on a laptop
 
 Vineyards overlooking Okanagan Lake at Winfield, Lake Country
-[Okanagan Lake · Adam Jones](https://commons.wikimedia.org/wiki/File:Okanagan_Lake_at_Winfield_-_Lake_Country_-_BC_-_Canada_-_01_(37465275260)_(2).jpg)
- · [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
- · resized
 
 ## More time for  what matters.
 
@@ -72,7 +69,7 @@ Design, build, deployment and ongoing maintenance of your skills, workflows and 
 
 ## AI consulting in Kelowna & the Okanagan.
 
-Work directly with Michael McKerracher, based in Coldstream and serving Vernon, Lake Country, Kelowna and West Kelowna. Start with a $900 audit or bring a workflow you’re ready to build. [What should you automate first?](https://michaelmck.site/blog/what-to-automate-first/)
+Work directly with Michael McKerracher, based in Coldstream and serving Vernon, Lake Country, Kelowna and West Kelowna. Start with a $900 audit or bring a workflow you’re ready to build.
 
 ## I build the system.  You build the business.
 

@@ -58,54 +58,6 @@
           "value": ".*text/markdown.*"
         }
       ]
-    },
-    {
-      "source": "/blog/",
-      "destination": "/blog/index.md",
-      "permanent": false,
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": ".*text/markdown.*"
-        }
-      ]
-    },
-    {
-      "source": "/blog/what-to-automate-first/",
-      "destination": "/blog/what-to-automate-first/index.md",
-      "permanent": false,
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": ".*text/markdown.*"
-        }
-      ]
-    },
-    {
-      "source": "/blog/website-that-turns-visits-into-enquiries/",
-      "destination": "/blog/website-that-turns-visits-into-enquiries/index.md",
-      "permanent": false,
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": ".*text/markdown.*"
-        }
-      ]
-    },
-    {
-      "source": "/blog/local-marketing-plan/",
-      "destination": "/blog/local-marketing-plan/index.md",
-      "permanent": false,
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": ".*text/markdown.*"
-        }
-      ]
     }
   ],
   "headers": [
@@ -216,58 +168,6 @@
         {
           "key": "Link",
           "value": "<https://michaelmck.site/marketing-branding/index.md>; rel=\"alternate\"; type=\"text/markdown\""
-        }
-      ]
-    },
-    {
-      "source": "/blog/",
-      "headers": [
-        {
-          "key": "Vary",
-          "value": "Accept"
-        },
-        {
-          "key": "Link",
-          "value": "<https://michaelmck.site/blog/index.md>; rel=\"alternate\"; type=\"text/markdown\""
-        }
-      ]
-    },
-    {
-      "source": "/blog/what-to-automate-first/",
-      "headers": [
-        {
-          "key": "Vary",
-          "value": "Accept"
-        },
-        {
-          "key": "Link",
-          "value": "<https://michaelmck.site/blog/what-to-automate-first/index.md>; rel=\"alternate\"; type=\"text/markdown\""
-        }
-      ]
-    },
-    {
-      "source": "/blog/website-that-turns-visits-into-enquiries/",
-      "headers": [
-        {
-          "key": "Vary",
-          "value": "Accept"
-        },
-        {
-          "key": "Link",
-          "value": "<https://michaelmck.site/blog/website-that-turns-visits-into-enquiries/index.md>; rel=\"alternate\"; type=\"text/markdown\""
-        }
-      ]
-    },
-    {
-      "source": "/blog/local-marketing-plan/",
-      "headers": [
-        {
-          "key": "Vary",
-          "value": "Accept"
-        },
-        {
-          "key": "Link",
-          "value": "<https://michaelmck.site/blog/local-marketing-plan/index.md>; rel=\"alternate\"; type=\"text/markdown\""
         }
       ]
     },

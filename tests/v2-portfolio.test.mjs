@@ -406,7 +406,7 @@ test("large showcase videos stay lazy, autoplay once visible, and have no pause-
   const videos = [...html.matchAll(/<video[^>]+data-motion-video[^>]*>[\s\S]*?<\/video>/g)].map((match) => match[0]);
   const controls = [...html.matchAll(/<button[^>]+data-motion-toggle[^>]*>/g)].map((match) => match[0]);
 
-  assert.equal(videos.length, 2);
+  assert.equal(videos.length, 3);
   assert.equal(controls.length, 0);
   for (const video of videos) {
     assert.doesNotMatch(video, /data-motion-surface|tabindex="0"|role="button"/);

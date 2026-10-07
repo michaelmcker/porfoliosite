@@ -70,6 +70,7 @@ for (const route of serviceRoutes) {
 }
 const sitemapUrl = new URL("sitemap.xml", root);
 let sitemap = await readFile(sitemapUrl, "utf8");
+sitemap = sitemap.replace(/\s*<url>\s*<loc>https:\/\/michaelmck\.site\/blog\/[^<]*<\/loc>[\s\S]*?<\/url>/g, '');
 for (const route of serviceRoutes) {
   const location = `https://michaelmck.site${route}`;
   if (!sitemap.includes(`<loc>${location}</loc>`)) {

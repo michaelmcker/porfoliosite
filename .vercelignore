@@ -115,3 +115,7 @@ v2/blog/
 # Keep source-resolution service artwork out of deployment.
 assets/selected-work/booking-calendar-source.png
 assets/selected-work/okanagan-lake-adam-jones.jpg
+
+# Approved scrolling Vertical Impression showcase.
+!assets/videos/vertical-impression-proposal-story-boomerang.mp4
+!assets/screens/vertical-impression-proposal-story-boomerang-poster.jpg

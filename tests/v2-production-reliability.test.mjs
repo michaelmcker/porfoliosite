@@ -11,6 +11,8 @@ test("homepage avoids loading oversized and below-fold media during first paint"
     read("v2/styles.css"),
   ]);
 
+  assert.match(html, /id="motion-video-proposal-story"/);
+  assert.match(html, /data-src="\.\.\/assets\/videos\/vertical-impression-proposal-story-boomerang\.mp4"/);
   assert.match(html, /portfolio-hero-system-map-desktop-1080p\.mp4/);
   assert.doesNotMatch(html, /portfolio-hero-system-map-desktop-4k-sparse-loop\.mp4/);
   assert.match(html, /<iframe[^>]+data-accommodation-page[^>]+data-src="okanagan-preview\/index\.html"/);
@@ -19,7 +21,6 @@ test("homepage avoids loading oversized and below-fold media during first paint"
   assert.ok((preview.match(/preload="none"/g) || []).length >= 3);
 
   for (const src of [
-    "../assets/screens/vertical-impression-why-elevators.webp",
     "../assets/campaigns/vertical-impression-albums-composite.webp",
     "assets/workflows/content-production-folder-card.webp",
     "assets/workflows/agency-dashboard-desktop.webp",
