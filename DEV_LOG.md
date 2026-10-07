@@ -157,3 +157,8 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 ## 2026-10-07: Additional website and film proof
 - Added original ABC Appliance project screenshot and verified canonical .ca link to Web Design.
 - Marketing now embeds St James donor film and approved VI scrolling film alongside AI Catalyst. Added full AI Catalyst film link. Removed autoplay attribute so reduced-motion preference is respected by the existing observer.
+
+## 2026-10-07: Correct portfolio imagery
+- Replaced the obsolete green ABC preview with a fresh browser capture of the blue/yellow production site. Previous capture came from docs/marketing-pass and did not reflect the live brand.
+- RCCV source has an opaque cream ground; preparing transparent laptop with soft shadow.
+- Added transparent RCCV laptop PNG with contact shadow; homepage and contact object use the new asset. Original source preserved.

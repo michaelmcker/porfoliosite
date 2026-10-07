@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-07: ABC live-site capture and transparent RCCV laptop complete; 143 checks pass.
+
 2026-10-07: ABC website proof and three marketing films built and checked; publishing release.
 
 2026-09-27: Shared navigation, AI typography and restrained print textures implemented. 123 tests pass; deployed and verified live.
@@ -13,6 +15,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-07: Correct actual project imagery
+- Captured current blue/yellow ABC production website, replacing the old green preview.
+- Extracted RCCV laptop onto transparency with shadow; original retained. Optimized alpha WebP is 173 KB.
+- 143 non-browser tests pass; local homepage visually checked.
 
 ### 2026-10-07: Website and video project additions
 - Added ABC Appliance to Web Design with original screenshot and canonical .ca link.
@@ -141,6 +148,8 @@ No remaining work for the selected service-page release. Deployed and verified S
 - Production push and public verification underway.
 
 ## In progress
+
+2026-10-07: ABC live-site capture and transparent RCCV laptop complete; 143 checks pass.
 
 2026-10-07: ABC website proof and three marketing films built and checked; publishing release. — October 7 cleanup
 Remove public blog and image labels, restore approved Vertical Impression scrolling film, publish through main.

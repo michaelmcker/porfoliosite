@@ -35,7 +35,7 @@ test("homepage avoids loading oversized and below-fold media during first paint"
   assert.match(html, /<img[^>]+data-src="\.\.\/assets\/device-mockups\/laptop-graphite-frame\.webp"/);
   assert.match(html, /<img[^>]+data-src="\.\.\/assets\/samples\/vertical-impression-local-proposal-current\.webp"/);
   assert.match(html, /poster="\.\.\/assets\/videos\/portfolio-hero-system-map-desktop-poster\.webp"/);
-  assert.match(html, /src="\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.webp"/);
+  assert.match(html, /src="\.\.\/assets\/selected-work\/rccv-laptop-transparent\.webp"/);
   assert.match(html, /data-poster="\.\.\/assets\/screens\/cool-runnings-home\.webp"/);
   assert.match(css, /mask-image:\s*url\("\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.webp"\)/);
   assert.doesNotMatch(css, /mask-image:\s*url\("\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.png"\)/);

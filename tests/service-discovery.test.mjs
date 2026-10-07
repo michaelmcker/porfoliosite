@@ -48,7 +48,7 @@ test('service proof uses original project media without nested interactive viewe
  assert(!marketing.includes('vertical-impression-why-elevators.png'));
  assert(marketing.includes('/assets/videos/vertical-impression-proposal-story-boomerang.mp4'));
  assert(web.includes('https://www.abcappliance.ca/'));
- assert(web.includes('/assets/selected-work/abc-appliance-website.png'));
+ assert(web.includes('/assets/selected-work/abc-appliance-live.png'));
  assert.equal((marketing.match(/<video /g)||[]).length,3);
  assert(!marketing.includes('data-motion-video autoplay'));
  assert(marketing.includes('data-src="https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4"'));
