@@ -1548,3 +1548,28 @@ h3 {
  .site-header .portfolio-service-nav { display:flex; grid-column:1/-1; grid-row:2; justify-content:flex-start; font-size:.86rem; }
  .site-header .header-socials { grid-column:2; grid-row:1; }
 }
+
+/* Mobile workflow artwork: follow the image's natural proportions so the
+   rounded edge clips the artwork itself rather than an empty contain box. */
+@media (max-width: 699px) {
+  .workflow-panel figure,
+  .workflow-dashboard .workflow-panel figure,
+  .workflow-presentation .workflow-panel figure {
+    aspect-ratio: auto;
+    border-radius: 28px;
+    padding: 12px;
+  }
+  .workflow-panel figure picture {
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .workflow-panel figure picture > img {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    border-radius: 20px;
+  }
+}

@@ -141,3 +141,6 @@ Remove public blog and image labels, restore approved Vertical Impression scroll
 - Removed image captions and added labels; Okanagan CC attribution moved to a footer-linked image-credits page. Marketing hero film plays without native controls.
 - Restored the approved Vertical Impression proposal-story scrolling loop from the earlier source; explicitly allowed video and poster in deployment.
 - Updated regression checks for retired blog, clean media and restored film. Publishing through GitHub main.
+
+## 2026-10-07: Mobile workflow image corners
+Source PNGs retained. Four mobile diagrams are opaque black artwork, not transparent cutouts; dashboard is a screenshot. Updated mobile media to natural image proportions with 20px image clipping and 28px outer corners, retaining light surrounding paper. No artwork pixels changed.
