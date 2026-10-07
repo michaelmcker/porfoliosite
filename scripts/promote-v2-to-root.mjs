@@ -61,3 +61,19 @@ await Promise.all([
     new URL("vendor/matter.min.js", root),
   ),
 ]);
+
+// Three commercial pages have canonical source under v2 and public top-level routes.
+const serviceRoutes = JSON.parse(await readFile(new URL("v2/services/routes.json", root), "utf8"));
+for (const route of serviceRoutes) {
+  await mkdir(new URL(route.slice(1), root), { recursive: true });
+  await copyFile(new URL(`v2${route}index.html`, root), new URL(`${route.slice(1)}index.html`, root));
+}
+const sitemapUrl = new URL("sitemap.xml", root);
+let sitemap = await readFile(sitemapUrl, "utf8");
+for (const route of serviceRoutes) {
+  const location = `https://michaelmck.site${route}`;
+  if (!sitemap.includes(`<loc>${location}</loc>`)) {
+    sitemap = sitemap.replace("</urlset>", `  <url><loc>${location}</loc></url>\n</urlset>`);
+  }
+}
+await writeFile(sitemapUrl, sitemap);

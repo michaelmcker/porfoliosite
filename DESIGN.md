@@ -83,6 +83,14 @@ The visual layer reuses the shared proposal client and API contract rather than 
 
 A warm-paper outreach handoff follows the builder. It pairs editorial context with one authored email object, a visible proposal attachment, and a human-review note. It explains the real relationship to Local Prospecting and Enrichment: reviewed public business context and nearby inventory feed a personalized email draft and custom proposal, but a salesperson still owns recipient choice, language, commercial offer, and final send.
 
+### Commercial service-page direction (September 26, 2026)
+
+The three service pages keep the production DM Sans/Fraunces pairing, white canvas, ink, paper and original work objects. Their audience is a business owner. The order is an outcome-led hero, a short local service description, finished work, then the engagement and commercial details. Show proof before explaining process.
+
+The AI hero must communicate a recognizable service situation without asking visitors to interpret an unrelated client deliverable. The dental proposal was explicitly rejected for this page. Its current illustrative enquiry-and-booking scene connects an everyday customer request with a confirmed appointment; it is not a claim of client results. Workflow topology stays on deeper pages. Web keeps the original AI Catalyst specimen, RCCV laptop and Treehouse imagery. Marketing presents the two website stories as full rows, with the AI Catalyst film and Upon This Rock identity as a paired gallery between them.
+
+Service display scale is `--service-type-h1: clamp(3.3rem, 4.6vw, 5.5rem)` in `v2/services/saas.css`, with a separate phone scale. Desktop copy/media are approximately 46/54; each visual is sized to its content within its half. Process copy is short and unboxed. Phones retain complete original artwork and a single-column reading order. Rendered visual review is still required; loopback browser access was blocked during implementation.
+
 ## Legacy V1 Design Reference
 
 ### Theme
@@ -148,3 +156,12 @@ Use real public screenshots, generated design references, rendered PDFs, and sto
 ### Motion
 
 Use subtle reveal motion, image scale on hover, and restrained line/particle animation. Avoid controls that imply heavy interaction unless the interaction exists. Reduced motion must preserve all content.
+
+## Selected service-page translation — September 26, 2026
+AI 01, Web 03 and Marketing 03 are the approved page directions. Preserve DM Sans/Fraunces, white, forest and gold; broad original-work imagery; open process sections; custom scope for web and marketing. AI uses the calendar hero and real Okanagan Lake photograph, never a fake handshake or unrelated proposal. Services must connect skills, workflows and agents to time saved, efficiency, bookings and revenue. Marketing must explicitly name websites, social media, video and brand development. The implementation contract is docs/design-exploration/service-concepts-2026-09-26/implementation.md.
+
+### Service refinement: September 26
+Remove visible illustration labels, keep source-photo credits. AI hero media reaches the content edge; on mobile the More time for what matters copy must appear between the calendar and landscape photos. Use concise 2x2 capability definitions, not long paragraphs. Product-story motion is a short single-play GIF with a reduced-motion still; St James has an image and explicit website/film links. Preserve outcome headlines while using local service language in metadata and concise supporting sections.
+
+### AI narrative approved September 27
+Hero: Less busywork. More business. Explain the skills, workflows and agents working inside existing tools. Two actions: free consultation and an in-page link to what gets built. Follow with recognizable enquiry/follow-up/admin problems, capabilities, real work, process and pricing. Retain the portfolio visual language and Okanagan photography; do not import the reference's architecture collage or dither treatment.

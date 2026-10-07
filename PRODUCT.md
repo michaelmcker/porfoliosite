@@ -6,6 +6,8 @@ brand
 
 ## Users
 
+The three commercial service pages speak to Okanagan business owners buying more enquiries, customers, bookings and time back. They do not need an interest in AI or production tools. Lead with what changes for their business, demonstrate quality through real finished work, and explain the service in plain language. Local service keywords belong in useful visible descriptions, not in repetitive city pages or technical hero copy.
+
 Hiring managers, founders, marketing leaders, and collaborators reviewing Michael McKerracher as a marketing engineer. They need a fast read on public work, credible results, and the AI-enabled workflows behind the work without feeling like they are inside an internal dashboard.
 
 ## Product Purpose

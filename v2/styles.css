@@ -1536,3 +1536,15 @@ h3 {
   [data-contact-morph-after] { position: static !important; }
   .contact-instruction { display: none; }
 }
+
+/* Direct commercial paths preserve the portfolio presentation. */
+.portfolio-services-invitation { padding-block:40px; border-bottom:1px solid var(--line); display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px; }
+.portfolio-services-invitation p { margin:0; font:450 1.6rem var(--font-editorial); }
+.portfolio-services-invitation div { display:flex; flex-wrap:wrap; gap:12px 26px; }
+.portfolio-services-invitation a { display:inline-flex; min-height:44px; align-items:center; }
+@media(max-width:1099px) { .site-header .portfolio-service-nav { gap:0 18px; flex-wrap:wrap; } }
+@media(max-width:760px) {
+ .site-header:has(.portfolio-service-nav) { gap:0 12px; padding-block:10px; }
+ .site-header .portfolio-service-nav { display:flex; grid-column:1/-1; grid-row:2; justify-content:flex-start; font-size:.86rem; }
+ .site-header .header-socials { grid-column:2; grid-row:1; }
+}

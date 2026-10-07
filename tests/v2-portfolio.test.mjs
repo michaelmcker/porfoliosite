@@ -154,7 +154,7 @@ test("selected work gives properly scaled laptop and browser objects more room t
   assert.match(css, /\.work-copy h3\s*\{[^}]*font-family:\s*var\(--font-editorial\)[^}]*font-size:\s*var\(--type-h3\)/s);
   assert.match(css, /\.laptop-object\s*\{[^}]*width:\s*min\(112%,\s*980px\)/s);
   assert.match(html, /<h3>Bringing a community site to life\.<\/h3>/);
-  assert.match(html, /Explore the interactive Stations of the Cross/);
+  assert.doesNotMatch(html, /Explore the interactive Stations of the Cross|id="motion-video-rccv"/);
   assert.match(html, /<figure class="laptop-object">/);
   assert.match(css, /\.laptop-object\s*\{[^}]*background:\s*transparent/s);
   assert.match(css, /\.laptop-object video\s*\{[^}]*mask-image:\s*url\("\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.webp"\)/s);
@@ -406,7 +406,7 @@ test("large showcase videos stay lazy, autoplay once visible, and have no pause-
   const videos = [...html.matchAll(/<video[^>]+data-motion-video[^>]*>[\s\S]*?<\/video>/g)].map((match) => match[0]);
   const controls = [...html.matchAll(/<button[^>]+data-motion-toggle[^>]*>/g)].map((match) => match[0]);
 
-  assert.equal(videos.length, 3);
+  assert.equal(videos.length, 2);
   assert.equal(controls.length, 0);
   for (const video of videos) {
     assert.doesNotMatch(video, /data-motion-surface|tabindex="0"|role="button"/);

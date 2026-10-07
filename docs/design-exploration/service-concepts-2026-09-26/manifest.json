@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ai-01",
+    "service": "AI implementation",
+    "direction": "Work-led agency",
+    "width": 733,
+    "height": 2146,
+    "sha256": "740c270b328f8cc2c260402c94aa77057f618abd0f444e9e22aac2bf06103917"
+  },
+  {
+    "id": "ai-02",
+    "service": "AI implementation",
+    "direction": "Outcome-led SaaS",
+    "width": 757,
+    "height": 2078,
+    "sha256": "f771e192d4da5bb4502101fc13c82479cdcf77b60e7e5fd67fae1765e893e19a"
+  },
+  {
+    "id": "ai-03",
+    "service": "AI implementation",
+    "direction": "Editorial studio",
+    "width": 725,
+    "height": 2168,
+    "sha256": "372f1a24f6c91230c8e865a67dee961d4df13ef7428791c18a96ff1f3540dae2"
+  },
+  {
+    "id": "web-01",
+    "service": "Web design",
+    "direction": "Work-led agency",
+    "width": 778,
+    "height": 2021,
+    "sha256": "e1a5ad34ac0e4e0dacca34b01db4c16680f9fe8cbdb4b1853ae359c12c8ab7b9"
+  },
+  {
+    "id": "web-02",
+    "service": "Web design",
+    "direction": "Outcome-led SaaS",
+    "width": 802,
+    "height": 1961,
+    "sha256": "0c6a93fda1fbc7dd83fa619dc5b5c03668536fafecc8d4b4804050c273e3f5d5"
+  },
+  {
+    "id": "web-03",
+    "service": "Web design",
+    "direction": "Editorial studio",
+    "width": 782,
+    "height": 2012,
+    "sha256": "d73dc4f062aa369795d3334c2a79a6abd65a6d7d42ecac06e702af3d16839aa8"
+  },
+  {
+    "id": "marketing-01",
+    "service": "Marketing & branding",
+    "direction": "Work-led agency",
+    "width": 731,
+    "height": 2152,
+    "sha256": "dc21329115d00803ad12d227afff98d32b6747d9b2e3df83890e893244b7659d"
+  },
+  {
+    "id": "marketing-02",
+    "service": "Marketing & branding",
+    "direction": "Outcome-led SaaS",
+    "width": 736,
+    "height": 2137,
+    "sha256": "36d0c8e50dbfdb98849ccf34bebff635bbbd799bc8175f7a3ccac7afdf4850d1"
+  },
+  {
+    "id": "marketing-03",
+    "service": "Marketing & branding",
+    "direction": "Editorial studio",
+    "width": 738,
+    "height": 2129,
+    "sha256": "7c0d93b12c9d524174181ed97f3b502f3f45a0f07014704ec072c761b9bb7540"
+  }
+]

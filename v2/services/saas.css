@@ -1,0 +1,173 @@
+/* Service pages extend the portfolio's white canvas, DM Sans, Fraunces and artifact shapes. */
+.saas-page { --service-type-h1: clamp(3.3rem, 4.6vw, 5.5rem); background: var(--canvas); }
+.saas-page .site-header { border-bottom: 0; padding-block: 20px; }
+.saas-page .offer-header-contact { border-radius: 999px; padding: 11px 20px; background: var(--ink); color: white; font-size: .9rem; }
+.saas-page .hero { min-height: min(780px, calc(100dvh - 86px)); grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: clamp(40px, 5vw, 80px); padding-block: clamp(70px, 7vw, 104px); }
+.saas-page .hero h1 { font-size: var(--service-type-h1); letter-spacing: -.04em; text-wrap: balance; }
+.saas-page h2, .saas-page h3 { text-wrap: balance; }
+.saas-page p { text-wrap: pretty; }
+.saas-page .hero-intro { max-width: 36ch; }
+.saas-page .hero .button { font-size: .94rem; }
+.saas-page .hero + section { border-top: 1px solid var(--line); }
+
+/* A familiar service situation: the enquiry and the appointment it becomes. */
+.service-booking-scene { position: relative; width: 100%; margin: 0; padding: 12px 0 92px 28px; }
+.service-booking-window { overflow: hidden; border: 6px solid #171a19; border-radius: 20px; background: #fff; box-shadow: var(--shadow-screen); }
+.service-booking-heading { display: flex; justify-content: space-between; align-items: baseline; padding: 28px 26px; gap: 16px; }
+.service-booking-heading strong { font: 560 clamp(1.4rem, 2.2vw, 2rem)/1.1 var(--font-editorial); }
+.service-booking-heading > span { font-size: .8rem; color: var(--muted); }
+.service-booking-days { display: grid; grid-template-columns: 44px repeat(5, minmax(0, 1fr)); padding: 0 16px 14px; color: var(--muted); text-align: center; font-size: .75rem; }
+.service-booking-week { position: relative; display: grid; grid-template-columns: 44px repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(4, 72px); margin-inline: 16px; padding-bottom: 24px; }
+.booking-hour { grid-column: 1; padding-top: 7px; font-size: .68rem; color: var(--muted); }
+.booking-hour:nth-child(1) { grid-row: 1; }
+.booking-hour:nth-child(2) { grid-row: 2; }
+.booking-hour:nth-child(3) { grid-row: 3; }
+.booking-hour:nth-child(4) { grid-row: 4; }
+.booking-hour::after { content: ''; position: absolute; left: 44px; right: 0; margin-top: -7px; border-top: 1px solid var(--line); }
+.booking-slot { z-index: 1; margin: 5px 3px; padding: 10px 7px; border-radius: 7px; background: #e9ede7; color: var(--forest); font-size: .69rem; font-weight: 650; line-height: 1.25; }
+.booking-slot small { display: block; margin-top: 6px; font-size: .61rem; font-weight: 450; }
+.booking-slot-monday { grid-column: 2; grid-row: 1; }
+.booking-slot-wednesday { grid-column: 4; grid-row: 3; }
+.booking-slot-new { grid-column: 5; grid-row: 2 / 4; background: var(--accent); color: var(--ink); }
+.booking-slot-new b { display: block; margin-top: 18px; font-size: .63rem; }
+.service-booking-message { position: absolute; left: 0; bottom: 0; width: min(76%, 340px); padding: 25px 28px; border-radius: 14px; background: var(--forest); color: #fff; box-shadow: 0 18px 32px rgba(18,20,17,.18); }
+.service-booking-message p { margin: 0; font: 500 clamp(1.15rem, 1.7vw, 1.55rem)/1.3 var(--font-editorial); }
+.service-booking-message .booking-message-title { margin-bottom: 14px; font: 500 .8rem/1.4 var(--font-sans); color: #e1e8df; }
+.booking-message-result { margin-top: 20px; padding-top: 15px; border-top: 1px solid #6a8171; }
+.booking-message-result span, .booking-message-result strong { display: block; font-size: .79rem; line-height: 1.6; }
+.booking-message-result span { color: #e1e8df; }
+
+.service-introduction { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(40px, 7vw, 100px); padding-block: 64px; }
+.service-introduction h2 { margin: 0; max-width: 25ch; font: 600 clamp(1.6rem, 2.5vw, 2.5rem)/1.2 var(--font-sans); letter-spacing: -.025em; }
+.service-introduction p { margin: 0; max-width: 53ch; color: var(--muted); font-size: 1.08rem; line-height: 1.7; }
+
+/* Website and film retain their source artwork with a frame sized to the content. */
+.saas-page .service-hero-website { width: min(100%, 760px); justify-self: end; margin: 0; aspect-ratio: 16 / 10; position: relative; overflow: hidden; border: 7px solid #101312; border-radius: 26px; background: #edf7ff; box-shadow: var(--shadow-screen); transform: perspective(1400px) rotateY(-3deg) rotateZ(1deg); }
+.saas-page .catalyst-window { position: absolute; inset: 0; height: 100%; overflow: hidden; }
+.saas-page .catalyst-window iframe { display: block; max-width: none; border: 0; transform-origin: top left; pointer-events: none; }
+.saas-page .service-hero-film { width: min(100%, 760px); justify-self: end; margin: 0; aspect-ratio: 16 / 9; overflow: hidden; border: 7px solid #101312; border-radius: 26px; background: #101312; box-shadow: var(--shadow-screen); }
+.saas-page .service-hero-film video { width: 100%; height: 100%; object-fit: contain; }
+
+/* Wide breathing room, with each source image presented at its own aspect ratio. */
+.service-cases { padding-block: var(--space-section); background: var(--canvas); }
+.service-cases-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; padding-bottom: clamp(28px, 4vw, 56px); border-bottom: 1px solid var(--line); }
+.service-cases-heading h2 { margin: 0; font-size: clamp(2rem, 2.8vw, 3rem); font-weight: 610; line-height: 1.08; }
+.service-cases-heading p { max-width: 43ch; margin: 0; color: var(--muted); font-size: 1rem; }
+.service-case { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: center; gap: clamp(40px, 6vw, 96px); padding-block: clamp(60px, 7vw, 108px); border-bottom: 1px solid var(--line); }
+.service-case:last-child { border-bottom: 0; padding-bottom: 0; }
+.service-case:nth-child(even) { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); }
+.service-case:nth-child(even) .service-case-copy { grid-column: 2; grid-row: 1; }
+.service-case:nth-child(even) .service-case-media { grid-column: 1; grid-row: 1; justify-self: start; }
+.service-case-copy { max-width: 480px; }
+.service-case-copy h3 { max-width: 14ch; margin: 0 0 14px; font: 560 clamp(2rem, 3.5vw, 3.7rem)/1.04 var(--font-editorial); letter-spacing: -.035em; }
+.service-case-copy .service-case-meta { margin: 0 0 25px; color: var(--ink); font-size: .82rem; font-weight: 660; }
+.service-case-copy p { max-width: 46ch; margin: 0 0 24px; color: var(--muted); line-height: 1.7; }
+.service-case-link { min-height: 44px; display: inline-flex; align-items: center; font-weight: 700; text-underline-offset: .28em; }
+.service-case-media { width: min(100%, 720px); margin: 0; justify-self: end; overflow: hidden; }
+.service-case-media img { display: block; width: 100%; height: auto; }
+.service-case-media-screen { border: 1px solid var(--line); border-radius: 20px; background: var(--paper); }
+.service-case-media-laptop { padding: 0; overflow: visible; }
+.service-case-media-photo { aspect-ratio: 16 / 9; border-radius: 22px; }
+.service-case-media-photo img { height: 100%; object-fit: cover; }
+.service-case-media-workflow { padding: 0; border-radius: 16px; }
+.service-case-media-workflow picture { display: block; }
+.service-case-media-browser { border: 6px solid #101312; border-radius: 19px; background: #101312; box-shadow: var(--shadow-screen); }
+.service-browser-bar { display: flex; align-items: center; gap: 5px; height: 27px; padding: 0 12px; background: #edf0ed; color: #53605d; font-size: .62rem; }
+.service-browser-bar i { width: 6px; height: 6px; border-radius: 50%; background: #abb4af; }
+.service-browser-bar span { margin-left: 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.service-case-media-browser video, .service-case-media-film video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.service-case-media-film { border: 6px solid #101312; border-radius: 19px; background: #101312; box-shadow: var(--shadow-screen); }
+.service-case-media-identity { display: grid; gap: 14px; }
+.service-case-media-identity img { border-radius: 14px; background: #f7f5ef; }
+.service-case-media-identity img + img { width: 54%; justify-self: end; margin-top: -56px; border: 5px solid var(--canvas); box-shadow: 0 16px 28px rgba(19, 22, 19, .12); }
+
+/* Film and identity share a lighter gallery rhythm between the two website stories. */
+.service-cases-gallery .service-case-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(40px, 6vw, 80px); }
+.service-cases-gallery .service-case:first-child, .service-cases-gallery .service-case:last-child { grid-column: 1 / -1; }
+.service-cases-gallery .service-case:first-child { border-bottom: 0; }
+.service-cases-gallery .service-case:nth-child(2), .service-cases-gallery .service-case:nth-child(3) { display: flex; flex-direction: column; align-items: start; justify-content: flex-start; gap: 32px; padding: 0 0 64px; border-bottom: 0; }
+.service-cases-gallery .service-case:nth-child(2) h3, .service-cases-gallery .service-case:nth-child(3) h3 { max-width: 20ch; font-size: clamp(2rem, 2.6vw, 2.8rem); }
+.service-cases-gallery .service-case:nth-child(2) .service-case-media, .service-cases-gallery .service-case:nth-child(3) .service-case-media { order: -1; }
+.service-cases-gallery .service-case:last-child { border-top: 1px solid var(--line); }
+.service-local-proof { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(40px, 7vw, 100px); padding-block: 64px; border-top: 1px solid var(--line); }
+.service-local-proof h2 { margin: 0; max-width: 20ch; font: 560 clamp(2rem, 3vw, 3.2rem)/1.1 var(--font-editorial); }
+.service-local-proof p { margin: 0 0 16px; max-width: 52ch; line-height: 1.7; }
+.service-local-proof .service-evidence-note { color: var(--muted); font-size: .86rem; }
+
+/* Plain-language delivery instead of another gallery of interactive boxes. */
+.saas-page .service-process { padding-block: var(--space-section); }
+.saas-page .service-process-panel { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(40px, 6vw, 88px); padding: 0; border-top: 1px solid var(--line); padding-top: 64px; }
+.service-process header h2 { margin: 0 0 26px; font: 600 clamp(2.35rem, 3.4vw, 4rem)/1.08 var(--font-sans); letter-spacing: -.04em; }
+.service-process header p { max-width: 39ch; margin: 0; color: var(--muted); font-size: 1.08rem; line-height: 1.65; }
+.service-process ol { display: grid; gap: 36px; list-style: none; margin: 0; padding: 0; }
+.service-process li { padding-bottom: 36px; border-bottom: 1px solid var(--line); }
+.service-process li:last-child { padding-bottom: 0; border: 0; }
+.service-process h3 { margin: 0 0 16px; font: 560 clamp(1.5rem, 2vw, 2rem)/1.15 var(--font-editorial); letter-spacing: -.025em; }
+.service-process li p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.7; }
+
+.saas-page .offer-section { padding-block: var(--space-section); border-top: 1px solid var(--line); }
+.saas-page .offer-section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 96px); margin-bottom: 50px; }
+.saas-page .offer-section h2 { margin: 0; font: 600 clamp(2.3rem, 3.4vw, 4rem)/1.1 var(--font-sans); letter-spacing: -.04em; }
+.saas-page .offer-section-heading > p { max-width: 48ch; color: var(--muted); font-size: 1.05rem; }
+.saas-page .offer-columns { gap: 36px; }
+.saas-page .offer-columns article { padding: 24px 0 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; background: transparent; }
+.saas-page .offer-columns h3 { margin-bottom: 12px; font-size: 1.2rem; }
+.saas-page .offer-columns p { font-size: .98rem; line-height: 1.7; }
+.saas-page .offer-pricing { gap: 24px; }
+.saas-page .offer-pricing article { padding: clamp(28px, 3vw, 42px); border: 1px solid var(--line); border-radius: 22px; background: var(--paper); }
+.saas-page .offer-price { font-size: clamp(2.8rem, 4vw, 4.6rem); }
+.saas-page .offer-contact { padding-block: var(--space-section); color: var(--ink); }
+.saas-page .offer-contact h2 { color: var(--ink); font-family: var(--font-sans); font-weight: 610; }
+.saas-page .offer-contact-note { color: var(--ink); }
+.saas-page a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+
+@media (max-width: 1099px) {
+ .saas-page .hero { grid-template-columns: 1fr; min-height: 0; padding-block: 80px; }
+ .saas-page .hero h1 { max-width: 13ch; }
+ .saas-page .service-hero-website, .saas-page .service-hero-film { width: min(100%, 760px); justify-self: start; }
+ .saas-page .service-process-panel { grid-template-columns: 1fr; }
+ .service-process header { max-width: 670px; }
+ .service-case { gap: 36px; }
+}
+@media (max-width: 760px) {
+ .saas-page .hero { gap: 30px; padding-block: 52px 70px; }
+ .saas-page .hero h1 { font-size: clamp(2.85rem, 10vw, 4.7rem); }
+ .saas-page .hero-intro { font-size: 1rem; }
+ .saas-page .service-hero-website { aspect-ratio: 16 / 11; transform: none; border-width: 5px; border-radius: 18px; }
+ .saas-page .service-hero-film { border-width: 5px; border-radius: 18px; }
+ .service-booking-scene { max-width: 640px; padding: 0 0 0 12px; }
+ .service-booking-heading { padding: 20px 14px; }
+ .service-booking-days { grid-template-columns: 30px repeat(5, minmax(0, 1fr)); padding-inline: 6px; font-size: .64rem; }
+ .service-booking-week { grid-template-columns: 30px repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(4, 64px); margin-inline: 6px; padding-bottom: 8px; }
+ .booking-hour { font-size: .57rem; }
+ .booking-hour::after { left: 30px; }
+ .booking-slot { margin-inline: 2px; padding: 8px 4px; font-size: .59rem; overflow-wrap: anywhere; }
+ .booking-slot small { font-size: .51rem; }
+ .booking-slot-new b { font-size: .52rem; }
+ .service-booking-message { position: relative; width: min(87%, 340px); margin: -22px 0 0 -12px; z-index: 2; padding: 22px; }
+ .service-booking-message p { font-size: 1.35rem; }
+ .service-introduction, .service-local-proof { grid-template-columns: 1fr; gap: 22px; padding-block: 44px; }
+ .service-introduction p { font-size: 1rem; }
+ .service-case-media-identity img + img { width: 60%; margin-top: -28px; }
+ .service-cases { padding-block: 64px; }
+ .service-cases-gallery .service-case-list { display: block; }
+ .service-cases-gallery .service-case:nth-child(2), .service-cases-gallery .service-case:nth-child(3) { padding-bottom: 54px; }
+ .service-cases-heading { display: block; }
+ .service-cases-heading p { margin-top: 18px; }
+ .service-case, .service-case:nth-child(even) { grid-template-columns: 1fr; gap: 25px; padding-block: 54px; }
+ .service-case:nth-child(even) .service-case-copy, .service-case:nth-child(even) .service-case-media { grid-column: auto; grid-row: auto; }
+ .service-case-copy h3 { font-size: clamp(2rem, 8vw, 3rem); }
+ .service-case-media-laptop, .service-case-media-workflow { padding: 0; }
+ .saas-page .service-process, .saas-page .offer-section { padding-block: 80px; }
+ .saas-page .service-process-panel { padding: 44px 0 0; gap: 32px; }
+ .service-process header h2 { font-size: clamp(2.1rem, 8vw, 3rem); }
+ .service-process header p { font-size: 1rem; }
+ .service-process ol { gap: 28px; }
+ .service-process li { padding-bottom: 28px; }
+ .saas-page .offer-section-heading, .saas-page .offer-columns, .saas-page .offer-pricing { grid-template-columns: 1fr; }
+ .saas-page .offer-section h2 { font-size: clamp(2.1rem, 8vw, 3rem); }
+ .saas-page .offer-pricing article + article { border: 1px solid var(--line); padding: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .saas-page .button:hover { transform: none; }
+}

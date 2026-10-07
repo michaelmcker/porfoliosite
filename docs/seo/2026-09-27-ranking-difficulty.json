@@ -1,0 +1,118 @@
+{
+  "version": "0.1.20260917",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.0800 sec.",
+  "cost": 0.01344,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "09272347-1359-0392-0000-1f1836b84da5",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.0530 sec.",
+      "cost": 0.01344,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "dataforseo_labs",
+        "google",
+        "bulk_keyword_difficulty",
+        "live"
+      ],
+      "data": {
+        "api": "dataforseo_labs",
+        "function": "bulk_keyword_difficulty",
+        "se_type": "google",
+        "location_name": "Canada",
+        "language_code": "en",
+        "keywords": [
+          "web design kelowna",
+          "web design vernon",
+          "web design okanagan",
+          "seo kelowna",
+          "local seo kelowna",
+          "branding kelowna",
+          "marketing agency kelowna",
+          "social media marketing kelowna",
+          "video production kelowna",
+          "ai consulting kelowna",
+          "ai implementation kelowna",
+          "ai consulting okanagan"
+        ]
+      },
+      "result": [
+        {
+          "se_type": "google",
+          "location_code": 2124,
+          "language_code": "en",
+          "total_count": 12,
+          "items_count": 12,
+          "items": [
+            {
+              "se_type": "google",
+              "keyword": "branding kelowna",
+              "keyword_difficulty": null
+            },
+            {
+              "se_type": "google",
+              "keyword": "local seo kelowna",
+              "keyword_difficulty": 0
+            },
+            {
+              "se_type": "google",
+              "keyword": "marketing agency kelowna",
+              "keyword_difficulty": 47
+            },
+            {
+              "se_type": "google",
+              "keyword": "seo kelowna",
+              "keyword_difficulty": 0
+            },
+            {
+              "se_type": "google",
+              "keyword": "social media marketing kelowna",
+              "keyword_difficulty": 10
+            },
+            {
+              "se_type": "google",
+              "keyword": "video production kelowna",
+              "keyword_difficulty": 0
+            },
+            {
+              "se_type": "google",
+              "keyword": "web design vernon",
+              "keyword_difficulty": 25
+            },
+            {
+              "se_type": "google",
+              "keyword": "web design kelowna",
+              "keyword_difficulty": 8
+            },
+            {
+              "se_type": "google",
+              "keyword": "web design okanagan",
+              "keyword_difficulty": null
+            },
+            {
+              "se_type": "google",
+              "keyword": "ai consulting kelowna",
+              "keyword_difficulty": null
+            },
+            {
+              "se_type": "google",
+              "keyword": "ai implementation kelowna",
+              "keyword_difficulty": null
+            },
+            {
+              "se_type": "google",
+              "keyword": "ai consulting okanagan",
+              "keyword_difficulty": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

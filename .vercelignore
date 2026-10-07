@@ -92,3 +92,26 @@ assets/workflows/*
 
 output/pdf/*
 !output/pdf/vertical-impression-local-proposal-sample.pdf
+
+# Internal session records and canonical service source copies.
+SESSION_LOG.md
+DEV_LOG.md
+FEATURES.md
+v2/services/**/index.html
+v2/services/routes.json
+v2/guides/
+
+v2/ai-implementation/
+v2/web-design/
+v2/marketing-branding/
+
+v2/blog/
+# Marketing page uses this existing product-story image.
+!assets/screens/vertical-impression-why-elevators.png
+
+!assets/selected-work/
+!assets/selected-work/**
+
+# Keep source-resolution service artwork out of deployment.
+assets/selected-work/booking-calendar-source.png
+assets/selected-work/okanagan-lake-adam-jones.jpg

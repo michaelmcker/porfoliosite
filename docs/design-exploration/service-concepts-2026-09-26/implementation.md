@@ -1,0 +1,11 @@
+# Selected image-to-code translation
+
+Sources: generated AI 01, Web 03, Marketing 03, selected by the user. All three were generated and inspected before implementation. This is translation of approved directions rather than a new design round.
+
+- AI: roughly 45/55 split hero, two-line Fraunces heading, gold second line, one primary pill CTA, photographic calendar/laptop on the right. Fullwidth paired photo/story below, forest capability chapter, open three-step process, pale pricing rows and gold close. Replace handshake with actual Okanagan Lake photography. Custom skills, workflows and deployed agents must connect to efficiency, time, revenue and bookings.
+- Web: wide two-line DM Sans headline, fullwidth AI Catalyst specimen, offset introductory CTA, fullwidth Treehouse image, RCCV laptop/text row, forest statement, process and custom-quote invitation, gold close. Use source artwork and semantic text rather than screenshot copies of the generated site.
+- Marketing: oversized two-line bold sans heading, fullwidth AI Catalyst film, short right-aligned introduction/CTA. Upon This Rock identity row, St James film row, forest statement, four-step open process, custom-scope invitation. Explicit offer: websites, social media, video, brand development. Preserve original work; additional VI proof stays below primary selected work.
+- Shared: DM Sans / Fraunces, white #fff, ink #171813, forest #243c31, hard gold #e3a916. Content width 1320px, desktop gutters 48px, mobile 22px. H1 64–104px desktop, 40–56px mobile; editorial h2 40–60px. Unboxed sections with 80–112px spacing. Gold CTAs dark text, minimum 44px targets. Simple fades only when reduced motion permits.
+- Responsive: split layouts stack below 850px. Web/marketing hero title remains above original media. Avoid forcing tall fixed hero heights; crop only lifestyle photos, never project identity art. Videos provide controls and poster-first loading. Existing generated copy inaccuracies and fake claims are not reproduced.
+
+Production hero asset: freshly generated standalone photographic calendar laptop, not a crop of the website mockup. Illustrative and labeled as such. Real regional photo: Adam Jones, Okanagan Lake at Winfield / Lake Country, 15 October 2017, Wikimedia Commons, CC BY-SA 2.0. Resized to a 1600-pixel JPEG; source credit and license included beside the photograph.

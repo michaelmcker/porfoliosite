@@ -1,0 +1,20 @@
+# Michael McKerracher
+
+> Independent AI implementation, web design and marketing services based in Coldstream, serving the Okanagan, British Columbia.
+
+## Portfolio
+- [Portfolio](https://michaelmck.site/): Selected work and background.
+- [Cool Runnings case study](https://michaelmck.site/v2/work/local-search-magnet.html): Local website and search work; sales result attributed to client report.
+
+## Services and articles
+- [Less busywork. More business.](https://michaelmck.site/ai-implementation/index.md): AI consulting and implementation for Kelowna and the Okanagan. Custom skills, workflows, agents and training. $900 audit; systems from $2,500/month.
+- [A beautiful website. A better reason to choose you.](https://michaelmck.site/web-design/index.md): Custom web design and development for Kelowna, Vernon and the Okanagan. Beautiful websites with local SEO foundations and clear paths to enquire or book.
+- [Give people a reason to choose you.](https://michaelmck.site/marketing-branding/index.md): Marketing and branding for Kelowna and the Okanagan. Websites, social media, video, brand development and local SEO. Work directly with Michael McKerracher.
+- [Ideas you can put to work.](https://michaelmck.site/blog/index.md): Practical articles on AI implementation, web design and local marketing for Okanagan businesses.
+- [What should an Okanagan business automate first?](https://michaelmck.site/blog/what-to-automate-first/index.md): Choose a first AI workflow by looking at recurring work, missing follow-ups and the cost of mistakes.
+- [What makes a local business website worth enquiring through?](https://michaelmck.site/blog/website-that-turns-visits-into-enquiries/index.md): A practical website brief covering design, service information, proof and the path from a visit to a call.
+- [A practical marketing plan for an Okanagan service business](https://michaelmck.site/blog/local-marketing-plan/index.md): Connect positioning, local search, useful content and follow-up to the enquiries your business needs.
+
+## Contact
+Free initial consultation: michael.mckerracher@gmail.com.
+AI audit: CAD 900 once, five on-site hours across two to three weeks. Custom AI implementation and maintenance from CAD 2,500/month. Web design and marketing are custom-quoted.
