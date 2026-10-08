@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-07: Revising the industry collection for stronger design variety after user feedback. Reviewing website artwork and page composition before changing the generated sources; retaining industry-specific content and shared identity.
+2026-10-07: Industry design variety release complete. All 24 pages have new artwork and four page compositions, deployed and live-verified.
 
 2026-10-07: All 24 industry website pages and the industry index are deployed and live-verified. No remaining implementation work for this release.
 
@@ -19,6 +19,13 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-07: Industry design variety
+- Replaced repetitive website artwork with 24 distinct visual directions and responsive WebP exports. Added four hero compositions and industry-appropriate section ordering, preserving shared navigation, typography, copy and proof.
+- Checked 96 responsive route/width combinations, native FAQs, consultation links and representative desktop/mobile views. Repository tests: 145 passed, the same pre-existing Chromium-launch failure as baseline.
+- Production commit `27dcc216e162d771d9212cbba9d9a9c29f3fbce3`; deployment `dpl_BED4WvqCdQCCfaUp535LWq1y5ABe` ready and aliased to `michaelmck.site`.
+- Live verification: 103 HTML, Markdown, image, CSS and discovery resources matched local bytes; Markdown content negotiation works. Live desktop collection and mobile dental page inspected. Evidence: `docs/industry-variety-2026-10-07/`.
+
 
 ### 2026-10-07: Industry-specific website service pages
 - Implemented the approved image-to-code template across 24 industries, with unique generated website imagery, individual industry content, local context, practical enquiry paths and FAQs. Added the visual index at `/web-design/industries/` and a link from Web Design.

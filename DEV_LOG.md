@@ -179,3 +179,5 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Generated and inspected 24 distinct website designs, plus three large layout references. Added four hero compositions and different section ordering while retaining shared navigation, fonts, colours, local copy and existing proof.
 - Integrated responsive artwork via `v2/industries/artwork.json`, using versioned WebP URLs. Corrected the clinic image to use Kelowna/Okanagan location text.
 - Checked 96 browser combinations (24 pages × four widths) without overflow or broken hero images. Targeted industry/link/schema checks pass.
+
+- Published commit 27dcc21 through GitHub/Vercel. Deployment dpl_BED4WvqCdQCCfaUp535LWq1y5ABe ready on michaelmck.site. All 103 live resources matched; desktop/mobile rendering confirmed.

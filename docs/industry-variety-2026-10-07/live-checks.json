@@ -1,0 +1,620 @@
+[
+  {
+    "path": "/web-design/plumbers/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/plumbers/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/electricians/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/electricians/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/hvac/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/hvac/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/roofers/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/roofers/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/landscapers/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/landscapers/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/home-builders/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/home-builders/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/appliance-repair/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/appliance-repair/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/law-firms/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/law-firms/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/accountants/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/accountants/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/financial-advisors/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/financial-advisors/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/real-estate/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/real-estate/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/property-management/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/property-management/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/medical-practices/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/medical-practices/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/dentists/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/dentists/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/physiotherapy/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/physiotherapy/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/medical-spas/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/medical-spas/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/charities/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/charities/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/private-schools/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/private-schools/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/hotels/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/hotels/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/vacation-rentals/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/vacation-rentals/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/wineries/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/wineries/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/restaurants/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/restaurants/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/retail/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/retail/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/car-dealerships/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/car-dealerships/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/web-design/industries/",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/web-design/industries/index.md",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/markdown; charset=utf-8"
+  },
+  {
+    "path": "/v2/industries/assets/plumbers-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/plumbers-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/electricians-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/electricians-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/hvac-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/hvac-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/roofers-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/roofers-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/landscapers-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/landscapers-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/home-builders-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/home-builders-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/appliance-repair-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/appliance-repair-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/law-firms-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/law-firms-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/accountants-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/accountants-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/financial-advisors-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/financial-advisors-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/real-estate-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/real-estate-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/property-management-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/property-management-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/medical-practices-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/medical-practices-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/dentists-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/dentists-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/physiotherapy-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/physiotherapy-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/medical-spas-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/medical-spas-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/charities-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/charities-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/private-schools-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/private-schools-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/hotels-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/hotels-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/vacation-rentals-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/vacation-rentals-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/wineries-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/wineries-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/restaurants-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/restaurants-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/retail-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/retail-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/car-dealerships-design-2.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/assets/car-dealerships-design-2-small.webp",
+    "status": 200,
+    "matches": true,
+    "contentType": "image/webp"
+  },
+  {
+    "path": "/v2/industries/industries.css",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/css; charset=utf-8"
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "matches": true,
+    "contentType": "application/xml"
+  },
+  {
+    "path": "/llms.txt",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/plain; charset=utf-8"
+  },
+  {
+    "path": "/llms-full.txt",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/plain; charset=utf-8"
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "matches": true,
+    "contentType": "text/plain; charset=utf-8"
+  }
+]
