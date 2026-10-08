@@ -198,3 +198,10 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Published commit 94cfa2e via the existing GitHub main → Vercel workflow, preserving the upstream Cool Runnings metrics update during rebase. Deployment dpl_BQZqYKaWVgkGJZwBFbMGd77Mkezz is Ready on michaelmck.site.
 - Live verification passed for 40 resources and all 13 Markdown negotiations. Inspected production desktop library/comparison and mobile checklist; temporary viewport override reset.
 - Submitted updated sitemap through Search Console; success confirmed. No new-page indexing claim. Saved release report, screenshots, live verification and submission proof.
+
+## 2026-10-08: Dated publishing, Echo editing and contact
+- Recovered the existing Echo account credential from the user-authorized prior application integration, retained it privately outside Git, authenticated and edited all 12 articles. Reviewed all outputs, preserved numbers/claims/destinations, normalized single-quoted HTML attributes and removed a copied instruction. No detector score claimed.
+- Kept Resources as the umbrella and /blog/ as stable URLs. Added prominent index dates and original/modified dates in visible content and schema. Three city guides remain live; nine approved pieces are queued through November 5. Original October 8 publication preserved.
+- Publication eligibility now gates HTML, Markdown, hub, related links, sitemap and LLM discovery. Future source remains private. Added 52 individual 2027 briefs and eight late-2026 briefs, with query intent, proof, service links and research gates.
+- Created daily 09:00 Pacific thread heartbeat portfolio-resource-publishing for preparation and verified release through end of 2027.
+- Built /contact/ with email and free FormSubmit delivery, labelled minimal inputs, optional service, spam trap, retained input on failure and success-only lead tracking. Shared consultation links route to Contact. Activation is per website; localhost activation observed, production activation and delivery check still pending at this point.

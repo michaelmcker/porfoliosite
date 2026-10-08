@@ -39,7 +39,7 @@ export function markdown(html){
 export async function writeDiscovery(pages,root){
  // A partial service rebuild must not silently remove published collections.
  const merged=new Map(pages.map(p=>[p.path,p]));
- for(const manifest of ['v2/industries/routes.json','v2/resources/routes.json']){
+ for(const manifest of ['v2/industries/routes.json','v2/resources/routes.json','v2/contact/routes.json']){
   let routes=[];try{routes=JSON.parse(await readFile(new URL(manifest,root),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
   for(const path of routes){if(merged.has(path))continue;let html;try{html=await readFile(new URL(path.slice(1)+'index.html',root),'utf8');}catch(error){if(error.code==='ENOENT')continue;throw error;}
    merged.set(path,{path,html,heading:plain(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]||path),description:html.match(/<meta name="description" content="([^"]*)"/)?.[1]||''});

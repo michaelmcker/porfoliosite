@@ -94,6 +94,18 @@
           "value": ".*text/markdown.*"
         }
       ]
+    },
+    {
+      "source": "/contact/",
+      "destination": "/contact/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
     }
   ],
   "headers": [
@@ -252,6 +264,19 @@
         {
           "key": "Link",
           "value": "<https://michaelmck.site/blog/:article/index.md>; rel=\"alternate\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/contact/",
+      "headers": [
+        {
+          "key": "Vary",
+          "value": "Accept"
+        },
+        {
+          "key": "Link",
+          "value": "<https://michaelmck.site/contact/index.md>; rel=\"alternate\"; type=\"text/markdown\""
         }
       ]
     }

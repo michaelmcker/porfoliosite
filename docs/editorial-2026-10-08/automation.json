@@ -1,0 +1,8 @@
+{
+  "id": "portfolio-resource-publishing",
+  "status": "ACTIVE",
+  "time": "09:00 America/Vancouver daily",
+  "end": "2027-12-31",
+  "scope": "Check due releases, prepare next seven days, verify before publishing",
+  "notification": "Verified release, new actionable failure or required input only"
+}

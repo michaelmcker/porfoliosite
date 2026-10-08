@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/restaurants/
 
 Web design for restaurants in Kelowna and the Okanagan. Let the food and atmosphere lead, with menus, reservations and ordering easy to reach.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Restaurants website design
@@ -133,7 +133,7 @@ Yes. Original media and campaign assets can be planned alongside the website.
 
 ## Make your website as inviting as the room.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

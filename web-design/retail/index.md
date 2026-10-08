@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/retail/
 
 Web design for retail businesses in Kelowna. Bring the shop’s character online and help people visit, find a product or place an order.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Retail website design
@@ -133,7 +133,7 @@ Yes. Original media, campaign pages and creative can be developed alongside the 
 
 ## Give people another good reason to shop with you.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

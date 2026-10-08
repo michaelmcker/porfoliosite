@@ -8,7 +8,7 @@ import {schemaFor,markdown,writeDiscovery} from './service-discovery.mjs';
 
 const root=new URL('../',import.meta.url);
 const origin='https://michaelmck.site';
-const consult='mailto:michael.mckerracher@gmail.com?subject=Website%20consultation';
+const consult='/contact/';
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const para=s=>`<p>${esc(s)}</p>`;
 const button=()=>`<a class="i-button" href="${consult}">Book a free consultation</a>`;

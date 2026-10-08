@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/vacation-rentals/
 
 Website design for vacation rentals and distinctive stays in the Okanagan. Make the property memorable and help guests move from interest to available dates.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Vacation rentals website design
@@ -133,7 +133,7 @@ Yes. We can plan a repeatable property format and a clear source for availabilit
 
 ## Turn a beautiful place into a compelling invitation.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

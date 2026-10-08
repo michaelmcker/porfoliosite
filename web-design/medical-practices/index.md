@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/medical-practices/
 
 Website design for medical practices in Kelowna and the Okanagan. Help patients find current information, understand access and reach the right service.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Medical practices website design
@@ -133,7 +133,7 @@ Your clinical team reviews and approves those descriptions before publication.
 
 ## Make your website as helpful as your front desk.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

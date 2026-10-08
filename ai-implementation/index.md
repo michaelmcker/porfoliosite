@@ -4,7 +4,7 @@ Source: https://michaelmck.site/ai-implementation/
 
 I build AI skills, workflows and custom agents that work with the tools you already use. Handle enquiries, keep follow-ups moving and give your team more time to serve customers.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 [See what I can help with](#what-i-build)
 
 Illustrative weekly appointment calendar on a laptop
@@ -65,7 +65,7 @@ From CAD $2,500 / month
 
 Design, build, deployment and ongoing maintenance of your skills, workflows and agents. Training and documentation included. Scope, support and software costs agreed up front.
 
-[Let’s talk about your business](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Let’s talk about your business](https://michaelmck.site/contact/)
 
 ## AI consulting in Kelowna & the Okanagan.
 
@@ -75,7 +75,7 @@ Work directly with Michael McKerracher, based in Coldstream and serving Vernon, 
 
 Tell me where the work piles up and what you want more time for. We’ll find a practical place to start.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Serving Vernon, Kelowna and across the Okanagan.
 
 ## Make a better website decision.

@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/accountants/
 
 Web design for accountants and bookkeepers in Kelowna. Make your services easier to understand and bring better-fit businesses into the conversation.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Accountants website design
@@ -133,7 +133,7 @@ Yes. I draft them from your actual offer and experience, then work through your 
 
 ## Build a website for the practice you want.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

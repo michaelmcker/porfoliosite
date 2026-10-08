@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/appliance-repair/
 
 Web design for appliance repair businesses in Kelowna and the Okanagan. Make your services easy to find and give your team the details it needs to book the right work.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Appliance repair website design
@@ -133,7 +133,7 @@ Yes. Routing, acknowledgements and follow-up workflows can connect the website t
 
 ## Make the next repair easier to book.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

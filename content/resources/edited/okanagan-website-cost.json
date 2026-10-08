@@ -1,0 +1,53 @@
+{
+  "slug": "okanagan-website-cost",
+  "summary": "The useful website price is the cost of a defined project. For an Okanagan service business planning around CAD $3,000 to $4,000, focus the brief on useful core pages, considered design, mobile enquiries and search foundations. Then compare the content, integrations, ownership and ongoing costs behind every quote before choosing a provider.",
+  "takeaways": [
+    "A planning budget is not a complete project specification.",
+    "Compare the same deliverables across every quote.",
+    "Separate the build from hosting, maintenance and ongoing marketing."
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "body": "<p>Look at exactly which pages, audiences and actions a quote covers before comparing prices. A focused service site with a simple enquiry form is a very different build from an online shop or a booking system that handles staff schedules and payments.</p><table><caption>What changes the scope of a website</caption><thead><tr><th>Build</th><th>Main work</th><th>Questions to settle</th></tr></thead><tbody><tr><td>Focused service website</td><td>Service pages, proof and enquiry route</td><td>Who writes the content and handles enquiries?</td></tr><tr><td>Booking website</td><td>Availability, services, confirmations and integrations</td><td>Is the booking system already chosen?</td></tr><tr><td>Online store</td><td>Product setup, checkout and orders</td><td>Who supplies product data and manages fulfilment?</td></tr></tbody></table><p>With a planning budget of CAD $3,000 to $4,000, I usually recommend putting the core service website first and pricing substantial integrations on their own. My <a href=\"/web-design/\">web design work</a> is quoted against an agreed scope rather than being offered as one fixed package for every business.</p>"
+    },
+    {
+      "id": "content",
+      "body": "<p>Content is genuine project work, so check whether the quote includes interviewing you, planning the page structure, writing the copy, preparing FAQs and turning past projects into convincing evidence.</p><p>If you are supplying the words and images, agree the format and delivery date upfront. If they need to be created, that work belongs in the initial price. Five pages could mean five blank layouts waiting for your material, or five finished pages with research, writing and approved imagery. Those are very different things.</p><p>Treat original brand photography and video separately from general image selection when that makes sense. Custom imagery can make a website more persuasive, but the production effort should be clear in the quote.</p>"
+    },
+    {
+      "id": "design",
+      "body": "<p>Ask what is actually being designed and how feedback will work. Are you choosing an existing theme, adapting a design system, or commissioning a visual direction that is built around your business?</p><p>Look past the homepage and ask for examples of service pages, forms and mobile layouts. A proper design system covers headings, spacing, colours, buttons, images and repeatable content patterns, because that is what lets the website grow consistently.</p><p>Find out how many review stages are included and what counts as a change of scope. Agree who signs off the direction before the full build starts, because foundational decisions made too late lead to expensive revisions.</p>"
+    },
+    {
+      "id": "seo",
+      "body": "<p>Check which search work is actually included at launch. Useful foundations are page planning, titles, headings, internal links, crawlability, sitemap setup and redirects where existing URLs change.</p><p>Ongoing SEO is separate: finding new content opportunities, improving existing pages, maintaining business information and measuring the results. If a provider promises an SEO website, ask what specific tasks that means.</p><p>Find out which accounts you will control and how results will be reported. Search Console impressions, website enquiries and booked work are all different measures, and a report should explain the connection without pretending every visitor is a prospective customer.</p>"
+    },
+    {
+      "id": "integrations",
+      "body": "<p>An integration costs more than adding a button when it needs to pass data between systems. Ask which booking tool, CRM, payment system or email platform is involved, and who is supplying access.</p><p>Test what happens after the user clicks. Does the correct service carry through? Is the booking confirmed? Where does the enquiry appear? Who deals with errors? Linking to an existing booking platform is a very different scope from custom scheduling or automated follow-up.</p><p>Ask for recurring software charges to be listed separately from the developer’s work, because that is what lets you compare the total cost of the arrangement rather than just the launch invoice.</p>"
+    },
+    {
+      "id": "ownership",
+      "body": "<p>Find out who controls the domain, hosting, content, design files and platform account. Ask what can be exported and what happens if you change providers later.</p><p>Decide whether you want to edit the site yourself, ask for occasional changes, or pay for ongoing support. Any training should cover the work you will actually be doing. A proper handover includes account access, editing instructions, form routing, renewal dates and a record of important integrations.</p><p>If you are comparing a monthly website offer with an upfront build, ask about minimum terms, cancellation, buyout and migration. The monthly number on its own does not tell you what you own.</p>"
+    },
+    {
+      "id": "costs",
+      "body": "<p>Continuing costs can include domain renewal, hosting or platform fees, maintenance, content changes and optional marketing. Ask for an annual view of these costs next to the initial project price.</p><p>Published local offers show how much scope matters. On October 8, 2026, <a href=\"https://www.svice.ca/\">Svice</a> listed a six-page package from CAD $2,820 with the client supplying text, logos and images. <a href=\"https://duforddigital.com/vernon-web-design/\">Duford Digital</a> listed template sites from CAD $2,025 and custom builds from CAD $5,940. These are individual offers with different terms, not an Okanagan market average.</p><p>Use a written checklist when you compare quotes: pages, content, design, search setup, integrations, ownership and continuing costs. If a provider cannot explain a line item, ask before you commit. A free initial conversation with me can help you turn your business objective into that brief.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Is CAD $3,000 to $4,000 enough for my website?",
+      "It can be a sensible planning budget for a focused service website when the scope is controlled. The exact quote depends on content, design, page count and integrations. Complex booking, ecommerce or ongoing marketing should be scoped explicitly."
+    ],
+    [
+      "Are hosting and SEO included in a website build?",
+      "Only if the quote says so. Ask for hosting, platform fees, maintenance, launch search setup and ongoing SEO to be listed separately. That makes both the first-year cost and future commitments easier to understand."
+    ],
+    [
+      "How can I reduce cost without weakening the website?",
+      "Prioritise the services and pages that help customers choose, supply usable project material promptly and keep integrations simple at launch. Reduce unnecessary scope before cutting useful content, mobile usability or a reliable enquiry route."
+    ]
+  ]
+}

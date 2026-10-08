@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/financial-advisors/
 
 Web design for financial advisors in Kelowna and the Okanagan. Introduce your approach, explain who you work with and make a first meeting feel straightforward.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Financial advisors website design
@@ -133,7 +133,7 @@ Yes. Original team photography and a short introductory film can be planned alon
 
 ## Make your next introduction a better one.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

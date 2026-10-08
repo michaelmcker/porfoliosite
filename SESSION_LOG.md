@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-08: Scheduling the resource library, editing with the recovered Echo API, building a 2027 editorial calendar with service-page links, and adding a free contact page/form. Preserve original publication dates for already-live content.
+
 2026-10-08: Public AEO resource library complete, deployed and live-verified. Twelve articles and hub published; sitemap accepted by Google. Indexing is not yet confirmed. No remaining implementation work for this release.
 
 2026-10-07: Industry design variety release complete. All 24 pages have new artwork and four page compositions, deployed and live-verified.

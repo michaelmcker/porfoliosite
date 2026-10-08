@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/dentists/
 
 Web design for dental practices in Kelowna. Introduce your team, explain the first visit and make the route to an appointment clear.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Dentists website design
@@ -133,7 +133,7 @@ Yes. Original photography and short practice videos can be included in the proje
 
 ## A better welcome starts on your website.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

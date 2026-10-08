@@ -45,7 +45,7 @@ test('all industry URLs are discoverable with matching HTML, Markdown and struct
    assert.equal(schema['@graph'].find(x=>x['@type']==='Service').url,canonical);
    assert.ok(md.split(/\s+/).length>900,`${route} missing substantial content`);
   }
-  assert.ok(html.includes('href="mailto:michael.mckerracher@gmail.com?subject=Website%20consultation"'));
+  assert.ok(html.includes('href="/contact/"'));
   for(const match of html.matchAll(/(?:href|src)="(\/[^"#?]*)(?:[?#][^"]*)?"/g)){
    const pathname=decodeURIComponent(match[1]).slice(1);const target=pathname.endsWith('/')||!pathname?pathname+'index.html':pathname;
    assert.ok((await stat(new URL(target,root))).isFile(),`${route} broken internal resource: ${target}`);

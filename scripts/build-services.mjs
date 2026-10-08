@@ -7,7 +7,7 @@ import { compactServices } from './compact-services.mjs';
 import { expandPages } from './service-content.mjs';
 import { writeDiscovery, schemaFor } from './service-discovery.mjs';
 const root = new URL('../', import.meta.url);
-const consult = 'mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation';
+const consult = '/contact/';
 const caseStudy = '/v2/work/local-search-magnet.html';
 const nav = `<a href="/#work">Work</a><a href="/ai-implementation/">AI implementation</a><a href="/web-design/">Web design</a><a href="/marketing-branding/">Marketing &amp; branding</a>`;
 const actions = (label, href, secondary, secondHref) => `<div class="hero-actions"><a class="button button-primary" href="${href}">${label}</a>${secondary ? `<a class="button button-quiet" href="${secondHref}">${secondary}</a>` : ''}</div>`;

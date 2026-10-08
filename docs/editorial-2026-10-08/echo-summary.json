@@ -1,0 +1,9 @@
+{
+  "articles": 12,
+  "model": "echo",
+  "persona": "Michael McKerracher",
+  "api": "https://echo.fulcrum.inc/api/v1",
+  "totalTokens": 116558,
+  "review": "All 12 reviewed; original numbers and source destinations retained; private raw responses excluded from deployment and Git.",
+  "detectorTest": false
+}

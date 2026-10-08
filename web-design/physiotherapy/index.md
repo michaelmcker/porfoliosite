@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/physiotherapy/
 
 Web design for physiotherapy and rehabilitation clinics in Kelowna. Help people understand your services, choose a practitioner and book with confidence.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Physiotherapy website design
@@ -133,7 +133,7 @@ Yes. Each location can show the correct hours, practitioners, services and appoi
 
 ## Help the next patient find their way to you.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

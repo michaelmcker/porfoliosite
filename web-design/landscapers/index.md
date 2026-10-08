@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/landscapers/
 
 Website design for landscapers in Kelowna and the Okanagan. Show the spaces you create and make it easier for the right customer to start a project.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Landscapers website design
@@ -133,7 +133,7 @@ Yes. Search content, Google Business Profile support, campaigns, video and follo
 
 ## Let your next project start here.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

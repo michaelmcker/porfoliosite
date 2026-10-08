@@ -1,0 +1,45 @@
+{
+  "slug": "website-redesign-or-repair",
+  "summary": "Repair your website when its platform and structure still work and the problems are specific, such as a weak service page or broken form. Rebuild when the design, content structure or technical setup blocks useful improvement. Before deciding, check the enquiry route, search traffic and account access so you know what to preserve.",
+  "takeaways": [
+    "Find the problem before choosing the size of the project.",
+    "Preserve useful content, URLs and evidence.",
+    "Agree measurable launch requirements and ownership."
+  ],
+  "sections": [
+    {
+      "id": "diagnosis",
+      "body": "<p>A website redesign needs a business reason. The site might misrepresent the quality of your work, hide important services, make enquiries difficult or be impossible for the team to update. Write the problem in terms an owner can recognise.</p><p>“The site feels dated” is a starting observation. “Our completed projects look much better than the website, and customers cannot find the relevant examples” is a clearer brief. It suggests work on presentation and content organisation rather than an automatic replacement of every system.</p><p>Check the current contact route first. A missed notification or broken form can require a small repair even if a wider redesign is planned later.</p>"
+    },
+    {
+      "id": "foundation",
+      "body": "<p>A website can often be improved in place when you control the accounts, the platform is maintained and the content structure is manageable. Repeated workarounds, missing access or a setup nobody can maintain may justify a rebuild.</p><table><caption>Repair or rebuild: useful starting points</caption><thead><tr><th>Situation</th><th>Start by considering</th></tr></thead><tbody><tr><td>One weak service page or broken form</td><td>A targeted repair</td></tr><tr><td>Good structure, dated imagery and inconsistent styling</td><td>A design and content refresh</td></tr><tr><td>Navigation cannot support the actual services</td><td>A structural redesign</td></tr><tr><td>Unmaintainable platform or missing ownership</td><td>A migration or rebuild after access review</td></tr></tbody></table><p>Ask the designer to explain the recommendation in plain language. The proposal should connect the proposed work to the problem, not assume a particular platform is always the answer.</p>"
+    },
+    {
+      "id": "preserve",
+      "body": "<p>A website rebuild should begin with a record of existing URLs, useful content, inbound links and search performance. Some unremarkable-looking pages may already answer important questions and attract suitable visitors.</p><p>Use Search Console and available analytics to identify the pages people find. Keep strong project evidence, service explanations and customer answers even if their presentation changes. Map old addresses to the most relevant new pages when URLs need to change.</p><p>Google’s site-move guidance recommends planning URL mapping and redirects. Sending every old page to the new homepage loses the useful relationship between the visitor’s original request and the content they land on.</p>"
+    },
+    {
+      "id": "scope",
+      "body": "<p>A website project can be staged around the business’s immediate priorities. First make the core services understandable and the enquiry path reliable. Then add deeper project stories, new regional content or business-system integrations when the foundation is ready.</p><p>For an Okanagan service business, this might mean improving the homepage and most valuable service pages before commissioning a large article library. A hospitality site may need availability and property information resolved before a more ambitious visual presentation.</p><p>Compare the repair and rebuild scopes using the same assumptions about content, images, search migration and ownership. The <a href=\"/blog/okanagan-website-cost/\">website cost checklist</a> helps expose work that can otherwise sit outside the headline quote.</p>"
+    },
+    {
+      "id": "acceptance",
+      "body": "<p>A website launch should be accepted against a concrete checklist. Review the agreed pages, phone layouts, contact submissions, booking handoffs, redirects and account access. Confirm analytics are attached to the right business and search settings allow the public pages to be discovered.</p><ul><li>Open the important old URLs and check their destinations.</li><li>Submit each enquiry route and confirm delivery.</li><li>Check the main customer task on a phone and keyboard.</li><li>Confirm page titles, canonical URLs and sitemap entries.</li><li>Give the owner account access and practical update instructions.</li></ul><p>After launch, compare the quality of enquiries and listen to customer feedback. Michael McKerracher can <a href=\"/web-design/\">review an existing website</a>, retain what is useful and scope the changes around the work the business wants more of. A rebuild is one possible outcome of that review, not the starting assumption.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Will rebuilding my website make me lose Google rankings?",
+      "A rebuild can affect search visibility, especially when URLs or useful content change. Inventory the existing site, preserve relevant content, map redirects and monitor Search Console after launch. No provider can guarantee that rankings will remain unchanged."
+    ],
+    [
+      "Can I keep my email while changing the website?",
+      "Often yes. Website hosting and email can be separate services, but DNS changes need care. Identify the existing email records and provider before moving the website so the launch does not interrupt mail."
+    ],
+    [
+      "Can you improve the design without rewriting every page?",
+      "Yes, when the existing content remains accurate and useful. Review the most important pages first, keep strong material and update the layout or copy where it helps the customer understand and act."
+    ]
+  ]
+}

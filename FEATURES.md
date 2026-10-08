@@ -1,3 +1,11 @@
+# Dated resources and contact, October 8, 2026
+
+- Resources is the public umbrella at /blog/. Visible published/updated dates match schema; the index shows dates and content types.
+- content/resources/publishing.json gates publication using America/Vancouver dates and approval state. Queued articles have no public HTML or Markdown and are absent from discovery. Preserve original publication dates when re-releasing previously public work.
+- Twelve reviewed Echo edits live in content/resources/edited; API credential and raw requests/responses remain private. Future full articles can use content/resources/articles.
+- A weekly 2027 editorial calendar contains 52 distinct briefs; eight late-2026 briefs bridge the rollout. A daily thread heartbeat handles research, drafting and release checks.
+- /contact/ provides direct email and a free form with name, email, message and optional service. Shared consultation actions lead here. FormSubmit activation/delivery is verified separately from deployment.
+
 # Public resource library, October 8, 2026
 
 - `/blog/` now contains 12 public articles: three city guides, five practical checklists, three provider comparisons and the Cool Runnings case study. This supersedes the earlier blog removal only for these newly approved articles; the old three posts remain retired.

@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/plumbers/
 
 Web design for plumbers in Kelowna and the Okanagan. Make it easier for the right customers to find you, trust you and get in touch.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Plumbers website design
@@ -133,7 +133,7 @@ Yes. Profile support, local search content, campaign pages and enquiry follow-up
 
 ## Let’s turn your website into your next good job.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

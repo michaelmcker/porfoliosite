@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/home-builders/
 
 Website design for custom home builders and renovation companies in Kelowna. Show the thinking, craft and experience behind the homes you build.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Home builders website design
@@ -133,7 +133,7 @@ Yes. We can provide reusable project layouts, editing access and training so the
 
 ## Build a presence worthy of your work.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

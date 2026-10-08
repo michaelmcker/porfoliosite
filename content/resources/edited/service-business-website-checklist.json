@@ -1,0 +1,65 @@
+{
+  "slug": "service-business-website-checklist",
+  "summary": "A service business website needs a clear offer, accurate coverage, relevant proof and a contact route that works. The most useful improvements help customers decide whether you can solve their problem and help your team turn that interest into a qualified booking. Use these ten checks before spending more on traffic.",
+  "takeaways": [
+    "Explain the service and coverage before asking for an enquiry.",
+    "Make proof and practical answers easy to find.",
+    "Test the handoff from website request to real conversation."
+  ],
+  "sections": [
+    {
+      "id": "offer",
+      "body": "<p>Your opening headline needs to tell a visitor what service you provide and where you provide it. “Appliance repair in Kelowna and the Okanagan” is useful. A vague statement about quality is not. Back up any broad claim with specifics: relevant experience, a defined specialism or a practical way you handle the problem. If you offer scheduled repairs, say that. Do not suggest round-the-clock emergency response just because the phrase gets clicks.</p>"
+    },
+    {
+      "id": "service-pages",
+      "body": "<p>Give each important service its own page, because different customer problems need different answers. A plumber’s drain-cleaning page and renovation-plumbing page require different scope, preparation details and enquiry information. On each page, describe the problem, explain what the work includes, walk through the process and show the next step. Include real photographs or project examples where you can. The <a href=\"/web-design/plumbers/\">plumber website page</a> and <a href=\"/web-design/appliance-repair/\">appliance repair website page</a> show the industry-specific planning I bring to a build.</p>"
+    },
+    {
+      "id": "coverage",
+      "body": "<p>Be direct about where you work. List the communities you actually serve and explain any meaningful restrictions, travel arrangements or differences between services. For an Okanagan business, coverage might extend across more than one city. Name those places accurately, then add separate local pages only when you have useful detail to provide. Keep a real office address distinct from an area you visit for work.</p>"
+    },
+    {
+      "id": "evidence",
+      "body": "<p>Put proof beside the decision it supports, and make it relevant to the service being considered. Show a completed job, explain the work involved or use an approved customer comment with appropriate attribution. Place that evidence near the service description or enquiry action. Cool Runnings’ website, local SEO and conversion work brought a 30% increase in qualified bookings. The <a href=\"/blog/cool-runnings-qualified-bookings/\">project story</a> connects that result to the work. Your proof might be a careful installation, a well-documented process or a distinctive finished project rather than a percentage.</p>"
+    },
+    {
+      "id": "questions",
+      "body": "<p>Answer the questions that actually determine whether someone will contact you. Start with the questions the owner repeatedly answers: what is included, what information to send, whether a visit is needed and how estimates work. Place essential answers in the main content and use a short FAQ for specific follow-ups. If you cannot offer a fixed price, explain what changes the quote. Clear scope is more useful than an empty “contact us for details” repeated under every question.</p>"
+    },
+    {
+      "id": "contact",
+      "body": "<p>Your contact action needs to match what your operation can actually deliver. “Request an estimate,” “Book an appointment” and “Ask for a callback” are different commitments. Choose the right one and place it near useful information, then repeat it at the end of a substantial service page. Give people a phone option if calls are part of the business. For a professional consultation, explain what the first conversation involves so the visitor knows what they are agreeing to.</p>"
+    },
+    {
+      "id": "form",
+      "body": "<p>Collect enough information to route the request without forcing the customer to complete your entire intake process. Start with these fields and add only what the business needs:</p><ul><li>Name and preferred contact method.</li><li>Service or type of work requested.</li><li>Town or service address, when needed for coverage.</li><li>A short description, with optional photos for suitable jobs.</li></ul><p>Use visible field labels, helpful errors and a readable confirmation. Test keyboard access and phone entry. Keep sensitive health, legal or financial records in the business’s approved intake system.</p>"
+    },
+    {
+      "id": "mobile",
+      "body": "<p>Your mobile experience needs to let someone finish the task. Text should be readable, image sizes sensible and controls easy to use. Test the full path on a phone, from the service description through to the confirmation screen. Google’s Core Web Vitals cover loading, responsiveness and visual stability. Ask your designer to examine those measures alongside the actual booking experience. A performance score is useful evidence, but it does not confirm that a form notification reached the owner or that a phone link calls the right number.</p>"
+    },
+    {
+      "id": "foundations",
+      "body": "<p>Build your search foundations on readable content, descriptive page titles, clear headings, internal links and a sitemap. Keep business details consistent with the public profiles that represent the company. Structured data can describe visible content; it should not contain invented reviews or services. Search Console helps confirm what Google can access and whether pages are indexed. For ChatGPT and Google’s AI features, the <a href=\"/blog/google-chatgpt-business-visibility/\">seven-step visibility checklist</a> separates useful work from unsupported promises.</p>"
+    },
+    {
+      "id": "follow-up",
+      "body": "<p>Every enquiry needs a real owner. The business must receive, assess and respond to the request. Assign a person or team, a notification route and a way to see which enquiries are still open. Measure completed requests, qualified conversations and booked jobs separately. If suitable enquiries are going unanswered, adding pages will not fix the handoff. Simple reminders or routing can help; more involved needs may suit <a href=\"/ai-implementation/\">custom workflows and AI implementation</a>, with appropriate human review.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should I let customers book a time without speaking to me?",
+      "Use direct booking when the service, duration and availability are predictable. Use a request or callback first when you need to assess scope, coverage or suitability. The button should make that distinction clear."
+    ],
+    [
+      "How many fields should my service enquiry form have?",
+      "Use the fewest fields needed to route and respond to the request. Name, contact details, service, location and a short description are a useful starting point. Only require extra information when it changes the next action."
+    ],
+    [
+      "What should I fix before running ads?",
+      "Confirm that the relevant service page answers the customer’s main questions, the contact action works on mobile and enquiries reach someone who will respond. Set up conversion measurement before paying to bring more visitors to that route."
+    ]
+  ]
+}

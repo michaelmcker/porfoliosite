@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/hotels/
 
 Web design for hotels and resorts in Kelowna and the Okanagan. Show what makes your property special and give guests a clear route to availability.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Hotels website design
@@ -133,7 +133,7 @@ We can measure website actions and connect booking results where your booking pl
 
 ## Give guests a better reason to book with you.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

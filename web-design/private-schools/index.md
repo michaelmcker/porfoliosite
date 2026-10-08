@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/private-schools/
 
 Web design for independent and private schools in Kelowna and the Okanagan. Show the life of your school and make the path to a visit clear.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Private schools website design
@@ -133,7 +133,7 @@ Yes. The website can direct families to the tools the school already uses.
 
 ## Let families see what makes your school special.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

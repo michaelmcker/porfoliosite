@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/hvac/
 
 Website design for heating and cooling businesses in Kelowna. Help customers find the right service, understand the next step and get through to your team.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Hvac website design
@@ -133,7 +133,7 @@ Yes. Customer questions, completed installations and maintenance services can be
 
 ## Turn more interest into a useful conversation.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

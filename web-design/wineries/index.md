@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/wineries/
 
 Web design for wineries in Kelowna and the Okanagan. Connect the place, the wine and the people with a clear route to visit, buy or join.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Wineries website design
@@ -133,7 +133,7 @@ Yes. Original media can be planned as part of the website and wider brand work.
 
 ## Give people a reason to make you part of their visit.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

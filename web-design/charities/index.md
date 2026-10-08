@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/charities/
 
 Web design for charities and nonprofits in Kelowna and the Okanagan. Bring your mission to life and make giving, volunteering and finding support easier.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Charities website design
@@ -133,7 +133,7 @@ Yes. Film, campaign messaging and the website can be developed as one connected 
 
 ## Give your mission a stronger place to be heard.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

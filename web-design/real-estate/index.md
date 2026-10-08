@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/real-estate/
 
 Web design for real estate agents and teams in Kelowna. Bring your local knowledge, property marketing and personal approach together in one distinctive website.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Real estate website design
@@ -133,7 +133,7 @@ We can connect the website to your current system and preserve the property or s
 
 ## Make your local expertise impossible to miss.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

@@ -1,0 +1,53 @@
+{
+  "slug": "google-chatgpt-business-visibility",
+  "summary": "Help Google and ChatGPT understand your business by publishing clear, accessible service information, original proof and accurate local details. Allow the relevant search crawlers to reach public content, make important answers easy to extract and measure the enquiries that follow. These are discoverability foundations, not a guarantee of a recommendation.",
+  "takeaways": [
+    "Start with crawlable pages that answer real customer questions.",
+    "Make the business, services and locations explicit and consistent.",
+    "Use original work and track useful visits rather than relying on a one-off AI answer."
+  ],
+  "sections": [
+    {
+      "id": "access",
+      "body": "<p>Your website has to be reachable before any of this matters. Check that the important pages load properly, that they link from other public pages, and that nothing accidentally flags them as noindex or hides them behind an access wall.</p><p>OpenAI tells publishers to allow OAI-SearchBot if they want content to show up in ChatGPT search summaries and snippets. That is a separate switch from GPTBot, which is about potential model training. Have your developer look at robots.txt and the firewall rules rather than assuming a page that looks public to you is visible to every crawler.</p><p>For Google, open Search Console and inspect the actual URL to see its indexing status. Sending a sitemap helps discovery, but it does not mean the page has made it into the index.</p>"
+    },
+    {
+      "id": "entity",
+      "body": "<p>Your website needs to say plainly what the business is, what it does, and where it operates. Keep those facts consistent across the site and on the public profiles you control.</p><p>Michael McKerracher is an independent <a href=\"/web-design/\">web designer</a> and <a href=\"/marketing-branding/\">marketing consultant</a> based in Coldstream, serving the Okanagan. That specific description carries more weight than a string of vague superlatives. The same principle works for an electrician, a clinic or a hotel: name who you help, what you provide, and where you provide it.</p><p>Use structured data to describe information that is already on the page. Do not claim offices, reviews, credentials or services that the business does not have.</p>"
+    },
+    {
+      "id": "answers",
+      "body": "<p>A service page should answer its main question near the top, then fill in the details. Use descriptive headings, short self-contained sections, comparison tables where they help, and concise FAQs for the questions people actually ask next.</p><p>A repair page can explain which appliances are serviced, the coverage area, what information helps with the booking, and how the visit is arranged. A hotel page answers different questions about rooms, location, amenities, and reservations.</p><p>Keep the important answers as readable text. A screenshot can show the work, but the service description should not live only inside an image. The <a href=\"/web-design/industries/\">industry website collection</a> shows how these information needs change by business type.</p>"
+    },
+    {
+      "id": "evidence",
+      "body": "<p>Original business evidence gives readers something worth evaluating, and it gives sources something concrete to reference. Publish project explanations, real photographs, approved customer comments, and measured results with their meaning intact.</p><p>Cool Runnings’ 30% increase refers to qualified bookings, not website traffic or revenue. ABC Appliance’s work supports a discussion about repair content and search visibility without an invented percentage attached to it. Keeping those distinctions clear makes the material more useful than a generic claim about growth.</p><p>A project story can explain what the problem was, what changed, and what the owner learned. Give it a stable page and link to it from the relevant service instead of repeating an unexplained statistic across the site.</p>"
+    },
+    {
+      "id": "local",
+      "body": "<p>An Okanagan business should keep its Google Business Profile, website, and other relevant listings accurate. Google names relevance, distance, and prominence as the main local ranking factors. Complete information helps describe the business, but it cannot remove geographic distance.</p><p>Keep services, hours, contact information, and the correct location or service area up to date. Add useful local pages where the details actually differ. A Vernon clinic’s arrival instructions and a West Kelowna contractor’s coverage information are different kinds of local value.</p><p>Pick directories and industry organisations that genuinely fit the business. A real profile or a relevant project mention is worth more to a customer than an unsupported claim that everyone recommends the company.</p>"
+    },
+    {
+      "id": "technical",
+      "body": "<p>Google says its usual SEO best practices still apply to AI Overviews and AI Mode, with no extra special requirements. Start with useful content, accessible pages, good internal links, and accurate structured data.</p><p>Markdown versions and an llms.txt file can make content easier for some tools to consume. Treat them as additional formats, not a replacement for the public HTML website or a promised route into AI answers. FAQ markup should describe the questions and answers visible on the page, not act as an endorsement.</p><p>A website launch checklist should also cover mobile usability, image size, redirects, canonical URLs, and contact testing. These are practical foundations that help the site work for people as well as automated systems.</p>"
+    },
+    {
+      "id": "measurement",
+      "body": "<p>A business should measure discovery, visits, enquiries, and booked work as separate stages. Search Console reports Google search performance. Analytics can show referred visits, and the enquiry process can reveal which conversations turned into useful work.</p><p>OpenAI says ChatGPT search referral links carry a utm_source=chatgpt.com parameter. Keep that information in your reporting, then look at the enquiries that follow. A single answer where your business appears is a snapshot, not a stable ranking position.</p><p>Use the data to decide what to improve: missing service information, weak evidence, confusing booking steps, or an unanswered local question. That is a more useful programme than publishing more pages just to increase the count.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Can you guarantee my business will be recommended by ChatGPT?",
+      "No. Michael McKerracher can improve the website’s accessibility, content, structure and evidence, but answer systems decide what to retrieve and recommend. The practical goal is accurate discovery and useful customer enquiries."
+    ],
+    [
+      "Do I need a separate AI version of my website?",
+      "A separate website is not required. Keep the main site complete, readable and crawlable. Optional Markdown and discovery files can offer additional access, while the public HTML pages remain the primary customer experience."
+    ],
+    [
+      "Should I publish a new page for every nearby town?",
+      "Only when each page can help someone with distinct, accurate information. Real coverage, local projects, arrival instructions or service differences can justify a page. Repeating the same copy with a different place name adds little value."
+    ]
+  ]
+}

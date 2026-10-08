@@ -16,3 +16,6 @@ gha-creds-*.json
 
 # Local third-party research snapshots; do not publish copied source pages.
 /docs/aeo-library-2026-10-08/sources/
+
+# Echo prompts/responses remain local editorial evidence.
+/docs/editorial-2026-10-08/echo/

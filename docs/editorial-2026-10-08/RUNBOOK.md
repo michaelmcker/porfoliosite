@@ -1,0 +1,34 @@
+# Resource publishing runbook
+
+Michael authorized a four-week release of the existing articles and a full 2027 weekly resource calendar, with Echo editing, AEO structure, relevant self-inclusion and internal links to commercial pages. This is a publishing authorization for this owned site, not authorization for outreach or third-party directory edits.
+
+## Working copy and source
+
+- Site: https://michaelmck.site, repository https://github.com/michaelmcker/porfoliosite.git, production branch `main`.
+- Current working copy: `/tmp/portfolio-restore-services`. If absent or no longer suitable, use or create a clean clone at `/Users/michaelmckerracher/Business Research/portfolio-publishing`. Never discard unrelated edits. Fetch and inspect remote main before making changes; preserve automatic Cool Runnings metrics updates.
+- Read the repository AGENTS.md, SESSION_LOG.md and current release notes. Public source is V2; builds generate production output.
+- Existing queue: `content/resources/publishing.json`. Original dates are October 8, 2026 because those twelve pages were already briefly live. Never backdate or replace that original date with a fictional first publication.
+- New planned work: `content/resources/editorial-calendar-2026.json` and `editorial-calendar-2027.json`. The latter is the canonical editable calendar; its HTML/CSV is only a view.
+- Timezone: America/Vancouver. Target release time is 09:00 local. Check the actual local date, not the server timezone. On weekends or dates with nothing due, no release is needed.
+
+## Each run
+
+1. Check the date and queue. Stop after December 31, 2027 and disable the heartbeat. If nothing is due and no article in the next seven days needs preparation, remain quiet.
+2. First prepare any planned article due within seven days. Work one article at a time. Existing approved articles need source/link freshness checks before release, not another complete rewrite.
+3. Search the exact buyer/industry intent independently. For a plumber comparison, search web design for plumbers Kelowna, plumber website design Kelowna and a broader plumber website design query, not plumbers-for-hire results. Capture query, date, provider/location information and actual result URLs. Read relevant ranking pages and official provider service/portfolio pages. Do not call nonlocalized results a verified Kelowna rank.
+4. Save the query map, source inventory, section structure, meaningful gaps and claim ledger under a dated editorial evidence directory. For comparison lists, include Michael with clear authorship and fit; verify competitors' actual services and relevant work. The planned list size is provisional. Do not invent five suitable firms to fill a title. If the evidence does not support a specific best-of, write a useful buying comparison without false rankings.
+5. Draft useful, distinct local content around that brief. Keep the direct answer after the H1, self-contained H2s, useful lists/tables, three specific visible FAQs, named source links, relevant portfolio proof and the existing design system. Include one contextual link to the primary money page, a relevant proof link and useful published sibling resources; one closing contact invitation. No city/industry name-swapped copies. No fabricated 2027 results, prices, quotes or reviews. Preserve qualified bookings as the Cool Runnings outcome.
+6. Use Echo at `https://echo.fulcrum.inc/api/v1/chat/completions`, model `echo`, persona `Michael McKerracher`, for the natural-language pass. The existing key is in environment `ECHO_API_KEY` or `/Users/michaelmckerracher/.config/portfolio-editorial/echo.key`; never print it or commit it. See `scripts/edit-resources-echo.py` for the supported request. Send only public-safe article material and approved voice samples. Save the response locally, compare facts, numbers, destinations and meaning. Do not treat Echo as a fact source or detector certification.
+7. Run AEO and Content Quality Editor skills. Review the prose yourself. Fix unsupported claims, repetitive framing, weak answers and broken links before approving the draft. This authorization permits publication after these checks; do not add an unnecessary approval request for ordinary scheduled content. Ask only when a needed fact, material scope decision or access cannot be resolved.
+8. Add each new full article as `content/resources/articles/<slug>.json`, following the complete shape of the existing article objects: slug, type, title, description, summary, image, takeaways, sections with id/title/HTML body, three faqs, sources, related and services. Use existing portfolio media only where relevant. Add an entry to publishing.json with status approved, publishOn, datePublished and dateModified. For a genuinely new page, datePublished is the date it actually goes live; if a slot was missed, use today, not the past target. Keep future drafts private. For substantial annual updates, update the existing stable URL, visible title and dateModified; retain datePublished and avoid duplicate 2026/2027 URLs for the same intent.
+9. Run `npm run build:resources`, relevant tests and `npm test`. The baseline missing-Chrome browser test is documented; distinguish it from new failures and use the connected browser for required mobile/desktop verification. Check the actual public routes, all internal links, visible/schema FAQ parity, no future drafts in HTML/Markdown/sitemap/LLM files, dates and shared contact navigation. Do not publish with new failures. Update tests whose fixed initial count intentionally changes as the approved collection grows; retain privacy and scheduling assertions.
+10. Commit source and generated outputs. Push to main through the existing GitHub-to-Vercel integration. Do not launch an additional CLI deployment. Wait for the same deployment to be Ready and aliased to michaelmck.site. Verify public HTML, date metadata, Markdown response, sitemap and navigation against the build, and a real mobile/desktop view. Record commit, deployment and verification evidence. A Git push alone is not live verification.
+11. Update the calendar row to published with actual URL/date and evidence path. Record the session. No backdated freshness, guaranteed indexing, AI recommendations or traffic claims. Do not send emails, social posts or outreach as part of this run.
+
+## Notifications
+
+Stay quiet for unchanged state and routine checks with nothing due. Notify Michael for a successful release (title and live URL), an actual deployment failure, or a specific issue requiring his input. Do not keep reporting the same blocker.
+
+## Contact form
+
+The owned contact page is `/contact/`, with direct email and FormSubmit delivery. Do not route the form to a different recipient or add a paid plan. A submitted form is only delivery-verified when its matching email is observed. Never report test submissions as customer leads.

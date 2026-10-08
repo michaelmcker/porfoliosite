@@ -1,29 +1,31 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
-import {articles} from '../scripts/build-resources.mjs';
+import {articles,publishedArticles,renderArticle} from '../scripts/build-resources.mjs';
 import {markdown} from '../scripts/service-discovery.mjs';
+import {dates} from '../scripts/resource-publishing.mjs';
 import {siteHeader} from '../scripts/site-header.mjs';
 const read=path=>readFile(new URL('../'+path,import.meta.url),'utf8');
 const base='https://michaelmck.site';
 const plain=value=>value.replace(/<[^>]+>/g,' ').replaceAll('&amp;','&').replace(/\s+/g,' ').trim();
 
 test('all approved articles are complete, answer-first and linked from the collection',async()=>{
- assert.equal(articles.length,12);
- assert.equal(articles.filter(a=>a.type==='comparison').length,3);
- assert.equal(articles.filter(a=>a.type==='guide').length,3);
+ assert(articles.length>=12);
+ assert(articles.filter(a=>a.type==='comparison').length>=3);
+ assert(articles.filter(a=>a.type==='guide').length>=3);
  assert(articles.filter(a=>a.type==='checklist'||a.type==='comparison'||a.type==='guide').length>articles.length/2);
  const hub=await read('blog/index.html');
  for(const a of articles){
-  const path=`blog/${a.slug}/index.html`,html=await read(path);
-  assert.equal(html,await read('v2/'+path));
+  const path=`blog/${a.slug}/index.html`,html=renderArticle(a).html;
+  if(publishedArticles.includes(a)){assert.equal(html,await read(path));assert.equal(html,await read('v2/'+path));}
+  else {await assert.rejects(access(new URL('../'+path,import.meta.url)));await assert.rejects(access(new URL('../v2/'+path,import.meta.url)));}
   assert(html.includes(siteHeader));
   assert.equal((html.match(/<h1\b/g)||[]).length,1);
   assert(html.includes(`<h1>${a.title.replaceAll('&','&amp;')}</h1><p class="r-summary">`));
   assert(a.sections.length>=5,a.slug+' complete topic coverage');
   for(const section of a.sections)assert(section.body.startsWith('<p>')&&plain(section.body).length>250,a.slug+' '+section.id+' has a substantive direct answer');
   assert.equal(new Set(a.sections.map(s=>s.id)).size,a.sections.length);
-  assert(hub.includes(`href="/blog/${a.slug}/"`));
+  assert.equal(hub.includes(`href="/blog/${a.slug}/"`),publishedArticles.includes(a));
   assert(html.includes('<script src="/assets/analytics.js" defer></script>'));
   assert(!/<meta[^>]+(?:name="robots"[^>]+content="[^"]*noindex|content="[^"]*noindex[^>]+name="robots")/i.test(html));
   assert(!/"aggregateRating"|"starRating"/.test(html));
@@ -31,7 +33,7 @@ test('all approved articles are complete, answer-first and linked from the colle
   const article=graph.find(x=>x['@type']==='BlogPosting');
   assert.equal(article.headline,a.title);
   assert.equal(article.abstract,a.summary);
-  assert.equal(article.datePublished,'2026-10-08');
+  assert.equal(article.datePublished,dates(a).datePublished);
   assert.equal(article.author['@id'],base+'/#person');
   const faq=graph.find(x=>x['@type']==='FAQPage');
   assert.equal(faq.mainEntity.length,3);
@@ -39,8 +41,9 @@ test('all approved articles are complete, answer-first and linked from the colle
   assert.equal((visible.match(/<h3>/g)||[]).length,3);
   assert(!visible.includes('<details'));
   for(const [q,answer]of a.faqs){assert(plain(visible).includes(q));assert(plain(visible).includes(answer));assert(faq.mainEntity.some(x=>x.name===q&&x.acceptedAnswer.text===answer));}
-  const md=await read(`blog/${a.slug}/index.md`);
-  assert.equal(md,`Source: ${base}/blog/${a.slug}/\n\n${markdown(html)}`);
+  const md=`Source: ${base}/blog/${a.slug}/\n\n${markdown(html)}`;
+  if(publishedArticles.includes(a))assert.equal(await read(`blog/${a.slug}/index.md`),md);
+  else await assert.rejects(access(new URL(`../blog/${a.slug}/index.md`,import.meta.url)));
   if(a.type==='comparison'){
    assert(a.method.includes('include my own business'));
    assert(a.providers.some(([name,url])=>name==='Michael McKerracher'));

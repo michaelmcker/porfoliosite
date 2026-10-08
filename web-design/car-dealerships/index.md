@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/car-dealerships/
 
 Web design for car dealerships in Kelowna and the Okanagan. Make inventory easier to explore and give interested buyers a clear way to reach your team.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Car dealerships website design
@@ -133,7 +133,7 @@ Yes. Campaign pages can focus on a vehicle category or offer and connect to curr
 
 ## Turn vehicle interest into a better sales conversation.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

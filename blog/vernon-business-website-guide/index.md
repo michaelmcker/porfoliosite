@@ -2,10 +2,10 @@ Source: https://michaelmck.site/blog/vernon-business-website-guide/
 
 # The Vernon business website guide: 7 priorities for 2026
 
-A Vernon business website should make it easy to confirm your reputation, understand your services and get in touch. For North Okanagan businesses, clear coverage, appointment details and practical local information matter. Build the site around how customers move from a recommendation or search to a booked job.
+A Vernon business website should help people confirm your reputation, understand your services and get in touch. For North Okanagan businesses, clear coverage, appointment details and practical local information matter. Build the site around how customers move from a recommendation or search to a booked job.
 
 By [Michael McKerracher](https://michaelmck.site/)
- · October 8, 2026
+ · Published October 8, 2026
 
 In this article
 
@@ -26,9 +26,9 @@ In this article
 - [Questions, answered](#questions)
 [All resources](https://michaelmck.site/blog/)
 
-- Make a referred customer confident they found the right business.
-- Explain service boundaries and travel arrangements accurately.
-- Connect enquiry handling, local search and owner-friendly updates.
+- Make it easy for a referred customer to confirm they have found the right business.
+- Be specific about your North Okanagan service boundaries and travel arrangements.
+- Connect enquiry handling, local search and owner-friendly updates so the site supports real bookings.
 
 Cool Runnings landscaping website with a direct estimate request
 
@@ -38,7 +38,7 @@ A Vernon website can support word of mouth by answering the questions a recommen
 
 Put the business name, service description and location in readable text. Show the people behind the business and work relevant to the visitor’s problem. A small team can make a strong impression through a clear introduction and thoughtful examples; it does not need to pretend to be a larger organisation.
 
-Test the experience by searching your own business name. Check that the website and public profiles use consistent contact details and lead to the current business. An old phone number or abandoned Facebook page creates avoidable confusion after someone has already recommended you.
+Search your own business name and check that the website and public profiles use consistent contact details and lead to the current business. An old phone number or abandoned Facebook page creates avoidable confusion after someone has already recommended you.
 
 ## 2. Define the North Okanagan area you actually serve
 
@@ -77,12 +77,12 @@ A Vernon business website needs readable service content and clear internal link
 
 Google’s local guidance identifies relevance, distance and prominence as key factors. Keep your Google Business Profile complete and accurate, then use Search Console to understand the website’s search visibility. Treat map results and website results as connected parts of discovery, with different measurements.
 
-Cool Runnings’ website, local SEO and conversion work brought a 30% increase in qualified bookings. The useful lesson is to connect what people search for with a clear service and enquiry route. The [case study](https://michaelmck.site/blog/cool-runnings-qualified-bookings/)
- explains that work without treating page count as the result.
+Cool Runnings’ website, local SEO and conversion work brought a 30% increase in qualified bookings. The useful lesson is to connect what people search for with a clear service and enquiry route. The case study explains that work without treating page count as the result.
 
 ## 6. Give the owner a manageable website
 
-A Vernon website should fit the person who will maintain it. An owner who changes opening hours twice a year has a different editing need from a team publishing events and changing services each week.
+A [Vernon website](https://michaelmck.site/web-design/)
+ should fit the person who will maintain it. An owner who changes opening hours twice a year has a different editing need from a team publishing events and changing services each week.
 
 Ask for the platform choice to be explained in those terms. Agree which changes you can make, what training is included and how support is charged. Keep domain and account ownership in the business’s name, with a record of access and renewals.
 
@@ -118,12 +118,6 @@ Yes, provided your business controls the domain. Plan the website move, email se
 
 ## Keep exploring
 
-- [5 web designers for Vernon businesses: the best fits for 2026](https://michaelmck.site/blog/best-web-designers-vernon/)
-
-- [Redesign your website or repair it? 5 decisions before you spend](https://michaelmck.site/blog/website-redesign-or-repair/)
-
-- [10 things every service business website needs in 2026](https://michaelmck.site/blog/service-business-website-checklist/)
-
 [Explore website design for your industry](https://michaelmck.site/web-design/industries/)
 
 - [Appliance repair](https://michaelmck.site/web-design/appliance-repair/)
@@ -136,4 +130,4 @@ Yes, provided your business controls the domain. Plan the website move, email se
 
 Bring the problem, the idea or the website you have. We’ll work out what would make a useful difference.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)

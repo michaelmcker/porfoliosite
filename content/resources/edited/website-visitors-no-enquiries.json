@@ -1,0 +1,53 @@
+{
+  "slug": "website-visitors-no-enquiries",
+  "summary": "When a website gets traffic but few enquiries, first check who is visiting and whether the contact route actually works. Then examine the offer, proof, service information and follow-up. More visitors will only help when the website gives suitable customers a clear reason and a reliable way to get in touch.",
+  "takeaways": [
+    "Separate relevant visitors from total traffic.",
+    "Test real submissions before changing the whole design.",
+    "Track qualified enquiries and bookings as separate steps."
+  ],
+  "sections": [
+    {
+      "id": "traffic",
+      "body": "<p>A local business website needs relevant visitors, not just a rising session count. Review the search queries and landing pages that bring people in. A person researching a DIY repair may need different information from someone ready to hire an appliance technician.</p><p>Group enquiries by requested service and location. If many are outside your coverage or for work you do not provide, clarify those details in the page title, opening copy and form. An Okanagan company serving scheduled work should not attract emergency requests it cannot fulfil through an overbroad promise.</p>"
+    },
+    {
+      "id": "offer",
+      "body": "<p>A website visitor should be able to identify the business, service and next step without interpreting vague slogans. Read the headline and first paragraph aloud to someone unfamiliar with the company. Ask what they think you do and how they would contact you.</p><p>If the answer is unclear, rewrite the introduction before adding more sections. Lead with the customer’s problem and the service you provide. Use technical detail deeper in the page where it helps someone make a decision, rather than making it the entry requirement.</p>"
+    },
+    {
+      "id": "questions",
+      "body": "<p>A service website can lose a suitable enquiry because one practical question remains unanswered. Coverage, estimate process, availability, minimum project size and what is included can all affect whether a visitor gets in touch.</p><p>Ask the person answering calls which questions come up repeatedly. Put the useful answers on the relevant service page. For a home builder, explain the kinds of projects you take and how the initial meeting works. For a clinic, explain how a new patient requests an appointment and where they should send private information.</p>"
+    },
+    {
+      "id": "trust",
+      "body": "<p>A website needs evidence that fits the purchase. Photographs of finished work, a clear process and an attributed customer comment can help explain why a business is a good choice. Generic praise without context gives the visitor less to evaluate.</p><p><a href=\"/v2/work/local-search-magnet.html\">Cool Runnings</a> saw a 30% increase in qualified bookings following website, local SEO and conversion work. That result belongs to the project as a whole. The <a href=\"/blog/cool-runnings-qualified-bookings/\">case study</a> describes the connected changes without assigning the improvement to one button or headline.</p><p>Place evidence near the point where the visitor is deciding, rather than relying on a separate gallery they may never open.</p>"
+    },
+    {
+      "id": "technical",
+      "body": "<p>A website can look finished while losing real requests. Submit the form using a test clearly marked as such, check the notification arrives and verify the confirmation describes the next step. Test on a phone as well as a desktop.</p><table><caption>What to check before buying more traffic</caption><thead><tr><th>Symptom</th><th>First check</th></tr></thead><tbody><tr><td>Form starts but few completions</td><td>Required fields, errors and mobile entry</td></tr><tr><td>Submissions appear in analytics but not the inbox</td><td>Form delivery, spam filtering and notification settings</td></tr><tr><td>Many phone taps but few known calls</td><td>Correct number and separate call measurement</td></tr><tr><td>Bookings stop at an external tool</td><td>Availability, service selection and checkout handoff</td></tr></tbody></table><p>Do not use button taps alone as a count of completed enquiries. The distinction matters when deciding whether to change the website or the response process.</p>"
+    },
+    {
+      "id": "response",
+      "body": "<p>A website enquiry needs an operational owner. Review how quickly requests are noticed, whether the response answers the question and whether suitable prospects receive follow-up.</p><p>Use a simple lead record with the service, location, source, qualification and booking outcome. A small business can start with a shared spreadsheet. More involved teams may benefit from routing, reminders or a CRM workflow.</p><p>If a confirmation promises a callback, make sure someone can deliver it. Automation can acknowledge receipt and organise the request, while a person handles judgement, scope and the customer conversation.</p>"
+    },
+    {
+      "id": "improve",
+      "body": "<p>A <a href=\"/web-design/\">website improvement</a> should address the clearest observed problem first. If customers cannot understand the service, fix the copy. If the form is broken, repair it. If unsuitable traffic dominates, revisit the search or advertising approach.</p><p>Record what changed and when, then review comparable periods with enough enquiries to be meaningful. Seasonality and changes to advertising can affect the result. For low-volume businesses, direct feedback and careful enquiry records may be more useful than declaring a conversion-rate winner after a few visits.</p><p>The <a href=\"/blog/service-business-website-checklist/\">service website checklist</a> provides a wider review once the immediate problem is understood.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should I redesign the whole website if it gets no leads?",
+      "Not automatically. First check traffic relevance, service clarity and whether forms and phone links work. A focused repair may solve the immediate problem; a rebuild makes sense when the structure or platform prevents useful improvements."
+    ],
+    [
+      "What is a good conversion rate for a local website?",
+      "There is no single rate that applies to every local business. Define the conversion first, then compare similar traffic and periods. A completed booking, a contact form and a phone-button tap should not be treated as the same outcome."
+    ],
+    [
+      "How do I know whether the website or my ads are the problem?",
+      "Compare the search terms or campaign audience with the landing page and actual enquiries. Irrelevant visitors point toward targeting or message problems. Suitable visitors who cannot complete the next step point toward the page, form or booking flow."
+    ]
+  ]
+}

@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/law-firms/
 
 Web design for law firms in Kelowna and the Okanagan. Help prospective clients understand your practice, meet your people and take the right next step.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Law firms website design
@@ -133,7 +133,7 @@ Yes. The scope can include practice pages, office information, technical SEO and
 
 ## Give your practice a clearer introduction.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

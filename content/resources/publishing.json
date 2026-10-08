@@ -1,0 +1,90 @@
+{
+  "timezone": "America/Vancouver",
+  "originalRelease": "2026-10-08",
+  "articles": {
+    "kelowna-business-website-guide": {
+      "publishOn": "2026-10-08",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-08",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    },
+    "vernon-business-website-guide": {
+      "publishOn": "2026-10-08",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-08",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    },
+    "west-kelowna-business-website-guide": {
+      "publishOn": "2026-10-08",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-08",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    },
+    "service-business-website-checklist": {
+      "publishOn": "2026-10-12",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-12",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    },
+    "okanagan-website-cost": {
+      "publishOn": "2026-10-19",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-19",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    },
+    "website-visitors-no-enquiries": {
+      "publishOn": "2026-10-26",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-26",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    },
+    "google-chatgpt-business-visibility": {
+      "publishOn": "2026-10-29",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-29",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    },
+    "website-redesign-or-repair": {
+      "publishOn": "2026-11-04",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-11-04",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    },
+    "cool-runnings-qualified-bookings": {
+      "publishOn": "2026-11-05",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-11-05",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    },
+    "best-web-designers-kelowna": {
+      "publishOn": "2026-10-15",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-15",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    },
+    "best-web-designers-vernon": {
+      "publishOn": "2026-10-22",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-22",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    },
+    "best-web-designers-west-kelowna": {
+      "publishOn": "2026-11-02",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-11-02",
+      "status": "approved",
+      "note": "Originally public October 8; release queue preserves the original date."
+    }
+  }
+}

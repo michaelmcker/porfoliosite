@@ -4,7 +4,7 @@ Source: https://michaelmck.site/web-design/roofers/
 
 Web design for roofing companies in Kelowna and the Okanagan. Put the quality of your work in front of the customer before you arrive to quote.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Working across the Okanagan.
 
 Roofers website design
@@ -133,7 +133,7 @@ Yes. Enquiry routing, reminders and quote follow-up can be scoped around the too
 
 ## Give your next customer a reason to call.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)

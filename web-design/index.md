@@ -11,7 +11,7 @@ YOUR STORY.  MADE VISIBLE.
 
 Turn a good first impression into your next enquiry, booking or sale.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 
 [Original Okanagan Treehouse property imagery at dusk Okanagan Treehouse A place worth staying for. Website design & development A distinctive property, brought to life online with an immersive story and a clear path to explore the stay. Explore the website](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
@@ -63,7 +63,7 @@ Use feedback and measurement to decide what comes next. Ongoing support is avail
 
 Custom scope. Custom pricing. A clear proposal based on the website your business needs.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 
 ## Built for local business, too.
 
@@ -76,7 +76,7 @@ For Cool Runnings, the work connects a landscaping website with useful service c
 
 A free conversation about your business, your goals and what your website could do better.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Serving Vernon, Kelowna and across the Okanagan.
 
 ## Built around your business.

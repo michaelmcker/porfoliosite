@@ -6,7 +6,7 @@ Source: https://michaelmck.site/marketing-branding/
 
 Websites, social media, video and brand development that make your business easier to understand, remember and choose.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 [Watch the AI Catalyst film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
 
 Upon This Rock podcast identity with classical artwork in the UTR letterforms
@@ -85,7 +85,7 @@ For Cool Runnings, I brought the website, local service content and search strat
 
 Let’s talk about your business, where the message gets lost and what the next piece of work needs to achieve.
 
-[Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
+[Book a free consultation](https://michaelmck.site/contact/)
 Based in Coldstream. Serving Vernon, Kelowna and across the Okanagan.
 
 ## Make a better website decision.

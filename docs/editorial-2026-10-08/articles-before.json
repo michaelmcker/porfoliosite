@@ -1,0 +1,1196 @@
+[
+  {
+    "slug": "kelowna-business-website-guide",
+    "type": "guide",
+    "city": "Kelowna",
+    "title": "The Kelowna business website guide: 9 decisions for 2026",
+    "description": "Nine practical decisions for a Kelowna business website: budget, service pages, design, Google visibility, bookings, ownership and launch.",
+    "summary": "A Kelowna business website needs to explain what you offer, show why someone should choose you and make the next step easy. Start with the customer and the kind of enquiry you want. Then agree the page plan, budget, search foundations and ownership before design begins.",
+    "image": {
+      "src": "/assets/selected-work/abc-appliance-live.png",
+      "alt": "ABC Appliance website with repair services and a clear service request",
+      "width": 1200,
+      "height": 750
+    },
+    "takeaways": [
+      "Choose a business outcome before a platform.",
+      "Build useful pages for the services and customers you actually serve.",
+      "Agree content, account ownership and ongoing costs in the quote."
+    ],
+    "sections": [
+      {
+        "id": "outcome",
+        "title": "1. Decide which customer action matters",
+        "body": "<p>A Kelowna website should be designed around a useful next step: a qualified quote request, a first appointment, a reservation or a purchase. These actions need different information. A restaurant guest wants the menu and availability; a homeowner considering a renovation wants relevant work and confidence in the builder.</p><p>Write down your three most valuable services, the customers you want more of and the enquiries you cannot serve. Give that brief to your designer. “More leads” becomes a much clearer job when it means “more kitchen renovation consultations from homeowners within our service area.”</p>"
+      },
+      {
+        "id": "audience",
+        "title": "2. Separate residents, visitors and professional buyers",
+        "body": "<p>Kelowna businesses can serve very different audiences from the same website. <a href=\"https://www.tourismkelowna.com/\">Tourism Kelowna</a> presents stays, food and drink, events and experiences as distinct planning needs. A visitor organising a trip needs dates and practical details that a returning local customer may already know.</p><table><caption>Match the website to the decision</caption><thead><tr><th>Customer</th><th>What helps them choose</th><th>Useful next step</th></tr></thead><tbody><tr><td>Homeowner needing a repair</td><td>Service, coverage, availability and relevant reviews</td><td>Call or request service</td></tr><tr><td>Visitor planning a stay</td><td>Photos, location, dates and booking policies</td><td>Check availability</td></tr><tr><td>Client choosing a professional</td><td>Experience, scope, approach and what an appointment involves</td><td>Request a consultation</td></tr></tbody></table><p>Use the homepage to route people to the right detail. Trying to make one generic contact form serve every audience leaves the owner doing the sorting later.</p>"
+      },
+      {
+        "id": "pages",
+        "title": "3. Plan useful pages before choosing a theme",
+        "body": "<p>A practical Kelowna service website starts with a homepage, individual service pages, work or results, an about page and a contact route. A service page should explain who the service is for, the problems covered, the process, evidence and what happens after an enquiry.</p><p>For example, an appliance business can separate refrigerator, dishwasher and laundry repairs. Each page can answer different fault, access and booking questions. <a href=\"https://www.abcappliance.ca/\">ABC Appliance</a> is relevant work from my portfolio: design and service content support a direct request for help. Useful detail earns its own page; a second heading alone does not.</p><p>Where customers ask genuinely different local questions, add a service-area page with real coverage information and relevant work. Avoid publishing a page for every neighbourhood before you have something useful to say about it.</p>"
+      },
+      {
+        "id": "budget",
+        "title": "4. Compare the scope behind the price",
+        "body": "<p>A website budget only becomes meaningful when the quote names the work. At a planning budget of CAD $3,000–$4,000, prioritise a focused service website: a considered design, useful core content, mobile contact actions and the search foundations. A large catalogue, complex booking system or ongoing campaign needs its own scope.</p><p>Ask whether copywriting, photography, migration, redirects, training and ongoing support are included. A cheaper build with most of the content left to you may cost more of your time. My website projects are custom-quoted; the budget discussion starts with what the site needs to accomplish. Use the <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost checklist</a> to compare proposals consistently.</p>"
+      },
+      {
+        "id": "proof",
+        "title": "5. Show evidence where customers hesitate",
+        "body": "<p>Website proof should answer the question in the visitor’s mind. Put repair experience beside the repair service, a relevant project beside the renovation offer and room details beside an accommodation booking action. A logo strip cannot do all of that work.</p><p>My projects include ABC Appliance, the Okanagan Treehouse design and Cool Runnings’ website, local SEO and conversion work. Cool Runnings saw a 30% increase in qualified bookings. Each example supports a different conversation: making a service clear, presenting a distinctive place or turning local interest into enquiries. Choose the evidence that fits your own customer’s decision.</p>"
+      },
+      {
+        "id": "search",
+        "title": "6. Connect the website to local search",
+        "body": "<p>A Kelowna website and its Google Business Profile need to describe the same business: accurate services, location or service area, contact details and hours. Google says local results mainly depend on relevance, distance and prominence. A page title cannot change where a searcher is standing.</p><p>Give each important page a descriptive title, a clear main heading, readable service information and internal links. Ask the designer to handle crawlability, canonical URLs and the sitemap. Then connect Search Console so you can see whether Google has found the pages and what searches generate impressions. The <a href=\"/blog/google-chatgpt-business-visibility/\">Google and ChatGPT visibility checklist</a> explains the related AI-search work.</p>"
+      },
+      {
+        "id": "mobile",
+        "title": "7. Walk through the enquiry on a phone",
+        "body": "<p>A mobile website review should include completing the customer’s task, not just looking at a small screenshot. Find a service, check coverage, tap the phone number, submit the form and read the confirmation. Make sure the owner receives the enquiry.</p><p>Use real labels on fields and plain explanations for errors. Ask only for information needed to take the next step. An initial quote form might need name, contact details, location and a short description; project photos can be optional. Requiring a full account or an exact project budget too early can make the enquiry unnecessarily difficult.</p>"
+      },
+      {
+        "id": "ownership",
+        "title": "8. Agree who owns and updates the website",
+        "body": "<p>Kelowna business owners should retain access to their domain, hosting or platform account, analytics and business profile. Record who can edit the pages, who receives form notifications and who is responsible for updates.</p><p>A simple website can be inexpensive to operate. A site with frequent offers, booking rules or staff changes may need more editing control and training. Ask for a handover that includes account access, editing instructions, renewal costs and a way to export or move the content. Decide these details before paying for the build.</p>"
+      },
+      {
+        "id": "launch",
+        "title": "9. Measure the work you want more of",
+        "body": "<p>A website launch should establish a starting point for qualified enquiries and booked work. Count completed form submissions separately from phone-button taps. A tap shows intent; it does not establish that a conversation or sale occurred.</p><p>Review the source of enquiries, the service requested and the reason unsuitable enquiries were declined. If traffic grows but the jobs are wrong, revisit the service language and coverage. If suitable people enquire but do not book, examine response time and follow-up. A website becomes more useful when those business observations inform the next change.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Can I launch my Kelowna website before every service page is ready?",
+        "Yes. Launch the pages needed to understand the business and make an enquiry, with working contact routes and accurate information. Add further service pages when the content is ready; do not publish empty pages to fill the navigation."
+      ],
+      [
+        "Do I need a separate website for a second Kelowna location?",
+        "Usually one website can support multiple genuine locations. Give each location its own useful details, contact route, hours and services. Separate websites make sense when the brands or operating models are genuinely separate."
+      ],
+      [
+        "Can a designer help write the content as well?",
+        "Yes. Michael McKerracher offers content planning and writing alongside website design. Agree whether interviews, service copy, project stories, FAQs and photography are part of the quote."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Google: how local results are determined",
+        "url": "https://support.google.com/business/answer/7091?hl=en"
+      },
+      {
+        "name": "Tourism Kelowna: visitor planning and local experiences",
+        "url": "https://www.tourismkelowna.com/"
+      }
+    ],
+    "related": [
+      "okanagan-website-cost",
+      "best-web-designers-kelowna",
+      "service-business-website-checklist"
+    ],
+    "services": [
+      "plumbers",
+      "law-firms",
+      "hotels"
+    ]
+  },
+  {
+    "slug": "vernon-business-website-guide",
+    "type": "guide",
+    "city": "Vernon",
+    "title": "The Vernon business website guide: 7 priorities for 2026",
+    "description": "A practical Vernon BC website guide covering North Okanagan service areas, referral customers, appointments, content, ownership and local search.",
+    "summary": "A Vernon business website should make it easy to confirm your reputation, understand your services and get in touch. For North Okanagan businesses, clear coverage, appointment details and practical local information matter. Build the site around how customers move from a recommendation or search to a booked job.",
+    "image": {
+      "src": "/assets/screens/cool-runnings-home.webp",
+      "alt": "Cool Runnings landscaping website with a direct estimate request",
+      "width": 1200,
+      "height": 750
+    },
+    "takeaways": [
+      "Make a referred customer confident they found the right business.",
+      "Explain service boundaries and travel arrangements accurately.",
+      "Connect enquiry handling, local search and owner-friendly updates."
+    ],
+    "sections": [
+      {
+        "id": "referrals",
+        "title": "1. Help referred customers confirm the recommendation",
+        "body": "<p>A Vernon website can support word of mouth by answering the questions a recommendation leaves open. Someone may know your name but still need to check your services, see recent work and understand whether you are accepting new clients.</p><p>Put the business name, service description and location in readable text. Show the people behind the business and work relevant to the visitor’s problem. A small team can make a strong impression through a clear introduction and thoughtful examples; it does not need to pretend to be a larger organisation.</p><p>Test the experience by searching your own business name. Check that the website and public profiles use consistent contact details and lead to the current business. An old phone number or abandoned Facebook page creates avoidable confusion after someone has already recommended you.</p>"
+      },
+      {
+        "id": "coverage",
+        "title": "2. Define the North Okanagan area you actually serve",
+        "body": "<p>For a Vernon service business, coverage affects whether an enquiry is useful. Explain whether you work in Coldstream, Armstrong, Lumby or other surrounding communities, and whether the type of job changes the area you can cover.</p><table><caption>Coverage information worth putting on the website</caption><thead><tr><th>Business model</th><th>Useful detail</th></tr></thead><tbody><tr><td>Mobile repair or maintenance</td><td>Communities served, call-out arrangements and scheduling process</td></tr><tr><td>Appointment at your premises</td><td>Correct address, parking, entrance and accessibility information</td></tr><tr><td>Larger project work</td><td>Where you take projects and how site visits are arranged</td></tr></tbody></table><p>A town deserves a separate page when you can add meaningful information: work completed there, access considerations, relevant services or real scheduling differences. One honest coverage page is more useful than a set of interchangeable town-name pages.</p>"
+      },
+      {
+        "id": "appointments",
+        "title": "3. Explain what happens at the first appointment",
+        "body": "<p>A Vernon clinic, accountant or professional service needs a website that helps people arrive prepared. Describe who the appointment is for, how long to allow if known, what to bring and how the booking is confirmed.</p><p>Keep sensitive details out of a general enquiry form. A name, preferred contact method and broad reason for the appointment may be enough to route the request. Use the practice’s approved intake system for private records. An accountant can explain the documents to gather without asking someone to attach financial statements to an ordinary contact form.</p><p>For trades, describe the first visit instead: how you assess the job, whether an estimate follows and which access information helps. The aim is the same: remove uncertainty before the customer contacts you.</p>"
+      },
+      {
+        "id": "seasonal",
+        "title": "4. Keep visitor and seasonal information current",
+        "body": "<p>Vernon tourism websites need practical planning information alongside strong visuals. <a href=\"https://www.tourismvernon.com/\">Tourism Vernon</a> organises visitor information around activities, accommodation and events. Your own site should make the next step from interest to availability straightforward.</p><p>For accommodation, show the property, sleeping arrangements, location and booking conditions. For experiences, explain meeting points, what is included and seasonal availability. If hours or access change, assign someone to update both the website and public listings.</p><p>The Okanagan Treehouse work in my portfolio illustrates the design side: give people a clear feel for the place, then keep the practical information close enough to help them choose. A striking image is valuable when the visitor can also determine whether the stay suits them.</p>"
+      },
+      {
+        "id": "search",
+        "title": "5. Build a findable website with useful service detail",
+        "body": "<p>A Vernon business website needs readable service content and clear internal links before an ambitious publishing schedule. Give the services customers actively seek their own well-explained pages. Answer the practical questions that distinguish one service from another.</p><p>Google’s local guidance identifies relevance, distance and prominence as key factors. Keep your Google Business Profile complete and accurate, then use Search Console to understand the website’s search visibility. Treat map results and website results as connected parts of discovery, with different measurements.</p><p>Cool Runnings’ website, local SEO and conversion work brought a 30% increase in qualified bookings. The useful lesson is to connect what people search for with a clear service and enquiry route. The <a href=\"/blog/cool-runnings-qualified-bookings/\">case study</a> explains that work without treating page count as the result.</p>"
+      },
+      {
+        "id": "handoff",
+        "title": "6. Give the owner a manageable website",
+        "body": "<p>A Vernon website should fit the person who will maintain it. An owner who changes opening hours twice a year has a different editing need from a team publishing events and changing services each week.</p><p>Ask for the platform choice to be explained in those terms. Agree which changes you can make, what training is included and how support is charged. Keep domain and account ownership in the business’s name, with a record of access and renewals.</p><p>Before accepting a quote, list the content you can supply: service descriptions, approved customer comments, team photographs and project examples. Identify what the designer will create. This makes a smaller budget much easier to allocate and avoids a completed design waiting indefinitely for copy.</p>"
+      },
+      {
+        "id": "enquiries",
+        "title": "7. Build a reliable route from request to booking",
+        "body": "<p>A North Okanagan website enquiry should reach someone who can act on it. Test the form, the notification address and the confirmation message. Explain whether the customer has requested a callback, asked for an estimate or secured an appointment.</p><p>For an owner working away from a desk, a simple shared inbox or lead list may be enough. More involved businesses can add reminders, routing or approved automatic acknowledgements. Keep promises about response times consistent with the service you can deliver.</p><p>Review qualified enquiries and booked jobs together. If you receive repeated requests outside your coverage area, improve the location information. If people ask the same preparation question, add the answer to the relevant page. These observations should guide the next website improvement.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Is a Facebook page enough for a small Vernon business?",
+        "Facebook can help customers discover and follow a business. A website gives you a stable place for services, contact information, booking details and content you control. Keep the two connected so people can move from an update to the information they need."
+      ],
+      [
+        "Should a Coldstream business describe itself as based in Vernon?",
+        "Use the actual business location. You can clearly say that you serve Vernon and the North Okanagan without changing your address or implying a different office. Website and business-profile details should remain accurate."
+      ],
+      [
+        "Can I keep my current domain when rebuilding?",
+        "Yes, provided your business controls the domain. Plan the website move, email settings and redirects before changing hosting. Keeping the domain does not automatically preserve every old page address, so include URL mapping in the rebuild."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Google: how local results are determined",
+        "url": "https://support.google.com/business/answer/7091?hl=en"
+      },
+      {
+        "name": "Tourism Vernon: accommodation, events and trip planning",
+        "url": "https://www.tourismvernon.com/"
+      }
+    ],
+    "related": [
+      "best-web-designers-vernon",
+      "website-redesign-or-repair",
+      "service-business-website-checklist"
+    ],
+    "services": [
+      "appliance-repair",
+      "physiotherapy",
+      "vacation-rentals"
+    ]
+  },
+  {
+    "slug": "west-kelowna-business-website-guide",
+    "type": "guide",
+    "city": "West Kelowna",
+    "title": "The West Kelowna business website guide: 8 essentials for 2026",
+    "description": "Eight website decisions for West Kelowna businesses: accurate coverage, visitor bookings, service quotes, local proof, search, mobile usability and ownership.",
+    "summary": "A West Kelowna business website needs accurate location information, a clear offer and a direct route to a booking or enquiry. Separate the needs of residents from those of visitors. Explain where you work, show the experience or service properly and make practical details easy to find on a phone.",
+    "image": {
+      "src": "/v2/okanagan-preview/assets/overview-final.webp",
+      "alt": "Okanagan accommodation website showing a distinctive place to stay",
+      "width": 1200,
+      "height": 750
+    },
+    "takeaways": [
+      "Be precise about West Kelowna, Westbank and your actual service area.",
+      "Keep dates, access and booking details close to hospitality imagery.",
+      "Use real projects and clear service information to help customers choose."
+    ],
+    "sections": [
+      {
+        "id": "location",
+        "title": "1. Make the location clear before the customer calls",
+        "body": "<p>A West Kelowna website should state the actual business location and where customers can receive the service. Be clear whether people visit you or you travel to them. Use the correct address rather than substituting Kelowna simply because it is a broader search term.</p><p>A business serving both sides of the lake can say so plainly. If certain services, appointments or call-out arrangements vary by area, explain that difference on the relevant page. A useful service-area description helps visitors decide whether to enquire and helps the owner avoid unsuitable requests.</p>"
+      },
+      {
+        "id": "journeys",
+        "title": "2. Give residents and visitors different routes",
+        "body": "<p>West Kelowna website visitors may be arranging everyday help or planning a trip. The official <a href=\"https://www.tourismkelowna.com/explore/neighbouring-communities/west-kelowna/\">Tourism Kelowna West Kelowna page</a> highlights the Westside Wine Trail and outdoor experiences. That visitor context creates different questions from those of a homeowner seeking a contractor.</p><table><caption>Two useful website journeys</caption><thead><tr><th>Local service enquiry</th><th>Visitor booking</th></tr></thead><tbody><tr><td>Do you handle this type of job?</td><td>Is this the experience we want?</td></tr><tr><td>Do you cover my address?</td><td>Where is it and how do we get there?</td></tr><tr><td>How do I arrange an estimate?</td><td>Are our dates or times available?</td></tr><tr><td>What happens after I enquire?</td><td>What are the booking conditions?</td></tr></tbody></table><p>Let the main action follow the journey. “Check availability” suits a bookable experience; “Request an estimate” suits work that needs assessment.</p>"
+      },
+      {
+        "id": "experience",
+        "title": "3. Show the experience and the practical details together",
+        "body": "<p>A winery, restaurant or accommodation website needs imagery that helps people picture the visit and information that lets them plan it. Show what is actually available, then answer questions about group size, arrival, reservations and accessibility.</p><p>A tasting page could include the experience, duration, booking link and group enquiry route. A restaurant needs a readable menu and accurate opening hours. Accommodation needs clear property details and a route to availability. Avoid making customers leave the site and assemble this information from old social posts.</p><p>My Okanagan Treehouse design work focuses on making a distinctive place feel distinctive online. That visual approach works best when the booking information is just as considered.</p>"
+      },
+      {
+        "id": "quotes",
+        "title": "4. Help service customers request the right work",
+        "body": "<p>A West Kelowna trade or professional website should help people describe the job without completing a long questionnaire. Start with the service, location, contact details and a short description. Add optional photographs where they would help assess the work.</p><p>Explain any important limits before the form: the types of work accepted, the coverage area and whether the enquiry is for a scheduled appointment or a quote. For larger projects, show related work and explain the first conversation. For repairs, make the service request easy to reach from the page about that specific problem.</p><p>ABC Appliance is one example from my portfolio of bringing service information and the request route together. The same principle applies to a contractor’s project enquiry, with different questions and proof.</p>"
+      },
+      {
+        "id": "local-proof",
+        "title": "5. Make local proof specific",
+        "body": "<p>Local website proof is strongest when it identifies the work and explains what was done. A project story can show the original challenge, the service delivered and the result, supported by images you have permission to publish.</p><p>Choose examples that match the work you want more of. A bathroom installation, a commercial maintenance contract and a full renovation each answer different customer concerns. Name a location only when accurate and appropriate; a finished project does not imply an office in that neighbourhood.</p><p>For my own website and search work, Cool Runnings provides a concrete result: a 30% increase in qualified bookings. That is a business outcome to explain in context, rather than a generic claim that a website “performs better.”</p>"
+      },
+      {
+        "id": "discovery",
+        "title": "6. Keep Google, your website and AI-search information consistent",
+        "body": "<p>A West Kelowna business should present consistent service, location and contact information wherever customers discover it. Google’s published local-ranking factors include relevance, distance and prominence. The website can support a clear understanding of the business, but a city keyword is not a substitute for real proximity.</p><p>Give important services their own readable pages. Include relevant answers, visible contact information, descriptive headings and internal links. Ask the developer to check indexing controls and structured data, and connect Search Console. For AI discovery, start with accessible, useful information and the crawler settings explained in the <a href=\"/blog/google-chatgpt-business-visibility/\">Google and ChatGPT checklist</a>.</p>"
+      },
+      {
+        "id": "mobile",
+        "title": "7. Check the whole booking journey on mobile",
+        "body": "<p>A West Kelowna visitor may arrive through a map, social post or search result and need to act quickly. Open the site on a phone and follow the route from the service page to the booking confirmation or enquiry acknowledgement.</p><p>Check the external booking system as well as the website. Does the right experience or service remain selected? Are dates, fees and policies clear? Does the back button work sensibly? A beautiful homepage cannot repair a confusing handoff to an unrelated booking screen.</p><p>For a service enquiry, confirm the phone link works and the form does not ask for information you could gather in the callback. Keep readable text outside images so people can select it and assistive technology can interpret it.</p>"
+      },
+      {
+        "id": "maintain",
+        "title": "8. Agree how the site stays current",
+        "body": "<p>West Kelowna businesses with seasonal hours, events or changing availability need a clear update owner. Agree which website information the team can change and which changes require support. Include the Google Business Profile and booking system in that responsibility list.</p><p>Ask for domain ownership, editing access, renewal costs and support terms in writing. A design system can make future pages consistent without making every service read the same way. Training can cover the small number of changes your team actually needs to make.</p><p>Before signing, compare the scope using the <a href=\"/blog/okanagan-website-cost/\">website quote checklist</a>. Before launch, test the contact route and record the starting point for qualified enquiries so future improvements have a business measure.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Should I target Westbank and West Kelowna on the same website?",
+        "Yes, when those terms accurately describe your location or customers. Explain the business address and service area clearly. Create additional pages only when they provide distinct, useful information rather than repeating the same service copy."
+      ],
+      [
+        "Do I need online payment to take booking enquiries?",
+        "No. A callback or reservation request can be enough when availability or scope needs confirmation. Add payment when the customer can understand exactly what they are buying and your booking, cancellation and fulfilment process is ready."
+      ],
+      [
+        "Can one website support local services and visitor experiences?",
+        "Yes. Give each audience a clearly labelled route and its own relevant information. A shared homepage can introduce the business while separate pages handle service enquiries, experiences, availability and booking conditions."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Google: how local results are determined",
+        "url": "https://support.google.com/business/answer/7091?hl=en"
+      },
+      {
+        "name": "Tourism Kelowna: West Kelowna and the Westside Wine Trail",
+        "url": "https://www.tourismkelowna.com/explore/neighbouring-communities/west-kelowna/"
+      },
+      {
+        "name": "City of West Kelowna: economic development",
+        "url": "https://www.westkelownacity.ca/building-business-development/economic-development/"
+      }
+    ],
+    "related": [
+      "best-web-designers-west-kelowna",
+      "google-chatgpt-business-visibility",
+      "okanagan-website-cost"
+    ],
+    "services": [
+      "wineries",
+      "restaurants",
+      "home-builders"
+    ]
+  },
+  {
+    "slug": "service-business-website-checklist",
+    "type": "checklist",
+    "title": "10 things every service business website needs in 2026",
+    "description": "A practical website checklist for Okanagan service businesses: clear services, local coverage, proof, mobile enquiries, Google visibility and follow-up.",
+    "summary": "A service business website needs a clear offer, accurate coverage, relevant proof and a contact route that works. The most useful improvements help customers decide whether you can solve their problem and help your team turn that interest into a qualified booking. Use these ten checks before spending more on traffic.",
+    "image": {
+      "src": "/assets/selected-work/abc-appliance-live.png",
+      "alt": "ABC Appliance service website showing repair information and contact actions",
+      "width": 1200,
+      "height": 750
+    },
+    "takeaways": [
+      "Explain the service and coverage before asking for an enquiry.",
+      "Make proof and practical answers easy to find.",
+      "Test the handoff from website request to real conversation."
+    ],
+    "sections": [
+      {
+        "id": "offer",
+        "title": "1. A headline that says what you do and where",
+        "body": "<p>A service website should identify the service and the area served in its opening copy. “Appliance repair in Kelowna and the Okanagan” gives someone information they can use. A broad promise about quality needs supporting detail.</p><p>Follow the headline with the reason to choose the business: relevant experience, a clear specialism or a practical approach to the problem. Use claims you can support. If the company handles scheduled repairs, do not imply round-the-clock emergency availability simply because the phrase attracts attention.</p>"
+      },
+      {
+        "id": "service-pages",
+        "title": "2. A page for each important service",
+        "body": "<p>A service business website should give different customer problems room for different answers. A plumber’s drain-cleaning page and renovation-plumbing page need different scope, preparation information and enquiry details.</p><p>Use each page to explain the problem, the work included, the process and the next step. Add real photographs or projects where possible. The <a href=\"/web-design/plumbers/\">plumber website page</a> and <a href=\"/web-design/appliance-repair/\">appliance repair website page</a> show the industry-specific planning I bring to a build.</p>"
+      },
+      {
+        "id": "coverage",
+        "title": "3. Honest location and coverage information",
+        "body": "<p>A service website needs to tell customers whether the business can help at their location. List the communities you actually serve and explain any meaningful restrictions, travel arrangements or differences between services.</p><p>For an Okanagan business, coverage might extend across more than one city. Name those places accurately, then add separate local pages only when you have useful detail to provide. Keep a real office address distinct from an area you visit for work.</p>"
+      },
+      {
+        "id": "evidence",
+        "title": "4. Proof beside the decision it supports",
+        "body": "<p>Website proof should be relevant to the service being considered. Show a completed job, explain the work or use an approved customer comment with appropriate attribution. Put that evidence near the service description or enquiry action.</p><p>Cool Runnings’ website, local SEO and conversion work brought a 30% increase in qualified bookings. The <a href=\"/blog/cool-runnings-qualified-bookings/\">project story</a> connects that result to the work. Your proof may be a careful installation, a well-documented process or a distinctive finished project rather than a percentage.</p>"
+      },
+      {
+        "id": "questions",
+        "title": "5. Answers to the questions asked before booking",
+        "body": "<p>A service page should answer questions that affect whether someone contacts you. Start with the questions the owner repeatedly answers: what is included, what information to send, whether a visit is needed and how estimates work.</p><p>Place essential answers in the main content and use a short FAQ for specific follow-ups. A pricing answer can explain what changes the quote when a fixed price is impossible. Clear scope is more useful than an empty “contact us for details” repeated under every question.</p>"
+      },
+      {
+        "id": "contact",
+        "title": "6. A contact action matched to the service",
+        "body": "<p>A service website needs a next step that accurately describes what will happen. “Request an estimate,” “Book an appointment” and “Ask for a callback” are different commitments. Choose the one your operation can fulfil.</p><p>Keep the action near useful information and repeat it at the end of a substantial service page. Give people a phone option if calls are part of the business. For a professional consultation, explain the first conversation so the visitor knows what they are agreeing to.</p>"
+      },
+      {
+        "id": "form",
+        "title": "7. A short, accessible enquiry form",
+        "body": "<p>A service enquiry form should collect enough to route the request without forcing the customer to complete the whole intake process. Start with these fields and add only what the business needs:</p><ul><li>Name and preferred contact method.</li><li>Service or type of work requested.</li><li>Town or service address, when needed for coverage.</li><li>A short description, with optional photos for suitable jobs.</li></ul><p>Use visible field labels, helpful errors and a readable confirmation. Test keyboard access and phone entry. Keep sensitive health, legal or financial records in the business’s approved intake system.</p>"
+      },
+      {
+        "id": "mobile",
+        "title": "8. A mobile experience that finishes the task",
+        "body": "<p>A mobile service website needs readable text, sensible image sizes and controls that are easy to use. Test the page on a phone from the service description through to the confirmation screen.</p><p>Google’s Core Web Vitals cover loading, responsiveness and visual stability. Ask the designer to examine those measures alongside the actual booking experience. A performance score is useful evidence, but it does not establish that a form notification reached the owner or that a phone link calls the right number.</p>"
+      },
+      {
+        "id": "foundations",
+        "title": "9. Search foundations and business information",
+        "body": "<p>A service website should have readable content, descriptive page titles, clear headings, internal links and a sitemap. Keep business details consistent with the public profiles that represent the company.</p><p>Structured data can describe visible content; it should not contain invented reviews or services. Search Console helps confirm what Google can access and whether pages are indexed. For ChatGPT and Google’s AI features, the <a href=\"/blog/google-chatgpt-business-visibility/\">seven-step visibility checklist</a> separates useful work from unsupported promises.</p>"
+      },
+      {
+        "id": "follow-up",
+        "title": "10. A real owner for every enquiry",
+        "body": "<p>A service website has not finished its job when a form is submitted. The business needs to receive, assess and respond to the request. Assign a person or team, a notification route and a way to see which enquiries are still open.</p><p>Measure completed requests, qualified conversations and booked jobs separately. If suitable enquiries are going unanswered, adding pages will not fix the handoff. Simple reminders or routing can help; more involved needs may suit <a href=\"/ai-implementation/\">custom workflows and AI implementation</a>, with appropriate human review.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Should I let customers book a time without speaking to me?",
+        "Use direct booking when the service, duration and availability are predictable. Use a request or callback first when you need to assess scope, coverage or suitability. The button should make that distinction clear."
+      ],
+      [
+        "How many fields should my service enquiry form have?",
+        "Use the fewest fields needed to route and respond to the request. Name, contact details, service, location and a short description are a useful starting point. Only require extra information when it changes the next action."
+      ],
+      [
+        "What should I fix before running ads?",
+        "Confirm that the relevant service page answers the customer’s main questions, the contact action works on mobile and enquiries reach someone who will respond. Set up conversion measurement before paying to bring more visitors to that route."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Google: Core Web Vitals",
+        "url": "https://web.dev/articles/vitals"
+      },
+      {
+        "name": "Google: creating helpful content",
+        "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+      }
+    ],
+    "related": [
+      "website-visitors-no-enquiries",
+      "okanagan-website-cost",
+      "google-chatgpt-business-visibility"
+    ],
+    "services": [
+      "plumbers",
+      "electricians",
+      "medical-practices"
+    ]
+  },
+  {
+    "slug": "okanagan-website-cost",
+    "type": "checklist",
+    "title": "What does an Okanagan website cost? 7 things to compare in 2026",
+    "description": "Compare seven parts of a Kelowna, Vernon or West Kelowna website quote: scope, content, design, search, integrations, ownership and ongoing costs.",
+    "summary": "The useful website price is the cost of a defined project. For an Okanagan service business planning around CAD $3,000–$4,000, focus the brief on useful core pages, considered design, mobile enquiries and search foundations. Compare the content, integrations, ownership and ongoing costs behind every quote before choosing a provider.",
+    "image": {
+      "src": "/assets/selected-work/abc-appliance-live.png",
+      "alt": "ABC Appliance service website showing repair information and contact actions",
+      "width": 1200,
+      "height": 750
+    },
+    "takeaways": [
+      "A planning budget is not a complete project specification.",
+      "Compare the same deliverables across quotes.",
+      "Separate the build from hosting, maintenance and ongoing marketing."
+    ],
+    "sections": [
+      {
+        "id": "scope",
+        "title": "1. Compare the actual website scope",
+        "body": "<p>A website quote should name the pages, audiences and actions it covers. A small service site with an enquiry form is a different project from an online shop or a booking system with staff schedules and payments.</p><table><caption>What changes the scope of a website</caption><thead><tr><th>Build</th><th>Main work</th><th>Questions to settle</th></tr></thead><tbody><tr><td>Focused service website</td><td>Service pages, proof and enquiry route</td><td>Who writes the content and handles enquiries?</td></tr><tr><td>Booking website</td><td>Availability, services, confirmations and integrations</td><td>Is the booking system already chosen?</td></tr><tr><td>Online store</td><td>Product setup, checkout and orders</td><td>Who supplies product data and manages fulfilment?</td></tr></tbody></table><p>For a CAD $3,000–$4,000 planning budget, my recommendation is to prioritise the core service website and quote substantial integrations separately. Michael McKerracher’s web design is custom-priced against an agreed scope, rather than a universal fixed package.</p>"
+      },
+      {
+        "id": "content",
+        "title": "2. Find out who writes and supplies the content",
+        "body": "<p>Website content is real project work. A quote should specify whether the designer interviews you, plans the page structure, writes the copy, prepares FAQs and turns past projects into useful evidence.</p><p>If you supply the words and images, agree the format and delivery date. If you need them created, price that work at the start. “Five pages” might mean five blank layouts waiting for your content or five finished pages with research, writing and approved imagery. Those are not equivalent deliverables.</p><p>Separate brand photography and video from image selection where appropriate. Original work can make a website more persuasive, but the production requirements should be visible in the quote.</p>"
+      },
+      {
+        "id": "design",
+        "title": "3. Understand what custom design includes",
+        "body": "<p>A website design quote should explain what is being designed and how feedback works. Ask whether you are choosing an existing theme, adapting a design system or commissioning a visual direction built around the business.</p><p>Look beyond the homepage. Request examples of service pages, forms and mobile layouts. A useful design system covers headings, spacing, colours, buttons, images and repeatable content patterns, so the website can grow consistently.</p><p>Ask how many review stages are included and what counts as a scope change. Agree who signs off the direction before the full build. That reduces expensive revisions caused by making foundational decisions too late.</p>"
+      },
+      {
+        "id": "seo",
+        "title": "4. Separate search setup from ongoing SEO",
+        "body": "<p>A website quote should identify the search work included at launch. Useful foundations include page planning, titles, headings, internal links, crawlability, sitemap setup and redirects where existing URLs change.</p><p>Ongoing SEO is a separate activity: finding new content opportunities, improving existing pages, maintaining business information and measuring the results. A promise of an “SEO website” needs to be translated into specific tasks.</p><p>Ask which accounts you will control and how results will be reported. Search Console impressions, website enquiries and booked work are different measures. A report should explain the connection without treating every visitor as a prospective customer.</p>"
+      },
+      {
+        "id": "integrations",
+        "title": "5. Specify the booking and business-system work",
+        "body": "<p>A website integration costs more than adding a button when it needs to pass data between systems. Identify which booking tool, CRM, payment system or email platform is involved, and who supplies access.</p><p>Test what happens after the user clicks. Does the correct service carry through? Is the booking confirmed? Where does the enquiry appear? Who handles errors? A simple link to an existing booking platform has a different scope from custom scheduling or automated follow-up.</p><p>List recurring software charges separately from the developer’s work. That lets you compare the total cost of the arrangement rather than only the launch invoice.</p>"
+      },
+      {
+        "id": "ownership",
+        "title": "6. Put ownership and handover in writing",
+        "body": "<p>A website quote should explain who controls the domain, hosting, content, design files and platform account. Ask what can be exported and what happens if you change providers.</p><p>Decide whether you want to edit the site yourself, ask for occasional changes or buy ongoing support. Training should cover the work you will actually do. A handover can include account access, editing instructions, form routing, renewal dates and a record of important integrations.</p><p>When comparing a monthly website offer with an upfront build, ask about minimum terms, cancellation, buyout and migration. The monthly number alone does not explain what you own.</p>"
+      },
+      {
+        "id": "costs",
+        "title": "7. Compare the continuing cost, not just launch day",
+        "body": "<p>A website’s continuing costs can include domain renewal, hosting or platform fees, maintenance, content changes and optional marketing. Request an annual view of these costs alongside the initial project price.</p><p>Published local offers show why scope matters. On October 8, 2026, <a href=\"https://www.svice.ca/\">Svice</a> listed a six-page package from CAD $2,820 with the client supplying text, logos and images. <a href=\"https://duforddigital.com/vernon-web-design/\">Duford Digital</a> listed template sites from CAD $2,025 and custom builds from CAD $5,940. These are individual offers with different terms, not an Okanagan market average.</p><p>Use a written checklist when comparing quotes: pages, content, design, search setup, integrations, ownership and continuing costs. If a provider cannot explain a line item, ask before making the commitment. A free initial conversation with me can help turn your business objective into that brief.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Is CAD $3,000–$4,000 enough for my website?",
+        "It can be a sensible planning budget for a focused service website when the scope is controlled. The exact quote depends on content, design, page count and integrations. Complex booking, ecommerce or ongoing marketing should be scoped explicitly."
+      ],
+      [
+        "Are hosting and SEO included in a website build?",
+        "Only if the quote says so. Ask for hosting, platform fees, maintenance, launch search setup and ongoing SEO to be listed separately. That makes both the first-year cost and future commitments easier to understand."
+      ],
+      [
+        "How can I reduce cost without weakening the website?",
+        "Prioritise the services and pages that help customers choose, supply usable project material promptly and keep integrations simple at launch. Reduce unnecessary scope before cutting useful content, mobile usability or a reliable enquiry route."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Svice: published six-page offer",
+        "url": "https://www.svice.ca/"
+      },
+      {
+        "name": "Duford Digital: published Vernon website pricing",
+        "url": "https://duforddigital.com/vernon-web-design/"
+      }
+    ],
+    "related": [
+      "website-redesign-or-repair",
+      "best-web-designers-kelowna",
+      "kelowna-business-website-guide"
+    ],
+    "services": [
+      "accountants",
+      "home-builders",
+      "retail"
+    ]
+  },
+  {
+    "slug": "website-visitors-no-enquiries",
+    "type": "checklist",
+    "title": "Website visitors but no enquiries? 7 checks for local businesses",
+    "description": "Diagnose why an Okanagan business website gets visitors but few useful enquiries: traffic quality, offer, proof, forms, mobile experience and follow-up.",
+    "summary": "When a website gets traffic but few enquiries, first check who is visiting and whether the contact route actually works. Then examine the offer, proof, service information and follow-up. More visitors will only help when the website gives suitable customers a clear reason and a reliable way to get in touch.",
+    "image": {
+      "src": "/assets/screens/cool-runnings-home.webp",
+      "alt": "Cool Runnings landscaping website with service coverage and estimate actions",
+      "width": 1200,
+      "height": 750
+    },
+    "takeaways": [
+      "Separate relevant visitors from total traffic.",
+      "Test real submissions before changing the whole design.",
+      "Track qualified enquiries and bookings as separate steps."
+    ],
+    "sections": [
+      {
+        "id": "traffic",
+        "title": "1. Check whether the visitors want what you sell",
+        "body": "<p>A local business website needs relevant visitors, not just a rising session count. Review the search queries and landing pages that bring people in. A person researching a DIY repair may need different information from someone ready to hire an appliance technician.</p><p>Group enquiries by requested service and location. If many are outside your coverage or for work you do not provide, clarify those details in the page title, opening copy and form. An Okanagan company serving scheduled work should not attract emergency requests it cannot fulfil through an overbroad promise.</p>"
+      },
+      {
+        "id": "offer",
+        "title": "2. Make the service understandable in the first screen",
+        "body": "<p>A website visitor should be able to identify the business, service and next step without interpreting vague slogans. Read the headline and first paragraph aloud to someone unfamiliar with the company. Ask what they think you do and how they would contact you.</p><p>If the answer is unclear, rewrite the introduction before adding more sections. Lead with the customer’s problem and the service you provide. Use technical detail deeper in the page where it helps someone make a decision, rather than making it the entry requirement.</p>"
+      },
+      {
+        "id": "questions",
+        "title": "3. Answer the questions blocking the enquiry",
+        "body": "<p>A service website can lose a suitable enquiry because one practical question remains unanswered. Coverage, estimate process, availability, minimum project size and what is included can all affect whether a visitor gets in touch.</p><p>Ask the person answering calls which questions come up repeatedly. Put the useful answers on the relevant service page. For a home builder, explain the kinds of projects you take and how the initial meeting works. For a clinic, explain how a new patient requests an appointment and where they should send private information.</p>"
+      },
+      {
+        "id": "trust",
+        "title": "4. Replace broad claims with relevant evidence",
+        "body": "<p>A website needs evidence that fits the purchase. Photographs of finished work, a clear process and an attributed customer comment can help explain why a business is a good choice. Generic praise without context gives the visitor less to evaluate.</p><p>Cool Runnings saw a 30% increase in qualified bookings following website, local SEO and conversion work. That result belongs to the project as a whole. The <a href=\"/blog/cool-runnings-qualified-bookings/\">case study</a> describes the connected changes without assigning the improvement to one button or headline.</p><p>Place evidence near the point where the visitor is deciding, rather than relying on a separate gallery they may never open.</p>"
+      },
+      {
+        "id": "technical",
+        "title": "5. Test the form, phone link and confirmation",
+        "body": "<p>A website can look finished while losing real requests. Submit the form using a test clearly marked as such, check the notification arrives and verify the confirmation describes the next step. Test on a phone as well as a desktop.</p><table><caption>What to check before buying more traffic</caption><thead><tr><th>Symptom</th><th>First check</th></tr></thead><tbody><tr><td>Form starts but few completions</td><td>Required fields, errors and mobile entry</td></tr><tr><td>Submissions appear in analytics but not the inbox</td><td>Form delivery, spam filtering and notification settings</td></tr><tr><td>Many phone taps but few known calls</td><td>Correct number and separate call measurement</td></tr><tr><td>Bookings stop at an external tool</td><td>Availability, service selection and checkout handoff</td></tr></tbody></table><p>Do not use button taps alone as a count of completed enquiries. The distinction matters when deciding whether to change the website or the response process.</p>"
+      },
+      {
+        "id": "response",
+        "title": "6. Find out what happens after someone contacts you",
+        "body": "<p>A website enquiry needs an operational owner. Review how quickly requests are noticed, whether the response answers the question and whether suitable prospects receive follow-up.</p><p>Use a simple lead record with the service, location, source, qualification and booking outcome. A small business can start with a shared spreadsheet. More involved teams may benefit from routing, reminders or a CRM workflow.</p><p>If a confirmation promises a callback, make sure someone can deliver it. Automation can acknowledge receipt and organise the request, while a person handles judgement, scope and the customer conversation.</p>"
+      },
+      {
+        "id": "improve",
+        "title": "7. Change one important problem and review the result",
+        "body": "<p>A website improvement should address the clearest observed problem first. If customers cannot understand the service, fix the copy. If the form is broken, repair it. If unsuitable traffic dominates, revisit the search or advertising approach.</p><p>Record what changed and when, then review comparable periods with enough enquiries to be meaningful. Seasonality and changes to advertising can affect the result. For low-volume businesses, direct feedback and careful enquiry records may be more useful than declaring a conversion-rate winner after a few visits.</p><p>The <a href=\"/blog/service-business-website-checklist/\">service website checklist</a> provides a wider review once the immediate problem is understood.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Should I redesign the whole website if it gets no leads?",
+        "Not automatically. First check traffic relevance, service clarity and whether forms and phone links work. A focused repair may solve the immediate problem; a rebuild makes sense when the structure or platform prevents useful improvements."
+      ],
+      [
+        "What is a good conversion rate for a local website?",
+        "There is no single rate that applies to every local business. Define the conversion first, then compare similar traffic and periods. A completed booking, a contact form and a phone-button tap should not be treated as the same outcome."
+      ],
+      [
+        "How do I know whether the website or my ads are the problem?",
+        "Compare the search terms or campaign audience with the landing page and actual enquiries. Irrelevant visitors point toward targeting or message problems. Suitable visitors who cannot complete the next step point toward the page, form or booking flow."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Google Search Console: Performance report",
+        "url": "https://support.google.com/webmasters/answer/7576553?hl=en"
+      }
+    ],
+    "related": [
+      "service-business-website-checklist",
+      "website-redesign-or-repair",
+      "cool-runnings-qualified-bookings"
+    ],
+    "services": [
+      "landscapers",
+      "dentists",
+      "property-management"
+    ]
+  },
+  {
+    "slug": "google-chatgpt-business-visibility",
+    "type": "checklist",
+    "title": "7 ways to help customers find your business on Google and ChatGPT",
+    "description": "A practical Google and ChatGPT visibility checklist for Okanagan businesses, covering crawl access, clear service content, local information, proof and measurement.",
+    "summary": "Help Google and ChatGPT understand your business by publishing clear, accessible service information, original proof and accurate local details. Allow the relevant search crawlers to reach public content, make important answers easy to extract and measure the enquiries that follow. These are discoverability foundations, not a guarantee of a recommendation.",
+    "image": {
+      "src": "/assets/selected-work/abc-appliance-live.png",
+      "alt": "ABC Appliance service website showing repair information and contact actions",
+      "width": 1200,
+      "height": 750
+    },
+    "takeaways": [
+      "Start with crawlable pages that answer real customer questions.",
+      "Make the business, services and locations explicit and consistent.",
+      "Use original work and track useful visits rather than relying on a one-off AI answer."
+    ],
+    "sections": [
+      {
+        "id": "access",
+        "title": "1. Let search systems reach the useful pages",
+        "body": "<p>A business website must be accessible before its content can be considered for search. Check that important pages return successfully, are linked from other public pages and are not accidentally marked noindex or blocked by access controls.</p><p>OpenAI’s publisher guidance says to allow OAI-SearchBot for content to be included in ChatGPT search summaries and snippets. This is a separate control from GPTBot, which relates to potential model training. Ask your developer to inspect robots.txt and any firewall rules instead of assuming that a public-looking page is reachable by every crawler.</p><p>For Google, use Search Console to inspect the actual URL and review indexing information. A sitemap submission helps discovery; it does not prove that a page has entered the index.</p>"
+      },
+      {
+        "id": "entity",
+        "title": "2. Say exactly what the business does",
+        "body": "<p>A business website should name the business, explain its services and identify its real location or coverage. Keep those details consistent across the website and the public profiles the business controls.</p><p>Michael McKerracher is an independent web designer and marketing consultant based in Coldstream, serving the Okanagan. That description is more useful than a string of vague superlatives. The same principle applies to an electrician, clinic or hotel: say who you help, what you provide and where you provide it.</p><p>Use structured data to describe information already visible on the page. Do not add offices, reviews, credentials or services the business does not actually have.</p>"
+      },
+      {
+        "id": "answers",
+        "title": "3. Put direct answers where people ask the questions",
+        "body": "<p>A service page should answer its main question near the top, then explain the details. Use descriptive headings, short self-contained sections, comparison tables where appropriate and concise FAQs for genuine follow-up questions.</p><p>For example, a repair page can explain which appliances are serviced, the coverage area, what information helps with the booking and how the visit is arranged. A hotel page should answer different questions about rooms, location, amenities and reservations.</p><p>Keep important answers as readable text. A screenshot can illustrate the work, but the service description should not exist only inside an image. The <a href=\"/web-design/industries/\">industry website collection</a> shows how the information needs change by business type.</p>"
+      },
+      {
+        "id": "evidence",
+        "title": "4. Add evidence that belongs to your business",
+        "body": "<p>Original business evidence gives readers something useful to evaluate and sources something concrete to reference. Publish project explanations, actual photographs, approved customer comments and measured results with their meaning intact.</p><p>Cool Runnings’ 30% increase refers to qualified bookings, not website traffic or revenue. ABC Appliance’s work supports a discussion of repair content and search visibility without an invented percentage. Preserving those distinctions makes the material more useful than a generic claim about growth.</p><p>A project story can answer what the problem was, what changed and what the owner learned. Give it a stable page and link to it from the relevant service rather than repeating an unexplained statistic across the site.</p>"
+      },
+      {
+        "id": "local",
+        "title": "5. Keep local discovery information accurate",
+        "body": "<p>An Okanagan business should keep its Google Business Profile, website and other relevant listings accurate. Google identifies relevance, distance and prominence as the main local-ranking factors. Complete information helps describe the business; it cannot remove geographic distance.</p><p>Keep current services, hours, contact information and the correct location or service area. Add useful local pages where the details differ. A Vernon clinic’s arrival instructions and a West Kelowna contractor’s coverage information are different kinds of local value.</p><p>Choose directories and industry organisations that genuinely fit the business. A real profile or relevant project mention is more valuable to a customer than an unsupported claim that everyone recommends the company.</p>"
+      },
+      {
+        "id": "technical",
+        "title": "6. Get the technical basics right before adding extras",
+        "body": "<p>Google says its usual SEO best practices remain relevant to AI Overviews and AI Mode, with no additional special requirements. Start with useful content, accessible pages, good internal links and accurate structured data.</p><p>Markdown versions and an llms.txt file can make content convenient for some tools to consume. Treat them as additional formats, not a replacement for the public HTML website or a promised route into AI answers. FAQ markup should describe the visible questions and answers; it is not an endorsement.</p><p>A website launch checklist should also include mobile usability, image size, redirects, canonical URLs and contact testing. These are practical foundations that help the website work for people as well as automated systems.</p>"
+      },
+      {
+        "id": "measurement",
+        "title": "7. Track visibility and business outcomes separately",
+        "body": "<p>A business should measure discovery, visits, enquiries and booked work as different stages. Search Console reports Google search performance. Analytics can show referred visits, and the enquiry process can identify which conversations became useful work.</p><p>OpenAI says ChatGPT search referral links include a utm_source=chatgpt.com parameter. Keep that information available in reporting, then look at the resulting enquiries. A single answer where your business appears is a snapshot, not a stable ranking position.</p><p>Use the data to decide what to improve: missing service information, weak evidence, confusing booking steps or an unanswered local question. That is a more useful programme than publishing more pages simply to increase the count.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Can you guarantee my business will be recommended by ChatGPT?",
+        "No. Michael McKerracher can improve the website’s accessibility, content, structure and evidence, but answer systems decide what to retrieve and recommend. The practical goal is accurate discovery and useful customer enquiries."
+      ],
+      [
+        "Do I need a separate AI version of my website?",
+        "A separate website is not required. Keep the main site complete, readable and crawlable. Optional Markdown and discovery files can offer additional access, while the public HTML pages remain the primary customer experience."
+      ],
+      [
+        "Should I publish a new page for every nearby town?",
+        "Only when each page can help someone with distinct, accurate information. Real coverage, local projects, arrival instructions or service differences can justify a page. Repeating the same copy with a different place name adds little value."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Google: AI features and your website",
+        "url": "https://developers.google.com/search/docs/appearance/ai-features"
+      },
+      {
+        "name": "OpenAI: publishers and developers FAQ",
+        "url": "https://help.openai.com/en/articles/12627856-publishers-and-developers-faq"
+      },
+      {
+        "name": "Google: local ranking factors",
+        "url": "https://support.google.com/business/answer/7091?hl=en"
+      },
+      {
+        "name": "Google: spam policies and doorway abuse",
+        "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+      }
+    ],
+    "related": [
+      "service-business-website-checklist",
+      "cool-runnings-qualified-bookings",
+      "kelowna-business-website-guide"
+    ],
+    "services": [
+      "law-firms",
+      "hotels",
+      "electricians"
+    ]
+  },
+  {
+    "slug": "website-redesign-or-repair",
+    "type": "checklist",
+    "title": "Redesign your website or repair it? 5 decisions before you spend",
+    "description": "Five practical tests to decide whether your Okanagan business needs a website rebuild or targeted repairs, with migration, ownership and launch advice.",
+    "summary": "Repair a website when its structure and platform can support the business and the problems are specific. Rebuild when the design system, content structure or technical setup prevents useful improvements. Start by checking the enquiry route, existing search traffic and account access so you know what to preserve.",
+    "image": {
+      "src": "/v2/okanagan-preview/assets/overview-final.webp",
+      "alt": "Okanagan Treehouse website presenting the accommodation and its setting",
+      "width": 1200,
+      "height": 750
+    },
+    "takeaways": [
+      "Find the problem before choosing the size of the project.",
+      "Preserve useful content, URLs and evidence.",
+      "Agree measurable launch requirements and ownership."
+    ],
+    "sections": [
+      {
+        "id": "diagnosis",
+        "title": "1. Name the problem you need the website to solve",
+        "body": "<p>A website redesign needs a business reason. The site might misrepresent the quality of your work, hide important services, make enquiries difficult or be impossible for the team to update. Write the problem in terms an owner can recognise.</p><p>“The site feels dated” is a starting observation. “Our completed projects look much better than the website, and customers cannot find the relevant examples” is a clearer brief. It suggests work on presentation and content organisation rather than an automatic replacement of every system.</p><p>Check the current contact route first. A missed notification or broken form can require a small repair even if a wider redesign is planned later.</p>"
+      },
+      {
+        "id": "foundation",
+        "title": "2. Check whether the existing foundation is usable",
+        "body": "<p>A website can often be improved in place when you control the accounts, the platform is maintained and the content structure is manageable. Repeated workarounds, missing access or a setup nobody can maintain may justify a rebuild.</p><table><caption>Repair or rebuild: useful starting points</caption><thead><tr><th>Situation</th><th>Start by considering</th></tr></thead><tbody><tr><td>One weak service page or broken form</td><td>A targeted repair</td></tr><tr><td>Good structure, dated imagery and inconsistent styling</td><td>A design and content refresh</td></tr><tr><td>Navigation cannot support the actual services</td><td>A structural redesign</td></tr><tr><td>Unmaintainable platform or missing ownership</td><td>A migration or rebuild after access review</td></tr></tbody></table><p>Ask the designer to explain the recommendation in plain language. The proposal should connect the proposed work to the problem, not assume a particular platform is always the answer.</p>"
+      },
+      {
+        "id": "preserve",
+        "title": "3. Inventory what already brings value",
+        "body": "<p>A website rebuild should begin with a record of existing URLs, useful content, inbound links and search performance. Some unremarkable-looking pages may already answer important questions and attract suitable visitors.</p><p>Use Search Console and available analytics to identify the pages people find. Keep strong project evidence, service explanations and customer answers even if their presentation changes. Map old addresses to the most relevant new pages when URLs need to change.</p><p>Google’s site-move guidance recommends planning URL mapping and redirects. Sending every old page to the new homepage loses the useful relationship between the visitor’s original request and the content they land on.</p>"
+      },
+      {
+        "id": "scope",
+        "title": "4. Separate the launch work from later improvements",
+        "body": "<p>A website project can be staged around the business’s immediate priorities. First make the core services understandable and the enquiry path reliable. Then add deeper project stories, new regional content or business-system integrations when the foundation is ready.</p><p>For an Okanagan service business, this might mean improving the homepage and most valuable service pages before commissioning a large article library. A hospitality site may need availability and property information resolved before a more ambitious visual presentation.</p><p>Compare the repair and rebuild scopes using the same assumptions about content, images, search migration and ownership. The <a href=\"/blog/okanagan-website-cost/\">website cost checklist</a> helps expose work that can otherwise sit outside the headline quote.</p>"
+      },
+      {
+        "id": "acceptance",
+        "title": "5. Define what a successful launch looks like",
+        "body": "<p>A website launch should be accepted against a concrete checklist. Review the agreed pages, phone layouts, contact submissions, booking handoffs, redirects and account access. Confirm analytics are attached to the right business and search settings allow the public pages to be discovered.</p><ul><li>Open the important old URLs and check their destinations.</li><li>Submit each enquiry route and confirm delivery.</li><li>Check the main customer task on a phone and keyboard.</li><li>Confirm page titles, canonical URLs and sitemap entries.</li><li>Give the owner account access and practical update instructions.</li></ul><p>After launch, compare the quality of enquiries and listen to customer feedback. Michael McKerracher can review an existing website, retain what is useful and scope the changes around the work the business wants more of. A rebuild is one possible outcome of that review, not the starting assumption.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Will rebuilding my website make me lose Google rankings?",
+        "A rebuild can affect search visibility, especially when URLs or useful content change. Inventory the existing site, preserve relevant content, map redirects and monitor Search Console after launch. No provider can guarantee that rankings will remain unchanged."
+      ],
+      [
+        "Can I keep my email while changing the website?",
+        "Often yes. Website hosting and email can be separate services, but DNS changes need care. Identify the existing email records and provider before moving the website so the launch does not interrupt mail."
+      ],
+      [
+        "Can you improve the design without rewriting every page?",
+        "Yes, when the existing content remains accurate and useful. Review the most important pages first, keep strong material and update the layout or copy where it helps the customer understand and act."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Google: moving a site with URL changes",
+        "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+      }
+    ],
+    "related": [
+      "okanagan-website-cost",
+      "website-visitors-no-enquiries",
+      "best-web-designers-vernon"
+    ],
+    "services": [
+      "real-estate",
+      "charities",
+      "accountants"
+    ]
+  },
+  {
+    "slug": "cool-runnings-qualified-bookings",
+    "type": "case-study",
+    "title": "Cool Runnings: 30% more qualified bookings from connected website and SEO work",
+    "description": "How Michael McKerracher connected service content, local SEO, useful tools and enquiry design for Cool Runnings, with a 30% increase in qualified bookings.",
+    "summary": "Cool Runnings saw a 30% increase in qualified bookings following website, local SEO and conversion work. The project connected useful service and location information with practical tools and a direct enquiry route. The result is about jobs and qualified bookings, rather than a traffic or revenue percentage.",
+    "image": {
+      "src": "/assets/screens/cool-runnings-home.webp",
+      "alt": "Cool Runnings landscaping website with service coverage and estimate actions",
+      "width": 1200,
+      "height": 750
+    },
+    "takeaways": [
+      "Build around the services and places the business actually covers.",
+      "Use local information to answer practical customer questions.",
+      "Connect discovery to an enquiry that the business can act on."
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "title": "The problem: turning local demand into useful enquiries",
+        "body": "<p>Cool Runnings needed a web presence that could explain its landscaping services and help local customers get in touch. The opportunity was broader than making a homepage look finished: service information, local search and the request process had to work together.</p><p>For a landscaping business, a useful enquiry includes the kind of work, the property location and enough context to arrange the next conversation. A visitor comparing companies needs to understand whether the business covers the work before asking for an estimate. Those decisions shaped the site and the content.</p><p>The <a href=\"/v2/work/local-search-magnet.html\">original Cool Runnings case study</a> shows the website and local-search system behind the project.</p>"
+      },
+      {
+        "id": "services",
+        "title": "1. Give the services enough detail to be found and understood",
+        "body": "<p>Cool Runnings’ website presents the services as concrete kinds of work customers can recognise. Service content gives local searches somewhere useful to land and helps the visitor understand what the business can do.</p><p>That structure also makes the enquiry more specific. A customer reading about yard maintenance arrives with a different need from someone considering sod installation or rock work. The page should support that distinction instead of sending every visitor through a generic introduction.</p><p>The practical lesson for another trade is to start with its actual service list. Find the questions that affect the first conversation and put those answers on the relevant page.</p>"
+      },
+      {
+        "id": "local",
+        "title": "2. Add local information with a purpose",
+        "body": "<p>The Cool Runnings content system brings together city, service, neighbourhood, weather, frost and growing-season information. The point is to make local pages useful for the work, rather than adding town names to identical copy.</p><p>For a landscaping customer, timing and property conditions can affect planning. Local context belongs on a page when it helps explain the service, prepare for a conversation or understand the next step. The page structure, internal links, canonical URLs and sitemap organise that information into a coherent website.</p><p>Another industry needs different local detail. An accommodation page needs location and arrival information; a professional practice needs its actual office and appointment process. The content model should follow the business.</p>"
+      },
+      {
+        "id": "tools",
+        "title": "3. Give visitors something useful before they enquire",
+        "body": "<p>Cool Runnings’ website includes practical guides and calculators alongside the service content. These resources help visitors work through questions rather than leaving them with a service name and a contact button.</p><p>A useful tool belongs close to the service it supports. Explain what the output means and which details still need a conversation or site assessment. The website can help a visitor prepare without pretending that a simple calculation is a final professional quote.</p><p>For another business, the right resource may be a preparation checklist, a clear scope comparison or an explanation of the booking process. Choose the resource from customer questions, not from a requirement to add something interactive.</p>"
+      },
+      {
+        "id": "conversion",
+        "title": "4. Make the next step direct and understandable",
+        "body": "<p>Cool Runnings’ conversion work connects the service information to calls and estimate enquiries. A clear next step gives someone who has understood the offer a way to move forward.</p><p>For an Okanagan service business, the handoff matters as much as the button. The request needs to reach the right person with the location and work described clearly enough to respond. Website copy, form design and the response process should agree about what happens next.</p><p>The same review can expose friction elsewhere: a contact link that is difficult to find on a phone, a form that asks too much or a confirmation that implies a booking before one is agreed.</p>"
+      },
+      {
+        "id": "result",
+        "title": "The result: 30% more qualified bookings",
+        "body": "<p>Cool Runnings saw a 30% increase in qualified bookings following the website, local SEO and conversion work. Qualified bookings are the business outcome described here. The percentage should not be relabelled as revenue growth, a traffic increase or a lift caused by one isolated design change.</p><p>Search visibility and website actions help explain how a site is being used, but they are different measurements. A click can lead to a conversation; it does not establish that a job was booked. Keeping those stages separate makes the reporting useful for business decisions.</p><p>The project shows the value of connecting discovery, useful content and a practical enquiry path. It also provides a stronger basis for a consultation than a promise that a new design alone will create more work.</p>"
+      },
+      {
+        "id": "apply",
+        "title": "What an Okanagan business can apply",
+        "body": "<p>A service business can use the Cool Runnings approach by starting with the work it wants to win and building the website around that customer’s questions.</p><ul><li>Choose the priority services and the area you actually cover.</li><li>Write useful answers for each service and meaningful local differences.</li><li>Show relevant work and make the request route easy to complete.</li><li>Check who receives the enquiry and how the next conversation happens.</li><li>Track qualified bookings separately from traffic and button taps.</li></ul><p>Michael McKerracher’s <a href=\"/web-design/\">website design service</a> brings that content, design and search planning together. Additional <a href=\"/marketing-branding/\">marketing and branding</a> or <a href=\"/ai-implementation/\">workflow implementation</a> can support the business where the next bottleneck sits.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Does the 30% result refer to revenue?",
+        "No. The Cool Runnings result refers to an increase in jobs and qualified bookings. It should not be presented as a revenue or website traffic increase."
+      ],
+      [
+        "Do I need calculators and a large website to use this approach?",
+        "No. Start with useful service information, relevant evidence and a working enquiry route. Add tools or more content when they solve a real customer question and the business can maintain them."
+      ],
+      [
+        "Can the same approach work outside landscaping?",
+        "The principles can apply to other service businesses, but the content should change. A clinic needs appointment and practitioner information; an accountant needs scope and preparation details; a trade needs service coverage and a practical estimate request."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Cool Runnings: original project and local-search system",
+        "url": "https://michaelmck.site/v2/work/local-search-magnet.html"
+      }
+    ],
+    "related": [
+      "website-visitors-no-enquiries",
+      "service-business-website-checklist",
+      "google-chatgpt-business-visibility"
+    ],
+    "services": [
+      "landscapers",
+      "roofers",
+      "plumbers"
+    ]
+  },
+  {
+    "slug": "best-web-designers-kelowna",
+    "type": "comparison",
+    "city": "Kelowna",
+    "title": "5 web designers for Kelowna businesses: the best fits for 2026",
+    "description": "Compare five web designers for Kelowna businesses by project fit, from hands-on service websites to WordPress platforms and ongoing marketing support.",
+    "summary": "For a Kelowna service business wanting design, content and search planning with one hands-on collaborator, consider Michael McKerracher. Twirling Umbrellas is worth comparing for a mission-driven WordPress project, Twin Creek Media for an ongoing marketing partnership, Duford Digital for local website and SEO work, and TheBomb for custom design with continuing support.",
+    "image": {
+      "src": "/assets/selected-work/abc-appliance-live.png",
+      "alt": "ABC Appliance website, selected web design work by Michael McKerracher",
+      "width": 1200,
+      "height": 750
+    },
+    "method": "I’m Michael McKerracher, a web designer and marketing consultant based in Coldstream. I publish this comparison and include my own business. The recommendations below are my assessment of project fit, based on the firms’ public services and portfolio information reviewed on October 8, 2026. Compare the current scope and terms directly with each provider.",
+    "takeaways": [
+      "Shortlist providers whose actual work resembles the project you need.",
+      "Compare content, ownership and support alongside the design.",
+      "Use the same written brief to get comparable proposals."
+    ],
+    "providers": [
+      [
+        "Michael McKerracher",
+        "Hands-on website, content and search planning",
+        "https://michaelmck.site/web-design/"
+      ],
+      [
+        "Twirling Umbrellas",
+        "WordPress for associations and mission-driven organisations",
+        "https://twirlingumbrellas.com/"
+      ],
+      [
+        "Twin Creek Media",
+        "Ongoing marketing department support",
+        "https://www.twincreekmedia.com/"
+      ],
+      [
+        "Duford Digital",
+        "Local websites and search strategy",
+        "https://duforddigital.com/vernon-web-design/"
+      ],
+      [
+        "TheBomb",
+        "Custom websites with ongoing hosting and SEO",
+        "https://thebomb.ca/"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "michael",
+        "title": "1. Michael McKerracher: hands-on websites built around enquiries",
+        "body": "<p>Michael McKerracher is my recommendation for a Kelowna owner who wants the website, content and search foundations considered together, with direct access to the person doing the work. I build around the business outcome: an appropriate enquiry, a first consultation or a booking.</p><p>Relevant work includes ABC Appliance, Okanagan Treehouse and Cool Runnings, where website, local SEO and conversion work brought a 30% increase in qualified bookings. My broader services include branding, video, marketing and custom workflows, so the conversation can continue beyond the website when useful.</p><p><strong>Ask me about:</strong> the pages your customers need, which evidence to show, ownership, editing support and the enquiry handoff. Website projects are custom-quoted. <a href=\"/web-design/\">Explore my website work</a>.</p>"
+      },
+      {
+        "id": "twirling",
+        "title": "2. Twirling Umbrellas: WordPress for organisations with members and resources",
+        "body": "<p>Twirling Umbrellas is a strong firm to compare when a Kelowna organisation needs a substantial WordPress site. Its published focus includes associations, regulators, non-profits and other mission-driven organisations, with resource libraries and integrations among its capabilities.</p><p><strong>Best-fit question:</strong> does your project involve many editors, member information, events or resources? Ask how content governance, accessibility, migration and ongoing support would be scoped. For a small service site, compare the proposed approach with the simpler operating model you need. <a href=\"https://twirlingumbrellas.com/\">See Twirling Umbrellas’ services and work</a>.</p>"
+      },
+      {
+        "id": "twin-creek",
+        "title": "3. Twin Creek Media: a website within an ongoing marketing programme",
+        "body": "<p>Twin Creek Media is worth considering when the website is one part of a larger marketing need. The firm describes an ongoing marketing-department model covering strategy, creative and advertising, rather than treating every engagement as a single website build.</p><p><strong>Best-fit question:</strong> do you need continuing marketing leadership and delivery as well as a new site? Ask which work sits in the project fee, which sits in a retainer and how website enquiries connect to the broader reporting. <a href=\"https://www.twincreekmedia.com/\">Explore Twin Creek Media</a>.</p>"
+      },
+      {
+        "id": "duford",
+        "title": "4. Duford Digital: local website and search planning",
+        "body": "<p>Duford Digital is a North Okanagan option for businesses comparing website work with local SEO. Its public offer includes template and custom builds, maintenance and search services, with examples across professional, health and local business categories.</p><p><strong>Best-fit question:</strong> are you mainly buying a website, or do you also need a continuing local-search programme? Ask which service and location pages belong in the initial scope and how enquiries will be measured. Confirm meeting arrangements for a Kelowna project. <a href=\"https://duforddigital.com/vernon-web-design/\">Review Duford Digital’s offer</a>.</p>"
+      },
+      {
+        "id": "thebomb",
+        "title": "5. TheBomb: custom design with continuing website support",
+        "body": "<p>TheBomb is another Okanagan firm to compare for custom websites, SEO and hosting. Its published services make it relevant when an owner wants a build and a continuing relationship for the technical upkeep.</p><p><strong>Best-fit question:</strong> what support will you need after launch? Ask about editing, migration, maintenance, content changes and whether ongoing SEO is included or quoted separately. Review projects relevant to your own type of customer before choosing on visual style alone. <a href=\"https://thebomb.ca/\">Explore TheBomb’s website services</a>.</p>"
+      },
+      {
+        "id": "shortlist",
+        "title": "How to turn this list into a useful shortlist",
+        "body": "<p>A Kelowna web-design shortlist should start with the business problem and the kind of work required. Choose providers whose demonstrated services match that brief, then ask each to respond to the same scope.</p><ul><li>Name the priority services and the customer action the site needs to support.</li><li>Identify the content and images you already have.</li><li>List booking, payment or CRM requirements.</li><li>Ask for account ownership, training and support terms.</li><li>Request a clear split between the build and ongoing marketing.</li></ul><p>A considered proposal should explain the approach and assumptions. The <a href=\"/blog/okanagan-website-cost/\">website cost checklist</a> helps compare what is included. The <a href=\"/blog/kelowna-business-website-guide/\">Kelowna website guide</a> helps turn the business objective into a brief.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Is a freelancer or an agency better for a Kelowna business website?",
+        "Choose by scope and working style. A hands-on independent designer can suit a focused website and close collaboration. An agency can suit a project needing multiple specialists or ongoing team capacity. Compare relevant work, ownership and support rather than assuming size determines quality."
+      ],
+      [
+        "Are all these designers physically based in Kelowna?",
+        "No. This is a shortlist for Kelowna businesses that includes providers elsewhere in the Okanagan. Michael McKerracher is based in Coldstream. Check the provider’s actual location and meeting arrangements when local access matters."
+      ],
+      [
+        "Who should I choose if I also need branding, video or automation?",
+        "Include those requirements in the brief before requesting quotes. Michael McKerracher offers website design, marketing and branding, video work and AI implementation. Ask any shortlisted provider which services are delivered directly and which require a separate partner."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Michael McKerracher: website design and selected work",
+        "url": "https://michaelmck.site/web-design/"
+      },
+      {
+        "name": "Twirling Umbrellas: WordPress and mission-driven organisations",
+        "url": "https://twirlingumbrellas.com/"
+      },
+      {
+        "name": "Twin Creek Media: marketing partnerships and services",
+        "url": "https://www.twincreekmedia.com/"
+      },
+      {
+        "name": "Duford Digital: North Okanagan website services",
+        "url": "https://duforddigital.com/vernon-web-design/"
+      },
+      {
+        "name": "TheBomb: website, SEO and hosting services",
+        "url": "https://thebomb.ca/"
+      }
+    ],
+    "related": [
+      "kelowna-business-website-guide",
+      "okanagan-website-cost",
+      "website-redesign-or-repair"
+    ],
+    "services": [
+      "charities",
+      "medical-practices",
+      "home-builders"
+    ]
+  },
+  {
+    "slug": "best-web-designers-vernon",
+    "type": "comparison",
+    "city": "Vernon",
+    "title": "5 web designers for Vernon businesses: the best fits for 2026",
+    "description": "Five website providers for Vernon and the North Okanagan, compared by hands-on support, local SEO, packaged builds, custom design and ownership needs.",
+    "summary": "Vernon businesses can compare Michael McKerracher for hands-on design, content and practical marketing; Duford Digital for local websites and search strategy; Svice for defined website packages and marketing support; TheBomb for custom builds with hosting; and Vernon Software for packaged small-business websites. Choose by the scope and support your business needs.",
+    "image": {
+      "src": "/assets/selected-work/abc-appliance-live.png",
+      "alt": "ABC Appliance website, selected web design work by Michael McKerracher",
+      "width": 1200,
+      "height": 750
+    },
+    "method": "I’m Michael McKerracher, a web designer and marketing consultant based in Coldstream. I publish this comparison and include my own business. The recommendations below are my assessment of project fit, based on the firms’ public services and portfolio information reviewed on October 8, 2026. Compare the current scope and terms directly with each provider.",
+    "takeaways": [
+      "Decide whether you need a finished content service or can supply the material.",
+      "Check how the provider handles North Okanagan coverage and enquiries.",
+      "Compare recurring costs and account access before committing."
+    ],
+    "providers": [
+      [
+        "Michael McKerracher",
+        "Direct collaboration across design, content and marketing",
+        "https://michaelmck.site/web-design/"
+      ],
+      [
+        "Duford Digital",
+        "Local search and North Okanagan service content",
+        "https://duforddigital.com/vernon-web-design/"
+      ],
+      [
+        "Svice",
+        "Defined packages and wider marketing services",
+        "https://www.svice.ca/"
+      ],
+      [
+        "TheBomb",
+        "Custom design and managed hosting",
+        "https://thebomb.ca/"
+      ],
+      [
+        "Vernon Software",
+        "Packaged small-business WordPress sites",
+        "https://vernonsoftware.com/services/web-design/"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "michael",
+        "title": "1. Michael McKerracher: a hands-on collaborator in Coldstream",
+        "body": "<p>Michael McKerracher is a strong option for a Vernon owner who wants one collaborator to connect the website’s appearance, content and business purpose. I am based in Coldstream and work across the Okanagan on websites, marketing and systems that support the next customer action.</p><p>My portfolio includes local-service work for ABC Appliance and Cool Runnings, accommodation design for Okanagan Treehouse, and design and marketing for St. James School. Cool Runnings saw a 30% increase in qualified bookings after the connected website, SEO and conversion work.</p><p><strong>Ask me about:</strong> improving an existing site, building useful service pages, training, ownership and making enquiries easier to handle. Scope and pricing are agreed for the project. <a href=\"/web-design/\">See the selected website work</a>.</p>"
+      },
+      {
+        "id": "duford",
+        "title": "2. Duford Digital: service pages and local search",
+        "body": "<p>Duford Digital is worth comparing for a Vernon business that needs website work and local SEO considered together. Its North Okanagan service page shows professional, clinic and local-business examples and distinguishes template builds from custom projects.</p><p><strong>Ask about:</strong> the service-area content your business actually needs, what is included at launch and what belongs in ongoing SEO. A company serving several towns should discuss real coverage and useful local differences before agreeing a page count. <a href=\"https://duforddigital.com/vernon-web-design/\">See Duford Digital’s Vernon services</a>.</p>"
+      },
+      {
+        "id": "svice",
+        "title": "3. Svice: defined website packages with marketing support",
+        "body": "<p>Svice is a useful comparison for a Vernon owner looking at a defined website package and related marketing services. Its published six-page offer asks the client to provide text, logos and images; its wider services include design, content, SEO and site management.</p><p><strong>Ask about:</strong> how much material you will need to prepare and which writing or image work can be added. If you want a manageable launch, a defined scope can help, provided responsibilities are clear. Confirm editing access and support after the initial hosting period. <a href=\"https://www.svice.ca/\">Review Svice’s website offer</a>.</p>"
+      },
+      {
+        "id": "thebomb",
+        "title": "4. TheBomb: custom website work and managed upkeep",
+        "body": "<p>TheBomb is relevant to a Vernon shortlist for a custom website with hosting and continuing support. Its public site presents custom design alongside SEO and maintenance services for businesses in the Okanagan and beyond.</p><p><strong>Ask about:</strong> content development, the design review process and how updates will be handled after launch. If your business changes offers or seasonal information regularly, explain that before the platform and support arrangement are selected. <a href=\"https://thebomb.ca/\">Explore TheBomb’s services</a>.</p>"
+      },
+      {
+        "id": "vernonsoftware",
+        "title": "5. Vernon Software: packaged small-business builds",
+        "body": "<p>Vernon Software is worth comparing when the owner prefers a packaged WordPress build. Its website service page describes small-business packages with a defined range of page counts and included setup features.</p><p><strong>Ask about:</strong> content responsibilities, the package’s limits, integrations and ongoing maintenance. A starting price is useful only after you know whether the package covers the site your business needs. Clarify ownership and what future changes will cost. <a href=\"https://vernonsoftware.com/services/web-design/\">Review Vernon Software’s website packages</a>.</p>"
+      },
+      {
+        "id": "questions",
+        "title": "What should a Vernon owner ask before choosing?",
+        "body": "<p>A Vernon website proposal should make the work understandable to the owner who will use and maintain it. Bring a short brief describing the services, communities covered and the way customers book or enquire.</p><p>For a trade, ask how the site will distinguish the jobs you want from requests you cannot serve. For a practice, ask how a new client finds the right service and prepares for an appointment. For hospitality, ask how imagery, availability and booking details will connect.</p><ul><li>Who writes and approves the service content?</li><li>Which account logins will the business control?</li><li>How are enquiries delivered and tested?</li><li>What training is included?</li><li>What are the ongoing costs and cancellation terms?</li></ul><p>The <a href=\"/blog/vernon-business-website-guide/\">Vernon business website guide</a> provides a fuller brief. Use the <a href=\"/blog/okanagan-website-cost/\">cost checklist</a> to compare the proposals against the same expectations.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Do I need a designer with an office in Vernon?",
+        "Not necessarily. Relevant work, clear communication and reliable support are important. If in-person meetings matter, confirm them directly. Michael McKerracher is based in nearby Coldstream and serves Vernon and the wider Okanagan."
+      ],
+      [
+        "Which option suits an owner who cannot write all the website copy?",
+        "Choose a proposal that explicitly includes interviews, page planning and writing. Michael McKerracher can include that work in the scope. For any package, check whether supplying text is your responsibility before comparing the price."
+      ],
+      [
+        "Can I start with a small site and add North Okanagan pages later?",
+        "Yes. Agree a structure and editing approach that can grow. Launch useful core pages first, then add local pages when you have distinct coverage details, relevant work or customer questions to answer."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Michael McKerracher: website design and selected work",
+        "url": "https://michaelmck.site/web-design/"
+      },
+      {
+        "name": "Duford Digital: North Okanagan website services",
+        "url": "https://duforddigital.com/vernon-web-design/"
+      },
+      {
+        "name": "Svice: website packages and marketing services",
+        "url": "https://www.svice.ca/"
+      },
+      {
+        "name": "TheBomb: website, SEO and hosting services",
+        "url": "https://thebomb.ca/"
+      },
+      {
+        "name": "Vernon Software: website packages",
+        "url": "https://vernonsoftware.com/services/web-design/"
+      }
+    ],
+    "related": [
+      "vernon-business-website-guide",
+      "website-redesign-or-repair",
+      "okanagan-website-cost"
+    ],
+    "services": [
+      "appliance-repair",
+      "physiotherapy",
+      "private-schools"
+    ]
+  },
+  {
+    "slug": "best-web-designers-west-kelowna",
+    "type": "comparison",
+    "city": "West Kelowna",
+    "title": "4 web designers for West Kelowna businesses: best fits for 2026",
+    "description": "A fit-based shortlist of website providers for West Kelowna businesses, covering service enquiries, hospitality presentation, ongoing marketing and WordPress.",
+    "summary": "For a West Kelowna business, compare Michael McKerracher for hands-on websites, content and marketing; Twin Creek Media for an ongoing marketing partnership; TheBomb for custom websites with hosting and support; and Twirling Umbrellas for more involved WordPress projects. Match the provider to the customer journey and the support you will need after launch.",
+    "image": {
+      "src": "/assets/selected-work/abc-appliance-live.png",
+      "alt": "ABC Appliance website, selected web design work by Michael McKerracher",
+      "width": 1200,
+      "height": 750
+    },
+    "method": "I’m Michael McKerracher, a web designer and marketing consultant based in Coldstream. I publish this comparison and include my own business. The recommendations below are my assessment of project fit, based on the firms’ public services and portfolio information reviewed on October 8, 2026. Compare the current scope and terms directly with each provider.",
+    "takeaways": [
+      "Brief the provider on service enquiries, visitor bookings or member needs.",
+      "Check the complete booking handoff, including outside platforms.",
+      "Use local project relevance and support needs to narrow the shortlist."
+    ],
+    "providers": [
+      [
+        "Michael McKerracher",
+        "Hands-on service and accommodation website design",
+        "https://michaelmck.site/web-design/"
+      ],
+      [
+        "Twin Creek Media",
+        "Ongoing strategy, creative and advertising",
+        "https://www.twincreekmedia.com/"
+      ],
+      [
+        "TheBomb",
+        "Custom design with hosting and support",
+        "https://thebomb.ca/"
+      ],
+      [
+        "Twirling Umbrellas",
+        "WordPress for resource-rich organisations",
+        "https://twirlingumbrellas.com/"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "michael",
+        "title": "1. Michael McKerracher: design, content and a clear customer action",
+        "body": "<p>Michael McKerracher is my recommended fit for a West Kelowna owner who wants close collaboration across the design, content and practical workings of a website. I am based in Coldstream and serve the Okanagan, including West Kelowna.</p><p>ABC Appliance and Cool Runnings show the local-service side of my work. Okanagan Treehouse shows the care given to presenting accommodation. Branding, video and AI implementation can support the wider business where the scope calls for them.</p><p><strong>Bring to the first conversation:</strong> your priority services, customers, coverage and the action you want visitors to take. I can help turn that into a page plan, visual direction and custom quote. <a href=\"/web-design/\">Explore my website design work</a>.</p>"
+      },
+      {
+        "id": "twin-creek",
+        "title": "2. Twin Creek Media: a continuing marketing relationship",
+        "body": "<p>Twin Creek Media is an option to compare when a West Kelowna business needs ongoing strategy, creative and advertising around the website. Its public offer describes a marketing-department partnership, which is a different buying decision from a standalone build.</p><p><strong>Ask about:</strong> the website’s role in the broader programme, how campaigns are planned and how enquiries are connected to reporting. An established business with continuing marketing needs should compare the team model and commitment alongside the website deliverables. <a href=\"https://www.twincreekmedia.com/\">See Twin Creek Media’s approach</a>.</p>"
+      },
+      {
+        "id": "thebomb",
+        "title": "3. TheBomb: custom websites with continuing technical support",
+        "body": "<p>TheBomb is worth reviewing for a West Kelowna custom website with hosting and support. Its Okanagan offer combines design, SEO and managed website services.</p><p><strong>Ask about:</strong> the booking or enquiry system you already use, the content that needs migrating and the changes you expect after launch. A hospitality or seasonal business should explain who will update hours, offers and practical visitor information. Confirm those tasks are covered in the proposed support arrangement. <a href=\"https://thebomb.ca/\">Review TheBomb’s service scope</a>.</p>"
+      },
+      {
+        "id": "twirling",
+        "title": "4. Twirling Umbrellas: more involved WordPress and organisational content",
+        "body": "<p>Twirling Umbrellas is a relevant comparison for organisations considering a more involved WordPress project. Its published focus includes non-profits, associations and regulators, with resource libraries, integrations and content management among the capabilities described.</p><p><strong>Ask about:</strong> the number of editors, approval processes, member or resource information, accessibility and migration. An organisation with complex content needs should assess that experience directly. <a href=\"https://twirlingumbrellas.com/\">Explore Twirling Umbrellas’ work</a>.</p>"
+      },
+      {
+        "id": "project-fit",
+        "title": "Choose the shortlist around the West Kelowna customer journey",
+        "body": "<p>A West Kelowna website brief should explain whether customers are arranging local work, planning a visit or accessing an organisation’s services. Those journeys require different content and different proof from a designer.</p><table><caption>What to request in the proposal</caption><thead><tr><th>Project</th><th>Ask the provider to explain</th></tr></thead><tbody><tr><td>Trade or home service</td><td>Coverage, service pages, local proof and quote handling</td></tr><tr><td>Winery or accommodation</td><td>Visitor information, imagery, dates and booking handoff</td></tr><tr><td>Community organisation</td><td>Content ownership, resources, accessibility and updates</td></tr></tbody></table><p>For visitor businesses, the <a href=\"https://www.tourismkelowna.com/explore/neighbouring-communities/west-kelowna/\">official West Kelowna tourism information</a> provides useful context about the area’s wine and outdoor experiences. Your own site still needs to answer the practical questions about your particular offer.</p><p>Ask for a relevant example, then follow its customer journey on your phone. Visual quality matters, and so does being able to find the details and finish the task.</p>"
+      },
+      {
+        "id": "brief",
+        "title": "Put the scope, ownership and launch checks in writing",
+        "body": "<p>A West Kelowna website quote should identify who creates the content, which integrations are included and who maintains the finished site. The location of the provider is only one part of the working relationship.</p><p>Use the same brief for each shortlisted firm: desired customer action, essential pages, available images, budget range, booking tools and update needs. Then ask how the provider will test the mobile experience and hand over account access.</p><p>My <a href=\"/blog/west-kelowna-business-website-guide/\">West Kelowna website guide</a> goes deeper into the local content decisions. The <a href=\"/blog/okanagan-website-cost/\">website cost checklist</a> helps compare proposals before committing.</p>"
+      }
+    ],
+    "faqs": [
+      [
+        "Does the designer need a West Kelowna office?",
+        "No. This shortlist includes Okanagan providers for West Kelowna businesses, not a claim that every firm has a West Kelowna office. Confirm availability, communication and meeting arrangements alongside portfolio relevance."
+      ],
+      [
+        "What should I ask a designer about a winery or accommodation site?",
+        "Ask how imagery, practical visitor information, availability and booking conditions will work together. Review the complete mobile route into the booking platform, not just the homepage design."
+      ],
+      [
+        "Can one provider handle the website and ongoing marketing?",
+        "Yes, when those services are included in the agreed scope. Michael McKerracher offers website, marketing and branding work. Compare the build fee, ongoing work, reporting and ownership terms separately so the arrangement is clear."
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Michael McKerracher: website design and selected work",
+        "url": "https://michaelmck.site/web-design/"
+      },
+      {
+        "name": "Twin Creek Media: marketing partnerships and services",
+        "url": "https://www.twincreekmedia.com/"
+      },
+      {
+        "name": "TheBomb: website, SEO and hosting services",
+        "url": "https://thebomb.ca/"
+      },
+      {
+        "name": "Twirling Umbrellas: WordPress and mission-driven organisations",
+        "url": "https://twirlingumbrellas.com/"
+      },
+      {
+        "name": "Tourism Kelowna: West Kelowna visitor context",
+        "url": "https://www.tourismkelowna.com/explore/neighbouring-communities/west-kelowna/"
+      }
+    ],
+    "related": [
+      "west-kelowna-business-website-guide",
+      "okanagan-website-cost",
+      "service-business-website-checklist"
+    ],
+    "services": [
+      "wineries",
+      "hotels",
+      "charities"
+    ]
+  }
+]
