@@ -1,0 +1,13 @@
+{
+  "domain": "michaelmck.site",
+  "recipient": "michael.mckerracher@gmail.com",
+  "provider": "FormSubmit",
+  "activated": true,
+  "activationEvidence": "Browser showed Form Activated for https://michaelmck.site/",
+  "method": "Live AJAX contact form submission",
+  "testMarker": "MMK-CONTACT-20261008-LIVE",
+  "uiSuccess": true,
+  "emailReceived": true,
+  "receivedAt": "2026-10-08T23:40:38Z",
+  "note": "Site-owner test, not a customer lead. Exclude this test from conversion reporting. No paid plan or mailing subscription created."
+}

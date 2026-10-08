@@ -205,3 +205,6 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Publication eligibility now gates HTML, Markdown, hub, related links, sitemap and LLM discovery. Future source remains private. Added 52 individual 2027 briefs and eight late-2026 briefs, with query intent, proof, service links and research gates.
 - Created daily 09:00 Pacific thread heartbeat portfolio-resource-publishing for preparation and verified release through end of 2027.
 - Built /contact/ with email and free FormSubmit delivery, labelled minimal inputs, optional service, spam trap, retained input on failure and success-only lead tracking. Shared consultation links route to Contact. Activation is per website; localhost activation observed, production activation and delivery check still pending at this point.
+
+- Published 998fc2f to main; Vercel dpl_EN7T2BdTdqBiGR632RBnPhiBDV8H Ready and aliased to michaelmck.site. Verified 26 live resources, five negotiated Markdown routes and 27 absent queued URLs.
+- Production form activation confirmed through the intended inbox. A live AJAX test showed success and matched the received email (16:40 Pacific). Marked test must be excluded from customer-lead reporting. Saved screenshots, delivery verification and release evidence; reset browser viewport.

@@ -4,7 +4,7 @@
 - content/resources/publishing.json gates publication using America/Vancouver dates and approval state. Queued articles have no public HTML or Markdown and are absent from discovery. Preserve original publication dates when re-releasing previously public work.
 - Twelve reviewed Echo edits live in content/resources/edited; API credential and raw requests/responses remain private. Future full articles can use content/resources/articles.
 - A weekly 2027 editorial calendar contains 52 distinct briefs; eight late-2026 briefs bridge the rollout. A daily thread heartbeat handles research, drafting and release checks.
-- /contact/ provides direct email and a free form with name, email, message and optional service. Shared consultation actions lead here. FormSubmit activation/delivery is verified separately from deployment.
+- /contact/ provides direct email and a free form with name, email, message and optional service. Shared consultation actions lead here. FormSubmit activation and live AJAX delivery to the intended Gmail inbox were confirmed October 8, 2026.
 
 # Public resource library, October 8, 2026
 

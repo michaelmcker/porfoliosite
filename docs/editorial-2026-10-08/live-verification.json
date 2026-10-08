@@ -1,0 +1,357 @@
+{
+  "checkedAt": "2026-10-08T23:39:39.622Z",
+  "resources": 26,
+  "allMatch": true,
+  "results": [
+    {
+      "path": "/blog/index.md",
+      "status": 200,
+      "bytes": 1771,
+      "match": true,
+      "robots": null,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "bytes": 6425,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/blog/kelowna-business-website-guide/index.md",
+      "status": 200,
+      "bytes": 10027,
+      "match": true,
+      "robots": null,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/blog/kelowna-business-website-guide/",
+      "status": 200,
+      "bytes": 19128,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/blog/vernon-business-website-guide/",
+      "status": 200,
+      "bytes": 17998,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/contact/",
+      "status": 200,
+      "bytes": 5479,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/blog/vernon-business-website-guide/index.md",
+      "status": 200,
+      "bytes": 9262,
+      "match": true,
+      "robots": null,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/contact/index.md",
+      "status": 200,
+      "bytes": 1075,
+      "match": true,
+      "robots": null,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/blog/west-kelowna-business-website-guide/index.md",
+      "status": 200,
+      "bytes": 10050,
+      "match": true,
+      "robots": null,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/blog/west-kelowna-business-website-guide/",
+      "status": 200,
+      "bytes": 19374,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/v2/resources/resources.css",
+      "status": 200,
+      "bytes": 8338,
+      "match": true,
+      "robots": null,
+      "type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 3290,
+      "match": true,
+      "robots": null,
+      "type": "application/xml"
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "bytes": 9365,
+      "match": true,
+      "robots": null,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 76,
+      "match": true,
+      "robots": null,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/llms-full.txt",
+      "status": 200,
+      "bytes": 207963,
+      "match": true,
+      "robots": null,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/v2/contact/contact.css",
+      "status": 200,
+      "bytes": 2413,
+      "match": true,
+      "robots": null,
+      "type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/v2/contact/contact.js",
+      "status": 200,
+      "bytes": 1501,
+      "match": true,
+      "robots": null,
+      "type": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "/v2/site-header.css",
+      "status": 200,
+      "bytes": 2334,
+      "match": true,
+      "robots": null,
+      "type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/assets/selected-work/abc-appliance-live.png",
+      "status": 200,
+      "bytes": 97093,
+      "match": true,
+      "robots": null,
+      "type": "image/png"
+    },
+    {
+      "path": "/assets/screens/cool-runnings-home.webp",
+      "status": 200,
+      "bytes": 72636,
+      "match": true,
+      "robots": null,
+      "type": "image/webp"
+    },
+    {
+      "path": "/ai-implementation/",
+      "status": 200,
+      "bytes": 10732,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/marketing-branding/",
+      "status": 200,
+      "bytes": 11312,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/web-design/",
+      "status": 200,
+      "bytes": 10930,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 33546,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/v2/okanagan-preview/assets/overview-final.webp",
+      "status": 200,
+      "bytes": 287544,
+      "match": true,
+      "robots": null,
+      "type": "image/webp"
+    },
+    {
+      "path": "/web-design/industries/",
+      "status": 200,
+      "bytes": 19469,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    }
+  ],
+  "markdownNegotiation": [
+    {
+      "route": "/blog/",
+      "finalUrl": "https://michaelmck.site/blog/index.md",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "route": "/blog/kelowna-business-website-guide/",
+      "finalUrl": "https://michaelmck.site/blog/kelowna-business-website-guide/index.md",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "route": "/blog/vernon-business-website-guide/",
+      "finalUrl": "https://michaelmck.site/blog/vernon-business-website-guide/index.md",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "route": "/blog/west-kelowna-business-website-guide/",
+      "finalUrl": "https://michaelmck.site/blog/west-kelowna-business-website-guide/index.md",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "route": "/contact/",
+      "finalUrl": "https://michaelmck.site/contact/index.md",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8"
+    }
+  ],
+  "withheld": [
+    {
+      "path": "/blog/service-business-website-checklist/",
+      "status": 404
+    },
+    {
+      "path": "/blog/service-business-website-checklist/index.md",
+      "status": 404
+    },
+    {
+      "path": "/v2/blog/service-business-website-checklist/",
+      "status": 404
+    },
+    {
+      "path": "/blog/okanagan-website-cost/",
+      "status": 404
+    },
+    {
+      "path": "/blog/okanagan-website-cost/index.md",
+      "status": 404
+    },
+    {
+      "path": "/v2/blog/okanagan-website-cost/",
+      "status": 404
+    },
+    {
+      "path": "/blog/website-visitors-no-enquiries/",
+      "status": 404
+    },
+    {
+      "path": "/blog/website-visitors-no-enquiries/index.md",
+      "status": 404
+    },
+    {
+      "path": "/v2/blog/website-visitors-no-enquiries/",
+      "status": 404
+    },
+    {
+      "path": "/blog/google-chatgpt-business-visibility/",
+      "status": 404
+    },
+    {
+      "path": "/blog/google-chatgpt-business-visibility/index.md",
+      "status": 404
+    },
+    {
+      "path": "/v2/blog/google-chatgpt-business-visibility/",
+      "status": 404
+    },
+    {
+      "path": "/blog/website-redesign-or-repair/",
+      "status": 404
+    },
+    {
+      "path": "/blog/website-redesign-or-repair/index.md",
+      "status": 404
+    },
+    {
+      "path": "/v2/blog/website-redesign-or-repair/",
+      "status": 404
+    },
+    {
+      "path": "/blog/cool-runnings-qualified-bookings/",
+      "status": 404
+    },
+    {
+      "path": "/blog/cool-runnings-qualified-bookings/index.md",
+      "status": 404
+    },
+    {
+      "path": "/v2/blog/cool-runnings-qualified-bookings/",
+      "status": 404
+    },
+    {
+      "path": "/blog/best-web-designers-kelowna/",
+      "status": 404
+    },
+    {
+      "path": "/blog/best-web-designers-kelowna/index.md",
+      "status": 404
+    },
+    {
+      "path": "/v2/blog/best-web-designers-kelowna/",
+      "status": 404
+    },
+    {
+      "path": "/blog/best-web-designers-vernon/",
+      "status": 404
+    },
+    {
+      "path": "/blog/best-web-designers-vernon/index.md",
+      "status": 404
+    },
+    {
+      "path": "/v2/blog/best-web-designers-vernon/",
+      "status": 404
+    },
+    {
+      "path": "/blog/best-web-designers-west-kelowna/",
+      "status": 404
+    },
+    {
+      "path": "/blog/best-web-designers-west-kelowna/index.md",
+      "status": 404
+    },
+    {
+      "path": "/v2/blog/best-web-designers-west-kelowna/",
+      "status": 404
+    }
+  ]
+}

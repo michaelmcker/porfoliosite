@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-08: Scheduling the resource library, editing with the recovered Echo API, building a 2027 editorial calendar with service-page links, and adding a free contact page/form. Preserve original publication dates for already-live content.
+2026-10-08: Editorial rollout, Echo edits, 2027 calendar and Contact complete and live-verified. Three guides live, nine queued through November 5; daily 09:00 Pacific publishing heartbeat active. Form activated and live email delivery confirmed.
 
 2026-10-08: Public AEO resource library complete, deployed and live-verified. Twelve articles and hub published; sitemap accepted by Google. Indexing is not yet confirmed. No remaining implementation work for this release.
 
@@ -23,6 +23,14 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-08: Dated publishing, annual calendar and contact
+- Edited all twelve articles with Echo and human-reviewed factual/structural parity. Added contextual commercial links and visible index publication dates.
+- Date-aware generation leaves three city guides live and stages nine articles through November 5, retaining original publication dates and excluding queued public outputs/discovery.
+- Added 52 weekly 2027 briefs, eight late-2026 briefs and daily 09:00 Pacific heartbeat portfolio-resource-publishing with research, editorial and live verification gates.
+- Added /contact/ and shared consultation routes. FormSubmit activated for the live domain; a marked AJAX test reached Michael’s Gmail inbox. Direct email also works.
+- Production commit 998fc2f; Vercel dpl_EN7T2BdTdqBiGR632RBnPhiBDV8H. Twenty-six live resources match, five Markdown routes pass, 27 queued URL variants correctly 404.
+- 152 tests pass, one unchanged missing-Chrome failure. Twenty responsive checks and live desktop/mobile views verified. Evidence: docs/editorial-2026-10-08/RELEASE.md.
 
 ### 2026-10-08: Public AEO resource library
 - Published twelve localized articles and a resource hub with direct summaries, numbered content, three visible specific FAQs each, fit-based comparisons including Michael, sources and portfolio proof.
