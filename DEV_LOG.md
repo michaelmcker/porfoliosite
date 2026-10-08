@@ -1,6 +1,7 @@
 # Development log
 
 ## 2026-10-07: Industry web-design pages
+- Published source commit `0e44dbd` through GitHub main to Vercel production (`dpl_CJBmbgH579NXTADW95kWucGVjBfB`). Verified 105 live resources against local hashes, Markdown content negotiation and actual live desktop/mobile rendering.
 - Completed 24 individually written pages and a visual industry index. Each page has a distinct generated hero, approximately 950–1,150 words, local context, specific enquiry routes, practical FAQs, canonical/OG metadata and structured data.
 - Added responsive WebP variants, shared desktop/mobile styling, sitemap entries, Markdown alternates and agent discovery. The parent website service links to the collection; promotion regenerates it to preserve the change in future releases.
 - Browser review: 96 layout/image checks across all 24 pages at 320, 390, 768 and 1440 pixels, plus 24 mobile proof-image checks; no overflow or missing images. Reviewed hero, proof and FAQ rendering and native FAQ expansion. Saved screenshots and check results in docs/industry-pages-2026-10-07.

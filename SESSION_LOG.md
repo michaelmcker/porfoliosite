@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-07: Building 24 industry-specific web-design pages from the approved image-first template and individual research briefs. Generating relevant website imagery for each industry, implementing shared responsive styling and discovery, and checking desktop/mobile before release.
+2026-10-07: All 24 industry website pages and the industry index are deployed and live-verified. No remaining implementation work for this release.
 
 2026-10-07: ABC live-site capture and transparent RCCV laptop complete; 143 checks pass.
 
@@ -17,6 +17,14 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-07: Industry-specific website service pages
+- Implemented the approved image-to-code template across 24 industries, with unique generated website imagery, individual industry content, local context, practical enquiry paths and FAQs. Added the visual index at `/web-design/industries/` and a link from Web Design.
+- Preserved the shared navigation, DM Sans/Fraunces typography and white/forest/gold palette. No image labels. Hero images have responsive WebP variants.
+- Built canonical HTML, Markdown, schema, sitemap and LLM discovery together; future promotion regenerates this collection.
+- 145 non-browser regression checks passed. Browser: all 24 pages at 320/390/768/1440 pixels; no horizontal overflow or missing hero images. Proof images and FAQ interaction checked. Existing Puppeteer launch failure remains an environment limitation.
+- Source pushed to main: `0e44dbd28d9052d16cedb9554f0534aa6c040b3b`. Production deployment `dpl_CJBmbgH579NXTADW95kWucGVjBfB`, aliased to `michaelmck.site`.
+- Live verification: 105 public resources returned successfully and matched local bytes; Markdown negotiation returned 200 with the correct content type. Published desktop/mobile renders verified. Evidence and screenshots: `docs/industry-pages-2026-10-07/`.
 
 ### 2026-10-07: Correct actual project imagery
 - Captured current blue/yellow ABC production website, replacing the old green preview.
