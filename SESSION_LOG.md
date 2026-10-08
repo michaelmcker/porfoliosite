@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-08: Building the public AEO resource library: 12 researched articles, answer-first openings, numbered lists, relevant self-inclusion in three provider comparisons, three specific visible FAQs per article, HTML/Markdown/schema/discovery and responsive/live verification. Existing portfolio and industry designs stay intact.
+2026-10-08: Public AEO resource library complete, deployed and live-verified. Twelve articles and hub published; sitemap accepted by Google. Indexing is not yet confirmed. No remaining implementation work for this release.
 
 2026-10-07: Industry design variety release complete. All 24 pages have new artwork and four page compositions, deployed and live-verified.
 
@@ -21,6 +21,14 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-08: Public AEO resource library
+- Published twelve localized articles and a resource hub with direct summaries, numbered content, three visible specific FAQs each, fit-based comparisons including Michael, sources and portfolio proof.
+- Added HTML/Markdown/schema/discovery build support, shared editorial styling and resource links from existing public pages. Preserved private Field Notes and retired posts.
+- Production commit `94cfa2e6a5d07acf43ffff8492e8993ec13019b0`; Vercel deployment `dpl_BQZqYKaWVgkGJZwBFbMGd77Mkezz` Ready and aliased to michaelmck.site.
+- Forty live resources matched local content; thirteen Markdown negotiations passed; desktop and mobile production views verified.
+- Fifty-two local responsive checks passed. Repository suite: 149 pass, one unchanged missing-Chrome launch failure; alternative browser review completed.
+- Updated sitemap submitted successfully in Google Search Console. No new-page indexing or ranking claim. Evidence: `docs/aeo-library-2026-10-08/RELEASE.md`.
 
 ### 2026-10-07: Industry design variety
 - Replaced repetitive website artwork with 24 distinct visual directions and responsive WebP exports. Added four hero compositions and industry-appropriate section ordering, preserving shared navigation, typography, copy and proof.

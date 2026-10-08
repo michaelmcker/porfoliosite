@@ -1,0 +1,154 @@
+- banner:
+  - button:
+  - link:
+    - /url: ./search-console?resource_id=sc-domain%3Amichaelmck.site
+  - search:
+    - textbox [disabled]: Inspect any URL in "michaelmck.site"
+    - combobox
+    - button:
+  - button:
+    - generic: help_outline
+  - tooltip: Help
+  - button:
+    - generic: manage_accounts
+  - tooltip: User settings
+  - button:
+    - generic: notifications
+  - tooltip: Messages
+  - generic: "6"
+  - button:
+  - button:
+- dialog:
+  - navigation:
+    - button:
+      - combobox: michaelmck.site
+      - generic: 
+    - link:
+      - /url: ./search-console?resource_id=sc-domain%3Amichaelmck.site
+      - generic: home
+      - generic: Overview
+    - link:
+      - /url: ./search-console/performance/insights?resource_id=sc-domain%3Amichaelmck.site
+      - generic: lightbulb_2
+      - generic: Insights
+    - link:
+      - /url: ./search-console/performance/search-analytics?resource_id=sc-domain%3Amichaelmck.site
+      - generic: trending_up
+      - generic: Performance
+    - button:
+      - generic: search
+      - generic: URL inspection
+    - generic: Indexing
+    - button [expanded]:
+      - generic: keyboard_arrow_up
+    - link:
+      - /url: ./search-console/index?resource_id=sc-domain%3Amichaelmck.site
+      - generic: file_copy
+      - generic: Pages
+    - link:
+      - /url: ./search-console/video-index?resource_id=sc-domain%3Amichaelmck.site
+      - generic: video_library
+      - generic: Videos
+    - link:
+      - /url: ./search-console/sitemaps?resource_id=sc-domain%3Amichaelmck.site
+      - generic: account_tree
+      - generic: Sitemaps
+    - link:
+      - /url: ./search-console/removals?resource_id=sc-domain%3Amichaelmck.site
+      - generic: visibility_off
+      - generic: Removals
+    - generic: Experience
+    - button [expanded]:
+      - generic: keyboard_arrow_up
+    - link:
+      - /url: ./search-console/core-web-vitals?resource_id=sc-domain%3Amichaelmck.site
+      - generic: speed
+      - generic: Core Web Vitals
+    - link:
+      - /url: ./search-console/https?resource_id=sc-domain%3Amichaelmck.site
+      - generic: lock
+      - generic: HTTPS
+    - generic: Security & Manual Actions
+    - button:
+      - generic: keyboard_arrow_down
+    - link:
+      - /url: ./search-console/links?resource_id=sc-domain%3Amichaelmck.site
+      - generic: link_2
+      - generic: Links
+    - link:
+      - /url: ./search-console/achievements?resource_id=sc-domain%3Amichaelmck.site
+      - generic: trophy
+      - generic: Achievements
+    - link:
+      - /url: ./search-console/settings?resource_id=sc-domain%3Amichaelmck.site
+      - generic: settings
+      - generic: Settings
+    - button:
+      - generic: feedback
+      - generic: Submit feedback
+    - button:
+      - generic: info
+      - generic: About Search Console
+    - link:
+      - /url: https://myaccount.google.com/privacypolicy?hl=en-US
+      - text: Privacy
+    - link:
+      - /url: https://myaccount.google.com/termsofservice?hl=en-US
+      - text: Terms
+- navigation:
+  - heading [level=1]: Sitemaps
+- main:
+  - generic: Add a new sitemap
+  - textbox: https://michaelmck.site/sitemap.xml
+  - button:
+    - generic: Submit
+  - heading [level=1]:
+    - generic: Submitted sitemaps
+  - button:
+    - generic: 
+  - table:
+    - rowgroup:
+      - row:
+        - columnheader:
+          - text: Sitemap
+        - columnheader:
+          - text: Type
+        - columnheader:
+          - text: Submitted
+        - columnheader:
+          - text: Last read
+        - columnheader:
+          - text: Status
+        - columnheader:
+          - text: Discovered pages
+        - columnheader:
+          - text: Discovered videos
+        - columnheader
+    - rowgroup:
+      - row:
+        - cell: https://michaelmck.site/sitemap.xml
+        - cell: Sitemap
+        - cell: Oct 8, 2026
+        - cell: Oct 5, 2026
+        - cell:
+          - generic: Success
+        - cell: "8"
+        - cell: "0"
+        - cell:
+          - button:
+            - generic: 
+  - generic: "Rows per page:"
+  - listbox:
+    - text: "5"
+    - option [selected]: "10"
+    - text: 25 50 100 250 500
+  - generic: 1-1 of 1
+  - generic: 
+  - generic: 
+- dialog "Sitemap submitted successfully":
+  - heading "Sitemap submitted successfully" [level=2]:
+    - generic: check_circle
+    - generic: Sitemap submitted successfully
+  - generic: Google will periodically process it and look for changes. You will be notified if anything goes wrong with it in the future.
+  - button "Dismiss" [active]:
+    - generic: Dismiss

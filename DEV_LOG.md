@@ -194,3 +194,7 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Extended tests for full article/FAQ/schema/discovery/link coverage and kept tests protecting retired content, shared navigation, analytics and private Field Notes.
 - Browser checks: 52 route/viewport checks (13 routes at 1440/768/390/320), zero page/text/table overflow or observed image errors; inspected desktop index/comparison and mobile article/FAQ/table.
 - Test suite: 149 pass; same baseline Chrome-executable absence in pre-existing about-mobile test. No new failures.
+
+- Published commit 94cfa2e via the existing GitHub main → Vercel workflow, preserving the upstream Cool Runnings metrics update during rebase. Deployment dpl_BQZqYKaWVgkGJZwBFbMGd77Mkezz is Ready on michaelmck.site.
+- Live verification passed for 40 resources and all 13 Markdown negotiations. Inspected production desktop library/comparison and mobile checklist; temporary viewport override reset.
+- Submitted updated sitemap through Search Console; success confirmed. No new-page indexing claim. Saved release report, screenshots, live verification and submission proof.
