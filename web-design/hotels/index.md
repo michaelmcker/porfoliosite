@@ -7,13 +7,21 @@ Web design for hotels and resorts in Kelowna and the Okanagan. Show what makes y
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Hotels & resorts website displayed on a laptop
+Hotels website design
 
 ## The experience starts before a guest checks in.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+Okanagan Treehouse accommodation website design
+
+## Okanagan Treehouse
+
+A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
+
+[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Help guests decide, then help them book.
 
@@ -69,14 +77,6 @@ Room and experience pages, consistent property information and useful FAQs suppo
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Where can I book a hotel with lake access in Kelowna?”The site should clearly describe the property’s real amenities, room options, location and booking route. I give those facts a readable structure supported by original imagery.
-
-Okanagan Treehouse accommodation website design
-
-## Okanagan Treehouse
-
-A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
-
-[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Keep the route to a reservation clear.
 

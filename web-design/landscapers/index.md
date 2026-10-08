@@ -7,13 +7,15 @@ Website design for landscapers in Kelowna and the Okanagan. Show the spaces you 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Landscaping businesses website displayed on a laptop
+Landscapers website design
 
-## 30%more qualified bookings
+## Cool Runnings: from no website to more bookings.
 
-Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
+For Cool Runnings, I brought together a new website, local service content, an SEO strategy and improvements to the enquiry journey. The work increased leads and helped deliver a 30% increase in qualified bookings.
 
-[See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+Service and location pages made the offer easier to find. Useful local content created more routes into the business. Clear calls to action helped people move from reading about the service to making an enquiry.
+
+That connection matters: the website, search strategy and conversion path should support each other. Your project photos and experience give us the material to build around the landscaping work you want next.
 
 ## Design projects and maintenance need different paths.
 
@@ -54,13 +56,13 @@ A homeowner planning an outdoor transformation wants different information from 
 
 An outdoor space on a sloped Lake Country property raises different questions from a Kelowna strata garden. Show the brief, terrain, planting or hardscape choices and the finished result. Where water-wise landscaping is part of your service, explain your approach through the work itself. Customers can see how your experience relates to their property.
 
-## Cool Runnings: from no website to more bookings.
+Cool Runnings website presenting its Okanagan landscaping services
 
-For Cool Runnings, I brought together a new website, local service content, an SEO strategy and improvements to the enquiry journey. The work increased leads and helped deliver a 30% increase in qualified bookings.
+## Cool Runnings
 
-Service and location pages made the offer easier to find. Useful local content created more routes into the business. Clear calls to action helped people move from reading about the service to making an enquiry.
+Website, local SEO and conversion work that brought a 30% increase in qualified bookings. Clear service pages, local coverage and a straightforward enquiry route connect the business with the work it wants.
 
-That connection matters: the website, search strategy and conversion path should support each other. Your project photos and experience give us the material to build around the landscaping work you want next.
+[See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
 
 ## Built to be found. Ready to be chosen.
 
@@ -70,11 +72,9 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Who creates low-maintenance gardens in Kelowna?”The best material is specific: the service you offer, the properties you work with, original photographs and an explanation of your approach. I turn that into useful pages for local search and AI discovery.
 
-Cool Runnings website presenting its Okanagan landscaping services
+## 30%more qualified bookings
 
-## Cool Runnings
-
-Website, local SEO and conversion work that brought a 30% increase in qualified bookings. Clear service pages, local coverage and a straightforward enquiry route connect the business with the work it wants.
+Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
 
 [See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
 

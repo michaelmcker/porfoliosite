@@ -7,13 +7,22 @@ Web design for independent and private schools in Kelowna and the Okanagan. Show
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Independent schools website displayed on a laptop
+Private schools website design
 
 ## A school’s character should come through before the first tour.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+## Make the enquiry useful to your admissions team.
+
+A family can share the grade of interest, intended start date and preferred contact details. The enquiry reaches the right staff member, with a clear acknowledgement and next step. Existing family questions and donor enquiries follow separate routes.
+
+-  01 Grade and interest
+-  02 Admissions enquiry
+-  03 Conversation or tour
+-  04 Application process
 
 ## A website for the whole school community.
 
@@ -54,6 +63,14 @@ Prospective families need an introduction. Current families need practical infor
 
 Families considering your school need to understand its location, travel arrangements and relationship with the surrounding community. We use actual school information and local photography to explain those details, with an easy way to arrange a conversation or tour.
 
+St. James School campus imagery from the website project
+
+## St. James School
+
+Design, marketing and donor storytelling brought together around the school’s future. The website and film give the vision a clear, visual expression and create a place for the community to learn more.
+
+[Explore the design and marketing work](https://michaelmck.site/marketing-branding/)
+
 ## Show the school that families will actually experience.
 
 Your school has a distinctive culture, setting and educational approach. I help organise that story around the decisions families make, using real photography and clear explanations of the school day, programs and community.
@@ -69,23 +86,6 @@ Clear admissions, program and location pages help Google and AI search understan
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “How do I arrange a visit to an independent school in Kelowna?”The admissions page should explain who to contact, what the visit involves and how it fits into the application process. I connect that information to grades, school life and practical family questions.
-
-St. James School campus imagery from the website project
-
-## St. James School
-
-Design, marketing and donor storytelling brought together around the school’s future. The website and film give the vision a clear, visual expression and create a place for the community to learn more.
-
-[Explore the design and marketing work](https://michaelmck.site/marketing-branding/)
-
-## Make the enquiry useful to your admissions team.
-
-A family can share the grade of interest, intended start date and preferred contact details. The enquiry reaches the right staff member, with a clear acknowledgement and next step. Existing family questions and donor enquiries follow separate routes.
-
--  01 Grade and interest
--  02 Admissions enquiry
--  03 Conversation or tour
--  04 Application process
 
 ## A better website. The foundations handled.
 

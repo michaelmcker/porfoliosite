@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-07: Revising the industry collection for stronger design variety after user feedback. Reviewing website artwork and page composition before changing the generated sources; retaining industry-specific content and shared identity.
+
 2026-10-07: All 24 industry website pages and the industry index are deployed and live-verified. No remaining implementation work for this release.
 
 2026-10-07: ABC live-site capture and transparent RCCV laptop complete; 143 checks pass.

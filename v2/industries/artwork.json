@@ -1,0 +1,194 @@
+{
+  "plumbers": {
+    "src": "/v2/industries/assets/plumbers-design-2.webp",
+    "small": "/v2/industries/assets/plumbers-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Plumbers website design",
+    "format": "device"
+  },
+  "electricians": {
+    "src": "/v2/industries/assets/electricians-design-2.webp",
+    "small": "/v2/industries/assets/electricians-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Electricians website design",
+    "format": "page"
+  },
+  "hvac": {
+    "src": "/v2/industries/assets/hvac-design-2.webp",
+    "small": "/v2/industries/assets/hvac-design-2-small.webp",
+    "width": 1225,
+    "height": 1284,
+    "alt": "Hvac website design",
+    "format": "page"
+  },
+  "roofers": {
+    "src": "/v2/industries/assets/roofers-design-2.webp",
+    "small": "/v2/industries/assets/roofers-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Roofers website design",
+    "format": "page"
+  },
+  "landscapers": {
+    "src": "/v2/industries/assets/landscapers-design-2.webp",
+    "small": "/v2/industries/assets/landscapers-design-2-small.webp",
+    "width": 1145,
+    "height": 1374,
+    "alt": "Landscapers website design",
+    "format": "page"
+  },
+  "home-builders": {
+    "src": "/v2/industries/assets/home-builders-design-2.webp",
+    "small": "/v2/industries/assets/home-builders-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Home builders website design",
+    "format": "page"
+  },
+  "appliance-repair": {
+    "src": "/v2/industries/assets/appliance-repair-design-2.webp",
+    "small": "/v2/industries/assets/appliance-repair-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Appliance repair website design",
+    "format": "page"
+  },
+  "law-firms": {
+    "src": "/v2/industries/assets/law-firms-design-2.webp",
+    "small": "/v2/industries/assets/law-firms-design-2-small.webp",
+    "width": 1145,
+    "height": 1374,
+    "alt": "Law firms website design",
+    "format": "page"
+  },
+  "accountants": {
+    "src": "/v2/industries/assets/accountants-design-2.webp",
+    "small": "/v2/industries/assets/accountants-design-2-small.webp",
+    "width": 1223,
+    "height": 1286,
+    "alt": "Accountants website design",
+    "format": "page"
+  },
+  "financial-advisors": {
+    "src": "/v2/industries/assets/financial-advisors-design-2.webp",
+    "small": "/v2/industries/assets/financial-advisors-design-2-small.webp",
+    "width": 1225,
+    "height": 1284,
+    "alt": "Financial advisors website design",
+    "format": "page"
+  },
+  "real-estate": {
+    "src": "/v2/industries/assets/real-estate-design-2.webp",
+    "small": "/v2/industries/assets/real-estate-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Real estate website design",
+    "format": "page"
+  },
+  "property-management": {
+    "src": "/v2/industries/assets/property-management-design-2.webp",
+    "small": "/v2/industries/assets/property-management-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Property management website design",
+    "format": "page"
+  },
+  "medical-practices": {
+    "src": "/v2/industries/assets/medical-practices-design-2.webp",
+    "small": "/v2/industries/assets/medical-practices-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Medical practices website design",
+    "format": "page"
+  },
+  "dentists": {
+    "src": "/v2/industries/assets/dentists-design-2.webp",
+    "small": "/v2/industries/assets/dentists-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Dentists website design",
+    "format": "page"
+  },
+  "physiotherapy": {
+    "src": "/v2/industries/assets/physiotherapy-design-2.webp",
+    "small": "/v2/industries/assets/physiotherapy-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Physiotherapy website design",
+    "format": "page"
+  },
+  "medical-spas": {
+    "src": "/v2/industries/assets/medical-spas-design-2.webp",
+    "small": "/v2/industries/assets/medical-spas-design-2-small.webp",
+    "width": 1024,
+    "height": 1536,
+    "alt": "Medical spas website design",
+    "format": "page"
+  },
+  "charities": {
+    "src": "/v2/industries/assets/charities-design-2.webp",
+    "small": "/v2/industries/assets/charities-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Charities website design",
+    "format": "page"
+  },
+  "private-schools": {
+    "src": "/v2/industries/assets/private-schools-design-2.webp",
+    "small": "/v2/industries/assets/private-schools-design-2-small.webp",
+    "width": 1024,
+    "height": 1536,
+    "alt": "Private schools website design",
+    "format": "page"
+  },
+  "hotels": {
+    "src": "/v2/industries/assets/hotels-design-2.webp",
+    "small": "/v2/industries/assets/hotels-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Hotels website design",
+    "format": "page"
+  },
+  "vacation-rentals": {
+    "src": "/v2/industries/assets/vacation-rentals-design-2.webp",
+    "small": "/v2/industries/assets/vacation-rentals-design-2-small.webp",
+    "width": 1024,
+    "height": 1536,
+    "alt": "Vacation rentals website design",
+    "format": "page"
+  },
+  "wineries": {
+    "src": "/v2/industries/assets/wineries-design-2.webp",
+    "small": "/v2/industries/assets/wineries-design-2-small.webp",
+    "width": 1222,
+    "height": 1287,
+    "alt": "Wineries website design",
+    "format": "page"
+  },
+  "restaurants": {
+    "src": "/v2/industries/assets/restaurants-design-2.webp",
+    "small": "/v2/industries/assets/restaurants-design-2-small.webp",
+    "width": 1024,
+    "height": 1536,
+    "alt": "Restaurants website design",
+    "format": "page"
+  },
+  "retail": {
+    "src": "/v2/industries/assets/retail-design-2.webp",
+    "small": "/v2/industries/assets/retail-design-2-small.webp",
+    "width": 1024,
+    "height": 1536,
+    "alt": "Retail website design",
+    "format": "page"
+  },
+  "car-dealerships": {
+    "src": "/v2/industries/assets/car-dealerships-design-2.webp",
+    "small": "/v2/industries/assets/car-dealerships-design-2-small.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Car dealerships website design",
+    "format": "page"
+  }
+}

@@ -47,3 +47,7 @@ The rejected services hub, guides and sample report are archived in docs/rejecte
 - Canonical HTML, Markdown alternates, structured data, sitemap and LLM discovery are generated together. Content: `scripts/industry-content-*.mjs`; renderer: `scripts/build-industries.mjs`; style/assets: `v2/industries/`.
 - `npm run build:industries` rebuilds this collection. `promote:v2` also rebuilds it after promoting the existing service pages.
 - The 30% result refers to qualified bookings for Cool Runnings. New industry visuals are not presented as client case studies.
+
+
+### Industry design variety (2026-10-07)
+24 individually designed website examples with four responsive page compositions and varied section order. Canonical renderer: `scripts/build-industries.mjs`; image manifest: `v2/industries/artwork.json`; styling: `v2/industries/industries.css`. Existing industry-specific SEO content, schema and Markdown remain available.

@@ -7,7 +7,7 @@ Web design for roofing companies in Kelowna and the Okanagan. Put the quality of
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Roofing companies website displayed on a laptop
+Roofers website design
 
 ## 30%more qualified bookings
 

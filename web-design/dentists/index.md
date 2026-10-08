@@ -7,13 +7,22 @@ Web design for dental practices in Kelowna. Introduce your team, explain the fir
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Dentists website displayed on a laptop
+Dentists website design
 
 ## Make the practice feel familiar before someone walks in.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+## A clear handoff to the people who arrange care.
+
+We connect the website to your booking process and make it clear whether someone is requesting a callback or choosing an available appointment. New-patient enquiries can include the broad reason for contact, while detailed health information stays within your practice’s onboarding process.
+
+-  01 Visit type
+-  02 Appointment request
+-  03 Practice response
+-  04 First visit
 
 ## Different visits need different starting points.
 
@@ -54,6 +63,14 @@ A new patient, a returning patient and someone seeking urgent help should each b
 
 Clear directions, parking details, entrance information and current hours help someone arrive with confidence. If your practice serves families across Kelowna and surrounding communities, the content can reflect that real catchment and the services available at your actual location.
 
+Upon This Rock visual identity and podcast artwork
+
+## Upon This Rock
+
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
+
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
+
 ## Build confidence through clarity and care.
 
 Your website should reflect the experience of visiting the practice. Thoughtful typography, original photography and straightforward information can make the first impression feel welcoming and capable.
@@ -69,23 +86,6 @@ Accurate business listings and useful treatment and practice pages support disco
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Which dental practices in Kelowna are accepting new patients?”Your current new-patient information should be prominent, with the registration process, team introduction and booking action close by. I organise these facts into a clear page structure.
-
-Upon This Rock visual identity and podcast artwork
-
-## Upon This Rock
-
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
-
-## A clear handoff to the people who arrange care.
-
-We connect the website to your booking process and make it clear whether someone is requesting a callback or choosing an available appointment. New-patient enquiries can include the broad reason for contact, while detailed health information stays within your practice’s onboarding process.
-
--  01 Visit type
--  02 Appointment request
--  03 Practice response
--  04 First visit
 
 ## A better website. The foundations handled.
 

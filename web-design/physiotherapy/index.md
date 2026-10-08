@@ -7,7 +7,7 @@ Web design for physiotherapy and rehabilitation clinics in Kelowna. Help people 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Physiotherapy website displayed on a laptop
+Physiotherapy website design
 
 ## A good first visit begins with clear expectations.
 

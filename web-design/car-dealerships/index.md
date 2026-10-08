@@ -7,13 +7,21 @@ Web design for car dealerships in Kelowna and the Okanagan. Make inventory easie
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Car dealerships website displayed on a laptop
+Car dealerships website design
 
 ## A better buying journey starts with useful vehicle information.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+ABC Appliance website showing appliance repair services and a request-service action
+
+## ABC Appliance
+
+A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
+
+[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## Help each buyer take the next step.
 
@@ -69,14 +77,6 @@ Current inventory information, original vehicle media and consistent business de
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Where can I enquire about a used SUV in Kelowna?”A useful vehicle page presents current details, photographs, the dealership location and an enquiry tied to that vehicle. I connect the inventory experience with readable content and clear contact routes.
-
-ABC Appliance website showing appliance repair services and a request-service action
-
-## ABC Appliance
-
-A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
-
-[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## Keep the vehicle attached to the lead.
 

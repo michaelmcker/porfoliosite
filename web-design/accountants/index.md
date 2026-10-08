@@ -7,13 +7,15 @@ Web design for accountants and bookkeepers in Kelowna. Make your services easier
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Accountants website displayed on a laptop
+Accountants website design
 
-## A website that reflects the practice you want to build.
+## Show what working together actually looks like.
 
-Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
+Many accounting sites list services without explaining the relationship. I help you describe the first conversation, the information you need, how work is organised and what clients can expect from your team.
 
-[Explore the work](#selected-work)
+Specialist experience deserves specific content. If you work with trades, professional practices or hospitality businesses, those pages can explain the actual questions you help those owners address. Relevant experience is more persuasive than an exhaustive list of industries.
+
+The design should make a capable firm feel approachable. Clear biographies, original photography and a straightforward service structure give prospective clients a sense of who will be looking after their business.
 
 ## Your next client should recognise themselves.
 
@@ -54,13 +56,13 @@ A growing owner-managed company, a contractor and someone filing a personal retu
 
 Your Okanagan presence can be expressed through the clients you serve, local business experience and how meetings work. We make it clear whether clients can meet you in Kelowna, work remotely or arrange an appointment elsewhere in the valley. Seasonal availability and new-client enquiries can be updated as your workload changes.
 
-## Show what working together actually looks like.
+Upon This Rock visual identity and podcast artwork
 
-Many accounting sites list services without explaining the relationship. I help you describe the first conversation, the information you need, how work is organised and what clients can expect from your team.
+## Upon This Rock
 
-Specialist experience deserves specific content. If you work with trades, professional practices or hospitality businesses, those pages can explain the actual questions you help those owners address. Relevant experience is more persuasive than an exhaustive list of industries.
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
 
-The design should make a capable firm feel approachable. Clear biographies, original photography and a straightforward service structure give prospective clients a sense of who will be looking after their business.
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
 
 ## Built to be found. Ready to be chosen.
 
@@ -70,13 +72,11 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Who provides bookkeeping for contractors in Kelowna?”A service page can explain your contractor experience, the scope of ongoing support and how a business owner gets started. I connect that content to your team profiles, enquiry route and technical SEO.
 
-Upon This Rock visual identity and podcast artwork
+## A website that reflects the practice you want to build.
 
-## Upon This Rock
+Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
+[Explore the work](#selected-work)
 
 ## Start with fit, then move into onboarding.
 

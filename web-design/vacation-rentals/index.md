@@ -7,13 +7,22 @@ Website design for vacation rentals and distinctive stays in the Okanagan. Make 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Vacation rentals website displayed on a laptop
+Vacation rentals website design
 
 ## Your property deserves more than a listing in a grid.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+## Connect the story to the calendar.
+
+Visitors should reach current availability or a useful reservation enquiry without searching the page. The website can connect your existing booking tool, with practical questions routed separately. We agree how reservations, payments and confirmations are handled before building.
+
+-  01 Explore the stay
+-  02 Check the details
+-  03 Choose dates
+-  04 Reserve or enquire
 
 ## Make the stay easy to imagine and understand.
 
@@ -54,6 +63,14 @@ A guest wants to know what makes the property special, whether it suits their gr
 
 Useful Okanagan content starts with the actual location and experience: access, nearby activities, practical travel information and the character of the property. We present your current operating information and policies consistently, so guests know what they are booking.
 
+Okanagan Treehouse accommodation website design
+
+## Okanagan Treehouse
+
+A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
+
+[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
+
 ## Give a distinctive property a distinctive website.
 
 I design the page around the property itself: its setting, architecture, atmosphere and the experience of staying there. Original media does the visual work while concise information helps the guest make a decision.
@@ -69,23 +86,6 @@ Original property content and clear local information give Google and AI search 
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Where can I book a distinctive Okanagan getaway directly?”A useful property page shows the space, location, amenities, sleeping arrangements and a clear route to dates. I organise those details around the photography and booking action.
-
-Okanagan Treehouse accommodation website design
-
-## Okanagan Treehouse
-
-A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
-
-[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
-
-## Connect the story to the calendar.
-
-Visitors should reach current availability or a useful reservation enquiry without searching the page. The website can connect your existing booking tool, with practical questions routed separately. We agree how reservations, payments and confirmations are handled before building.
-
--  01 Explore the stay
--  02 Check the details
--  03 Choose dates
--  04 Reserve or enquire
 
 ## A better website. The foundations handled.
 

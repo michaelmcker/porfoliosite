@@ -7,7 +7,7 @@ Website design for medical practices in Kelowna and the Okanagan. Help patients 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Medical practices website displayed on a laptop
+Medical practices website design
 
 ## A useful website can make life easier for patients and staff.
 

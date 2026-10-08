@@ -7,13 +7,21 @@ Web design for real estate agents and teams in Kelowna. Bring your local knowled
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Real estate website displayed on a laptop
+Real estate website design
 
 ## Your value extends beyond the properties on the market.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+Okanagan Treehouse accommodation website design
+
+## Okanagan Treehouse
+
+A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
+
+[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Help buyers and sellers see your value.
 
@@ -69,14 +77,6 @@ Original local content and clearly structured services help search tools underst
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Which Kelowna real estate agents offer property video marketing?”Show the marketing service and examples of your work, then explain how a seller starts the conversation. I connect those pages with your biography, areas served and enquiry route.
-
-Okanagan Treehouse accommodation website design
-
-## Okanagan Treehouse
-
-A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
-
-[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Bring the context into your CRM.
 

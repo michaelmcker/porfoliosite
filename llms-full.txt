@@ -274,7 +274,7 @@ Web design for plumbers in Kelowna and the Okanagan. Make it easier for the righ
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Plumbers website displayed on a laptop
+Plumbers website design
 
 ## 30%more qualified bookings
 
@@ -417,13 +417,21 @@ Web design for electricians in Kelowna and the Okanagan. Show your expertise, ma
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Electricians website displayed on a laptop
+Electricians website design
 
 ## 30%more qualified bookings
 
 Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
 
 [See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+
+ABC Appliance website showing appliance repair services and a request-service action
+
+## ABC Appliance
+
+A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
+
+[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## A better brief starts on the website.
 
@@ -479,14 +487,6 @@ Dedicated pages for actual services, consistent Google Business Profile details 
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Can an electrician in Kelowna install an EV charger at our strata property?”Your page can answer whether you take strata projects, how the assessment begins and who to contact. I structure the service information, project evidence and relevant credentials so customers and search tools can understand the offer.
-
-ABC Appliance website showing appliance repair services and a request-service action
-
-## ABC Appliance
-
-A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
-
-[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## Enough information to start a worthwhile quote.
 
@@ -560,13 +560,22 @@ Website design for heating and cooling businesses in Kelowna. Help customers fin
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Heating & cooling website displayed on a laptop
+Hvac website design
 
 ## 30%more qualified bookings
 
 Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
 
 [See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+
+## Connect the website to the service desk.
+
+The enquiry should reach the right person with the system type, location and contact details intact. An acknowledgement can explain the next step immediately. Optional workflows can sort requests and prompt follow-up, giving your team more time for the actual customer conversation.
+
+-  01 Service request
+-  02 Team routing
+-  03 Callback or assessment
+-  04 Booked work
 
 ## One business. Three customer journeys.
 
@@ -607,6 +616,14 @@ Repair, replacement and maintenance are different decisions. Your website should
 
 A Kelowna repair route and an installation project elsewhere in the valley may have different scheduling requirements. We make coverage clear by service type and connect it to relevant local projects. Your site becomes a useful explanation of how you work across the Okanagan, with current contact and availability information.
 
+Cool Runnings website presenting its Okanagan landscaping services
+
+## Cool Runnings
+
+Website, local SEO and conversion work that brought a 30% increase in qualified bookings. Clear service pages, local coverage and a straightforward enquiry route connect the business with the work it wants.
+
+[See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+
 ## Explain the next step before asking for the lead.
 
 Someone comparing heating and cooling companies is also comparing how easy it feels to get help. I write the service pages around what your team does, who you help and how the first conversation works. Equipment names can support that explanation without becoming the whole page.
@@ -622,23 +639,6 @@ Google and ChatGPT need a clear explanation of your business. Service pages, con
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Who services my heat pump in Kelowna?”A useful answer names the services and equipment you handle, the area you cover and how to request help. I build those facts into the content and technical structure, supported by real project information.
-
-Cool Runnings website presenting its Okanagan landscaping services
-
-## Cool Runnings
-
-Website, local SEO and conversion work that brought a 30% increase in qualified bookings. Clear service pages, local coverage and a straightforward enquiry route connect the business with the work it wants.
-
-[See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
-
-## Connect the website to the service desk.
-
-The enquiry should reach the right person with the system type, location and contact details intact. An acknowledgement can explain the next step immediately. Optional workflows can sort requests and prompt follow-up, giving your team more time for the actual customer conversation.
-
--  01 Service request
--  02 Team routing
--  03 Callback or assessment
--  04 Booked work
 
 ## A better website. The foundations handled.
 
@@ -703,7 +703,7 @@ Web design for roofing companies in Kelowna and the Okanagan. Put the quality of
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Roofing companies website displayed on a laptop
+Roofers website design
 
 ## 30%more qualified bookings
 
@@ -846,13 +846,15 @@ Website design for landscapers in Kelowna and the Okanagan. Show the spaces you 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Landscaping businesses website displayed on a laptop
+Landscapers website design
 
-## 30%more qualified bookings
+## Cool Runnings: from no website to more bookings.
 
-Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
+For Cool Runnings, I brought together a new website, local service content, an SEO strategy and improvements to the enquiry journey. The work increased leads and helped deliver a 30% increase in qualified bookings.
 
-[See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+Service and location pages made the offer easier to find. Useful local content created more routes into the business. Clear calls to action helped people move from reading about the service to making an enquiry.
+
+That connection matters: the website, search strategy and conversion path should support each other. Your project photos and experience give us the material to build around the landscaping work you want next.
 
 ## Design projects and maintenance need different paths.
 
@@ -893,13 +895,13 @@ A homeowner planning an outdoor transformation wants different information from 
 
 An outdoor space on a sloped Lake Country property raises different questions from a Kelowna strata garden. Show the brief, terrain, planting or hardscape choices and the finished result. Where water-wise landscaping is part of your service, explain your approach through the work itself. Customers can see how your experience relates to their property.
 
-## Cool Runnings: from no website to more bookings.
+Cool Runnings website presenting its Okanagan landscaping services
 
-For Cool Runnings, I brought together a new website, local service content, an SEO strategy and improvements to the enquiry journey. The work increased leads and helped deliver a 30% increase in qualified bookings.
+## Cool Runnings
 
-Service and location pages made the offer easier to find. Useful local content created more routes into the business. Clear calls to action helped people move from reading about the service to making an enquiry.
+Website, local SEO and conversion work that brought a 30% increase in qualified bookings. Clear service pages, local coverage and a straightforward enquiry route connect the business with the work it wants.
 
-That connection matters: the website, search strategy and conversion path should support each other. Your project photos and experience give us the material to build around the landscaping work you want next.
+[See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
 
 ## Built to be found. Ready to be chosen.
 
@@ -909,11 +911,9 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Who creates low-maintenance gardens in Kelowna?”The best material is specific: the service you offer, the properties you work with, original photographs and an explanation of your approach. I turn that into useful pages for local search and AI discovery.
 
-Cool Runnings website presenting its Okanagan landscaping services
+## 30%more qualified bookings
 
-## Cool Runnings
-
-Website, local SEO and conversion work that brought a 30% increase in qualified bookings. Clear service pages, local coverage and a straightforward enquiry route connect the business with the work it wants.
+Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
 
 [See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
 
@@ -989,13 +989,21 @@ Website design for custom home builders and renovation companies in Kelowna. Sho
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Home builders website displayed on a laptop
+Home builders website design
 
 ## 30%more qualified bookings
 
 Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
 
 [See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+
+Okanagan Treehouse accommodation website design
+
+## Okanagan Treehouse
+
+A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
+
+[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Give the right project a reason to come to you.
 
@@ -1051,14 +1059,6 @@ The structure connects services, projects, your team and the enquiry route. Titl
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Which Kelowna builder works on homes like the one I want to create?”Your site should connect project type, design approach, location and evidence. Original project pages give both search visitors and AI tools a much clearer picture than a broad claim that you build every kind of home.
-
-Okanagan Treehouse accommodation website design
-
-## Okanagan Treehouse
-
-A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
-
-[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Start with project fit.
 
@@ -1132,13 +1132,21 @@ Web design for appliance repair businesses in Kelowna and the Okanagan. Make you
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Appliance repair website displayed on a laptop
+Appliance repair website design
 
 ## 30%more qualified bookings
 
 Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
 
 [See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+
+ABC Appliance website showing appliance repair services and a request-service action
+
+## ABC Appliance
+
+A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
+
+[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## Answer the repair questions that matter first.
 
@@ -1194,14 +1202,6 @@ The technical setup supports the content: page titles, headings, internal links,
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Who repairs this appliance in Kelowna?”Useful content identifies the appliance, supported brands, service area and repair-request process. I organise those facts into pages that are readable for customers and accessible to Google and AI search.
-
-ABC Appliance website showing appliance repair services and a request-service action
-
-## ABC Appliance
-
-A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
-
-[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## Get the details once.
 
@@ -1275,13 +1275,15 @@ Web design for law firms in Kelowna and the Okanagan. Help prospective clients u
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Law firms website displayed on a laptop
+Law firms website design
 
-## A clear introduction to the people behind your practice.
+## A considered website for a considered decision.
 
-Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
+I organise the site around the questions prospective clients bring to your firm. Practice pages explain the type of work you undertake, the initial process and the relevant team. A family matter and a business transaction should not lead to the same generic paragraph.
 
-[Explore the work](#selected-work)
+Navigation needs to serve people at different stages. Someone referred to a particular lawyer should find that biography quickly. Someone finding you through search should be able to identify the relevant practice and contact route just as easily.
+
+Your team reviews the wording before launch. We establish a repeatable format for biographies, practice updates and articles, so the site can develop with your firm without becoming difficult to maintain.
 
 ## Make the first conversation easier to begin.
 
@@ -1322,13 +1324,13 @@ Someone visiting a law firm website needs to understand whether you handle their
 
 Show where clients can meet you, how remote appointments work and which communities your practice serves. Office directions, parking and accessibility information help turn an online introduction into an easier visit. Local pages should reflect a real office, service or area of experience.
 
-## A considered website for a considered decision.
+Upon This Rock visual identity and podcast artwork
 
-I organise the site around the questions prospective clients bring to your firm. Practice pages explain the type of work you undertake, the initial process and the relevant team. A family matter and a business transaction should not lead to the same generic paragraph.
+## Upon This Rock
 
-Navigation needs to serve people at different stages. Someone referred to a particular lawyer should find that biography quickly. Someone finding you through search should be able to identify the relevant practice and contact route just as easily.
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
 
-Your team reviews the wording before launch. We establish a repeatable format for biographies, practice updates and articles, so the site can develop with your firm without becoming difficult to maintain.
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
 
 ## Built to be found. Ready to be chosen.
 
@@ -1338,13 +1340,11 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Which Kelowna law firms handle business purchases?”A useful practice page explains the work your firm undertakes, introduces the relevant lawyers and provides a clear way to enquire. Those facts become the foundation for headings, internal links and search metadata.
 
-Upon This Rock visual identity and podcast artwork
+## A clear introduction to the people behind your practice.
 
-## Upon This Rock
+Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
+[Explore the work](#selected-work)
 
 ## An enquiry process that respects the way your firm works.
 
@@ -1418,13 +1418,15 @@ Web design for accountants and bookkeepers in Kelowna. Make your services easier
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Accountants website displayed on a laptop
+Accountants website design
 
-## A website that reflects the practice you want to build.
+## Show what working together actually looks like.
 
-Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
+Many accounting sites list services without explaining the relationship. I help you describe the first conversation, the information you need, how work is organised and what clients can expect from your team.
 
-[Explore the work](#selected-work)
+Specialist experience deserves specific content. If you work with trades, professional practices or hospitality businesses, those pages can explain the actual questions you help those owners address. Relevant experience is more persuasive than an exhaustive list of industries.
+
+The design should make a capable firm feel approachable. Clear biographies, original photography and a straightforward service structure give prospective clients a sense of who will be looking after their business.
 
 ## Your next client should recognise themselves.
 
@@ -1465,13 +1467,13 @@ A growing owner-managed company, a contractor and someone filing a personal retu
 
 Your Okanagan presence can be expressed through the clients you serve, local business experience and how meetings work. We make it clear whether clients can meet you in Kelowna, work remotely or arrange an appointment elsewhere in the valley. Seasonal availability and new-client enquiries can be updated as your workload changes.
 
-## Show what working together actually looks like.
+Upon This Rock visual identity and podcast artwork
 
-Many accounting sites list services without explaining the relationship. I help you describe the first conversation, the information you need, how work is organised and what clients can expect from your team.
+## Upon This Rock
 
-Specialist experience deserves specific content. If you work with trades, professional practices or hospitality businesses, those pages can explain the actual questions you help those owners address. Relevant experience is more persuasive than an exhaustive list of industries.
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
 
-The design should make a capable firm feel approachable. Clear biographies, original photography and a straightforward service structure give prospective clients a sense of who will be looking after their business.
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
 
 ## Built to be found. Ready to be chosen.
 
@@ -1481,13 +1483,11 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Who provides bookkeeping for contractors in Kelowna?”A service page can explain your contractor experience, the scope of ongoing support and how a business owner gets started. I connect that content to your team profiles, enquiry route and technical SEO.
 
-Upon This Rock visual identity and podcast artwork
+## A website that reflects the practice you want to build.
 
-## Upon This Rock
+Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
+[Explore the work](#selected-work)
 
 ## Start with fit, then move into onboarding.
 
@@ -1561,13 +1561,15 @@ Web design for financial advisors in Kelowna and the Okanagan. Introduce your ap
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Financial advisors website displayed on a laptop
+Financial advisors website design
 
-## The right people should understand why they would work with you.
+## Let the website sound like a conversation with you.
 
-Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
+I start with your practice positioning and the clients you want to reach. The page structure follows their questions: who you help, how you work, what the first conversation covers and how to arrange it.
 
-[Explore the work](#selected-work)
+Your photography, biographies and language should work together. A website can feel personal and polished without overwhelming the visitor with technical descriptions or a wall of market commentary.
+
+Content follows your firm’s approval process. We establish layouts for client segments, team profiles and updates so new material can be reviewed and published consistently.
 
 ## Build the introduction around your clients.
 
@@ -1608,13 +1610,13 @@ A business owner, a family and someone approaching retirement may be asking diff
 
 Show how clients meet with you in the Okanagan, whether in Kelowna, another office or remotely. Practical appointment information and a recognisable local presence make the first step easier. Any community or industry focus should come from the actual experience of your practice.
 
-## Let the website sound like a conversation with you.
+Upon This Rock visual identity and podcast artwork
 
-I start with your practice positioning and the clients you want to reach. The page structure follows their questions: who you help, how you work, what the first conversation covers and how to arrange it.
+## Upon This Rock
 
-Your photography, biographies and language should work together. A website can feel personal and polished without overwhelming the visitor with technical descriptions or a wall of market commentary.
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
 
-Content follows your firm’s approval process. We establish layouts for client segments, team profiles and updates so new material can be reviewed and published consistently.
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
 
 ## Built to be found. Ready to be chosen.
 
@@ -1624,13 +1626,11 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Where can I meet a financial advisor in Kelowna?”Your site should clearly explain the practice, the people you work with, your office or meeting arrangements and the contact route. I build those facts into a readable, connected page structure.
 
-Upon This Rock visual identity and podcast artwork
+## The right people should understand why they would work with you.
 
-## Upon This Rock
+Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
+[Explore the work](#selected-work)
 
 ## Make the first meeting easy to arrange.
 
@@ -1704,13 +1704,21 @@ Web design for real estate agents and teams in Kelowna. Bring your local knowled
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Real estate website displayed on a laptop
+Real estate website design
 
 ## Your value extends beyond the properties on the market.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+Okanagan Treehouse accommodation website design
+
+## Okanagan Treehouse
+
+A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
+
+[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Help buyers and sellers see your value.
 
@@ -1766,14 +1774,6 @@ Original local content and clearly structured services help search tools underst
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Which Kelowna real estate agents offer property video marketing?”Show the marketing service and examples of your work, then explain how a seller starts the conversation. I connect those pages with your biography, areas served and enquiry route.
-
-Okanagan Treehouse accommodation website design
-
-## Okanagan Treehouse
-
-A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
-
-[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Bring the context into your CRM.
 
@@ -1847,7 +1847,7 @@ Web design for property managers in Kelowna and the Okanagan. Win the confidence
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Property management website displayed on a laptop
+Property management website design
 
 ## Owners, applicants and tenants should each know where to go.
 
@@ -1990,7 +1990,7 @@ Website design for medical practices in Kelowna and the Okanagan. Help patients 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Medical practices website displayed on a laptop
+Medical practices website design
 
 ## A useful website can make life easier for patients and staff.
 
@@ -2133,13 +2133,22 @@ Web design for dental practices in Kelowna. Introduce your team, explain the fir
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Dentists website displayed on a laptop
+Dentists website design
 
 ## Make the practice feel familiar before someone walks in.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+## A clear handoff to the people who arrange care.
+
+We connect the website to your booking process and make it clear whether someone is requesting a callback or choosing an available appointment. New-patient enquiries can include the broad reason for contact, while detailed health information stays within your practice’s onboarding process.
+
+-  01 Visit type
+-  02 Appointment request
+-  03 Practice response
+-  04 First visit
 
 ## Different visits need different starting points.
 
@@ -2180,6 +2189,14 @@ A new patient, a returning patient and someone seeking urgent help should each b
 
 Clear directions, parking details, entrance information and current hours help someone arrive with confidence. If your practice serves families across Kelowna and surrounding communities, the content can reflect that real catchment and the services available at your actual location.
 
+Upon This Rock visual identity and podcast artwork
+
+## Upon This Rock
+
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
+
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
+
 ## Build confidence through clarity and care.
 
 Your website should reflect the experience of visiting the practice. Thoughtful typography, original photography and straightforward information can make the first impression feel welcoming and capable.
@@ -2195,23 +2212,6 @@ Accurate business listings and useful treatment and practice pages support disco
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Which dental practices in Kelowna are accepting new patients?”Your current new-patient information should be prominent, with the registration process, team introduction and booking action close by. I organise these facts into a clear page structure.
-
-Upon This Rock visual identity and podcast artwork
-
-## Upon This Rock
-
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
-
-## A clear handoff to the people who arrange care.
-
-We connect the website to your booking process and make it clear whether someone is requesting a callback or choosing an available appointment. New-patient enquiries can include the broad reason for contact, while detailed health information stays within your practice’s onboarding process.
-
--  01 Visit type
--  02 Appointment request
--  03 Practice response
--  04 First visit
 
 ## A better website. The foundations handled.
 
@@ -2276,7 +2276,7 @@ Web design for physiotherapy and rehabilitation clinics in Kelowna. Help people 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Physiotherapy website displayed on a laptop
+Physiotherapy website design
 
 ## A good first visit begins with clear expectations.
 
@@ -2419,13 +2419,15 @@ Web design for medical spas and aesthetic clinics in Kelowna. Bring your setting
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Medical spas website displayed on a laptop
+Medical spas website design
 
-## Create confidence before the consultation.
+## The brand and the booking journey belong together.
 
-Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
+I establish a visual direction that reflects your clinic, then make it work across service pages, team profiles and appointment actions. The website should feel coherent from the first image to the final booking step.
 
-[Explore the work](#selected-work)
+Treatment content needs enough detail to help someone decide what to ask about. Your team reviews the descriptions and any photography used to explain services. Practical visit information gives the page depth without overwhelming the design.
+
+Campaigns can lead to the relevant service or consultation page. That creates a consistent experience between an ad, a social post and the website someone uses to contact you.
 
 ## A beautiful website should also answer the questions.
 
@@ -2466,13 +2468,13 @@ Visitors need to understand the service, the people providing it and how a consu
 
 Original clinic photography, a clear location and accurate appointment information make the experience tangible. We connect the services you actually offer with your local presence, including directions, parking and opening hours that are easy to maintain.
 
-## The brand and the booking journey belong together.
+Upon This Rock visual identity and podcast artwork
 
-I establish a visual direction that reflects your clinic, then make it work across service pages, team profiles and appointment actions. The website should feel coherent from the first image to the final booking step.
+## Upon This Rock
 
-Treatment content needs enough detail to help someone decide what to ask about. Your team reviews the descriptions and any photography used to explain services. Practical visit information gives the page depth without overwhelming the design.
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
 
-Campaigns can lead to the relevant service or consultation page. That creates a consistent experience between an ad, a social post and the website someone uses to contact you.
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
 
 ## Built to be found. Ready to be chosen.
 
@@ -2482,13 +2484,11 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Where can I book an aesthetic consultation in Kelowna?”The website can explain the consultation, introduce the team and show how to arrange an appointment. I build the service information and contact route into a clear, connected structure.
 
-Upon This Rock visual identity and podcast artwork
+## Create confidence before the consultation.
 
-## Upon This Rock
+Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
+[Explore the work](#selected-work)
 
 ## Make the next step feel personal and simple.
 
@@ -2562,7 +2562,7 @@ Web design for charities and nonprofits in Kelowna and the Okanagan. Bring your 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Charities & nonprofits website displayed on a laptop
+Charities website design
 
 ## A clear story. A meaningful reason to act.
 
@@ -2705,13 +2705,22 @@ Web design for independent and private schools in Kelowna and the Okanagan. Show
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Independent schools website displayed on a laptop
+Private schools website design
 
 ## A school’s character should come through before the first tour.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+## Make the enquiry useful to your admissions team.
+
+A family can share the grade of interest, intended start date and preferred contact details. The enquiry reaches the right staff member, with a clear acknowledgement and next step. Existing family questions and donor enquiries follow separate routes.
+
+-  01 Grade and interest
+-  02 Admissions enquiry
+-  03 Conversation or tour
+-  04 Application process
 
 ## A website for the whole school community.
 
@@ -2752,6 +2761,14 @@ Prospective families need an introduction. Current families need practical infor
 
 Families considering your school need to understand its location, travel arrangements and relationship with the surrounding community. We use actual school information and local photography to explain those details, with an easy way to arrange a conversation or tour.
 
+St. James School campus imagery from the website project
+
+## St. James School
+
+Design, marketing and donor storytelling brought together around the school’s future. The website and film give the vision a clear, visual expression and create a place for the community to learn more.
+
+[Explore the design and marketing work](https://michaelmck.site/marketing-branding/)
+
 ## Show the school that families will actually experience.
 
 Your school has a distinctive culture, setting and educational approach. I help organise that story around the decisions families make, using real photography and clear explanations of the school day, programs and community.
@@ -2767,23 +2784,6 @@ Clear admissions, program and location pages help Google and AI search understan
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “How do I arrange a visit to an independent school in Kelowna?”The admissions page should explain who to contact, what the visit involves and how it fits into the application process. I connect that information to grades, school life and practical family questions.
-
-St. James School campus imagery from the website project
-
-## St. James School
-
-Design, marketing and donor storytelling brought together around the school’s future. The website and film give the vision a clear, visual expression and create a place for the community to learn more.
-
-[Explore the design and marketing work](https://michaelmck.site/marketing-branding/)
-
-## Make the enquiry useful to your admissions team.
-
-A family can share the grade of interest, intended start date and preferred contact details. The enquiry reaches the right staff member, with a clear acknowledgement and next step. Existing family questions and donor enquiries follow separate routes.
-
--  01 Grade and interest
--  02 Admissions enquiry
--  03 Conversation or tour
--  04 Application process
 
 ## A better website. The foundations handled.
 
@@ -2848,13 +2848,21 @@ Web design for hotels and resorts in Kelowna and the Okanagan. Show what makes y
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Hotels & resorts website displayed on a laptop
+Hotels website design
 
 ## The experience starts before a guest checks in.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+Okanagan Treehouse accommodation website design
+
+## Okanagan Treehouse
+
+A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
+
+[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Help guests decide, then help them book.
 
@@ -2910,14 +2918,6 @@ Room and experience pages, consistent property information and useful FAQs suppo
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Where can I book a hotel with lake access in Kelowna?”The site should clearly describe the property’s real amenities, room options, location and booking route. I give those facts a readable structure supported by original imagery.
-
-Okanagan Treehouse accommodation website design
-
-## Okanagan Treehouse
-
-A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
-
-[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Keep the route to a reservation clear.
 
@@ -2991,13 +2991,22 @@ Website design for vacation rentals and distinctive stays in the Okanagan. Make 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Vacation rentals website displayed on a laptop
+Vacation rentals website design
 
 ## Your property deserves more than a listing in a grid.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+## Connect the story to the calendar.
+
+Visitors should reach current availability or a useful reservation enquiry without searching the page. The website can connect your existing booking tool, with practical questions routed separately. We agree how reservations, payments and confirmations are handled before building.
+
+-  01 Explore the stay
+-  02 Check the details
+-  03 Choose dates
+-  04 Reserve or enquire
 
 ## Make the stay easy to imagine and understand.
 
@@ -3038,6 +3047,14 @@ A guest wants to know what makes the property special, whether it suits their gr
 
 Useful Okanagan content starts with the actual location and experience: access, nearby activities, practical travel information and the character of the property. We present your current operating information and policies consistently, so guests know what they are booking.
 
+Okanagan Treehouse accommodation website design
+
+## Okanagan Treehouse
+
+A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
+
+[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
+
 ## Give a distinctive property a distinctive website.
 
 I design the page around the property itself: its setting, architecture, atmosphere and the experience of staying there. Original media does the visual work while concise information helps the guest make a decision.
@@ -3053,23 +3070,6 @@ Original property content and clear local information give Google and AI search 
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Where can I book a distinctive Okanagan getaway directly?”A useful property page shows the space, location, amenities, sleeping arrangements and a clear route to dates. I organise those details around the photography and booking action.
-
-Okanagan Treehouse accommodation website design
-
-## Okanagan Treehouse
-
-A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
-
-[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
-
-## Connect the story to the calendar.
-
-Visitors should reach current availability or a useful reservation enquiry without searching the page. The website can connect your existing booking tool, with practical questions routed separately. We agree how reservations, payments and confirmations are handled before building.
-
--  01 Explore the stay
--  02 Check the details
--  03 Choose dates
--  04 Reserve or enquire
 
 ## A better website. The foundations handled.
 
@@ -3134,13 +3134,15 @@ Web design for wineries in Kelowna and the Okanagan. Connect the place, the wine
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Wineries website displayed on a laptop
+Wineries website design
 
-## One memorable brand across every part of the experience.
+## Let the place and the product tell the story together.
 
-Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
+I build the visual direction around your winery’s actual character: landscape, architecture, labels, people and the experience of visiting. Photography and film establish the mood, while clear content helps visitors choose what to do next.
 
-[Explore the work](#selected-work)
+The website needs to work with the tools behind the business. We review the shop, tasting reservations, membership and fulfilment systems before deciding which parts to integrate or retain.
+
+Seasonal experiences, events and new releases can share a consistent design system. Your team can update the important information without rebuilding the whole page each time.
 
 ## Three ways to deepen the relationship.
 
@@ -3181,13 +3183,13 @@ A first visit, an online order and a wine-club membership each need a clear plac
 
 A useful Okanagan winery page explains the actual setting, visitor experience, directions and reservation arrangements. Original landscape and property media gives people a reason to include you in their plans. Local content can support the experiences and events you really offer.
 
-## Let the place and the product tell the story together.
+Okanagan Treehouse accommodation website design
 
-I build the visual direction around your winery’s actual character: landscape, architecture, labels, people and the experience of visiting. Photography and film establish the mood, while clear content helps visitors choose what to do next.
+## Okanagan Treehouse
 
-The website needs to work with the tools behind the business. We review the shop, tasting reservations, membership and fulfilment systems before deciding which parts to integrate or retain.
+A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
 
-Seasonal experiences, events and new releases can share a consistent design system. Your team can update the important information without rebuilding the whole page each time.
+[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Built to be found. Ready to be chosen.
 
@@ -3197,13 +3199,11 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Which Kelowna wineries take tasting reservations?”Your tasting page can describe the experience, current visit details and how to reserve. I connect those facts to your location, photography and the appropriate booking tool.
 
-Okanagan Treehouse accommodation website design
+## One memorable brand across every part of the experience.
 
-## Okanagan Treehouse
+Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
-A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
-
-[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
+[Explore the work](#selected-work)
 
 ## Make every action feel like the same brand.
 
@@ -3277,13 +3277,22 @@ Web design for restaurants in Kelowna and the Okanagan. Let the food and atmosph
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Restaurants website displayed on a laptop
+Restaurants website design
 
 ## A strong appetite for the place. An easy way to book.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+## A few clear actions, handled well.
+
+Reservations continue into your existing platform. Ordering links take people to the correct location or menu. Group and event enquiries can collect the date, approximate party size and contact details, then reach the right person on your team.
+
+-  01 Explore the menu
+-  02 Choose an action
+-  03 Reserve, order or enquire
+-  04 Visit
 
 ## Get the everyday decisions right.
 
@@ -3324,6 +3333,14 @@ Most visitors need a menu, a table, an order or a practical answer. Make those a
 
 For Kelowna diners and visitors exploring the Okanagan, useful details include the location, hours, parking and what kind of experience to expect. We connect that information with actual photography and current menus, so the website helps someone make a plan.
 
+Upon This Rock visual identity and podcast artwork
+
+## Upon This Rock
+
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
+
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
+
 ## Make the website feel like your restaurant.
 
 Original food photography, the room and your brand should establish the character of the restaurant immediately. I give those images room while keeping the practical actions close at hand.
@@ -3339,23 +3356,6 @@ Consistent Google Business Profile information and current menu and location con
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Where can I see the menu and book a table in Kelowna?”Your menu, current hours, setting and reservation route should be easy to find together. I structure those details as readable page content with clear links to the booking action.
-
-Upon This Rock visual identity and podcast artwork
-
-## Upon This Rock
-
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
-
-## A few clear actions, handled well.
-
-Reservations continue into your existing platform. Ordering links take people to the correct location or menu. Group and event enquiries can collect the date, approximate party size and contact details, then reach the right person on your team.
-
--  01 Explore the menu
--  02 Choose an action
--  03 Reserve, order or enquire
--  04 Visit
 
 ## A better website. The foundations handled.
 
@@ -3420,13 +3420,22 @@ Web design for retail businesses in Kelowna. Bring the shop’s character online
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Retail stores website displayed on a laptop
+Retail website design
 
 ## Make the website work for the way your shop actually sells.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+## Keep the promise connected to the stockroom.
+
+The website should reflect the source of product and availability information your team maintains. We connect the appropriate checkout, enquiry or pickup process, then make order and customer-service details easy to find.
+
+-  01 Find a product
+-  02 Check the details
+-  03 Visit, enquire or buy
+-  04 Fulfilment and support
 
 ## Choose the right route from interest to purchase.
 
@@ -3467,6 +3476,14 @@ A local showroom, a boutique and a full online store need different websites. We
 
 Your physical store gives the website something distinctive to show: the space, the people, the selection and the service. Clear Kelowna location information, opening hours and pickup arrangements help online interest become an actual visit or purchase.
 
+Upon This Rock visual identity and podcast artwork
+
+## Upon This Rock
+
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
+
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
+
 ## A shopfront with your own point of view.
 
 I develop the website around your products, customers and brand. The design should communicate the character of the business while making it easy to browse, ask a question or buy.
@@ -3482,23 +3499,6 @@ Readable product content, consistent business listings and original photography 
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Where can I find this product locally in Kelowna?”Your product or collection pages can explain what you carry, where to find the shop and how availability is confirmed. I connect those details to a clear visit, enquiry or purchase route.
-
-Upon This Rock visual identity and podcast artwork
-
-## Upon This Rock
-
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
-
-## Keep the promise connected to the stockroom.
-
-The website should reflect the source of product and availability information your team maintains. We connect the appropriate checkout, enquiry or pickup process, then make order and customer-service details easy to find.
-
--  01 Find a product
--  02 Check the details
--  03 Visit, enquire or buy
--  04 Fulfilment and support
 
 ## A better website. The foundations handled.
 
@@ -3563,13 +3563,21 @@ Web design for car dealerships in Kelowna and the Okanagan. Make inventory easie
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Car dealerships website displayed on a laptop
+Car dealerships website design
 
 ## A better buying journey starts with useful vehicle information.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+ABC Appliance website showing appliance repair services and a request-service action
+
+## ABC Appliance
+
+A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
+
+[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## Help each buyer take the next step.
 
@@ -3625,14 +3633,6 @@ Current inventory information, original vehicle media and consistent business de
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Where can I enquire about a used SUV in Kelowna?”A useful vehicle page presents current details, photographs, the dealership location and an enquiry tied to that vehicle. I connect the inventory experience with readable content and clear contact routes.
-
-ABC Appliance website showing appliance repair services and a request-service action
-
-## ABC Appliance
-
-A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
-
-[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## Keep the vehicle attached to the lead.
 
@@ -3705,36 +3705,36 @@ A better enquiry. A first appointment. A direct booking. Start with what your we
 
 ## Trades & home services
 
-[Plumbers website displayed on a laptop Plumbers More of the jobs you want. A clearer path to your business.](https://michaelmck.site/web-design/plumbers/)
-[Electricians website displayed on a laptop Electricians Your expertise should be visible before the first site visit.](https://michaelmck.site/web-design/electricians/)
-[Heating & cooling website displayed on a laptop Heating & cooling From an uncomfortable home to a useful service conversation.](https://michaelmck.site/web-design/hvac/)
-[Roofing companies website displayed on a laptop Roofing companies Make the workmanship visible and the estimate easy to request.](https://michaelmck.site/web-design/roofers/)
-[Landscaping businesses website displayed on a laptop Landscaping businesses A stronger local presence. More qualified bookings.](https://michaelmck.site/web-design/landscapers/)
-[Home builders website displayed on a laptop Home builders A considered website for a considered investment.](https://michaelmck.site/web-design/home-builders/)
-[Appliance repair website displayed on a laptop Appliance repair Less uncertainty for the customer. Better information for your team.](https://michaelmck.site/web-design/appliance-repair/)
+[Plumbers website design Plumbers More of the jobs you want. A clearer path to your business.](https://michaelmck.site/web-design/plumbers/)
+[Electricians website design Electricians Your expertise should be visible before the first site visit.](https://michaelmck.site/web-design/electricians/)
+[Hvac website design Heating & cooling From an uncomfortable home to a useful service conversation.](https://michaelmck.site/web-design/hvac/)
+[Roofers website design Roofing companies Make the workmanship visible and the estimate easy to request.](https://michaelmck.site/web-design/roofers/)
+[Landscapers website design Landscaping businesses A stronger local presence. More qualified bookings.](https://michaelmck.site/web-design/landscapers/)
+[Home builders website design Home builders A considered website for a considered investment.](https://michaelmck.site/web-design/home-builders/)
+[Appliance repair website design Appliance repair Less uncertainty for the customer. Better information for your team.](https://michaelmck.site/web-design/appliance-repair/)
 
 ## Professional & health services
 
-[Law firms website displayed on a laptop Law firms A clear introduction to the people behind your practice.](https://michaelmck.site/web-design/law-firms/)
-[Accountants website displayed on a laptop Accountants A website that reflects the practice you want to build.](https://michaelmck.site/web-design/accountants/)
-[Financial advisors website displayed on a laptop Financial advisors The right people should understand why they would work with you.](https://michaelmck.site/web-design/financial-advisors/)
-[Real estate website displayed on a laptop Real estate Your value extends beyond the properties on the market.](https://michaelmck.site/web-design/real-estate/)
-[Property management website displayed on a laptop Property management Owners, applicants and tenants should each know where to go.](https://michaelmck.site/web-design/property-management/)
-[Medical practices website displayed on a laptop Medical practices A useful website can make life easier for patients and staff.](https://michaelmck.site/web-design/medical-practices/)
-[Dentists website displayed on a laptop Dentists Make the practice feel familiar before someone walks in.](https://michaelmck.site/web-design/dentists/)
-[Physiotherapy website displayed on a laptop Physiotherapy A good first visit begins with clear expectations.](https://michaelmck.site/web-design/physiotherapy/)
-[Medical spas website displayed on a laptop Medical spas Create confidence before the consultation.](https://michaelmck.site/web-design/medical-spas/)
+[Law firms website design Law firms A clear introduction to the people behind your practice.](https://michaelmck.site/web-design/law-firms/)
+[Accountants website design Accountants A website that reflects the practice you want to build.](https://michaelmck.site/web-design/accountants/)
+[Financial advisors website design Financial advisors The right people should understand why they would work with you.](https://michaelmck.site/web-design/financial-advisors/)
+[Real estate website design Real estate Your value extends beyond the properties on the market.](https://michaelmck.site/web-design/real-estate/)
+[Property management website design Property management Owners, applicants and tenants should each know where to go.](https://michaelmck.site/web-design/property-management/)
+[Medical practices website design Medical practices A useful website can make life easier for patients and staff.](https://michaelmck.site/web-design/medical-practices/)
+[Dentists website design Dentists Make the practice feel familiar before someone walks in.](https://michaelmck.site/web-design/dentists/)
+[Physiotherapy website design Physiotherapy A good first visit begins with clear expectations.](https://michaelmck.site/web-design/physiotherapy/)
+[Medical spas website design Medical spas Create confidence before the consultation.](https://michaelmck.site/web-design/medical-spas/)
 
 ## Hospitality, community & commerce
 
-[Charities & nonprofits website displayed on a laptop Charities & nonprofits A clear story. A meaningful reason to act.](https://michaelmck.site/web-design/charities/)
-[Independent schools website displayed on a laptop Independent schools A school’s character should come through before the first tour.](https://michaelmck.site/web-design/private-schools/)
-[Hotels & resorts website displayed on a laptop Hotels & resorts The experience starts before a guest checks in.](https://michaelmck.site/web-design/hotels/)
-[Vacation rentals website displayed on a laptop Vacation rentals Your property deserves more than a listing in a grid.](https://michaelmck.site/web-design/vacation-rentals/)
-[Wineries website displayed on a laptop Wineries One memorable brand across every part of the experience.](https://michaelmck.site/web-design/wineries/)
-[Restaurants website displayed on a laptop Restaurants A strong appetite for the place. An easy way to book.](https://michaelmck.site/web-design/restaurants/)
-[Retail stores website displayed on a laptop Retail stores Make the website work for the way your shop actually sells.](https://michaelmck.site/web-design/retail/)
-[Car dealerships website displayed on a laptop Car dealerships A better buying journey starts with useful vehicle information.](https://michaelmck.site/web-design/car-dealerships/)
+[Charities website design Charities & nonprofits A clear story. A meaningful reason to act.](https://michaelmck.site/web-design/charities/)
+[Private schools website design Independent schools A school’s character should come through before the first tour.](https://michaelmck.site/web-design/private-schools/)
+[Hotels website design Hotels & resorts The experience starts before a guest checks in.](https://michaelmck.site/web-design/hotels/)
+[Vacation rentals website design Vacation rentals Your property deserves more than a listing in a grid.](https://michaelmck.site/web-design/vacation-rentals/)
+[Wineries website design Wineries One memorable brand across every part of the experience.](https://michaelmck.site/web-design/wineries/)
+[Restaurants website design Restaurants A strong appetite for the place. An easy way to book.](https://michaelmck.site/web-design/restaurants/)
+[Retail website design Retail stores Make the website work for the way your shop actually sells.](https://michaelmck.site/web-design/retail/)
+[Car dealerships website design Car dealerships A better buying journey starts with useful vehicle information.](https://michaelmck.site/web-design/car-dealerships/)
 
 ## What could a better website do for your business?
 

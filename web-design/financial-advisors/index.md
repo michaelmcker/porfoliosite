@@ -7,13 +7,15 @@ Web design for financial advisors in Kelowna and the Okanagan. Introduce your ap
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Financial advisors website displayed on a laptop
+Financial advisors website design
 
-## The right people should understand why they would work with you.
+## Let the website sound like a conversation with you.
 
-Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
+I start with your practice positioning and the clients you want to reach. The page structure follows their questions: who you help, how you work, what the first conversation covers and how to arrange it.
 
-[Explore the work](#selected-work)
+Your photography, biographies and language should work together. A website can feel personal and polished without overwhelming the visitor with technical descriptions or a wall of market commentary.
+
+Content follows your firm’s approval process. We establish layouts for client segments, team profiles and updates so new material can be reviewed and published consistently.
 
 ## Build the introduction around your clients.
 
@@ -54,13 +56,13 @@ A business owner, a family and someone approaching retirement may be asking diff
 
 Show how clients meet with you in the Okanagan, whether in Kelowna, another office or remotely. Practical appointment information and a recognisable local presence make the first step easier. Any community or industry focus should come from the actual experience of your practice.
 
-## Let the website sound like a conversation with you.
+Upon This Rock visual identity and podcast artwork
 
-I start with your practice positioning and the clients you want to reach. The page structure follows their questions: who you help, how you work, what the first conversation covers and how to arrange it.
+## Upon This Rock
 
-Your photography, biographies and language should work together. A website can feel personal and polished without overwhelming the visitor with technical descriptions or a wall of market commentary.
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
 
-Content follows your firm’s approval process. We establish layouts for client segments, team profiles and updates so new material can be reviewed and published consistently.
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
 
 ## Built to be found. Ready to be chosen.
 
@@ -70,13 +72,11 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Where can I meet a financial advisor in Kelowna?”Your site should clearly explain the practice, the people you work with, your office or meeting arrangements and the contact route. I build those facts into a readable, connected page structure.
 
-Upon This Rock visual identity and podcast artwork
+## The right people should understand why they would work with you.
 
-## Upon This Rock
+Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
+[Explore the work](#selected-work)
 
 ## Make the first meeting easy to arrange.
 

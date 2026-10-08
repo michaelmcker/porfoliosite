@@ -7,13 +7,21 @@ Web design for electricians in Kelowna and the Okanagan. Show your expertise, ma
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Electricians website displayed on a laptop
+Electricians website design
 
 ## 30%more qualified bookings
 
 Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
 
 [See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+
+ABC Appliance website showing appliance repair services and a request-service action
+
+## ABC Appliance
+
+A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
+
+[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## A better brief starts on the website.
 
@@ -69,14 +77,6 @@ Dedicated pages for actual services, consistent Google Business Profile details 
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Can an electrician in Kelowna install an EV charger at our strata property?”Your page can answer whether you take strata projects, how the assessment begins and who to contact. I structure the service information, project evidence and relevant credentials so customers and search tools can understand the offer.
-
-ABC Appliance website showing appliance repair services and a request-service action
-
-## ABC Appliance
-
-A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
-
-[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## Enough information to start a worthwhile quote.
 

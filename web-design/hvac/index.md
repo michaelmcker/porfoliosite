@@ -7,13 +7,22 @@ Website design for heating and cooling businesses in Kelowna. Help customers fin
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Heating & cooling website displayed on a laptop
+Hvac website design
 
 ## 30%more qualified bookings
 
 Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
 
 [See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+
+## Connect the website to the service desk.
+
+The enquiry should reach the right person with the system type, location and contact details intact. An acknowledgement can explain the next step immediately. Optional workflows can sort requests and prompt follow-up, giving your team more time for the actual customer conversation.
+
+-  01 Service request
+-  02 Team routing
+-  03 Callback or assessment
+-  04 Booked work
 
 ## One business. Three customer journeys.
 
@@ -54,6 +63,14 @@ Repair, replacement and maintenance are different decisions. Your website should
 
 A Kelowna repair route and an installation project elsewhere in the valley may have different scheduling requirements. We make coverage clear by service type and connect it to relevant local projects. Your site becomes a useful explanation of how you work across the Okanagan, with current contact and availability information.
 
+Cool Runnings website presenting its Okanagan landscaping services
+
+## Cool Runnings
+
+Website, local SEO and conversion work that brought a 30% increase in qualified bookings. Clear service pages, local coverage and a straightforward enquiry route connect the business with the work it wants.
+
+[See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+
 ## Explain the next step before asking for the lead.
 
 Someone comparing heating and cooling companies is also comparing how easy it feels to get help. I write the service pages around what your team does, who you help and how the first conversation works. Equipment names can support that explanation without becoming the whole page.
@@ -69,23 +86,6 @@ Google and ChatGPT need a clear explanation of your business. Service pages, con
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Who services my heat pump in Kelowna?”A useful answer names the services and equipment you handle, the area you cover and how to request help. I build those facts into the content and technical structure, supported by real project information.
-
-Cool Runnings website presenting its Okanagan landscaping services
-
-## Cool Runnings
-
-Website, local SEO and conversion work that brought a 30% increase in qualified bookings. Clear service pages, local coverage and a straightforward enquiry route connect the business with the work it wants.
-
-[See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
-
-## Connect the website to the service desk.
-
-The enquiry should reach the right person with the system type, location and contact details intact. An acknowledgement can explain the next step immediately. Optional workflows can sort requests and prompt follow-up, giving your team more time for the actual customer conversation.
-
--  01 Service request
--  02 Team routing
--  03 Callback or assessment
--  04 Booked work
 
 ## A better website. The foundations handled.
 

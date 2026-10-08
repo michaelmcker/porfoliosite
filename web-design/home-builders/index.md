@@ -7,13 +7,21 @@ Website design for custom home builders and renovation companies in Kelowna. Sho
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Home builders website displayed on a laptop
+Home builders website design
 
 ## 30%more qualified bookings
 
 Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
 
 [See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+
+Okanagan Treehouse accommodation website design
+
+## Okanagan Treehouse
+
+A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
+
+[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Give the right project a reason to come to you.
 
@@ -69,14 +77,6 @@ The structure connects services, projects, your team and the enquiry route. Titl
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Which Kelowna builder works on homes like the one I want to create?”Your site should connect project type, design approach, location and evidence. Original project pages give both search visitors and AI tools a much clearer picture than a broad claim that you build every kind of home.
-
-Okanagan Treehouse accommodation website design
-
-## Okanagan Treehouse
-
-A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
-
-[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Start with project fit.
 

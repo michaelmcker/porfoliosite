@@ -7,7 +7,7 @@ Web design for charities and nonprofits in Kelowna and the Okanagan. Bring your 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Charities & nonprofits website displayed on a laptop
+Charities website design
 
 ## A clear story. A meaningful reason to act.
 

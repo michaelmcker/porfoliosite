@@ -169,3 +169,8 @@ Remove visible illustration labels, keep source-photo credits. AI hero media rea
 
 ### AI narrative approved September 27
 Hero: Less busywork. More business. Explain the skills, workflows and agents working inside existing tools. Two actions: free consultation and an in-page link to what gets built. Follow with recognizable enquiry/follow-up/admin problems, capabilities, real work, process and pricing. Retain the portfolio visual language and Okanagan photography; do not import the reference's architecture collage or dither treatment.
+
+
+## Industry collection design variety — 2026-10-07
+
+The 24 industry pages use independently art-directed website examples and four opening compositions: utility, editorial, gallery and care. The site identity and navigation remain shared. `scripts/build-industries.mjs` owns composition and section order; `v2/industries/artwork.json` owns responsive artwork dimensions and paths; `v2/industries/industries.css` contains scoped layouts. The visual review and image references are in `docs/industry-variety-2026-10-07/`.

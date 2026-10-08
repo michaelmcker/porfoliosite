@@ -173,3 +173,9 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Replaced the obsolete green ABC preview with a fresh browser capture of the blue/yellow production site. Previous capture came from docs/marketing-pass and did not reflect the live brand.
 - RCCV source has an opaque cream ground; preparing transparent laptop with soft shadow.
 - Added transparent RCCV laptop PNG with contact shadow; homepage and contact object use the new asset. Original source preserved.
+## 2026-10-07: Industry design variety
+- User requested more variety because the websites look too similar. Reviewing the artwork and page structures, then developing distinct visual directions using image-to-code.
+
+- Generated and inspected 24 distinct website designs, plus three large layout references. Added four hero compositions and different section ordering while retaining shared navigation, fonts, colours, local copy and existing proof.
+- Integrated responsive artwork via `v2/industries/artwork.json`, using versioned WebP URLs. Corrected the clinic image to use Kelowna/Okanagan location text.
+- Checked 96 browser combinations (24 pages × four widths) without overflow or broken hero images. Targeted industry/link/schema checks pass.

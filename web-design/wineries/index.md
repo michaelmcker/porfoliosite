@@ -7,13 +7,15 @@ Web design for wineries in Kelowna and the Okanagan. Connect the place, the wine
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Wineries website displayed on a laptop
+Wineries website design
 
-## One memorable brand across every part of the experience.
+## Let the place and the product tell the story together.
 
-Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
+I build the visual direction around your winery’s actual character: landscape, architecture, labels, people and the experience of visiting. Photography and film establish the mood, while clear content helps visitors choose what to do next.
 
-[Explore the work](#selected-work)
+The website needs to work with the tools behind the business. We review the shop, tasting reservations, membership and fulfilment systems before deciding which parts to integrate or retain.
+
+Seasonal experiences, events and new releases can share a consistent design system. Your team can update the important information without rebuilding the whole page each time.
 
 ## Three ways to deepen the relationship.
 
@@ -54,13 +56,13 @@ A first visit, an online order and a wine-club membership each need a clear plac
 
 A useful Okanagan winery page explains the actual setting, visitor experience, directions and reservation arrangements. Original landscape and property media gives people a reason to include you in their plans. Local content can support the experiences and events you really offer.
 
-## Let the place and the product tell the story together.
+Okanagan Treehouse accommodation website design
 
-I build the visual direction around your winery’s actual character: landscape, architecture, labels, people and the experience of visiting. Photography and film establish the mood, while clear content helps visitors choose what to do next.
+## Okanagan Treehouse
 
-The website needs to work with the tools behind the business. We review the shop, tasting reservations, membership and fulfilment systems before deciding which parts to integrate or retain.
+A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
 
-Seasonal experiences, events and new releases can share a consistent design system. Your team can update the important information without rebuilding the whole page each time.
+[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 
 ## Built to be found. Ready to be chosen.
 
@@ -70,13 +72,11 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Which Kelowna wineries take tasting reservations?”Your tasting page can describe the experience, current visit details and how to reserve. I connect those facts to your location, photography and the appropriate booking tool.
 
-Okanagan Treehouse accommodation website design
+## One memorable brand across every part of the experience.
 
-## Okanagan Treehouse
+Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
-A distinctive place, presented through a distinctive website. The design brings the property, atmosphere and practical details together, giving guests a closer look at the stay they are considering.
-
-[Explore Okanagan Treehouse](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
+[Explore the work](#selected-work)
 
 ## Make every action feel like the same brand.
 

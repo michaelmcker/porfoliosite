@@ -7,13 +7,21 @@ Web design for appliance repair businesses in Kelowna and the Okanagan. Make you
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Appliance repair website displayed on a laptop
+Appliance repair website design
 
 ## 30%more qualified bookings
 
 Cool Runnings saw a 30% increase in qualified bookings following its website, local SEO and conversion work.
 
 [See the work](https://michaelmck.site/v2/work/local-search-magnet.html)
+
+ABC Appliance website showing appliance repair services and a request-service action
+
+## ABC Appliance
+
+A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
+
+[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## Answer the repair questions that matter first.
 
@@ -69,14 +77,6 @@ The technical setup supports the content: page titles, headings, internal links,
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Who repairs this appliance in Kelowna?”Useful content identifies the appliance, supported brands, service area and repair-request process. I organise those facts into pages that are readable for customers and accessible to Google and AI search.
-
-ABC Appliance website showing appliance repair services and a request-service action
-
-## ABC Appliance
-
-A local service website built around clear repair information, useful customer questions and a direct enquiry route. The work brings together design, service content and local SEO, with increased search visibility and consistency.
-
-[Visit ABC Appliance](https://www.abcappliance.ca/)
 
 ## Get the details once.
 

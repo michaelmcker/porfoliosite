@@ -7,7 +7,7 @@ Web design for property managers in Kelowna and the Okanagan. Win the confidence
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Property management website displayed on a laptop
+Property management website design
 
 ## Owners, applicants and tenants should each know where to go.
 

@@ -7,13 +7,22 @@ Web design for retail businesses in Kelowna. Bring the shop’s character online
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Retail stores website displayed on a laptop
+Retail website design
 
 ## Make the website work for the way your shop actually sells.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+## Keep the promise connected to the stockroom.
+
+The website should reflect the source of product and availability information your team maintains. We connect the appropriate checkout, enquiry or pickup process, then make order and customer-service details easy to find.
+
+-  01 Find a product
+-  02 Check the details
+-  03 Visit, enquire or buy
+-  04 Fulfilment and support
 
 ## Choose the right route from interest to purchase.
 
@@ -54,6 +63,14 @@ A local showroom, a boutique and a full online store need different websites. We
 
 Your physical store gives the website something distinctive to show: the space, the people, the selection and the service. Clear Kelowna location information, opening hours and pickup arrangements help online interest become an actual visit or purchase.
 
+Upon This Rock visual identity and podcast artwork
+
+## Upon This Rock
+
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
+
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
+
 ## A shopfront with your own point of view.
 
 I develop the website around your products, customers and brand. The design should communicate the character of the business while making it easy to browse, ask a question or buy.
@@ -69,23 +86,6 @@ Readable product content, consistent business listings and original photography 
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Where can I find this product locally in Kelowna?”Your product or collection pages can explain what you carry, where to find the shop and how availability is confirmed. I connect those details to a clear visit, enquiry or purchase route.
-
-Upon This Rock visual identity and podcast artwork
-
-## Upon This Rock
-
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
-
-## Keep the promise connected to the stockroom.
-
-The website should reflect the source of product and availability information your team maintains. We connect the appropriate checkout, enquiry or pickup process, then make order and customer-service details easy to find.
-
--  01 Find a product
--  02 Check the details
--  03 Visit, enquire or buy
--  04 Fulfilment and support
 
 ## A better website. The foundations handled.
 

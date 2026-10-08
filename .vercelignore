@@ -120,3 +120,6 @@ assets/selected-work/okanagan-lake-adam-jones.jpg
 # Approved scrolling Vertical Impression showcase.
 !assets/videos/vertical-impression-proposal-story-boomerang.mp4
 !assets/screens/vertical-impression-proposal-story-boomerang-poster.jpg
+
+# Build-time industry artwork metadata.
+v2/industries/artwork.json

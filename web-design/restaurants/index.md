@@ -7,13 +7,22 @@ Web design for restaurants in Kelowna and the Okanagan. Let the food and atmosph
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Restaurants website displayed on a laptop
+Restaurants website design
 
 ## A strong appetite for the place. An easy way to book.
 
 Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
 [Explore the work](#selected-work)
+
+## A few clear actions, handled well.
+
+Reservations continue into your existing platform. Ordering links take people to the correct location or menu. Group and event enquiries can collect the date, approximate party size and contact details, then reach the right person on your team.
+
+-  01 Explore the menu
+-  02 Choose an action
+-  03 Reserve, order or enquire
+-  04 Visit
 
 ## Get the everyday decisions right.
 
@@ -54,6 +63,14 @@ Most visitors need a menu, a table, an order or a practical answer. Make those a
 
 For Kelowna diners and visitors exploring the Okanagan, useful details include the location, hours, parking and what kind of experience to expect. We connect that information with actual photography and current menus, so the website helps someone make a plan.
 
+Upon This Rock visual identity and podcast artwork
+
+## Upon This Rock
+
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
+
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
+
 ## Make the website feel like your restaurant.
 
 Original food photography, the room and your brand should establish the character of the restaurant immediately. I give those images room while keeping the practical actions close at hand.
@@ -69,23 +86,6 @@ Consistent Google Business Profile information and current menu and location con
 I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, structured data and sitemap. Your services, location and business information stay consistent across the website. We can add Google Business Profile management and useful local pages as the business grows.
 
 “Where can I see the menu and book a table in Kelowna?”Your menu, current hours, setting and reservation route should be easy to find together. I structure those details as readable page content with clear links to the booking action.
-
-Upon This Rock visual identity and podcast artwork
-
-## Upon This Rock
-
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
-
-## A few clear actions, handled well.
-
-Reservations continue into your existing platform. Ordering links take people to the correct location or menu. Group and event enquiries can collect the date, approximate party size and contact details, then reach the right person on your team.
-
--  01 Explore the menu
--  02 Choose an action
--  03 Reserve, order or enquire
--  04 Visit
 
 ## A better website. The foundations handled.
 

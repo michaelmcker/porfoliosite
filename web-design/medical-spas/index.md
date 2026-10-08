@@ -7,13 +7,15 @@ Web design for medical spas and aesthetic clinics in Kelowna. Bring your setting
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Medical spas website displayed on a laptop
+Medical spas website design
 
-## Create confidence before the consultation.
+## The brand and the booking journey belong together.
 
-Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
+I establish a visual direction that reflects your clinic, then make it work across service pages, team profiles and appointment actions. The website should feel coherent from the first image to the final booking step.
 
-[Explore the work](#selected-work)
+Treatment content needs enough detail to help someone decide what to ask about. Your team reviews the descriptions and any photography used to explain services. Practical visit information gives the page depth without overwhelming the design.
+
+Campaigns can lead to the relevant service or consultation page. That creates a consistent experience between an ad, a social post and the website someone uses to contact you.
 
 ## A beautiful website should also answer the questions.
 
@@ -54,13 +56,13 @@ Visitors need to understand the service, the people providing it and how a consu
 
 Original clinic photography, a clear location and accurate appointment information make the experience tangible. We connect the services you actually offer with your local presence, including directions, parking and opening hours that are easy to maintain.
 
-## The brand and the booking journey belong together.
+Upon This Rock visual identity and podcast artwork
 
-I establish a visual direction that reflects your clinic, then make it work across service pages, team profiles and appointment actions. The website should feel coherent from the first image to the final booking step.
+## Upon This Rock
 
-Treatment content needs enough detail to help someone decide what to ask about. Your team reviews the descriptions and any photography used to explain services. Practical visit information gives the page depth without overwhelming the design.
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
 
-Campaigns can lead to the relevant service or consultation page. That creates a consistent experience between an ad, a social post and the website someone uses to contact you.
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
 
 ## Built to be found. Ready to be chosen.
 
@@ -70,13 +72,11 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Where can I book an aesthetic consultation in Kelowna?”The website can explain the consultation, introduce the team and show how to arrange an appointment. I build the service information and contact route into a clear, connected structure.
 
-Upon This Rock visual identity and podcast artwork
+## Create confidence before the consultation.
 
-## Upon This Rock
+Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
+[Explore the work](#selected-work)
 
 ## Make the next step feel personal and simple.
 

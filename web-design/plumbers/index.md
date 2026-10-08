@@ -7,7 +7,7 @@ Web design for plumbers in Kelowna and the Okanagan. Make it easier for the righ
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Plumbers website displayed on a laptop
+Plumbers website design
 
 ## 30%more qualified bookings
 

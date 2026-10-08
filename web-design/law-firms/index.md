@@ -7,13 +7,15 @@ Web design for law firms in Kelowna and the Okanagan. Help prospective clients u
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Website%20consultation)
 Based in Coldstream. Working across the Okanagan.
 
-Law firms website displayed on a laptop
+Law firms website design
 
-## A clear introduction to the people behind your practice.
+## A considered website for a considered decision.
 
-Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
+I organise the site around the questions prospective clients bring to your firm. Practice pages explain the type of work you undertake, the initial process and the relevant team. A family matter and a business transaction should not lead to the same generic paragraph.
 
-[Explore the work](#selected-work)
+Navigation needs to serve people at different stages. Someone referred to a particular lawyer should find that biography quickly. Someone finding you through search should be able to identify the relevant practice and contact route just as easily.
+
+Your team reviews the wording before launch. We establish a repeatable format for biographies, practice updates and articles, so the site can develop with your firm without becoming difficult to maintain.
 
 ## Make the first conversation easier to begin.
 
@@ -54,13 +56,13 @@ Someone visiting a law firm website needs to understand whether you handle their
 
 Show where clients can meet you, how remote appointments work and which communities your practice serves. Office directions, parking and accessibility information help turn an online introduction into an easier visit. Local pages should reflect a real office, service or area of experience.
 
-## A considered website for a considered decision.
+Upon This Rock visual identity and podcast artwork
 
-I organise the site around the questions prospective clients bring to your firm. Practice pages explain the type of work you undertake, the initial process and the relevant team. A family matter and a business transaction should not lead to the same generic paragraph.
+## Upon This Rock
 
-Navigation needs to serve people at different stages. Someone referred to a particular lawyer should find that biography quickly. Someone finding you through search should be able to identify the relevant practice and contact route just as easily.
+A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
 
-Your team reviews the wording before launch. We establish a repeatable format for biographies, practice updates and articles, so the site can develop with your firm without becoming difficult to maintain.
+[Explore the branding work](https://michaelmck.site/marketing-branding/)
 
 ## Built to be found. Ready to be chosen.
 
@@ -70,13 +72,11 @@ I handle the page hierarchy, H1s and H2s, titles, descriptions, internal links, 
 
 “Which Kelowna law firms handle business purchases?”A useful practice page explains the work your firm undertakes, introduces the relevant lawyers and provides a clear way to enquire. Those facts become the foundation for headings, internal links and search metadata.
 
-Upon This Rock visual identity and podcast artwork
+## A clear introduction to the people behind your practice.
 
-## Upon This Rock
+Thoughtful design. Useful content. A clear next step. A website built around the way your business works.
 
-A distinctive visual identity and podcast artwork built around the character of the project. Brand, language and imagery work together to make a memorable first impression—the same care I bring to a business website.
-
-[Explore the branding work](https://michaelmck.site/marketing-branding/)
+[Explore the work](#selected-work)
 
 ## An enquiry process that respects the way your firm works.
 
