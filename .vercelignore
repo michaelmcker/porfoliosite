@@ -99,6 +99,7 @@ DEV_LOG.md
 FEATURES.md
 v2/services/**/index.html
 v2/services/routes.json
+v2/industries/routes.json
 v2/guides/
 
 v2/ai-implementation/

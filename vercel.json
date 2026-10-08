@@ -58,6 +58,18 @@
           "value": ".*text/markdown.*"
         }
       ]
+    },
+    {
+      "source": "/web-design/:industry/",
+      "destination": "/web-design/:industry/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
     }
   ],
   "headers": [
@@ -177,6 +189,19 @@
         {
           "key": "Content-Type",
           "value": "text/markdown; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/web-design/:industry/",
+      "headers": [
+        {
+          "key": "Vary",
+          "value": "Accept"
+        },
+        {
+          "key": "Link",
+          "value": "<https://michaelmck.site/web-design/:industry/index.md>; rel=\"alternate\"; type=\"text/markdown\""
         }
       ]
     }

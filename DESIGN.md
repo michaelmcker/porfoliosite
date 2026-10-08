@@ -4,6 +4,10 @@ The approved V2 system is the production site. Its canonical source lives under 
 
 ## Production Design System
 
+### Industry service pages
+
+The October 7 approved image-to-code template governs `/web-design/{industry}/`: white split opening with one generated industry website laptop, no image captions or example labels, outcome-led DM Sans heading with Fraunces emphasis, forest proof/value band, open editorial content rows, practical FAQs and a gold consultation close. Use the shared header unchanged. Each industry has distinct copy, local context, enquiry paths and imagery. On mobile, copy and consultation precede the single hero image; detailed sections stack and remain readable without horizontal scrolling. Shared styling lives in `v2/industries/industries.css`; the renderer is `scripts/build-industries.mjs`.
+
 ### Direction
 
 Warm photographic studio with an editorial publishing voice and a practical digital-product edge. V2 preserves the authored laptops, browser windows, proposal sheet, media, and interactions while removing the rigid Neo-Brutalist framing, graph textures, route dots, arbitrary colour blocking, and compressed spacing.

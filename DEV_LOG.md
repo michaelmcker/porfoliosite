@@ -1,5 +1,15 @@
 # Development log
 
+## 2026-10-07: Industry web-design pages
+- Completed 24 individually written pages and a visual industry index. Each page has a distinct generated hero, approximately 950–1,150 words, local context, specific enquiry routes, practical FAQs, canonical/OG metadata and structured data.
+- Added responsive WebP variants, shared desktop/mobile styling, sitemap entries, Markdown alternates and agent discovery. The parent website service links to the collection; promotion regenerates it to preserve the change in future releases.
+- Browser review: 96 layout/image checks across all 24 pages at 320, 390, 768 and 1440 pixels, plus 24 mobile proof-image checks; no overflow or missing images. Reviewed hero, proof and FAQ rendering and native FAQ expansion. Saved screenshots and check results in docs/industry-pages-2026-10-07.
+- 145 non-browser regression tests pass. The existing Puppeteer mobile test remains unavailable in this environment; its baseline browser launch failure predates this work. Responsive review used the connected browser.
+- Replaced the old church-film poster on the new school/charity pages with actual St James campus imagery from the website project.
+- User approved the visual template and authorised implementation for the researched industries, with industry-specific generated website imagery and no image labels.
+- Reusing the clean release checkout at /tmp/portfolio-restore-services, fast-forwarded to current origin/main. Preserving the older dirty portfolio checkout.
+- Public claims use Michael's supplied results, including 30% more qualified bookings for Cool Runnings. Generated website visuals do not receive invented client results or reviews.
+
 ## 2026-09-27: Consistent service styling
 - Added scripts/site-header.mjs and v2/site-header.css; service build synchronizes the homepage header and shares navigation with service/blog pages. Added regression coverage for identical published navigation.
 - AI hero uses editorial DM Sans with Fraunces emphasis, shared with web design. CSS halftone backgrounds add texture to forest/gold sections and the laptop stage without editing project assets.

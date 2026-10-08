@@ -78,3 +78,7 @@ for (const route of serviceRoutes) {
   }
 }
 await writeFile(sitemapUrl, sitemap);
+
+// Rebuild the industry collection and complete discovery after canonical services are promoted.
+const {buildIndustries} = await import('./build-industries.mjs');
+await buildIndustries();

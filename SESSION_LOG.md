@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-07: Building 24 industry-specific web-design pages from the approved image-first template and individual research briefs. Generating relevant website imagery for each industry, implementing shared responsive styling and discovery, and checking desktop/mobile before release.
+
 2026-10-07: ABC live-site capture and transparent RCCV laptop complete; 143 checks pass.
 
 2026-10-07: ABC website proof and three marketing films built and checked; publishing release.

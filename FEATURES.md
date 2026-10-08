@@ -41,3 +41,9 @@ The rejected services hub, guides and sample report are archived in docs/rejecte
 - Reduced AI copy and responsive image spacing; mobile lifestyle copy separates hero and regional photograph.
 - St James project/film links and short non-player product-story GIF with reduced-motion still.
 - Query evidence, geographic limits and next measurement steps: docs/seo/2026-09-26-local-search-findings.md.
+## Industry website pages, October 7, 2026
+- 24 industry-specific web-design service pages under `/web-design/{industry}/`, with a visual index at `/web-design/industries/` and a link from the main web-design page.
+- Each has independently written industry content, local context, a distinct generated website visual, FAQs, consultation links, shared navigation and responsive layout.
+- Canonical HTML, Markdown alternates, structured data, sitemap and LLM discovery are generated together. Content: `scripts/industry-content-*.mjs`; renderer: `scripts/build-industries.mjs`; style/assets: `v2/industries/`.
+- `npm run build:industries` rebuilds this collection. `promote:v2` also rebuilds it after promoting the existing service pages.
+- The 30% result refers to qualified bookings for Cool Runnings. New industry visuals are not presented as client case studies.

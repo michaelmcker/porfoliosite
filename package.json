@@ -12,7 +12,8 @@
     "field-notes:build": "node scripts/weekly-field-notes/render.mjs",
     "promote:v2": "node scripts/promote-v2-to-root.mjs",
     "deploy": "vercel --prod",
-    "build:services": "node scripts/build-services.mjs"
+    "build:services": "node scripts/build-services.mjs",
+    "build:industries": "node scripts/build-industries.mjs"
   },
   "dependencies": {
     "@sparticuz/chromium-min": "149.0.0",

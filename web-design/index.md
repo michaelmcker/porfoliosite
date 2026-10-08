@@ -78,3 +78,13 @@ A free conversation about your business, your goals and what your website could 
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 Based in Coldstream. Serving Vernon, Kelowna and across the Okanagan.
+
+## Built around your business.
+
+A plumbing enquiry, a hotel booking and a first client consultation need different websites. Explore the content, design and enquiry paths for your industry.
+
+[Plumbers](https://michaelmck.site/web-design/plumbers/)
+[Hotels](https://michaelmck.site/web-design/hotels/)
+[Law firms](https://michaelmck.site/web-design/law-firms/)
+[Charities](https://michaelmck.site/web-design/charities/)
+[Explore all 24 industries](https://michaelmck.site/web-design/industries/)
