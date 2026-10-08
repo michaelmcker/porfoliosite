@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-08: Building the public AEO resource library: 12 researched articles, answer-first openings, numbered lists, relevant self-inclusion in three provider comparisons, three specific visible FAQs per article, HTML/Markdown/schema/discovery and responsive/live verification. Existing portfolio and industry designs stay intact.
+
 2026-10-07: Industry design variety release complete. All 24 pages have new artwork and four page compositions, deployed and live-verified.
 
 2026-10-07: All 24 industry website pages and the industry index are deployed and live-verified. No remaining implementation work for this release.

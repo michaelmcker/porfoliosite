@@ -181,3 +181,16 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Checked 96 browser combinations (24 pages × four widths) without overflow or broken hero images. Targeted industry/link/schema checks pass.
 
 - Published commit 27dcc21 through GitHub/Vercel. Deployment dpl_BED4WvqCdQCCfaUp535LWq1y5ABe ready on michaelmck.site. All 103 live resources matched; desktop/mobile rendering confirmed.
+
+## 2026-10-08: AEO resource library
+- User authorized public local buying guides, listicles and comparisons. Interpreted latest FAQ wording as three precise questions per article.
+- Applying answer-engine-optimization and content-quality-editor gates. Research and brief precede drafts.
+- Preserve shared navigation and existing DM Sans/Fraunces visual system; editorial content, no portfolio redesign.
+- Include Michael in relevant owned best-of comparisons, with authorship and selection basis; no invented independent rankings or third-party endorsements.
+- Current working checkout verified clean at 90731bc; baseline test running.
+
+- Completed 12 original articles, three specific visible FAQs each, answer-first summaries, fit-based provider comparisons, local sources and portfolio evidence.
+- Added static renderer, existing-style reading layout, Markdown table preservation, collection-aware discovery, source/root synchronisation and Markdown content negotiation.
+- Extended tests for full article/FAQ/schema/discovery/link coverage and kept tests protecting retired content, shared navigation, analytics and private Field Notes.
+- Browser checks: 52 route/viewport checks (13 routes at 1440/768/390/320), zero page/text/table overflow or observed image errors; inspected desktop index/comparison and mobile article/FAQ/table.
+- Test suite: 149 pass; same baseline Chrome-executable absence in pre-existing about-mobile test. No new failures.

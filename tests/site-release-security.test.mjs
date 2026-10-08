@@ -150,6 +150,8 @@ test("canonical sitemap and robots files expose only intended public routes", as
   expected.push(...serviceRoutes.map(route => `https://michaelmck.site${route}`));
   const industryRoutes = JSON.parse(await read("v2/industries/routes.json"));
   expected.push(...industryRoutes.map(route => `https://michaelmck.site${route}`));
+  const resourceRoutes = JSON.parse(await read("v2/resources/routes.json"));
+  expected.push(...resourceRoutes.map(route => `https://michaelmck.site${route}`));
   assert.deepEqual(locations, expected);
   assert.match(robots, /^User-agent: \*$/m);
   assert.match(robots, /^Disallow: \/api\/$/m);

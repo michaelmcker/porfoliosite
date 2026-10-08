@@ -44,3 +44,12 @@ Tell me what you want more of. We’ll work out what your website needs.
 
 [Michael McKerracher](https://michaelmck.site/)
  Coldstream, BC · Serving the Okanagan
+
+## Make a better website decision.
+
+Practical local advice on cost, content, search and choosing the right designer.
+
+[Kelowna website guide](https://michaelmck.site/blog/kelowna-business-website-guide/)
+[Vernon website guide](https://michaelmck.site/blog/vernon-business-website-guide/)
+[West Kelowna website guide](https://michaelmck.site/blog/west-kelowna-business-website-guide/)
+[Explore all resources](https://michaelmck.site/blog/)

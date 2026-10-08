@@ -1,0 +1,107 @@
+[
+  {
+    "url": "https://support.google.com/business/answer/7091?hl=en",
+    "status": 200,
+    "finalUrl": "https://support.google.com/business/answer/7091?hl=en"
+  },
+  {
+    "url": "https://www.tourismkelowna.com/",
+    "error": "HTTP Error 403: Forbidden",
+    "alternateVerification": "Live browser page, title Tourist Attractions in Kelowna | Wineries, Events & Hotels; source snapshot saved."
+  },
+  {
+    "url": "https://www.abcappliance.ca/",
+    "status": 200,
+    "finalUrl": "https://www.abcappliance.ca/"
+  },
+  {
+    "url": "https://www.tourismvernon.com/",
+    "status": 200,
+    "finalUrl": "https://www.tourismvernon.com/"
+  },
+  {
+    "url": "https://www.tourismkelowna.com/explore/neighbouring-communities/west-kelowna/",
+    "error": "HTTP Error 403: Forbidden",
+    "alternateVerification": "Web reader returned the full official West Kelowna page, source turn74search2."
+  },
+  {
+    "url": "https://www.westkelownacity.ca/building-business-development/economic-development/",
+    "status": 200,
+    "finalUrl": "https://www.westkelownacity.ca/building-business-development/economic-development/"
+  },
+  {
+    "url": "https://web.dev/articles/vitals",
+    "status": 200,
+    "finalUrl": "https://web.dev/articles/vitals"
+  },
+  {
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "status": 200,
+    "finalUrl": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+  },
+  {
+    "url": "https://www.svice.ca/",
+    "status": 200,
+    "finalUrl": "https://www.svice.ca/"
+  },
+  {
+    "url": "https://duforddigital.com/vernon-web-design/",
+    "status": 200,
+    "finalUrl": "https://duforddigital.com/vernon-web-design/"
+  },
+  {
+    "url": "https://support.google.com/webmasters/answer/7576553?hl=en",
+    "status": 200,
+    "finalUrl": "https://support.google.com/webmasters/answer/7576553?hl=en"
+  },
+  {
+    "url": "https://developers.google.com/search/docs/appearance/ai-features",
+    "status": 200,
+    "finalUrl": "https://developers.google.com/search/docs/appearance/ai-features"
+  },
+  {
+    "url": "https://help.openai.com/en/articles/12627856-publishers-and-developers-faq",
+    "error": "HTTP Error 403: Forbidden",
+    "alternateVerification": "Official help content returned by web reader, source turn74search0."
+  },
+  {
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+    "status": 200,
+    "finalUrl": "https://developers.google.com/search/docs/essentials/spam-policies"
+  },
+  {
+    "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+    "status": 200,
+    "finalUrl": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+  },
+  {
+    "url": "https://michaelmck.site/v2/work/local-search-magnet.html",
+    "status": 200,
+    "finalUrl": "https://michaelmck.site/v2/work/local-search-magnet.html"
+  },
+  {
+    "url": "https://michaelmck.site/web-design/",
+    "status": 200,
+    "finalUrl": "https://michaelmck.site/web-design/"
+  },
+  {
+    "url": "https://twirlingumbrellas.com/",
+    "error": "HTTP Error 403: Forbidden",
+    "alternateVerification": "Official services and portfolio content returned by web reader, source turn73view0."
+  },
+  {
+    "url": "https://www.twincreekmedia.com/",
+    "status": 200,
+    "finalUrl": "https://www.twincreekmedia.com/"
+  },
+  {
+    "url": "https://thebomb.ca/",
+    "status": 200,
+    "finalUrl": "https://thebomb.ca/"
+  },
+  {
+    "url": "https://vernonsoftware.com/services/web-design/",
+    "status": 200,
+    "finalUrl": "https://vernonsoftware.com/services/web-design/"
+  }
+]

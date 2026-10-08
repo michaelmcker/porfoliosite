@@ -77,3 +77,12 @@ Tell me where the work piles up and what you want more time for. We’ll find a 
 
 [Book a free consultation](mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation)
 Based in Coldstream. Serving Vernon, Kelowna and across the Okanagan.
+
+## Make a better website decision.
+
+Practical local advice on cost, content, search and choosing the right designer.
+
+[Kelowna website guide](https://michaelmck.site/blog/kelowna-business-website-guide/)
+[Vernon website guide](https://michaelmck.site/blog/vernon-business-website-guide/)
+[West Kelowna website guide](https://michaelmck.site/blog/west-kelowna-business-website-guide/)
+[Explore all resources](https://michaelmck.site/blog/)

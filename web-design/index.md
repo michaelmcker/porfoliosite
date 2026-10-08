@@ -88,3 +88,12 @@ A plumbing enquiry, a hotel booking and a first client consultation need differe
 [Law firms](https://michaelmck.site/web-design/law-firms/)
 [Charities](https://michaelmck.site/web-design/charities/)
 [Explore all 24 industries](https://michaelmck.site/web-design/industries/)
+
+## Make a better website decision.
+
+Practical local advice on cost, content, search and choosing the right designer.
+
+[Kelowna website guide](https://michaelmck.site/blog/kelowna-business-website-guide/)
+[Vernon website guide](https://michaelmck.site/blog/vernon-business-website-guide/)
+[West Kelowna website guide](https://michaelmck.site/blog/west-kelowna-business-website-guide/)
+[Explore all resources](https://michaelmck.site/blog/)

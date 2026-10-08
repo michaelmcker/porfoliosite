@@ -11,9 +11,11 @@ test('homepage, services share the same published navigation', async()=>{
   }
 });
 
-test('retired blog is absent from navigation and discovery', async()=>{
+test('retired articles stay absent while the approved resource collection is discoverable', async()=>{
   for (const path of ['index.html','ai-implementation/index.html','web-design/index.html','marketing-branding/index.html','sitemap.xml','llms.txt','llms-full.txt']) {
-    assert.doesNotMatch(await readFile(new URL('../'+path,import.meta.url),'utf8'), /(?:href="|https:\/\/michaelmck\.site)\/blog\//, path);
+    const content=await readFile(new URL('../'+path,import.meta.url),'utf8');
+    assert.doesNotMatch(content, /\/blog\/(?:what-to-automate-first|website-that-turns-visits-into-enquiries|local-marketing-plan)\//,path);
+    assert.match(content,/\/blog\//,path);
   }
   const ai=await readFile(new URL('../ai-implementation/index.html',import.meta.url),'utf8');
   assert.doesNotMatch(ai, /<figcaption>/);

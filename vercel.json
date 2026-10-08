@@ -70,6 +70,30 @@
           "value": ".*text/markdown.*"
         }
       ]
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blog/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
+      "source": "/blog/:article/",
+      "destination": "/blog/:article/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
     }
   ],
   "headers": [
@@ -204,6 +228,32 @@
           "value": "<https://michaelmck.site/web-design/:industry/index.md>; rel=\"alternate\"; type=\"text/markdown\""
         }
       ]
+    },
+    {
+      "source": "/blog/",
+      "headers": [
+        {
+          "key": "Vary",
+          "value": "Accept"
+        },
+        {
+          "key": "Link",
+          "value": "<https://michaelmck.site/blog/index.md>; rel=\"alternate\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/blog/:article/",
+      "headers": [
+        {
+          "key": "Vary",
+          "value": "Accept"
+        },
+        {
+          "key": "Link",
+          "value": "<https://michaelmck.site/blog/:article/index.md>; rel=\"alternate\"; type=\"text/markdown\""
+        }
+      ]
     }
   ],
   "rewrites": [
@@ -239,50 +289,6 @@
         }
       ],
       "destination": "/marketing-branding/index.md"
-    },
-    {
-      "source": "/blog/",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": "text/markdown"
-        }
-      ],
-      "destination": "/blog/index.md"
-    },
-    {
-      "source": "/blog/what-to-automate-first/",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": "text/markdown"
-        }
-      ],
-      "destination": "/blog/what-to-automate-first/index.md"
-    },
-    {
-      "source": "/blog/website-that-turns-visits-into-enquiries/",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": "text/markdown"
-        }
-      ],
-      "destination": "/blog/website-that-turns-visits-into-enquiries/index.md"
-    },
-    {
-      "source": "/blog/local-marketing-plan/",
-      "has": [
-        {
-          "type": "header",
-          "key": "accept",
-          "value": "text/markdown"
-        }
-      ],
-      "destination": "/blog/local-marketing-plan/index.md"
     }
   ]
 }

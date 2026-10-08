@@ -13,6 +13,13 @@ export function schemaFor(p){
 export function markdown(html){
  let s=html.match(/<main[^>]*>([\s\S]*?)<\/main>/)?.[1]||html;
  s=s.replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/g,'')
+  .replace(/<table\b[^>]*>([\s\S]*?)<\/table>/g,(_,table)=>{
+   const cell=value=>value.replace(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g,(_,href,label)=>`[${plain(label)}](${href.startsWith('/')?origin+href:href})`).replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').replaceAll('|','\\|').trim();
+   const rows=[...table.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)].map(([,row])=>[...row.matchAll(/<t[hd][^>]*>([\s\S]*?)<\/t[hd]>/g)].map(([,v])=>cell(v)));
+   if(!rows.length)return '';
+   const caption=table.match(/<caption[^>]*>([\s\S]*?)<\/caption>/)?.[1];
+   return `\n\n${caption?plain(caption)+'\n\n':''}| ${rows[0].join(' | ')} |\n| ${rows[0].map(()=>'---').join(' | ')} |\n${rows.slice(1).map(r=>'| '+r.join(' | ')+' |').join('\n')}\n\n`;
+  })
   .replace(/<img[^>]*alt="([^"]*)"[^>]*>/g,(_,alt)=>`\n${alt}\n`)
   .replace(/<video\b([^>]*)>([\s\S]*?)<\/video>/g,(_,attrs,body)=>{
    const label=attrs.match(/aria-label="([^"]+)"/)?.[1]||'Project video';
@@ -30,8 +37,18 @@ export function markdown(html){
  return s.trim()+'\n';
 }
 export async function writeDiscovery(pages,root){
+ // A partial service rebuild must not silently remove published collections.
+ const merged=new Map(pages.map(p=>[p.path,p]));
+ for(const manifest of ['v2/industries/routes.json','v2/resources/routes.json']){
+  let routes=[];try{routes=JSON.parse(await readFile(new URL(manifest,root),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
+  for(const path of routes){if(merged.has(path))continue;let html;try{html=await readFile(new URL(path.slice(1)+'index.html',root),'utf8');}catch(error){if(error.code==='ENOENT')continue;throw error;}
+   merged.set(path,{path,html,heading:plain(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]||path),description:html.match(/<meta name="description" content="([^"]*)"/)?.[1]||''});
+  }
+ }
+ pages=[...merged.values()];
  for(const p of pages){await mkdir(new URL(p.path.slice(1),root),{recursive:true});await writeFile(new URL(p.path.slice(1)+'index.md',root),`Source: ${origin+p.path}\n\n${markdown(p.html)}`);}
- const listing=pages.map(p=>`- [${plain(p.heading)}](${origin+p.path}index.md): ${p.description}`).join('\n');
+ const line=p=>`- [${plain(p.heading)}](${origin+p.path}index.md): ${p.description}`;
+ const listing=pages.filter(p=>!p.path.startsWith('/blog/')).map(line).join('\n')+'\n\n## Website guides, checklists and comparisons\n'+pages.filter(p=>p.path.startsWith('/blog/')).map(line).join('\n');
  await writeFile(new URL('llms.txt',root),`# Michael McKerracher\n\n> Independent AI implementation, web design and marketing services based in Coldstream, serving the Okanagan, British Columbia.\n\n## Portfolio\n- [Portfolio](${origin}/): Selected work and background.\n- [Cool Runnings case study](${origin}/v2/work/local-search-magnet.html): Website, local SEO and conversion work; 30% increase in qualified bookings.\n\n## Services\n${listing}\n\n## Contact\nFree initial consultation: michael.mckerracher@gmail.com.\nAI audit: CAD 900 once, five on-site hours across two to three weeks. Custom AI implementation and maintenance from CAD 2,500/month. Web design and marketing are custom-quoted.\n`);
  await writeFile(new URL('llms-full.txt',root),pages.map(p=>`Source: ${origin+p.path}\n\n${markdown(p.html)}`).join('\n---\n\n'));
  await writeFile(new URL('robots.txt',root),'User-agent: *\nDisallow: /api/\n\nSitemap: https://michaelmck.site/sitemap.xml\n');

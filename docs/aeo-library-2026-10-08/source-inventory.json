@@ -1,0 +1,154 @@
+[
+  {
+    "id": "google-ai",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features",
+    "finalUrl": "https://developers.google.com/search/docs/appearance/ai-features",
+    "status": 200,
+    "bytes": 179634,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "google-helpful",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "finalUrl": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "status": 200,
+    "bytes": 189638,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "google-local",
+    "url": "https://support.google.com/business/answer/7091?hl=en",
+    "finalUrl": "https://support.google.com/business/answer/7091?hl=en",
+    "status": 200,
+    "bytes": 1732002,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "google-spam",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+    "finalUrl": "https://developers.google.com/search/docs/essentials/spam-policies",
+    "status": 200,
+    "bytes": 211036,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "google-article",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/article",
+    "finalUrl": "https://developers.google.com/search/docs/appearance/structured-data/article",
+    "status": 200,
+    "bytes": 205508,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "openai-publishers",
+    "url": "https://help.openai.com/en/articles/12627856-publishers-and-developers-faq",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "web-vitals",
+    "url": "https://web.dev/articles/vitals",
+    "finalUrl": "https://web.dev/articles/vitals",
+    "status": 200,
+    "bytes": 143520,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "kelowna-guide-competitor",
+    "url": "https://bryceelliot.com/blog/web-design-kelowna-small-business-guide/",
+    "finalUrl": "https://bryceelliot.com/blog/web-design-kelowna-small-business-guide/",
+    "status": 200,
+    "bytes": 91415,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "kelowna-cost-competitor",
+    "url": "https://thebomb.ca/blog/kelowna-web-design-cost-2026/",
+    "finalUrl": "https://thebomb.ca/blog/kelowna-web-design-cost-2026/",
+    "status": 200,
+    "bytes": 67506,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "vernon-content-competitor",
+    "url": "https://reeledgemedia.com/category/website-design/",
+    "finalUrl": "https://reeledgemedia.com/category/website-design/",
+    "status": 200,
+    "bytes": 0,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "twirling",
+    "url": "https://twirlingumbrellas.com/",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "twincreek",
+    "url": "https://www.twincreekmedia.com/",
+    "finalUrl": "https://www.twincreekmedia.com/",
+    "status": 200,
+    "bytes": 67629,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "duford",
+    "url": "https://duforddigital.com/vernon-web-design/",
+    "finalUrl": "https://duforddigital.com/vernon-web-design/",
+    "status": 200,
+    "bytes": 31450,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "thebomb",
+    "url": "https://thebomb.ca/",
+    "finalUrl": "https://thebomb.ca/",
+    "status": 200,
+    "bytes": 110874,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "vernonsoftware",
+    "url": "https://vernonsoftware.com/services/web-design/",
+    "finalUrl": "https://vernonsoftware.com/services/web-design/",
+    "status": 200,
+    "bytes": 303256,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "svice",
+    "url": "https://www.svice.ca/",
+    "finalUrl": "https://www.svice.ca/",
+    "status": 200,
+    "bytes": 242729,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "westkelowna-tourism",
+    "url": "https://www.tourismkelowna.com/explore/neighbouring-communities/west-kelowna/",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "westkelowna-city",
+    "url": "https://www.westkelownacity.ca/building-business-development/economic-development/",
+    "finalUrl": "https://www.westkelownacity.ca/building-business-development/economic-development/",
+    "status": 200,
+    "bytes": 64504,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "vernon-tourism",
+    "url": "https://www.tourismvernon.com/",
+    "finalUrl": "https://www.tourismvernon.com/",
+    "status": 200,
+    "bytes": 224021,
+    "retrieved": "2026-10-08"
+  },
+  {
+    "id": "kelowna-tourism",
+    "url": "https://www.tourismkelowna.com/",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved": "2026-10-08"
+  }
+]

@@ -1,0 +1,522 @@
+[
+  {
+    "route": "/blog/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 0,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/kelowna-business-website-guide/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/vernon-business-website-guide/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/west-kelowna-business-website-guide/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/service-business-website-checklist/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/okanagan-website-cost/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/website-visitors-no-enquiries/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/google-chatgpt-business-visibility/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/website-redesign-or-repair/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/cool-runnings-qualified-bookings/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/best-web-designers-kelowna/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/best-web-designers-vernon/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/best-web-designers-west-kelowna/",
+    "bodyWidth": 1425,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 1440
+  },
+  {
+    "route": "/blog/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 0,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/kelowna-business-website-guide/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/vernon-business-website-guide/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/west-kelowna-business-website-guide/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/service-business-website-checklist/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/okanagan-website-cost/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/website-visitors-no-enquiries/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/google-chatgpt-business-visibility/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/website-redesign-or-repair/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/cool-runnings-qualified-bookings/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/best-web-designers-kelowna/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/best-web-designers-vernon/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/best-web-designers-west-kelowna/",
+    "bodyWidth": 753,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 768
+  },
+  {
+    "route": "/blog/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 0,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/kelowna-business-website-guide/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/vernon-business-website-guide/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/west-kelowna-business-website-guide/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/service-business-website-checklist/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/okanagan-website-cost/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/website-visitors-no-enquiries/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/google-chatgpt-business-visibility/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/website-redesign-or-repair/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/cool-runnings-qualified-bookings/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/best-web-designers-kelowna/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/best-web-designers-vernon/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/best-web-designers-west-kelowna/",
+    "bodyWidth": 375,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 390
+  },
+  {
+    "route": "/blog/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 0,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/kelowna-business-website-guide/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/vernon-business-website-guide/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/west-kelowna-business-website-guide/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/service-business-website-checklist/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/okanagan-website-cost/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/website-visitors-no-enquiries/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/google-chatgpt-business-visibility/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/website-redesign-or-repair/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/cool-runnings-qualified-bookings/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/best-web-designers-kelowna/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/best-web-designers-vernon/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  },
+  {
+    "route": "/blog/best-web-designers-west-kelowna/",
+    "bodyWidth": 305,
+    "brokenImages": [],
+    "faq": 3,
+    "h1": 1,
+    "overflow": [],
+    "summary": true,
+    "width": 320
+  }
+]

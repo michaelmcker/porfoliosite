@@ -13,3 +13,6 @@ gha-creds-*.json
 /*.png
 /assets/design-refs/
 /.superpowers/
+
+# Local third-party research snapshots; do not publish copied source pages.
+/docs/aeo-library-2026-10-08/sources/

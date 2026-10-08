@@ -1,3 +1,12 @@
+# Public resource library, October 8, 2026
+
+- `/blog/` now contains 12 public articles: three city guides, five practical checklists, three provider comparisons and the Cool Runnings case study. This supersedes the earlier blog removal only for these newly approved articles; the old three posts remain retired.
+- Every article opens with a direct summary and has three visible specific FAQs. Provider lists include Michael McKerracher with authorship and selection criteria.
+- Shared DM Sans/Fraunces navigation and editorial reading layout; mobile tables, sources, related services and consultation links.
+- Source: scripts/resource-content-*.mjs; build: npm run build:resources. Canonical source outputs under v2/blog, production under blog, styles in v2/resources.
+- HTML, Markdown, Article/FAQ/ItemList/Breadcrumb schema, sitemap and LLM discovery are generated together. Industry/promotion builds regenerate the collection, and partial discovery writes preserve it.
+- Private Field Notes remains excluded from publication.
+
 # Feature additions
 
 ## Shared navigation and service styling, September 27, 2026

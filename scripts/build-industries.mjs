@@ -123,6 +123,8 @@ export async function buildIndustries(){
  const manifest=pages.map(p=>({path:p.path,title:p.title,words:markdown(p.html).split(/\s+/).length,image:p.image}));
  await writeFile(new URL('docs/industry-pages-2026-10-07/build-manifest.json',root),JSON.stringify(manifest,null,2)+'\n');
  console.log(`Built ${pages.length-1} industry pages and their index, Markdown, schema, sitemap and discovery files.`);
+ const {buildResources}=await import('./build-resources.mjs');
+ await buildResources();
  return pages;
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href)await buildIndustries();
