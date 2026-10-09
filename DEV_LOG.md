@@ -224,3 +224,11 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Baseline tests exposed the existing calendar validator rejecting the newly drafted state from the prior library task; aligned the allowed state without changing publication eligibility.
 - Verified updated copy and all five interest options in the local browser. Repository checks: 155 pass, one unchanged missing-Chrome failure. Only contact HTML/Markdown changes affect public output; draft content remains deployment-excluded.
 - Production release 1da6e76 verified by Vercel GitHub success status and byte-identical public HTML/Markdown. Live browser confirms Marketing engineering is selectable and the removed wording is absent. Screenshot saved in the durable contact-update folder.
+
+## 2026-10-08: Resource navigation and free-scrolling finale
+- User requests plain guide summaries, sticky desktop article navigation, deeper links toward services/contact and persistent footer Resources/Contact links.
+- Remove explicit document/body scroll locking and mobile drag interception while retaining the approved spiral/physics artwork and desktop dragging. User direction supersedes the former viewport-lock design contract.
+- Replaced guide takeaway callouts with white summary lists. Added desktop sticky contents with a short-screen height cap and normal mobile flow; service/contact links remain available beside the article.
+- Added contextual links to appliance repair, accountant, winery, restaurant and hotel website pages in the three live city guides. Added a clear service/contact invitation and Contact us in the resource footer.
+- Homepage footer includes Contact us and Resources; links wrap on narrow phones. Existing resource section and public article scheduling retained.
+- Verified sticky sidebar at two page positions (24px top), 390/320px article flow and 320px footer reachability. Page scroll advances during both desktop and mobile animation entry with no fixed-body/overflow lock. 155 tests pass, the unchanged missing-Chrome test remains unavailable.

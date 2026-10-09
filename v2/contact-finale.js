@@ -32,7 +32,6 @@
   let matterPromise;
   let finaleVisible = true;
   let copyTimer;
-  let viewportLock;
   let contactImagesReady;
 
   const entranceDuration = 4800;
@@ -44,59 +43,6 @@
   function setState(next) {
     state = next;
     story.dataset.finaleState = next;
-  }
-
-  function lockViewport() {
-    if (viewportLock) return;
-    const root = document.documentElement;
-    const body = document.body;
-    const rootScrollBehavior = root.style.scrollBehavior;
-    const stageTop = stage.getBoundingClientRect().top + window.scrollY;
-    root.style.scrollBehavior = "auto";
-    window.scrollTo(0, stageTop);
-    const scrollY = window.scrollY;
-    const scrollbarGap = Math.max(0, window.innerWidth - root.clientWidth);
-    viewportLock = {
-      scrollY,
-      rootOverflow: root.style.overflow,
-      rootScrollBehavior,
-      bodyPosition: body.style.position,
-      bodyTop: body.style.top,
-      bodyLeft: body.style.left,
-      bodyRight: body.style.right,
-      bodyWidth: body.style.width,
-      bodyPaddingRight: body.style.paddingRight,
-    };
-    root.style.overflow = "hidden";
-    body.style.position = "fixed";
-    body.style.top = `${-scrollY}px`;
-    body.style.left = "0";
-    body.style.right = "0";
-    body.style.width = "100%";
-    if (scrollbarGap) {
-      body.style.paddingRight = `${parseFloat(getComputedStyle(body).paddingRight) + scrollbarGap}px`;
-    }
-    root.style.scrollBehavior = rootScrollBehavior;
-    story.dataset.viewportLocked = "true";
-  }
-
-  function unlockViewport() {
-    if (!viewportLock) return;
-    const root = document.documentElement;
-    const body = document.body;
-    const saved = viewportLock;
-    viewportLock = undefined;
-    root.style.scrollBehavior = "auto";
-    root.style.overflow = saved.rootOverflow;
-    body.style.position = saved.bodyPosition;
-    body.style.top = saved.bodyTop;
-    body.style.left = saved.bodyLeft;
-    body.style.right = saved.bodyRight;
-    body.style.width = saved.bodyWidth;
-    body.style.paddingRight = saved.bodyPaddingRight;
-    window.scrollTo(0, saved.scrollY);
-    root.style.scrollBehavior = saved.rootScrollBehavior;
-    story.dataset.viewportLocked = "false";
   }
 
   function loadMatterRuntime() {
@@ -244,7 +190,6 @@
     if (entranceStarted || reducedMotion.matches) return;
     entranceStarted = true;
     setState("preparing");
-    lockViewport();
     story.dataset.entranceStarts = String(Number(story.dataset.entranceStarts || 0) + 1);
     await prepareContactImages();
     if (entranceCancelled) return;
@@ -252,7 +197,6 @@
     try {
       await preparePhysics();
     } catch {
-      unlockViewport();
       showStaticFallback();
       return;
     }
@@ -407,7 +351,6 @@
     released = true;
     story.dataset.releaseDelta = "0.000";
     releaseTimestamp = performance.now();
-    unlockViewport();
     setState("physics");
     if (story.dataset.copyState !== "visible") scheduleCopyReveal();
   }
@@ -438,7 +381,7 @@
   }
 
   stage.addEventListener("pointerdown", (event) => {
-    if (!engine || event.target.closest("a, button")) return;
+    if (!engine || event.pointerType === "touch" || event.target.closest("a, button")) return;
     const point = stagePoint(event);
     const body = Matter.Query.point(bodies, point).at(-1);
     if (!body) return;
@@ -487,14 +430,12 @@
     if (engine) rebuildBoundaries();
   }, { passive: true });
   window.addEventListener("keydown", (event) => {
-    if (event.key !== "Escape" || !viewportLock) return;
+    if (event.key !== "Escape" || !entranceStarted || released || entranceCancelled) return;
     entranceCancelled = true;
     if (entranceFrame) cancelAnimationFrame(entranceFrame);
     entranceFrame = undefined;
-    unlockViewport();
     showStaticFallback();
   });
-  window.addEventListener("pagehide", unlockViewport, { once: true });
 
   const visibilityObserver = "IntersectionObserver" in window
     ? new IntersectionObserver((entries) => {
@@ -515,7 +456,6 @@
     story.dataset.copyState = "hidden";
     story.dataset.entranceProgress = "0.0000";
     story.dataset.entranceStarts = "0";
-    story.dataset.viewportLocked = "false";
     setState("idle");
     if ("IntersectionObserver" in window) {
       const runtimeObserver = new IntersectionObserver((entries, observer) => {

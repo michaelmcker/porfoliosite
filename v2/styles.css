@@ -1249,7 +1249,7 @@ h3 {
 .contact-resolution.is-contrast-light .contact-morph { color: #fff; text-shadow: 0 3px 18px rgba(23,24,19,.82); }
 .contact-story .button-primary { background: #1f1909; border-color: #1f1909; color: white; }
 .contact-story .button-quiet { border-color: rgba(31,25,9,.4); background: rgba(255,255,255,.2); }
-.contact-stage.is-draggable .contact-object { cursor: grab; touch-action: none; }
+.contact-stage.is-draggable .contact-object { cursor: grab; touch-action: pan-y; }
 .contact-stage.is-dragging .contact-object { cursor: grabbing; }
 @keyframes contact-morph-out { to { opacity: 0; filter: blur(16px); transform: scale(1.12); } }
 @keyframes contact-morph-in { from { opacity: 0; filter: blur(18px); transform: scale(.82); } to { opacity: 1; filter: blur(0); transform: scale(1); } }
@@ -1263,7 +1263,7 @@ h3 {
   color: var(--muted);
   font-size: .8rem;
 }
-.footer-links { justify-self: end; }
+.footer-links { justify-self: end; flex-wrap: wrap; }
 
 .dashboard-dialog {
   width: min(calc(100% - 32px), 1080px);

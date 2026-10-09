@@ -93,7 +93,7 @@ test("About conclusion resolves beside the portrait rather than at the frame bot
   assert.match(css, /@media\s*\(max-width:\s*760px\)[\s\S]*?\.about-process-reveal\s*\{[^}]*top:\s*47svh/s);
 });
 
-test("finale locks immediately, preloads early, and uses lightweight contact art", async () => {
+test("finale preserves page scrolling, preloads early, and uses lightweight contact art", async () => {
   const [html, finale] = await Promise.all([
     read("v2/index.html"),
     read("v2/contact-finale.js"),
@@ -104,12 +104,9 @@ test("finale locks immediately, preloads early, and uses lightweight contact art
   assert.match(finale, /image\.decode\(\)/);
   assert.match(finale, /rootMargin:\s*"120% 0px"/);
   assert.match(finale, /threshold:\s*\.12/);
-  const entrance = finale.match(/async function startEntrance\(\)\s*\{([\s\S]*?)\n  \}/)?.[1] || "";
-  assert.ok(
-    entrance.indexOf("lockViewport()") >= 0
-      && entrance.indexOf("lockViewport()") < entrance.indexOf("await prepareContactImages()"),
-    "the finale must lock before it waits for image decoding",
-  );
+  assert.doesNotMatch(finale, /lockViewport|unlockViewport|window\.scrollTo/);
+  assert.match(finale, /event\.pointerType === "touch"/);
+
 
   for (const asset of [
     "cool-runnings.webp",

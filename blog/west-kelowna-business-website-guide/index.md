@@ -26,6 +26,8 @@ In this article
 - [Agree how the site stays current](#maintain)
 
 - [Questions, answered](#questions)
+[Website design services](https://michaelmck.site/web-design/)
+[Discuss your project](https://michaelmck.site/contact/)
 [All resources](https://michaelmck.site/blog/)
 
 - Be precise about West Kelowna, Westbank and your actual service area.
@@ -60,7 +62,10 @@ Let the main action follow the journey. Check availability suits a bookable expe
 
 ## 3. Show the experience and the practical details together
 
-Pair hospitality imagery with the practical details people need to plan a visit. A winery, restaurant or accommodation website needs imagery that helps people picture the visit and information that lets them plan it. Show what is actually available, then answer questions about group size, arrival, reservations and accessibility.
+Pair hospitality imagery with the practical details people need to plan a visit. A [winery website](https://michaelmck.site/web-design/wineries/)
+, [restaurant website](https://michaelmck.site/web-design/restaurants/)
+ or [accommodation website](https://michaelmck.site/web-design/hotels/)
+ needs imagery that helps people picture the visit and information that lets them plan it. Show what is actually available, then answer questions about group size, arrival, reservations and accessibility.
 
 A tasting page could include the experience, duration, booking link and group enquiry route. A restaurant needs a readable menu and accurate opening hours. Accommodation needs clear property details and a route to availability. Avoid making customers leave the site and assemble this information from old social posts.
 
@@ -118,6 +123,15 @@ No. A callback or reservation request can be enough when availability or scope n
 ### Can one website support local services and visitor experiences?
 
 Yes. Give each audience a clearly labelled route and its own relevant information. A shared homepage can introduce the business while separate pages handle service enquiries, experiences, availability and booking conditions.
+
+## Put this to work for your business.
+
+I can help you turn these decisions into a website with a clear structure, useful content and an easier route to an enquiry or booking. Start with [web design and development](https://michaelmck.site/web-design/)
+, or [tell me what you want to improve](https://michaelmck.site/contact/)
+ and we can work out the right scope.
+
+[AI implementation](https://michaelmck.site/ai-implementation/)
+[Marketing & branding](https://michaelmck.site/marketing-branding/)
 
 ## Sources and further reading
 

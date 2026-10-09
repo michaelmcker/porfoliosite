@@ -80,3 +80,8 @@ The rejected services hub, guides and sample report are archived in docs/rejecte
 ## Contact form copy, October 8, 2026
 - Optional interests include Marketing engineering alongside Web design, AI implementation and Marketing and branding.
 - The form retains the short enquiry-use sentence, with no visible delivery-provider or mailing-list explanation.
+
+## Resource navigation and scrolling, October 8, 2026
+- Desktop guide contents stay visible within the article; mobile contents remain in the reading flow. Plain summary lists replace tinted left-border callouts.
+- Live city guides include contextual industry links, service/contact invitations and Resources/Contact footer links. Homepage footer retains email/social links alongside Resources and Contact us.
+- The contact finale keeps its spiral and desktop physics interaction without document scroll locking, forced alignment or mobile gesture interception.

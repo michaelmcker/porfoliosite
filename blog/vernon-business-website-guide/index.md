@@ -24,6 +24,8 @@ In this article
 - [Build a reliable route from request to booking](#enquiries)
 
 - [Questions, answered](#questions)
+[Website design services](https://michaelmck.site/web-design/)
+[Discuss your project](https://michaelmck.site/contact/)
 [All resources](https://michaelmck.site/blog/)
 
 - Make it easy for a referred customer to confirm they have found the right business.
@@ -56,7 +58,8 @@ A town deserves a separate page when you can add meaningful information: work co
 
 ## 3. Explain what happens at the first appointment
 
-A Vernon clinic, accountant or professional service needs a website that helps people arrive prepared. Describe who the appointment is for, how long to allow if known, what to bring and how the booking is confirmed.
+A Vernon clinic, [accounting firm](https://michaelmck.site/web-design/accountants/)
+ or professional service needs a website that helps people arrive prepared. Describe who the appointment is for, how long to allow if known, what to bring and how the booking is confirmed.
 
 Keep sensitive details out of a general enquiry form. A name, preferred contact method and broad reason for the appointment may be enough to route the request. Use the practice’s approved intake system for private records. An accountant can explain the documents to gather without asking someone to attach financial statements to an ordinary contact form.
 
@@ -109,6 +112,15 @@ Use the actual business location. You can clearly say that you serve Vernon and 
 ### Can I keep my current domain when rebuilding?
 
 Yes, provided your business controls the domain. Plan the website move, email settings and redirects before changing hosting. Keeping the domain does not automatically preserve every old page address, so include URL mapping in the rebuild.
+
+## Put this to work for your business.
+
+I can help you turn these decisions into a website with a clear structure, useful content and an easier route to an enquiry or booking. Start with [web design and development](https://michaelmck.site/web-design/)
+, or [tell me what you want to improve](https://michaelmck.site/contact/)
+ and we can work out the right scope.
+
+[AI implementation](https://michaelmck.site/ai-implementation/)
+[Marketing & branding](https://michaelmck.site/marketing-branding/)
 
 ## Sources and further reading
 

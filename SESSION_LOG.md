@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-08: Refining guide layout and internal links; removing homepage finale scroll lock and exposing Resources/Contact in the footer.
+
 2026-10-08: Contact wording simplified and Marketing engineering added; deployed and live-verified.
 
 2026-10-08: Complete 60-article private library saved and reviewed (90,192 words). Searchable desktop/mobile reader, editable manuscripts and dated calendar ready. Publishing heartbeat reuses these drafts; no new articles published in this session.

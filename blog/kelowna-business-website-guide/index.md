@@ -28,6 +28,8 @@ In this article
 - [Measure the work you want more of](#launch)
 
 - [Questions, answered](#questions)
+[Website design services](https://michaelmck.site/web-design/)
+[Discuss your project](https://michaelmck.site/contact/)
 [All resources](https://michaelmck.site/blog/)
 
 - Choose the customer action and business outcome before choosing a website platform.
@@ -61,7 +63,8 @@ Use the homepage to send people to the detail they need. One generic contact for
 
 A practical Kelowna service website usually needs a homepage, individual service pages, work or results, an about page and a clear contact route. A service page should explain who the service is for, the problems covered, the process, the evidence and what happens after an enquiry.
 
-An appliance business, for example, can separate refrigerator, dishwasher and laundry repairs because each service raises different fault, access and booking questions. [ABC Appliance](https://www.abcappliance.ca/)
+An [appliance repair website](https://michaelmck.site/web-design/appliance-repair/)
+, for example, can separate refrigerator, dishwasher and laundry repairs because each service raises different fault, access and booking questions. [ABC Appliance](https://www.abcappliance.ca/)
  is relevant work from my portfolio: the design and service content support a direct request for help. Useful detail can earn its own page. A second heading by itself is not enough.
 
 If customers ask genuinely different local questions, add a service-area page with real coverage information and relevant work. Avoid publishing a page for every neighbourhood before you have something useful to say about it.
@@ -117,6 +120,15 @@ Usually one website can support multiple genuine locations. Give each location i
 ### Can a designer help write the website content as well?
 
 Yes. Michael McKerracher offers content planning and writing alongside website design. Agree whether interviews, service copy, project stories, FAQs and photography are part of the quote.
+
+## Put this to work for your business.
+
+I can help you turn these decisions into a website with a clear structure, useful content and an easier route to an enquiry or booking. Start with [web design and development](https://michaelmck.site/web-design/)
+, or [tell me what you want to improve](https://michaelmck.site/contact/)
+ and we can work out the right scope.
+
+[AI implementation](https://michaelmck.site/ai-implementation/)
+[Marketing & branding](https://michaelmck.site/marketing-branding/)
 
 ## Sources and further reading
 

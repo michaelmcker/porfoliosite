@@ -1,0 +1,66 @@
+{
+  "desktopGuide": {
+    "viewportWidth": 1440,
+    "scrollPositions": [
+      2507.5,
+      3467.5
+    ],
+    "sidebarTop": [
+      24,
+      24
+    ],
+    "summaryBackground": "transparent",
+    "summaryLeftBorder": 0
+  },
+  "mobileGuide": [
+    {
+      "width": 390,
+      "pageWidth": 390,
+      "contentsPosition": "static"
+    },
+    {
+      "width": 320,
+      "pageWidth": 320,
+      "contentsPosition": "static"
+    }
+  ],
+  "desktopFinale": {
+    "startScroll": 11510.5,
+    "endScroll": 11942.5,
+    "states": [
+      "preparing",
+      "entrance"
+    ],
+    "rootOverflow": "",
+    "bodyPosition": ""
+  },
+  "mobileFinale": {
+    "startScroll": 12323.5,
+    "endScroll": 13167.5,
+    "states": [
+      "idle",
+      "entrance"
+    ],
+    "touchAction": "pan-y",
+    "rootOverflow": "",
+    "bodyPosition": ""
+  },
+  "mobileFooter": {
+    "viewportWidth": 320,
+    "pageWidth": 320,
+    "footerTop": 446.8203125,
+    "footerBottom": 739.7890625,
+    "viewportHeight": 740,
+    "links": [
+      "Contact us",
+      "Resources",
+      "Email",
+      "GitHub",
+      "LinkedIn"
+    ]
+  },
+  "tests": {
+    "pass": 155,
+    "unchangedFailure": "Missing Chrome executable in the existing About test"
+  }
+}

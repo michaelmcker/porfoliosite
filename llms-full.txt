@@ -3801,11 +3801,11 @@ Based in Coldstream. Working with businesses across Kelowna, Vernon, West Kelown
 
 Leave this field empty
 
-Your nameEmailWhat are you thinking about?  (optional) Not sure yetWeb designAI implementationMarketing and brandingWhat would you like help with?I’ll use these details to respond to your enquiry. The form is delivered through FormSubmit. No mailing-list signup.
+Your nameEmailWhat are you thinking about?  (optional) Not sure yetWeb designAI implementationMarketing and brandingMarketing engineeringWhat would you like help with?I’ll use these details to respond to your enquiry.
 
 Send your message
 
-Submitting opens a secure FormSubmit confirmation page. You can also email me directly.
+You can also email me directly.
 
 ---
 
@@ -3872,6 +3872,8 @@ In this article
 - [Measure the work you want more of](#launch)
 
 - [Questions, answered](#questions)
+[Website design services](https://michaelmck.site/web-design/)
+[Discuss your project](https://michaelmck.site/contact/)
 [All resources](https://michaelmck.site/blog/)
 
 - Choose the customer action and business outcome before choosing a website platform.
@@ -3905,7 +3907,8 @@ Use the homepage to send people to the detail they need. One generic contact for
 
 A practical Kelowna service website usually needs a homepage, individual service pages, work or results, an about page and a clear contact route. A service page should explain who the service is for, the problems covered, the process, the evidence and what happens after an enquiry.
 
-An appliance business, for example, can separate refrigerator, dishwasher and laundry repairs because each service raises different fault, access and booking questions. [ABC Appliance](https://www.abcappliance.ca/)
+An [appliance repair website](https://michaelmck.site/web-design/appliance-repair/)
+, for example, can separate refrigerator, dishwasher and laundry repairs because each service raises different fault, access and booking questions. [ABC Appliance](https://www.abcappliance.ca/)
  is relevant work from my portfolio: the design and service content support a direct request for help. Useful detail can earn its own page. A second heading by itself is not enough.
 
 If customers ask genuinely different local questions, add a service-area page with real coverage information and relevant work. Avoid publishing a page for every neighbourhood before you have something useful to say about it.
@@ -3962,6 +3965,15 @@ Usually one website can support multiple genuine locations. Give each location i
 
 Yes. Michael McKerracher offers content planning and writing alongside website design. Agree whether interviews, service copy, project stories, FAQs and photography are part of the quote.
 
+## Put this to work for your business.
+
+I can help you turn these decisions into a website with a clear structure, useful content and an easier route to an enquiry or booking. Start with [web design and development](https://michaelmck.site/web-design/)
+, or [tell me what you want to improve](https://michaelmck.site/contact/)
+ and we can work out the right scope.
+
+[AI implementation](https://michaelmck.site/ai-implementation/)
+[Marketing & branding](https://michaelmck.site/marketing-branding/)
+
 ## Sources and further reading
 
 - [Google: how local results are determined](https://support.google.com/business/answer/7091?hl=en)
@@ -4012,6 +4024,8 @@ In this article
 - [Build a reliable route from request to booking](#enquiries)
 
 - [Questions, answered](#questions)
+[Website design services](https://michaelmck.site/web-design/)
+[Discuss your project](https://michaelmck.site/contact/)
 [All resources](https://michaelmck.site/blog/)
 
 - Make it easy for a referred customer to confirm they have found the right business.
@@ -4044,7 +4058,8 @@ A town deserves a separate page when you can add meaningful information: work co
 
 ## 3. Explain what happens at the first appointment
 
-A Vernon clinic, accountant or professional service needs a website that helps people arrive prepared. Describe who the appointment is for, how long to allow if known, what to bring and how the booking is confirmed.
+A Vernon clinic, [accounting firm](https://michaelmck.site/web-design/accountants/)
+ or professional service needs a website that helps people arrive prepared. Describe who the appointment is for, how long to allow if known, what to bring and how the booking is confirmed.
 
 Keep sensitive details out of a general enquiry form. A name, preferred contact method and broad reason for the appointment may be enough to route the request. Use the practice’s approved intake system for private records. An accountant can explain the documents to gather without asking someone to attach financial statements to an ordinary contact form.
 
@@ -4098,6 +4113,15 @@ Use the actual business location. You can clearly say that you serve Vernon and 
 
 Yes, provided your business controls the domain. Plan the website move, email settings and redirects before changing hosting. Keeping the domain does not automatically preserve every old page address, so include URL mapping in the rebuild.
 
+## Put this to work for your business.
+
+I can help you turn these decisions into a website with a clear structure, useful content and an easier route to an enquiry or booking. Start with [web design and development](https://michaelmck.site/web-design/)
+, or [tell me what you want to improve](https://michaelmck.site/contact/)
+ and we can work out the right scope.
+
+[AI implementation](https://michaelmck.site/ai-implementation/)
+[Marketing & branding](https://michaelmck.site/marketing-branding/)
+
 ## Sources and further reading
 
 - [Google: how local results are determined](https://support.google.com/business/answer/7091?hl=en)
@@ -4150,6 +4174,8 @@ In this article
 - [Agree how the site stays current](#maintain)
 
 - [Questions, answered](#questions)
+[Website design services](https://michaelmck.site/web-design/)
+[Discuss your project](https://michaelmck.site/contact/)
 [All resources](https://michaelmck.site/blog/)
 
 - Be precise about West Kelowna, Westbank and your actual service area.
@@ -4184,7 +4210,10 @@ Let the main action follow the journey. Check availability suits a bookable expe
 
 ## 3. Show the experience and the practical details together
 
-Pair hospitality imagery with the practical details people need to plan a visit. A winery, restaurant or accommodation website needs imagery that helps people picture the visit and information that lets them plan it. Show what is actually available, then answer questions about group size, arrival, reservations and accessibility.
+Pair hospitality imagery with the practical details people need to plan a visit. A [winery website](https://michaelmck.site/web-design/wineries/)
+, [restaurant website](https://michaelmck.site/web-design/restaurants/)
+ or [accommodation website](https://michaelmck.site/web-design/hotels/)
+ needs imagery that helps people picture the visit and information that lets them plan it. Show what is actually available, then answer questions about group size, arrival, reservations and accessibility.
 
 A tasting page could include the experience, duration, booking link and group enquiry route. A restaurant needs a readable menu and accurate opening hours. Accommodation needs clear property details and a route to availability. Avoid making customers leave the site and assemble this information from old social posts.
 
@@ -4242,6 +4271,15 @@ No. A callback or reservation request can be enough when availability or scope n
 ### Can one website support local services and visitor experiences?
 
 Yes. Give each audience a clearly labelled route and its own relevant information. A shared homepage can introduce the business while separate pages handle service enquiries, experiences, availability and booking conditions.
+
+## Put this to work for your business.
+
+I can help you turn these decisions into a website with a clear structure, useful content and an easier route to an enquiry or booking. Start with [web design and development](https://michaelmck.site/web-design/)
+, or [tell me what you want to improve](https://michaelmck.site/contact/)
+ and we can work out the right scope.
+
+[AI implementation](https://michaelmck.site/ai-implementation/)
+[Marketing & branding](https://michaelmck.site/marketing-branding/)
 
 ## Sources and further reading
 
