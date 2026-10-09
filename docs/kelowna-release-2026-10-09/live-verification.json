@@ -1,0 +1,342 @@
+{
+  "commit": "ecc7a53",
+  "deployment": "HFbWthuXYBQQp7H29HFNwJmrLg7c",
+  "checkedAt": "2026-10-09T13:54:34.303Z",
+  "parity": [
+    {
+      "path": "web-design/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "web-design/index.md",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "ai-implementation/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "ai-implementation/index.md",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "marketing-branding/index.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "marketing-branding/index.md",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "v2/services/concepts.css",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "llms.txt",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "llms-full.txt",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "matches": true
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://michaelmck.site/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/proposal-generator.html",
+      "status": 200,
+      "canonical": "https://michaelmck.site/proposal-generator.html",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/v2/work/local-search-magnet.html",
+      "status": 200,
+      "canonical": "https://michaelmck.site/v2/work/local-search-magnet.html",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/v2/workflows/agency-management-dashboard.html",
+      "status": 200,
+      "canonical": "https://michaelmck.site/v2/workflows/agency-management-dashboard.html",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/v2/workflows/content-production.html",
+      "status": 200,
+      "canonical": "https://michaelmck.site/v2/workflows/content-production.html",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/v2/workflows/image-to-website-production.html",
+      "status": 200,
+      "canonical": "https://michaelmck.site/v2/workflows/image-to-website-production.html",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html",
+      "status": 200,
+      "canonical": "https://michaelmck.site/v2/workflows/local-prospecting-enrichment.html",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/v2/workflows/presentation-publishing.html",
+      "status": 200,
+      "canonical": "https://michaelmck.site/v2/workflows/presentation-publishing.html",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/ai-implementation/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/ai-implementation/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/marketing-branding/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/marketing-branding/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/plumbers/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/plumbers/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/electricians/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/electricians/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/hvac/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/hvac/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/roofers/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/roofers/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/landscapers/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/landscapers/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/home-builders/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/home-builders/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/appliance-repair/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/appliance-repair/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/law-firms/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/law-firms/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/accountants/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/accountants/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/financial-advisors/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/financial-advisors/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/real-estate/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/real-estate/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/property-management/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/property-management/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/medical-practices/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/medical-practices/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/dentists/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/dentists/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/physiotherapy/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/physiotherapy/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/medical-spas/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/medical-spas/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/charities/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/charities/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/private-schools/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/private-schools/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/hotels/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/hotels/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/vacation-rentals/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/vacation-rentals/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/wineries/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/wineries/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/restaurants/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/restaurants/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/retail/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/retail/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/car-dealerships/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/car-dealerships/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/web-design/industries/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/web-design/industries/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/contact/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/contact/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/blog/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/blog/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/blog/kelowna-business-website-guide/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/blog/kelowna-business-website-guide/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/blog/vernon-business-website-guide/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/blog/vernon-business-website-guide/",
+      "noindex": false
+    },
+    {
+      "url": "https://michaelmck.site/blog/west-kelowna-business-website-guide/",
+      "status": 200,
+      "canonical": "https://michaelmck.site/blog/west-kelowna-business-website-guide/",
+      "noindex": false
+    }
+  ],
+  "markdown": [
+    {
+      "path": "/web-design/",
+      "status": 200,
+      "url": "https://michaelmck.site/web-design/index.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "matches": true
+    },
+    {
+      "path": "/ai-implementation/",
+      "status": 200,
+      "url": "https://michaelmck.site/ai-implementation/index.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "matches": true
+    },
+    {
+      "path": "/marketing-branding/",
+      "status": 200,
+      "url": "https://michaelmck.site/marketing-branding/index.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "matches": true
+    },
+    {
+      "path": "/contact/",
+      "status": 200,
+      "url": "https://michaelmck.site/contact/index.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "matches": true
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "url": "https://michaelmck.site/blog/index.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "matches": true
+    }
+  ]
+}

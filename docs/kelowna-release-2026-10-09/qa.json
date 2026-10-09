@@ -1,0 +1,19 @@
+{
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "overflow": false,
+  "missingImages": false,
+  "faqExpands": true,
+  "enquiryLink": "/contact/",
+  "tests": {
+    "passed": 156,
+    "failed": 1,
+    "failure": "Existing missing Chrome binary in v2-about-mobile.test.mjs; same baseline failure"
+  },
+  "screenshots": "/Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-09-kelowna-release",
+  "design": "Original hero, work imagery, typography and navigation retained"
+}

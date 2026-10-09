@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-09: Strengthening the Kelowna Web Design service page and handling primary-page discovery/indexing requests. Preserve approved visuals; validate, deploy and verify live.
+2026-10-09: Kelowna Web Design strengthened, deployed and live-verified. Eight primary/entry-page crawl requests and the updated sitemap accepted by Google. New-page indexing remains pending Google processing.
 
 2026-10-08: Okanagan keyword research complete: 273 phrases across 11 locations, 7,298 discovery ideas, raw evidence, volumes and prioritised page map saved privately. No website/campaign changes.
 
@@ -33,6 +33,12 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-09: Kelowna service page and Google discovery
+- Expanded the existing Web Design page with practical deliverables, WordPress/managed/custom platform choices, ownership and handover detail, six FAQs and contextual service/guide/contact links. Original hero, project imagery and visual system retained; Cool Runnings proof corrected to qualified bookings.
+- Published `ecc7a53` to GitHub main; Vercel deployment `HFbWthuXYBQQp7H29HFNwJmrLg7c` succeeded. Ten changed live resources match local output. All 41 sitemap pages return 200 with matching canonicals and no noindex; five Markdown negotiations match.
+- Google accepted indexing requests for homepage, three services, Contact, Resources, industry index and Kelowna guide. Sitemap resubmission succeeded October 9. Homepage was already indexed; the other seven were not indexed at inspection. Requests do not establish indexing or rankings.
+- Browser checks at 320/390/768/1440, working native FAQs and enquiry link. 156 tests pass; unchanged legacy missing-Chrome failure. Saved release and submission evidence in `docs/kelowna-release-2026-10-09/` with durable screenshots in Business Research.
 
 ### 2026-10-08: Okanagan keyword demand
 - Refreshed Google Ads estimates for 273 phrases across 11 local location filters and collected 7,298 Kelowna keyword suggestions. Preserved September 2025–August 2026 monthly history, null/zero distinctions and exact geographies.
