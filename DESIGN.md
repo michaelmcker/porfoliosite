@@ -177,3 +177,6 @@ The 24 industry pages use independently art-directed website examples and four o
 
 ## Resources and article navigation, October 8, 2026
 Guides use plain white summaries and ordinary lists rather than tinted side-border callouts. Desktop article navigation sticks within the article, with a viewport-height cap for short screens; mobile navigation remains in normal flow. Contextual industry/service links, a project invitation and footer Resources/Contact links connect reading to useful next steps.
+
+### Privacy page
+`/privacy/` uses the shared navigation, white canvas, DM Sans body and Fraunces H1 accent. Its long-form column is capped at 820px, with a 40–72px fluid H1 and 16–18px body text. No cards, banners or additional interactive components.

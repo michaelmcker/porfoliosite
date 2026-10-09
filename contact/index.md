@@ -21,7 +21,8 @@ Thinking about a website? [Get a free homepage design.](https://michaelmck.site/
 
 Leave this field empty
 
-Your nameEmailWhat are you thinking about?  (optional) Not sure yetWeb designAI implementationMarketing and brandingMarketing engineeringWhat would you like help with?I’ll use these details to respond to your enquiry.
+Your nameEmailWhat are you thinking about?  (optional) Not sure yetWeb designAI implementationMarketing and brandingMarketing engineeringWhat would you like help with?I’ll use these details to respond to your enquiry. [Privacy](https://michaelmck.site/privacy/)
+.
 
 Send your message
 

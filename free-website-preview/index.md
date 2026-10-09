@@ -95,7 +95,8 @@ Business nameCurrent website  (optional) City / service area
 
 What should your website help you get?Choose a goalMore phone calls and enquiriesMore bookingsMore salesA stronger first impressionSomething elseWhat do you do, and what would you like to change?What are you considering?Improving my existing websiteA website for a new businessNot sure yetWhen would you like to launch?Exploring for nowWithin a monthWithin three monthsAs soon as possible
 
-I’ll use these details to prepare your design and contact you about it. Don’t include passwords or confidential customer information.
+I’ll use these details to prepare your design and contact you about it. Don’t include passwords or confidential customer information. [Privacy](https://michaelmck.site/privacy/)
+.
 
 Get my free homepage design
 

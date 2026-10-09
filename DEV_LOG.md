@@ -281,3 +281,8 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 
 ### 2026-10-09: Acquisition measurement live verification
 - Vercel release 863ebe8 completed successfully. Verified HTTP 200 and matching release bytes for production analytics and preview-intake JavaScript. No advertising was activated.
+
+### 2026-10-09: Enquiry privacy information
+- Added a factual Privacy page covering the existing form, email, calendar, AI-assisted design and analytics paths; no new data collection or vendor activated.
+- Linked from Contact and homepage-preview forms/footers, preserving the concise form copy. Added HTML/Markdown, canonical, sitemap and rebuild preservation.
+- Added the new public route to the existing sitemap release assertion.

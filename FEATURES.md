@@ -101,3 +101,6 @@ The rejected services hub, guides and sample report are archived in docs/rejecte
 - Desktop guide contents stay visible within the article; mobile contents remain in the reading flow. Plain summary lists replace tinted left-border callouts.
 - Live city guides include contextual industry links, service/contact invitations and Resources/Contact footer links. Homepage footer retains email/social links alongside Resources and Contact us.
 - The contact finale keeps its spiral and desktop physics interaction without document scroll locking, forced alignment or mobile gesture interception.
+
+## Privacy information
+The public `/privacy/` page describes the current enquiry, booking, design and measurement workflow. Contact and homepage-preview forms link to it. Source: `scripts/build-privacy.mjs`; rebuilt with resources; mirrored under V2.
