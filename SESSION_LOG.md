@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-09: Acquisition measurement release: exclude local traffic and retain campaign context across pages. No ad campaign launched.
+2026-10-09: Acquisition measurement deployed and live-verified: local traffic excluded and campaign context retained across pages. No ad campaign launched.
 
 2026-10-09: Corrected homepage-preview offer deployed and live-verified. Free custom homepage design; full website builds from CAD $2,500. Removed annual-price tier from public copy, schema and active workflow. No remaining work for this correction.
 
@@ -43,6 +43,7 @@ No remaining work for the selected service-page release. Deployed and verified S
 ### 2026-10-09: Acquisition measurement
 - Added production-host analytics gating and campaign attribution retained across pages for the homepage-preview intake.
 - Four behavioural checks pass; full suite 163 pass with the unchanged missing-Chrome failure. No design or public-offer changes.
+- Release 863ebe8 succeeded on Vercel 3HRqkF5PpxTUQ1YG4UzpdssYHDZK; both production JavaScript files match the release.
 
 ### 2026-10-09: Corrected free homepage design offer
 - Analysed Madweb’s actual 76-second video/transcript and offer structure. Wrote original direct copy: “See how good your website could look.”

@@ -278,3 +278,6 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Active local heartbeat homepage-preview-pipeline runs every 30 minutes. Google Search Console accepted /free-website-preview/ for indexing; request accepted does not establish indexed state. Board/offer screenshots saved privately.
 
 - Applied the smaller annual-price treatment to the shared homepage/Web Design invitation as well as the dedicated hero. Pricing remains visible alongside the free-build offer.
+
+### 2026-10-09: Acquisition measurement live verification
+- Vercel release 863ebe8 completed successfully. Verified HTTP 200 and matching release bytes for production analytics and preview-intake JavaScript. No advertising was activated.
