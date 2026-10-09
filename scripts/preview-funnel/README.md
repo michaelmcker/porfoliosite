@@ -6,6 +6,10 @@ Install/update with `python3 scripts/preview-funnel/install.py` from the portfol
 
 Offer: https://michaelmck.site/free-website-preview/. Existing FormSubmit activation sends to michael.mckerracher@gmail.com. No second CRM, mailing list or payment collection. Customer previews use unlisted, noindex URLs. These are not password protected; only approved public business content belongs in them.
 
+## Current offer
+
+The offer is a free custom homepage design preview, with no obligation to hire Michael. Full website packages start at CAD $2,500; scope, hosting and support are agreed in the paid proposal. There is no annual-price tier and no free completed website offer. Older intake or internal-test artifacts may contain superseded pricing; never reuse that pricing in designs, builds or customer email. The customer-facing design must describe the customer’s own business, not Michael’s pricing.
+
 ## Worker runbook (read every run)
 
 All paths below use the durable `runtime` directory. Use `python3 board.py list` to inspect the queue. The UI at port 8854 is the ONLY owner approval interface. Never call `approve_action` or `/api/action`, forge an owner event, or edit SQLite to advance approval. The worker CLI intentionally has no approval command. Owner approvals attach to exact artifact hashes; edits revoke their validity.

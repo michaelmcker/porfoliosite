@@ -1,25 +1,25 @@
 Source: https://michaelmck.site/free-website-preview/
 
-# Your next website. See it before you buy.
+# See how good your website could look.
 
-Get a free homepage design for your Okanagan business. See the direction before you commit.
+I’ll design a new homepage for your business, free. See the layout, the words and how customers can get in touch before you decide to hire me.
 
-[Show me my homepage](#request)
-$0 one-page build. $200/year. Hosting and minor updates included. All prices CAD.
+[Get my free homepage design](#request)
+For businesses in Kelowna and the Okanagan. No payment details. No obligation to go ahead.
 
 ABC Appliance website designed by Michael McKerracher, with clear services and repair enquiry options
 
- Made for your business
+ A design for your business
 
-Looks right on every screen
+A clear path to more enquiries
 
-Built to bring in enquiries
+You decide after seeing the work
 
-## Give customers a better reason to choose you.
+## Your website should help you win customers.
 
-An outdated website can make good work look ordinary. A cluttered one makes the next step hard to find.
+You do good work. But if your website looks dated, buries your services or makes it hard to get in touch, customers may choose someone else.
 
-Let’s show people what you do, why they should trust you and how to book, call or enquire. You’ll see how that could look before spending money on a build.
+I’ll show you how a better homepage can explain what you offer, give people a reason to trust you and make the next step obvious. You can judge the work before committing to a project.
 
 [Explore my web design work](https://michaelmck.site/web-design/)
 
@@ -29,7 +29,7 @@ For Cool Runnings, website, local SEO and conversion work helped turn more inter
 
 [Read the Cool Runnings case study](https://michaelmck.site/v2/work/local-search-magnet.html)
 
-## A clearer picture. A simpler decision.
+## Here’s how you get your free design.
 
 -  01
 
@@ -39,51 +39,49 @@ Share your website, what you do and what you want customers to do next. No websi
 
 -  02
 
-### See a design for you.
+### I design your homepage.
 
-I assess the opportunity and prepare a homepage direction around your services, your customers and your brand.
+I review your business and create a homepage with your services, your message and a clear way for customers to enquire. We can walk through it together on a call.
 
 -  03
 
-### Choose your next step.
+### Decide if we’re a good fit.
 
-Like the direction? Launch a one-page site or agree a larger package. The preview is free, with no obligation to proceed.
+If you like the design, I’ll quote the full website. We agree the work and price before starting. If you don’t want to go ahead, there’s nothing to pay.
 
-## Start small. Build from there.
+## Know what you’re getting. Then make the call.
 
-### A strong one-page website
+### Your free homepage design
 
-$0  design & build
+A design created around what you sell and the people you want to reach.
 
-CAD $200/year for hosting and minor updates.
+- A clear headline and explanation of your services
+- Layout, colours and imagery suited to your business
+- Space for the work and proof that help customers trust you
+- A simple next step: call, book or send an enquiry
 
-- Your services, story and a clear contact route
-- Responsive design for phones and desktop
-- Page structure and basic search setup
-- Small text, image and business-detail updates
+We’ll review it together so you can ask questions and share feedback.
 
-Custom domain separate. Use your existing domain or register your own.
+[Get my free homepage design](#request)
 
-[Get my free preview](#request)
+### If you’d like me to build it
 
-### Room for the whole business
+$2,500 full website packages from · CAD
 
-$2,500 full websites from · CAD
+We’ll agree what your business needs, with a clear quote before work begins.
 
-For businesses that need more pages, more detail and more ways to be found.
+- Custom design that works on phones and desktop
+- Service and location pages that help customers find you
+- Useful content and the technical foundations for Google and AI search
+- Contact or booking setup, launch and handover
 
-- Service and location pages built around demand
-- A consistent design system and clear navigation
-- Content, local search and conversion planning
-- An agreed scope, handover and support options
+Hosting and ongoing support are included in your proposal, based on what you need.
 
-Final scope and ongoing costs agreed before work begins.
+[See what goes into a website](https://michaelmck.site/web-design/)
 
-[Talk through a full website](https://cal.com/michael-mckerracher-dqi15w/30min)
+## Let’s design a better homepage for you.
 
-## What could your homepage look like?
-
-Tell me a little about your business. I’ll use it to prepare a direction that makes sense for you.
+Tell me what your business does and what you want your website to achieve. I’ll review your details and email you about your free design.
 
 No payment details. No obligation.
 
@@ -95,50 +93,50 @@ Your nameEmail
 
 Business nameCurrent website  (optional) City / service area
 
-What should your website help you get?Choose a goalMore phone calls and enquiriesMore bookingsMore salesA stronger first impressionSomething elseWhat do you do, and what would you like to change?What are you considering?Not sure — show me the possibilities One-page site — $200/yearFull website — from $2,500When would you like to launch?Exploring for nowWithin a monthWithin three monthsAs soon as possible
+What should your website help you get?Choose a goalMore phone calls and enquiriesMore bookingsMore salesA stronger first impressionSomething elseWhat do you do, and what would you like to change?What are you considering?Improving my existing websiteA website for a new businessNot sure yetWhen would you like to launch?Exploring for nowWithin a monthWithin three monthsAs soon as possible
 
-I’ll use these details to assess your website and contact you about your preview. Don’t include passwords or confidential customer information.
+I’ll use these details to prepare your design and contact you about it. Don’t include passwords or confidential customer information.
 
-Show me my homepage
+Get my free homepage design
 
 Submit the form or [email Michael directly](mailto:michael.mckerracher@gmail.com)
 .
 
-## Before you decide.
+## Your questions, answered.
 
-Is the website really free?
+What do I get for free?
 
-The one-page design and build cost $0. If you choose to launch, it is CAD $200 per year for hosting and minor updates. Requesting a preview does not commit you to a purchase. A custom domain is separate; you can use one you already own.
+A custom homepage design for your business. You’ll see the proposed layout, messaging, imagery and how customers would contact you. I’ll review it with you before you decide whether to hire me to build and launch the website.
 
-What is included in a one-page website?
+Why offer a free homepage design?
 
-A responsive page introducing your business, services, service area, proof and a clear way to get in touch. I set up the page title, headings, useful image descriptions, basic search information and contact links. A contact form or a link to your existing booking system can be included.
+Choosing a designer is easier when you can see what they would do for your business. This gives you something specific to judge: the design, the message and whether I understand what you need. If you like the work, we can discuss a paid project.
 
-What counts as a minor update?
+What if I don’t want to go ahead?
 
-Small changes to existing text, images, opening hours or contact details. New pages, a redesign, a shop or custom integrations are scoped separately before any work starts.
+There is no charge for the design preview and no obligation to hire me. You can share feedback or leave it there.
 
-What do I get before paying?
+How much does the finished website cost?
 
-A homepage design direction based on your business and the customers you want to reach. I review it, then share a preview so you can see the layout, message and next step. You decide whether to go ahead.
+Full website packages start at CAD $2,500. The quote sets out the pages, content, features, hosting and support you need. We agree the scope and price before any paid work begins.
 
-When would I need the full website package?
+Do I need an existing website?
 
-When you need separate service pages, location pages, more detailed content or a larger site. Full website packages start at CAD $2,500. We agree the pages, functionality and ongoing costs before starting.
+No. Send me your business name, what you offer, where you work and the customers you want to reach. If you have an existing website, I’ll use it to understand what needs to improve.
 
-Will my website be ready for Google and AI search?
+Will the finished website be built for Google and AI search?
 
-I build readable, accessible pages with a clear structure, useful business information and the technical foundations that help search engines discover and understand them. A one-page site is a starting point. Competing for several services or locations usually needs deeper pages, local proof and ongoing work. No one can promise a Google position or a ChatGPT recommendation.
+Yes. I plan the service and location pages, write useful content and handle headings, metadata, internal links, structured data and the sitemap. That helps Google and AI search tools understand your business. We choose the right depth for your market and the services you want to grow.
 
 Do you work with businesses outside Kelowna?
 
 Yes. I am based in Coldstream and work across Vernon, Kelowna, West Kelowna, Lake Country and the wider Okanagan. The preview can be prepared remotely.
 
-Can I move my website later?
+What happens after I send the form?
 
-Yes. Your domain stays in your name. If you want to move, we can arrange a handover of the website files. Annual hosting renewals and any separately scoped work are discussed before you commit.
+I review your business and reply by email with the next step. Once the design is ready, we can walk through it on a free 30-minute call. You’ll see the design and hear why I made those choices.
 
-## Let’s look at the possibilities.
+## Prefer to start with a conversation?
 
 A free 30-minute conversation about your business, your website and what would make a difference.
 

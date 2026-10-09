@@ -20,7 +20,7 @@ if(form){
    const data=await response.json();
    if(!response.ok||!(data.success===true||data.success==='true')||/activat|confirm your email/i.test(data.message||''))throw Error('Not confirmed');
    complete=true;status.dataset.state='success';status.textContent='Your preview request is in. I’ll review your brief and reply by email. You can also book a free call below.';
-   window.gtag?.('event','generate_lead',{method:'homepage_preview',offer:'one_page_200'});
+   window.gtag?.('event','generate_lead',{method:'homepage_preview',offer:'free_homepage_design'});
    form.reset();button.textContent='Preview requested';
   }catch{status.dataset.state='error';status.textContent='Your request hasn’t been confirmed. Your details are still here — try again or email michael.mckerracher@gmail.com.';button.disabled=false;}
   finally{sending=false;}

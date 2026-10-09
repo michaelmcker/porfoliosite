@@ -2,7 +2,9 @@
 
 ## In progress
 
-2026-10-09: Free homepage preview funnel deployed and live-verified. $0 one-page build + CAD $200/year including hosting/minor updates. Cal.com, live inbox intake and private design review verified; 30-minute Codex heartbeat active. New page submitted to Google; indexing pending.
+2026-10-09: Correcting the homepage-preview offer: remove the annual-price/free-completed-site tier, analyse Madweb source/video, rewrite the offer in plain English, update active workflow and publish.
+
+2026-10-09: Preview funnel infrastructure deployed. Cal.com, live inbox intake and private design review verified; 30-minute Codex heartbeat active. Annual-price offer superseded by the correction above. New page submitted to Google; indexing pending.
 
 2026-10-09: Kelowna Web Design strengthened, deployed and live-verified. Eight primary/entry-page crawl requests and the updated sitemap accepted by Google. New-page indexing remains pending Google processing.
 

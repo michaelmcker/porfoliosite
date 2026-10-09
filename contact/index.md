@@ -11,7 +11,7 @@ Based in Coldstream. Working with businesses across Kelowna, Vernon, West Kelown
 
 [Book a free 30-minute call](https://cal.com/michael-mckerracher-dqi15w/30min)
 
-Thinking about a website? [See your homepage before you buy.](https://michaelmck.site/free-website-preview/)
+Thinking about a website? [Get a free homepage design.](https://michaelmck.site/free-website-preview/)
 
 [Web design](https://michaelmck.site/web-design/)
 [AI implementation](https://michaelmck.site/ai-implementation/)

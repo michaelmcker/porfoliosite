@@ -139,7 +139,7 @@ def complete(id,token,payload):
 
 def delivery(d):
  name=d['fields']['name'].split(' ')[0];url=d.get('published',{}).get('url','')
- return {'to':d['fields']['email'],'subject':'Your homepage preview — '+d['fields']['business'], 'text':f"Hi {name},\n\nYour homepage preview is ready:\n{url}\n\nHave a look and let me know what you think. We can talk through the direction and any changes on a free 30-minute call:\nhttps://cal.com/michael-mckerracher-dqi15w/30min\n\nThe one-page build is free, with hosting and minor updates at CAD $200/year. Full websites start at CAD $2,500. There is no obligation to go ahead.\n\nMichael McKerracher\nmichaelmck.site"}
+ return {'to':d['fields']['email'],'subject':'Your homepage preview — '+d['fields']['business'], 'text':f"Hi {name},\n\nYour homepage preview is ready:\n{url}\n\nHave a look and let me know what you think. We can talk through the direction and any changes on a free 30-minute call:\nhttps://cal.com/michael-mckerracher-dqi15w/30min\n\nYour homepage design preview is free. If you’d like me to build the full website, packages start at CAD $2,500. We’ll agree the scope and price before any paid work begins. There is no obligation to go ahead.\n\nMichael McKerracher\nmichaelmck.site"}
 
 def approve_action(id,action,version,note):
  with db() as c:

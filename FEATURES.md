@@ -1,6 +1,6 @@
 # Free homepage preview funnel, October 9, 2026
 
-- `/free-website-preview/`: dedicated request form, source-led design, transparent CAD 200/year hosting/minor updates after a free one-page build; full sites from CAD 2,500. Shared Cal.com 30-minute event, lazy embedded calendar and ordinary link fallback.
+- `/free-website-preview/`: dedicated request form, source-led design, free custom homepage design preview before committing to a paid build; full sites from CAD 2,500. Shared Cal.com 30-minute event, lazy embedded calendar and ordinary link fallback.
 - Homepage and Web Design feature the preview offer. Contact links to it and the booking event. HTML, FAQ/Service schema, Markdown, sitemap and LLM files are generated together.
 - FormSubmit inbox intake uses unique request IDs; provider-confirmed lead event only, no PII in analytics. Standalone pages now load the existing Google tag if missing.
 - Private local review board and durable SQLite: `scripts/preview-funnel/`. Owner approves generated design, built website publication, and customer email separately. Artifact hashes, leases, deduplication, bounded generation, audit history and guarded stage transitions are included.

@@ -1,5 +1,11 @@
 # Development log
 
+## 2026-10-09: Homepage offer correction
+- Removed annual-price/free-completed-site offer from canonical config, generated landing page, homepage/service invitations, intake options, metadata/FAQ schema, discovery and approved-delivery email templates.
+- Rewrote the offer around a free custom homepage design and a separately agreed website build from CAD $2,500. Preserved the original portfolio visual system, live form and Cal.com integration.
+- Retrieved Madweb’s actual 76-second offer video for transcript analysis; source material saved privately. Existing runtime review gates remain unchanged.
+
+
 ## 2026-10-07: Industry web-design pages
 - Published source commit `0e44dbd` through GitHub main to Vercel production (`dpl_CJBmbgH579NXTADW95kWucGVjBfB`). Verified 105 live resources against local hashes, Markdown content negotiation and actual live desktop/mobile rendering.
 - Completed 24 individually written pages and a visual industry index. Each page has a distinct generated hero, approximately 950–1,150 words, local context, specific enquiry routes, practical FAQs, canonical/OG metadata and structured data.
