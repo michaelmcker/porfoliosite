@@ -232,3 +232,4 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Added contextual links to appliance repair, accountant, winery, restaurant and hotel website pages in the three live city guides. Added a clear service/contact invitation and Contact us in the resource footer.
 - Homepage footer includes Contact us and Resources; links wrap on narrow phones. Existing resource section and public article scheduling retained.
 - Verified sticky sidebar at two page positions (24px top), 390/320px article flow and 320px footer reachability. Page scroll advances during both desktop and mobile animation entry with no fixed-body/overflow lock. 155 tests pass, the unchanged missing-Chrome test remains unavailable.
+- Live release f68c775 completed on Vercel CukodA66oHR16zhUgcjNQES1J7D9. Ten public resources match local bytes; actual live sidebar and homepage entrance scrolling verified. Future resource queue and private drafts remain unchanged.

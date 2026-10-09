@@ -1,0 +1,42 @@
+[
+  {
+    "path": "index.html",
+    "matches": true
+  },
+  {
+    "path": "v2/contact-finale.js",
+    "matches": true
+  },
+  {
+    "path": "v2/styles.css",
+    "matches": true
+  },
+  {
+    "path": "v2/resources/resources.css",
+    "matches": true
+  },
+  {
+    "path": "blog/index.html",
+    "matches": true
+  },
+  {
+    "path": "blog/kelowna-business-website-guide/index.html",
+    "matches": true
+  },
+  {
+    "path": "blog/kelowna-business-website-guide/index.md",
+    "matches": true
+  },
+  {
+    "path": "blog/vernon-business-website-guide/index.html",
+    "matches": true
+  },
+  {
+    "path": "blog/west-kelowna-business-website-guide/index.html",
+    "matches": true
+  },
+  {
+    "path": "llms-full.txt",
+    "matches": true
+  }
+]

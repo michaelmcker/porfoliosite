@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-08: Refining guide layout and internal links; removing homepage finale scroll lock and exposing Resources/Contact in the footer.
+2026-10-08: Guide styling, sticky contents, contextual links and footer Resources/Contact complete; finale scroll lock removed. Deployed and live-verified.
 
 2026-10-08: Contact wording simplified and Marketing engineering added; deployed and live-verified.
 
@@ -29,6 +29,13 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-08: Guide navigation and free-scrolling homepage
+- Removed tinted side-border summary styling and made desktop article contents sticky, with normal mobile flow and short-screen scrolling inside long contents lists.
+- Added contextual industry links, service/contact invitations and resource-footer Contact us. Homepage footer includes Resources and Contact us beside email/social links.
+- Retained the portfolio spiral and desktop physics; removed document scroll locking, forced scroll alignment and mobile drag interception. Updated the superseded design contract.
+- Published f68c775; Vercel CukodA66oHR16zhUgcjNQES1J7D9 completed. Ten public HTML/Markdown/CSS/JS/discovery resources match local bytes. Live guide sidebar stays at 24px while scrolling; the live homepage moves from 11675 to 12047 during animation preparation/entry without fixing the body.
+- Checked 1440px guides and 390/320px mobile flow/footer. 155 tests pass with the unchanged missing-Chrome failure. Evidence: docs/resource-refinements-2026-10-08/.
 
 ### 2026-10-08: Contact form cleanup
 - Removed the FormSubmit and mailing-list explanation and added Marketing engineering to the optional interest selector. Existing form delivery and direct email remain intact.
