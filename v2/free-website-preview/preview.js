@@ -7,6 +7,7 @@ if(form){
  const params=new URLSearchParams(location.search),attribution={landing_path:location.pathname};
  for(const key of allowed)if(params.has(key))attribution[key]=params.get(key).slice(0,200);
  try {if(document.referrer)attribution.referrer_host=new URL(document.referrer).hostname;}catch{}
+ if(window.portfolioAttribution){attribution.first_touch=window.portfolioAttribution.first;attribution.last_touch=window.portfolioAttribution.last;}
  form.elements.attribution.value=JSON.stringify(attribution);
  form.elements.request_id.value=requestId;
  form.elements.submitted_at.value=new Date().toISOString();

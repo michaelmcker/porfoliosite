@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-09: Acquisition measurement release: exclude local traffic and retain campaign context across pages. No ad campaign launched.
+
 2026-10-09: Corrected homepage-preview offer deployed and live-verified. Free custom homepage design; full website builds from CAD $2,500. Removed annual-price tier from public copy, schema and active workflow. No remaining work for this correction.
 
 2026-10-09: Preview funnel infrastructure deployed. Cal.com, live inbox intake and private design review verified; 30-minute Codex heartbeat active. Annual-price offer superseded by the correction above. New page submitted to Google; indexing pending.
@@ -37,6 +39,10 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-09: Acquisition measurement
+- Added production-host analytics gating and campaign attribution retained across pages for the homepage-preview intake.
+- Four behavioural checks pass; full suite 163 pass with the unchanged missing-Chrome failure. No design or public-offer changes.
 
 ### 2026-10-09: Corrected free homepage design offer
 - Analysed Madweb’s actual 76-second video/transcript and offer structure. Wrote original direct copy: “See how good your website could look.”

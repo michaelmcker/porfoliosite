@@ -1,5 +1,10 @@
 # Development log
 
+## 2026-10-09: Acquisition measurement
+- Production-host analytics gating excludes local and preview traffic. Session campaign context survives navigation to the homepage-preview intake.
+- Preserved privacy-reduced GA4 and approval gates. Added behavioural tests for production/local hosts, campaign persistence, storage denial and expiry.
+- Acquisition planning and financial data remain outside the public repository; no advertising campaign launched.
+
 ## 2026-10-09: Homepage offer correction
 - Published 567dd74; Vercel success and twelve exact live-file matches. Responsive review at 320/390/768/1440 plus live desktop/mobile, CTA/FAQ/calendar checks. 159 passing tests; unchanged baseline Chrome failure. Active heartbeat/runtime corrected and superseded internal test archived.
 - Removed annual-price/free-completed-site offer from canonical config, generated landing page, homepage/service invitations, intake options, metadata/FAQ schema, discovery and approved-delivery email templates.
