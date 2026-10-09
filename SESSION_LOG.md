@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-08: Okanagan keyword research complete: 273 phrases across 11 locations, 7,298 discovery ideas, raw evidence, volumes and prioritised page map saved privately. No website/campaign changes.
+
 2026-10-08: Guide styling, sticky contents, contextual links and footer Resources/Contact complete; finale scroll lock removed. Deployed and live-verified.
 
 2026-10-08: Contact wording simplified and Marketing engineering added; deployed and live-verified.
@@ -29,6 +31,12 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-08: Okanagan keyword demand
+- Refreshed Google Ads estimates for 273 phrases across 11 local location filters and collected 7,298 Kelowna keyword suggestions. Preserved September 2025–August 2026 monthly history, null/zero distinctions and exact geographies.
+- Recommended general web design and local SEO first, then substantive WordPress/Wix pages; brand-name traffic separated from hiring intent. No synonym or region-total inflation.
+- Saved full raw evidence, CSV, page map and searchable reader in durable Business Research docs/2026-10-08-keyword-demand. All 3,003 exported observations match source; reader links and JavaScript syntax checked. File-browser visual check blocked; no bypass attempted.
+- Research only: no production source, publishing calendar, ads or deployment changes. Repository pointer: docs/seo/2026-10-08-okanagan-keyword-demand.md.
 
 ### 2026-10-08: Guide navigation and free-scrolling homepage
 - Removed tinted side-border summary styling and made desktop article contents sticky, with normal mobile flow and short-screen scrolling inside long contents lists.

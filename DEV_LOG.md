@@ -233,3 +233,10 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Homepage footer includes Contact us and Resources; links wrap on narrow phones. Existing resource section and public article scheduling retained.
 - Verified sticky sidebar at two page positions (24px top), 390/320px article flow and 320px footer reachability. Page scroll advances during both desktop and mobile animation entry with no fixed-body/overflow lock. 155 tests pass, the unchanged missing-Chrome test remains unavailable.
 - Live release f68c775 completed on Vercel CukodA66oHR16zhUgcjNQES1J7D9. Ten public resources match local bytes; actual live sidebar and homepage entrance scrolling verified. Future resource queue and private drafts remain unchanged.
+
+## 2026-10-08: Okanagan keyword demand
+- Refreshing city-filtered Google Ads estimates for web design, WordPress, Wix, Webflow and related services. Keeping local geography, search intent and national city-modified phrases distinct.
+- Research only; production source and campaigns remain untouched. Raw requests/responses will be saved without credentials.
+
+- Completed 11 verified local filters and 3,003 observations; captured 7,298 related keyword ideas separately. Source averages and month histories retained, no inferred Okanagan total.
+- Saved source-linked methodology, priorities and local reader; verified every exported metric against raw data. Total API charges US$1.08; no ad campaign changes. Research evidence pointer added under docs/seo.
