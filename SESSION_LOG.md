@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-09: Building free-homepage preview offer, dedicated intake, Cal.com handoff and private approval board with Codex processing. $0 one-page build plus $200/year; full packages from $2,500.
+2026-10-09: Free homepage preview funnel deployed and live-verified. $0 one-page build + CAD $200/year including hosting/minor updates. Cal.com, live inbox intake and private design review verified; 30-minute Codex heartbeat active. New page submitted to Google; indexing pending.
 
 2026-10-09: Kelowna Web Design strengthened, deployed and live-verified. Eight primary/entry-page crawl requests and the updated sitemap accepted by Google. New-page indexing remains pending Google processing.
 
@@ -35,6 +35,16 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-09: See it before you buy funnel
+- Built /free-website-preview/ with the approved portfolio design, smaller CAD $200/year price, hosting/minor updates, free one-page build and full websites from CAD $2,500. Homepage primary CTA and offer section, Web Design and Contact feed the funnel.
+- Reused and verified the existing Cal.com 30-minute event with an embedded calendar and direct-link fallback. Dedicated FormSubmit form confirmed successful delivery to Michael’s personal Gmail. Authenticated email import deduplicated the internal test into the private board; generated design waits for owner review.
+- Private local board is at http://127.0.0.1:8854/. Durable SQLite/runtime under Business Research/website-preview-funnel, with login startup. Stage approvals bind to artifact hashes; generation, build, publication and delivery have bounded work, leases and explicit owner gates. Worker has no approval command. No customer preview email sent in this session.
+- Created active heartbeat homepage-preview-pipeline every 30 minutes. Requires the local Codex environment; no always-on cloud claim. Maximum two designs/run and five/day. Design/build/delivery approval notifications only.
+- Added crawlable content, Service/FAQ schema, canonical/Markdown, sitemap/LLM entries and provider-confirmed lead tracking. Google accepted the offer URL into its priority crawl queue; indexing not confirmed.
+- Release e17a048 succeeded on Vercel CMEvSh2YdUyDTNWaVaVTq4AEdm5h. Twelve public resource checks match local bytes; calendar and live form verified. 159 tests pass, one unchanged legacy missing-Chrome failure; 11 nested Python workflow checks. Offer responsive metrics pass at 320/390/768/1440; board scroll stays within its own container on mobile.
+- Evidence in docs/preview-funnel-2026-10-09 and the durable workflow evidence folder. Final follow-up commit aligns the linked case-study result with qualified bookings and retains the verified email parser.
+
 
 ### 2026-10-09: Kelowna service page and Google discovery
 - Expanded the existing Web Design page with practical deliverables, WordPress/managed/custom platform choices, ownership and handover detail, six FAQs and contextual service/guide/contact links. Original hero, project imagery and visual system retained; Cool Runnings proof corrected to qualified bookings.

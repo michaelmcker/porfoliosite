@@ -260,3 +260,7 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 
 - Cal.com existing 30-minute event verified with available times; integrated direct links and lazy embedded calendar. Homepage primary CTA now leads to the preview offer; portfolio navigation/work remain intact. Corrected homepage proof to qualified bookings per prior user clarification.
 - Private loopback board installed with login startup. Nine Python pipeline tests cover deduplication, owner gates, artifact changes, leases, revisions and delivery. Host/Origin/token/path checks passed. Desktop and 320/390/768/1440 layout measurements show no offer-page overflow or broken images.
+
+- Live release e17a048 succeeded. Twelve HTML/CSS/JS/Markdown/discovery checks match local bytes. Cal.com rendered available 30-minute slots on the live page. A marked internal submission reached personal Gmail, passed provider DKIM parsing, and now holds the generated image at design_review. No owner approval was bypassed; no customer preview email was sent.
+- Added an authenticated FormSubmit MIME/table parser and tested authentication rejection. Static previews reject scripts, executable handlers and submitting forms. Eleven Python checks now pass; 159 top-level tests pass with the one unchanged missing-Chrome failure.
+- Active local heartbeat homepage-preview-pipeline runs every 30 minutes. Google Search Console accepted /free-website-preview/ for indexing; request accepted does not establish indexed state. Board/offer screenshots saved privately.

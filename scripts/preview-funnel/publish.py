@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Publish only an owner-approved static preview through the existing GitHub/Vercel project."""
-import argparse,base64,json,subprocess,urllib.request
+import argparse,base64,json,subprocess,urllib.request,urllib.parse
 from pathlib import Path
 import board
 REPO='michaelmcker/porfoliosite'

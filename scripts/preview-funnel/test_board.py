@@ -1,4 +1,6 @@
-import importlib.util,json,os,subprocess,tempfile,unittest,base64
+import importlib.util,json,os,subprocess,tempfile,unittest,base64,sys
+sys.path.insert(0,str(__import__("pathlib").Path(__file__).parent))
+import import_email
 from pathlib import Path
 spec=importlib.util.spec_from_file_location('board',Path(__file__).with_name('board.py'));b=importlib.util.module_from_spec(spec);spec.loader.exec_module(b)
 class Pipeline(unittest.TestCase):
@@ -36,6 +38,12 @@ class Pipeline(unittest.TestCase):
   self.assertEqual(b.listing()[0]['stage'],'needs_attention');self.assertRaises(ValueError,b.claim,self.id,'design');self.owner('retry');self.assertEqual(self.current()['stage'],'new')
  def test_build_requires_noindex_and_no_private_files(self):
   p=b.DATA/'site';p.mkdir();(p/'index.html').write_text('<h1>Hello</h1>');self.assertRaises(ValueError,b.manifest,p);(p/'index.html').write_text('<meta name="robots" content="noindex">');(p/'.env').write_text('private');self.assertRaises(ValueError,b.manifest,p);(p/'.env').unlink();b.manifest(p)
+ def test_authenticated_email_parser(self):
+  message={'id':'message-123','payload':{'mime_type':'text/html','headers':[{'name':'From','value':'FormSubmit <submissions@formsubmit.co>'},{'name':'Subject','value':'Homepage preview request · michaelmck.site'},{'name':'Authentication-Results','value':'mx.google.com; dkim=pass header.i=@formsubmit.co header.s=mail;'}],'body':{'content':'<table><tr><td><strong>business</strong></td><td><pre>A &amp; B</pre></td></tr></table>'}}}
+  self.assertEqual(import_email.parse(message)['fields']['business'],'A & B')
+  message['payload']['headers'].pop();self.assertRaises(ValueError,import_email.parse,message)
+ def test_static_build_blocks_executable_content(self):
+  p=b.DATA/'site';p.mkdir();(p/'index.html').write_text('<meta name="robots" content="noindex"><script>alert(1)</script>');self.assertRaises(ValueError,b.manifest,p)
  def test_archive_restore(self):
   self.owner('archive');self.assertEqual(self.current()['stage'],'archived');self.owner('restore');self.assertEqual(self.current()['stage'],'new')
 if __name__=='__main__':unittest.main()

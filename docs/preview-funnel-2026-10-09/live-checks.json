@@ -1,0 +1,63 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "matches": true
+  },
+  {
+    "path": "free-website-preview/index.html",
+    "status": 200,
+    "matches": true
+  },
+  {
+    "path": "free-website-preview/index.md",
+    "status": 200,
+    "matches": true
+  },
+  {
+    "path": "free-website-preview/thanks/index.html",
+    "status": 200,
+    "matches": true
+  },
+  {
+    "path": "v2/free-website-preview/preview.css",
+    "status": 200,
+    "matches": true
+  },
+  {
+    "path": "v2/free-website-preview/preview.js",
+    "status": 200,
+    "matches": true
+  },
+  {
+    "path": "web-design/index.html",
+    "status": 200,
+    "matches": true
+  },
+  {
+    "path": "contact/index.html",
+    "status": 200,
+    "matches": true
+  },
+  {
+    "path": "assets/analytics.js",
+    "status": 200,
+    "matches": true
+  },
+  {
+    "path": "llms.txt",
+    "status": 200,
+    "matches": true
+  },
+  {
+    "path": "sitemap.xml",
+    "status": 200,
+    "matches": true
+  },
+  {
+    "path": "Markdown negotiation",
+    "status": 200,
+    "type": "text/markdown; charset=utf-8",
+    "matches": true
+  }
+]

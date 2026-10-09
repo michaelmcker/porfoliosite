@@ -5,14 +5,14 @@ import test from "node:test";
 const repoUrl = new URL("../", import.meta.url);
 const read = (path) => readFile(new URL(path, repoUrl), "utf8");
 
-test("Cool Runnings shows the client-reported sales result and the live measurement loop", async () => {
+test("Cool Runnings shows the client-reported qualified booking result and the live measurement loop", async () => {
   const [homepage, caseStudy] = await Promise.all([
     read("v2/index.html"),
     read("v2/work/local-search-magnet.html"),
   ]);
 
-  assert.match(homepage, /30% (?:increase|growth) in sales/i);
-  assert.match(caseStudy, /30% (?:increase|growth) in sales/i);
+  assert.match(homepage, /30% (?:increase|growth) in qualified bookings/i);
+  assert.match(caseStudy, /30% (?:increase|growth) in qualified bookings/i);
   assert.match(caseStudy, /client-reported/i);
   assert.match(caseStudy, /Search Console/i);
   assert.match(caseStudy, /Google Analytics|GA4/i);

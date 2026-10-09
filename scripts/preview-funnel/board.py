@@ -103,12 +103,13 @@ def claim(id,kind):
    if count>=5:raise ValueError('Daily design limit reached (5). Leave intake queued.')
   d['stage']=WORK[kind][1];d['lease']={'token':secrets.token_hex(24),'expires':now()+3600,'kind':kind};save(c,d,'worker','claim '+kind);return d
 
-def working(c,id,token):
+def working(c,id,token,verify=True):
  d=get(c,id);lease=d.get('lease',{})
  if not hmac.compare_digest(lease.get('token',''),token) or lease.get('expires',0)<now():raise ValueError('No current worker lease')
  kind=lease['kind']
  if d['stage']!=WORK[kind][1]:raise ValueError('Stage changed')
- verify_approval(d,kind);return d,kind
+ if verify:verify_approval(d,kind)
+ return d,kind
 
 def complete(id,token,payload):
  with db() as c:
@@ -171,7 +172,7 @@ def approve_action(id,action,version,note):
 
 def fail(id,token,message):
  with db() as c:
-  d,kind=working(c,id,token);d['stage']='needs_attention';d['failed_kind']=kind;d['error']=message[:3000];d.pop('lease',None);save(c,d,'worker','needs attention');return d
+  d,kind=working(c,id,token,verify=False);d['stage']='needs_attention';d['failed_kind']=kind;d['error']=message[:3000];d.pop('lease',None);save(c,d,'worker','needs attention');return d
 
 def serve(port):
  csrf=secrets.token_hex(32);origins={f'http://127.0.0.1:{port}',f'http://localhost:{port}'};hosts={x.split('//')[1] for x in origins}
