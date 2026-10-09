@@ -1,0 +1,74 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "matches": true,
+    "sha256": "c7587db173454b82a43dc0966ef4fe790878ba0620ccf410ca0be5a9a092c0fe"
+  },
+  {
+    "path": "free-website-preview/index.html",
+    "status": 200,
+    "matches": true,
+    "sha256": "d3035d149907f9bb0c9f1295f82295503e9de17a8c5819a2ee920ef316905b5c"
+  },
+  {
+    "path": "free-website-preview/index.md",
+    "status": 200,
+    "matches": true,
+    "sha256": "44e0dddb992e5c99a7de47e2c72c04d543b5768d49bd8ee38d6a1bc3380c189a"
+  },
+  {
+    "path": "free-website-preview/thanks/index.html",
+    "status": 200,
+    "matches": true,
+    "sha256": "af9561ee96e7268ccdb0c050e27343f7d5b38893a9344d544bf8ab5551cabeb5"
+  },
+  {
+    "path": "web-design/index.html",
+    "status": 200,
+    "matches": true,
+    "sha256": "a2462bdcb98e31deed06fbfce92aeb7d0581860b0e951b7d034549a8a49b1058"
+  },
+  {
+    "path": "web-design/index.md",
+    "status": 200,
+    "matches": true,
+    "sha256": "b741c793400e292264068866c9b48e8517ef6897580217e20f7dfb5f0964a3ae"
+  },
+  {
+    "path": "contact/index.html",
+    "status": 200,
+    "matches": true,
+    "sha256": "516d193c717d01d49eae64d9a350c7ee3a9c8a9cfc68c6cf3ef75378e8f99ba7"
+  },
+  {
+    "path": "contact/index.md",
+    "status": 200,
+    "matches": true,
+    "sha256": "123e67ebccfda88c9eb621bf55f01ba13ef19dd6e251591aff28544af2771f16"
+  },
+  {
+    "path": "llms.txt",
+    "status": 200,
+    "matches": true,
+    "sha256": "fd6ac56145d0b8aaaeb22aabbf62ed77becd9153f7fda2390d36a2062c7fd9ce"
+  },
+  {
+    "path": "llms-full.txt",
+    "status": 200,
+    "matches": true,
+    "sha256": "d9f2e9f4cafe4d72cfe38662768f6812853ca929423b2ce51fefee176510d301"
+  },
+  {
+    "path": "v2/free-website-preview/preview.css",
+    "status": 200,
+    "matches": true,
+    "sha256": "919ca80fa49a3da6647238d26ede21fd54f8e9795b3819458b4eae6f23b44e6a"
+  },
+  {
+    "path": "v2/free-website-preview/preview.js",
+    "status": 200,
+    "matches": true,
+    "sha256": "91e2cfe559212ad126cb4fb97a648f784a7ab5851182feb5337b26332a93ffab"
+  }
+]

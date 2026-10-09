@@ -19,4 +19,4 @@ Private source evidence: ~/Documents/videos/madweb-offer-2026-10-09/ (source vid
 
 The old marked internal test was reversibly archived; no owner approval or customer send occurred. Current automation prompt and installed durable runtime use the corrected offer.
 
-Production deployment pending.
+Production commit 567dd74 deployed successfully to Vercel 48f2fMPCaeo5ehczMWFnnwGDYgqV. Twelve live HTML/Markdown/discovery/CSS/JS files match local output byte for byte. Live desktop and 390-pixel mobile rendering checked. Screenshots: ~/Business Research/website-preview-funnel/evidence/copy-revision/.

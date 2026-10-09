@@ -1,6 +1,7 @@
 # Development log
 
 ## 2026-10-09: Homepage offer correction
+- Published 567dd74; Vercel success and twelve exact live-file matches. Responsive review at 320/390/768/1440 plus live desktop/mobile, CTA/FAQ/calendar checks. 159 passing tests; unchanged baseline Chrome failure. Active heartbeat/runtime corrected and superseded internal test archived.
 - Removed annual-price/free-completed-site offer from canonical config, generated landing page, homepage/service invitations, intake options, metadata/FAQ schema, discovery and approved-delivery email templates.
 - Rewrote the offer around a free custom homepage design and a separately agreed website build from CAD $2,500. Preserved the original portfolio visual system, live form and Cal.com integration.
 - Retrieved Madweb’s actual 76-second offer video for transcript analysis; source material saved privately. Existing runtime review gates remain unchanged.

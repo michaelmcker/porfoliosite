@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-09: Correcting the homepage-preview offer: remove the annual-price/free-completed-site tier, analyse Madweb source/video, rewrite the offer in plain English, update active workflow and publish.
+2026-10-09: Corrected homepage-preview offer deployed and live-verified. Free custom homepage design; full website builds from CAD $2,500. Removed annual-price tier from public copy, schema and active workflow. No remaining work for this correction.
 
 2026-10-09: Preview funnel infrastructure deployed. Cal.com, live inbox intake and private design review verified; 30-minute Codex heartbeat active. Annual-price offer superseded by the correction above. New page submitted to Google; indexing pending.
 
@@ -37,6 +37,13 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-09: Corrected free homepage design offer
+- Analysed Madweb’s actual 76-second video/transcript and offer structure. Wrote original direct copy: “See how good your website could look.”
+- Removed annual-price/free-completed-site claims from public offer, homepage/service invitation, form, metadata/schema, Markdown, discovery and private delivery templates. Free custom homepage preview precedes a separately scoped paid website from CAD $2,500.
+- Updated installed durable runtime and existing 30-minute heartbeat. Archived the superseded internal test without approval or customer delivery.
+- Release 567dd74 succeeded on Vercel 48f2fMPCaeo5ehczMWFnnwGDYgqV; twelve live resources match local bytes. Desktop/mobile checked, form CTA and Cal.com calendar working.
+- 159 tests pass, with the unchanged legacy missing-Chrome failure. No new form submission was needed for this copy revision. Evidence in docs/preview-offer-copy-2026-10-09; private transcript in ~/Documents/videos/madweb-offer-2026-10-09.
 
 ### 2026-10-09: See it before you buy funnel
 - Built /free-website-preview/ with the approved portfolio design, smaller CAD $200/year price, hosting/minor updates, free one-page build and full websites from CAD $2,500. Homepage primary CTA and offer section, Web Design and Contact feed the funnel.
