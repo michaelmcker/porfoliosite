@@ -3,7 +3,7 @@ import {siteHeader,headerStyles} from './site-header.mjs';
 import {markdown} from './service-discovery.mjs';
 const root=new URL('../',import.meta.url);
 const config=JSON.parse(await readFile(new URL('content/preview-offer.json',root),'utf8'));
-export const previewInvitation=`<section class="preview-invitation" id="website-preview"><div><h2>See your next homepage.<br><em>Before you buy.</em></h2><p>A design for your business, with a clear next step. Free one-page build. CAD $200/year including hosting and minor updates. Full websites from $2,500.</p></div><div class="preview-invitation-actions"><a class="preview-gold" href="/free-website-preview/">Show me my homepage</a><a href="${config.calUrl}" data-booking-link target="_blank" rel="noopener">Book a free 30-minute call</a></div></section>`;
+export const previewInvitation=`<section class="preview-invitation" id="website-preview"><div><h2>See your next homepage.<br><em>Before you buy.</em></h2><p>A homepage designed around your business. See the direction before you commit.</p><p class="preview-invitation-price">Free one-page build. CAD $200/year including hosting and minor updates. Full websites from $2,500.</p></div><div class="preview-invitation-actions"><a class="preview-gold" href="/free-website-preview/">Show me my homepage</a><a href="${config.calUrl}" data-booking-link target="_blank" rel="noopener">Book a free 30-minute call</a></div></section>`;
 export async function buildPreviewOffer(){
  const p={path:'/free-website-preview/',heading:'Your next website. See it before you buy.',description:'Get a free homepage design for your Kelowna or Okanagan business. $0 one-page build, CAD $200/year for hosting and minor updates. Full websites from $2,500.'};
  const faqs=[

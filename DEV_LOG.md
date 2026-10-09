@@ -264,3 +264,5 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Live release e17a048 succeeded. Twelve HTML/CSS/JS/Markdown/discovery checks match local bytes. Cal.com rendered available 30-minute slots on the live page. A marked internal submission reached personal Gmail, passed provider DKIM parsing, and now holds the generated image at design_review. No owner approval was bypassed; no customer preview email was sent.
 - Added an authenticated FormSubmit MIME/table parser and tested authentication rejection. Static previews reject scripts, executable handlers and submitting forms. Eleven Python checks now pass; 159 top-level tests pass with the one unchanged missing-Chrome failure.
 - Active local heartbeat homepage-preview-pipeline runs every 30 minutes. Google Search Console accepted /free-website-preview/ for indexing; request accepted does not establish indexed state. Board/offer screenshots saved privately.
+
+- Applied the smaller annual-price treatment to the shared homepage/Web Design invitation as well as the dedicated hero. Pricing remains visible alongside the free-build offer.
