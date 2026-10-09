@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-09: Strengthening the Kelowna Web Design service page and handling primary-page discovery/indexing requests. Preserve approved visuals; validate, deploy and verify live.
+
 2026-10-08: Okanagan keyword research complete: 273 phrases across 11 locations, 7,298 discovery ideas, raw evidence, volumes and prioritised page map saved privately. No website/campaign changes.
 
 2026-10-08: Guide styling, sticky contents, contextual links and footer Resources/Contact complete; finale scroll lock removed. Deployed and live-verified.

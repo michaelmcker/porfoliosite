@@ -34,13 +34,21 @@ I help you clarify the message, create a distinctive presence and show up consis
 
 ## From the message  to the finished work.
 
-WebsitesStrategy, copy, design and development. A clear home for your business, with a useful next step for visitors.
+### Websites
 
-Social mediaContent direction, campaign ideas, graphics and short-form video. Practical assets shaped for your audience and the channels you use.
+Strategy, copy, design and development. A clear home for your business, with a useful next step for visitors.
 
-VideoBrand films, campaign creative, social video and podcast edits. Story and visual craft that help people see what matters.
+### Social media
 
-Brand developmentPositioning, messaging, visual identity and brand guidelines. A consistent foundation for the way your business looks and speaks.
+Content direction, campaign ideas, graphics and short-form video. Practical assets shaped for your audience and the channels you use.
+
+### Video
+
+Brand films, campaign creative, social video and podcast edits. Story and visual craft that help people see what matters.
+
+### Brand development
+
+Positioning, messaging, visual identity and brand guidelines. A consistent foundation for the way your business looks and speaks.
 
 [Vertical Impression scrolling product-story film](https://michaelmck.site/assets/videos/vertical-impression-proposal-story-boomerang.mp4)
 

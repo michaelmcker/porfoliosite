@@ -6,8 +6,10 @@ const plain=s=>s.replace(/<[^>]+>/g,' ').replaceAll('&amp;','&').replace(/\s+/g,
 export function schemaFor(p){
  const page={'@type':p.article?'BlogPosting':p.path==='/blog/'?'CollectionPage':'WebPage','@id':origin+p.path,name:plain(p.heading),description:p.description,url:origin+p.path,inLanguage:'en-CA',author:{'@id':person['@id']},isPartOf:{'@id':origin+'/#website'}};
  if(p.article)Object.assign(page,{headline:plain(p.heading),datePublished:'2026-09-25',dateModified:'2026-09-25',image:origin+p.image});
+ if(p.dateModified)page.dateModified=p.dateModified;
  const graph=[person,{'@type':'WebSite','@id':origin+'/#website',url:origin+'/',name:'Michael McKerracher',publisher:{'@id':person['@id']}},page,{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:origin+'/'},...(p.article?[{'@type':'ListItem',position:2,name:'Blog',item:origin+'/blog/'}]:[]),{'@type':'ListItem',position:p.article?3:2,name:plain(p.heading),item:origin+p.path}]}];
  if(!p.path.startsWith('/blog/')){const service={'@type':'Service','@id':origin+p.path+'#service',serviceType:p.serviceTypes||p.context,name:p.context,provider:{'@id':person['@id']},areaServed:[...serviceAreas,{'@type':'Place',name:'Okanagan, British Columbia, Canada'}],url:origin+p.path,description:p.description};if(p.path==='/ai-implementation/')service.hasOfferCatalog={'@type':'OfferCatalog',name:'AI implementation services',itemListElement:[{'@type':'Offer',name:'Free initial consultation',price:'0',priceCurrency:'CAD'},{'@type':'Offer',name:'AI audit and recommendations: five on-site hours across two to three weeks',price:'900',priceCurrency:'CAD'},{'@type':'Offer',name:'Custom implementation and maintenance from CAD 2,500 per month',priceSpecification:{'@type':'UnitPriceSpecification',minPrice:'2500',priceCurrency:'CAD',unitText:'month'}}]};graph.push(service);}
+ if(p.faqs?.length)graph.push({'@type':'FAQPage','@id':origin+p.path+'#website-questions',mainEntity:p.faqs.map(([question,answer])=>({'@type':'Question',name:plain(question),acceptedAnswer:{'@type':'Answer',text:plain(answer)}}))});
  return {'@context':'https://schema.org','@graph':graph};
 }
 export function markdown(html){
@@ -28,6 +30,9 @@ export function markdown(html){
   })
   .replace(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g,(_,href,label)=>`[${plain(label)}](${href.startsWith('/')?origin+href:href})\n`)
   .replace(/<li[^>]*>\s*(?=<h[1-6])/g,'')
+  .replace(/<dt[^>]*>/g,'\n\n### ')
+  .replace(/<\/dt>/g,'\n\n')
+  .replace(/<\/?dd[^>]*>/g,'\n\n')
   .replace(/<h([1-6])[^>]*>/g,(_,n)=>'\n\n'+'#'.repeat(Number(n))+' ')
   .replace(/<br\s*\/?\s*>|<\/?span\b[^>]*>/g,' ')
   .replace(/<li[^>]*>/g,'\n- ')

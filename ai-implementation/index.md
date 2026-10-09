@@ -19,13 +19,21 @@ Vineyards overlooking Okanagan Lake at Winfield, Lake Country
 
 ## Built around  the way you work.
 
-Skills that know your businessReusable AI skills built around your knowledge, voice and standards. Less explaining. More useful work.
+### Skills that know your business
 
-Workflows that save timeConnect enquiries, bookings and follow-ups, so your team spends less time moving information.
+Reusable AI skills built around your knowledge, voice and standards. Less explaining. More useful work.
 
-Agents that do a jobCustom agents built, deployed and maintained to handle defined tasks, with you in control.
+### Workflows that save time
 
-A team that can use itPractical setup and training for ChatGPT, Claude Cowork and Gemini, using your everyday work.
+Connect enquiries, bookings and follow-ups, so your team spends less time moving information.
+
+### Agents that do a job
+
+Custom agents built, deployed and maintained to handle defined tasks, with you in control.
+
+### A team that can use it
+
+Practical setup and training for ChatGPT, Claude Cowork and Gemini, using your everyday work.
 
 ## Less searching.  More doing.
 

@@ -1,3 +1,10 @@
+# Kelowna website service detail, October 9, 2026
+
+- `/web-design/` remains the main Kelowna and Okanagan commercial page. It now explains deliverables, platform choices, ownership, handover, search foundations and enquiry handling alongside the original portfolio images.
+- Six practical buying FAQs share source with FAQ structured data and agent Markdown in `scripts/web-design-content.mjs`. Existing consultation and related-guide links remain crawlable.
+- Service modification dates are authored explicitly; resource sitemap dates follow article modification dates rather than rebuild time.
+- Cool Runnings proof on this page correctly refers to 30% more qualified bookings.
+
 # Complete private editorial library, October 8, 2026
 
 - 60 complete drafts under content/resources/draft-library, separate from the public article loader and approval queue. Eight slots finish 2026 and 52 cover 2027; dates remain editable.

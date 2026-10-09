@@ -76,6 +76,15 @@ for (const route of serviceRoutes) {
   if (!sitemap.includes(`<loc>${location}</loc>`)) {
     sitemap = sitemap.replace("</urlset>", `  <url><loc>${location}</loc></url>\n</urlset>`);
   }
+  // Preserve authored modification dates; rebuilding alone is not a content update.
+  const html = await readFile(new URL(`v2${route}index.html`, root), 'utf8');
+  const graph = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+  const modified = graph.find(item => item['@type'] === 'WebPage')?.dateModified;
+  if (modified) {
+    sitemap = sitemap.replace(/<url>[\s\S]*?<\/url>/g, entry => entry.includes(`<loc>${location}</loc>`)
+      ? entry.replace(/<lastmod>[^<]*<\/lastmod>/g, '').replace('</url>', `<lastmod>${modified}</lastmod></url>`)
+      : entry);
+  }
 }
 await writeFile(sitemapUrl, sitemap);
 

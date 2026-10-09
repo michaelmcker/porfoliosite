@@ -183,3 +183,17 @@
 .concept-page .concept-abc img{display:block;width:100%;height:auto}
 .concept-page .concept-film-credit{grid-column:2;font-size:14px;justify-self:start}
 @media(max-width:850px){.concept-page .concept-film-credit{grid-column:1}}
+
+/* Service detail follows the existing white editorial rows. */
+.concept-page .concept-web-details{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding-block:var(--concept-space);border-top:1px solid #e5e5df}
+.concept-page .concept-web-details>div>p{margin-top:24px;max-width:46ch}
+.concept-page .concept-web-details>div>a{display:inline-block;margin-top:22px}
+.concept-page .concept-web-details a,.concept-page .concept-web-faq a{text-underline-offset:4px}
+.concept-page .concept-web-faq{padding-block:var(--concept-space);border-top:1px solid #e5e5df}
+.concept-page .concept-web-faq h2{margin-bottom:32px}
+.concept-page .concept-web-faq details{border-bottom:1px solid #d9ddd5;padding-block:18px;max-width:900px}
+.concept-page .concept-web-faq summary{cursor:pointer;font:500 19px/1.45 var(--font-sans);padding-block:6px}
+.concept-page .concept-web-faq details p{margin:16px 0 6px;max-width:72ch}
+.concept-page .concept-web-faq>p{margin-top:28px}
+.concept-page .concept-web-faq summary:focus-visible{outline:2px solid #243c31;outline-offset:6px}
+@media(max-width:850px){.concept-page .concept-web-details{grid-template-columns:1fr;gap:32px}.concept-page .concept-web-details>div>p{max-width:none}}

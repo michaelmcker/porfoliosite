@@ -5,11 +5,10 @@ import {practicalArticles} from './resource-content-practical.mjs';
 import {comparisonArticles} from './resource-content-comparisons.mjs';
 import {siteHeader,headerStyles} from './site-header.mjs';
 import {markdown,writeDiscovery} from './service-discovery.mjs';
-import {edited,ready,dates,displayDate,localDate,futureArticles} from './resource-publishing.mjs';
+import {edited,ready,dates,displayDate,futureArticles} from './resource-publishing.mjs';
 import {buildContact} from './build-contact.mjs';
 
 const root=new URL('../',import.meta.url),origin='https://michaelmck.site';
-const date=localDate();
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const text=s=>s.replace(/<[^>]+>/g,' ').replaceAll('&amp;','&').replace(/\s+/g,' ').trim();
 const route=a=>`/blog/${a.slug}/`;
@@ -82,7 +81,11 @@ export async function buildResources(){
  }
  const sitemapPath=new URL('sitemap.xml',root);let sitemap=await readFile(sitemapPath,'utf8');
  sitemap=sitemap.replace(/\s*<url>\s*<loc>https:\/\/michaelmck\.site\/blog\/[^<]*<\/loc>[\s\S]*?<\/url>/g,'');
- for(const p of [...pages,contact]){if(!sitemap.includes(`<loc>${origin}${p.path}</loc>`))sitemap=sitemap.replace('</urlset>',`  <url><loc>${origin}${p.path}</loc><lastmod>${date}</lastmod></url>\n</urlset>`);}
+ for(const p of [...pages,contact]){
+  const article=publishedArticles.find(a=>route(a)===p.path);
+  const modified=article?dates(article).dateModified:p.path==='/blog/'?publishedArticles.map(a=>dates(a).dateModified).sort().at(-1):null;
+  if(!sitemap.includes(`<loc>${origin}${p.path}</loc>`))sitemap=sitemap.replace('</urlset>',`  <url><loc>${origin}${p.path}</loc>${modified?`<lastmod>${modified}</lastmod>`:''}</url>\n</urlset>`);
+ }
  await writeFile(sitemapPath,sitemap);
  const otherRoutes=['/ai-implementation/','/web-design/','/marketing-branding/',...JSON.parse(await readFile(new URL('v2/industries/routes.json',root),'utf8'))];
  for(const path of ['/',...otherRoutes])for(const prefix of ['','v2/']){

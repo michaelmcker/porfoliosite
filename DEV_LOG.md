@@ -240,3 +240,10 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 
 - Completed 11 verified local filters and 3,003 observations; captured 7,298 related keyword ideas separately. Source averages and month histories retained, no inferred Okanagan total.
 - Saved source-linked methodology, priorities and local reader; verified every exported metric against raw data. Total API charges US$1.08; no ad campaign changes. Research evidence pointer added under docs/seo.
+
+## 2026-10-09: Kelowna service content and discovery
+- User approved strengthening Web Design and handling main-page discovery. Scope: concrete offer/platform/ownership/support detail, original local proof, contextual links and Google indexing requests. Existing design and unrelated publication queue retained.
+- Added two plain editorial sections and six native FAQs, with matched structured data/Markdown. Localized title/intro, preserved original hero and work, and corrected the Cool Runnings result to qualified bookings.
+- Fixed definition-list Markdown separation and preserved meaningful sitemap modification dates across rebuilds. Shared homepage stylesheet order now stays stable.
+- 156 regression tests pass; one unchanged baseline failure is the legacy mobile test's absent Chrome executable. Browser checked 320, 390, 768 and 1440 widths, loaded images, FAQ expansion and the enquiry link; no horizontal overflow.
+- Google accepted AI Implementation, Marketing & Branding and Contact into its priority crawl queue. Remaining primary URLs and updated sitemap will be submitted after production verification. This is a crawl request, not proof of indexing.

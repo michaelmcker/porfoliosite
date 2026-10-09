@@ -2,13 +2,33 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
 import {markdown} from '../scripts/service-discovery.mjs';
+import {webDesignFaqs} from '../scripts/web-design-content.mjs';
 const routes=JSON.parse(await readFile('v2/services/routes.json','utf8'));
+test('website FAQs, agent text and authored sitemap modification date agree',async()=>{
+ const html=await readFile('web-design/index.html','utf8');
+ const md=await readFile('web-design/index.md','utf8');
+ const graph=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+ const faq=graph.find(item=>item['@type']==='FAQPage');
+ assert.equal(faq.mainEntity.length,webDesignFaqs.length);
+ for(const [question,answer] of webDesignFaqs){
+  assert(html.includes(`<summary>${question}</summary><p>${answer}</p>`));
+  assert(md.includes(question));assert(md.includes(answer));
+  const entry=faq.mainEntity.find(item=>item.name===question);
+  assert.equal(entry.acceptedAnswer.text,answer);
+ }
+ const modified=graph.find(item=>item['@type']==='WebPage').dateModified;
+ const sitemap=await readFile('sitemap.xml','utf8');
+ const entry=[...sitemap.matchAll(/<url>[\s\S]*?<\/url>/g)].map(m=>m[0]).find(s=>s.includes('<loc>https://michaelmck.site/web-design/</loc>'));
+ assert(entry.includes(`<lastmod>${modified}</lastmod>`));
+});
 test('agent Markdown preserves visual proof labels and readable pricing',()=>{
  const md=markdown('<main><a href="/proposal-generator.html"><img src="/example.png" alt="Finished customer proposal"></a><p>$900<span>one-time engagement</span></p><video aria-label="Brand film"><source src="/film.mp4"></video></main>');
  assert(md.includes('[Finished customer proposal](https://michaelmck.site/proposal-generator.html)'));
  assert(md.includes('$900 one-time engagement'));
  assert(md.includes('[Brand film](https://michaelmck.site/film.mp4)'));
  assert(!md.includes('[]('));
+ const definitions=markdown('<main><dl><dt>WordPress websites</dt><dd>Useful editing and support.</dd></dl></main>');
+ assert(definitions.includes('### WordPress websites\n\nUseful editing and support.'));
 });
 test('public HTML, Markdown, schema and sitemap stay in sync',async()=>{
  const sitemap=await readFile('sitemap.xml','utf8');

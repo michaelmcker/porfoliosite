@@ -1,4 +1,5 @@
 // Translation of the three user-selected visual directions. Original project media stays intact.
+import {webDesignDetails, webDesignFaqs, webDesignQuestions} from './web-design-content.mjs';
 const consult='mailto:michael.mckerracher@gmail.com?subject=Free%20initial%20consultation';
 const button=(label='Book a free consultation')=>`<a class="concept-button" href="${consult}">${label}</a>`;
 const img=(src,alt,w,h,eager=false)=>`<img src="${src}" alt="${alt}" width="${w}" height="${h}" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
@@ -30,21 +31,25 @@ export function conceptServices(pages){
  +intro('AI consulting in Kelowna &amp; the Okanagan.','Work directly with Michael McKerracher, based in Coldstream and serving Vernon, Lake Country, Kelowna and West Kelowna. Start with a $900 audit or bring a workflow you’re ready to build.')
  +end('I build the system.<br> You build the business.','Tell me where the work piles up and what you want more time for. We’ll find a practical place to start.');
 
- web.title='Web Design Kelowna & Vernon | Michael McKerracher';
- web.description='Custom web design and development for Kelowna, Vernon and the Okanagan. Beautiful websites with local SEO foundations and clear paths to enquire or book.';
+ web.title='Web Design Kelowna & the Okanagan | Michael McKerracher';
+ web.description='Custom web design for Kelowna and the Okanagan. New websites, WordPress and Wix redesigns, SEO foundations, clear ownership and a direct path to more enquiries.';
+ web.dateModified='2026-10-09';
+ web.faqs=webDesignFaqs;
  web.serviceTypes=['Web design','Web development','Website redesign'];
  web.heading='A beautiful website.<br> A better reason to choose <em>you.</em>';
- web.intro='Turn a good first impression into your next enquiry, booking or sale.';
+ web.intro='Web design and development for Kelowna and the Okanagan. Turn a good first impression into your next enquiry, booking or sale.';
  web.opening=`<section class="concept-editorial-hero"><h1 class="concept-frame">${web.heading}</h1><div class="concept-web-stage"><div class="concept-laptop"><div class="concept-catalyst"><img src="/v2/catalyst-preview/imported-01-5eab9f1356.webp" alt="Original blue dithered marble artwork from the AI Catalyst website" width="1536" height="1024" fetchpriority="high"><div class="concept-catalyst-nav"><span>AI CATALYST</span><span>Strategy. Systems. Story.</span></div><div class="concept-catalyst-copy"><p>YOUR STORY.<br> MADE VISIBLE.</p><span>Practical AI for a more human tomorrow.</span></div></div><div class="concept-laptop-base"></div></div></div><div class="concept-offset concept-frame"><p>${web.intro}</p>${button()}</div></section>`;
  web.body=`<section id="selected-work"><a class="concept-treehouse" href="https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/">${img('/v2/okanagan-preview/assets/overview-final.webp','Original Okanagan Treehouse property imagery at dusk',1920,1097)}<div><h2>Okanagan<br> Treehouse</h2><p>A place worth staying for.</p><span>Website design &amp; development</span><p>A distinctive property, brought to life online with an immersive story and a clear path to explore the stay.</p><span class="concept-underlined">Explore the website</span></div></a><article class="concept-row concept-frame concept-rccv"><figure>${img('/assets/device-mockups/laptop-three-quarter-rccv-cutout.webp','RCCV website displayed in its original laptop composition',1170,814)}</figure><div><h2>Community information,<br> clearly online.</h2><p>A welcoming website that helps people find Mass times, sacraments, parish news and resources.</p><a href="/#work">Explore the RCCV project</a></div></article><article class="concept-row concept-frame concept-abc" id="abc-appliance"><figure><a href="https://www.abcappliance.ca/">${img('/assets/selected-work/abc-appliance-live.png','ABC Appliance website with repair services and a clear request-a-repair action',1265,712)}</a></figure><div><h2>ABC Appliance</h2><p>A local service website built around the next step: getting a repair booked. Clear service information, Okanagan and Shuswap coverage, and a straightforward repair request bring the business closer to its customers.</p><a href="https://www.abcappliance.ca/">Explore the website</a></div></article></section>`
  +band('A stronger online<br> presence opens doors.','<p>Local businesses do great work. A clear, professional website helps people see that quality, trust what you offer and take the next step.</p><p>The design and the customer journey need to work together.</p>')
  +intro('Web design for Kelowna, Vernon &amp; the Okanagan.','Michael McKerracher designs and builds custom websites from Coldstream, serving Vernon, Lake Country, Kelowna and West Kelowna. New websites and redesigns bring together copy, responsive development, local SEO foundations and booking integrations. <a href="/marketing-branding/#local-seo">Need help getting found?</a>')
+ +webDesignDetails()
  +steps('A clear process.<br> Built around your goals.',[
  ['Understand your objectives','We start with your business, audience and what success looks like. Then we agree the pages, content and customer actions that matter.'],
  ['Design and build','A visual direction you can review, followed by responsive development. Original imagery, readable content and accessible interactions are part of the build.'],
  ['Launch','Check the customer journey, set up search foundations and connect the agreed enquiry or booking tools. You get a clear handover.'],
  ['Improve','Use feedback and measurement to decide what comes next. Ongoing support is available within an agreed scope.']],'<h2>Let’s build something great together.</h2><p>Custom scope. Custom pricing. A clear proposal based on the website your business needs.</p>'+button())
- +`<section class="concept-local-proof concept-frame"><h2>Built for local business, too.</h2><p>For Cool Runnings, the work connects a landscaping website with useful service content and clear ways to enquire. The client reported a 30% increase in sales after launch.</p><a href="/v2/work/local-search-magnet.html">Read the Cool Runnings case study</a><a href="https://ai-catalyst-wheat.vercel.app/">Explore the AI Catalyst website</a></section>`
+ +`<section class="concept-local-proof concept-frame"><h2>30% more qualified bookings.</h2><p>For Cool Runnings, I brought together the website, local SEO strategy and conversion improvements. Clear service pages, useful local content and straightforward enquiry options helped turn searches into work. The client reported a 30% increase in qualified bookings.</p><a href="/v2/work/local-search-magnet.html">Read the Cool Runnings case study</a><a href="https://ai-catalyst-wheat.vercel.app/">Explore the AI Catalyst website</a></section>`
+ +webDesignQuestions()
  +end('Better websites.<br> For your next chapter.','A free conversation about your business, your goals and what your website could do better.');
 
  marketing.title='Marketing & Branding Kelowna | Michael McKerracher';
