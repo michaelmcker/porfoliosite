@@ -1,0 +1,218 @@
+{
+  "slug": "framer-webflow-custom-website",
+  "title": "Framer vs Webflow vs a custom website: what should a small business choose?",
+  "type": "comparison",
+  "description": "A practical comparison of Framer, Webflow, and custom websites for small businesses. Compare editing workflows, content management, design control, recurring costs, exit costs, and ownership so you can choose the right platform.",
+  "summary": "For most small businesses, the right choice depends on who edits the site and how content is structured. Framer suits design-led teams making visual pages quickly. Webflow is worth considering for a team that likes working with classes, reusable components and CMS templates. A custom setup can offer more control over hosting and implementation when its contract and dependencies support that control. Compare editing, content structure, recurring cost, and portability before choosing.",
+  "takeaways": [
+    "Choose the platform that matches your team's actual editing workflow, not the one with the longest feature list.",
+    "Framer and Webflow both involve tradeoffs around ownership and export; test the exit path before you build.",
+    "A custom website can offer the most control, but only if you have the technical support to maintain it properly."
+  ],
+  "sections": [
+    {
+      "id": "choose-the-workflow",
+      "title": "Choose the workflow, not the logo",
+      "body": "<p>Most owners start by comparing feature lists. That is usually the wrong place to start. A small business website is a working system. Someone has to update the service pages, change the seasonal offer, fix the contact form, and add the new gallery photo. The right platform is the one that makes those routine jobs feel natural for the person who will actually do them.</p><p>If you are a solo owner who thinks visually and wants to ship a beautiful page quickly, that points one way. If you have a growing content library and a designer who wants systematic control, that points another. If you want to own the code and the hosting relationship outright, that points a third way. The goal is to match the tool to the real work, then check the exit costs before you commit. For many local businesses, the best starting point is still a focused conversation about what the site needs to do in the next two years, which is why I usually begin a <a href=\"/web-design/\">web design</a> discussion with workflow rather than colour palettes.</p>"
+    },
+    {
+      "id": "when-framer-fits",
+      "title": "When Framer is the right fit",
+      "body": "<p>Framer works best when design speed and visual polish are the main goals. The editing experience happens directly on the canvas. You move things, see them move, and publish. For a new service page, a landing page for a seasonal promotion, or a simple portfolio, that directness is valuable.</p><p>Framer also includes a <a href=\"https://www.framer.com/cms/\">content management system</a>, which is its way of storing reusable content like blog posts, team members, or project galleries. You can create collections, add fields, and edit content in context. For a small team that likes this visual workflow, Framer is worth trying with a real service page and a CMS entry before committing.</p><p>The tradeoff is that Framer is built as a hosted platform. Its own <a href=\"https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/\">documentation</a> notes that sites rely on platform-managed services for performance and optimization, and that standalone HTML export for self-hosting is not offered. At the same time, Framer's <a href=\"https://www.framer.com/help/articles/porting-your-data-from-framer/\">portability guidance</a> says you can download your site's HTML, CSS, JavaScript, and assets, and export CMS content through plugins into CSV or JSON. Those two statements sit uneasily together. Before you build on Framer, test exactly what export path works for your content, forms, and future editing needs.</p>"
+    },
+    {
+      "id": "when-webflow-fits",
+      "title": "When Webflow is the right fit",
+      "body": "<p>Webflow makes more sense when the website needs to grow into a larger marketing system. Its design tool uses a class-based approach, which means your designer or developer builds reusable styles and components. That takes more learning up front, but it pays off when you have dozens of pages that need to stay consistent.</p><p>Webflow’s <a href=\"https://webflow.com/cms\">CMS</a> supports a structured publishing workflow. You can create collections for articles, case studies, services, or locations, then design templates that automatically apply to every new item. Framer also supports collection-based publishing. Compare the content relationships, editor tasks and integrations your own site needs in a working demonstration; the presence of a CMS alone does not decide between them.</p><p>The tradeoff is complexity and cost structure. Webflow's own <a href=\"https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code\">documentation</a> notes that code export requires a paid Workspace plan, and that exported code does not include hosted CMS functionality, form handling, search, Ecommerce, or several other listed features. You can export CMS collections separately as CSV, but the exported code itself is not a complete copy of a dynamic Webflow site. If you need the full site to work outside Webflow, that distinction matters.</p>"
+    },
+    {
+      "id": "when-custom-makes-sense",
+      "title": "When a custom website makes sense",
+      "body": "<p>A custom website can mean a few different things. It can mean a hand-built static site deployed on modern managed hosting. It can mean a headless CMS, where the content editing interface is separate from the public frontend. Or it can mean a framework-based site built by a developer. The common thread is a tailored implementation. Ownership and the handover still need to be written into the agreement.</p><p>Ask for ownership or agreed rights to the code, access to the hosting account, and a documented migration path. If a platform changes its pricing, limits a feature, or becomes a poor fit, a well-built custom site gives you more options. A static build serves prebuilt pages and can keep the runtime simple. Images, scripts, caching and the quality of the implementation still determine the visitor’s experience.</p><p>For a local service business, that can be enough. Suppose a Kelowna landscaping company needs a fast homepage, service pages for lawn care and snow removal, a gallery, and a contact form. A custom static build can handle that cleanly, and a developer can add a lightweight editing workflow if needed. The tradeoff is that you need a developer or a technically confident owner. You also need to think through content editing, backups, forms, and future updates instead of assuming the platform will handle them.</p>"
+    },
+    {
+      "id": "platform-comparison-table",
+      "title": "A practical comparison",
+      "body": "<p>Use this table to compare the three paths on the things that usually matter to a small business owner.</p><table><caption>Framer vs Webflow vs custom website for a small business</caption><thead><tr><th>Decision factor</th><th>Framer</th><th>Webflow</th><th>Custom static or headless</th></tr></thead><tbody><tr><td>Best for</td><td>Fast, visual marketing pages</td><td>Scalable marketing and content sites</td><td>Owners who want code and hosting control</td></tr><tr><td>Editing experience</td><td>Direct on-canvas visual editing</td><td>Visual, but more structured and class-based</td><td>Depends on setup; can range from code-only to tailored CMS</td></tr><tr><td>Content management</td><td>Collections and reusable content templates</td><td>Collections and reusable content templates</td><td>Can be minimal or very advanced</td></tr><tr><td>Design system control</td><td>Visual layouts, components and shared styles</td><td>Classes, components and shared styles</td><td>Full control if built well</td></tr><tr><td>Exit and portability</td><td>Mixed guidance; test export path first</td><td>Code export possible on paid Workspace plan, but dynamic features are excluded</td><td>Depends on contract, dependencies and documented handover</td></tr></tbody></table>"
+    },
+    {
+      "id": "worked-example",
+      "title": "A worked example for a local service business",
+      "body": "<p>Suppose an Okanagan appliance repair company wants a new site. The owner wants three things: clear service pages for fridge, washer, dryer, and dishwasher repair; a simple way to show service areas; and a contact path that does not confuse an urgent repair request with a confirmed appointment.</p><p>On Framer, a designer could make those pages look beautiful quickly. On Webflow, the owner could build a more structured service catalogue and scale it later. With a custom build, the owner could keep the site extremely lean, tune every title and service-area page, and own the codebase outright.</p><p>The better choice depends on who will update the site after launch. If the owner wants to edit pages visually and occasionally post before-and-after photos, Framer may be enough. If the business plans to publish ongoing repair guides and service-area pages, Webflow or a custom CMS-backed build deserves a closer look. If the business wants control over the implementation and has dependable development support, a custom build deserves consideration.</p>"
+    },
+    {
+      "id": "what-to-test",
+      "title": "What to test before you choose",
+      "body": "<p>Do not choose only from a feature page. Build or ask for a small proof of concept. Create one service page, one blog post or project page, one contact form, and one image-heavy gallery. Then test the actual work.</p><p>Can the person who will maintain the site edit it without breaking the layout? Can you export the content in a useful way if you ever leave? Can the platform handle your form needs without a messy workaround?</p><p>For Framer, test both the design workflow and the export path, because its own help articles present different boundaries for self-hosting and data portability. For Webflow, confirm that your needed features survive outside the platform if export matters to you. For a custom site, review the hosting plan, the editing workflow, and who is responsible for updates. A good test answers one question: will this still feel like the right tool after the honeymoon?</p>"
+    },
+    {
+      "id": "how-to-decide",
+      "title": "How to decide this week",
+      "body": "<p>Start by writing down the next twelve months of work. List the pages you need, the content you expect to publish, the integrations that matter, and who will touch the site regularly. Then ask for three short proposals or demos, one for each path. You do not need a full build. You need enough to feel the friction.</p><p>For example, if your team wants to update service pages and add a monthly tip without touching code, ask each option to show exactly how that happens. If your business wants to collect deposits or handle appointment requests, ask how forms and automations work. If you care about ownership, ask what happens if you want to leave in two years.</p><p>Once you have those answers, the choice usually becomes obvious. If you want help sorting through that decision, you can <a href=\"/contact/\">contact me</a> and we can map the platform to the way your business actually works.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Which is easier for a non-designer owner to edit: Framer or Webflow?",
+      "Ask the intended editor to update a service description, replace an image and publish a CMS entry in each proposed setup. Both tools can support an editing workflow; the permissions, templates and training you configure matter more than a blanket ease-of-use ranking."
+    ],
+    [
+      "Can I switch from Framer or Webflow to a custom website later?",
+      "Yes, but switching is real work. You may need to rebuild templates, migrate content, fix forms, and set up redirects. It is possible, but it is much easier when you choose the right starting point."
+    ],
+    [
+      "Is a custom website better for SEO than Framer or Webflow?",
+      "Not by default. All three can support good SEO when they are built well. The bigger difference is who controls the content structure, page speed decisions, and long-term maintenance."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Framer CMS",
+      "url": "https://www.framer.com/cms/"
+    },
+    {
+      "name": "Framer help: exporting and self-hosting",
+      "url": "https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/"
+    },
+    {
+      "name": "Framer help: porting your data",
+      "url": "https://www.framer.com/help/articles/porting-your-data-from-framer/"
+    },
+    {
+      "name": "Webflow CMS",
+      "url": "https://webflow.com/cms"
+    },
+    {
+      "name": "Webflow help: exporting site code",
+      "url": "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "This article compares the three paths as owner decisions: who edits the site, how content is structured, what happens if you leave, and which platform fits a small local service business without pretending there is one universal winner.",
+    "claimsToRecheckBeforeRelease": [
+      "Verify that the final article contains at least 1000 words and 6 to 9 substantive H2 sections.",
+      "Confirm every internal link uses only the allowed URL list.",
+      "Check that no em dash, prose en dash, banned phrase, or 'This isn't X. It's Y' construction appears.",
+      "Confirm all external sources are used exactly once in the sources array and are not competitors.",
+      "Recheck the FAQ answers so they introduce new secondary questions rather than repeating the summary."
+    ],
+    "serpGap": "Current results tend to compare Framer and Webflow from a startup or agency angle, or stay too generic. This piece separates the visual builder decision from the custom-build decision, compares exit cost and editing fit, and localizes the practical examples for an Okanagan small business owner.",
+    "sourceUse": [
+      {
+        "url": "https://www.framer.com/cms/",
+        "claim": "Used only to understand Framer's CMS positioning, visual editing, collections, and content workflows."
+      },
+      {
+        "url": "https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/",
+        "claim": "Used only to identify Framer's stated boundary around standalone HTML export and self-hosting."
+      },
+      {
+        "url": "https://www.framer.com/help/articles/porting-your-data-from-framer/",
+        "claim": "Used only to identify Framer's stated portability and export position for site output and CMS data."
+      },
+      {
+        "url": "https://webflow.com/cms",
+        "claim": "Used only to understand Webflow's CMS positioning, visual content editing, collections, APIs, and scalability claims."
+      },
+      {
+        "url": "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code",
+        "claim": "Used only to identify Webflow's stated export requirements and the dynamic features excluded from exported code."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-01-14",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Platforms",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "website-subscription-vs-upfront-build",
+    "framer-small-business-websites"
+  ],
+  "services": [],
+  "wordCount": 1655,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 26851,
+      "total_tokens": 30598,
+      "completion_tokens": 3747,
+      "prompt_tokens_details": {
+        "cached_tokens": 24449
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 368
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 368
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "Webflow fits teams needing a deeper content management system and scalable design systems. A custom setup suits owners who want full control over hosting, data, and exit costs.",
+      "replacement": "Webflow is worth considering for a team that likes working with classes, reusable components and CMS templates. A custom setup can offer more control over hosting and implementation when its contract and dependencies support that control."
+    },
+    {
+      "original": "For a small team that wants to make attractive pages without learning a deeper class-based design system, Framer often feels like the shortest path.",
+      "replacement": "For a small team that likes this visual workflow, Framer is worth trying with a real service page and a CMS entry before committing."
+    },
+    {
+      "original": "Webflow's <a href=\"https://webflow.com/cms\">CMS</a> is also deeper for many content teams.",
+      "replacement": "Webflow’s <a href=\"https://webflow.com/cms\">CMS</a> supports a structured publishing workflow."
+    },
+    {
+      "original": "If you plan to publish regularly, Webflow usually gives you more room to grow without rebuilding. Webflow also offers more integration surface through APIs and its app ecosystem.",
+      "replacement": "Framer also supports collection-based publishing. Compare the content relationships, editor tasks and integrations your own site needs in a working demonstration; the presence of a CMS alone does not decide between them."
+    },
+    {
+      "original": "The common thread is ownership.",
+      "replacement": "The common thread is a tailored implementation. Ownership and the handover still need to be written into the agreement."
+    },
+    {
+      "original": "You control the code, the hosting choice, and the migration path.",
+      "replacement": "Ask for ownership or agreed rights to the code, access to the hosting account, and a documented migration path."
+    },
+    {
+      "original": "A custom static website can also be very fast and very stable because there is less platform overhead.",
+      "replacement": "A static build serves prebuilt pages and can keep the runtime simple. Images, scripts, caching and the quality of the implementation still determine the visitor’s experience."
+    },
+    {
+      "original": "Lighter CMS for smaller collections",
+      "replacement": "Collections and reusable content templates"
+    },
+    {
+      "original": "Deeper collections and template system",
+      "replacement": "Collections and reusable content templates"
+    },
+    {
+      "original": "Stronger for reusable systems",
+      "replacement": "Classes, components and shared styles"
+    },
+    {
+      "original": "Good for page-level design",
+      "replacement": "Visual layouts, components and shared styles"
+    },
+    {
+      "original": "Highest control if the codebase is clean",
+      "replacement": "Depends on contract, dependencies and documented handover"
+    },
+    {
+      "original": "If the business wants the simplest long-term ownership and has access to a developer, custom starts to look attractive.",
+      "replacement": "If the business wants control over the implementation and has dependable development support, a custom build deserves consideration."
+    },
+    {
+      "original": "Framer usually feels easier for a non-designer because editing happens directly on the page in a more visual way. Webflow is more powerful for design systems, but it asks more from the person maintaining it.",
+      "replacement": "Ask the intended editor to update a service description, replace an image and publish a CMS entry in each proposed setup. Both tools can support an editing workflow; the permissions, templates and training you configure matter more than a blanket ease-of-use ranking."
+    }
+  ]
+}

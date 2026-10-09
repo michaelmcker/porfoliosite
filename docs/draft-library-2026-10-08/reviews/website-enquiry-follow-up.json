@@ -1,0 +1,56 @@
+{
+  "issues": [
+    {
+      "path": "sections.1.body",
+      "original": "Manual follow-up works only when volume is very low.",
+      "replacement": "Manual follow-up can work when volume is very low.",
+      "reason": "The original makes an unsupported absolute claim; narrowing it keeps the advice accurate without changing the surrounding argument."
+    },
+    {
+      "path": "faqs.1.1",
+      "original": "That one rule prevents most awkward automation mistakes.",
+      "replacement": "That one rule helps avoid awkward automation mistakes.",
+      "reason": "The original overclaims how much the rule prevents; narrowing it keeps the recommendation honest."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "A practical, locally grounded guide for service businesses that want more website enquiries to become booked work. It focuses on the operational handoff after the form is submitted: ownership, response capacity, qualification and simple automation.",
+    "specificity": "High for the target reader. It names concrete pipeline stages, gives a mock six-step workflow, distinguishes manual, systematized and automated follow-up, and connects the advice to Michael's web design and AI implementation services without inventing client results.",
+    "evidence": "Moderate. It cites W3C accessibility guidance for short, simple forms and otherwise relies on reasoned operational advice rather than statistics. The article avoids fabricated percentages, client anecdotes and guaranteed outcomes; its example workflow is explicitly labelled as mock.",
+    "voice": "Conversational, direct and personally opinionated in Michael's style. It uses Canadian spelling, short connected sentences, and first-person references to his design and AI work. There is no corporate padding and no smug contrast.",
+    "usefulAsset": "Yes. A service business owner could use it as a practical checklist for auditing their enquiry-to-booking handoff. The advice is constructive, mostly free of overclaiming, and points naturally to a consultation without overselling."
+  },
+  "slug": "website-enquiry-follow-up",
+  "applied": [
+    {
+      "path": "sections.1.body",
+      "original": "Manual follow-up works only when volume is very low.",
+      "replacement": "Manual follow-up can work when volume is very low.",
+      "reason": "The original makes an unsupported absolute claim; narrowing it keeps the advice accurate without changing the surrounding argument."
+    },
+    {
+      "path": "faqs.1.1",
+      "original": "That one rule prevents most awkward automation mistakes.",
+      "replacement": "That one rule helps avoid awkward automation mistakes.",
+      "reason": "The original overclaims how much the rule prevents; narrowing it keeps the recommendation honest."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1138,
+  "usage": {
+    "prompt_tokens": 5646,
+    "total_tokens": 13458,
+    "completion_tokens": 7812,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7429
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 7429
+    }
+  }
+}

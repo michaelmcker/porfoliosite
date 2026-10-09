@@ -1,0 +1,181 @@
+{
+  "slug": "website-subscription-vs-upfront-build",
+  "title": "Website subscription or upfront build? Compare the whole cost",
+  "type": "comparison",
+  "description": "A buyer's comparison of monthly website subscriptions versus a one-time custom build, covering setup, changes, hosting, seats, support, cancellation, content ownership and migration, with hypothetical CAD arithmetic.",
+  "summary": "A subscription spreads cost and often bundles hosting and support, while an upfront build can give ownership and lower long-term cost. The right answer depends on how long you will keep the site, what changes you expect, and what the contract lets you take when you leave.",
+  "takeaways": [
+    "A monthly fee is easy to start, but the long-term value depends entirely on your specific costs; run the three-to-five-year arithmetic for your own numbers before choosing.",
+    "The contract questions that matter most are who owns the content and design, what happens on cancellation, and whether the site can move to another host.",
+    "An upfront build is not free to run afterwards; plan for hosting, maintenance and updates as separate decisions you control."
+  ],
+  "sections": [
+    {
+      "id": "the-real-decision",
+      "title": "The real decision: who owns the website and who does the work",
+      "body": "<p>When an Okanagan business owner asks me whether to pay a monthly fee or pay once and own the thing, the design questions usually come later. The first question is really about control. A subscription trades a small, predictable payment for a package the provider manages. An upfront build separates the initial project fee from ongoing running costs. Ownership, editing access and support still depend on the contract and the platform. Neither is automatically better. The wrong one, though, can cost you a lot more than the sticker price suggests, and can leave you rebuilding from scratch when the relationship ends.</p><p>Before comparing numbers, be clear about what is actually being bought. A monthly website plan usually bundles hosting, and may bundle maintenance, content updates, SEO help or advertising. An upfront build usually covers design and development, sometimes a first round of content, and then everything after that is a separate agreement. That distinction drives almost every tradeoff in this article.</p>"
+    },
+    {
+      "id": "run-the-three-to-five-year-arithmetic",
+      "title": "Run the three-to-five-year arithmetic on your own numbers",
+      "body": "<p>A common mistake is comparing a monthly price with a one-time price as if they were the same kind of thing. They are not. A subscription only makes sense when you look at the total over the period you realistically expect to keep the site, and an upfront build only makes sense when you include the ongoing costs that arrive after launch. The example below uses hypothetical Canadian-dollar amounts, not market rates, because the real question is how the structure behaves over time, not what any particular provider charges.</p><table><caption>Hypothetical cost comparison over time, in CAD. Figures are illustrative only.</caption><thead><tr><th>Item</th><th>Upfront custom build</th><th>Monthly subscription</th></tr></thead><tbody><tr><td>Initial design and build</td><td>$4,500 one time</td><td>$0 or rolled into monthly fee</td></tr><tr><td>Monthly website payment</td><td>$0</td><td>$75</td></tr><tr><td>Hosting</td><td>$25 per month</td><td>Bundled</td></tr><tr><td>Maintenance and small updates</td><td>As needed, say $75 per month average</td><td>Bundled</td></tr><tr><td>Total after year one</td><td>$5,700</td><td>$900</td></tr><tr><td>Total after three years</td><td>$8,100</td><td>$2,700</td></tr><tr><td>Total after five years</td><td>$10,500</td><td>$4,500</td></tr></tbody></table><p>Two things stand out in a table like this. First, a subscription can be dramatically cheaper in the early years, which is exactly why new businesses with thin cash reserves are drawn to it. In this particular example, the subscription stays cheaper and the gap grows: the upfront option also has the higher monthly running cost. A different subscription fee, buyout, support allowance or change budget can reverse the result. Compare equivalent scope before treating either total as a better deal. Run your own version of this table before you sign anything, and be honest about which line items you will actually need.</p>"
+    },
+    {
+      "id": "a-comparison-sheet-you-can-fill-in",
+      "title": "A comparison sheet you can fill in today",
+      "body": "<p>Here is a simple worksheet for comparing two quotes. It is deliberately plain. For each offer, fill in a number or a yes or no, then compare the two columns. The point is to force the hidden costs into the open before anyone gets excited about a low monthly figure or a low project price.</p><table><caption>Worksheet for comparing an upfront build against a subscription. Fill in one column per offer.</caption><thead><tr><th>Question</th><th>Offer A</th><th>Offer B</th></tr></thead><tbody><tr><td>One-time build cost</td><td></td><td></td></tr><tr><td>Monthly fee, and what it covers</td><td></td><td></td></tr><tr><td>Hosting included? If not, estimated monthly cost</td><td></td><td></td></tr><tr><td>How many pages or CMS items are included</td><td></td><td></td></tr><tr><td>Cost to add a page, product or content item later</td><td></td><td></td></tr><tr><td>Extra editor or admin seat cost</td><td></td><td></td></tr><tr><td>Who performs routine content edits, and at what rate</td><td></td><td></td></tr><tr><td>Who is listed as domain owner</td><td></td><td></td></tr><tr><td>What you receive if you cancel</td><td></td><td></td></tr><tr><td>Five-year total, calculated honestly</td><td></td><td></td></tr></tbody></table><p>The final rows make the long-term commitment and exit terms explicit. Ask them directly anyway. A provider who answers them clearly is already telling you something useful about how the relationship will go.</p>"
+    },
+    {
+      "id": "setup-ongoing-changes-and-who-pushes-the-buttons",
+      "title": "Setup, ongoing changes and who pushes the buttons",
+      "body": "<p>The build cost gets the attention, but the editing arrangement determines how the site feels to live with. In a subscription, the provider often owns the change process. You send in text or photos and wait. That can be wonderful for an owner who has no interest in touching a content management system. It can also be frustrating when you want to fix a typo at 9 p.m. and discover that updates have to wait in a queue.</p><p>An upfront project can give you that choice if the editing access and support arrangement are included in the agreement. Some owners want a clean editing interface and full control, which is one reason I spend time on the comparison between <a href=\"/blog/framer-webflow-custom-website/\">Framer, Webflow and a fully custom website</a>. Others want the opposite and would rather pay for a small monthly care plan than ever open the editor. Both are reasonable. The mistake is paying for an editor you will never use, or discovering after launch that the cheap plan leaves every small change in someone else's inbox.</p><p>Ask two specific questions before choosing: what can I change myself in five minutes, and what requires a request, a ticket or an invoice? The answers tell you which model fits how you actually work.</p>"
+    },
+    {
+      "id": "domain-hosting-seats-and-support",
+      "title": "Domain, hosting, seats and support are separate decisions",
+      "body": "<p>A low headline price often hides three small bills. First, the domain. Your domain should be registered in your business's name and under your control no matter which model you choose. Losing access to it means losing your address on the internet, and recovering it can be slow and unpleasant. Second, hosting. With a subscription, hosting is usually bundled and managed. With an upfront build, hosting is a separate, ongoing cost, though it does not require maintaining your own private server. Third, people. Some platforms charge for each editor or administrator, so a team of three who all need to update content can change the arithmetic.</p><p>Support deserves its own honest look. A subscription that includes genuinely responsive help is worth real money to a busy owner. A subscription where support means a generic help centre and a two-day email queue is a different product entirely. If hands-off support is the main thing attracting you to a monthly plan, test how it actually works before committing for a year.</p>"
+    },
+    {
+      "id": "cancellation-ownership-and-migration",
+      "title": "Cancellation, content ownership and migration",
+      "body": "<p>This is the section I most want owners to read twice, because it is where a cheap plan can become an expensive one. Before signing, you should know exactly what happens to your domain, your written content, your photos, your customer data and your design if you stop paying. In the best case, you can export your content and rebuild elsewhere without much drama. In the worst case, the website simply turns off and what you get back is a spreadsheet of text.</p><p>Check the actual exit process before buying on portability. Framer’s <a href=\"https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/\">HTML-export help</a> and <a href=\"https://www.framer.com/help/articles/porting-your-data-from-framer/\">data-portability help</a> currently give conflicting descriptions of moving a site to other hosting. Ask for a working demonstration covering the pages, content and ongoing editing. <a href=\"https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code\">Webflow’s code-export documentation</a> distinguishes the exported files from hosted features such as CMS content, form processing and search. A downloadable copy of the design is not necessarily a working replacement for the original site.</p><p>By contrast, a self-hosted <a href=\"https://wordpress.org/about/features/\">WordPress</a> site or a custom build usually gives you the underlying files and database, which makes moving to a new host or a new developer much more practical. Ownership is not a slogan here. It is the difference between an asset you can carry with you and a service you rent until the day you leave.</p>"
+    },
+    {
+      "id": "which-model-suits-which-business",
+      "title": "Which model suits which business",
+      "body": "<p>A subscription tends to suit a business that is new, cash-cautious, unlikely to need custom functionality, and genuinely happy to hand the technical work to someone else. If you want a brochure site live next month and you have no desire to make decisions about hosting or updates, a well-written monthly plan can be the sensible choice. Just go in with your eyes open about the five-year total and the exit terms.</p><p>An upfront build tends to suit a business that expects to keep its website for years, wants the design and content shaped around its specific customers, and would rather own a durable asset than rent one. For example, a landscaping company in Kelowna that depends on the site for quote requests, or a professional office in Vernon building a reputation over a decade, should compare long-term control, editing and support alongside the initial fee. If you are weighing the upfront number, it helps to read a realistic breakdown of <a href=\"/blog/okanagan-website-cost/\">what a website costs in the Okanagan</a> rather than comparing against the cheapest plan advertised anywhere.</p><p>There is also a middle path worth knowing about. Some modern platforms give you a professionally designed site with an editing experience simple enough that an owner can handle routine updates without calling a developer. If that appeals to you, <a href=\"/web-design/\">my web design work</a> is built around exactly that idea: a site that looks beautiful, communicates clearly, and stays manageable for the person who owns it.</p>"
+    },
+    {
+      "id": "make-the-call-with-real-numbers",
+      "title": "Make the call with real numbers, then get a straight answer",
+      "body": "<p>The useful version of this decision is short. Write down what each option costs over five years, including hosting, seats and the updates you know you will want. Write down what you own in each case and what you can take with you. Then decide whether you value low upfront cost and convenience, or ownership and long-term control. Once those are on paper, the right answer is usually obvious.</p><p>If you would like a second set of eyes on two competing quotes, or you are still unsure whether a subscription, a platform site or a custom build fits your situation, <a href=\"/contact/\">get in touch</a>. I am happy to look at the actual numbers with you and tell you plainly which structure I would choose and why.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "If I pay monthly, do I eventually own the website?",
+      "Usually not by default. Some subscriptions include a buyout or transfer clause, and some do not. The only safe answer is to read the cancellation and ownership terms before signing and get any promise of future ownership in writing."
+    ],
+    [
+      "Is an upfront website really a one-time cost?",
+      "The design and build can be, but the website itself is not. Plan for domain renewal, hosting, occasional maintenance and the odd content or design update. The difference is that you choose and control those expenses instead of having them folded into a permanent monthly fee."
+    ],
+    [
+      "What is the single most important contract clause to check?",
+      "What you receive if you cancel. A plan that lets you export your content, keep your domain and move hosting is a very different product from one where the site simply goes dark. Decide whether those exit terms are acceptable before choosing the payment model."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Framer HTML-export help",
+      "url": "https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/"
+    },
+    {
+      "name": "Framer data-portability help",
+      "url": "https://www.framer.com/help/articles/porting-your-data-from-framer/"
+    },
+    {
+      "name": "Webflow code-export documentation",
+      "url": "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code"
+    },
+    {
+      "name": "WordPress features",
+      "url": "https://wordpress.org/about/features/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Most comparison posts stop at monthly fee versus project fee. This article pushes the decision onto the questions owners actually regret later: the five-year total with seats and add-ons, who performs edits, and exactly what can be exported or moved on cancellation. It uses hypothetical CAD figures instead of quoting changing vendor prices, and frames the choice around Okanagan business realities without inventing local statistics.",
+    "claimsToRecheckBeforeRelease": [
+      "Framer's current export and site portability documentation, since official help pages have conflicted on standalone HTML export.",
+      "Webflow's current export terms: which plans include code export and exactly which hosted CMS, form and search features are excluded.",
+      "WordPress feature list, only if any specific capability is claimed beyond general ownership and flexibility."
+    ],
+    "serpGap": "Competitor pages either repeat generic pros and cons or use one market's currency and numbers. None found combine a fill-in comparison worksheet, explicit migration and cancellation risk on Framer and Webflow, and guidance on which model fits which kind of business, in one place.",
+    "sourceUse": [
+      {
+        "url": "https://www.framer.com/pricing/",
+        "claim": "Framer plans bundle hosting and scale features by tier, with extra charges possible for editors, add-ons and higher limits."
+      },
+      {
+        "url": "https://webflow.com/pricing",
+        "claim": "Webflow separates site and workspace plans, and code export has plan requirements and feature exclusions."
+      },
+      {
+        "url": "https://wordpress.org/about/features/",
+        "claim": "Self-hosted WordPress gives the owner control over code, content and data, and can be extended or moved."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2026-12-10",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Platforms",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "framer-webflow-custom-website",
+    "framer-small-business-websites"
+  ],
+  "services": [],
+  "wordCount": 1830,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 13903,
+      "total_tokens": 17572,
+      "completion_tokens": 3669,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 305
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 305
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 4,
+    "publicationApproved": false
+  },
+  "mainEditorOwnershipFix": true,
+  "mainEditorEdits": [
+    {
+      "original": "An upfront build trades a larger initial cheque for a website that belongs to you, after which you choose what you pay for and when.",
+      "replacement": "An upfront build separates the initial project fee from ongoing running costs. Ownership, editing access and support still depend on the contract and the platform."
+    },
+    {
+      "original": "Second, the gap narrows with every year that passes, and it can disappear entirely if the subscription also layers on charges for extra pages, extra products, additional editor seats or premium add-ons.",
+      "replacement": "In this particular example, the subscription stays cheaper and the gap grows: the upfront option also has the higher monthly running cost. A different subscription fee, buyout, support allowance or change budget can reverse the result. Compare equivalent scope before treating either total as a better deal."
+    },
+    {
+      "original": "Owners ask me for a simple way to score two quotes against each other, so here is the version I use in my own head when reviewing proposals.",
+      "replacement": "Here is a simple worksheet for comparing two quotes."
+    },
+    {
+      "original": "The last two rows are the ones most proposals prefer you skip.",
+      "replacement": "The final rows make the long-term commitment and exit terms explicit."
+    },
+    {
+      "original": "In an upfront build, you get to decide.",
+      "replacement": "An upfront project can give you that choice if the editing access and support arrangement are included in the agreement."
+    },
+    {
+      "original": "usually gets more value from ownership than from a perpetual monthly fee",
+      "replacement": "should compare long-term control, editing and support alongside the initial fee"
+    },
+    {
+      "original": "Everything else is negotiable; being able to leave without starting over is not.",
+      "replacement": "Decide whether those exit terms are acceptable before choosing the payment model."
+    },
+    {
+      "original": "<p>Platform terms also change, so it pays to read them rather than assume. For example, <a href=\"https://www.framer.com/pricing/\">Framer's plan pricing</a> is straightforward about what each tier includes, but Framer's own help articles have given conflicting answers on whether you can export a standalone HTML version of your site and host it yourself. I would not treat either statement as final without seeing a working exit plan. Similarly, <a href=\"https://webflow.com/pricing\">Webflow's pricing page</a> notes that code export is tied to particular paid workspace plans and that hosted CMS content, forms and search do not all come along in that export. That is fine if you understand it going in. It is a nasty surprise if you do not.</p>",
+      "replacement": "<p>Check the actual exit process before buying on portability. Framer’s <a href=\"https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/\">HTML-export help</a> and <a href=\"https://www.framer.com/help/articles/porting-your-data-from-framer/\">data-portability help</a> currently give conflicting descriptions of moving a site to other hosting. Ask for a working demonstration covering the pages, content and ongoing editing. <a href=\"https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code\">Webflow’s code-export documentation</a> distinguishes the exported files from hosted features such as CMS content, form processing and search. A downloadable copy of the design is not necessarily a working replacement for the original site.</p>"
+    }
+  ]
+}

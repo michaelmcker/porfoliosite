@@ -1,0 +1,44 @@
+{
+  "issues": [
+    {
+      "path": "summary",
+      "original": "The useful distinction is between an assistant that helps your team and an agent that makes commitments.",
+      "replacement": "The useful distinction is between an assistant that helps your team, an adviser that answers from approved content, and an agent that takes defined action.",
+      "reason": "The summary omits the adviser role and describes an agent as making commitments, which blurs the line with autonomous commitments; the article body and takeaways consistently distinguish three roles plus a separate autonomous category."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help service-business owners choose a practical first AI workflow for their website, distinguishing assistants, advisers and agents while setting clear boundaries around human control and regulated-industry risk.",
+    "specificity": "High. It names concrete workflows, compares four levels of AI authority in a table, gives a sample intake handoff, states Michael's actual CAD $900 audit and CAD $2,500/month custom-system offers in context, and gives clear do-not-do guidance for clinics, law firms and financial services.",
+    "evidence": "Moderate. It correctly cites Google's current guidance to separate website AI from AI search visibility, but most operational recommendations are Michael's professional judgment rather than external data. No invented client results, percentages or fake tests are present.",
+    "voice": "Connected, conversational and honest about tradeoffs. It sounds like Michael advising a busy owner: direct sentences, practical opinions, Canadian spelling, and no corporate padding or smug contrast.",
+    "usefulAsset": "Yes. It gives owners a clear way to scope a first AI project, set permissions and exceptions, and decide when a human must take over before buying tools."
+  },
+  "slug": "ai-service-business-website",
+  "applied": [
+    {
+      "path": "summary",
+      "original": "The useful distinction is between an assistant that helps your team and an agent that makes commitments.",
+      "replacement": "The useful distinction is between an assistant that helps your team, an adviser that answers from approved content, and an agent that takes defined action.",
+      "reason": "The summary omits the adviser role and describes an agent as making commitments, which blurs the line with autonomous commitments; the article body and takeaways consistently distinguish three roles plus a separate autonomous category."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1604,
+  "usage": {
+    "prompt_tokens": 7971,
+    "total_tokens": 14529,
+    "completion_tokens": 6558,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6170
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 6170
+    }
+  }
+}

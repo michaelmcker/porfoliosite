@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help Okanagan vacation-rental owners understand which photos, bed details, access notes, rules, dates and booking handoff a website needs to earn a direct enquiry.",
+    "specificity": "Strong for the subject: it names exact page evidence such as room-by-room beds, parking clearance, deposits, request-versus-confirmation wording and a sample architecture.",
+    "evidence": "Uses one relevant named project, Okanagan Treehouse, for design craft, and Tourism Kelowna as seasonal context. It does not invent test results, quotes or conversion figures.",
+    "voice": "Clear, conversational and owner-focused. It explains tradeoffs without corporate padding and gives constructive recommendations rather than guaranteed outcomes.",
+    "usefulAsset": "Yes. It is a practical buying and content guide with enough page-level detail for a vacation-rental owner to act on before asking for design help."
+  },
+  "slug": "vacation-rental-direct-booking-website",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1245,
+  "usage": {
+    "prompt_tokens": 8738,
+    "total_tokens": 9659,
+    "completion_tokens": 921,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 700
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 700
+    }
+  }
+}

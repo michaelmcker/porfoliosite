@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Clear. The article teaches small business owners to compare web design quotes by shared brief, worksheet, scope, technical fit and support rather than price alone.",
+    "specificity": "Good. It names concrete categories to compare, includes a useful worksheet table, gives grounded examples like service-area pages, a 40-page blog migration and a brochure site versus an e-commerce build.",
+    "evidence": "Appropriate and restrained. It links to Google, W3C and Webflow where relevant without inventing results or overclaiming. Hypothetical examples are clearly framed as examples.",
+    "voice": "Close to Michael. It is practical, direct and Canadian in tone, with connected conversational sentences and a clear owner-focused tradeoff.",
+    "usefulAsset": "Yes. The worksheet and quote-comparison guidance give business owners a concrete tool, not just a checklist of ideas."
+  },
+  "slug": "compare-website-quotes",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1271,
+  "usage": {
+    "prompt_tokens": 10351,
+    "total_tokens": 10622,
+    "completion_tokens": 271,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 74
+    }
+  }
+}

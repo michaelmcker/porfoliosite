@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help busy Okanagan and small business owners diagnose whether their real problem is brand positioning, website user experience, or messaging before they buy the wrong scope of work.",
+    "specificity": "High. The article separates rebrand, redesign, and copy revision by symptom, then supports the distinction with a comparison table, a Kelowna trade-service intake example, and a short pre-hire diagnosis exercise.",
+    "evidence": "Moderate and appropriately restrained. It draws on Michael's stated approach and service pages, but does not invent client results, A/B tests, or performance statistics. The worked example is explicitly framed as hypothetical.",
+    "voice": "Close to Michael's practical, answer-first voice: direct sentences, useful tradeoffs, Canadian spelling, and no corporate padding. The copy stays focused on helping owners choose the smallest useful intervention.",
+    "usefulAsset": "A strong private-review draft for a business resource library. It is self-contained, scannable, and likely to help owners arrive at a consultation with a clearer diagnosis."
+  },
+  "slug": "rebrand-redesign-or-copy",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1167,
+  "usage": {
+    "prompt_tokens": 5961,
+    "total_tokens": 6613,
+    "completion_tokens": 652,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 423
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 423
+    }
+  }
+}

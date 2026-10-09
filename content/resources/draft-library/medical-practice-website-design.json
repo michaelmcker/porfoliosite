@@ -1,0 +1,154 @@
+{
+  "slug": "medical-practice-website-design",
+  "title": "Medical-practice websites: make the next step clear without collecting too much",
+  "type": "guide",
+  "description": "A practical guide to medical practice website design for appointment enquiries, covering what to publish, what not to collect, accessibility, privacy and how to choose a builder.",
+  "summary": "A good medical practice website states who is accepting patients, how care is delivered and what to do next, then sends sensitive information to a secure clinical system instead of a public form. Keep the public site simple, accessible and accurate, and have the practice's legal or clinical team review anything that sounds like clinical advice, a promise of results or a guarantee of privacy.",
+  "takeaways": [
+    "The homepage should answer accepting-patients status, care model and the correct next step before it tries to persuade anyone.",
+    "A public enquiry form should collect the minimum needed to respond; clinical details belong in the practice's approved secure system.",
+    "Accessibility and privacy need to be treated as ongoing practice responsibilities, not as a once-only web design feature."
+  ],
+  "sections": [
+    {
+      "id": "start-with-the-next-step",
+      "title": "Start with the next step a patient should take",
+      "body": "<p>The website for a medical practice should make the correct next action obvious before it does anything else. A visitor from Kelowna, Vernon or anywhere else in the Okanagan should quickly learn whether the practice is accepting patients, who it is accepting, what kind of care it offers and where an enquiry should go. Everything else, including visual style and marketing copy, is secondary to that orientation.</p><p>For example, a family practice might show a short status line such as <strong>Accepting new patients, no referral required</strong>, followed by a single clear button for booking or phoning. A specialist clinic might instead say <strong>Referral from your family doctor is required</strong> and then explain whether the referral should be faxed, sent through a referral portal or arranged by another route. Those are very different designs, and the right one depends on the practice, not on a template.</p><p>If you are comparing approaches, my <a href=\"/web-design/medical-practices/\">medical practice website design</a> page is the right place to start. The main idea is simple: the homepage is not a brochure. It is a wayfinding tool for people who may be anxious, in pain, tired or helping someone else.</p>"
+    },
+    {
+      "id": "what-the-public-site-should-collect",
+      "title": "Keep the public website separate from clinical intake",
+      "body": "<p>A public medical website should collect the least information needed to respond to an enquiry. Name, preferred contact method, general reason for getting in touch and perhaps a short message are often enough. Detailed symptoms, medical history, insurance details, financial documents and anything that belongs in a patient record should be handled through the practice's approved clinical or administrative system, not through a general website form.</p><p>This matters because public websites can be copied, forwarded, misconfigured or accessed by the wrong staff member. Even a well-built form is not automatically the right place for clinical information. If the form exists to book an appointment or request a call back, design it around that narrow purpose. Long intake questionnaires, uploads and free-text boxes that invite a full case history tend to create risk and confusion.</p><p>A practical rule is to ask: could this question be answered later by the clinical team in a secure setting? If yes, it probably should be. The public page can still be helpful by saying what happens next, how long a reply usually takes and what the patient should not send by ordinary email or web form.</p>"
+    },
+    {
+      "id": "a-worksheet-for-clearer-enquiries",
+      "title": "A worksheet for clearer appointment enquiries",
+      "body": "<table><caption>A simple worksheet a practice owner can use before approving a medical website</caption><thead><tr><th>Website decision</th><th>What to write or ask for</th><th>Common mistake</th></tr></thead><tbody><tr><td>Accepting patients status</td><td>Say whether the practice is accepting new patients and whether that applies to all services or only some.</td><td>Burying the answer on a contact page or leaving it implied.</td></tr><tr><td>Care model</td><td>Explain in plain language whether visits are in person, virtual, urgent, ongoing or referral based.</td><td>Using internal specialty language that a first-time visitor will not understand.</td></tr><tr><td>Referral expectations</td><td>State who should send the referral, what it should include and where it should go.</td><td>Writing for doctors who refer often instead of for patients who are new to the process.</td></tr><tr><td>Appointment direction</td><td>Offer one primary route such as phone, a secure portal or a practice-approved booking tool.</td><td>Showing several competing buttons with labels like Book Now, Contact, Enquire and Start Here.</td></tr><tr><td>After-hours and urgent care</td><td>Give clear boundaries about what the website is not for, and point to the practice's chosen urgent guidance.</td><td>Letting an ordinary contact form look like an emergency channel.</td></tr><tr><td>Enquiry form fields</td><td>Collect only the minimum needed to respond, then send clinical details into the practice's secure system.</td><td>Asking for a long health history, documents or highly sensitive details on a public page.</td></tr><tr><td>Accessibility review</td><td>Check headings, contrast, labels, keyboard use and image text alternatives, then keep testing after edits.</td><td>Treating accessibility as a design theme instead of an ongoing standard.</td></tr></tbody></table>"
+    },
+    {
+      "id": "design-that-builds-trust",
+      "title": "Design should make the practice feel careful, not just attractive",
+      "body": "<p>Medical websites should look professional and calm, but beauty on its own is not evidence that the page will work. A clean layout matters because it reduces friction for people who are already under some stress. The typography should be easy to read, the spacing should be generous and the page should not be crowded with stock photos, popups, chat windows and competing calls to action.</p><p>Good medical website design usually has a quiet confidence. It explains who the practice helps, what happens next and what the visitor should not expect. It does not need to promise miraculous results or use inflated language to sound capable. In fact, restrained writing is often more persuasive because it matches how a careful clinic should behave.</p><p>Broader choices about platform, hosting and maintenance still apply, and my <a href=\"/web-design/\">web design overview</a> covers that wider decision. For a medical practice, though, the best-looking site is usually the one that lets a nervous visitor find the right door without thinking too hard.</p>"
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility needs to be part of the design, not a finishing touch",
+      "body": "<p>A medical practice website should be usable by people with a wide range of vision, mobility, hearing and cognitive needs. That includes readable text, visible focus states for keyboard users, properly labelled forms, clear headings and useful alternative text for images that carry meaning. Decorative images can be ignored by assistive technology, but images that explain a service or show a person in context need proper handling.</p><p>The <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">W3C's first accessibility checks</a> are a useful starting point for a non-specialist review. They are not a complete audit, but they can reveal missing page titles, weak headings, poor contrast and images without meaningful text alternatives. The <a href=\"https://www.w3.org/WAI/tutorials/forms/\">W3C guidance on accessible forms</a> is also important because appointment and enquiry forms are where many websites become confusing.</p><p>For an Okanagan practice, accessibility also has a practical reputation value. A clinic that serves older adults, people with disabilities or people accompanying family members should not make the website harder than the phone call it is supposed to replace. Accessibility work should continue after launch because content edits, plugins and new forms can introduce problems.</p>"
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy statements should match what the practice actually does",
+      "body": "<p>A medical website should explain what personal information it collects, why it collects that information, how it is used, how long it is kept and how a person can ask about or correct it. The policy should match the real practices of the clinic rather than being copied from another website. If forms are handled by a third party, that relationship should be understood and described carefully.</p><p>The <a href=\"https://www.oipc.bc.ca/guidance-documents/2286\">BC Office of the Information and Privacy Commissioner guidance on PIPA privacy policies</a> is a useful reference for British Columbia organizations. It discusses limiting collection, identifying purposes, consent, safeguards, retention and individual access. A website designer should not turn that guidance into legal promises; the practice should confirm that its final privacy wording and handling process fit its own obligations.</p><p>In day-to-day design terms, this means fewer unnecessary fields, clearer consent language and no surprise uses of contact details. If someone sends an appointment enquiry, they should not later discover that their address was added to unrelated marketing without a proper basis. The website can support trust by being specific and restrained.</p>"
+    },
+    {
+      "id": "what-not-to-promise",
+      "title": "Do not let marketing copy become clinical advice",
+      "body": "<p>Service explanations and patient education should be reviewed by the practice’s clinical team. A general enquiry form should not be presented as a diagnostic service or a guarantee of privacy. It can explain services, introduce providers and help people prepare for an appointment, but the final wording should be reviewed by the people responsible for clinical and legal accuracy. That review matters most on service pages, blog posts, frequently asked questions and provider biographies.</p><p>Testimonials and reviews also need care. They may be persuasive, but they can raise privacy, consent and accuracy concerns. A practice should not assume that because reviews appear on public platforms, it can reproduce them freely or frame them as typical results. If reviews are used, the practice should have a clear reason and a careful process.</p><p>A good writer can still make the website warm. The safer approach is to describe the experience, the process and the practical next step rather than implying a medical outcome. <strong>Our team will review your referral and contact you about the next available appointment</strong> is much better than language that sounds like a promise about speed, eligibility or results.</p>"
+    },
+    {
+      "id": "choosing-a-designer-or-agency",
+      "title": "Choose a designer who understands boundaries as well as branding",
+      "body": "<p>The best fit for a medical website is usually a designer or agency that can discuss privacy, accessibility and clinical boundaries without turning the whole project into a legal lecture. A generalist can build an attractive brochure site, but a medical practice needs someone who knows when not to add a form field, a chatbot, a pop-up or a dramatic claim.</p><p>Ask to see how the provider would handle accepting-patients status, referral direction, urgent-care boundaries and accessibility checks. Ask who writes the service descriptions, who reviews them and how future edits will be checked. Ask what happens to form submissions and whether clinical information is being kept out of the public website by design.</p><p>If you want help sorting those questions into a real brief, <a href=\"/contact/\">contact me</a>. A short conversation can often save a practice from buying a beautiful website that creates avoidable admin and privacy work later.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should a medical practice put patient reviews on its website?",
+      "Only with a clear reason, careful consent and accuracy review. Public reviews can be persuasive, but they can also create privacy and misleading-marketing problems. Many practices are better served by clear service descriptions and a simple route to an enquiry."
+    ],
+    [
+      "Do medical practice websites need online booking?",
+      "Not always. Some practices should send patients to a secure portal or a phone call because eligibility, referral status or scheduling rules are too specific for a simple public calendar. The website should make the correct route clear rather than adding booking because it looks modern."
+    ],
+    [
+      "How often should a medical website be reviewed?",
+      "Review it whenever services, providers, referral processes, forms or plugins change, and on a regular schedule even when nothing obvious has changed. Accessibility and privacy problems often appear after small content edits, so launch checks need to be followed by regular review."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "BC Office of the Information and Privacy Commissioner guidance on developing a PIPA privacy policy",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    },
+    {
+      "name": "W3C Web Accessibility Initiative: Easy Checks, a first review of web accessibility",
+      "url": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+    },
+    {
+      "name": "W3C Web Accessibility Initiative: Forms tutorial",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Frames medical practice websites around the next appropriate action, with a practical worksheet for accepting-patients status, care model, referrals, appointment direction, enquiry fields and accessibility review.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm that the W3C and OIPC links still resolve to the same guidance pages on publication day.",
+      "Check that no wording accidentally promises legal compliance, clinical outcomes or guaranteed privacy.",
+      "Confirm the article does not imply that a public website form is a secure clinical intake system."
+    ],
+    "serpGap": "Many ranking pages sell broad medical website packages or list generic features. This article focuses on the specific decision of making the next step clear while keeping public forms restrained, especially for BC practices thinking about PIPA, accessibility and clinical boundaries.",
+    "sourceUse": [
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "BC organizations should identify purposes, limit collection, explain consent, safeguards, retention and access, and make privacy practices available."
+      },
+      {
+        "url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+        "claim": "Non-specialists can use first accessibility checks such as page titles, headings, contrast and image alternatives, although these are not a complete evaluation."
+      },
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "Accessible forms need clear labels, grouping, instructions, validation, notifications and consideration of users with disabilities."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-06-17",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/medical-practices/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "medical-practices"
+  ],
+  "wordCount": 1779,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 15076,
+      "total_tokens": 18631,
+      "completion_tokens": 3555,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 514
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 514
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 1,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "A medical practice website should not diagnose, recommend treatment, promise results or imply guaranteed privacy through a generic web form.",
+      "replacement": "Service explanations and patient education should be reviewed by the practice’s clinical team. A general enquiry form should not be presented as a diagnostic service or a guarantee of privacy."
+    },
+    {
+      "original": "so launch-day compliance is not enough.",
+      "replacement": "so launch checks need to be followed by regular review."
+    }
+  ]
+}

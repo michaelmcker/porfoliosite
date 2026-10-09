@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help service businesses diagnose and fix websites that attract the wrong enquiries by narrowing service boundaries, geography, forms, and priority pages.",
+    "specificity": "High. The article gives concrete page-level advice, a sample form-field table, a self-audit worksheet, and clear examples of service-area and scope signals.",
+    "evidence": "Adequate. It references W3C form guidance and uses Michael's own professional observations without inventing client stories, tests, or unsupported statistics.",
+    "voice": "Strong. The copy is direct, conversational, and grounded in Michael's tradeoff-aware style, with no corporate padding or banned phrases.",
+    "usefulAsset": "Yes. It is a practical, self-contained guide that busy service owners can use to audit and improve the fit of their enquiries."
+  },
+  "slug": "website-wrong-enquiries",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1338,
+  "usage": {
+    "prompt_tokens": 5875,
+    "total_tokens": 12890,
+    "completion_tokens": 7015,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6810
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 6810
+    }
+  }
+}

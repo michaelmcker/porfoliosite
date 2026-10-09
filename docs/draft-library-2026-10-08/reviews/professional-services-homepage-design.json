@@ -1,0 +1,17 @@
+{
+  "slug": "professional-services-homepage-design",
+  "provider": "Main editor",
+  "issues": [],
+  "remainingBlockers": [],
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "assessment": {
+    "intent": "Clear professional-services homepage design",
+    "specificity": "Three example openings and a concrete review table",
+    "evidence": "Law Society marketing advisory and W3C checks",
+    "voice": "Removed unsupported conversion assertions and made examples practice-reviewable",
+    "usefulAsset": "Homepage comparison table"
+  },
+  "echoFailure": "Malformed response; complete source-led manual review completed."
+}

@@ -1,0 +1,140 @@
+{
+  "slug": "website-handover-checklist",
+  "title": "What you should receive when your new website is handed over",
+  "type": "checklist",
+  "description": "A practical website handover checklist for business owners, covering domain and admin ownership, content exports, renewals, analytics, forms, backups, training, and account access.",
+  "summary": "When a new website is handed over, you should receive administrator-level ownership of your domain, hosting, CMS, and analytics accounts, plus a clear export path for content, a renewal record, a transition support window, and proof that forms and backups work. Do not give final sign-off until every asset, login, and next step is documented.",
+  "takeaways": [
+    "Ask for administrator-level ownership of the domain, hosting, CMS, analytics, and connected marketing accounts before you approve the final invoice.",
+    "Make the designer state exactly what can be exported, because static files, CMS content, forms, search, ecommerce, and localized content are not equally portable.",
+    "Use a written acceptance checklist covering renewals, form recipients, backup restore steps, editor training, transition support, and revocation of the outgoing agency’s access."
+  ],
+  "sections": [
+    {
+      "id": "handover-ownership-checklist",
+      "title": "The handover ownership checklist",
+      "body": "<p>The short answer is that you should walk away with administrator-level ownership of every account that controls your website: the domain, hosting, content management system, analytics, and any connected marketing tools. You should also receive a written record of what was delivered, where backups live, who to call for help, and how to remove the outgoing developer’s access. If any of those items are missing, the project is not finished.</p><p>A clean handover is mostly about avoiding future friction. Business owners around Kelowna, Vernon, and the rest of the Okanagan are busy. They do not want to chase old invoices, forgotten passwords, or a page editor that only works on one agency’s platform. They want a website that looks beautiful, communicates clearly, and can be managed by the people they already trust. My <a href=\"/web-design/\">website design service</a> starts from that assumption, and I think your brief should too.</p><p>Use the worksheet below as an acceptance checklist before you sign off.</p><table><caption>Website handover acceptance checklist</caption><thead><tr><th>Item</th><th>What you should receive</th><th>Why it matters</th></tr></thead><tbody><tr><td>Domain</td><td>Admin access or registrar account transfer</td><td>You control the address where customers find you.</td></tr><tr><td>Hosting</td><td>Account ownership or the highest available admin access</td><td>You can move, renew, or replace hosting without starting over.</td></tr><tr><td>CMS admin</td><td>Full administrator login</td><td>You can update pages, images, and navigation.</td></tr><tr><td>Source and content export</td><td>Static files, database export, or documented export path</td><td>You are not trapped if the platform or agency relationship changes.</td></tr><tr><td>Analytics</td><td>Admin access to Analytics and Tag Manager</td><td>You keep historical measurement and control tracking changes.</td></tr><tr><td>Forms</td><td>Confirmation of recipient inbox and stored submissions</td><td>Enquiries keep arriving after the handover.</td></tr><tr><td>Backups</td><td>Backup location, schedule, and restore steps</td><td>A broken update does not become a lost website.</td></tr><tr><td>Renewals</td><td>Renewal dates, costs, and renewal owner</td><td>You avoid accidental expiry of domain, hosting, or tools.</td></tr><tr><td>Training</td><td>Editor login, quick walkthrough, and support window</td><td>Your team can make normal updates without guesswork.</td></tr></tbody></table><p>That table is not about distrusting a designer. It is about turning a creative project into an asset your business actually owns.</p>"
+    },
+    {
+      "id": "exporting-your-site-content",
+      "title": "Can you export your site and content?",
+      "body": "<p>This depends heavily on the platform. Some systems give you clean files and let you host them almost anywhere. Others are excellent to edit in, but their best features depend on the vendor’s servers. Before you approve a proposal, ask what exactly can leave the platform and what cannot.</p><p>WordPress is popular partly because the open-source software gives you unusual freedom. The <a href=\"https://wordpress.org/about/features/\">official WordPress feature list</a> emphasizes flexibility, importers, plugins, and owning your data. In practical terms, a well-built WordPress site can usually be moved to another host, exported as content, and rebuilt without starting from zero. That does not mean every WordPress handover is painless. It means the platform is generally compatible with real ownership.</p><p>Other platforms make different tradeoffs. Webflow’s official <a href=\"https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code\">code export guidance</a> says paid Workspace plans can export HTML, CSS, JavaScript, and assets, but it also says CMS content and functionality, user accounts, ecommerce content, forms handling, site search, and localized content are not included. That is important. Exporting a design is not the same as exporting a working business website with live collections and form processing.</p><p>Framer currently presents confusing guidance. One official Framer help page on <a href=\"https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/\">HTML export and self-hosting</a> says Framer does not offer standalone HTML export because performance features depend on Framer’s hosting infrastructure. Another Framer help page on <a href=\"https://www.framer.com/help/articles/porting-your-data-from-framer/\">porting your data</a> says every site is published as standard HTML, CSS, JavaScript, and assets, and that you can download those files and move them to another hosting provider. Before choosing Framer for portability, ask the designer to demonstrate the exact working export and exit plan for your content, forms, and ongoing editing.</p><p>For a simple service business in the Okanagan, a custom static website or a cleanly configured WordPress site can be easier to own than a platform that bundles editing, hosting, forms, and CMS into one subscription. For a business that needs frequent content editing, the opposite may be true. The right answer is the one that matches your real workflow.</p>"
+    },
+    {
+      "id": "renewals-support-transition",
+      "title": "Renewals, support, and the transition period",
+      "body": "<p>Ask for a renewal record before final sign-off. It should list the domain, hosting, CMS subscription if any, email or form tools, paid plugins, stock or font licences where applicable, and who is responsible for renewing each one. A website can be beautifully designed and still fail because nobody knew which account would expire first.</p><p>A short transition period is also useful. I prefer clear boundaries: a defined number of days for questions about the delivered site, followed by a new maintenance agreement if you want ongoing help. Otherwise, small requests can turn into an undefined support relationship. Your <a href=\"/blog/small-business-website-brief/\">website brief</a> should state whether support is included, for how long, and what counts as a new request rather than a handover correction.</p>"
+    },
+    {
+      "id": "analytics-forms-backups-access",
+      "title": "Analytics, forms, backups, and account access",
+      "body": "<p>Before accepting the site, have the designer prove the boring parts. Submit the contact form and confirm the correct person receives it. Confirm where submissions are stored if the site also records them. Open analytics and confirm your business, not only the agency, has administrator access. Ask where backups are stored and what the restore process is. Then make sure old agency access is removed once any transition support ends.</p><p>This is also a good moment to review your wider marketing accounts. If the website handover includes Google Business Profile, ad accounts, social channels, or email marketing tools, keep those separate in the checklist. A website project should not quietly place every customer-facing account under one agency login.</p>"
+    },
+    {
+      "id": "first-week-after-handover",
+      "title": "What to test in your first week",
+      "body": "<p>The first week is when you confirm the handover actually works. Submit the contact form from a phone and a desktop computer. Make a small text edit to a service page. Check that analytics is recording visits. Confirm you can log into the CMS without asking the old agency for help. If anything fails, fix it while your transition support window is still open.</p><p>Suppose you run a seasonal Okanagan business. Before winter arrives, test the update you will need in spring. Add a new service, upload a photo, or change your hours. If that simple task feels impossible, the handover is incomplete no matter how polished the design looks.</p><p>Keep a short punch list. Note anything broken, unclear, or undocumented, then send it to the designer in one message. This is easier for everyone than discovering problems one at a time over the next month.</p>"
+    },
+    {
+      "id": "platform-choice-okanagan",
+      "title": "Choosing the right handover for your Okanagan business",
+      "body": "<p>Different businesses need different levels of control. A consultant, tradesperson, or local service company may need a fast site, strong local search foundations, and easy editing of services and contact details. An accommodation provider or experience-based business may care more about visual storytelling, booking flows, and seasonal content. A community organization may need several editors and a very clear update process.</p><p>My advice is to choose the simplest setup that can still do the real work. For many Okanagan businesses, that means owning the domain, keeping analytics independent, receiving training, and having a realistic export path. For others, it means accepting a hosted platform because its editing experience is better for the team. The mistake is paying for a handover that looks complete on launch day but leaves you asking, “Who owns this?” six months later.</p><p>If you want a second opinion before you accept the handover, <a href=\"/contact/\">contact me</a> and we can review the checklist together.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "What if my designer or agency disappears after handover?",
+      "If you own the domain, hosting, CMS admin, analytics, and have a content or source export, you can usually appoint another developer. If the site depends on a proprietary hosted CMS or forms, migration may require rebuilding those parts. Keep renewal and access records so the next person can start from facts, not guesses."
+    ],
+    [
+      "Should I ask for design source files like Figma?",
+      "Yes, when the design was custom-made for your business. Source files are useful for future redesigns, but they are not a substitute for owning the live website, domain, hosting, content, and analytics. Ask which files are editable masters, which are exports, and whether any fonts, plugins, or stock assets have separate licence terms."
+    ],
+    [
+      "Can I do a clean handover from Wix or Squarespace?",
+      "You can hand over account ownership, logins, renewal details, and exported content where the platform allows it, but you usually cannot take the full site and host the same system elsewhere. If future portability matters, ask for a demonstrated export or migration plan before choosing the platform."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "WordPress features",
+      "url": "https://wordpress.org/about/features/"
+    },
+    {
+      "name": "Webflow code export help",
+      "url": "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code"
+    },
+    {
+      "name": "Framer HTML export help",
+      "url": "https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/"
+    },
+    {
+      "name": "Framer data portability help",
+      "url": "https://www.framer.com/help/articles/porting-your-data-from-framer/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "A practical owner acceptance checklist that separates domain and admin ownership, source and content export, renewal responsibility, analytics, forms, backups, training, and account revocation, while explaining platform tradeoffs without treating any platform as automatically portable.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm current Webflow plan names and exact export limitations before release.",
+      "Confirm current Framer guidance because official pages conflict on standalone HTML export versus downloadable site output.",
+      "Verify that /web-design/, /contact/, and /blog/small-business-website-brief/ remain the intended internal destinations."
+    ],
+    "serpGap": "Search results mix legal templates, developer handoff advice, and general sign-off checklists, but do not give owners a practical acceptance worksheet tied to domain and admin ownership, platform export limits, renewals, analytics, forms, backups, training, and account revocation.",
+    "sourceUse": [
+      {
+        "url": "https://wordpress.org/about/features/",
+        "claim": "WordPress presents itself as flexible, extensible software that supports importers, plugins, different content types, and owning your data."
+      },
+      {
+        "url": "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code",
+        "claim": "Webflow says code export requires a paid Workspace plan and does not include hosted CMS functionality, forms handling, site search, ecommerce, localized content, and other listed features."
+      },
+      {
+        "url": "https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/",
+        "claim": "Framer says standalone HTML export and self-hosting are not supported because important optimization and publishing features depend on Framer infrastructure."
+      },
+      {
+        "url": "https://www.framer.com/help/articles/porting-your-data-from-framer/",
+        "claim": "Framer also says published site output and CMS data can be downloaded in standard formats and moved or reused on other platforms."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2026-12-31",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Buying and ownership",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "small-business-website-brief",
+    "compare-website-quotes"
+  ],
+  "services": [],
+  "wordCount": 1487,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 18900,
+      "total_tokens": 25052,
+      "completion_tokens": 6152,
+      "prompt_tokens_details": {
+        "cached_tokens": 18899
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3188
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3188
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  }
+}

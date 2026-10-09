@@ -1,0 +1,92 @@
+{
+  "issues": [
+    {
+      "path": "summary",
+      "original": "Choose your retail website platform by matching it to how you actually handle inventory, checkout, payments and fulfilment. Shopify gives you a managed all-in-one store, WooCommerce gives you WordPress-based control and lower long-term costs, and a simple catalogue works when you are not ready to take payment online.",
+      "replacement": "Choose your retail website platform by matching it to how you actually handle inventory, checkout, payments and fulfilment. Shopify gives you a managed all-in-one store, WooCommerce gives you WordPress-based control, and a simple catalogue works when you are not ready to take payment online.",
+      "reason": "The lower long-term cost claim is not established by the supplied sources and is unnecessary."
+    },
+    {
+      "path": "takeaways.1",
+      "original": "Shopify suits retailers who want a managed store; WooCommerce suits those who want WordPress control and lower long-term costs.",
+      "replacement": "Shopify suits retailers who want a managed store; WooCommerce suits those who want WordPress control and more direct control over hosting, checkout and data.",
+      "reason": "Same unsupported cost claim; this version stays within the evidence and keeps the useful distinction."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "It gives you managed hosting, a maintained checkout, payment options, inventory tools and an app ecosystem without asking you to run the underlying software yourself.",
+      "replacement": "It gives you managed hosting, a maintained checkout, payment options and an app ecosystem without asking you to run the underlying software yourself.",
+      "reason": "The supplied Shopify source does not establish inventory tools, so the phrase should not be added."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "The tradeoff is control. You are working inside Shopify's rules, plans and app ecosystem. Custom checkout changes, certain payment gateways or selling in many regions can add cost or require a higher tier. For some retailers that is a fair exchange for simplicity. For others it becomes limiting as the business grows.",
+      "replacement": "The tradeoff is control. You are working inside Shopify's rules, plans and app ecosystem. For some retailers that is a fair exchange for simplicity. For others it becomes limiting as the business grows.",
+      "reason": "The source does not support the specific claim that these changes add cost or require a higher tier."
+    },
+    {
+      "path": "sections.2.body",
+      "original": "You need to think about hosting, updates, security, backups and performance, or hire someone who will. The <a href=\"/blog/website-subscription-vs-upfront-build/\">ongoing cost</a> can still be lower than a managed platform, especially as you grow, but you should go into it knowing that the freedom comes with operational work.",
+      "replacement": "You need to think about hosting, updates, security, backups and performance, or hire someone who will. The <a href=\"/blog/website-subscription-vs-upfront-build/\">ongoing cost</a> is only part of the decision; you should go into it knowing that the freedom comes with operational work.",
+      "reason": "The article should not claim WooCommerce is cheaper as it grows when the supplied sources do not establish that."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help a small retailer choose between Shopify, WooCommerce and a catalogue website by starting with operations instead of software hype.",
+    "specificity": "Strong: it names real platform tradeoffs, gives a useful worksheet, and includes a concrete made-to-order furniture example.",
+    "evidence": "Mostly grounded in the supplied Shopify, WooCommerce and WordPress sources, but a few claims about cost and features needed narrowing.",
+    "voice": "Close to Michael's brief: conversational, practical, owner-focused, Canadian in spelling, and free of corporate padding.",
+    "usefulAsset": "A solid private first draft that can guide a retailer through a real platform decision once the unsupported claims are fixed."
+  },
+  "slug": "retail-website-platforms",
+  "applied": [
+    {
+      "path": "summary",
+      "original": "Choose your retail website platform by matching it to how you actually handle inventory, checkout, payments and fulfilment. Shopify gives you a managed all-in-one store, WooCommerce gives you WordPress-based control and lower long-term costs, and a simple catalogue works when you are not ready to take payment online.",
+      "replacement": "Choose your retail website platform by matching it to how you actually handle inventory, checkout, payments and fulfilment. Shopify gives you a managed all-in-one store, WooCommerce gives you WordPress-based control, and a simple catalogue works when you are not ready to take payment online.",
+      "reason": "The lower long-term cost claim is not established by the supplied sources and is unnecessary."
+    },
+    {
+      "path": "takeaways.1",
+      "original": "Shopify suits retailers who want a managed store; WooCommerce suits those who want WordPress control and lower long-term costs.",
+      "replacement": "Shopify suits retailers who want a managed store; WooCommerce suits those who want WordPress control and more direct control over hosting, checkout and data.",
+      "reason": "Same unsupported cost claim; this version stays within the evidence and keeps the useful distinction."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "It gives you managed hosting, a maintained checkout, payment options, inventory tools and an app ecosystem without asking you to run the underlying software yourself.",
+      "replacement": "It gives you managed hosting, a maintained checkout, payment options and an app ecosystem without asking you to run the underlying software yourself.",
+      "reason": "The supplied Shopify source does not establish inventory tools, so the phrase should not be added."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "The tradeoff is control. You are working inside Shopify's rules, plans and app ecosystem. Custom checkout changes, certain payment gateways or selling in many regions can add cost or require a higher tier. For some retailers that is a fair exchange for simplicity. For others it becomes limiting as the business grows.",
+      "replacement": "The tradeoff is control. You are working inside Shopify's rules, plans and app ecosystem. For some retailers that is a fair exchange for simplicity. For others it becomes limiting as the business grows.",
+      "reason": "The source does not support the specific claim that these changes add cost or require a higher tier."
+    },
+    {
+      "path": "sections.2.body",
+      "original": "You need to think about hosting, updates, security, backups and performance, or hire someone who will. The <a href=\"/blog/website-subscription-vs-upfront-build/\">ongoing cost</a> can still be lower than a managed platform, especially as you grow, but you should go into it knowing that the freedom comes with operational work.",
+      "replacement": "You need to think about hosting, updates, security, backups and performance, or hire someone who will. The <a href=\"/blog/website-subscription-vs-upfront-build/\">ongoing cost</a> is only part of the decision; you should go into it knowing that the freedom comes with operational work.",
+      "reason": "The article should not claim WooCommerce is cheaper as it grows when the supplied sources do not establish that."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1292,
+  "usage": {
+    "prompt_tokens": 8147,
+    "total_tokens": 11968,
+    "completion_tokens": 3821,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3025
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 3025
+    }
+  }
+}

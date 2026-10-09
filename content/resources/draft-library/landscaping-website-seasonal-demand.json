@@ -1,0 +1,146 @@
+{
+  "slug": "landscaping-website-seasonal-demand",
+  "title": "Prepare your landscaping website before the busy season",
+  "type": "guide",
+  "description": "A practical guide for landscaping companies that need a website ready for seasonal demand, with separate paths for maintenance contracts and one time projects, a realistic content calendar, and a concrete page structure you can adapt.",
+  "summary": "A landscaping website that is ready for the busy season does two jobs at once. It gives maintenance clients a fast path to a contract, and it gives project clients a convincing reason to request a quote. Build around your actual calendar, keep intake short, and make the next step obvious.",
+  "takeaways": [
+    "A landscaping website needs two distinct paths, one for recurring maintenance clients and one for larger one time projects.",
+    "Build pages around your actual seasonal calendar, not a generic service list, so the right page exists before demand spikes.",
+    "Keep quote forms short, use before and after proof with clear scope, and get local search fundamentals right before spending on design extras."
+  ],
+  "sections": [
+    {
+      "id": "the-seasonal-squeeze",
+      "title": "The seasonal squeeze",
+      "body": "<p>The calendar decides when your phone rings. For most landscaping companies in the Okanagan, that means a compressed rush in spring, a steadier hum through summer, a second wave of cleanups and irrigation blowouts in fall, and a quieter winter that still needs to pay for itself. The mistake is building one generic website and hoping it covers all of that.</p><p>A site that is actually ready for the busy season does two jobs at once. It gives the homeowner who needs weekly mowing a fast path to a maintenance contract, and it gives the property manager or new homeowner a convincing reason to request a design and build quote. Those are different buyers with different questions, different budgets, and different timelines.</p>"
+    },
+    {
+      "id": "choose-what-you-are-selling",
+      "title": "Choose what you are actually selling",
+      "body": "<p>Before you think about design, decide what the website needs to sell most. Many landscaping companies do both ongoing maintenance and larger one time projects, but the way you win those two kinds of work is not the same. A maintenance contract is a trust and reliability sale. A project is a vision and capability sale.</p><table><caption>Two different jobs for one landscaping website</caption><thead><tr><th>Maintenance contract work</th><th>One time project work</th></tr></thead><tbody><tr><td>Recurring revenue and route density</td><td>Higher value, lower frequency jobs</td></tr><tr><td>Buyer wants reliability and clear scheduling</td><td>Buyer wants design sense and capability</td></tr><tr><td>Proof is consistency and communication</td><td>Proof is scope, craft, and imagination</td></tr><tr><td>Fast quote or seasonal sign up path</td><td>Consultation and detailed estimate path</td></tr><tr><td>Often decided on trust and convenience</td><td>Often decided after comparison and research</td></tr></tbody></table><p>If your current website treats every visitor the same, you are probably making both groups work too hard. The contract client wants to know you will show up. The project client wants to know you can imagine and build something they cannot.</p>"
+    },
+    {
+      "id": "map-the-calendar",
+      "title": "Map the calendar before you map the pages",
+      "body": "<p>Seasonal demand is not a vague trend. It is a schedule. Spring cleanup requests spike when the snow is still melting. Irrigation startups and sod installation follow close behind. Summer brings maintenance, planting, and water management. Fall is cleanup, leaf removal, and winterization. If you also handle snow, the calendar turns over again.</p><p>Build pages that match that schedule. A spring cleanup page should be finished and indexed before the first warm weekend, not written in a panic when the phone starts ringing. The same goes for fall blowouts, holiday lighting, or anything else with a narrow window. If you are planning <a href=\"/web-design/landscapers/\">a landscaping website</a>, use the service calendar to decide which pages need to be ready before each season.</p>"
+    },
+    {
+      "id": "the-intake-form",
+      "title": "The intake form that qualifies without interrogating",
+      "body": "<p>A quote form has one job. It should separate the people who are ready to talk from the people who are still browsing, without making either group feel like they are applying for a mortgage. Ask for what you need to give a useful first answer.</p><p>For most landscaping work, that means the service they want, the property type, the location, the timeline, and a realistic budget range if they are comfortable sharing it. Photos of the yard help enormously, but make them optional. Long forms can create friction, especially on a phone.</p>"
+    },
+    {
+      "id": "proof-and-the-quote-gap",
+      "title": "Before and after proof, and the gap between browsing and booking",
+      "body": "<p>Good photos matter, but they are not enough. A gallery of beautiful work without context creates a gap. The visitor can see that you do nice work, but they still do not know what you would do for them, what it might involve, or what happens next.</p><p>Close that gap with scope. A strong before and after set should say what was done, why it was done, and what kind of property it was. Pair that with a clear next step. If your page ends with a generic contact form, you are asking the visitor to invent the next move on their own. If it ends with a specific invitation, such as booking a spring cleanup or requesting a design consultation, the path is obvious.</p>"
+    },
+    {
+      "id": "local-search-fundamentals",
+      "title": "Local search and the work that fills the calendar",
+      "body": "<p>A landscaping website can be beautiful and still invisible. Google has been consistent about what drives local results: relevance, distance, and prominence. In plain language, your business needs to look like the right answer for the search, be close enough to matter, and show enough signs of life that Google trusts putting it in front of people.</p><p>That means a complete and accurate <a href=\"https://support.google.com/business/answer/7091?hl=en\">Google Business Profile</a>, correct categories, current hours, real photos, and reviews that are answered. It also means your website needs to back up what the profile claims. If your profile says you serve West Kelowna but your website never mentions it, you are making the job harder than it needs to be.</p><p>The <a href=\"/v2/work/local-search-magnet.html\">Cool Runnings Landscaping project</a> is a useful example of this kind of structural work. After the new website and the system behind it launched, the client confirmed a 30% increase in qualified bookings and jobs. That is not a revenue claim, and it is not a single magic design element. It is what happens when local service pages, useful tools, and a measurement loop line up.</p>"
+    },
+    {
+      "id": "sample-page-architecture",
+      "title": "A sample page architecture you can adapt",
+      "body": "<p>Suppose you want one strong page for a seasonal service, such as spring cleanup or irrigation blowouts. Here is a structure that works for most landscaping companies.</p><ul><li><strong>Hero.</strong> Name the service and the area. Say what it is for. Give one clear action.</li><li><strong>Who this is for.</strong> A short paragraph that helps the right visitor recognize themselves.</li><li><strong>What is included.</strong> Scope. What you actually do. What you do not do.</li><li><strong>Before and after.</strong> A small gallery with captions that explain the work.</li><li><strong>Timing.</strong> When to book, how long it takes, and what to expect.</li><li><strong>Local note.</strong> Anything specific to the Okanagan or your service area that affects the work.</li><li><strong>Quote or booking.</strong> A short form or a clear phone path.</li></ul><p>You can adapt this for maintenance too, but the emphasis shifts. A maintenance page should put reliability, scheduling, and communication closer to the top.</p>"
+    },
+    {
+      "id": "what-to-do-next",
+      "title": "What to do next, depending on what you can maintain",
+      "body": "<p>The worst website is the one you cannot update. If you are not going to add seasonal pages, swap photos, or adjust services, a simpler site will serve you better than an ambitious one that goes stale. Decide what you can honestly maintain before you decide what to build.</p><p>If you can keep it current, build around your calendar and keep the two paths, contract and project, clearly separate. If you cannot, build one excellent core site and get help with the seasonal pushes when they matter most. Either way, the goal is the same. When the busy season starts, the right people should already be finding you.</p><p>If you want help planning that, <a href=\"/contact/\">start a conversation</a> before the spring rush, not during it.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should my landscaping website separate maintenance contracts from one time projects?",
+      "Yes, in most cases. The two buyers have different questions, budgets, and timelines. A maintenance client wants reliability and scheduling clarity. A project client wants capability, design sense, and proof you can handle a larger scope. Separate pages, or at least clearly separated sections, make both paths easier to follow."
+    ],
+    [
+      "What should a landscaping quote request form ask for?",
+      "Ask for the minimum needed to give a useful first response. Usually that is the service wanted, property type, location, timeline, and an optional budget range. Photos help, but they should be optional. Long forms can create friction, especially on mobile, and asking for unnecessary personal details can stop an otherwise ready lead."
+    ],
+    [
+      "How early should I update my website before the busy season?",
+      "Earlier than feels necessary. If spring cleanup is a major service, the page should be finished, indexed, and reviewed well before the first warm weekend. The same applies to fall blowouts, snow removal, or any other seasonal spike. Building during the rush usually means settling for a weaker page and missing the easiest traffic."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Google Business Profile Help: Tips to improve your local ranking on Google",
+      "url": "https://support.google.com/business/answer/7091?hl=en"
+    },
+    {
+      "name": "Michael McKerracher: Cool Runnings Landscaping project",
+      "url": "https://michaelmck.site/v2/work/local-search-magnet.html"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "This article separates the two real buyer paths for a landscaping company, contract work and project work, then ties page architecture, intake, and proof to an actual seasonal calendar instead of offering generic lead generation advice.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm Google local ranking guidance has not changed materially since the fetch date of October 8, 2026.",
+      "Confirm the Cool Runnings reference still describes only a client confirmed 30% increase in qualified bookings and jobs, with no revenue claim and no isolated design effect claim.",
+      "Confirm no invented Okanagan demand, demographic, legal, or provider claims slipped into the draft."
+    ],
+    "serpGap": "Competitor coverage is mostly broad landscaping lead generation advice or generic web design lists. There is little practical guidance on separating maintenance contracts from one time projects, mapping pages to a real seasonal calendar, or structuring a quote form for landscaping work specifically.",
+    "sourceUse": [
+      {
+        "url": "https://support.google.com/business/answer/7091?hl=en",
+        "claim": "Google says local results are mainly based on relevance, distance, and prominence, and that complete and accurate business information improves the chance of showing for relevant searches."
+      },
+      {
+        "url": "https://michaelmck.site/v2/work/local-search-magnet.html",
+        "claim": "Michael's Cool Runnings project page says the owner confirmed a 30% increase in qualified bookings and jobs after the new website and system launched, without claiming a revenue effect."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-02-25",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/landscapers/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "landscapers"
+  ],
+  "wordCount": 1381,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 11587,
+      "total_tokens": 18222,
+      "completion_tokens": 6635,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4089
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 4089
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 3,
+    "publicationApproved": false,
+    "mainEditorResolution": "Retained the relevant requested service link while rewriting the unsupported calendar-process claim."
+  },
+  "mainEditorEdits": [
+    {
+      "original": "If you are planning a rebuild, our <a href=\"/web-design/landscapers/\">landscaping website design</a> work starts with exactly this calendar so the right pages exist before the season, not after.",
+      "replacement": "If you are planning <a href=\"/web-design/landscapers/\">a landscaping website</a>, use the service calendar to decide which pages need to be ready before each season."
+    },
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "issues": [
+    {
+      "path": "faqs.1.1",
+      "original": "Changes to special hours typically appear in Google Search and Maps fairly quickly once saved in your Business Profile, though it can take some time to propagate everywhere. Your website, however, updates only when you change it there, so you need to edit both systems for customers to see a consistent message.",
+      "replacement": "Google does not specify an exact time frame, but once you save special hours in your Business Profile they can appear in Search and Maps for the designated dates. Your website, however, updates only when you change it there, so you need to edit both systems for customers to see a consistent message.",
+      "reason": "The original makes unsupported empirical claims about how quickly changes appear and how they propagate across Google's systems. The provided Google source does not include timing details, so the replacement acknowledges that and stays within the sourced facts."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "To give small business owners a practical, step-by-step checklist for keeping holiday hours consistent across Google Business Profile, their website, forms, booking calendars, voicemail and other customer touchpoints, so customers are not confused by contradictory information.",
+    "specificity": "High. The article names specific touchpoints (Google Business Profile special hours, homepage and service page availability statements, contact form auto-replies, online booking calendars, voicemail greetings, email signatures), provides a comparison table, includes a sample auto-reply, and gives a concrete hypothetical example of an Okanagan home services company.",
+    "evidence": "The article relies on two Google Business Profile help pages as primary sources and accurately reflects their guidance on special hours versus temporarily closed status. It does not invent client results, A/B tests or numeric uplifts. The one weakness is an unsupported timing claim in the second FAQ, which is corrected in the issues list.",
+    "voice": "Conversational, practical and direct, written for busy small business owners. It explains concepts in plain language, uses Canadian spelling such as enquiry, and offers Michael's own recommendations without corporate padding or smug contrasts.",
+    "usefulAsset": "Yes. It is a focused, actionable checklist that a business owner can follow before a holiday closure. The table and final journey test make it easy to audit a website and Google profile for inconsistencies that would otherwise send customers elsewhere."
+  },
+  "slug": "holiday-hours-website-checklist",
+  "applied": [
+    {
+      "path": "faqs.1.1",
+      "original": "Changes to special hours typically appear in Google Search and Maps fairly quickly once saved in your Business Profile, though it can take some time to propagate everywhere. Your website, however, updates only when you change it there, so you need to edit both systems for customers to see a consistent message.",
+      "replacement": "Google does not specify an exact time frame, but once you save special hours in your Business Profile they can appear in Search and Maps for the designated dates. Your website, however, updates only when you change it there, so you need to edit both systems for customers to see a consistent message.",
+      "reason": "The original makes unsupported empirical claims about how quickly changes appear and how they propagate across Google's systems. The provided Google source does not include timing details, so the replacement acknowledges that and stays within the sourced facts."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1675,
+  "usage": {
+    "prompt_tokens": 9281,
+    "total_tokens": 17886,
+    "completion_tokens": 8605,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8085
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 8085
+    }
+  }
+}

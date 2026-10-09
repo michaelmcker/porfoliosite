@@ -1,0 +1,144 @@
+{
+  "slug": "automate-before-more-admin",
+  "title": "What work should you automate before adding more admin?",
+  "type": "guide",
+  "description": "A practical decision matrix for small business owners who want to automate administrative work before hiring more staff, including which tasks suit AI, where to keep human approval and how to measure the real time cost.",
+  "summary": "Before hiring more admin, sort your repetitive work by frequency, risk and how often it breaks the pattern. Automate enquiry acknowledgements, reminders, approved content reuse and report assembly, but keep humans approving commitments. Measure the hours first and plan for maintenance, not a promise to replace staff.",
+  "takeaways": [
+    "Automate high frequency, low risk tasks first, especially enquiry replies, reminders, approved content reuse and report assembly.",
+    "Keep human approval for commitments, exceptions, unusual client situations and anything with privacy or financial consequences.",
+    "Measure a time baseline before buying software, then budget for maintenance, training and review instead of expecting set-and-forget automation."
+  ],
+  "sections": [
+    {
+      "id": "decide-by-frequency-not-hype",
+      "title": "Decide by frequency, not hype",
+      "body": "<p>The work to automate first is the work that happens often, follows a recognizable pattern and does not need your personal judgment each time. Do not start with the most impressive AI demo. Start with the weekly tasks that keep interrupting real work. A good candidate appears daily or several times a week, has a clear trigger, uses information already in your business and produces an output someone can review quickly.</p><p>This is the practical difference between buying software and making an operations decision. AI can help with writing, sorting, summarizing and moving information, but it cannot decide what your business should value. If a task happens once a year, carries real risk or needs a nuanced conversation with a customer, it is not the place to begin. If it happens ten times a week and usually follows the same route, it deserves attention.</p><p>When I talk with owners about <a href=\"/ai-implementation/\">AI implementation for small businesses</a>, I am usually looking for this middle ground. Not every process needs an agent. Not every useful improvement needs custom software. Often the first win is a clear workflow that saves ten minutes a dozen times a week and gives your team one less thing to carry in their heads.</p>"
+    },
+    {
+      "id": "use-a-simple-variation-and-risk-matrix",
+      "title": "Use a simple variation and risk matrix",
+      "body": "<p>A useful way to choose is to score each task on four things: how often it happens, how much it varies, what happens if it goes wrong and how many exceptions there are. Frequency tells you whether automation can save meaningful time. Variation tells you whether the process is stable enough to follow a pattern. Risk tells you where a human must stay responsible. Exceptions tell you whether the task is too messy for a first automation project.</p><table><caption>Administrative automation decision matrix</caption><thead><tr><th>Task type</th><th>Good automation candidate?</th><th>What to automate</th><th>Where humans stay involved</th></tr></thead><tbody><tr><td>Frequent and repetitive</td><td>Usually yes</td><td>Drafts, sorting, reminders, data movement</td><td>Review before anything important is sent or published</td></tr><tr><td>Frequent but highly variable</td><td>Sometimes</td><td>First draft, intake summary or routing suggestion</td><td>Choose the answer, tailor the reply and approve the final version</td></tr><tr><td>Rare and low risk</td><td>Often no</td><td>Maybe a template or checklist</td><td>Keep it manual unless it wastes significant time</td></tr><tr><td>Rare and high risk</td><td>Usually no</td><td>Support documents and internal summaries only</td><td>A qualified person should handle the decision and the client contact</td></tr></tbody></table><p>This matrix keeps the decision honest. It stops a team from automating a task because the software is available, and it stops them from avoiding every automation because some work needs judgment. The goal is not to remove people from the business. The goal is to remove needless handling from work that already has a sensible answer most of the time.</p>"
+    },
+    {
+      "id": "start-with-enquiry-acknowledgements-and-reminders",
+      "title": "Start with enquiry acknowledgements and reminders",
+      "body": "<p>For many service businesses, the best starting point is the enquiry and follow-up layer. When someone contacts you, they should receive a prompt acknowledgement that makes sense, sets expectations and tells them what happens next. That response does not need to be written from scratch every time. It can be assembled from your service, location, availability and the type of enquiry, then reviewed when the situation is unusual.</p><p>Reminders are another strong candidate because they are frequent, repetitive and easy to define. A quote that has not been answered can trigger a polite follow-up. An appointment can produce a reminder with the right preparation notes. A missed form can prompt one clear request rather than a chain of manual messages. These are small jobs, but together they protect opportunities that would otherwise go quiet.</p><p>A simple intake workflow might look like this: name, email, phone, service requested, location, preferred date, urgency and consent to be contacted. The automation creates a summary, sends the acknowledgement, alerts the right person and files the enquiry where the team can find it. The human still reads it, chooses the reply and decides whether to book, quote or ask for more information. That is usually a better use of AI than asking it to make the business decision.</p>"
+    },
+    {
+      "id": "automate-briefs-before-full-creation",
+      "title": "Automate briefs before full creation",
+      "body": "<p>Content and marketing work often feels too creative for automation, but the brief behind the work is usually repetitive. Before writing a page, email, proposal or campaign outline, someone gathers the offer, audience, service area, proof, tone and call to action. That gathering and organizing work is a good automation target because it turns scattered information into a usable starting point.</p><p>Suppose your business wants a new service page. An AI workflow can collect the service description, likely customer questions, nearby service areas, existing testimonials you are allowed to use and the next action you want a reader to take. It can produce a structured brief rather than pretending to finish the page for you. Then you or your writer can shape the argument, check the facts and write with the right judgement.</p><p>This approach also fits the kind of content advice I give around <a href=\"/web-design/\">website design</a> and <a href=\"/marketing-branding/\">marketing and branding</a>. A beautiful page does not help much if the team is too buried in admin to keep the message clear and current. Automating the brief makes room for better creative work instead of replacing it with generic output.</p>"
+    },
+    {
+      "id": "reuse-approved-content-carefully",
+      "title": "Reuse approved content carefully",
+      "body": "<p>Many businesses already have useful material sitting in proposals, presentations, blog posts, emails and service pages. The problem is that nobody has time to find the right paragraph, check whether it is still accurate and reshape it for a new use. AI can help retrieve and recombine approved material, but the key word is approved. The workflow needs a way to know what is current, what is off limits and what needs review.</p><p>Start with a small, explicit library rather than your entire shared drive. Good candidates include service descriptions, answers to common questions, care instructions, onboarding notes and explanations your customers ask for repeatedly. The automation can draft a reply or assemble a page section from that library. A person should still check names, prices, promises, dates and anything that depends on the individual customer.</p><p>This is also where privacy deserves care. If a form or workflow handles personal information, collect only what you need, explain the purpose and keep the information protected. The BC privacy guidance from the <a href=\"https://www.oipc.bc.ca/guidance-documents/2286\">Office of the Information and Privacy Commissioner for British Columbia</a> is useful background for thinking about limited collection, consent, safeguards and retention. Do not turn a convenient automation into a place where unnecessary client details pile up.</p>"
+    },
+    {
+      "id": "assemble-reports-do-not-automate-away-understanding",
+      "title": "Assemble reports, do not automate away understanding",
+      "body": "<p>Report assembly is another strong candidate because the repeated work is often mechanical. Pull the numbers, gather notes, summarize what changed, list open issues and prepare the draft for review. An AI workflow can do much of that if the source information is reasonably consistent. The human should still interpret the result, decide what matters and choose what the business will do next.</p><p>For example, a monthly marketing report might combine enquiry counts, booked appointments, page performance, campaign notes and one paragraph of context. The AI can assemble the draft, but the owner should not treat the draft as truth without looking at the inputs. A strange week, a missing form or a changed offer can make an automated summary sound more certain than it should.</p><p>The right outcome is usually a better question, not a blind answer. If the report shows that enquiries are steady but bookings are down, the owner can ask where the process is leaking. If follow-up time is improving but the wrong people are booking, the owner can look at the message and qualification. That is the kind of judgement automation should support.</p>"
+    },
+    {
+      "id": "keep-humans-on-commitments-and-exceptions",
+      "title": "Keep humans on commitments and exceptions",
+      "body": "<p>Do not automate away the moments where your business makes a promise. Define which commitments can follow approved business rules and which require a person. A connected booking system can confirm an available appointment within agreed rules; an unusual price, complaint, refund exception or sensitive situation may need staff approval. AI can prepare the information. It should not be the final voice when the business is committing to something important.</p><p>Exceptions deserve the same care. Most workflows look tidy until a customer replies with a problem, a file is missing, a staff member is away or the request does not fit the usual categories. Build a clear handoff for those moments. The automation should say, in effect, this needs a person, and then give that person the relevant context instead of hiding the problem.</p><p>This is not a timid position. It is what lets automation be trusted. If every routine enquiry gets a prompt, accurate response and every unusual case reaches the right person, the business becomes easier to run. If the system bluffs through exceptions, staff will stop trusting it and customers may feel the damage before you do.</p>"
+    },
+    {
+      "id": "measure-the-time-before-you-buy-the-tool",
+      "title": "Measure the time before you buy the tool",
+      "body": "<p>Before choosing software, measure the work for a short period. Track how often the task happens, how long it takes, who touches it, where it gets stuck and what a good result looks like. You do not need a complex study. A two week snapshot of the real workflow is often enough to show whether automation would save fifteen minutes a month or several hours a week.</p><p>Then count the full cost of keeping the system alive. Someone has to review outputs, update approved content, handle exceptions, train new staff and notice when the business changes. A cheap tool can become expensive if it creates another admin job. A custom system can be worth the money if it removes a repeated bottleneck and the support expectations are clear. The honest comparison is not manual work versus magic software. It is current cost versus automation cost plus maintenance.</p><p>If you want help making that decision, start with a small, practical review rather than a broad transformation plan. My <a href=\"/ai-implementation/\">AI implementation work</a> is built around finding a useful goal, testing against real tasks and agreeing where you stay in control. If you are ready to talk through where the work piles up, <a href=\"/contact/\">book a free consultation</a> and we can look for the clearest place to begin.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should I automate before hiring an admin assistant?",
+      "Review the work before deciding. If much of it is repetitive and easy to check, a small automation trial can show what capacity it frees. If the need is judgement, customer care or handling exceptions, hiring may be the more useful step. It does not mean every admin role should disappear."
+    ],
+    [
+      "What is a bad first task to automate?",
+      "A rare, high risk task is usually a poor starting point. So is a process with no clear trigger, no defined output or too many exceptions. Start with a frequent task where the right answer is usually obvious and a person can check the result quickly."
+    ],
+    [
+      "How much time should automation save before it is worth doing?",
+      "There is no universal number, but the saving has to survive maintenance, review, training and exceptions. A task that saves only a few minutes can still be worth automating if it happens many times each week. Measure the current workflow before deciding."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Michael McKerracher AI implementation",
+      "url": "https://michaelmck.site/ai-implementation/"
+    },
+    {
+      "name": "BC OIPC guidance on developing a privacy policy under PIPA",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Gives owners a frequency, variation, risk and exception matrix instead of a generic list of tasks to automate, with concrete examples for enquiries, briefs, content reuse and reports.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm internal links still point to the correct live pages before publication.",
+      "Confirm the OIPC guidance link and description remain current.",
+      "Do not add client examples or measurable outcomes unless separately approved."
+    ],
+    "serpGap": "Competing articles list many tasks to automate, but this article is built around a practical buyer decision: frequency, variation, risk, exceptions, human approval and maintenance cost.",
+    "sourceUse": [
+      {
+        "url": "https://michaelmck.site/ai-implementation/",
+        "claim": "Internal service context for practical AI skills, workflows, agents, audit and consultation offer."
+      },
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "Background for advising limited collection, consent, safeguards and careful handling when forms or workflows include personal information."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-11-11",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "AI and operations",
+  "primaryMoneyPage": "/ai-implementation/",
+  "related": [
+    "before-buying-ai-workflow",
+    "ai-service-business-website"
+  ],
+  "services": [],
+  "wordCount": 1907,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 11739,
+      "total_tokens": 15078,
+      "completion_tokens": 3339,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 318
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 318
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "Quotes, prices, booking confirmations, service limitations, refunds, complaints, sensitive personal situations and anything with legal or financial consequences need human approval.",
+      "replacement": "Define which commitments can follow approved business rules and which require a person. A connected booking system can confirm an available appointment within agreed rules; an unusual price, complaint, refund exception or sensitive situation may need staff approval."
+    },
+    {
+      "original": "Usually yes, if the work is frequent, repetitive and easy to review. Automating first helps you see whether you need a person for judgment, exceptions and client care, or whether software can remove part of the workload.",
+      "replacement": "Review the work before deciding. If much of it is repetitive and easy to check, a small automation trial can show what capacity it frees. If the need is judgement, customer care or handling exceptions, hiring may be the more useful step."
+    }
+  ]
+}

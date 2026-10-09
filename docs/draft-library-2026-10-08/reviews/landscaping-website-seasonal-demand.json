@@ -1,0 +1,82 @@
+{
+  "issues": [
+    {
+      "path": "sections.2.body",
+      "original": "If you are planning a rebuild, our <a href=\"/web-design/landscapers/\">landscaping website design</a> work starts with exactly this calendar so the right pages exist before the season, not after.",
+      "replacement": "If you are planning a rebuild, start with exactly this calendar so the right pages exist before the season, not after.",
+      "reason": "Removes self-praise and unnecessary service promotion."
+    },
+    {
+      "path": "sections.3.body",
+      "original": "Long forms kill momentum, especially on a phone.",
+      "replacement": "Long forms can create friction, especially on a phone.",
+      "reason": "Softens an unsupported absolute empirical claim about form abandonment."
+    },
+    {
+      "path": "sections.5.body",
+      "original": "the owner confirmed a 30% increase in qualified bookings and jobs",
+      "replacement": "the client confirmed a 30% increase in qualified bookings and jobs",
+      "reason": "Aligns with the source packet, which attributes the confirmation to the client rather than specifically to the owner."
+    },
+    {
+      "path": "faqs.1.1",
+      "original": "Long forms create friction, especially on mobile, and asking for unnecessary personal details can stop an otherwise ready lead.",
+      "replacement": "Long forms can create friction, especially on mobile, and asking for unnecessary personal details can stop an otherwise ready lead.",
+      "reason": "Softens an unsupported absolute empirical claim about form friction."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "To help landscaping companies prepare their websites for seasonal demand by choosing the right sales paths, mapping content to the calendar, and structuring pages for conversion.",
+    "specificity": "High. The article gives distinct advice for maintenance versus project work, specific intake form guidance, a sample page architecture, and local search fundamentals.",
+    "evidence": "Cites Google Business Profile local ranking guidance and uses one approved project example to support the structural advice.",
+    "voice": "Michael's practical, conversational voice is largely intact. The fixes remove self-praise and soften absolute claims without changing the core recommendations.",
+    "usefulAsset": "Yes. The article provides actionable, industry-specific advice that a busy owner can apply directly."
+  },
+  "slug": "landscaping-website-seasonal-demand",
+  "applied": [
+    {
+      "path": "sections.3.body",
+      "original": "Long forms kill momentum, especially on a phone.",
+      "replacement": "Long forms can create friction, especially on a phone.",
+      "reason": "Softens an unsupported absolute empirical claim about form abandonment."
+    },
+    {
+      "path": "sections.5.body",
+      "original": "the owner confirmed a 30% increase in qualified bookings and jobs",
+      "replacement": "the client confirmed a 30% increase in qualified bookings and jobs",
+      "reason": "Aligns with the source packet, which attributes the confirmation to the client rather than specifically to the owner."
+    },
+    {
+      "path": "faqs.1.1",
+      "original": "Long forms create friction, especially on mobile, and asking for unnecessary personal details can stop an otherwise ready lead.",
+      "replacement": "Long forms can create friction, especially on mobile, and asking for unnecessary personal details can stop an otherwise ready lead.",
+      "reason": "Softens an unsupported absolute empirical claim about form friction."
+    }
+  ],
+  "rejected": [
+    {
+      "path": "sections.2.body",
+      "original": "If you are planning a rebuild, our <a href=\"/web-design/landscapers/\">landscaping website design</a> work starts with exactly this calendar so the right pages exist before the season, not after.",
+      "replacement": "If you are planning a rebuild, start with exactly this calendar so the right pages exist before the season, not after.",
+      "reason": "Removes self-praise and unnecessary service promotion.",
+      "error": "URL mutation needs main editor"
+    }
+  ],
+  "bannedRemaining": [],
+  "wordCount": 1384,
+  "usage": {
+    "prompt_tokens": 7318,
+    "total_tokens": 16122,
+    "completion_tokens": 8804,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8277
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 8277
+    }
+  }
+}

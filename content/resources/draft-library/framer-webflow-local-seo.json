@@ -1,0 +1,163 @@
+{
+  "slug": "framer-webflow-local-seo",
+  "title": "Framer vs Webflow for local SEO: what actually affects the result?",
+  "type": "comparison",
+  "description": "Framer vs Webflow for local SEO: what actually affects rankings for a small business website, plus a practical pre-launch checklist.",
+  "summary": "Framer and Webflow can both support a local business website with useful service pages, clear headings and crawlable content. Choose by testing the actual publishing work: service updates, project pages, redirects, metadata and mobile layouts. Neither platform supplies local expertise or guarantees search results. Your content model, implementation and ability to maintain accurate information are the more useful comparison.",
+  "takeaways": [
+    "For local SEO, the platform is secondary to whether your pages are crawlable, clearly titled, and filled with useful content.",
+    "Webflow is usually the better choice for growing content libraries, while Framer is faster for simple landing pages.",
+    "Neither platform can guarantee rankings; budget for content work and a pre-launch SEO check regardless of which tool you choose."
+  ],
+  "sections": [
+    {
+      "id": "what-matters",
+      "title": "The answer for local businesses",
+      "body": "<p>Local SEO for a small business usually comes down to a handful of controllable factors. Google needs to crawl your pages, understand what each page is about, and see that your business serves a specific area. The platform is secondary. What matters is whether the platform lets you edit titles, headings, and content without fighting the tool.</p><p>For many Okanagan businesses, the real question is not which platform has more features, but which one fits the amount of content you actually plan to maintain. A beautiful design is important, but search engines primarily read text and follow links. If your team cannot easily update service descriptions or publish new pages, the fanciest platform will not help your rankings.</p>"
+    },
+    {
+      "id": "google-criteria",
+      "title": "What Google actually looks at",
+      "body": "<p>According to Google's own <a href=\"https://developers.google.com/search/docs/fundamentals/seo-starter-guide\">starter guide</a>, content needs to be helpful and reliable. Page titles and headings help Google understand what a page is about. Internal links help Google find pages and understand which ones you consider important. Technical elements like redirects and canonicals keep the site clean and prevent duplicate content issues.</p><p>For local search, consistent business information across pages helps search engines connect your site to your Google Business Profile. The platform doesn't do this for you; it only provides the controls. This means the choice between Framer and Webflow is really about which set of controls you prefer to use day to day.</p>"
+    },
+    {
+      "id": "platform-differences",
+      "title": "Where the platforms actually differ",
+      "body": "<p>Both platforms offer SEO controls and a CMS, but their editing and design workflows differ. Compare the work your team will actually do rather than assigning one tool to “small sites” and the other to “serious SEO.”</p><p>Framer’s <a href=\"https://www.framer.com/seo/\">SEO overview</a> and Webflow’s <a href=\"https://webflow.com/feature/seo\">SEO overview</a> describe their controls. Ask each proposed provider to demonstrate a service-page template, a project collection, editable metadata, redirects and the handling of canonical URLs. Then have the intended editor make a real change.</p><p>The deciding factor may be how the content is modelled, which integrations are needed or which tool your support team knows well. A CMS feature list alone is not evidence that one platform will rank a local business above another.</p>"
+    },
+    {
+      "id": "comparison-table",
+      "title": "How the controls compare",
+      "body": "<p>Use the same acceptance check in both Framer and Webflow. That gives you a comparison of the proposed implementation instead of a platform popularity contest.</p><table><caption>Local SEO acceptance checks for either platform</caption><thead><tr><th>Requirement</th><th>Demonstration to request</th><th>What the owner learns</th></tr></thead><tbody><tr><td>Titles and descriptions</td><td>Edit an individual service page and a CMS template</td><td>Whether meaningful search text can be maintained</td></tr><tr><td>Headings and page copy</td><td>Show a logical heading order and readable text on mobile</td><td>Whether the design supports the actual explanation</td></tr><tr><td>Redirects and canonical URLs</td><td>Move a sample URL and identify the preferred version</td><td>How old links and duplicate variants will be handled</td></tr><tr><td>Content growth</td><td>Add a project and link it to the right service</td><td>Whether the publishing workflow fits the team</td></tr><tr><td>Structured data</td><td>Show markup that matches the visible business facts</td><td>Who creates and maintains accurate markup</td></tr><tr><td>Indexing and speed</td><td>Check crawl access and test an actual mobile page</td><td>Whether the delivered site meets the technical brief</td></tr></tbody></table>"
+    },
+    {
+      "id": "which-for-you",
+      "title": "Which one suits your situation",
+      "body": "<p>For a Kelowna landscaper, begin with the service pages and seasonal projects the team plans to maintain. For a Vernon contractor, include a project page and the quote-request path. A regional professional firm may need a larger library of carefully reviewed explanations. Both platforms deserve evaluation against that real content plan.</p><p>Ask who will edit the site, how often, and what they need to change without a designer. Try publishing one service update and one project in the proposed setup. Include content preparation and support when comparing <a href=\"/blog/okanagan-website-cost/\">website costs in the Okanagan</a>.</p>"
+    },
+    {
+      "id": "prelaunch-checklist",
+      "title": "The pre-launch SEO checklist",
+      "body": "<p>Before either platform goes live, check these items:</p><ul><li><strong>Page titles</strong>: Each service page should have a unique, clear title that includes the service and area naturally.</li><li><strong>H1 headings</strong>: Use a clear main heading that identifies the page’s purpose and a logical hierarchy below it. This is a readability convention, not a magic ranking rule.</li><li><strong>Internal links</strong>: Link from the homepage to key service pages with descriptive anchor text that tells Google what the linked page is about.</li><li><strong>Meta descriptions</strong>: Write unique descriptions that summarize the page for searchers.</li><li><strong>Structured data</strong>: Use suitable structured data that matches the business facts visible on the page. Do not invent an office address or treat schema as a ranking guarantee.</li><li><strong>Mobile performance</strong>: Check that pages load quickly on a phone, not just a desktop.</li><li><strong>Indexing</strong>: Make sure important pages are set to be indexed in the platform's SEO settings.</li><li><strong>Redirects</strong>: If replacing an old site, set 301 redirects from old URLs to new ones before launch.</li></ul>"
+    },
+    {
+      "id": "what-platforms-cannot-do",
+      "title": "What neither platform can do for you",
+      "body": "<p>Neither Framer nor Webflow will write your content for you in a way that is actually useful to local customers. They won't know your service area, your specific neighbourhoods, or the questions people in the Okanagan ask before hiring someone. A beautiful site with thin content will struggle regardless of platform.</p><p>This is why I often talk about content work as part of a <a href=\"/web-design/\">web design project</a>. The platform gives you the container; you still have to fill it with something worth ranking. Google's <a href=\"https://developers.google.com/search/docs/appearance/ai-features\">guidance for AI search features</a> makes the same point: the usual SEO fundamentals still apply, and there is no special shortcut that replaces helpful, crawlable content.</p>"
+    },
+    {
+      "id": "making-the-choice",
+      "title": "Making the choice",
+      "body": "<p>Start with the question of scale. If the site is a simple brochure with a booking link, choose the tool that feels easiest for you or your designer to use. If the site needs to grow into a content resource, choose the tool that gives you more control over CMS and page structure.</p><p>In both cases, budget for the content itself, not just the design. If you are still unsure, think about who will maintain the site six months from now and whether they will need to add new pages regularly. A platform that feels slightly harder today might save you a rebuild next year if you already know you want to publish case studies, seasonal guides, or service-area pages.</p><p>If you want help making that choice or building the content that makes either platform work, <a href=\"/contact/\">get in touch</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Can I switch platforms without losing search traffic?",
+      "A migration can affect search performance even when it is carefully planned. Inventory the existing URLs, preserve useful content, map necessary redirects, check canonical and indexing settings, and monitor Search Console after launch. Rebuilding in a different platform is not an SEO reset button."
+    ],
+    [
+      "Does either platform help with Google Business Profile or local map rankings?",
+      "Neither platform directly manages your Google Business Profile. However, your website needs to support it with consistent name, address, and phone information, plus local content that reinforces your service area. The platform choice does not replace the need for a well-maintained Business Profile."
+    ],
+    [
+      "Are Framer's AI SEO features enough to skip hiring someone?",
+      "AI features can audit pages and suggest metadata changes, which saves time. However, they cannot know your local market, write content that truly reflects your business, or understand which questions your customers in the Okanagan are actually asking. Use them as helpers, not as a replacement for thoughtful content work."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Framer SEO features",
+      "url": "https://www.framer.com/seo/"
+    },
+    {
+      "name": "Webflow SEO",
+      "url": "https://webflow.com/feature/seo"
+    },
+    {
+      "name": "Google SEO starter guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    },
+    {
+      "name": "Google AI search features",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Focuses on local SEO decisions for small businesses rather than repeating generic platform feature lists; provides a practical pre-launch checklist and Okanagan-specific context without invented data.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm current official guidance on Framer export/portability and Webflow code export limitations before publishing",
+      "Check that no client case study or performance claim has been overstated",
+      "Verify all internal links resolve to approved URLs"
+    ],
+    "serpGap": "Existing coverage compares general features; this article focuses on what actually affects local search rankings for a small business and gives a concrete pre-launch checklist.",
+    "sourceUse": [
+      {
+        "url": "https://www.framer.com/seo/",
+        "claim": "Framer provides built-in SEO controls including page settings, redirects, canonicals, structured data via custom code, and AI-assisted SEO suggestions."
+      },
+      {
+        "url": "https://webflow.com/feature/seo",
+        "claim": "Webflow offers granular SEO controls including CMS-driven metadata, 301 redirects, schema markup, and indexing rules."
+      },
+      {
+        "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "claim": "Google's starter guide says content should be helpful and reliable, and that page titles, headings, and internal links help search engines understand content."
+      },
+      {
+        "url": "https://developers.google.com/search/docs/appearance/ai-features",
+        "claim": "Google's AI features guidance confirms that usual SEO fundamentals apply to AI search and that there are no special technical shortcuts beyond standard indexable, snippet-eligible content."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-09-23",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Platforms",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "website-subscription-vs-upfront-build",
+    "framer-webflow-custom-website"
+  ],
+  "services": [],
+  "wordCount": 1277,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 29779,
+      "total_tokens": 36671,
+      "completion_tokens": 6892,
+      "prompt_tokens_details": {
+        "cached_tokens": 17701
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4037
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 4037
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 1,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    },
+    {
+      "reason": "Removed unsupported Framer-versus-Webflow scale rankings and rigid H1 rule; replaced feature claims with a practical shared acceptance matrix.",
+      "date": "2026-10-08"
+    },
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ],
+  "criticalFactsReviewed": true
+}

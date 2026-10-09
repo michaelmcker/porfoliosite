@@ -1,0 +1,141 @@
+{
+  "slug": "property-management-website-design",
+  "title": "What a property-management website needs for owners and tenants",
+  "type": "guide",
+  "description": "A practical guide to structuring a property-management website so owners can evaluate your scope and fees while tenants can reach portals, listings, maintenance support, and emergency help quickly.",
+  "summary": "A property-management website works best when it separates the owner sales journey from tenant support. Owners need clear scope, coverage, fee answers, and proof of process. Tenants need fast access to portals, listings, maintenance requests, and emergency help. Structure the site around those two jobs, protect application data, and make every page easy to use on any device.",
+  "takeaways": [
+    "Split owner acquisition and tenant support into distinct journeys instead of forcing one page to do both jobs.",
+    "Make management scope, coverage, and fee questions easy to understand before asking for a consultation.",
+    "Protect applications and support forms by collecting only what is needed, explaining the purpose, and using clear portal links."
+  ],
+  "sections": [
+    {
+      "id": "separate-owner-and-tenant-journeys",
+      "title": "Separate the owner sales journey from tenant support",
+      "body": "<p>A property-management website should not try to make one visitor do everything. The owner who is deciding whether to hire you and the tenant who needs a repair are in completely different moments, with different questions and different levels of patience. The strongest sites treat them as two separate journeys and give each one a direct route to the answer it needs. If you are planning a <a href=\"/web-design/property-management/\">property-management website</a>, start by deciding which pages are sales pages, which are support pages, and which are simply operational signposts.</p>"
+    },
+    {
+      "id": "owner-acquisition-page",
+      "title": "What the owner acquisition page must do",
+      "body": "<p>The owner acquisition page is the page many property managers underbuild. A rental owner usually wants to know what you manage, where you work, how you communicate, how vacancies are handled, and what your fees cover before they ask for a consultation. If the page only shows a logo, a stock photo, and a contact form, the visitor has to do too much guessing. Give them a clear management scope, a simple coverage statement, and an honest explanation of how you would approach their property.</p><p>That does not mean answering every possible objection on one page. It means helping a serious visitor decide whether you are worth a conversation. A good owner page makes the next step feel obvious because it has already made the fit feel plausible.</p>"
+    },
+    {
+      "id": "tenant-support-emergency-maintenance",
+      "title": "Tenant support needs speed, not persuasion",
+      "body": "<p>Tenant support should feel immediate. If someone has a clogged drain, a broken lock, or no heat, they do not want to read a brand story. They want to know whether the issue is urgent, how to report it, and when they should expect a response. Make emergency maintenance instructions easy to find on mobile, and keep routine portal links close by for less urgent requests.</p><p>There is also a design tradeoff here. A support page can look beautiful and still be frustrating if the emergency route is buried under promotional content. For this part of the site, clarity is the beauty standard. Large text, obvious headings, and one clear action per issue type usually serve tenants better than a more decorative layout.</p>"
+    },
+    {
+      "id": "listings-applications-privacy",
+      "title": "Show listings without creating application risk",
+      "body": "<p>Listings need to show availability without turning the website into a risky intake system. A rental detail page can describe the property, show basic availability, and point to the correct application process. The danger starts when a public form asks for far more personal information than the first step really requires. In British Columbia, the <a href=\"https://www.oipc.bc.ca/guidance-documents/2286\">Office of the Information and Privacy Commissioner guidance on PIPA</a> emphasizes collecting the minimum personal information needed for a stated purpose and explaining how it will be used.</p><p>The same principle shows up in good form design. The <a href=\"https://www.w3.org/WAI/tutorials/forms/\">W3C Web Accessibility Initiative guidance on forms</a> recommends clear labels, logical grouping, useful instructions, and validation that helps people correct mistakes. Those practices help everyone, not only users with disabilities. A simpler application path also gives your team fewer ambiguous submissions to clean up later.</p>"
+    },
+    {
+      "id": "coverage-portal-structure",
+      "title": "Coverage and portal links need honest structure",
+      "body": "<p>Coverage pages and portal links often get treated as afterthoughts, but they shape trust quickly. A visitor should be able to tell which communities you serve, what kind of properties you take on, and where to go if they already have a tenant or owner portal. If you serve several parts of the Okanagan, describe that coverage honestly instead of forcing one generic page to do every job.</p><table><caption>Property-management page types at a glance</caption><thead><tr><th>Page type</th><th>Primary visitor</th><th>Main job</th><th>What to include</th><th>Primary action</th></tr></thead><tbody><tr><td>Owner acquisition page</td><td>Property owner</td><td>Build confidence and earn the consultation</td><td>Scope of management, service areas, process, fee framing, proof of approach</td><td>Request a consultation or rental analysis</td></tr><tr><td>Tenant support hub</td><td>Current tenant</td><td>Solve a problem quickly</td><td>Emergency route, maintenance request path, portal links, hours, contact options</td><td>Submit or route the request</td></tr><tr><td>Rental listing detail</td><td>Prospective tenant or owner</td><td>Show availability without over-collecting data</td><td>Property details, availability signal, application next step</td><td>View the listing or start the approved application</td></tr><tr><td>Client portal link</td><td>Existing client</td><td>Get people to the right tool fast</td><td>Clear labels for owner, tenant, and vendor or staff access where relevant</td><td>Sign in through the correct portal</td></tr></tbody></table><p>Use the table as a worksheet. If a page is doing two very different jobs, it usually needs to be split. That is often the difference between a site that looks complete and a site that is actually easy to use.</p>"
+    },
+    {
+      "id": "fees-scope-consultation",
+      "title": "Answer fee and scope questions before the consultation",
+      "body": "<p>Fee questions are easier to answer on a website when you stop trying to make one page prove too much. The goal is not to publish every possible price scenario. The goal is to show that you understand the visitor's real concern: what is included, what changes the cost, and how the conversation starts. A strong page can say which kinds of properties you manage, what services are part of the core offer, and what factors usually affect the final proposal.</p><p>That kind of clarity also protects the consultation. When owners arrive already understanding your scope, the first conversation can be about fit instead of basic definitions. If you want a useful comparison point for this kind of buyer page, a broader <a href=\"/blog/kelowna-business-website-guide/\">Kelowna business website guide</a> can help you think through what local service pages should make clear before the phone call.</p>"
+    },
+    {
+      "id": "page-architecture-sample",
+      "title": "A practical page architecture sample",
+      "body": "<h3>Sample owner page outline</h3><ul><li><strong>Hero:</strong> A clear statement about who you help and what kind of properties you manage.</li><li><strong>Coverage:</strong> The communities or service areas you genuinely work in.</li><li><strong>Management scope:</strong> Leasing, maintenance coordination, reporting, inspections, or other core services you want to be known for.</li><li><strong>How it works:</strong> A short, plain-language explanation of onboarding and communication.</li><li><strong>Fee framing:</strong> What is typically included and what usually changes the final proposal.</li><li><strong>Primary action:</strong> One obvious next step, such as booking a consultation or requesting a rental analysis.</li></ul><p>This sample works because it reflects the real order of questions many owners bring to the site. It does not need to be long. It needs to be specific enough that a serious visitor can recognize themselves in it.</p>"
+    },
+    {
+      "id": "support-features-that-fit",
+      "title": "Choose support features that match your operation",
+      "body": "<p>The best support features are the ones that match how your team actually works. A smaller operation may only need a clear emergency route, a tenant portal link, and a simple maintenance form. A larger team may benefit from separate owner and tenant paths, more detailed service-area pages, or a more structured application handoff. The mistake is buying complexity before the process underneath it is clear.</p><p>So the constructive way forward is straightforward. Map the two journeys, give each one its own set of pages, and make every important action easy to find. Owners should be able to understand your scope and fees without guesswork. Tenants should be able to get help fast, especially after hours. Listings should invite interest without collecting more than they should. If you want help planning that structure for your own company, <a href=\"/contact/\">start with a conversation about the pages your visitors need most</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should a property-management site include a tenant portal on the marketing website?",
+      "Usually it is better to link out to the correct portal than to rebuild portal features on the public site. The marketing website should make the destination obvious, while the portal itself handles account-specific tasks."
+    ],
+    [
+      "How much fee detail should we publish before a consultation?",
+      "Publish enough to explain your scope and the factors that shape cost. You do not need to account for every scenario, but owners should be able to tell what is generally included and when a custom proposal is necessary."
+    ],
+    [
+      "What is the safest way to handle online rental applications on a public website?",
+      "Collect only the minimum information needed for the first step, explain why it is being collected, and send applicants into your approved application system rather than asking for sensitive details in a general contact form."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "BC OIPC guidance on developing a privacy policy under PIPA",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    },
+    {
+      "name": "W3C Web Accessibility Initiative forms tutorial",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Separates owner acquisition from tenant support as a design problem, instead of treating property-management websites as generic small-business sites.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm that no legal tenancy claims or advice appear in the final copy.",
+      "Verify that all internal links resolve to the approved URLs.",
+      "Check that the comparison table remains accurate before publication."
+    ],
+    "serpGap": "Most results focus on feature lists or template showcases. Fewer explain how to structure one site for both owners and tenants, or how to handle listings, applications, portals, and emergency support responsibly.",
+    "sourceUse": [
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "BC private-sector organizations should collect the minimum personal information needed for a stated purpose and explain consent, use, retention, safeguards, and complaint processes."
+      },
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "Accessible forms should be simple, clearly labelled, logically grouped, validated in a helpful way, and designed so people can complete them without unnecessary friction."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-05-20",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/property-management/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "property-management"
+  ],
+  "wordCount": 1385,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 11638,
+      "total_tokens": 18251,
+      "completion_tokens": 6613,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3928
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3928
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

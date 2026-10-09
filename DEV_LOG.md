@@ -208,3 +208,12 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 
 - Published 998fc2f to main; Vercel dpl_EN7T2BdTdqBiGR632RBnPhiBDV8H Ready and aliased to michaelmck.site. Verified 26 live resources, five negotiated Markdown routes and 27 absent queued URLs.
 - Production form activation confirmed through the intended inbox. A live AJAX test showed success and matched the received email (16:40 Pacific). Marked test must be excluded from customer-lead reporting. Saved screenshots, delivery verification and release evidence; reset browser viewport.
+
+
+## 2026-10-08 — Full resource draft library
+- User requested all planned blogs be written now and broader small-business website authority coverage. Researching platform tradeoffs, industry-specific decisions and original project evidence. Future articles remain drafts.
+
+- Completed all 60 Echo-authored manuscripts and saved independent topic queries, full competitor extracts and primary documentation. Added editorial reviews and source-led factual corrections; no content-checker score claimed.
+- Built a private searchable reader with responsive tables, local reference articles, individual Markdown/JSON, complete manuscript and CSV calendar. Checked 461 local links and desktop/mobile rendering.
+- Canonical calendars now point to drafted source and exact headings/counts without granting publication approval. Added three focused tests for coverage, private isolation and preservation of the existing release queue; all pass.
+- Updated the existing daily publishing heartbeat and runbook to reuse/refresh drafts. Saved durable source and evidence outside the temporary checkout. No production deployment or new article publication.

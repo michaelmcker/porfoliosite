@@ -1,0 +1,56 @@
+{
+  "issues": [
+    {
+      "path": "summary",
+      "original": "Those fundamentals do more for bookings than a flashy design ever will.",
+      "replacement": "Those fundamentals are where I would focus before spending on a flashy design.",
+      "reason": "The original makes an unsupported universal claim. The replacement states Michael's recommendation without overclaiming evidence."
+    },
+    {
+      "path": "takeaways.1",
+      "original": "A clear page structure beats a beautiful homepage when someone is planning a wine day on their phone.",
+      "replacement": "When someone is planning a wine day on their phone, a clear page structure is usually more useful than a beautiful homepage alone.",
+      "reason": "The original makes an unsupported absolute comparison. The replacement frames it as a practical recommendation."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help Okanagan winery owners plan a website that turns regional interest into visits and bookings.",
+    "specificity": "High. The article lists specific pages, visitor questions, and local West Kelowna context rather than staying generic.",
+    "evidence": "Grounded in official Tourism Kelowna information and Google Business Profile guidance; it does not invent statistics or client outcomes.",
+    "voice": "Practical, conversational, locally grounded, and willing to state a clear recommendation without corporate padding.",
+    "usefulAsset": "The Visit-page checklist and concrete sample site map give a winery owner something specific to act on or ask a designer for."
+  },
+  "slug": "winery-website-visitor-planning",
+  "applied": [
+    {
+      "path": "summary",
+      "original": "Those fundamentals do more for bookings than a flashy design ever will.",
+      "replacement": "Those fundamentals are where I would focus before spending on a flashy design.",
+      "reason": "The original makes an unsupported universal claim. The replacement states Michael's recommendation without overclaiming evidence."
+    },
+    {
+      "path": "takeaways.1",
+      "original": "A clear page structure beats a beautiful homepage when someone is planning a wine day on their phone.",
+      "replacement": "When someone is planning a wine day on their phone, a clear page structure is usually more useful than a beautiful homepage alone.",
+      "reason": "The original makes an unsupported absolute comparison. The replacement frames it as a practical recommendation."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1298,
+  "usage": {
+    "prompt_tokens": 9478,
+    "total_tokens": 16035,
+    "completion_tokens": 6557,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6270
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 6270
+    }
+  }
+}

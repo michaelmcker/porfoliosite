@@ -1,0 +1,152 @@
+{
+  "slug": "medical-spa-website-design",
+  "title": "Medical-spa websites: balance visual appeal with clear treatment information",
+  "type": "guide",
+  "description": "A practical guide for medical spa owners who need a website that looks premium without sacrificing clear treatment information, safe enquiry handling and a direct path to consultation.",
+  "summary": "Medical spa website design works when visual appeal and treatment clarity are planned together. The strongest sites feel beautiful and considered, yet still make it easy to understand services, assess provider credentials and request a consultation without collecting sensitive medical details too early.",
+  "takeaways": [
+    "A beautiful medical spa site still fails if visitors cannot quickly tell what you offer, who provides it and how to book a consultation.",
+    "Treatment pages should explain scope and set expectations without making unverified medical outcome claims.",
+    "Privacy-aware intake design matters as much as visual polish, because public forms should not collect detailed case histories or medical records."
+  ],
+  "sections": [
+    {
+      "id": "why-beauty-and-clarity-clash",
+      "title": "Why beauty and clarity often clash",
+      "body": "<p>Medical spa websites sit in an awkward middle ground. They need to feel luxurious, calm and visually refined, yet they also have to function like a serious healthcare-adjacent business. Many owners choose one side of that tension. Some build a beautiful brand experience that is too vague about treatments. Others create a dense service catalogue that looks clinical but forgettable.</p><p>The better approach is to treat visual appeal and treatment clarity as one design problem, not two. A visitor should feel the atmosphere of the space, then immediately understand what is offered, who provides it and what the next step is. If either half is weak, a visitor has less to work with when deciding whether to enquire.</p>"
+    },
+    {
+      "id": "start-with-the-consultation-path",
+      "title": "Start with the consultation path",
+      "body": "<p>For most medical spas, the website's main job is to lead a cautious, research-minded visitor toward a consultation request. That means the site should not behave like a simple brochure and it should not pretend every visitor is ready to buy on the spot.</p><p>Ask yourself what a new visitor needs to know before they feel comfortable booking. Usually it is a mix of treatment explanation, provider confidence, safety signals and a low-pressure way to make contact. A strong consultation path gives them that information in a logical order. A weak one makes them hunt for it.</p><p>I would plan <a href=\"/web-design/medical-spas/\">a medical spa website</a> around that consultation path, then use the visual design to support it.</p>"
+    },
+    {
+      "id": "treatment-pages-do-the-heavy-lifting",
+      "title": "Treatment pages do the heavy lifting",
+      "body": "<p>The most important pages on a medical spa site are usually the treatment pages. This is where visitors compare options, judge whether a service fits their concern and decide if the practice feels credible. A thin page with a generic paragraph and a stock photo is rarely enough.</p><p>A useful treatment page usually includes:</p><ul><li>a plain-language explanation of what the treatment is for;</li><li>who may be a suitable candidate, without overpromising;</li><li>what happens during a consultation or appointment;</li><li>general aftercare or preparation information, where appropriate;</li><li>who performs the service and what credentials matter;</li><li>a clear next step, such as requesting a consultation.</li></ul><p>For example, a page about laser skin treatments should not just say \"advanced technology for beautiful skin.\" It should explain the kind of concern it is commonly used for, what a first visit may involve and how the client should think about candidacy. Have the responsible clinician review that explanation before publication, including candidacy, preparation and aftercare wording.</p>"
+    },
+    {
+      "id": "safety-and-scope-are-part-of-design",
+      "title": "Safety and scope are part of design",
+      "body": "<p>In a medical spa website, design is never only about colour and spacing. The way you write treatment descriptions, the way you present staff credentials and the way you collect enquiries all shape whether the site feels responsible.</p><p>A careful site avoids unsupported medical efficacy claims and stays clear about the limits of what a web page can promise. It also keeps sensitive information collection to a minimum on public forms. The BC Office of the Information and Privacy Commissioner advises organizations to collect only the minimum personal information needed for the stated purpose, use reasonable safeguards and explain how information is handled. That advice matters when a contact form is the first step in a client relationship.</p><p>In practical terms, a public enquiry form should not ask for a full case history, medical records or detailed health documents. Those belong in the practice's approved intake process.</p>"
+    },
+    {
+      "id": "visual-craft-that-earns-trust",
+      "title": "Visual craft that earns trust",
+      "body": "<p>Beauty matters on a medical spa website because it signals attention to detail. But the kind of beauty that works is usually quiet and disciplined. Soft photography, controlled typography, generous spacing and a palette that matches the physical space tend to create more confidence than loud visual effects.</p><p>My design opinion is simple: a medical spa website should feel like the best version of the practice's real atmosphere. If the clinic is calm and clinical, the site should feel calm and clinical. If the brand is warm, boutique and personal, the site should carry that tone without becoming vague. Too many sites in this category rely on generic stock imagery and interchangeable phrases. That makes the business feel less distinct, not more polished.</p><p>Accessibility also belongs here. The W3C's first checks for web accessibility point to basic issues such as readable contrast, useful image alternatives and clear headings. Those are not decorative extras. They make the site easier to understand for real people.</p>"
+    },
+    {
+      "id": "cost-and-scope-questions-to-ask",
+      "title": "Cost and scope questions to ask",
+      "body": "<p>Medical spa website cost depends heavily on scope. A smaller site with a focused treatment list is very different from a larger site with a blog, staff profiles, extensive galleries and careful consultation pathways. If you are comparing proposals, look beyond the headline price and ask what is actually included.</p><table><caption>A practical scope checklist for a medical spa website project</caption><thead><tr><th>Area</th><th>What to ask for</th></tr></thead><tbody><tr><td>Treatment pages</td><td>How many services will get a dedicated page, and will each page be written for clarity or just filled with generic copy?</td></tr><tr><td>Consultation path</td><td>Will the site include a clear request-for-consultation flow, appropriate calls to action and sensible form fields?</td></tr><tr><td>Trust content</td><td>Will the designer make room for provider credentials, clinic standards, frequently asked questions and careful treatment explanations?</td></tr><tr><td>Visual quality</td><td>Will the design reflect the real atmosphere of the business, or will it rely too heavily on stock imagery and generic spa language?</td></tr><tr><td>Privacy awareness</td><td>Will public forms avoid collecting unnecessary medical or case-history information?</td></tr></tbody></table><p>These scope questions often reveal the difference between a website that merely looks expensive and one that is genuinely useful. If cost is one of your first concerns, my article on <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost</a> gives a broader view of how pricing tends to change with project scope.</p>"
+    },
+    {
+      "id": "a-worksheet-before-you-approve-a-design",
+      "title": "A worksheet before you approve a design",
+      "body": "<p>Before approving a design direction, it helps to judge the site as a buyer rather than as the owner. Use the worksheet below to review a current site, a draft homepage or a proposal.</p><table><caption>Medical spa website review worksheet</caption><thead><tr><th>Question</th><th>What a strong answer looks like</th></tr></thead><tbody><tr><td>Can a first-time visitor tell what you do within a few seconds?</td><td>The homepage names the core services and the type of client the practice serves.</td></tr><tr><td>Do treatment pages explain scope clearly?</td><td>Each service page describes the concern it addresses, what to expect and the next step.</td></tr><tr><td>Is there a visible path to a consultation?</td><td>Calls to action are easy to find and the wording makes the next step feel low pressure.</td></tr><tr><td>Does the site feel like your actual brand?</td><td>Photography, colour, typography and tone match the experience clients get in person.</td></tr><tr><td>Are trust signals handled carefully?</td><td>Credentials and standards are visible without inflated claims or unverified promises.</td></tr><tr><td>Is the site reasonably accessible?</td><td>Headings are clear, text is readable and images have useful alternatives where needed.</td></tr></tbody></table><p>This kind of review is not about chasing a design award. It is about making sure the site earns the enquiry it is asking for.</p>"
+    },
+    {
+      "id": "what-to-do-next",
+      "title": "What to do next",
+      "body": "<p>If your current site is beautiful but vague, start by rewriting the key treatment pages. If it is informative but visually flat, start with photography, spacing and typography so the content feels easier to trust. In many cases the best first move is a focused review of the homepage, the top services and the contact path.</p><p>Brand confidence matters too. A medical spa website often works better when the wider <a href=\"/marketing-branding/\">marketing and branding</a> choices are aligned, because visitors are judging both the look of the business and the clarity of its offer.</p><p>If you want a website that balances visual appeal with clear treatment information, <a href=\"/contact/\">contact me</a> and we can talk through the right scope for your practice.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should a medical spa website include before-and-after photos?",
+      "They can be useful, but only when handled with care. Photos need appropriate consent, clear labelling and realistic presentation. A gallery should support trust, not replace a careful treatment explanation or create the impression of guaranteed outcomes."
+    ],
+    [
+      "What should a medical spa avoid putting on a public contact form?",
+      "Avoid asking for detailed medical histories, diagnoses, records or documents on a general public form. Collect only what is reasonably needed for an initial enquiry, then move sensitive information into the practice's approved intake process."
+    ],
+    [
+      "Is it better to build separate pages for each treatment?",
+      "Usually yes, especially when visitors are comparing services or searching for a specific concern. Separate pages make it easier to explain scope, candidacy, expectations and the consultation step in a way that feels specific rather than generic."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "BC OIPC developing a privacy policy under PIPA",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    },
+    {
+      "name": "W3C accessibility first checks",
+      "url": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "This guide frames medical spa website design as a balance between aesthetic trust and clinical clarity, with practical scope questions, treatment-page architecture and privacy-aware intake advice for BC owners.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm the exact OIPC guidance wording is fairly paraphrased",
+      "Confirm no unintended medical or legal advice remains in treatment-page advice",
+      "Confirm all internal links resolve correctly"
+    ],
+    "serpGap": "Existing medical spa website articles often stay broad about design or conversions; this piece adds BC-specific privacy caution, treatment-page structure and a practical scope worksheet.",
+    "sourceUse": [
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "Collect only the minimum personal information needed, use reasonable safeguards and avoid putting sensitive case history into public enquiry forms"
+      },
+      {
+        "url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+        "claim": "Accessibility basics such as contrast, useful image alternatives and clear headings are practical trust and usability concerns"
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-08-05",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/medical-spas/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "medical-spas"
+  ],
+  "wordCount": 1457,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 14487,
+      "total_tokens": 24182,
+      "completion_tokens": 9695,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6935
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6935
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "provider": "Main editor",
+    "appliedEdits": 0,
+    "publicationApproved": false,
+    "note": "Echo edit response was malformed and the retry was rejected by the API. Main editor read the complete article against the privacy and accessibility sources and applied the specific corrections recorded in mainEditorEdits."
+  },
+  "mainEditorEdits": [
+    {
+      "original": "If either half is weak, the site starts leaking good prospects.",
+      "replacement": "If either half is weak, a visitor has less to work with when deciding whether to enquire."
+    },
+    {
+      "original": "My <a href=\"/web-design/medical-spas/\">medical spa website design</a> work starts from that path rather than from decoration alone.",
+      "replacement": "I would plan <a href=\"/web-design/medical-spas/\">a medical spa website</a> around that consultation path, then use the visual design to support it."
+    },
+    {
+      "original": "That kind of writing builds trust because it respects the reader's uncertainty.",
+      "replacement": "Have the responsible clinician review that explanation before publication, including candidacy, preparation and aftercare wording."
+    }
+  ]
+}

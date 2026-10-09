@@ -1,0 +1,130 @@
+{
+  "slug": "website-enquiry-follow-up",
+  "title": "From website enquiry to booked work: fix the handoff",
+  "type": "guide",
+  "description": "A practical guide for service businesses to fix the gap between a website enquiry and a booked job, covering follow-up workflows, response capacity, privacy and where AI fits.",
+  "summary": "Website enquiries fail when follow-up depends on memory instead of a clear handoff. This guide shows service businesses how to acknowledge every enquiry, qualify leads before booking, set realistic response capacity, and use simple workflows or AI to keep opportunities moving without sounding robotic, and build trust.",
+  "takeaways": [
+    "Treat every website enquiry as a promise to respond, not as a loose notification for whoever sees it first.",
+    "Give each lead a named owner, a visible queue and a clear next step so follow-up does not depend on memory.",
+    "Qualify before booking, set honest response capacity and use simple workflows or AI to keep the right opportunities moving."
+  ],
+  "sections": [
+    {
+      "id": "the-enquiry-is-a-promise",
+      "title": "The enquiry is a promise",
+      "body": "<p>Every website enquiry is a promise to respond. When someone fills out your form, sends a message or calls after finding your site, they expect a human to continue the conversation. For a service business, that response is part of the product.</p><p>The mistake is to treat the enquiry as a notification for whoever happens to see it first. A notification is easy to miss. A promise needs a handoff. My <a href=\"/web-design/\">website design work</a> starts from that simple idea: the page should attract the right people, and the process behind it should be ready for them.</p>"
+    },
+    {
+      "id": "fix-the-handoff-not-just-the-form",
+      "title": "Fix the handoff, not just the form",
+      "body": "<p>You can have a beautiful form and still lose the work. The leak usually happens after submission, when the lead is left in an inbox, a voicemail or a spreadsheet while everyone assumes someone else will reply. Manual follow-up can work when volume is very low. Once enquiries come from your website, ads, referrals and social media, memory stops being a system.</p><table><caption>Manual follow-up vs a simple system vs a considered workflow</caption><thead><tr><th>Approach</th><th>What happens</th><th>Where it breaks</th></tr></thead><tbody><tr><td>Manual</td><td>Someone remembers to check email, voicemail or social messages.</td><td>Leads leak when staff are busy, away or unsure who owns the next step.</td></tr><tr><td>Systematized</td><td>Every enquiry goes to one place and gets a first response.</td><td>Follow-up can still feel generic if the next step is not clear.</td></tr><tr><td>Automated</td><td>Workflows acknowledge, qualify and route the lead.</td><td>Needs careful setup so the business does not sound robotic.</td></tr></tbody></table><p>The goal is not to send more messages. The goal is to make the next step obvious every time.</p>"
+    },
+    {
+      "id": "build-a-queue-with-a-named-owner",
+      "title": "Build a queue with a named owner",
+      "body": "<p>Every enquiry needs a named owner, even when several people help with the response. The owner is responsible for the next step. That next step should be visible in a queue, not buried in a group inbox.</p><p>Keep the queue simple. Most service businesses need only a few clear stages: new, contacted, qualified, booked, no response and long-term follow-up. The point is not to make the pipeline look impressive. The point is to make it obvious which lead needs attention today.</p>"
+    },
+    {
+      "id": "set-honest-response-capacity",
+      "title": "Set honest response capacity",
+      "body": "<p>Do not let the website promise a faster response than your team can give. If you are a small shop and can return calls within one business day, say that. If you can offer same-day replies, say that. What damages trust is a vague expectation of immediacy followed by silence.</p><p>Response capacity should also shape the call to action. If you have limited space for new projects, the page can invite an enquiry without promising an instant booking. The goal is to start the right conversation, not to create a queue you cannot serve.</p>"
+    },
+    {
+      "id": "qualify-first-then-book",
+      "title": "Qualify first, then book",
+      "body": "<p>Not every enquiry should go straight to the calendar. Some people are comparing options. Some are outside your service area. Some want a service you do not provide. Qualifying first protects your team and gives the enquirer a better answer.</p><p>If your website is bringing the wrong enquiries, review the page before blaming the lead. I have written more about that in my guide to <a href=\"/blog/website-wrong-enquiries/\">getting the right enquiries from a service website</a>. For example, a renovation company might receive a request for work it stopped offering years ago. The better answer is a polite qualification, not a booked appointment that should never have happened.</p>"
+    },
+    {
+      "id": "a-mock-workflow-you-can-adapt",
+      "title": "A mock workflow you can adapt",
+      "body": "<p>Here is a simple mock workflow. It is not a claim about a client implementation; it is a pattern you can adapt.</p><ol><li><strong>Acknowledge the enquiry.</strong> Send a short message confirming you received it and stating the next step.</li><li><strong>Assign a named owner.</strong> Create a task for one person to review, call or reply.</li><li><strong>Qualify before booking.</strong> Ask the two or three questions that decide whether this is a fit.</li><li><strong>Send the booking link.</strong> If qualified, make it easy to choose a time.</li><li><strong>Follow up if there is no response.</strong> One or two polite check-ins are usually enough.</li><li><strong>Change the message after booking.</strong> Once an appointment is confirmed, sales follow-up should stop and appointment reminders should begin.</li></ol><p>A workflow like this gives the lead a better experience and gives your team a cleaner day. The enquirer feels acknowledged. Your team knows what to do next.</p>"
+    },
+    {
+      "id": "keep-forms-simple-and-respectful",
+      "title": "Keep forms simple and respectful",
+      "body": "<p>The <a href=\"https://www.w3.org/WAI/tutorials/forms/\">W3C's accessibility guidance</a> says users generally prefer simple, short forms, and that you should only ask for the information required to complete the process. That is good advice for conversion as well as accessibility.</p><p>It is also good privacy practice. A public enquiry form is not the place for medical records, financial documents or a full case history. Collect the minimum needed to reply, then move sensitive information into the system your business has chosen for that purpose.</p>"
+    },
+    {
+      "id": "where-ai-actually-helps",
+      "title": "Where AI actually helps",
+      "body": "<p>AI can help with the parts of follow-up that are repetitive: the first acknowledgement, a polite check-in, routing a lead to the right person, and keeping unbooked opportunities visible. Used carelessly, it becomes another way to send more messages without thinking. Used well, it gives your team a better queue.</p><p>That is how I think about <a href=\"/ai-implementation/\">AI implementation</a>. The goal is not to replace the business owner or the front desk. The goal is to give them more time for the work that earns trust.</p>"
+    },
+    {
+      "id": "the-next-step",
+      "title": "The next step",
+      "body": "<p>If your website brings in enquiries but the handoff is still vague, start with the next step. Tell me where the work piles up, what gets missed and what you want more time for. Then we can find a practical place to begin.</p><p><a href=\"/contact/\">Book a free consultation</a></p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should I use SMS, email or both for follow-up?",
+      "Use the channel your customers already respond to. SMS is useful for a short acknowledgement and a quick check-in. Email gives you more room to explain the next step. Many service businesses need both, but neither should become a substitute for a clear human follow-up."
+    ],
+    [
+      "How do I stop automated follow-up once someone books?",
+      "Your workflow needs a clear booked stage. As soon as a lead confirms an appointment, sales messages should stop and appointment communication should begin. That one rule helps avoid awkward automation mistakes."
+    ],
+    [
+      "What should happen to enquiries outside business hours?",
+      "Acknowledge them in a way that sets an honest expectation. If your team replies the next business day, say so. Do not create an impression of immediate service unless you can support it. The follow-up system should still capture the lead and give it a named owner."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "W3C WAI accessible forms guidance",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Combines service-business follow-up workflow advice with Michael's design and AI perspective, focusing on the handoff between website enquiry and booked work rather than generic CRM automation.",
+    "claimsToRecheckBeforeRelease": [
+      "W3C guidance on keeping forms simple and asking only for required information",
+      "No claims are made about implemented client workflows; the workflow example is explicitly mock"
+    ],
+    "serpGap": "Existing results are mostly CRM vendor blogs and broad automation checklists; this article gives service businesses practical guidance on ownership, response capacity, qualification and the enquiry-to-booking handoff.",
+    "sourceUse": [
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "W3C notes users prefer simple, short forms and that forms should ask only for information required to complete the process."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-03-11",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Conversion",
+  "primaryMoneyPage": "/ai-implementation/",
+  "related": [
+    "calls-or-forms-service-website",
+    "website-wrong-enquiries"
+  ],
+  "services": [],
+  "wordCount": 1138,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 9924,
+      "total_tokens": 15804,
+      "completion_tokens": 5880,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3787
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3787
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 2,
+    "publicationApproved": false
+  }
+}

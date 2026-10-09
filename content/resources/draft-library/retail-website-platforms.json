@@ -1,0 +1,185 @@
+{
+  "slug": "retail-website-platforms",
+  "title": "Shopify, WooCommerce or a simple catalogue? A retailer's website decision",
+  "type": "comparison",
+  "description": "A practical comparison of Shopify, WooCommerce and catalogue websites for small retailers, focused on inventory, checkout, payments, product information and which option fits different operational realities.",
+  "summary": "Choose your retail website platform by matching it to how you actually handle inventory, checkout, payments and fulfilment. Shopify gives you a managed all-in-one store, WooCommerce gives you WordPress-based control, and a simple catalogue works when you are not ready to take payment online.",
+  "takeaways": [
+    "Match the platform to your inventory and fulfilment reality before comparing features.",
+    "Shopify suits retailers who want a managed store; WooCommerce suits those who want WordPress control and more direct control over hosting, checkout and data.",
+    "A catalogue website is a legitimate first step when online checkout is not yet practical."
+  ],
+  "sections": [
+    {
+      "id": "operations-first-decision",
+      "title": "Start with operations, not software",
+      "body": "<p>If you are comparing Shopify, WooCommerce and a simple catalogue for a store in the Okanagan, start with operations rather than software. The right choice depends on how you handle inventory, in-store and online stock, pickup or delivery, payments, product information and returns. A long feature list will not tell you which system will feel easy next year and which one will create extra work.</p><p>Before you look at templates, apps or design trends, write down where your inventory lives, how you want customers to pay, and whether you need to take payment online at all. That is the real decision. Everything else follows from it.</p>"
+    },
+    {
+      "id": "shopify-managed-retail",
+      "title": "What Shopify gives a small retailer",
+      "body": "<p>For a retailer who wants one system to handle the online store, Shopify is often the most straightforward option. It gives you managed hosting, a maintained checkout, payment options and a range of apps without asking you to run the underlying software yourself. If your priority is to start selling online and keep the technical side simple, that matters a lot.</p><p><a href=\"https://www.shopify.com/online\">Shopify's online store platform</a> describes an integrated commerce platform. The practical advantage to evaluate is: the checkout, security updates and core commerce features are handled inside one managed system. For a busy owner, that can be worth paying for.</p><p>The tradeoff is control. You are working inside Shopify's rules, plans and available apps. For some retailers that is a fair exchange for simplicity. For others it becomes limiting as the business grows.</p>"
+    },
+    {
+      "id": "woocommerce-wordpress-control",
+      "title": "What WooCommerce on WordPress gives you",
+      "body": "<p><a href=\"https://woocommerce.com/\">WooCommerce</a> gives you a different kind of freedom. It is the open-source commerce platform for WordPress, and it lets you control your checkout, your data, your hosting and your costs more directly. If you want to choose your own payment gateway, shape your product pages in detail or build a store around strong content, WooCommerce is often the better fit.</p><p>That is partly because <a href=\"https://wordpress.org/about/features/\">WordPress</a> is such a capable publishing system. It powers a very large share of the web, and it is built to make content easy to create and manage. For a retailer, that matters because product pages alone rarely carry the whole brand. Buying guides, care instructions, local stories, lookbooks and category pages all help people find you, understand you and trust you. With WooCommerce, those things live beside your store instead of feeling bolted on.</p><p>The tradeoff is responsibility. WooCommerce is not zero-maintenance. You need to think about hosting, updates, security, backups and performance, or hire someone who will. The <a href=\"/blog/website-subscription-vs-upfront-build/\">ongoing cost</a> is only part of the decision; you should go into it knowing that the freedom comes with operational work.</p>"
+    },
+    {
+      "id": "catalogue-first-option",
+      "title": "When a simple catalogue is the right first move",
+      "body": "<p>A catalogue website is the right first move when online checkout is not yet practical. It lets you present products, prices, materials, dimensions, care instructions and availability clearly, while customers still buy in person, by phone, by email or through an invoice. For appointment-based retail, made-to-order products, trade accounts or stores where most revenue still happens at the till, this can be the most honest and effective option.</p><p>Suppose a furniture maker builds to order and rarely has identical pieces in stock. A checkout that treats every piece as ready-to-ship could create inventory and expectation problems. A catalogue with strong photography, clear options and an enquiry form may fit better until the business has a defined made-to-order purchasing process. The same logic applies to a retailer who is still testing demand before committing to shipping, returns and payment processing.</p>"
+    },
+    {
+      "id": "retail-platform-worksheet",
+      "title": "Retail platform decision worksheet",
+      "body": "<p>Use this worksheet to compare the three options against your own operations. The best choice is usually the one that matches how you already work, or how you are realistically prepared to work.</p><table><caption>Retail website platform decision worksheet</caption><thead><tr><th>Decision factor</th><th>Shopify</th><th>WooCommerce on WordPress</th><th>Simple catalogue</th></tr></thead><tbody><tr><td>Best fit</td><td>Retailers who want a managed online store and quick setup</td><td>Retailers who want WordPress content, custom product data and more control</td><td>Retailers who need to show products but are not ready for online checkout</td></tr><tr><td>Inventory and stock</td><td>Built-in inventory tools with apps for more complex needs</td><td>Flexible inventory through WordPress and WooCommerce extensions</td><td>Usually manual or simple stock notes; no live checkout inventory required</td></tr><tr><td>Checkout and payments</td><td>Managed checkout and payment options inside Shopify</td><td>Configurable checkout and compatible payment gateways; confirm the required setup</td><td>No online checkout; enquiries, phone orders or in-person sales</td></tr><tr><td>Product information</td><td>Good for standard product data; confirm the product fields and integrations your catalogue needs</td><td>Strong for detailed specifications, ingredients, lookbooks and custom content</td><td>Strong for clear presentation when the sales conversation happens offline</td></tr><tr><td>Content and local search</td><td>Pages and blogging alongside the store; test the required content model</td><td>WordPress publishing alongside products and commerce</td><td>Can be excellent if the catalogue is paired with useful local content</td></tr><tr><td>Ongoing work</td><td>Lower day-to-day maintenance, but platform rules and fees apply</td><td>More responsibility for hosting, updates and security</td><td>Lowest technical burden, but may need to change when you are ready to sell online</td></tr></tbody></table>"
+    },
+    {
+      "id": "design-that-sells",
+      "title": "The design choices that affect retail sales",
+      "body": "<p>Platform choice does not replace design. A retail website still needs strong photography, readable pricing, sensible categories, clear product options and pages that answer the questions people actually ask before they buy. Those things matter on Shopify, on WooCommerce and on a simple catalogue.</p><p>I would not treat design awards as proof that a website will sell. What matters more is whether the design helps a busy person understand what you sell, trust the business and take the next step. Good retail design is usually practical: honest product information, strong images, clear pickup or shipping details and a visual feel that matches the store. Beauty matters, but clarity usually sells. If you are thinking about how your store should feel, my work on <a href=\"/marketing-branding/\">marketing and branding</a> is often the right place to start.</p>"
+    },
+    {
+      "id": "choose-without-regret",
+      "title": "How to choose without regret",
+      "body": "<p>Start by writing down five things: where your inventory lives, how customers usually buy, whether you need pickup or delivery, what product information matters most and how much technical upkeep you are willing to handle. That small exercise will usually point clearly toward Shopify, WooCommerce or a catalogue-first site.</p><p>From there, look at real costs rather than advertised starting prices, and ask how the platform will behave when you add products, staff, locations or content. If you want help thinking through that decision for a <a href=\"/web-design/retail/\">retail website project</a>, <a href=\"/contact/\">reach out through my contact page</a> and we can talk through your situation.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Can I start with a catalogue website and add online checkout later?",
+      "Yes. Many retailers begin with a catalogue because it lets them present products clearly without managing online payments, shipping rules or live inventory. The important thing is to plan the content and product structure so it can grow into a full store later without being rebuilt from scratch."
+    ],
+    [
+      "What should I ask before choosing between Shopify and WooCommerce?",
+      "Ask where your inventory will be managed, who will handle updates and security, how much you need to customize checkout or product data, and what the real monthly cost looks like as you grow. Also ask whether your business depends on strong content, and demonstrate the required publishing workflow on each proposed platform."
+    ],
+    [
+      "Does my platform choice affect how Google and AI tools understand my store?",
+      "It can, but the fundamentals still matter most. Clear page titles, useful product descriptions, indexable content and a sensible site structure help search engines and AI tools understand your business regardless of platform. No platform can guarantee inclusion or a top ranking."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Shopify online store",
+      "url": "https://www.shopify.com/online"
+    },
+    {
+      "name": "WooCommerce",
+      "url": "https://woocommerce.com/"
+    },
+    {
+      "name": "WordPress features",
+      "url": "https://wordpress.org/about/features/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Frames the platform choice around retail operations, inventory and fulfilment rather than generic feature lists, and includes the catalogue-first path that many comparisons ignore.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm word count is between 1100 and 1600",
+      "Verify all internal links match the approved URL list exactly",
+      "Check that no em dash or banned words appear",
+      "Confirm no unsupported client or metric claims are present"
+    ],
+    "serpGap": "Most competing results are generic feature comparisons or affiliate-style platform roundups; they rarely help a small retailer choose between managed commerce, WordPress control and a catalogue-first site based on real operations.",
+    "sourceUse": [
+      {
+        "url": "https://www.shopify.com/online",
+        "claim": "Supports description of Shopify as a managed online store with checkout, themes, apps and global infrastructure."
+      },
+      {
+        "url": "https://woocommerce.com/",
+        "claim": "Supports description of WooCommerce as open-source WordPress commerce with full control over checkout, data and costs."
+      },
+      {
+        "url": "https://wordpress.org/about/features/",
+        "claim": "Supports description of WordPress as flexible, open-source CMS with themes, plugins, user management and content tools."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-05-27",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Platforms",
+  "primaryMoneyPage": "/web-design/retail/",
+  "related": [
+    "website-subscription-vs-upfront-build",
+    "framer-webflow-custom-website"
+  ],
+  "services": [
+    "retail"
+  ],
+  "wordCount": 1304,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 24927,
+      "total_tokens": 33634,
+      "completion_tokens": 8707,
+      "prompt_tokens_details": {
+        "cached_tokens": 12849
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6276
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6276
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 5,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "an app ecosystem",
+      "replacement": "a range of apps"
+    },
+    {
+      "original": "plans and app ecosystem",
+      "replacement": "plans and available apps"
+    },
+    {
+      "original": "presents its checkout as converting better than many competing platforms. Even if you set that claim aside, the practical advantage is clear",
+      "replacement": "describes an integrated commerce platform. The practical advantage to evaluate is"
+    },
+    {
+      "original": "A full online checkout would create constant inventory and expectation problems.",
+      "replacement": "A checkout that treats every piece as ready-to-ship could create inventory and expectation problems."
+    },
+    {
+      "original": "A beautiful catalogue with strong photography, clear options and a simple enquiry form does the job better.",
+      "replacement": "A catalogue with strong photography, clear options and an enquiry form may fit better until the business has a defined made-to-order purchasing process."
+    },
+    {
+      "original": "Full control over checkout and choice of payment gateways",
+      "replacement": "Configurable checkout and compatible payment gateways; confirm the required setup"
+    },
+    {
+      "original": "custom fields possible with apps",
+      "replacement": "confirm the product fields and integrations your catalogue needs"
+    },
+    {
+      "original": "Basic content and blogging available",
+      "replacement": "Pages and blogging alongside the store; test the required content model"
+    },
+    {
+      "original": "Very strong content management through WordPress",
+      "replacement": "WordPress publishing alongside products and commerce"
+    },
+    {
+      "original": "because that often points toward WordPress and WooCommerce",
+      "replacement": "and demonstrate the required publishing workflow on each proposed platform"
+    },
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help roofing owners and agencies recognize which website content and structure choices build enough trust to earn a site visit or estimate request.",
+    "specificity": "Strong and industry specific, with a practical worksheet, named trust signals, and clearly bounded advice about warranties, insurance, and urgent contact without inventing rules.",
+    "evidence": "Relies on general roofing marketing reasoning, Michael's stated service context, and two relevant Google sources; it avoids unsupported uplift claims, invented tests, or fake client stories.",
+    "voice": "Confident, plain, and locally grounded, with connected sentences, Canadian spelling, and clear explanations for busy owners.",
+    "usefulAsset": "Yes. This is a durable buying and strategy article that stays self contained, answers the title directly, and avoids repeating the 30 percent case figure or overclaiming results."
+  },
+  "slug": "roofing-website-design",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1536,
+  "usage": {
+    "prompt_tokens": 8975,
+    "total_tokens": 9255,
+    "completion_tokens": 280,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 91
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 91
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "slug": "framer-small-business-websites",
+  "title": "Framer for small-business websites: where it fits and where it gets awkward",
+  "type": "guide",
+  "description": "Framer is a visual website builder with a built-in CMS that suits lean teams and design-led small businesses, but its content limits, plan caps, and conflicting export guidance mean it is not the right default for everyone.",
+  "summary": "Framer gives small teams a visual way to build attractive sites with a built-in CMS for blogs, case studies, and service pages. The tradeoff is that you are relying on Framer's hosting, its CMS item limits, and its current data export rules. Before you commit, map your content and make sure you have a tested way to move it if your needs outgrow the platform.",
+  "takeaways": [
+    "Framer is a strong fit when design quality and fast visual editing matter more than having every CMS feature.",
+    "Its built-in CMS handles blogs, case studies, and service listings well, but has clear limits on multilingual content, field types, and item caps.",
+    "Before committing, verify the current state of Framer's export and portability options, because its own help pages give conflicting answers."
+  ],
+  "sections": [
+    {
+      "id": "where-framer-fits",
+      "title": "Where Framer actually fits for a small business",
+      "body": "<p>Framer fits small businesses that want a visually strong website they can update without calling a developer every time. It combines a design tool and a publishing platform in one place, so a lean team can control layout, copy, and images without managing a separate admin panel or a server.</p><p>If you are a solo founder, a small studio, or a local service business that cares about how the site looks and feels, Framer's appeal is obvious. You get a visual canvas, responsive controls, and a built-in CMS for the content that repeats. The tradeoff is that you are working inside Framer's system, not on your own stack. That is fine for many businesses, but it is a decision you should make with your eyes open.</p><p>For a deeper look at how Framer compares to other options, I have written about <a href=\"/blog/framer-webflow-custom-website/\">Framer, Webflow, and custom websites</a>.</p>"
+    },
+    {
+      "id": "cms-strengths",
+      "title": "What the built-in CMS does well",
+      "body": "<p>The CMS handles the content most small businesses publish over and over: blog posts, case studies, project galleries, service listings, and team pages. You create collections, define fields like title, image, date, and text, and then bind those fields to your design so the pages fill in automatically.</p><p>The editing experience is visual. You can change text on the page, swap images, and see the result in context rather than in a separate dashboard. Framer also supports on-page editing, so a teammate can update CMS content in the browser on the published site. For many teams, that removes the friction that makes content updates feel like a chore.</p><p>The visual approach also changes who can maintain the site. When content lives in a separate dashboard, many owners avoid touching it. When content lives on the page in front of you, the barrier to updating a headline or swapping a photo is much lower. That difference matters more than most feature lists suggest.</p>"
+    },
+    {
+      "id": "cms-limits",
+      "title": "The CMS questions to test with your actual content",
+      "body": "<p>Evaluate Framer’s CMS with the content you intend to maintain. Its <a href=\"https://www.framer.com/cms/\">current CMS page</a> describes collections, dynamic filters, conditional visibility and built-in localization. A blanket claim that Framer cannot support multilingual CMS content would therefore be a poor basis for choosing a platform.</p><p>Map the relationships you need: services linked to projects, articles linked to authors, or locations linked to the relevant services. Build one example of each important relationship and check how an editor creates, updates and previews it. If you publish in more than one language, test the translation and approval workflow with a real page.</p><p>Recovery is another practical question. Ask the provider to show what happens after an accidental edit or deletion, what can be restored and who has permission to do it. For integrations, demonstrate the actual import, export or external connection you need rather than assuming either that every connection is supported or that no API exists.</p><p>Plan limits and feature availability can change. Match the current plan to the expected collections, items, editors and publishing workload, and record the ongoing cost in the proposal. The result should be a working content model and a clear support arrangement.</p>"
+    },
+    {
+      "id": "ownership-export",
+      "title": "Ownership and export: read both conflicting help pages",
+      "body": "<p>Before you commit to Framer, read its current guidance on data portability carefully. One <a href=\"https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/\">Framer help page</a> says the platform does not offer HTML export for self-hosting and that published sites rely on Framer's managed infrastructure. Another <a href=\"https://www.framer.com/help/articles/porting-your-data-from-framer/\">help page on porting your data</a> says every site is published as standard HTML, CSS, JavaScript, and static assets, and that you can download these files and move them to any hosting provider.</p><p>Those two statements create a real question for a business owner. Can you truly take your finished site elsewhere, or are you tied to Framer's hosting? The safe approach is to ask for a demonstrated exit or export plan before you build. That plan should cover your content, your forms, and how someone would edit or move the site if your needs change. If the answer is only a help article, ask for a real demonstration.</p>"
+    },
+    {
+      "id": "worked-example",
+      "title": "A worked example of CMS structure",
+      "body": "<p>Suppose you run a home maintenance company in Vernon or Kelowna. You might set up four collections: Services, Projects, Articles, and Team. Each collection has its own fields, and the design binds those fields to pages automatically.</p><table><caption>Sample CMS structure for a local service business</caption><thead><tr><th scope='col'>Collection</th><th scope='col'>Key fields</th><th scope='col'>Purpose</th></tr></thead><tbody><tr><td>Services</td><td>Title, intro text, feature image, related project link</td><td>Describe each service and link to relevant work</td></tr><tr><td>Projects</td><td>Title, date, location, before and after images, summary</td><td>Show completed work with visual evidence</td></tr><tr><td>Articles</td><td>Title, slug, excerpt, body, author, published date</td><td>Publish advice and seasonal updates</td></tr><tr><td>Team</td><td>Name, role, photo, short bio</td><td>Introduce the people behind the business</td></tr></tbody></table><p>This structure covers most of what a small local business needs. The CMS collections stay simple, the design stays consistent, and a non-technical person can add a new project or article without breaking the layout. The key is to plan the fields before you build, because changing a field type later can mean revisiting existing entries.</p><p>For example, if you later decide to add a service category field to your Projects collection, you can do it. But you will need to fill that field for every existing project, or the template will look incomplete. Thinking through the structure before you commit saves that kind of work.</p>"
+    },
+    {
+      "id": "decision-framework",
+      "title": "When to choose Framer, and when to choose something else",
+      "body": "<p>Choose Framer when the visual workflow suits your team and a trial with your real content supports the way you expect to publish. It can be a candidate for a service website, project portfolio or resource library. Judge the editor experience, mobile layout, form connection and content structure together.</p><p>Compare other approaches when your requirements are centred on unusual integrations, several publishing channels or a highly tailored content model. A headless CMS may suit content that needs to feed more than one frontend. A custom build may suit a specialised workflow. Those are reasons to compare a concrete implementation, not automatic reasons to rule Framer out.</p><p>Try a common owner task before choosing: add a project, connect it to the appropriate service, update the photograph and publish it. Then ask how the same content could be exported and maintained if the business moved platforms. A polished demonstration is useful only if the people responsible for the live site can repeat the work.</p><p>To compare the buying models, read about <a href=\"/blog/okanagan-website-cost/\">Okanagan website project costs</a> and <a href=\"/blog/website-subscription-vs-upfront-build/\">subscription versus upfront website costs</a>. Include content preparation, integrations, training and continuing support in the comparison.</p>"
+    },
+    {
+      "id": "questions-to-ask",
+      "title": "Questions to ask before you build on Framer",
+      "body": "<p>The right questions are about your workflow, not just the monthly price. Before you commit, ask:</p><ul><li><strong>How much content will we publish?</strong> Estimate your CMS items so you know which plan tier you really need.</li><li><strong>Do we need multiple languages?</strong> If yes, demonstrate the built-in localization workflow and confirm the current plan and translation needs.</li><li><strong>Who will make weekly edits?</strong> If it is a non-technical owner, the visual CMS is a strength. If it is a developer, a different CMS might be better.</li><li><strong>What is our exit plan?</strong> Ask how you would move your content and design if you outgrow the platform, and get a concrete answer.</li></ul><p>These questions are more useful than a generic feature list because they force you to think about how the site will actually be used six months from now.</p>"
+    },
+    {
+      "id": "what-to-do-next",
+      "title": "What to do next if Framer seems like a fit",
+      "body": "<p>Start by mapping your real content. If you have a blog, three services, and a small team page, list the fields you would actually use. Then build a test collection for one content type and see how it feels to create, edit, and publish an entry.</p><p>Next, look at the total cost of the plan tier that gives you enough CMS items, bandwidth, and features. Choose from the actual publishing requirements rather than assuming the cheapest or most expensive plan is the right one. Finally, make sure you are comfortable with the export and portability answers you get. If those answers are unclear, keep looking.</p><p>If you are weighing this against other options for your business, my <a href=\"/web-design/\">web design</a> work starts with these exact questions. If you want to talk through whether Framer fits your situation, you can <a href=\"/contact/\">get in touch</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Can I use Framer for a business blog?",
+      "Yes. Framer supports CMS collections and designed templates for repeated content such as articles. Define the fields you need, try the editing and preview process, and check current plan limits and recovery arrangements before launch."
+    ],
+    [
+      "Is Framer good for SEO and AI search?",
+      "Framer gives you standard SEO controls like editable titles, descriptions, sitemaps, and server-side rendering. You should not assume that special AI schema or new machine-readable files are required. Google has said that its usual SEO fundamentals apply to AI features, so indexable, snippet-eligible content still matters most. There is also no guarantee that a file like llms.txt will make ChatGPT recommend you."
+    ],
+    [
+      "What should I do if I am worried about being locked into Framer?",
+      "Do not rely on a single help article. Ask for a demonstrated export or exit plan that shows how your content, images, and forms would move if you outgrew the platform. Framer currently has two different official statements about data portability, so the safest approach is to verify the actual process for your specific site before you build."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Framer CMS",
+      "url": "https://www.framer.com/cms/"
+    },
+    {
+      "name": "Can I export my website to HTML and self-host it?",
+      "url": "https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/"
+    },
+    {
+      "name": "Framer pricing",
+      "url": "https://www.framer.com/pricing/"
+    },
+    {
+      "name": "Porting your data from Framer",
+      "url": "https://www.framer.com/help/articles/porting-your-data-from-framer/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "A plain-language guide that helps small-business owners weigh Framer's visual CMS against its actual limits, with a concrete service-business example and a practical exit-plan checklist.",
+    "claimsToRecheckBeforeRelease": [
+      "Verify current Framer export and portability help pages, as they present conflicting statements",
+      "Confirm current plan limits and pricing on Framer's official site, as these can change"
+    ],
+    "serpGap": "Most results either praise Framer's CMS or list generic limitations without connecting them to small-business workflow decisions; this guide maps specific features to specific use cases and ownership risks.",
+    "sourceUse": [
+      {
+        "url": "https://www.framer.com/cms/",
+        "claim": "Framer's CMS handles visual content editing, collections, and on-page editing for common small-business content types."
+      },
+      {
+        "url": "https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/",
+        "claim": "Framer states that it does not offer HTML export for self-hosting and that published sites rely on its managed infrastructure."
+      },
+      {
+        "url": "https://www.framer.com/pricing/",
+        "claim": "Framer's plan tiers include different CMS collection, item, and bandwidth limits that affect which plan a business needs."
+      },
+      {
+        "url": "https://www.framer.com/help/articles/porting-your-data-from-framer/",
+        "claim": "Framer also states that sites can be downloaded as standard HTML, CSS, JavaScript, and assets for hosting elsewhere, creating conflicting guidance that buyers should verify."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-03-04",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Platforms",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "website-subscription-vs-upfront-build",
+    "framer-webflow-custom-website"
+  ],
+  "services": [],
+  "wordCount": 1643,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 20123,
+      "total_tokens": 28428,
+      "completion_tokens": 8305,
+      "prompt_tokens_details": {
+        "cached_tokens": 17336
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5302
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 5302
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Replaced unsupported CMS restrictions with current official features and concrete buyer acceptance checks; removed invented lack of localization, APIs and item recovery.",
+      "date": "2026-10-08"
+    },
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ],
+  "criticalFactsReviewed": true
+}

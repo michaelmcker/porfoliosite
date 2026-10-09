@@ -1,0 +1,151 @@
+{
+  "slug": "accountant-website-design",
+  "title": "An accounting website that attracts the clients you want",
+  "type": "guide",
+  "description": "A practical guide to accountant website design for firms that want better-fit clients, clearer service pages, responsible enquiry forms and a process clients can trust.",
+  "summary": "An accounting website should attract the specific clients you want, not every possible enquiry. This guide explains how to choose between personal tax, bookkeeping and advisory positioning, build pages around real buyer questions, keep public forms limited and accessible, and show the team and process so the right people feel safe getting in touch.",
+  "takeaways": [
+    "Choose your client fit before choosing a design; personal tax, bookkeeping and advisory buyers need different proof, tone and calls to action.",
+    "Keep the public enquiry form short and accessible, and do not use it to collect case histories, financial documents or other sensitive information.",
+    "Strong accountant websites combine specific service pages, team bios, a clear engagement process and local search structure instead of relying on generic design trends."
+  ],
+  "sections": [
+    {
+      "id": "choose-client-fit-first",
+      "title": "Choose the client fit before you design",
+      "body": "<p>The right accounting website starts with a decision about who you want more of. A practice that mainly wants personal tax clients needs to reassure individuals, make deadlines easy to understand and offer a low-friction way to ask a question. A practice that wants business advisory clients needs to demonstrate commercial judgement, ongoing support and comfort with owners who care about results more than accounting terminology.</p><p>That choice affects the homepage headline, the services menu, the proof you show and the words you use in every call to action. Before looking at templates or colours, write down the work you want to be known for and the work you would rather refer elsewhere.</p><table><caption>How website priorities change with client fit</caption><thead><tr><th>Client fit</th><th>Primary job of the website</th><th>Content to prioritize</th><th>Useful tone</th></tr></thead><tbody><tr><td>Personal tax</td><td>Reassure and qualify</td><td>What is needed, deadline guidance, secure next step</td><td>Calm, accurate, dependable</td></tr><tr><td>Bookkeeping</td><td>Qualify for clean recurring work</td><td>Monthly process, software used, boundaries and handoff</td><td>Organized, efficient, transparent</td></tr><tr><td>Business advisory</td><td>Attract owners ready for ongoing help</td><td>Services by business stage, team, process, examples of thinking</td><td>Practical, commercial, proactive</td></tr></tbody></table>"
+    },
+    {
+      "id": "position-without-empty-branding",
+      "title": "Position the practice without empty branding",
+      "body": "<p>Many accountant websites sound interchangeable because they list services without making a choice. Better positioning says who the firm is for, what kind of work it wants and why its process is a good fit for that client. If you want to see how I frame this service, my <a href=\"/web-design/accountants/\">accountant website design</a> page starts with client fit rather than with a template.</p><p>A clear position also makes design decisions easier. A solo accountant who wants manageable personal tax work does not need the same visual weight as a multi-person advisory firm trying to win established businesses. Design awards are not evidence of client fit. The useful question is whether the right visitor can quickly think, this firm understands people like me.</p>"
+    },
+    {
+      "id": "build-pages-around-buyer-questions",
+      "title": "Build pages around buyer questions",
+      "body": "<p>Strong service pages answer the questions a real buyer is already asking: Is this for me? What problem does it solve? What do I need to provide? How does the engagement start? What happens after that? What is outside the scope? When a page answers those questions clearly, the visitor does not have to guess whether the firm can help.</p><h3>A workable page architecture for a small-business accountant</h3><ul><li><strong>Home:</strong> say who you help, what you help with and what the first step is.</li><li><strong>Who we help:</strong> separate personal tax clients, owner-managed businesses and special situations if you genuinely serve them.</li><li><strong>Services:</strong> give tax, bookkeeping and advisory their own pages instead of burying them in one long list.</li><li><strong>Process:</strong> explain the first conversation, what information you need, how pricing is handled and what onboarding looks like.</li><li><strong>Team:</strong> introduce the people clients will actually deal with, not just the firm founder.</li><li><strong>Resources:</strong> answer seasonal and recurring questions without turning the site into a generic advice blog.</li><li><strong>Contact:</strong> offer a short enquiry form, normal contact details and clear guidance about what should not be sent through the public form.</li></ul>"
+    },
+    {
+      "id": "handle-sensitive-information-carefully",
+      "title": "Handle sensitive information carefully",
+      "body": "<p>Accountants and bookkeepers receive information that people rightly expect to be handled with care. A public website should make that easier, not blur the boundary between a simple enquiry and a confidential client file. <a href=\"https://www.oipc.bc.ca/guidance-documents/2286\">Guidance from the BC Office of the Information and Privacy Commissioner</a> emphasizes collecting only the personal information needed for an identified purpose, protecting it with reasonable safeguards and being open about how it is used.</p><p>For most firms, that means the public enquiry form should ask for basic contact details and the nature of the enquiry. It should not ask a stranger to upload tax records, detailed financial statements or a full history of a dispute. If sensitive material is part of the engagement, say that it will be requested through the firm's approved secure process after the right fit has been established. Your legal or compliance advisor should review the final wording, but the design principle is simple: collect less in public, and move sensitive information into a controlled process.</p>"
+    },
+    {
+      "id": "design-an-enquiry-form-that-qualifies",
+      "title": "Design an enquiry form that qualifies people",
+      "body": "<p>A good enquiry form does two jobs at once. It makes it easy for a good-fit visitor to contact you, and it gently filters out requests that need a different process. <a href=\"https://www.w3.org/WAI/tutorials/forms/\">The W3C's accessible forms guidance</a> is useful here because it recommends clear labels, instructions and error handling, and it reminds designers not to ask for irrelevant or excessive information.</p><p>For a small accounting firm, a practical form might ask for name, email, phone, whether the enquiry is personal or business-related, which service the person is interested in, and how they prefer to be contacted. Keep optional fields to a minimum. If you serve several types of client, a short dropdown can help route the enquiry without making the form feel like an interview.</p>"
+    },
+    {
+      "id": "show-team-and-engagement-process",
+      "title": "Show the team and the engagement process",
+      "body": "<p>People hire accountants because they trust the people and understand the process. Team bios should do more than list credentials. They should say what each person works on, who they tend to help and what clients can expect when dealing with them. A good bio reduces uncertainty before the first meeting.</p><p>The engagement process deserves the same clarity. Explain what happens in the first call, what information you normally need, how you quote or scope the work, what onboarding looks like and how ongoing communication works. This is especially useful for business owners who have been burned by vague scopes or surprise invoices. The goal is not to promise a guaranteed result. It is to make the working relationship feel visible and deliberate.</p>"
+    },
+    {
+      "id": "help-local-buyers-find-and-choose-you",
+      "title": "Help local buyers find and choose you",
+      "body": "<p>For a local accounting practice, search visibility is partly a structure problem. Search engines and AI search features need clear, indexable pages that explain what you do, who you do it for and where you work. If you want a broader look at that local structure, my <a href=\"/blog/kelowna-business-website-guide/\">Kelowna business website guide</a> covers how service, location and trust pages fit together.</p><p>If you serve Kelowna, Vernon, West Kelowna or Lake Country, those places can appear naturally in service pages, contact information and genuinely useful local pages. What you want to avoid is thin city-swapped pages that add no real information. A local page should help someone understand whether you serve their area, what kind of work you take on there and how to start the conversation.</p>"
+    },
+    {
+      "id": "budget-for-decisions-not-just-design",
+      "title": "Budget for decisions, not just a design",
+      "body": "<p>The cost of an accounting website depends on the decisions behind it. A simple brochure site is different from a site with custom service copy, team photography, local landing pages, accessibility review and a careful process for sensitive enquiries. My <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost guide</a> is useful if you are trying to separate design taste from scope.</p><p>Before asking for quotes, write down the pages you need, who will write the content, whether you need photography, how enquiries should be routed and what should never be submitted through a public form. That gives designers and developers something real to price. It also stops the project from being judged only on whether the homepage looks modern.</p>"
+    },
+    {
+      "id": "measure-what-the-site-is-for",
+      "title": "Measure what the site is for",
+      "body": "<p>The useful measure of an accounting website is not just traffic. It is whether the right people understand the firm, trust the process and take the right next step. That might mean more owner-managed businesses requesting an introductory call, fewer poor-fit enquiries, or clearer expectations before sensitive information changes hands.</p><p>A practical next step is to write a one-page brief before contacting a designer. Name the client fit you want, the services you want to emphasize, the pages you need, the information your public form should collect and the information it should not collect. If you want help turning that brief into a page structure and content plan, <a href=\"/contact/\">contact me</a> and we can look at the decision together.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should an accounting website publish prices?",
+      "It depends on how standardized the work is. A bookkeeping firm with simple monthly packages may use ranges to qualify enquiries, while tax and advisory work often varies too much for a meaningful fixed price. In those cases, it is usually better to explain what affects scope, how quotes are prepared and what the first step costs than to publish a number that creates the wrong expectation."
+    ],
+    [
+      "How often should an accountant update website content?",
+      "Review core service pages at least seasonally, especially before busy periods, and update team, process and contact information whenever it changes. Add new articles or resources when they answer a recurring client question or support a service you want to grow. The goal is not constant publishing. It is keeping the pages people actually use accurate, current and useful."
+    ],
+    [
+      "Can a small accounting firm use AI tools on its website?",
+      "AI can help draft FAQs, organize service explanations or suggest questions clients commonly ask, but it should not invent credentials, deadlines, tax rules or firm-specific advice. A human still needs to choose the positioning, check the facts, approve the final wording and make sure sensitive information is handled through the right process. Used that way, AI is a drafting and planning aid, not a substitute for professional judgement."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "BC Office of the Information and Privacy Commissioner: Developing a privacy policy under PIPA",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    },
+    {
+      "name": "W3C WAI: Forms",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Most search results for accountant website design sell template packages, SEO add-ons or generic benefits. This draft instead starts with client-fit decisions, separates personal tax, bookkeeping and advisory needs, gives a concrete page architecture, and treats sensitive-information handoff as a design requirement rather than a disclaimer.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm the article does not imply legal, tax or regulatory advice; final wording should stay at design and marketing level.",
+      "Recheck the BC OIPC and W3C pages shortly before publication in case guidance has changed.",
+      "Confirm all internal links are correct and that /web-design/accountants/ appears exactly once.",
+      "Check that the article contains at least 1,000 words of substantive body copy and that no client work, result or measured uplift is claimed."
+    ],
+    "serpGap": "The visible results lean toward vendor package pages, long feature lists and broad best-practice advice. There is room for a buyer-focused guide that helps an accountant choose positioning, page architecture, enquiry boundaries and local structure before comparing design options.",
+    "sourceUse": [
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "Used for the privacy section's point that organizations should collect only necessary personal information, identify purposes, use reasonable safeguards and be open about handling practices."
+      },
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "Used for the enquiry-form section's point that forms should be labelled clearly, avoid irrelevant or excessive requests and provide useful instructions and error handling."
+      },
+      {
+        "url": "https://www.cpasitesolutions.com/cpa-website-design/",
+        "claim": "Read only for SERP gap analysis; the draft does not copy its phrasing, repeat its package claims or treat design and template breadth as proof of conversion."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-01-28",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/accountants/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "accountants"
+  ],
+  "wordCount": 1589,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 8605,
+      "total_tokens": 19154,
+      "completion_tokens": 10549,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7424
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 7424
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

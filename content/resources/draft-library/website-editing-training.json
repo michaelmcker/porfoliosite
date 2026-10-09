@@ -1,0 +1,146 @@
+{
+  "slug": "website-editing-training",
+  "title": "Who should update your website after launch?",
+  "type": "guide",
+  "description": "A practical guide for Okanagan and small business owners on who should handle website updates after launch, what access levels to ask for, and how to set up a safe editing routine.",
+  "summary": "Most small business websites work best when the owner updates routine fields like hours, service descriptions, and staff changes; a designer handles layout and visual updates; and a developer takes care of integrations, forms, and anything that touches code. The right split depends on your platform, your comfort with technology, and how often your content changes.",
+  "takeaways": [
+    "Owners should handle routine text and image updates in clearly defined CMS fields, not layout changes.",
+    "Designers fit visual and seasonal layout work, while developers handle integrations and structural changes.",
+    "Ask for editor access levels, a staging environment, and a written rollback plan before you agree to any handover arrangement."
+  ],
+  "sections": [
+    {
+      "id": "the-three-roles",
+      "title": "The three roles",
+      "body": "<p>The safest setup usually gives the owner routine content fields, gives a designer visual and layout work, and saves developer time for integrations and structural changes.</p><p>Many owners assume they either manage everything themselves or hand everything over to the person who built the site. The more useful question is which tasks sit comfortably with which skill set. A person who can write a clear paragraph is not necessarily the right person to adjust spacing, and a developer who can connect a form to a customer database is not always the right person to write that paragraph. When those boundaries are clear, updates happen faster and mistakes are easier to undo.</p>"
+    },
+    {
+      "id": "what-the-owner-should-handle",
+      "title": "What the owner should handle",
+      "body": "<p>Owners are usually the right choice for hours, contact details, prices, staff updates, basic blog posts, and simple product or service availability changes.</p><p>These are routine fields inside a content management system. If your site is set up well, changing the holiday hours for a Vernon retail shop or adding a new team member bio should feel like editing a document, not rebuilding a page. The owner knows the information best, and the cost of waiting for someone else to make a small correction can be higher than the task itself. A trades business in Kelowna that needs to update its emergency contact number, for example, should be able to do that without opening a design file.</p>"
+    },
+    {
+      "id": "where-designers-fit",
+      "title": "Where designers fit",
+      "body": "<p>Designers make sense for layout changes, seasonal landing pages, image and typography updates, and anything that alters how the site looks.</p><p>A good designer thinks in terms of visual hierarchy, spacing, and how a change affects the whole page. That is different from knowing which sentence belongs on the page. Suppose you want a new promotional banner for the winter season or a rearranged service section. A designer can make those changes while keeping the site coherent, whereas a well-meaning owner with full access might accidentally change padding, break a responsive layout, or make a page look inconsistent with the rest of the site.</p>"
+    },
+    {
+      "id": "when-you-need-a-developer",
+      "title": "When you need a developer",
+      "body": "<p>A developer is the right call for integrations, forms that send data into other systems, custom functionality, performance work, and changes to the underlying CMS structure.</p><p>Suppose you want enquiries from your website to flow into a booking system, or you need a custom filter for a long list of projects. Those are structural or code-level problems. They belong with someone who can test them properly, roll them back if they fail, and make sure they keep working after the next platform update. Asking a content editor to handle that kind of task usually leads to frustration or fragile workarounds.</p>"
+    },
+    {
+      "id": "choosing-access-levels",
+      "title": "Choosing access levels",
+      "body": "<p>Ask for access levels that match the work: editor access for routine content, designer access for layout, and developer access for structure and integrations. The right split prevents both over-permission and unnecessary bottlenecks.</p><table><caption>Who should handle common website update tasks after launch</caption><thead><tr><th>Task</th><th>Owner</th><th>Designer</th><th>Developer</th></tr></thead><tbody><tr><td>Updating business hours or contact details</td><td>Yes</td><td></td><td></td></tr><tr><td>Writing and publishing a blog post</td><td>Yes</td><td></td><td></td></tr><tr><td>Changing the layout of a service page</td><td></td><td>Yes</td><td></td></tr><tr><td>Replacing seasonal images or typography</td><td></td><td>Yes</td><td></td></tr><tr><td>Connecting a form to an external tool</td><td></td><td></td><td>Yes</td></tr><tr><td>Changing the CMS collection structure</td><td></td><td></td><td>Yes</td></tr><tr><td>Restoring a page from a backup or version history</td><td></td><td>Sometimes</td><td>Yes</td></tr></tbody></table><p>Keep the table simple. If a task sits between two columns, agree on it in writing before launch rather than leaving it to guesswork later.</p>"
+    },
+    {
+      "id": "how-platforms-change-the-split",
+      "title": "How platforms change the split",
+      "body": "<p>Different platforms draw the line between owner, designer, and developer work in different places. Framer's CMS emphasizes on-page and visual editing for content. Webflow offers a visual editor where designers can build and clients can edit within set boundaries. Sanity is headless, which means the editing interface is separate from the website frontend, so the split between content editing and code is especially clear. WordPress has its own editing environment, and the amount of technical skill needed depends heavily on the theme and plugins in use.</p><p>None of these choices is automatically better. A platform with strong visual editing can be perfect for an owner who wants control, or overwhelming if the site has grown complex. The important thing is that the platform match the people who will actually touch the site every week, and that your designer explains where the lines are rather than leaving them vague.</p>"
+    },
+    {
+      "id": "a-practical-training-routine",
+      "title": "A practical training routine",
+      "body": "<p>Here is a training routine I would suggest for an owner who wants to handle routine updates without breaking things. You do not need to master the whole platform; you only need to become comfortable with the handful of tasks you will actually repeat.</p><ol><li>Start on a staging copy or a clearly marked test page, not the live homepage.</li><li>Update the business hours and preview the change before publishing.</li><li>Add a new staff bio and check how it looks on a phone, a tablet, and a desktop.</li><li>Create a new service page using an existing template, then review the page title and description fields.</li><li>Find the version history or rollback option and use it once, so you know it exists before you need it.</li><li>Write down three tasks you tried and note which ones felt unclear or risky.</li></ol><p>That short list is usually enough to reveal whether an owner is comfortable with routine updates or whether they would rather keep a designer on call. It also gives you a concrete way to ask your designer for help: instead of saying the site feels confusing, you can point to the specific step that did not feel safe.</p>"
+    },
+    {
+      "id": "setting-boundaries-before-handover",
+      "title": "Setting boundaries before handover",
+      "body": "<p>Before you agree to a handover, ask for the access roles, staging setup, approval workflow, and rollback plan in writing. If you are evaluating a new <a href=\"/web-design/\">web design</a> partner, this conversation should happen before you sign anything, not after the site is already live.</p><p>Two resources can help you prepare: a <a href=\"/blog/small-business-website-brief/\">small business website brief</a> helps you define what you want the site to do, and a <a href=\"/blog/website-handover-checklist/\">website handover checklist</a> helps you make sure nothing important is left vague. The more specific the brief, the easier it is to tell whether the handover actually matches it. A clear brief also gives you something to come back to if, a few months after launch, you discover that a routine task is harder than anyone expected.</p>"
+    },
+    {
+      "id": "making-the-decision",
+      "title": "Making the decision",
+      "body": "<p>If you update content weekly and it is mostly text and images, train an owner or staff member for those routine fields. If you need frequent layout changes, new integrations, or structural changes, keep a designer and a developer on call for those jobs. Many businesses land somewhere in the middle: the owner handles words and simple swaps, while a designer or developer steps in for anything that changes how the site looks or how it connects to other tools.</p><p>The goal is not to make the owner do everything, and it is not to build in unnecessary dependency either. The goal is a working routine where the right person handles each kind of update, and everyone knows what to do when something breaks. If you are weighing this for your own business, the most useful next step is to <a href=\"/contact/\">start a conversation about what a sensible handover looks like</a> for your specific project.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "What if my designer gives me full access and I break something?",
+      "Ask before launch whether there is a staging environment and a rollback plan. Many platforms keep version history, but it is easier to know this ahead of time than to discover it during a crisis."
+    ],
+    [
+      "Should I pay for ongoing support or handle everything myself?",
+      "It depends on the value of your time and how often things change. If you only update hours once a year, training may be enough. If you add new pages or integrations regularly, a modest support arrangement often costs less than the time you would spend learning to do it yourself."
+    ],
+    [
+      "How do I know which access level I actually need?",
+      "List the tasks you expect to do in a normal month. If they are all text and image swaps inside defined fields, editor access is enough. If you need to rearrange page sections or change colours, you may need designer-level access, though it is often better to leave that to someone trained to do it."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Framer CMS",
+      "url": "https://www.framer.com/cms/"
+    },
+    {
+      "name": "Webflow CMS",
+      "url": "https://webflow.com/cms"
+    },
+    {
+      "name": "Sanity headless CMS",
+      "url": "https://www.sanity.io/headless-cms"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "A clear task-by-role matrix that separates owner editing from designer layout work and developer integrations, plus a practical training exercise owners can use to test their comfort level before committing.",
+    "claimsToRecheckBeforeRelease": [
+      "Verify that internal links to /web-design/, /blog/small-business-website-brief/, /blog/website-handover-checklist/, and /contact/ are correct and live.",
+      "Confirm that the three FAQ entries cover new secondary questions and are not summaries repeated."
+    ],
+    "serpGap": "Most search results for client editing and CMS handover are either platform-specific tutorials or long general guides. This article gives a platform-neutral task matrix and a concrete training routine for owners deciding whether to manage their own updates.",
+    "sourceUse": [
+      {
+        "url": "https://www.framer.com/cms/",
+        "claim": "Framer offers visual, on-page CMS editing with role-based access."
+      },
+      {
+        "url": "https://webflow.com/cms",
+        "claim": "Webflow provides a visual editor where clients can edit content within defined boundaries."
+      },
+      {
+        "url": "https://www.sanity.io/headless-cms",
+        "claim": "Sanity is a headless CMS that separates content editing from the website frontend."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-11-25",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Buying and ownership",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "small-business-website-brief",
+    "website-handover-checklist"
+  ],
+  "services": [],
+  "wordCount": 1442,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 22987,
+      "total_tokens": 29478,
+      "completion_tokens": 6491,
+      "prompt_tokens_details": {
+        "cached_tokens": 20822
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3703
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3703
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  }
+}

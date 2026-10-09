@@ -1,3 +1,11 @@
+# Complete private editorial library, October 8, 2026
+
+- 60 complete drafts under content/resources/draft-library, separate from the public article loader and approval queue. Eight slots finish 2026 and 52 cover 2027; dates remain editable.
+- Canonical calendars include draft paths, actual article headings, FAQ questions, word counts and commercial destinations. Existing 12 approved resources retain their original release schedule.
+- Private reader supports search, topic filtering, responsive tables and local related-article references; exports include individual JSON/Markdown, all-articles.md and calendar.csv.
+- scripts/check-draft-library.py validates structure, links, claim-sensitive language and duplication. tests/draft-library.test.mjs guards completeness and publication isolation.
+- The existing daily publishing heartbeat refreshes saved drafts near release. Research, API records and draft source are excluded from production.
+
 # Dated resources and contact, October 8, 2026
 
 - Resources is the public umbrella at /blog/. Visible published/updated dates match schema; the index shows dates and content types.

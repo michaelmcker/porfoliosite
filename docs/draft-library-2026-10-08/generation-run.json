@@ -1,0 +1,757 @@
+[
+  {
+    "id": "draft-01",
+    "slug": "calls-or-forms-service-website",
+    "state": "written",
+    "words": 1346,
+    "usage": {
+      "prompt_tokens": 10628,
+      "total_tokens": 13476,
+      "completion_tokens": 2848,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 248
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 248
+      }
+    }
+  },
+  {
+    "id": "draft-03",
+    "slug": "donor-film-planning",
+    "state": "written",
+    "words": 1448,
+    "usage": {
+      "prompt_tokens": 9880,
+      "total_tokens": 19343,
+      "completion_tokens": 9463,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6621
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6621
+      }
+    }
+  },
+  {
+    "id": "draft-05",
+    "slug": "website-subscription-vs-upfront-build",
+    "state": "written",
+    "words": 1863,
+    "usage": {
+      "prompt_tokens": 13903,
+      "total_tokens": 17572,
+      "completion_tokens": 3669,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 305
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 305
+      }
+    }
+  },
+  {
+    "id": "draft-04",
+    "slug": "small-business-website-brief",
+    "state": "written",
+    "words": 1664,
+    "usage": {
+      "prompt_tokens": 10735,
+      "total_tokens": 17970,
+      "completion_tokens": 7235,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4252
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 4252
+      }
+    }
+  },
+  {
+    "id": "draft-02",
+    "slug": "small-business-branding-deliverables",
+    "state": "written",
+    "words": 1365,
+    "usage": {
+      "prompt_tokens": 4882,
+      "total_tokens": 16150,
+      "completion_tokens": 11268,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8713
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 8713
+      }
+    }
+  },
+  {
+    "id": "draft-09",
+    "slug": "plumber-website-design",
+    "state": "written",
+    "words": 1615,
+    "usage": {
+      "prompt_tokens": 13739,
+      "total_tokens": 23304,
+      "completion_tokens": 9565,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6773
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6773
+      }
+    }
+  },
+  {
+    "id": "draft-06",
+    "slug": "before-buying-ai-workflow",
+    "state": "written",
+    "words": 1461,
+    "usage": {
+      "prompt_tokens": 19994,
+      "total_tokens": 25829,
+      "completion_tokens": 5835,
+      "prompt_tokens_details": {
+        "cached_tokens": 7916
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3406
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3406
+      }
+    }
+  },
+  {
+    "id": "draft-08",
+    "slug": "website-handover-checklist",
+    "state": "written",
+    "words": 1487,
+    "usage": {
+      "prompt_tokens": 18900,
+      "total_tokens": 25052,
+      "completion_tokens": 6152,
+      "prompt_tokens_details": {
+        "cached_tokens": 18899
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3188
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3188
+      }
+    }
+  },
+  {
+    "id": "draft-07",
+    "slug": "holiday-hours-website-checklist",
+    "state": "written",
+    "words": 1674,
+    "usage": {
+      "prompt_tokens": 15391,
+      "total_tokens": 24747,
+      "completion_tokens": 9356,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6413
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6413
+      }
+    }
+  },
+  {
+    "id": "draft-11",
+    "slug": "electrician-website-design",
+    "state": "written",
+    "words": 1413,
+    "usage": {
+      "prompt_tokens": 10130,
+      "total_tokens": 17314,
+      "completion_tokens": 7184,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4460
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 4460
+      }
+    }
+  },
+  {
+    "id": "draft-10",
+    "slug": "framer-webflow-custom-website",
+    "state": "written",
+    "words": 1606,
+    "usage": {
+      "prompt_tokens": 26851,
+      "total_tokens": 30598,
+      "completion_tokens": 3747,
+      "prompt_tokens_details": {
+        "cached_tokens": 24449
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 368
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 368
+      }
+    }
+  },
+  {
+    "id": "draft-12",
+    "slug": "accountant-website-design",
+    "state": "written",
+    "words": 1589,
+    "usage": {
+      "prompt_tokens": 8605,
+      "total_tokens": 19154,
+      "completion_tokens": 10549,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7424
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 7424
+      }
+    }
+  },
+  {
+    "id": "draft-13",
+    "slug": "kelowna-branding-partners",
+    "state": "written",
+    "words": 1478,
+    "usage": {
+      "prompt_tokens": 15128,
+      "total_tokens": 24799,
+      "completion_tokens": 9671,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7058
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 7058
+      }
+    }
+  },
+  {
+    "id": "draft-15",
+    "slug": "hotel-website-direct-booking",
+    "state": "written",
+    "words": 1997,
+    "usage": {
+      "prompt_tokens": 16680,
+      "total_tokens": 21314,
+      "completion_tokens": 4634,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 806
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 806
+      }
+    }
+  },
+  {
+    "id": "draft-16",
+    "slug": "landscaping-website-seasonal-demand",
+    "state": "written",
+    "words": 1382,
+    "usage": {
+      "prompt_tokens": 11587,
+      "total_tokens": 18222,
+      "completion_tokens": 6635,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4089
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 4089
+      }
+    }
+  },
+  {
+    "id": "draft-18",
+    "slug": "website-enquiry-follow-up",
+    "state": "written",
+    "words": 1138,
+    "usage": {
+      "prompt_tokens": 9924,
+      "total_tokens": 15804,
+      "completion_tokens": 5880,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3787
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3787
+      }
+    }
+  },
+  {
+    "id": "draft-19",
+    "slug": "winery-website-visitor-planning",
+    "state": "written",
+    "words": 1297,
+    "usage": {
+      "prompt_tokens": 11549,
+      "total_tokens": 19789,
+      "completion_tokens": 8240,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5354
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 5354
+      }
+    }
+  },
+  {
+    "id": "draft-14",
+    "slug": "law-firm-website-design",
+    "state": "written",
+    "words": 1411,
+    "usage": {
+      "prompt_tokens": 14792,
+      "total_tokens": 25038,
+      "completion_tokens": 10246,
+      "prompt_tokens_details": {
+        "cached_tokens": 13745
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7159
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 7159
+      }
+    }
+  },
+  {
+    "id": "draft-21",
+    "slug": "vacation-rental-direct-booking-website",
+    "state": "written",
+    "words": 1245,
+    "usage": {
+      "prompt_tokens": 13497,
+      "total_tokens": 16761,
+      "completion_tokens": 3264,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 977
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 977
+      }
+    }
+  },
+  {
+    "id": "draft-17",
+    "slug": "framer-small-business-websites",
+    "state": "written",
+    "words": 1647,
+    "usage": {
+      "prompt_tokens": 20123,
+      "total_tokens": 28428,
+      "completion_tokens": 8305,
+      "prompt_tokens_details": {
+        "cached_tokens": 17336
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5302
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 5302
+      }
+    }
+  },
+  {
+    "id": "draft-22",
+    "slug": "dental-website-design",
+    "state": "written",
+    "words": 1711,
+    "usage": {
+      "prompt_tokens": 12165,
+      "total_tokens": 17462,
+      "completion_tokens": 5297,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2310
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 2310
+      }
+    }
+  },
+  {
+    "id": "draft-23",
+    "slug": "hvac-website-design",
+    "state": "written",
+    "words": 1887,
+    "usage": {
+      "prompt_tokens": 11917,
+      "total_tokens": 15824,
+      "completion_tokens": 3907,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 570
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 570
+      }
+    }
+  },
+  {
+    "id": "draft-25",
+    "slug": "physiotherapy-website-design",
+    "state": "written",
+    "words": 1762,
+    "usage": {
+      "prompt_tokens": 10592,
+      "total_tokens": 13771,
+      "completion_tokens": 3179,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 272
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 272
+      }
+    }
+  },
+  {
+    "id": "draft-24",
+    "slug": "charity-website-platforms",
+    "state": "written",
+    "words": 1619,
+    "usage": {
+      "prompt_tokens": 20546,
+      "total_tokens": 24515,
+      "completion_tokens": 3969,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 923
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 923
+      }
+    }
+  },
+  {
+    "id": "draft-26",
+    "slug": "website-social-video-content",
+    "state": "written",
+    "words": 1225,
+    "usage": {
+      "prompt_tokens": 9490,
+      "total_tokens": 13070,
+      "completion_tokens": 3580,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1197
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 1197
+      }
+    }
+  },
+  {
+    "id": "draft-20",
+    "slug": "webflow-small-business-websites",
+    "state": "written",
+    "words": 1425,
+    "usage": {
+      "prompt_tokens": 30446,
+      "total_tokens": 36072,
+      "completion_tokens": 5626,
+      "prompt_tokens_details": {
+        "cached_tokens": 18368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3034
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3034
+      }
+    }
+  },
+  {
+    "id": "draft-27",
+    "slug": "restaurant-website-design",
+    "state": "written",
+    "words": 1843,
+    "usage": {
+      "prompt_tokens": 15388,
+      "total_tokens": 19702,
+      "completion_tokens": 4314,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1021
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 1021
+      }
+    }
+  },
+  {
+    "id": "draft-31",
+    "slug": "roofing-website-design",
+    "state": "cached"
+  },
+  {
+    "id": "draft-32",
+    "slug": "medical-practice-website-design",
+    "state": "cached"
+  },
+  {
+    "id": "draft-33",
+    "slug": "good-small-business-website-design",
+    "state": "cached"
+  },
+  {
+    "id": "draft-34",
+    "slug": "car-dealer-website-design",
+    "state": "cached"
+  },
+  {
+    "id": "draft-35",
+    "slug": "financial-advisor-website-design",
+    "state": "cached"
+  },
+  {
+    "id": "draft-36",
+    "slug": "small-business-ai-search",
+    "state": "cached"
+  },
+  {
+    "id": "draft-37",
+    "slug": "sanity-small-business-cms",
+    "state": "cached"
+  },
+  {
+    "id": "draft-38",
+    "slug": "website-wrong-enquiries",
+    "state": "cached"
+  },
+  {
+    "id": "draft-39",
+    "slug": "medical-spa-website-design",
+    "state": "cached"
+  },
+  {
+    "id": "draft-40",
+    "slug": "rebrand-redesign-or-copy",
+    "state": "cached"
+  },
+  {
+    "id": "draft-41",
+    "slug": "appliance-repair-website-lessons",
+    "state": "cached"
+  },
+  {
+    "id": "draft-42",
+    "slug": "self-hosted-custom-website-ownership",
+    "state": "cached"
+  },
+  {
+    "id": "draft-43",
+    "slug": "private-school-website-design",
+    "state": "cached"
+  },
+  {
+    "id": "draft-44",
+    "slug": "website-photography-video-animation",
+    "state": "cached"
+  },
+  {
+    "id": "draft-45",
+    "slug": "charity-donation-page",
+    "state": "cached"
+  },
+  {
+    "id": "draft-46",
+    "slug": "framer-webflow-local-seo",
+    "state": "cached"
+  },
+  {
+    "id": "draft-47",
+    "slug": "website-before-paid-ads",
+    "state": "cached"
+  },
+  {
+    "id": "draft-48",
+    "slug": "ai-skills-versus-prompts",
+    "state": "cached"
+  },
+  {
+    "id": "draft-49",
+    "slug": "boutique-accommodation-website-design",
+    "state": "cached"
+  },
+  {
+    "id": "draft-50",
+    "slug": "useful-location-pages",
+    "state": "cached"
+  },
+  {
+    "id": "draft-51",
+    "slug": "professional-services-homepage-design",
+    "state": "cached"
+  },
+  {
+    "id": "draft-52",
+    "slug": "compare-website-quotes",
+    "state": "cached"
+  },
+  {
+    "id": "draft-53",
+    "slug": "automate-before-more-admin",
+    "state": "cached"
+  },
+  {
+    "id": "draft-28",
+    "slug": "property-management-website-design",
+    "state": "written",
+    "words": 1385,
+    "usage": {
+      "prompt_tokens": 11638,
+      "total_tokens": 18251,
+      "completion_tokens": 6613,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3928
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3928
+      }
+    }
+  },
+  {
+    "id": "draft-30",
+    "slug": "ai-service-business-website",
+    "state": "written",
+    "words": 1596,
+    "usage": {
+      "prompt_tokens": 21355,
+      "total_tokens": 24965,
+      "completion_tokens": 3610,
+      "prompt_tokens_details": {
+        "cached_tokens": 9277
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 566
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 566
+      }
+    }
+  },
+  {
+    "id": "draft-56",
+    "slug": "customer-project-content",
+    "state": "cached"
+  },
+  {
+    "id": "draft-57",
+    "slug": "custom-workflow-maintenance",
+    "state": "cached"
+  },
+  {
+    "id": "draft-58",
+    "slug": "website-measurement-budget",
+    "state": "cached"
+  },
+  {
+    "id": "draft-55",
+    "slug": "website-editing-training",
+    "state": "written",
+    "words": 2131,
+    "usage": {
+      "prompt_tokens": 24009,
+      "total_tokens": 32416,
+      "completion_tokens": 8407,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4753
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 4753
+      }
+    }
+  },
+  {
+    "id": "draft-60",
+    "slug": "small-business-website-growth-plan",
+    "state": "cached"
+  },
+  {
+    "id": "draft-29",
+    "slug": "retail-website-platforms",
+    "state": "written",
+    "words": 1324,
+    "usage": {
+      "prompt_tokens": 24927,
+      "total_tokens": 33634,
+      "completion_tokens": 8707,
+      "prompt_tokens_details": {
+        "cached_tokens": 12849
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6276
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6276
+      }
+    }
+  }
+]

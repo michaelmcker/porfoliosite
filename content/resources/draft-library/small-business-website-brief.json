@@ -1,0 +1,133 @@
+{
+  "slug": "small-business-website-brief",
+  "title": "How to brief a small-business website for 2027",
+  "type": "guide",
+  "description": "A practical brief template for owners planning a 2027 website: priority customer action, service hierarchy, assets, integrations, editing ownership, budget and sign-off, plus a completed electrician example.",
+  "summary": "A useful small-business website brief names the priority customer action, ranks the services worth selling, lists real pages and assets, states integrations and editing responsibility, and sets budget and sign-off expectations. It gives a designer enough context to quote accurately instead of guessing at scope, platform and content.",
+  "takeaways": [
+    "Brief the job you want the site to do first: the customer action, the service priority and the success measure.",
+    "Give the designer real assets, existing URLs, integrations and the name of the person who will edit the site.",
+    "Use the electrician sample brief as a worksheet, then send it to a shortlist so quotes are comparable."
+  ],
+  "sections": [
+    {
+      "id": "brief-is-buying-decision",
+      "title": "A brief is a buying decision, not a wish list",
+      "body": "<p>A useful small-business website brief does not try to sound impressive. It tells the person pricing the job what the site has to accomplish, what already exists, what systems it must talk to and who will be responsible for changing it later. That is the difference between a quote built on facts and a quote padded with assumptions.</p><p>When I ask an owner for a brief, I am really asking for a set of decisions. If those decisions are still floating around inside the company, the designer has to guess. Guessing is expensive. It shows up later as extra pages, unclear copy, missing photography, platform arguments and a launch that keeps moving.</p><p>For most Okanagan service businesses, the right brief is short enough to complete in a working session or two, but specific enough that two different designers would understand the same project. If you want help with that kind of planning, start with my <a href=\"/web-design/\">web design</a> work rather than with a template alone.</p>"
+    },
+    {
+      "id": "customer-action",
+      "title": "Start with the customer action you want",
+      "body": "<p>The first thing to write down is the main action you want a visitor to take. For one business that might be a phone call. For another it might be a quote request, a booked estimate, a showroom visit or an email asking for availability. If everything is important, the website will feel like a brochure with too many doors.</p><p>Then write the second and third actions. A good site can support more than one outcome, but the hierarchy matters. The homepage, the main navigation and the strongest calls to action should usually serve the first choice. Secondary actions can live in the right places without competing for the same attention.</p><p>It also helps to name what you do not want the site to do. Suppose an owner knows that online payment would create administrative problems, or that a complex configurator would produce bad requests. Saying that early is useful. It prevents the design conversation from drifting toward features that look exciting in a portfolio and create work in the business.</p>"
+    },
+    {
+      "id": "service-hierarchy",
+      "title": "Rank the services before you design the pages",
+      "body": "<p>Small businesses often offer more than their websites explain well. A landscaping company may also handle snow removal. An electrician may do service calls, renovation work and a smaller amount of commercial maintenance. A studio may sell strategy, design and ongoing support. The brief should say which of those deserves the most space and the clearest path to enquiry.</p><p>This is not only a sitemap question. It affects photography, proof, page length, calls to action and search structure. <a href=\"https://developers.google.com/search/docs/fundamentals/seo-starter-guide\">Google's own SEO starter guide</a> still points back to making pages easy for people and search engines to understand. If your best service is buried under three pages of generalities, both have to work harder than they should.</p><p>A practical way to do this is to sort services into three groups: the work you want more of, the work you will keep because it is profitable or steady, and the work you mention only to avoid confusion. That gives the designer a clear instruction about emphasis instead of a demand that everything be featured equally.</p>"
+    },
+    {
+      "id": "assets-and-existing-pages",
+      "title": "List the real assets and the pages you already have",
+      "body": "<p>Before asking for a new look, gather what is actually usable. That includes the logo files, brand colours, fonts if you have them, photography, video, diagrams, downloadable documents, staff bios, service descriptions and any copy that still sounds like the business. It also includes the existing website itself. Old pages often contain service details, location language and customer questions that should not be thrown out without review.</p><p>Make a simple inventory with three columns: keep, improve and remove. A page may have the wrong design but the right explanation. A photo may be unusable while the testimonial beside it is still strong. An old PDF may be ugly and still be the only place a technical specification is written clearly.</p><p>This is also the moment to collect examples of sites you like, but be specific about why. \"I like the clean look\" is weak. \"I like how this page separates emergency repair from planned installation\" is useful. Good reference points help a designer understand taste, while vague mood boards usually produce a prettier version of the same problem.</p>"
+    },
+    {
+      "id": "integrations-and-editing-owner",
+      "title": "Name the integrations and the editing owner",
+      "body": "<p>Websites rarely sit alone for long. Your brief should say whether enquiries need to go into a CRM, whether email signups must sync with a newsletter platform, whether bookings need to connect to a calendar and whether analytics or call tracking are already in use. If you do not know, say that too. \"We think our form entries go somewhere\" is still a useful fact if it is written honestly.</p><p>Just as important is the editing owner. Who will update services, add photos, post news, change staff profiles or review enquiries? One person should be named, even if several people will help. Without that, the site is designed around an imaginary team and then handed to a business that does not have the time, skill or interest to maintain it.</p><p>These details shape platform and build decisions. They also prevent a common small-business problem: a beautiful site that depends on a workflow nobody asked for. The best choice for one owner can be the wrong choice for another, even when both need a professional-looking website.</p>"
+    },
+    {
+      "id": "budget-and-sign-off",
+      "title": "Put budget assumptions and sign-off in writing",
+      "body": "<p>A brief does not need to publish your maximum budget, but it should explain the assumptions behind the project. Are you expecting a compact brochure site, a rebuild of an existing structure, custom copywriting, new photography, search work, hosting changes or ongoing support? If those items are left vague, every quote becomes hard to compare.</p><p>I also like to see the approval path named. Who signs off on the sitemap, the design, the copy and the final launch? If the owner approves strategy but a manager approves page copy, say so. If a committee has to review the website, agree who consolidates its feedback and who makes the final decision before production begins.</p><p>This is where owners can save themselves real frustration. A clear brief makes it much easier to <a href=\"/blog/compare-website-quotes/\">compare website quotes</a> because each designer is responding to the same scope. If cost is still the open question, it also helps to understand the broader <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost</a> picture before asking for fixed numbers.</p>"
+    },
+    {
+      "id": "sample-electrician-brief",
+      "title": "A sample brief for an electrician",
+      "body": "<p>Suppose a hypothetical Okanagan electrician wants a new website for 2027. The owner is busy, the current site is old, and the business gets a mix of emergency calls, renovation work and referrals from contractors. Here is the kind of brief that would give a designer enough to work with.</p><table><caption>Sample small-business website brief</caption><thead><tr><th>Brief item</th><th>What to decide</th><th>Electrician example</th></tr></thead><tbody><tr><td>Primary customer action</td><td>The one outcome the site should make easiest</td><td>Request a service call or estimate by phone or form</td></tr><tr><td>Service hierarchy</td><td>Which work gets the strongest pages and calls to action</td><td>Emergency and service repair first, renovations second, light commercial third</td></tr><tr><td>Audience</td><td>Who the site is really for</td><td>Homeowners who need help now, plus contractors looking for a reliable subtrade</td></tr><tr><td>Existing assets</td><td>What can be reused</td><td>Logo, truck photography, several before-and-after photos, licence and insurance details, current service list</td></tr><tr><td>Pages to keep or rebuild</td><td>Current URLs and content worth preserving</td><td>Service pages, contact page and any local pages that still bring enquiries</td></tr><tr><td>Integrations</td><td>Systems the website must connect with</td><td>Form enquiries to email, call tracking if used, optional online estimate request</td></tr><tr><td>Editing owner</td><td>Who maintains the site after launch</td><td>Office manager updates photos, reviews and seasonal notices</td></tr><tr><td>Budget assumptions</td><td>What the owner expects to be included</td><td>Design, build, basic copy cleanup, search foundations, launch support</td></tr><tr><td>Sign-off</td><td>Who approves each stage</td><td>Owner approves structure and design; office manager proofreads service details</td></tr></tbody></table><p>The point is not that every electrician needs this exact site. The point is that the brief turns a vague desire for something more professional into decisions about priority, proof, content, ownership and scope.</p>"
+    },
+    {
+      "id": "send-and-ask",
+      "title": "Send the brief, then ask better questions",
+      "body": "<p>Once the brief is written, send it to a small shortlist rather than every designer you can find. Then use the replies to test understanding. A good response will reflect your priorities back to you, ask about the missing pieces and explain what would change the price. A weak response will ignore the brief and sell a standard package.</p><p>If you are planning a 2027 website, this is a good time to get the brief down while the decisions are fresh. If you want a second set of eyes on the brief, the service hierarchy or the questions to ask before you sign, <a href=\"/contact/\">contact me</a> and we can look at the project properly.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should I write the brief before asking for quotes, or can the designer help create it?",
+      "Write a first version before asking for quotes. A designer can help refine it, but the owner still needs to decide the customer action, service priority, approval path and what content already exists."
+    ],
+    [
+      "How detailed should a small-business website brief be?",
+      "It should be detailed enough that two designers would understand the same project. That does not mean it has to be long. It means the scope, assets, integrations, editing owner and sign-off path are clear."
+    ],
+    [
+      "What if I do not know which website platform or CMS I need?",
+      "Say that in the brief. Describe how you expect to edit the site, what systems it needs to connect with and what kind of support you want. Then ask each designer to explain the platform they recommend and why."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Google SEO starter guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Turns a website brief into a buyer decision: customer action, service hierarchy, real assets, existing URLs, integrations, editing owner, budget assumptions and sign-off, with a completed electrician sample.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm the internal links still resolve to current pages before release.",
+      "Check that no AI-service pricing appears, since this is not an AI buying article.",
+      "Verify that the Google SEO starter guide still gives the same basic advice about making content easy to crawl, index and understand.",
+      "Ensure the electrician example remains clearly hypothetical and does not imply a real client."
+    ],
+    "serpGap": "Competitors mostly offer generic website-brief templates. This article is an owner-facing decision brief for 2027 with a concrete service-business example, specific sign-off questions and comparable-quote advice.",
+    "sourceUse": [
+      {
+        "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "claim": "Google still frames SEO around making content easy for people and search engines to crawl, index and understand, rather than around a secret ranking formula."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2026-12-03",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Buying and ownership",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "website-handover-checklist",
+    "compare-website-quotes"
+  ],
+  "services": [],
+  "wordCount": 1660,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 10735,
+      "total_tokens": 17970,
+      "completion_tokens": 7235,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4252
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 4252
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "If a committee has to review the website, that should be known before the designer proposes a simple, direct voice that the committee will slowly complicate.",
+      "replacement": "If a committee has to review the website, agree who consolidates its feedback and who makes the final decision before production begins."
+    }
+  ]
+}

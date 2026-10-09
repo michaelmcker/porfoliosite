@@ -1,0 +1,56 @@
+{
+  "issues": [
+    {
+      "path": "sections.2.body",
+      "original": "This is also where most template websites fail.",
+      "replacement": "This is also where many template websites fall short.",
+      "reason": "\"Most\" is an unsupported empirical claim; narrow it to a defensible opinion."
+    },
+    {
+      "path": "sections.8.body",
+      "original": "Different visitors need different pages, and the fastest way to waste a website budget is to build one page for everyone.",
+      "replacement": "Different visitors need different pages, and one common way to waste a website budget is to build a single page for every kind of visitor.",
+      "reason": "\"The fastest way\" is an unsupported universal superlative; soften to a common pattern without weakening the advice."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Practical pre-hiring and pre-launch guidance for Okanagan HVAC owners: what the first screen must do, how to structure repair/maintenance/replacement pages, and what facts to verify before a designer writes anything.",
+    "specificity": "High. Uses the Okanagan, BC licensing verification through Technical Safety BC, named service towns, and distinct page structures for three buyer journeys.",
+    "evidence": "Two relevant sources cited. Technical Safety BC supports the licensing-verification advice; Google's local ranking guidance loosely supports the FAQ on town pages. No invented tests, quotes or uplift figures.",
+    "voice": "Michael's voice comes through: answer-first sections, plain language for busy owners, honest tradeoffs about emergency coverage and service zones, and Canadian spelling.",
+    "usefulAsset": "Yes. A self-contained buying and briefing guide, especially the owner-verification checklist and the table matching page types to customer states of mind."
+  },
+  "slug": "hvac-website-design",
+  "applied": [
+    {
+      "path": "sections.2.body",
+      "original": "This is also where most template websites fail.",
+      "replacement": "This is also where many template websites fall short.",
+      "reason": "\"Most\" is an unsupported empirical claim; narrow it to a defensible opinion."
+    },
+    {
+      "path": "sections.8.body",
+      "original": "Different visitors need different pages, and the fastest way to waste a website budget is to build one page for everyone.",
+      "replacement": "Different visitors need different pages, and one common way to waste a website budget is to build a single page for every kind of visitor.",
+      "reason": "\"The fastest way\" is an unsupported universal superlative; soften to a common pattern without weakening the advice."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1892,
+  "usage": {
+    "prompt_tokens": 7942,
+    "total_tokens": 9722,
+    "completion_tokens": 1780,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1431
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 1431
+    }
+  }
+}

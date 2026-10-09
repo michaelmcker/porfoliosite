@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Practical 2027 planning guide for plumber websites, focused on getting found locally and handing searchers to a dispatcher cleanly.",
+    "specificity": "Strong. Splits emergency from planned work, names concrete page architecture, intake fields, photography guidance, and a decision worksheet.",
+    "evidence": "Adequate. Two official Google sources are cited for local ranking and SEO fundamentals; design advice is framed as recommendation, not claimed outcome.",
+    "voice": "Consistent with Michael. Conversational, Canadian spelling, no corporate padding, honest about tradeoffs, no invented client stories or quotes.",
+    "usefulAsset": "Yes. A busy plumbing owner could act on the page structure, intake checklist, and 2027 worksheet without needing more context."
+  },
+  "slug": "plumber-website-design",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1615,
+  "usage": {
+    "prompt_tokens": 9038,
+    "total_tokens": 9515,
+    "completion_tokens": 477,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 281
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 281
+    }
+  }
+}

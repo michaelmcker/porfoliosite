@@ -1,0 +1,148 @@
+{
+  "slug": "physiotherapy-website-design",
+  "title": "A physiotherapy website should help someone choose their first appointment",
+  "type": "guide",
+  "description": "A practical guide to physiotherapy website design: what patients need to see before booking, how to handle intake safely, and which choices suit small independent clinics versus larger practices.",
+  "summary": "A physiotherapy website wins when it helps a specific person choose a first appointment with a specific practitioner. This guide covers the five decisions patients make before booking, the intake choices that protect privacy, and the page patterns that fit independent Okanagan clinics.",
+  "takeaways": [
+    "Structure the site around one job: helping a nervous, busy person choose a first appointment with the right practitioner.",
+    "Show condition and service pages clearly, but keep the deepest pages about people, because patients are choosing a practitioner, not a brand.",
+    "Treat every form as a privacy decision: collect the minimum, explain why, and route sensitive health history through the clinic's own approved system."
+  ],
+  "sections": [
+    {
+      "id": "start-with-the-first-appointment",
+      "title": "Start with the first appointment",
+      "body": "<p>A physiotherapy website has one job most clinics underprice. It has to help a specific person choose their first appointment with a specific practitioner. Everything else, the blog, the team photos, the Instagram feed, sits downstream of that one decision.</p><p>That means the page needs to do three things at once. It needs to look like a clinic a reasonable person would trust. It needs to answer the practical questions people have before they commit an hour and a fee. And it needs to hand them off to a booking system without making them re-enter everything or wonder where their information went. A good <a href=\"/web-design/physiotherapy/\">physiotherapy website design</a> is really a first-appointment design.</p><p>A clinic website can easily become organised around internal service labels instead of the patient’s first-appointment questions. They lead with the clinic brand, the technique list, and a wall of service pages, then hide the actual people and the actual next step. Most people arriving at a physiotherapy website are not browsing for pleasure. They are often in pain, short on time, and unsure whether physiotherapy is the right kind of care for what they have.</p>"
+    },
+    {
+      "id": "what-the-page-has-to-answer",
+      "title": "What the page has to answer quickly",
+      "body": "<p>When someone lands on a clinic's home page, they are making a fast set of judgments. Is this place for someone like me, with my problem, at my stage of life. Does anyone here look like they would actually listen. Can I get in without a long wait, and is the location and parking workable. Is this going to be awkward.</p><p>Those are mostly questions of fit, not questions of marketing. A clear head photo with a name and a short human line does more work than a paragraph of technique names. A visible address, hours, and a real parking note do more than another stock photo of a treatment table. The page's visual craft still matters, because beauty signals care and standards, but the craft should be in service of making these judgments easy.</p>"
+    },
+    {
+      "id": "before-the-first-appointment",
+      "title": "Fees, insurance and the booking handoff",
+      "body": "<p>The practical questions have their own weight. People want to know roughly what a first appointment costs, how long it is, and whether the clinic bills extended health benefits directly or expects the patient to submit receipts. They do not need a full fee schedule on the home page. They need enough to decide whether calling is worth their time.</p><p>The handoff to booking is a common point where clinic websites create unnecessary friction. The choice is between sending patients to an external booking tool, embedding it, and using a simple enquiry form. Each has a real tradeoff. An external tool is reliable and maintained by someone else, but it moves the patient off your site and adds a second brand to the experience. An embedded tool keeps them on your page but depends on the tool's design. A simple form keeps everything in your control but adds a manual step for your front desk. For a small independent clinic, a clean form plus a fast human reply is often the most honest and least fragile option. For a busier practice, an embedded tool usually earns its complexity.</p>"
+    },
+    {
+      "id": "care-offered-and-practitioner-fit",
+      "title": "Care offered and practitioner fit",
+      "body": "<p>The clinical pages on a physiotherapy site tend to split into two kinds. There are condition and service pages, like back pain, post-surgical rehab, pelvic health, or sports injury. Then there are practitioner pages. Patients use the first kind to confirm the clinic can help with their problem, and the second kind to choose who they want in the room.</p><p>Service pages should be written for the patient, not for other physiotherapists. Name the problem the way the patient would name it, say who the service tends to suit, and say plainly what a first visit involves. Keep it educational, not diagnostic. A page can tell someone what physiotherapy generally does for a knee injury without telling them what their specific knee needs.</p><p>Practitioner pages are where the trust gets built, and they are usually the weakest pages on the site. A name, a credential string, and a stock headshot is not enough. A short plain-language paragraph about how that person works, what they pay attention to, and who tends to click with them does far more. The deeper pages on a physio site should be about the people.</p>"
+    },
+    {
+      "id": "page-patterns-for-different-patients",
+      "title": "Page patterns for different patients",
+      "body": "<table><caption>How the same clinic site can serve patients in different situations</caption><thead><tr><th>Patient situation</th><th>What they need to see first</th><th>Page pattern that fits</th></tr></thead><tbody><tr><td>In pain, unsure what kind of care they need</td><td>Reassurance, plain language, a low-pressure next step</td><td>Home page plus a short is-this-for-me page</td></tr><tr><td>Knows they want physio, comparing clinics</td><td>Practitioner fit, fees, location, booking ease</td><td>Strong team pages and a clear practical-info block</td></tr><tr><td>Referred for a specific condition</td><td>Confirmation the clinic handles that condition well</td><td>A dedicated condition page with a human tone</td></tr><tr><td>Returning or ongoing patient</td><td>Fast booking, the right practitioner, minimal friction</td><td>Persistent booking link and a simple contact route</td></tr></tbody></table><p>The point of the table is that a single template rarely serves all four rows well. A clinic does not need four websites. It needs a home page and a small set of deeper pages that let each kind of visitor get to their own next step without wading through someone else's.</p>"
+    },
+    {
+      "id": "a-worked-intake-example",
+      "title": "A worked intake example",
+      "body": "<p>Suppose a small independent clinic in the Okanagan wants a website intake form, with no online booking tool yet. The form should collect the minimum needed to have a useful first conversation. A reasonable set of fields looks like this:</p><ul><li>Preferred first name</li><li>Best way to reach you, with a choice of phone, text or email</li><li>Which practitioner or service you are hoping to see, with a not-sure option</li><li>A short line asking what brings you in, in the patient's own words</li><li>Preferred days or times, stated loosely</li><li>An optional line for anything the front desk should know before calling</li></ul><p>Notice what is not there. No health history checklist, no symptom severity scales, no insurance policy numbers, no consent to anything beyond being contacted. A public website form is a bad place to collect a detailed case history. It creates privacy risk and makes the form feel heavier than it needs to be. The detailed intake belongs inside the clinic's own system, after the relationship has started.</p>"
+    },
+    {
+      "id": "collecting-information-safely",
+      "title": "Collecting information without overcollecting",
+      "body": "<p>Every field on a form is a privacy decision, and clinics in British Columbia handle personal information under real obligations. The practical version is simple. Decide the purpose of the form, collect only what that purpose needs, tell the patient what will happen with it, and make sure the people who see it are supposed to.</p><p>For a physiotherapy clinic, the safest default is to treat the website form as an introduction, not a record. If a service genuinely needs more detail up front, that is usually a sign the detail should be gathered by phone or inside a proper clinical system, not in a general-purpose web form. When in doubt, collect less and respond faster.</p>"
+    },
+    {
+      "id": "what-id-ask-a-designer-for",
+      "title": "What I would ask a designer for",
+      "body": "<p>If I were helping a clinic plan this, I would start with the first-appointment test and work backwards. Show me the page a worried new patient sees first, and tell me the three things they can do from it. Show me a practitioner page and tell me why a patient would pick that person. Show me the booking handoff and every piece of information the form asks for, with the reason for each one.</p><p>The tradeoffs are real. A beautiful custom design costs more than a template, but a generic template makes an independent clinic look interchangeable, which makes it harder to stand out from the clinic down the street. A fully integrated booking system reduces front-desk work but adds cost, another vendor, and another thing that can break. An educational content library can build trust over time, but it is easy to publish generic health articles that say nothing and help no one. The right answer depends on the clinic's size, how full its schedule is, and how much the front desk can actually take on.</p><p>The broader <a href=\"/web-design/\">web design</a> principles are the same ones I use anywhere. What changes for physiotherapy is how personal the decision is and how much the site has to respect the difference between helping someone choose care and giving them care.</p>"
+    },
+    {
+      "id": "a-local-next-step",
+      "title": "A local next step",
+      "body": "<p>For an independent clinic in Kelowna, Vernon or elsewhere in the Okanagan, the useful next step is usually small. Write down the five things a new patient most needs to know before booking, then look at your current site and check whether each one is findable in under a minute. Cost and duration, direct billing, who does what, how booking works, and what the first visit is like. If one of those is missing, that is the first project.</p><p>If you would like a second set of eyes on that, or help planning a site that fits an independent Okanagan clinic rather than a franchise template, you are welcome to <a href=\"/contact/\">get in touch</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should a physiotherapy clinic put its full fee schedule on the website?",
+      "Usually not in full. Patients want enough to decide whether an enquiry is worth their time, so a first-appointment fee, typical duration and a clear note about direct billing or receipts covers most of it. A long fee table can overwhelm and dates quickly as costs change. The detailed conversation belongs with the front desk."
+    ],
+    [
+      "Is it better to use an online booking tool or a simple enquiry form?",
+      "It depends on volume and staffing. A small independent clinic often does better with a clean form and a fast human reply, because it is honest, flexible and has fewer moving parts. A busier practice with a full front desk usually benefits from an embedded booking tool. Either way, test the handoff yourself on a phone before deciding."
+    ],
+    [
+      "How much educational content does a physio site need before it helps?",
+      "Less than most clinics assume. A few well-written pages that name problems the way patients name them, and explain what a first visit involves, do more than a large library of generic health articles. Educational content should help someone choose care. The moment it starts reading like diagnosis or treatment advice for an individual, it has gone past what a marketing website should do."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "BC OIPC: Developing a privacy policy under PIPA",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    },
+    {
+      "name": "W3C WAI: Forms accessibility tutorial",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Frames physiotherapy website design around the single decision of choosing a first appointment, with a patient-situation page pattern table and a concrete minimal intake form, rather than generic conversion tips.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm no invented Okanagan business counts or demand figures slipped in.",
+      "Confirm PIPA discussion stays at the level of general design guidance and does not become legal advice.",
+      "Confirm no fabricated client metrics, quotes or case studies are present.",
+      "Confirm internal links resolve exactly: /web-design/physiotherapy/, /web-design/, /contact/."
+    ],
+    "serpGap": "Competitor results focus on conversion-rate claims, portfolio screenshots and agency service lists. None gives a patient-situation page pattern table or a minimal intake field set grounded in privacy restraint.",
+    "sourceUse": [
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "BC private-sector organizations have obligations about collecting, using and safeguarding personal information; collect the minimum and explain purposes."
+      },
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "Accessible forms use clear labels, instructions and feedback; only ask for what is needed because excessive fields increase abandonment."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-04-29",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/physiotherapy/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "physiotherapy"
+  ],
+  "wordCount": 1777,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 10592,
+      "total_tokens": 13771,
+      "completion_tokens": 3179,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 272
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 272
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 4,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "Most of the industry websites I see are built the other way around.",
+      "replacement": "A clinic website can easily become organised around internal service labels instead of the patient’s first-appointment questions."
+    }
+  ]
+}

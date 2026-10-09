@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Guide an accounting firm through choosing client fit, structuring service pages, handling sensitive enquiries and planning budget before hiring a designer.",
+    "specificity": "Specific enough to separate personal tax, bookkeeping and advisory buyers, with concrete page, form, team, process and local-search recommendations.",
+    "evidence": "Uses the BC OIPC privacy guidance and W3C forms guidance for the two sensitive claims; the rest is explicitly framed as practical design judgement rather than measured uplift.",
+    "voice": "Sounds like Michael: connected conversational prose, thoughtful tradeoffs, Canadian spelling, no corporate padding and no invented client stories.",
+    "usefulAsset": "A useful private planning asset that could help an accountant write a focused website brief and avoid collecting the wrong information publicly."
+  },
+  "slug": "accountant-website-design",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1589,
+  "usage": {
+    "prompt_tokens": 7504,
+    "total_tokens": 8330,
+    "completion_tokens": 826,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 654
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 654
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "slug": "appliance-repair-website-lessons",
+  "title": "What works for appliance-repair websites? Lessons from ABC Appliance",
+  "type": "guide",
+  "description": "A practical look at what an appliance-repair website needs, using ABC Appliance as a case study. Covers appliance and brand pages, service areas, honest booking wording, and where a small shop should focus first.",
+  "summary": "ABC Appliance's website shows what a local repair site should do: state the service area, name the appliances, route callers by brand, and be honest that a request is not a confirmed appointment. This article turns those choices into a practical guide, including a table that separates what the live site already proves from proposed improvements an owner might ask for next.",
+  "takeaways": [
+    "Lead with geography, appliance category, and one clear promise, because repair customers are deciding in a hurry.",
+    "Give every appliance category and every genuinely supported brand its own page, with symptoms and warranty eligibility questions spelled out.",
+    "Say a service request is a request, not a booking, and collect only the details needed to follow up."
+  ],
+  "sections": [
+    {
+      "id": "what-the-live-site-does-well",
+      "title": "What the live site does well",
+      "body": "<p>The ABC Appliance site starts by telling a visitor where the business works. The headline reads \"Appliance repair to get your home running again\" under a line naming North and Central Okanagan and the Shuswap. That combination answers the two questions most repair customers have first: do you cover me, and can you actually fix this appliance.</p><p>Under the headline there are two actions, not five. Request a repair, or call. Then a short strip of trust points: Okanagan and Shuswap service, certified warranty service, parts in stock, fair pricing. None of these claims needs a paragraph. They are the kind of reassurance a person wants at a glance before they commit to a phone call.</p><p>The homepage then lists the appliance categories directly. Washer repair, dryer repair, dishwasher repair, refrigerator repair, and oven, range and cooktop repair each get a card with common symptoms like \"will not drain\" or \"not cooling.\" That symptom language matters. A homeowner with a dead dryer does not think in categories, they think in symptoms, and the page meets them there.</p><p>After the category cards, the site shows a simple four step process. Tell us what went wrong. Discuss the visit. Find out what needs fixing. Decide on the repair. It is honest about the fact that an in-person diagnosis beats guessing from a symptom, which sets expectations properly instead of overpromising by phone.</p><p>Finally, the homepage lists fourteen supported brands, each with its own page. The brand grid is not decoration. It is a routing system that gets a Whirlpool owner to Whirlpool information in one click.</p>"
+    },
+    {
+      "id": "site-proof-versus-proposed-improvements",
+      "title": "Site proof versus proposed improvements",
+      "body": "<p>It helps to be clear about what a live website already demonstrates versus what an owner might still want to add. The table below separates the two.</p><table><caption>What ABC's site proves today, and what a repair shop might still add</caption><thead><tr><th>What is on the site now</th><th>What it proves</th><th>A possible next improvement</th></tr></thead><tbody><tr><td>Appliance category cards with symptom lists</td><td>The business understands real customer problems</td><td>Add a short \"what to check first\" note per category, kept practical</td></tr><tr><td>Fourteen brand pages from one brand hub</td><td>Customers can find brand-specific information before enquiring</td><td>Use the submitted brand to route the request to the right person</td></tr><tr><td>A service community list and map sketch</td><td>Coverage is stated honestly rather than implied</td><td>A short page for each genuinely served community with local detail</td></tr><tr><td>Wording that a request is confirmed separately</td><td>The business does not overpromise at the moment of intake</td><td>State typical response timing if the owner can keep that promise</td></tr><tr><td>A four step repair process in plain language</td><td>The customer can picture the visit before calling</td><td>A photo or short video of a real diagnosis visit</td></tr><tr><td>FAQ answers about service area and arranging repairs</td><td>The common objections are answered on the page</td><td>FAQ answers on each appliance category page, not only the homepage</td></tr></tbody></table><p>None of the improvements in the third column are exotic. They are the kind of detail that separates a good local service site from a great one. If you want to see how this looks when built as a dedicated service, <a href=\"/web-design/appliance-repair/\">my appliance repair website design service</a> follows this same structure.</p>"
+    },
+    {
+      "id": "page-architecture",
+      "title": "Page architecture that matches the business",
+      "body": "<p>The ABC site has a simple shape. A homepage that sells the whole business. A services hub that lists appliance categories. One page per category, like washer repair or dishwasher repair. A brands hub. One page per supported brand, like Whirlpool or Bosch. A contact page with the request form.</p><p>That shape works because it mirrors how the business actually operates. Appliance repair is not one service. It is a set of related services, and a customer arrives already knowing which one they need. Sending every visitor through the same generic page wastes their time.</p><p>If you are planning your own site, start with the appliance categories you genuinely repair. Give each one a page with the common symptoms, the brands you see most, and what you need from the customer before a visit. Then build a brand layer only for brands you actually support. For a broader look at structuring a local business site, the <a href=\"/blog/kelowna-business-website-guide/\">Kelowna business website guide</a> covers the same principles for other trades.</p>"
+    },
+    {
+      "id": "service-areas-without-doorway-pages",
+      "title": "Service areas without doorway pages",
+      "body": "<p>ABC names its communities on the homepage, on the request form, and with a simple map sketch. Kelowna, Lake Country, Predator Ridge, Vernon, Coldstream, Lumby, Silver Star, Armstrong, and Salmon Arm are all listed. The form also includes an \"Other, please confirm coverage\" choice, which is the honest way to handle edge cases.</p><p>This is the right approach. <a href=\"https://support.google.com/business/answer/7091?hl=en\">Google's local ranking guidance</a> is built around relevance, distance, and prominence, and a customer still needs useful information about whether and how you serve their area. A repair shop should have a page for a community only when there is real, specific information to put on it: travel notes, documented local project examples, or how scheduling works there.</p><p>If your service area is small, say so plainly on the homepage and in the FAQ. A clear statement such as \"we serve Vernon and Coldstream\" is more useful to a customer than a set of location pages with no additional information.</p>"
+    },
+    {
+      "id": "booking-words-and-intake",
+      "title": "Booking words and intake fields",
+      "body": "<p>The ABC site is careful with one important distinction. It asks visitors to request a repair, then says plainly that an appointment is confirmed separately. That wording helps distinguish a submitted request from a confirmed appointment, so the customer knows they still need a response.</p><p>The intake form itself is short. First and last name, phone, email, city or community, appliance type, manufacturer or brand, details of the problem, and how the person heard about the business. It also gives the phone number as an alternative for people who would rather talk. That is close to the right amount of information for a first contact. Asking for more risks scaring people off, and asking for less leaves the shop without enough to respond usefully.</p><p>One improvement worth considering is an optional model number field. ABC mentions having the model number handy on the phone, and an optional field on the form would let a well prepared customer share it without forcing everyone to hunt for it.</p>"
+    },
+    {
+      "id": "routes-for-different-householders",
+      "title": "Routes for different householders",
+      "body": "<p>Not every appliance repair enquiry comes from the person who owns the appliance. A tenant may need to know whether to call their landlord or a repair shop directly. A landlord with several units wants to know how to arrange service at a property they do not live in. A property manager may need a repeatable process rather than a one off visit.</p><p>The ABC homepage speaks to the general householder, which is correct for its main audience. A shop that does meaningful rental or landlord work could add a short route for those customers without cluttering the main page. That might be as simple as a paragraph on the contact page explaining how to arrange service at a tenanted property, what information to have ready, and who needs to approve the work.</p><p>The principle is the same as the brand pages. Route people to the answer that fits their situation instead of making every visitor read everything.</p>"
+    },
+    {
+      "id": "a-local-ranking-worksheet",
+      "title": "A local ranking worksheet",
+      "body": "<p>Google says local results come mainly from relevance, distance, and prominence. A repair shop cannot change distance, but it can work on the other two. This worksheet turns that into something you can act on this week.</p><table><caption>What an appliance repair shop can control for local search</caption><thead><tr><th>Factor</th><th>What it means</th><th>What to do on your website</th></tr></thead><tbody><tr><td>Relevance</td><td>How well your site matches what the searcher typed</td><td>Give each appliance category and each supported brand its own page with real detail</td></tr><tr><td>Distance</td><td>How far you are from the searcher</td><td>State your true service area and communities clearly, do not imply wider coverage</td></tr><tr><td>Prominence</td><td>How well known and trusted the business appears</td><td>Collect reviews, reply to them, keep business details consistent everywhere they appear</td></tr></tbody></table><p>None of this is mysterious. It is the accumulated effect of specific pages, honest coverage claims, and a visible history of customers who took the time to review the work.</p>"
+    },
+    {
+      "id": "the-practical-next-step",
+      "title": "The practical next step",
+      "body": "<p>If you run an appliance repair business, print the two tables above and mark what your current site already does. Look for the specific gaps in your own site: a customer may find the service list but still be unable to confirm coverage or understand what happens after submitting the form. The gaps are usually a proper brand layer, honest service area wording, and appliance category pages written around real symptoms.</p><p>If you want a sense of what this kind of build costs in our region, the <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost guide</a> explains the ranges and what drives them.</p><p>And if you would rather have a second set of eyes on it, <a href=\"/contact/\">get in touch</a>. We can look at your current site against these lessons and tell you which fixes would matter most for your business.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should an appliance repair homepage push phone calls or the request form?",
+      "Offer both, but make the phone number impossible to miss. Many repair customers are standing in front of a broken appliance and want to talk to someone now. The form serves the people who prefer to write out the details, and the phone line serves everyone else. ABC does this well by putting the call button beside the request button at the top of the page."
+    ],
+    [
+      "Is it worth building a separate page for every appliance brand?",
+      "Only for brands you genuinely support. If you do certified warranty work for a dozen brands, individual pages let you explain symptoms, supported product types, and what you need to confirm eligibility. If you mainly see two or three brands, a single brands page with clear sections is the better choice. Do not publish brand pages for brands you will turn away."
+    ],
+    [
+      "Are city and community pages risky for local SEO?",
+      "They are risky when they are thin copies with only the place name swapped. They are useful when each page contains real, specific information about serving that community, such as travel considerations, scheduling, or documented local service examples. When in doubt, name your service area clearly on the homepage and in your FAQ rather than publishing empty pages."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "ABC Appliance",
+      "url": "https://www.abcappliance.ca/"
+    },
+    {
+      "name": "Tips to improve your local ranking on Google",
+      "url": "https://support.google.com/business/answer/7091?hl=en"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Uses ABC Appliance's live pages as a concrete teaching example, then separates what the current site proves from proposed improvements, and turns both into an actionable architecture and ranking worksheet for other repair shops.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm ABC Appliance still supports the fourteen listed brands and the same service communities before publishing.",
+      "Confirm the request versus confirmed appointment wording is still how the business wants intake described.",
+      "Verify the Google local ranking guidance page still names relevance, distance, and prominence as the main factors at release time."
+    ],
+    "serpGap": "Competing results are mostly vendor lists, website builders, and generic design pitches. None walk through a real, specific appliance repair site and separate demonstrated choices from proposed upgrades.",
+    "sourceUse": [
+      {
+        "url": "https://www.abcappliance.ca/",
+        "claim": "Homepage structure, appliance category cards, four step process, fourteen supported brands, service communities, and request form fields."
+      },
+      {
+        "url": "https://support.google.com/business/answer/7091?hl=en",
+        "claim": "Local results are mainly based on relevance, distance, and prominence, and thin location pages are not the way to earn relevance."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-08-19",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/appliance-repair/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "appliance-repair"
+  ],
+  "wordCount": 1781,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 11353,
+      "total_tokens": 15335,
+      "completion_tokens": 3982,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 975
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 975
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "Warranty work is a genuine specialty, not a slogan",
+      "replacement": "Customers can find brand-specific information before enquiring"
+    },
+    {
+      "original": "Put the brand on the intake form so requests arrive pre-sorted",
+      "replacement": "Use the submitted brand to route the request to the right person"
+    },
+    {
+      "original": "our appliance repair website design service",
+      "replacement": "my appliance repair website design service"
+    },
+    {
+      "original": "common appliance types in that area",
+      "replacement": "documented local project examples"
+    },
+    {
+      "original": "A clear \"we serve Vernon and Coldstream\" beats ten empty city pages every time.",
+      "replacement": "A clear statement such as \"we serve Vernon and Coldstream\" is more useful to a customer than a set of location pages with no additional information."
+    },
+    {
+      "original": "nothing about it rewards thin pages that swap a city name in and out",
+      "replacement": "a customer still needs useful information about whether and how you serve their area"
+    },
+    {
+      "original": "That small bit of honesty prevents the most common service business problem, which is a customer who thinks a form submission is a confirmed booking.",
+      "replacement": "That wording helps distinguish a submitted request from a confirmed appointment, so the customer knows they still need a response."
+    },
+    {
+      "original": "Most shops will find they have one or two of the pieces, like a services list or a decent contact form, and are missing the rest.",
+      "replacement": "Look for the specific gaps in your own site: a customer may find the service list but still be unable to confirm coverage or understand what happens after submitting the form."
+    },
+    {
+      "original": "common local appliance issues",
+      "replacement": "documented local service examples"
+    }
+  ]
+}

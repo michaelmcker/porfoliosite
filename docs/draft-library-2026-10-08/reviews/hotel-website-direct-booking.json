@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Persuade hotel owners that a direct-booking website is worth investing in, and give them a concrete page architecture, booking-engine checklist, and content plan to act on.",
+    "specificity": "High for a buying guide: exact page-by-page architecture for a small or mid-sized hotel, concrete room-page details (bathroom photos, floor level, balcony, walk-in shower versus tub), specific booking-engine handoff requirements, and real local context through Tourism Kelowna.",
+    "evidence": "Two named external sources are used appropriately: Google's help page on hotel free booking links (eligibility and ranking based on usefulness, not payment) and Google's SEO starter guide (useful content earns visibility). The Tourism Kelowna reference describes what that site actually publishes without overstating it. No invented client results, no fake uplift figures, no unsupported universal claims. The tradeoff table is framed as a comparison of costs and control rather than a promise of revenue.",
+    "voice": "Michael's voice comes through cleanly: opinionated but honest about tradeoffs ('Neither channel is free'), grounded in a real, unglamorous exercise (book your own hotel on your phone), and addressed to busy owners in connected conversational sentences. No corporate padding, no smug contrast, no invented anecdotes.",
+    "usefulAsset": "Yes. The page architecture list, the booking-provider question checklist, and the 'pretend you've never heard of your property' test are all things an owner could hand to a designer or act on directly, and the guide stays self-contained in each section without needing follow-up articles."
+  },
+  "slug": "hotel-website-direct-booking",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1997,
+  "usage": {
+    "prompt_tokens": 13228,
+    "total_tokens": 13750,
+    "completion_tokens": 522,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 179
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 179
+    }
+  }
+}

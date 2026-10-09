@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "The article clearly intends to help small business owners decide which administrative tasks to automate before hiring more staff, focusing on frequency, risk, and practical outcomes rather than AI hype.",
+    "specificity": "High. It provides a concrete four-factor decision matrix, names specific candidate tasks like enquiry acknowledgements and report assembly, and uses explicit hypothetical examples without pretending to be case studies.",
+    "evidence": "Grounded in observable workflow characteristics rather than invented statistics or client stories. It accurately cites the BC OIPC as background for privacy thinking without overclaiming legal advice.",
+    "voice": "Strong match. The prose is connected, conversational, and acknowledges real tradeoffs, such as keeping humans on commitments and planning for maintenance, without corporate padding or mechanical variation.",
+    "usefulAsset": "A durable decision-making tool that helps owners prioritize automation candidates by frequency, variation, risk, and exception handling, making it a practical reference before buying software or scoping custom work."
+  },
+  "slug": "automate-before-more-admin",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1885,
+  "usage": {
+    "prompt_tokens": 7972,
+    "total_tokens": 10853,
+    "completion_tokens": 2881,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2641
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 2641
+    }
+  }
+}

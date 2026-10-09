@@ -1,0 +1,56 @@
+{
+  "issues": [
+    {
+      "path": "sections.0.body",
+      "original": "A visitor decides whether to trust a small business within the first few seconds of landing on its website. The decision is mostly visual. If the page looks dated, cluttered or generic, people leave before they read a word, and no amount of clever copy gets another chance.",
+      "replacement": "First impressions are mostly visual. When a page looks dated, cluttered or generic, visitors have little reason to stay and read the copy, however well it is written.",
+      "reason": "Removes unsupported timing and universal-behaviour claims while keeping the point that visual quality affects whether copy gets read."
+    },
+    {
+      "path": "sections.2.body",
+      "original": "The W3C's <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">accessibility first checks</a> ask for enough difference between text and background that people with weaker contrast sensitivity, including most people as they age, can read comfortably.",
+      "replacement": "The W3C's <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">accessibility first checks</a> ask for enough difference between text and background that people with reduced contrast sensitivity can read comfortably.",
+      "reason": "Removes the unsupported claim that this includes most people as they age and keeps the advice tied to the cited accessibility checks."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "The article gives busy owners a practical way to judge visual quality without turning design into taste alone. The answer-first structure works: look affects trust, then hierarchy, type, contrast, imagery, components and action.",
+    "specificity": "Good project specificity through ABC Appliance, Okanagan Treehouse and RCCV, and the before-and-after headline rewrite is concrete. The article avoids inventing uplift claims and keeps the design advice tied to real decisions.",
+    "evidence": "The evidence is appropriately light. The W3C accessibility link supports the contrast, title and alt-text checks, while Michael's live projects support the industry-specific examples. No unsupported performance percentages remain.",
+    "voice": "The draft is close to Michael's voice: direct, practical, locally grounded and interested in the tradeoff between looking beautiful and helping a visitor act. It needs only the removal of a couple of broad claims, not a tonal rewrite.",
+    "usefulAsset": "Yes. This is a strong private-review draft with enough design substance to become a durable resource. The table, checklist-style hiring guidance and one clear rewrite example give it practical value beyond a generic 'make it modern' article."
+  },
+  "slug": "good-small-business-website-design",
+  "applied": [
+    {
+      "path": "sections.0.body",
+      "original": "A visitor decides whether to trust a small business within the first few seconds of landing on its website. The decision is mostly visual. If the page looks dated, cluttered or generic, people leave before they read a word, and no amount of clever copy gets another chance.",
+      "replacement": "First impressions are mostly visual. When a page looks dated, cluttered or generic, visitors have little reason to stay and read the copy, however well it is written.",
+      "reason": "Removes unsupported timing and universal-behaviour claims while keeping the point that visual quality affects whether copy gets read."
+    },
+    {
+      "path": "sections.2.body",
+      "original": "The W3C's <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">accessibility first checks</a> ask for enough difference between text and background that people with weaker contrast sensitivity, including most people as they age, can read comfortably.",
+      "replacement": "The W3C's <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">accessibility first checks</a> ask for enough difference between text and background that people with reduced contrast sensitivity can read comfortably.",
+      "reason": "Removes the unsupported claim that this includes most people as they age and keeps the advice tied to the cited accessibility checks."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1292,
+  "usage": {
+    "prompt_tokens": 7899,
+    "total_tokens": 9220,
+    "completion_tokens": 1321,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 743
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 743
+    }
+  }
+}

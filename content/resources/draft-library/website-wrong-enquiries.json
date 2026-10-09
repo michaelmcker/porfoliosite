@@ -1,0 +1,126 @@
+{
+  "slug": "website-wrong-enquiries",
+  "title": "Getting the wrong enquiries? Your website may be attracting the wrong work",
+  "type": "guide",
+  "description": "A practical guide for service businesses whose websites attract the wrong enquiries, with ways to narrow service boundaries, geography, forms, and priority pages.",
+  "summary": "A website that keeps bringing the wrong enquiries usually has a signal problem, not a traffic problem. Service pages may be too broad, forms may invite almost anyone, or older content may still attract work you no longer want. The fix is to narrow the message, qualify the right visitors, and make the site reflect the jobs you actually want.",
+  "takeaways": [
+    "Wrong enquiries usually come from a mismatch between what the website says and the work you actually want.",
+    "Clear service boundaries, geography, and scope signals help the right visitors recognize themselves and help the wrong visitors move on.",
+    "Start by auditing declined enquiries and fixing the priority page instead of assuming you need a full redesign."
+  ],
+  "sections": [
+    {
+      "id": "problem-is-fit",
+      "title": "The problem is usually fit, not traffic",
+      "body": "<p>Service businesses across the Okanagan often treat every enquiry as a good sign. Then the phone rings with work they do not want, forms arrive from outside the service area, and the calendar starts to fill with the wrong conversations. That is not mainly a visibility problem. It is a fit problem. The website is doing something, but what it is doing is pulling in people whose needs do not match the business.</p><p>I see this when a page tries to cover too much ground. It uses broad service language, stays vague about scope, and avoids saying anything that might rule someone out. The result is a site that sounds open to everything. In practice, that usually means it is not especially strong for the work you care about most.</p>"
+    },
+    {
+      "id": "set-service-boundaries",
+      "title": "Set service boundaries on the page",
+      "body": "<p>A good service page should make the boundary obvious. It should say what the business does, who it is for, and what kind of work is a poor fit without sounding defensive. If you only take on projects above a certain size, the page should show that. If you avoid certain job types, the language should be specific enough that people can tell.</p><p>A well-made page should also feel considered. Good typography, honest photography, and clear spacing help a visitor trust the business, but they cannot rescue a page that keeps inviting the wrong work. For example, suppose a landscaping company wants design-build projects and does not want to become a small odd-job provider. A page full of broad promises about outdoor work can easily attract the wrong requests. A clearer page would describe the kinds of projects, materials, and outcomes the company actually wants.</p>"
+    },
+    {
+      "id": "use-forms-to-filter",
+      "title": "Let the form do some of the filtering",
+      "body": "<p>Forms can help, but they should not become an obstacle. The W3C <a href=\"https://www.w3.org/WAI/tutorials/forms/\">accessible forms guidance</a> makes a useful point: people generally prefer forms that are simple and ask only for what is needed. That principle works well for lead qualification too. Ask the minimum that helps both sides.</p><p>For many service businesses, a few fields are enough. Service type, location, timing, and project size can tell you a lot without turning the form into a long interview. If the form needs to be accessible, keep labels clear, group related fields, and make instructions obvious. If you want a more detailed look at the tradeoff between calls and forms, I have written about <a href=\"/blog/calls-or-forms-service-website/\">calls or forms for a service website</a>.</p><table><caption>Sample intake fields for a service business enquiry form</caption><thead><tr><th>Field</th><th>What it helps you learn</th></tr></thead><tbody><tr><td>Service type</td><td>Whether the request fits your core work</td></tr><tr><td>Location</td><td>Whether the person is in your real service area</td></tr><tr><td>Timing</td><td>Whether the request fits your current schedule</td></tr><tr><td>Project size or scope</td><td>Whether the job clears your minimum scope</td></tr><tr><td>Preferred contact</td><td>Whether follow-up will be simple</td></tr></tbody></table>"
+    },
+    {
+      "id": "make-geography-obvious",
+      "title": "Make geography and availability obvious",
+      "body": "<p>If you work in Kelowna, West Kelowna, Vernon, or Lake Country, say so clearly. Do not make people infer your service area from scattered mentions at the bottom of the page. A local service business should make coverage obvious in the first screen or two. That helps a real person decide quickly, which is more useful than trying to squeeze one more vague phrase into the copy.</p><p>The same is true for timing. If you are booking out months ahead, or if you only take certain kinds of work seasonally, make that visible early enough to matter. A visitor who wants urgent help should not need to submit a detailed form to discover that you are not the right fit right now.</p>"
+    },
+    {
+      "id": "match-content-to-work",
+      "title": "Match content to the work you want",
+      "body": "<p>Wrong enquiries often come from content that no longer reflects the business. Old service pages, broad blog posts, and generic resource pages can all send the wrong signal. A page may still attract traffic, but if it mainly attracts the wrong kind of traffic, it is costing time.</p><p>I have seen the value of specificity in local service pages again and again. The useful pages are usually the ones built around real services, real places, and real visitor questions. A page that clearly matches the work you want is generally more helpful than a page that tries to appeal to everyone.</p>"
+    },
+    {
+      "id": "wrong-enquiry-worksheet",
+      "title": "Use a wrong-enquiry worksheet",
+      "body": "<p>Before rewriting anything, collect a little evidence. Look at the enquiries you declined, the ones that felt too small, too far away, or simply off target. Then compare them against the pages they probably came from. This makes the problem easier to see.</p><table><caption>Wrong-enquiry self-audit worksheet</caption><thead><tr><th>Question</th><th>What to look for</th><th>What to change</th></tr></thead><tbody><tr><td>Which services are producing the wrong enquiries?</td><td>Requests that do not match your preferred work</td><td>Narrow the service description and opening copy</td></tr><tr><td>Are people asking from outside your service area?</td><td>Cities or locations that do not fit</td><td>Make geographic coverage clearer near the top of the page</td></tr><tr><td>Are the projects below your minimum scope?</td><td>Repeated small or odd-job requests</td><td>Add scope signals and be more specific about fit</td></tr><tr><td>Is the form too open?</td><td>Vague or mismatched form submissions</td><td>Tighten one or two fields without adding friction</td></tr><tr><td>Which page seems to be attracting the wrong fit?</td><td>A pattern tied to one service or article</td><td>Rewrite that page first instead of changing the whole site</td></tr></tbody></table>"
+    },
+    {
+      "id": "record-declined-enquiries",
+      "title": "Record and review what you turn away",
+      "body": "<p>Keep a simple record when you decline an enquiry. Note what was requested, why it was a poor fit, and where it came from if you know. You do not need a complex system for this. A basic note in your inbox, spreadsheet, or CRM is enough if it helps you see a pattern.</p><p>Over time, those notes show whether the website needs a better boundary, a clearer area statement, a tighter form, or a different content emphasis. If you need a better way to think about response after the enquiry arrives, see <a href=\"/blog/website-enquiry-follow-up/\">website enquiry follow-up</a>.</p>"
+    },
+    {
+      "id": "change-priority-page",
+      "title": "Change the priority page, not just the words",
+      "body": "<p>The best first move is usually to fix the page that is causing the most confusion. Find the service page, article, or contact path that keeps producing the wrong-fit enquiries. Rewrite the opening so the service, audience, scope, and area are obvious. Remove claims that make the page sound broader than the work you actually want.</p><p>Sometimes the fix is mostly content. Sometimes it is also structure, forms, or follow-up. If you want the site to reflect the work you want more clearly, that is exactly the kind of <a href=\"/web-design/\">web design</a> problem I like to solve. If you are ready to talk through what your own site is attracting and what should change first, <a href=\"/contact/\">get in touch</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should I remove a service page if it keeps attracting the wrong work?",
+      "Not always. First check whether the page can be narrowed or repositioned. If the work is completely off target and creates more hassle than value, then removal or consolidation may make sense, but often the first step is simply to make the boundary clearer."
+    ],
+    [
+      "Can a very short form attract better enquiries than a longer one?",
+      "Often yes, if the short form still asks the right minimum. A shorter form usually lowers friction, which can help good-fit visitors act. The key is to remove unnecessary fields, not to remove all qualification."
+    ],
+    [
+      "What if the wrong enquiries come from search but my service pages look fine?",
+      "Then look at the titles, headings, and supporting content around those pages. Search can send people to a page for a phrase that does not match the page's real purpose. A mismatch between search intent and page content can create wrong-fit traffic even when the design is good."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "W3C Web Accessibility Initiative forms tutorial",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Frames wrong enquiries as a fit and signal problem, then gives a practical page-level and form-level way to narrow the message without overcomplicating the site.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm no implied guaranteed increase in right enquiries",
+      "Check that W3C source is only used for general form simplicity and accessibility principles",
+      "Make sure no unsupported claim suggests design alone guarantees lead quality"
+    ],
+    "serpGap": "Existing results tend to discuss general lead generation or broad conversion problems; this article focuses specifically on wrong-fit enquiries and how service boundaries, geography, forms, and priority pages create them.",
+    "sourceUse": [
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "Forms should generally be simple and ask only for needed information; accessible structure helps everyone."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-07-29",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Conversion",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "calls-or-forms-service-website",
+    "website-enquiry-follow-up"
+  ],
+  "services": [],
+  "wordCount": 1338,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 21117,
+      "total_tokens": 27003,
+      "completion_tokens": 5886,
+      "prompt_tokens_details": {
+        "cached_tokens": 9039
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3376
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3376
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  }
+}

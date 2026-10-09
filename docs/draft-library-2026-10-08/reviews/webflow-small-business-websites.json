@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help small business owners decide whether Webflow's design control and visual CMS justify the cost, with clear guidance on when it is a strong fit and when a simpler builder or custom static site is the better choice.",
+    "specificity": "Names the actual Site plan tiers, distinguishes Site plans from Workspace plans and seats, lists the exact features missing from a code export such as the CMS database, user accounts, ecommerce checkout, site search, form processing, and localized content, and gives a concrete four-collection content model for services, team, projects, and testimonials.",
+    "evidence": "The article stays close to Webflow's official CMS, export, and pricing pages. It accurately separates what is included in an export from what is not, notes that CMS content can be backed up as CSV, and does not invent performance claims, client stories, or ranking guarantees.",
+    "voice": "Conversational and direct, written for busy owners rather than developers. It explains CMS in plain language, avoids hype and padding phrases, states opinionated recommendations in Michael's voice, and keeps a Canadian register without corporate jargon.",
+    "usefulAsset": "Yes. It is a self-contained buying guide that helps an owner map their content, choose the smallest suitable plan, avoid overpaying, and ask the right portability questions before committing."
+  },
+  "slug": "webflow-small-business-websites",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1425,
+  "usage": {
+    "prompt_tokens": 12862,
+    "total_tokens": 19245,
+    "completion_tokens": 6383,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6096
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 6096
+    }
+  }
+}

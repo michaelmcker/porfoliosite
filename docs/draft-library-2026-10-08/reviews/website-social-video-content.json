@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "A first-draft planning article helping busy small business owners allocate their marketing effort: the website carries durable buying information, social media creates discovery and repeated contact, video is reserved for explanations and stories that benefit from motion or human presence, and campaign links close the loop.",
+    "specificity": "Good practical specificity at the decision level (what belongs on each channel, a one-week content split, how to align four content notes before production). No fake statistics, no invented client outcomes, and the Cool Runnings 30% figure is not used.",
+    "evidence": "Evidence is modest and honest. Approved work (AI Catalyst, Vertical Impression, St. James School donor film) is referenced only as examples of what video can do, not as proof of uplift. The W3C accessibility source is used appropriately as a reference, not as a guarantee.",
+    "voice": "Clear, plainspoken Michael voice: conversational, opinionated in the right places, Canadian in spelling, no corporate padding, no flagged filler terms. Explains the tradeoffs without smugness.",
+    "usefulAsset": "Yes. This is a solid, self-contained piece a local business owner could use to decide what to build and where to put effort. It should stay as a focused guide rather than being merged into a broader article."
+  },
+  "slug": "website-social-video-content",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1225,
+  "usage": {
+    "prompt_tokens": 5932,
+    "total_tokens": 6471,
+    "completion_tokens": 539,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 253
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 253
+    }
+  }
+}

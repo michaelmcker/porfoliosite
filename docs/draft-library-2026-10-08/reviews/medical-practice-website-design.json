@@ -1,0 +1,44 @@
+{
+  "issues": [
+    {
+      "path": "summary",
+      "original": "A good medical practice website states who is accepting patients, how care is delivered and what to do next, then sends sensitive information to a secure clinical system instead of a public form. Keep the public site simple, accessible and accurate, and have the practice's legal or clinical team review anything that sounds like advice, promises or guaranteed privacy.",
+      "replacement": "A good medical practice website states who is accepting patients, how care is delivered and what to do next, then sends sensitive information to a secure clinical system instead of a public form. Keep the public site simple, accessible and accurate, and have the practice's legal or clinical team review anything that sounds like clinical advice, a promise of results or a guarantee of privacy.",
+      "reason": "Narrows the final phrase so it does not imply the designer is promising privacy, and keeps the review point within source-supported boundaries."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help a medical practice owner or administrator shape a public website around clear next steps, limited data collection, accessibility and careful wording before choosing a designer.",
+    "specificity": "Strong. It separates public orientation from clinical intake, gives a practical worksheet and points to BC and W3C sources without pretending to provide legal or clinical advice.",
+    "evidence": "Good. The article links to OIPC PIPA guidance and W3C accessibility/form checks, and avoids invented statistics, client stories and unsupported conversion claims.",
+    "voice": "Good fit for Michael McKerracher. It is practical, Canadian in spelling, answer-first and willing to state that restrained design is often more persuasive than inflated claims.",
+    "usefulAsset": "A solid private-review draft that could help an Okanagan medical practice brief a website project, avoid unnecessary form fields and set expectations about privacy, accessibility and clinical review."
+  },
+  "slug": "medical-practice-website-design",
+  "applied": [
+    {
+      "path": "summary",
+      "original": "A good medical practice website states who is accepting patients, how care is delivered and what to do next, then sends sensitive information to a secure clinical system instead of a public form. Keep the public site simple, accessible and accurate, and have the practice's legal or clinical team review anything that sounds like advice, promises or guaranteed privacy.",
+      "replacement": "A good medical practice website states who is accepting patients, how care is delivered and what to do next, then sends sensitive information to a secure clinical system instead of a public form. Keep the public site simple, accessible and accurate, and have the practice's legal or clinical team review anything that sounds like clinical advice, a promise of results or a guarantee of privacy.",
+      "reason": "Narrows the final phrase so it does not imply the designer is promising privacy, and keeps the review point within source-supported boundaries."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1765,
+  "usage": {
+    "prompt_tokens": 10394,
+    "total_tokens": 11269,
+    "completion_tokens": 875,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 494
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 494
+    }
+  }
+}

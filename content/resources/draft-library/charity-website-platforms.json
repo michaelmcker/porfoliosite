@@ -1,0 +1,160 @@
+{
+  "slug": "charity-website-platforms",
+  "title": "WordPress, Webflow or a custom CMS for a charity website?",
+  "type": "comparison",
+  "description": "A practical comparison of WordPress, Webflow and custom CMS options for charities, focused on donation providers, resource libraries, multiple editors, restricted roles, editorial review, integrations, support and true ownership costs.",
+  "summary": "The right platform depends on who edits the site and what it must connect to. WordPress suits charities wanting ownership and many editors on a budget, if someone handles maintenance. Webflow suits design-led teams with a small editor group. A custom or headless CMS is worth it when you need strict roles, editorial review and deep integrations.",
+  "takeaways": [
+    "Choose the platform around your editors: WordPress for many contributors, Webflow for a small design-led team, a custom CMS for strict roles and review.",
+    "Free and low cost platforms are not free in total: hosting, plugins, donations integration and maintenance all add up.",
+    "If donation forms, resource libraries and CRM data must flow together reliably, budget for a custom or headless setup rather than patching a general builder."
+  ],
+  "sections": [
+    {
+      "id": "the-real-question",
+      "title": "The real question behind the platform choice",
+      "body": "<p>Most charities comparing WordPress, Webflow and a custom CMS are really comparing something else: who is going to publish content every week, and what does the website have to hand off to other systems? A parish community site, a school fundraising page and a regional charity with a volunteer resource library have very different needs, even if they all want a clean design and a donate button.</p><p>If you want a fuller look at what a charity site needs to accomplish before you pick the tool, start with our <a href=\"/web-design/charities/\">web design for charities</a> overview. Then come back to the platform question, because the platform determines how much ongoing effort you are signing up for.</p>"
+    },
+    {
+      "id": "wordpress-for-charities",
+      "title": "WordPress: flexible, ownable, and willing to accept many editors",
+      "body": "<p>WordPress is the default answer for a reason. It is free to use and modify, your organisation can control its content and database under the agreed hosting and access arrangement, and it comes with user roles that suit a charity with many hands on the keyboard. Administrators run the site, editors manage content, and authors or contributors can be given limited access. The <a href=\"https://wordpress.org/about/features/\">official WordPress features page</a> also points to built in media management, draft and revision tools, scheduling, and a plugin library that can add donation forms, event listings, volunteer signups and search optimization.</p><p>For an Okanagan charity with a board member who writes, a staff member who posts events, and a volunteer who maintains a resources page, that role structure is genuinely useful. You can let people publish without handing everyone the keys.</p><p>The tradeoff is that nobody maintains it for you. Hosting, plugin updates, security, spam control, backups and the occasional broken layout are yours to manage, or yours to pay someone to manage. WordPress is often described as free. The software is. The responsibility is not.</p>"
+    },
+    {
+      "id": "webflow-for-charities",
+      "title": "Webflow: strong for design-led teams with a small group of editors",
+      "body": "<p>Webflow shines when a charity cares about the exact look of every page and has one or two people who will do most of the editing. Its <a href=\"https://webflow.com/cms\">CMS</a> lets you define structured collections, such as programs, staff profiles, campaigns and news, then design one template that every new item follows. Editors can work on a visual canvas, preview drafts, control metadata and alt text, and publish with more confidence than they would have in a raw code environment.</p><p>That structured approach suits a charity that wants a beautiful, consistent site and does not want volunteers freelancing with the design. The layout stays intact while content changes.</p><p>Where it strains is the long tail of nonprofit work. Donations, event ticketing, member portals and CRM connections usually come from third party tools or its headless APIs rather than from built in nonprofit features. Each added integration is one more thing to set up, pay for and keep an eye on. If your charity is really a membership organization or an event machine, a general design platform can start to feel like the wrong centre of gravity.</p>"
+    },
+    {
+      "id": "custom-and-headless-cms",
+      "title": "Custom and headless CMS: when strict roles and integrations justify the cost",
+      "body": "<p>A custom CMS, or a headless platform used as the base for one, is the right conversation when the website is operationally serious. Think restricted roles for staff versus volunteers, an editorial review step before anything goes live, a resource library that has to stay organized for years, or donation and registration data that must flow into a CRM without manual exports.</p><p>A headless system separates where content is stored from where it appears, so the same structured content can serve the website, an app and other channels. Sanity's <a href=\"https://www.sanity.io/headless-cms\">explanation of headless CMS</a> describes this well: editors get a tailored interface and workflow, developers get structured content through APIs, and the organization gets one source of truth instead of content trapped inside a page design.</p><p>The honest cost is dependency. You need a developer or an ongoing partner to design the content model, build the front end and adjust it as needs change. For a small charity with a simple brochure site and a donate link, that is usually too much. For a charity whose website supports programme delivery, compare the proposed custom workflow with a carefully configured existing platform.</p>"
+    },
+    {
+      "id": "how-they-compare",
+      "title": "How the three options compare",
+      "body": "<table><caption>WordPress, Webflow and custom CMS for charity websites</caption><thead><tr><th>Factor</th><th>WordPress</th><th>Webflow</th><th>Custom or headless CMS</th></tr></thead><tbody><tr><td>Ownership and portability</td><td>Open-source software with exportable content and database; check licences and dependencies</td><td>Content and design live inside the platform, so confirm a working export and hosting plan before committing</td><td>Depends on the CMS, contract, export options and frontend dependencies</td></tr><tr><td>Many editors and volunteers</td><td>Strong built in roles for administrators, editors, authors and contributors</td><td>Good for a small, trusted editor group, less natural for a large rotating cast</td><td>Excellent when designed for it, with granular roles and review states</td></tr><tr><td>Editorial review</td><td>Drafts and revisions are built in, deeper approval flows need plugins or custom work</td><td>Draft previews and granular publishing help a small team self review</td><td>Can be designed as a true approval pipeline from the start</td></tr><tr><td>Donations and integrations</td><td>Almost anything is possible through plugins, with varying quality</td><td>Relies on third party tools or APIs for most nonprofit specific features</td><td>Can be tailored to the required CRM, payments and email connections</td></tr><tr><td>Ongoing maintenance</td><td>Hosting, updates, security and backups are on you</td><td>Platform handles hosting and uptime, you handle content and integrations</td><td>Needs a development partner, but that partner can keep everything coherent</td></tr><tr><td>Realistic cost shape</td><td>Low entry cost, costs grow with plugins, help and complexity</td><td>Subscription plus integration costs, predictable for a contained site</td><td>Highest upfront and ongoing cost, in exchange for fit</td></tr></tbody></table>"
+    },
+    {
+      "id": "a-concrete-setup-sample",
+      "title": "A concrete setup a charity can actually use",
+      "body": "<p>Suppose a mid sized Okanagan charity wants a public site, a resource library for clients, and a steady flow of stories to support fundraising. A sensible architecture looks like this:</p><ol><li><strong>Public pages.</strong> Home, About, Programs, Get Help, Events, News or Stories, Donate, Contact. Donations processed by a dedicated external provider so payment data never sits in a place it should not.</li><li><strong>Resource library.</strong> A structured collection with fields for topic, audience, format and last reviewed date, so old material can be found and refreshed instead of silently going stale.</li><li><strong>Roles.</strong> One administrator, two staff editors, and volunteer contributors whose work always lands in draft, never straight to live.</li><li><strong>Review step.</strong> Anything touching services, eligibility or client stories gets a second set of eyes before publishing.</li></ol><p>WordPress can do all of this with careful plugin choices. Webflow can do the public site and library elegantly but will lean on outside tools for some of it. A custom CMS does it as a designed system rather than an assembly of parts. That difference is the whole decision.</p>"
+    },
+    {
+      "id": "privacy-and-compliance-in-bc",
+      "title": "A short note on privacy for BC charities",
+      "body": "<p>Whatever platform you choose, a British Columbia charity collecting personal information through forms, donations or newsletter signups should treat privacy as part of the design, not an afterthought. The BC Office of the Information and Privacy Commissioner has <a href=\"https://www.oipc.bc.ca/guidance-documents/2286\">guidance on developing a privacy policy under PIPA</a>, and its core advice is practical: collect only what you need for a stated purpose, tell people what you are collecting and why, protect it with reasonable safeguards, and make your policy available on request. A public enquiry form is not the place to ask for case histories or sensitive documents. Route those through whatever private, approved process your organization already uses.</p>"
+    },
+    {
+      "id": "choosing-and-next-step",
+      "title": "Choosing between them, and a next step",
+      "body": "<p>If your charity has many contributors and wants control of its content and hosting, WordPress is usually the sensible starting point, as long as someone owns maintenance. If your charity is design led, has a small team, and wants a beautiful site without touching servers, Webflow is a strong fit. If your website is a working system with strict roles, review, and serious integrations, talk about a custom or headless CMS before you buy anything else.</p><p>If you would like help thinking through which of these fits your organization, your editors and your budget, <a href=\"/contact/\">get in touch</a> and we can map it out together.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Can a charity take donations on WordPress or Webflow without a separate donation provider?",
+      "You can add simple payment buttons on either, but most charities are better served by a dedicated donation provider for receipts, recurring gifts, donor records and security. The website's job is to present the ask clearly and send donors to that trusted flow, not to hold payment data itself."
+    ],
+    [
+      "What happens when volunteers with editor access make mistakes?",
+      "This is where roles and drafts matter most. On WordPress, give volunteers contributor level access so their work waits for review, and rely on revisions if something needs to be rolled back. On Webflow, keep the volunteer group small and structured collections tight so they are editing content, not redesigning pages. If mistakes recur, review permissions, training and approval steps in the existing platform before assuming a replacement is necessary."
+    ],
+    [
+      "Is a headless or custom CMS overkill for a small charity?",
+      "Usually yes. A small charity with a simple site, a donate link and occasional news will get more value from WordPress or Webflow with a smaller implementation scope. A custom CMS starts to make sense when the site carries operational weight: large resource libraries, many editors with different permissions, strict review, or data that must move reliably between systems."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "WordPress features",
+      "url": "https://wordpress.org/about/features/"
+    },
+    {
+      "name": "Webflow CMS",
+      "url": "https://webflow.com/cms"
+    },
+    {
+      "name": "Sanity: Headless CMS explained",
+      "url": "https://www.sanity.io/headless-cms"
+    },
+    {
+      "name": "BC OIPC: Developing a privacy policy under PIPA",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "A decision-oriented comparison for charities that weighs editor roles, editorial review, donation and integration needs, and true ownership and maintenance costs, rather than listing features or assuming the free platform is cheapest overall.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm current WordPress feature descriptions, especially role names and built in tools",
+      "Confirm current Webflow CMS capabilities and which nonprofit features require third party tools or APIs",
+      "Confirm current portability and export position for Webflow and any hosted CMS before implying easy exit",
+      "Confirm PIPA guidance summary against the OIPC document and keep it as design guidance only"
+    ],
+    "serpGap": "Existing results are template sales pages, generic best builder listicles with pricing tables, or single platform advocacy. Few compare ownership, editor roles, review workflow and integration fit specifically for charities, or give a concrete setup a charity can copy.",
+    "sourceUse": [
+      {
+        "url": "https://wordpress.org/about/features/",
+        "claim": "WordPress is free to use and modify, includes roles for administrators, editors, authors and contributors, media management, drafts, scheduling, revisions, importers and a large plugin ecosystem, and lets the owner control their content and data"
+      },
+      {
+        "url": "https://webflow.com/cms",
+        "claim": "Webflow offers a visual CMS with structured collections, reusable templates, draft previews, metadata and alt text control, headless APIs and integrations, with many nonprofit functions supplied by third party tools rather than built in"
+      },
+      {
+        "url": "https://www.sanity.io/headless-cms",
+        "claim": "A headless CMS separates content storage from presentation, gives editors a tailored interface and workflows, gives developers structured content through APIs, supports reuse across channels, and trades convenience for developer dependency"
+      },
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "BC OIPC guidance says organizations should collect only the personal information needed for identified purposes, get appropriate consent, use reasonable safeguards, retain information only as needed and make privacy policies available"
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-04-22",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Platforms",
+  "primaryMoneyPage": "/web-design/charities/",
+  "related": [
+    "website-subscription-vs-upfront-build",
+    "framer-webflow-custom-website"
+  ],
+  "services": [
+    "charities"
+  ],
+  "wordCount": 1622,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 20546,
+      "total_tokens": 24515,
+      "completion_tokens": 3969,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 923
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 923
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Separated content ownership from software licences and managed dependencies; removed sole-option and unsupported relative-cost claims.",
+      "date": "2026-10-08"
+    }
+  ],
+  "criticalFactsReviewed": true
+}

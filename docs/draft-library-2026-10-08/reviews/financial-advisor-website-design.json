@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "To help a financial advisor or firm plan a website that helps the right prospective clients recognise fit before asking for a meeting, while handling regulated-industry caution, privacy, accessibility and provider choice in a practical way.",
+    "specificity": "Specific to financial-advisor website planning rather than generic small-business marketing. It names client life stages, service models, poor-fit decline paths, a first-meeting sequence, sample enquiry fields and BC's PIPA context. It avoids promising investment results or giving financial advice.",
+    "evidence": "The article cites the BC Office of the Information and Privacy Commissioner guidance on PIPA privacy policies and the W3C accessible forms tutorial. It does not invent performance numbers, client stories or platform facts.",
+    "voice": "The piece sounds like Michael: conversational, opinionated about design tradeoffs, careful with regulated industries, Canadian in spelling and free of corporate padding. The advice is constructive without pretending that a website designer's view replaces compliance or legal review.",
+    "usefulAsset": "A practical first-draft resource for financial advisors planning a website in 2027. It helps them think through client fit, the shape of the first meeting, privacy-conscious forms, accessible enquiry design and the difference between DIY, general agency, specialist and independent design support."
+  },
+  "slug": "financial-advisor-website-design",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1403,
+  "usage": {
+    "prompt_tokens": 7330,
+    "total_tokens": 11840,
+    "completion_tokens": 4510,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4206
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 4206
+    }
+  }
+}

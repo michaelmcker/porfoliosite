@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "The article is focused: it tells service businesses to evaluate landing-page readiness, follow-up and lead quality before increasing Google Ads spend.",
+    "specificity": "It gives concrete page choices, a decision table, a narrow public-form recommendation, a qualified-lead worksheet and an explicitly hypothetical cost-per-customer example without inventing client outcomes.",
+    "evidence": "The factual claims stay close to the two cited sources: Google Analytics event tracking and W3C accessible-form guidance. No unsupported test results, percentages or client stories are added.",
+    "voice": "The writing sounds like Michael: direct, practical, locally aware and willing to say that he would not automatically create a new landing page for every campaign.",
+    "usefulAsset": "This is a useful pre-spend review page for Okanagan service businesses, especially when paired with a website or landing-page audit."
+  },
+  "slug": "website-before-paid-ads",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1636,
+  "usage": {
+    "prompt_tokens": 6596,
+    "total_tokens": 7034,
+    "completion_tokens": 438,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 243
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 243
+    }
+  }
+}

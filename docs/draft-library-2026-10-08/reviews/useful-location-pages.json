@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Give local and service-area businesses a practical standard for location pages that provide genuine local value, avoid thin doorway-page patterns, and connect naturally to services, proof, and contact paths.",
+    "specificity": "Strong and concrete: names the Okanagan communities Michael serves, describes real service-area boundary decisions (travel, minimums, seasonal access), and includes a usable six-block page structure with purposes.",
+    "evidence": "Appropriate and restrained. Two Google sources support the doorway-page and local ranking framing, plus one Michael project (Cool Runnings) used as a brief illustration without invented metrics. No unsupported percentages, tests, or client anecdotes.",
+    "voice": "Consistent with Michael's voice: connected conversational sentences, Canadian spelling, a clear opinion (a simple well-written page beats an expensive design around repeated text), constructive and mostly caveat-free. No flagged phrases, no em dashes, no corporate padding.",
+    "usefulAsset": "Yes. The outline table, the 'what each city page needs' checklist, and the decision rule for when to build more pages make this a reusable resource for Okanagan and Okanagan-adjacent service businesses planning their 2027 site structure."
+  },
+  "slug": "useful-location-pages",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1134,
+  "usage": {
+    "prompt_tokens": 9389,
+    "total_tokens": 9761,
+    "completion_tokens": 372,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 106
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 106
+    }
+  }
+}

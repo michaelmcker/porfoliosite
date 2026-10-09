@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Show Okanagan and other small businesses how to turn one real customer project into useful website content, images, video, and social material without inventing proof or overclaiming results.",
+    "specificity": "High. The article separates permission and briefing, project constraints, service-page versus case-study placement, video and social reuse, and the difference between one client-reported result and a general promise.",
+    "evidence": "Good. It uses the approved Cool Runnings and ABC Appliance work conservatively, links the W3C accessibility guidance for video, and avoids unsupported percentages or invented customer quotes.",
+    "voice": "Strong. It sounds like Michael: practical, answer-first, opinionated about judgement and restraint, conversational, and written for busy owners rather than marketers.",
+    "usefulAsset": "Yes. The customer project worksheet, placement guidance, and clear limits around what one project can prove make this a reusable library article rather than thin portfolio advice."
+  },
+  "slug": "customer-project-content",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1862,
+  "usage": {
+    "prompt_tokens": 8302,
+    "total_tokens": 9280,
+    "completion_tokens": 978,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 738
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 738
+    }
+  }
+}

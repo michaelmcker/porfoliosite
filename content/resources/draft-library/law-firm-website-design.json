@@ -1,0 +1,163 @@
+{
+  "slug": "law-firm-website-design",
+  "title": "What works for law-firm websites in 2027?",
+  "type": "guide",
+  "description": "A practical guide to law-firm website design for British Columbia practices, covering the pages that matter, BC's marketing and privacy rules, safe intake choices, and how to decide whether your next site is a credibility piece, a growth tool, or both.",
+  "summary": "A law-firm website should help a prospective client recognise the right practice area, understand the lawyer’s experience and make an appropriate first enquiry. For an Okanagan firm planning its 2027 site, the useful priorities are clear service pages, verifiable professional information, accessible contact paths and an intake process reviewed by the practice.",
+  "takeaways": [
+    "British Columbia's rule 4.2-5 means every claim on your site, including client testimonials, needs to be accurate, verifiable, and not misleading.",
+    "The pages that do the real work are a clear homepage, specific attorney profiles, thorough practice-area pages, independent reviews, and easy contact options.",
+    "A public enquiry form should collect the minimum needed to respond and check conflicts, then hand detailed intake to a secure, purpose-built process."
+  ],
+  "sections": [
+    {
+      "id": "what-it-needs-to-do",
+      "title": "What a law-firm website needs to do in 2027",
+      "body": "<p>A law-firm website in 2027 needs to do three things at once. It has to reassure someone who is nervous about their legal problem, prove competence to someone who is skeptical, and be readable by the software that increasingly answers questions on their behalf. That sounds like a lot, but the core is simple. The site is where referrals go to confirm what they heard, where search results and AI summaries point, and where a potential client decides whether calling you feels safe.</p><p>For most British Columbia practices, the winning design is not the loudest one. It is the one that feels calm, specific, and easy to navigate on a phone.</p>"
+    },
+    {
+      "id": "bc-marketing-rule",
+      "title": "British Columbia's marketing rule sets the floor",
+      "body": "<p>British Columbia has a clear ethical floor for lawyer marketing. The Law Society's <a href=\"https://www.lawsociety.bc.ca/getContentAsset/8e87c35e-0a11-4dab-8185-4d4cb02d3bed/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/Ethics_Advisory_-_Marketing_activities?language=en-CA\">August 2025 advisory on marketing activities</a> points back to rule 4.2-5 of the Code of Professional Conduct. In plain terms, any marketing activity a lawyer undertakes or authorizes must not be false, inaccurate, unverifiable, reasonably capable of misleading the recipient, or contrary to the best interests of the public. That applies to websites, testimonials, flyers, and social media alike.</p><p>The advisory is specific about testimonials. Every factual statement a former client makes has to be verifiably true, not just sincerely believed. Broad superlatives and vague praise are risky territory. The practical takeaway is that your website copy should be specific, restrained, and reviewed by someone who understands the rule before it goes live. If you want to see how that plays out in actual page decisions, I keep notes on <a href=\"/web-design/law-firms/\">law-firm website design</a> that stay inside those lines.</p>"
+    },
+    {
+      "id": "content-that-carries-weight",
+      "title": "The content that carries the weight",
+      "body": "<p>A useful law-firm website gives the homepage, lawyer profiles, practice-area pages and contact page separate jobs. Start with the firm’s actual services and how prospective clients are referred or find it.</p><p>The homepage should make the practice areas and office location easy to identify. A lawyer profile should explain current responsibilities, relevant experience and professional qualifications in language a prospective client can understand. Include a recent photograph, an accurate role and the correct route for an enquiry. There is no useful universal rule for biography length; give the reader enough information to assess fit.</p><p>Practice-area pages should explain the kinds of matters the firm accepts, the first step, how an initial conversation is arranged and what the visitor should avoid sending through a public form. For a Vernon office serving the wider Okanagan, explain the available meeting arrangements and any genuine geographic limits. Do not imply an office in every community served.</p><p>Treat testimonials as a separate compliance decision. A review being visible on a third-party platform does not make it automatically suitable for republication in the firm’s marketing. The Law Society’s advisory specifically distinguishes unsolicited third-party reviews from marketing the lawyer reproduces or refers to.</p><p>Keep contact details visible and make forms usable with clear labels, instructions and helpful errors. The <a href=\"https://www.w3.org/WAI/tutorials/forms/\">W3C accessible forms guidance</a> is a practical reference for those interface choices.</p>"
+    },
+    {
+      "id": "safe-intake-and-privacy",
+      "title": "Safe intake design and privacy basics",
+      "body": "<p>Safe intake design starts with understanding that British Columbia's Personal Information Protection Act applies to most private organizations, including law firms. A public website enquiry form should ask for the minimum needed to respond and check for conflicts, then route detailed intake to a secure, purpose-built process.</p><p>The <a href=\"https://www.oipc.bc.ca/guidance-documents/2286\">Office of the Information and Privacy Commissioner's PIPA guidance</a> is clear about collecting only the minimum amount of personal information required to achieve the purpose of the collection. A website form is not the place to ask for a full case history, financial documents, or medical records. Those belong in the practice's approved, secure system after an initial conversation. The form should tell the visitor what happens next and who will contact them, without promising confidentiality or specific outcomes.</p>"
+    },
+    {
+      "id": "credibility-sites-versus-growth-sites",
+      "title": "Credibility sites versus growth sites",
+      "body": "<p>The biggest design decision is whether your next website is a credibility piece or a growth tool. Referral-driven practices and marketing-driven practices need different architectures, and confusing the two wastes money.</p><table><caption>Two starting points for law-firm websites</caption><thead><tr><th>Feature</th><th>Credibility-focused site</th><th>Growth-focused site</th></tr></thead><tbody><tr><td>Primary audience</td><td>Referrals, peers, opposing counsel</td><td>New clients arriving through relevant searches</td></tr><tr><td>Homepage</td><td>Minimal, brand-first</td><td>Service-oriented, clear value proposition</td></tr><tr><td>Practice areas</td><td>Simple list or brief descriptions</td><td>Dedicated page per service with thorough content</td></tr><tr><td>Lawyer profiles</td><td>Professional headshot and short bio</td><td>Detailed, keyword-aware profiles</td></tr><tr><td>Content depth</td><td>About page, contact details, firm history</td><td>Resources, FAQs and practice-area explanations</td></tr><tr><td>Intake emphasis</td><td>Phone number and email prominent</td><td>Multiple contact methods, online enquiry forms</td></tr></tbody></table><p>Neither approach is wrong. The mistake is building a credibility site and then wondering why it does not generate search traffic, or building a growth site with aggressive marketing language that makes referred clients nervous.</p>"
+    },
+    {
+      "id": "a-safe-enquiry-form-sample",
+      "title": "An initial enquiry form the practice can review",
+      "body": "<p>A public law-firm enquiry form should begin the contact process without inviting a detailed account of the matter. The practice should decide which fields belong on that first form and which belong in its controlled intake process.</p><ul><li><strong>Name and contact method:</strong> enough to arrange a response.</li><li><strong>Broad practice area:</strong> for example, the categories the firm actually handles.</li><li><strong>Meeting preference:</strong> phone, video or office visit where offered.</li><li><strong>Short non-sensitive note:</strong> with clear instructions to leave out detailed facts and documents.</li><li><strong>What happens next:</strong> the practice’s approved explanation of response expectations and when a lawyer-client relationship is established.</li></ul><p>Conflict checks may need additional identities or matter information. Let the firm decide how to request and safeguard those details instead of adding them to an ordinary public form by default. Test the route with a dummy enquiry, then confirm who receives it and how the appropriate staff member responds.</p>"
+    },
+    {
+      "id": "how-ai-changes-the-technical-baseline",
+      "title": "What Google and AI search need from the website",
+      "body": "<p>The technical foundation for a law-firm website is clear, accessible content that search systems can reach and understand. <a href=\"https://developers.google.com/search/docs/appearance/ai-features\">Google’s guidance on AI features</a> says the usual SEO fundamentals apply; pages need to be indexed and eligible to appear with a snippet. There is no special AI schema or new machine-readable file required for inclusion.</p><p>Give each practice-area page a descriptive title, a clear main heading, an answer to the visitor’s likely question and useful internal links. Publish important information as readable page text, rather than making a brochure image or PDF the only source. Keep office details and lawyer profiles current.</p><p>Measure the pages that attract relevant enquiries and discuss those enquiries with the intake team. Neither a particular response-time threshold nor a collection of reviews guarantees an AI recommendation. Improve loading and accessibility because they help people use the site, and keep search claims tied to results the firm can actually observe.</p>"
+    },
+    {
+      "id": "how-to-move-forward",
+      "title": "How to move forward",
+      "body": "<p>The most productive next step is to decide which job your website needs to do, then invest in the specific pages that do that job well rather than trying to build everything at once.</p><p>Start by being honest about where your clients come from. If the phone rings mostly from referrals, a credibility site may be the right priority. If you are trying to grow through search or AI, you need the deeper architecture described above. Either way, professional writing is usually worth the cost because lawyers lose steam quickly when they try to write marketing copy between client obligations.</p><p>Build search optimization and accessibility into the foundation from the beginning, not as an afterthought. Then expand the site in stages as the practice evolves. If you are not sure which direction fits your firm, that is a reasonable place to start a conversation with someone who does this work regularly. <a href=\"/contact/\">Get in touch</a> if you want to talk through your specific situation.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should every lawyer profile include a full curriculum vitae?",
+      "Start with the lawyer’s current role, relevant experience and verified qualifications. Link a fuller CV separately if that helps the intended audience. A person choosing a lawyer should not have to extract the practice fit from an undifferentiated list of achievements."
+    ],
+    [
+      "Can British Columbia lawyers use client testimonials on their websites?",
+      "Do not assume an ordinary customer testimonial is suitable. The Law Society’s marketing advisory requires the content to be true and verifiable and identifies subjective praise as a problem under the rule. The practice should review each proposed testimonial and its context before use; a review on a third-party platform is a different situation from republishing it in the firm’s own marketing."
+    ],
+    [
+      "If most of our clients come from referrals, do we still need to care about AI visibility?",
+      "Probably not as a primary investment. AI visibility matters most for firms trying to generate new business from people who do not already know them. A referral-driven practice can focus first on credibility and clear contact paths."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Law Society of BC marketing ethics advisory, August 2025",
+      "url": "https://www.lawsociety.bc.ca/getContentAsset/8e87c35e-0a11-4dab-8185-4d4cb02d3bed/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/Ethics_Advisory_-_Marketing_activities?language=en-CA"
+    },
+    {
+      "name": "BC OIPC developing a privacy policy under PIPA",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    },
+    {
+      "name": "W3C accessible forms",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    },
+    {
+      "name": "Google Search: AI features and your website",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "A British Columbia-specific guide that balances Law Society marketing ethics with practical website architecture, rather than offering generic design advice.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm the Law Society of BC advisory URL still resolves to the August 2025 marketing ethics advisory",
+      "Verify the W3C accessible forms tutorial URL is still current",
+      "Check that no unsupported client claims or metrics were included",
+      "Recheck current BC professional marketing guidance and have the practice review its own intake and claims."
+    ],
+    "serpGap": "Existing results focus on generic law-firm marketing or US-specific advice; this piece applies British Columbia's specific ethical and privacy framework to website design decisions.",
+    "sourceUse": [
+      {
+        "url": "https://www.lawsociety.bc.ca/getContentAsset/8e87c35e-0a11-4dab-8185-4d4cb02d3bed/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/Ethics_Advisory_-_Marketing_activities?language=en-CA",
+        "claim": "BC rule 4.2-5 requires marketing activities to be accurate, verifiable, and not misleading"
+      },
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "PIPA requires organizations to collect the minimum amount of personal information necessary and to develop clear privacy policies"
+      },
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "Accessible forms need clear labels, grouping, instructions, and validation feedback"
+      },
+      {
+        "url": "https://developers.google.com/search/docs/appearance/ai-features",
+        "claim": "Normal SEO and index/snippet eligibility apply to Google AI features; no special AI markup is required."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-02-11",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/law-firms/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "law-firms"
+  ],
+  "wordCount": 1503,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 14792,
+      "total_tokens": 25038,
+      "completion_tokens": 10246,
+      "prompt_tokens_details": {
+        "cached_tokens": 13745
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7159
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 7159
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 1,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Removed unsupported biography traffic and AI latency claims; corrected testimonials and first-contact intake; added official Google source and Okanagan operating details.",
+      "date": "2026-10-08"
+    },
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ],
+  "criticalFactsReviewed": true
+}

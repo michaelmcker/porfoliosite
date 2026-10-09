@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Give Okanagan electrical contractors a practical, answer-first way to think about website content, intake routes, trust signals, and local specificity beyond a generic services list.",
+    "specificity": "Strong. The article distinguishes emergency versus planned work, includes a concrete intake pattern, names the BC verification route, and points to relevant local website resources without adding unsupported facts.",
+    "evidence": "Appropriately restrained. The guidance is mostly structural and practical, with links to existing sources and no invented percentages, client stories, or guaranteed outcomes.",
+    "voice": "Connected, conversational, and practical in Michael's style. It speaks to busy owners plainly and gives opinions without corporate padding.",
+    "usefulAsset": "Yes. This is a good private-review draft for the library because it is self-contained, locally relevant, and likely to help a contractor plan a better website instead of just admiring one."
+  },
+  "slug": "electrician-website-design",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1413,
+  "usage": {
+    "prompt_tokens": 7849,
+    "total_tokens": 8854,
+    "completion_tokens": 1005,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 779
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 779
+    }
+  }
+}

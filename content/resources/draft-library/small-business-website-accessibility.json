@@ -1,0 +1,160 @@
+{
+  "slug": "small-business-website-accessibility",
+  "title": "An accessible website is easier to use: practical checks for a small business",
+  "type": "guide",
+  "description": "A practical small-business guide to website accessibility based on W3C checks, covering keyboard access, contrast, alt text, forms, captions, and a first-pass worksheet.",
+  "summary": "An accessible website is easier for everyone to use, including customers with disabilities. This guide turns the W3C checklist into practical small-business checks for keyboard access, contrast, alt text, forms, captions, and motion, plus a worksheet you can run on your own site today.",
+  "takeaways": [
+    "Accessibility is a usability standard that helps all visitors, not only people with disabilities.",
+    "Start with the W3C first checks: keyboard access, visible focus, contrast, alt text, labelled forms, captions, and reduced motion.",
+    "Use the worksheet to find quick fixes, then get help for structural changes like focus order, reflow, or accessible video players."
+  ],
+  "sections": [
+    {
+      "id": "what-accessibility-means",
+      "title": "What accessibility actually means for a small business website",
+      "body": "<p>Accessibility means that people who use a keyboard instead of a mouse, people who enlarge text, people who listen to pages aloud, and people who need strong colour contrast can all find what they need and complete the tasks your site asks of them. The <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">W3C first checks</a> are a good place to start because they are written for non-specialists.</p><p>On a practical level, that means someone can find your hours, understand your services, request a quote, or book an appointment without running into barriers that have nothing to do with your business. For a small business in Kelowna or the wider Okanagan, this is not a separate project from normal website quality. The same habits that make a site easier to use for someone with a disability usually make it clearer and faster for everyone. That is the standard I bring to <a href=\"/web-design/\">my own web design work</a>.</p>"
+    },
+    {
+      "id": "w3c-checklist-not-legal",
+      "title": "Use the W3C checklist as a guide, not a legal certification",
+      "body": "<p>The W3C publishes the Web Content Accessibility Guidelines, which are the main reference for accessible web content. They are extremely useful, but they are a technical standard, not a legal certificate. Passing an automated scan does not mean your site meets every guideline, and meeting the guidelines does not replace legal advice for regulated professions.</p><p>Automated tools are useful for catching obvious problems, but they cannot judge whether alt text is accurate, whether a heading structure makes sense, or whether an error message is actually helpful. A person still needs to look. Treat WCAG as a design and development reference. Use it to ask better questions about your own site, and to give a designer or developer a clear starting point.</p>"
+    },
+    {
+      "id": "keyboard-focus",
+      "title": "Check keyboard access and visible focus",
+      "body": "<p>Many people navigate with a keyboard, a switch device, or voice commands. Your site needs to show where the keyboard focus is, and interactive features need to work from the keyboard, using Tab to move between controls and the appropriate keys within controls such as menus. A simple test is to put your mouse aside and try to complete your main contact form using only the keyboard.</p><p>One common problem is that designers remove the visible focus outline because they think it looks cluttered. That outline is how keyboard users know where they are. It needs to stay, and it can be styled to look intentional. If focus disappears, if the tab order jumps around illogically, or if a menu cannot be opened without a mouse, that is a real usability problem. The <a href=\"https://www.w3.org/WAI/tutorials/forms/\">W3C forms tutorial</a> explains why labels and focus order matter.</p>"
+    },
+    {
+      "id": "text-contrast-reflow",
+      "title": "Make text readable: contrast, size, and reflow",
+      "body": "<p>Text needs enough contrast against its background, and it needs to stay readable when someone zooms in or increases the font size. WCAG asks for a minimum contrast ratio for normal text, and it also requires that pages reflow properly when the viewport is narrow.</p><p>For a small business site, this means avoiding very light gray text on white backgrounds, and making sure your designer tests at 200% zoom and on a phone. Text also needs to adapt when the screen gets narrow. A paragraph should not force sideways scrolling on a small screen, and buttons should not overlap or shrink to the point that the words disappear. A beautiful typeface does not help if the letters are too faint to read.</p>"
+    },
+    {
+      "id": "images-alt-text",
+      "title": "Write image alt text that helps people, not search engines",
+      "body": "<p>Alt text is a short text description attached to an image. Its job is to give someone who cannot see the image the information the image carries. It is not a place to stuff keywords.</p><p>The W3C has a useful alt text decision tree. In practice: if the image is a logo, the alt text should say the business name. If the image is purely decorative, it should be marked so screen readers skip it. If the image shows a product or a step in a process, describe the important content briefly. For a product photo, the alt text might name the product. For a photo that shows a completed project, it might say what the project involved. The test is whether the text gives the same information the image gives a sighted visitor.</p>"
+    },
+    {
+      "id": "forms-labels-errors",
+      "title": "Give every form field a label and clear errors",
+      "body": "<p>Every input in a form needs a visible label that stays associated with the field. Placeholder text inside a field is not a label. It disappears when someone starts typing, and many screen readers do not treat it as a reliable label. Use a real label above or beside the field.</p><p>Error messages should say what went wrong and how to fix it, not just turn a field red. Related fields, such as a set of checkboxes for services, should be grouped so the group has a clear name. For example, a contact form for an Okanagan trades business might ask for name, email, phone, service needed, and preferred time. Each of those needs a proper label, and if the form rejects a phone number because it needs a specific format, the message should say so plainly.</p>"
+    },
+    {
+      "id": "video-audio-motion",
+      "title": "Handle video, audio, and motion with choices",
+      "body": "<p>For video with speech or meaningful sound, provide accurate captions. If the video includes important visual information that is not spoken aloud, provide a text description or make sure that information appears elsewhere on the page. Audio content should have a transcript when the content matters.</p><p>Auto-playing audio or video is a particular problem. It can interfere with screen readers, it can be startling, and it gives the visitor no sense of control. If you use media, let people choose to play it. Motion is another choice. Some people experience dizziness or nausea from parallax effects, auto-playing carousels, or large animations. Give visitors a way to pause or reduce motion. The <a href=\"https://www.w3.org/WAI/media/av/\">W3C audio and video guide</a> covers captions, transcripts, and player accessibility.</p>"
+    },
+    {
+      "id": "practical-test-today",
+      "title": "A practical test you can run today",
+      "body": "<p>Here is a short worksheet you can use on your own site. It is not a full audit, but it will show you whether the basics are in place. These checks overlap with the broader qualities of <a href=\"/blog/good-small-business-website-design/\">good small business website design</a>.</p><table><caption>A first-pass accessibility worksheet for a small business website</caption><thead><tr><th>Check</th><th>What to do</th><th>What good looks like</th></tr></thead><tbody><tr><td>Keyboard access</td><td>Press Tab through the home page and contact form</td><td>Focus is visible and moves in a logical order</td></tr><tr><td>Contrast</td><td>Zoom to 200% and view on a phone</td><td>Text stays readable; no overlapping or cut-off content</td></tr><tr><td>Alt text</td><td>Ask what each important image conveys</td><td>Brief, accurate description; no keyword lists</td></tr><tr><td>Form labels</td><td>Click each label and see if the cursor lands in the right field</td><td>Labels are explicit and errors are explained</td></tr><tr><td>Motion</td><td>Watch for auto-playing animation</td><td>There is a pause or reduce option, or motion is subtle</td></tr><tr><td>Captions</td><td>Play any video with sound off</td><td>Spoken content is available as text</td></tr></tbody></table><p>If several rows in the table fail, that does not automatically mean you need a new website. It usually means your current site needs specific repairs. The table is a way to find them.</p>"
+    },
+    {
+      "id": "next-step",
+      "title": "The next step is a conversation about your actual site",
+      "body": "<p>The best next step is to look at your own website with these checks in mind, then decide what to fix first. Some issues, such as missing form labels, are small changes with a big effect. Others, such as rebuilding a video player, are larger projects.</p><p>If you want help sorting out which accessibility fixes will also make your site easier for customers to use, <a href=\"/contact/\">get in touch</a>. We can look at your actual pages and talk through a practical plan.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Does an accessible website help with search engines?",
+      "It can, because many accessibility practices overlap with clear structure and good content. Headings, descriptive links, and accurate alt text all help a search engine understand a page. But accessibility is about people first. Do not write alt text or headings just to insert keywords; write them to be clear and accurate."
+    ],
+    [
+      "Can I fix accessibility myself, or do I need a developer?",
+      "Some things are doable yourself, such as writing better alt text, checking contrast, and making sure your contact form has visible labels. Structural issues usually need a developer: keyboard focus order, ARIA attributes on custom controls, reflow behaviour, and accessible video players all require technical work."
+    ],
+    [
+      "Does accessibility apply if my website is just a few pages?",
+      "Yes. A five-page brochure site still has text, images, maybe a form, and maybe video. The same basic checks apply: readable text, reachable forms, described images, and captions for spoken content. A small site is not exempt from being usable."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "W3C: Easy Checks - A First Review of Web Accessibility",
+      "url": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+    },
+    {
+      "name": "W3C: Forms Tutorial",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    },
+    {
+      "name": "W3C: Making Audio and Video Media Accessible",
+      "url": "https://www.w3.org/WAI/media/av/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Translates W3C accessibility guidance into a small-business worksheet, distinguishing quick owner fixes from structural work that needs a developer, and grounding the checks in real tasks like requesting a quote or booking an appointment.",
+    "claimsToRecheckBeforeRelease": [
+      "Verify all W3C links are still live and the descriptions match the current page content",
+      "Confirm internal links /web-design/, /blog/good-small-business-website-design/, and /contact/ resolve to live pages",
+      "Confirm no unsupported legal-compliance claims remain"
+    ],
+    "serpGap": "Existing results are mostly the full WCAG specification, W3C checklists, or vendor scanner pages; there is little that turns those into a concrete small-business worksheet and explains which fixes are owner-level versus developer-level.",
+    "sourceUse": [
+      {
+        "url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+        "claim": "W3C first checks are a non-specialist starting point for accessibility"
+      },
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "W3C forms tutorial explains labels, grouping, errors, and focus"
+      },
+      {
+        "url": "https://www.w3.org/WAI/media/av/",
+        "claim": "W3C media guidance covers captions, transcripts, and accessible players"
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-12-23",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Design",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "good-small-business-website-design",
+    "website-photography-video-animation"
+  ],
+  "services": [],
+  "wordCount": 1494,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 17054,
+      "total_tokens": 26968,
+      "completion_tokens": 9914,
+      "prompt_tokens_details": {
+        "cached_tokens": 14241
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7262
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 7262
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "every interactive element needs to be reachable with the Tab key",
+      "replacement": "interactive features need to work from the keyboard, using Tab to move between controls and the appropriate keys within controls such as menus"
+    },
+    {
+      "original": "If you use video, provide captions.",
+      "replacement": "For video with speech or meaningful sound, provide accurate captions."
+    },
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

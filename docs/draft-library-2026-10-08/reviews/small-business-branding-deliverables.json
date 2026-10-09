@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help a small business owner define and evaluate the practical deliverables of a branding project before approving it.",
+    "specificity": "High: names positioning, message hierarchy, visual system, photo direction, templates, file ownership and a checklist table.",
+    "evidence": "Mostly practical recommendations, clearly framed as a checklist rather than guaranteed outcomes; no invented client results.",
+    "voice": "Connected, conversational, Canadian-spelled, answer-first sections without corporate padding or flagged filler language.",
+    "usefulAsset": "Yes, as a practical buying and briefing checklist for a small-business branding project."
+  },
+  "slug": "small-business-branding-deliverables",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1365,
+  "usage": {
+    "prompt_tokens": 5223,
+    "total_tokens": 5482,
+    "completion_tokens": 259,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 119
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 119
+    }
+  }
+}

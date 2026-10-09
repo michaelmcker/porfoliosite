@@ -1,0 +1,17 @@
+{
+  "slug": "self-hosted-custom-website-ownership",
+  "provider": "Main editor",
+  "issues": [],
+  "remainingBlockers": [],
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "assessment": {
+    "intent": "Ownership and hosting distinctions",
+    "specificity": "Ownership inventory and actual export boundaries",
+    "evidence": "WordPress, Webflow, Framer and Sanity official documentation",
+    "voice": "Manual source-led review completed",
+    "usefulAsset": "Ownership worksheet"
+  },
+  "echoFailure": "Truncated review JSON; full manual review completed."
+}

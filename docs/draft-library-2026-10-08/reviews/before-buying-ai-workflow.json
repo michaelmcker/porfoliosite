@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "The article clearly aims to help a busy small-business owner decide whether an AI workflow is worth paying for, and what to settle before asking for a quote.",
+    "specificity": "High. It stays in Michael's Okanagan service-business frame, includes a decision worksheet, a concrete sample triage setup, and the specific CAD $900 audit and CAD $2,500/month custom-system pricing only because the article is directly about buying AI work.",
+    "evidence": "The advice is grounded in Michael's stated method and published AI offer without inventing client stories, percentages, tests or future results. Hypothetical examples are introduced explicitly, and the one external source matches the supplied primary source.",
+    "voice": "Strong Michael McKerracher voice: connected conversational sentences, Canadian spelling, a genuine tradeoff about automation versus supervision, and no corporate padding or banned filler phrases.",
+    "usefulAsset": "Yes. Each section is answer-first and self-contained, the worksheet gives owners a practical pre-quote exercise, and the FAQs add new guidance rather than repeating headings."
+  },
+  "slug": "before-buying-ai-workflow",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1461,
+  "usage": {
+    "prompt_tokens": 5245,
+    "total_tokens": 5743,
+    "completion_tokens": 498,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 236
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 236
+    }
+  }
+}

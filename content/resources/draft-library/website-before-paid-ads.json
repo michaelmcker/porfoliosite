@@ -1,0 +1,133 @@
+{
+  "slug": "website-before-paid-ads",
+  "title": "Before buying more ads, check whether your website can use the traffic",
+  "type": "guide",
+  "description": "A service business guide to checking whether a website and landing pages are ready for Google Ads before buying more traffic, with page choices, contact handoff, lead tracking and a simple cost-per-customer check.",
+  "summary": "Before buying more Google Ads, a service business should check whether the landing page matches the ad, gives the visitor one clear next step, offers local proof and sends calls or forms into a trackable follow-up process. Paid traffic can reveal demand, but it also exposes weak pages.",
+  "takeaways": [
+    "Ads do not fix a weak service page; they bring attention to whatever is already there.",
+    "Choose a dedicated landing page or a stronger service page based on access, editing needs and the offer.",
+    "Track calls, forms and duplicate leads before judging whether paid traffic is worth buying again."
+  ],
+  "sections": [
+    {
+      "id": "start-with-the-page",
+      "title": "Start with the page, not the campaign",
+      "body": "<p>Before a service business buys more traffic, the first question is whether the destination page can turn that traffic into a useful conversation. A landing page is the web address a person reaches after clicking an ad, and that page can help or hurt the visitor's next decision.</p><p>That is the practical test for Kelowna, West Kelowna, Vernon or Lake Country businesses considering paid search. If the ad promises a quote for a specific service, but the page is a general homepage with three different calls to action, the business is paying to send people into confusion. If the ad is specific and the page continues the same promise with clear local evidence, the business gives itself a fairer chance.</p><p>Good <a href=\"/web-design/\">service business web design</a> does this work before the ad account is opened. It decides what the visitor needs to understand, what proof belongs near the request, and which next step the page should make easy.</p>"
+    },
+    {
+      "id": "service-page-or-ad-landing-page",
+      "title": "Use a service page when it can do the whole job",
+      "body": "<p>A normal service page can be the best paid destination when it is already clear, specific and maintained. A page about appliance repair, landscaping, dental care or another local service can work for ads if it explains the service, shows service-area fit and gives a visible way to call or request a quote.</p><p>A dedicated advertising landing page is more useful when the offer is narrower than the website's normal service page. It can also be useful when a marketer cannot safely edit the main site, or when the business wants a lean page for one campaign. The tradeoff is that a standalone page can lose the trust signals, navigation and supporting information that live on the full website.</p><table><caption>Choosing between a website service page and a dedicated ad landing page</caption><thead><tr><th>Question</th><th>Use the service page</th><th>Use a dedicated landing page</th></tr></thead><tbody><tr><td>Does the page already match the ad?</td><td>Yes. Improve it and send traffic there.</td><td>No. Build a narrow page around the exact offer.</td></tr><tr><td>Can the page be edited quickly and safely?</td><td>Yes, if the website is easy to update.</td><td>Yes, if the main site is difficult to change.</td></tr><tr><td>Does the visitor need wider business context?</td><td>Yes, especially if trust depends on the full website.</td><td>Less, if the page has one tightly defined action.</td></tr><tr><td>Is the page expected to serve search visitors too?</td><td>Usually yes.</td><td>Not necessarily; it may exist only for paid traffic.</td></tr></tbody></table><p>I would not automatically build a new landing page for every ad campaign. I would first ask whether the existing service page is the best public explanation of that offer. If it is not, improve the page or create a narrower destination with a specific reason to exist.</p>"
+    },
+    {
+      "id": "give-the-page-one-job",
+      "title": "Give the page one job",
+      "body": "<p>A page ready for paid traffic should make one next step obvious. For some businesses, that step is a phone call because speed matters. For others, it is a short form because the office needs the service type, location and preferred time before calling back.</p><p>This is where many websites become too ambitious. A page may ask for a call, a form, an email, a review, a social follow and a newsletter signup. A visitor who arrived from one specific ad does not need all of those choices at once. The page should still look complete and trustworthy, but the main action should stand out.</p><p>If you are deciding between calls and forms, think about the handoff. A call creates speed but can be missed. A form creates structure but adds delay. Michael's guide to <a href=\"/blog/calls-or-forms-service-website/\">calls or forms on a service website</a> looks at that tradeoff from the visitor's side.</p>"
+    },
+    {
+      "id": "match-the-ad-and-prove-local-fit",
+      "title": "Match the ad and prove local fit",
+      "body": "<p>The strongest pre-ad page repeats the promise that caused the click, then adds evidence. If the ad says “emergency furnace repair in Kelowna,” the page should not open with a broad paragraph about home comfort. It should confirm the service, the urgency, the service area and the next step.</p><p>For Okanagan businesses, local proof often matters more than clever copy. Useful evidence can include the communities served, photos of the type of work, the kinds of properties handled, seasonal issues and a clear explanation of what happens after the visitor reaches out. The page does not need to become a city-by-city template. It needs to show that the business understands the customer's situation.</p><p>Beauty still matters. A page can be direct without looking abandoned. Good spacing, a readable headline, real photography where available and a clear visual path toward the contact action make the business easier to trust.</p>"
+    },
+    {
+      "id": "keep-public-forms-narrow",
+      "title": "Keep public forms narrow",
+      "body": "<p>A public advertising form should collect enough information to respond, not a full client history. The World Wide Web Consortium's <a href=\"https://www.w3.org/WAI/tutorials/forms/\" target=\"_blank\" rel=\"noopener\">accessible forms guidance</a> also encourages simple forms that ask only for what is needed to complete the process. That is good usability advice and good privacy judgment.</p><p>For example, a home-service form might ask for name, contact method, neighbourhood or city, service type and preferred timing. A law, health or financial website may need a more careful intake path, but the public ad form still should not ask for sensitive documents or a detailed account of the matter. Those details belong in the practice's approved private system.</p><p>If consent or tracking is involved, say what is happening in plain language. Do not hide important tracking behind design. A visitor should understand when they are submitting an enquiry, when they are joining a mailing list and how the business will use the information.</p>"
+    },
+    {
+      "id": "measure-the-traffic-that-arrives",
+      "title": "Measure the traffic that arrives",
+      "body": "<p>Paid traffic is easier to judge when the website records actions, not just visits. Google Analytics explains <a href=\"https://support.google.com/analytics/answer/9267735?hl=en\" target=\"_blank\" rel=\"noopener\">events</a> as interactions that can be measured, such as page engagement or a defined action. A service business does not need a complicated analytics setup before its first campaign, but it should know which actions matter.</p><p>Start with a short definition: phone calls from service pages, completed quote forms, direction requests if relevant and any other action that shows genuine interest. Then decide how duplicates will be handled. The same person might call, submit a form and send an email. That is one interested potential customer, not three separate wins.</p><p>A simple worksheet can help:</p><ul><li><strong>Qualified lead:</strong> the person is in the service area, wants a relevant service and left a usable way to respond.</li><li><strong>Unqualified or unclear:</strong> wrong service, wrong location, spam, vendor pitch or incomplete contact information.</li><li><strong>Duplicate:</strong> the same person reached out more than once through different channels.</li><li><strong>Needs follow-up:</strong> real interest, but the business has not responded or booked the next step.</li></ul>"
+    },
+    {
+      "id": "run-a-simple-cost-check",
+      "title": "Run a simple cost-per-customer check",
+      "body": "<p>Suppose a service business spends $1,500 on ads, $300 on landing-page work and $600 on staff time or outside help handling enquiries. That is $2,400 of acquisition cost. If the campaign produces 60 enquiries, but only 18 are qualified and six become customers, the simple acquisition cost is $400 per new customer.</p><p>That hypothetical example is not a forecast. The point is that raw lead count can hide the real outcome. Sixty enquiries sounds stronger than six customers until the business asks what the work required and what each customer was worth. A lower-volume page with better qualification may be the better buy.</p><p>This is why the website decision belongs before the ad decision. If the page attracts the wrong visitors, buries the next step or creates weak follow-up, the advertising bill rises while the useful result stays flat. A better page can make the same ad spend easier to judge and easier to improve.</p>"
+    },
+    {
+      "id": "check-before-you-buy",
+      "title": "Check the page before buying more traffic",
+      "body": "<p>Before increasing ad spend, open the destination page as if you had never seen the business. Ask whether the headline matches the ad, whether the service area is clear, whether the proof is specific and whether the next step is easy on a phone. Then test the form or call path and look at what actually arrives in the inbox or tracking system.</p><p>A practical checklist is:</p><ol><li>The page answers the exact question promised by the ad.</li><li>The page explains who the service is for and where it is available.</li><li>The main call or form action is visible without hunting.</li><li>The form asks only for information needed to respond.</li><li>The business can identify duplicate enquiries.</li><li>The business can separate real prospects from noise.</li><li>The owner can estimate acquisition cost after a small test.</li></ol><p>If those pieces are missing, paid traffic may still produce a few leads, but it will be harder to learn from. Michael can review the website, landing page and enquiry handoff before you buy more traffic. <a href=\"/contact/\">Start the conversation here</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should a service business buy ads before improving its website?",
+      "Usually the business should first check whether the destination page matches the offer, makes the next step clear and can be measured. Ads may still be useful as a small test, but weak pages make the results harder to trust."
+    ],
+    [
+      "Is a dedicated landing page always better for Google Ads?",
+      "No. A well-written service page can be the better destination when it already explains the offer and carries useful trust signals. A dedicated page is more useful when the campaign needs a narrow offer or the main website is hard to edit."
+    ],
+    [
+      "What should a small business count as a lead from ads?",
+      "Count the actions that matter to the business, usually calls, completed forms or another defined enquiry. Then separate qualified leads from duplicates, spam and people outside the service area before judging the campaign."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Google Analytics Help: Events",
+      "url": "https://support.google.com/analytics/answer/9267735?hl=en"
+    },
+    {
+      "name": "W3C Web Accessibility Initiative: Forms",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Gives service businesses a pre-spend page-readiness check that connects Google Ads traffic to intent match, local proof, contact handoff, qualified-lead tracking and a simple acquisition-cost example.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm the W3C forms page still advises collecting only what is required to complete the process.",
+      "Do not imply that the hypothetical CAD example predicts a real campaign result."
+    ],
+    "serpGap": "Existing results discuss PPC landing-page best practices or standalone versus subpage choices, but this article is framed as a pre-ad-spend buyer check for a service business, with local proof, form limits and lead qualification included.",
+    "sourceUse": [
+      {
+        "url": "https://support.google.com/analytics/answer/9267735?hl=en",
+        "claim": "Google Analytics supports measuring defined website interactions as events."
+      },
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "W3C guidance favours simple forms that request only information needed to complete the transaction or process."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-09-30",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Conversion",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "calls-or-forms-service-website",
+    "website-enquiry-follow-up"
+  ],
+  "services": [],
+  "wordCount": 1636,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 11646,
+      "total_tokens": 21031,
+      "completion_tokens": 9385,
+      "prompt_tokens_details": {
+        "cached_tokens": 8490
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6418
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6418
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  }
+}

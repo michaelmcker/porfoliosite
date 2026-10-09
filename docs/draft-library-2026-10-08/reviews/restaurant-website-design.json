@@ -1,0 +1,68 @@
+{
+  "issues": [
+    {
+      "path": "sections.1.body",
+      "original": "If your current site covers this list well on a phone, you are already ahead of most restaurants. If it doesn't, that is the work, and it is usually smaller than owners expect.",
+      "replacement": "If your current site covers this list well on a phone, you have the essentials in place. If it doesn't, that is the work, and it is usually smaller than owners expect.",
+      "reason": "Unsupported comparative claim ('ahead of most restaurants'); narrow to covering essentials."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "For a growing share of guests this is the deciding factor, not a nice extra.",
+      "replacement": "For many guests, this is the deciding factor, not a nice extra.",
+      "reason": "Unsupported empirical claim about a 'growing share'; narrowed to 'many guests'."
+    },
+    {
+      "path": "sections.4.body",
+      "original": "Hours are the most searched fact about most local restaurants, and the easiest to get wrong.",
+      "replacement": "Hours are one of the first things guests check on a local restaurant website, and they are easy to get wrong.",
+      "reason": "Unsupported empirical claim ('most searched fact'); reframed as importance and ease of error."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Practical, opinionated guide for independent restaurant owners on what a website needs to do to convert hungry searchers into guests.",
+    "specificity": "Good: gives a concrete checklist, a sample four-page architecture, and specific HTML-versus-PDF menu advice.",
+    "evidence": "Grounded in Michael's stated restaurant-design approach, plus two credible sources (Google Business Profile special hours, W3C WAI first-review accessibility checks). No invented stats or fake case studies.",
+    "voice": "On target: connected conversational sentences, answer-first H2s, Canadian spelling, no corporate padding or smug contrasts, clear explanations before using terms.",
+    "usefulAsset": "Yes. A restaurant owner can open their site on a phone and act on this today. Three factual overreach fixes were made; otherwise draft is solid."
+  },
+  "slug": "restaurant-website-design",
+  "applied": [
+    {
+      "path": "sections.1.body",
+      "original": "If your current site covers this list well on a phone, you are already ahead of most restaurants. If it doesn't, that is the work, and it is usually smaller than owners expect.",
+      "replacement": "If your current site covers this list well on a phone, you have the essentials in place. If it doesn't, that is the work, and it is usually smaller than owners expect.",
+      "reason": "Unsupported comparative claim ('ahead of most restaurants'); narrow to covering essentials."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "For a growing share of guests this is the deciding factor, not a nice extra.",
+      "replacement": "For many guests, this is the deciding factor, not a nice extra.",
+      "reason": "Unsupported empirical claim about a 'growing share'; narrowed to 'many guests'."
+    },
+    {
+      "path": "sections.4.body",
+      "original": "Hours are the most searched fact about most local restaurants, and the easiest to get wrong.",
+      "replacement": "Hours are one of the first things guests check on a local restaurant website, and they are easy to get wrong.",
+      "reason": "Unsupported empirical claim ('most searched fact'); reframed as importance and ease of error."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1844,
+  "usage": {
+    "prompt_tokens": 10131,
+    "total_tokens": 11938,
+    "completion_tokens": 1807,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1310
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 1310
+    }
+  }
+}

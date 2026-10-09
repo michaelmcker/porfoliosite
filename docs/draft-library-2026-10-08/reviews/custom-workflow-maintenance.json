@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help a business owner decide when paying ongoing maintenance for a custom AI workflow is justified, and when a general tool is enough.",
+    "specificity": "The article stays focused on one decision, uses a practical worksheet, a clearly hypothetical worked example and specific pre-commitment questions rather than drifting into general AI advice.",
+    "evidence": "The advice is grounded in a visible decision framework and Michael's stated AI audit and custom-system scope, without inventing client results, tests or percentages.",
+    "voice": "The voice is direct, practical and owner-aware: it explains workflow, integration and fallback in plain language, and it treats custom AI as business infrastructure rather than magic.",
+    "usefulAsset": "This is a strong buying-stage article because it gives an owner a way to compare the cost of a recurring business problem against the full cost of owning and maintaining a custom workflow."
+  },
+  "slug": "custom-workflow-maintenance",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1261,
+  "usage": {
+    "prompt_tokens": 4903,
+    "total_tokens": 7821,
+    "completion_tokens": 2918,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2721
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 2721
+    }
+  }
+}

@@ -1,0 +1,542 @@
+[
+  {
+    "slug": "calls-or-forms-service-website",
+    "title": "Phone calls or online forms? What works for a local service website",
+    "pillar": "Conversion",
+    "plannedPublishOn": "2026-11-12",
+    "wordCount": 1346,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "small-business-branding-deliverables",
+    "title": "What should a small-business branding project actually include?",
+    "pillar": "Brand and content",
+    "plannedPublishOn": "2026-11-19",
+    "wordCount": 1357,
+    "primaryMoneyPage": "/marketing-branding/",
+    "status": "draft"
+  },
+  {
+    "slug": "donor-film-planning",
+    "title": "What makes a useful donor film? Start with the decision you need someone to make",
+    "pillar": "Brand and content",
+    "plannedPublishOn": "2026-11-26",
+    "wordCount": 1450,
+    "primaryMoneyPage": "/marketing-branding/",
+    "status": "draft"
+  },
+  {
+    "slug": "small-business-website-brief",
+    "title": "How to brief a small-business website for 2027",
+    "pillar": "Buying and ownership",
+    "plannedPublishOn": "2026-12-03",
+    "wordCount": 1660,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "website-subscription-vs-upfront-build",
+    "title": "Website subscription or upfront build? Compare the whole cost",
+    "pillar": "Platforms",
+    "plannedPublishOn": "2026-12-10",
+    "wordCount": 1830,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "before-buying-ai-workflow",
+    "title": "What to decide before paying for an AI workflow",
+    "pillar": "AI and operations",
+    "plannedPublishOn": "2026-12-17",
+    "wordCount": 1452,
+    "primaryMoneyPage": "/ai-implementation/",
+    "status": "draft"
+  },
+  {
+    "slug": "holiday-hours-website-checklist",
+    "title": "Holiday hours: the website changes that prevent wasted calls and visits",
+    "pillar": "Local discovery",
+    "plannedPublishOn": "2026-12-24",
+    "wordCount": 1675,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "website-handover-checklist",
+    "title": "What you should receive when your new website is handed over",
+    "pillar": "Buying and ownership",
+    "plannedPublishOn": "2026-12-31",
+    "wordCount": 1487,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "plumber-website-design",
+    "title": "What works on a plumber website? A 2027 plan for better enquiries",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-01-07",
+    "wordCount": 1623,
+    "primaryMoneyPage": "/web-design/plumbers/",
+    "status": "draft"
+  },
+  {
+    "slug": "framer-webflow-custom-website",
+    "title": "Framer vs Webflow vs a custom website: what should a small business choose?",
+    "pillar": "Platforms",
+    "plannedPublishOn": "2027-01-14",
+    "wordCount": 1655,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "electrician-website-design",
+    "title": "What works on an electrician website beyond a list of services?",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-01-21",
+    "wordCount": 1413,
+    "primaryMoneyPage": "/web-design/electricians/",
+    "status": "draft"
+  },
+  {
+    "slug": "accountant-website-design",
+    "title": "An accounting website that attracts the clients you want",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-01-28",
+    "wordCount": 1589,
+    "primaryMoneyPage": "/web-design/accountants/",
+    "status": "draft"
+  },
+  {
+    "slug": "kelowna-branding-partners",
+    "title": "How to choose a branding partner for a Kelowna small business",
+    "pillar": "Brand and content",
+    "plannedPublishOn": "2027-02-04",
+    "wordCount": 1457,
+    "primaryMoneyPage": "/marketing-branding/",
+    "status": "draft"
+  },
+  {
+    "slug": "law-firm-website-design",
+    "title": "What works for law-firm websites in 2027?",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-02-11",
+    "wordCount": 1503,
+    "primaryMoneyPage": "/web-design/law-firms/",
+    "status": "draft"
+  },
+  {
+    "slug": "hotel-website-direct-booking",
+    "title": "A hotel website should make booking feel straightforward",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-02-18",
+    "wordCount": 1997,
+    "primaryMoneyPage": "/web-design/hotels/",
+    "status": "draft"
+  },
+  {
+    "slug": "landscaping-website-seasonal-demand",
+    "title": "Prepare your landscaping website before the busy season",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-02-25",
+    "wordCount": 1381,
+    "primaryMoneyPage": "/web-design/landscapers/",
+    "status": "draft"
+  },
+  {
+    "slug": "framer-small-business-websites",
+    "title": "Framer for small-business websites: where it fits and where it gets awkward",
+    "pillar": "Platforms",
+    "plannedPublishOn": "2027-03-04",
+    "wordCount": 1643,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "website-enquiry-follow-up",
+    "title": "From website enquiry to booked work: fix the handoff",
+    "pillar": "Conversion",
+    "plannedPublishOn": "2027-03-11",
+    "wordCount": 1138,
+    "primaryMoneyPage": "/ai-implementation/",
+    "status": "draft"
+  },
+  {
+    "slug": "winery-website-visitor-planning",
+    "title": "What a winery website needs before someone plans a visit",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-03-18",
+    "wordCount": 1298,
+    "primaryMoneyPage": "/web-design/wineries/",
+    "status": "draft"
+  },
+  {
+    "slug": "webflow-small-business-websites",
+    "title": "Webflow for small businesses: when its CMS and design control are worth it",
+    "pillar": "Platforms",
+    "plannedPublishOn": "2027-03-25",
+    "wordCount": 1401,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "vacation-rental-direct-booking-website",
+    "title": "A vacation-rental website that earns the direct-booking enquiry",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-04-01",
+    "wordCount": 1245,
+    "primaryMoneyPage": "/web-design/vacation-rentals/",
+    "status": "draft"
+  },
+  {
+    "slug": "dental-website-design",
+    "title": "What makes a dental website reassuring and useful?",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-04-08",
+    "wordCount": 1709,
+    "primaryMoneyPage": "/web-design/dentists/",
+    "status": "draft"
+  },
+  {
+    "slug": "hvac-website-design",
+    "title": "What an HVAC website needs before a customer calls",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-04-15",
+    "wordCount": 1892,
+    "primaryMoneyPage": "/web-design/hvac/",
+    "status": "draft"
+  },
+  {
+    "slug": "charity-website-platforms",
+    "title": "WordPress, Webflow or a custom CMS for a charity website?",
+    "pillar": "Platforms",
+    "plannedPublishOn": "2027-04-22",
+    "wordCount": 1622,
+    "primaryMoneyPage": "/web-design/charities/",
+    "status": "draft"
+  },
+  {
+    "slug": "physiotherapy-website-design",
+    "title": "A physiotherapy website should help someone choose their first appointment",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-04-29",
+    "wordCount": 1777,
+    "primaryMoneyPage": "/web-design/physiotherapy/",
+    "status": "draft"
+  },
+  {
+    "slug": "website-social-video-content",
+    "title": "What belongs on your website, social media and in a video?",
+    "pillar": "Brand and content",
+    "plannedPublishOn": "2027-05-06",
+    "wordCount": 1225,
+    "primaryMoneyPage": "/marketing-branding/",
+    "status": "draft"
+  },
+  {
+    "slug": "restaurant-website-design",
+    "title": "Restaurant websites: help guests decide, then get out of the way",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-05-13",
+    "wordCount": 1844,
+    "primaryMoneyPage": "/web-design/restaurants/",
+    "status": "draft"
+  },
+  {
+    "slug": "property-management-website-design",
+    "title": "What a property-management website needs for owners and tenants",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-05-20",
+    "wordCount": 1385,
+    "primaryMoneyPage": "/web-design/property-management/",
+    "status": "draft"
+  },
+  {
+    "slug": "retail-website-platforms",
+    "title": "Shopify, WooCommerce or a simple catalogue? A retailer's website decision",
+    "pillar": "Platforms",
+    "plannedPublishOn": "2027-05-27",
+    "wordCount": 1304,
+    "primaryMoneyPage": "/web-design/retail/",
+    "status": "draft"
+  },
+  {
+    "slug": "ai-service-business-website",
+    "title": "AI on a service-business website: start with useful work",
+    "pillar": "AI and operations",
+    "plannedPublishOn": "2027-06-03",
+    "wordCount": 1604,
+    "primaryMoneyPage": "/ai-implementation/",
+    "status": "draft"
+  },
+  {
+    "slug": "roofing-website-design",
+    "title": "What makes a roofing website credible before the site visit?",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-06-10",
+    "wordCount": 1536,
+    "primaryMoneyPage": "/web-design/roofers/",
+    "status": "draft"
+  },
+  {
+    "slug": "medical-practice-website-design",
+    "title": "Medical-practice websites: make the next step clear without collecting too much",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-06-17",
+    "wordCount": 1779,
+    "primaryMoneyPage": "/web-design/medical-practices/",
+    "status": "draft"
+  },
+  {
+    "slug": "good-small-business-website-design",
+    "title": "What makes a small-business website look good? A practical design critique",
+    "pillar": "Design",
+    "plannedPublishOn": "2027-06-24",
+    "wordCount": 1277,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "car-dealer-website-design",
+    "title": "A car-dealer website needs more than an inventory feed",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-07-01",
+    "wordCount": 1435,
+    "primaryMoneyPage": "/web-design/car-dealerships/",
+    "status": "draft"
+  },
+  {
+    "slug": "financial-advisor-website-design",
+    "title": "A financial-advisor website should help the right client recognise the fit",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-07-08",
+    "wordCount": 1378,
+    "primaryMoneyPage": "/web-design/financial-advisors/",
+    "status": "draft"
+  },
+  {
+    "slug": "small-business-ai-search",
+    "title": "How a small-business website can be easier to find in Google and AI search",
+    "pillar": "Local discovery",
+    "plannedPublishOn": "2027-07-15",
+    "wordCount": 1654,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "sanity-small-business-cms",
+    "title": "Sanity explained for a business owner: CMS, website and hosting are different jobs",
+    "pillar": "Platforms",
+    "plannedPublishOn": "2027-07-22",
+    "wordCount": 1242,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "website-wrong-enquiries",
+    "title": "Getting the wrong enquiries? Your website may be attracting the wrong work",
+    "pillar": "Conversion",
+    "plannedPublishOn": "2027-07-29",
+    "wordCount": 1338,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "medical-spa-website-design",
+    "title": "Medical-spa websites: balance visual appeal with clear treatment information",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-08-05",
+    "wordCount": 1457,
+    "primaryMoneyPage": "/web-design/medical-spas/",
+    "status": "draft"
+  },
+  {
+    "slug": "rebrand-redesign-or-copy",
+    "title": "Do you need a new brand, a better website or clearer words?",
+    "pillar": "Brand and content",
+    "plannedPublishOn": "2027-08-12",
+    "wordCount": 1167,
+    "primaryMoneyPage": "/marketing-branding/",
+    "status": "draft"
+  },
+  {
+    "slug": "appliance-repair-website-lessons",
+    "title": "What works for appliance-repair websites? Lessons from ABC Appliance",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-08-19",
+    "wordCount": 1781,
+    "primaryMoneyPage": "/web-design/appliance-repair/",
+    "status": "draft"
+  },
+  {
+    "slug": "self-hosted-custom-website-ownership",
+    "title": "Custom-built or self-hosted? What website ownership really means",
+    "pillar": "Platforms",
+    "plannedPublishOn": "2027-08-26",
+    "wordCount": 1613,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "private-school-website-design",
+    "title": "A private-school website that helps families take the next step",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-09-02",
+    "wordCount": 1719,
+    "primaryMoneyPage": "/web-design/private-schools/",
+    "status": "draft"
+  },
+  {
+    "slug": "website-photography-video-animation",
+    "title": "Website photography, video or animation: which earns its place?",
+    "pillar": "Design",
+    "plannedPublishOn": "2027-09-09",
+    "wordCount": 1505,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "charity-donation-page",
+    "title": "What a charity donation page needs before asking for money",
+    "pillar": "Industry websites",
+    "plannedPublishOn": "2027-09-16",
+    "wordCount": 1461,
+    "primaryMoneyPage": "/web-design/charities/",
+    "status": "draft"
+  },
+  {
+    "slug": "framer-webflow-local-seo",
+    "title": "Framer vs Webflow for local SEO: what actually affects the result?",
+    "pillar": "Platforms",
+    "plannedPublishOn": "2027-09-23",
+    "wordCount": 1277,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "website-before-paid-ads",
+    "title": "Before buying more ads, check whether your website can use the traffic",
+    "pillar": "Conversion",
+    "plannedPublishOn": "2027-09-30",
+    "wordCount": 1636,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "ai-skills-versus-prompts",
+    "title": "Custom AI skills versus prompts: what changes for a small team?",
+    "pillar": "AI and operations",
+    "plannedPublishOn": "2027-10-07",
+    "wordCount": 1411,
+    "primaryMoneyPage": "/ai-implementation/",
+    "status": "draft"
+  },
+  {
+    "slug": "boutique-accommodation-website-design",
+    "title": "Boutique accommodation design: show the stay people are choosing",
+    "pillar": "Design",
+    "plannedPublishOn": "2027-10-14",
+    "wordCount": 1656,
+    "primaryMoneyPage": "/web-design/vacation-rentals/",
+    "status": "draft"
+  },
+  {
+    "slug": "useful-location-pages",
+    "title": "Location pages that help customers instead of repeating a city name",
+    "pillar": "Local discovery",
+    "plannedPublishOn": "2027-10-21",
+    "wordCount": 1134,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "professional-services-homepage-design",
+    "title": "What works on a professional-services homepage?",
+    "pillar": "Design",
+    "plannedPublishOn": "2027-10-28",
+    "wordCount": 1314,
+    "primaryMoneyPage": "/web-design/law-firms/",
+    "status": "draft"
+  },
+  {
+    "slug": "compare-website-quotes",
+    "title": "How to compare website quotes without choosing on price alone",
+    "pillar": "Buying and ownership",
+    "plannedPublishOn": "2027-11-04",
+    "wordCount": 1271,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "automate-before-more-admin",
+    "title": "What work should you automate before adding more admin?",
+    "pillar": "AI and operations",
+    "plannedPublishOn": "2027-11-11",
+    "wordCount": 1907,
+    "primaryMoneyPage": "/ai-implementation/",
+    "status": "draft"
+  },
+  {
+    "slug": "template-vs-custom-website",
+    "title": "Templates or custom design: when is a tailored website worth it?",
+    "pillar": "Design",
+    "plannedPublishOn": "2027-11-18",
+    "wordCount": 1309,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "website-editing-training",
+    "title": "Who should update your website after launch?",
+    "pillar": "Buying and ownership",
+    "plannedPublishOn": "2027-11-25",
+    "wordCount": 1442,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "customer-project-content",
+    "title": "Turn one real customer project into useful website content",
+    "pillar": "Brand and content",
+    "plannedPublishOn": "2027-12-02",
+    "wordCount": 1862,
+    "primaryMoneyPage": "/marketing-branding/",
+    "status": "draft"
+  },
+  {
+    "slug": "custom-workflow-maintenance",
+    "title": "When does a custom workflow justify ongoing maintenance?",
+    "pillar": "AI and operations",
+    "plannedPublishOn": "2027-12-09",
+    "wordCount": 1266,
+    "primaryMoneyPage": "/ai-implementation/",
+    "status": "draft"
+  },
+  {
+    "slug": "website-measurement-budget",
+    "title": "What should you measure before next year's website budget?",
+    "pillar": "Conversion",
+    "plannedPublishOn": "2027-12-16",
+    "wordCount": 1346,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "small-business-website-accessibility",
+    "title": "An accessible website is easier to use: practical checks for a small business",
+    "pillar": "Design",
+    "plannedPublishOn": "2027-12-23",
+    "wordCount": 1494,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  },
+  {
+    "slug": "small-business-website-growth-plan",
+    "title": "Your next website plan: choose the customer problem before the channel",
+    "pillar": "Buying and ownership",
+    "plannedPublishOn": "2027-12-30",
+    "wordCount": 1563,
+    "primaryMoneyPage": "/web-design/",
+    "status": "draft"
+  }
+]

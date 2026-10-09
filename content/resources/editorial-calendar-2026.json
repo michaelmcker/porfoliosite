@@ -1,66 +1,561 @@
 [
   {
+    "id": "draft-01",
+    "slug": "calls-or-forms-service-website",
     "publishOn": "2026-11-12",
-    "title": "Phone calls or online forms? 6 decisions for a local service website",
+    "timezone": "America/Vancouver",
+    "status": "drafted",
+    "title": "Phone calls or online forms? What works for a local service website",
+    "format": "guide",
+    "city": "Okanagan",
+    "pillar": "Conversion",
+    "primaryQuery": "service business website phone calls vs contact forms",
+    "queryVariants": [
+      "service business website phone calls vs contact forms",
+      "Should my service website show an email address as well as a form?",
+      "Is it better to ask for a phone number or an email address on the form?"
+    ],
+    "buyerDecision": "Gives Okanagan service owners a concrete two-path intake architecture with specific fields and honest acknowledgement wording, instead of generic calls-versus-forms advice.",
     "primaryMoneyPage": "/web-design/",
-    "buyerDecision": "Qualified requests, owner availability, missed calls and what the customer needs next",
-    "status": "planned",
-    "researchStatus": "Research and Echo draft required"
+    "parentMoneyPage": "/web-design/",
+    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
+    "draftPath": "content/resources/draft-library/calls-or-forms-service-website.json",
+    "wordCount": 1346,
+    "researchAsOf": "2026-10-08",
+    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
+    "researchChecklist": [
+      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
+      "Refresh current platform, provider, professional-rule and link facts before publication.",
+      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
+    ],
+    "outline": [
+      "Which channel should a local service website push?",
+      "What a service form should capture, and no more",
+      "A concrete two-path intake example",
+      "Where calls still belong on the page",
+      "Handling after-hours enquiries and owner availability",
+      "Calls versus forms, side by side",
+      "A simple test plan before you rebuild anything"
+    ],
+    "faqs": [
+      "Should my service website show an email address as well as a form?",
+      "Is it better to ask for a phone number or an email address on the form?",
+      "Can I just use my social media messages instead of a website form?"
+    ],
+    "internalLinks": {
+      "primary": {
+        "href": "/web-design/",
+        "placement": "Contextual service link"
+      },
+      "secondary": {
+        "href": "/contact/",
+        "placement": "Closing contact invitation"
+      },
+      "siblings": [
+        "/blog/okanagan-website-cost/",
+        "/blog/website-enquiry-follow-up/"
+      ]
+    },
+    "aeo": {
+      "summary": "Calls win for urgent work and complex jobs; forms win for evenings, detailed requests and owners who cannot always pick up. Most local service websites work best with two clear paths: a fast call option for urgent needs, and a short, well-labelled form for everything else, with a clear acknowledgement instead of a false promise of a confirmed booking.",
+      "faqCount": 3,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+    },
+    "releaseGate": [
+      "current sources and links rechecked",
+      "draft edits reviewed",
+      "public preview checked on mobile and desktop",
+      "publication date reached"
+    ],
+    "publicationApproved": false
   },
   {
+    "id": "draft-02",
+    "slug": "small-business-branding-deliverables",
     "publishOn": "2026-11-19",
-    "title": "A logo is one part of a brand: 7 deliverables to ask for",
+    "timezone": "America/Vancouver",
+    "status": "drafted",
+    "title": "What should a small-business branding project actually include?",
+    "format": "guide",
+    "city": "Okanagan",
+    "pillar": "Brand and content",
+    "primaryQuery": "small business brand identity deliverables website social media",
+    "queryVariants": [
+      "small business brand identity deliverables website social media",
+      "Do I need full brand guidelines if I am a one-person business?",
+      "What if I already have a logo but no brand system?"
+    ],
+    "buyerDecision": "Instead of listing every possible branding deliverable, the article helps owners decide which outputs matter for their situation, how to brief for them and what to ask before approving the work.",
     "primaryMoneyPage": "/marketing-branding/",
-    "buyerDecision": "Positioning, visual system, voice, web/social use, file handover and rights",
-    "status": "planned",
-    "researchStatus": "Research and Echo draft required"
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
+    "draftPath": "content/resources/draft-library/small-business-branding-deliverables.json",
+    "wordCount": 1357,
+    "researchAsOf": "2026-10-08",
+    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
+    "researchChecklist": [
+      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
+      "Refresh current platform, provider, professional-rule and link facts before publication.",
+      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
+    ],
+    "outline": [
+      "Start with positioning, not a logo",
+      "Build a message hierarchy people can repeat",
+      "Agree a visual system before production",
+      "Set photo and video direction",
+      "Plan the website and social templates together",
+      "Own the files and know how to use them",
+      "Use a practical deliverables checklist",
+      "Your next step"
+    ],
+    "faqs": [
+      "Do I need full brand guidelines if I am a one-person business?",
+      "What if I already have a logo but no brand system?",
+      "How does branding affect my website and search visibility?"
+    ],
+    "internalLinks": {
+      "primary": {
+        "href": "/marketing-branding/",
+        "placement": "Contextual service link"
+      },
+      "secondary": {
+        "href": "/contact/",
+        "placement": "Closing contact invitation"
+      },
+      "siblings": [
+        "/blog/donor-film-planning/"
+      ]
+    },
+    "aeo": {
+      "summary": "A small-business branding project should start with positioning and a message hierarchy, then agree a visual system, photo direction and practical templates for your website and social channels. You should leave with usable files, clear guidelines and ownership of the work, so your team can apply the brand consistently.",
+      "faqCount": 3,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+    },
+    "releaseGate": [
+      "current sources and links rechecked",
+      "draft edits reviewed",
+      "public preview checked on mobile and desktop",
+      "publication date reached"
+    ],
+    "publicationApproved": false
   },
   {
+    "id": "draft-03",
+    "slug": "donor-film-planning",
     "publishOn": "2026-11-26",
-    "title": "What makes a useful donor film? 6 decisions before production",
+    "timezone": "America/Vancouver",
+    "status": "drafted",
+    "title": "What makes a useful donor film? Start with the decision you need someone to make",
+    "format": "guide",
+    "city": "Okanagan",
+    "pillar": "Brand and content",
+    "primaryQuery": "nonprofit donor fundraising video planning best practices",
+    "queryVariants": [
+      "nonprofit donor fundraising video planning best practices",
+      "How long should a donor film be?",
+      "Do we need a professional production company?"
+    ],
+    "buyerDecision": "A decision-first guide to donor film planning that gives organizations a concrete production brief and treats dignity, consent and accessibility as core parts of the work.",
     "primaryMoneyPage": "/marketing-branding/",
-    "buyerDecision": "Audience, donor question, real evidence, interview permissions and donation path; use St James work",
-    "status": "planned",
-    "researchStatus": "Research and Echo draft required"
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
+    "draftPath": "content/resources/draft-library/donor-film-planning.json",
+    "wordCount": 1450,
+    "researchAsOf": "2026-10-08",
+    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
+    "researchChecklist": [
+      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
+      "Refresh current platform, provider, professional-rule and link facts before publication.",
+      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
+    ],
+    "outline": [
+      "The decision comes first",
+      "Choose the film for the campaign, not the other way around",
+      "A production brief that works",
+      "Tell the truth and protect the people in it",
+      "Make the film usable",
+      "Put the ask somewhere clear",
+      "Measure what you can, and be honest about the rest",
+      "Know what to ask for"
+    ],
+    "faqs": [
+      "How long should a donor film be?",
+      "Do we need a professional production company?",
+      "Should the film live on YouTube, social media or our website?"
+    ],
+    "internalLinks": {
+      "primary": {
+        "href": "/marketing-branding/",
+        "placement": "Contextual service link"
+      },
+      "secondary": {
+        "href": "/contact/",
+        "placement": "Closing contact invitation"
+      },
+      "siblings": []
+    },
+    "aeo": {
+      "summary": "A useful donor film starts with the decision you need someone to make, not with footage. Define the audience, campaign objective, core message, consent approach and deliverables before production. Then give the film a clear home on a campaign page, make it accessible with captions and a transcript, and measure the response honestly.",
+      "faqCount": 3,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+    },
+    "releaseGate": [
+      "current sources and links rechecked",
+      "draft edits reviewed",
+      "public preview checked on mobile and desktop",
+      "publication date reached"
+    ],
+    "publicationApproved": false
   },
   {
+    "id": "draft-04",
+    "slug": "small-business-website-brief",
     "publishOn": "2026-12-03",
-    "title": "8 things to put in a website brief for 2027",
+    "timezone": "America/Vancouver",
+    "status": "drafted",
+    "title": "How to brief a small-business website for 2027",
+    "format": "guide",
+    "city": "Okanagan",
+    "pillar": "Buying and ownership",
+    "primaryQuery": "small business website design brief requirements",
+    "queryVariants": [
+      "small business website design brief requirements",
+      "Should I write the brief before asking for quotes, or can the designer help create it?",
+      "How detailed should a small-business website brief be?"
+    ],
+    "buyerDecision": "Turns a website brief into a buyer decision: customer action, service hierarchy, real assets, existing URLs, integrations, editing owner, budget assumptions and sign-off, with a completed electrician sample.",
     "primaryMoneyPage": "/web-design/",
-    "buyerDecision": "Customer action, services, copy, proof, integrations, ownership and budget priorities",
-    "status": "planned",
-    "researchStatus": "Research and Echo draft required"
+    "parentMoneyPage": "/web-design/",
+    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
+    "draftPath": "content/resources/draft-library/small-business-website-brief.json",
+    "wordCount": 1660,
+    "researchAsOf": "2026-10-08",
+    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
+    "researchChecklist": [
+      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
+      "Refresh current platform, provider, professional-rule and link facts before publication.",
+      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
+    ],
+    "outline": [
+      "A brief is a buying decision, not a wish list",
+      "Start with the customer action you want",
+      "Rank the services before you design the pages",
+      "List the real assets and the pages you already have",
+      "Name the integrations and the editing owner",
+      "Put budget assumptions and sign-off in writing",
+      "A sample brief for an electrician",
+      "Send the brief, then ask better questions"
+    ],
+    "faqs": [
+      "Should I write the brief before asking for quotes, or can the designer help create it?",
+      "How detailed should a small-business website brief be?",
+      "What if I do not know which website platform or CMS I need?"
+    ],
+    "internalLinks": {
+      "primary": {
+        "href": "/web-design/",
+        "placement": "Contextual service link"
+      },
+      "secondary": {
+        "href": "/contact/",
+        "placement": "Closing contact invitation"
+      },
+      "siblings": [
+        "/blog/compare-website-quotes/",
+        "/blog/okanagan-website-cost/"
+      ]
+    },
+    "aeo": {
+      "summary": "A useful small-business website brief names the priority customer action, ranks the services worth selling, lists real pages and assets, states integrations and editing responsibility, and sets budget and sign-off expectations. It gives a designer enough context to quote accurately instead of guessing at scope, platform and content.",
+      "faqCount": 3,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+    },
+    "releaseGate": [
+      "current sources and links rechecked",
+      "draft edits reviewed",
+      "public preview checked on mobile and desktop",
+      "publication date reached"
+    ],
+    "publicationApproved": false
   },
   {
+    "id": "draft-05",
+    "slug": "website-subscription-vs-upfront-build",
     "publishOn": "2026-12-10",
-    "title": "Website subscriptions or an upfront build? 7 costs to compare",
+    "timezone": "America/Vancouver",
+    "status": "drafted",
+    "title": "Website subscription or upfront build? Compare the whole cost",
+    "format": "comparison",
+    "city": "Okanagan",
+    "pillar": "Platforms",
+    "primaryQuery": "website monthly subscription vs one time cost ownership",
+    "queryVariants": [
+      "website monthly subscription vs one time cost ownership",
+      "If I pay monthly, do I eventually own the website?",
+      "Is an upfront website really a one-time cost?"
+    ],
+    "buyerDecision": "Most comparison posts stop at monthly fee versus project fee. This article pushes the decision onto the questions owners actually regret later: the five-year total with seats and add-ons, who performs edits, and exactly what can be exported or moved on cancellation. It uses hypothetical CAD figures instead of quoting changing vendor prices, and frames the choice around Okanagan business realities without inventing local statistics.",
     "primaryMoneyPage": "/web-design/",
-    "buyerDecision": "Build scope, contract term, content ownership, support, platform fees and exit path",
-    "status": "planned",
-    "researchStatus": "Research and Echo draft required"
+    "parentMoneyPage": "/web-design/",
+    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
+    "draftPath": "content/resources/draft-library/website-subscription-vs-upfront-build.json",
+    "wordCount": 1830,
+    "researchAsOf": "2026-10-08",
+    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
+    "researchChecklist": [
+      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
+      "Refresh current platform, provider, professional-rule and link facts before publication.",
+      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
+    ],
+    "outline": [
+      "The real decision: who owns the website and who does the work",
+      "Run the three-to-five-year arithmetic on your own numbers",
+      "A comparison sheet you can fill in today",
+      "Setup, ongoing changes and who pushes the buttons",
+      "Domain, hosting, seats and support are separate decisions",
+      "Cancellation, content ownership and migration",
+      "Which model suits which business",
+      "Make the call with real numbers, then get a straight answer"
+    ],
+    "faqs": [
+      "If I pay monthly, do I eventually own the website?",
+      "Is an upfront website really a one-time cost?",
+      "What is the single most important contract clause to check?"
+    ],
+    "internalLinks": {
+      "primary": {
+        "href": "/web-design/",
+        "placement": "Contextual service link"
+      },
+      "secondary": {
+        "href": "/contact/",
+        "placement": "Closing contact invitation"
+      },
+      "siblings": [
+        "/blog/framer-webflow-custom-website/",
+        "/blog/okanagan-website-cost/"
+      ]
+    },
+    "aeo": {
+      "summary": "A subscription spreads cost and often bundles hosting and support, while an upfront build can give ownership and lower long-term cost. The right answer depends on how long you will keep the site, what changes you expect, and what the contract lets you take when you leave.",
+      "faqCount": 3,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+    },
+    "releaseGate": [
+      "current sources and links rechecked",
+      "draft edits reviewed",
+      "public preview checked on mobile and desktop",
+      "publication date reached"
+    ],
+    "publicationApproved": false
   },
   {
+    "id": "draft-06",
+    "slug": "before-buying-ai-workflow",
     "publishOn": "2026-12-17",
-    "title": "6 questions to answer before paying for an AI workflow",
+    "timezone": "America/Vancouver",
+    "status": "drafted",
+    "title": "What to decide before paying for an AI workflow",
+    "format": "guide",
+    "city": "Okanagan",
+    "pillar": "AI and operations",
+    "primaryQuery": "small business AI workflow automation buying guide",
+    "queryVariants": [
+      "small business AI workflow automation buying guide",
+      "How do I know whether a task is worth automating with AI?",
+      "What should I prepare before asking for an AI workflow quote?"
+    ],
+    "buyerDecision": "Decision-focused guide that moves beyond platform lists to the operational decisions a small business must make before paying for AI workflow automation.",
     "primaryMoneyPage": "/ai-implementation/",
-    "buyerDecision": "Repeatable task, handling time, access, review, failures and continuing maintenance",
-    "status": "planned",
-    "researchStatus": "Research and Echo draft required"
+    "parentMoneyPage": "/ai-implementation/",
+    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
+    "draftPath": "content/resources/draft-library/before-buying-ai-workflow.json",
+    "wordCount": 1452,
+    "researchAsOf": "2026-10-08",
+    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
+    "researchChecklist": [
+      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
+      "Refresh current platform, provider, professional-rule and link facts before publication.",
+      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
+    ],
+    "outline": [
+      "Start with the repeatable task, not the AI",
+      "Baseline the work before you automate it",
+      "Decide where the information comes from",
+      "Decide who is allowed to say yes",
+      "Build the exception route first",
+      "Price the workflow, not the tool",
+      "Choose who maintains the system",
+      "A practical next step"
+    ],
+    "faqs": [
+      "How do I know whether a task is worth automating with AI?",
+      "What should I prepare before asking for an AI workflow quote?",
+      "Can I start with a small AI workflow and expand later?"
+    ],
+    "internalLinks": {
+      "primary": {
+        "href": "/ai-implementation/",
+        "placement": "Contextual service link"
+      },
+      "secondary": {
+        "href": "/contact/",
+        "placement": "Closing contact invitation"
+      },
+      "siblings": [
+        "/blog/ai-skills-versus-prompts/"
+      ]
+    },
+    "aeo": {
+      "summary": "Before you pay for an AI workflow, decide which repeatable task deserves it, what that work costs today, where the information comes from, who can approve exceptions, and who will maintain the system. The right AI workflow removes busywork, while the wrong one creates a new job that still needs your attention.",
+      "faqCount": 3,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+    },
+    "releaseGate": [
+      "current sources and links rechecked",
+      "draft edits reviewed",
+      "public preview checked on mobile and desktop",
+      "publication date reached"
+    ],
+    "publicationApproved": false
   },
   {
+    "id": "draft-07",
+    "slug": "holiday-hours-website-checklist",
     "publishOn": "2026-12-24",
-    "title": "5 places to update when your business hours change",
-    "primaryMoneyPage": "/marketing-branding/",
-    "buyerDecision": "Website, Google Business Profile, booking tool, confirmation messages and social profiles",
-    "status": "planned",
-    "researchStatus": "Research and Echo draft required"
+    "timezone": "America/Vancouver",
+    "status": "drafted",
+    "title": "Holiday hours: the website changes that prevent wasted calls and visits",
+    "format": "checklist",
+    "city": "Okanagan",
+    "pillar": "Local discovery",
+    "primaryQuery": "business website holiday opening hours update checklist",
+    "queryVariants": [
+      "business website holiday opening hours update checklist",
+      "When should I use \"temporarily closed\" instead of special hours?",
+      "How quickly do changes to Google special hours appear in search?"
+    ],
+    "buyerDecision": "Most holiday-hours content is either a Google Business Profile tutorial or a broad seasonal marketing checklist. This piece treats holiday hours as a consistency problem across six specific touchpoints: Google, the website, the contact form, the booking calendar, voicemail and email. It gives a comparison table, a sample auto-reply, and a customer-journey test, so an owner can find the exact contradiction costing them enquiries.",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
+    "draftPath": "content/resources/draft-library/holiday-hours-website-checklist.json",
+    "wordCount": 1675,
+    "researchAsOf": "2026-10-08",
+    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
+    "researchChecklist": [
+      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
+      "Refresh current platform, provider, professional-rule and link facts before publication.",
+      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
+    ],
+    "outline": [
+      "The short version: set the hours everywhere, not just in one place",
+      "Google special hours do not update your website automatically",
+      "Your website should say what is available, not just when",
+      "Forms and booking calendars need a holiday handshake",
+      "Voicemail and reply times deserve the same attention",
+      "A worksheet for the touchpoints that can disagree",
+      "Test the whole journey before the holiday starts",
+      "What to ask your designer or developer for"
+    ],
+    "faqs": [
+      "When should I use \"temporarily closed\" instead of special hours?",
+      "How quickly do changes to Google special hours appear in search?",
+      "Should I create a separate holiday hours page or just update my homepage?"
+    ],
+    "internalLinks": {
+      "primary": {
+        "href": "/web-design/",
+        "placement": "Contextual service link"
+      },
+      "secondary": {
+        "href": "/contact/",
+        "placement": "Closing contact invitation"
+      },
+      "siblings": [
+        "/blog/useful-location-pages/",
+        "/blog/kelowna-business-website-guide/"
+      ]
+    },
+    "aeo": {
+      "summary": "Holiday hours problems happen when Google, your website, your forms and your voicemail tell four different stories. This checklist walks through each touchpoint in order, with a comparison table, a sample auto-reply and a final test so nobody drives to a closed door or waits on a reply that never comes.",
+      "faqCount": 3,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+    },
+    "releaseGate": [
+      "current sources and links rechecked",
+      "draft edits reviewed",
+      "public preview checked on mobile and desktop",
+      "publication date reached"
+    ],
+    "publicationApproved": false
   },
   {
+    "id": "draft-08",
+    "slug": "website-handover-checklist",
     "publishOn": "2026-12-31",
-    "title": "7 website handoff checks before the new business year",
+    "timezone": "America/Vancouver",
+    "status": "drafted",
+    "title": "What you should receive when your new website is handed over",
+    "format": "checklist",
+    "city": "Okanagan",
+    "pillar": "Buying and ownership",
+    "primaryQuery": "website design client handover checklist ownership",
+    "queryVariants": [
+      "website design client handover checklist ownership",
+      "What if my designer or agency disappears after handover?",
+      "Should I ask for design source files like Figma?"
+    ],
+    "buyerDecision": "A practical owner acceptance checklist that separates domain and admin ownership, source and content export, renewal responsibility, analytics, forms, backups, training, and account revocation, while explaining platform tradeoffs without treating any platform as automatically portable.",
     "primaryMoneyPage": "/web-design/",
-    "buyerDecision": "Named owner, enquiry inbox, domain renewals, measurement access and seasonal information",
-    "status": "planned",
-    "researchStatus": "Research and Echo draft required"
+    "parentMoneyPage": "/web-design/",
+    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
+    "draftPath": "content/resources/draft-library/website-handover-checklist.json",
+    "wordCount": 1487,
+    "researchAsOf": "2026-10-08",
+    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
+    "researchChecklist": [
+      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
+      "Refresh current platform, provider, professional-rule and link facts before publication.",
+      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
+    ],
+    "outline": [
+      "The handover ownership checklist",
+      "Can you export your site and content?",
+      "Renewals, support, and the transition period",
+      "Analytics, forms, backups, and account access",
+      "What to test in your first week",
+      "Choosing the right handover for your Okanagan business"
+    ],
+    "faqs": [
+      "What if my designer or agency disappears after handover?",
+      "Should I ask for design source files like Figma?",
+      "Can I do a clean handover from Wix or Squarespace?"
+    ],
+    "internalLinks": {
+      "primary": {
+        "href": "/web-design/",
+        "placement": "Contextual service link"
+      },
+      "secondary": {
+        "href": "/contact/",
+        "placement": "Closing contact invitation"
+      },
+      "siblings": [
+        "/blog/small-business-website-brief/"
+      ]
+    },
+    "aeo": {
+      "summary": "When a new website is handed over, you should receive administrator-level ownership of your domain, hosting, CMS, and analytics accounts, plus a clear export path for content, a renewal record, a transition support window, and proof that forms and backups work. Do not give final sign-off until every asset, login, and next step is documented.",
+      "faqCount": 3,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+    },
+    "releaseGate": [
+      "current sources and links rechecked",
+      "draft edits reviewed",
+      "public preview checked on mobile and desktop",
+      "publication date reached"
+    ],
+    "publicationApproved": false
   }
 ]

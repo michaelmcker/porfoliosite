@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "The article clearly aims to give property-management companies a practical website structure that serves two distinct audiences: owners evaluating a manager and tenants needing fast support.",
+    "specificity": "Strong. It names the exact page types, gives an owner-page outline, and separates sales, support, listings, portal links, and fee framing instead of relying on generic website advice.",
+    "evidence": "Appropriate and restrained. The claims are mostly structural recommendations, with support from the BC OIPC PIPA guidance on minimum collection and the W3C WAI forms tutorial on accessible form design.",
+    "voice": "Very close to Michael's target voice: direct, Canadian, constructive, owner-focused, and grounded in tradeoffs. It avoids corporate padding and gives useful opinions without pretending to be a guarantee.",
+    "usefulAsset": "Yes. The page-type table, sample owner page outline, and FAQ section make this a genuinely reusable planning asset for property managers rather than a thin blog post."
+  },
+  "slug": "property-management-website-design",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1385,
+  "usage": {
+    "prompt_tokens": 7227,
+    "total_tokens": 7487,
+    "completion_tokens": 260,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 21
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 21
+    }
+  }
+}

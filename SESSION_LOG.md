@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-08: Complete 60-article private library saved and reviewed (90,192 words). Searchable desktop/mobile reader, editable manuscripts and dated calendar ready. Publishing heartbeat reuses these drafts; no new articles published in this session.
+
 2026-10-08: Editorial rollout, Echo edits, 2027 calendar and Contact complete and live-verified. Three guides live, nine queued through November 5; daily 09:00 Pacific publishing heartbeat active. Form activated and live email delivery confirmed.
 
 2026-10-08: Public AEO resource library complete, deployed and live-verified. Twelve articles and hub published; sitemap accepted by Google. Indexing is not yet confirmed. No remaining implementation work for this release.
@@ -23,6 +25,14 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-08: Prewritten small-business website authority library
+- Completed 60 full articles (90,192 words): eight late-2026 slots and 52 for 2027, with industry-specific advice, platform comparisons, design, conversion, ownership, marketing and AI coverage.
+- Used Echo for all drafts; 57 separate Echo reviews and three source-led replacement reviews. Applied substantive factual corrections and retained accurate project evidence.
+- Saved individual JSON/Markdown, complete manuscript, CSV calendar and searchable responsive reader in the durable Business Research folder. Preserved raw private research and review evidence separately.
+- Complete quality gate passes; three new isolation/coverage tests pass; 461 reader links valid. Desktop and 320/390-pixel mobile layouts and search/filter behaviour checked.
+- Existing publication queue unchanged. All 60 new articles remain private; no production push/deployment. Updated the existing heartbeat and runbook to refresh/reuse drafts near release.
+- Evidence: docs/draft-library-2026-10-08/README.md. Baseline suite remains 152 pass with the unchanged missing-Chrome failure.
 
 ### 2026-10-08: Dated publishing, annual calendar and contact
 - Edited all twelve articles with Echo and human-reviewed factual/structural parity. Added contextual commercial links and visible index publication dates.

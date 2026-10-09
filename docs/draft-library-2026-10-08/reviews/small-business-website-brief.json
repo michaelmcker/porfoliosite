@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Helps busy small-business owners write a specific website brief before asking for design quotes, so the project is priced and planned around real decisions rather than assumptions.",
+    "specificity": "Good. It gives a clear briefing sequence, a completed electrician example and direct links to the author's related cost and quote-comparison resources without inventing package prices.",
+    "evidence": "Adequate for a practical briefing article. It uses a Google SEO starter guide for the limited point that pages need to be understandable, while avoiding unsupported performance statistics or fake case results.",
+    "voice": "Matches Michael McKerracher's direct, conversational advisory style. The draft is constructive, owner-focused and avoids corporate padding or self-praise.",
+    "usefulAsset": "Yes. The article can stand as a planning worksheet and pre-quote checklist for 2027 website work, with the sample brief providing a reusable structure."
+  },
+  "slug": "small-business-website-brief",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1664,
+  "usage": {
+    "prompt_tokens": 7010,
+    "total_tokens": 7465,
+    "completion_tokens": 455,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 231
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 231
+    }
+  }
+}

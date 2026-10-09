@@ -1,0 +1,56 @@
+{
+  "issues": [
+    {
+      "path": "sections.3.body",
+      "original": "The family is interested, but the path from interest to application is vague, and vague paths lose people.",
+      "replacement": "The family is interested, but the path from interest to application is vague, which makes it harder for them to continue.",
+      "reason": "\"Vague paths lose people\" is an unsupported universal claim about abandonment. Rewording keeps the point as a design recommendation."
+    },
+    {
+      "path": "sections.3.body",
+      "original": "Three to five fields is usually enough for a first contact.",
+      "replacement": "Keep the first-contact form short.",
+      "reason": "The field-count claim is an unsupported empirical guideline. The rewritten sentence makes the same point as a recommendation without implying a tested number."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help a private school or its designer plan a website that recruits prospective families, separating admissions marketing from current-parent resources.",
+    "specificity": "Strong. It names a concrete page architecture, the two-audience split, admissions-step design, fees framing and privacy choices rather than generic website advice.",
+    "evidence": "Appropriate. It links BC OIPC PIPA guidance, W3C accessibility first checks and Michael's own marketing/branding page, without invented tests, client stories or statistics.",
+    "voice": "On voice. Connected conversational sentences, answer-first H2 sections, practical recommendations and no corporate padding or smug contrast.",
+    "usefulAsset": "Yes. A busy owner can use the worksheet table and FAQ answers to brief a designer, and each section gives one clear decision to make."
+  },
+  "slug": "private-school-website-design",
+  "applied": [
+    {
+      "path": "sections.3.body",
+      "original": "The family is interested, but the path from interest to application is vague, and vague paths lose people.",
+      "replacement": "The family is interested, but the path from interest to application is vague, which makes it harder for them to continue.",
+      "reason": "\"Vague paths lose people\" is an unsupported universal claim about abandonment. Rewording keeps the point as a design recommendation."
+    },
+    {
+      "path": "sections.3.body",
+      "original": "Three to five fields is usually enough for a first contact.",
+      "replacement": "Keep the first-contact form short.",
+      "reason": "The field-count claim is an unsupported empirical guideline. The rewritten sentence makes the same point as a recommendation without implying a tested number."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1597,
+  "usage": {
+    "prompt_tokens": 10816,
+    "total_tokens": 12171,
+    "completion_tokens": 1355,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 975
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 975
+    }
+  }
+}

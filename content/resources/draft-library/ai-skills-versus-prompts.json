@@ -1,0 +1,167 @@
+{
+  "slug": "ai-skills-versus-prompts",
+  "title": "Custom AI skills versus prompts: what changes for a small team?",
+  "type": "comparison",
+  "description": "A practical comparison of AI skills versus prompts for small teams, with a concrete example, decision criteria and hiring advice.",
+  "summary": "A prompt is a request to an AI system and can be saved and reused. An AI skill packages a task’s instructions with reference material and, where supported, procedures or tools so a team has a maintained way to repeat the work. For a small business, the shift from prompting to skills means fewer repeated explanations, more consistent output and a practical way to test whether AI is actually saving time or creating more work.",
+  "takeaways": [
+    "A skill bundles instructions, reference files and rules so a task can be repeated consistently by the whole team.",
+    "Prompting is useful for one-off work, but skills reduce the prompt tax of rewriting and re-testing the same requests.",
+    "Start with one weekly workflow, define good and bad output, then test and improve the skill against real work."
+  ],
+  "sections": [
+    {
+      "id": "prompts-where-most-teams-start",
+      "title": "Prompts are where most teams start, and where many stay",
+      "body": "<p>Most small businesses begin with prompting because it is accessible. You open ChatGPT, Claude or Gemini, type a question or a task, and get an answer. That works well for brainstorming, drafting and one-off questions. A prompt library can preserve useful instructions. The difficulty is keeping the right instructions, examples and current business information together so the team uses the intended version.</p><p>Over time this becomes a prompt tax. You spend time rewriting instructions, testing them again and trying to remember which version gave the useful answer. Two people on the same team can ask for the same thing and get completely different results. For a small team, that inconsistency costs real hours, and the next step is often not obvious.</p>"
+    },
+    {
+      "id": "what-a-skill-actually-is",
+      "title": "What a skill actually is",
+      "body": "<p>An AI skill is a saved set of instructions plus reference files. Instead of being a single question, it bundles the steps, the examples, the tone, the format and the rules for a specific task. You build it once, then your team can run it again and again with much less explaining.</p><p>For example, a writer-brief skill might include your service area, the words you avoid, the structure you want for a blog post and the length you prefer. A new-enquiry classification skill might include the categories you use, the urgency levels and the exact fields to pull out of each message. Because the instructions and reference material travel together, the skill becomes a piece of business knowledge rather than a one-time request.</p>"
+    },
+    {
+      "id": "prompt-vs-skill-practical-difference",
+      "title": "Prompt vs skill: the practical difference",
+      "body": "<p>The simplest way to see the difference is side by side. A prompt is a request. A skill is a procedure with its reference material attached.</p><table><caption>Prompt vs AI skill: what changes for a small team</caption><thead><tr><th>Prompt</th><th>Skill</th></tr></thead><tbody><tr><td>A request that can be saved or reused</td><td>Saved procedure plus reference files</td></tr><tr><td>Needs an organised prompt library</td><td>Reusable by the whole team</td></tr><tr><td>Output varies by who asks</td><td>Provides shared rules and format; output still needs checking</td></tr><tr><td>Context pasted in each time</td><td>Reference knowledge bundled in</td></tr><tr><td>Can be tested against repeatable examples</td><td>Can be run against test cases and improved</td></tr><tr><td>Usually personal</td><td>Can have a named owner</td></tr></tbody></table><p>The practical shift is that a skill turns AI from something each person experiments with into a shared process the business can test and maintain. It also makes improvement possible. If the output is not quite right, you can update the skill once and every future use gets the benefit.</p>"
+    },
+    {
+      "id": "what-changes-for-a-small-team",
+      "title": "What changes for a small team",
+      "body": "<p>When a team moves from prompting to skills, the daily work changes in a few concrete ways. People stop pasting the same background into every request. The person who knows the process best can build the skill once, then others can use it without needing the same depth of experience. New team members get a consistent starting point instead of inheriting a collection of personal prompts. The work becomes less about remembering the right words and more about using a tool the team already trusts.</p><p>Skills also make it possible to separate the instructions from the tools and permissions. You can decide which systems the AI is allowed to touch, which files it can read and which actions need approval. That separation matters for a small team because it lets you adopt AI without giving up control over sensitive work.</p>"
+    },
+    {
+      "id": "concrete-example-enquiry-classification",
+      "title": "A concrete example: new-enquiry classification",
+      "body": "<p>Suppose you run a service business and new enquiries arrive through a website form and by email. With prompting, someone might open the AI and type: 'Here is an enquiry. Tell me whether it is a new job, a quote request or a complaint, and suggest a reply.' That can work, but the answer depends on how the question is phrased and how much context the person remembers to include.</p><p>A skill would bundle the whole procedure. It would know your categories, your urgency levels, the fields to extract and the tone you want for each type of reply. It might instruct the AI to pull out the contact name, the service needed, the location and the timeframe, then classify the enquiry and draft the next step. Once built, the skill can be tested against real examples and adjusted until the classification is dependable.</p><ul><li><strong>Contact details:</strong> name, business name, email and phone.</li><li><strong>Service requested:</strong> the specific job or problem described.</li><li><strong>Urgency:</strong> emergency, this week, or flexible.</li><li><strong>Location:</strong> address or general area, so you can confirm coverage.</li><li><strong>Classification:</strong> new job, quote request, existing customer or complaint.</li></ul>"
+    },
+    {
+      "id": "when-a-skill-is-worth-building",
+      "title": "When a skill is worth building",
+      "body": "<p>Not every task needs a skill. A good prompt is often enough for occasional, low-stakes work. A skill becomes worth the setup time when the task repeats, when the output needs to be consistent and when more than one person will use it. The best candidates are usually ordinary, repetitive jobs rather than dramatic new projects.</p><p>Look for work that happens every week, such as summarising enquiries, formatting proposals, drafting routine replies or preparing content briefs. If errors in that work cost time, money or customer goodwill, compare the expected savings with setup, review and maintenance time. If the task is rare or highly judgment-based, a well-written prompt may be the better choice.</p>"
+    },
+    {
+      "id": "what-to-ask-for-when-you-hire",
+      "title": "What to ask for when you hire someone",
+      "body": "<p>If you bring in outside help, ask for a skill that fits the way your team already works. It should use the tools you already have, or it should come with a clear reason for adding a new one. Ask who will own the skill after it is built, how your team will be trained and what happens when the output needs to change. Ask for documentation and test cases too, because a skill that cannot be checked is hard to maintain.</p><p>A good provider will usually start small. In my own <a href=\"/ai-implementation/\">AI implementation work</a>, that often means a free initial consultation, then a CAD $900 one-time audit with up to five hours on site and an actionable report. Custom skills, workflows and agents start from CAD $2,500 per month when the scope, support and software costs are agreed up front. The point is to begin with a defined workflow rather than a vague promise to change everything at once.</p><p>If you are weighing this against broader buying decisions, there are practical questions to ask <a href=\"/blog/before-buying-ai-workflow/\">before paying for AI workflow help</a>.</p>"
+    },
+    {
+      "id": "a-sensible-next-step",
+      "title": "A sensible next step",
+      "body": "<p>You do not need to rebuild your whole business around AI skills. Pick one workflow that already happens every week. Write down what a good result looks like, what a bad result looks like and what reference information the AI needs. Save those instructions and files as a reusable skill, then test it against real work. Once it works, share it with the team and give it an owner so it keeps improving.</p><p>If you want a clearer starting point, or help building skills that fit your team and tools, <a href=\"/contact/\">let's talk about your business</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Can I build AI skills without a developer?",
+      "Often, yes. Tools such as Claude Cowork and ChatGPT let non-technical people save and reuse structured instructions. A simple skill can be built by the person who knows the task best. More complex skills, especially ones that connect to other systems, usually benefit from a technical setup."
+    ],
+    [
+      "Do AI skills work across ChatGPT, Claude and Gemini?",
+      "The idea is similar across platforms, but the way skills are saved and run is different in each tool. A good setup starts with the tools your team already uses and designs the skill around them, rather than assuming the same file will work everywhere."
+    ],
+    [
+      "What is the difference between an AI skill and a custom AI agent?",
+      "A skill is a reusable set of instructions and reference files for a defined task. An agent can use skills, but it can also take multi-step actions and make decisions across those steps. Custom agents usually need more design, deployment, training and ongoing maintenance than a single skill."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Michael McKerracher AI implementation",
+      "url": "https://michaelmck.site/ai-implementation/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Explains the practical difference between prompts and AI skills for small teams, with a comparison table, a concrete enquiry-classification example, decision criteria and hiring questions.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm current capabilities and terminology for Claude Cowork, ChatGPT and Gemini before publication.",
+      "Verify that the CAD $900 audit and CAD $2,500 per month custom systems offers are still current on michaelmck.site.",
+      "Check that all internal links resolve and that /ai-implementation/, /blog/before-buying-ai-workflow/ and /contact/ are correct."
+    ],
+    "serpGap": "Existing coverage of AI skills vs prompts is mostly general or vendor-focused. This article gives small teams a practical comparison, a concrete workflow example, decision criteria and hiring advice rather than a broad industry overview.",
+    "sourceUse": [
+      {
+        "url": "https://michaelmck.site/ai-implementation/",
+        "claim": "Describes Michael's AI implementation approach, pricing structure and focus on building skills, workflows and custom agents that fit existing tools."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-10-07",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "AI and operations",
+  "primaryMoneyPage": "/ai-implementation/",
+  "related": [
+    "before-buying-ai-workflow",
+    "ai-service-business-website"
+  ],
+  "services": [],
+  "wordCount": 1411,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 19460,
+      "total_tokens": 25645,
+      "completion_tokens": 6185,
+      "prompt_tokens_details": {
+        "cached_tokens": 7382
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3619
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3619
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "A prompt is a one-off request. An AI skill is a saved set of instructions, reference files and rules that your team can reuse every week.",
+      "replacement": "A prompt is a request to an AI system and can be saved and reused. An AI skill packages a task’s instructions with reference material and, where supported, procedures or tools so a team has a maintained way to repeat the work."
+    },
+    {
+      "original": "The trouble is that prompting has no memory of its own. Every new task needs a new request, and the good prompts you wrote last month are easy to forget or lose.",
+      "replacement": "A prompt library can preserve useful instructions. The difficulty is keeping the right instructions, examples and current business information together so the team uses the intended version."
+    },
+    {
+      "original": "One-off request",
+      "replacement": "A request that can be saved or reused"
+    },
+    {
+      "original": "Easy to forget or lose",
+      "replacement": "Needs an organised prompt library"
+    },
+    {
+      "original": "Output follows agreed rules and format",
+      "replacement": "Provides shared rules and format; output still needs checking"
+    },
+    {
+      "original": "Hard to test systematically",
+      "replacement": "Can be tested against repeatable examples"
+    },
+    {
+      "original": "something the business can rely on",
+      "replacement": "a shared process the business can test and maintain"
+    },
+    {
+      "original": "a skill usually pays for itself quickly",
+      "replacement": "compare the expected savings with setup, review and maintenance time"
+    },
+    {
+      "original": "a vague promise to transform the business",
+      "replacement": "a vague promise to change everything at once"
+    },
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

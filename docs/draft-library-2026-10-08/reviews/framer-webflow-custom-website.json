@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "To help a small business owner choose between Framer, Webflow, and a custom website by comparing editing workflow, content structure, design control, recurring costs, exit costs, and ownership.",
+    "specificity": "High. The article distinguishes page-level visual editing from class-based design systems, lighter from deeper CMS collections, and full code ownership from platform-managed hosting, with concrete service-page, gallery, and form examples.",
+    "evidence": "Strong. It accurately uses official Framer and Webflow documentation, including the tension between Framer's no-standalone-HTML-export guidance and its data-portability guidance, and Webflow's limits on exported dynamic features.",
+    "voice": "Strong. Conversational, practical, and answer-first, with Canadian spelling, honest tradeoffs, and no corporate padding or invented client stories.",
+    "usefulAsset": "Yes. It is a useful decision guide for a small business owner because it focuses on workflow, maintenance, portability, and long-term fit rather than feature-list hype."
+  },
+  "slug": "framer-webflow-custom-website",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1606,
+  "usage": {
+    "prompt_tokens": 19230,
+    "total_tokens": 24037,
+    "completion_tokens": 4807,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4555
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 4555
+    }
+  }
+}

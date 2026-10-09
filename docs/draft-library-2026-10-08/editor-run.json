@@ -1,0 +1,473 @@
+[
+  {
+    "slug": "small-business-website-brief",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "small-business-branding-deliverables",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "calls-or-forms-service-website",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "donor-film-planning",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "plumber-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "before-buying-ai-workflow",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "website-subscription-vs-upfront-build",
+    "state": "pass-for-draft-review",
+    "edits": 4,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "website-handover-checklist",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "medical-practice-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "good-small-business-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 2,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "electrician-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "financial-advisor-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "small-business-ai-search",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "roofing-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "holiday-hours-website-checklist",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "sanity-small-business-cms",
+    "state": "pass-for-draft-review",
+    "edits": 3,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "accountant-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "kelowna-branding-partners",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "framer-webflow-custom-website",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "car-dealer-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "rebrand-redesign-or-copy",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "private-school-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 2,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "appliance-repair-website-lessons",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "hotel-website-direct-booking",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "medical-spa-website-design",
+    "state": "review-failed",
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "slug": "website-photography-video-animation",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "landscaping-website-seasonal-demand",
+    "state": "needs-fixes",
+    "edits": 3,
+    "rejected": 1,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "self-hosted-custom-website-ownership",
+    "state": "review-failed",
+    "error": "JSONDecodeError: Unterminated string starting at: line 1 column 2350 (char 2349)"
+  },
+  {
+    "slug": "website-wrong-enquiries",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "law-firm-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "useful-location-pages",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "winery-website-visitor-planning",
+    "state": "pass-for-draft-review",
+    "edits": 2,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "website-before-paid-ads",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "website-enquiry-follow-up",
+    "state": "pass-for-draft-review",
+    "edits": 2,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "vacation-rental-direct-booking-website",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "framer-small-business-websites",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "boutique-accommodation-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "charity-donation-page",
+    "state": "pass-for-draft-review",
+    "edits": 4,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "framer-webflow-local-seo",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "automate-before-more-admin",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "hvac-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 2,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "dental-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "ai-skills-versus-prompts",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "charity-website-platforms",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "compare-website-quotes",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "customer-project-content",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "website-social-video-content",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "physiotherapy-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 4,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "professional-services-homepage-design",
+    "state": "review-failed",
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "slug": "restaurant-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 3,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "template-vs-custom-website",
+    "state": "needs-fixes",
+    "edits": 1,
+    "rejected": 1,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "property-management-website-design",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "webflow-small-business-websites",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "small-business-website-growth-plan",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "custom-workflow-maintenance",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "website-editing-training",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "small-business-website-accessibility",
+    "state": "pass-for-draft-review",
+    "edits": 0,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "website-measurement-budget",
+    "state": "needs-fixes",
+    "edits": 3,
+    "rejected": 1,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "retail-website-platforms",
+    "state": "pass-for-draft-review",
+    "edits": 5,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  },
+  {
+    "slug": "ai-service-business-website",
+    "state": "pass-for-draft-review",
+    "edits": 1,
+    "rejected": 0,
+    "banned": [],
+    "blockers": []
+  }
+]

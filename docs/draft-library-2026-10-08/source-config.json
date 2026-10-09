@@ -1,0 +1,222 @@
+[
+  {
+    "id": "forms",
+    "url": "https://www.w3.org/WAI/tutorials/forms/",
+    "name": "W3C accessible forms"
+  },
+  {
+    "id": "wcag",
+    "url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+    "name": "W3C accessibility first checks"
+  },
+  {
+    "id": "video",
+    "url": "https://www.w3.org/WAI/media/av/",
+    "name": "W3C accessible audio and video"
+  },
+  {
+    "id": "google-local",
+    "url": "https://support.google.com/business/answer/7091?hl=en",
+    "name": "Google local ranking guidance"
+  },
+  {
+    "id": "google-hours",
+    "url": "https://support.google.com/business/answer/6303076?hl=en",
+    "name": "Google special hours"
+  },
+  {
+    "id": "google-starter",
+    "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "name": "Google SEO starter guide"
+  },
+  {
+    "id": "google-helpful",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "name": "Google people-first content"
+  },
+  {
+    "id": "google-ai",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features",
+    "name": "Google AI search features"
+  },
+  {
+    "id": "google-spam",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+    "name": "Google spam policies"
+  },
+  {
+    "id": "openai-bots",
+    "url": "https://platform.openai.com/docs/bots",
+    "name": "OpenAI crawler documentation"
+  },
+  {
+    "id": "web-vitals",
+    "url": "https://web.dev/articles/vitals",
+    "name": "Google Core Web Vitals"
+  },
+  {
+    "id": "ga4",
+    "url": "https://support.google.com/analytics/answer/9267735?hl=en",
+    "name": "Google Analytics events"
+  },
+  {
+    "id": "gsc",
+    "url": "https://support.google.com/webmasters/answer/7576553?hl=en",
+    "name": "Search Console performance reporting"
+  },
+  {
+    "id": "framer-cms",
+    "url": "https://www.framer.com/cms/",
+    "name": "Framer CMS"
+  },
+  {
+    "id": "framer-export",
+    "url": "https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/",
+    "name": "Framer HTML export help"
+  },
+  {
+    "id": "framer-port",
+    "url": "https://www.framer.com/help/articles/porting-your-data-from-framer/",
+    "name": "Framer data portability help"
+  },
+  {
+    "id": "framer-price",
+    "url": "https://www.framer.com/pricing/",
+    "name": "Framer plans"
+  },
+  {
+    "id": "framer-seo",
+    "url": "https://www.framer.com/seo/",
+    "name": "Framer SEO features"
+  },
+  {
+    "id": "webflow-cms",
+    "url": "https://webflow.com/cms",
+    "name": "Webflow CMS"
+  },
+  {
+    "id": "webflow-export",
+    "url": "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code",
+    "name": "Webflow code export"
+  },
+  {
+    "id": "webflow-price",
+    "url": "https://webflow.com/pricing",
+    "name": "Webflow plans"
+  },
+  {
+    "id": "webflow-seo",
+    "url": "https://webflow.com/feature/seo",
+    "name": "Webflow SEO"
+  },
+  {
+    "id": "sanity-intro",
+    "url": "https://www.sanity.io/headless-cms",
+    "name": "Sanity headless CMS"
+  },
+  {
+    "id": "sanity-host",
+    "url": "https://www.sanity.io/docs/studio/development",
+    "name": "Sanity Studio and Content Lake"
+  },
+  {
+    "id": "sanity-export",
+    "url": "https://www.sanity.io/docs/content-lake/exporting-data",
+    "name": "Sanity data export"
+  },
+  {
+    "id": "wordpress",
+    "url": "https://wordpress.org/about/features/",
+    "name": "WordPress capabilities"
+  },
+  {
+    "id": "shopify",
+    "url": "https://www.shopify.com/online",
+    "name": "Shopify online store"
+  },
+  {
+    "id": "woo",
+    "url": "https://woocommerce.com/",
+    "name": "WooCommerce"
+  },
+  {
+    "id": "bc-law",
+    "url": "https://www.lawsociety.bc.ca/for-lawyers/act-rules-and-code/code-of-professional-conduct/chapter-4-%E2%80%93-marketing-of-legal-services/",
+    "name": "BC Code marketing of legal services"
+  },
+  {
+    "id": "privacy",
+    "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+    "name": "BC OIPC developing a privacy policy under PIPA"
+  },
+  {
+    "id": "tsbc",
+    "url": "https://www.technicalsafetybc.ca/regulatory-resources/find-a-licensed-contractor",
+    "name": "Technical Safety BC contractor lookup"
+  },
+  {
+    "id": "hotel-links",
+    "url": "https://support.google.com/hotelprices/answer/10472393?hl=en",
+    "name": "Google hotel free booking links"
+  },
+  {
+    "id": "cra-charity",
+    "url": "https://www.canada.ca/en/revenue-agency/services/charities-giving/charities/sample-official-donation-receipts.html",
+    "name": "CRA donation receipt requirements"
+  },
+  {
+    "id": "tourism-kelowna",
+    "url": "https://www.tourismkelowna.com/",
+    "name": "Tourism Kelowna"
+  },
+  {
+    "id": "tourism-west",
+    "url": "https://www.tourismkelowna.com/explore/neighbouring-communities/west-kelowna/",
+    "name": "Tourism Kelowna West Kelowna visitor information"
+  },
+  {
+    "id": "tourism-vernon",
+    "url": "https://www.tourismvernon.com/",
+    "name": "Tourism Vernon"
+  },
+  {
+    "id": "treehouse",
+    "url": "https://okanagantreehouse.ca/",
+    "name": "Okanagan Treehouse"
+  },
+  {
+    "id": "abc",
+    "url": "https://www.abcappliance.ca/",
+    "name": "ABC Appliance"
+  },
+  {
+    "id": "cool",
+    "url": "https://michaelmck.site/v2/work/local-search-magnet.html",
+    "name": "Michael McKerracher Cool Runnings work"
+  },
+  {
+    "id": "michael-web",
+    "url": "https://michaelmck.site/web-design/",
+    "name": "Michael McKerracher website design"
+  },
+  {
+    "id": "michael-brand",
+    "url": "https://michaelmck.site/marketing-branding/",
+    "name": "Michael McKerracher marketing and branding"
+  },
+  {
+    "id": "michael-ai",
+    "url": "https://michaelmck.site/ai-implementation/",
+    "name": "Michael McKerracher AI implementation"
+  },
+  {
+    "id": "twincreek",
+    "url": "https://www.twincreekmedia.com/",
+    "name": "Twin Creek Media"
+  },
+  {
+    "id": "svice",
+    "url": "https://www.svice.ca/",
+    "name": "Svice"
+  }
+]

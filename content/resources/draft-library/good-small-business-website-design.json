@@ -1,0 +1,172 @@
+{
+  "slug": "good-small-business-website-design",
+  "title": "What makes a small-business website look good? A practical design critique",
+  "type": "guide",
+  "description": "A practical critique of what makes a small-business website look good: hierarchy, type, contrast, spacing, real photos, consistent components and a clear call to action, with examples from real projects.",
+  "summary": "A good small-business website looks intentional, readable and trustworthy, then lets a visitor act. Hierarchy, typography, contrast, spacing, real photos and one clear call to action do most of the work. This guide shows the decisions behind that look, with examples from real projects.",
+  "takeaways": [
+    "Looking good is mostly hierarchy, type, contrast and spacing, not decoration.",
+    "A beautiful site still has to help a visitor finish one clear task.",
+    "Ask a designer for one concrete call to action, consistent components and real photos, not a vague promise of a modern look."
+  ],
+  "sections": [
+    {
+      "id": "look-sets-trust",
+      "title": "Look comes first because look sets trust",
+      "body": "<p>A visitor encounters the layout, typography and imagery before reading every word. I want those first choices to make the business feel distinctive and the information easy to approach.</p><p>That is why I treat appearance as a business decision, not an artistic one. The work on my <a href=\"/web-design/\">website design</a> projects starts with the same question every time: what does this page need a stranger to believe, and what should they do next? A deliberate layout can bring the answer and the next step into view together.</p>"
+    },
+    {
+      "id": "pretty-and-easy-to-use",
+      "title": "Good means pretty and easy to use",
+      "body": "<p>I judge a business website on visual quality and how well it supports the customer’s task. The site has to look good enough that a visitor feels they have found a capable business. And it has to let that visitor complete a real task without friction: request a repair, explore a property, find a Mass time, see the work.</p><p>Either quality on its own wastes the other. A beautiful page still needs a visible enquiry path. A functional page can also use better typography, photography and spacing to express the quality of the business. Design those together, then check whether real visitors understand and use the page.</p>"
+    },
+    {
+      "id": "hierarchy-type-contrast",
+      "title": "Hierarchy, type and contrast do the heavy lifting",
+      "body": "<p>Most of what makes a page look good is invisible when it works. Headings are sized and spaced so the page reads like an outline, with the most important information first. Body text has room to breathe. Link colours and button styles are consistent. None of this is glamorous, and all of it is noticed when it is missing.</p><p>Contrast is the quiet foundation. The W3C's <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">accessibility first checks</a> ask for enough difference between text and background that people with reduced contrast sensitivity can read comfortably. Readable contrast gives the composition a clear foundation. The same introductory checks cover descriptive page titles, headings and appropriate text alternatives for images.</p>"
+    },
+    {
+      "id": "real-photos-beat-stock",
+      "title": "Real photos beat clever stock",
+      "body": "<p>A small business has an advantage no template can fake: it is real. Photos of the actual workshop, the actual team, the actual finished job look better than polished stock photography because visitors can feel the difference. Stock imagery tends to make a competent local business look anonymous.</p><p>The photos do not need to be expensive, but they do need to be considered. I have written more about that in <a href=\"/blog/website-photography-video-animation/\">photography, video and animation for websites</a>. The short version is that a few honest, well-composed images from the business's own world carry a page further than a hero image of strangers shaking hands.</p>"
+    },
+    {
+      "id": "consistent-components-clear-action",
+      "title": "Consistent components, one clear action",
+      "body": "<p>A page looks finished when its parts feel like they belong to the same family. Buttons are the same shape and colour everywhere. Cards line up. The footer is not an afterthought. These are small details, and together they signal that the business sweats small details, which is exactly what a customer wants from a repair, a renovation or a stay.</p><p>Then the page needs to make up its mind about what happens next. One primary action, styled the same way on every page, beats four competing options. The visitor should never have to wonder whether the yellow button or the text link is the real way to book.</p>"
+    },
+    {
+      "id": "three-projects-table",
+      "title": "Three projects, three different decisions",
+      "body": "<p>There is no single good look. What works depends on what the visitor came to do. Here is how the priorities shifted across three very different projects.</p><table><caption>How design priorities change with the job the website has to do</caption><thead><tr><th scope=\"col\">Project</th><th scope=\"col\">Type of site</th><th scope=\"col\">What the page has to do</th><th scope=\"col\">One design decision that helps</th></tr></thead><tbody><tr><td>ABC Appliance</td><td>Local service</td><td>Make a repair request and understand what happens next</td><td>Service information and coverage stated plainly, with one obvious repair-request action</td></tr><tr><td>Okanagan Treehouse</td><td>Accommodation</td><td>Make a distinctive property feel worth staying for</td><td>Immersive photography and story first, with a quiet, consistent path to explore the stay</td></tr><tr><td>RCCV</td><td>Community</td><td>Help people find Mass times, sacraments and parish news</td><td>Welcoming, uncluttered layout with generous spacing and a clear reading order</td></tr></tbody></table><p>The shared thread is that each site looks considered rather than assembled. The difference is what the consideration was aimed at.</p>"
+    },
+    {
+      "id": "before-after-headline",
+      "title": "Before and after: one headline rewrite",
+      "body": "<p>Here is the kind of change that makes a small-business homepage look and feel better, using a service business as the example.</p><p><strong>Before:</strong></p><blockquote><p>Welcome to our website. We are a family owned business proudly serving the Okanagan since 2011. We offer a wide range of services to meet your needs, and we are committed to excellence.</p></blockquote><p><strong>After:</strong></p><blockquote><p>Appliance repair across the Okanagan and Shuswap. Tell us what has stopped working and request a visit.</p></blockquote><p>The second version tells a visitor in one breath what is on offer, where it is available and how to request it. That clarity reads as confidence, and confidence reads as good design, even though the visual styling might be identical in both cases.</p>"
+    },
+    {
+      "id": "what-to-ask-for",
+      "title": "What to ask for when hiring",
+      "body": "<p>If you are paying for a new website, ask for specific things rather than a feeling. Ask for a clear page hierarchy with descriptive headings. Ask for text and background colours chosen for readable contrast. Ask for real photos of your business, or at least a plan for getting them. Ask for one primary call to action, styled consistently across the site.</p><p>Be cautious of anyone whose answer to everything is a trend, or who treats your content as a placeholder to be figured out later. Cost matters too, and I have written separately about <a href=\"/blog/okanagan-website-cost/\">what an Okanagan website tends to cost</a> so the conversation can start from real numbers.</p>"
+    },
+    {
+      "id": "a-clear-way-forward",
+      "title": "A clear way forward",
+      "body": "<p>A good-looking website is not a mystery. It is a set of deliberate choices about hierarchy, type, contrast, spacing, imagery and one clear action, made with a specific visitor in mind. When those choices are made well, the site looks good because it works, and it works because it looks like someone cared.</p><p>If you would like a set of eyes on your current site, or a plan for a new one, <a href=\"/contact/\">book a free conversation</a>. We can look at what is already working and decide what deserves attention first.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Does a good-looking website help my Google ranking?",
+      "I would not promise a ranking boost from looks alone. What Google has consistently said is that clear, indexable content and the usual sound website fundamentals matter. A well-structured, readable page that visitors stay on and act on tends to be built the same way, so the goals usually support each other."
+    ],
+    [
+      "Do I need professional photos, or will a phone do?",
+      "A phone can be enough if the images are honest, well lit and composed with some care. What rarely works is default stock photography, because it makes a real local business look generic. If the budget only stretches to one thing, a handful of genuine photos of your own work is usually the better spend."
+    ],
+    [
+      "How do I know if my current website is the problem?",
+      "Try the simple version first: read your homepage out loud and ask whether a stranger would know what you offer and what to do next. Then look at the design basics in this article, such as heading structure, contrast, spacing and whether there is one obvious call to action. If several of those are weak, the design is very likely part of the problem."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Michael McKerracher website design",
+      "url": "https://michaelmck.site/web-design/"
+    },
+    {
+      "name": "W3C accessibility first checks",
+      "url": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Moves past generic small-business website lists to the specific design decisions behind a credible look, with real project tradeoffs and a concrete before and after rewrite an owner can copy.",
+    "claimsToRecheckBeforeRelease": [
+      "Re-read my live /web-design/ page before release to confirm the services, process and project examples described here still match the published copy.",
+      "Confirm the ABC Appliance, Okanagan Treehouse and RCCV examples are described within approved factual boundaries and make no implied metric claims."
+    ],
+    "serpGap": "Most ranking results are either long lists of small-business website examples or general design best-practice advice. Few explain the actual design tradeoffs or give an actionable before and after copy example for a small local business.",
+    "sourceUse": [
+      {
+        "url": "https://michaelmck.site/web-design/",
+        "claim": "Used to keep the article aligned with the services, local focus and project examples Michael actually offers."
+      },
+      {
+        "url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+        "claim": "Used for practical accessibility checks such as contrast, page titles, heading structure and image alt text."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-06-24",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Design",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "website-photography-video-animation",
+    "boutique-accommodation-website-design"
+  ],
+  "services": [],
+  "wordCount": 1277,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 14335,
+      "total_tokens": 17951,
+      "completion_tokens": 3616,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1237
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 1237
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 2,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "First impressions are mostly visual. When a page looks dated, cluttered or generic, visitors have little reason to stay and read the copy, however well it is written.",
+      "replacement": "A visitor encounters the layout, typography and imagery before reading every word. I want those first choices to make the business feel distinctive and the information easy to approach."
+    },
+    {
+      "original": "A clean, deliberate design answers both faster than a paragraph of marketing language.",
+      "replacement": "A deliberate layout can bring the answer and the next step into view together."
+    },
+    {
+      "original": "Two things have to be true at once, and most websites only manage one.",
+      "replacement": "I judge a business website on visual quality and how well it supports the customer’s task."
+    },
+    {
+      "original": "A gorgeous design that hides the enquiry form produces admiration and no calls. A functional form sitting on an ugly page produces hesitation, because people reasonably assume the business behind it is equally rough. I want both, in that order, because the look earns the attention the function then converts.",
+      "replacement": "A beautiful page still needs a visible enquiry path. A functional page can also use better typography, photography and spacing to express the quality of the business. Design those together, then check whether real visitors understand and use the page."
+    },
+    {
+      "original": "Designing to that standard almost always produces a page that looks better to everyone, and the same checks cover things like front-loaded page titles and sensible image alt text that also help search engines understand the page.",
+      "replacement": "Readable contrast gives the composition a clear foundation. The same introductory checks cover descriptive page titles, headings and appropriate text alternatives for images."
+    },
+    {
+      "original": "Get a repair booked, fast",
+      "replacement": "Make a repair request and understand what happens next"
+    },
+    {
+      "original": "Appliance repair, booked for this week. We come to you across the Okanagan and Shuswap.",
+      "replacement": "Appliance repair across the Okanagan and Shuswap. Tell us what has stopped working and request a visit."
+    },
+    {
+      "original": "what is on offer, where it is available and when they could have it",
+      "replacement": "what is on offer, where it is available and how to request it"
+    }
+  ]
+}

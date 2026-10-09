@@ -1,0 +1,141 @@
+{
+  "slug": "car-dealer-website-design",
+  "title": "A car-dealer website needs more than an inventory feed",
+  "type": "guide",
+  "description": "A practical guide to car dealership website design that goes beyond an inventory feed, covering update ownership, photos, test drives, trade-ins, finance routing, mobile filtering, and transparent fees.",
+  "summary": "A car dealership website needs an inventory feed, but the feed alone will not produce enquiries. The real decision is how condition, photos, test-drive requests, trade-ins, finance routing, mobile filtering, and fee transparency work together. Choose an update owner, keep sensitive finance data out of public forms, and use a page architecture that helps search engines and buyers reach the right vehicle quickly.",
+  "takeaways": [
+    "An inventory feed is necessary, but it only creates the listing layer; conversion still depends on photos, condition details, and clear enquiry paths.",
+    "Decide who owns inventory updates before choosing a platform, because that choice shapes cost, speed, and how much control the dealer keeps.",
+    "Public website forms should collect only what is needed for the first enquiry; finance details and sensitive personal information belong in the dealership's secure approved system."
+  ],
+  "sections": [
+    {
+      "id": "inventory-floor",
+      "title": "The inventory feed is the floor, not the finish",
+      "body": "<p>The inventory feed is essential, but it is the starting point rather than the whole job. Many dealer websites treat the feed as the product itself, when the feed is only the raw material. A buyer still needs a reason to trust the listing, a clear way to compare vehicles, and an obvious next step.</p><p>That is why a good dealer site is really two systems working together. One system gets the cars onto the page. The other system presents them in a way that helps a real buyer move from browsing to an enquiry. When the second system is weak, a large inventory can still feel hard to shop.</p>"
+    },
+    {
+      "id": "update-ownership",
+      "title": "Decide who owns the inventory update",
+      "body": "<p>Decide early whether the dealership or the website platform controls inventory updates. This choice changes the cost, the workload, and the level of control a dealer keeps over the public listing.</p><h3>When the dealer manages the update</h3><p>A dealer-managed setup usually gives the team more control over wording, photos, and timing. It also means the dealership has to keep the inventory current, correct pricing, and catch listing mistakes before they spread. For some teams, that is a good fit. For others, it becomes one more job on an already busy day.</p><h3>When the platform manages the update</h3><p>A platform-managed setup can save time and reduce manual work, especially when the site needs to reflect a larger inventory system. The tradeoff is that the dealer has to trust the sync process and may have less room to adjust the presentation of each vehicle.</p><p>If you are weighing the budget side, our notes on <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost</a> may help.</p>"
+    },
+    {
+      "id": "condition-photos",
+      "title": "Condition, photos, and the details buyers check",
+      "body": "<p>Buyers judge a listing by its actual condition and the quality of its photos. A vehicle page should do more than state the model and year. It should show the vehicle clearly, describe the condition honestly, and make the important details easy to compare.</p><p>Good photos matter because they answer the first questions before a buyer asks them. Clear interior and exterior images help a buyer understand whether the vehicle is worth a call or a test drive. Useful detail pages also surface the information people tend to check first, such as mileage, trim, body style, and major features.</p><p>This is one place where <a href=\"/web-design/car-dealerships/\">car dealership website design</a> should focus on presentation quality, not just on getting the inventory to appear somewhere on the site.</p>"
+    },
+    {
+      "id": "enquiry-paths",
+      "title": "Test drives, trade-ins, and finance enquiries",
+      "body": "<p>Test drives, trade-ins, and finance enquiries should be easy to find on the site, but they should be handled through approved, secure systems. A public enquiry form is useful for starting a conversation. It is not the right place for a long case history, financial documents, or other sensitive information.</p><p>In British Columbia, the <a href=\"https://www.oipc.bc.ca/guidance-documents/2286\">Office of the Information and Privacy Commissioner</a> says organizations should limit collection to what is reasonably necessary and should explain how personal information will be used. For a dealership, that means the public form should stay focused on the first enquiry, while the detailed finance process should move into the dealership's secure system.</p><p>The same applies to trade-ins. A simple trade-in enquiry form can be useful, but the valuation and follow-up should happen through the dealer's normal process, not through an overcomplicated public form.</p>"
+    },
+    {
+      "id": "mobile-filtering",
+      "title": "Mobile filtering and how people shop on a phone",
+      "body": "<p>Mobile filtering is often the real inventory page. Many buyers will arrive on a phone, scan a list, and try to reduce the field to a few likely options before they ever open a detail page.</p><blockquote>For example, a useful mobile filter set might include price, year, body type, drivetrain, and fuel type.</blockquote><p>Those filters need to be quick to use and easy to understand. If the mobile experience forces too many taps, hides key information, or makes it hard to compare two vehicles, the inventory itself stops helping.</p>"
+    },
+    {
+      "id": "fees-pricing",
+      "title": "Legitimate fees and transparent pricing",
+      "body": "<p>A dealer website should present legitimate dealer fees plainly. Buyers are already trying to understand total cost, monthly cost, and what is included. If the site hides fees or leaves them vague, the buyer has one more reason to hesitate.</p><p>At the same time, a public website should avoid publishing specific credit terms unless those have been approved by the dealership's legal or compliance team. Marketing still needs to be accurate, verifiable, and not misleading.</p><p>This is also a good place to think about the broader <a href=\"/web-design/\">web design</a> and <a href=\"/marketing-branding/\">marketing and branding</a> job: the page should look good, but it should also reduce confusion.</p>"
+    },
+    {
+      "id": "comparison-worksheet",
+      "title": "A practical comparison worksheet",
+      "body": "<p>Use this worksheet to compare dealer website options before you choose a platform or commission a custom build.</p><table><caption>Car dealer website comparison worksheet</caption><thead><tr><th>Question</th><th>Platform-managed</th><th>Dealer-managed CMS</th><th>Custom build</th></tr></thead><tbody><tr><td>Inventory sync</td><td>Often automated</td><td>May require manual or plugin work</td><td>Depends on the build</td></tr><tr><td>Photo presentation</td><td>Depends on theme and tools</td><td>Usually flexible</td><td>Fully flexible</td></tr><tr><td>Mobile filtering</td><td>Varies by theme</td><td>Depends on design choices</td><td>Can be built around the buyer journey</td></tr><tr><td>Test drive form</td><td>Usually standard</td><td>Usually standard</td><td>Can be tailored</td></tr><tr><td>Trade-in enquiry</td><td>Usually standard</td><td>Usually standard</td><td>Can be tailored</td></tr><tr><td>Finance routing</td><td>Often integration-led</td><td>Depends on plugins or custom work</td><td>Can be tailored</td></tr><tr><td>Fee display</td><td>Theme-dependent</td><td>Flexible</td><td>Fully flexible</td></tr><tr><td>Control over content</td><td>More limited</td><td>Usually higher</td><td>Highest</td></tr></tbody></table>"
+    },
+    {
+      "id": "sample-architecture",
+      "title": "A sample page architecture for a dealer site",
+      "body": "<p>Here is a simple page architecture a dealer can use when planning a new site.</p><ul><li><strong>Home:</strong> a clear positioning statement, featured inventory, and quick paths to test drives, trade-ins, and contact.</li><li><strong>Inventory:</strong> a searchable, filterable list that lets buyers narrow by price, year, body type, and other useful attributes before they commit to a detail page.</li><li><strong>Vehicle detail pages:</strong> each listing gets its own page with strong photos, an honest condition summary, key features, and clear enquiry buttons for test drive, trade-in, and general questions.</li><li><strong>Test drive:</strong> a dedicated form or landing page that collects only what is needed to book the appointment.</li><li><strong>Trade-in:</strong> a simple enquiry page that captures the vehicle details and preferred contact method without asking for unnecessary personal information.</li><li><strong>Finance:</strong> a general information page that explains the process and points buyers to the dealership's approved system for any sensitive steps.</li><li><strong>Contact and location:</strong> dealership hours, address, phone, and a simple contact form.</li></ul><p>Google's <a href=\"https://developers.google.com/search/docs/fundamentals/seo-starter-guide\">SEO starter guide</a> also suggests organizing content in a logical way so search engines and users understand how pages relate to each other. For a dealership, that usually means a clear inventory hub, strong detail pages, and simple enquiry pages rather than a scattered set of disconnected forms.</p>"
+    },
+    {
+      "id": "practical-next-step",
+      "title": "The practical next step",
+      "body": "<p>If the inventory feed is already in place, the next step is to improve the enquiry layer around it. Start by auditing the detail pages, the mobile filters, and the test-drive and trade-in forms. Then decide whether the dealership should keep managing the update, hand it to a platform, or commission a custom build.</p><p>If you want help planning that out, the best next step is a conversation about your inventory workflow and your buyer journey. You can reach out through our <a href=\"/contact/\">contact page</a> and we will talk through what should change first.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "How often should dealer website inventory update?",
+      "It should update as close to real time as the dealership can reasonably manage. The important thing is that sold, priced, and available vehicles do not sit in an obviously stale state for long. A dealer-managed setup should have a clear daily update habit; a platform-managed setup should sync often enough that buyers do not find old pricing or unavailable vehicles."
+    ],
+    [
+      "Should a dealer show pricing on the website?",
+      "Usually yes, if the dealership can keep it accurate. Buyers expect to compare price before they make contact, and a site that hides all pricing often creates more hesitation than trust. That said, any special credit terms or finance claims should be reviewed before they are published."
+    ],
+    [
+      "Do I need a separate mobile dealer site?",
+      "Usually no. In most cases the better answer is one responsive website that is designed around mobile use first. A separate mobile site adds maintenance work without solving the real problem, which is making the inventory, filters, and enquiry forms easy to use on a phone."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "BC OIPC guidance on developing a privacy policy under PIPA",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    },
+    {
+      "name": "Google Search Engine Optimization (SEO) starter guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "This article separates the inventory feed from the buyer conversion system, showing dealers how photos, condition, enquiry paths, mobile filtering, and fee transparency change the website decision.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm the BC OIPC guidance on PIPA privacy policies and limited collection is described accurately.",
+      "Confirm the Google SEO starter guidance on logical site organization is paraphrased accurately.",
+      "Confirm no unsupported claim is made that design alone guarantees conversion or search visibility."
+    ],
+    "serpGap": "Existing results emphasize inventory management, theme features, and platform tools. This article gives a practical buyer-decision framework and a usable page architecture.",
+    "sourceUse": [
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "British Columbia privacy guidance supports collecting only necessary personal information and explaining how it will be used."
+      },
+      {
+        "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "claim": "Google recommends organizing site content logically so search engines and users can understand how pages relate."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-07-01",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/car-dealerships/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "car-dealerships"
+  ],
+  "wordCount": 1435,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 13674,
+      "total_tokens": 17398,
+      "completion_tokens": 3724,
+      "prompt_tokens_details": {
+        "cached_tokens": 11656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 773
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 773
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  }
+}

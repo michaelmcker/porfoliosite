@@ -1,0 +1,177 @@
+{
+  "slug": "website-photography-video-animation",
+  "title": "Website photography, video or animation: which earns its place?",
+  "type": "guide",
+  "description": "A practical guide for small business owners choosing between photography, video and animation on a website, with the performance and accessibility costs that decide what is worth paying for.",
+  "summary": "Choose website media by the proof it has to carry. Still photography can show the work at a glance; video can explain process, scale or emotion; animation can guide attention or give the brand a distinctive feel. Each needs a sensible file budget and an accessible presentation. Performance and accessibility decide what is actually worth building.",
+  "takeaways": [
+    "Pick the medium by the proof it has to carry: stills for instant evidence, video for process and emotion, animation for relationships and state.",
+    "Treat file weight, poster frames and lazy loading as part of the design, because media is usually the heaviest thing on a small business page.",
+    "Captions, transcripts, alt text and reduced motion support are build requirements, not finishing touches."
+  ],
+  "sections": [
+    {
+      "id": "pick-by-proof",
+      "title": "Start with the proof, not the medium",
+      "body": "<p>The honest answer is that none of photography, video or animation is automatically the right choice. Each one is good at a different kind of proof. A still image can prove something immediately: this room is bright, this deck is finished, this product is real. Video is better when the proof depends on process, scale or emotion, like watching a crew work or hearing an owner speak. Animation is best at showing relationships, like where you are on a page or what changed after you tapped something.</p><p>Most small business websites need strong photography first, because it loads quickly, scans well and survives being cropped into search results and social previews. Video and animation are additions you justify, not defaults. When we plan a site through our <a href=\"/web-design/\">web design</a> work, the media decision comes after the message decision: what does this page need a stranger to believe?</p>"
+    },
+    {
+      "id": "photography-when",
+      "title": "Photography: when a single frame wins",
+      "body": "<p>Photography wins when the evidence fits in one frame. A finished kitchen, the light in a guest room, a bottle on a table, a technician standing next to a repaired machine. A well-composed photograph is easy to scan. Supply appropriate crops and compressed sizes for the page, social previews and thumbnails instead of assuming one large file will suit every use.</p><p>For an Okanagan business, real photography of real work usually beats stock imagery. A Lake Country accommodation showing its actual rooms and morning light, or a Kelowna trade showing a tidy before and after, gives a visitor something to check against reality. The thing to ask a photographer is not whether the pictures are beautiful, although they should be. It is whether the pictures show the specific proof the page needs: the detail, the scale, the people, the finish.</p>"
+    },
+    {
+      "id": "video-when",
+      "title": "Video: when motion earns the extra weight",
+      "body": "<p>Video earns its place when stillness would hide something. Process is the obvious case: a walkthrough of a boutique suite, a landscaper talking through a design, a short explainer for a service people tend to misunderstand. Faces and voices also build a kind of trust that a paragraph cannot, because the viewer can judge tone and sincerity for themselves.</p><p>The tradeoffs are real. Video is heavy, it needs hosting, it needs a poster frame so the page is not blank while it loads, and it needs captions and a transcript to be accessible. Autoplaying background video is usually the worst version of the idea: expensive in data, often ignored, sometimes annoying. A better pattern is short clips where each one does a single job, the viewer can pause them, and the page still makes sense with the sound off.</p>"
+    },
+    {
+      "id": "animation-when",
+      "title": "Animation: small, precise and optional",
+      "body": "<p>Animation is at its best when it explains a relationship: which menu item you are inside, what just changed on the screen, what will happen if you keep scrolling. Used well it makes an interface feel calm and considered. Decorative motion can also contribute atmosphere and craft. Keep it restrained, check its performance cost and provide a comfortable experience for visitors who prefer less motion.</p><p>The discipline is that animation must be optional. Some visitors have motion sensitivity and their devices are set to reduce motion, and a well built site respects that. A useful test is to ask what would be lost if the motion stopped. Sometimes the benefit is orientation; sometimes it is a memorable expression of the brand. Be clear about which benefit you want, and keep the page useful when the motion is reduced or stopped.</p>"
+    },
+    {
+      "id": "performance-cost",
+      "title": "The performance cost most owners never see",
+      "body": "<p>On most small business sites, media is the heaviest thing on the page, and heavy pages are where good design quietly loses to slow loading. Google publishes guidance on what it calls <a href=\"https://web.dev/articles/vitals\">Core Web Vitals</a>, a set of measures covering how fast the main content appears, how quickly the page responds when someone taps, and whether things jump around while loading. Big hero photographs and embedded video are the usual culprits.</p><p>This is a conversation to have before the shoot, not after. Ask for images sized to the space they fill and compressed appropriately. Lazy-load images below the first screen; let the important visible hero image load promptly. For video, ask for a real poster image and confirmation that the player does not block the rest of the page while it loads.</p>"
+    },
+    {
+      "id": "accessibility-media",
+      "title": "Accessible media is a build requirement, not a garnish",
+      "body": "<p>The W3C, which publishes the web accessibility guidelines most standards work is measured against, treats media accessibility as part of the build. Their <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">first accessibility checks</a> cover things any owner can look for: images need useful alternative text or a deliberate empty one, headings need real structure, and text needs enough contrast against its background to read.</p><p>For audio and video, their <a href=\"https://www.w3.org/WAI/media/av/\">guidance on accessible media</a> comes down to a few practical requirements: captions so the spoken content is available as text, transcripts so the content can be read or searched, description of important visual action where the video depends on it, and a player whose controls work with a keyboard and a screen reader. For a narrated room tour, caption the speech and relevant sound, and provide a useful text alternative. A silent tour may need description of the important visual information instead. A purely decorative clip still needs appropriate motion controls and should never be the only way to understand the page.</p>"
+    },
+    {
+      "id": "media-worksheet",
+      "title": "A media plan you can fill in before hiring anyone",
+      "body": "<p>The table below is the short version of the decision. The longer version is that every media choice is a tradeoff between the proof it carries and the weight, cost and accessibility work it adds.</p><table><caption>Choosing between photography, video and animation</caption><thead><tr><th>Medium</th><th>Use it when</th><th>The main cost</th><th>What to ask for</th></tr></thead><tbody><tr><td>Still photography</td><td>The proof fits in one frame: a product, a room, a finished job, a face</td><td>File weight if oversized, plus the cost of a real shoot</td><td>Images sized to their actual display space, compressed, with real alt text</td></tr><tr><td>Video</td><td>Process, scale, emotion or a human voice would be lost in stills</td><td>Heavy files, hosting, poster frames, captions and transcripts</td><td>Short clips with one job each, a real poster image, captions, keyboard-friendly player</td></tr><tr><td>Animation</td><td>Motion explains a relationship or a change of state</td><td>Weight, plus the risk of bothering motion-sensitive visitors</td><td>Subtle motion that respects reduced motion settings and still makes sense if stopped</td></tr></tbody></table><p>For example, the intake for a single page might look like this:</p><ul><li><strong>Page:</strong> the accommodation page for a specific property or suite</li><li><strong>Job of this page:</strong> get a qualified visitor to request dates</li><li><strong>Proof needed:</strong> the space is real, bright and as described</li><li><strong>Media chosen:</strong> a small set of stills, plus one short walkthrough video</li><li><strong>Real assets available:</strong> the rooms themselves, a morning with good light</li><li><strong>Accessibility needs:</strong> alt text on each still, captions and a transcript on the video</li><li><strong>Performance notes:</strong> stills compressed, below-the-fold images lazy-loaded, video behind a poster frame</li></ul><p>That kind of clarity is what keeps a media budget from turning into a hard drive full of beautiful footage that never quite fits the page.</p>"
+    },
+    {
+      "id": "second-set-of-eyes",
+      "title": "If you want a second set of eyes on it",
+      "body": "<p>If you are weighing photography against video for a specific page, or you have media already and suspect it is slowing the site down, that is a reasonable thing to talk through. <a href=\"/contact/\">Get in touch</a> and we can look at what the page needs to prove, what assets you actually have, and what is worth building.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should my homepage autoplay a video?",
+      "My default is a strong still or a poster frame that lets the visitor choose to play. A short muted loop can work when it adds useful atmosphere, loads efficiently, has a pause control and respects reduced-motion preferences. The headline and next step must remain clear without the video."
+    ],
+    [
+      "Do I need original photography, or is stock fine?",
+      "It depends on what the page is proving. If the claim is about your actual work, your space or your team, stock photography weakens it, because a perceptive visitor can feel that the picture is not really you. Stock can be fine for pure mood on a page that makes no specific claim, but real photographs of real work almost always carry more trust."
+    ],
+    [
+      "Can AI-generated images replace a photographer?",
+      "Sometimes for concept work, illustration or a placeholder while you plan a shoot. They are a poor substitute when the image is meant as proof, because the whole value of a photograph of your work is that it is your work. If a page exists to show that something real exists, hire the photographer or take the picture properly yourself."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "W3C: Easy Checks, a first review of web accessibility",
+      "url": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+    },
+    {
+      "name": "W3C: Making audio and video media accessible",
+      "url": "https://www.w3.org/WAI/media/av/"
+    },
+    {
+      "name": "Google: Web Vitals and Core Web Vitals",
+      "url": "https://web.dev/articles/vitals"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Gives owners a decision framework that starts from the proof a page must carry, then treats performance cost and accessibility as build requirements, with a fill-in worksheet and a concrete single-page intake example rather than a gallery of inspiration.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm the article implies no client results, uplift or endorsements.",
+      "Confirm there are no invented statistics, quotes or anecdotes.",
+      "Verify Google's current Core Web Vitals guidance before publishing, and avoid stating exact numeric thresholds that may change.",
+      "Confirm no platform pricing or plan details are stated."
+    ],
+    "serpGap": "Existing coverage is mostly lists of animation and video techniques, stock galleries and portfolio showcases. The gap is a buyer-side guide that ties medium choice to proof, file weight, Core Web Vitals and accessibility obligations, with something an owner can actually fill in before hiring.",
+    "sourceUse": [
+      {
+        "url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+        "claim": "Accessibility checks such as alt text, heading structure and contrast are first-level review items, not specialist extras."
+      },
+      {
+        "url": "https://www.w3.org/WAI/media/av/",
+        "claim": "Accessible video and audio require captions, transcripts, description of important visuals and an accessible player."
+      },
+      {
+        "url": "https://web.dev/articles/vitals/",
+        "claim": "Google measures real-world page experience through Core Web Vitals, and media weight directly affects them."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-09-09",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Design",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "good-small-business-website-design",
+    "boutique-accommodation-website-design"
+  ],
+  "services": [],
+  "wordCount": 1505,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 11810,
+      "total_tokens": 17072,
+      "completion_tokens": 5262,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2638
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 2638
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 1,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "Still photography proves things instantly and loads fast, video earns its weight when process, scale or emotion matter, and animation should stay small, precise and optional.",
+      "replacement": "Still photography can show the work at a glance; video can explain process, scale or emotion; animation can guide attention or give the brand a distinctive feel. Each needs a sensible file budget and an accessible presentation."
+    },
+    {
+      "original": "It is fast to load, easy to scan, and it still works when a platform crops it into a square or a thumbnail.",
+      "replacement": "A well-composed photograph is easy to scan. Supply appropriate crops and compressed sizes for the page, social previews and thumbnails instead of assuming one large file will suit every use."
+    },
+    {
+      "original": "Used as decoration it mostly adds weight and motion sickness.",
+      "replacement": "Decorative motion can also contribute atmosphere and craft. Keep it restrained, check its performance cost and provide a comfortable experience for visitors who prefer less motion."
+    },
+    {
+      "original": "If the answer is nothing, the animation is filler. If the answer is orientation or meaning, it is probably earning its keep.",
+      "replacement": "Sometimes the benefit is orientation; sometimes it is a memorable expression of the brand. Be clear about which benefit you want, and keep the page useful when the motion is reduced or stopped."
+    },
+    {
+      "original": "Ask for images sized to the space they actually fill, compressed properly, and loaded lazily so offscreen media does not slow the first screen.",
+      "replacement": "Ask for images sized to the space they fill and compressed appropriately. Lazy-load images below the first screen; let the important visible hero image load promptly."
+    },
+    {
+      "original": "A room tour video needs captions and a transcript. A purely decorative clip needs none of that, and should not autoplay with sound in the first place.",
+      "replacement": "For a narrated room tour, caption the speech and relevant sound, and provide a useful text alternative. A silent tour may need description of the important visual information instead. A purely decorative clip still needs appropriate motion controls and should never be the only way to understand the page."
+    },
+    {
+      "original": "stills compressed and lazy loaded, video behind a poster frame",
+      "replacement": "stills compressed, below-the-fold images lazy-loaded, video behind a poster frame"
+    },
+    {
+      "original": "Usually no. Autoplaying video is heavy, often blocked or muted by browsers, and easy for a visitor to resent. A strong still or a poster frame that invites a click is almost always the better homepage choice. Save autoplay for nothing, or at most for a muted, genuinely decorative loop you are willing to delete.",
+      "replacement": "My default is a strong still or a poster frame that lets the visitor choose to play. A short muted loop can work when it adds useful atmosphere, loads efficiently, has a pause control and respects reduced-motion preferences. The headline and next step must remain clear without the video."
+    }
+  ]
+}

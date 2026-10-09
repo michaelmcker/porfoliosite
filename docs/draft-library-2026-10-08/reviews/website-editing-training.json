@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help small business and Okanagan owners decide who should handle post-launch website updates, and how to set up access, training and handover boundaries safely.",
+    "specificity": "Task-specific throughout, with concrete examples such as changing holiday hours, adding a staff bio, connecting a form to a booking system, and changing CMS collection structure.",
+    "evidence": "No invented results or client anecdotes. Claims are framed as recommendations, platform notes are described generally, and primary sources are listed for Framer, Webflow and Sanity.",
+    "voice": "Conversational and practical, with connected sentences, clear tradeoffs, Canadian spelling, and no corporate padding. It matches the requested mix of opinion and answer-first advice.",
+    "usefulAsset": "Yes. The access-level table, six-step training routine and pre-handover checklist make this a reusable decision asset rather than a generic overview."
+  },
+  "slug": "website-editing-training",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1442,
+  "usage": {
+    "prompt_tokens": 14191,
+    "total_tokens": 14635,
+    "completion_tokens": 444,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 240
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 240
+    }
+  }
+}

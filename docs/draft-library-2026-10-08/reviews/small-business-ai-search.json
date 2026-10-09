@@ -1,0 +1,44 @@
+{
+  "issues": [
+    {
+      "path": "sections.0.body",
+      "original": "AI features in Google Search use techniques such as retrieval-augmented generation and query fan-out to pull from pages Google already understands.",
+      "replacement": "AI features in Google Search can use techniques such as query fan-out to pull from pages Google already understands.",
+      "reason": "The supplied Google source discusses query fan-out but does not establish retrieval-augmented generation; keeping the stronger technical claim would make an unsupported statement about how Google's AI features work."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Give busy Okanagan business owners an answer-first, practical way to qualify for Google Search and AI features without pretending there is a separate AI-only checklist.",
+    "specificity": "Strong. It stays grounded in Google and OpenAI's stated requirements, avoids invented case studies, uses at most one implicit project reference, and gives concrete page, navigation, local and measurement actions.",
+    "evidence": "Good overall. The one unsupported technical claim about retrieval-augmented generation needs removal; the rest avoids fake percentages, proven claims, universal guarantees and invented client outcomes.",
+    "voice": "Close to Michael's preferred register: clear, Canadian, practical, owner-centred, sceptical of hype and respectful of the reader's time. It keeps useful opinions without self-praise.",
+    "usefulAsset": "Yes. The article's structure, title, factual boundaries, local focus and measured AI-search guidance are worth keeping with only a narrow factual repair."
+  },
+  "slug": "small-business-ai-search",
+  "applied": [
+    {
+      "path": "sections.0.body",
+      "original": "AI features in Google Search use techniques such as retrieval-augmented generation and query fan-out to pull from pages Google already understands.",
+      "replacement": "AI features in Google Search can use techniques such as query fan-out to pull from pages Google already understands.",
+      "reason": "The supplied Google source discusses query fan-out but does not establish retrieval-augmented generation; keeping the stronger technical claim would make an unsupported statement about how Google's AI features work."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1654,
+  "usage": {
+    "prompt_tokens": 10665,
+    "total_tokens": 11284,
+    "completion_tokens": 619,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 269
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 269
+    }
+  }
+}

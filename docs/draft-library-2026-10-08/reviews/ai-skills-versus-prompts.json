@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help small teams understand the practical difference between one-off AI prompting and reusable AI skills, so they can decide when the extra structure is worth building.",
+    "specificity": "High. It defines both terms, contrasts them in a table, walks through a concrete enquiry-classification example, and gives clear decision criteria.",
+    "evidence": "Grounded in Michael's published AI implementation offer and ordinary workflow observations, without unsupported statistics, fake tests, or invented client stories.",
+    "voice": "Direct and practical, with connected conversational sentences, Canadian spelling, and recommendations aimed at busy owners rather than AI enthusiasts.",
+    "usefulAsset": "Yes. It gives readers a usable decision framework, a concrete example, and specific questions to ask before hiring help."
+  },
+  "slug": "ai-skills-versus-prompts",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1382,
+  "usage": {
+    "prompt_tokens": 5139,
+    "total_tokens": 7099,
+    "completion_tokens": 1960,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1763
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 1763
+    }
+  }
+}

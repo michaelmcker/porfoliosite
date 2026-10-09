@@ -1,0 +1,142 @@
+{
+  "slug": "sanity-small-business-cms",
+  "title": "Sanity explained for a business owner: CMS, website and hosting are different jobs",
+  "type": "guide",
+  "description": "A practical guide to Sanity for small business owners. Learn what a headless CMS does, what Sanity hosts, what you still need to build, and when a simpler website is the better choice.",
+  "summary": "Sanity is a headless content management system: it stores and edits structured content, but it does not show visitors your website. For a small business, that means the CMS, the public-facing website and the hosting decision are separate jobs. Sanity can be worth it when content needs to reach several channels or power more than a basic brochure site. For a simple five-page site, a simpler build is often the better value.",
+  "takeaways": [
+    "Sanity is a CMS, not a turnkey website. You still need a frontend and a hosting plan for that frontend.",
+    "A key business advantage of Sanity is structured content that can be reused across pages, channels and systems.",
+    "A small brochure website may be better served by a simpler CMS or website build unless the content needs are genuinely complex."
+  ],
+  "sections": [
+    {
+      "id": "what-sanity-is-in-plain-terms",
+      "title": "What Sanity is, in plain business terms",
+      "body": "<p>A content management system is the tool you use to create, organize and publish content. A website is the thing customers actually see and use. Sanity is a CMS, not a finished website. It gives you a place to store content and an editing interface called Studio. Your business still needs a public-facing frontend, usually built with a modern web framework, and a place to host that frontend. If you are comparing <a href=\"/web-design/\">website design options</a>, that distinction matters because it changes cost, maintenance and who does the work.</p>"
+    },
+    {
+      "id": "why-headless-can-be-a-better-fit",
+      "title": "Why headless can be a better fit for growing businesses",
+      "body": "<p>Sanity belongs to a group called headless CMSes. The word headless means the content storage is separated from the presentation layer. That can sound abstract, but the business advantage is practical: the same service page, product description, staff profile or policy text can be reused in more than one place. A website can pull from the same content source as a mobile app, a kiosk, an email system or an AI agent. It also lets editors work in a clean writing environment while developers choose the best way to build the public site. The tradeoff is that a headless setup can take more planning and more developer involvement than a basic all-in-one website builder.</p>"
+    },
+    {
+      "id": "what-sanity-hosts-and-what-it-does-not",
+      "title": "What Sanity hosts and what it does not",
+      "body": "<p>Sanity's own documentation describes two main pieces a business owner should not mix up. Content Lake is the hosted data store where your documents and assets live. Studio is the editing interface your team uses to work with that content. Studio can be self-hosted, but it still connects to the hosted Content Lake. Neither one is your public website by itself. The table below shows the practical split.</p><table><caption>What Sanity provides and what your project still needs</caption><thead><tr><th>Component</th><th>What Sanity provides</th><th>What you still need</th></tr></thead><tbody><tr><td>Content and media</td><td>Hosted Content Lake with exportable documents and assets</td><td>A plan for exporting or migrating if you ever move</td></tr><tr><td>Editing interface</td><td>Sanity Studio, with roles and customizable fields</td><td>Training and a content workflow that fits your team</td></tr><tr><td>Public website</td><td>Structured content available through APIs</td><td>A frontend design, build and hosting plan</td></tr><tr><td>Forms, search and ecommerce</td><td>Content can support these features</td><td>Separate integrations or application work</td></tr></tbody></table><p>For a business owner, the important point is that buying Sanity is buying a content system, not a turnkey website. The public site still has to be designed, built and hosted.</p>"
+    },
+    {
+      "id": "when-a-five-page-website-should-not-start-with-sanity",
+      "title": "When a five-page website should not start with Sanity",
+      "body": "<p>If the website is five pages, one service area, one person making occasional edits and no need to reuse the content anywhere else, Sanity may be more system than you need. In that case, a simpler CMS or a professionally built static or template-based site can be a better value. Sanity becomes interesting when the content itself starts to carry more of the business. Examples include several service categories, multiple locations, seasonal campaigns, a product catalogue, staff profiles, resource articles and the need to keep that information consistent across more than one channel. For many Okanagan businesses, the right answer is not the most advanced platform. It is the platform that matches the real publishing workload.</p>"
+    },
+    {
+      "id": "what-structured-content-looks-like",
+      "title": "What structured content looks like for a real business",
+      "body": "<p>The best way to understand Sanity is to look at the kind of intake fields it can model. Suppose a home-services company wants each service page to be consistent and easy to reuse. Instead of treating a page as one big block of text, Sanity can store the page as structured fields.</p><table><caption>A sample set of intake fields for a service page</caption><thead><tr><th>Field</th><th>What it holds</th><th>Why it matters</th></tr></thead><tbody><tr><td>Title</td><td>The service name</td><td>Helps editors and search systems understand the page</td></tr><tr><td>Short description</td><td>A plain-language summary</td><td>Can be reused on a services index or in campaign copy</td></tr><tr><td>Service category</td><td>A controlled label such as plumbing or electrical</td><td>Makes filtering and related services possible</td></tr><tr><td>Service area</td><td>The communities covered</td><td>Keeps location information consistent</td></tr><tr><td>Pricing note</td><td>A short explanation of how estimates work</td><td>Reduces confusion without locking in a fixed quote</td></tr><tr><td>Primary image</td><td>A reusable visual asset</td><td>Supports the page, social posts and other channels</td></tr><tr><td>Call to action</td><td>The next step for the visitor</td><td>Gives the page a clear business job</td></tr><tr><td>FAQs</td><td>Reusable questions and answers</td><td>Lets one answer appear in several places</td></tr></tbody></table><p>That is the real promise of structured content. The content becomes business data, not just website words. The cost is that someone has to design that model well and keep it tidy as the business changes.</p>"
+    },
+    {
+      "id": "what-to-ask-before-choosing-sanity",
+      "title": "What to ask before choosing Sanity",
+      "body": "<p>Before choosing Sanity, I would want clear answers to a few practical questions. First, how will editors preview a page before it goes live, and who will configure that preview properly? Second, which roles need to create drafts, approve changes or publish, and what training will they need? Third, what is the exit plan? Sanity can export dataset documents and assets, but the frontend code and hosting setup are separate pieces of the project. Fourth, who will support the custom build after launch? Finally, how does the total project compare with the cost and maintenance of a simpler site? If those questions do not have honest answers, a headless CMS can create more responsibility than it removes.</p>"
+    },
+    {
+      "id": "how-i-would-advise-different-business-owners",
+      "title": "How I would advise different business owners",
+      "body": "<p>For a small local business that mostly needs a credible brochure site, I would usually start with a simpler build and keep the publishing burden low. For a growing business with several service lines, multiple contributors, or content that needs to feed more than one channel, Sanity becomes a serious candidate. The difference is not fashion. It is whether the business needs content to behave like structured data. My interest is helping owners choose the tool that fits the work they actually have, not selling a headless setup where a simpler site would do the job better.</p>"
+    },
+    {
+      "id": "a-sensible-next-step",
+      "title": "A sensible next step",
+      "body": "<p>A sensible next step is to map what your business needs to publish, who needs to edit it, where it has to appear and what would happen if you moved platforms later. That is more useful than choosing a CMS because it is popular with developers. If you want a clear, practical recommendation before committing to a custom website, <a href=\"/contact/\">contact me</a> and we can look at the tradeoffs for your situation.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Does Sanity host my public website?",
+      "No. Sanity provides hosted content infrastructure through Content Lake and an editing environment through Studio. The public-facing website still needs a separate frontend and a hosting plan."
+    ],
+    [
+      "If I leave Sanity, can I take my content with me?",
+      "Sanity provides ways to export dataset documents and assets. What is separate is the custom frontend code and the hosting setup, so a move still takes planning."
+    ],
+    [
+      "Can my staff edit a Sanity website without a developer?",
+      "They can often edit content in Studio if it is configured well. Changes to the public site's design, layout or code are still developer work."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Sanity headless CMS",
+      "url": "https://www.sanity.io/headless-cms"
+    },
+    {
+      "name": "Sanity Studio local development and hosting notes",
+      "url": "https://www.sanity.io/docs/studio/development"
+    },
+    {
+      "name": "Sanity data export",
+      "url": "https://www.sanity.io/docs/content-lake/exporting-data"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Explains Sanity as a content system rather than a website product, and frames the decision around actual publishing needs instead of developer popularity.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm current Sanity hosting and self-hosting terms before publication.",
+      "Re-check whether Sanity has added built-in public hosting or page-building features since October 8, 2026.",
+      "Verify that the export guidance still reflects the current CLI and API behaviour."
+    ],
+    "serpGap": "Search results explain headless CMS concepts, but fewer pages help a small business owner decide when Sanity's separate frontend build and structured content model are worth the added cost and planning.",
+    "sourceUse": [
+      {
+        "url": "https://www.sanity.io/headless-cms",
+        "claim": "Used to understand Sanity's own explanation of headless CMS, structured content and the difference from a traditional CMS."
+      },
+      {
+        "url": "https://www.sanity.io/docs/studio/development",
+        "claim": "Used to confirm that Studio is a separate development environment and that content is stored in the hosted Content Lake rather than locally."
+      },
+      {
+        "url": "https://www.sanity.io/docs/content-lake/exporting-data",
+        "claim": "Used to confirm that Sanity supports exporting dataset documents and assets, while the frontend remains a separate project."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-07-22",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Platforms",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "website-subscription-vs-upfront-build",
+    "framer-webflow-custom-website"
+  ],
+  "services": [],
+  "wordCount": 1242,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 17135,
+      "total_tokens": 23382,
+      "completion_tokens": 6247,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3625
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3625
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 3,
+    "publicationApproved": false
+  }
+}

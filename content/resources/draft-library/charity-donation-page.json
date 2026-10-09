@@ -1,0 +1,149 @@
+{
+  "slug": "charity-donation-page",
+  "title": "What a charity donation page needs before asking for money",
+  "type": "guide",
+  "description": "A Canadian charity donation page should confirm legal receipt eligibility, state exactly what donors can claim, collect only necessary personal information, and make recurring and mobile giving easy. This guide covers the design and content choices that build trust before the ask.",
+  "summary": "A useful donation page makes the case for giving, explains what the gift supports and lets someone complete the payment without confusion. For an Okanagan charity, that means a specific campaign story, clear one-time and monthly options, an accessible form, accurate receipt information and a helpful acknowledgement after the gift.",
+  "takeaways": [
+    "Confirm registered charity or qualified donee status before designing the page, because only certain organizations can issue tax receipts under Canadian law.",
+    "A strong donation page tells donors exactly what they can claim, collects only the minimum personal information needed, and makes monthly giving easy to choose.",
+    "Accessibility, mobile performance, and honest privacy language are part of the conversion decision, not separate compliance extras."
+  ],
+  "sections": [
+    {
+      "id": "start-with-the-reason-to-give",
+      "title": "Start with the reason to give",
+      "body": "<p>A donation page should answer the donor’s decision before asking for payment: what needs to happen, why does it matter and how will the gift help? A strong photograph or short film can make that purpose tangible, but the surrounding page must still explain the appeal for someone who does not press play.</p><p>Use a specific, current description of the programme or campaign. If you show a target, progress figure or example of what a contribution funds, confirm the basis with the organisation and assign someone to keep it current. Do not manufacture a neat cost-per-outcome claim just to fill a giving card.</p><p>For example, an Okanagan community charity might put a short account of the current need above the form, then show the programme being funded, the permitted use of gifts and a named contact for larger or unusual gifts. The point is a coherent decision path. My <a href=\"/web-design/charities/\">website design for charities</a> approach connects that story to the actual donation process.</p><table><caption>A donation page content map</caption><thead><tr><th>Part of the page</th><th>What the donor needs</th></tr></thead><tbody><tr><td>Opening</td><td>A clear need and a specific reason to support the work</td></tr><tr><td>Evidence</td><td>Current programme information, appropriate imagery and substantiated progress</td></tr><tr><td>Giving choices</td><td>Amount, one-time or monthly frequency and any genuine designation options</td></tr><tr><td>Payment</td><td>An accessible, recognisable payment flow with clear errors and confirmation</td></tr><tr><td>Receipt and follow-up</td><td>Accurate eligibility and timing information, acknowledgement and a contact for help</td></tr></tbody></table>"
+    },
+    {
+      "id": "say-what-donors-can-claim",
+      "title": "Explain receipts accurately without making tax promises",
+      "body": "<p>Confirm the organisation’s receipt eligibility and actual process before adding receipt promises to the donation page. The <a href=\"https://www.canada.ca/en/revenue-agency/services/charities-giving/charities/sample-official-donation-receipts.html\">CRA’s sample official donation receipts</a> show that the receipt information depends on the kind of gift and any advantage received.</p><p>The website should state what the organisation can confirm: whether a receipt is available, how it is delivered, when to expect it and whom to contact if it is missing. A fundraising event or non-cash gift needs its own reviewed wording. Avoid promising a donor-specific tax outcome or presenting every payment as fully receiptable.</p><p>Keep that explanation close enough to the form to be useful. A donor should not have to search a policy archive to understand the organisation’s process.</p>"
+    },
+    {
+      "id": "make-privacy-part-of-the-design",
+      "title": "Make privacy part of the page, not a footer link",
+      "body": "<p>A donation form is a request for personal information. British Columbia's Office of the Information and Privacy Commissioner <a href=\"https://www.oipc.bc.ca/guidance-documents/2286\">says organizations should identify the purposes of collection</a>, limit collection to what a reasonable person would consider appropriate, and collect only the minimum amount of personal information required. That approach is also good design. The form should make the reason for each request clear before the donor reaches the payment fields.</p><p>If your form asks for a donor's name, email, and payment details, say why. If you also ask for a mailing address, explain whether it is for a tax receipt, a newsletter, or both. Donors do not need a long policy on the page. They need a short, plain sentence near the form that tells them what happens to their information. A charity that collects more than it needs is adding another reason for the donor to stop.</p>"
+    },
+    {
+      "id": "design-the-form-for-the-phone",
+      "title": "Design the form for the person holding the phone",
+      "body": "<p>The <a href=\"https://www.w3.org/WAI/tutorials/forms/\">W3C's form guidance</a> is useful because it treats accessibility as part of usability. Clear labels help screen reader users, but they also help every donor understand what goes in each field. Grouping related controls, giving instructions before the form, validating input, and notifying users when something succeeds or fails help people understand and complete the form.</p><p>In practice, this means a Canadian charity donation form should ask for the fewest fields that still let the charity process the gift and issue any promised receipt. Do not ask for a life story. Do not make the donor hunt for the submit button. If your donation page is hard to use on a phone, that is a design problem worth fixing before you spend on advertising. The donor should be able to read the field labels, tap the right boxes, and understand any error message without pinching and zooming.</p>"
+    },
+    {
+      "id": "offer-the-giving-paths-donors-use",
+      "title": "Offer the giving paths your donors actually use",
+      "body": "<p>A good donation page usually presents a few clear choices rather than every possible choice. Start with the giving methods the organisation actually supports, such as one-time and monthly gifts. Offer a contact route for other gifts if the organisation is equipped to handle them. The important design decision is hierarchy. If monthly giving is valuable to your charity, do not hide it behind three clicks. Put it beside the one-time option and explain the difference in plain language.</p><p>For example, 'Give once' and 'Give monthly' are clearer than 'One-time donation' and 'Recurring contribution.' A small Okanagan charity might offer three choices on its main donation page: a one-time gift, a monthly gift, and a note about gifts of securities for donors who ask. The monthly option might include a short line such as 'Monthly gifts help us plan programs with more confidence.' That is enough. The donor needs to know what they are choosing and why the charity values it.</p>"
+    },
+    {
+      "id": "test-as-a-donor",
+      "title": "Test the page as a donor before you ask for money",
+      "body": "<p>Before you send traffic to the page, walk through it as if you had never heard of your charity. Do this on a phone, not just on a desktop. The test is about whether a distracted person can understand the ask, choose a giving path, and complete the form without confusion.</p><ul><li>Click the donate button and note how many steps it takes to reach the payment fields.</li><li>Fill out the form as a first-time donor. Do the labels make sense without explanation?</li><li>Trigger an error, such as leaving an email blank. Does the page tell you exactly what to fix?</li><li>Check that the page explains tax receipts, recurring giving, and privacy in plain language near the form.</li><li>Complete a test donation if your processor allows it, or at least confirm that the success message is clear.</li></ul><p>If the form is embedded, make sure the surrounding page does not duplicate the same questions or create conflicting instructions. The donor should feel that the charity and the form are telling the same story.</p>"
+    },
+    {
+      "id": "keep-receipt-promises-accurate",
+      "title": "Keep the receipt promise accurate after launch",
+      "body": "<p>Tax rules and charity status are not static. If your organization changes its registration status, merges with another charity, or changes how it issues receipts, the donation page needs to change too. A page that once said 'we issue charitable tax receipts' can become misleading if that is no longer true.</p><p>It is also easy for a page to become stale about the details. If your charity stops accepting in-kind gifts, or if you change your policy on covering transaction fees, update the page rather than leaving donors to discover the change after they give. The goal is to make sure that every promise on the page is still true when a donor reads it, without turning the donation page into a legal document.</p><p>Set a simple review cycle. Once a year, have someone who understands both your charity's operations and the website read the donation page against the CRA receipt guidance and your current receipt process. If there is a mismatch, the website loses. Fix the page.</p><p>If you want help connecting the campaign story, page design and donation flow, <a href=\"/contact/\">get in touch</a> and we can define the right scope for your charity.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Does every nonprofit in Canada need to issue tax receipts for online donations?",
+      "No. Only registered charities and certain other qualified donees can issue official donation receipts for income tax purposes. If your organization is not in that position, the page should be clear that donors will not receive an official tax receipt."
+    ],
+    [
+      "Should a charity ask donors to cover the processing fee?",
+      "Many donation processors offer an option for donors to cover fees. Whether to use it depends on your charity's costs and how your donors respond. If you do offer it, the page should explain what the fee is and what it pays for. Do not hide it or make it feel mandatory if it is optional."
+    ],
+    [
+      "What is the biggest mistake on a small charity's donation page?",
+      "One of the biggest mistakes is promising tax receipts when the organization cannot issue them, or being vague about which portion of a ticket or gift is eligible. Another common mistake is collecting more personal information than the charity actually needs, which creates both a trust problem and a privacy obligation."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "CRA donation receipt requirements",
+      "url": "https://www.canada.ca/en/revenue-agency/services/charities-giving/charities/sample-official-donation-receipts.html"
+    },
+    {
+      "name": "BC OIPC developing a privacy policy under PIPA",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    },
+    {
+      "name": "W3C accessible forms",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Most donation-page advice focuses on visual design and generic conversion tips. This article anchors the design in Canadian charity law, British Columbia privacy law, and accessibility, so owners can see which decisions are legal prerequisites and which are merely stylistic.",
+    "claimsToRecheckBeforeRelease": [
+      "CRA receipt rules and qualified donee status can change; verify against the CRA sample receipts page.",
+      "OIPC guidance reflects BC's Personal Information Protection Act; charities outside BC should check their own provincial or federal privacy obligations.",
+      "W3C form guidance is stable, but confirm that any specific accessibility techniques mentioned still reflect current WCAG recommendations."
+    ],
+    "serpGap": "Competing articles lead with button colours, hero images, and generic UI checklists. They rarely tell a Canadian charity owner that the first design decision is whether the organization can legally issue tax receipts, or that BC privacy law treats donation-form data collection as a constrained activity.",
+    "sourceUse": [
+      {
+        "url": "https://www.canada.ca/en/revenue-agency/services/charities-giving/charities/sample-official-donation-receipts.html",
+        "claim": "Only registered charities and specific qualified donees can issue official donation receipts; receipts must distinguish eligible amounts from any advantage the donor receives."
+      },
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "BC organizations should identify the purpose of collection, limit collection to what is reasonable, and collect only the minimum personal information required."
+      },
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "Accessible forms need clear labels, logical grouping, instructions, validation, and user notifications, which also reduce abandonment for all donors."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-09-16",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/charities/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "charities"
+  ],
+  "wordCount": 1461,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 14671,
+      "total_tokens": 21823,
+      "completion_tokens": 7152,
+      "prompt_tokens_details": {
+        "cached_tokens": 13107
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4589
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 4589
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 4,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Restored donor decision and campaign purpose ahead of receipt mechanics; removed oversimplified tax-outcome advice; added practical page map and requested service/contact paths.",
+      "date": "2026-10-08"
+    },
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ],
+  "criticalFactsReviewed": true
+}

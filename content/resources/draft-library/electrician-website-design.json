@@ -1,0 +1,141 @@
+{
+  "slug": "electrician-website-design",
+  "title": "What works on an electrician website beyond a list of services?",
+  "type": "guide",
+  "description": "What an electrician website needs beyond a services list: trust signals, emergency versus planned intake, local proof, and practical design choices for Okanagan contractors.",
+  "summary": "An electrician website that works does more than list services. It separates emergency and planned work, shows verified credentials and real local projects, and makes the next step obvious on a phone. The best pages answer specific owner questions instead of repeating trade jargon. For Okanagan contractors, the strongest sites also make service area, booking route, and proof of workmanship easy to check before a call.",
+  "takeaways": [
+    "A services list is only the baseline; the site has to show which kinds of electrical work you handle and what the visitor should do next.",
+    "Emergency pages and planned project pages need different layouts, different intake forms, and different proof.",
+    "Local trust comes from verifiable credentials, real project photos, clear service-area language, and specific answers to homeowner concerns."
+  ],
+  "sections": [
+    {
+      "id": "short-answer",
+      "title": "The short answer",
+      "body": "<p>A services list is the floor, not the ceiling. Almost every electrician can publish one, so by itself it rarely helps a homeowner decide who to call.</p><p>What works is proof that you handle the right kind of job, in the right area, with a clear next step. That usually means separate treatment for emergency faults and planned projects, visible credentials, real photos of finished work, and page copy that sounds like the customer's problem instead of trade shorthand.</p>"
+    },
+    {
+      "id": "emergency-planned",
+      "title": "Design for two very different jobs",
+      "body": "<p>An electrical contractor usually sells two kinds of work. One is urgent: a dead circuit, a burning smell, repeated breaker trips, or a business that cannot afford downtime. The other is planned: a panel upgrade, an EV charger, renovation wiring, or a strata or commercial project.</p><p>Those visitors are in different states of mind. The emergency visitor needs fast reassurance and an obvious way to reach you. The planned-work visitor needs confidence in your assessment, scope, schedule, and cleanup.</p><table><caption>Emergency versus planned electrical work website priorities</caption><thead><tr><th>Situation</th><th>What the visitor needs</th><th>Page priorities</th></tr></thead><tbody><tr><td>Emergency fault</td><td>Reassurance, immediate contact, service-area clarity</td><td>Click-to-call, short intake form, hours, service area, direct language</td></tr><tr><td>Panel or service upgrade</td><td>Confidence in assessment, scope, and safety</td><td>Process overview, photos of finished panels, permit or inspection language, clear consultation route</td></tr><tr><td>EV charger installation</td><td>Answers on suitability, load, timing, and cost drivers</td><td>Compatibility framing, site assessment step, examples without electrical how-to</td></tr><tr><td>Renovation, strata, or commercial work</td><td>Coordination, documentation, and fit with other trades</td><td>Project photos, scope categories, intake for drawings or site visit, separate contact route for property managers</td></tr></tbody></table><p>A strong electrician website treats those as separate buying decisions. It does not force every visitor through the same homepage, the same form, and the same generic list of services.</p>"
+    },
+    {
+      "id": "trust-visible",
+      "title": "Make trust visible before the phone rings",
+      "body": "<p>People hiring an electrician usually want to know two things quickly: whether you are qualified to do the work, and whether you have done work like theirs before.</p><p>In British Columbia, a homeowner can check a contractor through the public <a href=\"https://www.technicalsafetybc.ca/regulatory-resources/find-a-licensed-contractor\">Technical Safety BC contractor lookup</a>. A website should make that easier by showing the legal business name clearly and, where appropriate, linking to public verification rather than making a vague licence claim.</p><p>Real photos matter too. A gallery of actual panel upgrades, clean commercial work, or finished EV charger installations gives more confidence than a row of stock images. The same goes for testimonials. Specific comments about punctuality, clean work, communication, and problem solving are more useful than broad praise.</p>"
+    },
+    {
+      "id": "local-specificity",
+      "title": "Be specific about where and what",
+      "body": "<p>Generic copy makes an electrical business hard to choose. If the page could be used by any contractor in any city, it probably will not feel like the safest call to make.</p><p>A stronger local structure might look like this:</p><ul><li><strong>Home page:</strong> who you serve, what kinds of work you take, and the two main routes, urgent help and planned projects.</li><li><strong>Service pages:</strong> panel upgrades, EV chargers, renovation wiring, commercial work, and other services written around customer problems.</li><li><strong>Service-area page:</strong> the Okanagan communities you actually cover, with practical wording about response and site visits.</li><li><strong>Work examples:</strong> real project photos with short captions about scope, not instructions.</li><li><strong>Contact page:</strong> separate routes for emergency calls, quote requests, and commercial or strata enquiries.</li></ul><p>For a broader look at local website structure, the <a href=\"/blog/kelowna-business-website-guide/\">Kelowna business website guide</a> is a useful companion. The main point here is simple: local specificity should help the visitor choose, not just help the page rank.</p>"
+    },
+    {
+      "id": "intake-pattern",
+      "title": "A practical intake pattern",
+      "body": "<p>Here is a concrete intake pattern an owner can use. The goal is to collect enough information to route the request properly without turning the public form into a case file.</p><h3>Emergency intake</h3><ul><li>Name</li><li>Phone number</li><li>Service address or nearest intersection</li><li>Type of property: house, townhouse, strata unit, business, or other</li><li>Short description: no power, burning smell, repeated trips, partial outage, or similar</li><li>Best time to call back if the line is missed</li></ul><h3>Planned project intake</h3><ul><li>Name and preferred contact method</li><li>Project type: panel upgrade, EV charger, renovation, new build, commercial, or other</li><li>Property type and general location</li><li>Target timing: urgent, this season, getting quotes, or planning ahead</li><li>Short description of the goal</li><li>Optional upload or note for drawings, photos, or strata requirements</li></ul><p>Keep the public form limited. Detailed history, financial documents, or other sensitive information should move into the contractor's approved follow-up process, not live in an open website form.</p>"
+    },
+    {
+      "id": "content-beyond-services",
+      "title": "Content that answers real owner questions",
+      "body": "<p>A service page can list what you do, but helpful content often wins the call because it answers the question already in the owner's head. Google's own <a href=\"https://developers.google.com/search/docs/fundamentals/seo-starter-guide\">SEO starter guidance</a> keeps coming back to the same idea: useful, people-first content is easier for both visitors and search engines to understand.</p><p>For an electrician, useful examples include:</p><ul><li>When a flickering light or repeated breaker trip deserves a proper assessment</li><li>What homeowners should gather before asking about an EV charger</li><li>How renovation wiring affects older homes without turning the article into advice</li><li>What a property manager should send before requesting a commercial quote</li><li>Which photos help a contractor understand a panel, subpanel, or finished space</li></ul><p>The best content does not pretend to replace a site visit. It helps the visitor describe the problem clearly enough that the right next step feels obvious.</p>"
+    },
+    {
+      "id": "design-conversion",
+      "title": "The design choices that actually help conversion",
+      "body": "<p>Conversion on an electrician website is mostly about reducing hesitation. The visitor should not have to hunt for the phone number, wonder whether you cover their area, or guess whether you handle commercial work.</p><ul><li><strong>Put the main action above the fold:</strong> call now, request an assessment, or send project details.</li><li><strong>Use plain labels:</strong> say <em>Emergency electrical help</em> and <em>Panel upgrades</em>, not clever internal names.</li><li><strong>Make the site fast on a phone:</strong> heavy sliders, huge images, and crowded layouts cost real enquiries.</li><li><strong>Show proof near the action:</strong> reviews, licence verification routes, and real project photos belong close to the contact options.</li><li><strong>Match the form to the job:</strong> emergency and planned project forms should not ask the same questions.</li></ul><p>Good design here is not decoration. It is the difference between a worried visitor taking action and a worried visitor hitting the back button.</p>"
+    },
+    {
+      "id": "what-to-ask",
+      "title": "What to ask for when hiring help",
+      "body": "<p>If you are hiring help, ask for more than a nice-looking homepage. Ask how the designer or agency will separate emergency and planned work, how they will present credentials, how they will handle service-area wording, and whether they can help create real local content instead of generic filler.</p><p>The practical standard I would use for <a href=\"/web-design/electricians/\">electrician website design</a> is whether the finished site helps the right visitor make the right call. A beautiful page is useful, but a beautiful page with clear intake routes, visible proof, and specific local language is much more useful.</p><p>If budget is part of the decision, the <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost guide</a> can help you compare scope instead of shopping by headline price alone.</p><p>If you want a site that separates urgent work from planned projects, shows real proof, and gives Okanagan customers a clear next step, <a href=\"/contact/\">contact Michael</a> to talk through the project.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Can an electrician website show before-and-after project photos?",
+      "Yes, if the photos are presented as examples of completed work rather than instructions. Short captions that describe scope, location type, or project category are usually more useful than technical detail. If the content touches regulated work, the electrical team should review the final wording."
+    ],
+    [
+      "Should an electrician make separate pages for Kelowna, Vernon, and West Kelowna?",
+      "Not automatically. Duplicate pages that only swap the city name usually add little for the visitor. One strong service-area page is often better, unless each community page has genuinely different content, examples, or intake needs."
+    ],
+    [
+      "What should a public electrician enquiry form avoid collecting?",
+      "A public form should collect the minimum needed to respond: name, contact details, general location, property type, and a short description. It should not ask for medical records, financial documents, or a long case history. Those details should move into the contractor's approved follow-up system."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Technical Safety BC contractor lookup",
+      "url": "https://www.technicalsafetybc.ca/regulatory-resources/find-a-licensed-contractor"
+    },
+    {
+      "name": "Google SEO starter guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Separates emergency and planned electrical buyer journeys, then gives Okanagan owners concrete intake fields, page architecture, local proof choices, and hiring questions instead of generic web-design advice.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm the Technical Safety BC contractor lookup URL is still current before publication.",
+      "Confirm the article does not imply Michael has done electrical work himself or built sites for every electrical business type mentioned.",
+      "Confirm all four internal links resolve and that /web-design/electricians/ appears exactly as the primary money page."
+    ],
+    "serpGap": "Competitor coverage mixes generic trade-site advice with lead-generation claims. This guide gives distinct emergency versus planned intake patterns, practical trust signals, Okanagan localization choices, and a hiring checklist.",
+    "sourceUse": [
+      {
+        "url": "https://www.technicalsafetybc.ca/regulatory-resources/find-a-licensed-contractor",
+        "claim": "British Columbia homeowners can verify a licensed contractor through Technical Safety BC before hiring."
+      },
+      {
+        "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "claim": "Google advises helpful, people-first content and clear site structure rather than tricks or shortcuts."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-01-21",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/electricians/",
+  "related": [
+    "plumber-website-design",
+    "accountant-website-design"
+  ],
+  "services": [
+    "electricians"
+  ],
+  "wordCount": 1413,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 10130,
+      "total_tokens": 17314,
+      "completion_tokens": 7184,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4460
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 4460
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

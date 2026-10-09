@@ -1,0 +1,152 @@
+{
+  "slug": "holiday-hours-website-checklist",
+  "title": "Holiday hours: the website changes that prevent wasted calls and visits",
+  "type": "checklist",
+  "description": "A practical holiday hours checklist for small businesses: Google special hours, website availability, form acknowledgements, booking calendars, voicemail and a full customer journey test.",
+  "summary": "Holiday hours problems happen when Google, your website, your forms and your voicemail tell four different stories. This checklist walks through each touchpoint in order, with a comparison table, a sample auto-reply and a final test so nobody drives to a closed door or waits on a reply that never comes.",
+  "takeaways": [
+    "Set special hours in Google Business Profile and publish the same hours on your website. One without the other leaves customers guessing.",
+    "A form auto-reply and a booking calendar need holiday logic, not just regular-season logic. Quietly accepting requests you will not act on is the most damaging failure.",
+    "Test the full holiday customer journey yourself, from search result to voicemail, before the holiday starts."
+  ],
+  "sections": [
+    {
+      "id": "holiday-hours-checklist",
+      "title": "The short version: set the hours everywhere, not just in one place",
+      "body": "<p>Holiday hours cause trouble when each customer touchpoint tells a different story. Google says one thing, your homepage says another, your contact form accepts requests you will never answer, and the voicemail still wishes everyone a good day at regular hours. None of these failures is dramatic on its own, but together they send people elsewhere.</p><p>The fix is short and unglamorous. Set special hours in Google Business Profile, publish the same hours on your website, make your forms and booking calendar acknowledge the closure or reduced hours, and update your voicemail. Then walk through the whole thing as a customer. That is most of what this checklist asks.</p>"
+    },
+    {
+      "id": "google-hours-not-automatic",
+      "title": "Google special hours do not update your website automatically",
+      "body": "<p>This is the assumption that causes the most avoidable frustration. Special hours in Google Business Profile are a separate setting from anything on your website. Google recommends confirming holiday hours there even when they match your regular schedule, so customers can trust what they see in search. But Google will not push those hours onto your homepage, your contact page or your booking calendar.</p><p>That means every holiday closure has to be entered twice, once on Google and once on the site. It also means the two must match. If Google shows you as closed on a Saturday but your site invites people to drop by, the site wins the argument in the worst possible way, because the customer only discovers the truth after arriving.</p><p>The same principle applies year round to service and location pages. If you have built <a href=\"/blog/useful-location-pages/\">useful location pages</a>, each one needs to be honest about whether that location or service line is operating during the holiday period.</p>"
+    },
+    {
+      "id": "website-service-availability",
+      "title": "Your website should say what is available, not just when",
+      "body": "<p>Opening hours only answer half the question. A customer also wants to know whether the thing they came for is still on. A shop might be open for gift purchases but closed for repair drop-offs. A trade might stop booking new work in December while still handling emergencies. A studio might hold online classes but not in-person sessions.</p><p>Your website needs a short, plain statement of availability per service, not just a line of hours in the footer. The cleanest place for this is near the top of each service page or on a single clearly labelled holiday notice that the homepage links to. Good <a href=\"/web-design/\">web design</a> makes this information easy to find without turning the page into a wall of warnings.</p><p>For example, suppose an Okanagan home services company closes for two weeks over the holidays but continues taking emergency calls. The wrong version of its homepage says \"Holiday hours apply.\" The right version says \"Closed for routine bookings until January 5. Emergency service continues, call the number below and leave a message.\" The second one protects both the customer and the owner.</p>"
+    },
+    {
+      "id": "form-booking-acknowledgement",
+      "title": "Forms and booking calendars need a holiday handshake",
+      "body": "<p>A contact form that accepts an enquiry on December 24 and stays silent until January is worse than a closed sign, because it creates an expectation. The fix is an acknowledgement. The moment someone submits, they should receive an automatic reply that states the holiday situation plainly: when you are closed, when you will respond, and what to do if the matter is urgent.</p><p>The same goes for online booking. If your calendar still offers slots over a closure, people will take them. Either block the dates or add clear holiday messaging to the booking flow. A booking system that happily schedules an appointment nobody will attend is a broken promise, and broken promises at the holidays get remembered.</p><p>Here is a sample auto-reply an owner can adapt:</p><blockquote><p>Thanks for reaching out. We are closed for the holidays from December 24 to January 2 and will reply to new enquiries starting January 5. If this is urgent, call us and leave a message. We check voicemail for urgent matters during the closure.</p></blockquote><p>That is all it needs to say. Honest, specific, and it sets a real expectation.</p>"
+    },
+    {
+      "id": "voicemail-reply-times",
+      "title": "Voicemail and reply times deserve the same attention",
+      "body": "<p>A voicemail greeting is easy to forget because it lives somewhere you never hear it. Rerecord it before a closure. State the closure dates, say when normal service resumes, and tell callers whether leaving a message is worthwhile. If you genuinely will not check messages for two weeks, say so and give an alternative rather than letting people talk into a void.</p><p>Reply time is the other half of this. During a regular week a business might answer enquiries same day. Over the holidays, even partial closures change that. If the site, the form reply and the voicemail all agree on a realistic response window, customers tend to accept it. Problems start when one of them promises something the others do not.</p>"
+    },
+    {
+      "id": "holiday-touchpoints-worksheet",
+      "title": "A worksheet for the touchpoints that can disagree",
+      "body": "<p>Use this table to check that every place a customer might look tells the same holiday story.</p><table><caption>Holiday hours consistency checklist across customer touchpoints</caption><thead><tr><th>Touchpoint</th><th>What to update</th><th>What goes wrong if you skip it</th></tr></thead><tbody><tr><td>Google Business Profile</td><td>Special hours for each closure date, confirmed even if unchanged</td><td>Search results show wrong hours or no holiday signal at all</td></tr><tr><td>Homepage and service pages</td><td>Availability statement per service, closure and reopening dates</td><td>Customers assume normal operation and plan a wasted visit</td></tr><tr><td>Contact form</td><td>Auto-reply with closure dates and realistic response time</td><td>Enquiries pile up with no expectation set, goodwill erodes</td></tr><tr><td>Online booking calendar</td><td>Block closed dates or add holiday messaging to the flow</td><td>Appointments get booked for days nobody is working</td></tr><tr><td>Voicemail greeting</td><td>Closure dates, reopening date, whether messages will be returned</td><td>Callers leave messages expecting a call that never comes</td></tr><tr><td>Email signature and newsletters</td><td>Brief holiday notice with key dates</td><td>Ongoing conversations stall with no explanation</td></tr></tbody></table><p>Most owners will find at least one row here they have never updated. That row is usually the one causing the quiet losses.</p>"
+    },
+    {
+      "id": "test-holiday-journey",
+      "title": "Test the whole journey before the holiday starts",
+      "body": "<p>The only way to know the story is consistent is to live it. Before the closure, search for your own business the way a stranger would. Read the Google result. Click through to the site. Check the hours, the service availability and any holiday notice. Submit the contact form and read the auto-reply. Try to book an appointment on a closed date. Call the number and listen to the voicemail. Email from a fresh address and see what comes back.</p><p>Each of these is a five-minute test. Together they take less than an hour and they catch the kind of contradiction that no checklist can, like a booking confirmation email that still promises a next-day callback. If you have a site like the one described in the <a href=\"/blog/kelowna-business-website-guide/\">guide to business websites for the Okanagan</a>, this walk-through is the moment to make sure its structure still serves you during a closure.</p>"
+    },
+    {
+      "id": "what-to-ask-your-designer",
+      "title": "What to ask your designer or developer for",
+      "body": "<p>You do not need a redesign to handle holiday hours. You need a few specific capabilities. When you talk to whoever maintains your site, ask for these in plain terms.</p><ul><li>An editable notice or banner that can appear on the homepage and link to full holiday details, and that you can switch on and off without filing a ticket.</li><li>A place on each service page for an availability statement, so closures can be described service by service rather than with one vague line.</li><li>Control over the contact form auto-reply, including the ability to change the message seasonally.</li><li>Access to block dates or add holiday messaging in the booking calendar, or confirmation that your developer will do it on request.</li><li>A short checklist, like the table above, that you both agree to run before any closure.</li></ul><p>If your current setup makes any of these hard, that is useful information. It is often a sign the site has grown past the way it was originally built, which is worth knowing before the next busy season rather than during it.</p><p>Holiday hours are a small, concrete example of a larger idea: a website earns its keep by being honest at the exact moment a customer is deciding whether to trust it. If you want a second set of eyes on how your site, forms and booking flow handle moments like this, <a href=\"/contact/\">get in touch</a> and we can walk through it together.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "When should I use \"temporarily closed\" instead of special hours?",
+      "Use special hours for short, defined changes such as a holiday closure of a few days. If you will be closed for a longer stretch or you do not know when you will reopen, Google's guidance is to mark the business as temporarily closed instead, so customers are not shown hours that imply normal operation. It is better to decide this before the closure than to patch it afterward."
+    ],
+    [
+      "How quickly do changes to Google special hours appear in search?",
+      "Google does not specify an exact time frame, but once you save special hours in your Business Profile they can appear in Search and Maps for the designated dates. Your website, however, updates only when you change it there, so you need to edit both systems for customers to see a consistent message."
+    ],
+    [
+      "Should I create a separate holiday hours page or just update my homepage?",
+      "For most small businesses, a clearly labelled notice on the homepage and service pages is enough. A separate page can help if you have complex closures, multiple locations with different schedules, or you want to link to it from emails and social posts. The important thing is that whichever approach you choose, the information is easy to find and matches what appears on Google."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "How to set Special hours (Google Business Profile Help)",
+      "url": "https://support.google.com/business/answer/6303076?hl=en"
+    },
+    {
+      "name": "Tips to improve your local ranking on Google",
+      "url": "https://support.google.com/business/answer/7091?hl=en"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Most holiday-hours content is either a Google Business Profile tutorial or a broad seasonal marketing checklist. This piece treats holiday hours as a consistency problem across six specific touchpoints: Google, the website, the contact form, the booking calendar, voicemail and email. It gives a comparison table, a sample auto-reply, and a customer-journey test, so an owner can find the exact contradiction costing them enquiries.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm Google Business Profile still treats special hours and temporary closure as separate settings, and that it still recommends confirming holiday hours even when unchanged.",
+      "Confirm that changing special hours in Google Business Profile does not affect website content, which is the core assumption of the article.",
+      "Check that /blog/useful-location-pages/ and /blog/kelowna-business-website-guide/ are live and appropriately titled before publishing."
+    ],
+    "serpGap": "Top results are an insurance company's general holiday marketing checklist, Google's own special-hours help page, a Facebook post and a generic digital checklist. None focus specifically on the website-side consistency problem or give a touchpoint-by-touchpoint worksheet. This article can win by being the practical owner-facing checklist that connects Google hours to forms, booking and voicemail.",
+    "sourceUse": [
+      {
+        "url": "https://support.google.com/business/answer/6303076?hl=en",
+        "claim": "Special hours are a specific Google Business Profile setting for temporary changes, distinct from regular hours and from marking a business temporarily closed."
+      },
+      {
+        "url": "https://support.google.com/business/answer/7091?hl=en",
+        "claim": "Google expects complete, accurate and up-to-date business information, including hours, as part of showing a business in local results."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2026-12-24",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Local discovery",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "small-business-ai-search",
+    "useful-location-pages"
+  ],
+  "services": [],
+  "wordCount": 1675,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 15391,
+      "total_tokens": 24747,
+      "completion_tokens": 9356,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6413
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6413
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 1,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "https://www.michaelmckerracher.com/",
+      "replacement": "/"
+    },
+    {
+      "original": "https://www.michaelmckerracher.com/",
+      "replacement": "/"
+    },
+    {
+      "original": "https://www.michaelmckerracher.com/",
+      "replacement": "/"
+    },
+    {
+      "original": "https://www.michaelmckerracher.com/",
+      "replacement": "/"
+    }
+  ]
+}

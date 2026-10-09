@@ -1,0 +1,176 @@
+{
+  "slug": "private-school-website-design",
+  "title": "A private-school website that helps families take the next step",
+  "type": "guide",
+  "description": "A practical guide to private-school website design for admissions and marketing. Covers page architecture, age and programme fit, curriculum pages, admissions steps, visiting, fees, privacy, and how to keep current-parent resources separate from prospective-family content.",
+  "summary": "A good private-school website gives prospective families a clear admissions path: who the school is for, the curriculum, how to visit and apply, and honest guidance on fees. Current-parent resources belong in a separate area. Design should be beautiful, fast and accessible, not an awards exercise.",
+  "takeaways": [
+    "Design the site around a prospective family's next step, not around the school's internal structure: age and programme fit, curriculum, admissions steps, visiting and fees.",
+    "Keep current-parent resources separate from admissions marketing, so the public pages stay focused on the families you are trying to recruit.",
+    "Choose craft and accessibility over decoration: a beautiful, fast, readable site builds more trust than a complicated one."
+  ],
+  "sections": [
+    {
+      "id": "the-job",
+      "title": "What the website is for",
+      "body": "<p>A private-school website has one job above all others: help a family who does not yet know the school decide whether to take the next step. That step might be an enquiry, an open-house visit or an application. Everything on the public site should either move a family towards one of those actions or answer the honest questions they will have on the way.</p><p>That sounds obvious, but many school sites are organised around the school's internal life rather than the family's decision. The result is a homepage full of news for people who already attend, programme pages written for colleagues, and admissions information buried under three levels of navigation. If you start the project by asking what a visiting parent needs to understand, in what order, the design decisions get much easier. The <a href=\"/web-design/private-schools/\">private-school website</a> is a recruitment tool first and a noticeboard second.</p>"
+    },
+    {
+      "id": "two-audiences",
+      "title": "Prospective families and current families are different readers",
+      "body": "<p>A private school serves at least two distinct audiences online, and they want almost opposite things. Prospective parents want a clear story, a sense of fit, and a confident path to apply. Current parents want the calendar, the lunch menu, the uniform guide, report access and the newsletter. Mixing those two streams on the same public pages usually means neither audience is well served.</p><p>The practical answer is separation. The main navigation and homepage speak to families who are choosing. The current-family material lives behind a clear \"Current families\" or \"Parents\" area, and ideally behind a sign-in where the content is genuinely private. That split also helps design: the public pages can be simpler, more visual and more persuasive, because they no longer have to double as the school's filing cabinet.</p>"
+    },
+    {
+      "id": "page-architecture",
+      "title": "A sensible page architecture",
+      "body": "<p>Before any visual design, the site needs an information architecture that matches the family's questions. For most independent schools, a sensible public structure looks like this:</p><ul><li><strong>Home:</strong> a short, confident statement of who the school is for, supported by photography that shows the actual school experience.</li><li><strong>About:</strong> mission, values, history and leadership, written for an outsider.</li><li><strong>Admissions:</strong> the steps, key dates, who to contact, and the enquiry form.</li><li><strong>Visit:</strong> open-house dates, tour booking, directions and what to expect.</li><li><strong>Academics or Programmes:</strong> by division or age, for example early years, elementary and high school, each with curriculum and approach.</li><li><strong>Student life:</strong> athletics, arts, clubs and the culture between classes.</li><li><strong>Fees and financial aid:</strong> whatever the school is prepared to publish, clearly framed.</li><li><strong>Current families:</strong> a separate area or portal entry point.</li></ul><p>This is not the only right answer, but it is a good test: if a proposed page does not fit naturally anywhere here, ask who it is for. My broader approach to <a href=\"/web-design/\">website design</a> starts the same way, with the reader's job to do.</p>"
+    },
+    {
+      "id": "admissions-steps",
+      "title": "Make the admissions steps obvious",
+      "body": "<p>An unclear admissions path can leave an interested family unsure what to do next. The family is interested, but the path from interest to application is vague, which makes it harder for them to continue. A strong admissions page does three things: it shows the process as a small number of plain steps, it makes the first step very easy, and it tells the family what happens after each step.</p><p>The first step should ask for very little. A sample enquiry form might look like this:</p><ul><li>Intended entry grade and year; leave the child’s name and records for the school’s approved application process.</li><li>Parent or guardian name and email.</li><li>Optional phone number and one open question, such as what the family is looking for.</li></ul><p>Keep the first-contact form short. Additional information can be requested later through the school’s approved admissions system. The page should also make visiting feel natural, because for most families the visit, not the website, is where the real decision happens. A clear \"Book a tour\" or \"Join an open house\" action belongs on the admissions page and in the navigation.</p>"
+    },
+    {
+      "id": "curriculum-fit",
+      "title": "Show curriculum and age fit for real",
+      "body": "<p>Parents are not only buying a school. They are buying a particular education for a particular child at a particular age. A generic \"excellent academics\" claim does not help them. What helps is a page for each stage or programme that answers: who is this for, what will my child study, how is it taught, and what comes next.</p><p>For an elementary page, that might mean the reading and numeracy approach, the role of specialists, and how much time is spent outside. For a high-school page, it might mean course breadth, graduation requirements, post-secondary preparation and support for students who need it. If the school offers something distinctive, such as a faith foundation, an outdoor programme or an arts stream, that belongs on the programme page, not only on the homepage. The fit has to feel real enough that a family can say either yes, this is us, or no, it is not.</p>"
+    },
+    {
+      "id": "fees-money",
+      "title": "Handle fees honestly",
+      "body": "<p>Fees are the topic every school handles carefully, and the website has to follow the school's decision rather than make one for it. Some schools publish full tuition tables. Some publish a range or a starting point. Some prefer to discuss cost only in conversation. I would publish the tuition and compulsory charges where possible, with the applicable school year, payment arrangements and a clear route to ask about assistance. What does not work is pretending the question does not exist, because it is one of the first things a family wants to know.</p><p>Whatever the school can say, say it plainly and put it where people will look. If there is bursary or financial-aid support, name it and explain how to ask. If the school would rather talk first, the page can say so honestly and offer the next step. Make the next step concrete: identify the admissions contact, what information is available before a visit, and how the family can request a full fee breakdown.</p>"
+    },
+    {
+      "id": "privacy-trust",
+      "title": "Safeguarding, privacy and trust",
+      "body": "<p>School websites collect personal information about children and families, so the forms and systems behind them deserve real care. In British Columbia, guidance from the <a href=\"https://www.oipc.bc.ca/guidance-documents/2286\">Office of the Information and Privacy Commissioner</a> asks private organisations to collect only the personal information they genuinely need, to be clear about the purpose, and to make their privacy practices available. That is sensible advice anywhere, not just in BC.</p><p>In practice: do not ask for a student's history, medical details or financial documents on a public enquiry form. Collect the minimum needed to respond, and route anything sensitive through the school's approved systems. Publish or offer a plain-language privacy note so a parent can see what will happen with their information. Trust is built by these small, careful choices as much as by the photography.</p>"
+    },
+    {
+      "id": "craft-beauty",
+      "title": "Craft, beauty and accessibility",
+      "body": "<p>A private-school website should be beautiful. Families are choosing an environment for their children, and the quality of the design quietly signals the quality of the care. Good typography, real photography of the school rather than generic stock, confident spacing and an unhurried pace all do persuasive work that no tagline can.</p><p>Beauty has to survive contact with real devices, though. The site needs to be fast on a phone, readable in bright light, and usable by everyone. The <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">W3C's easy accessibility checks</a> are a good first review: clear page titles, sensible headings, text alternatives for meaningful images, and enough contrast to read comfortably. An accessible site is usually also a more beautiful one, because both come from the same habit of caring about the reader.</p>"
+    },
+    {
+      "id": "decide-before-brief",
+      "title": "Decide these things before you brief a designer",
+      "table": "<table><caption>Worksheet: decisions that shape a private-school website</caption><thead><tr><th>Decision</th><th>Questions to answer</th><th>What it changes on the site</th></tr></thead><tbody><tr><td>Audience split</td><td>Which content is for prospective families, and which is for current ones?</td><td>Main navigation, homepage focus, whether a parent area or portal is needed.</td></tr><tr><td>Admissions path</td><td>What are the actual steps, and what should the first contact ask for?</td><td>Admissions page layout, enquiry form length, tour and open-house calls to action.</td></tr><tr><td>Age and programme fit</td><td>Which divisions or programmes need their own page?</td><td>Structure of the academics section and how specific each page can be.</td></tr><tr><td>Fees stance</td><td>What, if anything, can the school publish about tuition and aid?</td><td>Whether there is a fees page, and how the money question is framed.</td></tr><tr><td>Privacy posture</td><td>What personal information is truly needed at each step?</td><td>Form fields, where sensitive data is collected, and the privacy note.</td></tr><tr><td>Design ambition</td><td>How much custom design, photography and video is realistic?</td><td>Budget, timeline, and whether to start with a focused redesign. My notes on <a href=\"/blog/okanagan-website-cost/\">website cost</a> can help frame that conversation.</td></tr></tbody></table>",
+      "body": "<p>The best school website projects start before the first design meeting. When the school has already decided who the site is for, what the admissions steps are and how it wants to talk about money, the design work can focus on craft instead of guesswork. Use this worksheet to turn the discussion into decisions before asking for quotes.</p><table><caption>Admissions website decisions to settle before design</caption><thead><tr><th>Decision</th><th>What to prepare</th><th>Who checks it</th></tr></thead><tbody><tr><td>Family fit</td><td>Entry ages, programmes and the questions families ask before visiting</td><td>Admissions lead</td></tr><tr><td>Visit and application</td><td>Actual steps, dates, response owner and the approved application system</td><td>Admissions team</td></tr><tr><td>Fees</td><td>Current-year tuition, compulsory charges, payment options and assistance information</td><td>Finance and admissions</td></tr><tr><td>Proof and media</td><td>Current school photographs and permission records for their intended use</td><td>School communications lead</td></tr><tr><td>Current families</td><td>Public notices, private portal links and an owner for keeping each current</td><td>School administrator</td></tr></tbody></table><p>Assign a person to each decision so missing information does not become a design problem.</p><p>Once those decisions are on the table, the design work itself becomes the interesting part: photography, typography, page rhythm and the small details that make a school feel like itself. If you would like to talk through where your current site stands and what the next piece of work should achieve, <a href=\"/contact/\">book a free consultation</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should a private school publish its exact tuition fees on the website?",
+      "Only if the school is comfortable doing so. Some publish full tables, some give a range or starting point, and some prefer a conversation first. What matters is acknowledging the question plainly, naming any bursary or aid options, and giving the family an honest next step rather than leaving the cost invisible."
+    ],
+    [
+      "How separate should the current-parent area be from the public site?",
+      "As separate as the content requires. Public pages should speak to families who are choosing a school. Newsletters, calendars, lunch menus and similar material for enrolled families work best in a clearly labelled parent area, and behind a sign-in when the information is private. This keeps the public admissions pages focused and easier to design well."
+    ],
+    [
+      "What should we prepare before asking a designer for a quote?",
+      "Decide the audience split between prospective and current families, outline the real admissions steps, list which programmes need their own page, agree how the school will talk about fees, and gather any existing photography or video. With those decisions made, the conversation with a designer can be about craft and fit rather than guesswork."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Office of the Information and Privacy Commissioner for BC: Developing a privacy policy under PIPA",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    },
+    {
+      "name": "W3C WAI: Easy Checks, A First Review of Web Accessibility",
+      "url": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+    },
+    {
+      "name": "Michael McKerracher: Marketing and branding",
+      "url": "https://michaelmck.site/marketing-branding/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Gives school owners and admissions teams a concrete page architecture, a sample enquiry-form field set and a decision worksheet, while localising the advice to how Michael works with schools in Kelowna and the Okanagan.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm BC OIPC PIPA guidance link still resolves and that the paraphrase is accurate.",
+      "Confirm the W3C easy-checks page is still the right first-review reference.",
+      "Confirm all internal links resolve: /web-design/private-schools/, /web-design/, /blog/okanagan-website-cost/, /contact/."
+    ],
+    "serpGap": "Competitor coverage is US-centric, heavy on market statistics and platform comparisons. This piece instead gives a practical site architecture, intake fields and a decision worksheet, written for a school choosing its next website rather than benchmarking the sector.",
+    "sourceUse": [
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "Private organisations should collect only necessary personal information, state purposes clearly, and make privacy practices available."
+      },
+      {
+        "url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+        "claim": "A first accessibility review should check page titles, heading structure, image alternatives and contrast."
+      },
+      {
+        "url": "https://michaelmck.site/marketing-branding/",
+        "claim": "Michael's broader positioning that good websites and brand work help the right people understand and choose a business."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-09-02",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/private-schools/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "private-schools"
+  ],
+  "wordCount": 1719,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 15583,
+      "total_tokens": 19503,
+      "completion_tokens": 3920,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 748
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 748
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 2,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "Admissions is where most school websites quietly fail.",
+      "replacement": "An unclear admissions path can leave an interested family unsure what to do next."
+    },
+    {
+      "original": "Student first name and current grade or entry year.",
+      "replacement": "Intended entry grade and year; leave the child’s name and records for the school’s approved application process."
+    },
+    {
+      "original": "Everything else can be gathered later, by email, on a call or through the school's own application system.",
+      "replacement": "Additional information can be requested later through the school’s approved admissions system."
+    },
+    {
+      "original": "All of those can be reasonable.",
+      "replacement": "I would publish the tuition and compulsory charges where possible, with the applicable school year, payment arrangements and a clear route to ask about assistance."
+    },
+    {
+      "original": "A short line such as \"We would rather talk with you about fit and affordability than have you rule us out from a table of numbers\" is much better than silence.",
+      "replacement": "Make the next step concrete: identify the admissions contact, what information is available before a visit, and how the family can request a full fee breakdown."
+    },
+    {
+      "original": "The worksheet above is a useful way to have that conversation internally before asking for quotes.",
+      "replacement": "Use this worksheet to turn the discussion into decisions before asking for quotes.</p><table><caption>Admissions website decisions to settle before design</caption><thead><tr><th>Decision</th><th>What to prepare</th><th>Who checks it</th></tr></thead><tbody><tr><td>Family fit</td><td>Entry ages, programmes and the questions families ask before visiting</td><td>Admissions lead</td></tr><tr><td>Visit and application</td><td>Actual steps, dates, response owner and the approved application system</td><td>Admissions team</td></tr><tr><td>Fees</td><td>Current-year tuition, compulsory charges, payment options and assistance information</td><td>Finance and admissions</td></tr><tr><td>Proof and media</td><td>Current school photographs and permission records for their intended use</td><td>School communications lead</td></tr><tr><td>Current families</td><td>Public notices, private portal links and an owner for keeping each current</td><td>School administrator</td></tr></tbody></table><p>Assign a person to each decision so missing information does not become a design problem."
+    }
+  ]
+}

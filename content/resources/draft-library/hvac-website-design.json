@@ -1,0 +1,141 @@
+{
+  "slug": "hvac-website-design",
+  "title": "What an HVAC website needs before a customer calls",
+  "type": "guide",
+  "description": "What an HVAC website needs to earn calls: separate repair, maintenance and replacement routes, verifiable licensing, honest service zones, real after-hours availability and financing terms owners can actually confirm.",
+  "summary": "An HVAC website earns calls when customers can verify licensing and service areas in seconds, and when repair, maintenance and replacement each have their own clear route to contact. The pages below cover first-screen design, honest service-zone and after-hours claims, financing without invented offers, and exactly what to ask a designer before signing.",
+  "takeaways": [
+    "Most HVAC customers verify licensing and coverage before they call, so put both on the first screen rather than a footer or a bio page.",
+    "Repair, maintenance and replacement are three different buying journeys and need separate pages with different next steps.",
+    "Before hiring a designer, ask for a worked sample page, an honest service-zone map and a written plan for what happens after launch."
+  ],
+  "sections": [
+    {
+      "id": "verify-before-calling",
+      "title": "Customers check before they call",
+      "body": "<p>Most people hiring an HVAC company in the Okanagan start by ruling options out, not by shortlisting them. They want to know three things quickly: is this contractor licensed, do they serve my town, and can I reach a human today. If your website makes any of those hard to confirm, the phone stays quiet no matter how nice the photos are.</p><p>Licensing matters because the work is regulated. In British Columbia, homeowners can search for a licensed contractor by trade and city through Technical Safety BC, and the listing shows licence status, enforcement history and contact details. Your website should make that verification effortless: name your licensing clearly, and never imply credentials you cannot produce.</p><p>So before any design conversation, write your verification checklist. What is your licence and scope of work. Which towns do you actually serve. What is the real phone number for after-hours calls, and who answers it. Those answers belong on the first screen, not buried three pages deep.</p>"
+    },
+    {
+      "id": "first-screen-one-job",
+      "title": "The first screen has one job",
+      "body": "<p>The top of your homepage, the part visible before anyone scrolls, has one job: tell a stranger who you are, what you fix, and how to reach you. That is the whole brief. Anything else competing for that space is making the phone ring less often.</p><p>In practice I ask for three things above the fold. A headline that states the service and the area, with no clever wordplay. A tap-to-call button that is impossible to miss on a phone. And one or two trust signals, like your Google rating or years in business, rendered as real content and not as a strip of tiny badges. The screen should still look like you and feel like craft. Clean typography, a genuine photo of your crew or truck, and confident empty space beat a cluttered collage every time.</p><p>Where I see HVAC sites go wrong is treating the first screen like a brochure cover: a stock photo, a vague slogan like comfort you can trust, and the phone number in pale grey at the top corner. A homeowner whose furnace quit at midnight is not admiring your layout. They are looking for proof you exist, serve their town, and will pick up.</p>"
+    },
+    {
+      "id": "repair-maintenance-replacement",
+      "title": "Repair, maintenance and replacement need different pages",
+      "body": "<p>An HVAC company does three kinds of work, and the customers for each behave differently. Repair visitors are in a hurry and often anxious. Maintenance visitors are comparing annual plans and want clear pricing logic. Replacement visitors are spending serious money and want to research for days before talking to anyone. One generic services page cannot serve all three.</p><p>Give each its own page with its own next step. The repair page should load fast on a phone, confirm emergency or same-day availability only if it is true, and make calling a single tap. The maintenance page should explain what a visit includes and what your plan costs or starts at, without inventing discounts. The replacement page has room for depth: system types, what affects a quote, warranties, and an honest explanation of why a real estimate needs a site visit.</p><p>This is also where many template websites fall short. A template gives you one services page and a contact form. If you are comparing options, our <a href=\"/web-design/hvac/\">HVAC website design service</a> is built around exactly this kind of separation, because the structure is where conversions are won or lost.</p>"
+    },
+    {
+      "id": "service-zones-honestly",
+      "title": "Say your service zones honestly",
+      "body": "<p>Every HVAC company has a real map, and it is rarely the whole Okanagan. Maybe you cover Kelowna and West Kelowna but not Big White in winter. Maybe Vernon is fine but Armstrong is a case-by-case call. Whatever the truth is, put it on the website in plain language.</p><p>A service-area page or a clear list on the homepage does two things. It stops wasted calls from homeowners you will have to disappoint, and it helps the right visitors self-select with confidence. Being specific also reads as honest, which is worth more than pretending to cover everywhere and then saying no on the phone.</p><p>If you want to grow into new areas, that is a business decision to make deliberately. Do not let the website drift into claiming coverage your crew and schedule cannot support. A smaller honest map with a fast response beats a big implied one with voicemail.</p>"
+    },
+    {
+      "id": "after-hours-claims",
+      "title": "Only claim after-hours service you actually provide",
+      "body": "<p>Emergency service is one of the strongest promises an HVAC website can make, and one of the easiest to get wrong. If your site says 24/7 emergency service, a homeowner with no heat in January will take that literally. If the call goes to a full voicemail box, you have done real damage to your name.</p><p>Decide what is actually true and say exactly that. Same-day service during business hours is a real offer. An on-call line answered until 10 pm is a real offer. Twenty-four hour coverage with a live answering service is a real offer, if you pay for one. Each of those can be written clearly on the repair page and repeated near the call button.</p><p>If you are not ready to offer true emergency coverage, do not fake it. A fast, honest response the next morning, promised on the website and then delivered, builds more trust than a heroic claim that collapses on the first Saturday night.</p>"
+    },
+    {
+      "id": "financing-without-guesswork",
+      "title": "Financing without invented offers",
+      "body": "<p>A furnace or heat pump replacement is a large purchase, so visitors will look for financing. The mistake is putting up vague or invented offers: a generic zero percent banner, a monthly payment figure with no terms, or a rebate claim copied from somewhere else. Those invite disappointed phone calls and, worse, they read as careless.</p><p>If you offer financing through a provider, say so plainly and link to whatever the provider will let you say. If you do not, say that quotes include options and payment details. Either way, do not publish a monthly price unless you can stand behind the exact terms, and do not promise government or manufacturer rebates unless you have verified the current program and can explain eligibility honestly.</p><p>The replacement page is the right home for this. A short, accurate paragraph on how customers pay, next to strong reasons to choose you, converts better than a splashy offer that evaporates under one question.</p>"
+    },
+    {
+      "id": "credentials-and-quotes",
+      "title": "Credentials and quote assumptions, owner verified",
+      "body": "<p>Before a designer writes a word of your website, you should personally verify every factual claim it will contain. That includes licensing and certifications, the brands you install and service, the warranties you actually offer, how a quote is produced, and what is excluded. A website that says we service all major brands when your crew only touches three will generate the wrong calls.</p><p>Quotes deserve special care because visitors read them as promises. Be explicit about assumptions. For example, an online estimate might assume a standard existing duct system, typical access, and no electrical panel upgrades, and the page should say that a firm price requires a home visit. That kind of clarity protects you and respects the customer.</p><p>Ask any designer you hire to show you where each of these facts will live on the site, and to leave a clear place for you to review and correct them before launch. The facts are your responsibility, and a good designer will treat them that way.</p>"
+    },
+    {
+      "id": "ask-designer-before-signing",
+      "title": "What to ask a designer before you sign",
+      "body": "<p>Before you commit to anyone, ask for three concrete things. First, a worked sample page for your company, even a rough one, showing the first screen and one service page. Second, a sitemap: repair, maintenance, replacement, service areas, reviews, contact, and anything else they propose. Third, a plain answer on what happens after launch, including who updates content, how forms are handled, and how you would take the site elsewhere if you ever wanted to.</p><p>Here is a simple intake checklist you can send to any designer, including me, and expect real answers:</p><ul><li>Licence type and number, exactly as customers should see it</li><li>Service towns listed individually, with any seasonal limits</li><li>After-hours reality: hours, who answers, and what counts as an emergency</li><li>Brands installed and serviced, with anything you do not touch</li><li>Maintenance plan inclusions and starting price, or a clear statement that you do not offer one</li><li>How replacement quotes work, what is assumed, and what changes the price</li><li>Financing or payment options you can verify, in your own words</li><li>Photos and video you actually have, including phone footage of the crew at work</li></ul><p>A designer who engages with that list seriously is worth talking to. One who waves it off and shows you a template is telling you something useful too.</p><p>If you want to talk through your own list before you brief anyone, <a href=\"/contact/\">start a conversation with me</a> and I will help you sort what your website genuinely needs from what it does not.</p>"
+    },
+    {
+      "id": "pages-by-customer",
+      "title": "Match the page to the customer",
+      "body": "<p>Different visitors need different pages, and one common way to waste a website budget is to build a single page for every kind of visitor. This table is a starting point for what each customer type needs from your site.</p><table><caption>What each HVAC customer type needs from your website</caption><thead><tr><th>Visitor</th><th>State of mind</th><th>Page that serves them</th><th>Next step to offer</th></tr></thead><tbody><tr><td>Emergency repair</td><td>Anxious, deciding in minutes</td><td>Fast repair page, honest after-hours wording</td><td>Tap-to-call, on-call or next-morning promise</td></tr><tr><td>Maintenance plan shopper</td><td>Comparing value and coverage</td><td>Maintenance page with inclusions and pricing logic</td><td>Book or ask about a plan</td></tr><tr><td>Replacement buyer</td><td>Researching for days, spending thousands</td><td>Deep replacement page: systems, warranties, quote assumptions, financing facts</td><td>Request a home visit or quote</td></tr><tr><td>Researcher with a symptom</td><td>Curious, not ready to call</td><td>Plain-language article or FAQ</td><td>Soft invite to book when ready</td></tr><tr><td>Commercial or strata contact</td><td>Vetting capability and reliability</td><td>Commercial page with scope, response expectations, and contact route</td><td>Direct line to the right person</td></tr></tbody></table><p>You do not need all of these on day one. You do need to know which ones matter to your business now, and build those well rather than all of them thinly.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should an HVAC website show pricing?",
+      "Some pricing helps, especially for maintenance plans or a clear starting point for common repairs. For replacement, give honest ranges or explain what changes a quote, then invite a home visit. Never publish an exact monthly payment or discount you cannot verify."
+    ],
+    [
+      "Does adding AI chat to my HVAC website help me book more calls?",
+      "It can help with simple questions and capturing contact details after hours, but only if it hands off to a human clearly and never invents prices, availability or credentials. Treat it as a receptionist, not a salesperson, and review what it tells customers."
+    ],
+    [
+      "Do I need separate pages for each town I serve?",
+      "Only if you can make each page genuinely useful for that town, such as real coverage details and response expectations. A single honest service-area page is better than a stack of near-identical city pages. Google rewards relevance, not repetition."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Technical Safety BC: find a licensed contractor",
+      "url": "https://www.technicalsafetybc.ca/regulatory-resources/find-a-licensed-contractor"
+    },
+    {
+      "name": "Google Business Profile: tips to improve your local ranking",
+      "url": "https://support.google.com/business/answer/7091?hl=en"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Frames HVAC website design as a verification and routing problem rather than a visual one: customers confirm licensing and coverage first, then repair, maintenance and replacement need structurally different pages, with a practical intake checklist owners can send to any designer.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm TSBC contractor lookup behaviour and any wording about licence display",
+      "Confirm no invented financing, rebate or savings claims remain",
+      "Confirm internal links resolve and that /web-design/hvac/ is the only money page linked"
+    ],
+    "serpGap": "Competitors sell design packages and volume of pages; few explain the pre-call verification moment, the repair versus maintenance versus replacement split, or how to brief a designer with verifiable facts.",
+    "sourceUse": [
+      {
+        "url": "https://www.technicalsafetybc.ca/regulatory-resources/find-a-licensed-contractor",
+        "claim": "BC homeowners can verify a licensed contractor by trade and city, and the registry shows licence status and enforcement history"
+      },
+      {
+        "url": "https://support.google.com/business/answer/7091?hl=en",
+        "claim": "Google says local ranking is based mainly on relevance, distance and prominence, and that complete accurate Business Profile info, reviews and photos help"
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-04-15",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/hvac/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "hvac"
+  ],
+  "wordCount": 1892,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 11917,
+      "total_tokens": 15824,
+      "completion_tokens": 3907,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 570
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 570
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 2,
+    "publicationApproved": false
+  }
+}

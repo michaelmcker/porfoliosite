@@ -1,0 +1,141 @@
+{
+  "slug": "vacation-rental-direct-booking-website",
+  "title": "A vacation-rental website that earns the direct-booking enquiry",
+  "type": "guide",
+  "description": "A practical Okanagan guide to the photos, bed details, parking notes, rules, dates and booking handoff that help a vacation-rental website earn a direct enquiry.",
+  "summary": "A direct-booking page earns the enquiry when it removes uncertainty: real accommodation photos, exact beds, parking and access, honest rules, current dates and the full price. Design should make the place feel worth staying in, then hand the guest to a clear booking step. For Okanagan properties, the right page changes by season, guest type and how hands-on the owner wants to be.",
+  "takeaways": [
+    "Show the actual stay, not a generic promise: accommodation photos, bed configuration, parking, access and the parts guests will really use.",
+    "Make the total decision easier by putting dates, fees, deposits, house rules and the booking handoff in plain sight before the enquiry.",
+    "Use design to create desire, but let clarity win: an immersive property story should still lead to obvious availability and next steps."
+  ],
+  "sections": [
+    {
+      "id": "the-job-of-the-page",
+      "title": "The page has to reduce doubt before it creates desire",
+      "body": "<p>A good vacation-rental page does two jobs in the right order. First, it makes the place feel worth staying in. Second, it answers the practical questions that decide whether an enquiry happens at all. If either job is missing, the guest drifts back to a listing platform where the photos may be thinner but the next step feels safer.</p><p>For an Okanagan property, that usually means showing more than the view. Guests may be picturing a lake day, a ski weekend, a fall wine trip, a family visit or a long shoulder-season stay. The page should help them place your property inside that trip without forcing them to email for basic facts.</p>"
+    },
+    {
+      "id": "show-the-accommodation",
+      "title": "Show the accommodation, not just the setting",
+      "body": "<p>The strongest visuals are specific to sleeping, cooking, bathing, parking and relaxing. Wide scenic photographs matter, especially in the Okanagan, but guests also need to see the bedroom layout, the bathroom, the kitchen, the dining space, the entrance and any outdoor area they can actually use. Beautiful photography should still be honest photography.</p><p>This is where craft matters. The design work for <a href=\"/web-design/\">Okanagan Treehouse</a> is a useful example because the property story is immersive, but the images still help a visitor understand the place. A direct-booking page should feel composed, not staged into vagueness. If the hot tub is seasonal, the bikes are shared or the fireplace is decorative, say so near the photo rather than in a footnote.</p>"
+    },
+    {
+      "id": "beds-parking-access",
+      "title": "Make beds, parking and access impossible to misunderstand",
+      "body": "<p>Guests rarely leave because a sofa is slightly less stylish than expected. They leave because the sleeping arrangement is unclear. List each bed by room, explain whether a sofa bed is in a private room or a common area, and call out stairs, loft ladders, low ceilings, shared entrances or rough driveways when they matter.</p><p>For some properties, access is the deciding feature. A family may need level entry and a bathtub. A winter guest may need to know about parking clearance and snow removal. A work-from-anywhere guest may care more about a real desk and cell reception than a welcome basket. The page should let each guest self-select quickly.</p>"
+    },
+    {
+      "id": "rules-dates-price",
+      "title": "Put rules, dates and the full price in the open",
+      "body": "<p>A direct enquiry is easier to earn when the guest can estimate the real stay without opening three tabs. Show the booking window, minimum stays if they matter, check-in expectations, cleaning fees, deposits, taxes where applicable, pet rules, noise expectations, smoking rules and anything unusual about the property. Do not hide the boring parts until after the guest falls in love with the photos.</p><p>Clarity also protects the owner. If a guest arrives expecting a private dock, a king bed or a late checkout that was never offered, the problem is not just hospitality. It is page content. A clear page sets the agreement earlier and gives both sides a better start.</p>"
+    },
+    {
+      "id": "booking-handoff",
+      "title": "Make the booking handoff feel calm",
+      "body": "<p>Direct booking does not have to mean taking every payment by email. In many cases, the website should earn trust and then hand the guest to the right reservation path, whether that is a booking form, a calendar, a phone call or an approved booking tool. The important thing is that the handoff is explicit.</p><p>Use wording that matches the real process. A requested date is not the same as a confirmed stay. A contact form is not the same as a payment. If the owner reviews enquiries personally, say that. If availability is live, make that obvious too. Guests are more comfortable when they know what happens after they press send.</p>"
+    },
+    {
+      "id": "page-evidence-worksheet",
+      "title": "A practical worksheet for the page",
+      "body": "<table><caption>Vacation-rental page evidence worksheet</caption><thead><tr><th>Guest question</th><th>Evidence to show</th><th>Best place for it</th></tr></thead><tbody><tr><td>Is this the kind of place I want?</td><td>Hero photo, short positioning line, honest amenity highlights</td><td>Top of page</td></tr><tr><td>Where will everyone sleep?</td><td>Room-by-room bed list and bedroom photos</td><td>Accommodation section</td></tr><tr><td>Can we cook, work or gather comfortably?</td><td>Kitchen, dining, desk, seating and Wi-Fi context</td><td>Living-space section</td></tr><tr><td>How hard is arrival?</td><td>Parking, stairs, entry, road or driveway notes</td><td>Access section near booking</td></tr><tr><td>What will this really cost?</td><td>Dates, fees, deposit, minimum stay and price logic</td><td>Booking area</td></tr><tr><td>What happens after I enquire?</td><td>Request versus confirmation wording and response expectations</td><td>Form or booking tool</td></tr></tbody></table><p>A useful sample architecture is simple: hero, sleeping arrangement, living spaces, outdoor space, access and parking, local season notes, reviews or guest comments if appropriate, then the booking handoff. The order changes for a luxury retreat, a ski condo or a working farm stay, but the evidence should not.</p>"
+    },
+    {
+      "id": "okanagan-fit",
+      "title": "Match the page to the property and the season",
+      "body": "<p>The right page for a vineyard guesthouse is not the right page for a ski condo, even if both sit in the Okanagan. Tourism Kelowna's seasonal stories are a reminder that visitors come for very different trips through the year: active outdoors, food and drink, fall colour, winter transitions and lake season. Your website does not need to chase every trip. It needs to help the right guest recognise a fit.</p><p>Owners also need to choose how much direct control they want. A hands-off owner may prefer a page that filters hard before the enquiry. A hands-on host may want a warmer page with more context and a simple request form. Both can work. The mistake is making the guest do the sorting alone.</p>"
+    },
+    {
+      "id": "when-to-get-help",
+      "title": "Bring in design help when clarity and beauty need to work together",
+      "body": "<p>A template can get a property online. Custom <a href=\"/web-design/vacation-rentals/\">vacation-rental web design</a> becomes useful when the photography, copy, booking path and local search foundations need to work as one system. That is especially true for owners with more than one property, a distinctive place that deserves a stronger story, or a website that currently creates enquiries for the wrong kind of stay.</p><p>If you are weighing cost, the <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost guide</a> can help frame the decision. The useful next step is not to buy every feature. It is to decide which guest questions your current page fails to answer, then fix those first. If you want a second set of eyes on that, you can <a href=\"/contact/\">book a conversation with Michael</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should a vacation-rental website replace Airbnb or Vrbo?",
+      "Usually no. Listing platforms can still create discovery, while a direct-booking page gives the owner more control over presentation, policies and repeat guest relationships. The practical question is whether the website adds a better path, not whether it must become the only path."
+    ],
+    [
+      "What matters most if the property is only one suite or cabin?",
+      "Specificity matters most. Show exactly where guests sleep, what is private, what is shared, how arrival works and what the full stay is likely to cost. A small property can earn the enquiry when the page removes surprises."
+    ],
+    [
+      "Who should write the photo captions and amenity notes?",
+      "The owner should supply the facts, because they know the property and the guest problems that appear every season. A designer or copywriter can then turn those facts into clear, attractive page content without inflating what is being offered."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Michael McKerracher website design",
+      "url": "https://michaelmck.site/web-design/"
+    },
+    {
+      "name": "Tourism Kelowna",
+      "url": "https://www.tourismkelowna.com/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Turns direct-booking website design into a guest-decision worksheet for Okanagan owners, with specific attention to accommodation proof, access, rules, date clarity and booking handoff.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm no policy, fee, platform or licensing claim has been added beyond the approved factual boundaries.",
+      "Confirm Okanagan Treehouse is presented only as design and storytelling work, with no invented booking or conversion outcome.",
+      "Confirm all internal links resolve exactly to approved URLs before release."
+    ],
+    "serpGap": "Competing coverage often explains why direct bookings matter or lists website builders. This article focuses on the page evidence an Okanagan guest needs before enquiring directly.",
+    "sourceUse": [
+      {
+        "url": "https://michaelmck.site/web-design/",
+        "claim": "Supports Michael's design positioning, process and the need for design and customer journey to work together."
+      },
+      {
+        "url": "https://www.tourismkelowna.com/",
+        "claim": "Used for broad Okanagan seasonal visitor context only, not for demand or performance claims."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-04-01",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/vacation-rentals/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "vacation-rentals"
+  ],
+  "wordCount": 1245,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 13497,
+      "total_tokens": 16761,
+      "completion_tokens": 3264,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 977
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 977
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

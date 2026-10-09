@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "To teach appliance repair business owners what makes an effective local service website, using ABC Appliance as a concrete case study.",
+    "specificity": "High. Names specific page types (appliance category, brand, contact), exact intake distinctions (request versus confirmed appointment), and concrete local communities served.",
+    "evidence": "Grounded in the ABC Appliance live website features and Google's published local ranking guidance.",
+    "voice": "Conversational, direct, and practical. Uses Canadian spelling, explains terms before using them, and frames recommendations as Michael's advice for busy owners.",
+    "usefulAsset": "Yes. Gives owners a clear page architecture, honest booking language guidance, and a local ranking worksheet they can act on."
+  },
+  "slug": "appliance-repair-website-lessons",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1772,
+  "usage": {
+    "prompt_tokens": 8477,
+    "total_tokens": 13989,
+    "completion_tokens": 5512,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5325
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 5325
+    }
+  }
+}

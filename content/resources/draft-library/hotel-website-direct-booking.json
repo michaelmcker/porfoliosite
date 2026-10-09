@@ -1,0 +1,149 @@
+{
+  "slug": "hotel-website-direct-booking",
+  "title": "A hotel website should make booking feel straightforward",
+  "type": "guide",
+  "description": "What a hotel website needs to earn direct bookings, from room pages and real photography to date handoff, cancellation terms, accessibility details, and keeping attribution across the booking engine.",
+  "summary": "A hotel website earns direct bookings by answering the guest's first questions fast: what the rooms actually look like, how they differ, what cancellation terms apply, and what it costs on their dates. This guide covers page architecture, booking-engine handoff, local content, accessibility, and the work needed to keep the site current.",
+  "takeaways": [
+    "Guests decide quickly. Put real room photography, concrete room differences, and date-based rates in front of them within the first moments of a visit.",
+    "Direct bookings come from trust, not tricks. The property must provide honest room details, accessible booking paths, and cancellation terms the website displays consistently.",
+    "A good hotel website is maintained. Seasonal content, current photography, and an owner-friendly editing workflow matter as much as the original design."
+  ],
+  "sections": [
+    {
+      "id": "the-first-thirty-seconds",
+      "title": "What a guest needs in the first thirty seconds",
+      "body": "<p>A hotel website earns direct bookings by letting a guest answer a short list of questions almost immediately: what do the rooms actually look like, how do they differ, what happens if my plans change, and what will it cost on my dates? If those answers are buried, vague, or clearly recycled from a booking platform, the guest leaves and the booking happens somewhere else.</p><p>The hard part is that this is a trust decision, not a design contest. A beautiful homepage cannot rescue room pages full of generic stock-style photography, copy that treats every room as identical, or rates that never appear until the guest is deep in a checkout flow. The property is the only credible source of real room detail, so the website has to carry that weight.</p>"
+    },
+    {
+      "id": "rooms-not-room-types",
+      "title": "Sell the rooms, not the room types",
+      "body": "<p>Most hotel sites collapse every room into a single card with a name, a square footage, and a couple of amenities. Guests cannot tell the difference between the rooms, so they compare on price alone and the cheapest rate wins, usually on a third-party site.</p><p>Give each room its own page or its own detailed section, and make the differences concrete:</p><ul><li><strong>Real photographs</strong> of that specific room, including the bathroom and the actual view, not a generic wide-angle hero shot.</li><li><strong>What changes between rooms.</strong> Corner rooms, ground floor versus upper floor, which rooms look over the lake or the courtyard, which are closest to the elevator, which have a balcony.</li><li><strong>What the bed and layout actually are.</strong> One king, two queens, sofa bed, whether a third adult is practical.</li><li><strong>Accessible features</strong> described plainly, such as step-free entry, roll-in shower, grab bars, or hearing-accessible equipment, so guests do not have to call to find out.</li><li><strong>Honest limitations.</strong> If a room is smaller, older, or above the breakfast room, saying so converts better than an unhappy surprise at check-in.</li></ul><p>For example, instead of a card that reads \"Lake View Queen, 320 sq ft, free wifi,\" a room page might show the queen room's actual photographs, note that it sits on the third floor facing the lake, that the bathroom has a walk-in shower but no tub, and that two of the four rooms in this category have a small balcony. That level of specificity is what makes a guest comfortable booking directly with the property.</p>"
+    },
+    {
+      "id": "the-direct-booking-tradeoff",
+      "title": "The direct booking tradeoff",
+      "body": "<p>Online travel agencies send guests to hotels, and they take a commission for doing it. A property's own website does the opposite: it takes effort to build and maintain, but each booking that starts and finishes there is revenue the property keeps. Neither channel is free.</p><table><caption>Two ways a room gets booked</caption><thead><tr><th scope=\"col\"></th><th scope=\"col\">Third-party booking site</th><th scope=\"col\">Property website, booked direct</th></tr></thead><tbody><tr><th scope=\"row\">Who controls the guest experience</th><td>The platform</td><td>The property</td></tr><tr><th scope=\"row\">Commission or ad cost</th><td>Ongoing, often significant</td><td>Site build, hosting, and upkeep</td></tr><tr><th scope=\"row\">How rooms are presented</th><td>Standardized listings</td><td>Full room detail, real photos, honest differences</td></tr><tr><th scope=\"row\">Guest relationship</th><td>Often held by the platform</td><td>Starts with the property</td></tr><tr><th scope=\"row\">What the guest sees on Google</th><td>Paid and free booking links from many providers</td><td>The property's own free booking link can appear alongside them</td></tr></tbody></table><p>It is also worth knowing that Google may show a property's own free booking link next to the paid ones when travelers search for hotels. Google's <a href=\"https://support.google.com/hotelprices/answer/10472393?hl=en\">help page on hotel free booking links</a> explains that eligibility depends on having rates and a booking landing page available, and that ranking of these links is based on usefulness signals rather than payment.</p><p>That makes the direct booking website less of an optional extra and more of the asset that gives the rest of the marketing somewhere good to send people.</p>"
+    },
+    {
+      "id": "a-page-architecture-that-works",
+      "title": "A page architecture that works",
+      "body": "<p>A clear structure keeps guests oriented and gives search engines a sensible map of the site. For a small or mid-sized hotel or inn, a workable starting architecture looks like this:</p><ol><li><strong>Homepage.</strong> One strong photograph, the property name and location, the core promise, and obvious paths to rooms and availability.</li><li><strong>Rooms.</strong> An overview page comparing all rooms at a glance, then individual pages or sections per room with real photos, differences, and accessibility details.</li><li><strong>Rates and availability.</strong> A clear entry into the booking flow with date selection near the top of the page.</li><li><strong>The property.</strong> Common spaces, breakfast, parking, pet policy, pool or hot tub, and anything guests routinely phone to ask about.</li><li><strong>Policies.</strong> Cancellation terms, check-in and check-out times, deposit and incidental hold practices, in plain language.</li><li><strong>Things to do nearby.</strong> Local, seasonal, and useful, covered in more detail below.</li><li><strong>Location and getting here.</strong> Address, directions, nearby landmarks, and parking instructions.</li><li><strong>Contact.</strong> Phone, email, and a short enquiry form for group bookings or special requests.</li></ol><p>Nothing here is exotic. The discipline is in resisting the urge to hide the booking path behind a slideshow, or to let the room pages decay while the homepage gets all the attention.</p>"
+    },
+    {
+      "id": "the-booking-engine-handoff",
+      "title": "The handoff to the booking engine",
+      "body": "<p>Few properties want to run their own reservations software, so the website usually hands the guest to a booking engine at some point. That handoff is where many hotel sites quietly lose bookings.</p><p>When choosing or renewing a booking provider, ask for the following:</p><ul><li><strong>Rate consistency.</strong> The room, occupancy, and dates the guest selected on your site should arrive in the booking engine unchanged. A guest who picks the lake view queen and lands on a default standard room has a reason to abandon the booking.</li><li><strong>Attribution that survives the handoff.</strong> You want to know whether a booking came from search, a map listing, an email, or a social post. Ask how the provider passes source information through and what reporting you will actually get.</li><li><strong>Cancellation terms from the property.</strong> The policy shown on your policies page and the policy shown inside the booking flow should match. If they disagree, guests notice, and so does trust.</li><li><strong>A booking path that works on a phone.</strong> Test the whole thing yourself on a small screen, including date pickers, occupancy selectors, and the final confirmation step.</li><li><strong>Language around requests versus confirmations.</strong> If the engine submits a request rather than confirming instantly, your site should say so plainly so guests know what to expect.</li></ul><p>The property does not need to become a software company. It does need to choose a provider that treats its guests and its data with some care.</p>"
+    },
+    {
+      "id": "content-that-helps-a-guest-plan",
+      "title": "Content that helps a guest plan the trip",
+      "body": "<p>Rooms sell the stay. The rest of the site sells the decision to come at all. Guests researching a trip to the Okanagan are also deciding when to visit, what to do while they are here, and whether the area suits the people travelling with them.</p><p>Tourism organizations already publish much of this material well. <a href=\"https://www.tourismkelowna.com/\">Tourism Kelowna</a>, for example, organizes the year by season and month, and groups local experiences into categories like wineries, food, farms, and places to have a drink. A hotel does not need to compete with that. It needs a small, well-chosen set of pages that connect its own location to the season:</p><ul><li>A short page on what the immediate area is like in each season, written for someone deciding between spring and fall.</li><li>A handful of specific recommendations within a reasonable distance of the property, with honest notes about drive time.</li><li>Practical details guests actually ask about, such as where to park a trailer, which nearby trails suit kids, or what is open on a statutory holiday.</li></ul><p>This kind of content also gives the site something worth ranking for beyond the property's name. Google's <a href=\"https://developers.google.com/search/docs/fundamentals/seo-starter-guide\">SEO starter guide</a> makes the same point in plainer terms: content that is genuinely useful to a reader is what earns visibility over time.</p>"
+    },
+    {
+      "id": "accessibility-and-cancellation-details",
+      "title": "Accessibility and cancellation details",
+      "body": "<p>Two areas of a hotel website are easy to neglect because they feel like fine print. Both deserve real attention, because guests use them to make actual decisions.</p><p>For accessibility, describe accessible rooms and common areas in concrete terms rather than with a generic badge. A guest who needs a roll-in shower or step-free access should be able to identify which rooms have those features from the room page, without phoning the front desk. The booking flow itself should also be workable with a keyboard and a screen reader, which is largely a question of choosing a competent booking provider and testing it.</p><p>For cancellation, put the policy where guests will actually see it, both on a policies page and again at the moment of booking. If different room types or rate plans have different terms, say so explicitly. A clear, slightly conservative policy converts better than a vague generous-sounding one that falls apart when a guest reads the conditions.</p>"
+    },
+    {
+      "id": "keeping-the-site-current",
+      "title": "Keeping the site current",
+      "body": "<p>A hotel website is closer to a shopfront than a brochure. Photography ages, amenities change, a renovation finishes, a new manager wants different language, and seasonal content goes stale. If updating any of that requires a support ticket and a two-week wait, the site will slowly drift away from the property it describes.</p><p>A workable arrangement gives the owner or manager direct control over the things that change often: room photos, amenity lists, policies, seasonal pages, and the things to do content. Design and structural changes can stay with whoever maintains the site. What matters is that routine updates are cheap and fast enough to actually happen.</p><p>If you are planning a new hotel website, or trying to decide whether your current one is worth keeping, our page on <a href=\"/web-design/hotels/\">hotel website design</a> covers how we approach the build, and <a href=\"/blog/okanagan-website-cost/\">what a website costs in the Okanagan</a> gives you a realistic frame for the budget side of the decision.</p>"
+    },
+    {
+      "id": "where-to-start",
+      "title": "Where to start",
+      "body": "<p>The most useful next step is unglamorous: open your current website on your phone, pretend you have never heard of your property, and try to book a specific room for specific dates. Note every point where you hesitate, every place the photography feels generic, and every moment the booking flow asks you to start over. That list is the real brief for the new site.</p><p>If you would rather have a second set of eyes on it, <a href=\"/contact/\">get in touch</a>. We are happy to look at what you have, tell you plainly what is helping and what is costing you bookings, and talk through what a rebuild would involve.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "How often should a hotel redesign its website?",
+      "There is no fixed schedule, but a redesign becomes worth considering when the photography no longer matches the rooms, when the booking flow feels dated on a phone, or when updating content is so difficult that the site has gone stale. A well-built site with an easy editing workflow can stay current for years with incremental updates instead of a full rebuild."
+    ],
+    [
+      "Does my hotel website still matter if I have a Google Business Profile?",
+      "Yes. A map listing and profile can put your property in front of searchers, and free booking links can send some of them to your site, but the profile is not a substitute for room detail, real photography, policies, and local content. Guests who are seriously comparing options will look for your website, and what they find there shapes whether they book direct."
+    ],
+    [
+      "Should my hotel website use the same photos as the booking sites?",
+      "Use your best photography everywhere, but the website should usually go further. Booking platforms tend to compress rooms into standardized listings, while your own site can show more angles, more honest views, and the specific differences between rooms. If the website only duplicates what guests already saw on a booking platform, it gives them little reason to book there."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Tourism Kelowna",
+      "url": "https://www.tourismkelowna.com/"
+    },
+    {
+      "name": "Google, About hotel free booking links",
+      "url": "https://support.google.com/hotelprices/answer/10472393?hl=en"
+    },
+    {
+      "name": "Google, Search Engine Optimization (SEO) Starter Guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Most hotel website advice is generic conversion checklist material or vendor content from booking platforms. This article is written from the property owner's side of the decision: what the site must carry because third-party channels cannot, what to ask a booking provider for, a concrete page architecture, and an Okanagan-relevant view of local trip-planning content without inventing demand figures.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm Google hotel free booking links help page still describes eligibility and ranking the same way.",
+      "Confirm Tourism Kelowna homepage still organizes seasonal and monthly content and local experience categories as described.",
+      "Confirm Google SEO starter guide still emphasizes helpful content and contains no newer guidance that changes the recommendation."
+    ],
+    "serpGap": "Top results are dominated by hospitality marketing vendors selling their own design and booking products, with heavy feature-list padding. Few give a property owner a clear way to evaluate their own existing site, or explain the booking-engine handoff, attribution, and cancellation-term consistency from the owner's perspective.",
+    "sourceUse": [
+      {
+        "url": "https://support.google.com/hotelprices/answer/10472393?hl=en",
+        "claim": "Google can show a property's own free booking link when travelers search for hotels, eligibility depends on rates and a landing page, and ranking is based on usefulness rather than payment."
+      },
+      {
+        "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "claim": "Genuinely useful, reader-focused content is what earns search visibility over time, which supports the recommendation for local and seasonal trip-planning pages."
+      },
+      {
+        "url": "https://www.tourismkelowna.com/",
+        "claim": "Regional tourism content is already organized by season, month, and experience category, so a hotel should publish a small set of property-specific local pages rather than compete with the tourism site."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-02-18",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/hotels/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "hotels"
+  ],
+  "wordCount": 1997,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 16680,
+      "total_tokens": 21314,
+      "completion_tokens": 4634,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 806
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 806
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  }
+}

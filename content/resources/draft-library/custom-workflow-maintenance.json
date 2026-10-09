@@ -1,0 +1,149 @@
+{
+  "slug": "custom-workflow-maintenance",
+  "title": "When does a custom workflow justify ongoing maintenance?",
+  "type": "guide",
+  "description": "A practical guide for business owners on when custom AI workflow maintenance is worth the ongoing cost, with a worksheet, worked example and questions to ask before committing.",
+  "summary": "A custom workflow justifies ongoing maintenance when the cost of keeping it running is clearly smaller than the errors, delays or missed work it prevents, and when failure would create meaningful delays, errors or lost work. This guide helps owners compare the cost of the problem against the cost of ownership, decide when off the shelf tools are enough, and ask the right questions before committing to ongoing support.",
+  "takeaways": [
+    "Ongoing maintenance is justified when the workflow is frequent, business-specific and expensive to get wrong.",
+    "Compare the measurable cost of the problem against the full cost of owning a custom system, not just the initial build price.",
+    "Ask what happens when integrations change, who reviews the output and what fallback exists before committing to a maintenance plan."
+  ],
+  "sections": [
+    {
+      "id": "the-real-question",
+      "title": "The maintenance question is really an ownership question",
+      "body": "<p>A custom workflow justifies ongoing maintenance when the cost of keeping it running is clearly smaller than the cost of the errors, delays or missed work it prevents. A failure should be detectable through alerts and checks, including when the process is quiet enough that people might otherwise miss it. If the task is occasional, general or easily handled by a common tool, paying for ongoing upkeep is usually extra overhead.</p><p>The better question is whether you are buying a tool or taking responsibility for a piece of business infrastructure. A tool can be replaced. Infrastructure needs care, because the business starts depending on it.</p>"
+    },
+    {
+      "id": "what-maintenance-covers",
+      "title": "What ongoing maintenance actually covers",
+      "body": "<p>Ongoing maintenance is not simply fixing things when they break. It means keeping the workflow aligned with the tools, data and people it touches as they change. That can include updating an integration, adjusting a prompt or rule, checking logs, controlling who has access, and making sure there is a sensible fallback when the automated step is not confident.</p><p>In plain terms, a workflow is the series of steps a job moves through. An integration is a connection to another tool. A fallback is the manual path the team takes when the automation cannot safely finish the job on its own.</p>"
+    },
+    {
+      "id": "roi-worksheet",
+      "title": "A simple worksheet for deciding",
+      "body": "<p>The clearest way to decide is to compare the measurable cost of the problem against the full cost of owning a custom workflow. Use this worksheet as a starting point.</p><table><caption>A practical worksheet for deciding whether custom workflow maintenance is justified</caption><thead><tr><th>Question</th><th>If the answer is yes</th><th>If the answer is no</th></tr></thead><tbody><tr><td>Is this a daily or weekly task?</td><td>Frequent work is a stronger candidate for custom support.</td><td>Occasional work may be fine with a general tool.</td></tr><tr><td>Does a mistake create rework, cost or delay?</td><td>Errors have a real business cost, so reliability matters.</td><td>Low-stakes tasks may not justify ongoing maintenance.</td></tr><tr><td>Does the work depend on knowledge specific to your business?</td><td>A custom workflow can reflect your standards and context.</td><td>A generic tool may be enough.</td></tr><tr><td>Do the tools, forms or data it uses change often?</td><td>You will need someone to keep the workflow current.</td><td>Maintenance needs are likely lighter.</td></tr><tr><td>Would an unnoticed failure create meaningful cost or delay?</td><td>Assign monitoring, a fallback and an accountable owner.</td><td>Match the support level to the actual cost and risk of failure.</td></tr></tbody></table><p>The point is not to reach a perfect score. The point is to see whether the problem is big enough, frequent enough and specific enough to make ongoing care worthwhile.</p>"
+    },
+    {
+      "id": "worked-example",
+      "title": "A worked example for a local service business",
+      "body": "<p>For example, suppose a small Okanagan service business has office staff spending roughly an hour a day re-entering booking details, confirming appointments and chasing follow-ups. The work is not difficult, but it is repetitive, and mistakes create phone calls, delays and frustration.</p><p>A general automation tool might handle part of that work. The question is whether it can handle the specific exceptions that matter in that business: the customer who changes an appointment by text, the job that needs a different reminder, the detail that should not be copied from one system to another without a quick check.</p><p>If the owner estimates that the admin work costs several hours a week in wages, and that mistakes occasionally cost a booking or create extra back-and-forth, the business has a real basis for comparing a custom workflow against doing nothing. The comparison should still be honest. A custom system is not a guarantee of more revenue. It is a way to reduce a specific kind of friction.</p>"
+    },
+    {
+      "id": "when-off-the-shelf-is-enough",
+      "title": "When off the shelf is enough",
+      "body": "<p>Off the shelf is often enough when the task is general, the risk of error is low, and the workflow does not need to understand your particular business deeply. A simple form, a standard calendar connection or a basic email follow-up may not need custom logic at all.</p><p>The mistake is assuming every repetitive task deserves a custom build. Some jobs only need a dependable tool, a clear process and someone on the team who knows when to step in.</p>"
+    },
+    {
+      "id": "when-custom-pays-off",
+      "title": "When a custom workflow pays for its upkeep",
+      "body": "<p>A custom workflow starts to make sense when the work is frequent, specific to your business, and expensive to get wrong. That might be lead handling, appointment follow-up, quoting, internal handoffs or another process where the same kind of information keeps moving between people and tools.</p><p>It becomes easier to justify when the workflow also reflects your standards. A good system should not just move information. It should help the business respond in a way that fits the job, the customer and the owner’s expectations.</p>"
+    },
+    {
+      "id": "questions-to-ask",
+      "title": "What to ask before you commit",
+      "body": "<p>Before agreeing to ongoing maintenance, ask what exactly is included. Ask what happens when an integration changes, when a tool updates its interface, or when the workflow produces something uncertain. Ask who reviews the output, how problems are logged, and what the fallback is when the automated path should not continue on its own.</p><p>You also want to know what you own. If the workflow is important to the business, you should understand where the content, prompts, rules and connections live, and what would be involved in moving them. For a broader look at the decision, see my guide on <a href=\"/blog/before-buying-ai-workflow/\">what to know before buying an AI workflow</a>.</p>"
+    },
+    {
+      "id": "how-i-scope-it",
+      "title": "How I scope custom workflow maintenance",
+      "body": "<p>I scope custom AI work by starting with the business problem, not the tool. My <a href=\"/ai-implementation/\">AI implementation</a> work begins with a free initial consultation to understand where the work is piling up. From there, a CAD $900 one-time audit can map priorities and off the shelf options, while custom systems start at CAD $2,500 per month for agreed design, build, deployment, maintenance and training.</p><p>The goal is to choose a useful target: hours saved, faster replies, fewer errors or more consistent follow-up. Then we can decide whether ongoing maintenance is justified, and what that maintenance should actually include.</p><p>If you are weighing a custom workflow against the work it is meant to remove, <a href=\"/contact/\">tell me where the work piles up</a>. We can look at a practical place to start.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Can I start with an off the shelf tool and move to a custom workflow later?",
+      "Yes, and that is often a sensible path. The key is to choose tools that let you keep your own data and content, and to plan for the transition before you are locked into a system that is hard to leave."
+    ],
+    [
+      "Who is responsible if the AI makes a mistake?",
+      "In most small business settings, the business owner or operator is still responsible for what the business sends, publishes or commits to. A good maintenance plan should make clear who reviews output, what the fallback is and when a human must approve the work."
+    ],
+    [
+      "Does ongoing maintenance usually include training my team?",
+      "It can, and it often should. Training needs to be part of the scope, because a workflow only saves time if the people using it understand what it does, what they still need to check and what to do when something looks wrong."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Michael McKerracher AI implementation",
+      "url": "https://michaelmck.site/ai-implementation/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Gives business owners a practical ROI worksheet and decision framework for when custom AI workflow maintenance is worth the ongoing cost, rather than generic automation benefits.",
+    "claimsToRecheckBeforeRelease": [
+      "No unsupported client claims or invented metrics",
+      "No banned words or em dashes",
+      "Includes exactly one /ai-implementation/ link and one /contact/ link",
+      "CAD900 and CAD2500/month mentioned only as scoped offers"
+    ],
+    "serpGap": "Most results give generic pricing ranges or agency sales pitches. This article gives a decision worksheet, a worked cost example and concrete questions to ask before committing to maintenance.",
+    "sourceUse": [
+      {
+        "url": "https://michaelmck.site/ai-implementation/",
+        "claim": "Michael's AI implementation service includes free consultation, CAD900 audit, and custom systems from CAD2500/month covering design, build, deployment, maintenance and training."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-12-09",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "AI and operations",
+  "primaryMoneyPage": "/ai-implementation/",
+  "related": [
+    "before-buying-ai-workflow",
+    "ai-service-business-website"
+  ],
+  "services": [],
+  "wordCount": 1266,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 8650,
+      "total_tokens": 17089,
+      "completion_tokens": 8439,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6144
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6144
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "and when the workflow is central enough that you would notice quickly if it stopped",
+      "replacement": "and when failure would create meaningful delays, errors or lost work"
+    },
+    {
+      "original": "It also needs to be central enough to your business that you would notice quickly if it stopped.",
+      "replacement": "A failure should be detectable through alerts and checks, including when the process is quiet enough that people might otherwise miss it."
+    },
+    {
+      "original": "Would you notice within hours if it stopped?",
+      "replacement": "Would an unnoticed failure create meaningful cost or delay?"
+    },
+    {
+      "original": "The workflow is probably becoming infrastructure.",
+      "replacement": "Assign monitoring, a fallback and an accountable owner."
+    },
+    {
+      "original": "It may not be central enough to justify ongoing support.",
+      "replacement": "Match the support level to the actual cost and risk of failure."
+    }
+  ]
+}

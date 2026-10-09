@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "A practical decision guide for busy small-business owners weighing Framer: where it is genuinely a good fit, where the CMS and platform limits matter, and what to verify before committing.",
+    "specificity": "High for a general guide. Names the specific CMS limits that matter in practice (no native multilingual CMS content, simpler field types, no API for external apps, no per-entry version history, item caps on lower plans), includes a concrete four-collection sample structure for a local service business, and poses workflow-focused questions.",
+    "evidence": "Grounded entirely in Framer's own current official material: the CMS product page, pricing, and two help articles on export and data portability. The conflicting export guidance is handled transparently with both links, consistent with the source-conflict note.",
+    "voice": "Matches Michael's stated approach: plain, connected, conversational sentences; opinionated but honest about tradeoffs ('good enough that it is easy to choose it for the wrong reason'); Canadian context (Vernon/Kelowna example); no corporate padding, smug contrast, or invented anecdotes.",
+    "usefulAsset": "Yes. The article is answer-first and self-contained in each section, gives actionable structure and decision criteria, the FAQs add new answers rather than repeating headings, and it links onward to Michael's related cost and platform-comparison pieces plus his contact page."
+  },
+  "slug": "framer-small-business-websites",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1647,
+  "usage": {
+    "prompt_tokens": 12811,
+    "total_tokens": 13397,
+    "completion_tokens": 586,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 261
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 261
+    }
+  }
+}

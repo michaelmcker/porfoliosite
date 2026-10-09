@@ -1,0 +1,154 @@
+{
+  "slug": "template-vs-custom-website",
+  "title": "Templates or custom design: when is a tailored website worth it?",
+  "type": "guide",
+  "description": "Templates are fast and affordable, while custom design is built to win customers and grow with your business. This guide helps you decide when a tailored website is worth the investment.",
+  "summary": "Use a template when its structure suits your content, brand and customer journey with modest changes. Consider custom design when adapting that structure would compromise the experience or require extensive work. Either approach can support a successful business website; compare the actual fit, platform, implementation and lifetime cost.",
+  "takeaways": [
+    "Templates are a sensible choice when speed and simplicity matter more than differentiation.",
+    "Custom design is worth the investment when your website is central to winning customers, handling complex enquiries or supporting growth.",
+    "Custom visual design and content architecture can be built on proven platforms; it does not require inventing a CMS from scratch."
+  ],
+  "sections": [
+    {
+      "id": "templates-make-sense-when",
+      "title": "Templates make sense when you need a simple presence fast",
+      "body": "<p>The answer starts with your timeline and how central the website is to your business. If you are launching a new side business, testing a seasonal offer, or simply need to stop telling customers to look at your Facebook page, a template can be a sensible choice. Templates are pre-built frameworks where you swap in your logo, colours and content. They get you online quickly and can look clean and modern.</p><p>The limitation is that they are built for the average case, not your specific case. That is fine when your website is mostly a digital business card or a simple brochure. It becomes a problem when you need the site to persuade, compare or convert.</p>"
+    },
+    {
+      "id": "custom-design-is-worth-it",
+      "title": "Custom design is worth it when the website has to win customers",
+      "body": "<p>Custom design becomes the better choice when your website is a serious part of how customers find, compare and choose you. If a potential customer lands on your homepage after searching for a local service, you do not want them to feel like they have seen this exact layout before. First impressions carry more weight when the visitor has several browser tabs open.</p><p>A custom site lets you build the page structure, content and calls to action around how your customers actually make decisions. You can emphasize reviews where trust matters most, simplify booking where speed matters, or create service pages that answer the exact questions people are searching for. That specificity is difficult to get from a pre-made theme.</p>"
+    },
+    {
+      "id": "a-practical-worksheet",
+      "title": "A practical worksheet for choosing between them",
+      "body": "<p>Use the table below to think through your situation. The goal is not to crown a universal winner, but to match the tool to the job.</p><table><caption>A worksheet for deciding between a template and a custom website</caption><thead><tr><th>Consideration</th><th>A template tends to fit when...</th><th>Custom design tends to fit when...</th></tr></thead><tbody><tr><th scope=\"row\">Budget and timeline</th><td>You need to be online quickly and want to minimise upfront cost.</td><td>You can invest in a longer process and want a longer-term asset.</td></tr><tr><th scope=\"row\">Brand and differentiation</th><td>A clean, professional look is enough.</td><td>You need to stand out from competitors and feel distinct.</td></tr><tr><th scope=\"row\">Customer journey</th><td>Your offer is simple and the next step is obvious.</td><td>You need to guide visitors through specific services, proof or booking flows.</td></tr><tr><th scope=\"row\">Growth and integrations</th><td>Your website is unlikely to change much.</td><td>You expect new services, locations or tools to be added over time.</td></tr><tr><th scope=\"row\">Technical control</th><td>You are comfortable with platform limitations.</td><td>You want control over performance, accessibility and search structure.</td></tr></tbody></table><p>If most of your answers lean toward the template column, a template is probably enough. If your answers cluster around custom, it is usually worth the investment.</p>"
+    },
+    {
+      "id": "custom-design-does-not-mean-cms-from-scratch",
+      "title": "Custom design does not mean building a CMS from scratch",
+      "body": "<p>One reason business owners hesitate is the idea that custom means starting with a blank text editor and building every system from the ground up. In practice, good custom work uses proven tools and content management foundations where they make sense. What you are paying for is original design thinking, tailored page architecture and enquiry paths that fit your business.</p><p>You are not paying a designer to reinvent how websites store content. You are paying them to make your content clearer, more persuasive and easier to find, using technology that is appropriate for your budget and your team's ability to maintain it.</p>"
+    },
+    {
+      "id": "a-concrete-sample",
+      "title": "A concrete sample: service pages built for action",
+      "body": "<p>Here is a simple page architecture that works well for many local service businesses.</p><ul><li><strong>Home:</strong> A clear statement of what you do and where, a primary action such as Request a booking, and short proof points.</li><li><strong>Services index:</strong> A page that groups your services by category, such as appliance type, project type or treatment type.</li><li><strong>Individual service pages:</strong> Each page explains the problem, what is included, the area served and the next step.</li><li><strong>About:</strong> Local credentials, approach and what working with you looks like.</li><li><strong>Contact or request:</strong> A short form, phone number and service-area note.</li></ul><p>This architecture works because it matches how people search. They look for a service, they want to know if you cover their area, and they want a clear next step. A template might give you a contact page and a services page, but custom design lets you shape each service page around the specific questions and proof that matter for that service.</p>"
+    },
+    {
+      "id": "accessibility-and-performance",
+      "title": "Accessibility and performance belong in the decision",
+      "body": "<p>Accessibility is not a luxury feature. The <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">W3C's first checks for web accessibility</a> include practical considerations such as clear page titles, sensible headings, useful alternative text for images and enough contrast between text and background.</p><p>Templates sometimes carry extra code or rigid structures that make these details harder to control. Custom work gives you more say over semantic HTML, keyboard navigation and page speed. Neither approach guarantees accessibility, but custom design gives you fewer technical excuses and more room to do the right thing.</p>"
+    },
+    {
+      "id": "local-okanagan-businesses",
+      "title": "Local Okanagan businesses have extra reasons to think carefully",
+      "body": "<p>If you serve customers in Kelowna, Vernon, West Kelowna, Lake Country or nearby communities, your website often needs to do two jobs at once. It needs to be easy to find locally, and it needs to give people confidence once they arrive. A simple template might be fine for a hobby, but if you want to compete for local searches, the structure and content of your site matter.</p><p>Our <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost guide</a> looks at this from the budget side. The short version is that local competition often makes custom design easier to justify, because a generic template can make it harder to stand out in search results and on the page itself.</p>"
+    },
+    {
+      "id": "how-to-make-the-decision",
+      "title": "How to make the decision today",
+      "body": "<p>Start by asking how important your website is to winning work. If most of your customers come from word of mouth and you just need a basic online presence, a template is reasonable. If customers regularly search for your service, compare providers and decide based on your website, custom design is usually worth it.</p><p>Next, think about the next two or three years. If you expect to add services, open new locations or connect your website to booking and business systems, starting with a template can mean rebuilding sooner than you would like.</p><p>If you are still unsure, <a href=\"/web-design/\">our web design process</a> is built around helping you choose the right scope for your goals. You can also read our guide to <a href=\"/blog/good-small-business-website-design/\">what makes a good small business website</a> before you decide.</p>"
+    },
+    {
+      "id": "your-next-step",
+      "title": "Your next step",
+      "body": "<p>You do not have to figure this out alone. If you are weighing a template against a tailored website and want a practical local perspective, <a href=\"/contact/\">book a free consultation</a>. We will look at your goals, your customers and your budget, and help you choose an approach that fits.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Can I start with a template and switch to custom later?",
+      "Yes. Some layouts may need rebuilding, but useful content and assets can often be retained. Record the export options, URL structure and ownership terms early so a later redesign does not discard good work unnecessarily."
+    ],
+    [
+      "Does a custom website automatically rank better in search?",
+      "No. Both template-based and custom-designed sites can support good search fundamentals. The platform, content structure and implementation determine what you can maintain and improve; the word custom is not an SEO advantage by itself."
+    ],
+    [
+      "What is the biggest mistake businesses make when choosing a template?",
+      "Choosing one that looks good in a demo but does not support their actual services, local search needs or customer journey. Always test a template against your real content before committing."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Michael McKerracher website design",
+      "url": "https://michaelmck.site/web-design/"
+    },
+    {
+      "name": "W3C accessibility first checks",
+      "url": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "The article frames the template versus custom decision around whether your website is a simple placeholder or a core competitive asset, and clarifies that custom design can be practical without building a CMS from scratch.",
+    "claimsToRecheckBeforeRelease": [
+      "Ensure no unsupported client names or metrics are included",
+      "Verify all internal links resolve exactly as specified",
+      "Check that no em dashes or banned phrases slipped in"
+    ],
+    "serpGap": "Much existing coverage pushes templates as the obvious choice for small businesses or custom as universally better. This article identifies the specific conditions where each makes sense, with a focus on when a website is central to winning customers.",
+    "sourceUse": [
+      {
+        "url": "https://michaelmck.site/web-design/",
+        "claim": "Custom websites are built around business goals, use a clear process, and do not require building a content management system from scratch."
+      },
+      {
+        "url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+        "claim": "Accessibility considerations such as headings, alternative text and contrast are practical factors that should influence website design choices."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-11-18",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Design",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "good-small-business-website-design",
+    "website-photography-video-animation"
+  ],
+  "services": [],
+  "wordCount": 1309,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 10667,
+      "total_tokens": 20060,
+      "completion_tokens": 9393,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7063
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 7063
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 1,
+    "publicationApproved": false,
+    "mainEditorResolution": "The rejected duplicate patch targeted wording already absent from the current article. Main editor also corrected custom-versus-template ownership and SEO assumptions."
+  },
+  "mainEditorEdits": [
+    {
+      "original": "Use a template when you need to get online quickly with a simple offer. Choose custom design when your website must win competitive enquiries, support specific booking or content flows, and grow without a rebuild. The right choice depends on whether you are buying a basic presence or investing in a business asset.",
+      "replacement": "Use a template when its structure suits your content, brand and customer journey with modest changes. Consider custom design when adapting that structure would compromise the experience or require extensive work. Either approach can support a successful business website; compare the actual fit, platform, implementation and lifetime cost."
+    },
+    {
+      "original": "Yes, but plan for the content and design work to be redone. If you know growth is coming, it is worth weighing the cost of custom work against the time and money a later rebuild would take.",
+      "replacement": "Yes. Some layouts may need rebuilding, but useful content and assets can often be retained. Record the export options, URL structure and ownership terms early so a later redesign does not discard good work unnecessarily."
+    },
+    {
+      "original": "No. However, custom design gives you more control over site structure, speed and content, which makes it easier to do search engine optimization well.",
+      "replacement": "No. Both template-based and custom-designed sites can support good search fundamentals. The platform, content structure and implementation determine what you can maintain and improve; the word custom is not an SEO advantage by itself."
+    }
+  ]
+}

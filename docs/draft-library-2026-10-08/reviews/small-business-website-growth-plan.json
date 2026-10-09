@@ -1,0 +1,44 @@
+{
+  "issues": [
+    {
+      "path": "sections.0.body",
+      "original": "Most annual website plans fail because they start with a channel.",
+      "replacement": "Annual website planning often goes wrong when it starts with a channel.",
+      "reason": "The original makes an unsupported universal claim. This narrows it to a qualified observation without changing the structure or depth."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "The article gives small business owners a practical annual planning method: choose one customer bottleneck, then build a one-page website plan around it. It avoids pushing a single platform, format or channel.",
+    "specificity": "Strong. It names the four bottlenecks, explains how each feels from inside a business, provides a worksheet, uses a concrete plumbing example and shows how a trade business, law firm and accommodation business would make different choices.",
+    "evidence": "Adequate after the opening claim is softened. The article links to Google's people-first content guidance and Michael's Cool Runnings work without overstating the result as revenue or attributing it to one design change. It does not invent client stories, quotes or tests.",
+    "voice": "The draft is mostly in Michael's voice: answer-first, practical, connected and aware of tradeoffs. The opening is now less absolute and more consistent with the rest of the article. There is no corporate padding or smug contrast.",
+    "usefulAsset": "Yes. The one-page worksheet, the four-bottleneck framing and the industry differences give a busy owner enough structure to make a better annual decision without turning the post into a sales page."
+  },
+  "slug": "small-business-website-growth-plan",
+  "applied": [
+    {
+      "path": "sections.0.body",
+      "original": "Most annual website plans fail because they start with a channel.",
+      "replacement": "Annual website planning often goes wrong when it starts with a channel.",
+      "reason": "The original makes an unsupported universal claim. This narrows it to a qualified observation without changing the structure or depth."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1563,
+  "usage": {
+    "prompt_tokens": 8728,
+    "total_tokens": 9437,
+    "completion_tokens": 709,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 343
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 343
+    }
+  }
+}

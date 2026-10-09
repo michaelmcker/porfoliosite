@@ -1,0 +1,143 @@
+{
+  "slug": "small-business-ai-search",
+  "title": "How a small-business website can be easier to find in Google and AI search",
+  "type": "guide",
+  "description": "A practical guide to helping a small-business website qualify for Google Search and AI features by improving content facts, crawlability, internal navigation, local details and measurement.",
+  "summary": "Google is not asking small businesses to build a separate AI website. Its current guidance says the usual SEO fundamentals still apply: pages should be indexable, eligible for snippets, and built around helpful, people-first content. Clear business facts, internal navigation, local details and careful measurement matter more than AI-only tricks.",
+  "takeaways": [
+    "Google says there are no extra technical requirements for AI Overviews or AI Mode beyond being indexed and eligible for a Search snippet.",
+    "Clear, consistent business facts and owned proof help both people and AI search systems understand which page deserves attention.",
+    "Measure AI search through Search Console, analytics and real enquiries rather than relying on promises of a guaranteed AI citation lift."
+  ],
+  "sections": [
+    {
+      "id": "google-ai-requirements",
+      "title": "Start with Google's requirements, not AI tricks",
+      "body": "<p>The short answer is that Google is not asking for a separate AI layer on your website. Its <a href=\"https://developers.google.com/search/docs/appearance/ai-features\">current guidance for AI Overviews and AI Mode</a> says the usual SEO fundamentals apply: a page should be indexable, eligible for a snippet, and built around helpful, people-first content. There is no required AI schema, no special machine-readable file, and no confirmed ranking boost for adding llms.txt.</p><p>That matters because many small businesses are being sold urgency instead of clarity. AI features in Google Search can use techniques such as query fan-out to pull from pages Google already understands. If your service pages, location details and supporting articles are clear, you have a better base for those systems to work with.</p><p>This is also where good <a href=\"/web-design/\">small-business web design</a> earns its keep. A beautiful site still needs obvious service categories, current contact information and content that answers real questions.</p>"
+    },
+    {
+      "id": "content-facts-entities",
+      "title": "Make the facts about your business easy to verify",
+      "body": "<p>AI search works better when the basic facts about a business are consistent and attributable. In plain terms, Google and other systems need to understand who you are, what you do, where you do it and why your page is the right one to cite. Those facts are often called entities, but the work is mostly ordinary clarity.</p><p>For a service business in Kelowna, Vernon or elsewhere in the Okanagan, that means keeping your business name, service names, service area, hours and contact paths consistent across your website. It also means giving pages an owner. A service page with a named author, a real project photograph and a short explanation of how you work carries more usable proof than a page assembled from generic industry phrases.</p><h3>A service page architecture that usually works</h3><ul><li><strong>Page title and opening:</strong> name the service, the likely customer problem and the general area served.</li><li><strong>Scope:</strong> say what is included, what is not included and when the work usually happens.</li><li><strong>Proof:</strong> show one real project, before-and-after photographs where appropriate, or a short explanation of your method.</li><li><strong>Practical details:</strong> access, timing, warranties, cleanup, maintenance or seasonal limits that affect the buyer.</li><li><strong>Next step:</strong> make the enquiry path obvious without collecting sensitive case details on a public form.</li></ul><p>The goal is not to write a page for a robot. The goal is to make the facts easy for a person to trust, then keep the page technically clean enough for Google to index and cite.</p>"
+    },
+    {
+      "id": "crawlability-and-internal-links",
+      "title": "Help Google and AI crawlers reach the pages that matter",
+      "body": "<p>Crawlability is mostly about not making Google guess. If a page cannot be crawled and indexed, it cannot be shown as a supporting link in AI Overviews or AI Mode. Google says there are no extra technical requirements beyond its normal Search requirements, so the work is still sitemaps, robots.txt, crawlable links and pages that return useful content.</p><p>Internal navigation matters because it tells both people and search systems which pages are central. A homepage should point clearly to the main services. Each service page should point to the most useful supporting article, location page or project proof. Related articles should link back to the service they support instead of floating as disconnected blog posts.</p><p>OpenAI also <a href=\"https://platform.openai.com/docs/bots\">distinguishes between crawlers</a>. OAI-SearchBot is used for ChatGPT search features, while GPTBot is used for content that may train generative AI models. Blocking one is not the same decision as blocking the other. If you want your pages to be eligible for ChatGPT search answers, do not block OAI-SearchBot. If you have separate concerns about model training, review GPTBot on its own.</p>"
+    },
+    {
+      "id": "people-first-content",
+      "title": "Write for the person, then structure for the machine",
+      "body": "<p>Google's <a href=\"https://developers.google.com/search/docs/fundamentals/creating-helpful-content\">people-first content guidance</a> is still the centre of the work. Its quality questions come down to effort, originality, skill and accuracy. A page should add something that is not already everywhere: first-hand experience, a specific local explanation, a useful comparison, or a clear answer to a question customers actually ask.</p><p>For example, a landscaping company should not publish a thin page that only repeats \"spring cleanup services in Kelowna.\" A stronger page explains what spring cleanup usually includes on local properties, what affects the scope, what a homeowner can check before requesting a quote, and what the company will need to know. That kind of specificity helps a reader make a decision, and it gives search systems a clearer page to understand.</p><p>Page titles and headings should describe the content honestly. They help Google understand the page, but they are not a secret ranking formula. Avoid mass-producing near-duplicate pages, changing dates without changing the content, or chasing a word count because someone said Google prefers one. Google explicitly warns against search-engine-first content made mainly to gain rankings.</p>"
+    },
+    {
+      "id": "local-and-service-details",
+      "title": "Local details still decide who gets chosen",
+      "body": "<p>For many Okanagan businesses, the deciding information is still local: service area, opening hours, seasonal availability, parking or access notes, response time and the exact services offered. Google's AI search guidance also points local businesses toward keeping Business Profile information current, because that information can support both Search and AI responses.</p><p>Your website should make the same facts easy to find without exaggerating them. If you serve West Kelowna, say so plainly. If emergency work is limited, say that too. If your work depends on weather, access, permits or seasonal conditions, explain the constraint in normal language. These details help the right customer self-select and reduce poor-fit enquiries.</p><p>My own <a href=\"/v2/work/local-search-magnet.html\">local search work</a> usually starts here, because a beautiful page cannot compensate for missing or contradictory business facts.</p>"
+    },
+    {
+      "id": "measurement",
+      "title": "Measure what you can without inventing AI lift",
+      "body": "<p>Measure AI search with the tools you can verify. Google says sites appearing in AI features such as AI Overviews and AI Mode are included in overall Search Console traffic, reported within the Web search type. That gives you a real place to look for impressions, clicks and page performance without inventing a separate AI metric.</p><p>You can also compare search traffic with enquiries, bookings, calls and time on site in analytics. Google's guidance says clicks from results with AI Overviews can be higher quality, which it describes as visitors being more likely to spend time on the site. Treat that as a reason to measure engagement and conversion, not as a promise that every business will see the same lift.</p><p>Be cautious about reports that claim a precise citation increase, a guaranteed AI ranking or a universal percentage improvement. Those are easy to sell and hard to prove responsibly. The better question is whether your best pages are being discovered, whether the right people are arriving, and whether they take a useful next step.</p>"
+    },
+    {
+      "id": "what-to-ignore",
+      "title": "What to ignore when vendors pitch AI search",
+      "body": "<p>The table below is a practical filter for common AI search pitches. The pattern is simple: keep the fundamentals, and do not accept the claim that Google has required a new file, schema or writing formula.</p><table><caption>Common AI search pitches and what to check first</caption><thead><tr><th>Pitch</th><th>What Google currently says</th><th>Better use of the budget</th></tr></thead><tbody><tr><td>Add a special AI schema</td><td>No special schema.org markup is required for generative AI search.</td><td>Use accurate existing structured data and make the visible page clearer.</td></tr><tr><td>Publish llms.txt</td><td>Google says it does not need new machine-readable files for inclusion.</td><td>Improve crawlability, internal links and people-first content.</td></tr><tr><td>Chunk every page into tiny pieces</td><td>There is no required chunk size or ideal page length.</td><td>Organize pages for readers with clear headings and sections.</td></tr><tr><td>Buy inauthentic mentions</td><td>Google's systems focus on helpful content, and spam policies still apply.</td><td>Earn real proof through projects, reviews and useful local content.</td></tr><tr><td>Rewrite everything for AI</td><td>AI systems can understand synonyms and general meaning.</td><td>Answer real customer questions in natural, specific language.</td></tr></tbody></table>"
+    },
+    {
+      "id": "next-step",
+      "title": "A practical next step for an Okanagan business",
+      "body": "<p>A useful next step is to choose one important service page and treat it as a test of clarity, not a trick. Check whether the page states the service, the area, the buyer's likely problem, the proof, the practical limits and the next step. Then confirm that Google can crawl it, that internal links point to it, and that Search Console can see its performance.</p><p>If the page is weak, strengthen it before buying an AI-specific package. If it is strong, use it as the model for the rest of the site. The pattern usually transfers: clear local facts, honest scope, visible proof and a next step the right customer can take.</p><p>If you want a second set of eyes on your website, <a href=\"/contact/\">contact me</a> and tell me which page or service matters most right now.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Do I need llms.txt to appear in Google AI Overviews?",
+      "No. Google says it does not need new machine-readable files, special AI text files or extra markup for a page to be eligible for its AI features. A separate llms.txt decision can be considered on its own merits, but it is not a Google requirement and is not a confirmed ranking shortcut."
+    ],
+    [
+      "Should my small business block GPTBot?",
+      "It depends on what you are trying to control. OpenAI says OAI-SearchBot is used for ChatGPT search features, while GPTBot is used for content that may train generative AI models. If you want your pages eligible for ChatGPT search, do not block OAI-SearchBot. Review GPTBot separately if model training is your concern."
+    ],
+    [
+      "Can I measure exactly how many customers came from AI Overviews?",
+      "Not cleanly with one universal metric. Google says traffic from AI features such as AI Overviews and AI Mode is included in Search Console's overall Web search reporting. Measure clicks, engagement, enquiries and conversions, but avoid inventing a precise citation count that your analytics cannot support."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Google AI features and your website",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features"
+    },
+    {
+      "name": "Google guidance on helpful, reliable, people-first content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+    },
+    {
+      "name": "OpenAI crawler documentation",
+      "url": "https://platform.openai.com/docs/bots"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Connects Google's own AI search documentation to practical decisions for Okanagan small businesses, including content facts, local details, internal navigation and measurement, while avoiding unsupported promises about AI citations.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm Google's AI features documentation has not added new technical requirements since the page was last updated.",
+      "Verify that Google still reports AI Overview and AI Mode traffic within Search Console's overall Web search data.",
+      "Recheck OpenAI's bot documentation for any changes to OAI-SearchBot, GPTBot or related crawler guidance.",
+      "Confirm all internal links still resolve and remain the best destination for each claim."
+    ],
+    "serpGap": "Current results are mostly general SEO advice or broad AI search commentary. This article gives a small business a practical way to apply Google's own AI search guidance to service pages, local details and measurement without treating AI search as a separate bag of tricks.",
+    "sourceUse": [
+      {
+        "url": "https://developers.google.com/search/docs/appearance/ai-features",
+        "claim": "Google says AI Overviews and AI Mode have no extra technical requirements beyond normal Search eligibility, and that usual SEO best practices still apply."
+      },
+      {
+        "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "claim": "Google's content guidance emphasizes people-first content, effort, originality, skill, accuracy and avoiding content made mainly to manipulate rankings."
+      },
+      {
+        "url": "https://platform.openai.com/docs/bots",
+        "claim": "OpenAI distinguishes OAI-SearchBot, used for ChatGPT search features, from GPTBot, which is used for content that may train generative AI models."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-07-15",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Local discovery",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "holiday-hours-website-checklist",
+    "useful-location-pages"
+  ],
+  "services": [],
+  "wordCount": 1654,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 14654,
+      "total_tokens": 23315,
+      "completion_tokens": 8661,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5459
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 5459
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 1,
+    "publicationApproved": false
+  }
+}

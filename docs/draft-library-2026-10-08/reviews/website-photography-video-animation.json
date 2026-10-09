@@ -1,0 +1,44 @@
+{
+  "issues": [
+    {
+      "path": "faqs.0.1",
+      "original": "Save autoplay for nothing, or at most for a muted, genuinely decorative loop you are willing to delete. ",
+      "replacement": "Save autoplay for nothing, or at most for a muted, genuinely decorative loop you are willing to delete.",
+      "reason": "Trailing whitespace before the closing quotation mark; harmless but sloppy in published copy."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "A decision framework for small business owners choosing between photography, video and animation, framed as which medium proves what a page needs a stranger to believe.",
+    "specificity": "Medium-by-medium guidance with concrete triggers, a comparison table, a worked intake example for an accommodation page, and named performance and accessibility requirements.",
+    "evidence": "Three linked primary sources: W3C easy accessibility checks, W3C accessible audio and video guidance, and web.dev Core Web Vitals. No invented client stories, statistics or A/B claims.",
+    "voice": "Conversational, answer-first, opinionated in a useful way, Canadian spelling, no padding phrases or banned words detected.",
+    "usefulAsset": "Yes. The proof-first framing plus the fill-in media worksheet give a busy owner something actionable rather than a generic media overview."
+  },
+  "slug": "website-photography-video-animation",
+  "applied": [
+    {
+      "path": "faqs.0.1",
+      "original": "Save autoplay for nothing, or at most for a muted, genuinely decorative loop you are willing to delete. ",
+      "replacement": "Save autoplay for nothing, or at most for a muted, genuinely decorative loop you are willing to delete.",
+      "reason": "Trailing whitespace before the closing quotation mark; harmless but sloppy in published copy."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1442,
+  "usage": {
+    "prompt_tokens": 9444,
+    "total_tokens": 10118,
+    "completion_tokens": 674,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 366
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 366
+    }
+  }
+}

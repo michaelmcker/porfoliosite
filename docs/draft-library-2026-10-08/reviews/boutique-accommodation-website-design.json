@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "To give boutique accommodation owners a practical framework for what their website needs to show, how to balance storytelling with booking action, and what content to prepare before designing.",
+    "specificity": "High. It covers homepage, room pages, availability handoff, desktop versus mobile priorities, photography and copy choices, includes a checklist worksheet, and offers a concrete room-page architecture sample.",
+    "evidence": "Uses appropriate external sources (Tourism Vernon for local context, W3C for accessibility) and general industry observation. No invented client data, fake percentages, unsupported legal claims, or contradictory instructions.",
+    "voice": "Strong match to Michael's voice. Conversational, opinionated but honest about tradeoffs, focused on practical results for busy owners, avoids corporate padding and design jargon.",
+    "usefulAsset": "Yes. It is a substantive, actionable guide that could help an owner brief a designer, evaluate a proposal, or plan their own content."
+  },
+  "slug": "boutique-accommodation-website-design",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1656,
+  "usage": {
+    "prompt_tokens": 10465,
+    "total_tokens": 16852,
+    "completion_tokens": 6387,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6150
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 6150
+    }
+  }
+}

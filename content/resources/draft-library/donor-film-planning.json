@@ -1,0 +1,134 @@
+{
+  "slug": "donor-film-planning",
+  "title": "What makes a useful donor film? Start with the decision you need someone to make",
+  "type": "guide",
+  "description": "A practical guide to planning a donor film around the decision you need viewers to make, with a concrete production brief, dignity and consent guidance, and accessibility basics.",
+  "summary": "A useful donor film starts with the decision you need someone to make, not with footage. Define the audience, campaign objective, core message, consent approach and deliverables before production. Then give the film a clear home on a campaign page, make it accessible with captions and a transcript, and measure the response honestly.",
+  "takeaways": [
+    "Start with the decision the donor film needs to support, then shape the story, format and ask around that decision.",
+    "A concrete production brief should define the audience, campaign objective, core message, consent and dignity plan, accessibility deliverables and success measure.",
+    "Give the film a clear home on a campaign page, make it accessible with captions and a transcript, and measure the response honestly."
+  ],
+  "sections": [
+    {
+      "id": "the-decision-comes-first",
+      "title": "The decision comes first",
+      "body": "<p>If you are planning a donor film as part of your wider <a href=\"/marketing-branding/\">marketing and branding work</a>, the first useful step is to define the decision the film needs to support. A beautiful film can still be vague if the brief only says that the organization needs a video. A useful film gives a specific person a clear reason to do a specific thing next.</p><p>Before you write a treatment or book a shoot day, decide what the film is for. Are you asking a new donor to make a first gift? Are you helping a board member feel confident enough to make an introduction? Are you showing a long-time supporter that their gift had a real result? Those are different jobs, and they need different films.</p>"
+    },
+    {
+      "id": "choose-the-film-for-the-campaign",
+      "title": "Choose the film for the campaign, not the other way around",
+      "body": "<p>Many organizations start with the idea that they need a video. A better starting point is the campaign. Once you know the audience, the message and the next step, the right kind of film becomes easier to choose.</p><table><caption>Match the film to the job</caption><thead><tr><th>Film type</th><th>Best for</th><th>Main risk</th></tr></thead><tbody><tr><td>Campaign film</td><td>Giving a campaign a clear emotional centre</td><td>Trying to say everything at once</td></tr><tr><td>Beneficiary story</td><td>Showing the human result of the work</td><td>Consent, dignity and accuracy problems if handled carelessly</td></tr><tr><td>Donor story</td><td>Helping other donors see themselves in the gift</td><td>Becoming a generic testimonial</td></tr><tr><td>Behind-the-scenes update</td><td>Keeping supporters close to the work</td><td>Feeling too informal for a major ask</td></tr><tr><td>Explainer</td><td>Making a complex programme easier to understand</td><td>Sounding like a brochure read aloud</td></tr></tbody></table><p>The St. James School donor film project is a useful reminder here. The work was not just about making a school look good on camera. It was about bringing a story of education, community and giving to life in a way that could support the school's wider marketing. That kind of clarity matters more than production gloss.</p>"
+    },
+    {
+      "id": "a-production-brief-that-works",
+      "title": "A production brief that works",
+      "body": "<p>A good brief keeps the project honest. It tells the filmmaker what matters, tells the organization what will be delivered and gives everyone a way to judge the finished piece without arguing about taste.</p><table><caption>A practical donor film brief</caption><thead><tr><th>Field</th><th>What to define</th></tr></thead><tbody><tr><td>Campaign objective</td><td>The campaign or appeal this film supports</td></tr><tr><td>Audience</td><td>The exact people the film needs to reach</td></tr><tr><td>Decision</td><td>The action, feeling or understanding the viewer should leave with</td></tr><tr><td>Core message</td><td>The one thing the film needs people to remember</td></tr><tr><td>Story source</td><td>The real person, programme, place or moment the film will follow</td></tr><tr><td>Deliverables</td><td>Main film, short social cut, stills, captions, transcript or other agreed pieces</td></tr><tr><td>Distribution</td><td>Where the film will live and how people will reach it</td></tr><tr><td>Consent and dignity</td><td>How participants will be approached, briefed and represented</td></tr><tr><td>Accessibility</td><td>Captions, transcript, description and player needs</td></tr><tr><td>Success measure</td><td>The practical result the team will watch for</td></tr></tbody></table><p>This is also the moment to decide whether the film needs one strong story or several short ones. A single story often carries more emotional weight. Several voices can be useful when the organization needs to show breadth, but they can also make the piece feel scattered.</p>"
+    },
+    {
+      "id": "tell-the-truth-and-protect-the-people-in-it",
+      "title": "Tell the truth and protect the people in it",
+      "body": "<p>A donor film can create trust very quickly, and it can damage trust just as quickly. If the film features a beneficiary, student, patient, family member or programme participant, the organization needs more than a signed release tucked into a folder. People should understand how the film will be used, where it may appear and what the interview will cover.</p><p>The film also needs to stay accurate. Avoid promising outcomes the organization cannot prove. Do not make a programme sound larger than it is, and do not turn a complicated reality into a neat three-minute story if that would mislead the viewer. If there are legal, ethical or privacy concerns, the right people inside the organization should review the final cut and the supporting copy.</p><p>Dignity matters in the edit as well. A person should not feel like a prop in someone else's appeal. If their words are strong enough to carry the story, let them carry it. If the film needs narration, make sure the narration supports the person's experience rather than speaking over it.</p>"
+    },
+    {
+      "id": "make-the-film-usable",
+      "title": "Make the film usable",
+      "body": "<p>Accessibility should be part of the plan from the beginning, not a fix at the end. The W3C guidance on <a href=\"https://www.w3.org/WAI/media/av/\">accessible audio and video</a> covers captions, transcripts, audio description, sign language and the media player itself. Those details affect who can understand and use the film.</p><p>Captions help people who are Deaf or hard of hearing, but they also help viewers watching in a quiet office, on a bus or with the sound off. A transcript gives people another way to read and revisit the story. Audio description can matter when important visual information would otherwise be lost. An accessible player matters too, because a beautiful film can still be frustrating if the controls are hard to use.</p><p>Plan for these pieces early. It is usually easier to write a clear script, capture clean audio and prepare a proper transcript during production than to repair everything after the edit is finished.</p>"
+    },
+    {
+      "id": "put-the-ask-somewhere-clear",
+      "title": "Put the ask somewhere clear",
+      "body": "<p>A donor film should not be left to fend for itself on social media. It needs a place where the story, the evidence and the next step sit together. That is often a campaign page on the organization's website, not just a video post.</p><p>The page does not need to be complicated. It needs a clear headline, the film, a short explanation of the campaign, the specific ask and an obvious way to respond. If the film moves someone, the next step should be easy to find. Good <a href=\"/web-design/\">website design</a> helps here because the film and the page need to work together rather than compete for attention.</p>"
+    },
+    {
+      "id": "measure-what-you-can",
+      "title": "Measure what you can, and be honest about the rest",
+      "body": "<p>It is reasonable to track views, completion rates, clicks to the campaign page and the response that follows. It is less reasonable to claim that a film alone produced a revenue result unless the campaign was set up to measure that cleanly. A donor film can work as part of a larger effort that includes email, events, personal follow-up and the website itself.</p><p>Set a few practical measures before launch. Decide whether you care most about reach, watch time, visits to the giving page, replies from key supporters or another signal. Then review the film honestly after the campaign. The goal is to learn what helped, not to force every project to prove more than it can.</p>"
+    },
+    {
+      "id": "know-what-to-ask-for",
+      "title": "Know what to ask for",
+      "body": "<p>If you are hiring help, ask for more than a showreel. Ask how the producer would shape the brief, how they handle consent and dignity, whether captions and transcripts are included and how the film will be adapted for the places you plan to use it. A strong donor film depends on judgment as much as camera work.</p><p>If you are doing the work inside your organization, start with the campaign decision and build from there. Write the brief, choose the story carefully, plan the accessible deliverables and give the film a clear home on your website. If you want to talk through that kind of project with me, you can <a href=\"/contact/\">book a free consultation</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "How long should a donor film be?",
+      "Long enough to make the decision clear, and short enough to keep attention. For many campaign films, that means a focused piece rather than a full documentary. A shorter social cut can help the film travel, but the main version should still have a clear beginning, middle and ask."
+    ],
+    [
+      "Do we need a professional production company?",
+      "Not always. A small organization can create a useful film with a clear brief, honest interviews, decent sound and simple editing. Professional help becomes more valuable when the story is sensitive, the campaign is important, the team is already stretched or the film needs to work across several channels."
+    ],
+    [
+      "Should the film live on YouTube, social media or our website?",
+      "Use the places where your supporters already are, but give the film a clear home on your website too. Social platforms are useful for discovery. A campaign page gives the organization more control over the message, the supporting evidence, the next step and the accessible version of the film."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "W3C accessible audio and video",
+      "url": "https://www.w3.org/WAI/media/av/"
+    },
+    {
+      "name": "Michael McKerracher marketing and branding",
+      "url": "https://michaelmck.site/marketing-branding/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "A decision-first guide to donor film planning that gives organizations a concrete production brief and treats dignity, consent and accessibility as core parts of the work.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm that the article does not imply fundraising uplift from the St. James School project",
+      "Confirm that no guaranteed conversion, SEO or AI-detector claims remain",
+      "Confirm that only the approved W3C and Michael McKerracher sources are used in the sources array"
+    ],
+    "serpGap": "The search results cover general nonprofit social media, fundraising plans and broad video advice. This article focuses on the donor film itself, including the decision it should support, a practical production brief and accessibility basics.",
+    "sourceUse": [
+      {
+        "url": "https://www.w3.org/WAI/media/av/",
+        "claim": "Accessibility for audio and video should be planned early, with attention to captions, transcripts, audio description, sign language and the media player."
+      },
+      {
+        "url": "https://michaelmck.site/marketing-branding/",
+        "claim": "Michael McKerracher provides websites, social media, video and brand development for organizations in Kelowna and the Okanagan."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2026-11-26",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Brand and content",
+  "primaryMoneyPage": "/marketing-branding/",
+  "related": [
+    "small-business-branding-deliverables",
+    "kelowna-branding-partners"
+  ],
+  "services": [],
+  "wordCount": 1450,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 9880,
+      "total_tokens": 19343,
+      "completion_tokens": 9463,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6621
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6621
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 1,
+    "publicationApproved": false
+  }
+}

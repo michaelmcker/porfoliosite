@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Give busy small business owners a practical, non-legal guide to basic website accessibility checks, anchored to the W3C's first-review checklist.",
+    "specificity": "Strong. Concrete checks for keyboard focus, contrast and 200% zoom, alt text decisions, form labels and error messages, captions and transcripts, and a six-row first-pass worksheet. No invented metrics or client stories.",
+    "evidence": "Three appropriate W3C sources (first checks, forms tutorial, audio/video guide). Internal links to the author's web design page and good-design article are natural and not self-congratulatory.",
+    "voice": "Calm, conversational, Canadian spelling, answer-first H2s. No banned phrases, no corporate padding, no smug contrasts. Recommendations are framed as recommendations.",
+    "usefulAsset": "Yes. The worksheet table and the short FAQ add real value beyond the headings and make the piece usable as a self-review tool."
+  },
+  "slug": "small-business-website-accessibility",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1478,
+  "usage": {
+    "prompt_tokens": 8766,
+    "total_tokens": 9191,
+    "completion_tokens": 425,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 185
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 185
+    }
+  }
+}

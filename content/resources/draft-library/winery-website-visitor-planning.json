@@ -1,0 +1,146 @@
+{
+  "slug": "winery-website-visitor-planning",
+  "title": "What a winery website needs before someone plans a visit",
+  "type": "guide",
+  "description": "A practical guide to what a winery website needs before someone plans a visit, from tastings and reservations to hours, groups, and getting there.",
+  "summary": "A winery website does not need to sell bottles online to do its real job. It needs to help someone decide whether to visit, what to expect, and how to book. That means clear tasting and reservation information, honest seasonal hours, practical details like food and transport, and a map that actually works. Those fundamentals are where I would focus before spending on a flashy design.",
+  "takeaways": [
+    "Before a visitor calls or emails, your website should answer their practical questions about tastings, food, groups, and getting there.",
+    "When someone is planning a wine day on their phone, a clear page structure is usually more useful than a beautiful homepage alone.",
+    "If you do not sell bottles online, say so plainly and focus the site on visit planning instead of pretending to be a shop."
+  ],
+  "sections": [
+    {
+      "id": "what-visitors-need",
+      "title": "What visitors actually need to know before they decide",
+      "body": "<p>When someone is planning a wine day in West Kelowna or anywhere else in the Okanagan, they are usually past the daydreaming stage. They want to know whether they can show up without a reservation, what a tasting costs, whether food is available, how big a group you can handle, and how to find you. Official regional pages like the <a href=\"https://www.tourismkelowna.com/explore/neighbouring-communities/west-kelowna/\">Tourism Kelowna West Kelowna visitor information</a> already present the area as a wine trail and outdoor destination. Your website should slot into that expectation by answering the practical questions quickly.</p>"
+    },
+    {
+      "id": "page-architecture-that-works",
+      "title": "The page architecture that works for wineries",
+      "body": "<p>Most wineries do not need a sprawling website. They need a small set of pages that each do a clear job. Here is the structure I usually recommend:</p><ul><li><strong>Home.</strong> A short, beautiful introduction that makes it clear you are a working winery and invites people to plan a visit.</li><li><strong>Visit or Plan Your Visit.</strong> This is the most important page. It should hold hours, directions, accessibility notes, group policies, and seasonal changes.</li><li><strong>Tastings and Reservations.</strong> If you take bookings, this page should make the process obvious.</li><li><strong>Wines.</strong> A simple list of current releases or what is available for tasting. Keep it current.</li><li><strong>Our Story.</strong> Background on the estate, the people, and the farming. Interesting, but secondary.</li><li><strong>Contact.</strong> Map, phone, email, and a simple form.</li></ul><p>If you want to see how this fits into a broader web presence, I would plan <a href=\"/web-design/wineries/\">a winery website</a> around this kind of visitor-focused architecture.</p>"
+    },
+    {
+      "id": "tastings-reservations-checklist",
+      "title": "Tastings, reservations and the visit-planning checklist",
+      "body": "<p>This is where many winery websites fall short. They look nice but leave the visitor guessing. Use this checklist to evaluate your own site or a proposal from a designer.</p><table><caption>Visitor-planning information every winery website should make easy to find</caption><thead><tr><th>Information</th><th>Why it matters</th><th>Where to put it</th></tr></thead><tbody><tr><td>Tasting hours and seasonal changes</td><td>Visitors plan their day around open times. Wrong hours mean a wasted drive.</td><td>Visit page, homepage banner, Google Business Profile</td></tr><tr><td>Reservation policy</td><td>Some visitors will not come if they are unsure whether walk-ins are welcome.</td><td>Tastings page and Visit page</td></tr><tr><td>Tasting fees and what is included</td><td>People want to know the cost before they arrive.</td><td>Tastings page</td></tr><tr><td>Food options</td><td>A quick note about snacks, picnics, or a restaurant changes how long people stay.</td><td>Visit page or Tastings page</td></tr><tr><td>Group size limits and private bookings</td><td>Large groups need to know your policy before they call.</td><td>Visit page</td></tr><tr><td>Accessibility</td><td>If you have limited parking, stairs, or other constraints, say so clearly.</td><td>Visit page</td></tr><tr><td>Transportation and parking</td><td>Help visitors understand whether they can arrive by bike, tour bus, or rideshare.</td><td>Visit page or Contact page</td></tr><tr><td>Map and directions</td><td>A working map pin is not optional.</td><td>Contact page and footer</td></tr></tbody></table>"
+    },
+    {
+      "id": "accessibility-and-group-policies",
+      "title": "Accessibility and group policies belong on the site, not in an email",
+      "body": "<p>Many wineries handle questions about large groups, tour buses, or wheelchair access through back-and-forth email. That creates friction for the visitor and extra work for your staff. If you have a policy, put it on the website. Be direct. If you cannot accommodate coaches, say so. If your tasting room has stairs and no lift, say so. Clear expectations are part of good hospitality.</p>"
+    },
+    {
+      "id": "online-shopping-tradeoff",
+      "title": "Do you need online shopping? The honest tradeoff",
+      "body": "<p>Some wineries need a full online shop. Many do not, or they do not need it to be the main goal of the website. Selling wine online means dealing with shipping rules, provincial compliance, wine club management, and inventory sync. If your real goal is to fill the tasting room, a complicated e-commerce setup can pull attention and budget away from the pages that actually get people through the door. Be honest about which goal matters most right now.</p>"
+    },
+    {
+      "id": "west-kelowna-context",
+      "title": "West Kelowna context: what official tourism already promises",
+      "body": "<p>If your winery is in West Kelowna, your visitors are often already sold on the region before they reach your site. The <a href=\"https://www.tourismkelowna.com/explore/neighbouring-communities/west-kelowna/\">official Tourism Kelowna page for West Kelowna</a> talks about the Westside Wine Trail, Bear Creek Provincial Park, Mount Boucherie, lakeside living, and syilx/Okanagan culture at the Sncewips Heritage Museum. That means your website does not need to convince someone that the Okanagan is worth visiting. It needs to help them choose your stop over the one down the road.</p>"
+    },
+    {
+      "id": "concrete-sample-page-architecture",
+      "title": "A concrete sample: what a solid winery site map looks like",
+      "body": "<p>Here is a specific, usable site architecture for a small to mid-sized Okanagan winery:</p><ul><li>Home<ul><li>Welcome and estate photo</li><li>Quick links: Plan Your Visit, Book a Tasting, Our Wines</li></ul></li><li>Plan Your Visit<ul><li>Hours and seasonal changes</li><li>Getting here: map, parking, transport options</li><li>Group visits and accessibility</li><li>Frequently asked questions</li></ul></li><li>Tastings and Reservations<ul><li>Current tasting menu and fees</li><li>Booking calendar or reservation form</li><li>Wine club information</li></ul></li><li>Our Wines<ul><li>Current releases</li><li>Where to buy</li></ul></li><li>Our Story<ul><li>Estate and vineyard background</li><li>People and farming approach</li></ul></li><li>Contact<ul><li>Map, phone, email</li><li>Simple enquiry form</li></ul></li></ul><p>This is not the only way to do it, but it gives a designer something real to work from. If you are comparing proposals, ask to see a page architecture like this before you commit.</p>"
+    },
+    {
+      "id": "keeping-hours-accurate",
+      "title": "Keeping hours, events and seasonal information accurate",
+      "body": "<p>A winery has seasonal hours, harvest closures, event days, and sometimes weather-related changes. If your website says you are open and the gate is locked, you have created a bad impression that is hard to undo. Google recommends using special hours for temporary closures or holiday schedules so your regular hours stay accurate. Your website should make it easy to update hours, and your Google Business Profile should stay in sync.</p>"
+    },
+    {
+      "id": "what-to-ask-for",
+      "title": "What to ask for when you hire someone",
+      "body": "<p>When you hire someone to build or rebuild your winery website, the conversation should start with visit planning, not colours and fonts. Ask these questions:</p><ul><li>Can you show me a page architecture before we start?</li><li>How will you handle seasonal hours, closures, and event updates?</li><li>Do you understand the difference between a site that fills a tasting room and a site that sells wine online?</li><li>Will the Visit page work well on a phone when someone is already in the car?</li><li>How will you make sure the site fits the expectations visitors already have from regional tourism pages?</li></ul><p>If you are also wondering what a site like this might cost, we have a separate guide on <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost</a>. And if you want a second opinion on a proposal, or if you are not sure whether your current site is doing its job, <a href=\"/contact/\">get in touch</a>. I am happy to look at it and tell you what I would change.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Can a small winery get away with a one-page website?",
+      "A one-page site can work for a very small operation, but it often becomes a long, hard-to-scan page on a phone. Most wineries are better served by a handful of short pages that separate visit planning, tastings, and story."
+    ],
+    [
+      "Should my winery website show every wine we make?",
+      "Not necessarily. Focus on current releases and what is actually available for tasting. A complete archive can overwhelm visitors and becomes hard to keep accurate. If collectors want older vintages, they can contact you."
+    ],
+    [
+      "How often should a winery update its website?",
+      "Update hours, closures, and events as soon as they change. Review your Visit and Tastings pages at least quarterly. The design itself does not need constant changes if the information is clear and the site loads quickly."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Tourism Kelowna West Kelowna visitor information",
+      "url": "https://www.tourismkelowna.com/explore/neighbouring-communities/west-kelowna/"
+    },
+    {
+      "name": "Google Business Profile special hours guidance",
+      "url": "https://support.google.com/business/answer/6303076?hl=en"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "This guide focuses on the practical visitor-planning decisions a winery website must support, rather than generic design trends or platform comparisons. It gives owners a concrete page architecture and a checklist they can use to evaluate any proposal.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm current Tourism Kelowna page content and any changed emphasis on West Kelowna attractions.",
+      "Verify that Google Business Profile special hours guidance is still current and accurately paraphrased."
+    ],
+    "serpGap": "Most ranking pages either sell a done-for-you website builder or list generic winery marketing tips. Few give an owner a clear, non-sales page architecture and visitor-information checklist they can use to evaluate any designer or platform.",
+    "sourceUse": [
+      {
+        "url": "https://www.tourismkelowna.com/explore/neighbouring-communities/west-kelowna/",
+        "claim": "West Kelowna is officially presented to visitors as a wine trail destination with outdoor recreation, cultural experiences, and lakeside activities."
+      },
+      {
+        "url": "https://support.google.com/business/answer/6303076?hl=en",
+        "claim": "Google recommends using special hours for temporary closures or holiday hours so regular hours stay accurate."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-03-18",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/wineries/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "wineries"
+  ],
+  "wordCount": 1298,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 11549,
+      "total_tokens": 19789,
+      "completion_tokens": 8240,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5354
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 5354
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 2,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "our <a href=\"/web-design/wineries/\">winery website design</a> work starts with exactly this kind of architecture.",
+      "replacement": "I would plan <a href=\"/web-design/wineries/\">a winery website</a> around this kind of visitor-focused architecture."
+    }
+  ]
+}

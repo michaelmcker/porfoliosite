@@ -1,0 +1,155 @@
+{
+  "slug": "financial-advisor-website-design",
+  "title": "A financial-advisor website should help the right client recognise the fit",
+  "type": "guide",
+  "description": "How to plan a financial-advisor website around client fit, compliance review, a clear meeting process and careful collection of personal information. Educational website advice only, not financial or legal advice.",
+  "summary": "A good financial-advisor website helps the right prospective client recognise fit before asking for a meeting. The design should state who you serve, explain qualifications carefully, show a clear meeting process and collect only the personal information needed. The useful first step is a clear map from client situation to the right kind of introductory conversation.",
+  "takeaways": [
+    "Start with client fit: who you serve, which life stage or account size you handle, and which prospects you want to decline politely.",
+    "Make the meeting process visible, but have your compliance or legal review approve final wording, testimonials, performance claims and disclosures.",
+    "Ask for the minimum personal information needed on the public website, then move sensitive detail into your firm's approved secure system."
+  ],
+  "sections": [
+    {
+      "id": "start-with-the-fit-not-the-decoration",
+      "title": "Start with the fit, not the decoration",
+      "body": "<p>A financial-advisor website works best when it helps the right prospective client recognise the fit quickly. Colours, animations and photography matter, but the first job is to answer a quiet question in the visitor's mind: is this firm for someone like me, and can I trust it enough to book a conversation?</p><p>When planning <a href=\"/web-design/financial-advisors/\">a financial-advisor website</a>, I would start with the client situation and the firm’s actual service model. I want the page to name the kind of client, the kind of decision they are facing and the kind of help the firm actually provides. A retirement-planning visitor, a business owner approaching a sale and a young family choosing insurance are not looking for the same signals.</p>"
+    },
+    {
+      "id": "test-the-fit-before-designing",
+      "title": "Test the fit before designing",
+      "body": "<p>Before choosing layout or copy, write down the client situations your firm is good at serving and the situations you do not want to attract. The point is not to be exclusionary. The point is to save everyone time and to reduce the chance that the website promises a relationship the firm cannot or should not provide.</p><h3>A quick fit rubric</h3><ul><li><strong>Life stage:</strong> Is the visitor newly investing, building a business, preparing to retire, managing an estate or already retired?</li><li><strong>Complexity:</strong> Do they need basic planning, a portfolio review, business planning, insurance coordination or a specialist referral?</li><li><strong>Service model:</strong> Do you work best through a one-time plan, ongoing advice, discretionary management or a defined review cycle?</li><li><strong>Geography and access:</strong> Are you expecting local Okanagan meetings, video meetings across Canada or a mix of both?</li><li><strong>Decline path:</strong> If the visitor is not a fit, can the site point them to a general education page, a directory or another appropriate resource?</li></ul>"
+    },
+    {
+      "id": "write-in-the-language-of-trust",
+      "title": "Write in the language of trust",
+      "body": "<p>Trust on an advisor website usually comes from clarity, not hype. Explain your qualifications, registration or designations in plain terms, describe who you work with and be careful with anything that sounds like a promise of returns. Educational content should teach without predicting what a particular reader's portfolio will do.</p><p>Because financial marketing can be regulated, the firm's own compliance process, legal adviser or responsible principal should review final page copy, examples, disclosures, testimonials and any performance language. Include that review in the project schedule before the pages are approved for launch.</p>"
+    },
+    {
+      "id": "show-the-meeting-process-clearly",
+      "title": "Show the meeting process clearly",
+      "body": "<p>A prospective client should be able to see what happens before, during and after the first conversation. If the website only says “book a consultation”, the visitor has to imagine the rest. A clearer page explains whether the first call is a short fit check, whether documents are needed in advance, whether there is a fee for a full plan and who the client will speak with.</p><p>This is also a good place for design restraint. A clear three or four step sequence is usually more useful than a dramatic presentation. The visitor needs to know what they are agreeing to, how long the process may take and what decisions remain theirs to make.</p>"
+    },
+    {
+      "id": "collect-only-what-the-site-needs",
+      "title": "Collect only what the site needs",
+      "body": "<p>A public website should not ask for a client's whole financial story. The <a href=\"https://www.oipc.bc.ca/guidance-documents/2286\">BC Office of the Information and Privacy Commissioner guidance on PIPA privacy policies</a> supports identifying the purpose, collecting the minimum necessary personal information, explaining consent and protecting the information with reasonable safeguards.</p><p>For an advisor site, that usually means the public enquiry form can ask for basic contact details, the general topic and preferred meeting method. Financial documents, account numbers, tax information and detailed personal history belong in the firm's approved client-intake or secure-document system, not in an ordinary website form.</p>"
+    },
+    {
+      "id": "make-the-enquiry-form-easy-to-use",
+      "title": "Make the enquiry form easy to use",
+      "body": "<p>Accessible forms help everyone, and they matter even more when the visitor is already making a careful decision. The <a href=\"https://www.w3.org/WAI/tutorials/forms/\">W3C accessible forms tutorial</a> recommends clear labels, logical grouping, useful instructions, visible error messages and support for people using keyboards or screen readers.</p><h3>Sample advisor enquiry fields</h3><ul><li>Name and preferred contact method</li><li>City or region, if relevant to the meeting</li><li>General topic, such as retirement planning, business sale planning or a portfolio review</li><li>Preferred first conversation format, such as a short phone call or video meeting</li><li>One open field for a brief, non-sensitive note</li></ul><p>Keep the note field clearly labelled so people know not to paste account statements or other sensitive material. A short message under the form can explain that the firm will use a secure process if detailed information is needed.</p>"
+    },
+    {
+      "id": "choose-the-provider-by-fit",
+      "title": "Choose the provider by fit",
+      "body": "<table><caption>Common website-provider choices for a financial advisor</caption><thead><tr><th scope=\"col\">Approach</th><th scope=\"col\">Usually best for</th><th scope=\"col\">Main thing to check</th></tr></thead><tbody><tr><td>DIY template</td><td>A simple new practice that needs a basic web presence</td><td>Whether compliance review, secure intake and future editing will become frustrating</td></tr><tr><td>General web agency</td><td>A firm that also needs wider brand or campaign work</td><td>Whether the agency understands regulated claims, privacy and the need for careful language</td></tr><tr><td>Advisor-specialist</td><td>A practice that wants industry patterns and advisor-specific pages</td><td>Whether the work is genuinely specific or mostly a repeated template</td></tr><tr><td>Independent designer and consultant</td><td>A firm that wants personal attention, thoughtful copy and a practical process</td><td>Whether the designer will involve your compliance reviewer before publication</td></tr></tbody></table><p>There is no single right choice. A simple template can be a sensible first step, while a larger firm may want a specialist or an independent designer who can coordinate with marketing, compliance and internal staff. If you are weighing the wider cost and tradeoffs, my <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost guide</a> looks at the same question from a budget and project-fit angle.</p>"
+    },
+    {
+      "id": "use-ai-for-education-not-prediction",
+      "title": "Use AI for education, not prediction",
+      "body": "<p>AI can help an advisor research, organise and draft educational material, but it should not be treated as a way to promise investment results. If the firm wants to use AI in its marketing or client-education work, my <a href=\"/ai-implementation/\">AI implementation</a> approach is to agree on the role first: drafting, summarising approved material, preparing questions or helping with internal training.</p><p>The useful version is practical. For example, an assistant could help turn an approved retirement-planning outline into several reading levels, then the advisor and compliance reviewer approve the final public page. The weak version is a pile of generic articles that do not reflect the firm's real advice, clients or review process.</p>"
+    },
+    {
+      "id": "plan-the-next-conversation",
+      "title": "Plan the next conversation",
+      "body": "<p>The most useful next step is to map one ideal client, one poor-fit client and one first-meeting path before buying design work. That gives any provider something real to work with and makes it easier to judge whether the proposed website is helping people recognise fit or simply decorating the firm.</p><p>If you would like a design conversation that starts with client fit, compliance review, privacy and the practical shape of the first meeting, I would be glad to talk through your situation on my <a href=\"/contact/\">contact page</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Does a financial-advisor website need a client portal?",
+      "Not always. A public website can explain the service and begin the conversation, while an existing client portal, secure document system or practice-management platform handles private information. The public site should make the handoff clear rather than pretend that a normal form is secure. It should also avoid copying sensitive material into email unless the firm has approved that process."
+    ],
+    [
+      "Should the website mention fees?",
+      "If fee clarity is part of your service model, it can be helpful to explain the structure in general, careful terms. The important thing is to avoid making a blanket statement before understanding the firm's actual pricing, regulatory position and exceptions. Let the advisor or compliance reviewer approve the final wording before publication."
+    ],
+    [
+      "Can a financial advisor use testimonials on a website?",
+      "Possibly, but this needs firm-specific compliance and legal review. Testimonials, endorsements and client stories can create regulatory or privacy concerns, especially if they imply results. Do not assume that a testimonial style used in another industry is appropriate for financial advice. If they are used, document the permission and keep the claims accurate and verifiable."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "BC Office of the Information and Privacy Commissioner: Developing a privacy policy under PIPA",
+      "url": "https://www.oipc.bc.ca/guidance-documents/2286"
+    },
+    {
+      "name": "W3C: Forms tutorial, Web Accessibility Initiative",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Frames financial-advisor website design as a client-fit decision, then connects it to careful language, visible meeting process, PIPA-style minimum collection and accessible forms without offering financial or legal advice.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm that none of the practical form or testimonial suggestions can be read as compliance, legal, tax or investment advice.",
+      "Recheck that no unsupported claims are made about Michael having built websites for specific financial-advisor clients.",
+      "Confirm the article does not imply that testimonials, performance examples or fee statements are universally acceptable without firm-specific review."
+    ],
+    "serpGap": "Competitor coverage emphasises standing out, conversion and agency selection, but gives less practical guidance on testing client fit, limiting personal-information collection, showing a meeting process and involving a compliance reviewer before publication.",
+    "sourceUse": [
+      {
+        "url": "https://www.oipc.bc.ca/guidance-documents/2286",
+        "claim": "Used for the recommendation to identify purposes, collect the minimum necessary personal information, explain consent and use reasonable safeguards."
+      },
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "Used for the accessible-form guidance around labels, grouping, instructions, validation and notifications."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-07-08",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/financial-advisors/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "financial-advisors"
+  ],
+  "wordCount": 1378,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 8737,
+      "total_tokens": 12047,
+      "completion_tokens": 3310,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 701
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 701
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "This article is educational website advice, not investment, tax or legal advice.",
+      "replacement": "The useful first step is a clear map from client situation to the right kind of introductory conversation."
+    },
+    {
+      "original": "For my own <a href=\"/web-design/financial-advisors/\">financial-advisor website design</a> work, that means I do not want to begin with a generic professional-services template and simply swap in a new logo.",
+      "replacement": "When planning <a href=\"/web-design/financial-advisors/\">a financial-advisor website</a>, I would start with the client situation and the firm’s actual service model."
+    },
+    {
+      "original": "My website advice is about structure, writing and design. It is not investment, tax or legal advice, and I would not want an owner to treat a web designer's opinion as permission to make a regulated claim.",
+      "replacement": "Include that review in the project schedule before the pages are approved for launch."
+    }
+  ]
+}

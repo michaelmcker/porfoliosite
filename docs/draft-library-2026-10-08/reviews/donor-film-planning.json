@@ -1,0 +1,44 @@
+{
+  "issues": [
+    {
+      "path": "sections.6.body",
+      "original": "Films usually work as part of a larger effort that includes email, events, personal follow-up and the website itself.",
+      "replacement": "A donor film can work as part of a larger effort that includes email, events, personal follow-up and the website itself.",
+      "reason": "Narrows an unsupported general claim about films into a more defensible statement about a donor film."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "A practical planning guide for a donor film, built around the campaign decision first and then the brief, ethics, accessibility, placement and measurement choices.",
+    "specificity": "Strong: it gives concrete film-type choices, a production-brief table, dignity and consent checks, accessibility tasks and page-placement advice without inventing metrics.",
+    "evidence": "Uses the W3C accessibility guidance accurately and refers to Michael's approved St. James School donor-film work without claiming a donor or enrolment uplift.",
+    "voice": "Direct, conversational and answer-first, with Canadian spelling and practical opinions rather than corporate padding.",
+    "usefulAsset": "A usable pre-production brief and checklist for a nonprofit that needs to plan, place, make accessible and honestly evaluate a donor film."
+  },
+  "slug": "donor-film-planning",
+  "applied": [
+    {
+      "path": "sections.6.body",
+      "original": "Films usually work as part of a larger effort that includes email, events, personal follow-up and the website itself.",
+      "replacement": "A donor film can work as part of a larger effort that includes email, events, personal follow-up and the website itself.",
+      "reason": "Narrows an unsupported general claim about films into a more defensible statement about a donor film."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1450,
+  "usage": {
+    "prompt_tokens": 6369,
+    "total_tokens": 10056,
+    "completion_tokens": 3687,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3425
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 3425
+    }
+  }
+}

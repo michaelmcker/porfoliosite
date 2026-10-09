@@ -1,0 +1,80 @@
+{
+  "issues": [
+    {
+      "path": "sections.5.body",
+      "original": "A public website form is a bad place to collect a detailed case history, and asking for it will also stop a lot of people from submitting.",
+      "replacement": "A public website form is a bad place to collect a detailed case history. It creates privacy risk and makes the form feel heavier than it needs to be.",
+      "reason": "The claim that asking for a detailed case history will stop a lot of people from submitting is an unsupported empirical assertion about user behavior. The replacement makes the privacy and design point without claiming a specific outcome."
+    },
+    {
+      "path": "sections.7.body",
+      "original": "A beautiful custom design costs more than a template, but a generic template makes an independent clinic look interchangeable, and interchangeability pushes patients toward whichever clinic answered the phone first.",
+      "replacement": "A beautiful custom design costs more than a template, but a generic template makes an independent clinic look interchangeable, which makes it harder to stand out from the clinic down the street.",
+      "reason": "The claim that interchangeability pushes patients toward whichever clinic answered the phone first is an unsupported causal assertion about patient behavior. The replacement keeps the differentiation point without inventing a specific behavioral effect."
+    },
+    {
+      "path": "sections.0.body",
+      "original": "Patients do not browse physiotherapy sites for pleasure. They arrive in pain, short on time, and often unsure physiotherapy is even the right kind of care for what they have.",
+      "replacement": "Most people arriving at a physiotherapy website are not browsing for pleasure. They are often in pain, short on time, and unsure whether physiotherapy is the right kind of care for what they have.",
+      "reason": "The original states a universal pattern about all patients. The replacement narrows it to a typical observation without asserting it as an absolute fact about every visitor."
+    },
+    {
+      "path": "sections.2.body",
+      "original": "The handoff to booking is where many clinic sites lose people.",
+      "replacement": "The handoff to booking is a common point where clinic websites create unnecessary friction.",
+      "reason": "The original claims that many clinic sites lose people at this step, which is an unsupported empirical observation. The replacement describes the friction without asserting a specific loss of visitors."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help small and independent physiotherapy clinics, especially in the Okanagan, plan a website that gets a worried new patient to a first appointment without overcollecting information or pretending to give clinical advice.",
+    "specificity": "Strong. It stays with one industry, gives concrete page patterns and a field-by-field intake example, and separates small independent clinics from busier practices instead of offering one generic template.",
+    "evidence": "Moderate. The piece leans on design judgment and privacy principles rather than invented metrics. It correctly avoids claiming conversion lifts or named client results it does not have.",
+    "voice": "Good. The article sounds like Michael: practical, local, a little opinionated, and focused on the one decision the page has to support. It explains tradeoffs without corporate padding.",
+    "usefulAsset": "Yes. This is a strong service-page and FAQ-style resource for physiotherapy clinics. With the unsupported behavior claims removed, it is close to ready for private review and later publication."
+  },
+  "slug": "physiotherapy-website-design",
+  "applied": [
+    {
+      "path": "sections.5.body",
+      "original": "A public website form is a bad place to collect a detailed case history, and asking for it will also stop a lot of people from submitting.",
+      "replacement": "A public website form is a bad place to collect a detailed case history. It creates privacy risk and makes the form feel heavier than it needs to be.",
+      "reason": "The claim that asking for a detailed case history will stop a lot of people from submitting is an unsupported empirical assertion about user behavior. The replacement makes the privacy and design point without claiming a specific outcome."
+    },
+    {
+      "path": "sections.7.body",
+      "original": "A beautiful custom design costs more than a template, but a generic template makes an independent clinic look interchangeable, and interchangeability pushes patients toward whichever clinic answered the phone first.",
+      "replacement": "A beautiful custom design costs more than a template, but a generic template makes an independent clinic look interchangeable, which makes it harder to stand out from the clinic down the street.",
+      "reason": "The claim that interchangeability pushes patients toward whichever clinic answered the phone first is an unsupported causal assertion about patient behavior. The replacement keeps the differentiation point without inventing a specific behavioral effect."
+    },
+    {
+      "path": "sections.0.body",
+      "original": "Patients do not browse physiotherapy sites for pleasure. They arrive in pain, short on time, and often unsure physiotherapy is even the right kind of care for what they have.",
+      "replacement": "Most people arriving at a physiotherapy website are not browsing for pleasure. They are often in pain, short on time, and unsure whether physiotherapy is the right kind of care for what they have.",
+      "reason": "The original states a universal pattern about all patients. The replacement narrows it to a typical observation without asserting it as an absolute fact about every visitor."
+    },
+    {
+      "path": "sections.2.body",
+      "original": "The handoff to booking is where many clinic sites lose people.",
+      "replacement": "The handoff to booking is a common point where clinic websites create unnecessary friction.",
+      "reason": "The original claims that many clinic sites lose people at this step, which is an unsupported empirical observation. The replacement describes the friction without asserting a specific loss of visitors."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1773,
+  "usage": {
+    "prompt_tokens": 7626,
+    "total_tokens": 14011,
+    "completion_tokens": 6385,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5644
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 5644
+    }
+  }
+}

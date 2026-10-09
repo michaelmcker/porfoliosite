@@ -1,0 +1,168 @@
+{
+  "slug": "professional-services-homepage-design",
+  "title": "What works on a professional-services homepage?",
+  "type": "guide",
+  "description": "A practical guide to professional-services homepage design. Learn what the opening screen should do, how to write calm authority into your positioning, when to show process and people, and what to avoid in law, accounting and advisory websites.",
+  "summary": "A professional-services homepage works when it states plainly what you do, who you help, and what happens next, using calm typography, real people, and a clear path to a conversation. It should sound like the practice itself: specific, measured, and trustworthy. Visitors should never have to decode your positioning or hunt for the first step.",
+  "takeaways": [
+    "Lead with the client's problem, not your firm's history.",
+    "Use specific positioning and real process, not abstract authority.",
+    "Make the first action obvious and low-friction."
+  ],
+  "sections": [
+    {
+      "id": "start-with-the-decision",
+      "title": "Start with the decision the page must help someone make",
+      "body": "<p>A professional-services homepage has one primary job. It should help the right visitor decide, quickly, whether your firm understands their problem and is worth contacting. I would make the client’s question the organising idea, then use the typography, imagery and motion to give that explanation an appropriate character.</p><p>For law, accounting, and advisory firms, the buyer is often cautious. They may be dealing with risk, cost, or a decision that has long-term consequences. Your homepage should reduce uncertainty rather than add noise. That means the page is not mainly about you. It is about helping someone recognize whether you are the right fit for the problem they are trying to solve.</p><p>If you are comparing approaches for a legal practice, our page on <a href=\"/web-design/law-firms/\">law firm website design</a> shows how we think about trust, structure, and intake.</p>"
+    },
+    {
+      "id": "opening-screen-five-second-test",
+      "title": "The opening screen should pass a five-second test",
+      "body": "<p>The top of the page should pass a simple test. Within five seconds, a visitor should understand what you do, who you help, and what action to take next. Treat this as a quick review exercise: ask someone unfamiliar with the firm what they understand from the opening screen, then use their answer to improve it.</p><p>A strong opening screen usually has three parts: a clear headline, a one-sentence subheadline, and one primary action. The headline should name the problem or desired result. The subheadline should identify the kind of client you are for. The action should be direct, such as booking a consultation or seeing how you work.</p><p>Rotating sliders and abstract brand statements usually make this harder. They delay the point and scatter attention. For many firms, the biggest improvement is simply making the opening more concrete. If the headline could belong to almost any consultancy, it is too broad.</p>"
+    },
+    {
+      "id": "three-homepage-openings-that-work",
+      "title": "Three homepage openings that work",
+      "body": "<p>Here are three sample opening structures to adapt to the firm’s actual services and review process. They are not trying to be everything to everyone.</p><h3>Law firm</h3><p><strong>Headline:</strong> Business disputes handled with clear strategy and steady counsel.</p><p><strong>Subheadline:</strong> For owners and managers in Kelowna and the Okanagan who need practical advice on contracts, employment issues, and shareholder conflict.</p><p><strong>Action:</strong> Request an introductory conversation.</p><h3>Accounting or advisory</h3><p><strong>Headline:</strong> Financial clarity for growing businesses.</p><p><strong>Subheadline:</strong> We help companies in the Okanagan understand cash flow, pricing, and planning so decisions are based on real numbers.</p><p><strong>Action:</strong> See how we work with growing firms.</p><h3>Niche consultant</h3><p><strong>Headline:</strong> Operational systems that remove everyday bottlenecks.</p><p><strong>Subheadline:</strong> For service businesses that have outgrown spreadsheets, scattered tools, and one-person workarounds.</p><p><strong>Action:</strong> Request a discovery call.</p>"
+    },
+    {
+      "id": "use-typography-and-restraint",
+      "title": "Use typography and restraint to signal authority",
+      "body": "<p>Professional-services websites often benefit from restraint. Calm authority is easier to read than visual drama. Typography should feel controlled, generous, and easy on the eye. A page with thoughtful spacing, clear hierarchy, and a limited type system usually communicates more confidence than a page packed with effects.</p><p>That does not mean the site should be plain. It means every design choice should support understanding. Motion, colour, and imagery can help, but they should not compete with the message. In most cases, the best professional-services homepage feels composed rather than decorated.</p><p>If you want a broader look at how design choices shape trust, see our article on <a href=\"/blog/good-small-business-website-design/\">what good small-business website design actually looks like</a>.</p>"
+    },
+    {
+      "id": "show-people-and-process",
+      "title": "Show the people and the process, not just the promise",
+      "body": "<p>Buyers want to know who they will be working with and what the experience will feel like. That is why real photography, grounded bios, and a clear explanation of process matter. They reduce the distance between the visitor and the firm.</p><p>A bio does not need to be long. It should sound like the person, show relevant experience, and connect to the kind of work being offered. A process section should explain the first few steps in plain language, such as discovery, review, recommendations, and ongoing support. People are more likely to act when they can picture the next conversation.</p>"
+    },
+    {
+      "id": "keep-proof-honest",
+      "title": "Keep proof honest in regulated professions",
+      "body": "<p>In regulated fields, especially law, the homepage has to stay honest about what it claims. The Law Society of BC's August 2025 <a href=\"https://www.lawsociety.bc.ca/getContentAsset/8e87c35e-0a11-4dab-8185-4d4cb02d3bed/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/Ethics_Advisory_-_Marketing_activities?language=en-CA\">ethics advisory on marketing activities</a> says that lawyer marketing must not be false, inaccurate, unverifiable, or reasonably capable of misleading the recipient. That is a useful standard beyond law, too.</p><p>In practice, that means avoiding inflated language, uncheckable superlatives, and labels that imply official status you do not actually hold. Have the practice review any proposed testimonial or example. The BC advisory treats subjective praise as a problem; a review being public elsewhere does not automatically make it suitable for the firm’s marketing. For many firms, the strongest proof is not dramatic praise. It is clear evidence that you understand the work and communicate well.</p>"
+    },
+    {
+      "id": "build-for-everyone",
+      "title": "Build the page so anyone can use it",
+      "body": "<p>A professional-services homepage should be readable by as many people as possible. Accessibility is partly about formal standards, but it is also about basic clarity. The W3C's <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">first checks for web accessibility</a> are a useful reminder that headings, contrast, image text, and keyboard navigation all affect whether people can use a page at all.</p><p>If your text is too light, your headings are disorganized, or important actions are hard to reach, some visitors will struggle. That harms trust and conversion together. A clear page for everyone is usually a clearer page for your best prospects, too.</p>"
+    },
+    {
+      "id": "homepage-review-checklist",
+      "title": "A short homepage review checklist",
+      "body": "<p>Before revising a homepage, it helps to review the elements that shape first impressions. The table below shows the difference between choices that build confidence and choices that quietly erode it.</p><table><caption>Homepage choices that build trust versus choices that dilute it</caption><thead><tr><th>Homepage element</th><th>What usually works</th><th>What weakens trust</th></tr></thead><tbody><tr><td>Opening headline</td><td>A specific statement of the problem, audience, or outcome</td><td>Vague slogans and broad claims of excellence</td></tr><tr><td>Subheadline</td><td>One sentence that explains who the firm is for</td><td>Stacks of adjectives without useful meaning</td></tr><tr><td>Primary action</td><td>One clear next step, such as a consultation or process overview</td><td>Several competing buttons with different promises</td></tr><tr><td>Imagery</td><td>Real people and a calm, professional setting</td><td>Generic stock photos and cluttered hero areas</td></tr><tr><td>Typography</td><td>Readable type with controlled hierarchy and spacing</td><td>Thin fonts, low contrast, and too many styles at once</td></tr><tr><td>Proof</td><td>Specific experience, process, and checkable claims</td><td>Unverifiable superlatives and implied status you do not hold</td></tr><tr><td>Page structure</td><td>Clear sections with headings that answer the visitor's likely questions</td><td>Long blocks of text and an order that feels random</td></tr></tbody></table><p>If several items in the right-hand column sound familiar, the fix is usually not a total redesign. It is clearer positioning, stronger hierarchy, and more honest proof. If you want help deciding what belongs on your homepage and what should come out, <a href=\"/contact/\">get in touch</a> and we can look at the page together.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "What should the first call to action be on a professional-services homepage?",
+      "One clear next step, such as booking a consultation or seeing your process. Give the main action a clear visual priority and use secondary links only when they help a different, necessary task."
+    ],
+    [
+      "Should a professional-services homepage lead with awards, testimonials, or client fit?",
+      "Client fit should come first. Verified professional information can support that fit. Any testimonial or award claim needs to be appropriate to the profession and reviewed before use."
+    ],
+    [
+      "How much text belongs above the fold on a professional-services homepage?",
+      "A concise headline, a short subheadline, and one action. If you need three paragraphs to make the point, the page is asking too much too early."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "W3C accessibility first checks",
+      "url": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+    },
+    {
+      "name": "Law Society of BC marketing ethics advisory, August 2025",
+      "url": "https://www.lawsociety.bc.ca/getContentAsset/8e87c35e-0a11-4dab-8185-4d4cb02d3bed/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/Ethics_Advisory_-_Marketing_activities?language=en-CA"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "This article gives owners concrete homepage-opening examples, a practical trust comparison table, and advice grounded in the actual buying decision professional-services clients make, rather than a generic design showcase.",
+    "claimsToRecheckBeforeRelease": [
+      "Verify the Law Society of BC advisory URL and publication date before release",
+      "Confirm the W3C accessibility page URL is current",
+      "Check final word count against the target range"
+    ],
+    "serpGap": "Competitor coverage is mostly a portfolio list. It does not provide specific homepage-opening examples, typography advice for calm authority, or guidance on regulated-profession marketing constraints.",
+    "sourceUse": [
+      {
+        "url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+        "claim": "Headings, contrast, image text, and keyboard navigation affect whether people can use a page."
+      },
+      {
+        "url": "https://www.lawsociety.bc.ca/getContentAsset/8e87c35e-0a11-4dab-8185-4d4cb02d3bed/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/Ethics_Advisory_-_Marketing_activities?language=en-CA",
+        "claim": "Lawyer marketing must be accurate, verifiable, and not misleading."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-10-28",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Design",
+  "primaryMoneyPage": "/web-design/law-firms/",
+  "related": [
+    "good-small-business-website-design",
+    "website-photography-video-animation"
+  ],
+  "services": [
+    "law-firms"
+  ],
+  "wordCount": 1314,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 15131,
+      "total_tokens": 23244,
+      "completion_tokens": 8113,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5253
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 5253
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "provider": "Main editor",
+    "appliedEdits": 0,
+    "publicationApproved": false,
+    "note": "Echo editorial response was malformed. Main editor read the full article against the saved Law Society and W3C sources; specific claim and example corrections are recorded in mainEditorEdits."
+  },
+  "mainEditorEdits": [
+    {
+      "original": "That decision rarely happens because of animation, awards, or clever slogans. It happens when the page feels specific, calm, and clearly organized around the visitor's concern.",
+      "replacement": "I would make the client’s question the organising idea, then use the typography, imagery and motion to give that explanation an appropriate character."
+    },
+    {
+      "original": "If they have to scroll, guess, or decode vague language, you have already lost some of them.",
+      "replacement": "Treat this as a quick review exercise: ask someone unfamiliar with the firm what they understand from the opening screen, then use their answer to improve it."
+    },
+    {
+      "original": "Book a confidential consultation.",
+      "replacement": "Request an introductory conversation."
+    },
+    {
+      "original": "Here are three examples of opening structures that work because they are specific and calm.",
+      "replacement": "Here are three sample opening structures to adapt to the firm’s actual services and review process."
+    },
+    {
+      "original": "If you use testimonials or examples, they should be truthful and verifiable.",
+      "replacement": "Have the practice review any proposed testimonial or example. The BC advisory treats subjective praise as a problem; a review being public elsewhere does not automatically make it suitable for the firm’s marketing."
+    },
+    {
+      "original": "If the page offers five competing buttons, visitors often choose none of them.",
+      "replacement": "Give the main action a clear visual priority and use secondary links only when they help a different, necessary task."
+    },
+    {
+      "original": "Awards and testimonials can help, but the visitor needs to know whether the firm understands their situation before they care about decorations.",
+      "replacement": "Verified professional information can support that fit. Any testimonial or award claim needs to be appropriate to the profession and reviewed before use."
+    }
+  ]
+}

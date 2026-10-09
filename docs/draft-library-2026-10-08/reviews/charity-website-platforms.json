@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "The article intends to help charities choose between WordPress, Webflow and a custom or headless CMS based on who will edit the site and what integrations it needs.",
+    "specificity": "High. It distinguishes many-editor environments from small design-led teams and operationally serious websites, and it gives a concrete example architecture without inventing client results.",
+    "evidence": "Good. The article points to its charity overview, official WordPress features, Webflow's CMS page, Sanity's headless CMS explanation and BC OIPC PIPA guidance. I found no unsupported statistics, fabricated case results or fake tested claims.",
+    "voice": "Strong. The copy sounds like Michael's practical, opinionated, connected sentences and speaks to busy owners without corporate padding.",
+    "usefulAsset": "Yes. This is a useful comparison article with clear decision criteria and enough specificity to help a charity narrow the shortlist before asking for help."
+  },
+  "slug": "charity-website-platforms",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1619,
+  "usage": {
+    "prompt_tokens": 14695,
+    "total_tokens": 15046,
+    "completion_tokens": 351,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 118
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 118
+    }
+  }
+}

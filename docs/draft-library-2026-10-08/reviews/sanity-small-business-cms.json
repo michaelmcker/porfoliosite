@@ -1,0 +1,68 @@
+{
+  "issues": [
+    {
+      "path": "takeaways.1",
+      "original": "The main business advantage of Sanity is structured content that can be reused across pages, channels and systems.",
+      "replacement": "A key business advantage of Sanity is structured content that can be reused across pages, channels and systems.",
+      "reason": "Avoids claiming a single main advantage when the article gives several related benefits."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "The tradeoff is that a headless setup usually takes more planning and more developer involvement than a basic all-in-one website builder.",
+      "replacement": "The tradeoff is that a headless setup can take more planning and more developer involvement than a basic all-in-one website builder.",
+      "reason": "Narrows a broad comparative claim so it does not overstate every case."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "A website can pull from the same content source as a mobile app, a kiosk, an email system or an AI tool.",
+      "replacement": "A website can pull from the same content source as a mobile app, a kiosk, an email system or an AI agent.",
+      "reason": "Matches the source's framing more closely and avoids a vague claim about AI tools."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Explain Sanity in business-owner terms without overselling it.",
+    "specificity": "High: separates CMS, Studio, Content Lake, frontend and hosting, with a concrete intake-field example.",
+    "evidence": "Adequate: claims are mostly definitional and tied to Sanity documentation; comparative advice is framed as tradeoffs.",
+    "voice": "Close to Michael's plain, answer-first style, with Canadian spelling and practical recommendations.",
+    "usefulAsset": "Yes, especially for owners comparing a simple site build with a structured-content/headless approach."
+  },
+  "slug": "sanity-small-business-cms",
+  "applied": [
+    {
+      "path": "takeaways.1",
+      "original": "The main business advantage of Sanity is structured content that can be reused across pages, channels and systems.",
+      "replacement": "A key business advantage of Sanity is structured content that can be reused across pages, channels and systems.",
+      "reason": "Avoids claiming a single main advantage when the article gives several related benefits."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "The tradeoff is that a headless setup usually takes more planning and more developer involvement than a basic all-in-one website builder.",
+      "replacement": "The tradeoff is that a headless setup can take more planning and more developer involvement than a basic all-in-one website builder.",
+      "reason": "Narrows a broad comparative claim so it does not overstate every case."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "A website can pull from the same content source as a mobile app, a kiosk, an email system or an AI tool.",
+      "replacement": "A website can pull from the same content source as a mobile app, a kiosk, an email system or an AI agent.",
+      "reason": "Matches the source's framing more closely and avoids a vague claim about AI tools."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1242,
+  "usage": {
+    "prompt_tokens": 11115,
+    "total_tokens": 14385,
+    "completion_tokens": 3270,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2899
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 2899
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "issues": [
+    {
+      "path": "sections.5.body",
+      "original": "In the Okanagan, those details can matter even more because patients may be thinking about winter driving, limited parking near some commercial areas, or whether the practice is convenient from Kelowna, West Kelowna, Vernon, Lake Country or nearby communities.",
+      "replacement": "In the Okanagan, those details can matter because patients may be thinking about winter driving, limited parking near some commercial areas, or whether the practice is convenient from Kelowna, West Kelowna, Vernon, Lake Country or nearby communities.",
+      "reason": "The phrase 'even more' introduces an unsupported comparative claim. Removing it keeps the regional point without implying an unproven contrast with other markets."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "To give dental practices a clear, reassuring framework for designing websites that serve both anxious new patients and efficient returning patients.",
+    "specificity": "High. The article names specific pages such as treatment, clinician, location and fee sections, gives a concrete crown-cost example, and references real W3C and BC OIPC guidance.",
+    "evidence": "Adequate. Most claims are practical and advisory, sources are correctly attributed, and the one comparative phrase needing narrowing is minor.",
+    "voice": "Close to Michael's target register: conversational, practical, Canadian in spelling, and focused on what a busy owner can actually use.",
+    "usefulAsset": "Yes. This is a strong, self-contained guide that gives dental practice owners actionable page-by-page priorities without invented statistics, client stories or overclaiming."
+  },
+  "slug": "dental-website-design",
+  "applied": [
+    {
+      "path": "sections.5.body",
+      "original": "In the Okanagan, those details can matter even more because patients may be thinking about winter driving, limited parking near some commercial areas, or whether the practice is convenient from Kelowna, West Kelowna, Vernon, Lake Country or nearby communities.",
+      "replacement": "In the Okanagan, those details can matter because patients may be thinking about winter driving, limited parking near some commercial areas, or whether the practice is convenient from Kelowna, West Kelowna, Vernon, Lake Country or nearby communities.",
+      "reason": "The phrase 'even more' introduces an unsupported comparative claim. Removing it keeps the regional point without implying an unproven contrast with other markets."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1709,
+  "usage": {
+    "prompt_tokens": 7521,
+    "total_tokens": 15144,
+    "completion_tokens": 7623,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7255
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 7255
+    }
+  }
+}

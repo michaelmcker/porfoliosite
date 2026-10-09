@@ -1,0 +1,134 @@
+{
+  "slug": "ai-service-business-website",
+  "title": "AI on a service-business website: start with useful work",
+  "type": "guide",
+  "description": "A practical guide to putting AI on a service-business website: what to automate first, how assistants and agents differ, where human handoff belongs, and how to choose a setup that saves time without overpromising.",
+  "summary": "AI on a service website works best when it handles one clear job: routing enquiries, drafting replies from approved knowledge, summarising requests for staff, or moving follow-ups along. The useful distinction is between an assistant that helps your team, an adviser that answers from approved content, and an agent that takes defined action. Start with one measurable workflow, keep people in control of exceptions, and choose tools that fit the way you already work.",
+  "takeaways": [
+    "Start with one narrow workflow that affects revenue or staff time, such as enquiry intake or missed-call follow-up.",
+    "Know the difference between an assistant that helps staff, an adviser that answers from approved content, and an agent that takes defined action.",
+    "Set permissions, exceptions and human handoff rules before deployment, especially in health, legal or financial services."
+  ],
+  "sections": [
+    {
+      "id": "what-ai-does-on-a-service-website",
+      "title": "What AI actually does on a service website",
+      "body": "<p>AI on a service website is most useful when it reduces the repetitive work between a customer asking for something and your team doing the right next thing. That usually means drafting a reply, routing an enquiry to the right person, summarising a request, or reminding someone to follow up. It is different from AI visibility in search. <a href=\"https://developers.google.com/search/docs/appearance/ai-features\">Google's current guidance</a> is that the usual SEO fundamentals still apply there, and that ordinary indexable, snippet-eligible content is what matters.</p><p>The important design choice is how much authority the system gets. An assistant can help staff write and organise. An adviser can answer from approved business knowledge. An agent can complete a defined task, such as collecting intake details, when you have set clear handoff rules. Those are very different from letting AI make independent commitments about price, availability, eligibility or professional advice.</p><p>For a busy owner, the practical question is simpler. Where does work pile up? Which enquiries get missed? Which questions does the team answer over and over? Good AI work starts from those operational problems, not from the idea that every website needs a chat window in the corner.</p>"
+    },
+    {
+      "id": "choose-one-workflow",
+      "title": "Choose one workflow before you buy anything",
+      "body": "<p>The best first AI project is usually not a general chatbot on every page. It is one repeatable workflow that is currently creating friction: enquiry intake, missed calls, message follow-up, appointment requests, quote reminders or internal task routing. Pick the one that has a clear cost in lost bookings, slow replies or staff time.</p><p>For example, suppose a service business gets website enquiries by form, email and phone. The useful question is not which AI tool is most impressive. It is which part of that path is unreliable. If people submit forms and wait too long, an intake assistant may help. If calls are missed after hours, a call summary and handoff process may be more useful. If staff already answer well but forget the next step, workflow routing may be the right place to start.</p><p>A narrow first project is easier to measure and easier to review. Your team can see whether replies are faster, whether fewer enquiries go missing, and whether the handoff rules make sense. That is a much stronger foundation than a broad tool that tries to do everything before anyone has agreed what good work looks like.</p><p>If you are weighing options, my <a href=\"/ai-implementation/\">AI implementation</a> work starts by finding the one workflow worth improving, and I have also written about <a href=\"/blog/before-buying-ai-workflow/\">what to check before buying an AI workflow</a>.</p>"
+    },
+    {
+      "id": "assistant-adviser-or-agent",
+      "title": "Assistant, adviser or agent?",
+      "body": "<p>These labels matter because they set expectations about control. An assistant helps a person do work. An adviser gives answers from material you have approved. An agent takes action inside a defined process. Confusing them is how businesses end up with a website widget that overpromises and a team that does not trust it.</p><table><caption>A practical way to compare website AI roles</caption><thead><tr><th>Role</th><th>What it does</th><th>Who stays in control</th><th>Best first use</th></tr></thead><tbody><tr><td>Assistant</td><td>Helps staff draft replies, summarise notes and organise work</td><td>Your team writes and sends the final response</td><td>Enquiry replies and internal summaries</td></tr><tr><td>Adviser</td><td>Answers common questions from approved business content</td><td>Your business approves the source material and handoff rules</td><td>Service, hours, process and policy questions</td></tr><tr><td>Agent</td><td>Completes a defined task, then escalates exceptions</td><td>You define what it may collect, route or schedule</td><td>Intake, lead qualification and follow-up routing</td></tr><tr><td>Autonomous commitments</td><td>Makes independent promises about price, timing, eligibility or advice</td><td>High risk unless very tightly designed and professionally reviewed</td><td>Usually not the right starting point</td></tr></tbody></table><p>The right starting point depends on where your risk sits. If the main problem is staff time, an assistant may be enough. If customers need consistent answers to approved questions, an adviser can help. If enquiries need to be collected, qualified and routed, an agent may be useful. The further the system moves toward independent commitments, the more carefully it needs to be designed.</p>"
+    },
+    {
+      "id": "a-concrete-intake-example",
+      "title": "A concrete sample: enquiry intake and follow-up",
+      "body": "<p>For example, a sensible service-business intake workflow might look like this. It is not a client case study. It is the kind of structure an owner can review with their team before buying software.</p><table><caption>Sample enquiry intake fields and handoff rules</caption><thead><tr><th>Step</th><th>What the system collects or does</th><th>When a person takes over</th></tr></thead><tbody><tr><td>First contact</td><td>Name, contact method, service requested and preferred timing</td><td>If the request is urgent, sensitive or outside approved services</td></tr><tr><td>Qualification</td><td>Two or three details the business needs before quoting or booking</td><td>If answers are unclear, conflicting or need professional judgment</td></tr><tr><td>Next action</td><td>Draft a reply, route the enquiry and add a follow-up task</td><td>If the customer asks for a price exception, custom scope or advice</td></tr><tr><td>Record</td><td>Save the enquiry summary and outcome for review</td><td>If anything falls outside the approved workflow</td></tr></tbody></table><p>The point is not that every field must be automated. The point is that the system has a clear job, collects only what is needed, and hands off before it starts guessing. A form, calendar, inbox or customer record can all be part of the workflow, but the first version should stay small enough for the team to understand and correct.</p>"
+    },
+    {
+      "id": "what-ai-should-not-do",
+      "title": "What AI should not do on your website",
+      "body": "<p>AI should have boundaries, especially for clinics, law firms, financial services, therapists and other high-trust businesses. It can help with administration, intake, routing, reminders, summaries and follow-up. It should not diagnose, provide therapy advice, give legal advice, recommend investments, approve exceptions or handle an emergency as though it were a professional.</p><p>Marketing content also needs to stay accurate, verifiable and not misleading. If your business is regulated, the people responsible for that compliance should review the final wording and handoff rules. Testimonials, claims and statements about results all need the same care they would need anywhere else on your website. A useful system knows when to say that a person needs to take over.</p>"
+    },
+    {
+      "id": "permissions-exceptions-and-logs",
+      "title": "Set permissions, exceptions and logs",
+      "body": "<p>Before deployment, decide what the AI may say, what it may collect, what it may schedule and when it must stop. Start with approved answers about services, hours, process, policies and follow-up. Add business rules for urgent requests, sensitive topics and unclear questions. Then test realistic scenarios, including frustrated customers, after-hours enquiries and incomplete information.</p><p>Keep an audit trail. Your team should be able to see what the customer asked, what the system answered, which handoff happened and what the final outcome was. That makes the system easier to trust and easier to improve. If the work connects to your website, forms, calendar, email or customer records, those connections should be agreed before the build starts.</p><p>Training matters too. Staff need to know what the system is for, when to use it, when to ignore it and how to correct it. Otherwise even a well-built workflow becomes another piece of software that everyone works around.</p><p>The website itself still matters. If the pages are slow, unclear or hard to act on, AI will not fix the underlying experience. Good <a href=\"/web-design/\">web design</a> and useful AI support each other, but they are not the same purchase.</p>"
+    },
+    {
+      "id": "a-practical-place-to-start",
+      "title": "A practical place to start",
+      "body": "<p>If you are considering AI for a service business, start with a clear plan rather than a collection of tools. I offer a free initial consultation to understand the problem. From there, a one-time AI audit and recommendations engagement is CAD $900. It includes up to five hours on site over two to three weeks, followed by a detailed, actionable report with priorities, off-the-shelf options and recommendations for custom work. You can implement that independently if you prefer.</p><p>For businesses ready to build, custom AI systems start from CAD $2,500 per month. That covers the agreed design, build, deployment and ongoing maintenance of skills, workflows and agents, with training and documentation included. Scope, support and software costs are agreed up front.</p><p>I am based in Coldstream and work with service businesses in Vernon, Lake Country, Kelowna, West Kelowna and across the Okanagan. If you want to talk through where AI could genuinely save time in your business, <a href=\"/contact/\">book a free consultation</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should I put an AI chatbot on every page of my website?",
+      "Usually no. A chatbot is one possible interface, but the better starting point is a specific workflow such as intake, missed-call follow-up or appointment routing. When AI is added everywhere without a clear job, it can confuse visitors, overpromise and create extra work for staff."
+    ],
+    [
+      "Can AI answer questions using the content already on my website?",
+      "Yes, if it is set up as an adviser with access to approved content and clear handoff rules. It should not invent answers, guess at policies or present unreviewed material as fact. The business still needs to decide which questions are safe for AI and which need a person."
+    ],
+    [
+      "How do I know whether an AI workflow is worth the cost?",
+      "Choose a measurable goal before building, such as faster first replies, fewer missed enquiries, less time spent on intake or more consistent follow-up. Then review the logs and outcomes with your team. If the goal cannot be observed, narrow the scope before spending more."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Michael McKerracher AI implementation",
+      "url": "https://michaelmck.site/ai-implementation/"
+    },
+    {
+      "name": "Google AI features and your website",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "This guide is written for a service-business owner making a practical buying decision. It separates useful AI work from generic chatbot enthusiasm by focusing on one measurable workflow, the difference between assistants, advisers and agents, and the permissions and handoff rules that keep people in control.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm the CAD $900 audit scope and inclusions still match the live AI implementation page.",
+      "Confirm the CAD $2,500 per month custom systems starting point still matches the live AI implementation page.",
+      "Review Google's AI features guidance for any change to the search-visibility note."
+    ],
+    "serpGap": "Search results for AI automation and service websites often push broad agency services or customer-service software. This article gives owners a practical way to choose one first workflow, compare assistant, adviser and agent roles, and set human handoff rules before buying.",
+    "sourceUse": [
+      {
+        "url": "https://michaelmck.site/ai-implementation/",
+        "claim": "Michael's AI service starts with workflow selection, offers a free consultation and CAD $900 audit, and prices custom systems from CAD $2,500 per month."
+      },
+      {
+        "url": "https://developers.google.com/search/docs/appearance/ai-features",
+        "claim": "Google says AI search features continue to rely on ordinary SEO fundamentals, indexable pages and snippet-eligible content."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-06-03",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "AI and operations",
+  "primaryMoneyPage": "/ai-implementation/",
+  "related": [
+    "before-buying-ai-workflow",
+    "ai-skills-versus-prompts"
+  ],
+  "services": [],
+  "wordCount": 1604,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 21355,
+      "total_tokens": 24965,
+      "completion_tokens": 3610,
+      "prompt_tokens_details": {
+        "cached_tokens": 9277
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 566
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 566
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 1,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

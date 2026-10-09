@@ -1,0 +1,44 @@
+{
+  "issues": [
+    {
+      "path": "sections.1.body",
+      "original": "Every extra field costs you completions, and a long form is the classic way to look thorough while quietly losing leads.",
+      "replacement": "Long forms often lose completions, and an unnecessarily long form is the classic way to look thorough while quietly losing leads.",
+      "reason": "Replaces an unsupported universal empirical claim with measured language; the W3C source supports abandonment from irrelevant or excessive fields but not an absolute cost-per-field rule."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Give a busy Okanagan service business owner a clear, opinionated framework for deciding whether their website should push phone calls, online forms, or a deliberate two-path intake, and what that intake should contain.",
+    "specificity": "High. Names the Okanagan and cities like Kelowna, West Kelowna, Vernon and the North Okanagan; gives a concrete five-field minimum form, a labelled urgent-call block, and an honest post-submit acknowledgement; uses only hypothetical examples introduced as such.",
+    "evidence": "Grounded in Michael's own Okanagan web design work, plus two cited primary sources: W3C accessibility guidance on forms and Google's local ranking guidance. No invented tests, quotes, or client stories.",
+    "voice": "Direct, conversational, Canadian-spelled, and genuinely opinionated about tradeoffs, in Michael's own voice. Explains terms for a non-technical owner and avoids corporate padding, smug contrast, and the flagged filler phrases.",
+    "usefulAsset": "Yes. A self-contained intake-design brief an owner could act on or hand to a designer: which channel to push in which situation, exactly which fields to collect, how to acknowledge requests without implying a confirmed booking, and a low-effort test plan."
+  },
+  "slug": "calls-or-forms-service-website",
+  "applied": [
+    {
+      "path": "sections.1.body",
+      "original": "Every extra field costs you completions, and a long form is the classic way to look thorough while quietly losing leads.",
+      "replacement": "Long forms often lose completions, and an unnecessarily long form is the classic way to look thorough while quietly losing leads.",
+      "reason": "Replaces an unsupported universal empirical claim with measured language; the W3C source supports abandonment from irrelevant or excessive fields but not an absolute cost-per-field rule."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1346,
+  "usage": {
+    "prompt_tokens": 7058,
+    "total_tokens": 8057,
+    "completion_tokens": 999,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 629
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 629
+    }
+  }
+}

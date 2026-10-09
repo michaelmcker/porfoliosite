@@ -1,0 +1,30 @@
+{
+  "issues": [],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Give busy business owners a practical acceptance checklist for a website handover, focused on account ownership, exportability, renewals, analytics, forms, backups, training, and platform fit.",
+    "specificity": "Strong. The article names WordPress, Webflow, and Framer, distinguishes static files from CMS and form functionality, and avoids invented client claims or unsupported figures.",
+    "evidence": "Good. The platform claims are tied to linked primary sources, and the remaining advice is framed as a practical recommendation rather than a guaranteed outcome.",
+    "voice": "Good fit for Michael. The tone is conversational, business-owner focused, and opinionated in a useful way about ownership, workflow, and avoiding future friction.",
+    "usefulAsset": "Yes. The acceptance checklist and first-week test are reusable assets a business owner could use to review a designer’s final handover before signing off."
+  },
+  "slug": "website-handover-checklist",
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1487,
+  "usage": {
+    "prompt_tokens": 11254,
+    "total_tokens": 12256,
+    "completion_tokens": 1002,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 802
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 802
+    }
+  }
+}

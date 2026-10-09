@@ -1,0 +1,17 @@
+{
+  "slug": "medical-spa-website-design",
+  "provider": "Main editor",
+  "issues": [],
+  "remainingBlockers": [],
+  "applied": [],
+  "rejected": [],
+  "bannedRemaining": [],
+  "assessment": {
+    "intent": "Treatment clarity and consultation website design",
+    "specificity": "Treatment-page contents, first enquiry, credentials and two practical review tables",
+    "evidence": "OIPC minimal-purpose collection and W3C introductory checks; no clinic result invented",
+    "voice": "Source-led manual corrections applied by refine-draft-library.py",
+    "usefulAsset": "Scope and review worksheets"
+  },
+  "echoFailure": "Malformed response; subsequent request returned HTTP 400. Manual source-led review completed."
+}

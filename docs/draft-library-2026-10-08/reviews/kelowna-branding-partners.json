@@ -1,0 +1,44 @@
+{
+  "issues": [
+    {
+      "path": "sections.5.body",
+      "original": "Google has repeatedly said that its normal search fundamentals still matter for its AI search features, and there is no special tag or file that guarantees inclusion. So be wary of any branding partner who talks as though clever tricks matter more than clear positioning, useful service pages and a website that is easy to crawl and understand.",
+      "replacement": "Clear positioning, useful service pages and a website that is easy to crawl and understand still matter for search and AI features. So be wary of any branding partner who talks as though clever tricks matter more than those fundamentals.",
+      "reason": "The current draft attributes a specific Google position without a source in the article. The replacement keeps the practical advice without making an unsupported source claim."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "The article helps a small business in Kelowna or the Okanagan choose between foundational branding work, a website-led project and an ongoing marketing partner before requesting quotes.",
+    "specificity": "Strong. It includes a practical scope worksheet, distinct local-provider examples and clear questions to ask before deciding.",
+    "evidence": "Adequate. The provider descriptions stay close to the supplied source material, and the article avoids inventing performance claims.",
+    "voice": "Close to Michael's voice: practical, direct, locally grounded and willing to make a recommendation without overselling it.",
+    "usefulAsset": "Yes. This is a useful buyer's-guide article with enough structure to help a busy owner narrow the field and ask better questions."
+  },
+  "slug": "kelowna-branding-partners",
+  "applied": [
+    {
+      "path": "sections.5.body",
+      "original": "Google has repeatedly said that its normal search fundamentals still matter for its AI search features, and there is no special tag or file that guarantees inclusion. So be wary of any branding partner who talks as though clever tricks matter more than clear positioning, useful service pages and a website that is easy to crawl and understand.",
+      "replacement": "Clear positioning, useful service pages and a website that is easy to crawl and understand still matter for search and AI features. So be wary of any branding partner who talks as though clever tricks matter more than those fundamentals.",
+      "reason": "The current draft attributes a specific Google position without a source in the article. The replacement keeps the practical advice without making an unsupported source claim."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1460,
+  "usage": {
+    "prompt_tokens": 10054,
+    "total_tokens": 11113,
+    "completion_tokens": 1059,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 703
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 703
+    }
+  }
+}

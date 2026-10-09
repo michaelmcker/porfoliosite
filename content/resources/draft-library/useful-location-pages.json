@@ -1,0 +1,152 @@
+{
+  "slug": "useful-location-pages",
+  "title": "Location pages that help customers instead of repeating a city name",
+  "type": "guide",
+  "description": "A practical guide to building local SEO location and service area pages that feel useful, avoid doorway page problems, and fit real Kelowna and Okanagan coverage.",
+  "summary": "Useful location pages should answer a local customer's real questions, show genuine coverage and exclusions, connect related services, and avoid thin doorway pages. The best examples combine accurate local detail, clear contact paths, and honest service boundaries.",
+  "takeaways": [
+    "A useful location page earns its place by answering local questions, not by repeating the city name in every heading.",
+    "Service area businesses need clear coverage boundaries, legitimate local detail, and a direct path to contact instead of hundreds of thin city pages.",
+    "The strongest local pages connect the city to the service, the proof, the exclusions, and the next useful page."
+  ],
+  "sections": [
+    {
+      "id": "what-makes-a-location-page-useful",
+      "title": "What makes a location page useful",
+      "body": "<p>A useful location page gives a customer a clear local answer. It tells them whether you serve their city, which services apply there, what local conditions matter, and how to take the next step. It does not need to say the city name twenty times. It needs to make the customer feel that the page was written for their situation.</p><p>For Okanagan businesses, that usually means treating Kelowna, West Kelowna, Vernon, Lake Country, and nearby communities as related but not identical. A roofing company, landscaper, cleaner, or mobile repair service may legitimately cover several communities. The website should still make the differences clear instead of pretending every city page is a fresh discovery.</p>"
+    },
+    {
+      "id": "where-doorway-pages-go-wrong",
+      "title": "Where doorway pages go wrong",
+      "body": "<p>Google's spam guidance warns against doorway pages, which are pages created mainly to catch similar searches and funnel visitors onward rather than serve them. The risk appears when a business publishes dozens or hundreds of near-identical city pages with only the place name changed.</p><p>The line is not simply the number of pages. The line is usefulness. If each page gives a distinct local answer, shows real coverage, and helps a customer act, it is much easier to defend. If the pages are thin, repetitive, or imply locations that do not exist, they create both trust and search risk.</p>"
+    },
+    {
+      "id": "how-to-cover-a-service-area-honestly",
+      "title": "How to cover a service area honestly",
+      "body": "<p>Start with the actual service area. Write down where you will travel, what you will not do, and where response time, minimum job size, travel charges, or seasonal access change the offer. Then decide which communities deserve their own page because customers there have a distinct question or need.</p><p>Google's local guidance still comes back to relevance, distance, and prominence. A service area page cannot remove distance, but it can improve relevance by being specific and improve prominence over time by earning reviews, mentions, links, and repeat visits.</p><p>For example, suppose a company serves both West Kelowna and Vernon. The West Kelowna page might need to discuss hillside access, lake-adjacent properties, or seasonal outdoor work. The Vernon page might need a different emphasis. If the pages say the same thing with only the city changed, they are probably not earning their place.</p>"
+    },
+    {
+      "id": "what-each-city-page-needs",
+      "title": "What each city page needs",
+      "body": "<ul><li><strong>A clear local promise.</strong> Say which service is available in that city.</li><li><strong>Specific conditions.</strong> Mention climate, property types, access, parking, rural delivery, or seasonal timing only when relevant.</li><li><strong>Proof.</strong> Use reviews, project photos, staff notes, neighbourhood familiarity, or local case detail.</li><li><strong>Boundaries.</strong> State exclusions, travel limits, minimums, or referral needs.</li><li><strong>Next steps.</strong> Give a direct call, quote, booking, or question path.</li></ul><p>This is where custom <a href=\"/web-design/\">website design</a> matters. A template can hold the structure, but the page still needs enough original thinking to be useful.</p>"
+    },
+    {
+      "id": "a-usable-page-outline",
+      "title": "A usable page outline",
+      "body": "<table><caption>A practical service-area page structure</caption><thead><tr><th>Page block</th><th>What to include</th><th>What it should do</th></tr></thead><tbody><tr><td>Intro</td><td>Service, city, and customer problem</td><td>Confirm relevance quickly</td></tr><tr><td>Local conditions</td><td>Climate, property, access, or seasonal notes</td><td>Show real coverage</td></tr><tr><td>Service detail</td><td>What is included and excluded</td><td>Prevent bad-fit enquiries</td></tr><tr><td>Proof</td><td>Review, project, staff, or local example</td><td>Build trust</td></tr><tr><td>Related paths</td><td>Links to services, nearby cities, or guides</td><td>Keep visitors moving</td></tr><tr><td>Action</td><td>Call, form, booking, or quote path</td><td>Make the next step obvious</td></tr></tbody></table>"
+    },
+    {
+      "id": "design-choices-that-support-trust",
+      "title": "Design choices that support trust",
+      "body": "<p>Location pages do not need to look elaborate, but they should look considered. Strong typography, breathing room, honest photos, and a clear page hierarchy make it easier for a visitor to believe that the business is real and careful. A beautiful page does not prove conversion, and a plain page can still work, but careless design often makes thin content feel even thinner.</p><p>I would rather see a simple, well-written service area page than an expensive design wrapped around repeated text. Craft still matters because customers are making a trust decision. The page should feel like a useful local answer, not a search engine container.</p>"
+    },
+    {
+      "id": "connect-location-pages-to-services",
+      "title": "Connect location pages to services",
+      "body": "<p>Each location page should connect back to the service it represents, nearby services, and relevant supporting pages. If a West Kelowna landscaping page mentions retaining walls, drainage, or seasonal cleanups, link those phrases to the service pages that explain them properly. If there is a useful cost guide, checklist, or service comparison, link that too.</p><p>This is also where a sensible site architecture helps. A visitor should be able to move from a city page to the right service, from a service to related work, and from any page to contact. If you are weighing the size of the project, the guide on <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost</a> can help frame the decision.</p>"
+    },
+    {
+      "id": "keep-them-useful-after-launch",
+      "title": "Keep them useful after launch",
+      "body": "<p>After launch, treat each page as a living local asset. Add real reviews when they exist, update service boundaries when they change, answer common questions, and check whether the page is attracting the wrong enquiries. Search and contact data can show which pages deserve deeper work.</p><p>The Cool Runnings project is useful here because the work was not only a set of city pages. It included canonical service and city records, local detail, practical tools, internal discovery paths, and measurement so the next improvements could be based on evidence.</p>"
+    },
+    {
+      "id": "when-to-build-more-pages",
+      "title": "When to build more pages",
+      "body": "<p>Build more pages when a new city has a distinct customer question, enough legitimate service detail, or a meaningful operational difference. Do not build more pages just because a keyword tool shows variations of the same phrase.</p><p>If you are unsure, start with the few communities where customers already contact you or where the service has a clear local story. Make those pages useful, then measure. If you want help deciding which pages deserve investment and how they should fit into the rest of the site, <a href=\"/contact/\">start a conversation</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should every city in my service area get its own page?",
+      "No. Build a page when there is real local detail, a distinct customer need, or a meaningful service difference. If you cannot write anything specific, a clear service area map and contact path may be more honest than a thin page."
+    ],
+    [
+      "Can a service area page help if my business is not physically in that city?",
+      "Yes, if it honestly represents your coverage and helps customers understand what you do there. It should not imply a fake office, storefront, or local presence that does not exist."
+    ],
+    [
+      "What is the first thing to fix on weak location pages?",
+      "Replace repeated city-name copy with one clear local answer, one proof element, and one direct call to action. Then connect the page to the relevant service and any useful supporting resource."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Google spam policies",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+    },
+    {
+      "name": "Google local ranking guidance",
+      "url": "https://support.google.com/business/answer/7091?hl=en"
+    },
+    {
+      "name": "Michael McKerracher Cool Runnings work",
+      "url": "https://michaelmck.site/v2/work/local-search-magnet.html"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "This guide focuses on the business decision behind service area pages, not just keyword placement. It gives owners a practical way to decide which pages deserve to exist, what each page must prove, and how to keep them useful after launch.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm that Google Business Profile guidance and spam policy language still match the linked pages.",
+      "Recheck the Cool Runnings case page before using its live metrics elsewhere.",
+      "Review all internal links to ensure the money page and contact page are correctly linked."
+    ],
+    "serpGap": "Much existing coverage is either a generic checklist or a tactical SEO article. This piece gives owners a clearer decision framework, a local Okanagan lens, and a concrete page architecture they can hand to a designer or writer.",
+    "sourceUse": [
+      {
+        "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+        "claim": "Google defines doorway abuse as creating many similar pages or domains to funnel users rather than providing a useful destination."
+      },
+      {
+        "url": "https://support.google.com/business/answer/7091?hl=en",
+        "claim": "Google says local results are mainly based on relevance, distance, and prominence."
+      },
+      {
+        "url": "https://michaelmck.site/v2/work/local-search-magnet.html",
+        "claim": "The Cool Runnings project is an example of building canonical service and city data, structured local enrichment, useful tools, and a measurement loop."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-10-21",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Local discovery",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "holiday-hours-website-checklist",
+    "small-business-ai-search"
+  ],
+  "services": [],
+  "wordCount": 1134,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 13793,
+      "total_tokens": 20377,
+      "completion_tokens": 6584,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4279
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 4279
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

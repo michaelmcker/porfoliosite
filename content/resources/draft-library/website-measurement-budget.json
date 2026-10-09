@@ -1,0 +1,162 @@
+{
+  "slug": "website-measurement-budget",
+  "title": "What should you measure before next year's website budget?",
+  "type": "guide",
+  "description": "A practical guide for service business owners to measure what matters before setting a website budget, using a scorecard that joins search data, on-site actions, and real booked jobs.",
+  "summary": "Before you commit to next year's website budget, separate traffic volume from revenue. Measure how many searches lead to qualified enquiries, how many enquiries become accepted jobs, and which parts of your current site are leaking potential customers. Then spend on the weakest link.",
+  "takeaways": [
+    "Traffic alone is a weak goal; measure qualified enquiries and accepted jobs to see if your website is actually producing revenue.",
+    "Build a simple monthly scorecard that joins Google Search Console queries, GA4 key events, and your own customer records.",
+    "Fix the specific constraint you find, whether that is low search visibility, weak on-site conversion, or slow enquiry follow-up, rather than buying a generic website package."
+  ],
+  "sections": [
+    {
+      "id": "start-with-the-questions",
+      "title": "Start with the questions your budget has to answer",
+      "body": "<p>A common starting point is to look at last year's traffic and simply increase the budget by a fixed percentage. That misses the point. The right budget comes from understanding where your funnel is actually losing people.</p><p>Is the problem that nobody finds you? Or that people find you but do not trust what they see? Or that they send an enquiry and hear nothing back for three days? Before you spend a dollar, figure out which of those three problems you are trying to solve.</p>"
+    },
+    {
+      "id": "measure-qualified-enquiries",
+      "title": "Measure qualified enquiries, not just clicks",
+      "body": "<p>A click is not a customer. A phone number displayed on a screen is not a conversation. A contact form sitting in your inbox is not revenue. Each of these is only a signal of possible intent, and each one can fail at the next step. The person who taps your number might get a busy signal or decide not to leave a voicemail. The person who fills out your form might be asking for something you do not offer, or might never answer when you call back.</p><p>Service businesses need to distinguish qualified enquiries from raw enquiry volume. These are people with a real problem, inside your service area, who have the budget to hire you. If your current reporting stops at how many visitors you had last month, you are measuring noise. You need to know how many of those visitors signalled buying intent, and what happened next.</p>"
+    },
+    {
+      "id": "sample-monthly-scorecard",
+      "title": "A sample monthly scorecard for service businesses",
+      "body": "<p>Here is a practical worksheet you can copy. It joins three sources of truth: what Google Search Console tells you about discovery, what Google Analytics tells you about on-site behaviour, and what your own customer records tell you about revenue.</p><table><caption>Monthly scorecard for service business websites</caption><thead><tr><th>Metric</th><th>Where to find it</th><th>Why it matters</th></tr></thead><tbody><tr><td>Search impressions for buying queries</td><td>Google Search Console performance report</td><td>Shows whether people who need your service are actually seeing your pages</td></tr><tr><td>Organic clicks to service pages</td><td>Google Search Console</td><td>Shows how much organic click traffic reaches those pages; interpret it alongside impressions and position</td></tr><tr><td>Key events on service pages</td><td>Google Analytics 4</td><td>Measures actions that signal intent, such as phone clicks or form starts</td></tr><tr><td>Qualified enquiry volume</td><td>Your CRM or inbox</td><td>The number of new leads that fit your ideal customer profile</td></tr><tr><td>Accepted job rate</td><td>Your customer records</td><td>How many of those qualified leads actually become booked work</td></tr><tr><td>Revenue per accepted job</td><td>Your invoicing</td><td>Compare with delivery costs to assess contribution; revenue alone does not establish profit</td></tr></tbody></table>"
+    },
+    {
+      "id": "join-web-data-to-jobs",
+      "title": "Join your web data to your actual jobs",
+      "body": "<p>A useful report puts search trends, on-site actions and customer outcomes beside one another. Search Console query data is aggregated; it does not identify the search phrase used by a particular customer and cannot simply be joined to that customer’s invoice.</p><p>For each enquiry, record the source information you actually have, such as a campaign reference, the landing page captured by your approved analytics setup, or the customer’s own answer to how they found you. Keep unknown sources marked unknown. Separately, review Search Console query groups and landing-page trends to see which topics are attracting attention.</p><p>Then compare enquiry quality, accepted work and the cost of delivering that work by service or campaign where the evidence supports it. This gives you a useful budget discussion without pretending to have person-level keyword attribution. A spreadsheet can be enough if the definitions are consistent and the limitations remain clear.</p>"
+    },
+    {
+      "id": "concrete-example",
+      "title": "A concrete example of reading the scorecard",
+      "body": "<p>Suppose your Search Console shows strong impressions for a core service in your city, but weak clicks. Your Analytics shows that the people who do click are scrolling and spending time, but your phone is not ringing.</p><p>Those signals do not establish the cause. Check whether the visitors have buying intent, whether the offer matches their needs, whether tracking works and whether the contact path is usable. Maybe the phone number is buried. Maybe the form asks for too much information. Maybe you are asking for a commitment before you have earned trust. When I built the <a href=\"/v2/work/local-search-magnet.html\">local search system for Cool Runnings</a>, the goal was to connect search visibility to actual booked work, not just to raw traffic numbers.</p>"
+    },
+    {
+      "id": "fix-offer-page-or-follow-up",
+      "title": "When to fix the offer, the page, or the follow-up",
+      "body": "<p>Once you have the scorecard, you can see where the leak is. If impressions are low, you need better visibility. That might mean better search optimization or more useful content. If clicks are high but key events are low, you need better page design or a clearer offer. For example, a business might choose between <a href=\"/blog/calls-or-forms-service-website/\">calls and forms</a> depending on their capacity to answer the phone quickly.</p><p>If enquiries are high but accepted jobs are low, review enquiry quality as well as what happens after the first contact. You may need better qualification, faster response times, or a clearer way to book the next step. Each of these problems has a different cost. Fixing visibility usually means investing in content, local search presence, or better technical setup. Fixing conversion usually means design work, clearer copy, and fewer distractions on the page. Fixing follow-up might mean new software, better training, or simply deciding that you will call every enquiry back within one business day. The scorecard helps you avoid spending money on design when your real bottleneck is that nobody answers the phone.</p>"
+    },
+    {
+      "id": "budget-for-next-version",
+      "title": "Budget for the next version, not the perfect version",
+      "body": "<p>Website budgets can fail when they try to solve everything at once. A better approach is to fund the specific constraint you identified in your scorecard.</p><p>If your problem is that nobody sees you, budget for search visibility and useful content. If your problem is that people see you but do not act, budget for conversion-focused design and clearer messaging. My approach to <a href=\"/web-design/\">web design</a> is to start by using the best tools available today to come up with something that is super interesting and helps you convert and get more business, rather than guessing at what might work.</p>"
+    },
+    {
+      "id": "final-check",
+      "title": "A final check before you commit the money",
+      "body": "<p>Before you sign off on next year's budget, run one last check. Can you name the single metric that would make you say the year was a success?</p><p>Is it more qualified phone calls? Is it a higher percentage of forms turning into site visits? Is it reducing the number of requests that fall outside your estimator’s service scope? Whatever it is, make sure your website plan, your content plan, and your follow-up process all point at that one outcome. If you would like a second pair of eyes on your scorecard, or help building the system that produces it, <a href=\"/contact/\">get in touch</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "What is the difference between a key event in GA4 and a conversion in my CRM?",
+      "A key event in GA4 tracks an on-site action that signals intent, such as clicking a phone number or starting a form. A conversion in your CRM or customer records tracks whether that person actually became a paying customer. You need both to see the full picture from first visit to booked job."
+    ],
+    [
+      "How often should I review these metrics?",
+      "Monthly is usually enough for most small service businesses. Looking at data too often can lead to overreacting to normal weekly ups and downs. Review the scorecard monthly, then look for meaningful trends over a full quarter before making big budget changes."
+    ],
+    [
+      "Do I need expensive software to join Search Console data with my customer records?",
+      "No. You can start with a simple spreadsheet or a consistent tagging habit. Ask every new customer how they found you, and record which page or service they first contacted you about. The discipline of asking and recording matters more than the tool you use."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Google Analytics events",
+      "url": "https://support.google.com/analytics/answer/9267735?hl=en"
+    },
+    {
+      "name": "Search Console performance reporting",
+      "url": "https://support.google.com/webmasters/answer/7576553?hl=en"
+    },
+    {
+      "name": "Michael McKerracher Cool Runnings work",
+      "url": "https://michaelmck.site/v2/work/local-search-magnet.html"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Instead of offering a generic list of analytics metrics, this article provides a concrete scorecard that joins Search Console, GA4, and customer records specifically for local service businesses trying to connect website activity to booked jobs.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm that mentioning Cool Runnings as a project does not imply a guaranteed numeric result",
+      "Verify that no unsupported claims are made about GA4 key event setup complexity"
+    ],
+    "serpGap": "Top results for this query are either broad B2B lead generation metric lists or channel-specific advice for cold email and LinkedIn. None provide a simple, joined scorecard for local service businesses connecting search queries to accepted jobs.",
+    "sourceUse": [
+      {
+        "url": "https://support.google.com/analytics/answer/9267735?hl=en",
+        "claim": "Used to ground the discussion of GA4 events and key events as measurable on-site actions."
+      },
+      {
+        "url": "https://support.google.com/webmasters/answer/7576553?hl=en",
+        "claim": "Used to accurately describe Search Console metrics like impressions, clicks, and average position."
+      },
+      {
+        "url": "https://michaelmck.site/v2/work/local-search-magnet.html",
+        "claim": "Used as the single named project example to illustrate connecting search visibility to booked work."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-12-16",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Conversion",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "calls-or-forms-service-website",
+    "website-enquiry-follow-up"
+  ],
+  "services": [],
+  "wordCount": 1346,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 12562,
+      "total_tokens": 23137,
+      "completion_tokens": 10575,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8009
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 8009
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 3,
+    "publicationApproved": false,
+    "mainEditorResolution": "Applied the rejected patch at its correct section path and checked the interpretation of clicks versus qualified enquiries."
+  },
+  "mainEditorEdits": [
+    {
+      "original": "This tells you the problem is probably not awareness or page quality. The problem is the action step.",
+      "replacement": "Those signals do not establish the cause. Check whether the visitors have buying intent, whether the offer matches their needs, whether tracking works and whether the contact path is usable."
+    },
+    {
+      "original": "the problem is usually what happens after the first contact",
+      "replacement": "review enquiry quality as well as what happens after the first contact"
+    },
+    {
+      "original": "the number of tyre kickers who waste your estimator's time",
+      "replacement": "the number of requests that fall outside your estimator’s service scope"
+    },
+    {
+      "reason": "Corrected the impossible Search Console query-to-person invoice join and distinguished revenue from profit."
+    },
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "slug": "restaurant-website-design",
+  "title": "Restaurant websites: help guests decide, then get out of the way",
+  "type": "guide",
+  "description": "What a restaurant website actually needs to do: a readable HTML menu, current hours, clear reservation and takeout options, real photos, and fast mobile pages. Practical guidance, a decision worksheet, and a sample page structure.",
+  "summary": "A restaurant website's first job is to help a hungry person decide, in seconds, that your room is worth tonight's money. That means a readable HTML menu rather than a buried PDF, current hours, clear reservation or walk-in expectations, a real takeout link, honest food photos, and fast pages on a phone.",
+  "takeaways": [
+    "Put the menu on the page as readable HTML, not only as a downloadable PDF, and never invent menu prices you can't keep current.",
+    "Hours, special hours, reservation versus walk-in, and dietary information are decision-makers. Keep them accurate and easy to find.",
+    "Real photos of your food and room, sensible contrast and alt text, and a page that loads quickly on mobile do more for bookings than a clever animation."
+  ],
+  "sections": [
+    {
+      "id": "decide-in-seconds",
+      "title": "Your website's first job is helping guests decide",
+      "body": "<p>A restaurant website has one job to do before anything else. It needs to help someone who is already hungry decide that your room is where they want to spend tonight's money. Everything else, the branding, the story, the beautiful photography, only works once that decision is made.</p><p>That is the lens behind how we approach <a href=\"/web-design/restaurants/\">restaurant website design</a>. The site needs to look like it belongs to you and feel like your room. It also needs to answer a small set of practical questions fast, especially on a phone, because that is where most of these decisions now happen.</p><p>The rest of this article is about those questions: what guests look for, how to present your menu, what to say about hours and reservations, and how to choose a way to build it that fits your situation.</p>"
+    },
+    {
+      "id": "guests-look-for",
+      "title": "What guests look for before they book",
+      "body": "<p>Before a guest commits, they check a short list of things. If any one of these is missing, stale, or hidden, you get a phone call instead of a booking, or you get nothing at all. Here is the list, what good looks like, and the mistakes worth avoiding.</p><table><caption>What a guest needs to find on a restaurant website, and what good looks like for each</caption><thead><tr><th>What guests check</th><th>Why it matters</th><th>What good looks like</th></tr></thead><tbody><tr><td>The menu</td><td>It is the main reason the page exists. Guests compare dishes and prices across several restaurants before choosing.</td><td>A readable HTML menu on the page itself, organised by course or category. Never invent prices: if you can't keep them current, describe dishes without numbers.</td></tr><tr><td>Current hours, including special hours</td><td>Nobody wants to drive across town to a closed door, especially on a holiday or a private-function night.</td><td>Hours in plain text on the page, plus an accurate Google Business Profile. Special or holiday hours updated before the day arrives.</td></tr><tr><td>Reservation versus walk-in</td><td>Guests need to know if they should book, call, or just show up, and for how many people.</td><td>A clear statement near the top: whether you take reservations, for what party sizes, and what happens at peak times.</td></tr><tr><td>Takeout and pickup</td><td>Plenty of people want your food without your dining room.</td><td>A distinct, labelled takeout or order link, separate from the reservation path, with hours if they differ.</td></tr><tr><td>Group and private dining</td><td>Larger parties are valuable and they need more reassurance than a two-top.</td><td>A group or private events section with a simple enquiry route and honest capacity guidance.</td></tr><tr><td>Dietary and allergen information</td><td>For many guests, this is the deciding factor, not a nice extra.</td><td>Clear notes on what you can and cannot accommodate, with an invitation to ask. Don't promise what the kitchen can't deliver.</td></tr><tr><td>Real photos of food and the room</td><td>Guests are buying an experience. They want to see the actual plate and the actual space.</td><td>A modest set of honest, well-lit photos beats a large set of stock images. Show the room at service, not just empty.</td></tr><tr><td>Location, parking and access</td><td>Practical friction stops people. Guests want to know if they can park, get a wheelchair in, or find you at night.</td><td>An address in text, parking notes, and a line about accessibility where relevant.</td></tr></tbody></table><p>If your current site covers this list well on a phone, you have the essentials in place. If it doesn't, that is the work, and it is usually smaller than owners expect.</p>"
+    },
+    {
+      "id": "menu-is-the-game",
+      "title": "The menu is the website, so treat it that way",
+      "body": "<p>For most independent restaurants, the menu page does more selling than every other page combined. It is also the page most often done badly. The classic mistake is a menu that exists only as a PDF: a guest on a phone has to download it, pinch and zoom around a layout designed for a wall or a printed page, and often hits a file that is months out of date.</p><p>An HTML menu, where the dishes are real text on the page, solves almost all of this. It loads fast. It can be scanned in seconds. It can be updated without a designer. Search engines can actually read it. And it lets you do things a PDF never can, like highlighting a tasting menu, noting a dish is seasonal, or flagging what is gluten-free without designing a whole separate document.</p><p>There is one honest tradeoff. A real HTML menu takes a little more care to design well, because type, spacing and hierarchy have to do all the work that a printed layout did with columns and borders. That is a reason to build it properly, not a reason to keep the PDF.</p>"
+    },
+    {
+      "id": "photos-and-access",
+      "title": "Photos and readability do the quiet persuading",
+      "body": "<p>Guests forgive a simple website. They do not forgive one they cannot read or one that makes the food look worse than it is. Two things carry most of the weight here: honest photography, and basic accessibility.</p><p>On photography, fewer and real beats many and generic. A handful of well-lit shots of your actual dishes and your actual dining room tell a guest far more than a gallery of polished stock images. Show the plate as it arrives at the table. Show the room when people are in it.</p><p>On accessibility, you do not need to become a specialist to avoid the common failures. Text needs enough contrast against its background. Headings should be real headings in a sensible order so the page has structure. Images that carry meaning need a short text alternative. The <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">W3C's first-review checks for accessibility</a> are a good plain-language starting point. A site that is easy to read and easy to navigate with a keyboard is simply a better sales tool, for everyone.</p>"
+    },
+    {
+      "id": "hours-reservations-takeout",
+      "title": "Get hours, reservations and takeout exactly right",
+      "body": "<p>Hours are one of the first things guests check on a local restaurant website, and they are easy to get wrong. Your website should show them in plain text. Your Google Business Profile should show the same thing, and it has a specific feature for temporary changes: Google recommends using <a href=\"https://support.google.com/business/answer/6303076?hl=en\">special hours for holidays, events and short closures</a> so your regular hours stay intact and customers aren't misled.</p><p>Reservations need honesty, not optimism. If you only take bookings for parties of six or more, say so. If Friday and Saturday are walk-in only, say so. If you use a booking service, link it clearly and label it. Guests don't mind your actual policy. They mind discovering it after they've planned around something else.</p><p>Takeout deserves its own clear path. If someone wants to order for pickup, they should not have to scroll past your private dining story to find the link. Separate it from the reservation route, and if takeout hours differ from dining room hours, say that too.</p>"
+    },
+    {
+      "id": "sample-page-structure",
+      "title": "A sample page structure that answers the questions fast",
+      "body": "<p>Here is a simple architecture that works for a lot of independent restaurants. You don't need more pages than this to start. You need these pages to be good.</p><ol><li><strong>Home.</strong> One strong photo of the room or a signature dish. Your name, what you are, and the neighbourhood or town. Two obvious actions: view the menu, and reserve or order takeout. Current hours in text near the bottom.</li><li><strong>Menu.</strong> A single readable HTML menu, organised the way your guests think: starters, mains, desserts, drinks, or however your kitchen works. Dietary notes in plain language. No PDF as the only option.</li><li><strong>Groups and private dining.</strong> Honest capacity, the kinds of events you suit, one or two photos, and a short enquiry form or a named email. Don't bury this page if you want the business.</li><li><strong>Visit or Contact.</strong> Address in text, hours including special-hours notes, parking and access, phone, and the takeout link again.</li></ol><p>That's it. The discipline is in what you leave out, not in what you add.</p>"
+    },
+    {
+      "id": "build-it-right",
+      "title": "Choose a build that fits how your restaurant actually runs",
+      "body": "<p>There is no single right platform for a restaurant website. There is a right fit for how your team works. The honest questions are: who will update the menu, how often does it change, and how much do you want to depend on a third-party service?</p><p>If your menu changes with the seasons or the week, you want a site where editing text is easy for whoever does it. If your menu is stable, you have more freedom. Either way, I favour a site you own, with the menu as real page content, over renting your whole presence from an ordering platform. Ordering platforms are useful for taking orders. They are not a good substitute for a website that sells the experience of your room.</p><p>The other tradeoff is craft versus convenience. A carefully built HTML menu and a small set of honest pages will outwork a flashy template that fights you every time you need to change a price. Start with the questions guests actually ask, build those answers well, and add flourishes only after the basics are solid.</p>"
+    },
+    {
+      "id": "your-next-step",
+      "title": "Your next step",
+      "body": "<p>Open your current website on your phone and time yourself. Can you find the menu, read it comfortably, confirm today's hours, and see how to reserve or order takeout in under a minute? Can a guest tell from your photos what the food and the room are really like? If the answer to any of that is no, you have a clear, small piece of work to do.</p><p>If you'd like a second pair of eyes on it, <a href=\"/contact/\">get in touch</a>. We're happy to look at what you have and tell you plainly what we'd fix first.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should my restaurant menu be a PDF on the website?",
+      "Not as the only option. A PDF is fine as a printable extra, but guests on phones need the menu as readable text on the page itself. An HTML menu loads faster, is easier to scan, can be updated without a designer, and lets search engines read your dishes. If you keep a PDF, treat it as secondary."
+    ],
+    [
+      "What if my menu changes too often to keep the website updated?",
+      "Then the answer is usually the build, not the content. Choose a setup where editing menu text is quick for whoever does it, and avoid designs that require a developer for every change. For items that genuinely can't be kept current, describe them without prices rather than publishing numbers that go stale."
+    ],
+    [
+      "Do I need online ordering built into my website?",
+      "You need a clear takeout path. Whether that is an ordering platform, a simple order link, or a phone number depends on your volume and your margins. What matters is that a guest who wants pickup can find that route in seconds, separate from your reservation route, without wading through the rest of the site."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Google Business Profile Help: How to set special hours",
+      "url": "https://support.google.com/business/answer/6303076?hl=en"
+    },
+    {
+      "name": "W3C WAI: Easy Checks, A First Review of Web Accessibility",
+      "url": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Turns generic restaurant-website advice into a buyer decision framework: a concrete worksheet of what guests check before booking, an explicit case for HTML menus over PDF-only menus, an honest take on when online ordering belongs on the site, and a compact sample page architecture an owner can act on.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm the Google Business Profile special-hours guidance still reflects the current product before release.",
+      "Final proofread that all internal links resolve and that no client claims slipped in."
+    ],
+    "serpGap": "Existing results skew toward Pinterest idea roundups, menu-design and template tools, and generic mobile-friendliness advice. Few pieces tell an owner what guests actually check before booking, argue plainly for an HTML menu over a PDF, or separate the takeout path from the reservation path.",
+    "sourceUse": [
+      {
+        "url": "https://support.google.com/business/answer/6303076?hl=en",
+        "claim": "Google recommends special hours for holidays, events and short closures so regular hours stay accurate."
+      },
+      {
+        "url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+        "claim": "Practical first checks for accessibility, including text contrast, real heading structure, and meaningful image alternatives."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-05-13",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/restaurants/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "restaurants"
+  ],
+  "wordCount": 1844,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 15388,
+      "total_tokens": 19702,
+      "completion_tokens": 4314,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1021
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 1021
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 3,
+    "publicationApproved": false
+  }
+}

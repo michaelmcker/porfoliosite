@@ -19,3 +19,10 @@ gha-creds-*.json
 
 # Echo prompts/responses remain local editorial evidence.
 /docs/editorial-2026-10-08/echo/
+
+# Private drafting research, prompts and raw model responses.
+/docs/draft-library-2026-10-08/research/
+/docs/draft-library-2026-10-08/echo/
+
+# Local Python bytecode is not editorial source.
+**/__pycache__/

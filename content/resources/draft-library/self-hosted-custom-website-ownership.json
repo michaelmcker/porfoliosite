@@ -1,0 +1,189 @@
+{
+  "slug": "self-hosted-custom-website-ownership",
+  "title": "Custom-built or self-hosted? What website ownership really means",
+  "type": "guide",
+  "description": "A plain-language look at what owning a business website actually includes, and how self-hosting, managed platforms, and a custom site on managed hosting each change who controls what.",
+  "summary": "Website ownership is several assets at once: the domain, the code, the written content, the database, hosting access, backups, and the logins to update it. Self-hosting gives you more control over deployment, with responsibilities that depend on the hosting and support arrangement. Managed platforms trade some of that for convenience, with real export limits. A custom site on managed hosting often lets you own the work without running a server.",
+  "takeaways": [
+    "Ownership is not one thing. It is the domain, the source files, the content, the database, hosting access, backups, and editing logins, and each one should be accounted for in writing.",
+    "Self-hosting can mean genuine full ownership, but it also means updates, security, backups, and performance are all your job. Managed platforms vary widely in what you can export when you leave.",
+    "A custom-built site on managed hosting is a real middle path. You can own the code and the content while someone else operates the infrastructure."
+  ],
+  "sections": [
+    {
+      "id": "ownership-is-several-assets",
+      "title": "Ownership is a pile of small decisions, not one big one",
+      "body": "<p>Owning a website means having, or being able to get, every piece of it on reasonable terms. That usually includes a domain registered in your name, the design and code files, the written content and images, the database, access to the hosting account, backups, and the logins needed to change content, forms and analytics.</p><p>The two common ways to buy a business website, self-hosting or a managed platform, handle those pieces very differently. The table below is a useful way to keep them straight.</p><table><caption>Where each piece of your website tends to live, depending on how you host it</caption><thead><tr><th>Piece of the website</th><th>Self-hosted</th><th>Managed platform</th></tr></thead><tbody><tr><td>Domain name</td><td>Registered in your registrar account</td><td>Usually the same. No real difference if set up properly.</td></tr><tr><td>Design and code files</td><td>In your deployment or repository; rights depend on the contract and licences</td><td>Inside the platform. Export rights vary by vendor.</td></tr><tr><td>Written content and images</td><td>Yours, stored in your files and database</td><td>Editable in the platform. Exportability varies.</td></tr><tr><td>Database</td><td>A database you can access and export under the agreed setup</td><td>Often held by the platform. Sometimes only partial export.</td></tr><tr><td>Hosting account</td><td>A hosting account under your control; administration can be managed or delegated</td><td>The provider's infrastructure, not yours</td></tr><tr><td>Backups</td><td>Your responsibility to set up and test</td><td>Often included, but check what is and isn't covered</td></tr><tr><td>Updates and security</td><td>Your responsibility</td><td>Usually handled for the platform itself. Content is still yours.</td></tr><tr><td>Forms and email</td><td>You configure and maintain them</td><td>Often a platform feature, sometimes with export limits</td></tr><tr><td>Analytics and search data</td><td>Yours if the accounts are registered to you</td><td>Same, as long as the property is registered to you</td></tr></tbody></table>"
+    },
+    {
+      "id": "self-hosting-in-plain-terms",
+      "title": "Self-hosting, in plain terms",
+      "body": "<p>Self-hosting means the site runs on infrastructure you rent and administer. That might be a virtual private server, a dedicated server, or a hosting account where you install and configure everything yourself. Open-source software may have no licence fee, but hosting, maintenance and third-party services still have costs. Decide which responsibilities the host, your developer and your business will each take on.</p><p>Two things get mixed up a lot here. The free WordPress software from <a href=\"https://wordpress.org/about/features/\">WordPress.org</a> is something you self-host. WordPress.com is a separate hosted service. A self-hosted WordPress setup can put the files and database under an account you control. A rented server remains the host’s infrastructure; licences and access rights still matter. That is the appeal. The tradeoff is that updates, security, backups, performance and troubleshooting all become your job, or the job of whoever you hire.</p><p>A general content management system like WordPress also lets you move your files to another host later, which is real ownership. Managed WordPress hosting can handle much of the infrastructure work. Confirm who maintains themes, plugins, application settings and integrations.</p>"
+    },
+    {
+      "id": "where-managed-platforms-blur-ownership",
+      "title": "Where managed platforms blur ownership",
+      "body": "<p>Managed platforms give up some of that ownership in exchange for convenience. How much they give up depends on the platform, and sometimes on which of the platform's own help pages you read.</p><p>Webflow is a good example of limits that only matter later. Its <a href=\"https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code\">official export guidance</a> says code export requires a paid Workspace plan, and that exported code does not include hosted CMS content and functionality, form handling, site search, ecommerce, and several other features. Content can be exported separately as a CSV file, which is not the same thing as taking the whole working site with you.</p><p>Framer is a case where I would look carefully before buying for portability reasons. As of October 8, 2026, <a href=\"https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/\">Framer’s HTML-export help</a> says there is no standalone HTML export, while its <a href=\"https://www.framer.com/help/articles/porting-your-data-from-framer/\">data-portability help</a> says site output can be downloaded and hosted elsewhere. I would not treat either page as the final word. I would ask for a demonstrated exit plan that covers content, forms and editing before treating portability as a reason to choose it. A reverse proxy is not independence from Framer.</p><p>Sanity confuses people for a different reason. <a href=\"https://www.sanity.io/docs/studio/development\">Sanity's own documentation</a> explains that Studio, the editing interface, can be self-hosted, but that Studio still connects to Sanity's hosted Content Lake. The website frontend and its hosting are separate decisions again. Self-hosting there is a deployment choice, not a competing content management system.</p>"
+    },
+    {
+      "id": "custom-site-on-managed-hosting",
+      "title": "The middle path: a custom site on managed hosting",
+      "body": "<p>There is a third option that suits a lot of Okanagan businesses: a custom-built site that lives on managed hosting. The site is built as fast, static pages, or as a small custom application, and deployed to hosting that someone else operates and maintains. Your contract can assign the custom code and content to you, while the host operates the underlying infrastructure. Application updates, integrations and deployment support still need an owner.</p><p>This is the model behind a well-planned <a href=\"/web-design/\">custom website</a>. It can separate control of the code from operation of the infrastructure. Check any host-specific features and external services too, because a custom site can have migration dependencies of its own.</p>"
+    },
+    {
+      "id": "worked-ownership-inventory",
+      "title": "A worked ownership inventory for one small business",
+      "body": "<p>For example, suppose a landscaping company in the Okanagan is about to pay for a new website and wants to be sure it will still be theirs in five years. An ownership worksheet might look like this:</p><table><caption>Ownership worksheet: what to get in writing for each piece</caption><thead><tr><th>Item</th><th>What \"owned\" looks like</th></tr></thead><tbody><tr><td>Domain and DNS</td><td>Registered to the company, renewal notices going to the owner, login stored</td></tr><tr><td>Design and code</td><td>A repository or file export the company can access without the developer</td></tr><tr><td>Written content and photos</td><td>Copies of the words and original images kept by the company</td></tr><tr><td>Editor or CMS accounts</td><td>An administrator login in the company's name, not only the freelancer's</td></tr><tr><td>Hosting</td><td>An account the company can enter, leave, and take a backup from</td></tr><tr><td>Backups</td><td>Copies stored away from the live site, with a known restore process</td></tr><tr><td>Forms and enquiries</td><td>Submissions delivered to an email address or system the company controls</td></tr><tr><td>Analytics and search console</td><td>Properties registered to the company, with the agency added as a user</td></tr><tr><td>Licences</td><td>Fonts, stock images and any paid tools documented, with who pays for renewal</td></tr></tbody></table><p>None of this is exotic. It is just the kind of list that prevents the slow, expensive discovery that the one thing you need was only ever in someone else's account.</p>"
+    },
+    {
+      "id": "questions-to-ask-before-you-sign",
+      "title": "Questions to ask before you sign",
+      "body": "<p>Whatever route you are considering, a few direct questions clear up most of the fog:</p><ul><li>When we part ways, exactly what do I receive, and in what format?</li><li>Who holds the master administrator logins for the domain, hosting, content, and analytics?</li><li>Where are backups kept, who can restore them, and has a restore ever been tested?</li><li>Can the site be taken to another host or another developer? If parts cannot, which parts, and why?</li><li>What happens to forms, site search and any shop or booking features if the site is exported or moved?</li><li>If I want changes later, who is able to make them, and what will they need from you?</li></ul><p>Ask these whether you are weighing a platform subscription against an <a href=\"/blog/website-subscription-vs-upfront-build/\">upfront custom build</a>, comparing freelancers, or just renewing something you already have.</p>"
+    },
+    {
+      "id": "a-clear-way-to-choose",
+      "title": "A clear way to choose",
+      "body": "<p>If your website books jobs, takes orders or carries your reputation, treat ownership like the inventory above rather than a slogan. Prefer arrangements where the domain, the written content and the analytics are unambiguously yours, and where the code, or a real export of it, exists.</p><p>If you want no server work at all, a custom site on managed hosting is a good fit for many small businesses. If you want full control and you have the skills or the staff, self-hosting can be an honest and economical choice. If you are drawn to a managed platform for its editing experience, just be clear-eyed about what comes with you when you leave.</p><p>If you want to talk through what ownership would look like for your business, <a href=\"/contact/\">get in touch</a>.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Does self-hosting mean I own my search rankings?",
+      "Not by itself. Nobody owns a search position. Search engines decide rankings, and changing hosts does not preserve or improve a position by itself. What self-hosting gives you is control over the technical side. If you move hosts carelessly, change URLs without redirects, or lose content, you can damage what you have built."
+    ],
+    [
+      "Can I own a Framer or Webflow site and still leave later?",
+      "Sometimes, with limits. Webflow lets paid Workspace plans export code, but its own help page lists features that do not come along, including hosted CMS functionality, forms, site search and ecommerce. Framer's own guidance conflicted as of October 8, 2026, with one page saying there is no standalone HTML export and another saying output can be downloaded and hosted elsewhere. Ask for a demonstrated exit plan before you buy for portability."
+    ],
+    [
+      "What is the difference between owning the website and owning the domain?",
+      "The domain is just the address. Owning it means it is registered in your name and you control where it points. Owning the website is the bigger question: the design files, the written content, the database, the hosting, the backups and the logins. Plenty of businesses own their domain and discover later that everything behind it lives in someone else's account."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "WordPress.org: Features",
+      "url": "https://wordpress.org/about/features/"
+    },
+    {
+      "name": "Webflow Help: How do I export my Webflow site code?",
+      "url": "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code"
+    },
+    {
+      "name": "Sanity: Local development environment for Sanity Studio",
+      "url": "https://www.sanity.io/docs/studio/development"
+    },
+    {
+      "name": "Framer HTML-export help",
+      "url": "https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/"
+    },
+    {
+      "name": "Framer data-portability help",
+      "url": "https://www.framer.com/help/articles/porting-your-data-from-framer/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Competitor coverage mostly frames the choice as managed versus self-hosted WordPress. This article widens it to a custom static site on managed hosting, platform-by-platform export limits including a flagged Framer source conflict, and a concrete ownership inventory worksheet an owner can fill in before signing.",
+    "claimsToRecheckBeforeRelease": [
+      "Framer guidance conflict: one official help page said no standalone HTML export while another said site output can be downloaded and hosted elsewhere, both as of October 8, 2026. Recheck both pages before release and keep the article's cautious treatment rather than picking one as definitive.",
+      "Recheck the Webflow export help page for any changes to which plan allows code export and which features are excluded from exports.",
+      "Confirm no client metrics, quotes, or invented project claims slipped in. This article uses none by design."
+    ],
+    "serpGap": "Top results are WordPress-specific cost and risk comparisons. None clearly separate owning a domain from owning the full site, cover platform export gotchas like Webflow's feature exclusions, note the conflicting Framer guidance, or offer an ownership worksheet. This article fills those gaps for a general small-business buyer.",
+    "sourceUse": [
+      {
+        "url": "https://wordpress.org/about/features/",
+        "claim": "Self-hosted WordPress.org software can mean full ownership of files, database and server, and the site can be moved to another host."
+      },
+      {
+        "url": "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code",
+        "claim": "Webflow code export requires a paid Workspace plan and excludes hosted CMS functionality and content, forms handling, site search, Ecommerce and other listed features; CSV content export is separate."
+      },
+      {
+        "url": "https://www.sanity.io/docs/studio/development",
+        "claim": "Sanity Studio can be self-hosted, but Studio still connects to the hosted Content Lake; the frontend and its hosting are separate decisions."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-08-26",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Platforms",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "website-subscription-vs-upfront-build",
+    "framer-webflow-custom-website"
+  ],
+  "services": [],
+  "wordCount": 1613,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 14383,
+      "total_tokens": 20394,
+      "completion_tokens": 6011,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2601
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 2601
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "provider": "Main editor",
+    "appliedEdits": 0,
+    "publicationApproved": false,
+    "note": "Echo editorial JSON was truncated. Main editor read the full article against official platform documentation and corrected ownership, hosting and exit claims."
+  },
+  "mainEditorEdits": [
+    {
+      "original": "Self-hosting gives you full control and full responsibility.",
+      "replacement": "Self-hosting gives you more control over deployment, with responsibilities that depend on the hosting and support arrangement."
+    },
+    {
+      "original": "A server or VPS you rent and administer",
+      "replacement": "A hosting account under your control; administration can be managed or delegated"
+    },
+    {
+      "original": "On your server, under your control",
+      "replacement": "In your deployment or repository; rights depend on the contract and licences"
+    },
+    {
+      "original": "Your own database on your server",
+      "replacement": "A database you can access and export under the agreed setup"
+    },
+    {
+      "original": "The software can be free, the control can be total, and the ongoing responsibility is also total.",
+      "replacement": "Open-source software may have no licence fee, but hosting, maintenance and third-party services still have costs. Decide which responsibilities the host, your developer and your business will each take on."
+    },
+    {
+      "original": "A self-hosted WordPress site can be genuinely yours: the files, the database, the server, all of it.",
+      "replacement": "A self-hosted WordPress setup can put the files and database under an account you control. A rented server remains the host’s infrastructure; licences and access rights still matter."
+    },
+    {
+      "original": "Even then, you are still in the server administration business unless someone does that work for you.",
+      "replacement": "Managed WordPress hosting can handle much of the infrastructure work. Confirm who maintains themes, plugins, application settings and integrations."
+    },
+    {
+      "original": "You own the code and the content. You do not administer a server.",
+      "replacement": "Your contract can assign the custom code and content to you, while the host operates the underlying infrastructure. Application updates, integrations and deployment support still need an owner."
+    },
+    {
+      "original": "It avoids the two common failure points of the other options: the self-hosted site nobody has time to maintain, and the platform site whose best content and features do not fully come with you when you leave.",
+      "replacement": "It can separate control of the code from operation of the infrastructure. Check any host-specific features and external services too, because a custom site can have migration dependencies of its own."
+    },
+    {
+      "original": "Search performance belongs to your domain's history and your content, and Google says its usual SEO fundamentals apply to AI search features too.",
+      "replacement": "Nobody owns a search position. Search engines decide rankings, and changing hosts does not preserve or improve a position by itself."
+    }
+  ]
+}

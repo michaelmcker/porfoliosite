@@ -1,0 +1,80 @@
+{
+  "issues": [
+    {
+      "path": "takeaways.0",
+      "original": "A monthly fee is easy to start but the three-to-five-year total often exceeds a one-time build; run the arithmetic for your own numbers before choosing.",
+      "replacement": "A monthly fee is easy to start, but the long-term value depends entirely on your specific costs; run the three-to-five-year arithmetic for your own numbers before choosing.",
+      "reason": "The word 'often' makes an unsupported empirical claim, and the article's own hypothetical cost table shows the subscription as the cheaper option at both three and five years, which contradicts the takeaway."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "The most common mistake is comparing a monthly price with a one-time price as if they were the same kind of thing.",
+      "replacement": "A common mistake is comparing a monthly price with a one-time price as if they were the same kind of thing.",
+      "reason": "'The most common' is an unsupported superlative about how frequently buyers make this error."
+    },
+    {
+      "path": "sections.3.body",
+      "original": "It can also be frustrating when you want to fix a typo at 9 p.m. and the queue for updates runs two weeks.",
+      "replacement": "It can also be frustrating when you want to fix a typo at 9 p.m. and discover that updates have to wait in a queue.",
+      "reason": "'Runs two weeks' is a specific, unsupported empirical claim about typical subscription update timelines."
+    },
+    {
+      "path": "sections.6.body",
+      "original": "A landscaping company in Kelowna that depends on the site for quote requests, or a professional office in Vernon building a reputation over a decade, usually gets more value from ownership than from a perpetual monthly fee.",
+      "replacement": "For example, a landscaping company in Kelowna that depends on the site for quote requests, or a professional office in Vernon building a reputation over a decade, usually gets more value from ownership than from a perpetual monthly fee.",
+      "reason": "Hypothetical examples must be introduced with 'For example' or 'Suppose' under the house style guidelines."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "To help Okanagan business owners compare the full long-term cost, control and exit tradeoffs of a monthly website subscription against an upfront custom build, so they can choose the structure that fits their cash flow, appetite for technical work and need for ownership.",
+    "specificity": "Anchors the decision in a concrete hypothetical CAD cost table, a fill-in comparison worksheet, and specific platform examples from Framer, Webflow and WordPress rather than keeping the advice abstract.",
+    "evidence": "Draws on the official pricing and feature pages for Framer, Webflow and WordPress, and explicitly labels its own arithmetic as hypothetical and illustrative rather than market data or a forecast.",
+    "voice": "Connected, conversational and direct, with a clear point of view; speaks to busy owners in plain Canadian English and avoids corporate padding, hype, invented anecdotes and mechanical variation.",
+    "usefulAsset": "A genuinely useful buyer's framework and worksheet that forces hidden costs, editor seats, support quality, cancellation terms and content ownership into the open before a business commits to either model."
+  },
+  "slug": "website-subscription-vs-upfront-build",
+  "applied": [
+    {
+      "path": "takeaways.0",
+      "original": "A monthly fee is easy to start but the three-to-five-year total often exceeds a one-time build; run the arithmetic for your own numbers before choosing.",
+      "replacement": "A monthly fee is easy to start, but the long-term value depends entirely on your specific costs; run the three-to-five-year arithmetic for your own numbers before choosing.",
+      "reason": "The word 'often' makes an unsupported empirical claim, and the article's own hypothetical cost table shows the subscription as the cheaper option at both three and five years, which contradicts the takeaway."
+    },
+    {
+      "path": "sections.1.body",
+      "original": "The most common mistake is comparing a monthly price with a one-time price as if they were the same kind of thing.",
+      "replacement": "A common mistake is comparing a monthly price with a one-time price as if they were the same kind of thing.",
+      "reason": "'The most common' is an unsupported superlative about how frequently buyers make this error."
+    },
+    {
+      "path": "sections.3.body",
+      "original": "It can also be frustrating when you want to fix a typo at 9 p.m. and the queue for updates runs two weeks.",
+      "replacement": "It can also be frustrating when you want to fix a typo at 9 p.m. and discover that updates have to wait in a queue.",
+      "reason": "'Runs two weeks' is a specific, unsupported empirical claim about typical subscription update timelines."
+    },
+    {
+      "path": "sections.6.body",
+      "original": "A landscaping company in Kelowna that depends on the site for quote requests, or a professional office in Vernon building a reputation over a decade, usually gets more value from ownership than from a perpetual monthly fee.",
+      "replacement": "For example, a landscaping company in Kelowna that depends on the site for quote requests, or a professional office in Vernon building a reputation over a decade, usually gets more value from ownership than from a perpetual monthly fee.",
+      "reason": "Hypothetical examples must be introduced with 'For example' or 'Suppose' under the house style guidelines."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1866,
+  "usage": {
+    "prompt_tokens": 11893,
+    "total_tokens": 19414,
+    "completion_tokens": 7521,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6795
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 6795
+    }
+  }
+}

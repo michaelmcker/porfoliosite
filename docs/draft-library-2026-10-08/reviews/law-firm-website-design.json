@@ -1,0 +1,44 @@
+{
+  "issues": [
+    {
+      "path": "sections.6.body",
+      "original": "The page needs to respond quickly, often within half a second, and load completely in a few seconds.",
+      "replacement": "The page needs to respond quickly and load completely without unnecessary delay.",
+      "reason": "The exact response-time and load-time figures are not supported by the cited sources."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "A practical guide to law-firm website design for British Columbia practices, covering the pages that matter, BC's marketing and privacy rules, safe intake choices, and how to decide whether the next site is a credibility piece, a growth tool, or both.",
+    "specificity": "High. The article names the specific pages that carry weight, distinguishes credibility-focused and growth-focused architectures, summarizes BC rule 4.2-5 accurately, and gives a concrete safe-enquiry-form pattern.",
+    "evidence": "It cites the Law Society of BC's August 2025 marketing advisory, BC OIPC PIPA guidance, and W3C accessible-forms guidance without inventing client stories, test results, or future statistics.",
+    "voice": "Connected, conversational, and opinionated in a useful way. It sounds like Michael: calm, specific, practical for busy owners, and free of corporate padding.",
+    "usefulAsset": "Yes. It gives BC law firms a compliance-aware starting point and a clear decision framework for whether their next website should primarily support referrals or support growth through search and AI."
+  },
+  "slug": "law-firm-website-design",
+  "applied": [
+    {
+      "path": "sections.6.body",
+      "original": "The page needs to respond quickly, often within half a second, and load completely in a few seconds.",
+      "replacement": "The page needs to respond quickly and load completely without unnecessary delay.",
+      "reason": "The exact response-time and load-time figures are not supported by the cited sources."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1405,
+  "usage": {
+    "prompt_tokens": 10346,
+    "total_tokens": 14823,
+    "completion_tokens": 4477,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4168
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 4168
+    }
+  }
+}

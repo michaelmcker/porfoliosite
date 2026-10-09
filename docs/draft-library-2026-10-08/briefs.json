@@ -1,0 +1,3571 @@
+[
+  {
+    "publishOn": "2026-11-12",
+    "title": "Phone calls or online forms? What works for a local service website",
+    "primaryMoneyPage": "/web-design/",
+    "buyerDecision": "Urgency, owner availability, call routing, minimum useful fields, acknowledgement versus booking, after-hours handling; a two-path intake example and test plan",
+    "status": "drafting",
+    "researchStatus": "Research and Echo draft required",
+    "id": "draft-01",
+    "slug": "calls-or-forms-service-website",
+    "pillar": "Conversion",
+    "originalTitle": "Phone calls or online forms? 6 decisions for a local service website",
+    "primaryQuery": "service business website phone calls vs contact forms",
+    "queryVariants": [
+      "Phone calls or online forms? What works for a local service website",
+      "Phone calls or online forms? What works for a local service website Kelowna Okanagan"
+    ],
+    "sourceIds": [
+      "forms",
+      "google-local"
+    ],
+    "researchAsOf": "2026-10-08",
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "publishOn": "2026-11-19",
+    "title": "What should a small-business branding project actually include?",
+    "primaryMoneyPage": "/marketing-branding/",
+    "buyerDecision": "Positioning before logo, message hierarchy, visual system, photo direction, website and social templates, file ownership; sample deliverables table and handoff questions",
+    "status": "drafting",
+    "researchStatus": "Research and Echo draft required",
+    "id": "draft-02",
+    "slug": "small-business-branding-deliverables",
+    "pillar": "Brand and content",
+    "originalTitle": "A logo is one part of a brand: 7 deliverables to ask for",
+    "primaryQuery": "small business brand identity deliverables website social media",
+    "queryVariants": [
+      "What should a small-business branding project actually include",
+      "What should a small-business branding project actually include? Kelowna Okanagan"
+    ],
+    "sourceIds": [
+      "michael-brand"
+    ],
+    "researchAsOf": "2026-10-08",
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "internalLinks": {
+      "primary": "/marketing-branding/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "publishOn": "2026-11-26",
+    "title": "What makes a useful donor film? Start with the decision you need someone to make",
+    "primaryMoneyPage": "/marketing-branding/",
+    "buyerDecision": "St James donor-film and school marketing work; beneficiary dignity, consent, specific ask, campaign landing page, captions and transcript; production brief not invented fundraising uplift",
+    "status": "drafting",
+    "researchStatus": "Research and Echo draft required",
+    "id": "draft-03",
+    "slug": "donor-film-planning",
+    "pillar": "Brand and content",
+    "originalTitle": "What makes a useful donor film? 6 decisions before production",
+    "primaryQuery": "nonprofit donor fundraising video planning best practices",
+    "queryVariants": [
+      "What makes a useful donor film? Start with the decision you need someone to make",
+      "What makes a useful donor film? Start with the decision you need someone to make Kelowna Okanagan"
+    ],
+    "sourceIds": [
+      "video",
+      "michael-brand"
+    ],
+    "researchAsOf": "2026-10-08",
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "internalLinks": {
+      "primary": "/marketing-branding/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "publishOn": "2026-12-03",
+    "title": "How to brief a small-business website for 2027",
+    "primaryMoneyPage": "/web-design/",
+    "buyerDecision": "Priority customer action, service hierarchy, real assets, existing URLs, integrations, editing owner, budget assumptions, sign-off; completed sample brief for hypothetical electrician clearly presented as an example",
+    "status": "drafting",
+    "researchStatus": "Research and Echo draft required",
+    "id": "draft-04",
+    "slug": "small-business-website-brief",
+    "pillar": "Buying and ownership",
+    "originalTitle": "8 things to put in a website brief for 2027",
+    "primaryQuery": "small business website design brief requirements",
+    "queryVariants": [
+      "How to brief a small-business website for 2027",
+      "How to brief a small-business website for 2027 Kelowna Okanagan"
+    ],
+    "sourceIds": [
+      "google-starter"
+    ],
+    "researchAsOf": "2026-10-08",
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "publishOn": "2026-12-10",
+    "title": "Website subscription or upfront build? Compare the whole cost",
+    "primaryMoneyPage": "/web-design/",
+    "buyerDecision": "Setup, ongoing changes, domain, hosting, seats, support, cancellation, content ownership and migration; worked arithmetic using explicitly hypothetical CAD amounts, not market rates",
+    "status": "drafting",
+    "researchStatus": "Research and Echo draft required",
+    "id": "draft-05",
+    "slug": "website-subscription-vs-upfront-build",
+    "pillar": "Platforms",
+    "originalTitle": "Website subscriptions or an upfront build? 7 costs to compare",
+    "primaryQuery": "website monthly subscription vs one time cost ownership",
+    "queryVariants": [
+      "Website subscription or upfront build? Compare the whole cost",
+      "Website subscription or upfront build? Compare the whole cost Kelowna Okanagan"
+    ],
+    "sourceIds": [
+      "framer-price",
+      "webflow-price",
+      "wordpress"
+    ],
+    "researchAsOf": "2026-10-08",
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "publishOn": "2026-12-17",
+    "title": "What to decide before paying for an AI workflow",
+    "primaryMoneyPage": "/ai-implementation/",
+    "buyerDecision": "Choose repeatable work, baseline the task, sources and permissions, exception route, human approval, maintenance ownership; practical enquiry triage example; Michael audit CAD900 and custom systems from2500/month only if relevant",
+    "status": "drafting",
+    "researchStatus": "Research and Echo draft required",
+    "id": "draft-06",
+    "slug": "before-buying-ai-workflow",
+    "pillar": "AI and operations",
+    "originalTitle": "6 questions to answer before paying for an AI workflow",
+    "primaryQuery": "small business AI workflow automation buying guide",
+    "queryVariants": [
+      "What to decide before paying for an AI workflow",
+      "What to decide before paying for an AI workflow Kelowna Okanagan"
+    ],
+    "sourceIds": [
+      "michael-ai"
+    ],
+    "researchAsOf": "2026-10-08",
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "internalLinks": {
+      "primary": "/ai-implementation/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "publishOn": "2026-12-24",
+    "title": "Holiday hours: the website changes that prevent wasted calls and visits",
+    "primaryMoneyPage": "/web-design/",
+    "buyerDecision": "Google special hours, website service availability, form acknowledgement, booking calendar, voicemail; test the holiday customer journey; do not imply GBP hours update website automatically",
+    "status": "drafting",
+    "researchStatus": "Research and Echo draft required",
+    "id": "draft-07",
+    "slug": "holiday-hours-website-checklist",
+    "pillar": "Local discovery",
+    "originalTitle": "5 places to update when your business hours change",
+    "primaryQuery": "business website holiday opening hours update checklist",
+    "queryVariants": [
+      "Holiday hours: the website changes that prevent wasted calls and visits",
+      "Holiday hours Kelowna Okanagan"
+    ],
+    "sourceIds": [
+      "google-hours",
+      "google-local"
+    ],
+    "researchAsOf": "2026-10-08",
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "publishOn": "2026-12-31",
+    "title": "What you should receive when your new website is handed over",
+    "primaryMoneyPage": "/web-design/",
+    "buyerDecision": "Domain/admin ownership, source and content export, renewal record, analytics, backups restore, form recipient, edit training, account revocation; practical owner acceptance checklist",
+    "status": "drafting",
+    "researchStatus": "Research and Echo draft required",
+    "id": "draft-08",
+    "slug": "website-handover-checklist",
+    "pillar": "Buying and ownership",
+    "originalTitle": "7 website handoff checks before the new business year",
+    "primaryQuery": "website design client handover checklist ownership",
+    "queryVariants": [
+      "What you should receive when your new website is handed over",
+      "What you should receive when your new website is handed over Kelowna Okanagan"
+    ],
+    "sourceIds": [
+      "webflow-export",
+      "framer-export",
+      "wordpress",
+      "framer-port"
+    ],
+    "researchAsOf": "2026-10-08",
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-09",
+    "publishOn": "2027-01-07",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What works on a plumber website? A 2027 plan for better enquiries",
+    "format": "comparison",
+    "city": "Kelowna",
+    "primaryQuery": "plumber website design best practices Kelowna",
+    "queryVariants": [
+      "What works on a plumber website? A 2027 plan for better enquiries",
+      "What works on a plumber website? A 2027 plan for better enquiries Kelowna Okanagan"
+    ],
+    "buyerDecision": "Emergency versus planned work, service area by job type, truthful answer hours, drain and heater scope, job photography, dispatcher handoff; sample page architecture; Kelowna/West Kelowna/Lake Country only where actually served",
+    "primaryMoneyPage": "/web-design/plumbers/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "ABC Appliance service structure; Cool Runnings qualified bookings",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Emergency enquiries versus planned installations; service boundaries, call handling, job photos and ownership",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: ABC Appliance service structure; Cool Runnings qualified bookings",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Can a plumbing website handle emergency calls and installation quotes separately?",
+      "Should a plumbing company build separate drain-cleaning and renovation pages?",
+      "What proof should a designer show before building our plumbing website?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/plumbers/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "plumber-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "5 web design firms for Kelowna plumbers to compare in 2027",
+    "sourceIds": [
+      "google-local",
+      "google-starter"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-10",
+    "publishOn": "2027-01-14",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Framer vs Webflow vs a custom website: what should a small business choose?",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "Framer vs Webflow vs custom website small business",
+    "queryVariants": [
+      "Framer vs Webflow vs a custom website: what should a small business choose",
+      "Framer vs Webflow vs a custom website Kelowna Okanagan"
+    ],
+    "buyerDecision": "Separate visual builder, CMS and hosting; Framer design-led editing, Webflow class-based design and collections, custom static/headless control; compare who edits, content relationships, booking integration, recurring cost, exit cost; no platform universal SEO winner",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "All approved portfolio projects, each for its actual contribution",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Choose qualified bookings, an accountable page plan, owner access and a measurable enquiry path",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: All approved portfolio projects, each for its actual contribution",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about choose qualified bookings?",
+      "How do I decide whether an accountable page plan belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "framer-webflow-custom-website",
+    "pillar": "Platforms",
+    "originalTitle": "9 website decisions for an Okanagan business planning growth in 2027",
+    "sourceIds": [
+      "framer-cms",
+      "framer-export",
+      "webflow-cms",
+      "webflow-export",
+      "sanity-intro",
+      "framer-port"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-11",
+    "publishOn": "2027-01-21",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What works on an electrician website beyond a list of services?",
+    "format": "comparison",
+    "city": "Vernon",
+    "primaryQuery": "electrician website design best practices Okanagan",
+    "queryVariants": [
+      "What works on an electrician website beyond a list of services",
+      "What works on an electrician website beyond a list of services? Kelowna Okanagan"
+    ],
+    "buyerDecision": "Emergency faults versus planned panels/EV chargers/renovations; scope, verified credentials for actual contractor, site assessment, strata/commercial intake, photos of finished work; no electrical how-to or blanket licence claims",
+    "primaryMoneyPage": "/web-design/electricians/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "ABC Appliance as adjacent service proof, never electrician client proof",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Separate residential repairs, panel upgrades and commercial tender enquiries; compare genuine relevant portfolios",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: ABC Appliance as adjacent service proof, never electrician client proof",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "How should an electrician separate residential enquiries from commercial projects?",
+      "Can a website ask for panel photos without making them mandatory?",
+      "Should EV chargers and panel upgrades have their own service pages?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/electricians/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "electrician-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "5 web design firms for Vernon electricians to compare in 2027",
+    "sourceIds": [
+      "tsbc",
+      "google-starter"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-12",
+    "publishOn": "2027-01-28",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "An accounting website that attracts the clients you want",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "accountant website design attracting business clients",
+    "queryVariants": [
+      "An accounting website that attracts the clients you want",
+      "An accounting website that attracts the clients you want Kelowna Okanagan"
+    ],
+    "buyerDecision": "Personal tax versus bookkeeping/advisory, business stages, client fit, deadlines owner supplies, secure-document handoff outside enquiry form, team bios and engagement process; no invented CRA dates",
+    "primaryMoneyPage": "/web-design/accountants/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Michael's content planning and technical website delivery",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Capacity, client fit, document handoff and first appointment; avoid collecting tax documents through a public form",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Michael's content planning and technical website delivery",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should an accounting website say when the firm is at capacity?",
+      "Should clients upload tax documents through the enquiry form?",
+      "Can a small accounting site support bookkeeping and annual tax clients separately?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/accountants/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "accountant-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "7 things an accounting website needs before tax season",
+    "sourceIds": [
+      "privacy",
+      "forms"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-13",
+    "publishOn": "2027-02-04",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "How to choose a branding partner for a Kelowna small business",
+    "format": "comparison",
+    "city": "Kelowna",
+    "primaryQuery": "branding services small business Kelowna",
+    "queryVariants": [
+      "How to choose a branding partner for a Kelowna small business",
+      "How to choose a branding partner for a Kelowna small business Kelowna Okanagan"
+    ],
+    "buyerDecision": "Owned comparison including Michael, Twin Creek Media, Svice based on official service scope; clear authorship; compare identity-only, website launch and ongoing campaign need; concrete scope questions, no ranked awards or fabricated rates",
+    "primaryMoneyPage": "/marketing-branding/",
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "Upon This Rock brand development; AI Catalyst and VI films",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Strategy, identity files, rollout, copy and who executes after the logo",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Upon This Rock brand development; AI Catalyst and VI films",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which creative deliverables and usage rights should the proposal include?",
+      "Can one provider handle the strategy and the finished work?",
+      "How should I compare a one-off project with an ongoing retainer?"
+    ],
+    "internalLinks": {
+      "primary": "/marketing-branding/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "kelowna-branding-partners",
+    "pillar": "Brand and content",
+    "originalTitle": "5 branding services for Kelowna businesses to compare in 2027",
+    "sourceIds": [
+      "michael-brand",
+      "twincreek",
+      "svice"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-14",
+    "publishOn": "2027-02-11",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What works for law-firm websites in 2027?",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "law firm website design best practices British Columbia",
+    "queryVariants": [
+      "What works for law-firm websites in 2027",
+      "What works for law-firm websites in 2027? Kelowna Okanagan"
+    ],
+    "buyerDecision": "Practice-specific pages, lawyer credentials/bios, office/remote meeting arrangements, first-conversation expectations, limited safe intake and conflict review; calm credibility not aggressive leads language; BC marketing rule 4.2 accuracy; no case outcome promises",
+    "primaryMoneyPage": "/web-design/law-firms/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Website systems experience; no invented legal-sector results",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Practice fit, lawyer credentials, conflict-check expectations and appropriate intake without sensitive case facts",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Website systems experience; no invented legal-sector results",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What can a law-firm contact form collect before a conflict check?",
+      "Should each practice area have its own page?",
+      "How can prospective clients find the right lawyer without sharing case details publicly?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/law-firms/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "law-firm-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "8 ways a law-firm website can make the first enquiry easier",
+    "sourceIds": [
+      "bc-law",
+      "privacy",
+      "forms"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-15",
+    "publishOn": "2027-02-18",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "A hotel website should make booking feel straightforward",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "hotel website design direct bookings best practices",
+    "queryVariants": [
+      "A hotel website should make booking feel straightforward",
+      "A hotel website should make booking feel straightforward Kelowna Okanagan"
+    ],
+    "buyerDecision": "Room differences, occupancy, accessibility details, cancellation terms from property, actual photography, date handoff, booking-provider consistency; keep attribution across booking engine; Okanagan visit planning via tourism sources",
+    "primaryMoneyPage": "/web-design/hotels/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Okanagan Treehouse design; label adjacent accommodation proof accurately",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Booking-engine ownership, room detail, mobile availability, migration and ongoing seasonal editing",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Okanagan Treehouse design; label adjacent accommodation proof accurately",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Who should own the hotel booking-engine account?",
+      "Can a hotel redesign preserve its existing booking system?",
+      "What should be tested between the room page and booking confirmation?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/hotels/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "hotel-website-direct-booking",
+    "pillar": "Industry websites",
+    "originalTitle": "5 website partners for Okanagan hotels to compare in 2027",
+    "sourceIds": [
+      "tourism-kelowna",
+      "hotel-links",
+      "google-starter"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-16",
+    "publishOn": "2027-02-25",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Prepare your landscaping website before the busy season",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "landscaping website design seasonal services lead generation",
+    "queryVariants": [
+      "Prepare your landscaping website before the busy season",
+      "Prepare your landscaping website before the busy season Kelowna Okanagan"
+    ],
+    "buyerDecision": "Maintenance contracts versus one-time projects, coverage, before/after scope, quote readiness, booking capacity, seasonal calendars verified with owner; Cool Runnings 30% qualified bookings only supported metric",
+    "primaryMoneyPage": "/web-design/landscapers/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Cool Runnings 30% increase in qualified bookings",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Job size, service radius, garden versus maintenance enquiry, project proof and quote qualification",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Cool Runnings 30% increase in qualified bookings",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "How can a landscaping website distinguish maintenance from larger projects?",
+      "Should landscaping quote forms ask for property photos?",
+      "Which service-area details help avoid unsuitable landscaping enquiries?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/landscapers/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "landscaping-website-seasonal-demand",
+    "pillar": "Industry websites",
+    "originalTitle": "7 website checks before your landscaping busy season",
+    "sourceIds": [
+      "cool",
+      "google-local"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-17",
+    "publishOn": "2027-03-04",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Framer for small-business websites: where it fits and where it gets awkward",
+    "format": "comparison",
+    "city": "West Kelowna",
+    "primaryQuery": "Framer small business website CMS limitations",
+    "queryVariants": [
+      "Framer for small-business websites: where it fits and where it gets awkward",
+      "Framer for small-business websites Kelowna Okanagan"
+    ],
+    "buyerDecision": "Visual editing, CMS structure, forms, redirects, staging and ownership; distinguish managed publishing from export and rebuild limitations; verify current portability docs not assume no export",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Michael's design and lead-generation work, with sector distinction",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Design-build versus renovations, project photography, scope qualification and portfolio depth",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Michael's design and lead-generation work, with sector distinction",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "How much project detail belongs in a builder portfolio?",
+      "Can a builder qualify renovation enquiries without publishing a fixed price?",
+      "Who writes project stories and secures photography rights?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "framer-small-business-websites",
+    "pillar": "Platforms",
+    "originalTitle": "5 web design firms for West Kelowna builders to compare",
+    "sourceIds": [
+      "framer-cms",
+      "framer-export",
+      "framer-price",
+      "framer-port"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-18",
+    "publishOn": "2027-03-11",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "From website enquiry to booked work: fix the handoff",
+    "format": "workflow",
+    "city": "Okanagan",
+    "primaryQuery": "website enquiry lead follow up workflow service business",
+    "queryVariants": [
+      "From website enquiry to booked work: fix the handoff",
+      "From website enquiry to booked work Kelowna Okanagan"
+    ],
+    "buyerDecision": "Form delivery, named owner, acknowledgement, queue, response capacity, qualify then book; retry and duplicates, privacy, human confirmation; mock workflow explanation no claimed implemented client process",
+    "primaryMoneyPage": "/ai-implementation/",
+    "parentMoneyPage": "/ai-implementation/",
+    "proof": "Existing workflow demonstrations; distinguish features from measured outcomes",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Acknowledge, route, collect missing information, prepare a reply, hand off and track booked work",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Existing workflow demonstrations; distinguish features from measured outcomes",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which parts of this workflow should still require a person’s approval?",
+      "Can the workflow use the tools my business already has?",
+      "Who maintains the workflow when a tool or business rule changes?"
+    ],
+    "internalLinks": {
+      "primary": "/ai-implementation/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "website-enquiry-follow-up",
+    "pillar": "Conversion",
+    "originalTitle": "6 steps to stop losing website enquiries between the form and the phone",
+    "sourceIds": [
+      "forms",
+      "michael-ai"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-19",
+    "publishOn": "2027-03-18",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What a winery website needs before someone plans a visit",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "winery website design tasting reservations visitor information",
+    "queryVariants": [
+      "What a winery website needs before someone plans a visit",
+      "What a winery website needs before someone plans a visit Kelowna Okanagan"
+    ],
+    "buyerDecision": "Tastings/reservations, food, group policies, transport, accessibility, seasonal availability, map/location, direct product shopping only if offered; West Kelowna official wine context; do not invent alcohol legal rules",
+    "primaryMoneyPage": "/web-design/wineries/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Treehouse visitor-journey design, no winery client claim",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Tasting reservations, groups, restaurant and retail paths, dates, access and seasonal accuracy",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Treehouse visitor-journey design, no winery client claim",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Should tastings, group bookings and restaurant reservations use different routes?",
+      "What information should appear before a tasting booking link?",
+      "Who updates seasonal hours across the website and business profile?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/wineries/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "winery-website-visitor-planning",
+    "pillar": "Industry websites",
+    "originalTitle": "8 details a winery website needs before visitors plan their trip",
+    "sourceIds": [
+      "tourism-west",
+      "google-hours"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-20",
+    "publishOn": "2027-03-25",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Webflow for small businesses: when its CMS and design control are worth it",
+    "format": "comparison",
+    "city": "Vernon",
+    "primaryQuery": "Webflow small business website CMS ownership costs",
+    "queryVariants": [
+      "Webflow for small businesses: when its CMS and design control are worth it",
+      "Webflow for small businesses Kelowna Okanagan"
+    ],
+    "buyerDecision": "Classes/components, CMS collections, editor permissions, site versus workspace bill, managed hosting, export with feature exclusions, editor training; sample services/team/projects model",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "VI positioning, AI Catalyst film, Upon This Rock identity",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: One-off branding versus ongoing delivery; audience research, local media, video and reporting ownership",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: VI positioning, AI Catalyst film, Upon This Rock identity",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which creative deliverables and usage rights should the proposal include?",
+      "Can one provider handle the strategy and the finished work?",
+      "How should I compare a one-off project with an ongoing retainer?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "webflow-small-business-websites",
+    "pillar": "Platforms",
+    "originalTitle": "5 marketing partners for Vernon businesses to compare in 2027",
+    "sourceIds": [
+      "webflow-cms",
+      "webflow-export",
+      "webflow-price"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-21",
+    "publishOn": "2027-04-01",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "A vacation-rental website that earns the direct-booking enquiry",
+    "format": "buying advice",
+    "city": "Okanagan",
+    "primaryQuery": "vacation rental direct booking website design Okanagan",
+    "queryVariants": [
+      "A vacation-rental website that earns the direct-booking enquiry",
+      "A vacation-rental website that earns the direct-booking enquiry Kelowna Okanagan"
+    ],
+    "buyerDecision": "Actual accommodation visuals, bed configuration, parking/access, house rules, dates, price completeness, booking handoff; Treehouse design only not invented conversion outcome; do not give licensing law advice",
+    "primaryMoneyPage": "/web-design/vacation-rentals/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Okanagan Treehouse actual design",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Booking engine, property detail, fees, cancellation information, channel sync and editor control",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Okanagan Treehouse actual design",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Can a property keep its channel manager when adding direct booking?",
+      "Which fees and policies need to appear before a reservation?",
+      "How should a property site explain sleeping arrangements and access?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/vacation-rentals/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "vacation-rental-direct-booking-website",
+    "pillar": "Industry websites",
+    "originalTitle": "7 questions to ask about a vacation-rental website and direct bookings",
+    "sourceIds": [
+      "treehouse",
+      "tourism-kelowna"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-22",
+    "publishOn": "2027-04-08",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What makes a dental website reassuring and useful?",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "dental website design new patient booking best practices",
+    "queryVariants": [
+      "What makes a dental website reassuring and useful",
+      "What makes a dental website reassuring and useful? Kelowna Okanagan"
+    ],
+    "buyerDecision": "New patient versus existing booking, treatment overview, named clinicians, location/access, questions about fees and coverage answered without invented promises; use secure clinical systems for health details",
+    "primaryMoneyPage": "/web-design/dentists/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "General website experience only unless dental proof is supplied",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: New-patient fit, accepted services, approachable team proof and appointment integration; verify sector work",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: General website experience only unless dental proof is supplied",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "How should a dental website distinguish new and existing patients?",
+      "Can a redesign keep the existing appointment platform?",
+      "What evidence should a designer show of dental-site work?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/dentists/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "dental-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "5 web design firms for dental practices in the Okanagan to compare",
+    "sourceIds": [
+      "privacy",
+      "forms"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-23",
+    "publishOn": "2027-04-15",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What an HVAC website needs before a customer calls",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "HVAC website design services calls best practices",
+    "queryVariants": [
+      "What an HVAC website needs before a customer calls",
+      "What an HVAC website needs before a customer calls Kelowna Okanagan"
+    ],
+    "buyerDecision": "Repair/maintenance/replacement separate routes, installed brands only verified, service zones, real after-hours availability, financing terms verify, quote assumptions, technical credentials owner verified; no savings claims or repair instructions",
+    "primaryMoneyPage": "/web-design/hvac/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "ABC Appliance service pages as adjacent repair example",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Repairs, maintenance and installations have different urgency and qualification; availability without false response promises",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: ABC Appliance service pages as adjacent repair example",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Should cooling repairs and replacement installations share one enquiry form?",
+      "How can an HVAC site explain availability without promising immediate service?",
+      "What should a maintenance-plan page explain before signup?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/hvac/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "hvac-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "8 things an HVAC website should make clear before summer",
+    "sourceIds": [
+      "tsbc",
+      "google-local"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-24",
+    "publishOn": "2027-04-22",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "WordPress, Webflow or a custom CMS for a charity website?",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "charity website CMS WordPress Webflow nonprofit",
+    "queryVariants": [
+      "WordPress, Webflow or a custom CMS for a charity website",
+      "WordPress, Webflow or a custom CMS for a charity website? Kelowna Okanagan"
+    ],
+    "buyerDecision": "Donations external provider, resource library, volunteers/many editors, restricted roles, editorial review, integrations and support; compare ownership maintenance and ease not assume free total; St James design/marketing and RCCV community content",
+    "primaryMoneyPage": "/web-design/charities/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "St James donor work, accurately described",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Donation path, campaign story, editing rights, payment fees and accessible content",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: St James donor work, accurately described",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Who controls the charity donation account and recurring payments?",
+      "What should be visible before a donor enters payment details?",
+      "How can campaign stories and donation forms stay connected?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/charities/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "charity-website-platforms",
+    "pillar": "Platforms",
+    "originalTitle": "5 website and branding partners for Okanagan charities to compare",
+    "sourceIds": [
+      "wordpress",
+      "webflow-cms",
+      "sanity-intro",
+      "privacy"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-25",
+    "publishOn": "2027-04-29",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "A physiotherapy website should help someone choose their first appointment",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "physiotherapy website design patient appointment",
+    "queryVariants": [
+      "A physiotherapy website should help someone choose their first appointment",
+      "A physiotherapy website should help someone choose their first appointment Kelowna Okanagan"
+    ],
+    "buyerDecision": "Care offered, practitioner fit, clinic access, appointment duration suppliedbyclinic, fees and insurance questions, booking handoff, safe intake; educational content not medical advice",
+    "primaryMoneyPage": "/web-design/physiotherapy/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Content structure and appointment design experience",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Conditions versus services, practitioners, booking, practical access and useful referral information",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Content structure and appointment design experience",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Should physiotherapy pages be organised by service or condition?",
+      "How do new patients choose a practitioner and appointment type?",
+      "Where should a clinic collect private health information?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/physiotherapy/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "physiotherapy-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "7 pages a physiotherapy clinic needs beyond the homepage",
+    "sourceIds": [
+      "privacy",
+      "forms"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-26",
+    "publishOn": "2027-05-06",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What belongs on your website, social media and in a video?",
+    "format": "comparison",
+    "city": "Kelowna",
+    "primaryQuery": "small business website social media video content strategy",
+    "queryVariants": [
+      "What belongs on your website, social media and in a video",
+      "What belongs on your website, social media and in a video? Kelowna Okanagan"
+    ],
+    "buyerDecision": "Website durable sourceoftruth, social discovery, video explains, campaign link closes; VI explains a misunderstood medium, AI Catalyst video, St James film; content repurposing plan with consent",
+    "primaryMoneyPage": "/marketing-branding/",
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "St James donor film, AI Catalyst video, recent Vertical Impression film",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Who creates, who posts, platform delivery, usage rights, captions and measurement",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: St James donor film, AI Catalyst video, recent Vertical Impression film",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which creative deliverables and usage rights should the proposal include?",
+      "Can one provider handle the strategy and the finished work?",
+      "How should I compare a one-off project with an ongoing retainer?"
+    ],
+    "internalLinks": {
+      "primary": "/marketing-branding/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "website-social-video-content",
+    "pillar": "Brand and content",
+    "originalTitle": "5 social media and video services for Kelowna businesses to compare",
+    "sourceIds": [
+      "michael-brand",
+      "video"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-27",
+    "publishOn": "2027-05-13",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Restaurant websites: help guests decide, then get out of the way",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "restaurant website design menu reservations mobile",
+    "queryVariants": [
+      "Restaurant websites: help guests decide, then get out of the way",
+      "Restaurant websites Kelowna Okanagan"
+    ],
+    "buyerDecision": "Readable HTML menu not PDF-only, current hours, reservation versuswalkin, takeout link, group enquiry, dietary-info confirmation, actual food photos, parking/access; no fake menu prices",
+    "primaryMoneyPage": "/web-design/restaurants/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Michael's content, web and visual communication work",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Readable menus, hours, dietary questions, reservations, group enquiries and genuine current location info",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Michael's content, web and visual communication work",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Should a restaurant menu be a PDF or a readable web page?",
+      "How can group enquiries sit alongside table reservations?",
+      "Who maintains hours and seasonal menus after launch?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/restaurants/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "restaurant-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "9 restaurant website details that save guests a phone call",
+    "sourceIds": [
+      "google-hours",
+      "wcag"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-28",
+    "publishOn": "2027-05-20",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What a property-management website needs for owners and tenants",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "property management website design owners tenants",
+    "queryVariants": [
+      "What a property-management website needs for owners and tenants",
+      "What a property-management website needs for owners and tenants Kelowna Okanagan"
+    ],
+    "buyerDecision": "Separate owner sales journey from tenant support, listings availability, maintenance emergencyroute, portal links, coverage, managementscopeandfeequestions, secureapplications; no legal tenancyclaims",
+    "primaryMoneyPage": "/web-design/property-management/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "General enquiry routing and website systems",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Owner acquisition versus tenant service, listing freshness, portal handoff and enquiries by property",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: General enquiry routing and website systems",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "How should a property manager separate landlord leads from tenant requests?",
+      "Can listings connect to an existing property-management system?",
+      "Who owns the listing content if the website provider changes?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/property-management/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "property-management-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "5 web design firms for Okanagan property managers to compare",
+    "sourceIds": [
+      "privacy",
+      "forms"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-29",
+    "publishOn": "2027-05-27",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Shopify, WooCommerce or a simple catalogue? A retailer's website decision",
+    "format": "buying advice",
+    "city": "Okanagan",
+    "primaryQuery": "Shopify vs WooCommerce vs catalogue small retail business",
+    "queryVariants": [
+      "Shopify, WooCommerce or a simple catalogue? A retailer's website decision",
+      "Shopify, WooCommerce or a simple catalogue? A retailer's website decision Kelowna Okanagan"
+    ],
+    "buyerDecision": "Inventory source, in-store and online stock, pickup/delivery, payments, product information, returns; Shopify managed commerce versus Woo onWordPress operations; catalogue-firstwhencheckoutnotready",
+    "primaryMoneyPage": "/web-design/retail/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Michael's design and marketing process, no invented retail uplift",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Catalogue truth, fulfilment, local pickup, stock changes, returns information and transaction ownership",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Michael's design and marketing process, no invented retail uplift",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Can a local store offer pickup before full ecommerce shipping?",
+      "Who keeps product stock accurate across the site and shop?",
+      "Which recurring charges belong in an ecommerce quote?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/retail/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "retail-website-platforms",
+    "pillar": "Platforms",
+    "originalTitle": "7 retail website decisions before adding online checkout",
+    "sourceIds": [
+      "shopify",
+      "woo",
+      "wordpress"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-30",
+    "publishOn": "2027-06-03",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "AI on a service-business website: start with useful work",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "AI automation service business website enquiries",
+    "queryVariants": [
+      "AI on a service-business website: start with useful work",
+      "AI on a service-business website Kelowna Okanagan"
+    ],
+    "buyerDecision": "Draft/routeenquiries, summariseapprovedknowledge, helpstaffanswer, monitorhandoffs; distinguish assistant/adviser/customagent from autonomouscommitments; permissions, exceptions, logs; no AI chatbot slappedoneverypage",
+    "primaryMoneyPage": "/ai-implementation/",
+    "parentMoneyPage": "/ai-implementation/",
+    "proof": "Custom skills and workflow demos",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Draft replies, source business facts, require approvals, stop unsupported promises and measure time saved",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Custom skills and workflow demos",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which parts of this workflow should still require a person’s approval?",
+      "Can the workflow use the tools my business already has?",
+      "Who maintains the workflow when a tool or business rule changes?"
+    ],
+    "internalLinks": {
+      "primary": "/ai-implementation/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "ai-service-business-website",
+    "pillar": "AI and operations",
+    "originalTitle": "6 practical ways to use AI without handing over customer service",
+    "sourceIds": [
+      "michael-ai",
+      "google-ai"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-31",
+    "publishOn": "2027-06-10",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What makes a roofing website credible before the site visit?",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "roofing website design estimates project photos",
+    "queryVariants": [
+      "What makes a roofing website credible before the site visit",
+      "What makes a roofing website credible before the site visit? Kelowna Okanagan"
+    ],
+    "buyerDecision": "Roof types and serviceareas, repairvsreplacement, job photos/context, inspectionprocess, warrantytermsasverified notblanketguarantee, urgentleakcontact, insurancecredentialsverification",
+    "primaryMoneyPage": "/web-design/roofers/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Cool Runnings for local service conversions, clearly adjacent",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Emergency leaks versus full replacement, estimate qualification, project photos and service coverage",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Cool Runnings for local service conversions, clearly adjacent",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "How should a roofing site separate leak repairs from replacements?",
+      "What photos are useful for a first roofing estimate request?",
+      "How can roofers show project proof without publishing private addresses?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/roofers/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "roofing-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "5 web design firms for Okanagan roofing businesses to compare",
+    "sourceIds": [
+      "google-local",
+      "google-starter"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-32",
+    "publishOn": "2027-06-17",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Medical-practice websites: make the next step clear without collecting too much",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "medical practice website design appointment enquiries",
+    "queryVariants": [
+      "Medical-practice websites: make the next step clear without collecting too much",
+      "Medical-practice websites Kelowna Okanagan"
+    ],
+    "buyerDecision": "Acceptingpatientsstatus supplied, caremodel, appointmentdirections, referrals ownerdefined, accessibility, secureclinicalportal; minimal publicform data; noclinicaladvice/guaranteedprivacyorlegalcompliance",
+    "primaryMoneyPage": "/web-design/medical-practices/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "General appointment and content systems; no medical efficacy claims",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Accepted patients, services, referrals, access and secure booking; no sensitive health data in public forms",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: General appointment and content systems; no medical efficacy claims",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "How should a practice explain whether it accepts new patients?",
+      "Can a general enquiry form avoid collecting health records?",
+      "Who reviews medical website content before it goes live?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/medical-practices/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "medical-practice-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "8 website details that help a medical practice handle appointment enquiries",
+    "sourceIds": [
+      "privacy",
+      "wcag",
+      "forms"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-33",
+    "publishOn": "2027-06-24",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What makes a small-business website look good? A practical design critique",
+    "format": "comparison",
+    "city": "West Kelowna",
+    "primaryQuery": "small business website design examples typography layout",
+    "queryVariants": [
+      "What makes a small-business website look good? A practical design critique",
+      "What makes a small-business website look good? A practical design critique Kelowna Okanagan"
+    ],
+    "buyerDecision": "Hierarchy,type,contrast,spacing,realphotos,consistentcomponents,clearCTA; compare actual ABC,Treehouse,RCCV decisions without pretendingmetrics; aestheticqualityplus taskcompletion; actionablebefore/after copy example",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "Upon This Rock visual identity and cross-channel work",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Positioning before identity; assets for signage, website, social and sales use; scope and handover",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Upon This Rock visual identity and cross-channel work",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which creative deliverables and usage rights should the proposal include?",
+      "Can one provider handle the strategy and the finished work?",
+      "How should I compare a one-off project with an ongoing retainer?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "good-small-business-website-design",
+    "pillar": "Design",
+    "originalTitle": "5 brand-development partners for West Kelowna businesses to compare",
+    "sourceIds": [
+      "michael-web",
+      "wcag"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-34",
+    "publishOn": "2027-07-01",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "A car-dealer website needs more than an inventory feed",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "car dealership website design inventory enquiry",
+    "queryVariants": [
+      "A car-dealer website needs more than an inventory feed",
+      "A car-dealer website needs more than an inventory feed Kelowna Okanagan"
+    ],
+    "buyerDecision": "Vehicleconditionandactualphotos, update/inventoryowner, testdriveenquiry, tradeindetails, financeinsecureapprovedsystem, mobilefiltering, legitimatefeesfromdealer; nospecificcreditterms",
+    "primaryMoneyPage": "/web-design/car-dealerships/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "General web integration and conversion approach, no dealership result claim",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Vehicle availability, finance enquiry handoff, trade-in flow, service booking and inventory ownership",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: General web integration and conversion approach, no dealership result claim",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Can a dealership keep its inventory feed during a redesign?",
+      "How should sold vehicles be handled on the website?",
+      "Should service, trade-in and vehicle enquiries use separate routes?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/car-dealerships/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "car-dealer-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "7 website improvements for a dealership beyond the inventory feed",
+    "sourceIds": [
+      "privacy",
+      "google-starter"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-35",
+    "publishOn": "2027-07-08",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "A financial-advisor website should help the right client recognise the fit",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "financial advisor website design client fit",
+    "queryVariants": [
+      "A financial-advisor website should help the right client recognise the fit",
+      "A financial-advisor website should help the right client recognise the fit Kelowna Okanagan"
+    ],
+    "buyerDecision": "Servicemodel, clientstage, qualificationsverified, clearmeetingprocess, nospecificinvestmentreturnsorpromises, providercompliancereview, secureinformationhandoff; educationalwebadvice only",
+    "primaryMoneyPage": "/web-design/financial-advisors/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Website and content experience only",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Practice positioning, credentials, review workflow, consultation booking and ownership; verify compliance responsibilities",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Website and content experience only",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Who reviews an advisor website’s claims and disclosures?",
+      "Can appointment booking be added without moving client records?",
+      "What should a financial-advice website explain about the initial conversation?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/financial-advisors/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "financial-advisor-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "5 website firms for Okanagan financial advisors to compare",
+    "sourceIds": [
+      "privacy",
+      "forms"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-36",
+    "publishOn": "2027-07-15",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "How a small-business website can be easier to find in Google and AI search",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "small business website Google AI search optimization",
+    "queryVariants": [
+      "How a small-business website can be easier to find in Google and AI search",
+      "How a small-business website can be easier to find in Google and AI search Kelowna Okanagan"
+    ],
+    "buyerDecision": "Contentfacts/entities, crawlability, internalnavigation, ownedproof and author, GoogleAIrequirements, no specialAIschemaor llmstxtrankboost, OAISearchBotvsGPTBot distinctions; actual FAQ answers; measurementwithout inventedcitationlift",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Google and OpenAI official guidance plus owned project evidence",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Crawl access, named services, original proof, clear location, source consistency and enquiry measurement",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Google and OpenAI official guidance plus owned project evidence",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about crawl access?",
+      "How do I decide whether named services belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "small-business-ai-search",
+    "pillar": "Local discovery",
+    "originalTitle": "8 ways to make your Okanagan business easier to understand in AI search",
+    "sourceIds": [
+      "google-ai",
+      "google-helpful",
+      "openai-bots"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-37",
+    "publishOn": "2027-07-22",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Sanity explained for a business owner: CMS, website and hosting are different jobs",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "Sanity CMS small business website headless hosting",
+    "queryVariants": [
+      "Sanity explained for a business owner: CMS, website and hosting are different jobs",
+      "Sanity explained for a business owner Kelowna Okanagan"
+    ],
+    "buyerDecision": "StructuredcontentandStudio, frontendneeded, managedContentLake, selfhostableStudio doesnotselfhostContentLake, previewconfigured, rolesandtraining, exportanddevelopersupport; when unnecessaryfor5pages",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "St James design and marketing, scope sourced from project",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Admissions journey, tour booking, parent information, staff editing and donor story",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: St James design and marketing, scope sourced from project",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "How should a school connect tour bookings to admissions steps?",
+      "Who updates tuition, dates and application information?",
+      "How can the site serve current parents without confusing prospective families?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "sanity-small-business-cms",
+    "pillar": "Platforms",
+    "originalTitle": "5 web design firms for private schools in the Okanagan to compare",
+    "sourceIds": [
+      "sanity-intro",
+      "sanity-host",
+      "sanity-export"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-38",
+    "publishOn": "2027-07-29",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Getting the wrong enquiries? Your website may be attracting the wrong work",
+    "format": "diagnostic",
+    "city": "Okanagan",
+    "primaryQuery": "website wrong leads enquiries service business",
+    "queryVariants": [
+      "Getting the wrong enquiries? Your website may be attracting the wrong work",
+      "Getting the wrong enquiries? Your website may be attracting the wrong work Kelowna Okanagan"
+    ],
+    "buyerDecision": "Serviceboundaries, minimumscopeonlywhenownertrue, areas/fit, timeframe, contentmatch, qualificationform; recordwhydeclined and changeprioritypage; avoid promisingleadqualityfromcopy alone",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Cool Runnings booking result; distinguish quality from volume",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Coverage, price fit, service exclusions, enquiry fields, ad intent and follow-up quality",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Cool Runnings booking result; distinguish quality from volume",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about coverage?",
+      "How do I decide whether price fit belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "website-wrong-enquiries",
+    "pillar": "Conversion",
+    "originalTitle": "7 things to fix when your business gets enquiries for the wrong jobs",
+    "sourceIds": [
+      "forms",
+      "cool"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-39",
+    "publishOn": "2027-08-05",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Medical-spa websites: balance visual appeal with clear treatment information",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "medical spa website design treatment consultation",
+    "queryVariants": [
+      "Medical-spa websites: balance visual appeal with clear treatment information",
+      "Medical-spa websites Kelowna Okanagan"
+    ],
+    "buyerDecision": "Providercredentials, treatmentconsultationpath, consentandphotography, costquestions scopeprovided, avoid outcomeclaims, clinicianreview; brandtrustandminimalintake; no medicalefficacy advice",
+    "primaryMoneyPage": "/web-design/medical-spas/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Design experience only; no invented treatment or clinic results",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Practitioner credentials, treatment suitability, appointment pathways and controlled claim review",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Design experience only; no invented treatment or clinic results",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Who approves treatment claims and practitioner information?",
+      "Should a medical-spa website offer direct booking or a suitability consultation?",
+      "What should a designer understand about treatment photography and consent?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/medical-spas/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "medical-spa-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "5 website partners for Okanagan medical spas to compare",
+    "sourceIds": [
+      "privacy",
+      "wcag"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-40",
+    "publishOn": "2027-08-12",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Do you need a new brand, a better website or clearer words?",
+    "format": "decision guide",
+    "city": "Okanagan",
+    "primaryQuery": "rebrand vs website redesign vs messaging small business",
+    "queryVariants": [
+      "Do you need a new brand, a better website or clearer words",
+      "Do you need a new brand, a better website or clearer words? Kelowna Okanagan"
+    ],
+    "buyerDecision": "Diagnosebrandmisfitvs UXvsunclearoffer; specific symptoms/lowestusefulintervention; UponThisRock identity,StJamesstory,VIcategoryexplanation; don't invent clientsurveys",
+    "primaryMoneyPage": "/marketing-branding/",
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "Upon This Rock identity and VI positioning",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Distinguish confused positioning, inconsistent assets and changed audience from a merely dated logo",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Upon This Rock identity and VI positioning",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about distinguish confused positioning?",
+      "How do I decide whether inconsistent assets and changed audience from a merely dated logo belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/marketing-branding/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "rebrand-redesign-or-copy",
+    "pillar": "Brand and content",
+    "originalTitle": "6 signs your business needs a new brand and 4 reasons it may not",
+    "sourceIds": [
+      "michael-brand",
+      "michael-web"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-41",
+    "publishOn": "2027-08-19",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What works for appliance-repair websites? Lessons from ABC Appliance",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "appliance repair website design service areas booking",
+    "queryVariants": [
+      "What works for appliance-repair websites? Lessons from ABC Appliance",
+      "What works for appliance-repair websites? Lessons from ABC Appliance Kelowna Okanagan"
+    ],
+    "buyerDecision": "Appliancecategories, supportedbrands verifiedbybusiness, serviceareas, bookinginfo, optionalmodeldescription, landlord/householderroutes; ABC increasedconsistentsearchvisibility userreported no numericperiod; differentiate siteproof from proposedimprovements",
+    "primaryMoneyPage": "/web-design/appliance-repair/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "ABC Appliance actual website and search work",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Brand and appliance coverage, fault descriptions, local booking and no false dispatch promises",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: ABC Appliance actual website and search work",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Should each appliance type have its own service page?",
+      "Which fault and model details help with a repair request?",
+      "How can a repair website clarify brands and service coverage?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/appliance-repair/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "appliance-repair-website-lessons",
+    "pillar": "Industry websites",
+    "originalTitle": "5 web design firms for Okanagan appliance-repair companies to compare",
+    "sourceIds": [
+      "abc",
+      "google-local"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-42",
+    "publishOn": "2027-08-26",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Custom-built or self-hosted? What website ownership really means",
+    "format": "buying advice",
+    "city": "Okanagan",
+    "primaryQuery": "self hosted vs managed hosting custom business website ownership",
+    "queryVariants": [
+      "Custom-built or self-hosted? What website ownership really means",
+      "Custom-built or self-hosted? What website ownership really means Kelowna Okanagan"
+    ],
+    "buyerDecision": "Codeownership, domain,content, hosting, backups, runtimeupdates, formmail, analytics; managedstaticdeploymentstillcustomwithoutserveradmin; cost/exitplan; selfhostSanityStudio distinctionifneeded",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/ai-implementation/",
+    "proof": "Current custom skill and workflow portfolio",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Task, permissions, data sources, approval points, failures, handoff, monitoring and maintenance",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Current custom skill and workflow portfolio",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which parts of this workflow should still require a person’s approval?",
+      "Can the workflow use the tools my business already has?",
+      "Who maintains the workflow when a tool or business rule changes?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "self-hosted-custom-website-ownership",
+    "pillar": "Platforms",
+    "originalTitle": "8 questions to ask before buying a custom AI agent",
+    "sourceIds": [
+      "wordpress",
+      "webflow-export",
+      "sanity-host"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-43",
+    "publishOn": "2027-09-02",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "A private-school website that helps families take the next step",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "private school website design admissions marketing",
+    "queryVariants": [
+      "A private-school website that helps families take the next step",
+      "A private-school website that helps families take the next step Kelowna Okanagan"
+    ],
+    "buyerDecision": "Age/programmefit, curriculumreal, admissionssteps, visiting, feesfromschool, safeguardingprivacy, parentcurrentresourcesseparatefromprospective; StJamesdesignmarketing proof no enrolmentclaim",
+    "primaryMoneyPage": "/web-design/private-schools/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "St James design and marketing work",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Tour dates, application steps, fees if approved, parent questions, photography consent and staff editing",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: St James design and marketing work",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "How should a school connect tour bookings to admissions steps?",
+      "Who updates tuition, dates and application information?",
+      "How can the site serve current parents without confusing prospective families?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/private-schools/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "private-school-website-design",
+    "pillar": "Industry websites",
+    "originalTitle": "7 school website updates to make before admissions season",
+    "sourceIds": [
+      "privacy",
+      "wcag",
+      "michael-brand"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-44",
+    "publishOn": "2027-09-09",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Website photography, video or animation: which earns its place?",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "website design photography video animation performance",
+    "queryVariants": [
+      "Website photography, video or animation: which earns its place",
+      "Website photography, video or animation Kelowna Okanagan"
+    ],
+    "buyerDecision": "Stillimageimmediateproof, videoprocess/emotion, animationrelationships; userchoice/reducedmotion/weight/posters/captions; TreehousescrollvsABCinformation,VIexplainermedium; avoid animationsforfiller",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "St James, AI Catalyst and VI video examples",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Business objective, interview or motion needs, deliverable formats, usage rights and edit rounds",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: St James, AI Catalyst and VI video examples",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which creative deliverables and usage rights should the proposal include?",
+      "Can one provider handle the strategy and the finished work?",
+      "How should I compare a one-off project with an ongoing retainer?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "website-photography-video-animation",
+    "pillar": "Design",
+    "originalTitle": "5 video-production services for Okanagan businesses to compare",
+    "sourceIds": [
+      "wcag",
+      "video",
+      "web-vitals"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-45",
+    "publishOn": "2027-09-16",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What a charity donation page needs before asking for money",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "charity donation page design best practices Canada",
+    "queryVariants": [
+      "What a charity donation page needs before asking for money",
+      "What a charity donation page needs before asking for money Kelowna Okanagan"
+    ],
+    "buyerDecision": "Specificpurpose, trustedorganisationidentity, donationprocessor, recurringchoice, receiptsprocessascharityverified, beneficiaryconsent, plainprivacy, mobilehandoff; StJamesfilm supportsmission notverifieddonationlift",
+    "primaryMoneyPage": "/web-design/charities/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "St James donor story and approved campaign material",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Purpose, project evidence, recipient identity, payment route, receipt information and continuing communication",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: St James donor story and approved campaign material",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Who controls the charity donation account and recurring payments?",
+      "What should be visible before a donor enters payment details?",
+      "How can campaign stories and donation forms stay connected?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/charities/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "charity-donation-page",
+    "pillar": "Industry websites",
+    "originalTitle": "9 details a charity donation page needs to earn confidence",
+    "sourceIds": [
+      "cra-charity",
+      "privacy",
+      "forms"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-46",
+    "publishOn": "2027-09-23",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Framer vs Webflow for local SEO: what actually affects the result?",
+    "format": "comparison",
+    "city": "Vernon",
+    "primaryQuery": "Framer vs Webflow local SEO business website",
+    "queryVariants": [
+      "Framer vs Webflow for local SEO: what actually affects the result",
+      "Framer vs Webflow for local SEO Kelowna Okanagan"
+    ],
+    "buyerDecision": "Crawlableusefulpages,titles/headings,redirects,canonicals,performance,structureddataaccuracy, contentwork; compareeditablecontrolswithofficialdocs; platformcannotguaranteeranks; concrete prelaunchchecknotwholecomparisonduplicate",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "ABC Appliance and Cool Runnings, with accurate scope",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: One-town versus regional coverage, phone enquiries, lead quality, maintenance and account control",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: ABC Appliance and Cool Runnings, with accurate scope",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which creative deliverables and usage rights should the proposal include?",
+      "Can one provider handle the strategy and the finished work?",
+      "How should I compare a one-off project with an ongoing retainer?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "framer-webflow-local-seo",
+    "pillar": "Platforms",
+    "originalTitle": "5 website partners for Vernon home-service businesses to compare",
+    "sourceIds": [
+      "framer-seo",
+      "webflow-seo",
+      "google-starter",
+      "google-ai"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-47",
+    "publishOn": "2027-09-30",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Before buying more ads, check whether your website can use the traffic",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "service business website landing page before Google Ads",
+    "queryVariants": [
+      "Before buying more ads, check whether your website can use the traffic",
+      "Before buying more ads, check whether your website can use the traffic Kelowna Okanagan"
+    ],
+    "buyerDecision": "Intentmatch, specificlandingpage, localproof, phoneformhandoff, consenttracking, dedupedqualifiedleads, simpleCACsamplehypotheticalCAD; noforecastfromindustryaverage; user15/dayoptionalhypotheticalnotactualcampaign",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "Cool Runnings CRO and Michael's broader marketing work",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Offer match, landing page, trust, contact friction, tracking and who follows up",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Cool Runnings CRO and Michael's broader marketing work",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about offer match?",
+      "How do I decide whether landing page belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "website-before-paid-ads",
+    "pillar": "Conversion",
+    "originalTitle": "7 website changes worth making before a bigger advertising budget",
+    "sourceIds": [
+      "ga4",
+      "forms",
+      "cool"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-48",
+    "publishOn": "2027-10-07",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Custom AI skills versus prompts: what changes for a small team?",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "AI skills vs prompts small business workflows",
+    "queryVariants": [
+      "Custom AI skills versus prompts: what changes for a small team",
+      "Custom AI skills versus prompts Kelowna Okanagan"
+    ],
+    "buyerDecision": "Instructions plusreferencefiles procedure, repeatability vsuncontrolledpaste, toolspermissions separate, testcases/approval, owners; writerbriefskill or intakeclassification example, no vendorimplementationguarantees",
+    "primaryMoneyPage": "/ai-implementation/",
+    "parentMoneyPage": "/ai-implementation/",
+    "proof": "Actual reusable workflow and skill demonstrations",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Reusable instructions, reference material, tools, tests, permissions and staff training",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Actual reusable workflow and skill demonstrations",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which parts of this workflow should still require a person’s approval?",
+      "Can the workflow use the tools my business already has?",
+      "Who maintains the workflow when a tool or business rule changes?"
+    ],
+    "internalLinks": {
+      "primary": "/ai-implementation/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "ai-skills-versus-prompts",
+    "pillar": "AI and operations",
+    "originalTitle": "6 ways a custom AI skill differs from a prompt you paste into chat",
+    "sourceIds": [
+      "michael-ai"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-49",
+    "publishOn": "2027-10-14",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Boutique accommodation design: show the stay people are choosing",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "boutique hotel accommodation website design examples Okanagan",
+    "queryVariants": [
+      "Boutique accommodation design: show the stay people are choosing",
+      "Boutique accommodation design Kelowna Okanagan"
+    ],
+    "buyerDecision": "Treehouserealdesignanalysis, roomscale/location/context, desktopstoryandmobilebooking, photography/copy relevance, clear availability handoff; warmdistinctdesign versus templatehotel; noimaginaryA/Btests",
+    "primaryMoneyPage": "/web-design/vacation-rentals/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Okanagan Treehouse design and visitor flow",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Distinctive imagery, practical guest questions, mobile booking, rates and owner access",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Okanagan Treehouse design and visitor flow",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Can a property keep its channel manager when adding direct booking?",
+      "Which fees and policies need to appear before a reservation?",
+      "How should a property site explain sleeping arrangements and access?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/vacation-rentals/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "boutique-accommodation-website-design",
+    "pillar": "Design",
+    "originalTitle": "5 website firms for Okanagan boutique accommodation to compare",
+    "sourceIds": [
+      "treehouse",
+      "tourism-vernon",
+      "wcag"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-50",
+    "publishOn": "2027-10-21",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Location pages that help customers instead of repeating a city name",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "local SEO service area pages location pages website",
+    "queryVariants": [
+      "Location pages that help customers instead of repeating a city name",
+      "Location pages that help customers instead of repeating a city name Kelowna Okanagan"
+    ],
+    "buyerDecision": "Sameoperatorservicearea distinctfromfakeoffices, localjobdetails, genuinecoverage/exclusions, access/deliveryplans, internalserviceconnections, avoiddoorways; KelownaWestKelownaVernon legitimatecontext; Coolstrategy",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "ABC Appliance structure and Cool Runnings local search work",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Unclear services, missing locations, image-only answers, broken booking, duplicate pages and no useful proof",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: ABC Appliance structure and Cool Runnings local search work",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about unclear services?",
+      "How do I decide whether missing locations belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "useful-location-pages",
+    "pillar": "Local discovery",
+    "originalTitle": "7 local-search mistakes on otherwise beautiful business websites",
+    "sourceIds": [
+      "google-spam",
+      "google-local",
+      "cool"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-51",
+    "publishOn": "2027-10-28",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What works on a professional-services homepage?",
+    "format": "comparison",
+    "city": "Okanagan",
+    "primaryQuery": "professional services homepage design examples",
+    "queryVariants": [
+      "What works on a professional-services homepage",
+      "What works on a professional-services homepage? Kelowna Okanagan"
+    ],
+    "buyerDecision": "Positioningforlawaccountingadvisory, calm authority, specificfit, realbios/process, clearconsultation, typography/constrainedmotion; nofakeawards/reviews; threehomepageopeningexamples withoutclaimingclientwork",
+    "primaryMoneyPage": "/web-design/law-firms/",
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "Michael's portfolio; each competitor's actual professional-services evidence",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Credibility, specialist positioning, approvals, content maintenance and enquiry quality",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Michael's portfolio; each competitor's actual professional-services evidence",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which creative deliverables and usage rights should the proposal include?",
+      "Can one provider handle the strategy and the finished work?",
+      "How should I compare a one-off project with an ongoing retainer?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/law-firms/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "professional-services-homepage-design",
+    "pillar": "Design",
+    "originalTitle": "5 branding and website partners for Okanagan professional firms to compare",
+    "sourceIds": [
+      "wcag",
+      "bc-law"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-52",
+    "publishOn": "2027-11-04",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "How to compare website quotes without choosing on price alone",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "how to compare website design quotes small business",
+    "queryVariants": [
+      "How to compare website quotes without choosing on price alone",
+      "How to compare website quotes without choosing on price alone Kelowna Okanagan"
+    ],
+    "buyerDecision": "Identicalbrief, copyandmedia deliverables, migration/redirects, integrations, accessibility, analytics, hosting/ownership, support andexclusions; scoredcomparisonworksheetno arbitraryscorespretendingtested",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Actual process; custom pricing not fabricated package rates",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Objectives, pages, copy, assets, integrations, migration, ownership and support",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Actual process; custom pricing not fabricated package rates",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about objectives?",
+      "How do I decide whether pages belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "compare-website-quotes",
+    "pillar": "Buying and ownership",
+    "originalTitle": "8 ways to prepare a website project so the quote is useful",
+    "sourceIds": [
+      "webflow-export",
+      "forms",
+      "google-starter"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-53",
+    "publishOn": "2027-11-11",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What work should you automate before adding more admin?",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "small business administrative task automation priorities",
+    "queryVariants": [
+      "What work should you automate before adding more admin",
+      "What work should you automate before adding more admin? Kelowna Okanagan"
+    ],
+    "buyerDecision": "Frequency/variation/risk/exception matrix; enquiryack, reminders, approvedcontentreuse, briefcreation, reportassembly; human approval forcommitments; timebaselineandmaintenancecost not staffdisplacementpromise",
+    "primaryMoneyPage": "/ai-implementation/",
+    "parentMoneyPage": "/ai-implementation/",
+    "proof": "Custom workflows, with no promise to replace staff",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Map repeated work, count handling time, test quality, preserve human decisions and compare maintenance",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Custom workflows, with no promise to replace staff",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which parts of this workflow should still require a person’s approval?",
+      "Can the workflow use the tools my business already has?",
+      "Who maintains the workflow when a tool or business rule changes?"
+    ],
+    "internalLinks": {
+      "primary": "/ai-implementation/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "automate-before-more-admin",
+    "pillar": "AI and operations",
+    "originalTitle": "7 automations to consider before hiring for more admin",
+    "sourceIds": [
+      "michael-ai",
+      "privacy"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-54",
+    "publishOn": "2027-11-18",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Templates or custom design: when is a tailored website worth it?",
+    "format": "comparison",
+    "city": "Kelowna",
+    "primaryQuery": "template vs custom website design small business",
+    "queryVariants": [
+      "Templates or custom design: when is a tailored website worth it",
+      "Templates or custom design Kelowna Okanagan"
+    ],
+    "buyerDecision": "Contentfitversusvisualnovelty, reusecomponentsgood, customserviceflow/integrations, accessibility/performance; designcustomdoesnotmeanCMSfromscratch; diagnoseconstraint; ABC/Treehouserelevant differences",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Refresh all providers near November publication; include Michael",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Compare providers on real service work, content, regional reach, enquiries and handover",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Refresh all providers near November publication; include Michael",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which creative deliverables and usage rights should the proposal include?",
+      "Can one provider handle the strategy and the finished work?",
+      "How should I compare a one-off project with an ongoing retainer?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "template-vs-custom-website",
+    "pillar": "Design",
+    "originalTitle": "5 website firms for Kelowna trades to compare for a 2028 rebuild",
+    "sourceIds": [
+      "michael-web",
+      "wcag"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-55",
+    "publishOn": "2027-11-25",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Who should update your website after launch?",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "website client editing CMS training handover",
+    "queryVariants": [
+      "Who should update your website after launch",
+      "Who should update your website after launch? Kelowna Okanagan"
+    ],
+    "buyerDecision": "Ownereditroutinefields, designerlayouts, developerintegrations; accessroles/staging/approval/rollback; practicaltrainingexercisesforhoursprojectnewservice; supportscopeandresponsibilitymatrix",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Michael's ownership and training offer",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Domain, hosting, source/content export, analytics, redirects, image rights, form recipients and support",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Michael's ownership and training offer",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about domain?",
+      "How do I decide whether hosting belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "website-editing-training",
+    "pillar": "Buying and ownership",
+    "originalTitle": "9 website handover items every Okanagan owner should receive",
+    "sourceIds": [
+      "framer-cms",
+      "webflow-cms",
+      "sanity-intro"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-56",
+    "publishOn": "2027-12-02",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Turn one real customer project into useful website content",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "customer case study website content photography video",
+    "queryVariants": [
+      "Turn one real customer project into useful website content",
+      "Turn one real customer project into useful website content Kelowna Okanagan"
+    ],
+    "buyerDecision": "Permission, briefproblem/constraints/work/result, realimagesnotfabricatedreviews, service+localpage placement, video/socialderivatives, no attributionswecan'tprove; Coolbooking30%countscope andABCqualitative",
+    "primaryMoneyPage": "/marketing-branding/",
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "St James film and approved Cool Runnings proof; no invented testimonial",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Interview evidence, written case, video cut, sales proof, service-page excerpt and consented distribution",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: St James film and approved Cool Runnings proof; no invented testimonial",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about interview evidence?",
+      "How do I decide whether written case belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/marketing-branding/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "customer-project-content",
+    "pillar": "Brand and content",
+    "originalTitle": "7 ways to turn one good customer story into useful marketing",
+    "sourceIds": [
+      "cool",
+      "abc",
+      "video"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-57",
+    "publishOn": "2027-12-09",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "When does a custom workflow justify ongoing maintenance?",
+    "format": "decision guide",
+    "city": "Okanagan",
+    "primaryQuery": "custom AI workflow maintenance cost business",
+    "queryVariants": [
+      "When does a custom workflow justify ongoing maintenance",
+      "When does a custom workflow justify ongoing maintenance? Kelowna Okanagan"
+    ],
+    "buyerDecision": "BusinessownerROIworksheettimefreed/errorreduction costnotguarantee, integrationschange, logs/permissions/fallback, responseresponsibility; Michael2500/monthstarting builddesignmaintenance scope; offtheshelfmayenough",
+    "primaryMoneyPage": "/ai-implementation/",
+    "parentMoneyPage": "/ai-implementation/",
+    "proof": "Current implementation and maintenance offer rechecked at publication",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Frequency, avoidable time, error cost, integration stability and a named owner",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Current implementation and maintenance offer rechecked at publication",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "Which parts of this workflow should still require a person’s approval?",
+      "Can the workflow use the tools my business already has?",
+      "Who maintains the workflow when a tool or business rule changes?"
+    ],
+    "internalLinks": {
+      "primary": "/ai-implementation/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "custom-workflow-maintenance",
+    "pillar": "AI and operations",
+    "originalTitle": "5 signs a custom workflow is worth the maintenance cost",
+    "sourceIds": [
+      "michael-ai"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-58",
+    "publishOn": "2027-12-16",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "What should you measure before next year's website budget?",
+    "format": "checklist",
+    "city": "Okanagan",
+    "primaryQuery": "website performance metrics qualified leads service business",
+    "queryVariants": [
+      "What should you measure before next year's website budget",
+      "What should you measure before next year's website budget? Kelowna Okanagan"
+    ],
+    "buyerDecision": "Viewsintentqualifiedenquiriesacceptedjobsprofitcapacity; phoneclicknotcall; formsubmittednotsale; GA4keyevents SearchConsolequeries andcustomerrecord join; samplemonthlyscorecardclearlyexample",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Owned Search Console/GA4 data only if current and approved",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Qualified enquiries, booked work, acquisition source, response time, drop-off and ongoing costs",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Owned Search Console/GA4 data only if current and approved",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about qualified enquiries?",
+      "How do I decide whether booked work belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "website-measurement-budget",
+    "pillar": "Conversion",
+    "originalTitle": "8 numbers to review before planning next year's website budget",
+    "sourceIds": [
+      "ga4",
+      "gsc",
+      "cool"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-59",
+    "publishOn": "2027-12-23",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "An accessible website is easier to use: practical checks for a small business",
+    "format": "priorities",
+    "city": "Okanagan",
+    "primaryQuery": "small business website accessibility checklist W3C",
+    "queryVariants": [
+      "An accessible website is easier to use: practical checks for a small business",
+      "An accessible website is easier to use Kelowna Okanagan"
+    ],
+    "buyerDecision": "Keyboardfocus, labels/errors, contrasttextsize/reflow, altnotkeywordstuff, motionchoice, captions, authentic tasktest; WCAG reference not claimlegalcertification, explicitchecks versus automatedauditonly",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/web-design/",
+    "proof": "Use current annual evidence, not forecast ranking claims",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Repair the highest-friction journey before a redesign; choose from real customer and business evidence",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Use current annual evidence, not forecast ranking claims",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about repair the highest-friction journey before a redesign?",
+      "How do I decide whether choose from real customer and business evidence belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "small-business-website-accessibility",
+    "pillar": "Design",
+    "originalTitle": "5 website investments to prioritise for an Okanagan business in 2028",
+    "sourceIds": [
+      "wcag",
+      "forms",
+      "video"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  },
+  {
+    "id": "draft-60",
+    "publishOn": "2027-12-30",
+    "timezone": "America/Vancouver",
+    "status": "drafting",
+    "title": "Your next website plan: choose the customer problem before the channel",
+    "format": "planning",
+    "city": "Okanagan",
+    "primaryQuery": "small business website growth strategy annual planning",
+    "queryVariants": [
+      "Your next website plan: choose the customer problem before the channel",
+      "Your next website plan Kelowna Okanagan"
+    ],
+    "buyerDecision": "Annualprioritiesdemand/conversion/followup/retention choosebottleneck, onepageplan withownermeasurementreview; industrydifferencesplumberlawhotel, avoid newyearfreshnessfluff; linkotherguideswhenlive",
+    "primaryMoneyPage": "/web-design/",
+    "parentMoneyPage": "/marketing-branding/",
+    "proof": "Fresh year-end business priorities and portfolio proof",
+    "researchStatus": "Research required near publication; not a 2027 ranking finding",
+    "researchChecklist": [
+      "Search this vertical and task independently; save query/date/location and top organic URLs.",
+      "Read relevant competitor pages in full; record content structure and explicit service evidence.",
+      "Verify every listed provider against official sources and relevant work; include Michael with clear authorship.",
+      "Check technical/platform advice against current primary documentation."
+    ],
+    "outline": [
+      "Direct answer and recommendation summary",
+      "The buyer decision: Customer, offer, capacity, proof, budget, measurement and who does the work",
+      "A practical comparison or numbered choices, supported by current sources",
+      "What relevant work shows: Fresh year-end business priorities and portfolio proof",
+      "Scope, ownership, costs to clarify and the next step",
+      "Three specific FAQs"
+    ],
+    "faqs": [
+      "What should I ask a provider about customer?",
+      "How do I decide whether offer belongs in the first phase?",
+      "Which parts can my team maintain after handover?"
+    ],
+    "internalLinks": {
+      "primary": "/web-design/",
+      "parent": "/web-design/",
+      "contact": "/contact/"
+    },
+    "aeo": {
+      "summaryWords": "45–85",
+      "faqCount": 3,
+      "targetWords": "900–1,500; stop when the decision is answered",
+      "schema": "Article, BreadcrumbList; FAQPage for visible answers; ItemList where appropriate"
+    },
+    "releaseGate": [
+      "draft reviewed",
+      "time-sensitive facts rechecked near release",
+      "publication date reached"
+    ],
+    "slug": "small-business-website-growth-plan",
+    "pillar": "Buying and ownership",
+    "originalTitle": "7 questions for your 2028 marketing plan before choosing channels",
+    "sourceIds": [
+      "google-helpful",
+      "cool",
+      "michael-ai"
+    ],
+    "researchAsOf": "2026-10-08",
+    "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
+  }
+]

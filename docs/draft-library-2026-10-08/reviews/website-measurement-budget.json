@@ -1,0 +1,82 @@
+{
+  "issues": [
+    {
+      "path": "sections.0.body",
+      "original": "Most owners open a spreadsheet, look at last year's traffic, and add ten percent.",
+      "replacement": "A common starting point is to look at last year's traffic and simply increase the budget by a fixed percentage.",
+      "reason": "Unsupported universal claim about what most owners do; the replacement describes a common practice without asserting it applies to most owners."
+    },
+    {
+      "path": "sections        .1.body",
+      "original": "Service businesses live and die by qualified leads.",
+      "replacement": "Service businesses depend on qualified leads.",
+      "reason": "Unsupported absolute claim; the replacement keeps the point about the importance of qualified leads without overstating it as a universal life-or-death rule."
+    },
+    {
+      "path": "sections.3.body",
+      "original": "The most useful report in a service business is one that connects a specific search query to a specific invoice.",
+      "replacement": "A useful report in a service business connects a specific search query to a specific invoice.",
+      "reason": "Unsupported superlative claim; the replacement recommends the report directly without claiming it is the single most useful report in every service business."
+    },
+    {
+      "path": "sections.6.body",
+      "original": "Website budgets often fail because they try to solve everything at once.",
+      "replacement": "Website budgets can fail when they try to solve everything at once.",
+      "reason": "Unsupported empirical claim about how often budgets fail; the replacement presents the pattern as a possible risk rather than a frequent outcome."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "To help service business owners set a website budget from evidence rather than guesswork by measuring the path from search visibility to qualified enquiries and accepted jobs.",
+    "specificity": "High. The article gives a concrete monthly scorecard with named metrics, specific tools such as Google Search Console, GA4, CRM records, and invoicing, and clear diagnostic categories for visibility, conversion, and follow-up problems.",
+    "evidence": "Good. It points readers to official Google documentation for Search Console and Analytics, and it mentions the Cool Runnings local search work without inventing numeric uplift or overstating what that project proves.",
+    "voice": "Strong match. Direct, conversational, practical, and willing to state a useful opinion while explaining the tradeoff. It uses Canadian spelling and avoids corporate padding.",
+    "usefulAsset": "Yes. The scorecard, the advice to join web data to real jobs, and the distinction between fixing visibility, conversion, or follow-up give a busy owner clear next actions."
+  },
+  "slug": "website-measurement-budget",
+  "applied": [
+    {
+      "path": "sections.0.body",
+      "original": "Most owners open a spreadsheet, look at last year's traffic, and add ten percent.",
+      "replacement": "A common starting point is to look at last year's traffic and simply increase the budget by a fixed percentage.",
+      "reason": "Unsupported universal claim about what most owners do; the replacement describes a common practice without asserting it applies to most owners."
+    },
+    {
+      "path": "sections.3.body",
+      "original": "The most useful report in a service business is one that connects a specific search query to a specific invoice.",
+      "replacement": "A useful report in a service business connects a specific search query to a specific invoice.",
+      "reason": "Unsupported superlative claim; the replacement recommends the report directly without claiming it is the single most useful report in every service business."
+    },
+    {
+      "path": "sections.6.body",
+      "original": "Website budgets often fail because they try to solve everything at once.",
+      "replacement": "Website budgets can fail when they try to solve everything at once.",
+      "reason": "Unsupported empirical claim about how often budgets fail; the replacement presents the pattern as a possible risk rather than a frequent outcome."
+    }
+  ],
+  "rejected": [
+    {
+      "path": "sections        .1.body",
+      "original": "Service businesses live and die by qualified leads.",
+      "replacement": "Service businesses depend on qualified leads.",
+      "reason": "Unsupported absolute claim; the replacement keeps the point about the importance of qualified leads without overstating it as a universal life-or-death rule.",
+      "error": "unsupported path"
+    }
+  ],
+  "bannedRemaining": [],
+  "wordCount": 1298,
+  "usage": {
+    "prompt_tokens": 7811,
+    "total_tokens": 13944,
+    "completion_tokens": 6133,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5551
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 5551
+    }
+  }
+}

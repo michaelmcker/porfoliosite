@@ -1,0 +1,141 @@
+{
+  "slug": "roofing-website-design",
+  "title": "What makes a roofing website credible before the site visit?",
+  "type": "guide",
+  "description": "A practical guide to the credibility signals a roofing website needs before an owner invites an estimate: roof types, service areas, job photos with context, estimate clarity, warranty and insurance wording, and local proof.",
+  "summary": "A roofing website earns a site visit by being specific about the work: it names the roof types and service areas it handles, separates repair from replacement, shows job photos with context, explains the estimate process, and presents warranty and insurance information as verifiable facts rather than blanket promises.",
+  "takeaways": [
+    "Credibility comes from specificity about roof types, service areas, and whether you handle repair, replacement, or both.",
+    "Job photos need context such as roof type, slope, and what problem was solved, not just good lighting.",
+    "Warranty and insurance information should be presented as verifiable terms, not blanket guarantees."
+  ],
+  "sections": [
+    {
+      "id": "credibility-starts-before-the-first-scroll",
+      "title": "Credibility starts before the first scroll",
+      "body": "<p>A roofing website is credible before the site visit when an owner can tell, without calling you, that you understand their roof type, their urgency, and their area. That confidence is earned by specificity, not by polish alone.</p><p>Most owners who need a roofer are already under some pressure. They might be looking at a leak, planning a replacement, or comparing quotes after a storm. If your homepage could belong to any contractor, they have no reason to choose you. The job of the first screen is to make the right visitor feel they have found someone who does exactly their kind of work.</p><p>If you are comparing options, our page on <a href=\"/web-design/roofers/\">websites for roofing companies</a> looks at the same questions from the buyer's side. The short version is that credibility is a content and structure decision before it is a visual one.</p>"
+    },
+    {
+      "id": "say-what-you-actually-do",
+      "title": "Say what you actually do, and where",
+      "body": "<p>Start by saying which roof types you handle and which you do not. An owner with a flat commercial roof has a different problem than one with a steep asphalt shingle roof. If you do both, say so clearly. If you only do residential, say that too.</p><p>Then say where you work. A service area list does not need to be exhaustive, but it should include the towns or neighbourhoods you actually want calls from. Vague phrases like “serving the region” force the visitor to guess, and most will not.</p><p>A simple, credible page architecture for a roofing site looks like this:</p><ul><li>Home: who you are, what you do, where you work, urgent contact option</li><li>Roof types: separate pages or clear sections for asphalt shingle, metal, flat or low slope, and any specialty</li><li>Repair versus replacement: two distinct paths, because the buyer's questions are different</li><li>Service areas: named towns and a note on how far you will travel</li><li>Estimate or inspection: what happens when someone reaches out</li><li>Warranties and insurance: what is covered, and how to verify it</li></ul><p>This structure answers the questions that decide whether an owner asks for a quote.</p>"
+    },
+    {
+      "id": "photos-need-context",
+      "title": "Photos need context, not just good lighting",
+      "body": "<p>Roofing photos are persuasive when they tell a story about the work, not just the finished look. A close up of new shingles is fine, but it does not tell an owner whether you handled the flashing, the underlayment, the ventilation, or the cleanup.</p><p>Give each photo a job. A before photo can show the problem. A during photo can show tear off or decking repair. An after photo can show the finished plane, the ridge, the valleys, and the gutters. When you can, label the roof type and the neighbourhood or town. That small bit of context helps the next owner see their own house in your work.</p><p>Google's guidance for local business profiles notes that photos help a profile stand out, and its general search guidance asks site owners to make pages easy for people to use and understand. In practice that means clear captions, sensible file sizes, and photos that support the words around them rather than decorate the page.</p>"
+    },
+    {
+      "id": "the-estimate-conversation-is-a-design-problem",
+      "title": "The estimate conversation is a design problem",
+      "body": "<p>Most roofing websites treat the estimate as a form to fill out. The better ones treat it as a conversation that starts on the page. Before an owner gives you their address, they want to know what you will look at, how long it will take, whether it costs anything, and what happens next.</p><p>A credible estimate section names the steps in plain language. For example: you reply within one business day, you ask a few questions about the roof and the problem, you schedule a visit if the project fits, and you leave a written summary after the visit. That is enough to lower the perceived risk of reaching out.</p><p>It also helps to separate urgent from routine. A leaking roof in a storm needs a different response than a planned replacement next spring. A short note that says how you handle urgent calls, and when you are available, can be the difference between a call and a quick exit.</p>"
+    },
+    {
+      "id": "warranties-and-insurance-belong-on-the-page",
+      "title": "Warranties and insurance belong on the page, with the right words",
+      "body": "<p>Owners want to know that you are insured and that your work has some warranty behind it. The credible way to say this is with specific, verifiable terms, not with a blanket promise that everything is guaranteed forever.</p><p>If you carry liability insurance and workers' compensation coverage, say so and say how an owner can verify it. If your warranty covers workmanship for a defined period, say the period and what is excluded. If the manufacturer warranty is separate from your workmanship warranty, explain the difference in one or two sentences.</p><p>This is not the place for legal advice, and you should not invent licensing rules. It is the place to be plain about what you offer, so an owner does not have to guess.</p>"
+    },
+    {
+      "id": "local-proof-is-different-from-national-polish",
+      "title": "Local proof is different from national polish",
+      "body": "<p>A roofing site for the Okanagan has to sound like it was written by someone who knows the Okanagan. The housing stock, the weather, the wildfire smoke seasons, and the way people describe their neighbourhoods are all local signals. A generic site that could be published in any city usually reads as less trustworthy here, because roofing is a local, referral driven trade.</p><p>Local proof can be simple. Name the communities you serve. Show photos from local jobs with local context. Use the words local owners use for their roof problems. If you write about costs, be honest about the local picture rather than quoting national averages, and if you are thinking about that side of it, our piece on <a href=\"/blog/okanagan-website-cost/\">what an Okanagan website costs</a> gives a local frame.</p><p>The goal is not to stuff the page with place names. It is to make a Vernon, Kelowna, or Lake Country owner feel that the company understands their house, their roof, and their season.</p>"
+    },
+    {
+      "id": "a-practical-credibility-worksheet",
+      "title": "A practical credibility worksheet",
+      "body": "<p>If you are reviewing your own roofing site, or comparing agencies, this worksheet gives you a concrete way to score the signals that matter before a site visit.</p><table><caption>Roofing website credibility worksheet</caption><thead><tr><th>Area to check</th><th>What a credible answer looks like</th><th>Red flag</th></tr></thead><tbody><tr><td>Roof types</td><td>Specific types named, with a note on anything you do not take on</td><td>A generic claim that you do all roofing work</td></tr><tr><td>Repair versus replacement</td><td>Separate paths or clearly labelled sections for each</td><td>One page that blurs the two together</td></tr><tr><td>Service areas</td><td>Named towns and a travel note</td><td>Only a vague regional phrase</td></tr><tr><td>Job photos</td><td>Before, during, and after shots with context such as roof type and location</td><td>A gallery of finished roofs with no explanation</td></tr><tr><td>Estimate process</td><td>Plain language steps from first contact to written summary</td><td>Only a contact form with no description of what happens next</td></tr><tr><td>Warranty terms</td><td>Specific period, what is covered, what is excluded, manufacturer versus workmanship if relevant</td><td>A blanket lifetime guarantee with no terms</td></tr><tr><td>Insurance</td><td>A clear statement of coverage and how to verify it</td><td>No mention at all, or a vague “fully insured” with no way to check</td></tr><tr><td>Urgent contact</td><td>A clear note on how urgent leaks are handled and when you respond</td><td>No distinction between emergency and routine enquiries</td></tr></tbody></table><p>You do not need to score perfectly on every row. You do need to be honest about the rows where you are weak, because an owner will find those gaps eventually.</p>"
+    },
+    {
+      "id": "the-next-step-is-usually-a-conversation",
+      "title": "The next step is usually a conversation, not a redesign",
+      "body": "<p>A credible roofing website is mostly a set of clear answers to the questions an owner is already asking. If your site is vague about roof types, service areas, estimates, or warranties, the fix is usually to write and structure those answers properly, not to start over.</p><p>If you want a second set of eyes on where your site stands, <a href=\"/contact/\">get in touch</a>. We can look at the specific pages that decide whether an owner asks for a site visit, and suggest the smallest changes that would make the biggest difference.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should a roofing website list every neighbourhood it serves?",
+      "List the communities you actually want work from, and be honest about travel limits. A short, accurate list builds more trust than a long, vague one, and it helps the right owners recognize themselves."
+    ],
+    [
+      "Is it better to have one services page or separate pages for repair and replacement?",
+      "Separate paths are usually clearer, because a repair buyer wants speed, cost range, and damage assessment while a replacement buyer wants options, timelines, and warranty detail. If you keep one page, use distinct sections with clear headings."
+    ],
+    [
+      "How much should a roofing website say about pricing?",
+      "You do not need a price list, but you should say how pricing works. A note that explains what affects the cost of a repair or replacement, and what your estimate includes, is usually enough to make an owner comfortable reaching out."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Google local ranking guidance",
+      "url": "https://support.google.com/business/answer/7091?hl=en"
+    },
+    {
+      "name": "Google SEO starter guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Ties credibility to the specific pre-visit decisions roofing buyers make, with a worksheet owners can score themselves against, instead of generic web design advice.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm no wording implies guaranteed search rankings, conversion, or lead volume",
+      "Verify all internal links resolve before publication",
+      "Check that warranty and insurance section stays general and does not drift into legal advice"
+    ],
+    "serpGap": "Existing results are mostly agency service pages and photo galleries. Few explain which credibility signals matter for repair versus replacement buyers, how photos should carry context, or how to present warranty and insurance terms without overclaiming.",
+    "sourceUse": [
+      {
+        "url": "https://support.google.com/business/answer/7091?hl=en",
+        "claim": "Google says complete and accurate business information, photos, and review responses help a local profile, and that local ranking is based on relevance, distance, and prominence."
+      },
+      {
+        "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "claim": "Google's starter guide says to create content for users, organise it clearly, and avoid intrusive interstitials; there are no special tricks that automatically rank a site first."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-06-10",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/roofers/",
+  "related": [
+    "plumber-website-design",
+    "electrician-website-design"
+  ],
+  "services": [
+    "roofers"
+  ],
+  "wordCount": 1536,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 13427,
+      "total_tokens": 25345,
+      "completion_tokens": 11918,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 9028
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 9028
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

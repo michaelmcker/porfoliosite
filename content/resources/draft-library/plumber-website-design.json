@@ -1,0 +1,164 @@
+{
+  "slug": "plumber-website-design",
+  "title": "What works on a plumber website? A 2027 plan for better enquiries",
+  "type": "guide",
+  "description": "A practical 2027 plan for plumber websites that need better enquiries, covering emergency versus planned work, honest service areas, page architecture, dispatcher handoff, and job photography.",
+  "summary": "A plumber website that works in 2027 does two jobs at once. It gets found by the right local searcher, and it hands that searcher to your dispatcher without wasting anyone's time. This guide separates emergency from planned work, explains when to split drain and water heater pages, and gives you a sample page structure and intake checklist you can adapt.",
+  "takeaways": [
+    "Emergency and planned plumbing need different pages, different forms, and different promises about response time.",
+    "Only claim the towns and neighbourhoods you actually serve, because dishonest service areas create angry callers and wasted dispatches.",
+    "A good service page answers what the job is, whether you do it, where you do it, and how to book it, in that order."
+  ],
+  "sections": [
+    {
+      "id": "job-the-website-has-to-do",
+      "title": "The job the website actually has to do",
+      "body": "<p>A plumber website has two customers: the person with water on the floor and the person who answers your phone. Most design advice only serves the first one. The site has to get found by someone in a real service area, then it has to move that person toward a call or a form without lying about hours, scope, or response time.</p><p>Google says its local results lean on relevance, distance, and how well known a business seems to be. You cannot buy a better local position, but you can make your business information complete, current, and specific. That is a practical place to start. The harder work is deciding what kind of enquiry you actually want more of.</p>"
+    },
+    {
+      "id": "emergency-versus-planned",
+      "title": "Split emergency work from planned work before you pick fonts",
+      "body": "<p>Emergency plumbing and planned plumbing are different products with different buyers. An emergency visitor wants to know three things fast: do you answer right now, do you come to their neighbourhood, and can you stop the damage. A planned work visitor wants to know whether you handle their job, what the process looks like, and whether they can trust you in their home.</p><p>If your website treats both visitors the same, you usually end up with a homepage that shouts about 24 hour service and a services page that talks about bathroom renovations as if they were the same thing. They are not. The tradeoff is real: a dedicated emergency page can feel repetitive, but it lets you be honest about after hours coverage. A dedicated renovation or water heater page lets you slow down, show your work, and explain your pricing structure without scaring off someone who needs a burst pipe fixed at 2 a.m.</p>"
+    },
+    {
+      "id": "honest-service-area",
+      "title": "Only claim the towns you will actually drive to",
+      "body": "<p>Nothing wastes a dispatcher's shift like calls from towns you have no intention of serving. If you cover Kelowna and West Kelowna but not Lake Country, say that. If you serve Lake Country for water heaters but not for after hours drain calls, say that too. This is where a <a href=\"/web-design/plumbers/\">plumber website</a> earns its keep, because the service area has to be stated page by page, not buried in a footer.</p><p>Google's local ranking guidance is blunt about this. Complete and accurate business information helps you show up for relevant searches in your area. If your information is wrong or vague, you may simply not appear. You do not need to list every street. You do need to be truthful about which towns and which job types you will take, especially when the answer changes after 5 p.m.</p>"
+    },
+    {
+      "id": "drains-versus-heaters",
+      "title": "Give drains and water heaters their own pages for different reasons",
+      "body": "<p>Drain clearing and water heater replacement are both plumbing, but they are not the same sale. A blocked drain and a failed water heater can both need urgent attention. A planned water-heater replacement raises a different set of questions about the existing equipment, replacement options, warranty and arranging the visit. When you put them on one generic page, the emergency buyer has to scroll past information that does not apply, and the water heater buyer gets no depth at all.</p><p>The useful tradeoff is between one long page that tries to rank for everything vaguely and two focused pages that each answer a real question. Separate pages are useful when each service has enough distinct scope, questions and examples to justify its own explanation. They also give your dispatcher better language, because the form or call script can be different for \"my basement is flooding\" than for \"my tank is twelve years old and I want a quote.\"</p>"
+    },
+    {
+      "id": "sample-service-page",
+      "title": "A sample service page that respects a busy visitor",
+      "body": "<p>Here is a page architecture that works for either kind of service page. It is not clever. It is just in the right order.</p><h3>A simple service page structure</h3><ul><li><strong>Heading:</strong> the service and the main area, for example \"Water heater replacement in Kelowna and West Kelowna.\"</li><li><strong>First two sentences:</strong> whether you do the job, and whether it is usually planned or urgent.</li><li><strong>Short scope block:</strong> what is included, what is not included, and when you would refer out.</li><li><strong>Service area block:</strong> the towns you cover for this specific job, with any after hours limits.</li><li><strong>Three to five real job photos:</strong> with captions naming the neighbourhood or job type, not stock imagery.</li><li><strong>Booking block:</strong> call now for urgent work, request a quote for planned work, and say which is which.</li></ul><p>A booking form placed before the service explanation asks the visitor to act before they know whether you handle the job. Answer first, then ask for the call.</p>"
+    },
+    {
+      "id": "dispatcher-handoff",
+      "title": "Give the dispatcher what they need on the first try",
+      "body": "<p>The website does not finish its job when someone fills in a form. It finishes its job when your dispatcher can look at the enquiry and know what to do with it. A good form asks for less than a bad one, but it asks for the right things.</p><h3>Sample intake fields for a plumbing enquiry form</h3><ul><li>Name and the best phone number to call back</li><li>Street address or nearest cross streets, with a note if it is outside town</li><li>Job type from a short list: drain, water heater, leak, renovation, other</li><li>Timing: emergency now, this week, or getting quotes for later</li><li>One line for the problem in the customer's own words</li><li>Permission to text a confirmation and a rough arrival window</li></ul><p>Do not ask for a full case history on a public form, and do not pretend the form is a confirmed appointment. If the job needs photos, tell the visitor which photos help, for example the area around the water heater and the label on the tank. That small instruction can save your dispatcher a phone call.</p>"
+    },
+    {
+      "id": "photography-and-proof",
+      "title": "Use photography and reviews as evidence, not decoration",
+      "body": "<p>Plumbing websites are full of stock photos of impossibly clean people holding wrenches. Those images give a visitor little evidence of the work your business actually does. Real job photography does not need to be artistic. It needs to be well lit, honest, and labelled. A before and after of a replaced hot water tank says more than any headline.</p><p>Reviews work the same way. Google's own starter guidance describes good content as helpful, reliable, and written for people first, and it notes that other sites mentioning or linking to you is part of how well known your business seems. You cannot control all of that. You can control whether your site shows the kind of work you want more of, and whether your replies to reviews sound like a person who takes the trade seriously.</p><p>There is also a craft argument here. A tidy photo of a properly strapped, properly vented water heater is beautiful in the way good work is beautiful. If your website has any photography at all, it should make a careful homeowner feel that your work is careful too.</p>"
+    },
+    {
+      "id": "a-2027-plan",
+      "title": "A 2027 plan you can start before the next ad campaign",
+      "body": "<p>You do not need to rebuild everything at once. You do need to stop treating the website as a brochure and start treating it as the top of your dispatch process. The worksheet below is a practical way to decide what to fix first.</p><table><caption>A 2027 plumber website worksheet</caption><thead><tr><th>Decision</th><th>If most of your work is emergency</th><th>If most of your work is planned</th></tr></thead><tbody><tr><td>Homepage message</td><td>Answer hours, coverage, and how to reach a human now</td><td>What you do, where you do it, and how to get a quote</td></tr><tr><td>Page structure</td><td>Short pages, fast path to call or text</td><td>Deeper pages with scope, process, and real examples</td></tr><tr><td>Service area</td><td>Say exactly where you will go after hours</td><td>Say which towns get which services</td></tr><tr><td>Photography</td><td>A few real shots of vans, gauges, and cleanups</td><td>Before and after sets with plain captions</td></tr><tr><td>Form design</td><td>Few fields, timing question near the top</td><td>Room for detail, photo guidance, quote expectations</td></tr><tr><td>Reviews</td><td>Recent reviews that mention response time</td><td>Reviews that mention communication and cleanliness</td></tr></tbody></table><p>Once those choices are made, the design work gets easier. The site stops trying to be everything, and it starts being the right thing for the jobs that actually pay. If you want a second set of eyes on your current site, <a href=\"/contact/\">send it over</a> and we can look at it together.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Do I need separate websites for emergency and renovation work?",
+      "No. One website with separate pages is enough for almost every plumbing business. The important part is that the emergency page and the planned work page make different promises and use different forms, so the wrong visitor does not end up in the wrong queue."
+    ],
+    [
+      "Should I list every town in the Okanagan to show up in more searches?",
+      "No. Listing towns you do not serve tends to create bad calls and angry reviews. State the towns you actually cover for each service, and if coverage changes after hours, say so on the page rather than hiding it in fine print."
+    ],
+    [
+      "How many pages does a plumber website need before it starts working?",
+      "There is no magic number, but a useful starting point is one honest page per major service and one per major town if service differs by area. Start with a small, useful set of pages that you can keep accurate, and expand when another page answers a genuinely different customer question."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Google local ranking guidance",
+      "url": "https://support.google.com/business/answer/7091?hl=en"
+    },
+    {
+      "name": "Google SEO starter guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Most plumber website advice is either an agency sales pitch or a generic SEO checklist. This guide is built around the actual buying decision, emergency versus planned work, and gives owners a concrete page architecture, an intake field sample, and a worksheet for deciding what to fix first.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm Google Business Profile local ranking guidance has not changed since the October 2026 fetch.",
+      "Confirm Google's SEO starter guide still describes helpful, reliable, people-first content in the same terms."
+    ],
+    "serpGap": "The competing Thrive page is a broad agency pitch with generic statistics and a long list of services. This guide fills the gap by focusing on operational decisions, like splitting emergency from planned pages, stating honest service areas, and structuring a page for the dispatcher handoff, rather than on generic web design benefits.",
+    "sourceUse": [
+      {
+        "url": "https://support.google.com/business/answer/7091?hl=en",
+        "claim": "Google says local results are mainly based on relevance, distance, and popularity, and that complete, accurate business info helps a business show up for relevant local searches."
+      },
+      {
+        "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "claim": "Google's starter guide frames SEO as helping search engines understand your content and helping users find your site, and it describes good content as helpful, reliable, and written for people first."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-01-07",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Industry websites",
+  "primaryMoneyPage": "/web-design/plumbers/",
+  "related": [
+    "electrician-website-design",
+    "accountant-website-design"
+  ],
+  "services": [
+    "plumbers"
+  ],
+  "wordCount": 1623,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 13739,
+      "total_tokens": 23304,
+      "completion_tokens": 9565,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6773
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6773
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "That is the cheap work.",
+      "replacement": "That is a practical place to start."
+    },
+    {
+      "original": "A blocked drain is often urgent, comparatively low ticket, and decided in minutes. A water heater is usually planned, higher ticket, and full of questions about size, fuel type, warranty, and whether the old one can be repaired.",
+      "replacement": "A blocked drain and a failed water heater can both need urgent attention. A planned water-heater replacement raises a different set of questions about the existing equipment, replacement options, warranty and arranging the visit."
+    },
+    {
+      "original": "For most plumbing businesses, the focused pages win.",
+      "replacement": "Separate pages are useful when each service has enough distinct scope, questions and examples to justify its own explanation."
+    },
+    {
+      "original": "The mistake I see most often is putting the booking form before the visitor knows whether you even do the work.",
+      "replacement": "A booking form placed before the service explanation asks the visitor to act before they know whether you handle the job."
+    },
+    {
+      "original": "They are worse than no photos, because they tell the visitor you could not be bothered to show your own work.",
+      "replacement": "Those images give a visitor little evidence of the work your business actually does."
+    },
+    {
+      "original": "A small site that answers the right questions will usually outperform a larger site full of duplicated pages.",
+      "replacement": "Start with a small, useful set of pages that you can keep accurate, and expand when another page answers a genuinely different customer question."
+    },
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

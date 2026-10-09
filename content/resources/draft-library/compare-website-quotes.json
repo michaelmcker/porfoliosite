@@ -1,0 +1,152 @@
+{
+  "slug": "compare-website-quotes",
+  "title": "How to compare website quotes without choosing on price alone",
+  "type": "guide",
+  "description": "A practical guide for small business owners on comparing web design quotes by scope, deliverables, technical requirements and long-term support, not just the bottom-line price.",
+  "summary": "Compare website quotes by lining up the same brief against each proposal: scope, page templates, content migration, integrations, accessibility, analytics, hosting ownership and post-launch support. Price gaps usually reflect different assumptions about what is included, not just hourly rates. A simple worksheet makes the differences visible and keeps the decision grounded in what your business actually needs.",
+  "takeaways": [
+    "Ask every vendor to respond to the exact same written brief so the differences in scope become visible.",
+    "Use a comparison worksheet that lists deliverables, exclusions, responsibilities and ongoing costs side by side.",
+    "The right quote is the one with transparent assumptions and clear ownership, not the cheapest or the most expensive."
+  ],
+  "sections": [
+    {
+      "id": "same-brief",
+      "title": "Ask for the same thing from everyone",
+      "body": "<p>The most reliable way to compare quotes is to give every vendor the same written brief and ask them to respond point by point.</p><p>Many owners receive proposals that look comparable on the surface but describe entirely different projects. One assumes content migration is included, another assumes the client will handle it. One includes accessibility checks, another ignores them. Without a shared brief, you are comparing apples to oranges. If you are getting ready to commission a <a href=\"/web-design/\">website design</a>, start by writing one page that describes the pages, features and outcomes you need.</p>"
+    },
+    {
+      "id": "comparison-worksheet",
+      "title": "Use a worksheet, not your gut",
+      "body": "<p>A simple spreadsheet that lines up deliverables, exclusions and responsibilities is the fairest way to compare.</p><p>Fill in one column per vendor. Include rows for page templates, design rounds, content migration, integrations, analytics, hosting, training and support. When the differences are in a table, the conversation shifts from wondering why one quote is more expensive to seeing that one includes staging and quality assurance while the other does not.</p><table><caption>Worksheet for comparing website design quotes</caption><thead><tr><th>Category</th><th>What to look for</th><th>Vendor A</th><th>Vendor B</th></tr></thead><tbody><tr><td>Scope and templates</td><td>Number of pages, unique layouts and content types</td><td></td><td></td></tr><tr><td>Design deliverables</td><td>Wireframes, mockups, design system and revision rounds</td><td></td><td></td></tr><tr><td>Content and media</td><td>Who writes, formats and uploads copy and images</td><td></td><td></td></tr><tr><td>Migration and redirects</td><td>Old pages, blog posts and search redirects</td><td></td><td></td></tr><tr><td>Integrations</td><td>E-commerce, booking, CRM and API connections</td><td></td><td></td></tr><tr><td>SEO and analytics</td><td>Titles, structure, tracking setup and reporting</td><td></td><td></td></tr><tr><td>Accessibility</td><td>Form labels, instructions, validation and usability</td><td></td><td></td></tr><tr><td>Hosting and ownership</td><td>Who owns the domain, files, accounts and code</td><td></td><td></td></tr><tr><td>Support and maintenance</td><td>Post-launch help, updates and response times</td><td></td><td></td></tr></tbody></table>"
+    },
+    {
+      "id": "scope-deliverables",
+      "title": "What to look for in scope and deliverables",
+      "body": "<p>A strong quote reads like a project map. It lists the number of page templates, the design outputs such as wireframes and mockups, who supplies copy and photography, how many pages or products will be migrated, and what functionality is included. The visual craft matters too, because design affects trust and readability, but a beautiful concept is not proof that the final build will be fast or easy to update.</p><p>For example, if you run a service business in the Okanagan, does the quote include landing pages for each service area, or just a generic homepage? The <a href=\"/blog/okanagan-website-cost/\">cost of a website in the Okanagan</a> often comes down to whether these details are planned properly.</p>"
+    },
+    {
+      "id": "content-media-migration",
+      "title": "Content, media and migration",
+      "body": "<p>Ask who is responsible for writing, formatting, uploading and redirecting content.</p><p>Suppose you have an existing site with 40 pages and a blog. One vendor quotes a fresh start. Another includes migration with search redirects. The second costs more but protects the visibility you have already earned. The quote should specify who handles old content, broken links, image assets and PDFs, and whether that work is billed separately or included in the base price.</p>"
+    },
+    {
+      "id": "integrations-technical",
+      "title": "Integrations and technical requirements",
+      "body": "<p>Custom functionality, e-commerce, booking systems and CRM connections change the complexity and the price.</p><p>A brochure site for a Coldstream trades company is different from an e-commerce store for a Kelowna retailer. One might need a simple contact form. The other needs payment processing, inventory sync and shipping calculations. A good quote names the content management system, the tech stack and any third-party services. It should also clarify whether forms, search and e-commerce features will work if you later decide to host elsewhere. For example, Webflow's own documentation notes that features like form processing and content management are tied to their hosting and may not be included in exported code.</p>"
+    },
+    {
+      "id": "accessibility-forms",
+      "title": "Accessibility, forms and user experience",
+      "body": "<p>Ask how the vendor approaches forms, labels and usability for all visitors.</p><p>Forms are often where quotes diverge. One proposal might include proper labels, helpful error messages and multi-step logic. Another might just install a basic plugin and call it done. The W3C's guidance on accessible forms emphasizes clear labels, instructions and validation because these details affect everyone, including people with disabilities. If your business collects enquiries, bookings or applications, this is part of the core design, not an optional extra.</p>"
+    },
+    {
+      "id": "seo-analytics",
+      "title": "SEO, analytics and tracking",
+      "body": "<p>A quote should at minimum mention a crawlable page structure, title fields, search redirects and basic analytics.</p><p>Google's own starter guide focuses on helping search engines understand your content. That means sensible page titles, headings, internal links and a structure that can be crawled. A quote does not need to promise top rankings, but it should show awareness of these fundamentals. It should also specify whether analytics, conversion events and call tracking are included, or whether you are expected to set them up later.</p>"
+    },
+    {
+      "id": "hosting-ownership-support",
+      "title": "Hosting, ownership and long-term support",
+      "body": "<p>The quote should state who owns the domain, hosting accounts, design files and code after launch, and what ongoing support costs.</p><p>Some platforms bundle hosting, content management and support into one package. Others hand you the files and step away. Neither is inherently wrong, but you need to know which one you are buying. If you plan to manage the site yourself, you might want <a href=\"/blog/website-handover-checklist/\">a clear handover checklist</a> and training. If you want ongoing help, ask what a maintenance plan covers and what it costs.</p>"
+    },
+    {
+      "id": "when-lowest-quote-works",
+      "title": "When the lowest quote makes sense",
+      "body": "<p>A low quote is not automatically bad. It is only a problem when it quietly skips work you expected to be included.</p><p>Suppose you are launching a simple one-page site for a new venture and you already have your copy and photos ready. A lean quote might be exactly right. The danger is when a low price assumes you will handle content entry, search redirects, accessibility and testing, but never says so. By comparing the worksheet, you can see whether the lower number reflects a genuinely smaller scope or just missing responsibilities.</p>"
+    },
+    {
+      "id": "scoring-quotes",
+      "title": "How to score without pretending you have data",
+      "body": "<p>Score quotes against your own worksheet rather than inventing arbitrary point systems.</p><p>You do not need a fake one-to-ten scale. You need to see, line by line, what is included and what is not. Once the worksheet is filled in, the better option usually becomes obvious. If two quotes still look similar, ask both vendors the same follow-up questions about assumptions and exclusions. When you are ready to talk through your options, <a href=\"/contact/\">get in touch</a> and we can walk through it together.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Should I always choose the most detailed quote?",
+      "Not necessarily. The best quote is the one that matches your actual needs and is honest about what is excluded. A highly detailed quote that includes features you will never use is not better than a lean, transparent one for a simple project. Use the worksheet to decide which scope fits your situation."
+    ],
+    [
+      "What if a vendor refuses to fill in a comparison worksheet?",
+      "That reluctance is useful information. A vendor who will not clarify scope, exclusions or responsibilities is often harder to work with later. If they prefer a verbal conversation, ask them to follow up in writing with the same points so you have a record to compare."
+    ],
+    [
+      "How much should post-launch support cost?",
+      "Costs vary widely depending on the platform and the level of service. The important thing is that the quote defines what support includes. Does it cover security updates, small content edits, or just emergency downtime? Ask for that definition in writing rather than accepting a vague monthly fee."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Google Search Central: SEO Starter Guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    },
+    {
+      "name": "W3C Web Accessibility Initiative: Forms Tutorial",
+      "url": "https://www.w3.org/WAI/tutorials/forms/"
+    },
+    {
+      "name": "Webflow Help: How to export your site code",
+      "url": "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "A buyer-side worksheet and decision framework that aligns scope, responsibilities and long-term costs before comparing price, rather than a generic list of red flags.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm the Webflow help article still states that CMS content, forms and search are not included in exported code.",
+      "Verify the Google SEO starter guide has not been significantly revised since October 2026.",
+      "Ensure no client projects or performance metrics are implied."
+    ],
+    "serpGap": "Existing coverage focuses on broad price ranges or general red flags. This article provides a concrete comparison worksheet and actionable follow-up questions that help owners evaluate quotes line by line.",
+    "sourceUse": [
+      {
+        "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "claim": "Google's guidance focuses on helping search engines understand content through clear structure, titles and links."
+      },
+      {
+        "url": "https://www.w3.org/WAI/tutorials/forms/",
+        "claim": "W3C guidance emphasizes clear labels, instructions and validation in accessible forms."
+      },
+      {
+        "url": "https://help.webflow.com/hc/en-us/articles/33961386739347-How-do-I-export-my-Webflow-site-code",
+        "claim": "Webflow notes that certain features such as CMS content, forms and search are tied to their hosting and are not included in exported code."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-11-04",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Buying and ownership",
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "small-business-website-brief",
+    "website-handover-checklist"
+  ],
+  "services": [],
+  "wordCount": 1271,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 14615,
+      "total_tokens": 23969,
+      "completion_tokens": 9354,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6848
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6848
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  }
+}

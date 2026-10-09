@@ -1,0 +1,147 @@
+{
+  "slug": "before-buying-ai-workflow",
+  "title": "What to decide before paying for an AI workflow",
+  "type": "guide",
+  "description": "A practical guide to the decisions a small business should make before paying for AI workflow automation, from baselines and sources to exceptions and maintenance.",
+  "summary": "Before you pay for an AI workflow, decide which repeatable task deserves it, what that work costs today, where the information comes from, who can approve exceptions, and who will maintain the system. The right AI workflow removes busywork, while the wrong one creates a new job that still needs your attention.",
+  "takeaways": [
+    "Choose a repeatable, high-volume task and baseline its current cost before selecting tools.",
+    "Define the information sources, human approval points and exception route before any build begins.",
+    "Decide whether you will maintain the workflow yourself, train staff to do it, or hire ongoing support."
+  ],
+  "sections": [
+    {
+      "id": "start-with-repeatable-task",
+      "title": "Start with the repeatable task, not the AI",
+      "body": "<p>Pick work that happens often enough to justify attention. AI workflows are best suited to tasks that arrive in predictable ways, such as enquiries, booking requests, quote follow-ups or routine client updates. If a task only happens once a month, the setup time may outweigh the time saved. If it happens every day, the case for automation is much stronger.</p><p>When I look at a business's <a href=\"/ai-implementation/\">AI implementation</a> opportunity, I start by finding the work that slows the owner down. The tool comes later. A workflow that removes five minutes of friction from a daily task can be more valuable than one that promises a dramatic improvement to a task you barely do.</p><p>A service-business workflow should reflect the actual enquiry channels, booking rules and follow-up responsibilities in that business.</p>"
+    },
+    {
+      "id": "baseline-the-work",
+      "title": "Baseline the work before you automate it",
+      "body": "<p>Measure what the task costs now. How many minutes does it take? How often does it lead to a mistake? How much work gets left unfinished? Without a baseline, you cannot tell whether the AI workflow helped.</p><p>If the current process is messy, automating it without fixing the underlying steps just gives you a messy process that runs more often. A baseline also helps you choose between improving the process manually, buying an off-the-shelf tool or commissioning custom work.</p><p>The worksheet below gives you a quick way to think through the decision before you speak to a provider.</p><table><caption>AI workflow decision worksheet</caption><thead><tr><th>Decision</th><th>What to ask yourself</th><th>What good looks like</th></tr></thead><tbody><tr><td>Task selection</td><td>Does this work happen often enough to justify setup?</td><td>A repeatable task with a clear input and output.</td></tr><tr><td>Baseline</td><td>What does this task cost now in time, errors or delays?</td><td>A rough number you can compare after launch.</td></tr><tr><td>Sources</td><td>Where does the information come from?</td><td>A short list of systems and files the workflow can access.</td></tr><tr><td>Approval</td><td>Which actions need a human to say yes?</td><td>Clear boundaries between automatic and reviewed work.</td></tr><tr><td>Exceptions</td><td>What happens when the AI is unsure?</td><td>A defined route to a person, not a guess.</td></tr><tr><td>Maintenance</td><td>Who will test, monitor and update the workflow?</td><td>A named owner or support arrangement.</td></tr></tbody></table>"
+    },
+    {
+      "id": "decide-where-information-comes-from",
+      "title": "Decide where the information comes from",
+      "body": "<p>List every place the workflow touches. A good AI workflow needs clear sources of information: the enquiry form, the calendar, the customer database, the quote template, the follow-up email. If the information lives in three different systems that do not talk to each other, the workflow may need custom work before it can function.</p><p>For example, suppose a landscaping business receives enquiries by email, checks availability in a paper diary and sends quotes from a spreadsheet. The AI workflow has to decide which of those sources is trustworthy before it can draft a reply. The same logic applies to any business where the task depends on scattered information.</p><p>If the calendar is unreliable or the customer database is out of date, the AI workflow will inherit those problems.</p>"
+    },
+    {
+      "id": "decide-who-is-allowed-to-say-yes",
+      "title": "Decide who is allowed to say yes",
+      "body": "<p>Decide which actions need human approval. Some tasks can run on their own, such as categorising an enquiry. Other tasks carry more risk, such as confirming a price, promising a delivery date or accessing customer records. For those, the workflow should draft the action and wait for a person to approve it.</p><p>This is where a good <a href=\"/blog/ai-skills-versus-prompts/\">AI skill</a> differs from a one-off prompt. A skill can document when to act and when to ask. Tool permissions and approval controls must enforce any consequential limits; instructions alone are not an access-control system. The owner still needs to decide where those boundaries sit.</p><p>In legal, clinical or financial work, the final content or advice still needs the right professional review. The workflow should support that review, not try to replace it.</p>"
+    },
+    {
+      "id": "build-the-exception-route-first",
+      "title": "Build the exception route first",
+      "body": "<p>Design the path for anything the AI cannot handle. A reliable workflow does not guess when it is unsure. It pauses, asks for more information or routes the item to a person. Decide what those exceptions look like before you build.</p><h3>Sample: AI enquiry triage for a small service business</h3><p>A practical setup might work like this:</p><ul><li><strong>Intake fields:</strong> name, email or phone, service requested, preferred date, budget range, urgency, how they heard and any attachments.</li><li><strong>The AI's job:</strong> categorise the service type, check the calendar for rough availability and draft a reply with the next step.</li><li><strong>Human approval:</strong> staff review the draft. They approve it, edit it or send it back with a note.</li><li><strong>Exception route:</strong> if the request is outside the business's scope, if the customer is angry or if the dates are complex, the workflow sends a summary to the owner instead of drafting a reply.</li></ul><p>The goal is a faster first reply and fewer missed enquiries. Check that against the baseline while staff retain the final decision.</p><p>This is a simple example, but it shows the kind of decisions that matter: what the AI drafts, what a person approves and what happens when the request does not fit the usual pattern.</p>"
+    },
+    {
+      "id": "price-the-workflow-not-the-tool",
+      "title": "Price the workflow, not the tool",
+      "body": "<p>Look at the full cost of the task, not just the subscription price. Add the annual cost of staff time, corrections, delays and missed opportunities. Then estimate what the workflow can remove or improve.</p><p>For example, suppose a task takes an employee 20 minutes a day. At a modest wage, that adds up to meaningful money over a year. If the AI workflow can cut that to five minutes of review, the value becomes clearer. If the workflow needs constant supervision, the saving disappears.</p><p>The right next step depends on whether you want a clear plan, an off-the-shelf tool or a custom system built around your business. I offer a CAD $900 AI audit and recommendations for businesses that want a clear plan before they commit. The audit gives you a detailed, actionable report with priorities, off-the-shelf tools and recommendations for custom work. It is yours to implement independently. For businesses ready to build a defined system, custom work starts from CAD $2,500 a month, with scope, support and software costs agreed up front.</p>"
+    },
+    {
+      "id": "choose-who-maintains-the-system",
+      "title": "Choose who maintains the system",
+      "body": "<p>Decide who will own the workflow after launch. Some platforms are simple enough for a business to manage alone, but someone still has to test changes, monitor errors and keep integrations working. Other systems are better handed to trained staff or an outside provider.</p><p>An off-the-shelf platform can be the right choice for a simple task, while a custom workflow may be better when the process crosses several systems. I build skills, workflows and custom agents, but I also think it is important to be honest about maintenance. The best system is the one your business can actually keep running. If you do not want another platform to learn, say so before work begins.</p>"
+    },
+    {
+      "id": "a-practical-next-step",
+      "title": "A practical next step",
+      "body": "<p>If you are weighing up an AI workflow and want a practical place to start, <a href=\"/contact/\">get in touch</a>. We can look at where the work piles up and what you want more time for. A good first conversation should tell you whether the task is repeatable, what it costs now and which decisions need to be made before any money changes hands.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "How do I know whether a task is worth automating with AI?",
+      "Look for work that is repetitive, happens often enough to matter and has a clear input and output. If the task takes significant cumulative time, follows a recognisable pattern and depends on digital information, it is usually worth a closer look. If it is rare, highly variable or mostly physical, the case is weaker."
+    ],
+    [
+      "What should I prepare before asking for an AI workflow quote?",
+      "Bring a description of the task, a rough baseline of what it costs now, the systems or files involved, who does the work, the exceptions that cause trouble and the result you want. You do not need a technical specification, but you do need enough clarity to have a useful conversation."
+    ],
+    [
+      "Can I start with a small AI workflow and expand later?",
+      "Yes, and it is usually the better way to begin. A narrow first release with a clear owner is easier to test, easier to explain to staff and easier to roll back if the process changes. Once the results are stable, you can decide whether the next step is worth the cost."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Michael McKerracher AI implementation",
+      "url": "https://michaelmck.site/ai-implementation/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "Decision-focused guide that moves beyond platform lists to the operational decisions a small business must make before paying for AI workflow automation.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm current CAD $900 audit and CAD $2,500/month custom systems pricing matches the live AI implementation page.",
+      "Verify internal link paths still exist before publication.",
+      "Check that no prohibited phrases have slipped in."
+    ],
+    "serpGap": "Most results list platforms or agencies. This guide focuses on the specific decisions (baseline, sources, permissions, exceptions, maintenance) an owner must make before choosing either.",
+    "sourceUse": [
+      {
+        "url": "https://michaelmck.site/ai-implementation/",
+        "claim": "Reference point for Michael's AI audit, custom systems pricing and practical workflow focus."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2026-12-17",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "AI and operations",
+  "primaryMoneyPage": "/ai-implementation/",
+  "related": [
+    "ai-service-business-website",
+    "ai-skills-versus-prompts"
+  ],
+  "services": [],
+  "wordCount": 1452,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 19994,
+      "total_tokens": 25829,
+      "completion_tokens": 5835,
+      "prompt_tokens_details": {
+        "cached_tokens": 7916
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3406
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 3406
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "original": "I don't just want to swap out the industry name. I want it to be very specific to the thing. A workflow for a service business should reflect the way that business actually handles enquiries, bookings and follow-ups.",
+      "replacement": "A service-business workflow should reflect the actual enquiry channels, booking rules and follow-up responsibilities in that business."
+    },
+    {
+      "original": "A skill can be built with clear boundaries, so it knows when to act and when to ask.",
+      "replacement": "A skill can document when to act and when to ask. Tool permissions and approval controls must enforce any consequential limits; instructions alone are not an access-control system."
+    },
+    {
+      "original": "The result is a faster first reply and fewer missed enquiries, without asking the AI to make final decisions on its own.",
+      "replacement": "The goal is a faster first reply and fewer missed enquiries. Check that against the baseline while staff retain the final decision."
+    },
+    {
+      "original": "promises to transform a task you barely do",
+      "replacement": "promises a dramatic improvement to a task you barely do"
+    },
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

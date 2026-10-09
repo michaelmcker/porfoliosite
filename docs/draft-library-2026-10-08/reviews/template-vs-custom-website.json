@@ -1,0 +1,58 @@
+{
+  "issues": [
+    {
+      "path": "sections.2.body",
+      "original": "First impressions carry more weight when the visitor has several browser tabs open.",
+      "replacement": "",
+      "reason": "Unsupported empirical claim; the preceding sentences make the point without it."
+    },
+    {
+      "path": "faqs.0.1",
+      "original": "If you know growth is coming, starting with custom often saves time and money in the long run.",
+      "replacement": "If you know growth is coming, it is worth weighing the cost of custom work against the time and money a later rebuild would take.",
+      "reason": "Removes an unsupported blanket claim that custom always saves time and money."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help a busy local business owner decide when a template is enough and when a tailored website is the better investment.",
+    "specificity": "Good: decision worksheet, concrete service-page architecture, and local Okanagan framing keep the advice grounded.",
+    "evidence": "Thin. The article mostly gives reasoned guidance. No client projects are cited, which fits, but the two unsupported claims need the fixes above.",
+    "voice": "Clear, conversational and practical, in Michael's recommendation-driven register. Minimal padding and no smug contrast.",
+    "usefulAsset": "Yes, after the two narrow edits. The worksheet and page-architecture sample give owners something actionable rather than a generic template-versus-custom debate."
+  },
+  "slug": "template-vs-custom-website",
+  "applied": [
+    {
+      "path": "faqs.0.1",
+      "original": "If you know growth is coming, starting with custom often saves time and money in the long run.",
+      "replacement": "If you know growth is coming, it is worth weighing the cost of custom work against the time and money a later rebuild would take.",
+      "reason": "Removes an unsupported blanket claim that custom always saves time and money."
+    }
+  ],
+  "rejected": [
+    {
+      "path": "sections.2.body",
+      "original": "First impressions carry more weight when the visitor has several browser tabs open.",
+      "replacement": "",
+      "reason": "Unsupported empirical claim; the preceding sentences make the point without it.",
+      "error": "exact substring absent"
+    }
+  ],
+  "bannedRemaining": [],
+  "wordCount": 1306,
+  "usage": {
+    "prompt_tokens": 7864,
+    "total_tokens": 8874,
+    "completion_tokens": 1010,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 725
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 725
+    }
+  }
+}

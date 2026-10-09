@@ -1,0 +1,156 @@
+{
+  "slug": "boutique-accommodation-website-design",
+  "title": "Boutique accommodation design: show the stay people are choosing",
+  "type": "guide",
+  "description": "A practical guide to boutique accommodation website design for the Okanagan, covering storytelling, room scale, mobile booking, photography and a clear handoff to availability.",
+  "summary": "A boutique accommodation website should tell a specific story about place, room scale and local context, then hand visitors a clear path to check availability. On desktop it earns attention with immersive photography and copy. On mobile it removes friction. The goal is a warm, distinct design that feels chosen, not a template hotel page.",
+  "takeaways": [
+    "A boutique stay website needs to show character, scale and local context before asking for the booking.",
+    "Desktop and mobile have different jobs: one can tell a fuller visual story, while the other needs a fast, clear path to availability.",
+    "Use honest room details, specific photography and a clear booking handoff to help visitors choose with confidence."
+  ],
+  "sections": [
+    {
+      "id": "what-a-boutique-stay-needs-on-screen",
+      "title": "What a boutique stay needs on screen",
+      "body": "<p>A boutique stay is usually small, independent and built around a specific character. The website has to communicate that character quickly, then help a visitor picture the stay and take the next step. For <a href=\"/web-design/vacation-rentals/\">vacation rental and boutique accommodation websites</a>, that usually means three things working together: an inviting homepage, room pages that answer real questions, and a clear handoff to availability.</p><h3>Homepage</h3><p>The homepage should feel like an arrival, not a directory. A strong photograph or short video, one clear sentence about what makes the property different, and a visible way to check dates are often enough. Extra sections can introduce the neighbourhood, the food or the experience, but the first screen should still give a visitor confidence that they are in the right place.</p><h3>Room pages</h3><p>Each room page needs more than a name and a rate. It should show the bed, the view, the bathroom and any detail that changes the stay, such as a soaker tub, a fireplace, a private patio or stairs to the suite. The copy should explain scale honestly. If the room is compact, say what makes it comfortable and who it suits.</p><h3>Availability handoff</h3><p>Once someone is interested, the next step should be obvious. Date search, room selection and a direct booking action need to be easy to find on both desktop and mobile. If an external booking system is used, the design still needs to prepare the visitor for that step instead of surprising them with a completely different experience.</p>"
+    },
+    {
+      "id": "tell-the-story-in-scale-and-context",
+      "title": "Tell the story in scale and context",
+      "body": "<p>People choosing a boutique stay are often buying a feeling about the place as much as a bed. The design should show the scale of the rooms, the distance to the lake or village, and the kind of morning the guest can expect. In the Okanagan, that might mean vineyard light, orchard roads, a walk to the water or a quiet patio at dusk.</p><p>For example, a room page for a small Lake Country property might open with the view from the bed, then explain the ceiling height, the reading chair by the window and the short walk to the beach. Those details help a visitor choose with confidence. Destination storytelling can support that same decision. The <a href=\"https://www.tourismvernon.com/\">Tourism Vernon website</a> presents activities, places to stay and practical visitor information in a way that makes the area feel specific.</p><p>The practical rule is simple: do not describe the property only as a building. Show how it sits in its surroundings, who it suits and what a guest can walk to, drive to or notice from the window.</p>"
+    },
+    {
+      "id": "desktop-tells-the-story-mobile-gets-the-booking",
+      "title": "Desktop tells the story. Mobile gets the booking.",
+      "body": "<p>A boutique accommodation website often has two jobs at once. On a larger screen it can tell a richer visual story. On a phone it needs to help someone act quickly. Treating both the same usually weakens both.</p><table><caption>Desktop story versus mobile booking priorities</caption><thead><tr><th>Desktop page</th><th>Mobile page</th></tr></thead><tbody><tr><td>Lead with atmosphere, photography and a fuller sense of place.</td><td>Lead with the property name, location cue and a clear booking action.</td></tr><tr><td>Use room detail, neighbourhood context and longer copy where it helps.</td><td>Keep key facts visible: bed, bathroom, occupancy, view and cancellation basics.</td></tr><tr><td>Let visitors browse galleries, amenities and the story of the property.</td><td>Make date selection and room choice easy with thumb-friendly controls.</td></tr><tr><td>Support slower comparison between rooms or packages.</td><td>Reduce distractions so the visitor can check availability without hunting.</td></tr></tbody></table><p>Accessibility also belongs here. A beautiful site still needs readable text, clear contrast and headings that make sense when read aloud. The <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\">W3C's first accessibility checks</a> are a useful reminder that design choices affect real visitors, including people using keyboards or screen readers.</p>"
+    },
+    {
+      "id": "photography-and-copy-that-earn-the-booking",
+      "title": "Photography and copy that earn the booking",
+      "body": "<p>Photography and copy carry most of the persuasive weight for a boutique stay. The images need to show what the rooms are actually like, not just the best corner at the best time of day. The words need to answer the questions a careful guest will ask before sharing their dates.</p><p>I have written more about <a href=\"/blog/website-photography-video-animation/\">photography, video and animation for websites</a> separately. For a boutique property, the useful rule is that imagery should feel specific to the place. A vineyard suite, a compact heritage room and a lakefront cabin should not be photographed or described in the same way.</p><p>Copy should also respect the reader's time. Explain the bed, the view, the bathroom, the noise expectations, the parking and the walk to breakfast or town. If a room is romantic, say why. If it is practical for a work stay, say that instead. Clear, honest language usually earns more trust than vague luxury claims.</p>"
+    },
+    {
+      "id": "warm-and-distinct-not-a-template-hotel",
+      "title": "Warm and distinct, not a template hotel",
+      "body": "<p>A boutique property has an advantage a large hotel does not: it can feel chosen. The website should protect that advantage. Warmth comes from real detail, a believable voice and design that fits the building. Distinction comes from not looking like every other hotel template with the name changed.</p><p>That does not mean every page needs to be experimental. It means the typography, photography, spacing and wording should feel like they belong to the same property. A timbered farmhouse, a modern lakeside suite and a small downtown inn each need a different visual temperature.</p><p>For my own work, I want the design to look beautiful, communicate that the owner can deliver the stay, and speak to people who care about results rather than design jargon. That balance matters for boutique accommodation. The site needs craft, but it also needs to make the next step feel easy.</p>"
+    },
+    {
+      "id": "a-clear-handoff-to-availability",
+      "title": "A clear handoff to availability",
+      "body": "<p>The handoff to availability is where many attractive accommodation websites lose momentum. A visitor should not have to guess whether dates are shown in real time, whether the displayed rate is complete or whether they are about to be sent to another system.</p><p>A good handoff explains the next action in plain language. Check availability. Choose a room. Request the dates. Book direct. If the property uses a separate booking engine, say so before the click. If the website only takes an enquiry, do not imply that the stay is confirmed.</p><p>This is also where trust is earned. Clear policies, honest occupancy details and visible contact information reduce the anxiety that can stop a booking. The goal is not to pressure the visitor. It is to remove reasonable doubts.</p>"
+    },
+    {
+      "id": "worksheet-a-boutique-stay-content-checklist",
+      "title": "Worksheet: a boutique stay content checklist",
+      "body": "<table><caption>Boutique accommodation content worksheet</caption><thead><tr><th>Page or moment</th><th>What to include</th><th>Quick test</th></tr></thead><tbody><tr><td>Homepage first screen</td><td>Property name, place cue, strongest image and one clear action.</td><td>Can a new visitor tell what kind of stay this is within a few seconds?</td></tr><tr><td>Room page opening</td><td>Bed, view, room scale and one distinctive comfort detail.</td><td>Does the first paragraph help someone picture sleeping there?</td></tr><tr><td>Room facts</td><td>Bathroom, occupancy, stairs or access notes, wifi, parking and breakfast details.</td><td>Are the practical answers easy to find without reading every paragraph?</td></tr><tr><td>Local context</td><td>What is nearby, what is worth walking to and what kind of trip the property suits.</td><td>Does the page feel rooted in the Okanagan rather than interchangeable?</td></tr><tr><td>Availability action</td><td>Clear date search, direct booking or enquiry wording and policy basics.</td><td>Does the visitor know exactly what happens after the click?</td></tr></tbody></table>"
+    },
+    {
+      "id": "a-concrete-sample-one-property-page",
+      "title": "A concrete sample: one property page",
+      "body": "<p>Suppose a small Okanagan property has three rooms: a garden suite, a compact upstairs room and a larger lake-view room. A useful room page architecture could look like this.</p><ul><li><strong>Opening:</strong> the room name, one sentence about the feeling of the space and a photograph from the bed or entry.</li><li><strong>Scale:</strong> square footage or a plain-language description such as compact, generous or best for one person.</li><li><strong>Sleep and comfort:</strong> bed size, blackout curtains, heating, cooling and noise notes.</li><li><strong>Bathroom:</strong> shower or tub, private or shared, and any access detail that matters.</li><li><strong>Local life:</strong> the walk to coffee, the nearest beach, the winery down the road or the quiet evening on the patio.</li><li><strong>Next step:</strong> check dates, request the room or book direct, with policies nearby.</li></ul><p>This kind of structure keeps the page warm without making the visitor work for basic facts. The story and the decision support each other.</p>"
+    },
+    {
+      "id": "next-step",
+      "title": "Next step",
+      "body": "<p>If you are planning a boutique accommodation website, begin with the stay itself. Collect the room facts, the strongest photographs and the local details that make the property feel specific. Then decide what desktop visitors need to feel and what mobile visitors need to do.</p><p>If cost is part of the decision, I have a separate guide to <a href=\"/blog/okanagan-website-cost/\">Okanagan website cost</a>. For the design and content conversation itself, <a href=\"/contact/\">book a free consultation</a> and we can talk through your property, your guests and the clearest next step.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Does a boutique property need a different website from a vacation rental?",
+      "There is overlap, but a boutique stay usually needs more emphasis on character, room scale and local context. A vacation rental page can be more practical and inventory-led, while a boutique property often needs to make the place feel chosen before it asks for dates."
+    ],
+    [
+      "What should I collect before asking for a boutique accommodation website design?",
+      "Start with the room facts, current policies, parking and access notes, local recommendations, strong photographs and any detail that makes the property specific. That material gives the design something real to work with."
+    ],
+    [
+      "Can a small property use a simple website and still feel distinct?",
+      "Yes. A simple site can feel distinct when the photography, copy, room descriptions and booking handoff are specific to the property. The goal is not more pages. It is clearer choices."
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Michael McKerracher website design",
+      "url": "https://michaelmck.site/web-design/"
+    },
+    {
+      "name": "Tourism Vernon",
+      "url": "https://www.tourismvernon.com/"
+    },
+    {
+      "name": "W3C accessibility first checks",
+      "url": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+    }
+  ],
+  "editorial": {
+    "distinctContribution": "A buyer-focused guide that connects boutique accommodation storytelling to concrete page architecture, desktop versus mobile priorities, and a practical content worksheet, rather than simply listing attractive hotel websites.",
+    "claimsToRecheckBeforeRelease": [
+      "Confirm only approved internal links are present and that the vacation rentals money page appears exactly as required.",
+      "Check the article is at least 1000 words and not padded by metadata or sources.",
+      "Scan for banned phrases, em dashes and prose en dashes before release.",
+      "Verify there are no unsupported client performance claims, fabricated quotes or invented metrics.",
+      "Confirm every external source in the body also appears in the sources array."
+    ],
+    "serpGap": "Search results often show design galleries, template recommendations or platform-led advice. This article gives an accommodation owner a decision framework for story, room scale, mobile booking and a clear availability handoff.",
+    "sourceUse": [
+      {
+        "url": "https://michaelmck.site/web-design/",
+        "claim": "Used to align the article with Michael's own positioning: beautiful custom websites that communicate trust and support the next enquiry or booking."
+      },
+      {
+        "url": "https://www.tourismvernon.com/",
+        "claim": "Used as a local destination storytelling reference for showing activities, places to stay and practical visitor information in a specific way."
+      },
+      {
+        "url": "https://www.w3.org/WAI/test-evaluate/preliminary/",
+        "claim": "Used to support the point that visual design still needs readable text, contrast and heading structure that work for more visitors."
+      }
+    ]
+  },
+  "status": "draft",
+  "author": "Michael McKerracher",
+  "plannedPublishOn": "2027-10-14",
+  "draftedOn": "2026-10-08",
+  "researchAsOf": "2026-10-08",
+  "pillar": "Design",
+  "primaryMoneyPage": "/web-design/vacation-rentals/",
+  "related": [
+    "good-small-business-website-design",
+    "website-photography-video-animation"
+  ],
+  "services": [
+    "vacation-rentals"
+  ],
+  "wordCount": 1656,
+  "generation": {
+    "provider": "Echo by Fulcrum",
+    "model": "echo",
+    "usage": {
+      "prompt_tokens": 14830,
+      "total_tokens": 23997,
+      "completion_tokens": 9167,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 6107
+      },
+      "output_tokens_details": {
+        "reasoning_tokens": 6107
+      }
+    }
+  },
+  "editorialReview": {
+    "state": "pass-for-draft-review",
+    "date": "2026-10-08",
+    "appliedEdits": 0,
+    "publicationApproved": false
+  },
+  "mainEditorEdits": [
+    {
+      "reason": "Normalized owned-site links for the local reader and publication renderer; retained exact verified external sources."
+    }
+  ]
+}

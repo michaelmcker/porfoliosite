@@ -1,0 +1,80 @@
+{
+  "issues": [
+    {
+      "path": "summary",
+      "original": "Before a charity asks for money online, its donation page needs to prove the organization can legally issue tax receipts, explain exactly what donors can claim, and collect only the personal information required.",
+      "replacement": "Before a charity asks for money online, its donation page needs to show that the organization can issue official tax receipts, explain exactly what donors can claim, and collect only the personal information required.",
+      "reason": "\"Prove\" and \"legally\" overstate what donation-page copy can do; the page should show receipt eligibility rather than make a broader legal proof claim."
+    },
+    {
+      "path": "sections.2.body",
+      "original": "That approach is also good design. Donors who understand why you are asking for their information are less likely to abandon the form.",
+      "replacement": "That approach is also good design. The form should make the reason for each request clear before the donor reaches the payment fields.",
+      "reason": "Removes an unsupported donor-abandonment claim while keeping the practical design point."
+    },
+    {
+      "path": "sections.5.body",
+      "original": "Do this on a phone, because that is where many donors will land.",
+      "replacement": "Do this on a phone, not just on a desktop.",
+      "reason": "Avoids an unsupported empirical claim about where donors will land."
+    },
+    {
+      "path": "faqs.0.1",
+      "original": "No. Only registered charities and certain other qualified donees can issue official donation receipts for income tax purposes. A nonprofit that is not a registered charity can still accept donations, but it should be clear on the page that donors will not receive a tax receipt.",
+      "replacement": "No. Only registered charities and certain other qualified donees can issue official donation receipts for income tax purposes. If your organization is not in that position, the page should be clear that donors will not receive an official tax receipt.",
+      "reason": "Avoids making a legal claim about what non-registered nonprofits may do beyond the cited CRA guidance."
+    }
+  ],
+  "remainingBlockers": [],
+  "assessment": {
+    "intent": "Help a Canadian charity build a donation page that is accurate about tax receipts, respectful of privacy, accessible and easy to complete before asking for gifts.",
+    "specificity": "Strong on CRA receipt eligibility, split-receipt examples, BC PIPA collection limits, W3C form accessibility and donor testing. Hypothetical examples are introduced clearly.",
+    "evidence": "Uses the CRA, BC OIPC and W3C sources appropriately. I did not find invented metrics, client anecdotes or outcome guarantees.",
+    "voice": "Plain Canadian business advice for busy owners, with constructive recommendations rather than compliance fog.",
+    "usefulAsset": "Yes. It gives a charity a practical pre-launch checklist for eligibility, tax language, privacy, mobile form design and receipt accuracy."
+  },
+  "slug": "charity-donation-page",
+  "applied": [
+    {
+      "path": "summary",
+      "original": "Before a charity asks for money online, its donation page needs to prove the organization can legally issue tax receipts, explain exactly what donors can claim, and collect only the personal information required.",
+      "replacement": "Before a charity asks for money online, its donation page needs to show that the organization can issue official tax receipts, explain exactly what donors can claim, and collect only the personal information required.",
+      "reason": "\"Prove\" and \"legally\" overstate what donation-page copy can do; the page should show receipt eligibility rather than make a broader legal proof claim."
+    },
+    {
+      "path": "sections.2.body",
+      "original": "That approach is also good design. Donors who understand why you are asking for their information are less likely to abandon the form.",
+      "replacement": "That approach is also good design. The form should make the reason for each request clear before the donor reaches the payment fields.",
+      "reason": "Removes an unsupported donor-abandonment claim while keeping the practical design point."
+    },
+    {
+      "path": "sections.5.body",
+      "original": "Do this on a phone, because that is where many donors will land.",
+      "replacement": "Do this on a phone, not just on a desktop.",
+      "reason": "Avoids an unsupported empirical claim about where donors will land."
+    },
+    {
+      "path": "faqs.0.1",
+      "original": "No. Only registered charities and certain other qualified donees can issue official donation receipts for income tax purposes. A nonprofit that is not a registered charity can still accept donations, but it should be clear on the page that donors will not receive a tax receipt.",
+      "replacement": "No. Only registered charities and certain other qualified donees can issue official donation receipts for income tax purposes. If your organization is not in that position, the page should be clear that donors will not receive an official tax receipt.",
+      "reason": "Avoids making a legal claim about what non-registered nonprofits may do beyond the cited CRA guidance."
+    }
+  ],
+  "rejected": [],
+  "bannedRemaining": [],
+  "wordCount": 1454,
+  "usage": {
+    "prompt_tokens": 10095,
+    "total_tokens": 13823,
+    "completion_tokens": 3728,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3086
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 3086
+    }
+  }
+}
