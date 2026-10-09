@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-09: Privacy page and form links built; responsive checks pass at 320/390/1440. Preparing release. No new advertising or tracking platform.
+2026-10-09: Privacy page and form links deployed and live-verified (ec60cb2). Responsive checks pass at 320/390/1440. No new advertising or tracking platform.
 
 2026-10-09: Acquisition measurement deployed and live-verified: local traffic excluded and campaign context retained across pages. No ad campaign launched.
 
@@ -46,6 +46,7 @@ No remaining work for the selected service-page release. Deployed and verified S
 - Added `/privacy/` in the shared site style, with factual information about existing form delivery, booking, AI-assisted design, analytics and enquiry choices.
 - Linked from Contact and homepage-preview forms/footers; HTML/Markdown, canonical, sitemap and rebuild preservation added.
 - Desktop reading column is 820px; 320px and 390px mobile layouts have no horizontal overflow. Existing form endpoints and pricing remain unchanged.
+- Release ec60cb2 succeeded on Vercel EqBoANvEe7qSzbRv8jgbSQxidVvX. Six live resources match the release, including both forms; Markdown negotiation works. 163 tests pass with the unchanged missing-Chrome failure.
 
 
 ### 2026-10-09: Acquisition measurement

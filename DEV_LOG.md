@@ -286,3 +286,5 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Added a factual Privacy page covering the existing form, email, calendar, AI-assisted design and analytics paths; no new data collection or vendor activated.
 - Linked from Contact and homepage-preview forms/footers, preserving the concise form copy. Added HTML/Markdown, canonical, sitemap and rebuild preservation.
 - Added the new public route to the existing sitemap release assertion.
+
+- Privacy release ec60cb2 live-verified: six resources match source, Markdown negotiation succeeds and both forms retain their original delivery endpoints. 163 checks pass; unchanged legacy Chrome failure.
