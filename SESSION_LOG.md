@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-08: Simplifying contact-form wording and adding Marketing engineering; preparing verification and production release.
+2026-10-08: Contact wording simplified and Marketing engineering added; deployed and live-verified.
 
 2026-10-08: Complete 60-article private library saved and reviewed (90,192 words). Searchable desktop/mobile reader, editable manuscripts and dated calendar ready. Publishing heartbeat reuses these drafts; no new articles published in this session.
 
@@ -27,6 +27,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-08: Contact form cleanup
+- Removed the FormSubmit and mailing-list explanation and added Marketing engineering to the optional interest selector. Existing form delivery and direct email remain intact.
+- Published 1da6e76 through GitHub to Vercel; deployment 61vrVW6XGZL3oHKT3QT9jATghstc completed. Live HTML and Markdown match; browser verified the new selection and concise enquiry-use sentence.
+- 155 tests pass; the unchanged missing-Chrome failure remains. Corrected the prior draft-calendar test expectations; new article drafts remain excluded from deployment.
 
 ### 2026-10-08: Prewritten small-business website authority library
 - Completed 60 full articles (90,192 words): eight late-2026 slots and 52 for 2027, with industry-specific advice, platform comparisons, design, conversion, ownership, marketing and AI coverage.

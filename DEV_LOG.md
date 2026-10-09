@@ -223,3 +223,4 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Added Marketing engineering to the optional service selector and regenerated canonical/public contact output.
 - Baseline tests exposed the existing calendar validator rejecting the newly drafted state from the prior library task; aligned the allowed state without changing publication eligibility.
 - Verified updated copy and all five interest options in the local browser. Repository checks: 155 pass, one unchanged missing-Chrome failure. Only contact HTML/Markdown changes affect public output; draft content remains deployment-excluded.
+- Production release 1da6e76 verified by Vercel GitHub success status and byte-identical public HTML/Markdown. Live browser confirms Marketing engineering is selectable and the removed wording is absent. Screenshot saved in the durable contact-update folder.
