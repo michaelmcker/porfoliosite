@@ -26,3 +26,7 @@ gha-creds-*.json
 
 # Local Python bytecode is not editorial source.
 **/__pycache__/
+
+# Local Python workflow caches.
+__pycache__/
+*.pyc

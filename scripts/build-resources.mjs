@@ -7,6 +7,7 @@ import {siteHeader,headerStyles} from './site-header.mjs';
 import {markdown,writeDiscovery} from './service-discovery.mjs';
 import {edited,ready,dates,displayDate,futureArticles} from './resource-publishing.mjs';
 import {buildContact} from './build-contact.mjs';
+import {buildPreviewOffer,previewInvitation} from './build-preview-offer.mjs';
 
 const root=new URL('../',import.meta.url),origin='https://michaelmck.site';
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -62,6 +63,7 @@ export const resourceDiscovery=`<section class="resource-discovery"><h2>Make a b
 
 export async function buildResources(){
  const contact=await buildContact();
+ const preview=await buildPreviewOffer();
  const pages=[renderHub(),...publishedArticles.map(renderArticle)];
  // Withdraw queued outputs completely: no HTML, Markdown or alternate source route.
  for(const a of articles.filter(a=>!ready(a)))for(const prefix of ['','v2/'])await rm(new URL(prefix+route(a).slice(1),root),{recursive:true,force:true});
@@ -73,6 +75,9 @@ export async function buildResources(){
   for(const prefix of ['v2/','']){
    const target=new URL(prefix+path,root);let html=await readFile(target,'utf8');
    html=html.replace(/<section class="resource-discovery">[\s\S]*?<\/section>/g,'');
+   html=html.replace(/<section class="preview-invitation"[^>]*>[\s\S]*?<\/section>/g,'');
+   if(path==='index.html'){html=html.replace(/(<\/section>)/,`$1${previewInvitation}`);}else if(path==='web-design/index.html'){html=html.replace('</main>',previewInvitation+'</main>');}
+   if(['index.html','web-design/index.html'].includes(path)){if(!html.includes('/v2/free-website-preview/preview.css'))html=html.replace('</head>','<link rel="stylesheet" href="/v2/free-website-preview/preview.css?v=1"></head>');}else{html=html.replace('<link rel="stylesheet" href="/v2/free-website-preview/preview.css?v=1">','');}
    html=html.replace('</main>',resourceDiscovery+'</main>');
    if(!html.includes('/v2/resources/resources.css'))html=html.replace('</head>',css+'</head>');
    html=html.replace(/resources\.css\?v=\d+/g,'resources.css?v=3');
@@ -81,7 +86,7 @@ export async function buildResources(){
  }
  const sitemapPath=new URL('sitemap.xml',root);let sitemap=await readFile(sitemapPath,'utf8');
  sitemap=sitemap.replace(/\s*<url>\s*<loc>https:\/\/michaelmck\.site\/blog\/[^<]*<\/loc>[\s\S]*?<\/url>/g,'');
- for(const p of [...pages,contact]){
+ for(const p of [...pages,contact,preview]){
   const article=publishedArticles.find(a=>route(a)===p.path);
   const modified=article?dates(article).dateModified:p.path==='/blog/'?publishedArticles.map(a=>dates(a).dateModified).sort().at(-1):null;
   if(!sitemap.includes(`<loc>${origin}${p.path}</loc>`))sitemap=sitemap.replace('</urlset>',`  <url><loc>${origin}${p.path}</loc>${modified?`<lastmod>${modified}</lastmod>`:''}</url>\n</urlset>`);
@@ -94,7 +99,7 @@ export async function buildResources(){
   await writeFile(target,html);
  }
  const otherPages=await Promise.all(otherRoutes.map(async path=>{const html=await readFile(new URL(path.slice(1)+'index.html',root),'utf8');return {path,html,heading:text(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]||path),description:html.match(/<meta name="description" content="([^"]*)"/)?.[1]||''};}));
- await writeDiscovery([...otherPages,contact,...pages],root);
+ await writeDiscovery([...otherPages,contact,preview,...pages],root);
  await writeFile(new URL('docs/editorial-2026-10-08/build-manifest.json',root),JSON.stringify(pages.map(p=>({path:p.path,title:p.title,words:markdown(p.html).split(/\s+/).length})),null,2)+'\n');
  console.log(`Built ${publishedArticles.length} published AEO articles (${articles.length-publishedArticles.length} queued) and resource index, plus discovery and internal links.`);
  return pages;

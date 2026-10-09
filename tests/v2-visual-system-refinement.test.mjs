@@ -35,7 +35,7 @@ test("selected work makes the reported sales result a distinct proof line", asyn
     read("v2/styles.css"),
   ]);
 
-  assert.match(html, /class="[^"]*work-proof-result[^"]*"[\s\S]*?<strong>30% increase in sales<\/strong>/);
+  assert.match(html, /class="[^"]*work-proof-result[^"]*"[\s\S]*?<strong>30% increase in qualified bookings<\/strong>/);
   assert.match(html, /Client-reported/);
   assert.match(css, /\.work-proof-result strong\s*\{[^}]*font-size:\s*clamp\(/s);
 });

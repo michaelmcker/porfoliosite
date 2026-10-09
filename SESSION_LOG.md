@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-09: Building free-homepage preview offer, dedicated intake, Cal.com handoff and private approval board with Codex processing. $0 one-page build plus $200/year; full packages from $2,500.
+
 2026-10-09: Kelowna Web Design strengthened, deployed and live-verified. Eight primary/entry-page crawl requests and the updated sitemap accepted by Google. New-page indexing remains pending Google processing.
 
 2026-10-08: Okanagan keyword research complete: 273 phrases across 11 locations, 7,298 discovery ideas, raw evidence, volumes and prioritised page map saved privately. No website/campaign changes.

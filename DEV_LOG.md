@@ -250,3 +250,13 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Published `ecc7a53`; Vercel `HFbWthuXYBQQp7H29HFNwJmrLg7c` succeeded. Ten public files match local bytes, all 41 sitemap pages have HTTP 200/matching canonical/no noindex, and all five tested Markdown negotiations match.
 - Completed eight Google crawl requests: homepage, Web Design, AI Implementation, Marketing & Branding, Contact, Resources, industry index and Kelowna guide. All accepted; homepage already indexed, remaining seven await processing. Resubmitted sitemap successfully through the existing signed-in owner UI; connector is read-only scoped. Latest submission October 9, zero errors/warnings; prior downloaded sitemap counts are not current indexing proof.
 - Release record, discovery links and live/QA checks saved privately under docs/kelowna-release-2026-10-09; screenshots in the durable Business Research folder. Temporary viewport reset and agent-created browser tabs closed.
+
+## 2026-10-09: Free homepage preview funnel
+- User authorized dedicated offer/intake, homepage promotion, Cal.com integration and an automated image-to-code pipeline with owner review before publishing/delivery.
+- Preserve source site styles and images. Use existing verified FormSubmit email delivery for durable intake; private local review state, no public lead data or new CRM subscription.
+- Baseline: 156 pass, unchanged missing-Chrome failure. Booking URL and annual-fee inclusions requested while independent work continues.
+
+- User revised annual price to CAD 200 including hosting and minor updates, with smaller supporting price typography and “See it before you buy” leading. Updated public offer, schema, queue delivery template and metadata consistently.
+
+- Cal.com existing 30-minute event verified with available times; integrated direct links and lazy embedded calendar. Homepage primary CTA now leads to the preview offer; portfolio navigation/work remain intact. Corrected homepage proof to qualified bookings per prior user clarification.
+- Private loopback board installed with login startup. Nine Python pipeline tests cover deduplication, owner gates, artifact changes, leases, revisions and delivery. Host/Origin/token/path checks passed. Desktop and 320/390/768/1440 layout measurements show no offer-page overflow or broken images.

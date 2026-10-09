@@ -44,7 +44,7 @@ export function markdown(html){
 export async function writeDiscovery(pages,root){
  // A partial service rebuild must not silently remove published collections.
  const merged=new Map(pages.map(p=>[p.path,p]));
- for(const manifest of ['v2/industries/routes.json','v2/resources/routes.json','v2/contact/routes.json']){
+ for(const manifest of ['v2/industries/routes.json','v2/resources/routes.json','v2/contact/routes.json','v2/free-website-preview/routes.json']){
   let routes=[];try{routes=JSON.parse(await readFile(new URL(manifest,root),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
   for(const path of routes){if(merged.has(path))continue;let html;try{html=await readFile(new URL(path.slice(1)+'index.html',root),'utf8');}catch(error){if(error.code==='ENOENT')continue;throw error;}
    merged.set(path,{path,html,heading:plain(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]||path),description:html.match(/<meta name="description" content="([^"]*)"/)?.[1]||''});
@@ -54,7 +54,7 @@ export async function writeDiscovery(pages,root){
  for(const p of pages){await mkdir(new URL(p.path.slice(1),root),{recursive:true});await writeFile(new URL(p.path.slice(1)+'index.md',root),`Source: ${origin+p.path}\n\n${markdown(p.html)}`);}
  const line=p=>`- [${plain(p.heading)}](${origin+p.path}index.md): ${p.description}`;
  const listing=pages.filter(p=>!p.path.startsWith('/blog/')).map(line).join('\n')+'\n\n## Website guides, checklists and comparisons\n'+pages.filter(p=>p.path.startsWith('/blog/')).map(line).join('\n');
- await writeFile(new URL('llms.txt',root),`# Michael McKerracher\n\n> Independent AI implementation, web design and marketing services based in Coldstream, serving the Okanagan, British Columbia.\n\n## Portfolio\n- [Portfolio](${origin}/): Selected work and background.\n- [Cool Runnings case study](${origin}/v2/work/local-search-magnet.html): Website, local SEO and conversion work; 30% increase in qualified bookings.\n\n## Services\n${listing}\n\n## Contact\nFree initial consultation: michael.mckerracher@gmail.com.\nAI audit: CAD 900 once, five on-site hours across two to three weeks. Custom AI implementation and maintenance from CAD 2,500/month. Web design and marketing are custom-quoted.\n`);
+ await writeFile(new URL('llms.txt',root),`# Michael McKerracher\n\n> Independent AI implementation, web design and marketing services based in Coldstream, serving the Okanagan, British Columbia.\n\n## Portfolio\n- [Portfolio](${origin}/): Selected work and background.\n- [Cool Runnings case study](${origin}/v2/work/local-search-magnet.html): Website, local SEO and conversion work; 30% increase in qualified bookings.\n\n## Services\n${listing}\n\n## Contact\nFree initial consultation: michael.mckerracher@gmail.com.\nAI audit: CAD 900 once, five on-site hours across two to three weeks. Custom AI implementation and maintenance from CAD 2,500/month. Free homepage preview: https://michaelmck.site/free-website-preview/. One-page website design/build CAD 0, plus CAD 200/year for hosting and minor updates; domain separate. Full websites from CAD 2,500. Marketing is custom-quoted.\n`);
  await writeFile(new URL('llms-full.txt',root),pages.map(p=>`Source: ${origin+p.path}\n\n${markdown(p.html)}`).join('\n---\n\n'));
  await writeFile(new URL('robots.txt',root),'User-agent: *\nDisallow: /api/\n\nSitemap: https://michaelmck.site/sitemap.xml\n');
 }

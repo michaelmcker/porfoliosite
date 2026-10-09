@@ -1,3 +1,11 @@
+# Free homepage preview funnel, October 9, 2026
+
+- `/free-website-preview/`: dedicated request form, source-led design, transparent CAD 200/year hosting/minor updates after a free one-page build; full sites from CAD 2,500. Shared Cal.com 30-minute event, lazy embedded calendar and ordinary link fallback.
+- Homepage and Web Design feature the preview offer. Contact links to it and the booking event. HTML, FAQ/Service schema, Markdown, sitemap and LLM files are generated together.
+- FormSubmit inbox intake uses unique request IDs; provider-confirmed lead event only, no PII in analytics. Standalone pages now load the existing Google tag if missing.
+- Private local review board and durable SQLite: `scripts/preview-funnel/`. Owner approves generated design, built website publication, and customer email separately. Artifact hashes, leases, deduplication, bounded generation, audit history and guarded stage transitions are included.
+- Installed runtime/data: `~/Business Research/website-preview-funnel`; board at http://127.0.0.1:8854/. Local LaunchAgent starts board after login. Codex processes queue through the separate heartbeat runbook. Customer preview folders contain only approved public static material and carry noindex headers.
+
 # Kelowna website service detail, October 9, 2026
 
 - `/web-design/` remains the main Kelowna and Okanagan commercial page. It now explains deliverables, platform choices, ownership, handover, search foundations and enquiry handling alongside the original portfolio images.

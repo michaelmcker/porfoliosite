@@ -157,6 +157,13 @@ A plumbing enquiry, a hotel booking and a first client consultation need differe
 [Charities](https://michaelmck.site/web-design/charities/)
 [Explore all 24 industries](https://michaelmck.site/web-design/industries/)
 
+## See your next homepage. Before you buy.
+
+A design for your business, with a clear next step. Free one-page build. CAD $200/year including hosting and minor updates. Full websites from $2,500.
+
+[Show me my homepage](https://michaelmck.site/free-website-preview/)
+[Book a free 30-minute call](https://cal.com/michael-mckerracher-dqi15w/30min)
+
 ## Make a better website decision.
 
 Practical local advice on cost, content, search and choosing the right designer.

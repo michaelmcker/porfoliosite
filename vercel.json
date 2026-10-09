@@ -19,6 +19,18 @@
       "permanent": true
     },
     {
+      "source": "/free-website-preview/",
+      "destination": "/free-website-preview/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
       "source": "/v2/proposal-generator.html",
       "destination": "/proposal-generator.html",
       "permanent": true
@@ -277,6 +289,32 @@
         {
           "key": "Link",
           "value": "<https://michaelmck.site/contact/index.md>; rel=\"alternate\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/previews/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        }
+      ]
+    },
+    {
+      "source": "/free-website-preview/",
+      "headers": [
+        {
+          "key": "Vary",
+          "value": "Accept"
+        },
+        {
+          "key": "Link",
+          "value": "<https://michaelmck.site/free-website-preview/index.md>; rel=\"alternate\"; type=\"text/markdown\""
         }
       ]
     }
