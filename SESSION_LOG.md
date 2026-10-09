@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-08: Simplifying contact-form wording and adding Marketing engineering; preparing verification and production release.
+
 2026-10-08: Complete 60-article private library saved and reviewed (90,192 words). Searchable desktop/mobile reader, editable manuscripts and dated calendar ready. Publishing heartbeat reuses these drafts; no new articles published in this session.
 
 2026-10-08: Editorial rollout, Echo edits, 2027 calendar and Contact complete and live-verified. Three guides live, nine queued through November 5; daily 09:00 Pacific publishing heartbeat active. Form activated and live email delivery confirmed.

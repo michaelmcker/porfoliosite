@@ -17,8 +17,8 @@ Based in Coldstream. Working with businesses across Kelowna, Vernon, West Kelown
 
 Leave this field empty
 
-Your nameEmailWhat are you thinking about?  (optional) Not sure yetWeb designAI implementationMarketing and brandingWhat would you like help with?I’ll use these details to respond to your enquiry. The form is delivered through FormSubmit. No mailing-list signup.
+Your nameEmailWhat are you thinking about?  (optional) Not sure yetWeb designAI implementationMarketing and brandingMarketing engineeringWhat would you like help with?I’ll use these details to respond to your enquiry.
 
 Send your message
 
-Submitting opens a secure FormSubmit confirmation page. You can also email me directly.
+You can also email me directly.

@@ -76,3 +76,7 @@ The rejected services hub, guides and sample report are archived in docs/rejecte
 
 ### Industry design variety (2026-10-07)
 24 individually designed website examples with four responsive page compositions and varied section order. Canonical renderer: `scripts/build-industries.mjs`; image manifest: `v2/industries/artwork.json`; styling: `v2/industries/industries.css`. Existing industry-specific SEO content, schema and Markdown remain available.
+
+## Contact form copy, October 8, 2026
+- Optional interests include Marketing engineering alongside Web design, AI implementation and Marketing and branding.
+- The form retains the short enquiry-use sentence, with no visible delivery-provider or mailing-list explanation.

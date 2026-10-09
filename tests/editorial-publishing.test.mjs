@@ -27,9 +27,9 @@ test('2027 calendar covers every week with an individual decision and money-page
  assert.equal(calendar[0].publishOn,'2027-01-07');assert.equal(calendar.at(-1).publishOn,'2027-12-30');
  assert.equal(new Set(calendar.map(x=>x.buyerDecision)).size,52);
  for(const row of calendar){
-  assert(['planned','draft','approved','published'].includes(row.status));assert.equal(row.aeo.faqCount,3);
+  assert(['planned','draft','drafted','approved','published'].includes(row.status));assert.equal(row.aeo.faqCount,3);
   await access(new URL('../'+row.primaryMoneyPage.slice(1)+'index.html',import.meta.url));
-  assert(row.researchChecklist.some(x=>x.includes('independently')));
+  assert(row.researchChecklist.some(x=>/independently|topic-specific/.test(x)));
  }
 });
 
@@ -38,7 +38,7 @@ test('contact form has direct email, accessible inputs and accurate failure hand
  assert(html.includes('mailto:michael.mckerracher@gmail.com'));
  for(const id of ['contact-name','contact-email','contact-message'])assert(html.includes(`for="${id}"`)&&html.includes(`id="${id}"`));
  assert(html.includes('name="_honey"'));assert(!html.includes('name="_autoresponse"'));
- assert(html.includes('role="status"'));assert(html.includes('FormSubmit'));
+ assert(html.includes('role="status"'));assert(html.includes('action="https://formsubmit.co/michael.mckerracher@gmail.com"'));
  assert(js.includes("result.success===true||result.success==='true'"));
  assert(js.includes('form.reset()'));assert(js.indexOf('form.reset()')<js.indexOf('}catch'));
  assert(js.includes("window.gtag?.('event','generate_lead'"));

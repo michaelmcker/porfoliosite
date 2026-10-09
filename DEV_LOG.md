@@ -217,3 +217,9 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Built a private searchable reader with responsive tables, local reference articles, individual Markdown/JSON, complete manuscript and CSV calendar. Checked 461 local links and desktop/mobile rendering.
 - Canonical calendars now point to drafted source and exact headings/counts without granting publication approval. Added three focused tests for coverage, private isolation and preservation of the existing release queue; all pass.
 - Updated the existing daily publishing heartbeat and runbook to reuse/refresh drafts. Saved durable source and evidence outside the temporary checkout. No production deployment or new article publication.
+
+## 2026-10-08: Contact form wording
+- Removed visible FormSubmit and mailing-list wording; retained the concise enquiry-use sentence and existing delivery endpoint.
+- Added Marketing engineering to the optional service selector and regenerated canonical/public contact output.
+- Baseline tests exposed the existing calendar validator rejecting the newly drafted state from the prior library task; aligned the allowed state without changing publication eligibility.
+- Verified updated copy and all five interest options in the local browser. Repository checks: 155 pass, one unchanged missing-Chrome failure. Only contact HTML/Markdown changes affect public output; draft content remains deployment-excluded.
