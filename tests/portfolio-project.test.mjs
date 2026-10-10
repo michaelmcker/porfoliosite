@@ -30,3 +30,15 @@ test('project discovery includes canonical HTML, Markdown, artwork schema and se
  assert(config.redirects.some(x=>x.source===path&&x.destination===path+'index.md'&&x.has?.[0].key==='accept'));
  assert(!html.includes('/Users/'));
 });
+
+test('original short trailer is available with sound controls and readable discovery',async()=>{
+ const video=await readFile('assets/selected-work/upon-this-rock/trailer.mp4');
+ assert.equal(createHash('sha256').update(video).digest('hex'),'cd3b74feec29c4d2a1563b930b8972e6e4d398ce8956132fefe7a33e88978164');
+ const html=await readFile('work/upon-this-rock/index.html','utf8');
+ assert(html.includes('<video controls playsinline preload="none"'));
+ assert(!html.includes(' autoplay'));
+ assert(!html.includes(' muted'));
+ const graph=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+ assert.equal(graph.find(x=>x['@type']==='VideoObject').duration,'PT58.125S');
+ assert((await readFile('work/upon-this-rock/index.md','utf8')).includes('[Upon This Rock short trailer](https://michaelmck.site/assets/selected-work/upon-this-rock/trailer.mp4)'));
+});

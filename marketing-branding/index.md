@@ -31,6 +31,15 @@ Classical art. A distinctive identity. One visual world, from the website to eve
 [Visit the website](https://upon-this-rock.michael-mckerracher.workers.dev/)
 
 [Upon This Rock Classical website with its illustrated identity and podcast introduction](https://michaelmck.site/work/upon-this-rock/)
+
+### The story in motion.
+
+A short trailer brings the series’ visual world to life through animation and music.
+
+[Explore the full project](https://michaelmck.site/work/upon-this-rock/#trailer)
+
+[Upon This Rock short trailer](https://michaelmck.site/assets/selected-work/upon-this-rock/trailer.mp4)
+
 [Upon This Rock podcast artwork, episode 2](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)
 [Upon This Rock podcast artwork, episode 8](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)
 [Upon This Rock podcast artwork, episode 12](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)

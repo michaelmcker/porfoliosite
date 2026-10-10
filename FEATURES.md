@@ -2,6 +2,7 @@
 
 - AI Implementation shows an edge-to-edge Okanagan landscape with the “More time for what matters” message.
 - Marketing & Branding opens selected work with a full-bleed Kelowna waterfront image, follows with the scrolling Vertical Impression product story and shows the actual Upon This Rock Classical website and podcast artwork.
+- Marketing & Branding and `/work/upon-this-rock/` include the original 58-second music-led trailer with native playback controls, a real film-frame poster and no autoplay.
 - `/work/upon-this-rock/` holds the website, identity and all sixteen selected covers, with responsive layouts, shared navigation, canonical/schema/Markdown discovery and direct service/contact links.
 - `scripts/build-portfolio-work.mjs` generates this project; `content/portfolio/upon-this-rock.json` records original artwork dimensions and hashes. Creative originals remain unchanged.
 

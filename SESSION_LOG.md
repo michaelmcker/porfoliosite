@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-10: Original 58-second Upon This Rock trailer added to its portfolio project and Marketing & Branding proof. Desktop/mobile playback and responsive checks complete; publishing and live verification in progress. Original film unchanged.
+
 2026-10-10: Full-bleed Okanagan service sections and Upon This Rock website/artwork project complete locally; responsive review passed. Production release verified: 85270e9, Vercel READY and live page/asset/Markdown matches. Source website/art remain read-only.
 
 2026-10-10: Service heroes, approved homepage crops, aligned editorial grids, marketing proof and inline Cal.com complete and responsive-checked locally. Resource calendar and automation now Monday/Wednesday/Friday. Deployed and live-verified in release 999ff80 (Vercel 31fpeZJLer2Z3rB1XLSeKYAG4gDV). No remaining implementation work.
@@ -49,6 +51,12 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-10: Upon This Rock short trailer
+- Restored the original 58.125-second music-led clean-share export byte-for-byte from the archive and placed it beside the website and episode artwork on Marketing & Branding and the dedicated project page.
+- Added native playback/sound/fullscreen controls with no autoplay; extracted the poster from the original film. Added VideoObject metadata and Markdown discovery.
+- 168 tests pass; the one baseline Chrome-dependent failure remains. Required browser scripts share the missing Chrome prerequisite; connected-browser checks pass at 320/390/820/1440, and original 1280×720 playback advances without error.
+- Publishing through the existing GitHub main-to-Vercel workflow; live verification pending.
 
 ### 2026-10-10: Unified service layouts, approved crops and three weekly resources
 - Applied approved desktop/tablet hero framing; mobile source width stays intact with height trimmed only. Original source media preserved.

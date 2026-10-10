@@ -70,7 +70,9 @@ test('service proof uses original project media without nested interactive viewe
  assert(marketing.includes('/assets/selected-work/vertical-impression-story.gif'));
  assert(web.includes('https://www.abcappliance.ca/'));
  assert(web.includes('/assets/selected-work/abc-appliance-live.png'));
- assert.equal((marketing.match(/<video /g)||[]).length,2);
+ assert.equal((marketing.match(/<video /g)||[]).length,3);
+ assert(marketing.includes('aria-label="Upon This Rock short trailer"'));
+ assert(marketing.includes('/assets/selected-work/upon-this-rock/trailer.mp4'));
  assert(!marketing.includes('data-motion-video autoplay'));
  assert(marketing.includes('data-src="https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4"'));
  assert(!ai.includes('<figcaption>Illustrative example</figcaption>'));

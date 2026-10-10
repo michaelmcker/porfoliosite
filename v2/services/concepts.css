@@ -292,3 +292,10 @@
 .concept-page .marketing-story a{color:inherit}
 .concept-page .marketing-story>figure{max-width:1200px;margin-inline:auto;background:transparent}
 .concept-page .marketing-story>figure img{max-height:none;object-fit:contain}
+
+.concept-page .marketing-utr-trailer{display:grid;grid-template-columns:1fr 2fr;gap:var(--service-gap);align-items:center;margin-top:48px}
+.concept-page .marketing-utr-trailer h3{font:480 clamp(28px,3vw,40px)/1.1 var(--font-editorial);letter-spacing:-.035em;margin:0}
+.concept-page .marketing-utr-trailer p{margin-top:20px}
+.concept-page .marketing-utr-trailer a{display:inline-block;margin-top:22px}
+.concept-page .marketing-utr-trailer video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#171813;border-radius:12px}
+@media(max-width:900px){.concept-page .marketing-utr-trailer{grid-template-columns:1fr;gap:28px;margin-top:36px}}

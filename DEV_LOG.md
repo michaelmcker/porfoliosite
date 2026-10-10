@@ -1,5 +1,11 @@
 # Development log
 
+## 2026-10-10: Upon This Rock short trailer
+- Recovered the original archived clean-share MP4 (58.125 seconds, 1280×720, H.264/AAC). SHA256 cd3b74feec29c4d2a1563b930b8972e6e4d398ce8956132fefe7a33e88978164; source is unchanged.
+- Added native controls/inline playback to Marketing & Branding and the dedicated project page; preload none keeps the 21.8 MB film out of initial page loading. No autoplay or forced mute. Poster is an original frame at 15 seconds.
+- Added project VideoObject metadata, anchor navigation and generated Markdown links. Updated the former global no-controls assertion to preserve unobtrusive ambient loops while allowing the requested music-led trailer.
+- Validation: 168 passing tests, one unchanged missing-Chrome failure. Three required browser scripts share that missing prerequisite. Connected-browser checks pass at 320/390/820/1440 on both pages; 16:9 media fits without overflow and playback reaches the original duration without a media error.
+
 ## 2026-10-10: Full-width service stories and Upon This Rock portfolio
 - Replaced the AI split lifestyle row with an edge-to-edge Okanagan photograph and concise outcome-led copy.
 - Replaced the marketing Catalyst laptop with a full-bleed Kelowna waterfront photograph and the actual scrolling Vertical Impression story below; removed its duplicate lower-page section. Added Wikimedia CC attribution on the image-credits page. The Catalyst film and website link remain in the main hero.
