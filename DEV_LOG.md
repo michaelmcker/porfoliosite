@@ -1,5 +1,9 @@
 # Development log
 
+## 2026-10-10: Remove incorrect Upon This Rock trailer
+- Michael identified the legacy 58-second trailer as the wrong version. Removed its players, links, VideoObject metadata and public media from both pages and discovery files; retained its archived copy privately. Website and all artwork remain unchanged.
+- Locating the two longer exports for selection; no replacement published without identifying the right film.
+
 ## 2026-10-10: Upon This Rock short trailer
 - Released f219a9c; Vercel READY and michaelmck.site alias verified. Eleven exact live file matches, both Markdown negotiations and video byte ranges pass. Both live players play the original 58.125-second film without error; responsive evidence saved privately.
 - Recovered the original archived clean-share MP4 (58.125 seconds, 1280×720, H.264/AAC). SHA256 cd3b74feec29c4d2a1563b930b8972e6e4d398ce8956132fefe7a33e88978164; source is unchanged.

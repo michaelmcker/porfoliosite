@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-10: Removing the incorrect legacy short trailer from both public pages at Michael’s request; locating the two longer trailers separately for selection.
+
 2026-10-10: Original 58-second Upon This Rock trailer deployed and live-verified on its project page and Marketing & Branding. Release f219a9c, Vercel READY, live playback and all eleven public file matches confirmed. Original film unchanged.
 
 2026-10-10: Full-bleed Okanagan service sections and Upon This Rock website/artwork project complete locally; responsive review passed. Production release verified: 85270e9, Vercel READY and live page/asset/Markdown matches. Source website/art remain read-only.
