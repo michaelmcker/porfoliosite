@@ -40,10 +40,6 @@ A trailer that brings together the podcast’s ideas, voice and visual identity.
 
 [Upon This Rock trailer](https://michaelmck.site/assets/selected-work/upon-this-rock/trailer-approved.mp4)
 
-[Upon This Rock podcast artwork, episode 2](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)
-[Upon This Rock podcast artwork, episode 8](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)
-[Upon This Rock podcast artwork, episode 12](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)
-
 ## Stories that  move people.
 
 The St. James School website and donor film bring a story of education, community and giving to life.

@@ -50,7 +50,7 @@ test("hero reloads its responsive film when the viewport crosses the mobile brea
 test("primary chapter headings share one smaller sans-serif treatment", async () => {
   const css = await read("v2/styles.css");
 
-  assert.match(css, /\.work-heading h2,\s*\.workflow-heading h2,\s*\.outcomes-heading h2,\s*\.experience-heading h2\s*\{[^}]*font-family:\s*var\(--font-sans\)[^}]*font-size:\s*clamp\(2\.1rem,\s*3\.8vw,\s*4rem\)[^}]*font-weight:\s*650/s);
+  assert.match(css, /\.work-heading h2,\s*\.workflow-heading h2,\s*\.outcomes-heading h2,\s*\.portfolio-skills \.section-heading h2,\s*\.experience-heading h2\s*\{[^}]*font-family:\s*var\(--font-sans\)[^}]*font-size:\s*clamp\(2\.1rem,\s*3\.8vw,\s*4rem\)[^}]*font-weight:\s*650/s);
   assert.doesNotMatch(css, /\.workflow-heading h2\s*\{[^}]*font-family:\s*var\(--font-editorial\)/s);
 });
 

@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-10: Mobile marketing collage, homepage Skills and newer general resume complete; responsive and playback review passed. Publishing through GitHub main to Vercel.
+
 2026-10-10: Exact Drive-linked Upon This Rock trailer installed with a Marketing & Branding skills section below selected work. Deployed and live-verified: 3cf59d8, Vercel READY, eleven exact public file matches, Markdown and video range requests pass. Responsive/playback review complete.
 
 2026-10-10: Incorrect legacy short trailer removed and live-verified from both pages (6af4719); public film/poster return 404. Recovered private 68.608-second V15 E and 124.288-second V15 Long B exports for Michael to select; no replacement published.

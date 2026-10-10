@@ -1,3 +1,7 @@
+## Mobile work and homepage skills, October 10, 2026
+- Marketing uses a mobile overlap of the real Upon This Rock website and portrait trailer, without separate episode thumbnails. Complete artwork remains on the project page. St. James title and description precede its film.
+- Homepage Skills sits before Experience, with links from Selected Work. Vertical City title and public general resume reflect Senior Product Marketing Manager.
+
 # Upon This Rock and full-width service stories, October 10, 2026
 
 - Marketing & Branding and the project page use Michael’s explicitly linked 69-second portrait trailer, with native controls and no autoplay. Shared source/player metadata lives in `scripts/upon-this-rock-video.mjs`.

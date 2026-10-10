@@ -1,5 +1,10 @@
 # Development log
 
+## 2026-10-10: Mobile work composition and homepage skills
+- Responsive connected-browser checks pass at 320/390/820/1440: no overflow, title before film on mobile/tablet, overlapping native trailer controls usable, homepage Skills precedes Experience and shares its heading scale. Trailer playback advances without errors. Suite: 168 passing checks with the unchanged missing-Chrome failure; three required browser scripts share that missing prerequisite.
+- Upon This Rock uses its unchanged website capture and selected trailer as an overlapping mobile collage. Removed the three marketing-page episode thumbnails; complete original artwork remains on the project page. St. James copy and title now precede its film on mobile.
+- Added homepage Skills before Experience and Portfolio section links under Selected Work. Updated Vertical City to Senior Product Marketing Manager. Replaced public resume with the newer two-page general PDF from Downloads after inspecting both pages; source remains unchanged and prior public PDF retained privately.
+
 ## 2026-10-10: Drive-selected trailer and marketing skills
 - Released 3cf59d8 through GitHub main; Vercel deployment dpl_6bXftGrWygDYK3f3cvUtz52u72Bc READY with michaelmck.site alias. Eleven public files match exactly, both Markdown responses include the selected trailer, and video byte-range requests return 206. Live playback confirms the unchanged 68.606984-second 576×720 film. Evidence saved privately in portfolio-trailer-review-2026-10-10.
 - Installed the exact user-selected Drive export, SHA256 c8bdfabceb0c1a12881dd2f2feeab7c319e691f382a15edd8aa6d824474522c9. Original 576×720/68.606984-second video preserved; poster extracted at eight seconds. A shared video source/player module prevents mismatched films, dimensions or schema between pages.

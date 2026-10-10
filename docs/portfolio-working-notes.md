@@ -24,8 +24,9 @@ The approved V2 system is live at the production root. `v2/index.html` and `v2/p
 4. Selected Workflows and Tools: repeatable systems behind the outputs.
 5. Outcomes: concise proof with clear provenance.
 6. About: personal story plus the interactive Renaissance portrait.
-7. Experience: company, title, and dates, with resume download.
-8. Contact: email, LinkedIn, and GitHub.
+7. Skills: websites and brand, marketing production, AI workflows and the tools behind the work.
+8. Experience: company, title, and dates, with the current general resume download.
+9. Contact: email, LinkedIn, and GitHub.
 
 ### Production Telemetry Status
 
