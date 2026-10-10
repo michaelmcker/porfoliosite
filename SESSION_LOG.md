@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-10: Homepage tools and revised general DOCX/PDF complete; two-page document and responsive layout visually checked. Publishing through GitHub main.
+2026-10-10: Homepage tools and revised general DOCX/PDF complete; two-page document and responsive layout visually checked. Deployed and live-verified: 6282712, Vercel READY; homepage and updated resume match the release.
 
 2026-10-10: Mobile marketing collage, homepage Skills and newer general resume complete; responsive and playback review passed. Deployed and live-verified: 69825a6, Vercel READY; homepage, marketing, styles, Markdown and resume match the release.
 
@@ -59,6 +59,12 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-10: Broader tools and creative marketing resume
+- Cursor plus Webflow, Wix, Framer, Zapier, Semrush, Canva, Linear, Trello, Midjourney and Runway added to homepage Skills.
+- Updated the general Word resume headline, summary, capabilities and tools. Preserved employment history and proof; two complete pages rendered and visually checked. Matching PDF now serves as the public download, with original files backed up privately.
+- Responsive checks pass at 320/390/820/1440. Release 6282712 and Vercel dpl_2Zs4zcWdH2u61ufVWsf8W4CYBx6j READY; live homepage and PDF match byte-for-byte. No remaining work.
+
 
 ### 2026-10-10: Selected trailer and marketing skills
 - Used Michael’s exact Drive file 1uodC0rF_PZ1mxnIcNmHSvhph8kepMB6b, preserved byte-for-byte (68.607 seconds, 576×720), in Marketing & Branding and the Upon This Rock project. Native portrait playback with sound controls; source-frame poster and no autoplay.

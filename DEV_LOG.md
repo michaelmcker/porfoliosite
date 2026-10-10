@@ -1,6 +1,7 @@
 # Development log
 
 ## 2026-10-10: Broader toolset and creative marketing resume
+- Live release verified: 6282712, Vercel dpl_2Zs4zcWdH2u61ufVWsf8W4CYBx6j READY with production alias. Homepage and updated resume match byte-for-byte; native live browser confirms all tools and the versioned resume link. Updated PDF SHA256 2b8b74b44602a9369903a6921eef2dcf5e9fb7ab9f1e5db7e23885f801660bfc. Evidence retained privately under portfolio-tools-resume-2026-10-10.
 - Added Cursor to homepage tools plus Webflow, Wix, Framer, Zapier, Semrush, Canva, Linear, Trello, Midjourney and Runway under What else I work with.
 - Updated the existing local general DOCX headline, professional summary, capability matrix and technical skills to balance web/brand, creative production, marketing and AI systems. Preserved experience claims, dates and titles.
 - Original Word/PDF retained privately. Rendered and inspected both pages of the revised Word document; the matching PDF replaces the local general PDF and public download. Vertical City begins page two so experience entries remain together.
