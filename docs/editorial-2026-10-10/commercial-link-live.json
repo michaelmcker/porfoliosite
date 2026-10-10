@@ -1,0 +1,44 @@
+[
+  {
+    "path": "/v2/workflows/agency-management-dashboard.html",
+    "status": 200,
+    "match": true,
+    "sha256": "031837c9a8391b0f2331585aa6f76df8d95c6e84050d428f67df12a32876cc03"
+  },
+  {
+    "path": "/v2/workflows/content-production.html",
+    "status": 200,
+    "match": true,
+    "sha256": "ca05db9b5f85fa23a4ad851496be9cf87a432a050c6e0c7507607a71101b5b65"
+  },
+  {
+    "path": "/v2/workflows/image-to-website-production.html",
+    "status": 200,
+    "match": true,
+    "sha256": "16ea1301cd108f90098c70e59030f6723a0005b5cf4bb734da6aebf4b97826bb"
+  },
+  {
+    "path": "/v2/workflows/local-prospecting-enrichment.html",
+    "status": 200,
+    "match": true,
+    "sha256": "eb2de1f465f9c67d486af6c147506d39909f63a00c7da245f010f97554068b18"
+  },
+  {
+    "path": "/v2/workflows/presentation-publishing.html",
+    "status": 200,
+    "match": true,
+    "sha256": "f2c4de19b14b05c634d0280475e17d27b22960a670994525a5dfb9dc31b5a773"
+  },
+  {
+    "path": "/v2/work/local-search-magnet.html",
+    "status": 200,
+    "match": true,
+    "sha256": "7202564b6a7d8383da776da1dd399bbf1f6d78d4a08f4f387c7f13273ee5b266"
+  },
+  {
+    "path": "/proposal-generator.html",
+    "status": 200,
+    "match": true,
+    "sha256": "896ee43483a808c616c1920fcebd037582584241f76c6c1094be7504376c7cc2"
+  }
+]

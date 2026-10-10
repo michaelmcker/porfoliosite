@@ -4,7 +4,7 @@
 - Reworked direct openings and expanded all 72 resource manuscripts to five topic-specific FAQs; updated calendars and editorial gates to preserve them.
 - Added primary money-page routing to resource contents and contextual implementation sections, with relevant website-preview and contact paths. Added missing commercial links on five workflows, case study and proposal.
 - Three currently published guides rebuilt; nine queued articles and 60 future manuscripts retain release dates and public exclusion. FAQ schema/Markdown parity and original dates preserved.
-- Draft gate passes for 60 manuscripts. Full suite: 165 pass, unchanged missing-Chrome failure. Browser checks pass for three guides at 320/390/1440. Release verification pending.
+- Draft gate passes for 60 manuscripts. Full suite: 165 pass, unchanged missing-Chrome failure. Browser checks pass for three guides at 320/390/1440. Released 6a74f0e; Vercel success and 33 production-file matches, five Markdown negotiations and 27 withheld queued paths verified.
 
 ## 2026-10-09: Acquisition measurement
 - Production-host analytics gating excludes local and preview traffic. Session campaign context survives navigation to the homepage-preview intake.

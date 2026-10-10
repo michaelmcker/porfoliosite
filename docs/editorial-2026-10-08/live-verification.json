@@ -1,44 +1,52 @@
 {
-  "checkedAt": "2026-10-08T23:39:39.622Z",
+  "checkedAt": "2026-10-10T15:42:00.020Z",
   "resources": 26,
   "allMatch": true,
   "results": [
     {
       "path": "/blog/index.md",
       "status": 200,
-      "bytes": 1771,
+      "bytes": 1886,
       "match": true,
       "robots": null,
       "type": "text/markdown; charset=utf-8"
-    },
-    {
-      "path": "/blog/",
-      "status": 200,
-      "bytes": 6425,
-      "match": true,
-      "robots": null,
-      "type": "text/html; charset=utf-8"
     },
     {
       "path": "/blog/kelowna-business-website-guide/index.md",
       "status": 200,
-      "bytes": 10027,
+      "bytes": 12210,
       "match": true,
       "robots": null,
       "type": "text/markdown; charset=utf-8"
     },
     {
-      "path": "/blog/kelowna-business-website-guide/",
+      "path": "/blog/vernon-business-website-guide/",
       "status": 200,
-      "bytes": 19128,
+      "bytes": 21808,
       "match": true,
       "robots": null,
       "type": "text/html; charset=utf-8"
     },
     {
-      "path": "/blog/vernon-business-website-guide/",
+      "path": "/blog/kelowna-business-website-guide/",
       "status": 200,
-      "bytes": 17998,
+      "bytes": 23042,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "bytes": 6574,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/blog/west-kelowna-business-website-guide/",
+      "status": 200,
+      "bytes": 23313,
       "match": true,
       "robots": null,
       "type": "text/html; charset=utf-8"
@@ -46,7 +54,7 @@
     {
       "path": "/contact/",
       "status": 200,
-      "bytes": 5479,
+      "bytes": 5683,
       "match": true,
       "robots": null,
       "type": "text/html; charset=utf-8"
@@ -54,7 +62,7 @@
     {
       "path": "/blog/vernon-business-website-guide/index.md",
       "status": 200,
-      "bytes": 9262,
+      "bytes": 11390,
       "match": true,
       "robots": null,
       "type": "text/markdown; charset=utf-8"
@@ -62,7 +70,7 @@
     {
       "path": "/contact/index.md",
       "status": 200,
-      "bytes": 1075,
+      "bytes": 1204,
       "match": true,
       "robots": null,
       "type": "text/markdown; charset=utf-8"
@@ -70,31 +78,15 @@
     {
       "path": "/blog/west-kelowna-business-website-guide/index.md",
       "status": 200,
-      "bytes": 10050,
+      "bytes": 12309,
       "match": true,
       "robots": null,
       "type": "text/markdown; charset=utf-8"
     },
     {
-      "path": "/blog/west-kelowna-business-website-guide/",
-      "status": 200,
-      "bytes": 19374,
-      "match": true,
-      "robots": null,
-      "type": "text/html; charset=utf-8"
-    },
-    {
-      "path": "/v2/resources/resources.css",
-      "status": 200,
-      "bytes": 8338,
-      "match": true,
-      "robots": null,
-      "type": "text/css; charset=utf-8"
-    },
-    {
       "path": "/sitemap.xml",
       "status": 200,
-      "bytes": 3290,
+      "bytes": 3446,
       "match": true,
       "robots": null,
       "type": "application/xml"
@@ -102,10 +94,18 @@
     {
       "path": "/llms.txt",
       "status": 200,
-      "bytes": 9365,
+      "bytes": 9890,
       "match": true,
       "robots": null,
       "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/v2/resources/resources.css",
+      "status": 200,
+      "bytes": 8942,
+      "match": true,
+      "robots": null,
+      "type": "text/css; charset=utf-8"
     },
     {
       "path": "/robots.txt",
@@ -118,15 +118,15 @@
     {
       "path": "/llms-full.txt",
       "status": 200,
-      "bytes": 207963,
+      "bytes": 229723,
       "match": true,
       "robots": null,
       "type": "text/plain; charset=utf-8"
     },
     {
-      "path": "/v2/contact/contact.css",
+      "path": "/v2/site-header.css",
       "status": 200,
-      "bytes": 2413,
+      "bytes": 2334,
       "match": true,
       "robots": null,
       "type": "text/css; charset=utf-8"
@@ -140,9 +140,9 @@
       "type": "application/javascript; charset=utf-8"
     },
     {
-      "path": "/v2/site-header.css",
+      "path": "/v2/contact/contact.css",
       "status": 200,
-      "bytes": 2334,
+      "bytes": 2413,
       "match": true,
       "robots": null,
       "type": "text/css; charset=utf-8"
@@ -164,6 +164,14 @@
       "type": "image/webp"
     },
     {
+      "path": "/",
+      "status": 200,
+      "bytes": 34296,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
       "path": "/ai-implementation/",
       "status": 200,
       "bytes": 10732,
@@ -182,15 +190,7 @@
     {
       "path": "/web-design/",
       "status": 200,
-      "bytes": 10930,
-      "match": true,
-      "robots": null,
-      "type": "text/html; charset=utf-8"
-    },
-    {
-      "path": "/",
-      "status": 200,
-      "bytes": 33546,
+      "bytes": 19501,
       "match": true,
       "robots": null,
       "type": "text/html; charset=utf-8"

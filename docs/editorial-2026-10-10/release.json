@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-10-10T15:43:03.506522+00:00",
+  "commit": "6a74f0e4dbcbd927f739a42e0446e409d077fa34",
+  "deployment": "https://vercel.com/michael-mcks-projects/portfolio-remote-preview/F7aj8vSxC2aP2TZMtVEkiQhzXTcj",
+  "deploymentStatus": "success (GitHub Vercel commit status)",
+  "verification": {
+    "resourceFilesMatch": 26,
+    "additionalCommercialPageFilesMatch": 7,
+    "markdownNegotiations": 5,
+    "queuedPaths404": 27,
+    "publicGuidesUpdated": 3,
+    "queuedManuscriptsUpdated": 9,
+    "futureDraftManuscriptsUpdated": 60,
+    "publicSitemapCommercialPaths": 43,
+    "responsiveGuideChecks": 9,
+    "responsiveLinkChecks": 14
+  },
+  "tests": {
+    "pass": 165,
+    "baselineFailure": "v2-about-mobile: existing missing Chrome executable"
+  },
+  "draftQualityGate": "PASS: 60 manuscripts, no structural/source/link errors or language contexts",
+  "connectorLimitation": "Vercel MCP scope read returned 403; CLI unavailable. Used GitHub successful deployment status plus actual production byte checks and connected-browser live verification.",
+  "liveGuide": "https://michaelmck.site/blog/kelowna-business-website-guide/"
+}

@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-10: Applying answer-first resource openings, deeper topic-specific FAQs and contextual service/contact links to the published and scheduled resource library. Conversion-led service/industry/offer openings remain the sales-page pattern; future release dates remain enforced.
+2026-10-10: Answer-first resources, expanded FAQs and commercial links deployed and live-verified (6a74f0e). Three guides updated; nine queued articles and 60 future drafts retain their schedule. All 43 sitemap pages have a commercial/contact path.
 
 2026-10-09: Privacy page and form links deployed and live-verified (ec60cb2). Responsive checks pass at 320/390/1440. No new advertising or tracking platform.
 
@@ -43,6 +43,13 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-10: Answer-first resources and commercial links
+- Updated all 72 resource manuscripts to five specific FAQs and strengthened incomplete opening answers. Commercial pages retain conversion-led openings.
+- Contextual service/industry routing and Contact links added; seven workflow/proof/proposal pages gained missing commercial paths.
+- Release 6a74f0e succeeded on Vercel F7aj8vSxC2aP2TZMtVEkiQhzXTcj. Thirty-three public file checks match, five Markdown routes verified, 27 queued routes return 404. Live city-guide publication dates retained; modification date October 10.
+- Full suite: 165 pass, existing missing-Chrome failure. Draft-library gate passes for 60 manuscripts. Browser: nine guide/viewport checks plus 14 workflow/proof/footer checks without overflow.
+- Durable checkout: ~/portfolio-publishing. Expanded manuscripts/calendars backed up in Business Research docs/2026-10-10-resource-policy; publishing runbook refreshed.
 
 ### 2026-10-09: Enquiry privacy page
 - Added `/privacy/` in the shared site style, with factual information about existing form delivery, booking, AI-assisted design, analytics and enquiry choices.
