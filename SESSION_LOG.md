@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-10: Full-bleed Okanagan service sections and Upon This Rock website/artwork project complete locally; responsive review passed. Production release being verified. Source website/art remain read-only.
+2026-10-10: Full-bleed Okanagan service sections and Upon This Rock website/artwork project complete locally; responsive review passed. Production release verified: 85270e9, Vercel READY and live page/asset/Markdown matches. Source website/art remain read-only.
 
 2026-10-10: Service heroes, approved homepage crops, aligned editorial grids, marketing proof and inline Cal.com complete and responsive-checked locally. Resource calendar and automation now Monday/Wednesday/Friday. Deployed and live-verified in release 999ff80 (Vercel 31fpeZJLer2Z3rB1XLSeKYAG4gDV). No remaining implementation work.
 
@@ -320,4 +320,4 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Implemented: AI Okanagan photograph, marketing Kelowna waterfront photograph, actual scrolling product story, website/art previews and dedicated `/work/upon-this-rock/` gallery with all sixteen selected originals.
 - Discovery: canonical, CreativeWork/CollectionPage/Breadcrumb schema, sitemap, Markdown, agent listing, service and contact links. Originals preserved byte-for-byte.
 - Validation: 167 passing tests; one unchanged missing-Chrome test. Required browser scripts also blocked by the same missing executable. Connected browser responsive review at 320/390/820/1440: no overflow or missing images; sticky shared header and native artwork proportions confirmed.
-- Release: GitHub main to Vercel; production verification pending.
+- Release: 85270e9 pushed to GitHub main; Vercel dpl_4n1iAbkKrqW9aKbEBgZ7x3U84HDT READY and aliased to michaelmck.site. Verified 32 live file hashes and four Markdown negotiations. New page is linked and sitemap-listed; indexing is not inferred from deployment.

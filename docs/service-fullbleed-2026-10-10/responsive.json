@@ -1,0 +1,170 @@
+[
+  {
+    "brokenImages": [],
+    "fullbleed": [
+      {
+        "left": 0,
+        "width": 805
+      }
+    ],
+    "galleryColumns": null,
+    "h1": 1,
+    "header": "sticky",
+    "path": "/ai-implementation/",
+    "scrollWidth": 805,
+    "width": 820
+  },
+  {
+    "brokenImages": [],
+    "fullbleed": [
+      {
+        "left": 0,
+        "width": 805
+      }
+    ],
+    "galleryColumns": null,
+    "h1": 1,
+    "header": "sticky",
+    "path": "/marketing-branding/",
+    "scrollWidth": 805,
+    "width": 820
+  },
+  {
+    "brokenImages": [],
+    "fullbleed": [],
+    "galleryColumns": "355.703px 355.703px",
+    "h1": 1,
+    "header": "sticky",
+    "path": "/work/upon-this-rock/",
+    "scrollWidth": 805,
+    "width": 820
+  },
+  {
+    "brokenImages": [],
+    "fullbleed": [
+      {
+        "left": 0,
+        "width": 320
+      }
+    ],
+    "galleryColumns": null,
+    "h1": 1,
+    "header": "sticky",
+    "path": "/ai-implementation/",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "brokenImages": [],
+    "fullbleed": [
+      {
+        "left": 0,
+        "width": 320
+      }
+    ],
+    "galleryColumns": null,
+    "h1": 1,
+    "header": "sticky",
+    "path": "/marketing-branding/",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "brokenImages": [],
+    "fullbleed": [],
+    "galleryColumns": "276px",
+    "h1": 1,
+    "header": "sticky",
+    "path": "/work/upon-this-rock/",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "brokenImages": [],
+    "fullbleed": [
+      {
+        "left": 0,
+        "width": 1425
+      }
+    ],
+    "galleryColumns": null,
+    "h1": 1,
+    "header": "sticky",
+    "path": "/ai-implementation/",
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "fullbleed": [
+      {
+        "left": 0,
+        "width": 1425
+      },
+      {
+        "left": 0,
+        "width": 1425
+      }
+    ],
+    "galleryColumns": null,
+    "h1": 1,
+    "header": "sticky",
+    "path": "/marketing-branding/",
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "fullbleed": [],
+    "galleryColumns": "640.906px 640.906px",
+    "h1": 1,
+    "header": "sticky",
+    "path": "/work/upon-this-rock/",
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "fullbleed": [
+      {
+        "left": 0,
+        "width": 375
+      }
+    ],
+    "galleryColumns": null,
+    "h1": 1,
+    "header": "sticky",
+    "path": "/ai-implementation/",
+    "scrollWidth": 375,
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "fullbleed": [
+      {
+        "left": 0,
+        "width": 375
+      },
+      {
+        "left": 0,
+        "width": 375
+      }
+    ],
+    "galleryColumns": null,
+    "h1": 1,
+    "header": "sticky",
+    "path": "/marketing-branding/",
+    "scrollWidth": 375,
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "fullbleed": [],
+    "galleryColumns": "331px",
+    "h1": 1,
+    "header": "sticky",
+    "path": "/work/upon-this-rock/",
+    "scrollWidth": 375,
+    "width": 390
+  }
+]

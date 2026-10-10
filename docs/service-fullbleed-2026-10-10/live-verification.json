@@ -1,0 +1,193 @@
+{
+  "verifiedAt": "2026-10-10T18:22:49.793Z",
+  "commit": "85270e9d730e57fce4aa60b5a93b60d6617bd2a6",
+  "deployment": "dpl_4n1iAbkKrqW9aKbEBgZ7x3U84HDT",
+  "files": [
+    {
+      "file": "ai-implementation/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "ai-implementation/index.md",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "marketing-branding/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "marketing-branding/index.md",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "web-design/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "web-design/index.md",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "work/upon-this-rock/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "work/upon-this-rock/index.md",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "v2/services/concepts.css",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "v2/work/project.css",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "sitemap.xml",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "llms.txt",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "llms-full.txt",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "image-credits.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/kelowna-waterfront.jpg",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/website-option-one.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-01.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-02.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-03.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-04.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-05.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-06.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-07.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-08.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-09.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-10.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-11.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-12.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-13.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-14.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-15.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "assets/selected-work/upon-this-rock/episode-16.png",
+      "status": 200,
+      "match": true
+    }
+  ],
+  "markdown": [
+    {
+      "route": "ai-implementation/",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8",
+      "match": true
+    },
+    {
+      "route": "marketing-branding/",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8",
+      "match": true
+    },
+    {
+      "route": "web-design/",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8",
+      "match": true
+    },
+    {
+      "route": "work/upon-this-rock/",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8",
+      "match": true
+    }
+  ]
+}

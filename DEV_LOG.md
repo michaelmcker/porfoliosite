@@ -5,6 +5,7 @@
 - Replaced the marketing Catalyst laptop with a full-bleed Kelowna waterfront photograph and the actual scrolling Vertical Impression story below; removed its duplicate lower-page section. Added Wikimedia CC attribution on the image-credits page. The Catalyst film and website link remain in the main hero.
 - Added the actual Upon This Rock Classical website capture, three artwork previews and a dedicated project page containing sixteen selected original podcast covers. Original files copied byte-for-byte, with dimensions and hashes recorded privately; source project unchanged.
 - Added project CreativeWork/CollectionPage/Breadcrumb schema, Markdown, sitemap, agent discovery, related service/contact links and shared navigation. Project builder runs with the service build so future releases retain the page.
+- Released 85270e9 through GitHub main to Vercel; READY deployment, custom-domain alias, 32 exact live file matches and four Markdown negotiations verified. Evidence in docs/service-fullbleed-2026-10-10.
 - Validation: 167 tests pass; unchanged baseline Chrome launch failure. Three required browser scripts share the unavailable Chrome prerequisite. Connected-browser review at 320/390/820/1440 confirms full-width media, no overflow/broken images, sticky navigation, and responsive artwork columns.
 
 ## 2026-10-10: Sticky navigation and hero crop review
