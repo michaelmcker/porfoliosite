@@ -1,6 +1,7 @@
 # Development log
 
 ## 2026-10-10: Upon This Rock short trailer
+- Released f219a9c; Vercel READY and michaelmck.site alias verified. Eleven exact live file matches, both Markdown negotiations and video byte ranges pass. Both live players play the original 58.125-second film without error; responsive evidence saved privately.
 - Recovered the original archived clean-share MP4 (58.125 seconds, 1280×720, H.264/AAC). SHA256 cd3b74feec29c4d2a1563b930b8972e6e4d398ce8956132fefe7a33e88978164; source is unchanged.
 - Added native controls/inline playback to Marketing & Branding and the dedicated project page; preload none keeps the 21.8 MB film out of initial page loading. No autoplay or forced mute. Poster is an original frame at 15 seconds.
 - Added project VideoObject metadata, anchor navigation and generated Markdown links. Updated the former global no-controls assertion to preserve unobtrusive ambient loops while allowing the requested music-led trailer.

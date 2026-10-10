@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-10: Original 58-second Upon This Rock trailer added to its portfolio project and Marketing & Branding proof. Desktop/mobile playback and responsive checks complete; publishing and live verification in progress. Original film unchanged.
+2026-10-10: Original 58-second Upon This Rock trailer deployed and live-verified on its project page and Marketing & Branding. Release f219a9c, Vercel READY, live playback and all eleven public file matches confirmed. Original film unchanged.
 
 2026-10-10: Full-bleed Okanagan service sections and Upon This Rock website/artwork project complete locally; responsive review passed. Production release verified: 85270e9, Vercel READY and live page/asset/Markdown matches. Source website/art remain read-only.
 
@@ -56,7 +56,7 @@ No remaining work for the selected service-page release. Deployed and verified S
 - Restored the original 58.125-second music-led clean-share export byte-for-byte from the archive and placed it beside the website and episode artwork on Marketing & Branding and the dedicated project page.
 - Added native playback/sound/fullscreen controls with no autoplay; extracted the poster from the original film. Added VideoObject metadata and Markdown discovery.
 - 168 tests pass; the one baseline Chrome-dependent failure remains. Required browser scripts share the missing Chrome prerequisite; connected-browser checks pass at 320/390/820/1440, and original 1280×720 playback advances without error.
-- Publishing through the existing GitHub main-to-Vercel workflow; live verification pending.
+- Released f219a9c through GitHub main to Vercel. READY/custom-domain alias verified, eleven exact live file matches, two Markdown routes and HTTP 206 video seeking confirmed. Live native playback verified on both pages; private evidence saved under Business Research/portfolio-trailer-review-2026-10-10.
 
 ### 2026-10-10: Unified service layouts, approved crops and three weekly resources
 - Applied approved desktop/tablet hero framing; mobile source width stays intact with height trimmed only. Original source media preserved.
