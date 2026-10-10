@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-10: Exact Drive-linked Upon This Rock trailer installed with a Marketing & Branding skills section below selected work. Responsive/playback review complete; publishing and live verification in progress.
+
 2026-10-10: Incorrect legacy short trailer removed and live-verified from both pages (6af4719); public film/poster return 404. Recovered private 68.608-second V15 E and 124.288-second V15 Long B exports for Michael to select; no replacement published.
 
 2026-10-10: Original 58-second Upon This Rock trailer deployed and live-verified on its project page and Marketing & Branding. Release f219a9c, Vercel READY, live playback and all eleven public file matches confirmed. Original film unchanged.
@@ -53,6 +55,12 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-10: Selected trailer and marketing skills
+- Used Michael’s exact Drive file 1uodC0rF_PZ1mxnIcNmHSvhph8kepMB6b, preserved byte-for-byte (68.607 seconds, 576×720), in Marketing & Branding and the Upon This Rock project. Native portrait playback with sound controls; source-frame poster and no autoplay.
+- Added skills below selected work: end-to-end video production, ad design and scaling winners. Static tool list: Higgsfield, ElevenLabs, Suno, AI agents and HyperFrames; direct contact link.
+- Updated VideoObject metadata and generated Markdown/discovery. 168 tests pass with one unchanged missing-Chrome failure; required browser scripts share that missing prerequisite. Connected-browser checks pass at 320/390/820/1440, with original-ratio playback advancing without error.
+- Publishing through GitHub main to Vercel; live verification pending.
 
 ### 2026-10-10: Correct trailer selection
 - Removed the incorrect legacy short trailer from Marketing & Branding and the Upon This Rock project, including media, metadata and Markdown links. Original retained privately.

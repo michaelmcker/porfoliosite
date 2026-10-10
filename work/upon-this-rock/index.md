@@ -5,7 +5,14 @@ Source: https://michaelmck.site/work/upon-this-rock/
 A podcast about faith, history and the ideas that shape us. Classical art gives the series a distinctive identity, carried through its website and episode artwork.
 
 [Visit the website](https://upon-this-rock.michael-mckerracher.workers.dev/)
+[Watch the trailer](#trailer)
 [Explore the artwork](#podcast-artwork)
+
+## The story in motion.
+
+A trailer that brings together the podcast’s ideas, voice and visual identity.
+
+[Upon This Rock trailer](https://michaelmck.site/assets/selected-work/upon-this-rock/trailer-approved.mp4)
 
 ## A home for the conversation.
 

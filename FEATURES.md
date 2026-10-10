@@ -1,5 +1,8 @@
 # Upon This Rock and full-width service stories, October 10, 2026
 
+- Marketing & Branding and the project page use Michael’s explicitly linked 69-second portrait trailer, with native controls and no autoplay. Shared source/player metadata lives in `scripts/upon-this-rock-video.mjs`.
+- Marketing & Branding has an outcome-led skills section below selected work: end-to-end video production, ad design and scaling winners, supported by Higgsfield, ElevenLabs, Suno, AI agents and HyperFrames.
+
 - AI Implementation shows an edge-to-edge Okanagan landscape with the “More time for what matters” message.
 - Marketing & Branding opens selected work with a full-bleed Kelowna waterfront image, follows with the scrolling Vertical Impression product story and shows the actual Upon This Rock Classical website and podcast artwork.
 - `/work/upon-this-rock/` holds the website, identity and all sixteen selected covers, with responsive layouts, shared navigation, canonical/schema/Markdown discovery and direct service/contact links.

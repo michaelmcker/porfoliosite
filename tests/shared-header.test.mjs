@@ -20,5 +20,7 @@ test('retired articles stay absent while the approved resource collection is dis
   const ai=await readFile(new URL('../ai-implementation/index.html',import.meta.url),'utf8');
   assert.doesNotMatch(ai, /<figcaption>/);
   const marketing=await readFile(new URL('../marketing-branding/index.html',import.meta.url),'utf8');
-  assert.doesNotMatch(marketing, /<video[^>]* controls/);
+  for(const video of marketing.matchAll(/<video\b[^>]*>/g)) {
+    if(video[0].includes('data-motion-video')) assert.doesNotMatch(video[0], /\bcontrols\b/);
+  }
 });

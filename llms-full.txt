@@ -309,6 +309,15 @@ Classical art. A distinctive identity. One visual world, from the website to eve
 [Visit the website](https://upon-this-rock.michael-mckerracher.workers.dev/)
 
 [Upon This Rock Classical website with its illustrated identity and podcast introduction](https://michaelmck.site/work/upon-this-rock/)
+
+### The story in motion.
+
+A trailer that brings together the podcast’s ideas, voice and visual identity.
+
+[Explore the full project](https://michaelmck.site/work/upon-this-rock/#trailer)
+
+[Upon This Rock trailer](https://michaelmck.site/assets/selected-work/upon-this-rock/trailer-approved.mp4)
+
 [Upon This Rock podcast artwork, episode 2](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)
 [Upon This Rock podcast artwork, episode 8](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)
 [Upon This Rock podcast artwork, episode 12](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)
@@ -321,6 +330,32 @@ The St. James School website and donor film bring a story of education, communit
 [Watch the film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
 
 [St. James School donor film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
+
+## The skills  behind the work.
+
+From the first idea to the finished campaign. Video, ad creative and production systems that help you make more of what works.
+
+[Talk about your next campaign](https://michaelmck.site/contact/)
+
+### End-to-end video production
+
+Concept, script, visuals, voice, music, motion and editing. One coherent film, with versions for your website, social channels and ads.
+
+### Ad design
+
+Static and video creative built around your offer. Explore different hooks, messages and formats without losing the identity of your brand.
+
+### Scaling winners
+
+Use performance feedback to choose the strongest ideas, then build new hooks, edits and formats around them. Repeatable workflows keep the next round moving.
+
+### Tools I work with
+
+- Higgsfield
+- ElevenLabs
+- Suno
+- AI agents
+- HyperFrames
 
 ## Good businesses  deserve to be  better known.
 
@@ -4657,7 +4692,14 @@ Source: https://michaelmck.site/work/upon-this-rock/
 A podcast about faith, history and the ideas that shape us. Classical art gives the series a distinctive identity, carried through its website and episode artwork.
 
 [Visit the website](https://upon-this-rock.michael-mckerracher.workers.dev/)
+[Watch the trailer](#trailer)
 [Explore the artwork](#podcast-artwork)
+
+## The story in motion.
+
+A trailer that brings together the podcast’s ideas, voice and visual identity.
+
+[Upon This Rock trailer](https://michaelmck.site/assets/selected-work/upon-this-rock/trailer-approved.mp4)
 
 ## A home for the conversation.
 

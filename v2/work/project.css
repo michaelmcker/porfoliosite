@@ -28,3 +28,8 @@
 .project-footer p{font-size:13px}
 @media(max-width:900px){.project-intro,.project-section-heading,.project-identity,.project-contact>.project-frame{grid-template-columns:1fr;gap:28px}.project-intro{padding-block:52px 56px}.project-website{padding-top:48px}.project-identity{padding-block:64px}.project-artwork{padding-bottom:64px}.project-contact{padding-block:56px}.project-page p{max-width:52ch}}
 @media(max-width:600px){.project-gallery{grid-template-columns:1fr;gap:28px}.project-section-heading{margin-bottom:28px}.project-footer{align-items:start;flex-direction:column}.project-website-image{width:100%}.project-page h1{font-size:clamp(42px,10.5vw,60px)}}
+
+.project-trailer{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding-block:0 80px;scroll-margin-top:20px}
+.project-trailer p{margin-top:24px;max-width:36ch}
+.project-trailer video{display:block;width:100%;max-width:440px;height:auto;aspect-ratio:4/5;justify-self:center;background:#171813;border-radius:12px}
+@media(max-width:900px){.project-trailer{grid-template-columns:1fr;gap:32px;padding-bottom:56px}}

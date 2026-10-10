@@ -1,5 +1,11 @@
 # Development log
 
+## 2026-10-10: Drive-selected trailer and marketing skills
+- Installed the exact user-selected Drive export, SHA256 c8bdfabceb0c1a12881dd2f2feeab7c319e691f382a15edd8aa6d824474522c9. Original 576×720/68.606984-second video preserved; poster extracted at eight seconds. A shared video source/player module prevents mismatched films, dimensions or schema between pages.
+- Added native portrait players to Marketing & Branding and the Upon This Rock project, project VideoObject schema, trailer navigation and Markdown links. Rejected legacy file stays absent.
+- Added an editorial skills section below marketing selected work: production from concept through delivery, static/video ad creative and iterating successful ads. Tool names are static, with a direct campaign enquiry link. Shared type, spacing and colour system retained.
+- 168 passing tests; one unchanged missing-Chrome failure, with the three required browser scripts sharing that missing prerequisite. Connected-browser review confirms no overflow and 4:5 media at 320/390/820/1440 on both pages; playback advances with sound available and no errors.
+
 ## 2026-10-10: Remove incorrect Upon This Rock trailer
 - Michael identified the legacy 58-second trailer as the wrong version. Removed its players, links, VideoObject metadata and public media from both pages and discovery files; retained its archived copy privately. Website and all artwork remain unchanged.
 - Removal release 6af4719 live-verified: both HTML pages exactly match, public film/poster return 404; 167 tests pass with baseline missing-Chrome failure.
