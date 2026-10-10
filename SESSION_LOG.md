@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-10: Mobile marketing collage, homepage Skills and newer general resume complete; responsive and playback review passed. Publishing through GitHub main to Vercel.
+2026-10-10: Mobile marketing collage, homepage Skills and newer general resume complete; responsive and playback review passed. Deployed and live-verified: 69825a6, Vercel READY; homepage, marketing, styles, Markdown and resume match the release.
 
 2026-10-10: Exact Drive-linked Upon This Rock trailer installed with a Marketing & Branding skills section below selected work. Deployed and live-verified: 3cf59d8, Vercel READY, eleven exact public file matches, Markdown and video range requests pass. Responsive/playback review complete.
 
