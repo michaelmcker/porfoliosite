@@ -1,5 +1,12 @@
 # Development log
 
+## 2026-10-10: Full-width service stories and Upon This Rock portfolio
+- Replaced the AI split lifestyle row with an edge-to-edge Okanagan photograph and concise outcome-led copy.
+- Replaced the marketing Catalyst laptop with a full-bleed Kelowna waterfront photograph and the actual scrolling Vertical Impression story below; removed its duplicate lower-page section. Added Wikimedia CC attribution on the image-credits page. The Catalyst film and website link remain in the main hero.
+- Added the actual Upon This Rock Classical website capture, three artwork previews and a dedicated project page containing sixteen selected original podcast covers. Original files copied byte-for-byte, with dimensions and hashes recorded privately; source project unchanged.
+- Added project CreativeWork/CollectionPage/Breadcrumb schema, Markdown, sitemap, agent discovery, related service/contact links and shared navigation. Project builder runs with the service build so future releases retain the page.
+- Validation: 167 tests pass; unchanged baseline Chrome launch failure. Three required browser scripts share the unavailable Chrome prerequisite. Connected-browser review at 320/390/820/1440 confirms full-width media, no overflow/broken images, sticky navigation, and responsive artwork columns.
+
 ## 2026-10-10: Sticky navigation and hero crop review
 - Shared navigation now uses sticky positioning with a white background, elevated stacking and anchor clearance.
 - Prepared separate local before/proposed pages using CSS framing of the original films; no source-media or production hero crop changes. Desktop/tablet top crop begins above Outputs; portrait crop removes unused top canvas and shortens the device. Awaiting owner crop approval.

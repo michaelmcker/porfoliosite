@@ -13,9 +13,9 @@ Vineyards overlooking Okanagan Lake at Winfield, Lake Country
 
 ## More time for  what matters.
 
-- Enquiries waiting for a reply? Help customers take the next step while they’re still interested.
-- Follow-ups slipping through? Keep quotes, appointments and opportunities moving.
-- Admin eating up the day? Give your team more time for customers and work that earns revenue.
+Fewer missed enquiries. Follow-ups that keep moving. Less admin at the end of the day.
+
+I build the systems that give you more time for your customers, your team and life outside the business.
 
 ## Built around  the way you work.
 

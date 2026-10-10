@@ -146,6 +146,8 @@ test("canonical sitemap and robots files expose only intended public routes", as
     "https://michaelmck.site/v2/workflows/presentation-publishing.html",
   ];
   if (locations.includes("https://michaelmck.site/tools.html")) expected.push("https://michaelmck.site/tools.html");
+  const workRoutes = JSON.parse(await read('v2/work/routes.json'));
+  expected.push(...workRoutes.map(route => `https://michaelmck.site${route}`));
   const serviceRoutes = JSON.parse(await read("v2/services/routes.json"));
   expected.push(...serviceRoutes.map(route => `https://michaelmck.site${route}`));
   const industryRoutes = JSON.parse(await read("v2/industries/routes.json"));

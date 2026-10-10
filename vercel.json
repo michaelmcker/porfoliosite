@@ -14,6 +14,18 @@
       "permanent": true
     },
     {
+      "source": "/work/upon-this-rock/",
+      "destination": "/work/upon-this-rock/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
       "source": "/privacy/",
       "destination": "/privacy/index.md",
       "permanent": false,
@@ -332,6 +344,17 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/work/upon-this-rock/",
+      "destination": "/work/upon-this-rock/index.md",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": "text/markdown"
+        }
+      ]
+    },
     {
       "source": "/ai-implementation/",
       "has": [

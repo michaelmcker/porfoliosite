@@ -82,7 +82,9 @@ test('service proof uses original project media without nested interactive viewe
   assert(graph.find(x=>x['@type']==='Service').areaServed.some(x=>x.name==='Kelowna, British Columbia, Canada'));
  }
  assert(marketing.includes('/assets/selected-work/ai-catalyst-film.mp4'));
- assert(marketing.includes('/assets/selected-work/upon-this-rock-identity.webp'));
+ assert(marketing.includes('/assets/selected-work/upon-this-rock/website-option-one.png'));
+ assert(marketing.includes('href="/work/upon-this-rock/"'));
+ assert(!marketing.includes('concept-laptop'));
  assert(marketing.includes('Explore the AI Catalyst website'));
  await access('assets/videos/vertical-impression-proposal-story-boomerang.mp4');
  await access('assets/selected-work/ai-catalyst-film.mp4');

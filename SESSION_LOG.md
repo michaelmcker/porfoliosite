@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-10: Full-bleed Okanagan service sections and Upon This Rock website/artwork project complete locally; responsive review passed. Production release being verified. Source website/art remain read-only.
+
 2026-10-10: Service heroes, approved homepage crops, aligned editorial grids, marketing proof and inline Cal.com complete and responsive-checked locally. Resource calendar and automation now Monday/Wednesday/Friday. Deployed and live-verified in release 999ff80 (Vercel 31fpeZJLer2Z3rB1XLSeKYAG4gDV). No remaining implementation work.
 
 2026-10-10: October 12 checklist and October 15 Kelowna comparison prepared privately; fresh source/Echo/link/responsive checks pass. No article due or published today.
@@ -312,3 +314,10 @@ Remove public blog and image labels, restore approved Vertical Impression scroll
 
 ## 2026-10-07: Mobile workflow image corners
 Source PNGs retained. Four mobile diagrams are opaque black artwork, not transparent cutouts; dashboard is a screenshot. Updated mobile media to natural image proportions with 20px image clipping and 28px outer corners, retaining light surrounding paper. No artwork pixels changed.
+
+## 2026-10-10: Full-bleed service stories and Upon This Rock
+- Requested: full-width Okanagan service sections, replace marketing laptop and show the Upon This Rock Classical website plus more artwork.
+- Implemented: AI Okanagan photograph, marketing Kelowna waterfront photograph, actual scrolling product story, website/art previews and dedicated `/work/upon-this-rock/` gallery with all sixteen selected originals.
+- Discovery: canonical, CreativeWork/CollectionPage/Breadcrumb schema, sitemap, Markdown, agent listing, service and contact links. Originals preserved byte-for-byte.
+- Validation: 167 passing tests; one unchanged missing-Chrome test. Required browser scripts also blocked by the same missing executable. Connected browser responsive review at 320/390/820/1440: no overflow or missing images; sticky shared header and native artwork proportions confirmed.
+- Release: GitHub main to Vercel; production verification pending.

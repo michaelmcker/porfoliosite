@@ -5,33 +5,35 @@ Source: https://michaelmck.site/marketing-branding/
 Websites, social media, video and brand development that make your business easier to understand, remember and choose.
 
 [Book a free consultation](https://michaelmck.site/contact/)
+[Explore the AI Catalyst website](https://ai-catalyst-wheat.vercel.app/)
 
 [AI Catalyst brand film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
 
-## A story, carried across  every part of your business.
+Okanagan Lake and Kelowna’s waterfront
 
-Websites, video and brand identity. Different ways to give people a clear reason to choose you.
+## A story, carried across every part of your business.
 
-## Your story.  Made visible.
+Websites, social media, video and brand identity. One clear story that helps people choose you.
 
-The AI Catalyst website brings positioning, visual direction and a clear offer together. The website and brand film carry the same story across different formats.
+## Explaining a misunderstood medium.
 
-[Explore the AI Catalyst website](https://ai-catalyst-wheat.vercel.app/)
+A scrolling product story makes elevator advertising easier to understand, with messaging and motion that carry into sales and social media.
 
-Original blue dithered marble artwork from the AI Catalyst website
- AI CATALYST  Strategy. Systems. Story.
+[Explore the product story](https://www.verticalimpression.com/proposal-story)
 
-YOUR STORY.  MADE VISIBLE.
-
- Practical AI for a more human tomorrow.
-
-Upon This Rock podcast identity with classical artwork in the UTR letterforms
+Vertical Impression website animation explaining elevator advertising
 
 ## Upon This Rock
 
-A distinct visual direction, carried from the main identity into episode artwork. A recognizable world for the series before anyone presses play.
+Classical art. A distinctive identity. One visual world, from the website to every podcast episode.
 
-Brand development, podcast art and a consistent design system for the series.
+[Explore the website & artwork](https://michaelmck.site/work/upon-this-rock/)
+[Visit the website](https://upon-this-rock.michael-mckerracher.workers.dev/)
+
+[Upon This Rock Classical website with its illustrated identity and podcast introduction](https://michaelmck.site/work/upon-this-rock/)
+[Upon This Rock podcast artwork, episode 2](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)
+[Upon This Rock podcast artwork, episode 8](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)
+[Upon This Rock podcast artwork, episode 12](https://michaelmck.site/work/upon-this-rock/#podcast-artwork)
 
 ## Stories that  move people.
 
@@ -65,14 +67,6 @@ Brand films, campaign creative, social video and podcast edits. Story and visual
 ### Brand development
 
 Positioning, messaging, visual identity and brand guidelines. A consistent foundation for the way your business looks and speaks.
-
-Vertical Impression website animation explaining elevator advertising
-
-## Explaining a misunderstood medium.
-
-A scrolling website story that makes elevator advertising easier to understand. Messaging, motion and reusable video creative bring the same idea to the website and social channels.
-
-[Explore the product story](https://www.verticalimpression.com/proposal-story)
 
 ## A simple process.  Real progress.
 

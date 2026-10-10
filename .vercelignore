@@ -131,3 +131,6 @@ v2/contact/routes.json
 # Preview source and internal workflow never ship.
 v2/free-website-preview/index.html
 v2/free-website-preview/routes.json
+
+v2/work/routes.json
+v2/work/upon-this-rock/

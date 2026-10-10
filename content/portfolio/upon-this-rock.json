@@ -1,0 +1,146 @@
+[
+  {
+    "episode": 1,
+    "title": "NASA star field",
+    "size": [
+      1280,
+      720
+    ],
+    "sha256": "12d3c8ec8569ab9f89136334819aa47af4287cd1995cbbdfdc7ef2faf127486e"
+  },
+  {
+    "episode": 2,
+    "title": "School of Athens",
+    "size": [
+      1280,
+      720
+    ],
+    "sha256": "c348627474d960cd288097c441a66494cd177068986df0c980d8fe5ca244780c"
+  },
+  {
+    "episode": 3,
+    "title": "Christ preaching",
+    "size": [
+      1280,
+      721
+    ],
+    "sha256": "2298a2620cf0fd2002bffa33f83a2aa98b156c5d4b33166cdf50461986b7fc98"
+  },
+  {
+    "episode": 4,
+    "title": "Return of the Prodigal Son",
+    "size": [
+      1280,
+      720
+    ],
+    "sha256": "b0aed9b199e242b5272c871d79957ae43c96618fe4509a9b8a5eec5b2a60034b"
+  },
+  {
+    "episode": 5,
+    "title": "Creation of Adam",
+    "size": [
+      1280,
+      720
+    ],
+    "sha256": "e35339de281d953f22a02ae8992b8327c158f896e389bfbddb3abed3b28bc62e"
+  },
+  {
+    "episode": 6,
+    "title": "Abraham and Melchizedek",
+    "size": [
+      1280,
+      720
+    ],
+    "sha256": "6660b38f21105f296459558da924a435c4313809668a0098dc3f83b747c5e43b"
+  },
+  {
+    "episode": 7,
+    "title": "Sacrifice of Isaac",
+    "size": [
+      1280,
+      720
+    ],
+    "sha256": "6ca7a73f31222af095b3893490ad53cb5865624ebb19d030ca5ea1451baddc88"
+  },
+  {
+    "episode": 8,
+    "title": "Moses before the Burning Bush",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "bac5d15f095682ed35e546fecfa3c749e2e2706a4dac2779ac6952c3f2471e26"
+  },
+  {
+    "episode": 9,
+    "title": "Crossing of the Red Sea",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "0e121924e30e82383a3201e6cdafa8040b51d17d55152415a0aefbe8134d0900"
+  },
+  {
+    "episode": 10,
+    "title": "Construction of the Tabernacle",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "8e69549a38241a368fe2b6795adc70be44186ca695c771dbc41a010958da9fdd"
+  },
+  {
+    "episode": 11,
+    "title": "Transfiguration",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "f89f475aaa0f9882a8901087ee24560139daf34337fa56eec527a583b40ca4f4"
+  },
+  {
+    "episode": 12,
+    "title": "Last Supper",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "eede74838e61981d4b555848445109649da1d8dc92e547bf9d93a1d0902b83ce"
+  },
+  {
+    "episode": 13,
+    "title": "Crucifixion",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "c91a0c03fe4541d49b0b8228ed4d7fcb47b0f7b6fbe04c2d4661022a4a2e2a51"
+  },
+  {
+    "episode": 14,
+    "title": "Resurrection",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "a36d604c25dc30d732796ab9502ce44cc6d6224d52728c8df4641644b1502729"
+  },
+  {
+    "episode": 15,
+    "title": "Pentecost",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "63bc37cdb238885113ccbb0f6ab5eb6828b105c053de5de1813cf39bd859bd1d"
+  },
+  {
+    "episode": 16,
+    "title": "Christ giving the keys to Peter",
+    "size": [
+      1280,
+      720
+    ],
+    "sha256": "f5ec744b74d7b4366a5a7c50560fd4acec0da066dcee0cf17c0e7a3ce86b7414"
+  }
+]
