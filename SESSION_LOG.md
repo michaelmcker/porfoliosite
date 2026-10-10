@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-10: Sticky shared navigation implemented locally and checked on homepage, Web Design and a resource. Before/proposed hero framing review ready in docs/hero-review-2026-10-10. Original hero assets and live crop unchanged; awaiting owner approval. No deployment.
+
 2026-10-10: October 12 checklist and October 15 Kelowna comparison prepared privately; fresh source/Echo/link/responsive checks pass. No article due or published today.
 
 2026-10-10: Answer-first resources, expanded FAQs and commercial links deployed and live-verified (6a74f0e). Three guides updated; nine queued articles and 60 future drafts retain their schedule. All 43 sitemap pages have a commercial/contact path.
@@ -45,6 +47,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-10: Sticky navigation and crop review
+- Implemented shared sticky navigation with anchor/resource contents clearance.
+- Prepared responsive before/proposed crop previews using original films, reviewed at desktop/tablet/mobile sizes. Production hero remains unchanged pending approval.
+- 165 tests pass with the same missing-Chrome failure; connected browser checks confirm sticky positions and no overflow. No release.
 
 ### 2026-10-10: Scheduled resource preparation
 - Refreshed the October 12 service checklist and October 15 Kelowna comparison privately, including six FAQ answers and the current website offer. Sources and dates preserved; no early release.

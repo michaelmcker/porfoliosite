@@ -1,3 +1,8 @@
+# Sticky shared navigation, October 10, 2026
+
+- Shared homepage, service and resource navigation stays at the top during normal document scrolling. In-page links have clearance below the header.
+- Hero framing review remains local pending owner approval; the original artwork and live crop are preserved.
+
 # Free homepage preview funnel, October 9, 2026
 
 - `/free-website-preview/`: dedicated request form, source-led design, free custom homepage design preview before committing to a paid build; full sites from CAD 2,500. Shared Cal.com 30-minute event, lazy embedded calendar and ordinary link fallback.

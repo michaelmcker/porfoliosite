@@ -1,5 +1,10 @@
 # Development log
 
+## 2026-10-10: Sticky navigation and hero crop review
+- Shared navigation now uses sticky positioning with a white background, elevated stacking and anchor clearance.
+- Prepared separate local before/proposed pages using CSS framing of the original films; no source-media or production hero crop changes. Desktop/tablet top crop begins above Outputs; portrait crop removes unused top canvas and shortens the device. Awaiting owner crop approval.
+- Baseline and final suite: 165 tests pass, one unchanged missing-Chrome browser failure. Three required browser scripts share the unavailable Chrome prerequisite; connected browser checks completed at 320/390/820/1024/1440. Shared header pinned on homepage/service/resource; resource contents clear the header. No release; crop approval pending.
+
 ## 2026-10-10: Answer-first resources and commercial links
 - Reworked direct openings and expanded all 72 resource manuscripts to five topic-specific FAQs; updated calendars and editorial gates to preserve them.
 - Added primary money-page routing to resource contents and contextual implementation sections, with relevant website-preview and contact paths. Added missing commercial links on five workflows, case study and proposal.

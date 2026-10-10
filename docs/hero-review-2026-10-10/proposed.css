@@ -1,0 +1,8 @@
+
+/* Review-only framing; original film and production crop remain unchanged. */
+.hero-system-media{aspect-ratio:1230 / 780}
+.hero-video-source{width:135.934959%;height:120.641026%;transform:translate(-22.129187%,-9.564293%)}
+@media(max-width:699px){
+ .hero-system-media{aspect-ratio:901 / 1180}
+ .hero-video-source{width:104.439512%;height:141.694915%;transform:translate(-2.125399%,-22.129187%)}
+}
