@@ -2,7 +2,8 @@
 
 ## 2026-10-10: Remove incorrect Upon This Rock trailer
 - Michael identified the legacy 58-second trailer as the wrong version. Removed its players, links, VideoObject metadata and public media from both pages and discovery files; retained its archived copy privately. Website and all artwork remain unchanged.
-- Locating the two longer exports for selection; no replacement published without identifying the right film.
+- Removal release 6af4719 live-verified: both HTML pages exactly match, public film/poster return 404; 167 tests pass with baseline missing-Chrome failure.
+- Recovered private V15 E (68.608 seconds, 720×900) and V15 Long B (124.288 seconds, 720×900). Long B SHA256 30bef454c8a1109c0d885b4aa301570196004639bf0fe385f4a9252b1ea90bfb verified against restore manifest and archived chunk hashes. No replacement published pending selection.
 
 ## 2026-10-10: Upon This Rock short trailer
 - Released f219a9c; Vercel READY and michaelmck.site alias verified. Eleven exact live file matches, both Markdown negotiations and video byte ranges pass. Both live players play the original 58.125-second film without error; responsive evidence saved privately.

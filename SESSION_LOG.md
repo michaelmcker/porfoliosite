@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-10: Removing the incorrect legacy short trailer from both public pages at Michael’s request; locating the two longer trailers separately for selection.
+2026-10-10: Incorrect legacy short trailer removed and live-verified from both pages (6af4719); public film/poster return 404. Recovered private 68.608-second V15 E and 124.288-second V15 Long B exports for Michael to select; no replacement published.
 
 2026-10-10: Original 58-second Upon This Rock trailer deployed and live-verified on its project page and Marketing & Branding. Release f219a9c, Vercel READY, live playback and all eleven public file matches confirmed. Original film unchanged.
 
@@ -53,6 +53,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-10: Correct trailer selection
+- Removed the incorrect legacy short trailer from Marketing & Branding and the Upon This Rock project, including media, metadata and Markdown links. Original retained privately.
+- Release 6af4719 is READY on Vercel; both live pages exactly match the corrected files and the removed media returns 404. 167 tests pass with the one unchanged missing-Chrome failure.
+- Located V15 E in Downloads (68.608 seconds) and recovered V15 Long B (124.288 seconds) from verified archive parts 129/130, preserving its original hash. Both are private in Business Research/portfolio-trailer-review-2026-10-10; await selection before replacing.
 
 ### 2026-10-10: Upon This Rock short trailer
 - Restored the original 58.125-second music-led clean-share export byte-for-byte from the archive and placed it beside the website and episode artwork on Marketing & Branding and the dedicated project page.
