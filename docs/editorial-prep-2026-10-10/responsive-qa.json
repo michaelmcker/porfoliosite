@@ -1,0 +1,74 @@
+[
+  {
+    "file": "service-business-website-checklist.html",
+    "width": 320,
+    "contact": true,
+    "documentWidth": 305,
+    "duplicateIds": [],
+    "faq": 5,
+    "missingImages": 0,
+    "service": true,
+    "sticky": "static",
+    "viewport": 320
+  },
+  {
+    "file": "service-business-website-checklist.html",
+    "width": 390,
+    "contact": true,
+    "documentWidth": 375,
+    "duplicateIds": [],
+    "faq": 5,
+    "missingImages": 0,
+    "service": true,
+    "sticky": "static",
+    "viewport": 390
+  },
+  {
+    "file": "service-business-website-checklist.html",
+    "width": 1440,
+    "contact": true,
+    "documentWidth": 1425,
+    "duplicateIds": [],
+    "faq": 5,
+    "missingImages": 0,
+    "service": true,
+    "sticky": "sticky",
+    "viewport": 1440
+  },
+  {
+    "file": "best-web-designers-kelowna.html",
+    "width": 320,
+    "contact": true,
+    "documentWidth": 305,
+    "duplicateIds": [],
+    "faq": 5,
+    "missingImages": 0,
+    "service": true,
+    "sticky": "static",
+    "viewport": 320
+  },
+  {
+    "file": "best-web-designers-kelowna.html",
+    "width": 390,
+    "contact": true,
+    "documentWidth": 375,
+    "duplicateIds": [],
+    "faq": 5,
+    "missingImages": 0,
+    "service": true,
+    "sticky": "static",
+    "viewport": 390
+  },
+  {
+    "file": "best-web-designers-kelowna.html",
+    "width": 1440,
+    "contact": true,
+    "documentWidth": 1425,
+    "duplicateIds": [],
+    "faq": 5,
+    "missingImages": 0,
+    "service": true,
+    "sticky": "sticky",
+    "viewport": 1440
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "checkedOn": "2026-10-10",
+  "timezone": "America/Vancouver",
+  "dueToday": [],
+  "prepared": [
+    {
+      "slug": "service-business-website-checklist",
+      "publishOn": "2026-10-12"
+    },
+    {
+      "slug": "best-web-designers-kelowna",
+      "publishOn": "2026-10-15"
+    }
+  ],
+  "status": "Prepared privately; future URLs excluded from public build",
+  "sources": "Current official provider pages, Google Search Central and web.dev rechecked. Saved original October 8 query/source inventory used for context; fresh web searches are not a location-verified Google rank report.",
+  "echo": "Existing account natural-language review returned no findings; response preserved privately. No detector claim.",
+  "editorial": "Direct answer retained, five distinct FAQs, six repetitive FAQ answers rewritten. Current offer and self-authorship retained. Qualified bookings proof unchanged.",
+  "links": "Checklist now links directly to the live Cool Runnings case study; future sibling links remain suppressed until their release.",
+  "anchors": "Fixed three queued articles whose content section reused FAQ anchor questions. Unique-ID regression added for every rendered resource.",
+  "qualityGate": "PASS",
+  "unsupportedClaims": 0,
+  "bannedPhraseMatches": 0,
+  "unresolvedLinkDestinations": 0,
+  "responsive": "Six connected-browser checks across two prepared articles at 320, 390 and 1440; no horizontal overflow, five visible FAQs, no duplicate IDs, service/contact paths present; contents sticky only on desktop.",
+  "tests": {
+    "passing": 165,
+    "existingFailure": "v2-about-mobile: Google Chrome executable absent; unchanged baseline"
+  },
+  "calendar": "12 initial queue entries checked; all 8 late-2026 and 52 weekly-2027 calendar entries are after seven-day window. Dates unchanged.",
+  "livePublication": "None due; none released early.",
+  "automation": "Retains active daily 09:00 Vancouver schedule; prompt updated to preserve five FAQs."
+}

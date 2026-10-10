@@ -21,6 +21,8 @@ test('all approved articles are complete, answer-first and linked from the colle
   else {await assert.rejects(access(new URL('../'+path,import.meta.url)));await assert.rejects(access(new URL('../v2/'+path,import.meta.url)));}
   assert(html.includes(siteHeader));
   assert.equal((html.match(/<h1\b/g)||[]).length,1);
+  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
+  assert.equal(new Set(ids).size,ids.length,a.slug+" has unique anchor IDs");
   assert(html.includes(`<h1>${a.title.replaceAll('&','&amp;')}</h1><p class="r-summary">`));
   assert(a.sections.length>=5,a.slug+' complete topic coverage');
   for(const section of a.sections)assert(section.body.startsWith('<p>')&&plain(section.body).length>250,a.slug+' '+section.id+' has a substantive direct answer');

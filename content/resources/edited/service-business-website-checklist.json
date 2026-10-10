@@ -21,10 +21,10 @@
     },
     {
       "id": "evidence",
-      "body": "<p>Put proof beside the decision it supports, and make it relevant to the service being considered. Show a completed job, explain the work involved or use an approved customer comment with appropriate attribution. Place that evidence near the service description or enquiry action. Cool Runnings’ website, local SEO and conversion work brought a 30% increase in qualified bookings. The <a href=\"/blog/cool-runnings-qualified-bookings/\">project story</a> connects that result to the work. Your proof might be a careful installation, a well-documented process or a distinctive finished project rather than a percentage.</p>"
+      "body": "<p>Put proof beside the decision it supports, and make it relevant to the service being considered. Show a completed job, explain the work involved or use an approved customer comment with appropriate attribution. Place that evidence near the service description or enquiry action. Cool Runnings’ website, local SEO and conversion work brought a 30% increase in qualified bookings. The <a href=\"/v2/work/local-search-magnet.html\">project story</a> connects that result to the work. Your proof might be a careful installation, a well-documented process or a distinctive finished project rather than a percentage.</p>"
     },
     {
-      "id": "questions",
+      "id": "customer-questions",
       "body": "<p>Answer the questions that actually determine whether someone will contact you. Start with the questions the owner repeatedly answers: what is included, what information to send, whether a visit is needed and how estimates work. Place essential answers in the main content and use a short FAQ for specific follow-ups. If you cannot offer a fixed price, explain what changes the quote. Clear scope is more useful than an empty “contact us for details” repeated under every question.</p>"
     },
     {
@@ -51,15 +51,15 @@
   "faqs": [
     [
       "Should I let customers book a time without speaking to me?",
-      "Use direct booking when the service, duration and availability are predictable. Use a request or callback first when you need to assess scope, coverage or suitability. The button should make that distinction clear. Check what happens when a customer chooses the wrong service or needs an unusual duration. Keep a staff contact route for those cases and make the acknowledgement explicit about what is confirmed. A calendar is useful only when the business can honour the appointment it offers."
+      "Use direct booking when the service, duration and availability are predictable and the team can honour the appointment. Use a request or callback first when scope, coverage or suitability needs checking. Make the acknowledgement explicit about what is confirmed. Provide a staff contact route for customers who choose the wrong service or need an unusual duration."
     ],
     [
       "How many fields should my service enquiry form have?",
-      "Use the fewest fields needed to route and respond to the request. Name, contact details, service, location and a short description are a useful starting point. Only require extra information when it changes the next action. For a typical service request, start with the service, location, reply details and a short description. Add optional photographs if they help assess the job. Leave detailed qualification until the callback unless that information changes whether the business can accept the work."
+      "Use the fewest fields needed to route and respond to the request: name, reply details, service, location and a short description are a useful starting point. Add optional photographs when they help assess the job. Require extra information only when it changes whether the business can accept or route the work; leave detailed qualification until the callback."
     ],
     [
       "What should I fix before running ads?",
-      "Confirm that the relevant service page answers the customer’s main questions, the contact action works on mobile and enquiries reach someone who will respond. Set up conversion measurement before paying to bring more visitors to that route. Submit a request yourself, verify that someone receives it and check the acknowledgement. Match the landing page's offer and service area to the ad, then decide how qualified leads and booked jobs will be recorded. Advertising should feed a working process that the team has capacity to handle."
+      "Check the whole route before paying for traffic. The landing page should match the advertised service and coverage, answer the main buying questions and work on a phone. Submit a request, verify that someone receives it and check the acknowledgement. Set up conversion measurement and decide how the team will record qualified enquiries and booked jobs. Confirm that someone has capacity to respond."
     ],
     [
       "What proof should a local service website show?",

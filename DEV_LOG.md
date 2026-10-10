@@ -294,3 +294,9 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Added the new public route to the existing sitemap release assertion.
 
 - Privacy release ec60cb2 live-verified: six resources match source, Markdown negotiation succeeds and both forms retain their original delivery endpoints. 163 checks pass; unchanged legacy Chrome failure.
+
+## 2026-10-10: Private scheduled article preparation
+- Refreshed the two articles due within seven days without changing publication dates or current public output. Reviewed current official sources and existing buyer-intent evidence; Echo review returned no findings.
+- Tightened six repeated FAQ answers, retained five FAQs, added current scoped offer to owned comparison, and connected checklist proof to its existing live case.
+- Fixed three queued duplicate content/FAQ IDs and added all-resource unique-ID regression. Six responsive browser checks pass; baseline/final suite 165 passes with unchanged missing-Chrome failure.
+- Saved private source/manuscript/link/Echo/browser evidence in Business Research and compact preparation evidence in docs/editorial-prep-2026-10-10. Updated runbook shape and heartbeat from three to five FAQs.

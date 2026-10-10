@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-10: October 12 checklist and October 15 Kelowna comparison prepared privately; fresh source/Echo/link/responsive checks pass. No article due or published today.
+
 2026-10-10: Answer-first resources, expanded FAQs and commercial links deployed and live-verified (6a74f0e). Three guides updated; nine queued articles and 60 future drafts retain their schedule. All 43 sitemap pages have a commercial/contact path.
 
 2026-10-09: Privacy page and form links deployed and live-verified (ec60cb2). Responsive checks pass at 320/390/1440. No new advertising or tracking platform.
@@ -43,6 +45,12 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-10: Scheduled resource preparation
+- Refreshed the October 12 service checklist and October 15 Kelowna comparison privately, including six FAQ answers and the current website offer. Sources and dates preserved; no early release.
+- Fixed duplicate FAQ/content anchors in three queued manuscripts; added all-resource unique-ID verification.
+- Source refresh and Echo review complete; six mobile/desktop preview checks pass. Tests: 165 pass, unchanged missing-Chrome failure.
+- Private evidence and snapshots in Business Research docs/2026-10-10-scheduled-preparation; durable repository evidence in docs/editorial-prep-2026-10-10. Heartbeat now explicitly preserves five FAQs.
 
 ### 2026-10-10: Answer-first resources and commercial links
 - Updated all 72 resource manuscripts to five specific FAQs and strengthened incomplete opening answers. Commercial pages retain conversion-led openings.
