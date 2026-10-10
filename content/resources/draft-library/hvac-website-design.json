@@ -68,6 +68,14 @@
     [
       "Do I need separate pages for each town I serve?",
       "Only if you can make each page genuinely useful for that town, such as real coverage details and response expectations. A single honest service-area page is better than a stack of near-identical city pages. Google rewards relevance, not repetition."
+    ],
+    [
+      "How should an HVAC website separate repairs from replacements?",
+      "Give repair customers a fast route to explain the system and problem, while replacement pages explain assessment, options and the quoting process. Show actual service coverage and appointment expectations for both. Avoid sending an urgent repair enquiry through a lengthy replacement questionnaire or implying every service is available immediately."
+    ],
+    [
+      "What should be checked before promoting rebates or financing on an HVAC page?",
+      "Verify the current programme, eligible equipment and provider-approved terms before publishing. Assign an owner to review expiry dates and changes. Keep the equipment recommendation and service scope clear even when an incentive is unavailable, and send customers to the current official programme information for detailed eligibility."
     ]
   ],
   "sources": [
@@ -113,7 +121,7 @@
   "services": [
     "hvac"
   ],
-  "wordCount": 1892,
+  "wordCount": 2009,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -136,6 +144,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 2,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

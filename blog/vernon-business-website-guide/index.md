@@ -2,10 +2,10 @@ Source: https://michaelmck.site/blog/vernon-business-website-guide/
 
 # The Vernon business website guide: 7 priorities for 2026
 
-A Vernon business website should help people confirm your reputation, understand your services and get in touch. For North Okanagan businesses, clear coverage, appointment details and practical local information matter. Build the site around how customers move from a recommendation or search to a booked job.
+A Vernon business website should make it easy to understand your services, confirm your reputation and arrange the next step. Show genuine North Okanagan coverage, useful service detail, relevant work and practical appointment or visiting information. Build a clear mobile contact journey, readable search content and an editing process the team can maintain, then follow enquiries through to booked work.
 
 By [Michael McKerracher](https://michaelmck.site/)
- · Published October 8, 2026
+ · Published October 8, 2026 · Updated October 10, 2026
 
 In this article
 
@@ -24,7 +24,7 @@ In this article
 - [Build a reliable route from request to booking](#enquiries)
 
 - [Questions, answered](#questions)
-[Website design services](https://michaelmck.site/web-design/)
+[web design and development in Kelowna and the Okanagan](https://michaelmck.site/web-design/)
 [Discuss your project](https://michaelmck.site/contact/)
 [All resources](https://michaelmck.site/blog/)
 
@@ -103,24 +103,32 @@ Review qualified enquiries and booked jobs together. If you receive repeated req
 
 ### Is a Facebook page enough for a small Vernon business?
 
-Facebook can help customers discover and follow a business. A website gives you a stable place for services, contact information, booking details and content you control. Keep the two connected so people can move from an update to the information they need.
+A Facebook page can help customers discover and follow the business, while a website provides a stable place for services, contact details and booking information you control. Give important services their own useful pages and link social updates to the relevant destination. Keep both current so someone arriving through a recommendation can understand the offer and request the right work without searching old posts.
 
 ### Should a Coldstream business describe itself as based in Vernon?
 
-Use the actual business location. You can clearly say that you serve Vernon and the North Okanagan without changing your address or implying a different office. Website and business-profile details should remain accurate.
+Describe the business as based in Coldstream and serving Vernon or the North Okanagan where that is accurate. Explain any differences in travel, appointments or project arrangements that affect the customer. Keep the address consistent with the business's actual location; serving Vernon does not require claiming an office there. Use local detail to help customers judge coverage and arrange the next step.
 
 ### Can I keep my current domain when rebuilding?
 
-Yes, provided your business controls the domain. Plan the website move, email settings and redirects before changing hosting. Keeping the domain does not automatically preserve every old page address, so include URL mapping in the rebuild.
+Yes, provided the business controls the domain. Before changing hosting, inventory the old pages, identify useful search traffic and enquiries, and agree redirects for URLs that will change. Record the email-related DNS settings and who manages them. Test website and email access after launch, with the domain and renewal details remaining under the business's control.
 
-## Put this to work for your business.
+### How should a North Okanagan service website explain its coverage?
 
-I can help you turn these decisions into a website with a clear structure, useful content and an easier route to an enquiry or booking. Start with [web design and development](https://michaelmck.site/web-design/)
-, or [tell me what you want to improve](https://michaelmck.site/contact/)
- and we can work out the right scope.
+List the areas genuinely served and any differences in availability, call-out arrangements or project scope that matter to a customer. Put the relevant coverage beside each service and enquiry route. Add dedicated area pages when they answer distinct local questions, rather than repeating a city list throughout the website.
 
-[AI implementation](https://michaelmck.site/ai-implementation/)
-[Marketing & branding](https://michaelmck.site/marketing-branding/)
+### What should a Vernon tourism business prioritise on mobile?
+
+Show the experience, current availability and the practical details a visitor needs to plan. Keep arrival information, group or occupancy limits and booking conditions easy to reach. Test the external reservation step as well as the website, so visitors retain the property, experience or dates they were considering.
+
+## Build a website around the business.
+
+I can turn the page plan, content and customer journey into a considered website, including mobile design, search foundations and a working enquiry route. Explore [web design and development in Kelowna and the Okanagan](https://michaelmck.site/web-design/)
+, or [tell me about your project](https://michaelmck.site/contact/)
+ so we can agree the right scope.
+
+[See a free custom homepage design preview](https://michaelmck.site/free-website-preview/)
+ before deciding on a full website build.
 
 ## Sources and further reading
 

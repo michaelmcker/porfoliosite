@@ -58,6 +58,14 @@
     [
       "What is the biggest mistake on a small charity's donation page?",
       "One of the biggest mistakes is promising tax receipts when the organization cannot issue them, or being vague about which portion of a ticket or gift is eligible. Another common mistake is collecting more personal information than the charity actually needs, which creates both a trust problem and a privacy obligation."
+    ],
+    [
+      "What does a donor need to understand before opening the payment form?",
+      "Explain the need, what the campaign is trying to achieve and how gifts support that work. Make one-time and monthly options clear, alongside any important restrictions on the gift. Show a real contact route for donation questions and have the charity verify the wording about receipts before publishing it."
+    ],
+    [
+      "How should the website support someone who cannot complete a donation?",
+      "Provide an accessible way to return to the payment step and a contact route for assistance. Keep the campaign context visible when handing off to an external donation platform. Test error messages and acknowledgement emails using the platform's supported test process, and avoid collecting payment-card information in an ordinary website contact form."
     ]
   ],
   "sources": [
@@ -111,7 +119,7 @@
   "services": [
     "charities"
   ],
-  "wordCount": 1461,
+  "wordCount": 1585,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -134,7 +142,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 4,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

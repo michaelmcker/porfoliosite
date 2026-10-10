@@ -68,6 +68,14 @@
     [
       "Can a financial advisor use testimonials on a website?",
       "Possibly, but this needs firm-specific compliance and legal review. Testimonials, endorsements and client stories can create regulatory or privacy concerns, especially if they imply results. Do not assume that a testimonial style used in another industry is appropriate for financial advice. If they are used, document the permission and keep the claims accurate and verifiable."
+    ],
+    [
+      "How should a financial advisory website qualify an initial enquiry?",
+      "Explain whom the practice serves, the services offered and how the introductory conversation works. Let a visitor identify the broad reason for contacting the team without entering account balances or financial documents into a public form. Have the firm's compliance reviewer approve service descriptions, credentials and any performance-related wording."
+    ],
+    [
+      "What kind of proof belongs on an advisor's website?",
+      "Use verifiable professional information, relevant experience and a clear explanation of the working process. Describe the relationship a client can expect, including the next step and where fee information is available. Review testimonials, credentials and claims through the firm's required process rather than borrowing promotional language from another industry."
     ]
   ],
   "sources": [
@@ -113,7 +121,7 @@
   "services": [
     "financial-advisors"
   ],
-  "wordCount": 1378,
+  "wordCount": 1495,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -136,7 +144,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

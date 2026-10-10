@@ -63,6 +63,14 @@
     [
       "Do I need online ordering built into my website?",
       "You need a clear takeout path. Whether that is an ordering platform, a simple order link, or a phone number depends on your volume and your margins. What matters is that a guest who wants pickup can find that route in seconds, separate from your reservation route, without wading through the rest of the site."
+    ],
+    [
+      "What should a restaurant website show before a reservation button?",
+      "Make the menu, current opening hours, location and dining experience easy to find. Explain reservation and walk-in arrangements and route takeout orders to the correct system. Keep essential information readable on a phone rather than embedding everything in photographs or an old menu PDF that staff rarely update."
+    ],
+    [
+      "How should a restaurant manage seasonal menus and special events?",
+      "Assign an editor for menu items, hours and event pages and agree how updates reach the reservation and ordering systems. Keep dates and booking conditions beside the event details. Remove expired promotions from prominent positions while preserving useful permanent information about the restaurant and its regular service."
     ]
   ],
   "sources": [
@@ -107,7 +115,7 @@
   "services": [
     "restaurants"
   ],
-  "wordCount": 1844,
+  "wordCount": 1959,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -130,6 +138,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 3,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

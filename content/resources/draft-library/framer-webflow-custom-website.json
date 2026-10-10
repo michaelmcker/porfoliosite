@@ -63,6 +63,14 @@
     [
       "Is a custom website better for SEO than Framer or Webflow?",
       "Not by default. All three can support good SEO when they are built well. The bigger difference is who controls the content structure, page speed decisions, and long-term maintenance."
+    ],
+    [
+      "What is the fairest way to compare Framer, Webflow and a custom build?",
+      "Use the same project brief for all three: page types, editor roles, integrations, content migration and support expectations. Ask each provider to show how routine updates work and explain ownership and exit options. Compare the total delivery and maintenance arrangement rather than a platform subscription against a complete website quote."
+    ],
+    [
+      "When is a custom build worth the extra responsibility?",
+      "Consider it when the required behaviour or content structure is difficult to deliver cleanly with a managed builder. Confirm who will maintain the code, hosting and integrations and how another developer could take over. A custom approach needs a specific benefit to the business beyond avoiding a familiar platform."
     ]
   ],
   "sources": [
@@ -132,7 +140,7 @@
     "framer-small-business-websites"
   ],
   "services": [],
-  "wordCount": 1655,
+  "wordCount": 1776,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -155,7 +163,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

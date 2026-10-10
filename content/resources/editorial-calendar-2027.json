@@ -20,7 +20,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/plumber-website-design.json",
-    "wordCount": 1623,
+    "wordCount": 1747,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -41,7 +41,9 @@
     "faqs": [
       "Do I need separate websites for emergency and renovation work?",
       "Should I list every town in the Okanagan to show up in more searches?",
-      "How many pages does a plumber website need before it starts working?"
+      "How many pages does a plumber website need before it starts working?",
+      "How should a plumber website separate emergency calls from planned work?",
+      "What information helps turn a plumbing enquiry into a suitable booking?"
     ],
     "internalLinks": {
       "primary": {
@@ -55,9 +57,10 @@
       "siblings": []
     },
     "aeo": {
-      "summary": "A plumber website that works in 2027 does two jobs at once. It gets found by the right local searcher, and it hands that searcher to your dispatcher without wasting anyone's time. This guide separates emergency from planned work, explains when to split drain and water heater pages, and gives you a sample page structure and intake checklist you can adapt.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "A plumber website needs separate paths for urgent repairs and planned work, accurate hours and service coverage, useful pages for specific plumbing services and a clear call or quote route. Show real jobs and explain what happens after an enquiry. Collect the details the dispatcher needs to assess the request, while keeping appointment and attendance promises consistent with the team's actual capacity.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -88,7 +91,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/framer-webflow-custom-website.json",
-    "wordCount": 1655,
+    "wordCount": 1776,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -109,7 +112,9 @@
     "faqs": [
       "Which is easier for a non-designer owner to edit: Framer or Webflow?",
       "Can I switch from Framer or Webflow to a custom website later?",
-      "Is a custom website better for SEO than Framer or Webflow?"
+      "Is a custom website better for SEO than Framer or Webflow?",
+      "What is the fairest way to compare Framer, Webflow and a custom build?",
+      "When is a custom build worth the extra responsibility?"
     ],
     "internalLinks": {
       "primary": {
@@ -124,8 +129,9 @@
     },
     "aeo": {
       "summary": "For most small businesses, the right choice depends on who edits the site and how content is structured. Framer suits design-led teams making visual pages quickly. Webflow is worth considering for a team that likes working with classes, reusable components and CMS templates. A custom setup can offer more control over hosting and implementation when its contract and dependencies support that control. Compare editing, content structure, recurring cost, and portability before choosing.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -156,7 +162,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/electrician-website-design.json",
-    "wordCount": 1413,
+    "wordCount": 1529,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -177,7 +183,9 @@
     "faqs": [
       "Can an electrician website show before-and-after project photos?",
       "Should an electrician make separate pages for Kelowna, Vernon, and West Kelowna?",
-      "What should a public electrician enquiry form avoid collecting?"
+      "What should a public electrician enquiry form avoid collecting?",
+      "Should EV charging, panel upgrades and general electrical work share one page?",
+      "What should an electrical project enquiry include?"
     ],
     "internalLinks": {
       "primary": {
@@ -195,8 +203,9 @@
     },
     "aeo": {
       "summary": "An electrician website that works does more than list services. It separates emergency and planned work, shows verified credentials and real local projects, and makes the next step obvious on a phone. The best pages answer specific owner questions instead of repeating trade jargon. For Okanagan contractors, the strongest sites also make service area, booking route, and proof of workmanship easy to check before a call.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -227,7 +236,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/accountant-website-design.json",
-    "wordCount": 1589,
+    "wordCount": 1717,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -249,7 +258,9 @@
     "faqs": [
       "Should an accounting website publish prices?",
       "How often should an accountant update website content?",
-      "Can a small accounting firm use AI tools on its website?"
+      "Can a small accounting firm use AI tools on its website?",
+      "How should an accounting firm separate tax enquiries from ongoing advisory work?",
+      "What should an accounting website show beyond a list of services?"
     ],
     "internalLinks": {
       "primary": {
@@ -266,9 +277,10 @@
       ]
     },
     "aeo": {
-      "summary": "An accounting website should attract the specific clients you want, not every possible enquiry. This guide explains how to choose between personal tax, bookkeeping and advisory positioning, build pages around real buyer questions, keep public forms limited and accessible, and show the team and process so the right people feel safe getting in touch.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "An accounting website should attract the clients the practice wants by separating personal tax, bookkeeping and advisory services. Explain who each service is for, show the actual team and describe onboarding and ongoing responsibilities. Keep the first enquiry short, direct financial records into the approved client system and make it easy to arrange an appropriate conversation.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -299,7 +311,7 @@
     "parentMoneyPage": "/marketing-branding/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/kelowna-branding-partners.json",
-    "wordCount": 1457,
+    "wordCount": 1567,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -320,7 +332,9 @@
     "faqs": [
       "Should I choose a local Kelowna branding partner, or is remote fine?",
       "What is the difference between a branding project and a marketing campaign?",
-      "How do I know if I need brand guidelines?"
+      "How do I know if I need brand guidelines?",
+      "What should I compare when choosing a branding partner in Kelowna?",
+      "What should a branding quote say about ownership and handover?"
     ],
     "internalLinks": {
       "primary": {
@@ -336,9 +350,10 @@
       ]
     },
     "aeo": {
-      "summary": "Choosing a branding partner in Kelowna is less about finding the most famous agency and more about matching scope to need. Some businesses need a clearer message and visual identity. Others need a website that converts, or an ongoing campaign partner. This guide helps you decide which type of support fits your next stage, including an honest look at my own services alongside two other local options.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "Choose a Kelowna branding partner by matching the work to your business problem: positioning and messaging, visual identity, a website or ongoing campaign support. Compare relevant portfolios, discovery, practical deliverables, ownership and who will implement the work across channels. Include Michael McKerracher when you want hands-on brand development, websites, social content and video in one defined scope.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -369,7 +384,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/law-firm-website-design.json",
-    "wordCount": 1503,
+    "wordCount": 1629,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -390,7 +405,9 @@
     "faqs": [
       "Should every lawyer profile include a full curriculum vitae?",
       "Can British Columbia lawyers use client testimonials on their websites?",
-      "If most of our clients come from referrals, do we still need to care about AI visibility?"
+      "If most of our clients come from referrals, do we still need to care about AI visibility?",
+      "What should a prospective client learn before submitting a law-firm enquiry?",
+      "How can a law firm publish useful FAQs without giving individual legal advice?"
     ],
     "internalLinks": {
       "primary": {
@@ -405,8 +422,9 @@
     },
     "aeo": {
       "summary": "A law-firm website should help a prospective client recognise the right practice area, understand the lawyer’s experience and make an appropriate first enquiry. For an Okanagan firm planning its 2027 site, the useful priorities are clear service pages, verifiable professional information, accessible contact paths and an intake process reviewed by the practice.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -437,7 +455,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/hotel-website-direct-booking.json",
-    "wordCount": 1997,
+    "wordCount": 2116,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -459,7 +477,9 @@
     "faqs": [
       "How often should a hotel redesign its website?",
       "Does my hotel website still matter if I have a Google Business Profile?",
-      "Should my hotel website use the same photos as the booking sites?"
+      "Should my hotel website use the same photos as the booking sites?",
+      "What should a hotel website show alongside the direct-booking button?",
+      "How can a hotel measure the value of its website when booking happens elsewhere?"
     ],
     "internalLinks": {
       "primary": {
@@ -475,9 +495,10 @@
       ]
     },
     "aeo": {
-      "summary": "A hotel website earns direct bookings by answering the guest's first questions fast: what the rooms actually look like, how they differ, what cancellation terms apply, and what it costs on their dates. This guide covers page architecture, booking-engine handoff, local content, accessibility, and the work needed to keep the site current.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "A hotel website supports direct bookings by showing real rooms, clear differences between room types, current dates and rates, cancellation conditions and practical arrival information. Build mobile pages around that decision, then preserve the guest's room and dates through the booking-engine handoff. Assign owners for content updates and measure completed reservations separately from booking-button clicks.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -508,7 +529,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Cool Runnings",
     "draftPath": "content/resources/draft-library/landscaping-website-seasonal-demand.json",
-    "wordCount": 1381,
+    "wordCount": 1500,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -529,7 +550,9 @@
     "faqs": [
       "Should my landscaping website separate maintenance contracts from one time projects?",
       "What should a landscaping quote request form ask for?",
-      "How early should I update my website before the busy season?"
+      "How early should I update my website before the busy season?",
+      "How should a landscaping website handle different seasonal services?",
+      "What should a landscaping quote form ask before a site visit?"
     ],
     "internalLinks": {
       "primary": {
@@ -544,8 +567,9 @@
     },
     "aeo": {
       "summary": "A landscaping website that is ready for the busy season does two jobs at once. It gives maintenance clients a fast path to a contract, and it gives project clients a convincing reason to request a quote. Build around your actual calendar, keep intake short, and make the next step obvious.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -576,7 +600,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/framer-small-business-websites.json",
-    "wordCount": 1643,
+    "wordCount": 1754,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -597,7 +621,9 @@
     "faqs": [
       "Can I use Framer for a business blog?",
       "Is Framer good for SEO and AI search?",
-      "What should I do if I am worried about being locked into Framer?"
+      "What should I do if I am worried about being locked into Framer?",
+      "What should I ask to see in a Framer website handover?",
+      "How do I decide whether Framer fits my website beyond the homepage?"
     ],
     "internalLinks": {
       "primary": {
@@ -615,9 +641,10 @@
       ]
     },
     "aeo": {
-      "summary": "Framer gives small teams a visual way to build attractive sites with a built-in CMS for blogs, case studies, and service pages. The tradeoff is that you are relying on Framer's hosting, its CMS item limits, and its current data export rules. Before you commit, map your content and make sure you have a tested way to move it if your needs outgrow the platform.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "Framer can suit a small business that needs a visually distinctive marketing website and manageable recurring content. Before choosing it, map the pages, editing tasks, integrations and ownership requirements, then check the current plan and export options against that brief. Review a real service page and mobile enquiry journey as well as the homepage design.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -648,7 +675,7 @@
     "parentMoneyPage": "/ai-implementation/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/website-enquiry-follow-up.json",
-    "wordCount": 1138,
+    "wordCount": 1266,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -670,7 +697,9 @@
     "faqs": [
       "Should I use SMS, email or both for follow-up?",
       "How do I stop automated follow-up once someone books?",
-      "What should happen to enquiries outside business hours?"
+      "What should happen to enquiries outside business hours?",
+      "What should happen immediately after someone sends a website enquiry?",
+      "How can automation help follow-up without annoying customers?"
     ],
     "internalLinks": {
       "primary": {
@@ -686,9 +715,10 @@
       ]
     },
     "aeo": {
-      "summary": "Website enquiries fail when follow-up depends on memory instead of a clear handoff. This guide shows service businesses how to acknowledge every enquiry, qualify leads before booking, set realistic response capacity, and use simple workflows or AI to keep opportunities moving without sounding robotic, and build trust.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "Turn a website enquiry into booked work with a clear acknowledgement, a named owner, appropriate qualification and a defined booking step. Preserve the requested service and location across the handoff, set honest response expectations and stop sales reminders when the customer books or declines. Use automation to prepare and route the work, with people handling exceptions and commitments.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -719,7 +749,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/winery-website-visitor-planning.json",
-    "wordCount": 1298,
+    "wordCount": 1423,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -741,7 +771,9 @@
     "faqs": [
       "Can a small winery get away with a one-page website?",
       "Should my winery website show every wine we make?",
-      "How often should a winery update its website?"
+      "How often should a winery update its website?",
+      "What does a winery visitor need to know before reserving a tasting?",
+      "How should a winery serve visitors who are planning several stops?"
     ],
     "internalLinks": {
       "primary": {
@@ -758,8 +790,9 @@
     },
     "aeo": {
       "summary": "A winery website does not need to sell bottles online to do its real job. It needs to help someone decide whether to visit, what to expect, and how to book. That means clear tasting and reservation information, honest seasonal hours, practical details like food and transport, and a map that actually works. Those fundamentals are where I would focus before spending on a flashy design.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -790,7 +823,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/webflow-small-business-websites.json",
-    "wordCount": 1401,
+    "wordCount": 1521,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -811,7 +844,9 @@
     "faqs": [
       "Is Webflow good for SEO?",
       "Can my team update the site without breaking it?",
-      "Do I need a developer to use Webflow?"
+      "Do I need a developer to use Webflow?",
+      "What should a Webflow project quote explain besides design?",
+      "How should I test whether the CMS suits my team?"
     ],
     "internalLinks": {
       "primary": {
@@ -827,9 +862,10 @@
       ]
     },
     "aeo": {
-      "summary": "Webflow is worth paying for when a small business needs real design control and a visual CMS for services, projects, or articles. It is usually the wrong choice for a simple static brochure, complex ecommerce, or owners who want the lowest possible monthly cost. Start by mapping the content you plan to publish before choosing a plan.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "Webflow can suit a small business that needs considered design and structured editing for services, projects or articles. Compare the required CMS content, integrations, team access, platform costs and handover against the alternatives before choosing it. A simple static site or a store with substantial commerce requirements may call for a different approach; the decision should follow the actual workload.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -860,7 +896,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Okanagan Treehouse",
     "draftPath": "content/resources/draft-library/vacation-rental-direct-booking-website.json",
-    "wordCount": 1245,
+    "wordCount": 1362,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -881,7 +917,9 @@
     "faqs": [
       "Should a vacation-rental website replace Airbnb or Vrbo?",
       "What matters most if the property is only one suite or cabin?",
-      "Who should write the photo captions and amenity notes?"
+      "Who should write the photo captions and amenity notes?",
+      "What should a direct-booking property page explain before guests select dates?",
+      "How should an owner handle enquiries when availability is managed manually?"
     ],
     "internalLinks": {
       "primary": {
@@ -898,8 +936,9 @@
     },
     "aeo": {
       "summary": "A direct-booking page earns the enquiry when it removes uncertainty: real accommodation photos, exact beds, parking and access, honest rules, current dates and the full price. Design should make the place feel worth staying in, then hand the guest to a clear booking step. For Okanagan properties, the right page changes by season, guest type and how hands-on the owner wants to be.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -930,7 +969,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/dental-website-design.json",
-    "wordCount": 1709,
+    "wordCount": 1824,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -952,7 +991,9 @@
     "faqs": [
       "Should a dental website offer online booking or a request form?",
       "How detailed should treatment pages be?",
-      "What belongs on a public new patient form?"
+      "What belongs on a public new patient form?",
+      "How should a dental website help a new patient choose the next step?",
+      "Should a dental contact form ask patients for their medical history?"
     ],
     "internalLinks": {
       "primary": {
@@ -967,8 +1008,9 @@
     },
     "aeo": {
       "summary": "A good dental website removes worry before it asks for a booking. It gives new patients clear treatment overviews, named clinicians, location details and honest guidance about fees, while keeping returning patients close to scheduling. The best sites feel calm, specific and easy to act on.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -999,7 +1041,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/hvac-website-design.json",
-    "wordCount": 1892,
+    "wordCount": 2009,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1021,7 +1063,9 @@
     "faqs": [
       "Should an HVAC website show pricing?",
       "Does adding AI chat to my HVAC website help me book more calls?",
-      "Do I need separate pages for each town I serve?"
+      "Do I need separate pages for each town I serve?",
+      "How should an HVAC website separate repairs from replacements?",
+      "What should be checked before promoting rebates or financing on an HVAC page?"
     ],
     "internalLinks": {
       "primary": {
@@ -1036,8 +1080,9 @@
     },
     "aeo": {
       "summary": "An HVAC website earns calls when customers can verify licensing and service areas in seconds, and when repair, maintenance and replacement each have their own clear route to contact. The pages below cover first-screen design, honest service-zone and after-hours claims, financing without invented offers, and exactly what to ask a designer before signing.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1068,7 +1113,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/charity-website-platforms.json",
-    "wordCount": 1622,
+    "wordCount": 1746,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1089,7 +1134,9 @@
     "faqs": [
       "Can a charity take donations on WordPress or Webflow without a separate donation provider?",
       "What happens when volunteers with editor access make mistakes?",
-      "Is a headless or custom CMS overkill for a small charity?"
+      "Is a headless or custom CMS overkill for a small charity?",
+      "How should a charity choose a platform when volunteers edit the website?",
+      "What should a charity retain when a website provider changes?"
     ],
     "internalLinks": {
       "primary": {
@@ -1104,8 +1151,9 @@
     },
     "aeo": {
       "summary": "The right platform depends on who edits the site and what it must connect to. WordPress suits charities wanting ownership and many editors on a budget, if someone handles maintenance. Webflow suits design-led teams with a small editor group. A custom or headless CMS is worth it when you need strict roles, editorial review and deep integrations.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1136,7 +1184,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/physiotherapy-website-design.json",
-    "wordCount": 1777,
+    "wordCount": 1906,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1158,7 +1206,9 @@
     "faqs": [
       "Should a physiotherapy clinic put its full fee schedule on the website?",
       "Is it better to use an online booking tool or a simple enquiry form?",
-      "How much educational content does a physio site need before it helps?"
+      "How much educational content does a physio site need before it helps?",
+      "How should a clinic help someone choose a physiotherapist online?",
+      "What should happen when a visitor cannot find a suitable appointment?"
     ],
     "internalLinks": {
       "primary": {
@@ -1172,9 +1222,10 @@
       "siblings": []
     },
     "aeo": {
-      "summary": "A physiotherapy website wins when it helps a specific person choose a first appointment with a specific practitioner. This guide covers the five decisions patients make before booking, the intake choices that protect privacy, and the page patterns that fit independent Okanagan clinics.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "A physiotherapy website should help someone choose an appropriate practitioner and first appointment. Explain services, actual practitioner experience, booking options, location and what the first visit involves. Keep public enquiries focused on routing and practical questions, direct sensitive intake into the clinic's approved system and give uncertain visitors a clear way to contact staff.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1205,7 +1256,7 @@
     "parentMoneyPage": "/marketing-branding/",
     "proof": "Vertical Impression, AI Catalyst",
     "draftPath": "content/resources/draft-library/website-social-video-content.json",
-    "wordCount": 1225,
+    "wordCount": 1350,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1226,7 +1277,9 @@
     "faqs": [
       "Should every social media post also become a website page?",
       "What accessibility basics should a small business video include?",
-      "How much video should a small business make before hiring help?"
+      "How much video should a small business make before hiring help?",
+      "How should social posts and video send people to the website?",
+      "What should stay on the website instead of living only on social media?"
     ],
     "internalLinks": {
       "primary": {
@@ -1243,8 +1296,9 @@
     },
     "aeo": {
       "summary": "Your website should hold the durable source of truth: core services, proof, location, pricing context and the action you want people to take. Social media is for discovery, repeated exposure and current conversation. Video is best for explaining, showing craft and helping people feel what your business does. Campaign content should send people back to a focused website action.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1275,7 +1329,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/restaurant-website-design.json",
-    "wordCount": 1844,
+    "wordCount": 1959,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1296,7 +1350,9 @@
     "faqs": [
       "Should my restaurant menu be a PDF on the website?",
       "What if my menu changes too often to keep the website updated?",
-      "Do I need online ordering built into my website?"
+      "Do I need online ordering built into my website?",
+      "What should a restaurant website show before a reservation button?",
+      "How should a restaurant manage seasonal menus and special events?"
     ],
     "internalLinks": {
       "primary": {
@@ -1311,8 +1367,9 @@
     },
     "aeo": {
       "summary": "A restaurant website's first job is to help a hungry person decide, in seconds, that your room is worth tonight's money. That means a readable HTML menu rather than a buried PDF, current hours, clear reservation or walk-in expectations, a real takeout link, honest food photos, and fast pages on a phone.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1343,7 +1400,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/property-management-website-design.json",
-    "wordCount": 1385,
+    "wordCount": 1505,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1364,7 +1421,9 @@
     "faqs": [
       "Should a property-management site include a tenant portal on the marketing website?",
       "How much fee detail should we publish before a consultation?",
-      "What is the safest way to handle online rental applications on a public website?"
+      "What is the safest way to handle online rental applications on a public website?",
+      "How should a property manager separate owner leads from tenant support?",
+      "What should an owner enquiry ask before a management proposal?"
     ],
     "internalLinks": {
       "primary": {
@@ -1381,8 +1440,9 @@
     },
     "aeo": {
       "summary": "A property-management website works best when it separates the owner sales journey from tenant support. Owners need clear scope, coverage, fee answers, and proof of process. Tenants need fast access to portals, listings, maintenance requests, and emergency help. Structure the site around those two jobs, protect application data, and make every page easy to use on any device.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1413,7 +1473,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/retail-website-platforms.json",
-    "wordCount": 1304,
+    "wordCount": 1428,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1433,7 +1493,9 @@
     "faqs": [
       "Can I start with a catalogue website and add online checkout later?",
       "What should I ask before choosing between Shopify and WooCommerce?",
-      "Does my platform choice affect how Google and AI tools understand my store?"
+      "Does my platform choice affect how Google and AI tools understand my store?",
+      "When does a local retailer need ecommerce rather than a product catalogue?",
+      "What should I test before connecting my shop's inventory to the website?"
     ],
     "internalLinks": {
       "primary": {
@@ -1450,8 +1512,9 @@
     },
     "aeo": {
       "summary": "Choose your retail website platform by matching it to how you actually handle inventory, checkout, payments and fulfilment. Shopify gives you a managed all-in-one store, WooCommerce gives you WordPress-based control, and a simple catalogue works when you are not ready to take payment online.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1482,7 +1545,7 @@
     "parentMoneyPage": "/ai-implementation/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/ai-service-business-website.json",
-    "wordCount": 1604,
+    "wordCount": 1727,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1502,7 +1565,9 @@
     "faqs": [
       "Should I put an AI chatbot on every page of my website?",
       "Can AI answer questions using the content already on my website?",
-      "How do I know whether an AI workflow is worth the cost?"
+      "How do I know whether an AI workflow is worth the cost?",
+      "What is a sensible first AI workflow for a local service website?",
+      "Should an AI agent confirm bookings without staff approval?"
     ],
     "internalLinks": {
       "primary": {
@@ -1519,8 +1584,9 @@
     },
     "aeo": {
       "summary": "AI on a service website works best when it handles one clear job: routing enquiries, drafting replies from approved knowledge, summarising requests for staff, or moving follow-ups along. The useful distinction is between an assistant that helps your team, an adviser that answers from approved content, and an agent that takes defined action. Start with one measurable workflow, keep people in control of exceptions, and choose tools that fit the way you already work.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1551,7 +1617,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/roofing-website-design.json",
-    "wordCount": 1536,
+    "wordCount": 1654,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1572,7 +1638,9 @@
     "faqs": [
       "Should a roofing website list every neighbourhood it serves?",
       "Is it better to have one services page or separate pages for repair and replacement?",
-      "How much should a roofing website say about pricing?"
+      "How much should a roofing website say about pricing?",
+      "What should a roofing project page include beyond finished photographs?",
+      "How should a roofing website handle urgent leak enquiries?"
     ],
     "internalLinks": {
       "primary": {
@@ -1589,8 +1657,9 @@
     },
     "aeo": {
       "summary": "A roofing website earns a site visit by being specific about the work: it names the roof types and service areas it handles, separates repair from replacement, shows job photos with context, explains the estimate process, and presents warranty and insurance information as verifiable facts rather than blanket promises.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1621,7 +1690,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/medical-practice-website-design.json",
-    "wordCount": 1779,
+    "wordCount": 1901,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1642,7 +1711,9 @@
     "faqs": [
       "Should a medical practice put patient reviews on its website?",
       "Do medical practice websites need online booking?",
-      "How often should a medical website be reviewed?"
+      "How often should a medical website be reviewed?",
+      "What should a medical practice show before the appointment link?",
+      "How should the website separate general enquiries from clinical information?"
     ],
     "internalLinks": {
       "primary": {
@@ -1657,8 +1728,9 @@
     },
     "aeo": {
       "summary": "A good medical practice website states who is accepting patients, how care is delivered and what to do next, then sends sensitive information to a secure clinical system instead of a public form. Keep the public site simple, accessible and accurate, and have the practice's legal or clinical team review anything that sounds like clinical advice, a promise of results or a guarantee of privacy.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1689,7 +1761,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "ABC Appliance, Okanagan Treehouse, RCCV",
     "draftPath": "content/resources/draft-library/good-small-business-website-design.json",
-    "wordCount": 1277,
+    "wordCount": 1407,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1711,7 +1783,9 @@
     "faqs": [
       "Does a good-looking website help my Google ranking?",
       "Do I need professional photos, or will a phone do?",
-      "How do I know if my current website is the problem?"
+      "How do I know if my current website is the problem?",
+      "How do I judge whether a design will help customers rather than just look impressive?",
+      "How much animation should a small-business website use?"
     ],
     "internalLinks": {
       "primary": {
@@ -1728,9 +1802,10 @@
       ]
     },
     "aeo": {
-      "summary": "A good small-business website looks intentional, readable and trustworthy, then lets a visitor act. Hierarchy, typography, contrast, spacing, real photos and one clear call to action do most of the work. This guide shows the decisions behind that look, with examples from real projects.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "Good small-business website design makes the service clear, establishes trust and gives suitable customers an easy next step. Use readable typography, strong hierarchy, real imagery and navigation built around customer tasks. Check the whole journey on mobile, keep motion purposeful and judge the service pages and enquiry handoff as carefully as the homepage.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1761,7 +1836,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/car-dealer-website-design.json",
-    "wordCount": 1435,
+    "wordCount": 1556,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1783,7 +1858,9 @@
     "faqs": [
       "How often should dealer website inventory update?",
       "Should a dealer show pricing on the website?",
-      "Do I need a separate mobile dealer site?"
+      "Do I need a separate mobile dealer site?",
+      "What should happen when a customer enquires about a particular vehicle?",
+      "How should a dealership handle sold vehicles on its website?"
     ],
     "internalLinks": {
       "primary": {
@@ -1800,8 +1877,9 @@
     },
     "aeo": {
       "summary": "A car dealership website needs an inventory feed, but the feed alone will not produce enquiries. The real decision is how condition, photos, test-drive requests, trade-ins, finance routing, mobile filtering, and fee transparency work together. Choose an update owner, keep sensitive finance data out of public forms, and use a page architecture that helps search engines and buyers reach the right vehicle quickly.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1832,7 +1910,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/financial-advisor-website-design.json",
-    "wordCount": 1378,
+    "wordCount": 1495,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1854,7 +1932,9 @@
     "faqs": [
       "Does a financial-advisor website need a client portal?",
       "Should the website mention fees?",
-      "Can a financial advisor use testimonials on a website?"
+      "Can a financial advisor use testimonials on a website?",
+      "How should a financial advisory website qualify an initial enquiry?",
+      "What kind of proof belongs on an advisor's website?"
     ],
     "internalLinks": {
       "primary": {
@@ -1871,8 +1951,9 @@
     },
     "aeo": {
       "summary": "A good financial-advisor website helps the right prospective client recognise fit before asking for a meeting. The design should state who you serve, explain qualifications carefully, show a clear meeting process and collect only the personal information needed. The useful first step is a clear map from client situation to the right kind of introductory conversation.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1903,7 +1984,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/small-business-ai-search.json",
-    "wordCount": 1654,
+    "wordCount": 1777,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1924,7 +2005,9 @@
     "faqs": [
       "Do I need llms.txt to appear in Google AI Overviews?",
       "Should my small business block GPTBot?",
-      "Can I measure exactly how many customers came from AI Overviews?"
+      "Can I measure exactly how many customers came from AI Overviews?",
+      "What should I improve first if AI tools describe my business incorrectly?",
+      "How should I measure AI-search work without relying on screenshots of answers?"
     ],
     "internalLinks": {
       "primary": {
@@ -1939,8 +2022,9 @@
     },
     "aeo": {
       "summary": "Google is not asking small businesses to build a separate AI website. Its current guidance says the usual SEO fundamentals still apply: pages should be indexable, eligible for snippets, and built around helpful, people-first content. Clear business facts, internal navigation, local details and careful measurement matter more than AI-only tricks.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -1971,7 +2055,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/sanity-small-business-cms.json",
-    "wordCount": 1242,
+    "wordCount": 1366,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -1992,7 +2076,9 @@
     "faqs": [
       "Does Sanity host my public website?",
       "If I leave Sanity, can I take my content with me?",
-      "Can my staff edit a Sanity website without a developer?"
+      "Can my staff edit a Sanity website without a developer?",
+      "What should a small business ask to see before choosing a headless CMS?",
+      "When is structured content useful enough to justify a custom CMS setup?"
     ],
     "internalLinks": {
       "primary": {
@@ -2007,8 +2093,9 @@
     },
     "aeo": {
       "summary": "Sanity is a headless content management system: it stores and edits structured content, but it does not show visitors your website. For a small business, that means the CMS, the public-facing website and the hosting decision are separate jobs. Sanity can be worth it when content needs to reach several channels or power more than a basic brochure site. For a simple five-page site, a simpler build is often the better value.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2039,7 +2126,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/website-wrong-enquiries.json",
-    "wordCount": 1338,
+    "wordCount": 1461,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2060,7 +2147,9 @@
     "faqs": [
       "Should I remove a service page if it keeps attracting the wrong work?",
       "Can a very short form attract better enquiries than a longer one?",
-      "What if the wrong enquiries come from search but my service pages look fine?"
+      "What if the wrong enquiries come from search but my service pages look fine?",
+      "How should I diagnose repeated enquiries for work I do not want?",
+      "Should I publish minimum job sizes or service exclusions?"
     ],
     "internalLinks": {
       "primary": {
@@ -2078,8 +2167,9 @@
     },
     "aeo": {
       "summary": "A website that keeps bringing the wrong enquiries usually has a signal problem, not a traffic problem. Service pages may be too broad, forms may invite almost anyone, or older content may still attract work you no longer want. The fix is to narrow the message, qualify the right visitors, and make the site reflect the jobs you actually want.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2110,7 +2200,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/medical-spa-website-design.json",
-    "wordCount": 1457,
+    "wordCount": 1582,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2131,7 +2221,9 @@
     "faqs": [
       "Should a medical spa website include before-and-after photos?",
       "What should a medical spa avoid putting on a public contact form?",
-      "Is it better to build separate pages for each treatment?"
+      "Is it better to build separate pages for each treatment?",
+      "What should a medical spa treatment page explain before the consultation CTA?",
+      "How should a medical spa use before-and-after photography?"
     ],
     "internalLinks": {
       "primary": {
@@ -2148,8 +2240,9 @@
     },
     "aeo": {
       "summary": "Medical spa website design works when visual appeal and treatment clarity are planned together. The strongest sites feel beautiful and considered, yet still make it easy to understand services, assess provider credentials and request a consultation without collecting sensitive medical details too early.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2180,7 +2273,7 @@
     "parentMoneyPage": "/marketing-branding/",
     "proof": "Upon This Rock",
     "draftPath": "content/resources/draft-library/rebrand-redesign-or-copy.json",
-    "wordCount": 1167,
+    "wordCount": 1289,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2201,7 +2294,9 @@
     "faqs": [
       "Can I update my website copy without a full redesign?",
       "What is the smallest useful intervention if I have a limited budget?",
-      "How do I know whether I need a new logo or a full rebrand?"
+      "How do I know whether I need a new logo or a full rebrand?",
+      "How do I tell whether the real problem is the brand or the website?",
+      "Can I improve the website before completing a full rebrand?"
     ],
     "internalLinks": {
       "primary": {
@@ -2215,9 +2310,10 @@
       "siblings": []
     },
     "aeo": {
-      "summary": "The right choice depends on the problem. A rebrand fixes a mismatch between your current identity and where the business has moved. A redesign fixes a slow, confusing, or dated website. Clearer words fix confusion about your offer. This guide helps you diagnose which one you actually need, with a comparison table and a practical intake example, so you can invest in the right fix instead of the biggest one.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "Choose a rebrand when the identity no longer fits the business, a redesign when the website's layout or structure blocks customers, and better copy when people cannot understand the offer. Check the enquiry journey and ask what suitable customers are misunderstanding before committing to the largest project. Several problems can be addressed in phases, with the most immediate customer barriers fixed first.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2248,7 +2344,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "ABC Appliance",
     "draftPath": "content/resources/draft-library/appliance-repair-website-lessons.json",
-    "wordCount": 1781,
+    "wordCount": 1893,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2269,7 +2365,9 @@
     "faqs": [
       "Should an appliance repair homepage push phone calls or the request form?",
       "Is it worth building a separate page for every appliance brand?",
-      "Are city and community pages risky for local SEO?"
+      "Are city and community pages risky for local SEO?",
+      "What should an appliance repair enquiry ask the customer for?",
+      "Should each appliance brand have its own website page?"
     ],
     "internalLinks": {
       "primary": {
@@ -2286,9 +2384,10 @@
       ]
     },
     "aeo": {
-      "summary": "ABC Appliance's website shows what a local repair site should do: state the service area, name the appliances, route callers by brand, and be honest that a request is not a confirmed appointment. This article turns those choices into a practical guide, including a table that separates what the live site already proves from proposed improvements an owner might ask for next.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "An appliance repair website should state the service area, name the appliances and brands actually serviced, explain how a request is assessed and make contact easy on mobile. ABC Appliance shows those choices in a real local website. Keep appointment claims accurate, collect useful problem details and connect specific service information to the enquiry route.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2319,7 +2418,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/self-hosted-custom-website-ownership.json",
-    "wordCount": 1613,
+    "wordCount": 1733,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2339,7 +2438,9 @@
     "faqs": [
       "Does self-hosting mean I own my search rankings?",
       "Can I own a Framer or Webflow site and still leave later?",
-      "What is the difference between owning the website and owning the domain?"
+      "What is the difference between owning the website and owning the domain?",
+      "What should I receive to make a custom website transferable?",
+      "Does owning the source code mean I need to manage a server?"
     ],
     "internalLinks": {
       "primary": {
@@ -2356,8 +2457,9 @@
     },
     "aeo": {
       "summary": "Website ownership is several assets at once: the domain, the code, the written content, the database, hosting access, backups, and the logins to update it. Self-hosting gives you more control over deployment, with responsibilities that depend on the hosting and support arrangement. Managed platforms trade some of that for convenience, with real export limits. A custom site on managed hosting often lets you own the work without running a server.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2388,7 +2490,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/private-school-website-design.json",
-    "wordCount": 1719,
+    "wordCount": 1843,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2410,7 +2512,9 @@
     "faqs": [
       "Should a private school publish its exact tuition fees on the website?",
       "How separate should the current-parent area be from the public site?",
-      "What should we prepare before asking a designer for a quote?"
+      "What should we prepare before asking a designer for a quote?",
+      "What should prospective families find on a school admissions page?",
+      "How should a school use student photographs and video on its website?"
     ],
     "internalLinks": {
       "primary": {
@@ -2425,8 +2529,9 @@
     },
     "aeo": {
       "summary": "A good private-school website gives prospective families a clear admissions path: who the school is for, the curriculum, how to visit and apply, and honest guidance on fees. Current-parent resources belong in a separate area. Design should be beautiful, fast and accessible, not an awards exercise.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2457,7 +2562,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/website-photography-video-animation.json",
-    "wordCount": 1505,
+    "wordCount": 1626,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2478,7 +2583,9 @@
     "faqs": [
       "Should my homepage autoplay a video?",
       "Do I need original photography, or is stock fine?",
-      "Can AI-generated images replace a photographer?"
+      "Can AI-generated images replace a photographer?",
+      "How do I decide whether a website section needs photography, video or animation?",
+      "What should I ask for when commissioning website video?"
     ],
     "internalLinks": {
       "primary": {
@@ -2493,8 +2600,9 @@
     },
     "aeo": {
       "summary": "Choose website media by the proof it has to carry. Still photography can show the work at a glance; video can explain process, scale or emotion; animation can guide attention or give the brand a distinctive feel. Each needs a sensible file budget and an accessible presentation. Performance and accessibility decide what is actually worth building.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2525,7 +2633,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/charity-donation-page.json",
-    "wordCount": 1461,
+    "wordCount": 1585,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2545,7 +2653,9 @@
     "faqs": [
       "Does every nonprofit in Canada need to issue tax receipts for online donations?",
       "Should a charity ask donors to cover the processing fee?",
-      "What is the biggest mistake on a small charity's donation page?"
+      "What is the biggest mistake on a small charity's donation page?",
+      "What does a donor need to understand before opening the payment form?",
+      "How should the website support someone who cannot complete a donation?"
     ],
     "internalLinks": {
       "primary": {
@@ -2560,8 +2670,9 @@
     },
     "aeo": {
       "summary": "A useful donation page makes the case for giving, explains what the gift supports and lets someone complete the payment without confusion. For an Okanagan charity, that means a specific campaign story, clear one-time and monthly options, an accessible form, accurate receipt information and a helpful acknowledgement after the gift.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2592,7 +2703,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/framer-webflow-local-seo.json",
-    "wordCount": 1277,
+    "wordCount": 1399,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2613,7 +2724,9 @@
     "faqs": [
       "Can I switch platforms without losing search traffic?",
       "Does either platform help with Google Business Profile or local map rankings?",
-      "Are Framer's AI SEO features enough to skip hiring someone?"
+      "Are Framer's AI SEO features enough to skip hiring someone?",
+      "What should I check in a builder website's SEO handover?",
+      "Will changing from Framer to Webflow fix weak local rankings?"
     ],
     "internalLinks": {
       "primary": {
@@ -2630,8 +2743,9 @@
     },
     "aeo": {
       "summary": "Framer and Webflow can both support a local business website with useful service pages, clear headings and crawlable content. Choose by testing the actual publishing work: service updates, project pages, redirects, metadata and mobile layouts. Neither platform supplies local expertise or guarantees search results. Your content model, implementation and ability to maintain accurate information are the more useful comparison.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2662,7 +2776,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/website-before-paid-ads.json",
-    "wordCount": 1636,
+    "wordCount": 1763,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2683,7 +2797,9 @@
     "faqs": [
       "Should a service business buy ads before improving its website?",
       "Is a dedicated landing page always better for Google Ads?",
-      "What should a small business count as a lead from ads?"
+      "What should a small business count as a lead from ads?",
+      "What should a local-service landing page show before I pay for traffic?",
+      "When should I stop a paid test and fix the page?"
     ],
     "internalLinks": {
       "primary": {
@@ -2700,8 +2816,9 @@
     },
     "aeo": {
       "summary": "Before buying more Google Ads, a service business should check whether the landing page matches the ad, gives the visitor one clear next step, offers local proof and sends calls or forms into a trackable follow-up process. Paid traffic can reveal demand, but it also exposes weak pages.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2732,7 +2849,7 @@
     "parentMoneyPage": "/ai-implementation/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/ai-skills-versus-prompts.json",
-    "wordCount": 1411,
+    "wordCount": 1539,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2753,7 +2870,9 @@
     "faqs": [
       "Can I build AI skills without a developer?",
       "Do AI skills work across ChatGPT, Claude and Gemini?",
-      "What is the difference between an AI skill and a custom AI agent?"
+      "What is the difference between an AI skill and a custom AI agent?",
+      "What belongs inside a useful custom AI skill?",
+      "How do I know a reusable skill is better than a saved prompt?"
     ],
     "internalLinks": {
       "primary": {
@@ -2770,8 +2889,9 @@
     },
     "aeo": {
       "summary": "A prompt is a request to an AI system and can be saved and reused. An AI skill packages a task’s instructions with reference material and, where supported, procedures or tools so a team has a maintained way to repeat the work. For a small business, the shift from prompting to skills means fewer repeated explanations, more consistent output and a practical way to test whether AI is actually saving time or creating more work.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2802,7 +2922,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/boutique-accommodation-website-design.json",
-    "wordCount": 1656,
+    "wordCount": 1774,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2824,7 +2944,9 @@
     "faqs": [
       "Does a boutique property need a different website from a vacation rental?",
       "What should I collect before asking for a boutique accommodation website design?",
-      "Can a small property use a simple website and still feel distinct?"
+      "Can a small property use a simple website and still feel distinct?",
+      "What should an accommodation homepage show before asking visitors to book?",
+      "How can a small property look distinctive without making booking difficult?"
     ],
     "internalLinks": {
       "primary": {
@@ -2842,8 +2964,9 @@
     },
     "aeo": {
       "summary": "A boutique accommodation website should tell a specific story about place, room scale and local context, then hand visitors a clear path to check availability. On desktop it earns attention with immersive photography and copy. On mobile it removes friction. The goal is a warm, distinct design that feels chosen, not a template hotel page.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2874,7 +2997,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Cool Runnings",
     "draftPath": "content/resources/draft-library/useful-location-pages.json",
-    "wordCount": 1134,
+    "wordCount": 1258,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2896,7 +3019,9 @@
     "faqs": [
       "Should every city in my service area get its own page?",
       "Can a service area page help if my business is not physically in that city?",
-      "What is the first thing to fix on weak location pages?"
+      "What is the first thing to fix on weak location pages?",
+      "What makes a location page useful enough to publish?",
+      "Should I create pages for neighbourhoods where I do not have an office?"
     ],
     "internalLinks": {
       "primary": {
@@ -2913,8 +3038,9 @@
     },
     "aeo": {
       "summary": "Useful location pages should answer a local customer's real questions, show genuine coverage and exclusions, connect related services, and avoid thin doorway pages. The best examples combine accurate local detail, clear contact paths, and honest service boundaries.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -2945,7 +3071,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/professional-services-homepage-design.json",
-    "wordCount": 1314,
+    "wordCount": 1444,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -2966,7 +3092,9 @@
     "faqs": [
       "What should the first call to action be on a professional-services homepage?",
       "Should a professional-services homepage lead with awards, testimonials, or client fit?",
-      "How much text belongs above the fold on a professional-services homepage?"
+      "How much text belongs above the fold on a professional-services homepage?",
+      "What should appear above the fold on a professional-services homepage?",
+      "How should professional firms use case studies when client work is confidential?"
     ],
     "internalLinks": {
       "primary": {
@@ -2983,8 +3111,9 @@
     },
     "aeo": {
       "summary": "A professional-services homepage works when it states plainly what you do, who you help, and what happens next, using calm typography, real people, and a clear path to a conversation. It should sound like the practice itself: specific, measured, and trustworthy. Visitors should never have to decode your positioning or hunt for the first step.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -3015,7 +3144,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/compare-website-quotes.json",
-    "wordCount": 1271,
+    "wordCount": 1395,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -3038,7 +3167,9 @@
     "faqs": [
       "Should I always choose the most detailed quote?",
       "What if a vendor refuses to fill in a comparison worksheet?",
-      "How much should post-launch support cost?"
+      "How much should post-launch support cost?",
+      "What should I send designers so their quotes are comparable?",
+      "How should I compare a cheap quote with a much more expensive one?"
     ],
     "internalLinks": {
       "primary": {
@@ -3056,8 +3187,9 @@
     },
     "aeo": {
       "summary": "Compare website quotes by lining up the same brief against each proposal: scope, page templates, content migration, integrations, accessibility, analytics, hosting ownership and post-launch support. Price gaps usually reflect different assumptions about what is included, not just hourly rates. A simple worksheet makes the differences visible and keeps the decision grounded in what your business actually needs.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -3088,7 +3220,7 @@
     "parentMoneyPage": "/ai-implementation/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/automate-before-more-admin.json",
-    "wordCount": 1907,
+    "wordCount": 2028,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -3109,7 +3241,9 @@
     "faqs": [
       "Should I automate before hiring an admin assistant?",
       "What is a bad first task to automate?",
-      "How much time should automation save before it is worth doing?"
+      "How much time should automation save before it is worth doing?",
+      "How should I compare automation with hiring administrative help?",
+      "What work should stay with a person during the first rollout?"
     ],
     "internalLinks": {
       "primary": {
@@ -3124,8 +3258,9 @@
     },
     "aeo": {
       "summary": "Before hiring more admin, sort your repetitive work by frequency, risk and how often it breaks the pattern. Automate enquiry acknowledgements, reminders, approved content reuse and report assembly, but keep humans approving commitments. Measure the hours first and plan for maintenance, not a promise to replace staff.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -3156,7 +3291,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/template-vs-custom-website.json",
-    "wordCount": 1309,
+    "wordCount": 1427,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -3178,7 +3313,9 @@
     "faqs": [
       "Can I start with a template and switch to custom later?",
       "Does a custom website automatically rank better in search?",
-      "What is the biggest mistake businesses make when choosing a template?"
+      "What is the biggest mistake businesses make when choosing a template?",
+      "What should I check before choosing a website template?",
+      "Can a template website still look distinctive?"
     ],
     "internalLinks": {
       "primary": {
@@ -3196,8 +3333,9 @@
     },
     "aeo": {
       "summary": "Use a template when its structure suits your content, brand and customer journey with modest changes. Consider custom design when adapting that structure would compromise the experience or require extensive work. Either approach can support a successful business website; compare the actual fit, platform, implementation and lifetime cost.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -3228,7 +3366,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/website-editing-training.json",
-    "wordCount": 1442,
+    "wordCount": 1560,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -3250,7 +3388,9 @@
     "faqs": [
       "What if my designer gives me full access and I break something?",
       "Should I pay for ongoing support or handle everything myself?",
-      "How do I know which access level I actually need?"
+      "How do I know which access level I actually need?",
+      "What should website training cover for a small business owner?",
+      "How do I keep routine updates from damaging the design?"
     ],
     "internalLinks": {
       "primary": {
@@ -3268,8 +3408,9 @@
     },
     "aeo": {
       "summary": "Most small business websites work best when the owner updates routine fields like hours, service descriptions, and staff changes; a designer handles layout and visual updates; and a developer takes care of integrations, forms, and anything that touches code. The right split depends on your platform, your comfort with technology, and how often your content changes.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -3300,7 +3441,7 @@
     "parentMoneyPage": "/marketing-branding/",
     "proof": "ABC Appliance, Cool Runnings",
     "draftPath": "content/resources/draft-library/customer-project-content.json",
-    "wordCount": 1862,
+    "wordCount": 1986,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -3321,7 +3462,9 @@
     "faqs": [
       "Should a customer project go on the service page or on a separate case study page?",
       "Do I need customer video if I already have photos?",
-      "Can I use a customer project if I do not have hard numbers?"
+      "Can I use a customer project if I do not have hard numbers?",
+      "What information should I collect while a customer project is happening?",
+      "How do I turn one project into website, video and social content?"
     ],
     "internalLinks": {
       "primary": {
@@ -3338,8 +3481,9 @@
     },
     "aeo": {
       "summary": "Start with permission, a clear brief, the problem, constraints, work, and results. Use real images and honest wording. Then decide whether the project belongs on a service page, a local page, a case study, video, or social content. One well handled project can support the next sales conversation.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -3370,7 +3514,7 @@
     "parentMoneyPage": "/ai-implementation/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/custom-workflow-maintenance.json",
-    "wordCount": 1266,
+    "wordCount": 1368,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -3391,7 +3535,9 @@
     "faqs": [
       "Can I start with an off the shelf tool and move to a custom workflow later?",
       "Who is responsible if the AI makes a mistake?",
-      "Does ongoing maintenance usually include training my team?"
+      "Does ongoing maintenance usually include training my team?",
+      "What should ongoing workflow maintenance actually cover?",
+      "What should happen when a workflow fails overnight?"
     ],
     "internalLinks": {
       "primary": {
@@ -3407,9 +3553,10 @@
       ]
     },
     "aeo": {
-      "summary": "A custom workflow justifies ongoing maintenance when the cost of keeping it running is clearly smaller than the errors, delays or missed work it prevents, and when failure would create meaningful delays, errors or lost work. This guide helps owners compare the cost of the problem against the cost of ownership, decide when off the shelf tools are enough, and ask the right questions before committing to ongoing support.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "Ongoing workflow maintenance is worth paying for when the business depends on the system and failures would cause lost work, delays or repeated manual fixes. Define monitoring, failure alerts, connected-tool updates, permission reviews and recovery responsibilities. Compare those costs with the time and risk of maintaining the workflow internally, and distinguish support for the existing system from new development.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -3440,7 +3587,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Cool Runnings",
     "draftPath": "content/resources/draft-library/website-measurement-budget.json",
-    "wordCount": 1346,
+    "wordCount": 1472,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -3461,7 +3608,9 @@
     "faqs": [
       "What is the difference between a key event in GA4 and a conversion in my CRM?",
       "How often should I review these metrics?",
-      "Do I need expensive software to join Search Console data with my customer records?"
+      "Do I need expensive software to join Search Console data with my customer records?",
+      "What should I measure if the business has very little website traffic?",
+      "How do I decide what website work deserves next year's budget?"
     ],
     "internalLinks": {
       "primary": {
@@ -3478,8 +3627,9 @@
     },
     "aeo": {
       "summary": "Before you commit to next year's website budget, separate traffic volume from revenue. Measure how many searches lead to qualified enquiries, how many enquiries become accepted jobs, and which parts of your current site are leaking potential customers. Then spend on the weakest link.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -3510,7 +3660,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/small-business-website-accessibility.json",
-    "wordCount": 1494,
+    "wordCount": 1635,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -3532,7 +3682,9 @@
     "faqs": [
       "Does an accessible website help with search engines?",
       "Can I fix accessibility myself, or do I need a developer?",
-      "Does accessibility apply if my website is just a few pages?"
+      "Does accessibility apply if my website is just a few pages?",
+      "What can a business owner check without specialist accessibility software?",
+      "How should accessibility work be included in a website quote?"
     ],
     "internalLinks": {
       "primary": {
@@ -3548,9 +3700,10 @@
       ]
     },
     "aeo": {
-      "summary": "An accessible website is easier for everyone to use, including customers with disabilities. This guide turns the W3C checklist into practical small-business checks for keyboard access, contrast, alt text, forms, captions, and motion, plus a worksheet you can run on your own site today.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "A small-business website should support keyboard navigation, readable contrast and text, clear image descriptions, labelled forms, understandable errors and accessible media. Check the complete enquiry journey with these needs in mind, then include the findings in the build and editing process. Define the scope and standard of a fuller review instead of relying on an accessibility plugin or automated score alone.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -3581,7 +3734,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Cool Runnings",
     "draftPath": "content/resources/draft-library/small-business-website-growth-plan.json",
-    "wordCount": 1563,
+    "wordCount": 1691,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -3601,7 +3754,9 @@
     "faqs": [
       "Should my annual website plan include AI?",
       "How often should a small business change its website plan?",
-      "What if we need more demand and better conversion?"
+      "What if we need more demand and better conversion?",
+      "How do I choose between more traffic and improving the website I already have?",
+      "What belongs in a practical quarterly website plan?"
     ],
     "internalLinks": {
       "primary": {
@@ -3618,8 +3773,9 @@
     },
     "aeo": {
       "summary": "Plan next year's website around one customer bottleneck: demand, conversion, follow-up or retention. A one-page plan with an owner, a target measure and a review date beats adding channels or content for the sake of looking fresh. The right priority depends on your industry, your sales cycle and the problem actually costing you money.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",

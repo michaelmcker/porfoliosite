@@ -68,6 +68,14 @@
     [
       "Can a small property use a simple website and still feel distinct?",
       "Yes. A simple site can feel distinct when the photography, copy, room descriptions and booking handoff are specific to the property. The goal is not more pages. It is clearer choices."
+    ],
+    [
+      "What should an accommodation homepage show before asking visitors to book?",
+      "Show the actual space, sleeping arrangements, setting and the experience a guest can expect. Keep availability, access, parking and important stay conditions easy to reach. Choose photographs that answer scale and layout questions as well as creating atmosphere, so someone can judge whether the property suits their trip."
+    ],
+    [
+      "How can a small property look distinctive without making booking difficult?",
+      "Use a consistent visual direction, considered typography and a small set of strong property photographs. Keep booking controls familiar and clearly labelled. An expressive homepage can lead into straightforward room or property pages where dates, occupancy, conditions and the next step are easy to understand on a phone."
     ]
   ],
   "sources": [
@@ -123,7 +131,7 @@
   "services": [
     "vacation-rentals"
   ],
-  "wordCount": 1656,
+  "wordCount": 1774,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -146,7 +154,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

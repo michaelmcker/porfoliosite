@@ -58,6 +58,14 @@
     [
       "How do I know whether an AI workflow is worth the cost?",
       "Choose a measurable goal before building, such as faster first replies, fewer missed enquiries, less time spent on intake or more consistent follow-up. Then review the logs and outcomes with your team. If the goal cannot be observed, narrow the scope before spending more."
+    ],
+    [
+      "What is a sensible first AI workflow for a local service website?",
+      "Start with enquiry handling: capture the service requested, summarise the message and route it to the right person. Keep prices, appointment commitments and exceptions under staff control. Compare the time spent on that task before and after implementation, and review missed or incorrectly routed requests alongside any time saved."
+    ],
+    [
+      "Should an AI agent confirm bookings without staff approval?",
+      "Only give an agent that authority when it can check real availability and follow defined booking rules. Decide what happens with unusual job lengths, conflicting appointments and requests outside the service area. During an initial rollout, having the agent prepare a booking for staff approval is a useful way to identify those exceptions."
     ]
   ],
   "sources": [
@@ -101,7 +109,7 @@
     "ai-skills-versus-prompts"
   ],
   "services": [],
-  "wordCount": 1604,
+  "wordCount": 1727,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -124,7 +132,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

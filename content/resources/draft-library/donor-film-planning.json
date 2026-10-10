@@ -63,6 +63,14 @@
     [
       "Should the film live on YouTube, social media or our website?",
       "Use the places where your supporters already are, but give the film a clear home on your website too. Social platforms are useful for discovery. A campaign page gives the organization more control over the message, the supporting evidence, the next step and the accessible version of the film."
+    ],
+    [
+      "What should we decide before commissioning a donor film?",
+      "Agree whom the film must reach, the decision it should support, the central story and where it will be shown. Identify available interviews, locations and existing footage, along with permissions and approvals. Plan the donation or conversation step beside the film so its role in the campaign is clear."
+    ],
+    [
+      "How can a donor film work beyond a single fundraising event?",
+      "Plan useful versions during production: the main film, captioned excerpts and still images for the campaign page. Each version needs enough context to stand alone and a suitable next step. Agree rights, source-file delivery and future editing arrangements before production so later use does not depend on an unclear handover."
     ]
   ],
   "sources": [
@@ -106,7 +114,7 @@
     "kelowna-branding-partners"
   ],
   "services": [],
-  "wordCount": 1450,
+  "wordCount": 1569,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -129,6 +137,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

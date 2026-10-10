@@ -69,6 +69,14 @@
     [
       "What should we prepare before asking a designer for a quote?",
       "Decide the audience split between prospective and current families, outline the real admissions steps, list which programmes need their own page, agree how the school will talk about fees, and gather any existing photography or video. With those decisions made, the conversation with a designer can be about craft and fit rather than guesswork."
+    ],
+    [
+      "What should prospective families find on a school admissions page?",
+      "Explain whom the school serves, the admissions steps, visit opportunities, application requirements and where current fee information is available. Show the learning environment through real school material. Give families a named enquiry route and separate admissions from current-parent notices so the first visit does not require navigating internal administration."
+    ],
+    [
+      "How should a school use student photographs and video on its website?",
+      "Use only material approved through the school's permissions process and keep a record of where it appears. Agree who can publish and who handles requests to remove or replace it. A strong visual story can show the environment and activities without publishing personal details that do not help a family assess the school."
     ]
   ],
   "sources": [
@@ -122,7 +130,7 @@
   "services": [
     "private-schools"
   ],
-  "wordCount": 1719,
+  "wordCount": 1843,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -145,7 +153,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 2,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

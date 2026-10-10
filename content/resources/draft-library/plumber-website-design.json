@@ -3,7 +3,7 @@
   "title": "What works on a plumber website? A 2027 plan for better enquiries",
   "type": "guide",
   "description": "A practical 2027 plan for plumber websites that need better enquiries, covering emergency versus planned work, honest service areas, page architecture, dispatcher handoff, and job photography.",
-  "summary": "A plumber website that works in 2027 does two jobs at once. It gets found by the right local searcher, and it hands that searcher to your dispatcher without wasting anyone's time. This guide separates emergency from planned work, explains when to split drain and water heater pages, and gives you a sample page structure and intake checklist you can adapt.",
+  "summary": "A plumber website needs separate paths for urgent repairs and planned work, accurate hours and service coverage, useful pages for specific plumbing services and a clear call or quote route. Show real jobs and explain what happens after an enquiry. Collect the details the dispatcher needs to assess the request, while keeping appointment and attendance promises consistent with the team's actual capacity.",
   "takeaways": [
     "Emergency and planned plumbing need different pages, different forms, and different promises about response time.",
     "Only claim the towns and neighbourhoods you actually serve, because dishonest service areas create angry callers and wasted dispatches.",
@@ -63,6 +63,14 @@
     [
       "How many pages does a plumber website need before it starts working?",
       "There is no magic number, but a useful starting point is one honest page per major service and one per major town if service differs by area. Start with a small, useful set of pages that you can keep accurate, and expand when another page answers a genuinely different customer question."
+    ],
+    [
+      "How should a plumber website separate emergency calls from planned work?",
+      "Give urgent repair visitors a prominent phone route and the business's actual availability and coverage. Give renovations, installations and planned replacements a quote route with room to describe the job. The dispatcher should receive enough context to assess each request without the website promising emergency attendance the team cannot provide."
+    ],
+    [
+      "What information helps turn a plumbing enquiry into a suitable booking?",
+      "Ask for the service address, the problem or project, a reply method and any useful timing information. Optional photographs can help with preparation. Explain what happens next and whether the request needs a call or assessment before scheduling, so customers understand the difference between sending an enquiry and confirming an appointment."
     ]
   ],
   "sources": [
@@ -107,7 +115,7 @@
   "services": [
     "plumbers"
   ],
-  "wordCount": 1623,
+  "wordCount": 1747,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -130,7 +138,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

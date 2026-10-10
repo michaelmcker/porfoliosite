@@ -63,6 +63,14 @@
     [
       "Can I start with a small AI workflow and expand later?",
       "Yes, and it is usually the better way to begin. A narrow first release with a clear owner is easier to test, easier to explain to staff and easier to roll back if the process changes. Once the results are stable, you can decide whether the next step is worth the cost."
+    ],
+    [
+      "What should an AI workflow proposal include?",
+      "Ask for the current task, proposed steps, data sources, approval points, tool access, exception handling and maintenance responsibilities. The proposal should define what will be delivered and how you will decide whether it works. Include usage costs, account ownership and the process for leaving or changing providers before agreeing to ongoing support."
+    ],
+    [
+      "How do I avoid paying for an impressive demo that cannot handle real work?",
+      "Provide examples of ordinary requests and difficult exceptions, then ask to see how both are handled. Check what happens when information is missing, a connected tool is unavailable or a customer changes their request. Agree a limited pilot and review actual staff effort before giving the system broader permissions."
     ]
   ],
   "sources": [
@@ -98,7 +106,7 @@
     "ai-skills-versus-prompts"
   ],
   "services": [],
-  "wordCount": 1452,
+  "wordCount": 1574,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -121,7 +129,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

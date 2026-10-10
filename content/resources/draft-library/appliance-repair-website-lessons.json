@@ -3,7 +3,7 @@
   "title": "What works for appliance-repair websites? Lessons from ABC Appliance",
   "type": "guide",
   "description": "A practical look at what an appliance-repair website needs, using ABC Appliance as a case study. Covers appliance and brand pages, service areas, honest booking wording, and where a small shop should focus first.",
-  "summary": "ABC Appliance's website shows what a local repair site should do: state the service area, name the appliances, route callers by brand, and be honest that a request is not a confirmed appointment. This article turns those choices into a practical guide, including a table that separates what the live site already proves from proposed improvements an owner might ask for next.",
+  "summary": "An appliance repair website should state the service area, name the appliances and brands actually serviced, explain how a request is assessed and make contact easy on mobile. ABC Appliance shows those choices in a real local website. Keep appointment claims accurate, collect useful problem details and connect specific service information to the enquiry route.",
   "takeaways": [
     "Lead with geography, appliance category, and one clear promise, because repair customers are deciding in a hurry.",
     "Give every appliance category and every genuinely supported brand its own page, with symptoms and warranty eligibility questions spelled out.",
@@ -63,6 +63,14 @@
     [
       "Are city and community pages risky for local SEO?",
       "They are risky when they are thin copies with only the place name swapped. They are useful when each page contains real, specific information about serving that community, such as travel considerations, scheduling, or documented local service examples. When in doubt, name your service area clearly on the homepage and in your FAQ rather than publishing empty pages."
+    ],
+    [
+      "What should an appliance repair enquiry ask the customer for?",
+      "Start with the appliance type, brand, symptom, service location and a way to reply. Make the model number or a photograph optional when the customer may need help finding it. Explain that submitting the request starts an assessment; staff still need to confirm coverage, parts requirements and appointment availability."
+    ],
+    [
+      "Should each appliance brand have its own website page?",
+      "Create a brand page when you actually service that brand and can provide useful information about the work, coverage and enquiry process. Avoid implying manufacturer authorisation unless the business holds it. A page listing brand names without explaining the service gives the customer little help choosing or preparing a repair request."
     ]
   ],
   "sources": [
@@ -108,7 +116,7 @@
   "services": [
     "appliance-repair"
   ],
-  "wordCount": 1781,
+  "wordCount": 1893,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -131,7 +139,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

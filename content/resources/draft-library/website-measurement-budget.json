@@ -63,6 +63,14 @@
     [
       "Do I need expensive software to join Search Console data with my customer records?",
       "No. You can start with a simple spreadsheet or a consistent tagging habit. Ask every new customer how they found you, and record which page or service they first contacted you about. The discipline of asking and recording matters more than the tool you use."
+    ],
+    [
+      "What should I measure if the business has very little website traffic?",
+      "Record relevant visits, qualified enquiries, accepted jobs and the source when known. Use a consistent definition of a suitable lead and review individual enquiries for patterns. With small numbers, one booking can change a percentage sharply, so avoid treating a short-term swing as proof that a particular design change caused growth."
+    ],
+    [
+      "How do I decide what website work deserves next year's budget?",
+      "Identify where suitable customers are being lost: discovery, understanding the offer, contacting the team or follow-up. Estimate the work needed to address that bottleneck and choose a measure you can actually observe. Separate essential maintenance from experiments so you know what protects the existing service and what is intended to grow it."
     ]
   ],
   "sources": [
@@ -113,7 +121,7 @@
     "website-enquiry-follow-up"
   ],
   "services": [],
-  "wordCount": 1346,
+  "wordCount": 1472,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -137,7 +145,11 @@
     "date": "2026-10-08",
     "appliedEdits": 3,
     "publicationApproved": false,
-    "mainEditorResolution": "Applied the rejected patch at its correct section path and checked the interpretation of clicks versus qualified enquiries."
+    "mainEditorResolution": "Applied the rejected patch at its correct section path and checked the interpretation of clicks versus qualified enquiries.",
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

@@ -19,6 +19,7 @@ gha-creds-*.json
 
 # Echo prompts/responses remain local editorial evidence.
 /docs/editorial-2026-10-08/echo/
+/docs/editorial-2026-10-10/echo-review.json
 
 # Private drafting research, prompts and raw model responses.
 /docs/draft-library-2026-10-08/research/

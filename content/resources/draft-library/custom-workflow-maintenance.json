@@ -3,7 +3,7 @@
   "title": "When does a custom workflow justify ongoing maintenance?",
   "type": "guide",
   "description": "A practical guide for business owners on when custom AI workflow maintenance is worth the ongoing cost, with a worksheet, worked example and questions to ask before committing.",
-  "summary": "A custom workflow justifies ongoing maintenance when the cost of keeping it running is clearly smaller than the errors, delays or missed work it prevents, and when failure would create meaningful delays, errors or lost work. This guide helps owners compare the cost of the problem against the cost of ownership, decide when off the shelf tools are enough, and ask the right questions before committing to ongoing support.",
+  "summary": "Ongoing workflow maintenance is worth paying for when the business depends on the system and failures would cause lost work, delays or repeated manual fixes. Define monitoring, failure alerts, connected-tool updates, permission reviews and recovery responsibilities. Compare those costs with the time and risk of maintaining the workflow internally, and distinguish support for the existing system from new development.",
   "takeaways": [
     "Ongoing maintenance is justified when the workflow is frequent, business-specific and expensive to get wrong.",
     "Compare the measurable cost of the problem against the full cost of owning a custom system, not just the initial build price.",
@@ -63,6 +63,14 @@
     [
       "Does ongoing maintenance usually include training my team?",
       "It can, and it often should. Training needs to be part of the scope, because a workflow only saves time if the people using it understand what it does, what they still need to check and what to do when something looks wrong."
+    ],
+    [
+      "What should ongoing workflow maintenance actually cover?",
+      "Define monitoring, failure alerts, connected-tool changes, permission reviews and the updates included in the agreement. Record how urgent failures are handled and who owns the source files and accounts. Separate keeping the existing workflow running from building new capabilities so both sides understand what the monthly service buys."
+    ],
+    [
+      "What should happen when a workflow fails overnight?",
+      "The system should record the failure, alert the responsible person and preserve enough state to investigate safely. Before retrying an action such as a customer email or publication, check whether it already happened. A useful recovery process explains which items can be retried and which need a human decision."
     ]
   ],
   "sources": [
@@ -99,7 +107,7 @@
     "ai-service-business-website"
   ],
   "services": [],
-  "wordCount": 1266,
+  "wordCount": 1368,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -122,7 +130,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

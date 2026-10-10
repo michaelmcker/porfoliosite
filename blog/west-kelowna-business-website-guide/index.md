@@ -2,10 +2,10 @@ Source: https://michaelmck.site/blog/west-kelowna-business-website-guide/
 
 # The West Kelowna business website guide: 8 essentials for 2026
 
-A West Kelowna business website needs accurate location information, a clear offer and a direct route to a booking or enquiry. Separate the needs of residents from those of visitors. Explain where you work, show the experience or service properly and make practical details easy to find on a phone.
+A West Kelowna business website needs accurate location and coverage information, a clear offer, real proof and a straightforward booking or enquiry route. Give residents practical service and quote information; give visitors current hours, availability, arrival details and booking conditions. Support both with fast mobile pages, consistent business facts, useful service content and a clear owner for updates.
 
 By [Michael McKerracher](https://michaelmck.site/)
- · Published October 8, 2026
+ · Published October 8, 2026 · Updated October 10, 2026
 
 In this article
 
@@ -26,7 +26,7 @@ In this article
 - [Agree how the site stays current](#maintain)
 
 - [Questions, answered](#questions)
-[Website design services](https://michaelmck.site/web-design/)
+[web design and development in Kelowna and the Okanagan](https://michaelmck.site/web-design/)
 [Discuss your project](https://michaelmck.site/contact/)
 [All resources](https://michaelmck.site/blog/)
 
@@ -114,24 +114,32 @@ Before signing, compare the scope using the website quote checklist. Before laun
 
 ### Should I target Westbank and West Kelowna on the same website?
 
-Yes, when those terms accurately describe your location or customers. Explain the business address and service area clearly. Create additional pages only when they provide distinct, useful information rather than repeating the same service copy.
+Yes, where the terms accurately describe your location or customers. State the actual business address and service area, then explain relevant differences in coverage or appointment arrangements. Publish a separate page when it adds distinct local detail or work that helps someone decide. Otherwise a useful coverage section can answer the question without repeating the same service copy under another place name.
 
 ### Do I need online payment to take booking enquiries?
 
-No. A callback or reservation request can be enough when availability or scope needs confirmation. Add payment when the customer can understand exactly what they are buying and your booking, cancellation and fulfilment process is ready.
+No. A callback or reservation request can work when staff need to confirm availability or scope. Label the action accurately, explain when someone will reply and collect the details needed to assess the request. Add payment when customers can understand what they are buying and your confirmation, cancellation and fulfilment process is ready. Keep an enquiry distinct from a completed booking.
 
 ### Can one website support local services and visitor experiences?
 
-Yes. Give each audience a clearly labelled route and its own relevant information. A shared homepage can introduce the business while separate pages handle service enquiries, experiences, availability and booking conditions.
+Yes. Give each audience a clearly labelled route and relevant information. Residents seeking a service may need coverage and a quote; visitors may need dates, arrival details and booking conditions. Separate the enquiry options so the team can route requests properly. A shared homepage can introduce the business while the supporting pages explain each offer and what happens next.
 
-## Put this to work for your business.
+### Should my West Kelowna website mention Kelowna as well?
 
-I can help you turn these decisions into a website with a clear structure, useful content and an easier route to an enquiry or booking. Start with [web design and development](https://michaelmck.site/web-design/)
-, or [tell me what you want to improve](https://michaelmck.site/contact/)
- and we can work out the right scope.
+Mention Kelowna where it accurately describes customers or service coverage, while keeping the actual business location clear. Explain any differences in appointments or work on either side of the lake that affect the customer. Useful local information is stronger than repeatedly adding both city names to otherwise identical paragraphs.
 
-[AI implementation](https://michaelmck.site/ai-implementation/)
-[Marketing & branding](https://michaelmck.site/marketing-branding/)
+### How do I keep seasonal website information accurate?
+
+Assign an owner for hours, booking links, availability and promotions across the website and connected profiles. Record when temporary information should be reviewed or removed. Before a new season, follow the booking journey on mobile and check that the business's public promises still match what the team can deliver.
+
+## Build a website around the business.
+
+I can turn the page plan, content and customer journey into a considered website, including mobile design, search foundations and a working enquiry route. Explore [web design and development in Kelowna and the Okanagan](https://michaelmck.site/web-design/)
+, or [tell me about your project](https://michaelmck.site/contact/)
+ so we can agree the right scope.
+
+[See a free custom homepage design preview](https://michaelmck.site/free-website-preview/)
+ before deciding on a full website build.
 
 ## Sources and further reading
 

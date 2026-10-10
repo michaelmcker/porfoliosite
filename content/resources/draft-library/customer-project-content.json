@@ -64,6 +64,14 @@
     [
       "Can I use a customer project if I do not have hard numbers?",
       "Yes, if you are honest about the limits. A clear description of the problem, constraints, work, and client-reported change can still be useful. Do not invent metrics to make the page feel stronger."
+    ],
+    [
+      "What information should I collect while a customer project is happening?",
+      "Capture the original problem, agreed scope, important decisions and finished work, with permission to use the material. Keep photographs and notes organised by project so the story can be written accurately later. Ask for approval of customer-identifying details before publishing rather than assuming that permission to do the work includes permission to market it."
+    ],
+    [
+      "How do I turn one project into website, video and social content?",
+      "Start with a factual project story on the website, then select the parts each format can show well. A short video can demonstrate the work; social posts can highlight a decision or finished detail. Give each piece a relevant destination rather than repeating the same caption everywhere."
     ]
   ],
   "sources": [
@@ -116,7 +124,7 @@
     "donor-film-planning"
   ],
   "services": [],
-  "wordCount": 1862,
+  "wordCount": 1986,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -139,6 +147,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

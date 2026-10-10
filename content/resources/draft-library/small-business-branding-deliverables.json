@@ -63,6 +63,14 @@
     [
       "How does branding affect my website and search visibility?",
       "Branding shapes the words, page structure and images that help people understand the business. Search engines still need clear, indexable content, but a clear brand makes that content easier to write and easier for visitors to trust once they arrive."
+    ],
+    [
+      "What usable files should a branding project deliver?",
+      "Agree logo variants, colour and type guidance, relevant image direction and the editable templates your team needs. Specify file formats, usage rights and any ongoing licences. Ask the provider to demonstrate applying the identity to a real website or social post so the handover covers everyday use as well as the presentation."
+    ],
+    [
+      "Should website copy be included in a branding project?",
+      "Include it explicitly when the business needs help explaining its offer. Positioning and message hierarchy can inform the website, but writing every service page is a separate amount of work. Agree which headlines, descriptions and pages are included and who turns the approved messaging into finished website content."
     ]
   ],
   "sources": [
@@ -98,7 +106,7 @@
     "kelowna-branding-partners"
   ],
   "services": [],
-  "wordCount": 1357,
+  "wordCount": 1474,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -121,7 +129,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

@@ -63,6 +63,14 @@
     [
       "How much text belongs above the fold on a professional-services homepage?",
       "A concise headline, a short subheadline, and one action. If you need three paragraphs to make the point, the page is asking too much too early."
+    ],
+    [
+      "What should appear above the fold on a professional-services homepage?",
+      "Name the service, the kind of client the practice helps and the next step in plain language. Add a relevant signal of experience and an easy route to practice or service detail. Calm typography and real photography can support trust, but the visitor should understand the offer before needing to interpret a brand slogan."
+    ],
+    [
+      "How should professional firms use case studies when client work is confidential?",
+      "Describe the type of problem, the process and the scope of work only to the level the firm is permitted to publish. Get appropriate approval for identifying details and results. Where a case study is unsuitable, use verifiable team experience and a specific explanation of the engagement process instead of inventing anonymous success stories."
     ]
   ],
   "sources": [
@@ -108,7 +116,7 @@
   "services": [
     "law-firms"
   ],
-  "wordCount": 1314,
+  "wordCount": 1444,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -133,7 +141,11 @@
     "provider": "Main editor",
     "appliedEdits": 0,
     "publicationApproved": false,
-    "note": "Echo editorial response was malformed. Main editor read the full article against the saved Law Society and W3C sources; specific claim and example corrections are recorded in mainEditorEdits."
+    "note": "Echo editorial response was malformed. Main editor read the full article against the saved Law Society and W3C sources; specific claim and example corrections are recorded in mainEditorEdits.",
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

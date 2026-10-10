@@ -58,6 +58,14 @@
     [
       "What is the difference between owning the website and owning the domain?",
       "The domain is just the address. Owning it means it is registered in your name and you control where it points. Owning the website is the bigger question: the design files, the written content, the database, the hosting, the backups and the logins. Plenty of businesses own their domain and discover later that everything behind it lives in someone else's account."
+    ],
+    [
+      "What should I receive to make a custom website transferable?",
+      "Ask for the source repository, deployment instructions, account inventory, content export and the licences needed to use the work. Record who controls the domain and where backups live. Have the provider explain how another developer would deploy and maintain the site so ownership is practical rather than just a line in the contract."
+    ],
+    [
+      "Does owning the source code mean I need to manage a server?",
+      "No. Code ownership and hosting operations are separate decisions. A provider can deploy your code to managed hosting and support it under an agreed arrangement. Confirm who handles updates, monitoring, renewals and recovery, and whether you can move the project if that support relationship ends."
     ]
   ],
   "sources": [
@@ -117,7 +125,7 @@
     "framer-webflow-custom-website"
   ],
   "services": [],
-  "wordCount": 1613,
+  "wordCount": 1733,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -142,7 +150,11 @@
     "provider": "Main editor",
     "appliedEdits": 0,
     "publicationApproved": false,
-    "note": "Echo editorial JSON was truncated. Main editor read the full article against official platform documentation and corrected ownership, hosting and exit claims."
+    "note": "Echo editorial JSON was truncated. Main editor read the full article against official platform documentation and corrected ownership, hosting and exit claims.",
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

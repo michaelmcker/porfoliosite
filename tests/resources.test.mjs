@@ -36,9 +36,9 @@ test('all approved articles are complete, answer-first and linked from the colle
   assert.equal(article.datePublished,dates(a).datePublished);
   assert.equal(article.author['@id'],base+'/#person');
   const faq=graph.find(x=>x['@type']==='FAQPage');
-  assert.equal(faq.mainEntity.length,3);
+  assert.equal(faq.mainEntity.length,a.faqs.length);
   const visible=html.match(/<section class="r-faq"[\s\S]*?<section class="r-sources"/)[0];
-  assert.equal((visible.match(/<h3>/g)||[]).length,3);
+  assert.equal((visible.match(/<h3>/g)||[]).length,a.faqs.length);
   assert(!visible.includes('<details'));
   for(const [q,answer]of a.faqs){assert(plain(visible).includes(q));assert(plain(visible).includes(answer));assert(faq.mainEntity.some(x=>x.name===q&&x.acceptedAnswer.text===answer));}
   const md=`Source: ${base}/blog/${a.slug}/\n\n${markdown(html)}`;

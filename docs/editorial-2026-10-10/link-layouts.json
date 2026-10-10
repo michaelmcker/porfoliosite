@@ -1,0 +1,86 @@
+[
+  {
+    "contactLinks": 1,
+    "documentWidth": 320,
+    "path": "/v2/workflows/agency-management-dashboard.html",
+    "width": 320
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 320,
+    "path": "/v2/workflows/content-production.html",
+    "width": 320
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 320,
+    "path": "/v2/workflows/image-to-website-production.html",
+    "width": 320
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 320,
+    "path": "/v2/workflows/local-prospecting-enrichment.html",
+    "width": 320
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 320,
+    "path": "/v2/workflows/presentation-publishing.html",
+    "width": 320
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 320,
+    "path": "/v2/work/local-search-magnet.html",
+    "width": 320
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 320,
+    "path": "/proposal-generator.html",
+    "width": 320
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 1425,
+    "path": "/v2/workflows/agency-management-dashboard.html",
+    "width": 1440
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 1425,
+    "path": "/v2/workflows/content-production.html",
+    "width": 1440
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 1425,
+    "path": "/v2/workflows/image-to-website-production.html",
+    "width": 1440
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 1425,
+    "path": "/v2/workflows/local-prospecting-enrichment.html",
+    "width": 1440
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 1425,
+    "path": "/v2/workflows/presentation-publishing.html",
+    "width": 1440
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 1425,
+    "path": "/v2/work/local-search-magnet.html",
+    "width": 1440
+  },
+  {
+    "contactLinks": 1,
+    "documentWidth": 1425,
+    "path": "/proposal-generator.html",
+    "width": 1440
+  }
+]

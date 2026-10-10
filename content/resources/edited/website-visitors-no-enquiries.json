@@ -39,15 +39,24 @@
   "faqs": [
     [
       "Should I redesign the whole website if it gets no leads?",
-      "Not automatically. First check traffic relevance, service clarity and whether forms and phone links work. A focused repair may solve the immediate problem; a rebuild makes sense when the structure or platform prevents useful improvements."
+      "Not automatically. First check traffic relevance, service clarity and whether forms and phone links work. A focused repair may solve the immediate problem; a rebuild makes sense when the structure or platform prevents useful improvements. Follow the main customer task on a phone and submit a test enquiry before committing to a redesign. Check whether the page describes the service the visitor searched for and whether the team receives the request. Fixing a specific failure gives you a clearer basis for deciding whether broader work is needed."
     ],
     [
       "What is a good conversion rate for a local website?",
-      "There is no single rate that applies to every local business. Define the conversion first, then compare similar traffic and periods. A completed booking, a contact form and a phone-button tap should not be treated as the same outcome."
+      "There is no single rate that applies to every local business. Define the conversion first, then compare similar traffic and periods. A completed booking, a contact form and a phone-button tap should not be treated as the same outcome. Separate suitable enquiries from spam, irrelevant requests and duplicate contacts, then follow those leads to accepted work. Compare like-for-like periods and traffic sources. A low-volume local site can show large percentage swings from a single enquiry, so read the individual requests as well as the aggregate rate."
     ],
     [
       "How do I know whether the website or my ads are the problem?",
-      "Compare the search terms or campaign audience with the landing page and actual enquiries. Irrelevant visitors point toward targeting or message problems. Suitable visitors who cannot complete the next step point toward the page, form or booking flow."
+      "Compare the search terms or campaign audience with the landing page and actual enquiries. Irrelevant visitors point toward targeting or message problems. Suitable visitors who cannot complete the next step point toward the page, form or booking flow. Compare the search or ad intent with the landing page, then check where suitable visitors leave the journey. If requests arrive but do not become jobs, review qualification and follow-up as well. Keep one clear record of the changes you make so the next review can identify what was actually implemented."
+    ],
+    [
+      "How do I tell whether a form is silently losing enquiries?",
+      "Submit a clearly identified test, check the confirmation and verify its arrival in the destination inbox or lead system. Test the mobile journey and any error state the provider supports. A success message on the website is not enough if nobody receives the request or staff cannot identify what service was requested."
+    ],
+    [
+      "Should I show prices to improve enquiry quality?",
+      "Show useful pricing context when you can state it accurately: a starting scope, assessment fee or explanation of how quotes are prepared. Describe what changes the price and what happens next. The goal is to help suitable customers judge fit, rather than publish a number that excludes essential work or creates false expectations."
     ]
-  ]
+  ],
+  "primaryMoneyPage": "/web-design/"
 }

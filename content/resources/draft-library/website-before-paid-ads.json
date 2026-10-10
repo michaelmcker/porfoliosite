@@ -63,6 +63,14 @@
     [
       "What should a small business count as a lead from ads?",
       "Count the actions that matter to the business, usually calls, completed forms or another defined enquiry. Then separate qualified leads from duplicates, spam and people outside the service area before judging the campaign."
+    ],
+    [
+      "What should a local-service landing page show before I pay for traffic?",
+      "Match the advertised service, state the actual coverage area and explain why the business is suitable. Include relevant work and a clear call or request route. Test the entire enquiry handoff on a phone and confirm that the team can respond before using advertising to send more people through it."
+    ],
+    [
+      "When should I stop a paid test and fix the page?",
+      "Set the spending limit and review criteria before launch, then distinguish unsuitable traffic from suitable visitors who fail to enquire. Check form delivery and call handling before blaming the headline. Review qualified leads and accepted work as well as clicks, and change the weakest part of the journey rather than several variables at once."
     ]
   ],
   "sources": [
@@ -105,7 +113,7 @@
     "website-enquiry-follow-up"
   ],
   "services": [],
-  "wordCount": 1636,
+  "wordCount": 1763,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -128,6 +136,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

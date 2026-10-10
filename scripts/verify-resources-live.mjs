@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {publishedArticles} from './build-resources.mjs';
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 const origin='https://michaelmck.site';
@@ -13,7 +14,7 @@ for(let i=0;i<files.length;i+=5){await Promise.all(files.slice(i,i+5).map(async 
  if(p.file.endsWith('.html')&&p.url.startsWith('/blog/')){
   const html=bytes.toString();assert(html.includes('rel="canonical" href="'+origin+p.url+'"'));assert(html.includes('<p class="r-summary">'));
   const graph=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
-  if(p.url!='/blog/')assert.equal(graph.find(x=>x['@type']==='FAQPage').mainEntity.length,3);
+  if(p.url!='/blog/')assert.equal(graph.find(x=>x['@type']==='FAQPage').mainEntity.length,publishedArticles.find(a=>p.url===`/blog/${a.slug}/`).faqs.length);
  }
 }));}
 const negotiation=[];

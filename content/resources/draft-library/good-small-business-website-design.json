@@ -3,7 +3,7 @@
   "title": "What makes a small-business website look good? A practical design critique",
   "type": "guide",
   "description": "A practical critique of what makes a small-business website look good: hierarchy, type, contrast, spacing, real photos, consistent components and a clear call to action, with examples from real projects.",
-  "summary": "A good small-business website looks intentional, readable and trustworthy, then lets a visitor act. Hierarchy, typography, contrast, spacing, real photos and one clear call to action do most of the work. This guide shows the decisions behind that look, with examples from real projects.",
+  "summary": "Good small-business website design makes the service clear, establishes trust and gives suitable customers an easy next step. Use readable typography, strong hierarchy, real imagery and navigation built around customer tasks. Check the whole journey on mobile, keep motion purposeful and judge the service pages and enquiry handoff as carefully as the homepage.",
   "takeaways": [
     "Looking good is mostly hierarchy, type, contrast and spacing, not decoration.",
     "A beautiful site still has to help a visitor finish one clear task.",
@@ -68,6 +68,14 @@
     [
       "How do I know if my current website is the problem?",
       "Try the simple version first: read your homepage out loud and ask whether a stranger would know what you offer and what to do next. Then look at the design basics in this article, such as heading structure, contrast, spacing and whether there is one obvious call to action. If several of those are weak, the design is very likely part of the problem."
+    ],
+    [
+      "How do I judge whether a design will help customers rather than just look impressive?",
+      "Follow a customer's real task on a phone: identify the service, decide whether the business fits and make an enquiry. Check whether photography, headings and navigation help that task. Ask the designer to explain the role of each major section and show the supporting service pages, not only the homepage."
+    ],
+    [
+      "How much animation should a small-business website use?",
+      "Use motion where it explains the work or adds character without delaying the customer's task. Navigation, contact routes and essential text should remain usable when motion is reduced or scripts fail. Review a real mobile page before approving an animation that looks attractive in a desktop design presentation."
     ]
   ],
   "sources": [
@@ -110,7 +118,7 @@
     "boutique-accommodation-website-design"
   ],
   "services": [],
-  "wordCount": 1277,
+  "wordCount": 1407,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -133,7 +141,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 2,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

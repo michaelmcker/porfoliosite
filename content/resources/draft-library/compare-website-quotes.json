@@ -73,6 +73,14 @@
     [
       "How much should post-launch support cost?",
       "Costs vary widely depending on the platform and the level of service. The important thing is that the quote defines what support includes. Does it cover security updates, small content edits, or just emergency downtime? Ask for that definition in writing rather than accepting a vague monthly fee."
+    ],
+    [
+      "What should I send designers so their quotes are comparable?",
+      "Send the same page list, business goal, existing content inventory, required integrations and editing needs to each provider. Identify who supplies copy and photography and what must be migrated. Ask each quote to list exclusions and ongoing costs so a lower initial price does not hide work you still need to organise."
+    ],
+    [
+      "How should I compare a cheap quote with a much more expensive one?",
+      "Compare the work and responsibility behind each price: custom design, content, migration, integrations, revision rounds and launch support. Ask for examples matching your scope and a demonstration of editing. If both proposals meet the need, the simpler one may be sensible; a bigger price needs a clear business reason."
     ]
   ],
   "sources": [
@@ -124,7 +132,7 @@
     "website-handover-checklist"
   ],
   "services": [],
-  "wordCount": 1271,
+  "wordCount": 1395,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -147,6 +155,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

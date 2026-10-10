@@ -58,6 +58,14 @@
     [
       "What if we need more demand and better conversion?",
       "Most businesses have more than one problem. The plan still needs a priority. Choose the bottleneck that is the larger constraint right now, then note the second issue so it can be reviewed without taking over the year."
+    ],
+    [
+      "How do I choose between more traffic and improving the website I already have?",
+      "Look at the current path from relevant visits to suitable enquiries and paid work. If suitable visitors cannot understand the offer or complete the contact step, fix that first. If the site converts suitable demand but too few people find it, invest in discovery. Use the same definitions of enquiries and jobs when comparing options."
+    ],
+    [
+      "What belongs in a practical quarterly website plan?",
+      "Pick a business bottleneck, the change intended to address it, the person responsible and the measure you will review. Include the content, design or workflow work needed and a realistic delivery window. Keep a record of what changed so the next review can distinguish an implemented improvement from an unfinished idea."
     ]
   ],
   "sources": [
@@ -101,7 +109,7 @@
     "website-handover-checklist"
   ],
   "services": [],
-  "wordCount": 1563,
+  "wordCount": 1691,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -124,6 +132,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

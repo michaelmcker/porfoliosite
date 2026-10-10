@@ -2,427 +2,427 @@
   "mode": "complete",
   "gate": "PASS",
   "articles": 60,
-  "words": 90192,
+  "words": 97476,
   "errors": [],
   "languageContextsForReview": [],
   "repeatedParagraphs": [],
   "checks": [
     {
       "slug": "calls-or-forms-service-website",
-      "words": 1346,
+      "words": 1472,
       "sections": 7,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "small-business-branding-deliverables",
-      "words": 1357,
+      "words": 1474,
       "sections": 8,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "donor-film-planning",
-      "words": 1450,
+      "words": 1569,
       "sections": 8,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "small-business-website-brief",
-      "words": 1660,
+      "words": 1783,
       "sections": 8,
       "links": 5,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "website-subscription-vs-upfront-build",
-      "words": 1830,
+      "words": 1950,
       "sections": 8,
       "links": 8,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "before-buying-ai-workflow",
-      "words": 1452,
+      "words": 1574,
       "sections": 8,
       "links": 3,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "holiday-hours-website-checklist",
-      "words": 1675,
+      "words": 1782,
       "sections": 8,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "website-handover-checklist",
-      "words": 1487,
+      "words": 1604,
       "sections": 6,
       "links": 7,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "plumber-website-design",
-      "words": 1623,
+      "words": 1747,
       "sections": 8,
       "links": 2,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "framer-webflow-custom-website",
-      "words": 1655,
+      "words": 1776,
       "sections": 8,
       "links": 7,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "electrician-website-design",
-      "words": 1413,
+      "words": 1529,
       "sections": 8,
       "links": 6,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "accountant-website-design",
-      "words": 1589,
+      "words": 1717,
       "sections": 9,
       "links": 6,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "kelowna-branding-partners",
-      "words": 1457,
+      "words": 1567,
       "sections": 8,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "law-firm-website-design",
-      "words": 1503,
+      "words": 1629,
       "sections": 8,
       "links": 6,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "hotel-website-direct-booking",
-      "words": 1997,
+      "words": 2116,
       "sections": 9,
       "links": 6,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "landscaping-website-seasonal-demand",
-      "words": 1381,
+      "words": 1500,
       "sections": 8,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "framer-small-business-websites",
-      "words": 1643,
+      "words": 1754,
       "sections": 8,
       "links": 8,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "website-enquiry-follow-up",
-      "words": 1138,
+      "words": 1266,
       "sections": 9,
       "links": 5,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "winery-website-visitor-planning",
-      "words": 1298,
+      "words": 1423,
       "sections": 9,
       "links": 5,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "webflow-small-business-websites",
-      "words": 1401,
+      "words": 1521,
       "sections": 8,
       "links": 3,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "vacation-rental-direct-booking-website",
-      "words": 1245,
+      "words": 1362,
       "sections": 8,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "dental-website-design",
-      "words": 1709,
+      "words": 1824,
       "sections": 9,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "hvac-website-design",
-      "words": 1892,
+      "words": 2009,
       "sections": 9,
       "links": 2,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "charity-website-platforms",
-      "words": 1622,
+      "words": 1746,
       "sections": 8,
       "links": 6,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "physiotherapy-website-design",
-      "words": 1777,
+      "words": 1906,
       "sections": 9,
       "links": 3,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "website-social-video-content",
-      "words": 1225,
+      "words": 1350,
       "sections": 8,
       "links": 5,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "restaurant-website-design",
-      "words": 1844,
+      "words": 1959,
       "sections": 8,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "property-management-website-design",
-      "words": 1385,
-      "sections": 8,
-      "links": 5,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "retail-website-platforms",
-      "words": 1304,
-      "sections": 7,
-      "links": 7,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "ai-service-business-website",
-      "words": 1604,
-      "sections": 7,
-      "links": 5,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "roofing-website-design",
-      "words": 1536,
-      "sections": 8,
-      "links": 3,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "medical-practice-website-design",
-      "words": 1779,
-      "sections": 8,
-      "links": 6,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "good-small-business-website-design",
-      "words": 1277,
-      "sections": 9,
-      "links": 5,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "car-dealer-website-design",
-      "words": 1435,
-      "sections": 9,
-      "links": 7,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "financial-advisor-website-design",
-      "words": 1378,
-      "sections": 9,
-      "links": 6,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "small-business-ai-search",
-      "words": 1654,
-      "sections": 8,
-      "links": 6,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "sanity-small-business-cms",
-      "words": 1242,
-      "sections": 8,
-      "links": 2,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "website-wrong-enquiries",
-      "words": 1338,
-      "sections": 8,
-      "links": 5,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "medical-spa-website-design",
-      "words": 1457,
-      "sections": 8,
-      "links": 4,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "rebrand-redesign-or-copy",
-      "words": 1167,
-      "sections": 8,
-      "links": 3,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "appliance-repair-website-lessons",
-      "words": 1781,
-      "sections": 8,
-      "links": 5,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "self-hosted-custom-website-ownership",
-      "words": 1613,
-      "sections": 7,
-      "links": 8,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "private-school-website-design",
-      "words": 1719,
-      "sections": 9,
-      "links": 5,
-      "editorial": "pass-for-draft-review"
-    },
-    {
-      "slug": "website-photography-video-animation",
       "words": 1505,
       "sections": 8,
       "links": 5,
       "editorial": "pass-for-draft-review"
     },
     {
-      "slug": "charity-donation-page",
+      "slug": "retail-website-platforms",
+      "words": 1428,
+      "sections": 7,
+      "links": 7,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "ai-service-business-website",
+      "words": 1727,
+      "sections": 7,
+      "links": 5,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "roofing-website-design",
+      "words": 1654,
+      "sections": 8,
+      "links": 3,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "medical-practice-website-design",
+      "words": 1901,
+      "sections": 8,
+      "links": 6,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "good-small-business-website-design",
+      "words": 1407,
+      "sections": 9,
+      "links": 5,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "car-dealer-website-design",
+      "words": 1556,
+      "sections": 9,
+      "links": 7,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "financial-advisor-website-design",
+      "words": 1495,
+      "sections": 9,
+      "links": 6,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "small-business-ai-search",
+      "words": 1777,
+      "sections": 8,
+      "links": 6,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "sanity-small-business-cms",
+      "words": 1366,
+      "sections": 8,
+      "links": 2,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "website-wrong-enquiries",
       "words": 1461,
+      "sections": 8,
+      "links": 5,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "medical-spa-website-design",
+      "words": 1582,
+      "sections": 8,
+      "links": 4,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "rebrand-redesign-or-copy",
+      "words": 1289,
+      "sections": 8,
+      "links": 3,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "appliance-repair-website-lessons",
+      "words": 1893,
+      "sections": 8,
+      "links": 5,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "self-hosted-custom-website-ownership",
+      "words": 1733,
+      "sections": 7,
+      "links": 8,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "private-school-website-design",
+      "words": 1843,
+      "sections": 9,
+      "links": 5,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "website-photography-video-animation",
+      "words": 1626,
+      "sections": 8,
+      "links": 5,
+      "editorial": "pass-for-draft-review"
+    },
+    {
+      "slug": "charity-donation-page",
+      "words": 1585,
       "sections": 7,
       "links": 5,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "framer-webflow-local-seo",
-      "words": 1277,
+      "words": 1399,
       "sections": 8,
       "links": 7,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "website-before-paid-ads",
-      "words": 1636,
+      "words": 1763,
       "sections": 8,
       "links": 5,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "ai-skills-versus-prompts",
-      "words": 1411,
+      "words": 1539,
       "sections": 8,
       "links": 3,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "boutique-accommodation-website-design",
-      "words": 1656,
+      "words": 1774,
       "sections": 9,
       "links": 6,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "useful-location-pages",
-      "words": 1134,
+      "words": 1258,
       "sections": 9,
       "links": 3,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "professional-services-homepage-design",
-      "words": 1314,
+      "words": 1444,
       "sections": 8,
       "links": 5,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "compare-website-quotes",
-      "words": 1271,
+      "words": 1395,
       "sections": 10,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "automate-before-more-admin",
-      "words": 1907,
+      "words": 2028,
       "sections": 8,
       "links": 6,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "template-vs-custom-website",
-      "words": 1309,
+      "words": 1427,
       "sections": 9,
       "links": 5,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "website-editing-training",
-      "words": 1442,
+      "words": 1560,
       "sections": 9,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "customer-project-content",
-      "words": 1862,
+      "words": 1986,
       "sections": 8,
       "links": 6,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "custom-workflow-maintenance",
-      "words": 1266,
+      "words": 1368,
       "sections": 8,
       "links": 3,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "website-measurement-budget",
-      "words": 1346,
+      "words": 1472,
       "sections": 8,
       "links": 4,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "small-business-website-accessibility",
-      "words": 1494,
+      "words": 1635,
       "sections": 9,
       "links": 6,
       "editorial": "pass-for-draft-review"
     },
     {
       "slug": "small-business-website-growth-plan",
-      "words": 1563,
+      "words": 1691,
       "sections": 7,
       "links": 5,
       "editorial": "pass-for-draft-review"

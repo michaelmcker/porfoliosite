@@ -68,6 +68,14 @@
     [
       "How often should a winery update its website?",
       "Update hours, closures, and events as soon as they change. Review your Visit and Tastings pages at least quarterly. The design itself does not need constant changes if the information is clear and the site loads quickly."
+    ],
+    [
+      "What does a winery visitor need to know before reserving a tasting?",
+      "Explain the tasting experience, location, duration, current hours and reservation expectations. Include practical details that affect the visit, such as group arrangements, food availability and access. Keep those details consistent with the booking system and identify who updates seasonal changes so attractive imagery leads into reliable planning information."
+    ],
+    [
+      "How should a winery serve visitors who are planning several stops?",
+      "Make the address, travel context and booking details easy to share and revisit on a phone. Show the particular experience the winery offers so visitors can decide where it fits into their day. Link to accurate local planning information where useful, while keeping the winery's own opening hours and reservation rules on its website."
     ]
   ],
   "sources": [
@@ -112,7 +120,7 @@
   "services": [
     "wineries"
   ],
-  "wordCount": 1298,
+  "wordCount": 1423,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -135,7 +143,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 2,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

@@ -63,6 +63,14 @@
     [
       "Can AI-generated images replace a photographer?",
       "Sometimes for concept work, illustration or a placeholder while you plan a shoot. They are a poor substitute when the image is meant as proof, because the whole value of a photograph of your work is that it is your work. If a page exists to show that something real exists, hire the photographer or take the picture properly yourself."
+    ],
+    [
+      "How do I decide whether a website section needs photography, video or animation?",
+      "Choose the medium that answers the customer's question. Photography can show a finished result quickly; video can demonstrate movement or a process; animation can explain a sequence. Use a static image when it communicates the same thing clearly, and keep the enquiry route usable while larger media loads."
+    ],
+    [
+      "What should I ask for when commissioning website video?",
+      "Agree where the video will appear, the story it needs to tell, mobile and desktop framing and the still image shown before playback. Include captions or a transcript where spoken information matters. Confirm usage rights and delivery formats, then review the actual web export rather than judging only a full-resolution master."
     ]
   ],
   "sources": [
@@ -115,7 +123,7 @@
     "boutique-accommodation-website-design"
   ],
   "services": [],
-  "wordCount": 1505,
+  "wordCount": 1626,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -138,7 +146,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

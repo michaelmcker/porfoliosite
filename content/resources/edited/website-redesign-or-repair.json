@@ -31,15 +31,24 @@
   "faqs": [
     [
       "Will rebuilding my website make me lose Google rankings?",
-      "A rebuild can affect search visibility, especially when URLs or useful content change. Inventory the existing site, preserve relevant content, map redirects and monitor Search Console after launch. No provider can guarantee that rankings will remain unchanged."
+      "A rebuild can affect search visibility, especially when URLs or useful content change. Inventory the existing site, preserve relevant content, map redirects and monitor Search Console after launch. No provider can guarantee that rankings will remain unchanged. Ask for an inventory of valuable URLs, a redirect map and a launch check of indexing controls and canonical links. Preserve useful service information and review the live site after release. Monitor search and enquiries over time rather than using a successful deployment as proof that every previous search position is preserved."
     ],
     [
       "Can I keep my email while changing the website?",
-      "Often yes. Website hosting and email can be separate services, but DNS changes need care. Identify the existing email records and provider before moving the website so the launch does not interrupt mail."
+      "Often yes. Website hosting and email can be separate services, but DNS changes need care. Identify the existing email records and provider before moving the website so the launch does not interrupt mail. Confirm who manages the domain and record the email-related DNS settings before hosting changes. Make the website and email responsibilities explicit in the project plan. Test both after launch so a website move does not accidentally interrupt customer messages."
     ],
     [
       "Can you improve the design without rewriting every page?",
-      "Yes, when the existing content remains accurate and useful. Review the most important pages first, keep strong material and update the layout or copy where it helps the customer understand and act."
+      "Yes, when the existing content remains accurate and useful. Review the most important pages first, keep strong material and update the layout or copy where it helps the customer understand and act. Identify the pages whose content remains useful and the reusable layouts that need improvement. Update the design system and priority journeys first, then review individual pages where the offer or business has changed. Keep a clear boundary between visual refinements and new content or integration work in the quote."
+    ],
+    [
+      "What should a website assessment produce before I commit to a rebuild?",
+      "Ask for the specific problems, their effect on the customer journey and which can be repaired on the existing platform. Include valuable content, access risks and migration requirements. The recommendation should connect each proposed change to a business need and define what will be kept, replaced or deferred."
+    ],
+    [
+      "Can a redesign happen in stages?",
+      "Yes, when the current platform supports a workable transition. Start with broken enquiries, priority service pages and the shared design patterns they use. Plan navigation and redirects across the stages so visitors do not encounter conflicting information. Agree how the later work will fit before spending on a first phase that must be rebuilt again."
     ]
-  ]
+  ],
+  "primaryMoneyPage": "/web-design/"
 }

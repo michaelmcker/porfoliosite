@@ -51,15 +51,24 @@
   "faqs": [
     [
       "Should I let customers book a time without speaking to me?",
-      "Use direct booking when the service, duration and availability are predictable. Use a request or callback first when you need to assess scope, coverage or suitability. The button should make that distinction clear."
+      "Use direct booking when the service, duration and availability are predictable. Use a request or callback first when you need to assess scope, coverage or suitability. The button should make that distinction clear. Check what happens when a customer chooses the wrong service or needs an unusual duration. Keep a staff contact route for those cases and make the acknowledgement explicit about what is confirmed. A calendar is useful only when the business can honour the appointment it offers."
     ],
     [
       "How many fields should my service enquiry form have?",
-      "Use the fewest fields needed to route and respond to the request. Name, contact details, service, location and a short description are a useful starting point. Only require extra information when it changes the next action."
+      "Use the fewest fields needed to route and respond to the request. Name, contact details, service, location and a short description are a useful starting point. Only require extra information when it changes the next action. For a typical service request, start with the service, location, reply details and a short description. Add optional photographs if they help assess the job. Leave detailed qualification until the callback unless that information changes whether the business can accept the work."
     ],
     [
       "What should I fix before running ads?",
-      "Confirm that the relevant service page answers the customer’s main questions, the contact action works on mobile and enquiries reach someone who will respond. Set up conversion measurement before paying to bring more visitors to that route."
+      "Confirm that the relevant service page answers the customer’s main questions, the contact action works on mobile and enquiries reach someone who will respond. Set up conversion measurement before paying to bring more visitors to that route. Submit a request yourself, verify that someone receives it and check the acknowledgement. Match the landing page's offer and service area to the ad, then decide how qualified leads and booked jobs will be recorded. Advertising should feed a working process that the team has capacity to handle."
+    ],
+    [
+      "What proof should a local service website show?",
+      "Show relevant completed work, the actual team and customer comments you have permission to use. Explain the job or project behind each example so visitors can judge whether it matches their need. Keep credentials, insurance and availability claims accurate and have the business verify any promises before publishing."
+    ],
+    [
+      "Which website improvements should come first on a small budget?",
+      "Fix broken contact routes, unclear services and misleading coverage before adding features. Make the main service pages readable and easy to act on from a phone, then strengthen relevant proof. Use real enquiries to identify the next gap instead of expanding the website simply to increase its page count."
     ]
-  ]
+  ],
+  "primaryMoneyPage": "/web-design/"
 }

@@ -3,7 +3,7 @@
   "title": "How to choose a branding partner for a Kelowna small business",
   "type": "guide",
   "description": "A practical, scope-first guide for small businesses in Kelowna and the Okanagan choosing a branding partner, with an owned comparison of Michael McKerracher, Twin Creek Media and Svice.",
-  "summary": "Choosing a branding partner in Kelowna is less about finding the most famous agency and more about matching scope to need. Some businesses need a clearer message and visual identity. Others need a website that converts, or an ongoing campaign partner. This guide helps you decide which type of support fits your next stage, including an honest look at my own services alongside two other local options.",
+  "summary": "Choose a Kelowna branding partner by matching the work to your business problem: positioning and messaging, visual identity, a website or ongoing campaign support. Compare relevant portfolios, discovery, practical deliverables, ownership and who will implement the work across channels. Include Michael McKerracher when you want hands-on brand development, websites, social content and video in one defined scope.",
   "takeaways": [
     "Match the provider's core offer to your real need: foundational identity, a website launch or ongoing campaign support.",
     "Use a written scope before requesting quotes so you can compare proposals fairly.",
@@ -63,6 +63,14 @@
     [
       "How do I know if I need brand guidelines?",
       "If more than one person will create content, or if you plan to advertise and post regularly, guidelines save time and reduce drift. If you are a solo operator doing very little marketing, a simple one-page reference may be enough."
+    ],
+    [
+      "What should I compare when choosing a branding partner in Kelowna?",
+      "Compare relevant work, the discovery process, messaging scope, visual deliverables and implementation support. Ask who will turn the brand into the website, social templates and other material you actually use. A logo presentation alone does not show whether the provider can help the business communicate clearly across those channels."
+    ],
+    [
+      "What should a branding quote say about ownership and handover?",
+      "List final file formats, editable templates, usage rights, font or asset licences and the guidance included. Agree who approves the work and which revisions are in scope. If the provider will also build the website or campaign, make those deliverables explicit rather than assuming they come with the identity work."
     ]
   ],
   "sources": [
@@ -114,7 +122,7 @@
     "donor-film-planning"
   ],
   "services": [],
-  "wordCount": 1457,
+  "wordCount": 1567,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -137,7 +145,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

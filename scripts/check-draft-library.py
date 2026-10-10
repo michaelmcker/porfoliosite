@@ -47,7 +47,7 @@ def check(partial=False):
         if a['status']!='draft' or a.get('datePublished'):issues.append('Private draft has public status/date')
         if a['slug'] in public or a['slug'] in public_slugs:issues.append('Draft is in public article source/queue')
         if not 6<=len(a['sections'])<=10:issues.append('Incomplete section structure')
-        if len(a['faqs'])!=3 or not 3<=len(a['takeaways'])<=4:issues.append('Expected three FAQs and 3-4 useful takeaways')
+        if len(a['faqs'])!=5 or not 3<=len(a['takeaways'])<=4:issues.append('Expected five specific FAQs and 3-4 useful takeaways')
         if a['wordCount']<950:issues.append('Incomplete manuscript length')
         ids=[s['id'] for s in a['sections']]
         if len(ids)!=len(set(ids)):issues.append('Duplicate section IDs')

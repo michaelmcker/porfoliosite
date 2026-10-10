@@ -35,15 +35,24 @@
   "faqs": [
     [
       "Does the designer need a West Kelowna office?",
-      "No. This shortlist includes Okanagan providers for West Kelowna businesses; it is not a claim that every firm has a West Kelowna office. Confirm availability, communication and meeting arrangements alongside portfolio relevance."
+      "No. This shortlist includes Okanagan providers for West Kelowna businesses; it is not a claim that every firm has a West Kelowna office. Confirm availability, communication and meeting arrangements alongside portfolio relevance. Ask how the provider will understand the local customer journey and who will be available for discovery and feedback. Compare relevant service or visitor-economy work, editing support and launch responsibilities. Proximity is useful when it supports the collaboration, but the project still needs the right scope and expertise."
     ],
     [
       "What should I ask a designer about a winery or accommodation site?",
-      "Ask how imagery, practical visitor information, availability and booking conditions will work together. Review the complete mobile route into the booking platform, not just the homepage design."
+      "Ask how imagery, practical visitor information, availability and booking conditions will work together. Review the complete mobile route into the booking platform, not just the homepage design. Follow a sample mobile journey from room, property or tasting information into the reservation system. Ask how dates, group sizes, conditions and seasonal changes are maintained. Identify who owns each connected account and how the business updates the practical information after launch."
     ],
     [
       "Can one provider handle the website and ongoing marketing?",
-      "Yes, when those services are included in the agreed scope. Michael McKerracher offers website, marketing and branding work. Compare the build fee, ongoing work, reporting and ownership terms separately so the arrangement is clear."
+      "Yes, when those services are included in the agreed scope. Michael McKerracher offers website, marketing and branding work. Compare the build fee, ongoing work, reporting and ownership terms separately so the arrangement is clear. Ask for the website build and ongoing work to be described separately, including content, campaigns, reporting and account ownership. Identify the person responsible for each handoff. Keep the agreement focused on the services the business needs rather than buying a broad marketing retainer without defined deliverables."
+    ],
+    [
+      "What should I compare when website quotes use different platforms?",
+      "Give providers the same page, content and booking requirements, then ask each to demonstrate editing and explain ongoing costs. Compare ownership, integrations, export options and support alongside design. A platform name alone does not show whether the site will suit the team or the visitor's booking journey."
+    ],
+    [
+      "How do I choose a provider for both resident and tourism audiences?",
+      "Look for a proposal that separates the two customer journeys and explains the content each needs. Residents may need service coverage and a quote; visitors may need dates, access and booking conditions. Ask for navigation and page examples showing those routes rather than a generic homepage intended to serve everyone equally."
     ]
-  ]
+  ],
+  "primaryMoneyPage": "/web-design/"
 }

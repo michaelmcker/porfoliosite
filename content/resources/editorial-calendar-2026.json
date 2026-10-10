@@ -20,7 +20,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/calls-or-forms-service-website.json",
-    "wordCount": 1346,
+    "wordCount": 1472,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -40,7 +40,9 @@
     "faqs": [
       "Should my service website show an email address as well as a form?",
       "Is it better to ask for a phone number or an email address on the form?",
-      "Can I just use my social media messages instead of a website form?"
+      "Can I just use my social media messages instead of a website form?",
+      "How should a business handle calls it cannot answer while working?",
+      "When should an enquiry form become a booking calendar?"
     ],
     "internalLinks": {
       "primary": {
@@ -58,8 +60,9 @@
     },
     "aeo": {
       "summary": "Calls win for urgent work and complex jobs; forms win for evenings, detailed requests and owners who cannot always pick up. Most local service websites work best with two clear paths: a fast call option for urgent needs, and a short, well-labelled form for everything else, with a clear acknowledgement instead of a false promise of a confirmed booking.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -90,7 +93,7 @@
     "parentMoneyPage": "/marketing-branding/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/small-business-branding-deliverables.json",
-    "wordCount": 1357,
+    "wordCount": 1474,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -111,7 +114,9 @@
     "faqs": [
       "Do I need full brand guidelines if I am a one-person business?",
       "What if I already have a logo but no brand system?",
-      "How does branding affect my website and search visibility?"
+      "How does branding affect my website and search visibility?",
+      "What usable files should a branding project deliver?",
+      "Should website copy be included in a branding project?"
     ],
     "internalLinks": {
       "primary": {
@@ -128,8 +133,9 @@
     },
     "aeo": {
       "summary": "A small-business branding project should start with positioning and a message hierarchy, then agree a visual system, photo direction and practical templates for your website and social channels. You should leave with usable files, clear guidelines and ownership of the work, so your team can apply the brand consistently.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -160,7 +166,7 @@
     "parentMoneyPage": "/marketing-branding/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/donor-film-planning.json",
-    "wordCount": 1450,
+    "wordCount": 1569,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -181,7 +187,9 @@
     "faqs": [
       "How long should a donor film be?",
       "Do we need a professional production company?",
-      "Should the film live on YouTube, social media or our website?"
+      "Should the film live on YouTube, social media or our website?",
+      "What should we decide before commissioning a donor film?",
+      "How can a donor film work beyond a single fundraising event?"
     ],
     "internalLinks": {
       "primary": {
@@ -196,8 +204,9 @@
     },
     "aeo": {
       "summary": "A useful donor film starts with the decision you need someone to make, not with footage. Define the audience, campaign objective, core message, consent approach and deliverables before production. Then give the film a clear home on a campaign page, make it accessible with captions and a transcript, and measure the response honestly.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -228,7 +237,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/small-business-website-brief.json",
-    "wordCount": 1660,
+    "wordCount": 1783,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -249,7 +258,9 @@
     "faqs": [
       "Should I write the brief before asking for quotes, or can the designer help create it?",
       "How detailed should a small-business website brief be?",
-      "What if I do not know which website platform or CMS I need?"
+      "What if I do not know which website platform or CMS I need?",
+      "What should I decide before asking a designer for an estimate?",
+      "What if different people in the business want different things from the website?"
     ],
     "internalLinks": {
       "primary": {
@@ -267,8 +278,9 @@
     },
     "aeo": {
       "summary": "A useful small-business website brief names the priority customer action, ranks the services worth selling, lists real pages and assets, states integrations and editing responsibility, and sets budget and sign-off expectations. It gives a designer enough context to quote accurately instead of guessing at scope, platform and content.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -299,7 +311,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/website-subscription-vs-upfront-build.json",
-    "wordCount": 1830,
+    "wordCount": 1950,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -320,7 +332,9 @@
     "faqs": [
       "If I pay monthly, do I eventually own the website?",
       "Is an upfront website really a one-time cost?",
-      "What is the single most important contract clause to check?"
+      "What is the single most important contract clause to check?",
+      "What should I compare beyond the monthly website price?",
+      "What questions should I ask before signing a website subscription?"
     ],
     "internalLinks": {
       "primary": {
@@ -338,8 +352,9 @@
     },
     "aeo": {
       "summary": "A subscription spreads cost and often bundles hosting and support, while an upfront build can give ownership and lower long-term cost. The right answer depends on how long you will keep the site, what changes you expect, and what the contract lets you take when you leave.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -370,7 +385,7 @@
     "parentMoneyPage": "/ai-implementation/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/before-buying-ai-workflow.json",
-    "wordCount": 1452,
+    "wordCount": 1574,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -391,7 +406,9 @@
     "faqs": [
       "How do I know whether a task is worth automating with AI?",
       "What should I prepare before asking for an AI workflow quote?",
-      "Can I start with a small AI workflow and expand later?"
+      "Can I start with a small AI workflow and expand later?",
+      "What should an AI workflow proposal include?",
+      "How do I avoid paying for an impressive demo that cannot handle real work?"
     ],
     "internalLinks": {
       "primary": {
@@ -408,8 +425,9 @@
     },
     "aeo": {
       "summary": "Before you pay for an AI workflow, decide which repeatable task deserves it, what that work costs today, where the information comes from, who can approve exceptions, and who will maintain the system. The right AI workflow removes busywork, while the wrong one creates a new job that still needs your attention.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -440,7 +458,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/holiday-hours-website-checklist.json",
-    "wordCount": 1675,
+    "wordCount": 1782,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -461,7 +479,9 @@
     "faqs": [
       "When should I use \"temporarily closed\" instead of special hours?",
       "How quickly do changes to Google special hours appear in search?",
-      "Should I create a separate holiday hours page or just update my homepage?"
+      "Should I create a separate holiday hours page or just update my homepage?",
+      "Where should a service business update holiday availability?",
+      "What should an out-of-hours enquiry message say?"
     ],
     "internalLinks": {
       "primary": {
@@ -478,9 +498,10 @@
       ]
     },
     "aeo": {
-      "summary": "Holiday hours problems happen when Google, your website, your forms and your voicemail tell four different stories. This checklist walks through each touchpoint in order, with a comparison table, a sample auto-reply and a final test so nobody drives to a closed door or waits on a reply that never comes.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "summary": "Keep holiday availability consistent across Google Business Profile, website hours, booking tools, form acknowledgements and voicemail. State when someone will reply and whether appointments can actually be confirmed during the closure. Assign an update owner, test the enquiry journey and record when normal information must be restored.",
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",
@@ -511,7 +532,7 @@
     "parentMoneyPage": "/web-design/",
     "proof": "Practical recommendations and linked primary documentation; no invented client result.",
     "draftPath": "content/resources/draft-library/website-handover-checklist.json",
-    "wordCount": 1487,
+    "wordCount": 1604,
     "researchAsOf": "2026-10-08",
     "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
     "researchChecklist": [
@@ -530,7 +551,9 @@
     "faqs": [
       "What if my designer or agency disappears after handover?",
       "Should I ask for design source files like Figma?",
-      "Can I do a clean handover from Wix or Squarespace?"
+      "Can I do a clean handover from Wix or Squarespace?",
+      "What should I verify before final website sign-off?",
+      "How should a website handover prepare for changing providers later?"
     ],
     "internalLinks": {
       "primary": {
@@ -547,8 +570,9 @@
     },
     "aeo": {
       "summary": "When a new website is handed over, you should receive administrator-level ownership of your domain, hosting, CMS, and analytics accounts, plus a clear export path for content, a renewal record, a transition support window, and proof that forms and backups work. Do not give final sign-off until every asset, login, and next step is documented.",
-      "faqCount": 3,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result"
+      "faqCount": 5,
+      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
+      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
     },
     "releaseGate": [
       "current sources and links rechecked",

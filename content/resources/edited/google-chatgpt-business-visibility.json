@@ -39,15 +39,24 @@
   "faqs": [
     [
       "Can you guarantee my business will be recommended by ChatGPT?",
-      "No. Michael McKerracher can improve the website’s accessibility, content, structure and evidence, but answer systems decide what to retrieve and recommend. The practical goal is accurate discovery and useful customer enquiries."
+      "No. Michael McKerracher can improve the website’s accessibility, content, structure and evidence, but answer systems decide what to retrieve and recommend. The practical goal is accurate discovery and useful customer enquiries. Keep service facts, location, proof and contact information clear on crawlable pages, and correct conflicting public sources. Measure referral visits and qualified enquiries separately from mentions in answers. Search and answer systems decide what to show, and the same prompt can produce different responses."
     ],
     [
       "Do I need a separate AI version of my website?",
-      "A separate website is not required. Keep the main site complete, readable and crawlable. Optional Markdown and discovery files can offer additional access, while the public HTML pages remain the primary customer experience."
+      "A separate website is not required. Keep the main site complete, readable and crawlable. Optional Markdown and discovery files can offer additional access, while the public HTML pages remain the primary customer experience. Maintain a clear public website with useful headings, navigation and readable answers first. If you also publish Markdown, keep it consistent with the visible page. Do not let a parallel version carry claims or service details that visitors cannot find on the actual website."
     ],
     [
       "Should I publish a new page for every nearby town?",
-      "Only when each page can help someone with distinct, accurate information. Real coverage, local projects, arrival instructions or service differences can justify a page. Repeating the same copy with a different place name adds little value."
+      "Only when each page can help someone with distinct, accurate information. Real coverage, local projects, arrival instructions or service differences can justify a page. Repeating the same copy with a different place name adds little value. Check whether each town needs distinct coverage, appointment information or relevant proof. If the answer is the same everywhere, a clear service-area section may be more useful. Keep the genuine business base explicit and avoid pages that imply an office where none exists."
+    ],
+    [
+      "Should I repeat the exact keyword throughout the first paragraph?",
+      "Use the service and location naturally, then answer the customer's question completely. Repeating a phrase until the text becomes awkward does not add useful information. A good opening tells the reader what to do, what affects the decision and where the page's detail will help, without forcing every keyword variation into one paragraph."
+    ],
+    [
+      "What evidence should an AI-search service provide?",
+      "Ask for the pages improved, crawl and indexing checks, source corrections and a clear measurement method. Separate observed mentions from identifiable visits, enquiries and bookings. Keep records of query checks and dates, and avoid treating one favourable answer screenshot as proof of reliable recommendations or customer acquisition."
     ]
-  ]
+  ],
+  "primaryMoneyPage": "/web-design/"
 }

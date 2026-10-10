@@ -63,6 +63,14 @@
     [
       "Is it better to build separate pages for each treatment?",
       "Usually yes, especially when visitors are comparing services or searching for a specific concern. Separate pages make it easier to explain scope, candidacy, expectations and the consultation step in a way that feels specific rather than generic."
+    ],
+    [
+      "What should a medical spa treatment page explain before the consultation CTA?",
+      "Explain the service, who provides it, what the consultation assesses and where to find relevant preparation or aftercare information. Keep claims and imagery consistent with what the practice can substantiate. Have the clinical provider review suitability, risk and results wording rather than letting promotional copy imply that every visitor will have the same outcome."
+    ],
+    [
+      "How should a medical spa use before-and-after photography?",
+      "Use images the practice has permission to publish and enough context for viewers to understand what they show. Avoid presenting another person's result as a promise to a new patient. Agree image selection, consent and clinical review with the practice, and keep the consultation route focused on assessing the individual's suitability."
     ]
   ],
   "sources": [
@@ -108,7 +116,7 @@
   "services": [
     "medical-spas"
   ],
-  "wordCount": 1457,
+  "wordCount": 1582,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -133,7 +141,11 @@
     "provider": "Main editor",
     "appliedEdits": 0,
     "publicationApproved": false,
-    "note": "Echo edit response was malformed and the retry was rejected by the API. Main editor read the complete article against the privacy and accessibility sources and applied the specific corrections recorded in mainEditorEdits."
+    "note": "Echo edit response was malformed and the retry was rejected by the API. Main editor read the complete article against the privacy and accessibility sources and applied the specific corrections recorded in mainEditorEdits.",
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

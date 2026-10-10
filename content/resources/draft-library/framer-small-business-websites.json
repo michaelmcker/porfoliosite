@@ -3,7 +3,7 @@
   "title": "Framer for small-business websites: where it fits and where it gets awkward",
   "type": "guide",
   "description": "Framer is a visual website builder with a built-in CMS that suits lean teams and design-led small businesses, but its content limits, plan caps, and conflicting export guidance mean it is not the right default for everyone.",
-  "summary": "Framer gives small teams a visual way to build attractive sites with a built-in CMS for blogs, case studies, and service pages. The tradeoff is that you are relying on Framer's hosting, its CMS item limits, and its current data export rules. Before you commit, map your content and make sure you have a tested way to move it if your needs outgrow the platform.",
+  "summary": "Framer can suit a small business that needs a visually distinctive marketing website and manageable recurring content. Before choosing it, map the pages, editing tasks, integrations and ownership requirements, then check the current plan and export options against that brief. Review a real service page and mobile enquiry journey as well as the homepage design.",
   "takeaways": [
     "Framer is a strong fit when design quality and fast visual editing matter more than having every CMS feature.",
     "Its built-in CMS handles blogs, case studies, and service listings well, but has clear limits on multilingual content, field types, and item caps.",
@@ -63,6 +63,14 @@
     [
       "What should I do if I am worried about being locked into Framer?",
       "Do not rely on a single help article. Ask for a demonstrated export or exit plan that shows how your content, images, and forms would move if you outgrew the platform. Framer currently has two different official statements about data portability, so the safest approach is to verify the actual process for your specific site before you build."
+    ],
+    [
+      "What should I ask to see in a Framer website handover?",
+      "Ask the provider to demonstrate editing the content you expect to change, publishing it and correcting a mistake. Confirm project ownership, account responsibilities and the plan needed for your features. Review any external forms, booking tools and content integrations separately so you know what still depends on another service."
+    ],
+    [
+      "How do I decide whether Framer fits my website beyond the homepage?",
+      "List all page types, the amount of repeatable content and the systems the site must connect to. Prototype a typical service page and a routine editing task as well as the homepage. Check the current platform limits against that real workload before committing to a visually impressive first screen."
     ]
   ],
   "sources": [
@@ -121,7 +129,7 @@
     "framer-webflow-custom-website"
   ],
   "services": [],
-  "wordCount": 1643,
+  "wordCount": 1754,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -144,7 +152,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

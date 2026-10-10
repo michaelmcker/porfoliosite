@@ -3,7 +3,7 @@
   "title": "An accounting website that attracts the clients you want",
   "type": "guide",
   "description": "A practical guide to accountant website design for firms that want better-fit clients, clearer service pages, responsible enquiry forms and a process clients can trust.",
-  "summary": "An accounting website should attract the specific clients you want, not every possible enquiry. This guide explains how to choose between personal tax, bookkeeping and advisory positioning, build pages around real buyer questions, keep public forms limited and accessible, and show the team and process so the right people feel safe getting in touch.",
+  "summary": "An accounting website should attract the clients the practice wants by separating personal tax, bookkeeping and advisory services. Explain who each service is for, show the actual team and describe onboarding and ongoing responsibilities. Keep the first enquiry short, direct financial records into the approved client system and make it easy to arrange an appropriate conversation.",
   "takeaways": [
     "Choose your client fit before choosing a design; personal tax, bookkeeping and advisory buyers need different proof, tone and calls to action.",
     "Keep the public enquiry form short and accessible, and do not use it to collect case histories, financial documents or other sensitive information.",
@@ -68,6 +68,14 @@
     [
       "Can a small accounting firm use AI tools on its website?",
       "AI can help draft FAQs, organize service explanations or suggest questions clients commonly ask, but it should not invent credentials, deadlines, tax rules or firm-specific advice. A human still needs to choose the positioning, check the facts, approve the final wording and make sure sensitive information is handled through the right process. Used that way, AI is a drafting and planning aid, not a substitute for professional judgement."
+    ],
+    [
+      "How should an accounting firm separate tax enquiries from ongoing advisory work?",
+      "Give personal tax, bookkeeping and advisory their own service explanations and enquiry options. Ask a prospective client which service they need, their business type and when they want to start. Explain onboarding and availability before requesting financial records, then collect those records through the firm's approved client system."
+    ],
+    [
+      "What should an accounting website show beyond a list of services?",
+      "Show who does the work, the clients the practice is set up to help and what the first engagement involves. A business owner comparing accountants needs to understand recurring support, responsibilities and the route from an initial conversation to an agreed engagement. Specific process detail is more useful than broad promises about peace of mind."
     ]
   ],
   "sources": [
@@ -118,7 +126,7 @@
   "services": [
     "accountants"
   ],
-  "wordCount": 1589,
+  "wordCount": 1717,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -141,7 +149,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

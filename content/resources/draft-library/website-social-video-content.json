@@ -63,6 +63,14 @@
     [
       "How much video should a small business make before hiring help?",
       "Make enough to test the message honestly: a simple explanation, a short customer-facing answer or a basic demonstration can show whether the topic holds attention. Bring in help when story, filming, editing or accessibility requirements are beyond your available time."
+    ],
+    [
+      "How should social posts and video send people to the website?",
+      "Give each piece a specific destination matching what the viewer has just seen: a service, project, campaign or booking page. Keep the message and next step consistent across that handoff. A generic homepage link can work for broad awareness, but a detailed service story should lead to equally relevant information."
+    ],
+    [
+      "What should stay on the website instead of living only on social media?",
+      "Keep current service details, location, important practical questions and the contact route on pages the business controls. Use social media for updates, discovery and conversation. When a post answers an enduring customer question, turn the useful information into website content so future visitors do not have to search through old posts."
     ]
   ],
   "sources": [
@@ -106,7 +114,7 @@
     "donor-film-planning"
   ],
   "services": [],
-  "wordCount": 1225,
+  "wordCount": 1350,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -129,7 +137,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

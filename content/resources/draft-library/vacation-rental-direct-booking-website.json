@@ -63,6 +63,14 @@
     [
       "Who should write the photo captions and amenity notes?",
       "The owner should supply the facts, because they know the property and the guest problems that appear every season. A designer or copywriter can then turn those facts into clear, attractive page content without inflating what is being offered."
+    ],
+    [
+      "What should a direct-booking property page explain before guests select dates?",
+      "Show real photographs, sleeping arrangements, occupancy, location, access and important house rules. Make the route to current availability and the full booking price clear. Describe details such as parking and stairs accurately so guests can judge suitability before entering the booking process or asking the owner questions."
+    ],
+    [
+      "How should an owner handle enquiries when availability is managed manually?",
+      "Label the action as an availability request and explain when the owner will reply. Collect the dates, party size and contact details needed to check the stay. Keep website copy consistent with the actual confirmation and payment process so an enquiry is not mistaken for a completed reservation."
     ]
   ],
   "sources": [
@@ -108,7 +116,7 @@
   "services": [
     "vacation-rentals"
   ],
-  "wordCount": 1245,
+  "wordCount": 1362,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -131,7 +139,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

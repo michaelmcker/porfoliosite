@@ -63,6 +63,14 @@
     [
       "Can my staff edit a Sanity website without a developer?",
       "They can often edit content in Studio if it is configured well. Changes to the public site's design, layout or code are still developer work."
+    ],
+    [
+      "What should a small business ask to see before choosing a headless CMS?",
+      "Ask for a demonstration of editing a real service page, previewing changes and publishing them to the website. Confirm who maintains the front end, content models and hosting. Review backups and export arrangements as part of that setup, since an attractive editing interface alone does not explain the full operating responsibility."
+    ],
+    [
+      "When is structured content useful enough to justify a custom CMS setup?",
+      "It becomes useful when the same services, locations, people or projects need to appear consistently in several places. Map those relationships before choosing the implementation. For a small site with infrequent edits, a simpler approach may provide the control you need with less setup and ongoing development work."
     ]
   ],
   "sources": [
@@ -114,7 +122,7 @@
     "framer-webflow-custom-website"
   ],
   "services": [],
-  "wordCount": 1242,
+  "wordCount": 1366,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -137,6 +145,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 3,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

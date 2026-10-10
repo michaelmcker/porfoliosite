@@ -68,6 +68,14 @@
     [
       "How do I know which access level I actually need?",
       "List the tasks you expect to do in a normal month. If they are all text and image swaps inside defined fields, editor access is enough. If you need to rearrange page sections or change colours, you may need designer-level access, though it is often better to leave that to someone trained to do it."
+    ],
+    [
+      "What should website training cover for a small business owner?",
+      "Use the changes the owner will actually make: hours, services, staff, project examples and routine announcements. Demonstrate previewing, publishing and correcting a mistake. Provide a short reference and explain which changes need support, so the owner can maintain useful information without taking responsibility for code or integrations they do not understand."
+    ],
+    [
+      "How do I keep routine updates from damaging the design?",
+      "Give editors structured fields and reusable page patterns instead of unrestricted layout controls where possible. Define image sizes, heading use and the review process for major changes. Keep a recovery route and an identified support person so an incorrect edit can be corrected without rebuilding the page."
     ]
   ],
   "sources": [
@@ -118,7 +126,7 @@
     "website-handover-checklist"
   ],
   "services": [],
-  "wordCount": 1442,
+  "wordCount": 1560,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -141,6 +149,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

@@ -58,6 +58,14 @@
     [
       "Does my platform choice affect how Google and AI tools understand my store?",
       "It can, but the fundamentals still matter most. Clear page titles, useful product descriptions, indexable content and a sensible site structure help search engines and AI tools understand your business regardless of platform. No platform can guarantee inclusion or a top ranking."
+    ],
+    [
+      "When does a local retailer need ecommerce rather than a product catalogue?",
+      "Use ecommerce when the business can maintain stock, accept payment and fulfil the order reliably. A catalogue with clear enquiry or visit information may fit better when availability changes manually or products need discussion. Decide how the website connects to the store's actual sales process before choosing a platform around checkout features."
+    ],
+    [
+      "What should I test before connecting my shop's inventory to the website?",
+      "Check product variants, stock changes, refunds and the way online and in-store sales affect availability. Agree which system holds the definitive record and who corrects discrepancies. Test ordinary orders and exceptions through the supported setup process so staff understand the handoff before the public site accepts real purchases."
     ]
   ],
   "sources": [
@@ -112,7 +120,7 @@
   "services": [
     "retail"
   ],
-  "wordCount": 1304,
+  "wordCount": 1428,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -135,7 +143,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 5,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

@@ -63,6 +63,14 @@
     [
       "How often should a medical website be reviewed?",
       "Review it whenever services, providers, referral processes, forms or plugins change, and on a regular schedule even when nothing obvious has changed. Accessibility and privacy problems often appear after small content edits, so launch checks need to be followed by regular review."
+    ],
+    [
+      "What should a medical practice show before the appointment link?",
+      "State the services offered, who can access them, whether new patients are accepted and how appointments are arranged. Make location and accessibility information easy to find. Keep urgent-care directions consistent with the practice's approved process and let the clinical team review wording that might be mistaken for personalised medical advice."
+    ],
+    [
+      "How should the website separate general enquiries from clinical information?",
+      "Use the public website for practical questions about access, hours and appointments, then direct sensitive records and clinical communication into the practice's approved system. Explain what the public contact route is used for. Review the complete handoff with the practice rather than treating a generic form plugin as a clinical intake solution."
     ]
   ],
   "sources": [
@@ -116,7 +124,7 @@
   "services": [
     "medical-practices"
   ],
-  "wordCount": 1779,
+  "wordCount": 1901,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -139,7 +147,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

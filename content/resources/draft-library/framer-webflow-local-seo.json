@@ -63,6 +63,14 @@
     [
       "Are Framer's AI SEO features enough to skip hiring someone?",
       "AI features can audit pages and suggest metadata changes, which saves time. However, they cannot know your local market, write content that truly reflects your business, or understand which questions your customers in the Okanagan are actually asking. Use them as helpers, not as a replacement for thoughtful content work."
+    ],
+    [
+      "What should I check in a builder website's SEO handover?",
+      "Review titles, headings, canonicals, redirects, sitemap entries and indexing controls on the actual published pages. Check that service text is readable without interacting with an animation and that important pages have crawlable links. Ask for Search Console access and a record of old URLs when replacing an existing website."
+    ],
+    [
+      "Will changing from Framer to Webflow fix weak local rankings?",
+      "A platform change alone does not resolve unclear services, thin location information or weak proof. Diagnose the specific issue first and compare what can be improved on the current site. If a move is justified, preserve useful content and map URLs so the rebuild does not discard the pages already attracting relevant customers."
     ]
   ],
   "sources": [
@@ -122,7 +130,7 @@
     "framer-webflow-custom-website"
   ],
   "services": [],
-  "wordCount": 1277,
+  "wordCount": 1399,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -145,7 +153,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

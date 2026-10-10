@@ -63,6 +63,14 @@
     [
       "How much time should automation save before it is worth doing?",
       "There is no universal number, but the saving has to survive maintenance, review, training and exceptions. A task that saves only a few minutes can still be worth automating if it happens many times each week. Measure the current workflow before deciding."
+    ],
+    [
+      "How should I compare automation with hiring administrative help?",
+      "List recurring tasks, the time each takes, how often exceptions occur and what a mistake would cost. Compare the ongoing work left for staff after automation, including review and maintenance. Hiring may still be the right choice where the role depends on judgement, customer relationships or varied responsibilities rather than repeated information handling."
+    ],
+    [
+      "What work should stay with a person during the first rollout?",
+      "Keep unusual complaints, commitments about price or availability, sensitive decisions and changes to customer records under human review. Automate the preparation around those decisions: assemble the request, draft a reply or flag missing information. Give staff a clear way to pause the workflow when the business process changes."
     ]
   ],
   "sources": [
@@ -106,7 +114,7 @@
     "ai-service-business-website"
   ],
   "services": [],
-  "wordCount": 1907,
+  "wordCount": 2028,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -129,7 +137,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

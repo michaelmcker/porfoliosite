@@ -13,7 +13,10 @@ test('every scheduled private draft has a complete manuscript and matching calen
   const a=drafts.find(a=>a.slug===row.slug);assert.ok(a,row.slug);
   assert.equal(a.title,row.title);assert.equal(a.plannedPublishOn,row.publishOn);
   assert.ok(a.wordCount>=950,row.slug);assert.ok(a.sections.length>=6);
-  assert.equal(a.faqs.length,3);assert.equal(a.editorialReview.state,'pass-for-draft-review');
+  assert.equal(a.faqs.length,row.aeo.faqCount);assert.equal(a.faqs.length,5);
+  assert.deepEqual(row.faqs,a.faqs.map(([question])=>question));
+  assert.equal(a.primaryMoneyPage,row.primaryMoneyPage);
+  assert.equal(a.editorialReview.state,'pass-for-draft-review');
  }
 });
 test('private manuscripts stay outside the production loader and release queue even after their target dates',()=>{

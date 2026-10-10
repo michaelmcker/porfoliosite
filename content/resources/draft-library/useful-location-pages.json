@@ -68,6 +68,14 @@
     [
       "What is the first thing to fix on weak location pages?",
       "Replace repeated city-name copy with one clear local answer, one proof element, and one direct call to action. Then connect the page to the relevant service and any useful supporting resource."
+    ],
+    [
+      "What makes a location page useful enough to publish?",
+      "Explain the services actually available there, coverage limits, how the enquiry is handled and any practical local detail that affects the customer. Add relevant work where you have it. A page should help someone decide whether and how to hire the business, rather than simply inserting a city into repeated copy."
+    ],
+    [
+      "Should I create pages for neighbourhoods where I do not have an office?",
+      "You can explain genuine service coverage without implying a physical office. State where the business is based and how it serves the area. Create a separate page when there is enough distinct information to help customers; otherwise a clear coverage section on the relevant service page may answer the question better."
     ]
   ],
   "sources": [
@@ -119,7 +127,7 @@
     "small-business-ai-search"
   ],
   "services": [],
-  "wordCount": 1134,
+  "wordCount": 1258,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -142,7 +150,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

@@ -1,6 +1,6 @@
 {
   "slug": "vernon-business-website-guide",
-  "summary": "A Vernon business website should help people confirm your reputation, understand your services and get in touch. For North Okanagan businesses, clear coverage, appointment details and practical local information matter. Build the site around how customers move from a recommendation or search to a booked job.",
+  "summary": "A Vernon business website should make it easy to understand your services, confirm your reputation and arrange the next step. Show genuine North Okanagan coverage, useful service detail, relevant work and practical appointment or visiting information. Build a clear mobile contact journey, readable search content and an editing process the team can maintain, then follow enquiries through to booked work.",
   "takeaways": [
     "Make it easy for a referred customer to confirm they have found the right business.",
     "Be specific about your North Okanagan service boundaries and travel arrangements.",
@@ -39,15 +39,24 @@
   "faqs": [
     [
       "Is a Facebook page enough for a small Vernon business?",
-      "Facebook can help customers discover and follow a business. A website gives you a stable place for services, contact information, booking details and content you control. Keep the two connected so people can move from an update to the information they need."
+      "A Facebook page can help customers discover and follow the business, while a website provides a stable place for services, contact details and booking information you control. Give important services their own useful pages and link social updates to the relevant destination. Keep both current so someone arriving through a recommendation can understand the offer and request the right work without searching old posts."
     ],
     [
       "Should a Coldstream business describe itself as based in Vernon?",
-      "Use the actual business location. You can clearly say that you serve Vernon and the North Okanagan without changing your address or implying a different office. Website and business-profile details should remain accurate."
+      "Describe the business as based in Coldstream and serving Vernon or the North Okanagan where that is accurate. Explain any differences in travel, appointments or project arrangements that affect the customer. Keep the address consistent with the business's actual location; serving Vernon does not require claiming an office there. Use local detail to help customers judge coverage and arrange the next step."
     ],
     [
       "Can I keep my current domain when rebuilding?",
-      "Yes, provided your business controls the domain. Plan the website move, email settings and redirects before changing hosting. Keeping the domain does not automatically preserve every old page address, so include URL mapping in the rebuild."
+      "Yes, provided the business controls the domain. Before changing hosting, inventory the old pages, identify useful search traffic and enquiries, and agree redirects for URLs that will change. Record the email-related DNS settings and who manages them. Test website and email access after launch, with the domain and renewal details remaining under the business's control."
+    ],
+    [
+      "How should a North Okanagan service website explain its coverage?",
+      "List the areas genuinely served and any differences in availability, call-out arrangements or project scope that matter to a customer. Put the relevant coverage beside each service and enquiry route. Add dedicated area pages when they answer distinct local questions, rather than repeating a city list throughout the website."
+    ],
+    [
+      "What should a Vernon tourism business prioritise on mobile?",
+      "Show the experience, current availability and the practical details a visitor needs to plan. Keep arrival information, group or occupancy limits and booking conditions easy to reach. Test the external reservation step as well as the website, so visitors retain the property, experience or dates they were considering."
     ]
-  ]
+  ],
+  "primaryMoneyPage": "/web-design/"
 }

@@ -144,7 +144,9 @@ test("detail page imports only V2 styles and keeps local navigation, contact, an
   assert.match(detail, /href="\.\.\/\.\.\/assets\/Michael-McKerracher-Resume\.pdf"/);
 
   await Promise.all(localReferences(detail).map((reference) => {
-    const resolved = fileURLToPath(new URL(reference, pathToFileURL(detailPath)));
+    const resolved = reference.startsWith('/')
+      ? path.join(root,reference,reference.endsWith('/')?'index.html':'')
+      : fileURLToPath(new URL(reference,pathToFileURL(detailPath)));
     return access(resolved);
   }));
 });

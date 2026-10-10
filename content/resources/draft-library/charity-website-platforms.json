@@ -63,6 +63,14 @@
     [
       "Is a headless or custom CMS overkill for a small charity?",
       "Usually yes. A small charity with a simple site, a donate link and occasional news will get more value from WordPress or Webflow with a smaller implementation scope. A custom CMS starts to make sense when the site carries operational weight: large resource libraries, many editors with different permissions, strict review, or data that must move reliably between systems."
+    ],
+    [
+      "How should a charity choose a platform when volunteers edit the website?",
+      "Map the actual editing jobs: news, events, staff, campaign pages and donation links. Identify who can publish and who needs a review step. Ask the designer to demonstrate those jobs in the proposed CMS, including replacing an image and correcting an error, before choosing based on the public design alone."
+    ],
+    [
+      "What should a charity retain when a website provider changes?",
+      "Keep ownership records for the domain, content, donation accounts and analytics, plus an inventory of hosting and CMS access. Agree an export and transition process in the contract. Check separately which parts of the design, code and third-party integrations can move, since control of the domain does not make every platform portable."
     ]
   ],
   "sources": [
@@ -125,7 +133,7 @@
   "services": [
     "charities"
   ],
-  "wordCount": 1622,
+  "wordCount": 1746,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -148,7 +156,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

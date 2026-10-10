@@ -63,6 +63,14 @@
     [
       "Can I measure exactly how many customers came from AI Overviews?",
       "Not cleanly with one universal metric. Google says traffic from AI features such as AI Overviews and AI Mode is included in Search Console's overall Web search reporting. Measure clicks, engagement, enquiries and conversions, but avoid inventing a precise citation count that your analytics cannot support."
+    ],
+    [
+      "What should I improve first if AI tools describe my business incorrectly?",
+      "Find the public pages and profiles carrying the incorrect service, location or contact details and correct those sources. Make the current facts clear on your own website and link related service and evidence pages. Record the examples you observed and recheck over time rather than treating one answer as a complete visibility report."
+    ],
+    [
+      "How should I measure AI-search work without relying on screenshots of answers?",
+      "Track identifiable referral visits and the enquiries they produce alongside ordinary search performance. Ask qualified leads how they found the business when appropriate. Keep any repeated answer checks consistent enough to compare, but recognise that a mention, a visit and a paying customer are different outcomes."
     ]
   ],
   "sources": [
@@ -115,7 +123,7 @@
     "useful-location-pages"
   ],
   "services": [],
-  "wordCount": 1654,
+  "wordCount": 1777,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -138,6 +146,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

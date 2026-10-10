@@ -3,7 +3,7 @@
   "title": "Holiday hours: the website changes that prevent wasted calls and visits",
   "type": "checklist",
   "description": "A practical holiday hours checklist for small businesses: Google special hours, website availability, form acknowledgements, booking calendars, voicemail and a full customer journey test.",
-  "summary": "Holiday hours problems happen when Google, your website, your forms and your voicemail tell four different stories. This checklist walks through each touchpoint in order, with a comparison table, a sample auto-reply and a final test so nobody drives to a closed door or waits on a reply that never comes.",
+  "summary": "Keep holiday availability consistent across Google Business Profile, website hours, booking tools, form acknowledgements and voicemail. State when someone will reply and whether appointments can actually be confirmed during the closure. Assign an update owner, test the enquiry journey and record when normal information must be restored.",
   "takeaways": [
     "Set special hours in Google Business Profile and publish the same hours on your website. One without the other leaves customers guessing.",
     "A form auto-reply and a booking calendar need holiday logic, not just regular-season logic. Quietly accepting requests you will not act on is the most damaging failure.",
@@ -63,6 +63,14 @@
     [
       "Should I create a separate holiday hours page or just update my homepage?",
       "For most small businesses, a clearly labelled notice on the homepage and service pages is enough. A separate page can help if you have complex closures, multiple locations with different schedules, or you want to link to it from emails and social posts. The important thing is that whichever approach you choose, the information is easy to find and matches what appears on Google."
+    ],
+    [
+      "Where should a service business update holiday availability?",
+      "Check the website's contact and booking pages, Google Business Profile, appointment system and any automatic acknowledgement. Explain whether the office is closed, work is unavailable or calls are handled differently. Assign someone to restore normal information afterward so temporary holiday copy does not become the next month's misleading service promise."
+    ],
+    [
+      "What should an out-of-hours enquiry message say?",
+      "Confirm that the request was received, state when a person will review it and explain whether the requested appointment is confirmed. Use the business's actual staffing arrangements. If urgent requests require another route, make that route clear without presenting an unattended inbox as an emergency service."
     ]
   ],
   "sources": [
@@ -106,7 +114,7 @@
     "useful-location-pages"
   ],
   "services": [],
-  "wordCount": 1675,
+  "wordCount": 1782,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -129,7 +137,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

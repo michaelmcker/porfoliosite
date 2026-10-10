@@ -68,6 +68,14 @@
     [
       "Do I need a separate mobile dealer site?",
       "Usually no. In most cases the better answer is one responsive website that is designed around mobile use first. A separate mobile site adds maintenance work without solving the real problem, which is making the inventory, filters, and enquiry forms easy to use on a phone."
+    ],
+    [
+      "What should happen when a customer enquires about a particular vehicle?",
+      "Carry the vehicle reference into the enquiry so the customer does not have to type the make and model again. Ask whether they want availability, a test drive or a trade-in discussion, then route the request to a named sales owner. Keep that context when the conversation moves to phone or email."
+    ],
+    [
+      "How should a dealership handle sold vehicles on its website?",
+      "Agree how the inventory feed marks vehicles unavailable and what the website should show afterward. A visitor arriving at an old link needs a clear availability message and relevant current inventory. Avoid letting an outdated vehicle page collect enquiries as though the car were still on the lot."
     ]
   ],
   "sources": [
@@ -113,7 +121,7 @@
   "services": [
     "car-dealerships"
   ],
-  "wordCount": 1435,
+  "wordCount": 1556,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -136,6 +144,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

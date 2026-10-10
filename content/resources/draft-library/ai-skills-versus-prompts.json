@@ -63,6 +63,14 @@
     [
       "What is the difference between an AI skill and a custom AI agent?",
       "A skill is a reusable set of instructions and reference files for a defined task. An agent can use skills, but it can also take multi-step actions and make decisions across those steps. Custom agents usually need more design, deployment, training and ongoing maintenance than a single skill."
+    ],
+    [
+      "What belongs inside a useful custom AI skill?",
+      "Include the task, approved reference material, required output format, examples of acceptable work and the conditions that require human review. Record who maintains the skill and how changes are checked. A skill for writing service-page copy should carry actual service facts and brand rules rather than relying on the operator to repeat them in every conversation."
+    ],
+    [
+      "How do I know a reusable skill is better than a saved prompt?",
+      "Run both approaches against representative work, including awkward cases. Compare editing time, factual mistakes and consistency with your instructions. If a short saved prompt already handles the task reliably, keep it. A skill becomes useful when reference material, multiple steps or shared team rules make the simpler approach difficult to maintain."
     ]
   ],
   "sources": [
@@ -98,7 +106,7 @@
     "ai-service-business-website"
   ],
   "services": [],
-  "wordCount": 1411,
+  "wordCount": 1539,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -121,7 +129,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

@@ -68,6 +68,14 @@
     [
       "What is the biggest mistake businesses make when choosing a template?",
       "Choosing one that looks good in a demo but does not support their actual services, local search needs or customer journey. Always test a template against your real content before committing."
+    ],
+    [
+      "What should I check before choosing a website template?",
+      "Try it with your actual services, photography and customer journey rather than the theme's polished demo content. Check mobile layouts, navigation, editing and required integrations. Price the changes needed to make it fit; a low template price is only part of the cost of turning it into a useful business website."
+    ],
+    [
+      "Can a template website still look distinctive?",
+      "Yes, when the underlying structure fits and the design work uses specific content, considered typography and real imagery. Avoid retaining sections solely because the template includes them. If the business needs a different structure, compare a custom approach before investing heavily in adaptations that make the template harder to maintain."
     ]
   ],
   "sources": [
@@ -111,7 +119,7 @@
     "website-photography-video-animation"
   ],
   "services": [],
-  "wordCount": 1309,
+  "wordCount": 1427,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -135,7 +143,11 @@
     "date": "2026-10-08",
     "appliedEdits": 1,
     "publicationApproved": false,
-    "mainEditorResolution": "The rejected duplicate patch targeted wording already absent from the current article. Main editor also corrected custom-versus-template ownership and SEO assumptions."
+    "mainEditorResolution": "The rejected duplicate patch targeted wording already absent from the current article. Main editor also corrected custom-versus-template ownership and SEO assumptions.",
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

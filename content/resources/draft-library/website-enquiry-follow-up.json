@@ -3,7 +3,7 @@
   "title": "From website enquiry to booked work: fix the handoff",
   "type": "guide",
   "description": "A practical guide for service businesses to fix the gap between a website enquiry and a booked job, covering follow-up workflows, response capacity, privacy and where AI fits.",
-  "summary": "Website enquiries fail when follow-up depends on memory instead of a clear handoff. This guide shows service businesses how to acknowledge every enquiry, qualify leads before booking, set realistic response capacity, and use simple workflows or AI to keep opportunities moving without sounding robotic, and build trust.",
+  "summary": "Turn a website enquiry into booked work with a clear acknowledgement, a named owner, appropriate qualification and a defined booking step. Preserve the requested service and location across the handoff, set honest response expectations and stop sales reminders when the customer books or declines. Use automation to prepare and route the work, with people handling exceptions and commitments.",
   "takeaways": [
     "Treat every website enquiry as a promise to respond, not as a loose notification for whoever sees it first.",
     "Give each lead a named owner, a visible queue and a clear next step so follow-up does not depend on memory.",
@@ -68,6 +68,14 @@
     [
       "What should happen to enquiries outside business hours?",
       "Acknowledge them in a way that sets an honest expectation. If your team replies the next business day, say so. Do not create an impression of immediate service unless you can support it. The follow-up system should still capture the lead and give it a named owner."
+    ],
+    [
+      "What should happen immediately after someone sends a website enquiry?",
+      "Confirm receipt, explain the next step and route the request to an accountable person. Preserve the requested service, location and source so the customer does not need to repeat everything. If the reply is automated, make its limits clear and avoid promising an appointment that staff have not confirmed."
+    ],
+    [
+      "How can automation help follow-up without annoying customers?",
+      "Use it to acknowledge requests, remind staff and prepare relevant replies from approved information. Stop sales reminders when the person books, declines or asks not to continue. Keep exceptions with a human and review actual conversations, since a workflow that sends more messages is not necessarily improving the customer experience."
     ]
   ],
   "sources": [
@@ -102,7 +110,7 @@
     "website-wrong-enquiries"
   ],
   "services": [],
-  "wordCount": 1138,
+  "wordCount": 1266,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -125,6 +133,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 2,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

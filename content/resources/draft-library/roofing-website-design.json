@@ -63,6 +63,14 @@
     [
       "How much should a roofing website say about pricing?",
       "You do not need a price list, but you should say how pricing works. A note that explains what affects the cost of a repair or replacement, and what your estimate includes, is usually enough to make an owner comfortable reaching out."
+    ],
+    [
+      "What should a roofing project page include beyond finished photographs?",
+      "Explain the roof type, the problem, the work completed and practical constraints the customer cared about, using details you have permission to share. Link to the relevant repair or replacement service. Support warranty and qualification statements with the business's actual documentation rather than using the same broad reassurance on every project."
+    ],
+    [
+      "How should a roofing website handle urgent leak enquiries?",
+      "Make the business's real response availability and contact route clear, and separate an urgent request from a planned replacement quote. Let customers describe the property and issue without asking them to access the roof for photographs. Explain how the team assesses the request before confirming attendance or work."
     ]
   ],
   "sources": [
@@ -108,7 +116,7 @@
   "services": [
     "roofers"
   ],
-  "wordCount": 1536,
+  "wordCount": 1654,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -131,7 +139,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

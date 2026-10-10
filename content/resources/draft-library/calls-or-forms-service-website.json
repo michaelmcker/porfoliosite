@@ -58,6 +58,14 @@
     [
       "Can I just use my social media messages instead of a website form?",
       "You can, but you give up control. Social inboxes mix enquiries with noise, response expectations are vague, and the messages are hard to sort or hand to staff. A website form keeps enquiries in one place, in your own system, which matters a lot once more than one person is involved."
+    ],
+    [
+      "How should a business handle calls it cannot answer while working?",
+      "Make the alternative clear beside the phone number: leave a message or send a short request with the service and location. Set an honest expectation for a callback and give someone responsibility for checking missed calls. Track which calls become suitable jobs rather than counting every tap on the phone link as a booking."
+    ],
+    [
+      "When should an enquiry form become a booking calendar?",
+      "Use a calendar when the service has a predictable duration, the available slots are reliable and customers can choose the right appointment without assessment. Keep a request form for jobs that need diagnosis or a quote. Explain whether the customer is reserving a confirmed slot or asking the team to check availability."
     ]
   ],
   "sources": [
@@ -100,7 +108,7 @@
     "website-wrong-enquiries"
   ],
   "services": [],
-  "wordCount": 1346,
+  "wordCount": 1472,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -123,6 +131,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

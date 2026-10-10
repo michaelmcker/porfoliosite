@@ -3,7 +3,7 @@
   "title": "Do you need a new brand, a better website or clearer words?",
   "type": "guide",
   "description": "A practical guide for Okanagan and small business owners to diagnose whether they need a rebrand, a website redesign, or clearer messaging before investing in the wrong fix.",
-  "summary": "The right choice depends on the problem. A rebrand fixes a mismatch between your current identity and where the business has moved. A redesign fixes a slow, confusing, or dated website. Clearer words fix confusion about your offer. This guide helps you diagnose which one you actually need, with a comparison table and a practical intake example, so you can invest in the right fix instead of the biggest one.",
+  "summary": "Choose a rebrand when the identity no longer fits the business, a redesign when the website's layout or structure blocks customers, and better copy when people cannot understand the offer. Check the enquiry journey and ask what suitable customers are misunderstanding before committing to the largest project. Several problems can be addressed in phases, with the most immediate customer barriers fixed first.",
   "takeaways": [
     "Diagnose the actual problem before you buy a rebrand, redesign, or copywriting package.",
     "A redesign fixes user experience and technical friction; a rebrand fixes a business that has outgrown its identity; clearer copy fixes confusion about the offer.",
@@ -63,6 +63,14 @@
     [
       "How do I know whether I need a new logo or a full rebrand?",
       "A new logo is a visual refresh. A rebrand looks at positioning, audience, messaging, and identity together. If the business has changed direction or the current brand no longer reflects who you serve, a logo alone will not fix the deeper mismatch."
+    ],
+    [
+      "How do I tell whether the real problem is the brand or the website?",
+      "Ask customers to explain what the business offers after viewing the current site. Compare their understanding with the work you want to sell. If the offer is unclear, start with positioning and copy; if people understand it but cannot find information or enquire, examine the website structure and design. Several problems may need a phased response."
+    ],
+    [
+      "Can I improve the website before completing a full rebrand?",
+      "Yes. Clarify services, fix contact routes and improve essential content while the wider identity work is planned. Agree which changes can carry into the future design so you avoid doing them twice. A new logo does not have to delay repairs that help current visitors understand and contact the business."
     ]
   ],
   "sources": [
@@ -105,7 +113,7 @@
     "donor-film-planning"
   ],
   "services": [],
-  "wordCount": 1167,
+  "wordCount": 1289,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -128,6 +136,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

@@ -53,6 +53,14 @@
     [
       "Can I do a clean handover from Wix or Squarespace?",
       "You can hand over account ownership, logins, renewal details, and exported content where the platform allows it, but you usually cannot take the full site and host the same system elsewhere. If future portability matters, ask for a demonstrated export or migration plan before choosing the platform."
+    ],
+    [
+      "What should I verify before final website sign-off?",
+      "Check that you control the agreed accounts, can make routine edits and have a record of renewals and support. Follow a real enquiry through the notification process and review the backup or recovery arrangement. Confirm redirect and analytics access when replacing a site, and record unresolved items with an owner and completion date."
+    ],
+    [
+      "How should a website handover prepare for changing providers later?",
+      "Document the domain, hosting, CMS, repository and integrations, including which accounts belong to the business. Agree how content and code can be exported and how a replacement provider receives access. Keep credentials in an appropriate private system rather than putting them into a public project document."
     ]
   ],
   "sources": [
@@ -112,7 +120,7 @@
     "compare-website-quotes"
   ],
   "services": [],
-  "wordCount": 1487,
+  "wordCount": 1604,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -135,6 +143,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

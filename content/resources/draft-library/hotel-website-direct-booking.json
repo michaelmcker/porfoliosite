@@ -3,7 +3,7 @@
   "title": "A hotel website should make booking feel straightforward",
   "type": "guide",
   "description": "What a hotel website needs to earn direct bookings, from room pages and real photography to date handoff, cancellation terms, accessibility details, and keeping attribution across the booking engine.",
-  "summary": "A hotel website earns direct bookings by answering the guest's first questions fast: what the rooms actually look like, how they differ, what cancellation terms apply, and what it costs on their dates. This guide covers page architecture, booking-engine handoff, local content, accessibility, and the work needed to keep the site current.",
+  "summary": "A hotel website supports direct bookings by showing real rooms, clear differences between room types, current dates and rates, cancellation conditions and practical arrival information. Build mobile pages around that decision, then preserve the guest's room and dates through the booking-engine handoff. Assign owners for content updates and measure completed reservations separately from booking-button clicks.",
   "takeaways": [
     "Guests decide quickly. Put real room photography, concrete room differences, and date-based rates in front of them within the first moments of a visit.",
     "Direct bookings come from trust, not tricks. The property must provide honest room details, accessible booking paths, and cancellation terms the website displays consistently.",
@@ -68,6 +68,14 @@
     [
       "Should my hotel website use the same photos as the booking sites?",
       "Use your best photography everywhere, but the website should usually go further. Booking platforms tend to compress rooms into standardized listings, while your own site can show more angles, more honest views, and the specific differences between rooms. If the website only duplicates what guests already saw on a booking platform, it gives them little reason to book there."
+    ],
+    [
+      "What should a hotel website show alongside the direct-booking button?",
+      "Show room types, occupancy, the property's setting and important stay conditions, with a clear route to current dates and rates. Keep parking, accessibility and cancellation information easy to find. Follow the booking handoff on a phone to check that guests retain the room and dates they selected."
+    ],
+    [
+      "How can a hotel measure the value of its website when booking happens elsewhere?",
+      "Map the handoff to the booking provider and confirm which completed-booking data it can share. Separate clicks on the booking button from actual reservations. Review direct bookings alongside cancellations and the costs of acquiring them, so attractive traffic numbers do not replace the commercial result."
     ]
   ],
   "sources": [
@@ -121,7 +129,7 @@
   "services": [
     "hotels"
   ],
-  "wordCount": 1997,
+  "wordCount": 2116,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -144,6 +152,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

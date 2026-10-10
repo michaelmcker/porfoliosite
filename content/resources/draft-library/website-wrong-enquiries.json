@@ -63,6 +63,14 @@
     [
       "What if the wrong enquiries come from search but my service pages look fine?",
       "Then look at the titles, headings, and supporting content around those pages. Search can send people to a page for a phrase that does not match the page's real purpose. A mismatch between search intent and page content can create wrong-fit traffic even when the design is good."
+    ],
+    [
+      "How should I diagnose repeated enquiries for work I do not want?",
+      "Record the requested work and the page or campaign that brought the person in when known. Check whether old service descriptions, broad promises or unclear coverage are attracting the wrong audience. Update the relevant pages and form options, then review the quality of subsequent requests rather than aiming to reduce all enquiries."
+    ],
+    [
+      "Should I publish minimum job sizes or service exclusions?",
+      "Publish useful boundaries when the business can state them accurately and keep them current. Explain the kind of work you accept and direct customers to the appropriate next step. Avoid discouraging a suitable enquiry with unexplained jargon; clear scope and qualification questions usually help people recognise whether the service fits."
     ]
   ],
   "sources": [
@@ -98,7 +106,7 @@
     "website-enquiry-follow-up"
   ],
   "services": [],
-  "wordCount": 1338,
+  "wordCount": 1461,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -121,6 +129,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

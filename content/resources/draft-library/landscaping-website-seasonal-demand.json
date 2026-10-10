@@ -63,6 +63,14 @@
     [
       "How early should I update my website before the busy season?",
       "Earlier than feels necessary. If spring cleanup is a major service, the page should be finished, indexed, and reviewed well before the first warm weekend. The same applies to fall blowouts, snow removal, or any other seasonal spike. Building during the rush usually means settling for a weaker page and missing the easiest traffic."
+    ],
+    [
+      "How should a landscaping website handle different seasonal services?",
+      "Keep permanent pages for the services the business genuinely offers and update seasonal availability where customers will see it. Separate maintenance from larger projects when the quote process differs. Use relevant completed work and explain lead times accurately, so a spring campaign does not keep generating unsuitable requests after capacity changes."
+    ],
+    [
+      "What should a landscaping quote form ask before a site visit?",
+      "Ask for the work requested, service address, contact details and a short description of the property. Optional photographs can help the team prepare. Clarify whether the enquiry concerns recurring maintenance or a one-off project, then explain how the estimate is arranged without promising a price from incomplete information."
     ]
   ],
   "sources": [
@@ -108,7 +116,7 @@
   "services": [
     "landscapers"
   ],
-  "wordCount": 1381,
+  "wordCount": 1500,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -132,7 +140,11 @@
     "date": "2026-10-08",
     "appliedEdits": 3,
     "publicationApproved": false,
-    "mainEditorResolution": "Retained the relevant requested service link while rewriting the unsupported calendar-process claim."
+    "mainEditorResolution": "Retained the relevant requested service link while rewriting the unsupported calendar-process claim.",
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

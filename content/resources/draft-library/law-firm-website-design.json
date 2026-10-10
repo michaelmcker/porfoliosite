@@ -63,6 +63,14 @@
     [
       "If most of our clients come from referrals, do we still need to care about AI visibility?",
       "Probably not as a primary investment. AI visibility matters most for firms trying to generate new business from people who do not already know them. A referral-driven practice can focus first on credibility and clear contact paths."
+    ],
+    [
+      "What should a prospective client learn before submitting a law-firm enquiry?",
+      "Explain the relevant practice area, the lawyer or team handling it and how the initial enquiry is reviewed. State what the next step involves and which contact route to use. Have the firm approve the intake wording so the website sets appropriate expectations about confidentiality, conflicts and when a professional relationship begins."
+    ],
+    [
+      "How can a law firm publish useful FAQs without giving individual legal advice?",
+      "Answer general process questions such as what to prepare for a first conversation, whom the practice assists and how an enquiry is assessed. Avoid predicting the result of a visitor's particular matter. Have the lawyer responsible for the practice area review the wording and identify information that needs regular updates."
     ]
   ],
   "sources": [
@@ -125,7 +133,7 @@
   "services": [
     "law-firms"
   ],
-  "wordCount": 1503,
+  "wordCount": 1629,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -148,7 +156,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

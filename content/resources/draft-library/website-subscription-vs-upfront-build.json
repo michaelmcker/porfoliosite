@@ -63,6 +63,14 @@
     [
       "What is the single most important contract clause to check?",
       "What you receive if you cancel. A plan that lets you export your content, keep your domain and move hosting is a very different product from one where the site simply goes dark. Decide whether those exit terms are acceptable before choosing the payment model."
+    ],
+    [
+      "What should I compare beyond the monthly website price?",
+      "Compare setup costs, contract length, included changes, hosting, platform fees and what happens when the agreement ends. Ask which assets and accounts you retain and what a transfer involves. Model the cost over the period you expect to keep the site using the actual quotes, rather than assuming either payment structure is always cheaper."
+    ],
+    [
+      "What questions should I ask before signing a website subscription?",
+      "Ask how cancellation works, who owns the domain and content, whether the website can be transferred and how changes are prioritised. Confirm the difference between routine support and new development. Put those terms beside the deliverables so the monthly figure is tied to a service you understand."
     ]
   ],
   "sources": [
@@ -118,7 +126,7 @@
     "framer-small-business-websites"
   ],
   "services": [],
-  "wordCount": 1830,
+  "wordCount": 1950,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -141,7 +149,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 4,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorOwnershipFix": true,
   "mainEditorEdits": [

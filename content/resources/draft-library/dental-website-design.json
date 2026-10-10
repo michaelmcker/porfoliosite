@@ -68,6 +68,14 @@
     [
       "What belongs on a public new patient form?",
       "Usually a name, contact method, reason for reaching out and preferred timing. Keep the form accessible and short. Health histories, records and other sensitive details are better handled through the practice's clinical systems rather than a general website form."
+    ],
+    [
+      "How should a dental website help a new patient choose the next step?",
+      "Explain whether the practice accepts new patients, how the first appointment works and whom to contact with booking questions. Separate emergency enquiries from routine appointments and treatment consultations. Use the practice's actual availability and process, with treatment information reviewed by its clinical team before publication."
+    ],
+    [
+      "Should a dental contact form ask patients for their medical history?",
+      "Keep the public enquiry focused on contact details and the appointment requested. Direct medical history and sensitive records into the practice's approved intake system. Explain which route to use for urgent concerns and have the practice review the website's clinical wording, intake process and privacy information."
     ]
   ],
   "sources": [
@@ -113,7 +121,7 @@
   "services": [
     "dentists"
   ],
-  "wordCount": 1709,
+  "wordCount": 1824,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -136,6 +144,10 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 1,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   }
 }

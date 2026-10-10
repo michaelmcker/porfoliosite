@@ -3,7 +3,7 @@
   "title": "An accessible website is easier to use: practical checks for a small business",
   "type": "guide",
   "description": "A practical small-business guide to website accessibility based on W3C checks, covering keyboard access, contrast, alt text, forms, captions, and a first-pass worksheet.",
-  "summary": "An accessible website is easier for everyone to use, including customers with disabilities. This guide turns the W3C checklist into practical small-business checks for keyboard access, contrast, alt text, forms, captions, and motion, plus a worksheet you can run on your own site today.",
+  "summary": "A small-business website should support keyboard navigation, readable contrast and text, clear image descriptions, labelled forms, understandable errors and accessible media. Check the complete enquiry journey with these needs in mind, then include the findings in the build and editing process. Define the scope and standard of a fuller review instead of relying on an accessibility plugin or automated score alone.",
   "takeaways": [
     "Accessibility is a usability standard that helps all visitors, not only people with disabilities.",
     "Start with the W3C first checks: keyboard access, visible focus, contrast, alt text, labelled forms, captions, and reduced motion.",
@@ -68,6 +68,14 @@
     [
       "Does accessibility apply if my website is just a few pages?",
       "Yes. A five-page brochure site still has text, images, maybe a form, and maybe video. The same basic checks apply: readable text, reachable forms, described images, and captions for spoken content. A small site is not exempt from being usable."
+    ],
+    [
+      "What can a business owner check without specialist accessibility software?",
+      "Try the main journey using only a keyboard, enlarge the text and submit the enquiry form with an error. Check whether focus is visible, labels make sense and essential information is available outside images. These practical checks can reveal barriers, while a fuller review is still needed to assess requirements systematically."
+    ],
+    [
+      "How should accessibility work be included in a website quote?",
+      "Ask which standard and pages the review covers, how keyboard and form behaviour will be checked and who fixes identified issues. Include captions or transcripts where relevant to the site's media. Agree how future content editors will preserve accessible headings, links and image descriptions rather than treating accessibility as a one-time plugin installation."
     ]
   ],
   "sources": [
@@ -119,7 +127,7 @@
     "website-photography-video-animation"
   ],
   "services": [],
-  "wordCount": 1494,
+  "wordCount": 1635,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -142,7 +150,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

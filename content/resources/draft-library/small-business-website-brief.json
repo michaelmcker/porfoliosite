@@ -63,6 +63,14 @@
     [
       "What if I do not know which website platform or CMS I need?",
       "Say that in the brief. Describe how you expect to edit the site, what systems it needs to connect with and what kind of support you want. Then ask each designer to explain the platform they recommend and why."
+    ],
+    [
+      "What should I decide before asking a designer for an estimate?",
+      "Name the main customer action, the services that matter most, the pages needed and the content you can supply. List booking, payment or CRM connections and who will approve the work. Explain your budget and editing needs so the designer can recommend a scope instead of pricing an undefined idea."
+    ],
+    [
+      "What if different people in the business want different things from the website?",
+      "Choose an accountable project owner and agree how decisions will be made before design begins. Separate essential customer tasks from internal preferences, then rank requests against the business goal. Record unresolved questions in the brief so they can be priced or decided deliberately instead of appearing as late revisions."
     ]
   ],
   "sources": [
@@ -99,7 +107,7 @@
     "compare-website-quotes"
   ],
   "services": [],
-  "wordCount": 1660,
+  "wordCount": 1783,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -122,7 +130,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

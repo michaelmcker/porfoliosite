@@ -104,3 +104,7 @@ The rejected services hub, guides and sample report are archived in docs/rejecte
 
 ## Privacy information
 The public `/privacy/` page describes the current enquiry, booking, design and measurement workflow. Contact and homepage-preview forms link to it. Source: `scripts/build-privacy.mjs`; rebuilt with resources; mirrored under V2.
+
+## Resource answer and conversion policy (October 10, 2026)
+
+Informational resources provide a complete opening answer and five distinct, useful FAQs. Commercial pages retain conversion-led openings. Each article declares primaryMoneyPage; `scripts/resource-conversion.mjs` supplies the relevant service/industry label and contextual implementation invitation, with Contact and appropriate homepage-preview links. All sitemap pages have a commercial/contact route. The scheduled library and publisher preserve expanded FAQ coverage and release gating.

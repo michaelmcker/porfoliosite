@@ -2,10 +2,10 @@ Source: https://michaelmck.site/blog/kelowna-business-website-guide/
 
 # The Kelowna business website guide: 9 decisions for 2026
 
-A useful Kelowna business website should explain what you offer, show why the right customer should choose you and make the next step easy. Start with the customer, the enquiry you want and the business result. Then agree the page plan, budget, search foundations, ownership and launch measures before design begins.
+A Kelowna business website needs clear service pages, real proof, accurate local coverage and an easy way to call, book or request a quote. Plan the customer journey and content before choosing a platform; build mobile layouts, search-ready headings and links, reliable form delivery and ownership into the scope. Measure qualified enquiries and booked work after launch, then improve the pages where suitable customers drop out.
 
 By [Michael McKerracher](https://michaelmck.site/)
- · Published October 8, 2026
+ · Published October 8, 2026 · Updated October 10, 2026
 
 In this article
 
@@ -28,7 +28,7 @@ In this article
 - [Measure the work you want more of](#launch)
 
 - [Questions, answered](#questions)
-[Website design services](https://michaelmck.site/web-design/)
+[web design and development in Kelowna and the Okanagan](https://michaelmck.site/web-design/)
 [Discuss your project](https://michaelmck.site/contact/)
 [All resources](https://michaelmck.site/blog/)
 
@@ -111,24 +111,32 @@ Review the source of enquiries, the service requested and the reason unsuitable 
 
 ### Can I launch my Kelowna website before every service page is ready?
 
-Yes. Launch the pages people need to understand the business and make an enquiry, with working contact routes and accurate information. Add further service pages when the content is ready. Do not publish empty pages just to fill the navigation.
+Yes. Launch the complete pages people need to understand the business and make an enquiry, prioritising your most important services. Test the phone, form and confirmation journey on mobile before launch. Add further pages when their content is ready, with an owner assigned to the remaining work. Keep empty pages out of the navigation.
 
 ### Do I need a separate website for a second Kelowna location?
 
-Usually one website can support multiple genuine locations. Give each location its own useful details, contact route, hours and services. Separate websites make more sense when the brands or operating models are genuinely separate.
+Usually one website can support multiple genuine locations. Give each location its own accurate address, hours, services and contact route, including useful differences in staff or visiting arrangements. Separate websites may suit distinct brands or operating models, but another address does not automatically require another domain. Choose the structure your team can keep accurate and customers can navigate easily.
 
 ### Can a designer help write the website content as well?
 
-Yes. Michael McKerracher offers content planning and writing alongside website design. Agree whether interviews, service copy, project stories, FAQs and photography are part of the quote.
+Yes. Michael McKerracher offers content planning and writing alongside website design. Ask for discovery, service copy, project stories, FAQs, migration and photography to be defined in the quote. Supply service facts, actual work and recurring customer questions, and assign someone in the business to verify accuracy. Agree who gives final approval so finished pages do not stall between the designer and the team.
 
-## Put this to work for your business.
+### What should be in a Kelowna website launch checklist?
 
-I can help you turn these decisions into a website with a clear structure, useful content and an easier route to an enquiry or booking. Start with [web design and development](https://michaelmck.site/web-design/)
-, or [tell me what you want to improve](https://michaelmck.site/contact/)
- and we can work out the right scope.
+Check every important service page on a phone, test enquiry delivery and confirm account ownership. Review redirects from the old website, indexing controls, canonical URLs, sitemap and analytics access. Keep a record of the live URLs and the starting point for qualified enquiries so later work has something meaningful to compare against.
 
-[AI implementation](https://michaelmck.site/ai-implementation/)
-[Marketing & branding](https://michaelmck.site/marketing-branding/)
+### How should my website connect with my Google Business Profile?
+
+Use consistent service, location, hours and contact information, with links to the relevant website destination. Keep the profile accurate and maintain the actual business location. Review website enquiries alongside available profile performance rather than assuming every Google visit came from the map listing.
+
+## Build a website around the business.
+
+I can turn the page plan, content and customer journey into a considered website, including mobile design, search foundations and a working enquiry route. Explore [web design and development in Kelowna and the Okanagan](https://michaelmck.site/web-design/)
+, or [tell me about your project](https://michaelmck.site/contact/)
+ so we can agree the right scope.
+
+[See a free custom homepage design preview](https://michaelmck.site/free-website-preview/)
+ before deciding on a full website build.
 
 ## Sources and further reading
 

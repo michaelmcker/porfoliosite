@@ -3,7 +3,7 @@
   "title": "A physiotherapy website should help someone choose their first appointment",
   "type": "guide",
   "description": "A practical guide to physiotherapy website design: what patients need to see before booking, how to handle intake safely, and which choices suit small independent clinics versus larger practices.",
-  "summary": "A physiotherapy website wins when it helps a specific person choose a first appointment with a specific practitioner. This guide covers the five decisions patients make before booking, the intake choices that protect privacy, and the page patterns that fit independent Okanagan clinics.",
+  "summary": "A physiotherapy website should help someone choose an appropriate practitioner and first appointment. Explain services, actual practitioner experience, booking options, location and what the first visit involves. Keep public enquiries focused on routing and practical questions, direct sensitive intake into the clinic's approved system and give uncertain visitors a clear way to contact staff.",
   "takeaways": [
     "Structure the site around one job: helping a nervous, busy person choose a first appointment with the right practitioner.",
     "Show condition and service pages clearly, but keep the deepest pages about people, because patients are choosing a practitioner, not a brand.",
@@ -68,6 +68,14 @@
     [
       "How much educational content does a physio site need before it helps?",
       "Less than most clinics assume. A few well-written pages that name problems the way patients name them, and explain what a first visit involves, do more than a large library of generic health articles. Educational content should help someone choose care. The moment it starts reading like diagnosis or treatment advice for an individual, it has gone past what a marketing website should do."
+    ],
+    [
+      "How should a clinic help someone choose a physiotherapist online?",
+      "Show each practitioner's relevant services, approach and appointment route, using information the clinic can verify. Explain the first visit and practical access details. Let someone who is unsure contact the clinic for routing rather than forcing them to guess from a list of credentials or book an unsuitable appointment type."
+    ],
+    [
+      "What should happen when a visitor cannot find a suitable appointment?",
+      "Provide a clear clinic contact route or wait-list process if the practice offers one. Explain whether the booking system shows all availability and how cancellations are handled. Keep urgent-care guidance under the clinic's review and avoid letting a general website enquiry imply access to immediate clinical advice."
     ]
   ],
   "sources": [
@@ -114,7 +122,7 @@
   "services": [
     "physiotherapy"
   ],
-  "wordCount": 1777,
+  "wordCount": 1906,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -137,7 +145,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 4,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

@@ -63,6 +63,14 @@
     [
       "What should a public electrician enquiry form avoid collecting?",
       "A public form should collect the minimum needed to respond: name, contact details, general location, property type, and a short description. It should not ask for medical records, financial documents, or a long case history. Those details should move into the contractor's approved follow-up system."
+    ],
+    [
+      "Should EV charging, panel upgrades and general electrical work share one page?",
+      "Give substantial services separate pages when the customer's questions and enquiry requirements differ. An EV charging page can explain the assessment process; a panel-upgrade page can describe the information needed to quote. Use the business's actual scope and qualifications, and let the electrician review technical details and safety wording."
+    ],
+    [
+      "What should an electrical project enquiry include?",
+      "Ask for the requested work, property type, location and preferred contact method. Optional photographs can help the team prepare, but customers should not be asked to open panels or perform checks to complete a website form. Explain the assessment and quoting process before promising a price or appointment."
     ]
   ],
   "sources": [
@@ -108,7 +116,7 @@
   "services": [
     "electricians"
   ],
-  "wordCount": 1413,
+  "wordCount": 1529,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -131,7 +139,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-10: Applying answer-first resource openings, deeper topic-specific FAQs and contextual service/contact links to the published and scheduled resource library. Conversion-led service/industry/offer openings remain the sales-page pattern; future release dates remain enforced.
+
 2026-10-09: Privacy page and form links deployed and live-verified (ec60cb2). Responsive checks pass at 320/390/1440. No new advertising or tracking platform.
 
 2026-10-09: Acquisition measurement deployed and live-verified: local traffic excluded and campaign context retained across pages. No ad campaign launched.

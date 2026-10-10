@@ -63,6 +63,14 @@
     [
       "What is the safest way to handle online rental applications on a public website?",
       "Collect only the minimum information needed for the first step, explain why it is being collected, and send applicants into your approved application system rather than asking for sensitive details in a general contact form."
+    ],
+    [
+      "How should a property manager separate owner leads from tenant support?",
+      "Give owners a route to management scope, coverage, onboarding and an enquiry. Give tenants direct access to listings, maintenance and the existing portal. Keep these journeys clearly labelled in navigation, and explain urgent maintenance arrangements using the company's actual process so routine website forms do not become an accidental emergency channel."
+    ],
+    [
+      "What should an owner enquiry ask before a management proposal?",
+      "Ask about the property type, location, current situation and the owner's preferred contact method. Explain the next assessment step and what documents will be requested later. Keep tenant records and sensitive application material out of the public sales form and collect them through the company's approved management process."
     ]
   ],
   "sources": [
@@ -108,7 +116,7 @@
   "services": [
     "property-management"
   ],
-  "wordCount": 1385,
+  "wordCount": 1505,
   "generation": {
     "provider": "Echo by Fulcrum",
     "model": "echo",
@@ -131,7 +139,11 @@
     "state": "pass-for-draft-review",
     "date": "2026-10-08",
     "appliedEdits": 0,
-    "publicationApproved": false
+    "publicationApproved": false,
+    "answerFirstPolicy": {
+      "reviewedOn": "2026-10-10",
+      "note": "Direct-answer opening and five topic-specific buyer FAQs reviewed; time-sensitive source refresh remains required before scheduled release."
+    }
   },
   "mainEditorEdits": [
     {

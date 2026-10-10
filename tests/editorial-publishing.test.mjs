@@ -27,7 +27,7 @@ test('2027 calendar covers every week with an individual decision and money-page
  assert.equal(calendar[0].publishOn,'2027-01-07');assert.equal(calendar.at(-1).publishOn,'2027-12-30');
  assert.equal(new Set(calendar.map(x=>x.buyerDecision)).size,52);
  for(const row of calendar){
-  assert(['planned','draft','drafted','approved','published'].includes(row.status));assert.equal(row.aeo.faqCount,3);
+  assert(['planned','draft','drafted','approved','published'].includes(row.status));assert.equal(row.aeo.faqCount,5);
   await access(new URL('../'+row.primaryMoneyPage.slice(1)+'index.html',import.meta.url));
   assert(row.researchChecklist.some(x=>/independently|topic-specific/.test(x)));
  }
