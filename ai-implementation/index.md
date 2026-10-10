@@ -7,7 +7,7 @@ I build AI skills, workflows and custom agents that work with the tools you alre
 [Book a free consultation](https://michaelmck.site/contact/)
 [See what I can help with](#what-i-build)
 
-Illustrative weekly appointment calendar on a laptop
+A weekly appointment calendar on a laptop
 
 Vineyards overlooking Okanagan Lake at Winfield, Lake Country
 

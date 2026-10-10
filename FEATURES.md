@@ -1,7 +1,10 @@
 # Sticky shared navigation, October 10, 2026
 
 - Shared homepage, service and resource navigation stays at the top during normal document scrolling. In-page links have clearance below the header.
-- Hero framing review remains local pending owner approval; the original artwork and live crop are preserved.
+- Approved desktop/tablet hero crop; mobile retains full source width with height trimmed. Original artwork is preserved.
+- Three service pages use unified split heroes and matching editorial grids; marketing shows website, video and brand work.
+- Contact embeds the existing Cal.com 30-minute event, with email and form alternatives.
+- Resources release Monday/Wednesday/Friday at 09:00 Vancouver; existing queue fills 69 slots through March 19, 2027.
 
 # Free homepage preview funnel, October 9, 2026
 

@@ -1,6 +1,6 @@
 # Resource publishing runbook
 
-Michael authorized a four-week release of the existing articles and a full 2027 weekly resource calendar, with Echo editing, AEO structure, relevant self-inclusion and internal links to commercial pages. This is a publishing authorization for this owned site, not authorization for outreach or third-party directory edits.
+Michael authorized three resource releases every week on Monday, Wednesday and Friday, beginning October 12, 2026, using the existing queue and full prewritten library, with Echo editing, AEO structure, relevant self-inclusion and internal links to commercial pages. This is a publishing authorization for this owned site, not authorization for outreach or third-party directory edits.
 
 ## Working copy and source
 
@@ -9,7 +9,7 @@ Michael authorized a four-week release of the existing articles and a full 2027 
 - Read the repository AGENTS.md, SESSION_LOG.md and current release notes. Public source is V2; builds generate production output.
 - Existing queue: `content/resources/publishing.json`. Original dates are October 8, 2026 because those twelve pages were already briefly live. Never backdate or replace that original date with a fictional first publication.
 - Private complete library: content/resources/draft-library/, with research/review evidence under docs/draft-library-2026-10-08/. A durable local copy is at /Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-08-complete-draft-library/ (json and markdown folders). Source/research/calendar backup is in the sibling 2026-10-08-draft-library-evidence directory. If the temporary checkout disappears, restore these draft and calendar source files into the clean working copy before preparing a release. Never publish the reader, raw source scrapes or draft directory.
-- New planned work: `content/resources/editorial-calendar-2026.json` and `editorial-calendar-2027.json`. The latter is the canonical editable calendar; its HTML/CSV is only a view.
+- Three-per-week continuation: `content/resources/editorial-calendar-2026.json` and `editorial-calendar-2027.json`. Together these are the canonical editable calendars; its HTML/CSV is only a view.
 - Timezone: America/Vancouver. Target release time is 09:00 local. Check the actual local date, not the server timezone. On weekends or dates with nothing due, no release is needed.
 
 ## Each run
@@ -39,3 +39,9 @@ The owned contact page is `/contact/`, with direct email and FormSubmit delivery
 Resource pages answer their principal question completely in the first paragraph. Commercial service, industry, offer, contact and portfolio proof pages keep conversion-led openings. Five FAQs answer distinct buying or implementation questions with practical detail, conditions and next steps; preserve their full meaning through Echo. Every resource has a primaryMoneyPage and a contextual implementation link plus Contact. Use the existing draftPath manuscript and its expanded FAQs. Never reduce the library back to three answers. Publishing dates and fact-refresh gates still apply.
 
 The October 10 expanded draft/FAQ/calendar backup is `/Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-10-resource-policy/`; prefer it over the original October 8 manuscripts if recovering this change after a checkout loss. The original research/source backups remain unchanged.
+
+## Cadence update — October 10, 2026
+
+Publish three articles per week, Monday/Wednesday/Friday at 09:00 America/Vancouver. Follow the revised publishOn dates in publishing.json and both yearly calendars; the nine queued articles come first, followed by the 60 complete manuscripts in existing order. This fills 69 release slots from October 12, 2026 through March 19, 2027. Keep the three live guides and their original publication dates. Do not release future slots early. Prepare the next needed manuscripts before this stock runs out so the three-per-week cadence can continue; do not silently return to weekly. Year-labelled forward-looking titles must be checked against the new release date. All fact, link, editorial and responsive gates remain in place.
+
+Latest cadence recovery backup: `/Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-10-three-per-week/`. Prefer its calendars, publishing.json and full manuscripts over older schedule backups.

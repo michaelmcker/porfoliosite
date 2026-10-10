@@ -21,11 +21,17 @@ test('scheduled articles stay private until their Vancouver release date',async(
  assert(!ready({slug:'unreviewed'},'2028-01-01'));
 });
 
-test('2027 calendar covers every week with an individual decision and money-page link',async()=>{
- const calendar=JSON.parse(await read('content/resources/editorial-calendar-2027.json'));
- assert.equal(calendar.length,52);assert.equal(new Set(calendar.map(x=>x.publishOn)).size,52);
- assert.equal(calendar[0].publishOn,'2027-01-07');assert.equal(calendar.at(-1).publishOn,'2027-12-30');
- assert.equal(new Set(calendar.map(x=>x.buyerDecision)).size,52);
+test('ongoing calendar has three distinct weekly slots and preserves all sixty manuscripts',async()=>{
+ const calendar=(await Promise.all([2026,2027].map(async year=>JSON.parse(await read(`content/resources/editorial-calendar-${year}.json`))))).flat();
+ assert.equal(calendar.length,60);
+ const slots=[...Object.values(publishing.articles).filter(a=>a.publishOn>'2026-10-10'),...calendar].sort((a,b)=>a.publishOn.localeCompare(b.publishOn));
+ assert.equal(slots.length,69);assert.equal(new Set(slots.map(x=>x.publishOn)).size,69);
+ let day=new Date('2026-10-12T12:00:00Z');
+ for(const row of slots){
+  while(![1,3,5].includes(day.getUTCDay()))day.setUTCDate(day.getUTCDate()+1);
+  assert.equal(row.publishOn,day.toISOString().slice(0,10));day.setUTCDate(day.getUTCDate()+1);
+ }
+ assert.equal(new Set(calendar.map(x=>x.buyerDecision)).size,60);
  for(const row of calendar){
   assert(['planned','draft','drafted','approved','published'].includes(row.status));assert.equal(row.aeo.faqCount,5);
   await access(new URL('../'+row.primaryMoneyPage.slice(1)+'index.html',import.meta.url));
@@ -36,6 +42,8 @@ test('2027 calendar covers every week with an individual decision and money-page
 test('contact form has direct email, accessible inputs and accurate failure handling',async()=>{
  const html=await read('contact/index.html'),js=await read('v2/contact/contact.js');
  assert(html.includes('mailto:michael.mckerracher@gmail.com'));
+ assert(html.includes('<iframe src="https://cal.com/michael-mckerracher-dqi15w/30min?embed=true'));
+ assert(html.includes('title="Book a free 30-minute call with Michael"'));
  for(const id of ['contact-name','contact-email','contact-message'])assert(html.includes(`for="${id}"`)&&html.includes(`id="${id}"`));
  assert(html.includes('name="_honey"'));assert(!html.includes('name="_autoresponse"'));
  assert(html.includes('role="status"'));assert(html.includes('action="https://formsubmit.co/michael.mckerracher@gmail.com"'));

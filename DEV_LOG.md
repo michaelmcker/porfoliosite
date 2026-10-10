@@ -305,3 +305,13 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Tightened six repeated FAQ answers, retained five FAQs, added current scoped offer to owned comparison, and connected checklist proof to its existing live case.
 - Fixed three queued duplicate content/FAQ IDs and added all-resource unique-ID regression. Six responsive browser checks pass; baseline/final suite 165 passes with unchanged missing-Chrome failure.
 - Saved private source/manuscript/link/Echo/browser evidence in Business Research and compact preparation evidence in docs/editorial-prep-2026-10-10. Updated runbook shape and heartbeat from three to five FAQs.
+
+### 2026-10-10 — Service layout corrections in progress
+- Owner approved desktop/tablet hero framing; applied it to canonical CSS. Mobile preserves the full source width and trims height only. Original films remain intact.
+- Consolidated service headings, introductions and CTAs into one split hero; shared equal columns and gaps with the following editorial rows. Mobile landscape image precedes More time text.
+- Marketing proof now includes AI Catalyst website, brand film, Upon This Rock identity, St. James donor film and original Vertical Impression scrolling GIF.
+- Contact now embeds the existing 30-minute Cal.com event; form delivery unchanged.
+
+- Rescheduled all 69 future articles to Monday/Wednesday/Friday, October 12–March 19. Updated canonical draft dates, calendar views, private reader, durable backups and existing publishing automation. Original publication dates retained; no future article released.
+- Responsive browser checks: service heroes at 320/390/820/1440, no overflow or broken images; consistent split desktop and stacked mobile ordering. Cal.com loads real availability inside Contact on desktop/mobile.
+- Full suite: 165 pass, unchanged missing-Chrome browser failure. Three prescribed standalone browser scripts have the same missing-Chrome prerequisite; connected-browser checks used for this release. All 60 manuscripts pass the full draft-library gate.

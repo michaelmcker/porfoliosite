@@ -9,7 +9,7 @@ The initial conversation is free. You don’t need a finished brief.
 [michael.mckerracher@gmail.com](mailto:michael.mckerracher@gmail.com)
 Based in Coldstream. Working with businesses across Kelowna, Vernon, West Kelowna and the Okanagan.
 
-[Book a free 30-minute call](https://cal.com/michael-mckerracher-dqi15w/30min)
+[Book a free 30-minute call](#book-a-call)
 
 Thinking about a website? [Get a free homepage design.](https://michaelmck.site/free-website-preview/)
 
@@ -27,3 +27,9 @@ Your nameEmailWhat are you thinking about?  (optional) Not sure yetWeb designAI 
 Send your message
 
 You can also email me directly.
+
+## Prefer to talk it through?
+
+Choose a time for a free 30-minute conversation about your business.
+
+[Open the calendar in a new tab](https://cal.com/michael-mckerracher-dqi15w/30min)

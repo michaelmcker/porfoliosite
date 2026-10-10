@@ -1,1317 +1,8 @@
 [
   {
-    "id": "draft-09",
-    "slug": "plumber-website-design",
-    "publishOn": "2027-01-07",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "What works on a plumber website? A 2027 plan for better enquiries",
-    "format": "guide",
-    "city": "Kelowna",
-    "pillar": "Industry websites",
-    "primaryQuery": "plumber website design best practices Kelowna",
-    "queryVariants": [
-      "plumber website design best practices Kelowna",
-      "Do I need separate websites for emergency and renovation work?",
-      "Should I list every town in the Okanagan to show up in more searches?"
-    ],
-    "buyerDecision": "Most plumber website advice is either an agency sales pitch or a generic SEO checklist. This guide is built around the actual buying decision, emergency versus planned work, and gives owners a concrete page architecture, an intake field sample, and a worksheet for deciding what to fix first.",
-    "primaryMoneyPage": "/web-design/plumbers/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/plumber-website-design.json",
-    "wordCount": 1747,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "The job the website actually has to do",
-      "Split emergency work from planned work before you pick fonts",
-      "Only claim the towns you will actually drive to",
-      "Give drains and water heaters their own pages for different reasons",
-      "A sample service page that respects a busy visitor",
-      "Give the dispatcher what they need on the first try",
-      "Use photography and reviews as evidence, not decoration",
-      "A 2027 plan you can start before the next ad campaign"
-    ],
-    "faqs": [
-      "Do I need separate websites for emergency and renovation work?",
-      "Should I list every town in the Okanagan to show up in more searches?",
-      "How many pages does a plumber website need before it starts working?",
-      "How should a plumber website separate emergency calls from planned work?",
-      "What information helps turn a plumbing enquiry into a suitable booking?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/plumbers/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": []
-    },
-    "aeo": {
-      "summary": "A plumber website needs separate paths for urgent repairs and planned work, accurate hours and service coverage, useful pages for specific plumbing services and a clear call or quote route. Show real jobs and explain what happens after an enquiry. Collect the details the dispatcher needs to assess the request, while keeping appointment and attendance promises consistent with the team's actual capacity.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-10",
-    "slug": "framer-webflow-custom-website",
-    "publishOn": "2027-01-14",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "Framer vs Webflow vs a custom website: what should a small business choose?",
-    "format": "comparison",
-    "city": "Okanagan",
-    "pillar": "Platforms",
-    "primaryQuery": "Framer vs Webflow vs custom website small business",
-    "queryVariants": [
-      "Framer vs Webflow vs custom website small business",
-      "Which is easier for a non-designer owner to edit: Framer or Webflow?",
-      "Can I switch from Framer or Webflow to a custom website later?"
-    ],
-    "buyerDecision": "This article compares the three paths as owner decisions: who edits the site, how content is structured, what happens if you leave, and which platform fits a small local service business without pretending there is one universal winner.",
-    "primaryMoneyPage": "/web-design/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/framer-webflow-custom-website.json",
-    "wordCount": 1776,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "Choose the workflow, not the logo",
-      "When Framer is the right fit",
-      "When Webflow is the right fit",
-      "When a custom website makes sense",
-      "A practical comparison",
-      "A worked example for a local service business",
-      "What to test before you choose",
-      "How to decide this week"
-    ],
-    "faqs": [
-      "Which is easier for a non-designer owner to edit: Framer or Webflow?",
-      "Can I switch from Framer or Webflow to a custom website later?",
-      "Is a custom website better for SEO than Framer or Webflow?",
-      "What is the fairest way to compare Framer, Webflow and a custom build?",
-      "When is a custom build worth the extra responsibility?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": []
-    },
-    "aeo": {
-      "summary": "For most small businesses, the right choice depends on who edits the site and how content is structured. Framer suits design-led teams making visual pages quickly. Webflow is worth considering for a team that likes working with classes, reusable components and CMS templates. A custom setup can offer more control over hosting and implementation when its contract and dependencies support that control. Compare editing, content structure, recurring cost, and portability before choosing.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-11",
-    "slug": "electrician-website-design",
-    "publishOn": "2027-01-21",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "What works on an electrician website beyond a list of services?",
-    "format": "guide",
-    "city": "Vernon",
-    "pillar": "Industry websites",
-    "primaryQuery": "electrician website design best practices Okanagan",
-    "queryVariants": [
-      "electrician website design best practices Okanagan",
-      "Can an electrician website show before-and-after project photos?",
-      "Should an electrician make separate pages for Kelowna, Vernon, and West Kelowna?"
-    ],
-    "buyerDecision": "Separates emergency and planned electrical buyer journeys, then gives Okanagan owners concrete intake fields, page architecture, local proof choices, and hiring questions instead of generic web-design advice.",
-    "primaryMoneyPage": "/web-design/electricians/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/electrician-website-design.json",
-    "wordCount": 1529,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "The short answer",
-      "Design for two very different jobs",
-      "Make trust visible before the phone rings",
-      "Be specific about where and what",
-      "A practical intake pattern",
-      "Content that answers real owner questions",
-      "The design choices that actually help conversion",
-      "What to ask for when hiring help"
-    ],
-    "faqs": [
-      "Can an electrician website show before-and-after project photos?",
-      "Should an electrician make separate pages for Kelowna, Vernon, and West Kelowna?",
-      "What should a public electrician enquiry form avoid collecting?",
-      "Should EV charging, panel upgrades and general electrical work share one page?",
-      "What should an electrical project enquiry include?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/electricians/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": [
-        "/blog/kelowna-business-website-guide/",
-        "/blog/okanagan-website-cost/"
-      ]
-    },
-    "aeo": {
-      "summary": "An electrician website that works does more than list services. It separates emergency and planned work, shows verified credentials and real local projects, and makes the next step obvious on a phone. The best pages answer specific owner questions instead of repeating trade jargon. For Okanagan contractors, the strongest sites also make service area, booking route, and proof of workmanship easy to check before a call.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-12",
-    "slug": "accountant-website-design",
-    "publishOn": "2027-01-28",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "An accounting website that attracts the clients you want",
-    "format": "guide",
-    "city": "Okanagan",
-    "pillar": "Industry websites",
-    "primaryQuery": "accountant website design attracting business clients",
-    "queryVariants": [
-      "accountant website design attracting business clients",
-      "Should an accounting website publish prices?",
-      "How often should an accountant update website content?"
-    ],
-    "buyerDecision": "Most search results for accountant website design sell template packages, SEO add-ons or generic benefits. This draft instead starts with client-fit decisions, separates personal tax, bookkeeping and advisory needs, gives a concrete page architecture, and treats sensitive-information handoff as a design requirement rather than a disclaimer.",
-    "primaryMoneyPage": "/web-design/accountants/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/accountant-website-design.json",
-    "wordCount": 1717,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "Choose the client fit before you design",
-      "Position the practice without empty branding",
-      "Build pages around buyer questions",
-      "Handle sensitive information carefully",
-      "Design an enquiry form that qualifies people",
-      "Show the team and the engagement process",
-      "Help local buyers find and choose you",
-      "Budget for decisions, not just a design",
-      "Measure what the site is for"
-    ],
-    "faqs": [
-      "Should an accounting website publish prices?",
-      "How often should an accountant update website content?",
-      "Can a small accounting firm use AI tools on its website?",
-      "How should an accounting firm separate tax enquiries from ongoing advisory work?",
-      "What should an accounting website show beyond a list of services?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/accountants/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": [
-        "/blog/kelowna-business-website-guide/",
-        "/blog/okanagan-website-cost/"
-      ]
-    },
-    "aeo": {
-      "summary": "An accounting website should attract the clients the practice wants by separating personal tax, bookkeeping and advisory services. Explain who each service is for, show the actual team and describe onboarding and ongoing responsibilities. Keep the first enquiry short, direct financial records into the approved client system and make it easy to arrange an appropriate conversation.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-13",
-    "slug": "kelowna-branding-partners",
-    "publishOn": "2027-02-04",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "How to choose a branding partner for a Kelowna small business",
-    "format": "guide",
-    "city": "Kelowna",
-    "pillar": "Brand and content",
-    "primaryQuery": "branding services small business Kelowna",
-    "queryVariants": [
-      "branding services small business Kelowna",
-      "Should I choose a local Kelowna branding partner, or is remote fine?",
-      "What is the difference between a branding project and a marketing campaign?"
-    ],
-    "buyerDecision": "An owned, scope-first comparison for Kelowna and Okanagan small businesses that separates identity work, website launch work and ongoing campaign support, and includes Michael's own services transparently alongside two other local providers.",
-    "primaryMoneyPage": "/marketing-branding/",
-    "parentMoneyPage": "/marketing-branding/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/kelowna-branding-partners.json",
-    "wordCount": 1567,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "Start with the work you need, not the agency you want",
-      "A scope worksheet before you ask for quotes",
-      "Three local options for different kinds of project",
-      "Which choice suits which situation",
-      "Questions to ask before you decide",
-      "Local search and the branding decision",
-      "How to judge the work without design awards",
-      "The next step"
-    ],
-    "faqs": [
-      "Should I choose a local Kelowna branding partner, or is remote fine?",
-      "What is the difference between a branding project and a marketing campaign?",
-      "How do I know if I need brand guidelines?",
-      "What should I compare when choosing a branding partner in Kelowna?",
-      "What should a branding quote say about ownership and handover?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/marketing-branding/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": [
-        "/blog/okanagan-website-cost/"
-      ]
-    },
-    "aeo": {
-      "summary": "Choose a Kelowna branding partner by matching the work to your business problem: positioning and messaging, visual identity, a website or ongoing campaign support. Compare relevant portfolios, discovery, practical deliverables, ownership and who will implement the work across channels. Include Michael McKerracher when you want hands-on brand development, websites, social content and video in one defined scope.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-14",
-    "slug": "law-firm-website-design",
-    "publishOn": "2027-02-11",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "What works for law-firm websites in 2027?",
-    "format": "guide",
-    "city": "Okanagan",
-    "pillar": "Industry websites",
-    "primaryQuery": "law firm website design best practices British Columbia",
-    "queryVariants": [
-      "law firm website design best practices British Columbia",
-      "Should every lawyer profile include a full curriculum vitae?",
-      "Can British Columbia lawyers use client testimonials on their websites?"
-    ],
-    "buyerDecision": "A British Columbia-specific guide that balances Law Society marketing ethics with practical website architecture, rather than offering generic design advice.",
-    "primaryMoneyPage": "/web-design/law-firms/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/law-firm-website-design.json",
-    "wordCount": 1629,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "What a law-firm website needs to do in 2027",
-      "British Columbia's marketing rule sets the floor",
-      "The content that carries the weight",
-      "Safe intake design and privacy basics",
-      "Credibility sites versus growth sites",
-      "An initial enquiry form the practice can review",
-      "What Google and AI search need from the website",
-      "How to move forward"
-    ],
-    "faqs": [
-      "Should every lawyer profile include a full curriculum vitae?",
-      "Can British Columbia lawyers use client testimonials on their websites?",
-      "If most of our clients come from referrals, do we still need to care about AI visibility?",
-      "What should a prospective client learn before submitting a law-firm enquiry?",
-      "How can a law firm publish useful FAQs without giving individual legal advice?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/law-firms/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": []
-    },
-    "aeo": {
-      "summary": "A law-firm website should help a prospective client recognise the right practice area, understand the lawyer’s experience and make an appropriate first enquiry. For an Okanagan firm planning its 2027 site, the useful priorities are clear service pages, verifiable professional information, accessible contact paths and an intake process reviewed by the practice.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-15",
-    "slug": "hotel-website-direct-booking",
-    "publishOn": "2027-02-18",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "A hotel website should make booking feel straightforward",
-    "format": "guide",
-    "city": "Okanagan",
-    "pillar": "Industry websites",
-    "primaryQuery": "hotel website design direct bookings best practices",
-    "queryVariants": [
-      "hotel website design direct bookings best practices",
-      "How often should a hotel redesign its website?",
-      "Does my hotel website still matter if I have a Google Business Profile?"
-    ],
-    "buyerDecision": "Most hotel website advice is generic conversion checklist material or vendor content from booking platforms. This article is written from the property owner's side of the decision: what the site must carry because third-party channels cannot, what to ask a booking provider for, a concrete page architecture, and an Okanagan-relevant view of local trip-planning content without inventing demand figures.",
-    "primaryMoneyPage": "/web-design/hotels/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/hotel-website-direct-booking.json",
-    "wordCount": 2116,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "What a guest needs in the first thirty seconds",
-      "Sell the rooms, not the room types",
-      "The direct booking tradeoff",
-      "A page architecture that works",
-      "The handoff to the booking engine",
-      "Content that helps a guest plan the trip",
-      "Accessibility and cancellation details",
-      "Keeping the site current",
-      "Where to start"
-    ],
-    "faqs": [
-      "How often should a hotel redesign its website?",
-      "Does my hotel website still matter if I have a Google Business Profile?",
-      "Should my hotel website use the same photos as the booking sites?",
-      "What should a hotel website show alongside the direct-booking button?",
-      "How can a hotel measure the value of its website when booking happens elsewhere?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/hotels/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": [
-        "/blog/okanagan-website-cost/"
-      ]
-    },
-    "aeo": {
-      "summary": "A hotel website supports direct bookings by showing real rooms, clear differences between room types, current dates and rates, cancellation conditions and practical arrival information. Build mobile pages around that decision, then preserve the guest's room and dates through the booking-engine handoff. Assign owners for content updates and measure completed reservations separately from booking-button clicks.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-16",
-    "slug": "landscaping-website-seasonal-demand",
-    "publishOn": "2027-02-25",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "Prepare your landscaping website before the busy season",
-    "format": "guide",
-    "city": "Okanagan",
-    "pillar": "Industry websites",
-    "primaryQuery": "landscaping website design seasonal services lead generation",
-    "queryVariants": [
-      "landscaping website design seasonal services lead generation",
-      "Should my landscaping website separate maintenance contracts from one time projects?",
-      "What should a landscaping quote request form ask for?"
-    ],
-    "buyerDecision": "This article separates the two real buyer paths for a landscaping company, contract work and project work, then ties page architecture, intake, and proof to an actual seasonal calendar instead of offering generic lead generation advice.",
-    "primaryMoneyPage": "/web-design/landscapers/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Cool Runnings",
-    "draftPath": "content/resources/draft-library/landscaping-website-seasonal-demand.json",
-    "wordCount": 1500,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "The seasonal squeeze",
-      "Choose what you are actually selling",
-      "Map the calendar before you map the pages",
-      "The intake form that qualifies without interrogating",
-      "Before and after proof, and the gap between browsing and booking",
-      "Local search and the work that fills the calendar",
-      "A sample page architecture you can adapt",
-      "What to do next, depending on what you can maintain"
-    ],
-    "faqs": [
-      "Should my landscaping website separate maintenance contracts from one time projects?",
-      "What should a landscaping quote request form ask for?",
-      "How early should I update my website before the busy season?",
-      "How should a landscaping website handle different seasonal services?",
-      "What should a landscaping quote form ask before a site visit?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/landscapers/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": []
-    },
-    "aeo": {
-      "summary": "A landscaping website that is ready for the busy season does two jobs at once. It gives maintenance clients a fast path to a contract, and it gives project clients a convincing reason to request a quote. Build around your actual calendar, keep intake short, and make the next step obvious.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-17",
-    "slug": "framer-small-business-websites",
-    "publishOn": "2027-03-04",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "Framer for small-business websites: where it fits and where it gets awkward",
-    "format": "guide",
-    "city": "West Kelowna",
-    "pillar": "Platforms",
-    "primaryQuery": "Framer small business website CMS limitations",
-    "queryVariants": [
-      "Framer small business website CMS limitations",
-      "Can I use Framer for a business blog?",
-      "Is Framer good for SEO and AI search?"
-    ],
-    "buyerDecision": "A plain-language guide that helps small-business owners weigh Framer's visual CMS against its actual limits, with a concrete service-business example and a practical exit-plan checklist.",
-    "primaryMoneyPage": "/web-design/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/framer-small-business-websites.json",
-    "wordCount": 1754,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "Where Framer actually fits for a small business",
-      "What the built-in CMS does well",
-      "The CMS questions to test with your actual content",
-      "Ownership and export: read both conflicting help pages",
-      "A worked example of CMS structure",
-      "When to choose Framer, and when to choose something else",
-      "Questions to ask before you build on Framer",
-      "What to do next if Framer seems like a fit"
-    ],
-    "faqs": [
-      "Can I use Framer for a business blog?",
-      "Is Framer good for SEO and AI search?",
-      "What should I do if I am worried about being locked into Framer?",
-      "What should I ask to see in a Framer website handover?",
-      "How do I decide whether Framer fits my website beyond the homepage?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": [
-        "/blog/framer-webflow-custom-website/",
-        "/blog/okanagan-website-cost/",
-        "/blog/website-subscription-vs-upfront-build/"
-      ]
-    },
-    "aeo": {
-      "summary": "Framer can suit a small business that needs a visually distinctive marketing website and manageable recurring content. Before choosing it, map the pages, editing tasks, integrations and ownership requirements, then check the current plan and export options against that brief. Review a real service page and mobile enquiry journey as well as the homepage design.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-18",
-    "slug": "website-enquiry-follow-up",
-    "publishOn": "2027-03-11",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "From website enquiry to booked work: fix the handoff",
-    "format": "guide",
-    "city": "Okanagan",
-    "pillar": "Conversion",
-    "primaryQuery": "website enquiry lead follow up workflow service business",
-    "queryVariants": [
-      "website enquiry lead follow up workflow service business",
-      "Should I use SMS, email or both for follow-up?",
-      "How do I stop automated follow-up once someone books?"
-    ],
-    "buyerDecision": "Combines service-business follow-up workflow advice with Michael's design and AI perspective, focusing on the handoff between website enquiry and booked work rather than generic CRM automation.",
-    "primaryMoneyPage": "/ai-implementation/",
-    "parentMoneyPage": "/ai-implementation/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/website-enquiry-follow-up.json",
-    "wordCount": 1266,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "The enquiry is a promise",
-      "Fix the handoff, not just the form",
-      "Build a queue with a named owner",
-      "Set honest response capacity",
-      "Qualify first, then book",
-      "A mock workflow you can adapt",
-      "Keep forms simple and respectful",
-      "Where AI actually helps",
-      "The next step"
-    ],
-    "faqs": [
-      "Should I use SMS, email or both for follow-up?",
-      "How do I stop automated follow-up once someone books?",
-      "What should happen to enquiries outside business hours?",
-      "What should happen immediately after someone sends a website enquiry?",
-      "How can automation help follow-up without annoying customers?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/ai-implementation/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": [
-        "/blog/website-wrong-enquiries/"
-      ]
-    },
-    "aeo": {
-      "summary": "Turn a website enquiry into booked work with a clear acknowledgement, a named owner, appropriate qualification and a defined booking step. Preserve the requested service and location across the handoff, set honest response expectations and stop sales reminders when the customer books or declines. Use automation to prepare and route the work, with people handling exceptions and commitments.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-19",
-    "slug": "winery-website-visitor-planning",
-    "publishOn": "2027-03-18",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "What a winery website needs before someone plans a visit",
-    "format": "guide",
-    "city": "Okanagan",
-    "pillar": "Industry websites",
-    "primaryQuery": "winery website design tasting reservations visitor information",
-    "queryVariants": [
-      "winery website design tasting reservations visitor information",
-      "Can a small winery get away with a one-page website?",
-      "Should my winery website show every wine we make?"
-    ],
-    "buyerDecision": "This guide focuses on the practical visitor-planning decisions a winery website must support, rather than generic design trends or platform comparisons. It gives owners a concrete page architecture and a checklist they can use to evaluate any proposal.",
-    "primaryMoneyPage": "/web-design/wineries/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/winery-website-visitor-planning.json",
-    "wordCount": 1423,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "What visitors actually need to know before they decide",
-      "The page architecture that works for wineries",
-      "Tastings, reservations and the visit-planning checklist",
-      "Accessibility and group policies belong on the site, not in an email",
-      "Do you need online shopping? The honest tradeoff",
-      "West Kelowna context: what official tourism already promises",
-      "A concrete sample: what a solid winery site map looks like",
-      "Keeping hours, events and seasonal information accurate",
-      "What to ask for when you hire someone"
-    ],
-    "faqs": [
-      "Can a small winery get away with a one-page website?",
-      "Should my winery website show every wine we make?",
-      "How often should a winery update its website?",
-      "What does a winery visitor need to know before reserving a tasting?",
-      "How should a winery serve visitors who are planning several stops?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/wineries/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": [
-        "/blog/okanagan-website-cost/"
-      ]
-    },
-    "aeo": {
-      "summary": "A winery website does not need to sell bottles online to do its real job. It needs to help someone decide whether to visit, what to expect, and how to book. That means clear tasting and reservation information, honest seasonal hours, practical details like food and transport, and a map that actually works. Those fundamentals are where I would focus before spending on a flashy design.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-20",
-    "slug": "webflow-small-business-websites",
-    "publishOn": "2027-03-25",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "Webflow for small businesses: when its CMS and design control are worth it",
-    "format": "guide",
-    "city": "Vernon",
-    "pillar": "Platforms",
-    "primaryQuery": "Webflow small business website CMS ownership costs",
-    "queryVariants": [
-      "Webflow small business website CMS ownership costs",
-      "Is Webflow good for SEO?",
-      "Can my team update the site without breaking it?"
-    ],
-    "buyerDecision": "This guide is written for the small business owner who has to choose between Webflow, a simpler builder, or a custom site. It focuses on the actual ownership decision, when the CMS and design control justify the cost, and when a simpler platform is the smarter call.",
-    "primaryMoneyPage": "/web-design/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/webflow-small-business-websites.json",
-    "wordCount": 1521,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "When Webflow is worth paying for",
-      "What Webflow's CMS actually gives you",
-      "Compare the whole publishing cost",
-      "Export, portability, and what you do not get",
-      "Design control versus convenience",
-      "A sample small business CMS model",
-      "Who should choose Webflow and who should not",
-      "Getting started without overpaying"
-    ],
-    "faqs": [
-      "Is Webflow good for SEO?",
-      "Can my team update the site without breaking it?",
-      "Do I need a developer to use Webflow?",
-      "What should a Webflow project quote explain besides design?",
-      "How should I test whether the CMS suits my team?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": [
-        "/blog/okanagan-website-cost/"
-      ]
-    },
-    "aeo": {
-      "summary": "Webflow can suit a small business that needs considered design and structured editing for services, projects or articles. Compare the required CMS content, integrations, team access, platform costs and handover against the alternatives before choosing it. A simple static site or a store with substantial commerce requirements may call for a different approach; the decision should follow the actual workload.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-21",
-    "slug": "vacation-rental-direct-booking-website",
-    "publishOn": "2027-04-01",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "A vacation-rental website that earns the direct-booking enquiry",
-    "format": "guide",
-    "city": "Okanagan",
-    "pillar": "Industry websites",
-    "primaryQuery": "vacation rental direct booking website design Okanagan",
-    "queryVariants": [
-      "vacation rental direct booking website design Okanagan",
-      "Should a vacation-rental website replace Airbnb or Vrbo?",
-      "What matters most if the property is only one suite or cabin?"
-    ],
-    "buyerDecision": "Turns direct-booking website design into a guest-decision worksheet for Okanagan owners, with specific attention to accommodation proof, access, rules, date clarity and booking handoff.",
-    "primaryMoneyPage": "/web-design/vacation-rentals/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Okanagan Treehouse",
-    "draftPath": "content/resources/draft-library/vacation-rental-direct-booking-website.json",
-    "wordCount": 1362,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "The page has to reduce doubt before it creates desire",
-      "Show the accommodation, not just the setting",
-      "Make beds, parking and access impossible to misunderstand",
-      "Put rules, dates and the full price in the open",
-      "Make the booking handoff feel calm",
-      "A practical worksheet for the page",
-      "Match the page to the property and the season",
-      "Bring in design help when clarity and beauty need to work together"
-    ],
-    "faqs": [
-      "Should a vacation-rental website replace Airbnb or Vrbo?",
-      "What matters most if the property is only one suite or cabin?",
-      "Who should write the photo captions and amenity notes?",
-      "What should a direct-booking property page explain before guests select dates?",
-      "How should an owner handle enquiries when availability is managed manually?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/vacation-rentals/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": [
-        "/blog/okanagan-website-cost/"
-      ]
-    },
-    "aeo": {
-      "summary": "A direct-booking page earns the enquiry when it removes uncertainty: real accommodation photos, exact beds, parking and access, honest rules, current dates and the full price. Design should make the place feel worth staying in, then hand the guest to a clear booking step. For Okanagan properties, the right page changes by season, guest type and how hands-on the owner wants to be.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-22",
-    "slug": "dental-website-design",
-    "publishOn": "2027-04-08",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "What makes a dental website reassuring and useful?",
-    "format": "guide",
-    "city": "Okanagan",
-    "pillar": "Industry websites",
-    "primaryQuery": "dental website design new patient booking best practices",
-    "queryVariants": [
-      "dental website design new patient booking best practices",
-      "Should a dental website offer online booking or a request form?",
-      "How detailed should treatment pages be?"
-    ],
-    "buyerDecision": "The article separates new-patient reassurance from returning-patient convenience, then turns that into practical page, fee, location and form decisions rather than generic design advice.",
-    "primaryMoneyPage": "/web-design/dentists/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/dental-website-design.json",
-    "wordCount": 1824,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "Start with the decision the visitor is making",
-      "New patient needs versus returning patient needs",
-      "Make the first screen do the heavy lifting",
-      "Treatment pages that calm rather than overwhelm",
-      "Show the people behind the practice",
-      "Make the location page genuinely useful",
-      "Answer fee questions without invented promises",
-      "Keep booking simple and keep sensitive details elsewhere",
-      "What Okanagan practices should pay attention to"
-    ],
-    "faqs": [
-      "Should a dental website offer online booking or a request form?",
-      "How detailed should treatment pages be?",
-      "What belongs on a public new patient form?",
-      "How should a dental website help a new patient choose the next step?",
-      "Should a dental contact form ask patients for their medical history?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/dentists/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": []
-    },
-    "aeo": {
-      "summary": "A good dental website removes worry before it asks for a booking. It gives new patients clear treatment overviews, named clinicians, location details and honest guidance about fees, while keeping returning patients close to scheduling. The best sites feel calm, specific and easy to act on.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-23",
-    "slug": "hvac-website-design",
-    "publishOn": "2027-04-15",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "What an HVAC website needs before a customer calls",
-    "format": "guide",
-    "city": "Okanagan",
-    "pillar": "Industry websites",
-    "primaryQuery": "HVAC website design services calls best practices",
-    "queryVariants": [
-      "HVAC website design services calls best practices",
-      "Should an HVAC website show pricing?",
-      "Does adding AI chat to my HVAC website help me book more calls?"
-    ],
-    "buyerDecision": "Frames HVAC website design as a verification and routing problem rather than a visual one: customers confirm licensing and coverage first, then repair, maintenance and replacement need structurally different pages, with a practical intake checklist owners can send to any designer.",
-    "primaryMoneyPage": "/web-design/hvac/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/hvac-website-design.json",
-    "wordCount": 2009,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "Customers check before they call",
-      "The first screen has one job",
-      "Repair, maintenance and replacement need different pages",
-      "Say your service zones honestly",
-      "Only claim after-hours service you actually provide",
-      "Financing without invented offers",
-      "Credentials and quote assumptions, owner verified",
-      "What to ask a designer before you sign",
-      "Match the page to the customer"
-    ],
-    "faqs": [
-      "Should an HVAC website show pricing?",
-      "Does adding AI chat to my HVAC website help me book more calls?",
-      "Do I need separate pages for each town I serve?",
-      "How should an HVAC website separate repairs from replacements?",
-      "What should be checked before promoting rebates or financing on an HVAC page?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/hvac/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": []
-    },
-    "aeo": {
-      "summary": "An HVAC website earns calls when customers can verify licensing and service areas in seconds, and when repair, maintenance and replacement each have their own clear route to contact. The pages below cover first-screen design, honest service-zone and after-hours claims, financing without invented offers, and exactly what to ask a designer before signing.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-24",
-    "slug": "charity-website-platforms",
-    "publishOn": "2027-04-22",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "WordPress, Webflow or a custom CMS for a charity website?",
-    "format": "comparison",
-    "city": "Okanagan",
-    "pillar": "Platforms",
-    "primaryQuery": "charity website CMS WordPress Webflow nonprofit",
-    "queryVariants": [
-      "charity website CMS WordPress Webflow nonprofit",
-      "Can a charity take donations on WordPress or Webflow without a separate donation provider?",
-      "What happens when volunteers with editor access make mistakes?"
-    ],
-    "buyerDecision": "A decision-oriented comparison for charities that weighs editor roles, editorial review, donation and integration needs, and true ownership and maintenance costs, rather than listing features or assuming the free platform is cheapest overall.",
-    "primaryMoneyPage": "/web-design/charities/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/charity-website-platforms.json",
-    "wordCount": 1746,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "The real question behind the platform choice",
-      "WordPress: flexible, ownable, and willing to accept many editors",
-      "Webflow: strong for design-led teams with a small group of editors",
-      "Custom and headless CMS: when strict roles and integrations justify the cost",
-      "How the three options compare",
-      "A concrete setup a charity can actually use",
-      "A short note on privacy for BC charities",
-      "Choosing between them, and a next step"
-    ],
-    "faqs": [
-      "Can a charity take donations on WordPress or Webflow without a separate donation provider?",
-      "What happens when volunteers with editor access make mistakes?",
-      "Is a headless or custom CMS overkill for a small charity?",
-      "How should a charity choose a platform when volunteers edit the website?",
-      "What should a charity retain when a website provider changes?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/charities/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": []
-    },
-    "aeo": {
-      "summary": "The right platform depends on who edits the site and what it must connect to. WordPress suits charities wanting ownership and many editors on a budget, if someone handles maintenance. Webflow suits design-led teams with a small editor group. A custom or headless CMS is worth it when you need strict roles, editorial review and deep integrations.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-25",
-    "slug": "physiotherapy-website-design",
-    "publishOn": "2027-04-29",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "A physiotherapy website should help someone choose their first appointment",
-    "format": "guide",
-    "city": "Okanagan",
-    "pillar": "Industry websites",
-    "primaryQuery": "physiotherapy website design patient appointment",
-    "queryVariants": [
-      "physiotherapy website design patient appointment",
-      "Should a physiotherapy clinic put its full fee schedule on the website?",
-      "Is it better to use an online booking tool or a simple enquiry form?"
-    ],
-    "buyerDecision": "Frames physiotherapy website design around the single decision of choosing a first appointment, with a patient-situation page pattern table and a concrete minimal intake form, rather than generic conversion tips.",
-    "primaryMoneyPage": "/web-design/physiotherapy/",
-    "parentMoneyPage": "/web-design/",
-    "proof": "Practical recommendations and linked primary documentation; no invented client result.",
-    "draftPath": "content/resources/draft-library/physiotherapy-website-design.json",
-    "wordCount": 1906,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "Start with the first appointment",
-      "What the page has to answer quickly",
-      "Fees, insurance and the booking handoff",
-      "Care offered and practitioner fit",
-      "Page patterns for different patients",
-      "A worked intake example",
-      "Collecting information without overcollecting",
-      "What I would ask a designer for",
-      "A local next step"
-    ],
-    "faqs": [
-      "Should a physiotherapy clinic put its full fee schedule on the website?",
-      "Is it better to use an online booking tool or a simple enquiry form?",
-      "How much educational content does a physio site need before it helps?",
-      "How should a clinic help someone choose a physiotherapist online?",
-      "What should happen when a visitor cannot find a suitable appointment?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/web-design/physiotherapy/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": []
-    },
-    "aeo": {
-      "summary": "A physiotherapy website should help someone choose an appropriate practitioner and first appointment. Explain services, actual practitioner experience, booking options, location and what the first visit involves. Keep public enquiries focused on routing and practical questions, direct sensitive intake into the clinic's approved system and give uncertain visitors a clear way to contact staff.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
-    "id": "draft-26",
-    "slug": "website-social-video-content",
-    "publishOn": "2027-05-06",
-    "timezone": "America/Vancouver",
-    "status": "drafted",
-    "title": "What belongs on your website, social media and in a video?",
-    "format": "guide",
-    "city": "Kelowna",
-    "pillar": "Brand and content",
-    "primaryQuery": "small business website social media video content strategy",
-    "queryVariants": [
-      "small business website social media video content strategy",
-      "Should every social media post also become a website page?",
-      "What accessibility basics should a small business video include?"
-    ],
-    "buyerDecision": "Gives owners a practical division of labour between website, social media, video and campaign links, with a concrete sample plan and decision advice for different kinds of businesses.",
-    "primaryMoneyPage": "/marketing-branding/",
-    "parentMoneyPage": "/marketing-branding/",
-    "proof": "Vertical Impression, AI Catalyst",
-    "draftPath": "content/resources/draft-library/website-social-video-content.json",
-    "wordCount": 1350,
-    "researchAsOf": "2026-10-08",
-    "researchStatus": "Full draft and source research saved. Refresh time-sensitive facts near release.",
-    "researchChecklist": [
-      "Read the existing full draft and saved topic-specific query, competitor coverage and primary sources.",
-      "Refresh current platform, provider, professional-rule and link facts before publication.",
-      "Retain distinct owner advice, accurate proof and relevant internal links; do not regenerate from scratch."
-    ],
-    "outline": [
-      "Start with the website, not the feed",
-      "The website holds the durable source of truth",
-      "Social media is for discovery and repeated contact",
-      "Video explains, demonstrates and moves people",
-      "A campaign link should close the loop",
-      "A sample week of website, social and video content",
-      "Choose the mix that fits the way people buy",
-      "Make one page easier to act on"
-    ],
-    "faqs": [
-      "Should every social media post also become a website page?",
-      "What accessibility basics should a small business video include?",
-      "How much video should a small business make before hiring help?",
-      "How should social posts and video send people to the website?",
-      "What should stay on the website instead of living only on social media?"
-    ],
-    "internalLinks": {
-      "primary": {
-        "href": "/marketing-branding/",
-        "placement": "Contextual service link"
-      },
-      "secondary": {
-        "href": "/contact/",
-        "placement": "Closing contact invitation"
-      },
-      "siblings": [
-        "/blog/small-business-branding-deliverables/"
-      ]
-    },
-    "aeo": {
-      "summary": "Your website should hold the durable source of truth: core services, proof, location, pricing context and the action you want people to take. Social media is for discovery, repeated exposure and current conversation. Video is best for explaining, showing craft and helping people feel what your business does. Campaign content should send people back to a focused website action.",
-      "faqCount": 5,
-      "schema": "Article and BreadcrumbList; FAQ only for matching visible answers, without a promised rich result",
-      "faqApproach": "Five specific buying or implementation questions; direct answers with practical detail, no repeated summary or filler."
-    },
-    "releaseGate": [
-      "current sources and links rechecked",
-      "draft edits reviewed",
-      "public preview checked on mobile and desktop",
-      "publication date reached"
-    ],
-    "publicationApproved": false
-  },
-  {
     "id": "draft-27",
     "slug": "restaurant-website-design",
-    "publishOn": "2027-05-13",
+    "publishOn": "2027-01-01",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Restaurant websites: help guests decide, then get out of the way",
@@ -1382,7 +73,7 @@
   {
     "id": "draft-28",
     "slug": "property-management-website-design",
-    "publishOn": "2027-05-20",
+    "publishOn": "2027-01-04",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "What a property-management website needs for owners and tenants",
@@ -1455,7 +146,7 @@
   {
     "id": "draft-29",
     "slug": "retail-website-platforms",
-    "publishOn": "2027-05-27",
+    "publishOn": "2027-01-06",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Shopify, WooCommerce or a simple catalogue? A retailer's website decision",
@@ -1527,7 +218,7 @@
   {
     "id": "draft-30",
     "slug": "ai-service-business-website",
-    "publishOn": "2027-06-03",
+    "publishOn": "2027-01-08",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "AI on a service-business website: start with useful work",
@@ -1599,7 +290,7 @@
   {
     "id": "draft-31",
     "slug": "roofing-website-design",
-    "publishOn": "2027-06-10",
+    "publishOn": "2027-01-11",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "What makes a roofing website credible before the site visit?",
@@ -1672,7 +363,7 @@
   {
     "id": "draft-32",
     "slug": "medical-practice-website-design",
-    "publishOn": "2027-06-17",
+    "publishOn": "2027-01-13",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Medical-practice websites: make the next step clear without collecting too much",
@@ -1743,7 +434,7 @@
   {
     "id": "draft-33",
     "slug": "good-small-business-website-design",
-    "publishOn": "2027-06-24",
+    "publishOn": "2027-01-15",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "What makes a small-business website look good? A practical design critique",
@@ -1818,7 +509,7 @@
   {
     "id": "draft-34",
     "slug": "car-dealer-website-design",
-    "publishOn": "2027-07-01",
+    "publishOn": "2027-01-18",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "A car-dealer website needs more than an inventory feed",
@@ -1892,7 +583,7 @@
   {
     "id": "draft-35",
     "slug": "financial-advisor-website-design",
-    "publishOn": "2027-07-08",
+    "publishOn": "2027-01-20",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "A financial-advisor website should help the right client recognise the fit",
@@ -1966,7 +657,7 @@
   {
     "id": "draft-36",
     "slug": "small-business-ai-search",
-    "publishOn": "2027-07-15",
+    "publishOn": "2027-01-22",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "How a small-business website can be easier to find in Google and AI search",
@@ -2037,7 +728,7 @@
   {
     "id": "draft-37",
     "slug": "sanity-small-business-cms",
-    "publishOn": "2027-07-22",
+    "publishOn": "2027-01-25",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Sanity explained for a business owner: CMS, website and hosting are different jobs",
@@ -2108,7 +799,7 @@
   {
     "id": "draft-38",
     "slug": "website-wrong-enquiries",
-    "publishOn": "2027-07-29",
+    "publishOn": "2027-01-27",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Getting the wrong enquiries? Your website may be attracting the wrong work",
@@ -2182,7 +873,7 @@
   {
     "id": "draft-39",
     "slug": "medical-spa-website-design",
-    "publishOn": "2027-08-05",
+    "publishOn": "2027-01-29",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Medical-spa websites: balance visual appeal with clear treatment information",
@@ -2255,7 +946,7 @@
   {
     "id": "draft-40",
     "slug": "rebrand-redesign-or-copy",
-    "publishOn": "2027-08-12",
+    "publishOn": "2027-02-01",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Do you need a new brand, a better website or clearer words?",
@@ -2326,7 +1017,7 @@
   {
     "id": "draft-41",
     "slug": "appliance-repair-website-lessons",
-    "publishOn": "2027-08-19",
+    "publishOn": "2027-02-03",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "What works for appliance-repair websites? Lessons from ABC Appliance",
@@ -2400,7 +1091,7 @@
   {
     "id": "draft-42",
     "slug": "self-hosted-custom-website-ownership",
-    "publishOn": "2027-08-26",
+    "publishOn": "2027-02-05",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Custom-built or self-hosted? What website ownership really means",
@@ -2472,7 +1163,7 @@
   {
     "id": "draft-43",
     "slug": "private-school-website-design",
-    "publishOn": "2027-09-02",
+    "publishOn": "2027-02-08",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "A private-school website that helps families take the next step",
@@ -2544,7 +1235,7 @@
   {
     "id": "draft-44",
     "slug": "website-photography-video-animation",
-    "publishOn": "2027-09-09",
+    "publishOn": "2027-02-10",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Website photography, video or animation: which earns its place?",
@@ -2615,7 +1306,7 @@
   {
     "id": "draft-45",
     "slug": "charity-donation-page",
-    "publishOn": "2027-09-16",
+    "publishOn": "2027-02-12",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "What a charity donation page needs before asking for money",
@@ -2685,7 +1376,7 @@
   {
     "id": "draft-46",
     "slug": "framer-webflow-local-seo",
-    "publishOn": "2027-09-23",
+    "publishOn": "2027-02-15",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Framer vs Webflow for local SEO: what actually affects the result?",
@@ -2758,7 +1449,7 @@
   {
     "id": "draft-47",
     "slug": "website-before-paid-ads",
-    "publishOn": "2027-09-30",
+    "publishOn": "2027-02-17",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Before buying more ads, check whether your website can use the traffic",
@@ -2831,7 +1522,7 @@
   {
     "id": "draft-48",
     "slug": "ai-skills-versus-prompts",
-    "publishOn": "2027-10-07",
+    "publishOn": "2027-02-19",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Custom AI skills versus prompts: what changes for a small team?",
@@ -2904,7 +1595,7 @@
   {
     "id": "draft-49",
     "slug": "boutique-accommodation-website-design",
-    "publishOn": "2027-10-14",
+    "publishOn": "2027-02-22",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Boutique accommodation design: show the stay people are choosing",
@@ -2979,7 +1670,7 @@
   {
     "id": "draft-50",
     "slug": "useful-location-pages",
-    "publishOn": "2027-10-21",
+    "publishOn": "2027-02-24",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Location pages that help customers instead of repeating a city name",
@@ -3053,7 +1744,7 @@
   {
     "id": "draft-51",
     "slug": "professional-services-homepage-design",
-    "publishOn": "2027-10-28",
+    "publishOn": "2027-02-26",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "What works on a professional-services homepage?",
@@ -3126,7 +1817,7 @@
   {
     "id": "draft-52",
     "slug": "compare-website-quotes",
-    "publishOn": "2027-11-04",
+    "publishOn": "2027-03-01",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "How to compare website quotes without choosing on price alone",
@@ -3202,7 +1893,7 @@
   {
     "id": "draft-53",
     "slug": "automate-before-more-admin",
-    "publishOn": "2027-11-11",
+    "publishOn": "2027-03-03",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "What work should you automate before adding more admin?",
@@ -3273,7 +1964,7 @@
   {
     "id": "draft-54",
     "slug": "template-vs-custom-website",
-    "publishOn": "2027-11-18",
+    "publishOn": "2027-03-05",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Templates or custom design: when is a tailored website worth it?",
@@ -3348,7 +2039,7 @@
   {
     "id": "draft-55",
     "slug": "website-editing-training",
-    "publishOn": "2027-11-25",
+    "publishOn": "2027-03-08",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Who should update your website after launch?",
@@ -3423,7 +2114,7 @@
   {
     "id": "draft-56",
     "slug": "customer-project-content",
-    "publishOn": "2027-12-02",
+    "publishOn": "2027-03-10",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Turn one real customer project into useful website content",
@@ -3496,7 +2187,7 @@
   {
     "id": "draft-57",
     "slug": "custom-workflow-maintenance",
-    "publishOn": "2027-12-09",
+    "publishOn": "2027-03-12",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "When does a custom workflow justify ongoing maintenance?",
@@ -3569,7 +2260,7 @@
   {
     "id": "draft-58",
     "slug": "website-measurement-budget",
-    "publishOn": "2027-12-16",
+    "publishOn": "2027-03-15",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "What should you measure before next year's website budget?",
@@ -3642,7 +2333,7 @@
   {
     "id": "draft-59",
     "slug": "small-business-website-accessibility",
-    "publishOn": "2027-12-23",
+    "publishOn": "2027-03-17",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "An accessible website is easier to use: practical checks for a small business",
@@ -3716,7 +2407,7 @@
   {
     "id": "draft-60",
     "slug": "small-business-website-growth-plan",
-    "publishOn": "2027-12-30",
+    "publishOn": "2027-03-19",
     "timezone": "America/Vancouver",
     "status": "drafted",
     "title": "Your next website plan: choose the customer problem before the channel",

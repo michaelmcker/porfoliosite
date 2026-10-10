@@ -20,9 +20,9 @@ test("hero keeps HTML corrections on larger screens and uses the authored mobile
   assert.match(app, /syncMotionPoster/);
   assert.match(app, /max-width:\s*699px/);
   assert.match(css, /\.hero\s*\{[^}]*grid-template-columns:\s*minmax\(420px,\s*\.72fr\)\s*minmax\(0,\s*1\.28fr\)/s);
-  assert.match(css, /\.hero-system-media\s*\{[^}]*aspect-ratio:\s*4\s*\/\s*3/s);
-  assert.match(css, /\.hero-video-source\s*\{[^}]*width:\s*133\.333%[^}]*transform:\s*translateX\(-18%\)/s);
-  assert.match(css, /@media \(max-width:\s*699px\)[\s\S]*?\.hero-video-source\s*\{[^}]*width:\s*100%[^}]*transform:\s*none/s);
+  assert.match(css, /\.hero-system-media\s*\{[^}]*aspect-ratio:\s*1230\s*\/\s*780/s);
+  assert.match(css, /\.hero-video-source\s*\{[^}]*width:\s*135\.934959%[^}]*transform:\s*translate\(-22\.129187%,\s*-9\.564293%\)/s);
+  assert.match(css, /@media \(max-width:\s*699px\)[\s\S]*?\.hero-video-source\s*\{[^}]*width:\s*100%[^}]*height:\s*141\.694915%[^}]*transform:\s*translateY\(-22\.129187%\)/s);
   assert.match(css, /\.hero-video-inputs\s*\{[^}]*background:\s*transparent[^}]*box-shadow:\s*none/s);
   assert.match(css, /\.hero-video-label-system\s*\{[^}]*left:\s*57\.4%/s);
   assert.match(css, /\.hero-video-label-outputs\s*\{[^}]*right:\s*\.7%/s);

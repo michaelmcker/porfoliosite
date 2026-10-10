@@ -2,12 +2,28 @@ Source: https://michaelmck.site/marketing-branding/
 
 # Give people a reason  to choose you.
 
-[AI Catalyst brand film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
-
 Websites, social media, video and brand development that make your business easier to understand, remember and choose.
 
 [Book a free consultation](https://michaelmck.site/contact/)
-[Watch the AI Catalyst film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
+
+[AI Catalyst brand film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
+
+## A story, carried across  every part of your business.
+
+Websites, video and brand identity. Different ways to give people a clear reason to choose you.
+
+## Your story.  Made visible.
+
+The AI Catalyst website brings positioning, visual direction and a clear offer together. The website and brand film carry the same story across different formats.
+
+[Explore the AI Catalyst website](https://ai-catalyst-wheat.vercel.app/)
+
+Original blue dithered marble artwork from the AI Catalyst website
+ AI CATALYST  Strategy. Systems. Story.
+
+YOUR STORY.  MADE VISIBLE.
+
+ Practical AI for a more human tomorrow.
 
 Upon This Rock podcast identity with classical artwork in the UTR letterforms
 
@@ -15,7 +31,7 @@ Upon This Rock podcast identity with classical artwork in the UTR letterforms
 
 A distinct visual direction, carried from the main identity into episode artwork. A recognizable world for the series before anyone presses play.
 
-[View the episode artwork](https://michaelmck.site/assets/selected-work/upon-this-rock-episode-01.webp)
+Brand development, podcast art and a consistent design system for the series.
 
 ## Stories that  move people.
 
@@ -50,11 +66,11 @@ Brand films, campaign creative, social video and podcast edits. Story and visual
 
 Positioning, messaging, visual identity and brand guidelines. A consistent foundation for the way your business looks and speaks.
 
-[Vertical Impression scrolling product-story film](https://michaelmck.site/assets/videos/vertical-impression-proposal-story-boomerang.mp4)
+Vertical Impression website animation explaining elevator advertising
 
 ## Explaining a misunderstood medium.
 
-A website story that makes elevator advertising easier to understand, with the message and visual experience working together.
+A scrolling website story that makes elevator advertising easier to understand. Messaging, motion and reusable video creative bring the same idea to the website and social channels.
 
 [Explore the product story](https://www.verticalimpression.com/proposal-story)
 

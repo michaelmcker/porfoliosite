@@ -56,7 +56,8 @@ test('service proof uses original project media without nested interactive viewe
  assert(web.includes('ai-catalyst-wheat.vercel.app'));
  assert(!ai.includes('/assets/samples/vertical-impression-local-proposal-current.png'));
  assert(!ai.includes('/proposal-generator.html'));
- assert(ai.includes('Illustrative service example:'));
+ assert(ai.includes('A weekly appointment calendar on a laptop'));
+ assert(!ai.includes('Illustrative service example:'));
  assert(ai.includes('service-booking-scene'));
  assert(ai.includes('href="#what-i-build"'));
  assert(ai.includes('id="what-i-build"'));
@@ -66,10 +67,10 @@ test('service proof uses original project media without nested interactive viewe
  assert(marketing.includes('Explaining a misunderstood medium.'));
  assert(!marketing.includes('Make the opportunity clear.'));
  assert(!marketing.includes('vertical-impression-why-elevators.png'));
- assert(marketing.includes('/assets/videos/vertical-impression-proposal-story-boomerang.mp4'));
+ assert(marketing.includes('/assets/selected-work/vertical-impression-story.gif'));
  assert(web.includes('https://www.abcappliance.ca/'));
  assert(web.includes('/assets/selected-work/abc-appliance-live.png'));
- assert.equal((marketing.match(/<video /g)||[]).length,3);
+ assert.equal((marketing.match(/<video /g)||[]).length,2);
  assert(!marketing.includes('data-motion-video autoplay'));
  assert(marketing.includes('data-src="https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4"'));
  assert(!ai.includes('<figcaption>Illustrative example</figcaption>'));
@@ -81,7 +82,8 @@ test('service proof uses original project media without nested interactive viewe
   assert(graph.find(x=>x['@type']==='Service').areaServed.some(x=>x.name==='Kelowna, British Columbia, Canada'));
  }
  assert(marketing.includes('/assets/selected-work/ai-catalyst-film.mp4'));
- assert(marketing.includes('/assets/selected-work/upon-this-rock-episode-01.webp'));
+ assert(marketing.includes('/assets/selected-work/upon-this-rock-identity.webp'));
+ assert(marketing.includes('Explore the AI Catalyst website'));
  await access('assets/videos/vertical-impression-proposal-story-boomerang.mp4');
  await access('assets/selected-work/ai-catalyst-film.mp4');
  for (const page of [ai, web, marketing]) {

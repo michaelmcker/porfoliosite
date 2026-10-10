@@ -2,16 +2,16 @@ Source: https://michaelmck.site/web-design/
 
 # A beautiful website.  A better reason to choose you.
 
+Web design and development for Kelowna and the Okanagan. Turn a good first impression into your next enquiry, booking or sale.
+
+[Book a free consultation](https://michaelmck.site/contact/)
+
 Original blue dithered marble artwork from the AI Catalyst website
  AI CATALYST  Strategy. Systems. Story.
 
 YOUR STORY.  MADE VISIBLE.
 
  Practical AI for a more human tomorrow.
-
-Web design and development for Kelowna and the Okanagan. Turn a good first impression into your next enquiry, booking or sale.
-
-[Book a free consultation](https://michaelmck.site/contact/)
 
 [Original Okanagan Treehouse property imagery at dusk Okanagan Treehouse A place worth staying for. Website design & development A distinctive property, brought to life online with an immersive story and a clear path to explore the stay. Explore the website](https://okanagan-treehouse-preview.michael-mckerracher.workers.dev/)
 

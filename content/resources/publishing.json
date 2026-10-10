@@ -31,60 +31,72 @@
       "note": "Originally public October 8; release queue preserves the original date."
     },
     "okanagan-website-cost": {
-      "publishOn": "2026-10-19",
+      "publishOn": "2026-10-16",
       "datePublished": "2026-10-08",
       "dateModified": "2026-10-19",
       "status": "approved",
       "note": "Originally public October 8; release queue preserves the original date."
     },
     "website-visitors-no-enquiries": {
-      "publishOn": "2026-10-26",
+      "publishOn": "2026-10-21",
       "datePublished": "2026-10-08",
       "dateModified": "2026-10-26",
       "status": "approved",
       "note": "Originally public October 8; release queue preserves the original date."
     },
     "google-chatgpt-business-visibility": {
-      "publishOn": "2026-10-29",
+      "publishOn": "2026-10-23",
       "datePublished": "2026-10-08",
       "dateModified": "2026-10-29",
       "status": "approved",
       "note": "Originally public October 8; release queue preserves the original date."
     },
     "website-redesign-or-repair": {
-      "publishOn": "2026-11-04",
+      "publishOn": "2026-10-28",
       "datePublished": "2026-10-08",
       "dateModified": "2026-11-04",
       "status": "approved",
       "note": "Originally public October 8; release queue preserves the original date."
     },
     "cool-runnings-qualified-bookings": {
-      "publishOn": "2026-11-05",
+      "publishOn": "2026-10-30",
       "datePublished": "2026-10-08",
       "dateModified": "2026-11-05",
       "status": "approved",
       "note": "Originally public October 8; release queue preserves the original date."
     },
     "best-web-designers-kelowna": {
-      "publishOn": "2026-10-15",
+      "publishOn": "2026-10-14",
       "datePublished": "2026-10-08",
       "dateModified": "2026-10-15",
       "status": "approved",
       "note": "Originally public October 8; release queue preserves the original date."
     },
     "best-web-designers-vernon": {
-      "publishOn": "2026-10-22",
+      "publishOn": "2026-10-19",
       "datePublished": "2026-10-08",
       "dateModified": "2026-10-22",
       "status": "approved",
       "note": "Originally public October 8; release queue preserves the original date."
     },
     "best-web-designers-west-kelowna": {
-      "publishOn": "2026-11-02",
+      "publishOn": "2026-10-26",
       "datePublished": "2026-10-08",
       "dateModified": "2026-11-02",
       "status": "approved",
       "note": "Originally public October 8; release queue preserves the original date."
     }
+  },
+  "cadence": {
+    "articlesPerWeek": 3,
+    "weekdays": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "timezone": "America/Vancouver",
+    "releaseTime": "09:00",
+    "effectiveFrom": "2026-10-12",
+    "authorizedOn": "2026-10-10"
   }
 }

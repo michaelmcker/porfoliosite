@@ -1,6 +1,6 @@
 [
   {
-    "publishOn": "2026-11-12",
+    "publishOn": "2026-11-02",
     "title": "Phone calls or online forms? What works for a local service website",
     "primaryMoneyPage": "/web-design/",
     "buyerDecision": "Urgency, owner availability, call routing, minimum useful fields, acknowledgement versus booking, after-hours handling; a two-path intake example and test plan",
@@ -33,7 +33,7 @@
     "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
   },
   {
-    "publishOn": "2026-11-19",
+    "publishOn": "2026-11-04",
     "title": "What should a small-business branding project actually include?",
     "primaryMoneyPage": "/marketing-branding/",
     "buyerDecision": "Positioning before logo, message hierarchy, visual system, photo direction, website and social templates, file ownership; sample deliverables table and handoff questions",
@@ -65,7 +65,7 @@
     "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
   },
   {
-    "publishOn": "2026-11-26",
+    "publishOn": "2026-11-06",
     "title": "What makes a useful donor film? Start with the decision you need someone to make",
     "primaryMoneyPage": "/marketing-branding/",
     "buyerDecision": "St James donor-film and school marketing work; beneficiary dignity, consent, specific ask, campaign landing page, captions and transcript; production brief not invented fundraising uplift",
@@ -98,7 +98,7 @@
     "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
   },
   {
-    "publishOn": "2026-12-03",
+    "publishOn": "2026-11-09",
     "title": "How to brief a small-business website for 2027",
     "primaryMoneyPage": "/web-design/",
     "buyerDecision": "Priority customer action, service hierarchy, real assets, existing URLs, integrations, editing owner, budget assumptions, sign-off; completed sample brief for hypothetical electrician clearly presented as an example",
@@ -130,7 +130,7 @@
     "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
   },
   {
-    "publishOn": "2026-12-10",
+    "publishOn": "2026-11-11",
     "title": "Website subscription or upfront build? Compare the whole cost",
     "primaryMoneyPage": "/web-design/",
     "buyerDecision": "Setup, ongoing changes, domain, hosting, seats, support, cancellation, content ownership and migration; worked arithmetic using explicitly hypothetical CAD amounts, not market rates",
@@ -164,7 +164,7 @@
     "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
   },
   {
-    "publishOn": "2026-12-17",
+    "publishOn": "2026-11-13",
     "title": "What to decide before paying for an AI workflow",
     "primaryMoneyPage": "/ai-implementation/",
     "buyerDecision": "Choose repeatable work, baseline the task, sources and permissions, exception route, human approval, maintenance ownership; practical enquiry triage example; Michael audit CAD900 and custom systems from2500/month only if relevant",
@@ -196,7 +196,7 @@
     "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
   },
   {
-    "publishOn": "2026-12-24",
+    "publishOn": "2026-11-16",
     "title": "Holiday hours: the website changes that prevent wasted calls and visits",
     "primaryMoneyPage": "/web-design/",
     "buyerDecision": "Google special hours, website service availability, form acknowledgement, booking calendar, voicemail; test the holiday customer journey; do not imply GBP hours update website automatically",
@@ -229,7 +229,7 @@
     "wordTarget": "1100–1600 useful words; compare decisions with specific examples, not padding"
   },
   {
-    "publishOn": "2026-12-31",
+    "publishOn": "2026-11-18",
     "title": "What you should receive when your new website is handed over",
     "primaryMoneyPage": "/web-design/",
     "buyerDecision": "Domain/admin ownership, source and content export, renewal record, analytics, backups restore, form recipient, edit training, account revocation; practical owner acceptance checklist",
@@ -265,7 +265,7 @@
   },
   {
     "id": "draft-09",
-    "publishOn": "2027-01-07",
+    "publishOn": "2026-11-20",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What works on a plumber website? A 2027 plan for better enquiries",
@@ -328,7 +328,7 @@
   },
   {
     "id": "draft-10",
-    "publishOn": "2027-01-14",
+    "publishOn": "2026-11-23",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Framer vs Webflow vs a custom website: what should a small business choose?",
@@ -395,7 +395,7 @@
   },
   {
     "id": "draft-11",
-    "publishOn": "2027-01-21",
+    "publishOn": "2026-11-25",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What works on an electrician website beyond a list of services?",
@@ -458,7 +458,7 @@
   },
   {
     "id": "draft-12",
-    "publishOn": "2027-01-28",
+    "publishOn": "2026-11-27",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "An accounting website that attracts the clients you want",
@@ -521,7 +521,7 @@
   },
   {
     "id": "draft-13",
-    "publishOn": "2027-02-04",
+    "publishOn": "2026-11-30",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "How to choose a branding partner for a Kelowna small business",
@@ -585,7 +585,7 @@
   },
   {
     "id": "draft-14",
-    "publishOn": "2027-02-11",
+    "publishOn": "2026-12-02",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What works for law-firm websites in 2027?",
@@ -649,7 +649,7 @@
   },
   {
     "id": "draft-15",
-    "publishOn": "2027-02-18",
+    "publishOn": "2026-12-04",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "A hotel website should make booking feel straightforward",
@@ -713,7 +713,7 @@
   },
   {
     "id": "draft-16",
-    "publishOn": "2027-02-25",
+    "publishOn": "2026-12-07",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Prepare your landscaping website before the busy season",
@@ -776,7 +776,7 @@
   },
   {
     "id": "draft-17",
-    "publishOn": "2027-03-04",
+    "publishOn": "2026-12-09",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Framer for small-business websites: where it fits and where it gets awkward",
@@ -841,7 +841,7 @@
   },
   {
     "id": "draft-18",
-    "publishOn": "2027-03-11",
+    "publishOn": "2026-12-11",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "From website enquiry to booked work: fix the handoff",
@@ -904,7 +904,7 @@
   },
   {
     "id": "draft-19",
-    "publishOn": "2027-03-18",
+    "publishOn": "2026-12-14",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What a winery website needs before someone plans a visit",
@@ -967,7 +967,7 @@
   },
   {
     "id": "draft-20",
-    "publishOn": "2027-03-25",
+    "publishOn": "2026-12-16",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Webflow for small businesses: when its CMS and design control are worth it",
@@ -1031,7 +1031,7 @@
   },
   {
     "id": "draft-21",
-    "publishOn": "2027-04-01",
+    "publishOn": "2026-12-18",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "A vacation-rental website that earns the direct-booking enquiry",
@@ -1094,7 +1094,7 @@
   },
   {
     "id": "draft-22",
-    "publishOn": "2027-04-08",
+    "publishOn": "2026-12-21",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What makes a dental website reassuring and useful?",
@@ -1157,7 +1157,7 @@
   },
   {
     "id": "draft-23",
-    "publishOn": "2027-04-15",
+    "publishOn": "2026-12-23",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What an HVAC website needs before a customer calls",
@@ -1220,7 +1220,7 @@
   },
   {
     "id": "draft-24",
-    "publishOn": "2027-04-22",
+    "publishOn": "2026-12-25",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "WordPress, Webflow or a custom CMS for a charity website?",
@@ -1285,7 +1285,7 @@
   },
   {
     "id": "draft-25",
-    "publishOn": "2027-04-29",
+    "publishOn": "2026-12-28",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "A physiotherapy website should help someone choose their first appointment",
@@ -1348,7 +1348,7 @@
   },
   {
     "id": "draft-26",
-    "publishOn": "2027-05-06",
+    "publishOn": "2026-12-30",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What belongs on your website, social media and in a video?",
@@ -1411,7 +1411,7 @@
   },
   {
     "id": "draft-27",
-    "publishOn": "2027-05-13",
+    "publishOn": "2027-01-01",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Restaurant websites: help guests decide, then get out of the way",
@@ -1474,7 +1474,7 @@
   },
   {
     "id": "draft-28",
-    "publishOn": "2027-05-20",
+    "publishOn": "2027-01-04",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What a property-management website needs for owners and tenants",
@@ -1537,7 +1537,7 @@
   },
   {
     "id": "draft-29",
-    "publishOn": "2027-05-27",
+    "publishOn": "2027-01-06",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Shopify, WooCommerce or a simple catalogue? A retailer's website decision",
@@ -1601,7 +1601,7 @@
   },
   {
     "id": "draft-30",
-    "publishOn": "2027-06-03",
+    "publishOn": "2027-01-08",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "AI on a service-business website: start with useful work",
@@ -1664,7 +1664,7 @@
   },
   {
     "id": "draft-31",
-    "publishOn": "2027-06-10",
+    "publishOn": "2027-01-11",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What makes a roofing website credible before the site visit?",
@@ -1727,7 +1727,7 @@
   },
   {
     "id": "draft-32",
-    "publishOn": "2027-06-17",
+    "publishOn": "2027-01-13",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Medical-practice websites: make the next step clear without collecting too much",
@@ -1791,7 +1791,7 @@
   },
   {
     "id": "draft-33",
-    "publishOn": "2027-06-24",
+    "publishOn": "2027-01-15",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What makes a small-business website look good? A practical design critique",
@@ -1854,7 +1854,7 @@
   },
   {
     "id": "draft-34",
-    "publishOn": "2027-07-01",
+    "publishOn": "2027-01-18",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "A car-dealer website needs more than an inventory feed",
@@ -1917,7 +1917,7 @@
   },
   {
     "id": "draft-35",
-    "publishOn": "2027-07-08",
+    "publishOn": "2027-01-20",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "A financial-advisor website should help the right client recognise the fit",
@@ -1980,7 +1980,7 @@
   },
   {
     "id": "draft-36",
-    "publishOn": "2027-07-15",
+    "publishOn": "2027-01-22",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "How a small-business website can be easier to find in Google and AI search",
@@ -2044,7 +2044,7 @@
   },
   {
     "id": "draft-37",
-    "publishOn": "2027-07-22",
+    "publishOn": "2027-01-25",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Sanity explained for a business owner: CMS, website and hosting are different jobs",
@@ -2108,7 +2108,7 @@
   },
   {
     "id": "draft-38",
-    "publishOn": "2027-07-29",
+    "publishOn": "2027-01-27",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Getting the wrong enquiries? Your website may be attracting the wrong work",
@@ -2171,7 +2171,7 @@
   },
   {
     "id": "draft-39",
-    "publishOn": "2027-08-05",
+    "publishOn": "2027-01-29",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Medical-spa websites: balance visual appeal with clear treatment information",
@@ -2234,7 +2234,7 @@
   },
   {
     "id": "draft-40",
-    "publishOn": "2027-08-12",
+    "publishOn": "2027-02-01",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Do you need a new brand, a better website or clearer words?",
@@ -2297,7 +2297,7 @@
   },
   {
     "id": "draft-41",
-    "publishOn": "2027-08-19",
+    "publishOn": "2027-02-03",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What works for appliance-repair websites? Lessons from ABC Appliance",
@@ -2360,7 +2360,7 @@
   },
   {
     "id": "draft-42",
-    "publishOn": "2027-08-26",
+    "publishOn": "2027-02-05",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Custom-built or self-hosted? What website ownership really means",
@@ -2424,7 +2424,7 @@
   },
   {
     "id": "draft-43",
-    "publishOn": "2027-09-02",
+    "publishOn": "2027-02-08",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "A private-school website that helps families take the next step",
@@ -2488,7 +2488,7 @@
   },
   {
     "id": "draft-44",
-    "publishOn": "2027-09-09",
+    "publishOn": "2027-02-10",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Website photography, video or animation: which earns its place?",
@@ -2552,7 +2552,7 @@
   },
   {
     "id": "draft-45",
-    "publishOn": "2027-09-16",
+    "publishOn": "2027-02-12",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What a charity donation page needs before asking for money",
@@ -2616,7 +2616,7 @@
   },
   {
     "id": "draft-46",
-    "publishOn": "2027-09-23",
+    "publishOn": "2027-02-15",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Framer vs Webflow for local SEO: what actually affects the result?",
@@ -2681,7 +2681,7 @@
   },
   {
     "id": "draft-47",
-    "publishOn": "2027-09-30",
+    "publishOn": "2027-02-17",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Before buying more ads, check whether your website can use the traffic",
@@ -2745,7 +2745,7 @@
   },
   {
     "id": "draft-48",
-    "publishOn": "2027-10-07",
+    "publishOn": "2027-02-19",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Custom AI skills versus prompts: what changes for a small team?",
@@ -2807,7 +2807,7 @@
   },
   {
     "id": "draft-49",
-    "publishOn": "2027-10-14",
+    "publishOn": "2027-02-22",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Boutique accommodation design: show the stay people are choosing",
@@ -2871,7 +2871,7 @@
   },
   {
     "id": "draft-50",
-    "publishOn": "2027-10-21",
+    "publishOn": "2027-02-24",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Location pages that help customers instead of repeating a city name",
@@ -2935,7 +2935,7 @@
   },
   {
     "id": "draft-51",
-    "publishOn": "2027-10-28",
+    "publishOn": "2027-02-26",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What works on a professional-services homepage?",
@@ -2998,7 +2998,7 @@
   },
   {
     "id": "draft-52",
-    "publishOn": "2027-11-04",
+    "publishOn": "2027-03-01",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "How to compare website quotes without choosing on price alone",
@@ -3062,7 +3062,7 @@
   },
   {
     "id": "draft-53",
-    "publishOn": "2027-11-11",
+    "publishOn": "2027-03-03",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What work should you automate before adding more admin?",
@@ -3125,7 +3125,7 @@
   },
   {
     "id": "draft-54",
-    "publishOn": "2027-11-18",
+    "publishOn": "2027-03-05",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Templates or custom design: when is a tailored website worth it?",
@@ -3188,7 +3188,7 @@
   },
   {
     "id": "draft-55",
-    "publishOn": "2027-11-25",
+    "publishOn": "2027-03-08",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Who should update your website after launch?",
@@ -3252,7 +3252,7 @@
   },
   {
     "id": "draft-56",
-    "publishOn": "2027-12-02",
+    "publishOn": "2027-03-10",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Turn one real customer project into useful website content",
@@ -3316,7 +3316,7 @@
   },
   {
     "id": "draft-57",
-    "publishOn": "2027-12-09",
+    "publishOn": "2027-03-12",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "When does a custom workflow justify ongoing maintenance?",
@@ -3378,7 +3378,7 @@
   },
   {
     "id": "draft-58",
-    "publishOn": "2027-12-16",
+    "publishOn": "2027-03-15",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "What should you measure before next year's website budget?",
@@ -3442,7 +3442,7 @@
   },
   {
     "id": "draft-59",
-    "publishOn": "2027-12-23",
+    "publishOn": "2027-03-17",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "An accessible website is easier to use: practical checks for a small business",
@@ -3506,7 +3506,7 @@
   },
   {
     "id": "draft-60",
-    "publishOn": "2027-12-30",
+    "publishOn": "2027-03-19",
     "timezone": "America/Vancouver",
     "status": "drafting",
     "title": "Your next website plan: choose the customer problem before the channel",
