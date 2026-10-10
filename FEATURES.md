@@ -1,3 +1,6 @@
+## Broader homepage tools and resume, October 10, 2026
+- Homepage tools include Cursor and a second list for web platforms, automation, search, creative and project tools. General resume presents web/brand, creative production and marketing engineering alongside AI workflows; public PDF matches the current editable local master.
+
 ## Mobile work and homepage skills, October 10, 2026
 - Marketing uses a mobile overlap of the real Upon This Rock website and portrait trailer, without separate episode thumbnails. Complete artwork remains on the project page. St. James title and description precede its film.
 - Homepage Skills sits before Experience, with links from Selected Work. Vertical City title and public general resume reflect Senior Product Marketing Manager.

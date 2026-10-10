@@ -1,5 +1,11 @@
 # Development log
 
+## 2026-10-10: Broader toolset and creative marketing resume
+- Added Cursor to homepage tools plus Webflow, Wix, Framer, Zapier, Semrush, Canva, Linear, Trello, Midjourney and Runway under What else I work with.
+- Updated the existing local general DOCX headline, professional summary, capability matrix and technical skills to balance web/brand, creative production, marketing and AI systems. Preserved experience claims, dates and titles.
+- Original Word/PDF retained privately. Rendered and inspected both pages of the revised Word document; the matching PDF replaces the local general PDF and public download. Vertical City begins page two so experience entries remain together.
+- Tests retain 168 passing checks and the unchanged missing-Chrome browser failure. Responsive checks pass at 320/390/820/1440 with all 18 tool names visible and no overflow. Three required browser scripts retain their missing-Chrome prerequisite; connected-browser review used. Publishing through GitHub main.
+
 ## 2026-10-10: Mobile work composition and homepage skills
 - Published 69825a6; Vercel dpl_5Hj6hBzf3w6jraVnJHrGK9K21w62 READY and michaelmck.site alias verified. Seven public files match byte-for-byte, including the unchanged newer resume (SHA256 abce36f351a1e47a7b8278f469e99e448997a4150502b025b4aa905c621b7a4d). Live screenshots and responsive evidence saved privately in portfolio-mobile-work-2026-10-10.
 - Responsive connected-browser checks pass at 320/390/820/1440: no overflow, title before film on mobile/tablet, overlapping native trailer controls usable, homepage Skills precedes Experience and shares its heading scale. Trailer playback advances without errors. Suite: 168 passing checks with the unchanged missing-Chrome failure; three required browser scripts share that missing prerequisite.
