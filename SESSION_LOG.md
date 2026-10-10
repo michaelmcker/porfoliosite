@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-10: Service heroes, approved homepage crops, aligned editorial grids, marketing proof and inline Cal.com complete and responsive-checked locally. Resource calendar and automation now Monday/Wednesday/Friday. Releasing through existing main-to-Vercel integration.
+2026-10-10: Service heroes, approved homepage crops, aligned editorial grids, marketing proof and inline Cal.com complete and responsive-checked locally. Resource calendar and automation now Monday/Wednesday/Friday. Deployed and live-verified in release 999ff80 (Vercel 31fpeZJLer2Z3rB1XLSeKYAG4gDV). No remaining implementation work.
 
 2026-10-10: October 12 checklist and October 15 Kelowna comparison prepared privately; fresh source/Echo/link/responsive checks pass. No article due or published today.
 
@@ -53,7 +53,7 @@ No remaining work for the selected service-page release. Deployed and verified S
 - Unified each service hero into copy/CTA plus media; aligned columns and mobile stacking. Marketing proof includes website, video, motion and brand identity work.
 - Embedded existing Cal.com 30-minute event on Contact; retained email and form delivery.
 - Scheduled 69 future resources Monday/Wednesday/Friday through March 19, 2027; updated runtime instructions, calendar views, draft dates and backups. No early releases.
-- 165 tests pass with unchanged missing-Chrome failure; connected browser confirms desktop/tablet/mobile and real calendar availability. Ready for release.
+- 165 tests pass with unchanged missing-Chrome failure; connected browser confirms desktop/tablet/mobile and real calendar availability. Release 999ff80 is live and verified; 26 public resources and five Markdown routes match, 27 queued paths remain 404. Service CSS/HTML, calendar and motion assets match production.
 
 
 ### 2026-10-10: Sticky navigation and crop review

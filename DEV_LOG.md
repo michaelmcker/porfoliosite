@@ -315,3 +315,5 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Rescheduled all 69 future articles to Monday/Wednesday/Friday, October 12–March 19. Updated canonical draft dates, calendar views, private reader, durable backups and existing publishing automation. Original publication dates retained; no future article released.
 - Responsive browser checks: service heroes at 320/390/820/1440, no overflow or broken images; consistent split desktop and stacked mobile ordering. Cal.com loads real availability inside Contact on desktop/mobile.
 - Full suite: 165 pass, unchanged missing-Chrome browser failure. Three prescribed standalone browser scripts have the same missing-Chrome prerequisite; connected-browser checks used for this release. All 60 manuscripts pass the full draft-library gate.
+
+- Released 999ff80 through GitHub main-to-Vercel, deployment 31fpeZJLer2Z3rB1XLSeKYAG4gDV Ready and aliased to michaelmck.site. Verified 26 resource/discovery files, five Markdown routes and 27 withheld paths; ten additional service/style/calendar/motion files match production. Live AI desktop and marketing mobile checked in browser.

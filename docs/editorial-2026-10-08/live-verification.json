@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-10T15:42:00.020Z",
+  "checkedAt": "2026-10-10T18:05:21.848Z",
   "resources": 26,
   "allMatch": true,
   "results": [
@@ -12,12 +12,12 @@
       "type": "text/markdown; charset=utf-8"
     },
     {
-      "path": "/blog/kelowna-business-website-guide/index.md",
+      "path": "/blog/kelowna-business-website-guide/",
       "status": 200,
-      "bytes": 12210,
+      "bytes": 23042,
       "match": true,
       "robots": null,
-      "type": "text/markdown; charset=utf-8"
+      "type": "text/html; charset=utf-8"
     },
     {
       "path": "/blog/vernon-business-website-guide/",
@@ -28,17 +28,25 @@
       "type": "text/html; charset=utf-8"
     },
     {
-      "path": "/blog/kelowna-business-website-guide/",
+      "path": "/blog/kelowna-business-website-guide/index.md",
       "status": 200,
-      "bytes": 23042,
+      "bytes": 12210,
       "match": true,
       "robots": null,
-      "type": "text/html; charset=utf-8"
+      "type": "text/markdown; charset=utf-8"
     },
     {
       "path": "/blog/",
       "status": 200,
       "bytes": 6574,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/contact/",
+      "status": 200,
+      "bytes": 6212,
       "match": true,
       "robots": null,
       "type": "text/html; charset=utf-8"
@@ -52,25 +60,9 @@
       "type": "text/html; charset=utf-8"
     },
     {
-      "path": "/contact/",
-      "status": 200,
-      "bytes": 5683,
-      "match": true,
-      "robots": null,
-      "type": "text/html; charset=utf-8"
-    },
-    {
       "path": "/blog/vernon-business-website-guide/index.md",
       "status": 200,
       "bytes": 11390,
-      "match": true,
-      "robots": null,
-      "type": "text/markdown; charset=utf-8"
-    },
-    {
-      "path": "/contact/index.md",
-      "status": 200,
-      "bytes": 1204,
       "match": true,
       "robots": null,
       "type": "text/markdown; charset=utf-8"
@@ -84,12 +76,28 @@
       "type": "text/markdown; charset=utf-8"
     },
     {
+      "path": "/contact/index.md",
+      "status": 200,
+      "bytes": 1353,
+      "match": true,
+      "robots": null,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
       "path": "/sitemap.xml",
       "status": 200,
-      "bytes": 3446,
+      "bytes": 3504,
       "match": true,
       "robots": null,
       "type": "application/xml"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 76,
+      "match": true,
+      "robots": null,
+      "type": "text/plain; charset=utf-8"
     },
     {
       "path": "/llms.txt",
@@ -108,17 +116,9 @@
       "type": "text/css; charset=utf-8"
     },
     {
-      "path": "/robots.txt",
-      "status": 200,
-      "bytes": 76,
-      "match": true,
-      "robots": null,
-      "type": "text/plain; charset=utf-8"
-    },
-    {
       "path": "/llms-full.txt",
       "status": 200,
-      "bytes": 229723,
+      "bytes": 230327,
       "match": true,
       "robots": null,
       "type": "text/plain; charset=utf-8"
@@ -126,7 +126,7 @@
     {
       "path": "/v2/site-header.css",
       "status": 200,
-      "bytes": 2334,
+      "bytes": 2711,
       "match": true,
       "robots": null,
       "type": "text/css; charset=utf-8"
@@ -142,18 +142,10 @@
     {
       "path": "/v2/contact/contact.css",
       "status": 200,
-      "bytes": 2413,
+      "bytes": 2943,
       "match": true,
       "robots": null,
       "type": "text/css; charset=utf-8"
-    },
-    {
-      "path": "/assets/selected-work/abc-appliance-live.png",
-      "status": 200,
-      "bytes": 97093,
-      "match": true,
-      "robots": null,
-      "type": "image/png"
     },
     {
       "path": "/assets/screens/cool-runnings-home.webp",
@@ -164,6 +156,22 @@
       "type": "image/webp"
     },
     {
+      "path": "/assets/selected-work/abc-appliance-live.png",
+      "status": 200,
+      "bytes": 97093,
+      "match": true,
+      "robots": null,
+      "type": "image/png"
+    },
+    {
+      "path": "/marketing-branding/",
+      "status": 200,
+      "bytes": 12306,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
       "path": "/",
       "status": 200,
       "bytes": 34296,
@@ -172,25 +180,17 @@
       "type": "text/html; charset=utf-8"
     },
     {
-      "path": "/ai-implementation/",
-      "status": 200,
-      "bytes": 10732,
-      "match": true,
-      "robots": null,
-      "type": "text/html; charset=utf-8"
-    },
-    {
-      "path": "/marketing-branding/",
-      "status": 200,
-      "bytes": 11312,
-      "match": true,
-      "robots": null,
-      "type": "text/html; charset=utf-8"
-    },
-    {
       "path": "/web-design/",
       "status": 200,
-      "bytes": 19501,
+      "bytes": 19513,
+      "match": true,
+      "robots": null,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/ai-implementation/",
+      "status": 200,
+      "bytes": 10652,
       "match": true,
       "robots": null,
       "type": "text/html; charset=utf-8"
