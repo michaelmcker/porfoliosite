@@ -1,6 +1,7 @@
 # Development log
 
 ## 2026-10-10: Drive-selected trailer and marketing skills
+- Released 3cf59d8 through GitHub main; Vercel deployment dpl_6bXftGrWygDYK3f3cvUtz52u72Bc READY with michaelmck.site alias. Eleven public files match exactly, both Markdown responses include the selected trailer, and video byte-range requests return 206. Live playback confirms the unchanged 68.606984-second 576×720 film. Evidence saved privately in portfolio-trailer-review-2026-10-10.
 - Installed the exact user-selected Drive export, SHA256 c8bdfabceb0c1a12881dd2f2feeab7c319e691f382a15edd8aa6d824474522c9. Original 576×720/68.606984-second video preserved; poster extracted at eight seconds. A shared video source/player module prevents mismatched films, dimensions or schema between pages.
 - Added native portrait players to Marketing & Branding and the Upon This Rock project, project VideoObject schema, trailer navigation and Markdown links. Rejected legacy file stays absent.
 - Added an editorial skills section below marketing selected work: production from concept through delivery, static/video ad creative and iterating successful ads. Tool names are static, with a direct campaign enquiry link. Shared type, spacing and colour system retained.
