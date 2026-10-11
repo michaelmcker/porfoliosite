@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-11: No Sunday release. October 16 cost manuscript source/link/responsive checks complete privately; Echo maintenance (HTTP 503) prevents final approval. Article marked pending-review for retry; October 12 checklist and October 14 comparison remain prepared. No public output changed.
+
 2026-10-10: Homepage tools and revised general DOCX/PDF complete; two-page document and responsive layout visually checked. Deployed and live-verified: 6282712, Vercel READY; homepage and updated resume match the release.
 
 2026-10-10: Mobile marketing collage, homepage Skills and newer general resume complete; responsive and playback review passed. Deployed and live-verified: 69825a6, Vercel READY; homepage, marketing, styles, Markdown and resume match the release.
@@ -59,6 +61,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-11: Scheduled resource preflight
+- Verified all 69 revised Monday/Wednesday/Friday release slots; nothing due Sunday. Next release October 12 at 09:00 Vancouver.
+- Refreshed the existing October 16 cost manuscript, current official offers and five useful FAQs. All checked links and 320/390/1440 responsive checks pass; no future article exposed.
+- Echo is paused for maintenance (HTTP 503, two attempts). Kept the new edits private and marked this article pending-review; retry saved prompt before approval. Monday and Wednesday prepared articles unaffected. Evidence and resumption instructions in docs/editorial-prep-2026-10-11.
 
 ### 2026-10-10: Broader tools and creative marketing resume
 - Cursor plus Webflow, Wix, Framer, Zapier, Semrush, Canva, Linear, Trello, Midjourney and Runway added to homepage Skills.

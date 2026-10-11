@@ -1,5 +1,11 @@
 # Development log
 
+## 2026-10-11: Website-cost preparation
+- Current official source/link checks and private 320/390/1440 responsive checks pass. Five FAQs retained with duplicate prose removed; Svice first-year hosting inclusion and portfolio proof link added. Original publication date retained, actual refresh date October 11, release still October 16.
+- Echo returned HTTP 503 maintenance on two bounded attempts. Article status is pending-review until the saved private review succeeds; no public output changed or deployment attempted. All 69 revised slots are continuous through March 19, 2027. Full suite remains 168 passing checks and one unchanged missing-Chrome failure.
+- No article due on Sunday. Remote main matches the clean durable checkout; baseline remains 168 passes and one unchanged missing-Chrome failure.
+- Preparing the existing October 16 website-cost manuscript in place, using the saved buyer-intent source and current official Svice/Duford offers. No new public page or early release.
+
 ## 2026-10-10: Broader toolset and creative marketing resume
 - Live release verified: 6282712, Vercel dpl_2Zs4zcWdH2u61ufVWsf8W4CYBx6j READY with production alias. Homepage and updated resume match byte-for-byte; native live browser confirms all tools and the versioned resume link. Updated PDF SHA256 2b8b74b44602a9369903a6921eef2dcf5e9fb7ab9f1e5db7e23885f801660bfc. Evidence retained privately under portfolio-tools-resume-2026-10-10.
 - Added Cursor to homepage tools plus Webflow, Wix, Framer, Zapier, Semrush, Canva, Linear, Trello, Midjourney and Runway under What else I work with.

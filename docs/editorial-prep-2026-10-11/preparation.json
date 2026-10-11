@@ -1,0 +1,45 @@
+{
+  "checkedOn": "2026-10-11",
+  "timezone": "America/Vancouver",
+  "dueToday": [],
+  "nextRelease": {
+    "slug": "service-business-website-checklist",
+    "publishOn": "2026-10-12",
+    "releaseTime": "09:00"
+  },
+  "existingPreparation": {
+    "service-business-website-checklist": "2026-10-12",
+    "best-web-designers-kelowna": "2026-10-14"
+  },
+  "prepared": {
+    "slug": "okanagan-website-cost",
+    "publishOn": "2026-10-16",
+    "status": "pending-review",
+    "reason": "Echo returned HTTP 503 service_unavailable maintenance twice; new prose not yet approved",
+    "sourceRefresh": "Svice six pages CAD 2820, client supplies content, one year hosting; Duford template CAD 2025/custom CAD 5940 unchanged. Own CAD 2500 starting offer confirmed live.",
+    "editorial": "Five detailed FAQs, direct answer, seven original sections, portfolio proof and service links retained; repetitive FAQ prose removed. No unsupported numerical claims added.",
+    "responsive": "320/390/1440 no overflow, loaded imagery, five visible FAQs, unique IDs; desktop contents sticky.",
+    "privateEvidence": "/Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-11-cost-preparation",
+    "datePublished": "2026-10-08",
+    "dateModified": "2026-10-11"
+  },
+  "calendar": {
+    "slots": 69,
+    "cadence": "Monday/Wednesday/Friday 09:00 America/Vancouver",
+    "first": "2026-10-12",
+    "last": "2027-03-19",
+    "withinSevenDays": [
+      "service-business-website-checklist",
+      "best-web-designers-kelowna",
+      "okanagan-website-cost"
+    ],
+    "forwardLookingTitles": "November 9 brief and November 20 plumber plan appropriately describe 2027 planning; no 2027 observed results claimed."
+  },
+  "tests": {
+    "passed": 168,
+    "baselineFailure": "Google Chrome executable absent in v2-about-mobile"
+  },
+  "publicOutputsChanged": false,
+  "released": [],
+  "retry": "Retry Echo using saved private prompt on next preparation run. Review any returned suggestions; restore approved only after gate passes. Do not release early."
+}

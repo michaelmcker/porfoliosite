@@ -33,9 +33,9 @@
     "okanagan-website-cost": {
       "publishOn": "2026-10-16",
       "datePublished": "2026-10-08",
-      "dateModified": "2026-10-19",
-      "status": "approved",
-      "note": "Originally public October 8; release queue preserves the original date."
+      "dateModified": "2026-10-11",
+      "status": "pending-review",
+      "note": "Originally public October 8; preserve that date. October 11 source/link/responsive preparation complete. New edits await Echo review: HTTP 503 maintenance on two bounded attempts. Retry the existing private prompt and finish editorial checks before restoring approved; October 16 release slot unchanged."
     },
     "website-visitors-no-enquiries": {
       "publishOn": "2026-10-21",
