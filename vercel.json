@@ -14,6 +14,42 @@
       "permanent": true
     },
     {
+      "source": "/work/vertical-impression/",
+      "destination": "/work/vertical-impression/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
+      "source": "/work/ai-catalyst/",
+      "destination": "/work/ai-catalyst/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
+      "source": "/work/st-james-school/",
+      "destination": "/work/st-james-school/index.md",
+      "permanent": false,
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ]
+    },
+    {
       "source": "/work/upon-this-rock/",
       "destination": "/work/upon-this-rock/index.md",
       "permanent": false,

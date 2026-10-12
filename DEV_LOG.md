@@ -370,3 +370,17 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 - Full suite: 165 pass, unchanged missing-Chrome browser failure. Three prescribed standalone browser scripts have the same missing-Chrome prerequisite; connected-browser checks used for this release. All 60 manuscripts pass the full draft-library gate.
 
 - Released 999ff80 through GitHub main-to-Vercel, deployment 31fpeZJLer2Z3rB1XLSeKYAG4gDV Ready and aliased to michaelmck.site. Verified 26 resource/discovery files, five Markdown routes and 27 withheld paths; ten additional service/style/calendar/motion files match production. Live AI desktop and marketing mobile checked in browser.
+
+
+## 2026-10-12 — Portfolio film hosting and laptop cleanup
+
+- Started source inspection for embedded, shareable on-site films and RCCV device edge/background cleanup.
+- Preserve existing source media, homepage style, and GitHub-to-Vercel release workflow.
+
+- Latest direction: removed Upon This Rock player, share links and VideoObject; original export retained but excluded from deployment. All St. James website actions use sjslegacy.com.
+- Recovered original St. James film, preserved 62.4 MB source privately and created a complete 1280px fast-start H.264/AAC web copy.
+- Added on-site film pages for St. James, AI Catalyst and Vertical Impression with native controls, share metadata, VideoObject, Markdown and discovery.
+- Captured the actual live Vertical Impression scrolling story at full HD to replace the low-resolution GIF; no synthetic website artwork.
+
+- Local checks: no overflow at 320/390/768/1440 for homepage, marketing and film template. St. James and AI Catalyst play from local same-origin media; no player errors. Marketing has zero Upon This Rock players and only sjslegacy.com School website links.
+- Test result: 169 pass; the pre-existing About browser test still cannot find its configured Google Chrome executable. Native browser review used for responsive and playback checks.

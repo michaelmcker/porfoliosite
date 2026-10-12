@@ -5,7 +5,7 @@ Source: https://michaelmck.site/marketing-branding/
 Websites, social media, video and brand development that make your business easier to understand, remember and choose.
 
 [Book a free consultation](https://michaelmck.site/contact/)
-[Explore the AI Catalyst website](https://ai-catalyst-wheat.vercel.app/)
+[Watch the full film](https://michaelmck.site/work/ai-catalyst/)
 
 [AI Catalyst brand film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
 
@@ -19,9 +19,9 @@ Websites, social media, video and brand identity. One clear story that helps peo
 
 A scrolling product story makes elevator advertising easier to understand, with messaging and motion that carry into sales and social media.
 
-[Explore the product story](https://www.verticalimpression.com/proposal-story)
+[View the product story](https://michaelmck.site/work/vertical-impression/)
 
-Vertical Impression website animation explaining elevator advertising
+[Vertical Impression scrolling product story](https://michaelmck.site/assets/selected-work/vertical-impression-story-hd.mp4)
 
 ## Upon This Rock
 
@@ -32,22 +32,14 @@ Classical art. A distinctive identity. One visual world, from the website to eve
 
 [Upon This Rock Classical website with its illustrated identity and podcast introduction](https://michaelmck.site/work/upon-this-rock/)
 
-### The story in motion.
-
-A trailer that brings together the podcast’s ideas, voice and visual identity.
-
-[Explore the full project](https://michaelmck.site/work/upon-this-rock/#trailer)
-
-[Upon This Rock trailer](https://michaelmck.site/assets/selected-work/upon-this-rock/trailer-approved.mp4)
-
 ## Stories that  move people.
 
 The St. James School website and donor film bring a story of education, community and giving to life.
 
-[St. James School website](https://st-james-school-prototype.vercel.app/)
-[Watch the film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
+[St. James School website](https://sjslegacy.com/)
+[Watch the film](https://michaelmck.site/work/st-james-school/)
 
-[St. James School donor film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
+[St. James School donor film](https://michaelmck.site/assets/selected-work/st-james-donor-film.mp4)
 
 ## The skills  behind the work.
 

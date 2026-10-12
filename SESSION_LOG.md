@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-12: On-site film pages, full-HD product-story capture, retired Upon This Rock video, sjslegacy.com links and clean RCCV cutout implemented. Responsive checks at 320/390/768/1440 pass; St. James and AI Catalyst native playback verified. Tests: 169 pass, one pre-existing missing-Chrome About test. Preparing existing GitHub-to-Vercel release.
+
 2026-10-12: Due service-business checklist released and live-verified (d69f2dc). Nine public file matches, Markdown negotiation, dates, mobile/desktop and sixteen future-route 404 checks pass. Echo retry for October 16 cost draft still returns HTTP 503 maintenance; that draft remains private and pending-review.
 
 2026-10-11: No Sunday release. October 16 cost manuscript source/link/responsive checks complete privately; Echo maintenance (HTTP 503) prevents final approval. Article marked pending-review for retry; October 12 checklist and October 14 comparison remain prepared. No public output changed.

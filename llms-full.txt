@@ -283,7 +283,7 @@ Source: https://michaelmck.site/marketing-branding/
 Websites, social media, video and brand development that make your business easier to understand, remember and choose.
 
 [Book a free consultation](https://michaelmck.site/contact/)
-[Explore the AI Catalyst website](https://ai-catalyst-wheat.vercel.app/)
+[Watch the full film](https://michaelmck.site/work/ai-catalyst/)
 
 [AI Catalyst brand film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
 
@@ -297,9 +297,9 @@ Websites, social media, video and brand identity. One clear story that helps peo
 
 A scrolling product story makes elevator advertising easier to understand, with messaging and motion that carry into sales and social media.
 
-[Explore the product story](https://www.verticalimpression.com/proposal-story)
+[View the product story](https://michaelmck.site/work/vertical-impression/)
 
-Vertical Impression website animation explaining elevator advertising
+[Vertical Impression scrolling product story](https://michaelmck.site/assets/selected-work/vertical-impression-story-hd.mp4)
 
 ## Upon This Rock
 
@@ -310,22 +310,14 @@ Classical art. A distinctive identity. One visual world, from the website to eve
 
 [Upon This Rock Classical website with its illustrated identity and podcast introduction](https://michaelmck.site/work/upon-this-rock/)
 
-### The story in motion.
-
-A trailer that brings together the podcast’s ideas, voice and visual identity.
-
-[Explore the full project](https://michaelmck.site/work/upon-this-rock/#trailer)
-
-[Upon This Rock trailer](https://michaelmck.site/assets/selected-work/upon-this-rock/trailer-approved.mp4)
-
 ## Stories that  move people.
 
 The St. James School website and donor film bring a story of education, community and giving to life.
 
-[St. James School website](https://st-james-school-prototype.vercel.app/)
-[Watch the film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
+[St. James School website](https://sjslegacy.com/)
+[Watch the film](https://michaelmck.site/work/st-james-school/)
 
-[St. James School donor film](https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4)
+[St. James School donor film](https://michaelmck.site/assets/selected-work/st-james-donor-film.mp4)
 
 ## The skills  behind the work.
 
@@ -4847,14 +4839,7 @@ Source: https://michaelmck.site/work/upon-this-rock/
 A podcast about faith, history and the ideas that shape us. Classical art gives the series a distinctive identity, carried through its website and episode artwork.
 
 [Visit the website](https://upon-this-rock.michael-mckerracher.workers.dev/)
-[Watch the trailer](#trailer)
 [Explore the artwork](#podcast-artwork)
-
-## The story in motion.
-
-A trailer that brings together the podcast’s ideas, voice and visual identity.
-
-[Upon This Rock trailer](https://michaelmck.site/assets/selected-work/upon-this-rock/trailer-approved.mp4)
 
 ## A home for the conversation.
 
@@ -4927,3 +4912,60 @@ Brand development, websites and creative work that belong together.
 [Let’s talk about your project](https://michaelmck.site/contact/)
 [Marketing & branding](https://michaelmck.site/marketing-branding/)
 [Web design](https://michaelmck.site/web-design/)
+
+---
+
+Source: https://michaelmck.site/work/st-james-school/
+
+# A future worth  building together.
+
+A donor film for St. James School, connecting education, community and the school’s future through a visual story.
+
+[More video & brand work](https://michaelmck.site/marketing-branding/#selected-work)
+[Visit St. James School](https://sjslegacy.com/)
+
+[St. James School donor film](https://michaelmck.site/assets/selected-work/st-james-donor-film.mp4)
+
+## A story people  can see and feel.
+
+Video, websites and brand development that make what you do easier to understand.
+
+[Let’s talk about your project](https://michaelmck.site/contact/)
+
+---
+
+Source: https://michaelmck.site/work/ai-catalyst/
+
+# Your story.  Made visible.
+
+A brand film for AI Catalyst. Strategy, imagery, voice and motion come together to give the business a clear introduction.
+
+[More video & brand work](https://michaelmck.site/marketing-branding/#selected-work)
+[Explore the AI Catalyst website](https://ai-catalyst-wheat.vercel.app/)
+
+[AI Catalyst brand film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
+
+## A story people  can see and feel.
+
+Video, websites and brand development that make what you do easier to understand.
+
+[Let’s talk about your project](https://michaelmck.site/contact/)
+
+---
+
+Source: https://michaelmck.site/work/vertical-impression/
+
+# An overlooked medium.  A clearer story.
+
+A scrolling product story for Vertical Impression, making elevator advertising easier to understand through messaging, design and motion.
+
+[More video & brand work](https://michaelmck.site/marketing-branding/#selected-work)
+[Explore the product website](https://www.verticalimpression.com/proposal-story)
+
+[Vertical Impression product story](https://michaelmck.site/assets/selected-work/vertical-impression-story-hd.mp4)
+
+## A story people  can see and feel.
+
+Video, websites and brand development that make what you do easier to understand.
+
+[Let’s talk about your project](https://michaelmck.site/contact/)

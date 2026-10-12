@@ -67,12 +67,16 @@ test('service proof uses original project media without nested interactive viewe
  assert(marketing.includes('Explaining a misunderstood medium.'));
  assert(!marketing.includes('Make the opportunity clear.'));
  assert(!marketing.includes('vertical-impression-why-elevators.png'));
- assert(marketing.includes('/assets/selected-work/vertical-impression-story.gif'));
+ assert(marketing.includes('/assets/selected-work/vertical-impression-story-hd.mp4'));
  assert(web.includes('https://www.abcappliance.ca/'));
  assert(web.includes('/assets/selected-work/abc-appliance-live.png'));
  assert.equal((marketing.match(/<video /g)||[]).length,3);
  assert(!marketing.includes('data-motion-video autoplay'));
- assert(marketing.includes('data-src="https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4"'));
+ assert(marketing.includes('src="/assets/selected-work/st-james-donor-film.mp4"'));
+ assert(marketing.includes('href="https://sjslegacy.com/"'));
+ assert(marketing.includes('href="/work/st-james-school/"'));
+ assert(!marketing.includes('st-james-school-prototype.vercel.app'));
+ assert(!marketing.includes('vertical-impression-story.gif'));
  assert(!ai.includes('<figcaption>Illustrative example</figcaption>'));
  assert(marketing.includes('St. James School website'));
  assert(marketing.includes('Watch the film'));
@@ -85,8 +89,9 @@ test('service proof uses original project media without nested interactive viewe
  assert(marketing.includes('/assets/selected-work/upon-this-rock/website-option-one.png'));
  assert(marketing.includes('href="/work/upon-this-rock/"'));
  assert(!marketing.includes('concept-laptop'));
- assert(marketing.includes('Explore the AI Catalyst website'));
- await access('assets/videos/vertical-impression-proposal-story-boomerang.mp4');
+ assert(marketing.includes('href="/work/ai-catalyst/"'));
+ assert(marketing.includes('Watch the full film'));
+ await access('assets/selected-work/vertical-impression-story-hd.mp4');
  await access('assets/selected-work/ai-catalyst-film.mp4');
  for (const page of [ai, web, marketing]) {
   assert(page.indexOf('id="selected-work"') < page.indexOf('class="service-process'));

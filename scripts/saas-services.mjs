@@ -10,7 +10,7 @@ const bookingExample = `<figure class="service-booking-scene" role="img" aria-la
  <div class="service-booking-message" aria-hidden="true"><p class="booking-message-title">A new enquiry</p><p>“Could you come by for a quote this week?”</p><div class="booking-message-result"><span>Follow-up handled</span><strong>Thursday, 10 am. Booked.</strong></div></div>
  </figure>`;
 
-const schoolFilm = `<figure class="service-hero-film"><video controls playsinline preload="none" poster="/assets/selected-work/st-james-film.jpg" aria-label="St. James School patronage film"><source src="https://st-james-school-prototype.vercel.app/videos/st-james-donor-film-2026-09-21-16x9.mp4" type="video/mp4"></video></figure>`;
+const schoolFilm = `<figure class="service-hero-film"><video controls playsinline preload="none" poster="/assets/selected-work/st-james-film.jpg" aria-label="St. James School patronage film"><source src="/assets/selected-work/st-james-donor-film.mp4" type="video/mp4"></video></figure>`;
 
 const introductions = [
  ['AI implementation &amp; business automation in the Okanagan.', 'An enquiry waiting for an answer. An appointment that needs confirming. Admin that follows you home. We start with the work that gets in your way, then build a practical way to get it done.'],

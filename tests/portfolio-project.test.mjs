@@ -31,22 +31,15 @@ test('project discovery includes canonical HTML, Markdown, artwork schema and se
  assert(!html.includes('/Users/'));
 });
 
-test('published trailer is the exact Drive-selected export and keeps its portrait framing',async()=>{
- const {uponThisRockVideo}=await import('../scripts/upon-this-rock-video.mjs');
- const media=await readFile('.'+uponThisRockVideo.src);
- assert.equal(createHash('sha256').update(media).digest('hex'),uponThisRockVideo.sha256);
+test('retired podcast film is absent from the project and marketing page',async()=>{
  for(const path of ['work/upon-this-rock/','marketing-branding/']){
   const html=await readFile(path+'index.html','utf8');
-  const player=html.match(/<video[^>]*aria-label="Upon This Rock trailer"[^>]*>[\s\S]*?<\/video>/)?.[0];
-  assert(player,path);
-  assert(player.includes('controls playsinline preload="none"'));
-  assert(player.includes('width="576" height="720"'));
-  assert(!/\b(?:autoplay|muted)\b/.test(player));
-  assert(player.includes(uponThisRockVideo.src));
-  assert(!html.includes('/upon-this-rock/trailer.mp4'));
-  assert((await readFile(path+'index.md','utf8')).includes(uponThisRockVideo.src));
+  assert(!html.includes('trailer-approved'));
+  assert(!html.includes('Upon This Rock trailer'));
+  assert(!(await readFile(path+'index.md','utf8')).includes('trailer-approved'));
  }
  const html=await readFile('work/upon-this-rock/index.html','utf8');
  const graph=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
- assert.equal(graph.find(x=>x['@type']==='VideoObject').duration,uponThisRockVideo.duration);
+ assert(!graph.some(x=>x['@type']==='VideoObject'));
+ assert((await readFile('.vercelignore','utf8')).includes('assets/selected-work/upon-this-rock/trailer-approved*'));
 });

@@ -12,7 +12,7 @@ test("homepage avoids loading oversized and below-fold media during first paint"
   ]);
 
   assert.match(html, /id="motion-video-proposal-story"/);
-  assert.match(html, /data-src="\.\.\/assets\/videos\/vertical-impression-proposal-story-boomerang\.mp4"/);
+  assert.match(html, /data-src="\.\.\/assets\/selected-work\/vertical-impression-story-hd\.mp4"/);
   assert.match(html, /portfolio-hero-system-map-desktop-1080p\.mp4/);
   assert.doesNotMatch(html, /portfolio-hero-system-map-desktop-4k-sparse-loop\.mp4/);
   assert.match(html, /<iframe[^>]+data-accommodation-page[^>]+data-src="okanagan-preview\/index\.html"/);
@@ -35,7 +35,7 @@ test("homepage avoids loading oversized and below-fold media during first paint"
   assert.match(html, /<img[^>]+data-src="\.\.\/assets\/device-mockups\/laptop-graphite-frame\.webp"/);
   assert.match(html, /<img[^>]+data-src="\.\.\/assets\/samples\/vertical-impression-local-proposal-current\.webp"/);
   assert.match(html, /poster="\.\.\/assets\/videos\/portfolio-hero-system-map-desktop-poster\.webp"/);
-  assert.match(html, /src="\.\.\/assets\/selected-work\/rccv-laptop-transparent\.webp"/);
+  assert.match(html, /src="\.\.\/assets\/selected-work\/rccv-laptop-clean\.webp"/);
   assert.match(html, /data-poster="\.\.\/assets\/screens\/cool-runnings-home\.webp"/);
   assert.match(css, /mask-image:\s*url\("\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.webp"\)/);
   assert.doesNotMatch(css, /mask-image:\s*url\("\.\.\/assets\/device-mockups\/laptop-three-quarter-rccv-cutout\.png"\)/);

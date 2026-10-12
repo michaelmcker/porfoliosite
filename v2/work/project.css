@@ -33,3 +33,11 @@
 .project-trailer p{margin-top:24px;max-width:36ch}
 .project-trailer video{display:block;width:100%;max-width:440px;height:auto;aspect-ratio:4/5;justify-self:center;background:#171813;border-radius:12px}
 @media(max-width:900px){.project-trailer{grid-template-columns:1fr;gap:32px;padding-bottom:56px}}
+
+.film-screen{padding-bottom:72px}
+.film-screen video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#171813;border-radius:12px}
+.film-next{display:flex;align-items:center;justify-content:space-between;gap:40px;padding-block:64px 80px;border-top:1px solid #dedfd9}
+.film-next p{margin-top:24px}
+.film-next .project-button{flex:none}
+.film-page h2 em{color:#243c31}
+@media(max-width:700px){.film-screen{padding-inline:0;padding-bottom:48px}.film-screen video{border-radius:0}.film-next{display:grid;gap:28px;padding-block:40px 56px}.film-next .project-button{justify-self:start}}

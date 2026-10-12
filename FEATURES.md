@@ -133,3 +133,11 @@ The public `/privacy/` page describes the current enquiry, booking, design and m
 ## Resource answer and conversion policy (October 10, 2026)
 
 Informational resources provide a complete opening answer and five distinct, useful FAQs. Commercial pages retain conversion-led openings. Each article declares primaryMoneyPage; `scripts/resource-conversion.mjs` supplies the relevant service/industry label and contextual implementation invitation, with Contact and appropriate homepage-preview links. All sitemap pages have a commercial/contact route. The scheduled library and publisher preserve expanded FAQ coverage and release gating.
+
+
+# On-site portfolio films, October 12, 2026
+
+- Shareable native-player pages: `/work/st-james-school/`, `/work/ai-catalyst/`, `/work/vertical-impression/`. Media plays from michaelmck.site; Markdown, schema, sitemap and LLM discovery travel together.
+- St. James website links use sjslegacy.com. Marketing & Branding includes the donor film inline; AI Catalyst hero links to the full film.
+- Upon This Rock shows website and podcast artwork; its trailer is retired and excluded from deployment.
+- RCCV Selected Work uses a cleaner transparent laptop cutout with a softer shadow.
