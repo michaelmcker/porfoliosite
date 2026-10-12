@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-12: On-site film pages, full-HD product-story capture, retired Upon This Rock video, sjslegacy.com links and clean RCCV cutout implemented. Responsive checks at 320/390/768/1440 pass; St. James and AI Catalyst native playback verified. Tests: 169 pass, one pre-existing missing-Chrome About test. Preparing existing GitHub-to-Vercel release.
+2026-10-12: Portfolio media release 4c990a8 pushed to GitHub main and live-verified. Same-origin film pages, sharper story, clean RCCV laptop, retired Upon This Rock video and sjslegacy.com links complete. Seventeen public files match, Markdown and video ranges pass; retired film/poster return 404. Mobile/desktop and native production playback checked. Tests: 169 pass; unchanged missing-Chrome test.
 
 2026-10-12: Due service-business checklist released and live-verified (d69f2dc). Nine public file matches, Markdown negotiation, dates, mobile/desktop and sixteen future-route 404 checks pass. Echo retry for October 16 cost draft still returns HTTP 503 maintenance; that draft remains private and pending-review.
 
@@ -65,6 +65,12 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-12: Portfolio films and selected work cleanup
+- Added shareable native video pages for St. James, AI Catalyst and Vertical Impression, using same-origin media and shared navigation. Removed Upon This Rock video while preserving its website and artwork. School website actions now use sjslegacy.com.
+- Replaced low-resolution story GIF with actual 1920px scrolling capture; cleaned the laptop background, reflection and edges with image editing, preserving source assets.
+- Release 4c990a8 pushed via existing main-to-Vercel workflow. Seventeen live files match, three Markdown negotiations and three media range requests pass; retired film/poster return 404. Browser confirms production playback, clean laptop and responsive layout. Deployment metadata unavailable: connector scope 403 and CLI absent; public domain verified directly.
+- Private source and responsive evidence: Business Research/portfolio-media-2026-10-12. Tests: 169 pass, unchanged About test missing Chrome.
 
 ### 2026-10-12: Service-business checklist scheduled release
 - Published the due reviewed checklist via existing GitHub main to Vercel; original October 8 date preserved and October 12 modification date verified. No future release moved forward.

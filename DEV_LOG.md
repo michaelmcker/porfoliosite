@@ -384,3 +384,6 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 
 - Local checks: no overflow at 320/390/768/1440 for homepage, marketing and film template. St. James and AI Catalyst play from local same-origin media; no player errors. Marketing has zero Upon This Rock players and only sjslegacy.com School website links.
 - Test result: 169 pass; the pre-existing About browser test still cannot find its configured Google Chrome executable. Native browser review used for responsive and playback checks.
+
+- Release 4c990a8 pushed to main and live-verified: seventeen exact public file matches, three Markdown negotiations, three video range responses and two retired asset 404s. Native St. James playback verified on production; marketing story plays from new full-HD source; live desktop/mobile have no overflow. Clean RCCV screenshot saved privately.
+- Vercel deployment-status connector remains scope-forbidden (403); mapped CLI fallback unavailable. No duplicate deployment created; public domain bytes verify the release.
