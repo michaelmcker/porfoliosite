@@ -28,7 +28,14 @@
       "datePublished": "2026-10-08",
       "dateModified": "2026-10-12",
       "status": "approved",
-      "note": "Originally public October 8; release queue preserves the original date."
+      "note": "Originally public October 8; release queue preserves the original date.",
+      "lastRelease": {
+        "releasedOn": "2026-10-12",
+        "url": "https://michaelmck.site/blog/service-business-website-checklist/",
+        "commit": "d69f2dc78ecc927d325a43e9b2bbfe3c2d24ac1c",
+        "evidence": "docs/editorial-release-2026-10-12/release.json",
+        "status": "live-verified"
+      }
     },
     "okanagan-website-cost": {
       "publishOn": "2026-10-16",

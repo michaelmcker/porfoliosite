@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-12: Releasing the due service-business website checklist after source/link/responsive checks. Echo retry for the separate October 16 cost draft still returns maintenance HTTP 503; that draft remains private and pending-review. Preserved remote Cool Runnings metrics update via clean rebase.
+2026-10-12: Due service-business checklist released and live-verified (d69f2dc). Nine public file matches, Markdown negotiation, dates, mobile/desktop and sixteen future-route 404 checks pass. Echo retry for October 16 cost draft still returns HTTP 503 maintenance; that draft remains private and pending-review.
 
 2026-10-11: No Sunday release. October 16 cost manuscript source/link/responsive checks complete privately; Echo maintenance (HTTP 503) prevents final approval. Article marked pending-review for retry; October 12 checklist and October 14 comparison remain prepared. No public output changed.
 
@@ -63,6 +63,12 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-12: Service-business checklist scheduled release
+- Published the due reviewed checklist via existing GitHub main to Vercel; original October 8 date preserved and October 12 modification date verified. No future release moved forward.
+- Source/link/editorial and 320/390/1440 local checks pass. 168 tests pass; unchanged missing-Chrome About failure. Fixed the calendar regression to retain pending-review privacy.
+- Release d69f2dc: nine public files match, Markdown negotiation works, sixteen future HTML/Markdown routes return 404. Live 390/1440 checks confirm imagery, five FAQs, dates and desktop contents. Production alias verified from public responses; Vercel deployment metadata access unavailable (connector scope 403, CLI absent, browser at login).
+- Echo maintenance remains on Friday’s cost draft; new prose stays pending-review. Evidence in docs/editorial-release-2026-10-12 and private Business Research release folder.
 
 ### 2026-10-11: Scheduled resource preflight
 - Verified all 69 revised Monday/Wednesday/Friday release slots; nothing due Sunday. Next release October 12 at 09:00 Vancouver.

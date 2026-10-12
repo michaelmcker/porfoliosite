@@ -1,6 +1,7 @@
 # Development log
 
 ## 2026-10-12: Scheduled checklist release
+- Published and live-verified d69f2dc. Nine exact production file matches, successful text/markdown negotiation and sixteen future-route 404s; native live 390/1440 views pass. Recorded exact production verification instead of claiming inaccessible Vercel READY metadata. Source release evidence and published queue record saved.
 - Rebuilt resources for the due October 12 service-business checklist. The public collection moves from three to four articles, retaining original October 8 publication and October 12 modification dates. Future drafts remain excluded.
 - Refreshed Google primary-source and sixteen existing source/service/proof destinations. Added the already-published Kelowna guide as a relevant sibling link; retained the exact reviewed prose and five FAQs.
 - Preserved the latest remote Cool Runnings metrics commit through a clean rebase. Echo retry for Friday’s cost draft still returns HTTP 503 maintenance; its pending-review gate remains intact.
