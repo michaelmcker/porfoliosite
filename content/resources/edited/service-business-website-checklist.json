@@ -70,5 +70,11 @@
       "Fix broken contact routes, unclear services and misleading coverage before adding features. Make the main service pages readable and easy to act on from a phone, then strengthen relevant proof. Use real enquiries to identify the next gap instead of expanding the website simply to increase its page count."
     ]
   ],
-  "primaryMoneyPage": "/web-design/"
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "kelowna-business-website-guide",
+    "website-visitors-no-enquiries",
+    "okanagan-website-cost",
+    "google-chatgpt-business-visibility"
+  ]
 }

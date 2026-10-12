@@ -146,6 +146,8 @@ I can turn the page plan, content and customer journey into a considered website
 
 ## Keep exploring
 
+- [10 things every service business website needs in 2026](https://michaelmck.site/blog/service-business-website-checklist/)
+
 [Explore website design for your industry](https://michaelmck.site/web-design/industries/)
 
 - [Plumbers](https://michaelmck.site/web-design/plumbers/)

@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-12: Releasing the due service-business website checklist after source/link/responsive checks. Echo retry for the separate October 16 cost draft still returns maintenance HTTP 503; that draft remains private and pending-review. Preserved remote Cool Runnings metrics update via clean rebase.
+
 2026-10-11: No Sunday release. October 16 cost manuscript source/link/responsive checks complete privately; Echo maintenance (HTTP 503) prevents final approval. Article marked pending-review for retry; October 12 checklist and October 14 comparison remain prepared. No public output changed.
 
 2026-10-10: Homepage tools and revised general DOCX/PDF complete; two-page document and responsive layout visually checked. Deployed and live-verified: 6282712, Vercel READY; homepage and updated resume match the release.

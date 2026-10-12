@@ -5,6 +5,7 @@ Source: https://michaelmck.site/blog/
 A useful business website explains your services, shows relevant work and turns interest into an enquiry or booking. These Okanagan resources cover cost, local search, ownership and choosing a designer, with practical advice for Kelowna, Vernon and West Kelowna.
 
 [Your city](#city-guides)
+[Practical checklists](#checklists)
 [Real work](#results)
 
 ## Start where you do business.
@@ -14,6 +15,10 @@ A useful business website explains your services, shows relevant work and turns 
 - [Guide · October 10, 2026 The Vernon business website guide: 7 priorities for 2026 A practical Vernon BC website guide covering North Okanagan service areas, referral customers, appointments, content, ownership and local search. Read the article](https://michaelmck.site/blog/vernon-business-website-guide/)
 
 - [Guide · October 10, 2026 The West Kelowna business website guide: 8 essentials for 2026 Eight website decisions for West Kelowna businesses: accurate coverage, visitor bookings, service quotes, local proof, search, mobile usability and ownership. Read the article](https://michaelmck.site/blog/west-kelowna-business-website-guide/)
+
+## Make the next decision easier.
+
+- [Checklist · October 12, 2026 10 things every service business website needs in 2026 A practical website checklist for Okanagan service businesses: clear services, local coverage, proof, mobile enquiries, Google visibility and follow-up. Read the article](https://michaelmck.site/blog/service-business-website-checklist/)
 
 Cool Runnings landscaping website with service coverage and estimate actions
 

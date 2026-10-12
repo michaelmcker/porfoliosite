@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-12",
+  "timezone": "America/Vancouver",
+  "slug": "service-business-website-checklist",
+  "title": "10 things every service business website needs in 2026",
+  "url": "https://michaelmck.site/blog/service-business-website-checklist/",
+  "datePublished": "2026-10-08",
+  "dateModified": "2026-10-12",
+  "state": "ready-to-publish",
+  "checks": {
+    "sourceFreshness": "Current Google web.dev/Search Central sources rechecked October 12; saved buyer-intent and October 10 approved Echo review preserved. No prose rewrite.",
+    "links": "Sixteen source/service/proof links return 200. Release URL 404 before publication as expected; published Kelowna sibling guide added.",
+    "editorial": "PASS: direct answer, ten original sections, five distinct FAQs, correct qualified-booking proof; no banned phrases or unsupported new claims.",
+    "responsive": "320/390/1440 no overflow or missing images; five FAQs, service/contact links and published sibling guide present, contents sticky on desktop.",
+    "tests": "168 pass; one unchanged missing-Chrome About test failure. Focused resource/editorial tests pass after sibling link addition.",
+    "privacy": "Eight future articles remain absent from generated public output and discovery. October 16 cost article remains pending-review after Echo maintenance 503 on October 12."
+  },
+  "privateEvidence": "/Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-12-checklist-release",
+  "deployment": null
+}

@@ -1,5 +1,11 @@
 # Development log
 
+## 2026-10-12: Scheduled checklist release
+- Rebuilt resources for the due October 12 service-business checklist. The public collection moves from three to four articles, retaining original October 8 publication and October 12 modification dates. Future drafts remain excluded.
+- Refreshed Google primary-source and sixteen existing source/service/proof destinations. Added the already-published Kelowna guide as a relevant sibling link; retained the exact reviewed prose and five FAQs.
+- Preserved the latest remote Cool Runnings metrics commit through a clean rebase. Echo retry for Friday’s cost draft still returns HTTP 503 maintenance; its pending-review gate remains intact.
+- Updated the scheduled-privacy regression to account for an explicitly pending-review manuscript and assert it cannot become publishable just because its date passes.
+
 ## 2026-10-11: Website-cost preparation
 - Current official source/link checks and private 320/390/1440 responsive checks pass. Five FAQs retained with duplicate prose removed; Svice first-year hosting inclusion and portfolio proof link added. Original publication date retained, actual refresh date October 11, release still October 16.
 - Echo returned HTTP 503 maintenance on two bounded attempts. Article status is pending-review until the saved private review succeeds; no public output changed or deployment attempted. All 69 revised slots are continuous through March 19, 2027. Full suite remains 168 passing checks and one unchanged missing-Chrome failure.

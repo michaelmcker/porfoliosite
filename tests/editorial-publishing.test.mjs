@@ -9,7 +9,9 @@ test('scheduled articles stay private until their Vancouver release date',async(
  assert.equal(localDate(new Date('2026-10-09T02:00:00Z')),'2026-10-08');
  assert.equal(articles.filter(a=>ready(a,'2026-10-08')).length,3);
  assert.equal(articles.filter(a=>ready(a,'2026-10-12')).length,4);
- assert.equal(articles.filter(a=>ready(a,'2026-11-05')).length,12);
+ const awaitingReview=articles.filter(a=>dates(a).publishOn<='2026-11-05'&&dates(a).status!=='approved');
+ assert.equal(articles.filter(a=>ready(a,'2026-11-05')).length,12-awaitingReview.length);
+ for(const a of awaitingReview)assert.equal(ready(a,'2028-01-01'),false,a.slug+' stays private until editorial approval');
  const publicCopy=(await Promise.all(['blog/index.html','sitemap.xml','llms.txt','llms-full.txt'].map(read))).join('\n');
  for(const a of articles){
   if(dates(a).note?.startsWith('Originally public'))assert.equal(dates(a).datePublished,'2026-10-08','retain original public date');
