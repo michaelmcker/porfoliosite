@@ -387,3 +387,7 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 
 - Release 4c990a8 pushed to main and live-verified: seventeen exact public file matches, three Markdown negotiations, three video range responses and two retired asset 404s. Native St. James playback verified on production; marketing story plays from new full-HD source; live desktop/mobile have no overflow. Clean RCCV screenshot saved privately.
 - Vercel deployment-status connector remains scope-forbidden (403); mapped CLI fallback unavailable. No duplicate deployment created; public domain bytes verify the release.
+
+## 2026-10-13 — Routine resource preflight
+- Checked all 69 queued/library cadence slots and draft paths; no Tuesday release. Retained approved copy, refreshed provider/portfolio source evidence and verified private Vernon rendering at 320/390/1440. No overflow, five FAQs, unique IDs, desktop sticky contents.
+- Echo cost retry returned the same 503 maintenance response; pending-review retained. Six upcoming paths return 404. No source/output changes and no deploy; no redundant full tests. Fetched current remote metrics history without overwriting it. Evidence: docs/editorial-prep-2026-10-13 and private Business Research folder.

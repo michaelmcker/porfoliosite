@@ -1,0 +1,74 @@
+{
+  "checkedOn": "2026-10-13",
+  "timezone": "America/Vancouver",
+  "dueToday": [],
+  "released": [],
+  "publicOutputsChanged": false,
+  "manuscriptsChanged": false,
+  "calendar": {
+    "slots": 69,
+    "cadence": "Monday/Wednesday/Friday 09:00 America/Vancouver",
+    "lastStockedSlot": "2027-03-19",
+    "allDraftPathsExist": true
+  },
+  "nextSevenDays": [
+    {
+      "slug": "best-web-designers-kelowna",
+      "publishOn": "2026-10-14",
+      "status": "approved; existing copy retained, provider sources and links refreshed"
+    },
+    {
+      "slug": "okanagan-website-cost",
+      "publishOn": "2026-10-16",
+      "status": "pending-review; unchanged Echo maintenance HTTP 503 on one bounded retry"
+    },
+    {
+      "slug": "best-web-designers-vernon",
+      "publishOn": "2026-10-19",
+      "status": "approved existing manuscript; current provider claims verified without rewriting"
+    }
+  ],
+  "vernon": {
+    "queries": [
+      "web design Vernon BC website designers small business",
+      "best web designers Vernon North Okanagan",
+      "Vernon website design packages pricing Svice Duford Vernon Software"
+    ],
+    "searchContext": "Web search snapshot; no forced Kelowna/Vernon Google geolocation or verified rank positions",
+    "structure": "Answer-first summary; five named providers with fit and questions; North Okanagan brief criteria; five distinct FAQs; contextual website, proof and contact links.",
+    "claimLedger": {
+      "Michael": "Coldstream base and portfolio work retained; Cool Runnings client-reported 30% increase in qualified bookings, no revenue/timeframe/isolated test invented.",
+      "Duford": "Official Vernon page supports custom/template sites, local SEO, North Okanagan communities and clinic/service examples.",
+      "Svice": "Official six-page offer requires customer text/logos/images and includes one hosting year; related marketing services retained.",
+      "TheBomb": "Official page supports custom builds, hosting, maintenance and SEO; no copied performance guarantees.",
+      "Vernon Software": "Official WordPress page supports packaged page counts and setup features; no unsupported provider outcomes."
+    },
+    "sourceInventory": [
+      "https://michaelmck.site/web-design/",
+      "https://michaelmck.site/v2/work/local-search-magnet.html",
+      "https://duforddigital.com/vernon-web-design/",
+      "https://www.svice.ca/",
+      "https://thebomb.ca/",
+      "https://vernonsoftware.com/services/web-design/"
+    ],
+    "gaps": "Additional providers surfaced, but no evidence requires replacing the supported five-provider fit shortlist. This is not an exhaustive market ranking.",
+    "echo": "Existing October 8 response and approved manuscript retained; no new prose to send or accept.",
+    "editorial": "No hard-block phrases or em dash; five FAQs; direct answer, comparison table, self-authorship and useful scope questions retained. Mild FAQ repetition does not require replacing the approved manuscript.",
+    "responsive": "320/390/1440 no overflow, one H1, five FAQ headings, unique IDs; desktop contents sticky.",
+    "releaseDateReminder": "Queued modification dates from the old calendar are provisional. Stamp the actual review/release date before publishing; preserve original October 8 publication date."
+  },
+  "links": {
+    "directChecks": 11,
+    "recoveredCaseFetch": 200,
+    "twirling": "Direct 403; official source read successfully via web tool.",
+    "futurePaths": "Six upcoming HTML/Markdown paths return 404."
+  },
+  "repo": {
+    "remoteMain": "59abb1e",
+    "workingMain": "1a01ffc",
+    "note": "Remote daily metrics updates preserved. No merge or push for routine private preflight."
+  },
+  "validation": "No implementation/manuscript changes; no repeated full test suite. Existing runtime used only to render private review.",
+  "privateEvidence": "/Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-13-editorial-preflight",
+  "notification": "No release, required input or new actionable failure; quiet."
+}

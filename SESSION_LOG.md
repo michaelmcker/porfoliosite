@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-13: Routine private editorial preflight complete; no Tuesday release. Next three slots source/link checked. Vernon responsive review passes; unchanged cost Echo 503 hold retained. No manuscript/public output or calendar changes.
+
 2026-10-12: Portfolio media release 4c990a8 pushed to GitHub main and live-verified. Same-origin film pages, sharper story, clean RCCV laptop, retired Upon This Rock video and sjslegacy.com links complete. Seventeen public files match, Markdown and video ranges pass; retired film/poster return 404. Mobile/desktop and native production playback checked. Tests: 169 pass; unchanged missing-Chrome test.
 
 2026-10-12: Due service-business checklist released and live-verified (d69f2dc). Nine public file matches, Markdown negotiation, dates, mobile/desktop and sixteen future-route 404 checks pass. Echo retry for October 16 cost draft still returns HTTP 503 maintenance; that draft remains private and pending-review.
@@ -65,6 +67,10 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-13: Routine resource preflight
+- Verified 69 three-per-week slots and existing manuscripts. Refreshed source/link evidence for upcoming comparisons; no approved prose replaced. Vernon passes 320/390/1440 review with five FAQs, unique IDs and desktop sticky contents.
+- Cost Echo retry remains HTTP 503 maintenance; existing pending-review hold unchanged. Six future HTML/Markdown paths remain private (404). No release, public build or schedule changes. Private evidence and resumption note saved in docs/editorial-prep-2026-10-13.
 
 ### 2026-10-12: Portfolio films and selected work cleanup
 - Added shareable native video pages for St. James, AI Catalyst and Vertical Impression, using same-origin media and shared navigation. Removed Upon This Rock video while preserving its website and artwork. School website actions now use sjslegacy.com.
