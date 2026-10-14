@@ -9,7 +9,7 @@
   "sections": [
     {
       "id": "michael",
-      "body": "<p>I am the hands-on recommendation here for a Kelowna owner who wants the website, content and search foundations considered together, with direct access to the person doing the work. I build around the business outcome: an appropriate enquiry, a first consultation or a booking.</p><p>Relevant work includes ABC Appliance, Okanagan Treehouse and Cool Runnings, where website, local SEO and conversion work brought a 30% increase in qualified bookings. My broader services include branding, video, marketing and custom workflows, so the conversation can continue beyond the website when useful.</p><p><strong>Ask me about:</strong> the pages your customers need, which evidence to show, ownership, editing support and the enquiry handoff. Full website packages start at CAD $2,500, with the complete scope agreed before paid work begins. You can request a free custom homepage design preview with no obligation to hire me. <a href=\"/web-design/\">Explore my website work</a>.</p>"
+      "body": "<p>I am the hands-on recommendation here for a Kelowna owner who wants the website, content and search foundations considered together, with direct access to the person doing the work. I build around the business outcome: an appropriate enquiry, a first consultation or a booking.</p><p>Relevant work includes ABC Appliance, Okanagan Treehouse and <a href=\"/v2/work/local-search-magnet.html\">Cool Runnings</a>, where website, local SEO and conversion work brought a 30% increase in qualified bookings. My broader services include branding, video, marketing and custom workflows, so the conversation can continue beyond the website when useful.</p><p><strong>Ask me about:</strong> the pages your customers need, which evidence to show, ownership, editing support and the enquiry handoff. Full website packages start at CAD $2,500, with the complete scope agreed before paid work begins. You can request a free custom homepage design preview with no obligation to hire me. <a href=\"/web-design/\">Explore my website work</a>.</p>"
     },
     {
       "id": "twirling",
@@ -55,5 +55,10 @@
     ]
   ],
   "primaryMoneyPage": "/web-design/",
-  "method": "I’m Michael McKerracher, a web designer and marketing consultant based in Coldstream. I publish this comparison and include my own business. The recommendations below are my assessment of project fit, based on the firms’ public services and portfolio information reviewed on October 10, 2026. Compare the current scope and terms directly with each provider."
+  "method": "I’m Michael McKerracher, a web designer and marketing consultant based in Coldstream. I publish this comparison and include my own business. The recommendations below are my assessment of project fit, based on the firms’ public services and portfolio information reviewed on October 10, 2026. Compare the current scope and terms directly with each provider.",
+  "related": [
+    "kelowna-business-website-guide",
+    "service-business-website-checklist",
+    "okanagan-website-cost"
+  ]
 }

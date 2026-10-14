@@ -6,6 +6,7 @@ A useful business website explains your services, shows relevant work and turns 
 
 [Your city](#city-guides)
 [Practical checklists](#checklists)
+[Choosing a designer](#comparisons)
 [Real work](#results)
 
 ## Start where you do business.
@@ -19,6 +20,12 @@ A useful business website explains your services, shows relevant work and turns 
 ## Make the next decision easier.
 
 - [Checklist · October 12, 2026 10 things every service business website needs in 2026 A practical website checklist for Okanagan service businesses: clear services, local coverage, proof, mobile enquiries, Google visibility and follow-up. Read the article](https://michaelmck.site/blog/service-business-website-checklist/)
+
+## Find the right fit.
+
+Web designers compared by the work and support your business needs.
+
+- [Comparison · October 14, 2026 5 web designers for Kelowna businesses: the best fits for 2026 Compare five web designers for Kelowna businesses by project fit, from hands-on service websites to WordPress platforms and ongoing marketing support. Read the article](https://michaelmck.site/blog/best-web-designers-kelowna/)
 
 Cool Runnings landscaping website with service coverage and estimate actions
 

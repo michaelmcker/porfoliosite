@@ -2,12 +2,12 @@
   {
     "path": "/blog/",
     "title": "Website guides and comparisons for Okanagan businesses",
-    "words": 279
+    "words": 339
   },
   {
     "path": "/blog/kelowna-business-website-guide/",
     "title": "The Kelowna business website guide: 9 decisions for 2026",
-    "words": 1783
+    "words": 1795
   },
   {
     "path": "/blog/vernon-business-website-guide/",
@@ -23,5 +23,10 @@
     "path": "/blog/service-business-website-checklist/",
     "title": "10 things every service business website needs in 2026",
     "words": 1539
+  },
+  {
+    "path": "/blog/best-web-designers-kelowna/",
+    "title": "5 web designers for Kelowna businesses: the best fits for 2026",
+    "words": 1473
   }
 ]

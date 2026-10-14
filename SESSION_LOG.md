@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-14: Releasing the scheduled reviewed Kelowna designer comparison. Source/link and editorial freshness checks in progress; preserving private cost hold and daily metrics history.
+
 2026-10-13: Routine private editorial preflight complete; no Tuesday release. Next three slots source/link checked. Vernon responsive review passes; unchanged cost Echo 503 hold retained. No manuscript/public output or calendar changes.
 
 2026-10-12: Portfolio media release 4c990a8 pushed to GitHub main and live-verified. Same-origin film pages, sharper story, clean RCCV laptop, retired Upon This Rock video and sjslegacy.com links complete. Seventeen public files match, Markdown and video ranges pass; retired film/poster return 404. Mobile/desktop and native production playback checked. Tests: 169 pass; unchanged missing-Chrome test.

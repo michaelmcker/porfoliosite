@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-14",
+  "timezone": "America/Vancouver",
+  "slug": "best-web-designers-kelowna",
+  "title": "5 web designers for Kelowna businesses: the best fits for 2026",
+  "url": "https://michaelmck.site/blog/best-web-designers-kelowna/",
+  "datePublished": "2026-10-08",
+  "dateModified": "2026-10-14",
+  "state": "validated; publishing",
+  "checks": {
+    "sourceFreshness": "Four current official provider pages and actual portfolio/offer rechecked October 14. Prior buyer-intent inventory and October 13 freshness audit retained. Two exact Kelowna buyer queries checked using web search; no geolocated Google rank claimed.",
+    "queryMap": [
+      "best web designers Kelowna service business website design agency",
+      "Kelowna web design WordPress marketing agencies Twirling Umbrellas Twin Creek"
+    ],
+    "structure": "Answer-first shortlist, five provider sections, scope questions, comparison table, five FAQs, sources, two live sibling resources and service/contact links.",
+    "claimLedger": "Twirling WordPress/mission-driven focus, Twin Creek ongoing marketing model, Duford template/custom/local SEO and TheBomb custom/hosting/SEO supported by their official pages. Own services/pricing confirmed; qualified bookings retained with no new timeframe or attribution claim.",
+    "echo": "October 10 saved review returned no findings; unchanged prose retained. Only link structure and update date changed.",
+    "editorial": "PASS: five supported providers, clear self-authorship, direct answer, five useful FAQs, zero banned phrases/em dashes/unsupported new numerical claims.",
+    "links": "Ten checked destinations: nine direct 200 responses; Twirling direct 403 but official page successfully read with web tool. Future cost link suppressed until approved release. Added direct proof link and published checklist sibling.",
+    "responsive": "320/390/1440 no overflow, one H1, five FAQs, unique IDs, proof/contact links; desktop contents sticky. Visible and schema publication date October 8 retained; update October 14.",
+    "tests": "169 pass; unchanged About browser test cannot find configured Google Chrome. Baseline also had one stale date-aware generated-output mismatch resolved by scheduled rebuild.",
+    "privacy": "Five articles public, seven queued. Future cost manuscript pending-review; no future release moved forward.",
+    "calendar": "69 release slots remain Monday/Wednesday/Friday through March 19, 2027; full manuscripts present."
+  },
+  "privateEvidence": "/Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-14-comparison-release",
+  "deployment": {
+    "method": "Existing GitHub main to Vercel integration",
+    "state": "not yet verified"
+  }
+}

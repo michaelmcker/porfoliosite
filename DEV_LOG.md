@@ -391,3 +391,8 @@ Source PNGs retained. Four mobile diagrams are opaque black artwork, not transpa
 ## 2026-10-13 — Routine resource preflight
 - Checked all 69 queued/library cadence slots and draft paths; no Tuesday release. Retained approved copy, refreshed provider/portfolio source evidence and verified private Vernon rendering at 320/390/1440. No overflow, five FAQs, unique IDs, desktop sticky contents.
 - Echo cost retry returned the same 503 maintenance response; pending-review retained. Six upcoming paths return 404. No source/output changes and no deploy; no redundant full tests. Fetched current remote metrics history without overwriting it. Evidence: docs/editorial-prep-2026-10-13 and private Business Research folder.
+
+## 2026-10-14 — Scheduled Kelowna comparison release
+- Fetched remote daily metrics and rebased local documentation commits without conflict. Baseline: 168 passing; date-aware resource render is stale now the release day has arrived, plus unchanged missing-Chrome About failure.
+- Preserved approved prose and prior Echo review. Set actual modification date October 14, retaining original October 8 publication date; linked existing qualified-booking proof and added the published checklist as a related resource.
+- Final source/link checks pass (Twirling read through web after direct 403); 320/390/1440 local browser checks pass. 169 tests pass; unchanged missing-Chrome failure. Five articles generated, seven queued private. Prior approved Echo prose retained, new cost retry still 503. Publishing through existing GitHub integration.
