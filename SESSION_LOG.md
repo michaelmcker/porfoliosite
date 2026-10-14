@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-14: Releasing the scheduled reviewed Kelowna designer comparison. Source/link and editorial freshness checks in progress; preserving private cost hold and daily metrics history.
+2026-10-14: Scheduled Kelowna designer comparison released and live-verified (857dbc3). Nine file matches, three Markdown negotiations, fourteen future-route 404s and live 390/1440 review pass. 169 tests pass; unchanged missing-Chrome failure. Cost Echo maintenance hold retained; upcoming traffic/enquiries manuscript refreshed privately.
 
 2026-10-13: Routine private editorial preflight complete; no Tuesday release. Next three slots source/link checked. Vernon responsive review passes; unchanged cost Echo 503 hold retained. No manuscript/public output or calendar changes.
 
@@ -69,6 +69,12 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-14: Kelowna designer comparison scheduled release
+- Published the approved prewritten comparison with five useful FAQs, clear self-authorship, actual portfolio proof and service/contact links. Original October 8 publication retained; October 14 update. Added direct proof and published checklist links.
+- Current official provider facts/link checks and local 320/390/1440 review pass. 169 tests pass; unchanged missing-Chrome About failure. Date-aware stale baseline output resolved by scheduled build.
+- Release 857dbc3 verified through nine exact public file matches, three Markdown negotiations, fourteen future-route 404s and actual live 390/1440 views. Vercel metadata unavailable (scope 403, CLI absent); public alias independently verified.
+- One cost Echo retry still 503 maintenance; existing hold unchanged. October 21 traffic/enquiry manuscript and Google primary source refreshed privately, with release-day checks still required. No future article released. Evidence: docs/editorial-release-2026-10-14 and private Business Research folder.
 
 ### 2026-10-13: Routine resource preflight
 - Verified 69 three-per-week slots and existing manuscripts. Refreshed source/link evidence for upcoming comparisons; no approved prose replaced. Vernon passes 320/390/1440 review with five FAQs, unique IDs and desktop sticky contents.
