@@ -33,7 +33,7 @@
     },
     {
       "id": "measurement",
-      "body": "<p>A business should measure discovery, visits, enquiries, and booked work as separate stages. Search Console reports Google search performance. Analytics can show referred visits, and the enquiry process can reveal which conversations turned into useful work.</p><p>OpenAI says ChatGPT search referral links carry a utm_source=chatgpt.com parameter. Keep that information in your reporting, then look at the enquiries that follow. A single answer where your business appears is a snapshot, not a stable ranking position.</p><p>Use the data to decide what to improve: missing service information, weak evidence, confusing booking steps, or an unanswered local question. That is a more useful programme than publishing more pages just to increase the count.</p>"
+      "body": "<p>A business should measure discovery, visits, enquiries, and booked work as separate stages. Search Console reports Google search performance. Analytics can show referred visits, and the enquiry process can reveal which conversations turned into useful work.</p><p>Review the referral sources and campaign tags recorded in your analytics, then connect identifiable visits to the enquiries that follow. Some visits will have no usable attribution; keep those separate rather than counting every enquiry as an AI-search result. A single answer where your business appears is a snapshot, not a stable ranking position.</p><p>Use the data to decide what to improve: missing service information, weak evidence, confusing booking steps, or an unanswered local question. That is a more useful programme than publishing more pages just to increase the count.</p>"
     }
   ],
   "faqs": [
@@ -58,5 +58,23 @@
       "Ask for the pages improved, crawl and indexing checks, source corrections and a clear measurement method. Separate observed mentions from identifiable visits, enquiries and bookings. Keep records of query checks and dates, and avoid treating one favourable answer screenshot as proof of reliable recommendations or customer acquisition."
     ]
   ],
-  "primaryMoneyPage": "/web-design/"
+  "primaryMoneyPage": "/web-design/",
+  "sources": [
+    {
+      "name": "Google: AI features and your website",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features"
+    },
+    {
+      "name": "OpenAI: search and training crawlers",
+      "url": "https://developers.openai.com/api/docs/bots"
+    },
+    {
+      "name": "Google: local ranking factors",
+      "url": "https://support.google.com/business/answer/7091?hl=en"
+    },
+    {
+      "name": "Google: spam policies and doorway abuse",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+    }
+  ]
 }

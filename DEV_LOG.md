@@ -1,5 +1,10 @@
 # Development log
 
+## 2026-10-16: Scheduled editorial hold and source refresh
+- Today’s cost release held after one Echo retry returned HTTP 401 invalid/revoked key. Updated pending-review note and requested a private credential replacement. No repeated retries or gate bypass.
+- October 23 source refresh found the old OpenAI publishers FAQ redirects to an unrelated page. Replaced it with current bot documentation and removed the unsupported automatic UTM assertion; revised prose stays pending-review for Echo. No public content changed.
+- Five focused scheduling/privacy/FAQ/commercial-link tests pass; 69 slots and manuscript paths intact. No public build, deployment or responsive completion claim. Evidence: docs/editorial-hold-2026-10-16 and private Business Research directory.
+
 ## 2026-10-12: Scheduled checklist release
 - Published and live-verified d69f2dc. Nine exact production file matches, successful text/markdown negotiation and sixteen future-route 404s; native live 390/1440 views pass. Recorded exact production verification instead of claiming inaccessible Vercel READY metadata. Source release evidence and published queue record saved.
 - Rebuilt resources for the due October 12 service-business checklist. The public collection moves from three to four articles, retaining original October 8 publication and October 12 modification dates. Future drafts remain excluded.

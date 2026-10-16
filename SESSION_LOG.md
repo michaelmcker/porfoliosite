@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-16: Today’s cost release held: Echo HTTP 401 invalid/revoked key. Michael notified; private key replacement needed. October 23 stale-source/measurement correction saved pending-review. Five focused tests pass; no public build or deployment.
+
 2026-10-14: Scheduled Kelowna designer comparison released and live-verified (857dbc3). Nine file matches, three Markdown negotiations, fourteen future-route 404s and live 390/1440 review pass. 169 tests pass; unchanged missing-Chrome failure. Cost Echo maintenance hold retained; upcoming traffic/enquiries manuscript refreshed privately.
 
 2026-10-13: Routine private editorial preflight complete; no Tuesday release. Next three slots source/link checked. Vernon responsive review passes; unchanged cost Echo 503 hold retained. No manuscript/public output or calendar changes.
@@ -69,6 +71,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-16: Scheduled editorial hold
+- Due cost article remains private because Echo now rejects the saved key. Requested a private credential replacement; no release attempted.
+- Refreshed October 23 primary sources; replaced obsolete OpenAI citation and removed unsupported automatic referral-tag assertion. Revised manuscript awaits Echo. Five focused tests pass; cadence and future privacy retained.
+- Resume from docs/editorial-hold-2026-10-16/README.md. Original dates retained; local audit and remote automatic metrics history preserved.
 
 ### 2026-10-14: Kelowna designer comparison scheduled release
 - Published the approved prewritten comparison with five useful FAQs, clear self-authorship, actual portfolio proof and service/contact links. Original October 8 publication retained; October 14 update. Added direct proof and published checklist links.
