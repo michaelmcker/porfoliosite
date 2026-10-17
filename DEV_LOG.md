@@ -1,5 +1,9 @@
 # Development log
 
+## 2026-10-17: Routine weekend editorial preflight
+- Current official Duford/Svice/TheBomb/Vernon Software pages and Google Search Console guidance support unchanged October 19/21 manuscripts. Existing October 23 source correction remains pending Echo; unchanged rejected key not retried.
+- Verified all 69 slots/draft paths, five live destinations and eight future/held HTML/Markdown 404s. Saved private source/search evidence. No implementation or manuscript edits, public build, deployment or redundant full tests.
+
 ## 2026-10-16: Scheduled editorial hold and source refresh
 - Today’s cost release held after one Echo retry returned HTTP 401 invalid/revoked key. Updated pending-review note and requested a private credential replacement. No repeated retries or gate bypass.
 - October 23 source refresh found the old OpenAI publishers FAQ redirects to an unrelated page. Replaced it with current bot documentation and removed the unsupported automatic UTM assertion; revised prose stays pending-review for Echo. No public content changed.

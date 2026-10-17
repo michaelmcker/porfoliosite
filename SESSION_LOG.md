@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-17: Routine Saturday editorial preflight complete. No release due today. October 19 and 21 existing manuscripts/source facts refreshed; no prose changes. Echo key unchanged, existing holds retained without retry or repeated notification. Eight future/held HTML and Markdown routes remain 404.
+
 2026-10-16: Today’s cost release held: Echo HTTP 401 invalid/revoked key. Michael notified; private key replacement needed. October 23 stale-source/measurement correction saved pending-review. Five focused tests pass; no public build or deployment.
 
 2026-10-14: Scheduled Kelowna designer comparison released and live-verified (857dbc3). Nine file matches, three Markdown negotiations, fourteen future-route 404s and live 390/1440 review pass. 169 tests pass; unchanged missing-Chrome failure. Cost Echo maintenance hold retained; upcoming traffic/enquiries manuscript refreshed privately.
@@ -71,6 +73,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-17: Weekend editorial preflight
+- Read next week’s existing manuscripts; current official provider and Google source facts support retained copy. Unlocalized Vernon search snapshot saved privately; no measured local ranking claimed.
+- Five service/proof/resource/contact routes return 200; eight future/held HTML/Markdown routes return 404. All 69 Mon/Wed/Fri slots and existing draft paths remain intact. No public build, deployment, new prose or redundant test rerun. Release-day responsive and full checks still required.
+- Echo credential unchanged since the rejected October 16 attempt; no retry or repeated notification. Private evidence: Business Research/website-market-2026-10-07/docs/2026-10-17-editorial-preflight. Remote metrics fetched and preserved.
 
 ### 2026-10-16: Scheduled editorial hold
 - Due cost article remains private because Echo now rejects the saved key. Requested a private credential replacement; no release attempted.
