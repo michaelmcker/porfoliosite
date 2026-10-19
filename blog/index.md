@@ -27,6 +27,8 @@ Web designers compared by the work and support your business needs.
 
 - [Comparison · October 14, 2026 5 web designers for Kelowna businesses: the best fits for 2026 Compare five web designers for Kelowna businesses by project fit, from hands-on service websites to WordPress platforms and ongoing marketing support. Read the article](https://michaelmck.site/blog/best-web-designers-kelowna/)
 
+- [Comparison · October 19, 2026 5 web designers for Vernon businesses: the best fits for 2026 Five website providers for Vernon and the North Okanagan, compared by hands-on support, local SEO, packaged builds, custom design and ownership needs. Read the article](https://michaelmck.site/blog/best-web-designers-vernon/)
+
 Cool Runnings landscaping website with service coverage and estimate actions
 
 ## 30% more qualified bookings.

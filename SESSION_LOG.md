@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-19: Preparing due Vernon designer comparison for source, editorial, responsive and live-release verification. Preserving existing Echo holds and all future slots.
+
 2026-10-17: Routine Saturday editorial preflight complete. No release due today. October 19 and 21 existing manuscripts/source facts refreshed; no prose changes. Echo key unchanged, existing holds retained without retry or repeated notification. Eight future/held HTML and Markdown routes remain 404.
 
 2026-10-16: Today’s cost release held: Echo HTTP 401 invalid/revoked key. Michael notified; private key replacement needed. October 23 stale-source/measurement correction saved pending-review. Five focused tests pass; no public build or deployment.
