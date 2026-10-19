@@ -1,9 +1,10 @@
 # Development log
 
 ## 2026-10-19: Scheduled Vernon comparison release
+- Live verification: nine exact public file matches, three Markdown negotiations, twelve future/held 404s and actual production 390/1440 views pass. Vercel GitHub success target 4YGx4Ac3WCfYDj2MPkLwf3LuQPUc; direct API scope 403/CLI absent documented. Queue release evidence recorded.
 - Refreshed ten official/provider/proof/sibling/contact links; source claims and original Echo wording retained. Only current review date and a contextual checklist link changed. Original October 8 publication preserved.
 - Rebuilt six public resources with six future/held manuscripts excluded. Actual CUA review passes at 320/390/1440 with readable text, no overflow, unique IDs, five visible/schema FAQs and sticky desktop contents.
-- 169 tests pass; unchanged missing-Chrome About test. Baseline date-aware generated-output mismatch resolves after build. Source/link/editorial/privacy evidence saved in docs/editorial-release-2026-10-19 and private Business Research directory. Publishing through existing GitHub integration; live verification pending.
+- 169 tests pass; unchanged missing-Chrome About test. Baseline date-aware generated-output mismatch resolves after build. Source/link/editorial/privacy evidence saved in docs/editorial-release-2026-10-19 and private Business Research directory. Published a7b7712 through existing GitHub integration; Vercel GitHub status success and live verification complete.
 
 ## 2026-10-17: Routine weekend editorial preflight
 - Current official Duford/Svice/TheBomb/Vernon Software pages and Google Search Console guidance support unchanged October 19/21 manuscripts. Existing October 23 source correction remains pending Echo; unchanged rejected key not retried.

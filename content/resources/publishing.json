@@ -91,7 +91,14 @@
       "datePublished": "2026-10-08",
       "dateModified": "2026-10-19",
       "status": "approved",
-      "note": "Originally public October 8; release queue preserves the original date."
+      "note": "Originally public October 8; release queue preserves the original date.",
+      "lastRelease": {
+        "releasedOn": "2026-10-19",
+        "url": "https://michaelmck.site/blog/best-web-designers-vernon/",
+        "commit": "a7b7712427c64600e383c4681cf5ac90cd940e3c",
+        "evidence": "docs/editorial-release-2026-10-19/release.json",
+        "status": "live-verified"
+      }
     },
     "best-web-designers-west-kelowna": {
       "publishOn": "2026-10-26",

@@ -6,7 +6,7 @@
   "url": "https://michaelmck.site/blog/best-web-designers-vernon/",
   "datePublished": "2026-10-08",
   "dateModified": "2026-10-19",
-  "state": "prepared",
+  "state": "live-verified",
   "checks": {
     "sourceFreshness": "Ten current official provider, portfolio, sibling and contact links return 200. Provider claims supported by Duford template/custom/local search, Svice six-page/client-content package, TheBomb custom/hosting/maintenance and Vernon Software WordPress packages.",
     "queryMap": [
@@ -20,12 +20,22 @@
     "responsive": "Actual local CUA 320/390/1440 review; no overflow, one H1, five FAQs, unique IDs, desktop aside sticky. Screenshot evidence saved privately.",
     "tests": "169 pass; unchanged About test missing configured Google Chrome. Baseline stale date-aware output mismatch resolved by scheduled rebuild.",
     "privacy": "Six articles public, six queued/held excluded from HTML, Markdown and discovery. October 16/23 Echo holds remain.",
-    "links": "All article internal destinations exist, fragments resolve, ten current external/own links return 200. Visible/schema dates and five FAQs agree."
+    "links": "All article internal destinations exist, fragments resolve, ten current external/own links return 200. Visible/schema dates and five FAQs agree.",
+    "upcomingPreparation": "October 21 retained approved after October 17 source freshness; October 23 source correction pending Echo. October 26 West Kelowna existing manuscript read and current primary sources refreshed privately today; no early release."
   },
   "privateEvidence": "/Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-19-vernon-release",
   "deployment": {
     "method": "Existing GitHub main to Vercel integration",
     "productionAlias": "https://michaelmck.site",
-    "metadataAccess": "Connector scope 403; mapped vercel CLI absent. Use GitHub status and independently verify actual public alias; no READY claim without evidence."
-  }
+    "metadataAccess": "Connector scope 403; mapped vercel CLI absent. Use GitHub status and independently verify actual public alias; no READY claim without evidence.",
+    "githubVercelStatus": "success",
+    "deploymentUrl": "https://vercel.com/michael-mcks-projects/portfolio-remote-preview/4YGx4Ac3WCfYDj2MPkLwf3LuQPUc",
+    "deploymentIdFromStatusTarget": "4YGx4Ac3WCfYDj2MPkLwf3LuQPUc",
+    "publicFilesMatched": 9,
+    "markdownNegotiation": "Three exact 200 text/markdown responses",
+    "futureRoutes404": 12,
+    "productionResponsive": "Actual CUA 390/1440 views pass; original/update dates, hierarchy and sticky desktop contents checked.",
+    "verification": "Public article, hub, Vernon sibling, sitemap and LLM discovery match checked-in build bytes. Vercel GitHub status success; direct dashboard metadata remains scope 403, mapped CLI absent. No READY API state claimed."
+  },
+  "commit": "a7b7712427c64600e383c4681cf5ac90cd940e3c"
 }

@@ -1,7 +1,7 @@
 # Vernon comparison release — October 19, 2026
 
-Prepared the approved prewritten five-provider comparison after current source/link, AEO/editorial and responsive checks. Original October 8 publication retained; reviewed October 19. Existing Echo wording preserved; only review date and link structure changed.
+Published and live-verified `a7b7712` through the existing GitHub main-to-Vercel integration. Vercel GitHub check succeeded; deployment target `4YGx4Ac3WCfYDj2MPkLwf3LuQPUc`. Direct Vercel dashboard API remains scope 403, and mapped CLI is absent; actual production alias independently verified.
 
-169 tests pass; unchanged About test requires an absent Chrome installation. No new failures. All six held/future manuscripts remain private, including the unchanged Echo authentication holds. No additional deployment path or outreach.
+Nine public files match the release, three Markdown negotiations return exact generated content, twelve held/future HTML/Markdown routes return 404, and actual production mobile 390/desktop 1440 views pass. Original October 8 publication retained; reviewed/updated October 19.
 
-Private evidence and screenshot paths are recorded in release.json. Release still requires GitHub push, actual public file/Markdown/sitemap/date checks and production mobile/desktop review.
+169 tests pass; unchanged About test requires an absent Chrome installation. No new failures. Six held/future manuscripts remain private, including unchanged Echo authentication holds. October 26 West Kelowna existing manuscript and primary sources refreshed privately. No additional deployment path or outreach. Private source, query, link and screenshot evidence recorded in release.json.
