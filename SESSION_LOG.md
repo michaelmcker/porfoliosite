@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-20: Tomorrow’s traffic/enquiries manuscript refreshed privately without prose changes. Primary source, links and CUA 320/390/1440 checks pass. No Tuesday release, public build or deployment. Existing Echo holds unchanged.
+
 2026-10-19: Due Vernon designer comparison published and live-verified (a7b7712). Vercel GitHub status success, nine file matches, three Markdown negotiations, twelve future-route 404s and actual 390/1440 review pass. Echo holds retained; October 26 manuscript refreshed privately.
 
 2026-10-17: Routine Saturday editorial preflight complete. No release due today. October 19 and 21 existing manuscripts/source facts refreshed; no prose changes. Echo key unchanged, existing holds retained without retry or repeated notification. Eight future/held HTML and Markdown routes remain 404.
@@ -75,6 +77,10 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-20: Traffic/enquiries private preflight
+- Read existing complete approved manuscript; current Google source and saved query evidence support unchanged copy. Five FAQs, real qualified-bookings proof, diagnostic table and commercial links retained.
+- Private CUA 320/390/1440 review passes, six live source/link/image checks pass, eight held/future routes remain 404. No public build, deployment or redundant tests for unchanged source. Release-day checks still required; docs/editorial-prep-2026-10-20 records resumption.
 
 ### 2026-10-19: Vernon designer comparison release
 - Published the approved existing manuscript after current provider/source/link and AEO/editorial checks. Original October 8 publication retained; October 19 review/update. Qualified-bookings proof and self-authorship retained; added one checklist link without changing reviewed wording.

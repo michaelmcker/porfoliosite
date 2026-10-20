@@ -1,5 +1,9 @@
 # Development log
 
+## 2026-10-20: Private traffic/enquiries preparation
+- Existing October 21 approved manuscript unchanged; refreshed Google primary source, buyer-intent snapshot, six source/service/proof/image destinations and eight future/held 404s.
+- Private same-source preview passes CUA 320/390/1440: loaded image, one H1, five FAQs, unique IDs, sticky desktop contents, no page overflow and readable mobile table. No public build or deploy. Echo key unchanged; no retry or repeated notification. Evidence/resumption: docs/editorial-prep-2026-10-20.
+
 ## 2026-10-19: Scheduled Vernon comparison release
 - Live verification: nine exact public file matches, three Markdown negotiations, twelve future/held 404s and actual production 390/1440 views pass. Vercel GitHub success target 4YGx4Ac3WCfYDj2MPkLwf3LuQPUc; direct API scope 403/CLI absent documented. Queue release evidence recorded.
 - Refreshed ten official/provider/proof/sibling/contact links; source claims and original Echo wording retained. Only current review date and a contextual checklist link changed. Original October 8 publication preserved.
