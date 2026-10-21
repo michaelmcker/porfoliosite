@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-21: Preparing due traffic/enquiries article for release-day checks, existing GitHub deployment and live verification. Existing Echo holds and future schedule preserved.
+2026-10-21: Due traffic/enquiries article built and pushed (463f133), awaiting deployment. No Vercel status/check/deployment yet and public route 404. Browser requires sign-in; no alternate deploy attempted. Local/source checks pass; live verification remains open.
 
 2026-10-20: Tomorrow’s traffic/enquiries manuscript refreshed privately without prose changes. Primary source, links and CUA 320/390/1440 checks pass. No Tuesday release, public build or deployment. Existing Echo holds unchanged.
 
@@ -79,6 +79,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-21: Traffic/enquiries release awaiting deployment
+- Built approved article with current primary facts, seven checked links, correct original/update dates, five FAQs and CUA 320/390/1440. 169 tests pass; unchanged About missing-Chrome failure. Original Echo wording retained; date/related metadata only.
+- Pushed 463f133 through existing main integration. At bounded follow-up no Vercel status/check/deployment record, public article 404; previous remote metrics commit has Vercel success. Dashboard and GitHub continuation need user sign-in. No alternate deployment or settings change.
+- Not live-verified. Resume exact-commit checks from docs/editorial-release-2026-10-21 before any new publication attempt. October 28 source/manuscript preparation saved privately; existing Echo holds retained.
 
 ### 2026-10-20: Traffic/enquiries private preflight
 - Read existing complete approved manuscript; current Google source and saved query evidence support unchanged copy. Five FAQs, real qualified-bookings proof, diagnostic table and commercial links retained.

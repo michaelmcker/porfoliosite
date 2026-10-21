@@ -3,7 +3,7 @@
 ## 2026-10-21: Scheduled traffic/enquiries release
 - Retained approved direct answer, seven diagnostic sections, qualified-bookings proof, table and five FAQs; only actual update date and related Kelowna guide metadata changed. Seven current source/service/proof/guide/image links pass; internal destinations and visible/schema dates/FAQs agree.
 - CUA 320/390/1440 review passes with loaded project image, no overflow, unique IDs and sticky desktop contents. 169 tests pass; unchanged About test missing Chrome. Baseline date-aware output mismatch resolved by scheduled build.
-- Seven public resources and five future/held drafts preserved. Existing Echo holds unchanged. Releasing through GitHub main to Vercel; live verification pending.
+- Seven public resources and five future/held drafts preserved. Existing Echo holds unchanged. Pushed 463f133 through GitHub main; no Vercel status/check/deployment has appeared and public route remains 404 at bounded follow-up. Dashboard requires user sign-in; no alternate deploy. Live verification pending.
 
 ## 2026-10-20: Private traffic/enquiries preparation
 - Existing October 21 approved manuscript unchanged; refreshed Google primary source, buyer-intent snapshot, six source/service/proof/image destinations and eight future/held 404s.

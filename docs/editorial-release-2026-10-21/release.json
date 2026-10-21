@@ -6,7 +6,7 @@
   "url": "https://michaelmck.site/blog/website-visitors-no-enquiries/",
   "datePublished": "2026-10-08",
   "dateModified": "2026-10-21",
-  "state": "prepared",
+  "state": "pushed-awaiting-deployment",
   "checks": {
     "sources": "Current primary Google query/landing-page guidance and seven live source/service/proof/guide/image links pass. Exact buyer-intent snapshot retained from October 20; not a geolocated Google ranking.",
     "echo": "Original reviewed wording retained: summary, takeaways, section bodies and five FAQs equal October 10 approved manuscript; semantic section ID differs to prevent duplicate questions ID. Only date and related-link metadata changed today; unchanged rejected key not retried.",
@@ -14,12 +14,19 @@
     "responsive": "CUA 320/390/1440 pass: one H1, five FAQs, loaded image, no overflow, unique IDs, sticky desktop contents and correct dates.",
     "tests": "169 pass; unchanged missing-Chrome About test. Baseline date-aware generated-output mismatch resolved by scheduled rebuild.",
     "schemaAndLinks": "Visible/schema FAQs and dates agree; internal destinations/fragments exist; standalone analytics retained.",
-    "privacy": "Seven public resources; five future/held excluded from HTML, Markdown and discovery."
+    "privacy": "Seven public resources; five future/held excluded from HTML, Markdown and discovery.",
+    "upcomingPreparation": "Existing October 28 redesign/repair manuscript read unchanged. Current Google move guidance and actual Treehouse image verified, evidence saved privately. No early release."
   },
   "privateEvidence": "/Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-21-enquiries-release",
   "deployment": {
     "method": "Existing GitHub main to Vercel integration",
     "productionAlias": "https://michaelmck.site",
-    "metadataAccess": "Known direct Vercel scope 403; mapped CLI absent. Use exact-commit GitHub status and actual public verification, no READY API claim."
-  }
+    "metadataAccess": "Known direct Vercel scope 403; mapped CLI absent. Use exact-commit GitHub status and actual public verification, no READY API claim.",
+    "githubVercelStatus": "No status reported for this commit; checks and deployments also absent at bounded follow-up.",
+    "publicArticleStatus": 404,
+    "dashboard": "Browser project requires Vercel sign-in; GitHub continuation also requires user sign-in. No credentials entered.",
+    "previousRemoteCommit": "e595799b5e888d98efdcb3c1aae00d7e80113b2a has successful Vercel status; current release remains unverified.",
+    "retry": "Inspect this exact commit and public route before creating any replacement commit or release. No additional CLI/API deployment."
+  },
+  "commit": "463f13356eb0933c8567caca6d94470c6eadcf20"
 }
