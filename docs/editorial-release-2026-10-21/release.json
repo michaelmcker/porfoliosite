@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-21",
+  "timezone": "America/Vancouver",
+  "slug": "website-visitors-no-enquiries",
+  "title": "Website visitors but no enquiries? 7 checks for local businesses",
+  "url": "https://michaelmck.site/blog/website-visitors-no-enquiries/",
+  "datePublished": "2026-10-08",
+  "dateModified": "2026-10-21",
+  "state": "prepared",
+  "checks": {
+    "sources": "Current primary Google query/landing-page guidance and seven live source/service/proof/guide/image links pass. Exact buyer-intent snapshot retained from October 20; not a geolocated Google ranking.",
+    "echo": "Original reviewed wording retained: summary, takeaways, section bodies and five FAQs equal October 10 approved manuscript; semantic section ID differs to prevent duplicate questions ID. Only date and related-link metadata changed today; unchanged rejected key not retried.",
+    "editorial": "Manual AEO and content-quality pass: direct answer, seven diagnostic sections, practical table, five specific FAQs, qualified-booking proof, two published siblings and service/contact links. No invented conversion benchmark or single-button causal claim.",
+    "responsive": "CUA 320/390/1440 pass: one H1, five FAQs, loaded image, no overflow, unique IDs, sticky desktop contents and correct dates.",
+    "tests": "169 pass; unchanged missing-Chrome About test. Baseline date-aware generated-output mismatch resolved by scheduled rebuild.",
+    "schemaAndLinks": "Visible/schema FAQs and dates agree; internal destinations/fragments exist; standalone analytics retained.",
+    "privacy": "Seven public resources; five future/held excluded from HTML, Markdown and discovery."
+  },
+  "privateEvidence": "/Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-21-enquiries-release",
+  "deployment": {
+    "method": "Existing GitHub main to Vercel integration",
+    "productionAlias": "https://michaelmck.site",
+    "metadataAccess": "Known direct Vercel scope 403; mapped CLI absent. Use exact-commit GitHub status and actual public verification, no READY API claim."
+  }
+}

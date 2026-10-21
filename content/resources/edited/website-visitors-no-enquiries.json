@@ -58,5 +58,11 @@
       "Show useful pricing context when you can state it accurately: a starting scope, assessment fee or explanation of how quotes are prepared. Describe what changes the price and what happens next. The goal is to help suitable customers judge fit, rather than publish a number that excludes essential work or creates false expectations."
     ]
   ],
-  "primaryMoneyPage": "/web-design/"
+  "primaryMoneyPage": "/web-design/",
+  "related": [
+    "service-business-website-checklist",
+    "kelowna-business-website-guide",
+    "website-redesign-or-repair",
+    "cool-runnings-qualified-bookings"
+  ]
 }

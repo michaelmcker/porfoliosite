@@ -132,6 +132,8 @@ I can turn the page plan, content and customer journey into a considered website
 
 - [The Kelowna business website guide: 9 decisions for 2026](https://michaelmck.site/blog/kelowna-business-website-guide/)
 
+- [Website visitors but no enquiries? 7 checks for local businesses](https://michaelmck.site/blog/website-visitors-no-enquiries/)
+
 [Explore website design for your industry](https://michaelmck.site/web-design/industries/)
 
 - [Plumbers](https://michaelmck.site/web-design/plumbers/)

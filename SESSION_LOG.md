@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-21: Preparing due traffic/enquiries article for release-day checks, existing GitHub deployment and live verification. Existing Echo holds and future schedule preserved.
+
 2026-10-20: Tomorrow’s traffic/enquiries manuscript refreshed privately without prose changes. Primary source, links and CUA 320/390/1440 checks pass. No Tuesday release, public build or deployment. Existing Echo holds unchanged.
 
 2026-10-19: Due Vernon designer comparison published and live-verified (a7b7712). Vercel GitHub status success, nine file matches, three Markdown negotiations, twelve future-route 404s and actual 390/1440 review pass. Echo holds retained; October 26 manuscript refreshed privately.

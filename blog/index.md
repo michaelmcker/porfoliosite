@@ -21,6 +21,8 @@ A useful business website explains your services, shows relevant work and turns 
 
 - [Checklist · October 12, 2026 10 things every service business website needs in 2026 A practical website checklist for Okanagan service businesses: clear services, local coverage, proof, mobile enquiries, Google visibility and follow-up. Read the article](https://michaelmck.site/blog/service-business-website-checklist/)
 
+- [Checklist · October 21, 2026 Website visitors but no enquiries? 7 checks for local businesses Diagnose why an Okanagan business website gets visitors but few useful enquiries: traffic quality, offer, proof, forms, mobile experience and follow-up. Read the article](https://michaelmck.site/blog/website-visitors-no-enquiries/)
+
 ## Find the right fit.
 
 Web designers compared by the work and support your business needs.
