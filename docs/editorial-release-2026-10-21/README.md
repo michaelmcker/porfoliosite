@@ -1,16 +1,11 @@
-# October 21 traffic/enquiries release — awaiting deployment
+# October 21 traffic/enquiries release — verified October 22
 
-Approved content built and pushed as `463f13356eb0933c8567caca6d94470c6eadcf20` through the existing GitHub main workflow. GitHub confirms the commit. No Vercel status, check run or deployment record has appeared for this commit at bounded follow-up, and the public article returns 404. The preceding remote metrics commit has a successful Vercel status. Do not call this release live or mark the queue live-verified.
+[Website visitors but no enquiries? 7 checks for local businesses](https://michaelmck.site/blog/website-visitors-no-enquiries/) is live. Exact release commit `463f13356eb0933c8567caca6d94470c6eadcf20` now has GitHub Vercel status success, targeting deployment `HxdZYL45eUAmQ7CbcnUM4emUNHMZ`. Nine public files match the approved build, three Markdown negotiations match, and ten held/future HTML and Markdown routes return 404. Actual live 390/1440 review passes: loaded project image, one H1, five static FAQs, no overflow and sticky desktop contents.
 
-The Vercel project browser requires sign-in; its GitHub continuation also requires user sign-in. Direct connector scope was already unauthorized and mapped CLI absent. No credentials were entered, alternate deployment launched or integration settings changed.
+Original publication remains October 8; update remains October 21. Verification occurred October 22; the exact first live timestamp was not established. The October 21 pending state is superseded. No repeat push, new release or alternate deployment was used. Direct Vercel metadata access remains unavailable; no READY API assertion is made.
 
-Current primary/source and seven source/service/proof/guide/image links pass. Exact approved prose retained; updated date and related Kelowna guide metadata only. Original October 8 publication retained. CUA 320/390/1440 passes; 169 tests pass with the unchanged missing-Chrome About failure. Seven resources built, five future/held excluded. Original Echo holds unchanged.
+Original source/editorial/local evidence remains valid: current primary guidance and seven source/service/proof/guide/image links pass; approved prose retained, date and related-link metadata only. Local CUA 320/390/1440 passed, and 169 tests passed with the unchanged missing-Chrome About failure. Verification-only documentation changes did not require another full suite.
 
-## Resume without duplicate publication
+Seven public resources remain available and five future/held articles remain private. October 26 and 28 manuscripts were already refreshed; existing Echo holds and three-per-week schedule remain unchanged. Remote daily metrics commit `1971dcb` was preserved while rebasing local audit history. Audit changes remain local until the next actual publishing release.
 
-1. Inspect GitHub Vercel status for the exact commit above and the public article route first. Do not make an empty/new commit or invoke another deployment path just to retry.
-2. If the existing deployment succeeds, verify article/hub/sibling/discovery bytes, Markdown negotiation, visible/schema dates, sitemap and held/future 404s; inspect actual live mobile/desktop views.
-3. Only after those checks record lastRelease as live-verified. If no deployment appears, Michael must restore dashboard/plugin access to the intended michael-mcks-projects / portfolio-remote-preview project so the Git integration can be diagnosed. Do not infer the reason from missing status alone.
-4. Preserve daily metrics and original dates. October 28 redesign/repair manuscript/source preparation saved privately; future drafts remain private.
-
-Evidence: private Business Research/website-market-2026-10-07/docs/2026-10-21-enquiries-release/ and release.json.
+Evidence: `release.json`, private Business Research/website-market-2026-10-07/docs/2026-10-21-enquiries-release/ and docs/2026-10-22-release-verification/ (GitHub status, public file hashes, Markdown/privacy checks, responsive observations and screenshots).

@@ -49,7 +49,15 @@
       "datePublished": "2026-10-08",
       "dateModified": "2026-10-21",
       "status": "approved",
-      "note": "Originally public October 8; release queue preserves the original date."
+      "note": "Originally public October 8; release queue preserves the original date.",
+      "lastRelease": {
+        "releasedOn": "2026-10-21",
+        "verifiedOn": "2026-10-22",
+        "url": "https://michaelmck.site/blog/website-visitors-no-enquiries/",
+        "commit": "463f13356eb0933c8567caca6d94470c6eadcf20",
+        "evidence": "docs/editorial-release-2026-10-21/release.json",
+        "status": "live-verified"
+      }
     },
     "google-chatgpt-business-visibility": {
       "publishOn": "2026-10-23",

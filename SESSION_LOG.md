@@ -2,7 +2,7 @@
 
 ## In progress
 
-2026-10-21: Due traffic/enquiries article built and pushed (463f133), awaiting deployment. No Vercel status/check/deployment yet and public route 404. Browser requires sign-in; no alternate deploy attempted. Local/source checks pass; live verification remains open.
+2026-10-22: October 21 traffic/enquiries release live-verified (463f133). GitHub Vercel success, nine exact file matches, three Markdown negotiations, ten future/held 404s and actual 390/1440 review pass. No duplicate deployment; original dates and remote metrics preserved. Existing Echo holds unchanged.
 
 2026-10-20: Tomorrow’s traffic/enquiries manuscript refreshed privately without prose changes. Primary source, links and CUA 320/390/1440 checks pass. No Tuesday release, public build or deployment. Existing Echo holds unchanged.
 
@@ -79,6 +79,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-22: Existing traffic/enquiries deployment verified
+- Exact October 21 release commit now has Vercel GitHub success; actual live article and discovery files match. Nine public files, three Markdown negotiations and ten future/held 404s pass.
+- Production desktop/mobile views pass at 1440/390 with loaded image, one H1, five static FAQs, no overflow and desktop sticky contents. October 8/21 dates retained; verification October 22 does not imply a known first live timestamp.
+- Queue lastRelease and release record now live-verified. No new public build, push or deployment. Remote 1971dcb daily metrics preserved; audit kept local. Next-seven-day manuscripts already prepared, unchanged Echo key not retried.
 
 ### 2026-10-21: Traffic/enquiries release awaiting deployment
 - Built approved article with current primary facts, seven checked links, correct original/update dates, five FAQs and CUA 320/390/1440. 169 tests pass; unchanged About missing-Chrome failure. Original Echo wording retained; date/related metadata only.

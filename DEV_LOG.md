@@ -1,5 +1,10 @@
 # Development log
 
+## 2026-10-22: Verify existing editorial deployment
+- Existing 463f133 deployment now succeeds. Nine exact live public file matches, three Markdown negotiations and ten held/future 404s pass. Actual CUA 390/1440 review confirms loaded image, one H1, five static FAQs, no overflow, desktop sticky contents and unchanged October 8/21 dates.
+- Recorded queue/release live verification and private evidence. No public source changes, rebuild, repeat push or alternate deployment. Rebased local audit onto remote metrics 1971dcb without discarding it; documentation audit remains local. Prior test evidence retained without redundant rerun.
+- Existing upcoming manuscript preparation and Echo holds unchanged. No new Thursday release or future article exposure.
+
 ## 2026-10-21: Scheduled traffic/enquiries release
 - Retained approved direct answer, seven diagnostic sections, qualified-bookings proof, table and five FAQs; only actual update date and related Kelowna guide metadata changed. Seven current source/service/proof/guide/image links pass; internal destinations and visible/schema dates/FAQs agree.
 - CUA 320/390/1440 review passes with loaded project image, no overflow, unique IDs and sticky desktop contents. 169 tests pass; unchanged About test missing Chrome. Baseline date-aware output mismatch resolved by scheduled build.
