@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-23: Existing AI-search Echo hold retained; unchanged key not retried. October 26/28/30 complete manuscripts and current primary/project sources reviewed privately. All 69 slots intact; ten held/future routes remain 404. No release attempted.
+
 2026-10-22: October 21 traffic/enquiries release live-verified (463f133). GitHub Vercel success, nine exact file matches, three Markdown negotiations, ten future/held 404s and actual 390/1440 review pass. No duplicate deployment; original dates and remote metrics preserved. Existing Echo holds unchanged.
 
 2026-10-20: Tomorrow’s traffic/enquiries manuscript refreshed privately without prose changes. Primary source, links and CUA 320/390/1440 checks pass. No Tuesday release, public build or deployment. Existing Echo holds unchanged.
@@ -79,6 +81,11 @@
 No remaining work for the selected service-page release. Deployed and verified September 26, 2026. Earlier local-only notes below are superseded by this release.
 
 ## Recent sessions
+
+### 2026-10-23: Existing hold and next-week preparation
+- Due AI-search article remains private pending Echo review; unchanged rejected credential not retried or re-notified. Current Google/OpenAI sources support existing corrected manuscript.
+- Read existing full West Kelowna, repair/rebuild and Cool Runnings manuscripts. Current official provider/tourism/migration and actual customer/project sources refreshed; source blocks distinguished from broken links. Qualified bookings retained; no revenue or telemetry substitution.
+- Read-only AEO/editor review and hard-phrase scan, all 69 slots/draft paths and ten future/held 404s checked. No public source, build, deployment or redundant tests. Private evidence and release-day resumption: docs/editorial-prep-2026-10-23. Remote metrics fetched and preserved.
 
 ### 2026-10-22: Existing traffic/enquiries deployment verified
 - Exact October 21 release commit now has Vercel GitHub success; actual live article and discovery files match. Nine public files, three Markdown negotiations and ten future/held 404s pass.

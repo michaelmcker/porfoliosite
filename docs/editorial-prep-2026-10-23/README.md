@@ -1,0 +1,11 @@
+# October 23 private editorial preflight
+
+The scheduled AI-search article remains pending-review under the existing Echo credential hold. The private key is unchanged since its invalid/revoked response, with no environment replacement. No retry, approval bypass, repeat notification or publication attempt. Current primary Google/OpenAI guidance supports the retained corrected manuscript; original publication date remains October 8.
+
+Read the complete October 26 West Kelowna, October 28 repair/rebuild and October 30 Cool Runnings manuscripts. Refreshed current official provider, tourism, Google migration and actual project/customer sources. The three direct provider/tourism HTTP 403s were independently resolved with current official web reads. All manuscripts remain unchanged. The Cool Runnings brief retains the specific enrichment matrix, practical tools, enquiry process and 30% qualified-booking proof, without substituting live telemetry or competitor outcomes.
+
+Manual read-only AEO/content-quality review and hard-phrase/em-dash scan complete. Each manuscript retains a direct answer, detailed task-specific sections, five FAQs and relevant commercial links. No full release-readiness claim: release-day tests, responsive checks and date updates remain required. Current metadata for future slots still has older future modification dates; replace only with the actual review/update date when releasing, retaining October 8 publication.
+
+All 69 Mon/Wed/Fri slots and 60 library draft paths remain intact through March 19, 2027. Ten future/held HTML and Markdown routes return 404. No public source, generated output, build, deployment or calendar cadence changed. No redundant full tests or layout verification for unchanged manuscripts.
+
+Private evidence: `/Users/michaelmckerracher/Business Research/website-market-2026-10-07/docs/2026-10-23-editorial-preflight/` includes complete manuscripts, source HTML, buyer-intent snapshot, claim/structure brief, links and primary-source snapshots. Search snapshots are unlocalized; no verified local Google positions claimed. Original buyer-intent evidence remains under the market research buyer-serps directory and original editorial evidence backups.
