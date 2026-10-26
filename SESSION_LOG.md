@@ -2,6 +2,8 @@
 
 ## In progress
 
+2026-10-26: Releasing approved West Kelowna comparison after current-source, editorial, test and responsive checks. Original dates, Echo holds and unrelated AI Catalyst backup preserved.
+
 2026-10-23: Existing AI-search Echo hold retained; unchanged key not retried. October 26/28/30 complete manuscripts and current primary/project sources reviewed privately. All 69 slots intact; ten held/future routes remain 404. No release attempted.
 
 2026-10-22: October 21 traffic/enquiries release live-verified (463f133). GitHub Vercel success, nine exact file matches, three Markdown negotiations, ten future/held 404s and actual 390/1440 review pass. No duplicate deployment; original dates and remote metrics preserved. Existing Echo holds unchanged.

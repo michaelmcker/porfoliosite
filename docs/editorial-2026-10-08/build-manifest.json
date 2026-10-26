@@ -2,7 +2,7 @@
   {
     "path": "/blog/",
     "title": "Website guides and comparisons for Okanagan businesses",
-    "words": 421
+    "words": 460
   },
   {
     "path": "/blog/kelowna-business-website-guide/",
@@ -17,7 +17,7 @@
   {
     "path": "/blog/west-kelowna-business-website-guide/",
     "title": "The West Kelowna business website guide: 8 essentials for 2026",
-    "words": 1750
+    "words": 1762
   },
   {
     "path": "/blog/service-business-website-checklist/",
@@ -38,5 +38,10 @@
     "path": "/blog/best-web-designers-vernon/",
     "title": "5 web designers for Vernon businesses: the best fits for 2026",
     "words": 1489
+  },
+  {
+    "path": "/blog/best-web-designers-west-kelowna/",
+    "title": "4 web designers for West Kelowna businesses: best fits for 2026",
+    "words": 1542
   }
 ]

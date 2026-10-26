@@ -151,6 +151,8 @@ I can turn the page plan, content and customer journey into a considered website
 
 ## Keep exploring
 
+- [4 web designers for West Kelowna businesses: best fits for 2026](https://michaelmck.site/blog/best-web-designers-west-kelowna/)
+
 [Explore website design for your industry](https://michaelmck.site/web-design/industries/)
 
 - [Wineries](https://michaelmck.site/web-design/wineries/)

@@ -1,5 +1,10 @@
 # Development log
 
+## 2026-10-26: Scheduled West Kelowna comparison release
+- Existing approved summary/section prose/five FAQs verified equal October 10 reviewed manuscript. Current primary providers/tourism support unchanged fit claims. Added two real contextual project proof links; review/update date October 26, original publication October 8.
+- Actual CUA 320/390/1440 passes: no overflow, one H1, five FAQs, unique IDs, sticky desktop contents and working mobile FAQ anchor. Internal destinations/schema/date/analytics checks pass. 169 tests pass; unchanged missing-Chrome About test; stale baseline generated output resolved by scheduled build.
+- Eight public resources and four held/future exclusions retained. Unchanged Echo key not retried. Real release uses existing GitHub integration; production verification still pending. Unrelated AI Catalyst backup preserved.
+
 ## 2026-10-23: Private scheduled editorial preflight
 - Existing due AI-search/cost Echo holds unchanged; no key retry, approval bypass or repeated notification. Current Google/OpenAI sources reviewed without changing approved/revised manuscripts.
 - Read complete October 26/28/30 manuscripts and refreshed official provider, tourism, Google migration, live Cool Runnings implementation and actual customer website evidence. Saved buyer-intent snapshot, distinct structure/claim brief, complete manuscripts and link evidence privately. Thirty percent remains qualified bookings, separate from changing telemetry.
