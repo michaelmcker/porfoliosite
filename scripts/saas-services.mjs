@@ -38,7 +38,7 @@ export function saasServices(pages) {
   page.saas = true;
   page.caption = '';
   page.body = serviceIntroduction(introductions[index]) + page.body.replaceAll('<br>', ' ');
-  page.cta = ['Book a free consultation', page.cta[1], page === ai ? 'How it works' : page === web ? 'Explore AI Catalyst' : 'See the work', page === ai ? '#how-it-works' : page === web ? 'https://ai-catalyst-wheat.vercel.app/' : '#selected-work'];
+  page.cta = ['Book a free consultation', page.cta[1], page === ai ? 'How it works' : page === web ? 'Explore AI Catalyst' : 'See the work', page === ai ? '#how-it-works' : page === web ? 'https://aicatalyst.biz/' : '#selected-work'];
  }
  serviceProcess(pages);
 }

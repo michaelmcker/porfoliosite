@@ -109,7 +109,7 @@ Custom scope. Custom pricing. A clear proposal based on the website your busines
 For Cool Runnings, I brought together the website, local SEO strategy and conversion improvements. Clear service pages, useful local content and straightforward enquiry options helped turn searches into work. The client reported a 30% increase in qualified bookings.
 
 [Read the Cool Runnings case study](https://michaelmck.site/v2/work/local-search-magnet.html)
-[Explore the AI Catalyst website](https://ai-catalyst-wheat.vercel.app/)
+[Explore the AI Catalyst website](https://aicatalyst.biz/)
 
 ## Before we build.
 

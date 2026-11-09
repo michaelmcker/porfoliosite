@@ -5,7 +5,7 @@ Source: https://michaelmck.site/work/ai-catalyst/
 A brand film for AI Catalyst. Strategy, imagery, voice and motion come together to give the business a clear introduction.
 
 [More video & brand work](https://michaelmck.site/marketing-branding/#selected-work)
-[Explore the AI Catalyst website](https://ai-catalyst-wheat.vercel.app/)
+[Explore the AI Catalyst website](https://aicatalyst.biz/)
 
 [AI Catalyst brand film](https://michaelmck.site/assets/selected-work/ai-catalyst-film.mp4)
 
