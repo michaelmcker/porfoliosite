@@ -71,7 +71,6 @@ assets/screens/*
 !assets/screens/fountainhead-ai-visibility-dashboard-v4-16x9.png
 !assets/screens/fountainhead-ai-visibility-dashboard-v4.webp
 !assets/screens/rccv.png
-!assets/screens/treehouse-live.png
 !assets/screens/vertical-impression-why-elevators.webp
 
 assets/videos/*
@@ -140,3 +139,7 @@ assets/selected-work/upon-this-rock/trailer-approved*
 v2/work/st-james-school/
 v2/work/ai-catalyst/
 v2/work/vertical-impression/
+
+# The old branded project is source-only.
+v2/okanagan-preview/
+assets/frames/accommodation/

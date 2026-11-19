@@ -340,35 +340,23 @@ test("all five workflow controls have unique accessible trigger and panel wiring
   assert.match(html, /href="workflows\/presentation-publishing\.html"/);
 });
 
-test("boutique accommodation embeds the copied semantic three-scene Okanagan story", async () => {
-  const [html, css, preview, previewCss, previewApp] = await Promise.all([
+test("boutique accommodation points only to the anonymized preview", async () => {
+  const [html, css, app, root] = await Promise.all([
     readV2("index.html"),
     readV2("styles.css"),
-    readV2("okanagan-preview/index.html"),
-    readV2("okanagan-preview/styles.css"),
-    readV2("okanagan-preview/app.js"),
+    readV2("app.js"),
+    readFile(new URL("../index.html", import.meta.url), "utf8"),
   ]);
 
-  assert.match(html, /<iframe[^>]+data-accommodation-page[^>]+src="okanagan-preview\/index\.html"/);
-  assert.doesNotMatch(html, /data-accommodation-clip|overview-scroll\.(?:mp4|webm)|treehouse-scroll\.(?:mp4|webm)|cabin-scroll\.(?:mp4|webm)/);
-  assert.equal((preview.match(/data-okanagan-scene=/g) || []).length, 3);
-  const sceneOrder = ["overview", "treehouse", "cabin"].map((scene) => preview.indexOf(`data-okanagan-scene="${scene}"`));
-  assert.ok(sceneOrder.every((position) => position >= 0));
-  assert.deepEqual([...sceneOrder].sort((left, right) => left - right), sceneOrder);
-
-  for (const movie of ["overview-loop.mp4", "overview-transition.mp4", "treehouse-hero.mp4", "cabin-hero.mp4"]) {
-    assert.match(preview, new RegExp(`assets/${movie.replace(".", "\\.")}`));
-    await access(new URL(`okanagan-preview/assets/${movie}`, v2Url));
+  const preview = "https://okth.michael-mckerracher.workers.dev/";
+  for (const page of [html, root]) {
+    assert.ok(page.includes('data-src="' + preview + '" title="Hospitality website concept"'));
+    assert.ok(page.includes('href="' + preview + '" rel="nofollow">View preview</a>'));
+    assert.match(page, /data-accommodation-url>OKTH<\/span>/);
+    assert.doesNotMatch(page, /treehouse|okanagan-preview/i);
   }
-  for (const copy of ["Nature.", "Adventure.", "Stillness.", "The Treehouse", "The Cabin"]) {
-    assert.ok(preview.includes(copy), `missing semantic Okanagan copy: ${copy}`);
-  }
-  assert.match(preview, /<button[^>]+aria-expanded="false"[^>]+data-stays-trigger/);
-  assert.match(preview, /class="nav-mega"/);
-  assert.match(previewCss, /\.okanagan-scene\s*\{[^}]*height:\s*300svh/s);
-  assert.match(previewCss, /\.okanagan-hero\s*\{[^}]*position:\s*sticky[^}]*height:\s*100svh/s);
-  assert.match(previewApp, /preventDefault\(\)/);
-  assert.match(previewApp, /currentTime/);
+  assert.doesNotMatch(app, /treehouse|okanagan-preview/i);
+  await access(new URL("../assets/selected-work/okth-preview.webp", v2Url));
   assert.match(css, /\.accommodation-viewport iframe\s*\{[^}]*width:\s*100%[^}]*height:\s*100%/s);
   assert.match(css, /\.accommodation-showcase\s*\{[^}]*translate3d\(calc\(72px/s);
   assert.match(css, /rotateY\(calc\(12deg/s);

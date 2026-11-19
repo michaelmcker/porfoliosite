@@ -81,13 +81,7 @@ const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
 const visibleMotionVideos = new Set();
 const accommodationPage = document.querySelector("[data-accommodation-page]");
 const accommodationViewport = accommodationPage?.closest(".accommodation-viewport");
-const accommodationUrl = document.querySelector("[data-accommodation-url]");
 const ACCOMMODATION_DESKTOP_WIDTH = 1100;
-const accommodationUrls = {
-  overview: "okanagantreehouse.ca",
-  treehouse: "okanagantreehouse.ca/treehouse",
-  cabin: "okanagantreehouse.ca/cabin",
-};
 
 const loadAccommodationPreview = () => {
   if (!accommodationPage || accommodationPage.src || !accommodationPage.dataset.src) return;
@@ -131,13 +125,6 @@ if (accommodationPage) {
     loadAccommodationPreview();
   }
 }
-
-window.addEventListener("message", (event) => {
-  if (!accommodationPage || event.source !== accommodationPage.contentWindow) return;
-  if (event.data?.type !== "okanagan-scene-change") return;
-  if (!Object.hasOwn(accommodationUrls, event.data.scene)) return;
-  if (accommodationUrl) accommodationUrl.textContent = accommodationUrls[event.data.scene];
-});
 
 const heroPosterMedia = window.matchMedia("(max-width: 699px)");
 const syncMotionPoster = (video) => {
